@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_EnergyConverter</defName>
+		<label>energy converter</label>
+		<description>A piece of WNA tech, release the power sealed into the form of what called "focus" and convert it into more useable energy like electricity.</description>
+        <graphicData>
+			<texPath>buildings/production/wna_energyconverter</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+            <drawRotated>false</drawRotated>
+            <drawSize>(2.0,2.0)</drawSize>
+            <color>(200,200,200,200)</color>
+		</graphicData>
+        <size>(2,2)</size>
+		<passability>PassThroughOnly</passability>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<castEdgeShadows>true</castEdgeShadows>
+        <rotatable>true</rotatable>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_MatterTransformation</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(144,144,144,255)</glowColor>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-100000</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>2.5</fuelConsumptionRate>
+                <fuelCapacity>60.0</fuelCapacity>
+                <fuelMultiplier>10</fuelMultiplier>
+                <initialFuelPercent>1</initialFuelPercent>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>WNA_Focus</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                <canEjectFuel>false</canEjectFuel>
+            </li>
+        </comps>
+	</ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_CorpseGenerator</defName>
+		<label>corpse generator</label>
+		<description>A rough piece of Whelingnorther Humanoid Revolt tech, this machine consumes corpse to generate power. Better not to think too deep about it, don't even bother looking at it.</description>
+        <graphicData Inherit="false">
+            <texPath>buildings/production/wna_corpsegenerator</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+            <drawRotated>false</drawRotated>
+            <drawSize>(2.1,2.1)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+		</graphicData>
+        <size>(2,2)</size>
+        <rotatable>true</rotatable>
+		<passability>PassThroughOnly</passability>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.4</staticSunShadowHeight>
+		<useHitPoints>true</useHitPoints>
+        <statBases Inherit="false">
+            <Mass>20</Mass>
+            <MaxHitPoints>2500</MaxHitPoints>
+            <WorkToBuild>2500</WorkToBuild>
+            <Beauty>-50</Beauty>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <Steel>80</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_BaseDefense</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-1800</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>2</fuelConsumptionRate>
+                <fuelCapacity>24.0</fuelCapacity>
+                <fuelMultiplier>12</fuelMultiplier>
+                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+                <initialConfigurableTargetFuelLevel>12</initialConfigurableTargetFuelLevel>
+                <fuelFilter>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                </fuelFilter>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                <canEjectFuel>false</canEjectFuel>
+            </li>
+        </comps>
+	</ThingDef>
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_MassGenerator</defName>
+		<label>mass dilution generator</label>
+		<description>An elite piece of WHR tech, place a stone chunk in this machine and it will slowly comsume it as well as producing a good amount of eletricity. Unfortunately due to the missing of key components and techniques, this generator is not as powerful and efficiency as the document says.</description>
+        <graphicData Inherit="false">
+			<texPath>buildings/production/wna_massgenerator</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+            <drawRotated>false</drawRotated>
+            <drawSize>(2,2)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+		</graphicData>
+        <size>(2,2)</size>
+        <rotatable>true</rotatable>
+		<passability>PassThroughOnly</passability>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.3</staticSunShadowHeight>
+		<useHitPoints>true</useHitPoints>
+        <statBases Inherit="false">
+            <Mass>150</Mass>
+            <MaxHitPoints>160000</MaxHitPoints>
+            <WorkToBuild>4000</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Beauty>5</Beauty>
+        </statBases>
+        <costList>
+            <Steel>150</Steel>
+            <ComponentIndustrial>8</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_AdvArsenal</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>10</glowRadius>
+                <glowColor>(144,144,255,255)</glowColor>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-6000000000</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>1.0</fuelConsumptionRate>
+                <fuelCapacity>60.0</fuelCapacity>
+                <fuelMultiplier>60</fuelMultiplier>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>ChunkSlagSteel</li>
+                        <li>ChunkMechanoidSlag</li>
+                    </thingDefs>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </fuelFilter>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                <canEjectFuel>false</canEjectFuel>
+            </li>
+        </comps>
+	</ThingDef>
+    
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_Hydroponics</defName>
+		<label>hydroponic basin</label>
+		<description>A hydroponic basin, can automatically grow plant tissue and harvest for products.</description>
+        <graphicData Inherit="false">
+			<texPath>buildings/production/wna_hydroponics</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+            <drawRotated>false</drawRotated>
+            <drawSize>(2,2)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+		</graphicData>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_AdvArsenal</li>
+        </researchPrerequisites>
+        <size>(2,2)</size>
+        <rotatable>true</rotatable>
+		<passability>PassThroughOnly</passability>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<useHitPoints>true</useHitPoints>
+        <statBases Inherit="false">
+            <Mass>6</Mass>
+            <MaxHitPoints>4000</MaxHitPoints>
+            <WorkToBuild>2000</WorkToBuild>
+            <Beauty>-1</Beauty>
+        </statBases>
+        <costList>
+            <Steel>100</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <WoodLog>40</WoodLog>
+        </costList>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompHydroponics">
+                <growthFactor>16</growthFactor>
+                <yieldFactor>9</yieldFactor>
+                <extraFactor>9</extraFactor>
+                <plantCount>100</plantCount>
+            </li>
+        </comps>
+	</ThingDef>
+
+</Defs>

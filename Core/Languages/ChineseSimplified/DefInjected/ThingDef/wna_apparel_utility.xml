@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_IllusionCore.label>幻象核心</WNA_IllusionCore.label>
+  <WNA_IllusionCore.description>这件装置能用一个隐形力场遮蔽其持有者，使其在肉眼和探测器下完全隐形。暗夜特种兵们通常会装备这件装置，这让他们成为他们的敌人最不想面对的对手。</WNA_IllusionCore.description>
+
+  <WNA_ForceShield.label>力场核心</WNA_ForceShield.label>
+  <WNA_ForceShield.description>当激活的时候，这件装置能生成并维持一个保护性的力场，使其持有者对常规伤害免疫。钢铁守卫们装备了这种装置以从尽可能多的危险中保护他们的哨站。</WNA_ForceShield.description>
+
+  <WNA_ShieldPack.label>护盾背包</WNA_ShieldPack.label>
+  <WNA_ShieldPack.description>当激活的时候，这件装置能生成一个可以阻挡远程攻击的护盾。</WNA_ShieldPack.description>
+
+  <WNA_AmmoHelper.label>火控助理</WNA_AmmoHelper.label>
+  <WNA_AmmoHelper.description>一个能帮助携带者操作武器以提高携带者开火频率的小装置，不论是原始的弓箭还是先进的单兵武器，这件装置都能胜任。</WNA_AmmoHelper.description>
+
+  <WNA_Toolkit.label>工具包</WNA_Toolkit.label>
+  <WNA_Toolkit.description>一个包含了复数专业工具的工具包，用以应对从简单的修理与维护到紧急医疗护理的多种情境。</WNA_Toolkit.description>
+
+  <WNA_Holyorder.label>威灵圣教序</WNA_Holyorder.label>
+  <WNA_Holyorder.description>一本看起来很旧的书。传闻威灵会的工匠用人皮制作成这本书，在其上用人血写下威灵诺德的传奇、经文和铁律。所有威灵人都有这么一本书，每当他们要发表严肃的观点或对敌人进行毁灭性的打击时，他们都会先把这本书拿在手里。</WNA_Holyorder.description>
+
+
+</LanguageData>

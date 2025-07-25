@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+	    <mods>
+            <li>Toddlers</li>
+	    </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationInsert">
+                    <xpath>Defs/ThingDef[defName="WNA_WNThan"]/race/lifeStageAges/li[1]</xpath>
+                    <order>Append</order>
+		            <value>
+		            	<li>
+		            		<def>HumanlikeToddler</def>
+		            		<minAge>1</minAge>
+		            	</li>
+		            </value>
+				</li>
+            </operations>
+	    </match>
+    </Operation>
+    
+</Patch>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_BookEssay.label>文集</WNA_BookEssay.label>
+  <WNA_BookEssay.description>多个领域的作者关于多种主题的论文的合集。</WNA_BookEssay.description>
+
+  <WNA_BookPoetry.label>诗集</WNA_BookPoetry.label>
+  <WNA_BookPoetry.description>关于各种话题的各种形式的诗文的合集。</WNA_BookPoetry.description>
+
+  <WNA_BookTained.label>邪书</WNA_BookTained.label>
+  <WNA_BookTained.description>一本被污染的书，阅读须自负风险。</WNA_BookTained.description>
+
+
+</LanguageData>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <WorkGiverDef>
+        <defName>WNA_MainWork</defName>
+        <label>rite</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>WNAWork_Rite</workType>
+        <priorityInType>400</priorityInType>
+        <fixedBillGiverDefs>
+            <li>WNA_RiteSpot_Basic</li>
+            <li>WNA_RiteSpot_Cutter</li>
+        </fixedBillGiverDefs>
+        <verb>craft</verb>
+        <gerund>holding a rite</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+    <WorkTypeDef>
+        <defName>WNAWork_Rite</defName>
+        <labelShort>rite</labelShort>
+        <pawnLabel>priest</pawnLabel>
+        <gerundLabel>riting</gerundLabel>
+        <description>Carrying out Whelingnorther rites to do something or achieve some goal.</description>
+        <verb>holding a rite</verb>
+        <naturalPriority>400</naturalPriority>
+        <disabledForSlaves>true</disabledForSlaves>
+        <relevantSkills>
+            <li>Intellectual</li>
+        </relevantSkills>
+        <requireCapableColonist>true</requireCapableColonist>
+        <workTags>
+            <li>Intellectual</li>
+            <li>Commoner</li>
+            <li>AllWork</li>
+        </workTags>
+    </WorkTypeDef>
+    
+</Defs>

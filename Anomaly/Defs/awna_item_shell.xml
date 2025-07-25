@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="WNA_ShellBase">
+        <defName>WNA_ShellPsychic</defName>
+        <label>psychic blast shell</label>
+        <description>A shell made of bioferrite and enhanced with special techniques. When detonated it can cause a unique psychic phenomena, causing nearby people fall into psychic drunkenness.</description>
+        <graphicData>
+            <texPath>items/wna_shells/wnashell_psychic</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>100</MarketValue>
+        </statBases>
+        <projectileWhenLoaded>WNA_ShellPsychic_Proj</projectileWhenLoaded>
+        <costList>
+            <Bioferrite>5</Bioferrite>
+            <Chemfuel>5</Chemfuel>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <effectWorking>Cook</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <workAmount>800</workAmount>
+            <targetCountAdjustment>5</targetCountAdjustment>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+                <li>BioferriteShaper</li>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <displayPriority>100</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>WNA_ShellPsychic_Proj</defName>
+        <label>psychic blast shell</label>
+        <graphicData>
+            <texPath>projectiles/wnashell_psychic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>0.5</drawSize>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>WNA_ShellPsychicDamage</damageDef>
+            <damageAmountBase>5</damageAmountBase>
+            <stoppingPower>Infinity</stoppingPower>
+            <speed>200</speed>
+            <armorPenetrationBase>Infinity</armorPenetrationBase>
+            <explosionRadius>14.9</explosionRadius>
+            <flyOverhead>true</flyOverhead>
+            <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+            <soundExplode>Explosion_Stun</soundExplode>
+            <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+            <soundAmbient>MortarRound_Ambient</soundAmbient>
+        </projectile>
+    </ThingDef>
+
+</Defs>

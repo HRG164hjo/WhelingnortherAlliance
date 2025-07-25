@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThoughtDef>
+        <defName>WNA_AteMealPack</defName>
+        <durationDays>1</durationDays>
+        <stackLimit>10</stackLimit>
+        <developmentalStageFilter>Baby,Child,Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>dinning and rest</label>
+                <description>Anyway having a nice meal is really a break from everything bad or not in life.</description>
+                <baseMoodEffect>15</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

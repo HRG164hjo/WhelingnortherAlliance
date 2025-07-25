@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNARecipeFor_InstaNoodle.label>制作威灵会式方便面 x4</WNARecipeFor_InstaNoodle.label>
+  <WNARecipeFor_InstaNoodle.description>用法力和能视为事务的东西制作食物.</WNARecipeFor_InstaNoodle.description>
+  <WNARecipeFor_InstaNoodle.jobString>工作中.</WNARecipeFor_InstaNoodle.jobString>
+
+  <WNARecipeFor_InstaNoodle_Bulk.label>制作威灵会式方便面 x10</WNARecipeFor_InstaNoodle_Bulk.label>
+  <WNARecipeFor_InstaNoodle_Bulk.description>用法力和能视为事务的东西制作食物.</WNARecipeFor_InstaNoodle_Bulk.description>
+  <WNARecipeFor_InstaNoodle_Bulk.jobString>工作中.</WNARecipeFor_InstaNoodle_Bulk.jobString>
+
+
+</LanguageData>

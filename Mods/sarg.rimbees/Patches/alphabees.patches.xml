@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="RB_CombBase" or @Name="RB_WildHiveBase" or @Name="RB_BeeBase"]/tradeability</xpath>
+        <value>
+            <tradeability>All</tradeability>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="RB_WildHiveBase"]/stackLimit</xpath>
+        <value>
+            <stackLimit>200</stackLimit>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="RB_WildHive_Temperate"]/butcherProducts</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RB_WildHive_Temperate"]</xpath>
+            <value>
+                <butcherProducts>
+                    <RB_Bee_Temperate_Drone>1</RB_Bee_Temperate_Drone>
+                    <RB_Bee_Temperate_Queen>1</RB_Bee_Temperate_Queen>
+                    <RB_Temperate_Honeycomb>2</RB_Temperate_Honeycomb>
+                </butcherProducts>
+            </value>
+        </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="RB_WildHive_Mild"]/butcherProducts</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="RB_WildHive_Mild"]</xpath>
+            <value>
+                <butcherProducts>
+                    <RB_Bee_Mild_Drone>1</RB_Bee_Mild_Drone>
+                    <RB_Bee_Mild_Queen>1</RB_Bee_Mild_Queen>
+                    <RB_Mild_Honeycomb>2</RB_Mild_Honeycomb>
+                </butcherProducts>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>

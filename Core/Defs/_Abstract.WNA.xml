@@ -1,0 +1,1257 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- ======== -->
+
+    <!-- AbilityDef -->
+    <AbilityDef Abstract="true" Name="WNA_AbilityBase">
+        <category>WNA_AbilityCategory</category>
+        <iconPath>focus</iconPath>
+        <cooldownTicksRange>60</cooldownTicksRange>
+        <stunTargetWhileCasting>true</stunTargetWhileCasting>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <hostile>false</hostile>
+        <aiCanUse>true</aiCanUse>
+        <writeCombatLog>true</writeCombatLog>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    </AbilityDef>
+
+
+    <!-- ======== -->
+
+    <!-- DamageDef -->
+    <DamageDef Abstract="true" Name="WNA_DamageBase">
+        <workerClass>WNA.Damager.WNA_DamagerBasic</workerClass>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <overkillPctToDestroyPart>0</overkillPctToDestroyPart>
+        <defaultArmorPenetration>Infinity</defaultArmorPenetration>
+        <defaultStoppingPower>Infinity</defaultStoppingPower>
+        <buildingDamageFactor>10000</buildingDamageFactor>
+        <plantDamageFactor>10000</plantDamageFactor>
+        <corpseDamageFactor>10000</corpseDamageFactor>
+        <execution>true</execution>
+        <externalViolence>false</externalViolence>
+        <armorCategory/>
+    </DamageDef>
+
+
+    <!-- ======== -->
+
+    <!-- IncidentDef -->
+    <IncidentDef Name="WNA_DiseaseIncidentBase" Abstract="True">
+        <targetTags>
+            <li>Map_PlayerHome</li>
+            <li>Map_TempIncident</li>
+            <li>Map_Misc</li>
+            <li>Map_RaidBeacon</li>
+            <li>Caravan</li>
+        </targetTags>
+        <letterDef>WNA_MajorThreatLetter</letterDef>
+    </IncidentDef>
+
+
+    <!-- ======== -->
+
+    <!-- PawnKindDef -->
+    <PawnKindDef Name="WNA_PawnsBase" Abstract="True">
+        <defaultFactionType>WNA_FactionWNA</defaultFactionType>
+        <disallowedTraits>
+			<li>AnnoyingVoice</li>
+			<li>Bisexual</li>
+			<li>BodyPurist</li>
+			<li>Brawler</li>
+			<li>CreepyBreathing</li>
+			<li>DislikesMen</li>
+			<li>DislikesWomen</li>
+			<li>DrugDesire</li>
+			<li>Gay</li>
+			<li>Gourmand</li>
+			<li>Greedy</li>
+			<li>Industriousness</li>
+			<li>Jealous</li>
+			<li>Neurotic</li>
+			<li>Nudist</li>
+			<li>PsychicSensitivity</li>
+			<li>Pyromaniac</li>
+			<li>Transhumanist</li>
+			<li>Wimp</li>
+		</disallowedTraits>
+        <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+        <minGenerationAge>18</minGenerationAge>
+        <maxGenerationAge>40</maxGenerationAge>
+        <allowOldAgeInjuries>false</allowOldAgeInjuries>
+        <destroyGearOnDrop>false</destroyGearOnDrop>
+        <canStrip>false</canStrip>
+        <initialWillRange>200~300</initialWillRange>
+        <initialResistanceRange>200~300</initialResistanceRange>
+        <royalTitleChance>0</royalTitleChance>
+        <isFighter>true</isFighter>
+        <allowInMechClusters>false</allowInMechClusters>
+        <itemQuality>Legendary</itemQuality>
+        <forceWeaponQuality>Legendary</forceWeaponQuality>
+        <gearHealthRange>1~1</gearHealthRange>
+        <weaponMoney>100000~100000</weaponMoney>
+        <apparelMoney>100000~100000</apparelMoney>
+        <apparelDisallowTags>
+            <li MayRequire="aelanna.arimreborn.classesandjobs">ARR_SoulCrystal</li>
+        </apparelDisallowTags>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+        <techHediffsDisallowTags>
+            <li>Simple</li>
+            <li>PainCauser</li>
+        </techHediffsDisallowTags>
+        <techHediffsMoney>100000~100000</techHediffsMoney>
+        <biocodeWeaponChance>0</biocodeWeaponChance>
+        <humanPregnancyChance>0</humanPregnancyChance>
+        <fixedInventory>
+            <WNA_Meal>3</WNA_Meal>
+            <WNA_Medikit>3</WNA_Medikit>
+        </fixedInventory>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+        <combatEnhancingDrugsCount>0</combatEnhancingDrugsCount>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet MayRequire="Ludeon.Rimworld.Biotech">
+            <xenotypeChances>
+                <WNA_Mortaliner>999</WNA_Mortaliner>
+            </xenotypeChances>
+        </xenotypeSet>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>99~99</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>99~99</range>
+            </li>
+            <li>
+                <skill>Construction</skill>
+                <range>99~99</range>
+            </li>
+            <li>
+                <skill>Mining</skill>
+                <range>99~99</range>
+            </li>
+            <li>
+                <skill>Cooking</skill>
+                <range>99~99</range>
+            </li>
+            <li>
+                <skill>Plants</skill>
+                <range>99~99</range>
+            </li>
+            <li>
+                <skill>Animals</skill>
+                <range>99~99</range>
+            </li>
+            <li>
+                <skill>Crafting</skill>
+                <range>99~99</range>
+            </li>
+            <li>
+                <skill>Artistic</skill>
+                <range>99~99</range>
+            </li>
+            <li>
+                <skill>Medicine</skill>
+                <range>99~99</range>
+            </li>
+            <li>
+                <skill>Social</skill>
+                <range>99~99</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>99~99</range>
+            </li>
+        </skills>
+        <requiredWorkTags>
+			<li>Violent</li>
+			<li>Intellectual</li>
+			<li>Firefighting</li>
+			<li>Cleaning</li>
+		</requiredWorkTags>
+    </PawnKindDef>
+    
+
+    <!-- ======== -->
+
+    <!-- RecipeDef -->
+    <RecipeDef Abstract="True" Name="WNA_RecipeBase">
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <skillRequirements>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef Abstract="True" Name="WNA_SurgeriesBase">
+        <surgeryOutcomeEffect IsNull="True"/>
+        <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <workSkillLearnFactor>16</workSkillLearnFactor>
+        <isViolation>false</isViolation>
+        <anesthetize>false</anesthetize>
+	    <uiIconThing>WNA_Focus</uiIconThing>
+        <effectWorking>Surgery</effectWorking>
+        <soundWorking>Recipe_Surgery</soundWorking>
+        <developmentalStageFilter>Baby,Child,Adult</developmentalStageFilter>
+        <targetsBodyPart>false</targetsBodyPart>
+        <workAmount>1</workAmount>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+		<recipeUsers>
+			<li>WNA_WNThan</li>
+			<li>WNA_Human</li>
+			<li>Human</li>
+			<li MayRequire="ludeon.rimworld.anomaly">CreepJoiner</li>
+		</recipeUsers>
+    </RecipeDef>
+
+
+    <!-- ======== -->
+
+    <!-- ResearchProjectDef -->
+	<ResearchProjectDef Abstract="true" Name="WNA_ResearchProjBase">
+		<tab>WNA_ResearchTab</tab>
+		<techLevel>Archotech</techLevel>
+        <tags>
+            <li>WNA_PlayerStart</li>
+        </tags>
+    </ResearchProjectDef>
+
+
+    <!-- ======== -->
+
+    <!-- StorytellerDef -->
+    <StorytellerDef Name="WNA_StorytellerBase" Abstract="True">
+        <populationIntentFactorFromPopCurve>
+            <points>
+                <li>0,8.0</li>
+                <li>1,2.0</li>
+                <li>4,1.0</li>
+                <li>7,0.35</li>
+                <li>11,0.0</li>
+                <li>20,-1.0</li>
+            </points>
+        </populationIntentFactorFromPopCurve>
+        <populationIntentFactorFromPopAdaptDaysCurve>
+            <points>
+                <li>(0,0)</li>
+                <li>(8,1)</li>
+            </points>
+        </populationIntentFactorFromPopAdaptDaysCurve>
+        <pointsFactorFromDaysPassed>
+            <points>
+                <li>(10,0.70)</li>
+                <li>(40,1.00)</li>
+            </points>
+        </pointsFactorFromDaysPassed>
+        <adaptDaysMin>-60</adaptDaysMin>
+        <adaptDaysMax>100</adaptDaysMax>
+        <adaptDaysGameStartGraceDays>30</adaptDaysGameStartGraceDays> <!-- only applies to adaptDays past 0 -->
+        <adaptDaysLossFromColonistLostByPostPopulation>
+            <points>
+                <li>(0,30)</li> <!-- 30 days at normal pops; lower at really high pop -->
+                <li>(11,30)</li>
+                <li>(20,20)</li>
+            </points>
+        </adaptDaysLossFromColonistLostByPostPopulation>
+        <adaptDaysLossFromColonistViolentlyDownedByPopulation>
+            <points>
+                <li>(1,8)</li>
+                <li>(2,6)</li>
+                <li>(3,6)</li>
+                <li>(11,5)</li>
+                <li>(20,3.5)</li>
+            </points>
+        </adaptDaysLossFromColonistViolentlyDownedByPopulation>
+        <adaptDaysGrowthRateCurve>
+            <points>
+                <li>(-30.01,6)</li>     <!-- under: 8.00 -->
+                <li>(-30,3)</li>     <!-- -30: 3.00 -->
+                <li>(-0.01,3)</li>
+                <li>(0,1)</li>     <!-- 0: 1.00 -->
+                <li>(59.99,1)</li>
+                <li>(60,0.5)</li> <!-- 60: 0.50 -->
+                <li>(119.99,0.5)</li>
+                <li>(120,0.25)</li> <!-- 120: 0.25 -->
+            </points>
+        </adaptDaysGrowthRateCurve>
+        <pointsFactorFromAdaptDays>
+            <points>
+                <li>(-30,0.40)</li>    <!-- recover in 10 days -->
+                <li>(0,0.80)</li>    <!-- start at 0.80 -->
+                <li>(30,1.00)</li>    <!-- 0.5 years to 1.00 -->
+                <li>(60,1.20)</li>    <!-- 0.5 years to 1.20 -->
+                <li>(120,1.60)</li>    <!-- 2 years to 1.60 -->
+                <li>(180,2.00)</li>    <!-- 4 years to 2.00 -->
+            </points>
+        </pointsFactorFromAdaptDays>
+        <comps>
+            <li Class="StorytellerCompProperties_DeepDrillInfestation">
+                <baseMtbDaysPerDrill>20</baseMtbDaysPerDrill>
+                <allowedTargetTags>
+                    <li>Map_PlayerHome</li>
+                    <li>Map_TempIncident</li>
+                    <li>Map_Misc</li>
+                    <li>Map_RaidBeacon</li>
+                </allowedTargetTags>
+            </li>
+            <!-- Royalty begin -->
+            <li Class="StorytellerCompProperties_SingleOnceFixed">
+                <fireAfterDaysPassed>10</fireAfterDaysPassed>
+                <incident>GiveQuest_Intro_Deserter</incident>
+                <skipIfOnExtremeBiome>false</skipIfOnExtremeBiome>
+                <allowedTargetTags>
+                    <li>World</li>
+                </allowedTargetTags>
+            </li>
+            <li Class="StorytellerCompProperties_FactionInteraction">
+                <incident>CaravanArrivalTributeCollector</incident>
+                <minDaysPassed>20</minDaysPassed>
+                <baseIncidentsPerYear>2</baseIncidentsPerYear>
+                <minSpacingDays>30</minSpacingDays>
+                <minWealth>20000</minWealth>
+                <allowedTargetTags>
+                    <li>Map_PlayerHome</li>
+                </allowedTargetTags>
+            </li>
+            <!-- Ideology begin -->
+            <li Class="StorytellerCompProperties_WorkSite" MayRequire="Ludeon.RimWorld.Ideology">
+                <incident>GiveQuest_WorkSite</incident>
+            </li>
+            <li Class="StorytellerCompProperties_OnOffCycle" MayRequire="Ludeon.RimWorld.Ideology">
+                <incident>GiveQuest_Beggars</incident>
+                <onDays>60</onDays>
+                <offDays>0</offDays>
+                <minSpacingDays>20</minSpacingDays>
+                <numIncidentsRange>1</numIncidentsRange>
+                <allowedTargetTags>
+                    <li>Map_PlayerHome</li>
+                </allowedTargetTags>
+            </li>
+            <li Class="StorytellerCompProperties_RandomEpicQuest" MayRequire="Ludeon.RimWorld.Ideology">
+                <category>GiveQuest</category>
+                <allowedTargetTags>
+                    <li>World</li>
+                </allowedTargetTags>
+                <onDays>40</onDays>
+                <offDays>0</offDays>
+                <minDaysPassed>30</minDaysPassed>
+                <numIncidentsRange>1</numIncidentsRange>
+            </li>
+            <li Class="StorytellerCompProperties_OnOffCycle" MayRequire="Ludeon.RimWorld.Ideology">
+                <incident>GiveQuest_ReliquaryPilgrims</incident>
+                <onDays>40</onDays>
+                <offDays>0</offDays>
+                <minSpacingDays>20</minSpacingDays>
+                <numIncidentsRange>1</numIncidentsRange>
+                <allowedTargetTags>
+                    <li>Map_PlayerHome</li>
+                </allowedTargetTags>
+            </li>
+            <!-- Biotech begin -->
+            <li Class="StorytellerCompProperties_MechanitorComplexQuest" MayRequire="Ludeon.RimWorld.Biotech">
+                <incident>GiveQuest_AncientComplex_Mechanitor</incident>
+                <mtbDays>60</mtbDays>
+                <existingMechanitorOrMechlinkMTBFactor>4</existingMechanitorOrMechlinkMTBFactor>
+                <minSpacingDays>60</minSpacingDays>
+                <allowedTargetTags>
+                    <li>Map_PlayerHome</li>
+                </allowedTargetTags>
+                <blockedByQueuedOrActiveQuests>
+                    <li>OpportunitySite_AncientComplex_Mechanitor</li>
+                    <li>MechanitorShip</li>
+                </blockedByQueuedOrActiveQuests>
+            </li>
+            <li Class="StorytellerCompProperties_DissolutionTriggered" MayRequire="Ludeon.RimWorld.Biotech">
+                <incident>WastepackInfestation</incident>
+                <thing>Wastepack</thing>
+                <delayTicks>0</delayTicks>
+                <allowedTargetTags>
+                    <li>Map_PlayerHome</li>
+                    <li>Map_Misc</li>
+                </allowedTargetTags>
+            </li>
+            <li Class="StorytellerCompProperties_NoxiousHaze" MayRequire="Ludeon.RimWorld.Biotech">
+                <lastFireMinMTBThreshold>0.5</lastFireMinMTBThreshold>
+                <lastFireMaxMTBThreshold>2</lastFireMaxMTBThreshold>
+                <allowedTargetTags>
+                    <li>Map_PlayerHome</li>
+                    <li>Map_Misc</li>
+                </allowedTargetTags>
+            </li>
+            <!-- Anomaly begin -->
+            <li Class="StorytellerCompProperties_MonolithMigration" MayRequire="Ludeon.RimWorld.Anomaly">
+                <incident>MonolithMigration</incident>
+                <mtbDays>4</mtbDays>
+                <allowedTargetTags>
+                    <li>Map_PlayerHome</li>
+                </allowedTargetTags>
+            </li>
+        </comps>
+    </StorytellerDef>
+
+
+    <!-- ======== -->
+
+    <!-- TerrainDef -->
+    <TerrainDef Abstract="True" Name="WNA_FloorsBase">
+        <drawStyleCategory>Floors</drawStyleCategory>
+        <renderPrecedence>400</renderPrecedence>
+	    <layerable>true</layerable>
+        <takeFootprints>false</takeFootprints>
+        <natural>false</natural>
+        <holdSnowOrSand>false</holdSnowOrSand>
+        <isPaintable>true</isPaintable>
+        <extinguishesFire>true</extinguishesFire>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+        </affordances>
+        <generatedFilth/>
+        <statBases>
+            <CleaningTimeFactor>0.01</CleaningTimeFactor>
+            <WorkToBuild>20</WorkToBuild>
+            <Beauty>10</Beauty>
+            <Cleanliness>10</Cleanliness>
+            <ContainmentStrength MayRequire="ludeon.rimworld.anomaly">1000000</ContainmentStrength>
+        </statBases>
+        <pathCost>0</pathCost>
+        <fertility>0</fertility>
+        <filthAcceptanceMask>
+            <li>None</li>
+        </filthAcceptanceMask>
+        <designationCategory>WNA_MainCategory</designationCategory>
+        <researchPrerequisites>
+            <li>WNA_Terraform</li>
+        </researchPrerequisites>
+        <terrainAffordanceNeeded/>
+        <pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+        <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+        <pollutionColor>(1, 1, 1, 0.3)</pollutionColor>
+    </TerrainDef>
+
+
+    <!-- ======== -->
+
+    <!-- ThingDef -->
+    <ThingDef Abstract="True" Name="WNA_StructureBase">
+		<designationCategory>WNA_MainCategory</designationCategory>
+		<useHitPoints>false</useHitPoints>
+        <stealable>false</stealable>
+		<category>Building</category>
+        <thingClass>Building</thingClass>
+		<statBases>
+			<WorkToBuild>20</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Beauty>20</Beauty>
+			<Cleanliness>20</Cleanliness>
+            <MeditationFocusStrength>20</MeditationFocusStrength>
+		</statBases>
+        <drawerType>MapMeshOnly</drawerType>
+        <pathCost>0</pathCost>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+        <selectable>true</selectable>
+		<constructionSkillPrerequisite>0</constructionSkillPrerequisite>
+		<fillPercent>1</fillPercent>
+		<coversFloor>false</coversFloor>
+		<tickerType>Normal</tickerType>
+        <rotatable>false</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded/>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>	
+        <researchPrerequisites>
+            <li>WNA_Structure</li>
+        </researchPrerequisites>
+		<costList/>
+		<constructEffect/>
+        <repairEffect>Repair</repairEffect>
+        <filthLeaving/>
+        <damageMultipliers>
+            <li>
+                <damageDef>Stun</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>EMP</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+    </ThingDef>
+	<ThingDef Abstract="true" ParentName="WNA_StructureBase" Name="WNA_FurnitureBase">
+		<passability>Standable</passability>
+		<fillPercent>0.4</fillPercent>
+		<neverMultiSelect>false</neverMultiSelect>
+		<holdsRoof>false</holdsRoof>
+		<blockLight>false</blockLight>
+		<canOverlapZones>true</canOverlapZones>
+		<altitudeLayer>Building</altitudeLayer>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<graphicData>
+			<color>(255,255,255,200)</color>
+			<drawRotated>false</drawRotated>
+            <shadowData>
+                <volume>(0,0,0)</volume>
+            </shadowData>
+		</graphicData>
+        <statBases>
+            <Mass>0.1</Mass>
+            <Comfort>200</Comfort>
+			<Beauty>200</Beauty>
+        </statBases>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>WNA_Category_Buildings</li>
+        </thingCategories>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_Furniture</li>
+        </researchPrerequisites>
+	</ThingDef>
+    
+    <DesignatorDropdownGroupDef>
+        <defName>WNA_RiteSpotGroup</defName>
+    </DesignatorDropdownGroupDef>
+    <ThingDef Abstract="True" ParentName="BuildingBase" Name="WNA_RiteSpotBase">
+        <designatorDropdown>WNA_RiteSpotGroup</designatorDropdown>
+        <designationCategory>WNA_MainCategory</designationCategory>
+		<terrainAffordanceNeeded/>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <thingClass>Building_WorkTable</thingClass>
+        <tickerType>Normal</tickerType>
+        <statBases>
+            <Flammability>0</Flammability>
+            <Mass>0</Mass>
+            <WorkToBuild>0</WorkToBuild>
+        </statBases>
+        <graphicData>
+            <texPath>rite</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <useHitPoints>false</useHitPoints>
+        <size>(1,1)</size>
+        <passability>Standable</passability>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,0)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+            <ai_chillDestination>false</ai_chillDestination>
+            <artificialForMeditationPurposes>true</artificialForMeditationPurposes>
+            <buildingTags>
+                <li>Production</li>
+            </buildingTags>
+        </building>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+        </placeWorkers>
+    </ThingDef>
+    <ThingDef ParentName="BuildingBase" Name="WNA_MiscRiteSpellsBase" Abstract="true">
+        <designationCategory>WNA_MainCategory</designationCategory>
+        <designatorDropdown>WNA_RiteSpellGroup</designatorDropdown>
+		<terrainAffordanceNeeded/>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <useHitPoints>true</useHitPoints>
+        <tickerType>Normal</tickerType>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <passability>Standable</passability>
+        <size>(1,1)</size>
+        <soundImpactDefault/>
+    </ThingDef>
+    
+    <ThingDef Abstract="True" ParentName="WNA_StructureBase" Name="WNA_TurretBaseBase"> 
+        <thingClass>Building_TurretGun</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <drawHighlight>true</drawHighlight>
+        <drawHighlightOnlyForHostile>true</drawHighlightOnlyForHostile>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Flammability>0</Flammability>
+            <ShootingAccuracyTurret>2</ShootingAccuracyTurret>
+            <WorkToBuild>20</WorkToBuild>
+            <Mass>1</Mass>
+        </statBases>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.7</fillPercent>
+        <hasTooltip>true</hasTooltip>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <neverMultiSelect>false</neverMultiSelect>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <building>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <combatPower>1000</combatPower>
+            <turretTopDrawSize>1</turretTopDrawSize>
+            <turretTopOffset>(0,0)</turretTopOffset>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>WNA_Category_Turret</li>
+        </thingCategories>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_Security</li>
+        </researchPrerequisites>
+    </ThingDef>
+    <ThingDef Abstract="True" ParentName="BaseWeapon" Name="WNA_TurrentWeaponBase">
+        <destroyOnDrop>True</destroyOnDrop>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+        <tradeability>None</tradeability>
+        <useHitPoints>false</useHitPoints>
+        <weaponTags>
+            <li>TurretGun</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Ranged</li>
+        </weaponClasses>
+        <description>turret weapon.</description>
+        <graphicData>
+            <texPath>inv</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <AccuracyTouch>2</AccuracyTouch>
+            <AccuracyShort>2</AccuracyShort>
+            <AccuracyMedium>2</AccuracyMedium>
+            <AccuracyLong>2</AccuracyLong>
+            <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+    </ThingDef>
+    <ThingDef Abstract="true" ParentName="BaseBullet" Name="WNA_TurrentProjBase">
+        <graphicData>
+            <texPath>focus</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(255,255,255,155)</color>
+        </graphicData>
+        <projectile>
+            <speed>2000</speed>
+            <armorPenetrationBase>Infinity</armorPenetrationBase>
+        </projectile>
+    </ThingDef>
+    
+    <ThingDef Abstract="True" Name="WNA_ItemsBase">
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <drawerType>MapMeshOnly</drawerType>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <selectable>true</selectable>
+        <alwaysHaulable>true</alwaysHaulable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <rotatable>false</rotatable>
+        <pathCost>0</pathCost>
+        <allowedArchonexusCount>-1</allowedArchonexusCount>
+        <soundInteract>Silver_Drop</soundInteract>
+        <soundDrop>Silver_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+        <techLevel>Archotech</techLevel>
+        <stackLimit>5000</stackLimit>
+        <statBases>
+            <Beauty>0</Beauty>
+            <Mass>0.01</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <thingCategories>
+            <li>WNA_Category_Item</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef Abstract="True" ParentName="ResourceBase" Name="WNA_ShellBase">
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <tickerType>Normal</tickerType>
+        <stackLimit>5000</stackLimit>
+        <techLevel>Archotech</techLevel>
+        <useHitPoints>false</useHitPoints>
+        <statBases>
+            <Mass>0.1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Beauty>0</Beauty>
+        </statBases>
+        <thingCategories>
+            <li>WNA_Category_Shell</li>
+            <li>MortarShells</li>
+        </thingCategories>
+    </ThingDef>
+    
+    <ThingDef Abstract="True" Name="WNA_ApparelBase">
+        <thingClass>Apparel</thingClass>
+        <category>Item</category>
+        <drawerType>MapMeshOnly</drawerType>
+        <selectable>True</selectable>
+        <pathCost>0</pathCost>
+        <useHitPoints>false</useHitPoints>
+        <techLevel>Archotech</techLevel>
+        <graphicData>
+            <onGroundRandomRotateAngle>60</onGroundRandomRotateAngle>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <statBases>
+            <WorkToMake>6000</WorkToMake>
+            <Mass>0.5</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Beauty>0</Beauty>
+            <EquipDelay>1</EquipDelay>
+            <Insulation_Cold>2000</Insulation_Cold>
+            <Insulation_Heat>2000</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.3</PainShockThreshold>
+            <SocialImpact>0.3</SocialImpact>
+
+            <ToxicResistance>1</ToxicResistance>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <Flammability>-1</Flammability>
+
+            <ResearchSpeed MayRequire="Ludeon.RimWorld.Anomaly">0.3</ResearchSpeed>
+            <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.3</EntityStudyRate>
+
+            <StaggerDurationFactor MayRequire="Ludeon.RimWorld.Biotech">-1</StaggerDurationFactor>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1</SlaveSuppressionOffset>
+            <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">1</SuppressionPower>
+        </equippedStatOffsets>
+        <altitudeLayer>Item</altitudeLayer>
+        <alwaysHaulable>True</alwaysHaulable>
+        <tickerType>Normal</tickerType>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>false</smeltable>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+        </comps>
+        <thingCategories>
+            <li>WNA_Category_Apparel</li>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <generateCommonality>1</generateCommonality>
+        <apparel>
+            <tags>
+                <li>EVA</li>
+				<li>Spacer</li>
+            </tags>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+            <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <ignoredByNonViolent>true</ignoredByNonViolent>
+            <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+            <immuneToToxGasExposure>true</immuneToToxGasExposure>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <developmentalStageFilter>Baby,Child,Adult</developmentalStageFilter>
+        </apparel>
+    </ThingDef>
+    <ThingDef Abstract="True" ParentName="WNA_ApparelBase" Name="WNA_UtilityBase">
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <scoreOffset>4</scoreOffset>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <ignoredByNonViolent>false</ignoredByNonViolent>
+            <wearPerDay>0</wearPerDay>
+            <bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef Abstract="True" Name="WNA_WeaponBase">
+        <techLevel>Archotech</techLevel>
+        <graphicData>
+            <onGroundRandomRotateAngle>45</onGroundRandomRotateAngle>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <drawerType>MapMeshOnly</drawerType>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <altitudeLayer>Item</altitudeLayer>
+        <alwaysHaulable>true</alwaysHaulable>
+        <tickerType>Normal</tickerType>
+        <equipmentType>Primary</equipmentType>
+        <pathCost>0</pathCost>
+        <selectable>true</selectable>
+        <smeltable>false</smeltable>
+        <burnableByRecipe>false</burnableByRecipe>
+        <useHitPoints>false</useHitPoints>
+        <uiIconScale>1</uiIconScale>
+        <statBases>
+            <Flammability>0</Flammability>
+            <Mass>1</Mass>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Beauty>0</Beauty>
+            <SellPriceFactor>1</SellPriceFactor>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>            
+            <li>
+                <compClass>CompEquippable</compClass>
+            </li>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+        </comps>
+        <generateAllowChance>1</generateAllowChance>
+        <thingCategories>
+            <li>WNA_Category_Weapon</li>
+        </thingCategories>
+    </ThingDef>
+    <ThingDef Abstract="True" ParentName="WNA_WeaponBase" Name="WNA_WeaponBaseMelee">
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+    </ThingDef>
+    <ThingDef Abstract="True" ParentName="WNA_WeaponBase" Name="WNA_WeaponBaseRanged">
+        <weaponClasses>
+            <li>Ranged</li>
+        </weaponClasses>
+        <statBases>
+            <AccuracyTouch>1</AccuracyTouch>
+            <AccuracyShort>1</AccuracyShort>
+            <AccuracyMedium>1</AccuracyMedium>
+            <AccuracyLong>1</AccuracyLong>
+        </statBases>
+    </ThingDef>
+    <ThingDef Abstract="True" ParentName="WNA_WeaponBase" Name="WNA_WeaponBasePawn">
+        <destroyOnDrop>True</destroyOnDrop>
+        <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+        <tradeability>None</tradeability>
+        <graphicData>
+            <texPath>inv</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <label>placeholder</label>
+        <description>placeholder.</description>
+        <statBases>
+            <AccuracyTouch>10</AccuracyTouch>
+            <AccuracyShort>10</AccuracyShort>
+            <AccuracyMedium>10</AccuracyMedium>
+            <AccuracyLong>10</AccuracyLong>
+        </statBases>
+    </ThingDef>
+    
+    <ThingDef Abstract="true" Name="WNA_EtherealThingBase">
+        <label>placeholder</label>
+        <thingClass>ThingWithComps</thingClass>
+        <category>Ethereal</category>
+        <useHitPoints>false</useHitPoints>
+        <drawerType>None</drawerType>
+        <tickerType>Normal</tickerType>
+        <drawOffscreen>true</drawOffscreen>
+        <altitudeLayer>Skyfaller</altitudeLayer>
+        <clearBuildingArea>false</clearBuildingArea>
+        <filthLeaving/>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>inv</texPath>
+            <shaderType>MoteGlowDistorted</shaderType>
+        </graphicData>
+		<building>
+            <isEdifice>false</isEdifice>
+		</building>
+    </ThingDef>
+    
+    <ThingDef Abstract="True" Name="WNA_BooksBase">
+        <thingClass>Book</thingClass>
+        <category>Item</category>
+        <selectable>true</selectable>
+        <rotatable>True</rotatable>
+        <altitudeLayer>Item</altitudeLayer>
+        <tickerType>Rare</tickerType>
+        <alwaysHaulable>true</alwaysHaulable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>true</healthAffectsPrice>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <neverMultiSelect>false</neverMultiSelect>
+        <tradeNeverStack>true</tradeNeverStack>
+        <stackLimit>1</stackLimit>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+        </comps>
+        <thingCategories>
+            <li>Books</li>
+        </thingCategories>
+        <inspectorTabs>
+            <li>ITab_Book</li>
+        </inspectorTabs>
+        <statBases>
+            <MarketValue>50</MarketValue>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>0</Flammability>
+            <Mass>0.5</Mass>
+            <Beauty>2</Beauty>
+        </statBases>
+        <thingSetMakerTags>
+            <li>RewardStandardMidFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    
+	<ThingDef Abstract="true" ParentName="BasePawn" Name="WNA_AnimalRaceBase">
+		<thingCategories>
+		  	<li>Animals</li>
+		</thingCategories>
+		<uiIconScale>1.35</uiIconScale>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<Wildness>0</Wildness>
+            <MarketValue>500</MarketValue>
+            <Mass>0</Mass>
+			<MeleeDodgeChance>1</MeleeDodgeChance>
+            <CaravanRidingSpeedFactor>1000</CaravanRidingSpeedFactor>
+            <ArmorRating_Blunt>1000</ArmorRating_Blunt>
+            <ArmorRating_Sharp>1000</ArmorRating_Sharp>
+            <ArmorRating_Heat>1000</ArmorRating_Heat>
+            <ComfyTemperatureMin>-2000</ComfyTemperatureMin>
+            <ComfyTemperatureMax>2000</ComfyTemperatureMax>
+            <Flammability>0</Flammability>
+            <PawnTrapSpringChance>0</PawnTrapSpringChance>
+            <MoveSpeed>30</MoveSpeed>
+            <PainShockThreshold>1</PainShockThreshold>
+            <PsychicSensitivity>0</PsychicSensitivity>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>0</MeatAmount>
+            <ToxicResistance>1</ToxicResistance>
+            <FilthRate>0</FilthRate>
+            <CarryingCapacity>100000</CarryingCapacity>
+            <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+            <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">1</PilotingAbility>
+		</statBases>
+        <damageMultipliers>
+            <li>
+                <damageDef>WNA_HollowPoint</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>WNA_ScrapPoint</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>WNA_KinePoint</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>WNA_KineBomb</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>WNA_KineCut</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>WNA_DemoCut</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>WNA_ChimingBlaze</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>WNA_CastMelee</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>WNA_CastBomb</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>WNA_CastRange</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>WNA_Culling</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+		<tradeTags>
+			<li>WNATradeTag_Animal</li>
+			<li>AnimalInsectSpace</li>
+		</tradeTags>
+		<race>
+			<intelligence>Animal</intelligence>
+			<bloodDef>Filth_Ash</bloodDef>
+			<hasGenders>false</hasGenders>
+			<needsRest>false</needsRest>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+			<body>WNABody_Beast</body>
+            <renderTree>Animal</renderTree>
+			<wildBiomes/>
+			<makesFootprints>false</makesFootprints>
+			<lifeExpectancy>2500</lifeExpectancy>
+			<hediffGiverSets>
+			  	<li>WNA_HediffGiver_Beast</li>
+			</hediffGiverSets>	
+			<baseBodySize>10</baseBodySize>
+			<baseHungerRate>0</baseHungerRate>
+			<canReleaseToWild>false</canReleaseToWild>
+			<herdAnimal>true</herdAnimal>
+            <packAnimal>true</packAnimal>
+			<predator>true</predator>
+			<petness>1</petness>
+			<nuzzleMtbHours>24</nuzzleMtbHours>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+            <gestationPeriodDays>1</gestationPeriodDays>
+			<trainability>Advanced</trainability>
+			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
+			<nameOnTameChance>1</nameOnTameChance>
+			<baseHealthScale>2500</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>WNA_AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Rodent_Wounded</soundWounded>
+					<soundDeath>Pawn_Rodent_Death</soundDeath>
+					<soundCall>Pawn_Rodent_Call</soundCall>
+					<soundAngry>Pawn_Rodent_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<leatherDef/>
+			<soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+            <hasCorpse>false</hasCorpse>
+            <hasMeat>false</hasMeat>
+		</race>
+		<recipes>
+		  	<li>ExciseCarcinoma</li>
+		  	<li>AdministerMechSerumHealer</li>
+		  	<li>Euthanize</li>
+		  	<li>Anesthetize</li>
+		  	<li>CureScaria</li>
+		  	<li>Sterilize</li>
+		  	<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+		  	<li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
+		</recipes>
+        <comps>
+            <li Class="CompProperties_HoldingPlatformTarget" MayRequire="Ludeon.RimWorld.Anomaly">
+                <baseEscapeIntervalMtbDays>Infinity</baseEscapeIntervalMtbDays>
+                <getsColdContainmentBonus>false</getsColdContainmentBonus>
+            </li>
+            <li Class="CompProperties_Studiable" MayRequire="Ludeon.RimWorld.Anomaly">
+                <frequencyTicks>120000</frequencyTicks>
+                <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+                <requiresImprisonment>true</requiresImprisonment>
+            </li>
+        </comps>
+		<modExtensions>
+            <li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
+                <movementDef>WNA_Movement</movementDef>
+            </li>
+			<li Class="WNA.DMExtension.MassCapacity">
+				<massCapacity>1000000</massCapacity>
+			</li>
+        </modExtensions>
+	</ThingDef>
+
+
+    <!-- ======== -->
+
+    <!-- TraderKindDef -->
+    <TraderKindDef Abstract="true" Name="WNA_TraderKindBase">
+        <hideThingsNotWillingToTrade>true</hideThingsNotWillingToTrade>
+        <faction>WNA_FactionWNA</faction>
+        <stockGenerators>
+            <li Class="StockGenerator_BuyExpensiveSimple"/>
+            <li Class="StockGenerator_BuySlaves"/>
+            <li Class="StockGenerator_BuyTradeTag"><tag>Armor</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>Artifact</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>BasicClothing</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>Clothing</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>Drugs</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>ExoticMisc</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>HiTechArmor</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>MortarShell</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>PsychicApparel</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>WeaponMelee</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>2000000000~2100000000</countRange>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>Textiles</categoryDef>
+                <thingDefCountRange>2~3</thingDefCountRange>
+                <countRange>300000~500000</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>Leathers</categoryDef>
+                <thingDefCountRange>2~3</thingDefCountRange>
+                <countRange>300000~500000</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>Manufactured</categoryDef>
+                <excludedCategories>
+                    <li>MortarShells</li>
+                </excludedCategories>
+                <thingDefCountRange>3~5</thingDefCountRange>
+                <countRange>300000~500000</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>ResourcesRaw</categoryDef>
+                <thingDefCountRange>3~5</thingDefCountRange>
+                <countRange>300000~500000</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>FoodRaw</categoryDef>
+                <excludedCategories>
+                    <li>EggsFertilized</li>
+                </excludedCategories>
+                <thingDefCountRange>3~5</thingDefCountRange>
+                <countRange>300000~500000</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>BodyParts</categoryDef>
+                <thingDefCountRange>2~3</thingDefCountRange>
+                <countRange>300000~500000</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_ReinforcedBarrels">
+                <price>Cheap</price>
+                <countRange>200000~300000</countRange>
+            </li>
+            <li Class="StockGenerator_Slaves">
+                <respectPopulationIntent>true</respectPopulationIntent>
+                <countRange>3~5</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_Meal</thingDef>
+                <price>Cheap</price>
+                <countRange>300000~500000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_Medikit</thingDef>
+                <price>Cheap</price>
+                <countRange>300000~500000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>ComponentIndustrial</thingDef>
+                <price>Cheap</price>
+                <countRange>300000~500000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>ComponentSpacer</thingDef>
+                <price>Cheap</price>
+                <countRange>300000~500000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Chocolate</thingDef>
+                <price>Cheap</price>
+                <countRange>300000~500000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Beer</thingDef>
+                <price>Cheap</price>
+                <countRange>300000~500000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Luciferium</thingDef>
+                <price>Cheap</price>
+                <countRange>300000~500000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Dye</thingDef>
+                <price>Cheap</price>
+                <countRange>300000~500000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_BookEssay</thingDef>
+                <price>Cheap</price>
+                <countRange>3~5</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_BookPoetry</thingDef>
+                <price>Cheap</price>
+                <countRange>3~5</countRange>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>MortarShell</tradeTag>
+                <thingDefCountRange>2~3</thingDefCountRange>
+                <countRange>300000~500000</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>Artifact</tradeTag>
+                <thingDefCountRange>2~3</thingDefCountRange>
+                <countRange>30000~50000</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Category" MayRequire="sarg.rimbees">
+                <categoryDef>RB_Combs</categoryDef>
+                <thingDefCountRange>5~8</thingDefCountRange>
+                <countRange>300000~500000</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Category" MayRequire="sarg.rimbees">
+                <categoryDef>RB_BeesAndQueens</categoryDef>
+                <thingDefCountRange>2~3</thingDefCountRange>
+                <countRange>3000~5000</countRange>
+                <price>Cheap</price>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+</Defs>

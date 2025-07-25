@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="WNA_TurretBaseBase">
+        <defName>WNA_Mortar</defName>
+        <label>mortar ball</label>
+        <description>A slab with a rite on it, can automatically form a big mana ball that looks like a black hole. It's usually used as mortar.</description>
+        <pathCost>0</pathCost>
+        <graphicData>
+            <texPath>buildings/security/wna_mortar</texPath>
+            <drawSize>3.0</drawSize>
+            <drawOffset>(0,0,0.45)</drawOffset>
+        </graphicData>
+        <uiIconPath>buildings/security/wna_mortar</uiIconPath>
+        <size>(2,2)</size>
+        <statBases>
+            <WorkToBuild>500</WorkToBuild>
+            <Mass>10</Mass>
+        </statBases>
+        <costList/>
+        <inspectorTabs>
+            <li>ITab_Shells</li>
+        </inspectorTabs>
+        <building>
+            <turretGunDef>WNA_Mortar_Gun</turretGunDef>
+            <turretBurstWarmupTime>0</turretBurstWarmupTime>
+            <turretBurstCooldownTime>0</turretBurstCooldownTime>
+        </building>
+        <comps>
+            <li Class="CompProperties_Mannable">
+                <!----><manWorkType>Violent</manWorkType>
+            </li>
+        </comps>
+        <placeWorkers Inherit="false">
+            <li>PlaceWorker_TurretTop</li>
+        </placeWorkers>
+    </ThingDef>
+    <ThingDef ParentName="WNA_TurrentWeaponBase">
+        <defName>WNA_Mortar_Gun</defName>
+        <label>mortar ball</label>
+        <description>mortar ball.</description>
+        <graphicData>
+            <texPath>inv</texPath>
+        </graphicData>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+                <warmupTime>0</warmupTime>
+                <forcedMissRadius>0.1</forcedMissRadius>
+                <requireLineOfSight>false</requireLineOfSight>
+                <minRange>14.9</minRange>
+                <burstShotCount>1</burstShotCount>
+                <range>500</range>
+                <soundCast>Mortar_LaunchA</soundCast>
+                <muzzleFlashScale>16</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                    <canTargetBuildings>true</canTargetBuildings>
+                    <canTargetAnimals>true</canTargetAnimals>
+                    <canTargetMechs>true</canTargetMechs>
+                </targetParams>
+                <canGoWild>false</canGoWild>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_ChangeableProjectile"/>
+        </comps>
+        <building>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>MortarShells</li>
+                    </categories>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings>
+                <filter>
+                    <categories>
+                        <li>MortarShells</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_TurretBaseBase">
+        <defName>WNA_Turret_Pale</defName>
+        <label>pale ball</label>
+        <description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies.</description>
+		<graphicData>
+			<texPath>buildings/security/wna_turret_a</texPath>
+            <drawSize>1.2</drawSize>
+            <drawOffset>(0,0,0.1)</drawOffset>
+		</graphicData>
+		<uiIconPath>buildings/security/wna_turret_a</uiIconPath>
+        <size>(1,1)</size>
+        <costList/>
+        <building>
+            <turretGunDef>WNA_Turret_Pale_Gun</turretGunDef>
+            <turretBurstWarmupTime>0</turretBurstWarmupTime>
+            <turretBurstCooldownTime>0.4</turretBurstCooldownTime>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="WNA_TurrentWeaponBase">
+        <defName>WNA_Turret_Pale_Gun</defName>
+        <label>pale ball</label>
+        <verbs>
+            <li>
+                <defaultProjectile>WNA_Turret_Pale_Gun_Proj</defaultProjectile>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <warmupTime>0</warmupTime>
+                <range>54.9</range>
+                <burstShotCount>6</burstShotCount>
+                <soundCast>Shot_NeedleGun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>18</muzzleFlashScale>
+                <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+                <canGoWild>false</canGoWild>
+                <targetParams>
+                    <canTargetLocations>false</canTargetLocations>
+                    <canTargetBuildings>true</canTargetBuildings>
+                    <canTargetAnimals>true</canTargetAnimals>
+                    <canTargetMechs>true</canTargetMechs>
+                </targetParams>
+            </li>
+        </verbs>
+    </ThingDef>
+    <ThingDef ParentName="WNA_TurrentProjBase">
+        <defName>WNA_Turret_Pale_Gun_Proj</defName>
+        <label>pale ball</label>
+        <graphicData>
+            <drawSize>0.1</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>WNA_CastRange</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_TurretBaseBase">
+        <defName>WNA_Turret_Shatter</defName>
+        <label>shatter ball</label>
+        <description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. It can cause an explosion and usually powerful enough to blow a person apart.</description>
+		<graphicData>
+			<texPath>buildings/security/wna_turret_b</texPath>
+            <drawSize>2.8</drawSize>
+            <drawOffset>(0,0,0.4)</drawOffset>
+		</graphicData>
+		<uiIconPath>buildings/security/wna_turret_b</uiIconPath>
+        <size>(2,2)</size>
+        <costList/>
+        <building>
+            <turretGunDef>WNA_Turret_Shatter_Gun</turretGunDef>
+            <turretBurstWarmupTime>0</turretBurstWarmupTime>
+            <turretBurstCooldownTime>1.6</turretBurstCooldownTime>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="WNA_TurrentWeaponBase">
+        <defName>WNA_Turret_Shatter_Gun</defName>
+        <label>shatter ball</label>
+        <verbs>
+            <li>
+                <defaultProjectile>WNA_Turret_Shatter_Gun_Proj</defaultProjectile>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <warmupTime>0</warmupTime>
+                <range>127.9</range>
+                <minRange>14.9</minRange>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>Shot_NeedleGun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>18</muzzleFlashScale>
+                <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+                <canGoWild>false</canGoWild>
+                <forcedMissRadius>1</forcedMissRadius>
+                <targetParams>
+                    <canTargetLocations>false</canTargetLocations>
+                    <canTargetBuildings>true</canTargetBuildings>
+                    <canTargetAnimals>true</canTargetAnimals>
+                    <canTargetMechs>true</canTargetMechs>
+                </targetParams>
+            </li>
+        </verbs>
+    </ThingDef>
+    <ThingDef ParentName="WNA_TurrentProjBase">
+        <defName>WNA_Turret_Shatter_Gun_Proj</defName>
+        <label>shatter ball</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <drawSize>0.5</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>WNA_CastBomb</damageDef>
+            <damageAmountBase>550</damageAmountBase>
+            <explosionRadius>6.9</explosionRadius>
+            <soundExplode>Explosion_GiantBomb</soundExplode>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_TurretBaseBase">
+        <defName>WNA_Turret_Lancer</defName>
+        <label>lancer ball</label>
+        <description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. It can fire a mana lance to a long distance.</description>
+		<graphicData>
+			<texPath>buildings/security/wna_turret_c</texPath>
+            <drawSize>2.8</drawSize>
+            <drawOffset>(0,0,0.4)</drawOffset>
+		</graphicData>
+		<uiIconPath>buildings/security/wna_turret_c</uiIconPath>
+        <size>(2,2)</size>
+        <costList/>
+        <building>
+            <turretGunDef>WNA_Turret_Lancer_Gun</turretGunDef>
+            <turretBurstWarmupTime>0</turretBurstWarmupTime>
+            <turretBurstCooldownTime>0.8</turretBurstCooldownTime>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="WNA_TurrentWeaponBase">
+        <defName>WNA_Turret_Lancer_Gun</defName>
+        <label>lancer ball</label>
+        <verbs>
+            <li>
+                <defaultProjectile>WNA_Turret_Lancer_Gun_Proj</defaultProjectile>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <warmupTime>0</warmupTime>
+                <range>99.9</range>
+                <burstShotCount>2</burstShotCount>
+                <soundCast>Shot_NeedleGun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>18</muzzleFlashScale>
+                <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+                <canGoWild>false</canGoWild>
+                <targetParams>
+                    <canTargetLocations>false</canTargetLocations>
+                    <canTargetBuildings>true</canTargetBuildings>
+                    <canTargetAnimals>true</canTargetAnimals>
+                    <canTargetMechs>true</canTargetMechs>
+                </targetParams>
+            </li>
+        </verbs>
+    </ThingDef>
+    <ThingDef ParentName="WNA_TurrentProjBase">
+        <defName>WNA_Turret_Lancer_Gun_Proj</defName>
+        <label>lancer ball</label>
+        <graphicData>
+            <drawSize>(0.1,1)</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>WNA_CastRange</damageDef>
+            <damageAmountBase>50</damageAmountBase>
+        </projectile>
+    </ThingDef>
+
+</Defs>

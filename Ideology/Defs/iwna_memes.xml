@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <MemeDef>
+      <defName>Structure_WNA_Ideo</defName>
+      <label>whelingnorther</label>
+      <description>When the ancient whelingnorthans faced calamity and annihilation, it was their effort and sacrifice that led to the greatness and glory of Whelingnorther Empire; when the ancestors of us rise from the humble, it was their effort and sacrifices that led to we Whelingnorther Alliance. No great works can be done without great sacrifices, without great devotions we cannot achieve eternity, salvation and immortality. We descendants will follow the path led by those who came before us; we will understand our duty and accept our manifest destiny; we shall alter and determine the past, the present and the future. Every corner of existance shall bath in the glory of Whelignorther, they may not understand, but they shall obey and follow.</description>
+      <iconPath>factions/wna_alliance</iconPath>
+      <category>Structure</category>
+      <impact>0</impact>
+      <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
+      <deityCount>0</deityCount>
+      <consumableBuildings>
+         <li>SacrificialFlag</li>
+      </consumableBuildings>
+      <requireOne>
+         <li>
+            <li>Apostasy_Abhorrent</li>
+         </li>
+         <li>
+            <li>Bonding_Disapproved</li>
+         </li>
+         <li>
+            <li>Comfort_Ignored</li>
+         </li>
+         <li>
+            <li>Corpses_DontCare</li>
+         </li>
+         <li>
+            <li>Lovin_Prohibited</li>
+         </li>
+         <li>
+            <li>DrugUse_MedicalOrSocial</li>
+         </li>
+         <li>
+            <li>IdeoDiversity_Standard</li>
+         </li>
+         <li>
+            <li>RoughLiving_Welcomed</li>
+         </li>
+         <li>
+            <li>Skullspike_Desired</li>
+         </li>
+         <li>
+            <li>Slavery_Acceptable</li>
+         </li>
+         <li>
+            <li>Cannibalism_Acceptable</li>
+         </li>
+         <li>
+            <li>Indoors_Acceptable</li>
+         </li>
+         <li>
+            <li>Temperature_Tough</li>
+         </li>
+         <li>
+            <li>OrganUse_Acceptable</li>
+         </li>
+         <li>
+            <li>Execution_DontCare</li>
+         </li>
+         <li>
+            <li>Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+         </li>
+         <li>
+            <li>Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+         </li>
+         <li>
+            <li>MarriageName_KeepNames</li>
+         </li>
+         <li MayRequire="mersid.wce2updated.core">
+            <li>WCE2_Torture_AlwaysRespected</li>
+         </li>
+         <li MayRequire="erdelf.humanoidalienraces">
+            <li>HAR_EatingAliens_Acceptable</li>
+         </li>
+         <li MayRequire="erdelf.humanoidalienraces">
+            <li>HAR_AlienRaces_Standard</li>
+         </li>
+         <li MayRequire="erdelf.humanoidalienraces">
+            <li>HAR_AlienSlavery_Acceptable</li>
+         </li>
+      </requireOne>
+      <generalRules/>
+      <descriptionMaker>
+         <patterns>
+            <li>
+               <def>WNA_Ideo_Structure_Pattern</def>
+            </li>
+         </patterns>
+         <constants>
+            <li>
+               <key>Structure_WNA_Ideo</key>
+               <value>true</value>
+            </li>
+         </constants>
+      </descriptionMaker>
+      <worshipRoomLabel>altar</worshipRoomLabel>
+      <symbolPacks>
+         <li>
+            <ideoName>Whelingnorther path</ideoName>
+            <theme>whelingnorther</theme>
+            <adjective>whelingnorthan</adjective>
+            <member>follower</member>
+         </li>
+      </symbolPacks>
+   </MemeDef>
+
+   <MemeDef>
+      <defName>Meme_WNA_Ideo</defName>
+      <label>whelingnorther path</label>
+      <description>We devote ourselves to the glorious great career of Whelingnorther.</description>
+      <iconPath>factions/wna_alliance</iconPath>
+      <groupDef>Misc</groupDef>
+      <impact>1</impact>
+      <preventApparelRequirements>true</preventApparelRequirements>
+      <requireOne>
+         <li>
+            <li>WNA_P_Proselyte</li>
+         </li>
+      </requireOne>
+   </MemeDef>
+
+   <IdeoStoryPatternDef>
+      <defName>WNA_Ideo_Structure_Pattern</defName>
+      <segments>
+         <li>basepattern</li>
+      </segments>
+      <rules>
+         <include>
+            <li>IdeoDescriptionGlobal</li>
+         </include>
+         <rulesStrings>
+            <li>basepattern->When the ancient whelingnorthans faced calamity and annihilation, it was their effort and sacrifice that led to the greatness and glory of Whelingnorther Empire; when the ancestors of us rise from the humble, it was their effort and sacrifices that led to we Whelingnorther Alliance. No great works can be done without great sacrifices, without great devotions we cannot achieve eternity, salvation and immortality. We descendants will follow the path led by those who came before us; we will understand our duty and accept our manifest destiny; we shall alter and determine the past, the present and the future. Every corner of existance shall bath in the glory of Whelignorther, they may not understand, but they shall obey and follow.</li>
+         </rulesStrings>
+      </rules>
+   </IdeoStoryPatternDef>
+
+</Defs>

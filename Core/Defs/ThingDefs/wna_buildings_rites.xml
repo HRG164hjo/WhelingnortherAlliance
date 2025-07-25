@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="WNA_RiteSpotBase">
+        <defName>WNA_RiteSpot_Basic</defName>
+        <label>ritespot</label>
+        <description>some mysterious influence is accumulating. this place must be a perfect place for doing something, for example, applying some whelingnorther techniques.</description>
+        <graphicData>
+            <color>(200,200,200)</color>
+        </graphicData>
+        <researchPrerequisites>
+            <li>WNA_BasicRite</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_RiteSpotBase">
+        <defName>WNA_RiteSpot_Cutter</defName>
+        <label>ritespot</label>
+        <description>there seems to be some mysterious ripples. this place should be a good place to make something split or break down.</description>
+        <graphicData>
+            <color>(127,27,27)</color>
+        </graphicData>
+        <statBases>
+            <WorkTableEfficiencyFactor>1.5</WorkTableEfficiencyFactor>
+        </statBases>
+        <researchPrerequisites>
+            <li>WNA_BasicRite</li>
+        </researchPrerequisites>
+        <recipes>
+            <li>WNA_RiteBeastDivision</li>
+            <li>WNA_RiteRebelStriving</li>
+            <li>WNA_RiteAbleting</li>
+            <li>Make_StoneBlocksAny</li>
+            <li MayRequire="sarg.rimbees">WNA_RecipeAlphaBees</li>
+        </recipes>
+    </ThingDef>
+
+</Defs>

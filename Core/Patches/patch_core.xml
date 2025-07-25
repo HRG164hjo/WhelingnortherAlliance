@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/HediffGiverSetDef[defName="Human"]/hediffGivers</xpath>
+        <value>
+            <li Class="WNA.WNAMiscs.HedifferRemover">
+                <tickInterval>250</tickInterval>
+            </li>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationConditional">
+	    <xpath>Defs/FactionDef[defName!="WNA_FactionWNA"]/disallowedMemes</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/FactionDef[defName!="WNA_FactionWNA"]/disallowedMemes</xpath>
+            <value>
+                <li MayRequire="Ludeon.RimWorld.Ideology">Meme_WNA_Ideo</li>
+            </value>
+        </match>
+    </Operation>
+    
+    <Operation Class="PatchOperationConditional">
+	    <xpath>Defs/ThingDef/intricate</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef/intricate</xpath>
+        </match>
+    </Operation>
+    
+    <Operation Class="PatchOperationConditional">
+	    <xpath>Defs/ThingDef/tradeNeverStack</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef/tradeNeverStack</xpath>
+        </match>
+    </Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/InventoryStockGroupDef[defName="Medicine"]/thingDefs</xpath>
+		<value>
+			<li>WNA_Medikit</li>
+		</value>
+	</Operation>
+    
+    <Operation Class="PatchOperationFindMod">
+	    <mods>
+            <li>Vanilla Fishing Expanded</li>
+	    </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/VCE_Fishing.FishableTerrainDef[defName="VCEF_VanillaFishableTerrainsOcean"]/allowedTerrains</xpath>
+					<value>
+						<li>WNA_FocusSpring</li>
+					</value>
+				</li>
+            </operations>
+	    </match>
+    </Operation>
+    
+</Patch>

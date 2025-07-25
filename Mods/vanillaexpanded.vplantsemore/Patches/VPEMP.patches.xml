@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- not working
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/VanillaPlantsExpandedMorePlants.SandyGrowZoneTerrainsDef[defName="VCE_SandyGrowZoneTerrains"]/allowedTerrains</xpath>
+        <value>
+            <li>WNA_FocusSand</li>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/VanillaPlantsExpandedMorePlants.AquaticGrowZoneTerrainsDef[defName="VCE_AquaticGrowZoneTerrains"]/allowedTerrains</xpath>
+        <value>
+            <li>WNA_FocusSpring</li>
+        </value>
+    </Operation>-->
+</Defs>

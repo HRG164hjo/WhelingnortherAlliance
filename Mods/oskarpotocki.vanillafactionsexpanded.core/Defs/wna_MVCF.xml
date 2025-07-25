@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <MVCF.ModDef>
+    	<defName>WNA_MVCFDef</defName>
+    	<label>wna mvcf</label>
+    	<description>multiverb.</description>
+    	<ActivateFeatures>
+			<li>ApparelVerbs</li>
+			<li>Drawing</li>
+			<li>ExtraEquipmentVerbs</li>
+			<li>HediffVerbs</li>
+			<li>IndependentFire</li>
+			<li>IntegratedToggle</li>
+			<li>InventoryVerbs</li>
+			<li>IntegratedToggle</li>
+			<li>RangedAnimals</li>
+			<li>Reloading</li>
+			<li>VerbComps</li>
+    	</ActivateFeatures>
+    </MVCF.ModDef>
+
+</Defs>

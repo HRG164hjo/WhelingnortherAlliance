@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+    <VanillaPlantsExpandedMorePlants.SandyGrowZoneTerrainsDef>
+        <defName>VCE_SandyGrowZoneTerrains</defName>
+        <allowedTerrains>
+            <li>Sand</li>
+            <li>AB_FineForsakenSand</li>
+            <li>AB_FineSand</li>
+            <li>GU_AlienSandFine</li>
+            <li>AB_GrassySand</li>
+            <li>WNA_FocusSand</li>
+        </allowedTerrains>
+    </VanillaPlantsExpandedMorePlants.SandyGrowZoneTerrainsDef>
+  
+    <VanillaPlantsExpandedMorePlants.AquaticGrowZoneTerrainsDef>
+        <defName>VCE_AquaticGrowZoneTerrains</defName>
+        <allowedTerrains>
+            <li>WaterMovingChestDeep</li>
+            <li>WaterShallow</li>
+            <li>WaterMovingShallow</li>
+            <li>Marsh</li>
+            <li>AB_LiquidSlime</li>
+            <li>GU_RedWaterShallow</li>
+            <li>WNA_FocusSpring</li>
+        </allowedTerrains>
+    </VanillaPlantsExpandedMorePlants.AquaticGrowZoneTerrainsDef>
+</Defs>

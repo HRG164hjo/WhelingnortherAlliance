@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WNA_BaseWall" or defName="WNA_BaseGrid" or defName="WNA_BaseDoor" or defName="WNA_BaseODoor" or defName="WNA_StuffWall" or defName="WNA_StuffDoor" or defName="WNA_StuffODoor"]/comps</xpath>
+        <value>
+            <li Class="PipeSystem.CompProperties_Resource" MayRequire="vanillaexpanded.vchemfuele">
+                <pipeNet>VCHE_ChemfuelNet</pipeNet>
+              </li>
+            <li Class="PipeSystem.CompProperties_Resource" MayRequire="vanillaexpanded.vchemfuele">
+                <pipeNet>VCHE_DeepchemNet</pipeNet>
+            </li>
+
+            <li Class="PipeSystem.CompProperties_Resource" MayRequire="vanillaexpanded.helixiengas">
+                <pipeNet>VHGE_HelixienNet</pipeNet>
+            </li>
+
+            <li Class="PipeSystem.CompProperties_Resource" MayRequire="vanillaexpanded.temperature">
+                <pipeNet>VTE_EfficiencyNet</pipeNet>
+            </li>
+            
+            <li Class="PipeSystem.CompProperties_Resource" MayRequire="vanillaexpanded.vnutriente">
+                <pipeNet>VNPE_NutrientPasteNet</pipeNet>
+            </li>
+            
+            <li Class="PipeSystem.CompProperties_Resource" MayRequire="vanillaracesexpanded.android">
+                <pipeNet>VREA_NeutroamineNet</pipeNet>
+            </li>
+              
+            <li Class="PipeSystem.CompProperties_Resource" MayRequire="vanillaracesexpanded.sanguophage">
+                <pipeNet>VRE_HemogenNet</pipeNet>
+            </li>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WNA_BasicCrate"]/comps</xpath>
+        <value>
+            <li Class="PipeSystem.CompProperties_ResourceStorage" MayRequire="vanillaexpanded.vchemfuele">
+                <pipeNet>VCHE_ChemfuelNet</pipeNet>
+                <storageCapacity>4000000</storageCapacity>
+                <drawStorageBar>false</drawStorageBar>
+                <margin>0.05</margin>
+                <contentRequirePower>false</contentRequirePower>
+            </li>
+            <li Class="PipeSystem.CompProperties_ResourceStorage" MayRequire="vanillaexpanded.vchemfuele">
+                <pipeNet>VCHE_DeepchemNet</pipeNet>
+                <storageCapacity>4000000</storageCapacity>
+                <drawStorageBar>false</drawStorageBar>
+                <margin>0.05</margin>
+                <contentRequirePower>false</contentRequirePower>
+            </li>
+
+            <li Class="PipeSystem.CompProperties_ResourceStorage" MayRequire="vanillaexpanded.helixiengas">
+                <pipeNet>VHGE_HelixienNet</pipeNet>
+                <storageCapacity>4000000</storageCapacity>
+                <drawStorageBar>false</drawStorageBar>
+                <margin>0.05</margin>
+                <contentRequirePower>false</contentRequirePower>
+            </li>
+            
+            <li Class="PipeSystem.CompProperties_ResourceStorage" MayRequire="vanillaexpanded.vnutriente">
+                <pipeNet>VNPE_NutrientPasteNet</pipeNet>
+                <storageCapacity>4000000</storageCapacity>
+                <drawStorageBar>false</drawStorageBar>
+                <margin>0.025</margin>
+                <contentRequirePower>false</contentRequirePower>
+            </li>
+
+            <li Class="PipeSystem.CompProperties_ResourceStorage" MayRequire="vanillaracesexpanded.android">
+                <pipeNet>VREA_NeutroamineNet</pipeNet>
+                <storageCapacity>4000000</storageCapacity>
+                <drawStorageBar>false</drawStorageBar>
+                <margin>0.025</margin>
+                <contentRequirePower>false</contentRequirePower>
+            </li>
+            
+            <li Class="PipeSystem.CompProperties_ResourceStorage" MayRequire="vanillaracesexpanded.sanguophage">
+                <pipeNet>VRE_HemogenNet</pipeNet>
+                <storageCapacity>4000000</storageCapacity>
+                <drawStorageBar>false</drawStorageBar>
+                <margin>0.025</margin>
+                <contentRequirePower>false</contentRequirePower>
+            </li>
+        </value>
+    </Operation>
+</Patch>

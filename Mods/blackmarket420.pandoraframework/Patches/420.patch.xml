@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WNA_Weapon_RiteSword"]/comps</xpath>
+        <value>
+            <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+                <weaponsToSwitch>
+		    		<li>
+		    			<label>switch form</label>
+		    			<description>change to rite lance</description>
+		    			<texPath>rite2</texPath>
+		    			<weapon>WNA_Weapon_RiteLance</weapon>
+		    			<sound>Interact_SMG</sound>
+		    		</li>
+                </weaponsToSwitch>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WNA_Weapon_RiteLance"]/comps</xpath>
+        <value>
+            <li Class="WeaponSwitch.CompProperties_SwitchWeapon">
+                <weaponsToSwitch>
+		    		<li>
+		    			<label>switch form</label>
+		    			<description>change to rite sword</description>
+		    			<texPath>rite2</texPath>
+		    			<weapon>WNA_Weapon_RiteSword</weapon>
+		    			<sound>Interact_SMG</sound>
+		    		</li>
+                </weaponsToSwitch>
+            </li>
+        </value>
+    </Operation>
+	
+</Patch>

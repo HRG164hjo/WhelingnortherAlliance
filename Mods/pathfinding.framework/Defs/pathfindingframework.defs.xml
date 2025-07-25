@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TerrainDef ParentName="WNA_FloorsBase">
+        <defName>WNA_Voidseal</defName>
+        <label>void seal</label>
+        <description>Dark red runes drawn on black background, looks a little unsetting. Such seal can block pawns from passing.</description>
+        <texturePath>buildings/terrain/wna_seal</texturePath>
+		<natural>true</natural><!--<layerable>false</layerable>-->
+        <constructEffect>ConstructWood</constructEffect>
+        <fertility>0</fertility>
+        <edgeType>Hard</edgeType>
+        <passability>Impassable</passability>
+        <tags>
+            <li>Water</li>
+            <li>WNA_TerrainTag_Seal</li>
+        </tags>
+    </TerrainDef>
+</Defs>

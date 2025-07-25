@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_ShellChiming.label>赤明爆弹</WNA_ShellChiming.label>
+  <WNA_ShellChiming.description>一个玻璃钢罐子，装有一块因内部结构被外源能量扰乱而失稳的赤明铁碎块。当引爆时，这枚炮弹会释放出巨大的力量，覆盖一大片区域。值得一提的是这种方式对赤明铁内部能量的利用率基本为零，可谓极其浪费而且效率低下。</WNA_ShellChiming.description>
+
+  <WNA_ShellChiming_Proj.label>赤明爆弹</WNA_ShellChiming_Proj.label>
+
+
+</LanguageData>

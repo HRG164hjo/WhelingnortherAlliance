@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="WNA_FurnitureBase">
+        <defName>WNA_UraniumFuelTank</defName>
+        <label>uranium fuel tank</label>
+        <description>TODO</description>
+        <minTechLevelToBuild>Archotech</minTechLevelToBuild>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/LargeChemfuelTank/LargeChemfuelTank</texPath>
+            <drawSize>(2,2)</drawSize>
+            <color>(74,74,74)</color>
+        </graphicData>
+        <size>(2,2)</size>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>50</Mass>
+            <Flammability>0</Flammability>
+            <Beauty>-10</Beauty>
+            <WorkToBuild>4000</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>100</Steel>
+            <Plasteel>40</Plasteel>
+        </costList>
+        <researchPrerequisites>
+            <li>StandardGravtech</li>
+        </researchPrerequisites>
+        <tickerType>Normal</tickerType>
+        <placeWorkers>
+            <li>PlaceWorker_OnSubstructure</li>
+        </placeWorkers>
+        <comps>
+            <li Class="CompProperties_GravshipFacility">
+                <providesFuel>true</providesFuel>
+                <componentTypeDef>FuelStorage</componentTypeDef>
+                <requiresLOS>false</requiresLOS>
+                <showMaxSimultaneous>false</showMaxSimultaneous>
+                <maxSimultaneous>9999</maxSimultaneous>
+                <maxDistance>500</maxDistance>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelCapacity>7500</fuelCapacity>
+                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+                <initialConfigurableTargetFuelLevel>7500</initialConfigurableTargetFuelLevel>
+                <fuelMultiplier>100</fuelMultiplier>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </fuelFilter>
+                <fuelLabel>Uranium</fuelLabel>
+                <fuelGizmoLabel>Uranium</fuelGizmoLabel>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <autoRefuelPercent>1</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                <canEjectFuel>true</canEjectFuel>
+                <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+            </li>
+        </comps>    
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+        <defName>WNA_ReinforcedThruster</defName>
+        <label>reinforced thruster</label>
+        <description>TODO</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/LateralThruster/LateralThruster</texPath>
+            <drawSize>(2,2)</drawSize>
+            <color>(74,74,74)</color>
+        </graphicData>
+        <size>(2,2)</size>
+        <statBases>
+            <Mass>50</Mass>
+            <Flammability>0</Flammability>
+            <Beauty>-10</Beauty>
+            <WorkToBuild>4000</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>100</Steel>
+            <Plasteel>40</Plasteel>
+        </costList>
+        <researchPrerequisites>
+            <li>StandardGravtech</li>
+        </researchPrerequisites>
+        <rotatable>true</rotatable>
+        <tickerType>Rare</tickerType>
+        <passability>Standable</passability>
+        <blockWind>true</blockWind>
+        <fillPercent>1</fillPercent>
+        <holdsRoof>true</holdsRoof>
+        <canOverlapZones>false</canOverlapZones>
+        <blockLight>true</blockLight>
+        <building>
+            <isAirtight>true</isAirtight>
+            <isInert>true</isInert>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_GravshipThruster</li>
+            <li>PlaceWorker_OnSubstructure</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <drawPlaceWorkersWhileInstallBlueprintSelected>true</drawPlaceWorkersWhileInstallBlueprintSelected>
+        <comps>
+            <li Class="CompProperties_GravshipThruster">
+                <statOffsets>
+                    <GravshipRange>75</GravshipRange>
+                </statOffsets>
+                <componentTypeDef>Thruster</componentTypeDef>
+                <exclusionAreaSize>(0, 0, 0)</exclusionAreaSize>
+                <exclusionAreaOffset>(0, 0, 0)</exclusionAreaOffset>
+                <directionInfluence>30</directionInfluence>
+                <flameSize>4.0</flameSize>
+                <flameOffsetsPerDirection>
+                    <li>(0, 0, 1.0)</li>
+                    <li>(0, 0, 0.5)</li>
+                    <li>(0, 0, 0.5)</li>
+                    <li>(0, 0, 0.5)</li>
+                </flameOffsetsPerDirection>
+                <flameShaderType>MoteGlow</flameShaderType>
+                <flameShaderParameters>
+                    <_MainTex>/Things/Mote/LargeThruster_Burn</_MainTex>
+                </flameShaderParameters>
+                <requiresLOS>false</requiresLOS>
+                <maxSimultaneous>8</maxSimultaneous>
+                <maxDistance>500</maxDistance>
+                <exhaustSettings>
+                    <exhaustFleckDef>GravshipThrusterExhaust</exhaustFleckDef>
+                    <emissionsPerSecond>40.0</emissionsPerSecond>
+                    <spawnRadiusRange>0.0~0.5</spawnRadiusRange>
+                    <velocity>(0.0,0.0,-20.0)</velocity>
+                    <velocityRotationRange>-10.0~10.0</velocityRotationRange>
+                    <velocityMultiplierRange>0.8~1.2</velocityMultiplierRange>
+                    <rotationOverTimeRange>-180.0~180.0</rotationOverTimeRange>
+                    <scaleRange>3.0~5.0</scaleRange>
+                </exhaustSettings>
+            </li>
+            <li Class="CompProperties_Breakdownable" />
+        </comps>    
+    </ThingDef>
+</Defs>

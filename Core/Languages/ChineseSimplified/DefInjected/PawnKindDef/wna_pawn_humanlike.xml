@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Human pawns -->
+
+  <WNA_Technician.label>技师</WNA_Technician.label>
+  <WNA_Technician.labelPlural>技师</WNA_Technician.labelPlural>
+  <WNA_Technician.labelMale>技师</WNA_Technician.labelMale>
+  <WNA_Technician.labelMalePlural>技师</WNA_Technician.labelMalePlural>
+  <WNA_Technician.labelFemale>技师</WNA_Technician.labelFemale>
+  <WNA_Technician.labelFemalePlural>技师</WNA_Technician.labelFemalePlural>
+
+  <WNA_Rebel.label>叛军</WNA_Rebel.label>
+  <WNA_Rebel.labelPlural>叛军</WNA_Rebel.labelPlural>
+  <WNA_Rebel.labelMale>叛军</WNA_Rebel.labelMale>
+  <WNA_Rebel.labelMalePlural>叛军</WNA_Rebel.labelMalePlural>
+  <WNA_Rebel.labelFemale>叛军</WNA_Rebel.labelFemale>
+  <WNA_Rebel.labelFemalePlural>叛军</WNA_Rebel.labelFemalePlural>
+
+  <WNA_Saboteur.label>破坏者</WNA_Saboteur.label>
+  <WNA_Saboteur.labelPlural>破坏者</WNA_Saboteur.labelPlural>
+  <WNA_Saboteur.labelMale>破坏者</WNA_Saboteur.labelMale>
+  <WNA_Saboteur.labelMalePlural>破坏者</WNA_Saboteur.labelMalePlural>
+  <WNA_Saboteur.labelFemale>破坏者</WNA_Saboteur.labelFemale>
+  <WNA_Saboteur.labelFemalePlural>破坏者</WNA_Saboteur.labelFemalePlural>
+
+  <WNA_Vanguard.label>先驱重装兵</WNA_Vanguard.label>
+  <WNA_Vanguard.labelPlural>先驱重装兵</WNA_Vanguard.labelPlural>
+  <WNA_Vanguard.labelMale>先驱重装兵</WNA_Vanguard.labelMale>
+  <WNA_Vanguard.labelMalePlural>先驱重装兵</WNA_Vanguard.labelMalePlural>
+  <WNA_Vanguard.labelFemale>先驱重装兵</WNA_Vanguard.labelFemale>
+  <WNA_Vanguard.labelFemalePlural>先驱重装兵</WNA_Vanguard.labelFemalePlural>
+
+  <WNA_DarknightComm.label>暗夜特种兵</WNA_DarknightComm.label>
+  <WNA_DarknightComm.labelPlural>暗夜特种兵</WNA_DarknightComm.labelPlural>
+  <WNA_DarknightComm.labelMale>暗夜特种兵</WNA_DarknightComm.labelMale>
+  <WNA_DarknightComm.labelMalePlural>暗夜特种兵</WNA_DarknightComm.labelMalePlural>
+  <WNA_DarknightComm.labelFemale>暗夜特种兵</WNA_DarknightComm.labelFemale>
+  <WNA_DarknightComm.labelFemalePlural>暗夜特种兵</WNA_DarknightComm.labelFemalePlural>
+
+  <WNA_IronGuard.label>钢铁守卫</WNA_IronGuard.label>
+  <WNA_IronGuard.labelPlural>钢铁守卫</WNA_IronGuard.labelPlural>
+  <WNA_IronGuard.labelMale>钢铁守卫</WNA_IronGuard.labelMale>
+  <WNA_IronGuard.labelMalePlural>钢铁守卫</WNA_IronGuard.labelMalePlural>
+  <WNA_IronGuard.labelFemale>钢铁守卫</WNA_IronGuard.labelFemale>
+  <WNA_IronGuard.labelFemalePlural>钢铁守卫</WNA_IronGuard.labelFemalePlural>
+
+
+  <!-- Whelingnorthan Pawns -->
+
+  <WNA_Initiate.label>新晋者</WNA_Initiate.label>
+  <WNA_Initiate.labelPlural>新晋者</WNA_Initiate.labelPlural>
+  <WNA_Initiate.labelMale>新晋者</WNA_Initiate.labelMale>
+  <WNA_Initiate.labelMalePlural>新晋者</WNA_Initiate.labelMalePlural>
+  <WNA_Initiate.labelFemale>新晋者</WNA_Initiate.labelFemale>
+  <WNA_Initiate.labelFemalePlural>新晋者</WNA_Initiate.labelFemalePlural>
+
+  <WNA_Saint.label>圣徒</WNA_Saint.label>
+  <WNA_Saint.labelPlural>圣徒</WNA_Saint.labelPlural>
+  <WNA_Saint.labelMale>圣徒</WNA_Saint.labelMale>
+  <WNA_Saint.labelMalePlural>圣徒</WNA_Saint.labelMalePlural>
+  <WNA_Saint.labelFemale>圣徒</WNA_Saint.labelFemale>
+  <WNA_Saint.labelFemalePlural>圣徒</WNA_Saint.labelFemalePlural>
+
+
+</LanguageData>

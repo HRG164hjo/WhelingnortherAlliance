@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/TraderKindDef[defName="WNA_Trader_Settlement" or defName="WNA_Trader_Orbital"]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_BuyTradeTag"><tag>GravshipUpgrade</tag></li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Gravcore</thingDef>
+                <price>Cheap</price>
+                <countRange>50000~80000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>GravlitePanel</thingDef>
+                <price>Cheap</price>
+                <countRange>100000~120000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>SentienceCatalyst</thingDef>
+                <price>Cheap</price>
+                <countRange>100000~120000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>ShuttleEngine</thingDef>
+                <price>Cheap</price>
+                <countRange>50000~80000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>BlocksVacstone</thingDef>
+                <price>Cheap</price>
+                <countRange>230000~290000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_SeedArchean</thingDef>
+                <price>Cheap</price>
+                <countRange>10000~15000</countRange>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>GravshipUpgrade</tradeTag>
+                <thingDefCountRange>1~2</thingDefCountRange>
+                <countRange>10000~20000</countRange>
+                <price>Cheap</price>
+            </li>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[defName="GravEngine"]/statBases/SubstructureSupport</xpath>
+        <value>
+            <SubstructureSupport>5000</SubstructureSupport>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationRemove">
+	    <xpath>Defs/ThingDef[defName="Gravcore"]/tradeability</xpath>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[defName="GravFieldExtender"]/comps/li[@Class="CompProperties_GravshipFacility"]</xpath>
+        <value>
+            <li Class="CompProperties_GravshipFacility">
+                <statOffsets>
+                    <SubstructureSupport>2500</SubstructureSupport>
+                </statOffsets>
+                <requiresLOS>false</requiresLOS>
+                <maxSimultaneous>12</maxSimultaneous>
+                <maxDistance>18.9</maxDistance>
+            </li>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="GravEngine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+        <value>
+            <li>WNA_UraniumFuelTank</li>
+            <li>WNA_ReinforcedThruster</li>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/BiomeDef/maxFishPopulation</xpath>
+        <value>
+            <maxFishPopulation>100000000</maxFishPopulation>
+        </value>
+    </Operation>
+</Patch>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_SeedAnima.label>仙树种子</WNA_SeedAnima.label>
+  <WNA_SeedAnima.description>卵形的柔软胶质球，被安放在一个稳定盘上。当种在合适的地方时，这团生物质就会被激活并长成一棵仙树。</WNA_SeedAnima.description>
+
+  <WNA_SeedGauranlen.label>母树种子</WNA_SeedGauranlen.label>
+  <WNA_SeedGauranlen.description>卵形的柔软胶质球，被安放在一个稳定盘上。当种在合适的地方时，这团生物质就会被激活并长成一棵母树。</WNA_SeedGauranlen.description>
+
+  <WNA_SeedPolux.label>粹树种子</WNA_SeedPolux.label>
+  <WNA_SeedPolux.description>卵形的柔软胶质球，被安放在一个稳定盘上。当种在合适的地方时，这团生物质就会被激活并长成一棵粹树。</WNA_SeedPolux.description>
+
+  <WNA_SeedHarbinger.label>先驱树种子</WNA_SeedHarbinger.label>
+  <WNA_SeedHarbinger.description>卵形的柔软胶质球，被安放在一个稳定盘上。当种在合适的地方时，这团生物质就会被激活并长成一棵先驱树。</WNA_SeedHarbinger.description>
+
+
+</LanguageData>

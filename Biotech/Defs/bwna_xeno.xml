@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <XenotypeDef>
+        <defName>WNA_Mortaliner</defName>
+        <label>mortaliner</label>
+        <description>These pawns have ascended higher than normal people. They won't age, won't easily get sick, and have already got rid of some primal needs. Despite this, WNA still consider them as mortal - as they can still be, albeit not easily, killed.</description>
+        <descriptionShort>Mortaliner.</descriptionShort>
+        <iconPath>factions/wna_alliance</iconPath>
+        <inheritable>true</inheritable>
+        <genes>
+			<li>WNA_ShadowRing</li>
+			<li>WNA_IronCurtain</li>
+			<li>WNA_StillWater</li>
+			<li>WNA_Mastery</li>
+			<li>PerfectImmunity</li>
+			<li>DiseaseFree</li>
+			<li>TotalHealing</li>
+			<li>Skin_SheerWhite</li>
+			<li>Hair_SnowWhite</li><!--Hair_InkBlack-->
+			<li>Ageless</li>
+            <li MayRequire="vanillaracesexpanded.fungoid">VRE_Telepathy</li>
+            <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfector</li>
+			<li MayRequire="starengraver.realdeathless">RealDeathless</li>
+        </genes>
+    </XenotypeDef>
+
+    <GeneDef Abstract="true" Name="WNA_GeneBase">
+        <displayCategory>Archite</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <biostatArc>1</biostatArc>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <marketValueFactor>1</marketValueFactor>
+    </GeneDef>
+
+    <GeneDef ParentName="WNA_GeneBase">
+        <defName>WNA_ShadowRing</defName>
+        <label>shadow ring</label>
+        <labelShortAdj>shadow ring</labelShortAdj>
+        <description>Shades is surrounding this pawn. Some changes, including some obvious visual changes, is happening on this pawn.</description>
+        <iconPath>UI/Icons/Genes/Gene_Darkvision</iconPath>
+        <neverGrayHair>true</neverGrayHair>
+        <ignoreDarkness>true</ignoreDarkness>
+        <immuneToToxGasExposure>true</immuneToToxGasExposure>
+        <bodyType>Standard</bodyType>
+        <overdoseChanceFactor>0</overdoseChanceFactor>
+        <toleranceBuildupFactor>0</toleranceBuildupFactor>
+        <statFactors>
+            <PawnTrapSpringChance>0</PawnTrapSpringChance>
+        </statFactors>
+        <forcedHeadTypes>
+            <li>WNA_Head_FacelessMale</li>
+            <li>WNA_Head_FacelessFemale</li>
+        </forcedHeadTypes>
+        <modExtensions>
+            <li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">	
+                <hideGene>true</hideGene>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="WNA_GeneBase">
+        <defName>WNA_Mastery</defName>
+        <label>mastery</label>
+        <labelShortAdj>mastery</labelShortAdj>
+        <description>Mysterious voices are echoing beneath the surface of world, whispering knowledge to each other or to just nothing. This creature is able to steal some knowledge from the talks, thus become a master in many fields.</description>
+        <iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+        <aptitudes>
+            <Shooting>99</Shooting>
+            <Melee>99</Melee>
+            <Construction>99</Construction>
+            <Mining>99</Mining>
+            <Cooking>99</Cooking>
+            <Plants>99</Plants>
+            <Animals>99</Animals>
+            <Crafting>99</Crafting>
+            <Artistic>99</Artistic>
+            <Medicine>99</Medicine>
+            <Social>99</Social>
+            <Intellectual>99</Intellectual>
+        </aptitudes>
+        <modExtensions>
+            <li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">	
+                <hideGene>true</hideGene>
+                <!--<caravanCarryingFactor>100000</caravanCarryingFactor>-->
+                <diseaseProgressionFactor>0</diseaseProgressionFactor>
+				<globalSkillLossMultiplier>0</globalSkillLossMultiplier>
+				<skillDegradation>false</skillDegradation>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="WNA_GeneBase">
+        <defName>WNA_IronCurtain</defName>
+        <label>iron curatin</label>
+        <labelShortAdj>iron curatin</labelShortAdj>
+        <description>The power originating from Ancient Whelingnorther Empire flows through this pawn. Usual methods cannot harm this person.</description>
+        <iconPath>UI/Icons/Genes/Gene_Unstoppable</iconPath>
+        <painFactor>0</painFactor>
+        <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+        <preventPermanentWounds>true</preventPermanentWounds>
+		<makeImmuneTo>
+			<li>LungRot</li>
+		</makeImmuneTo>
+        <statOffsets>
+            <ComfyTemperatureMin>-9999</ComfyTemperatureMin>
+            <ComfyTemperatureMax>9999</ComfyTemperatureMax>
+        </statOffsets>
+        <statFactors>
+            <PsychicSensitivity>0</PsychicSensitivity>
+            <IncomingDamageFactor>0</IncomingDamageFactor>
+        </statFactors>
+        <modExtensions>
+            <li Class="Universum.Utilities.Gene.Properties" MayRequire="sindre0830.Universum">
+                <allowed_utilities>
+                    <li>universum.vacuum_decompression_protection</li>
+                    <li>universum.vacuum_suffocation_protection</li>
+                </allowed_utilities>
+            </li>
+            <li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">	
+                <hideGene>true</hideGene>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="WNA_GeneBase">
+        <defName>WNA_StillWater</defName>
+        <label>still water</label>
+        <labelShortAdj>still water</labelShortAdj>
+        <description>This pawn has found extraordinary inner peace, even freeing him from some primal needs. But this doesn't mean he can be treated casually.</description>
+        <iconPath>UI/Icons/Genes/Gene_DeadCalm</iconPath>
+        <socialFightChanceFactor>0</socialFightChanceFactor>
+        <addictionChanceFactor>0</addictionChanceFactor>
+        <aggroMentalBreakSelectionChanceFactor>0</aggroMentalBreakSelectionChanceFactor>
+        <prisonBreakMTBFactor>0</prisonBreakMTBFactor>
+        <dontMindRawFood>true</dontMindRawFood>
+        <disablesNeeds>
+            <li>Beauty</li>
+            <li>Comfort</li>
+            <li>Outdoors</li>
+            <li>Indoors</li>
+            <li>DrugDesire</li>
+            <li>RoomSize</li>
+            <li MayRequire="telardo.romanceontherim">RomanceOnTheRim_Need_Romance</li>
+        </disablesNeeds>
+        <modExtensions>
+            <li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">	
+                <hideGene>true</hideGene>
+            </li>
+        </modExtensions>
+    </GeneDef>
+</Defs>

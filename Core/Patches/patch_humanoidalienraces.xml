@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+	    <mods>
+            <li>Humanoid Alien Races</li>
+	    </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAttributeSet">
+                    <xpath>Defs/ThingDef[defName="WNA_WNThan" or defName="WNA_Human"]</xpath>
+                    <attribute>Class</attribute>
+                    <value>AlienRace.ThingDef_AlienRace</value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/PawnRenderTreeDef//li[texPath="Things/Pawn/Humanlike/Apparel/SwaddledBaby/Swaddled_Child"]/nodeClass</xpath>
+                    <value>
+                        <nodeClass>AlienRace.AlienPawnRenderNode_Swaddle</nodeClass>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="WNA_WNThan" or defName="WNA_Human"]</xpath>
+                    <value>
+                        <alienRace>
+                            <generalSettings>
+                                <allowHumanBios>true</allowHumanBios>
+                                <corpseCategory>CorpsesHumanlike</corpseCategory>
+                                <alienPartGenerator>
+                                    <headTypes>
+                                        <li>Male_AverageNormal</li>
+                                        <li>WNA_Head_FacelessMale</li>
+                                        <li>Female_AverageNormal</li>
+                                        <li>WNA_Head_FacelessFemale</li>
+                                    </headTypes>
+                                    <bodyTypes>
+                                        <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+                                        <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+                                        <li>Male</li>
+                                        <li>Female</li>
+                                    </bodyTypes>
+                                </alienPartGenerator>
+                            </generalSettings>
+                            <graphicPaths>
+                                <skinShader>CutoutSkin</skinShader>
+                            </graphicPaths>
+                            <raceRestriction>
+                                <whiteXenotypeList>
+                                    <li MayRequire="Ludeon.RimWorld.Biotech">WNA_Mortaliner</li>
+                                </whiteXenotypeList>
+                                <onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+                            </raceRestriction>
+                            <compatibility>
+                                <isFlesh>true</isFlesh>
+                                <isSentient>true</isSentient>
+                                <hasBlood>true</hasBlood>
+                            </compatibility>
+                        </alienRace>
+                    </value>
+                </li>
+            </operations>
+	    </match>
+    </Operation>
+    
+</Patch>

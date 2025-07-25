@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_Conduit</defName>
+		<label>invisible conduit</label>
+		<description>Wires can transport electricity, pipies can transport liquids, and this invisible conduit can transport more things.</description>
+		<graphicData>
+			<texPath>buildings/atlas/wna_wire_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255,255,255,127)</color>
+            <linkType>Transmitter</linkType>
+            <linkFlags>
+                <li>PowerConduit</li>
+            </linkFlags>
+		</graphicData>
+		<uiIconPath>focus</uiIconPath>
+        <drawStyleCategory>Conduits</drawStyleCategory>
+        <building>
+            <isPowerConduit>true</isPowerConduit>
+            <ai_chillDestination>false</ai_chillDestination>
+            <isEdifice>false</isEdifice>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/PowerConduit_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+		<statBases>
+			<WorkToBuild>0</WorkToBuild>
+			<Beauty>0</Beauty>
+			<Cleanliness>0</Cleanliness>
+            <MeditationFocusStrength>0</MeditationFocusStrength>
+		</statBases>
+        <drawerType>MapMeshOnly</drawerType>
+        <altitudeLayer>Conduits</altitudeLayer>
+        <passability>Standable</passability>
+        <clearBuildingArea>false</clearBuildingArea>
+        <placeWorkers>
+            <li>PlaceWorker_Conduit</li>
+        </placeWorkers>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTransmitter</compClass>
+                <transmitsPower>true</transmitsPower>
+            </li>
+        </comps>
+	</ThingDef>
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_BasicCrate</defName>
+		<label>ivory crate</label>
+		<description>A small white box, specially designed for storaging items.</description>
+		<graphicData>
+			<texPath>buildings/misc/wna_crate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_MatterTransformation</li>
+        </researchPrerequisites>
+		<size>(1,1)</size>
+        <inspectorTabs>
+            <li>ITab_ContentsTransporter</li>
+        </inspectorTabs>
+        <comps>
+            <li Class="CompProperties_Transporter">
+                <restEffectiveness>1</restEffectiveness>
+                <massCapacity>4000000</massCapacity>
+                <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+                <showOverallStats>false</showOverallStats>
+            </li>
+        </comps>
+	</ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_LinkTable</defName>
+		<label>ivory table</label>
+		<description>Floating translucent table, sometimes described as "ivory-like in color".</description>
+		<graphicData>
+			<texPath>buildings/atlas/wna_table_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom6</li>
+			</linkFlags>
+		</graphicData>
+        <drawStyleCategory>Defenses</drawStyleCategory>
+		<uiIconPath>buildings/atlas/wna_table_icon</uiIconPath>
+        <surfaceType>Eat</surfaceType>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<building>
+            <relatedBuildCommands>
+                <li>WNA_LinkSeat</li>
+            </relatedBuildCommands>
+		</building>
+	</ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_LinkSeat</defName>
+		<label>ivory seat</label>
+		<description>Floating translucent stool, sometimes described as "ivory-like in color".</description>
+		<graphicData>
+			<texPath>buildings/atlas/wna_seat_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom7</li>
+			</linkFlags>
+		</graphicData>
+        <drawStyleCategory>Defenses</drawStyleCategory>
+		<uiIconPath>buildings/atlas/wna_seat_icon</uiIconPath>
+        <surfaceType>Item</surfaceType>
+		<building>
+            <isSittable>true</isSittable>
+            <sitIgnoreOrientation>true</sitIgnoreOrientation>
+            <relatedBuildCommands>
+                <li>WNA_LinkTable</li>
+            </relatedBuildCommands>
+		</building>
+	</ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_LinkShelf</defName>
+		<label>ivory shelf</label>
+		<description>Floating translucent shelf, one can equal to 60 normal shelf.</description>
+        <thingClass>Building_Storage</thingClass>
+		<graphicData>
+			<texPath>buildings/atlas/wna_shelf_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom6</li>
+			</linkFlags>
+		</graphicData>
+        <drawStyleCategory>Defenses</drawStyleCategory>
+		<uiIconPath>buildings/atlas/wna_shelf_icon</uiIconPath>
+        <surfaceType>Item</surfaceType>
+        <statBases>
+            <MarketValue>0</MarketValue>
+        </statBases>
+        <inspectorTabs>
+            <li>ITab_Storage</li>
+        </inspectorTabs>
+        <building>
+            <blueprintClass>Blueprint_Storage</blueprintClass>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <paintable>true</paintable>
+            <maxItemsInCell>500</maxItemsInCell>
+            <storageGroupTag>Shelf</storageGroupTag>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+        </building>
+	</ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_SingleBed</defName>
+		<label>velvet cushion</label>
+		<description>A small, plain, but unexpectedly comfortable bed.</description>
+		<thingClass>Building_Bed</thingClass>
+        <graphicData>
+			<texPath>buildings/misc/wnasinglebed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1</drawSize>
+		</graphicData>
+        <statBases>
+            <Comfort>40</Comfort>
+            <BedRestEffectiveness>5</BedRestEffectiveness>
+            <SurgerySuccessChanceFactor>5</SurgerySuccessChanceFactor>
+            <BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">5</BirthRitualQualityOffset>
+        </statBases>
+        <rotatable>true</rotatable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <canOverlapZones>false</canOverlapZones>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+            <bed_showSleeperBody>false</bed_showSleeperBody>
+            <bed_crib MayRequire="Ludeon.RimWorld.Biotech">True</bed_crib>
+            <isSittable>true</isSittable>
+            <bed_DisplayOwnerType>true</bed_DisplayOwnerType>
+            <bed_emptyCountsForBarracks>true</bed_emptyCountsForBarracks>
+            <buildingTags>
+                <li>Bed</li>
+            </buildingTags>
+		</building>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_AssignableToPawn">
+                <drawAssignmentOverlay>false</drawAssignmentOverlay>
+                <compClass>CompAssignableToPawn_Bed</compClass>
+            </li>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>EndTable</li>
+                    <li>Dresser</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+                </linkableFacilities>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+	</ThingDef>
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_DoubleBed</defName>
+		<label>velvet bed</label>
+		<description>A plain but unexpectedly comfortable bed, designed for a couple, even better for single.</description>
+		<thingClass>Building_Bed</thingClass>
+        <graphicData>
+			<texPath>buildings/misc/wnadoublebed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>2</drawSize>
+		</graphicData>
+        <size>(2,2)</size>
+        <statBases>
+            <Comfort>40</Comfort>
+            <BedRestEffectiveness>5</BedRestEffectiveness>
+            <SurgerySuccessChanceFactor>5</SurgerySuccessChanceFactor>
+            <BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">5</BirthRitualQualityOffset>
+        </statBases>
+        <rotatable>true</rotatable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <canOverlapZones>false</canOverlapZones>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+            <bed_showSleeperBody>false</bed_showSleeperBody>
+            <isSittable>true</isSittable>
+            <buildingTags>
+                <li>Bed</li>
+            </buildingTags>
+		</building>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_AssignableToPawn">
+                <drawAssignmentOverlay>false</drawAssignmentOverlay>
+                <compClass>CompAssignableToPawn_Bed</compClass>
+            </li>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>EndTable</li>
+                    <li>Dresser</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+                </linkableFacilities>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+	</ThingDef>
+
+    <DesignatorDropdownGroupDef>
+        <defName>WNA_TorchGroup</defName>
+    </DesignatorDropdownGroupDef>
+    <ThingDef ParentName="WNA_FurnitureBase">
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+		<defName>WNA_TorchLamp</defName>
+		<label>shimmer torch</label>
+		<description>A WNA style torch. It doesn't flame, though.</description>
+        <graphicData>
+			<texPath>buildings/misc/wna_torch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+		</graphicData>
+        <statBases>
+            <MeditationFocusStrength>8</MeditationFocusStrength>
+        </statBases>
+        <fillPercent>0.15</fillPercent>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+        <clearBuildingArea>false</clearBuildingArea>
+		<building>
+            <artificialForMeditationPurposes>true</artificialForMeditationPurposes>
+            <isEdifice>false</isEdifice>
+		</building>
+        <designatorDropdown>WNA_TorchGroup</designatorDropdown>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>15</glowRadius>
+                <overlightRadius>15</overlightRadius>
+                <glowColor>(74,74,74,0)</glowColor>
+            </li>
+            <li Class="WNA.ThingCompProp.CompHeatPusher"><!--CompProperties_TempControl-->
+                <heatPushStandard>21</heatPushStandard>
+                <heatPushMult>21</heatPushMult>
+            </li>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Artistic</li>
+                    <li>Dignified</li>
+                    <li>Flame</li>
+                    <li>Minimal</li>
+                    <li>Morbid</li>
+                    <li>Natural</li>
+                    <li MayRequire="ludeon.rimworld.anomaly">Void</li>
+                </focusTypes>
+                <offsets>
+                    <li Class="FocusStrengthOffset_BuildingDefsLit">
+                        <defs>
+                            <li>WNA_TorchLamp</li>
+                            <li>WNA_TorchLampB</li>
+                        </defs>
+                        <offsetPerBuilding>1</offsetPerBuilding>
+                        <radius>9.9</radius>
+                        <maxBuildings>8</maxBuildings>
+                    </li>
+                </offsets>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+        </placeWorkers>
+	</ThingDef>
+    <ThingDef ParentName="WNA_FurnitureBase">
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+		<defName>WNA_TorchLampB</defName>
+		<label>discord torch</label>
+		<description>A WNA style torch. it will drive nearby temperature to extreme.</description>
+        <graphicData>
+			<texPath>buildings/misc/wna_torch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <color>(55,55,55,200)</color>
+		</graphicData>
+        <statBases>
+            <MeditationFocusStrength>8</MeditationFocusStrength>
+        </statBases>
+        <fillPercent>0.15</fillPercent>
+        <defaultPlacingRot>North</defaultPlacingRot>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+        <clearBuildingArea>false</clearBuildingArea>
+		<building>
+            <artificialForMeditationPurposes>true</artificialForMeditationPurposes>
+            <isEdifice>false</isEdifice>
+		</building>
+        <designatorDropdown>WNA_TorchGroup</designatorDropdown>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>15</glowRadius>
+                <overlightRadius>15</overlightRadius>
+                <glowColor>(74,74,74,0)</glowColor>
+            </li>
+            <li Class="WNA.ThingCompProp.CompHeatPusher">
+                <heatPushStandard>21</heatPushStandard>
+                <heatPushMult>-21</heatPushMult>
+            </li>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Artistic</li>
+                    <li>Dignified</li>
+                    <li>Flame</li>
+                    <li>Minimal</li>
+                    <li>Morbid</li>
+                    <li>Natural</li>
+                    <li MayRequire="ludeon.rimworld.anomaly">Void</li>
+                </focusTypes>
+                <offsets>
+                    <li Class="FocusStrengthOffset_BuildingDefsLit">
+                        <defs>
+                            <li>WNA_TorchLamp</li>
+                            <li>WNA_TorchLampB</li>
+                        </defs>
+                        <offsetPerBuilding>1</offsetPerBuilding>
+                        <radius>9.9</radius>
+                        <maxBuildings>8</maxBuildings>
+                    </li>
+                </offsets>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+        </placeWorkers>
+	</ThingDef>
+
+
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_TestAE</defName>
+		<label>WNA_TestAE</label>
+		<description>TEST_OBJECT</description>
+        <minTechLevelToBuild>Archotech</minTechLevelToBuild>
+		<graphicData>
+			<texPath>buildings/misc/wna_crate</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+        <researchPrerequisites Inherit="false"/>
+		<size>(1,1)</size>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompAttachHediff">
+                <affectsOwner>true</affectsOwner>
+                <affectMechanic>true</affectMechanic>
+                <hediffDef>WNA_InMechanoid</hediffDef>
+            </li>
+        </comps>
+        <specialDisplayRadius>5.0</specialDisplayRadius>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/TraderKindDef[defName="WNA_Trader_Settlement" or defName="WNA_Trader_Orbital"]/stockGenerators</xpath>
+        <value>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_SeedHarbinger</thingDef>
+                <price>Cheap</price>
+                <countRange>10000~15000</countRange>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>Serum</tradeTag>
+                <thingDefCountRange>1~2</thingDefCountRange>
+                <countRange>100000~150000</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>GoldenCube</thingDef>
+                <price>Cheap</price>
+                <countRange>1200~1200</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_Voidmetal</thingDef>
+                <price>Cheap</price>
+                <countRange>800000~1000000</countRange>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="WNA_WNThan" or defName="WNA_Human"]/statBases</xpath>
+        <value>
+            <MinimumContainmentStrength>10000</MinimumContainmentStrength>
+            <EntityStudyRate>10000</EntityStudyRate>
+            <StudyEfficiency>100</StudyEfficiency>
+            <ActivitySuppressionRate>10000</ActivitySuppressionRate>
+            <PsychicRitualQualityOffset>1</PsychicRitualQualityOffset>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/TerrainDef[defName="Voidmetal"]</xpath>
+        <value>
+            <costList>
+                <WNA_Voidmetal>4</WNA_Voidmetal>
+            </costList>
+            <!--<minTechLevelToBuild>Archotech</minTechLevelToBuild>-->
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="Voidmetal"]/statBases</xpath>
+        <value>
+            <ContainmentStrength>60</ContainmentStrength>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+	    <xpath>Defs/TerrainDef[defName="Voidmetal"]/designationCategory</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="VoidmetalWall"]</xpath>
+        <value>
+            <costList>
+                <WNA_Voidmetal>4</WNA_Voidmetal>
+            </costList>
+            <designationCategory>Structure</designationCategory>
+            <!--<minTechLevelToBuild>Archotech</minTechLevelToBuild>
+            <placingDraggableDimensions>1</placingDraggableDimensions>-->
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[defName="VoidmetalWall"]/building</xpath>
+        <value>
+            <building>
+                <isInert>true</isInert>
+                <repairable>false</repairable>
+                <claimable>true</claimable>
+                <deconstructible>true</deconstructible>
+                <isTargetable>false</isTargetable>
+                <supportsWallAttachments>true</supportsWallAttachments>
+            </building>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationRemove">
+	    <xpath>Defs/StatDef[defName="ActivitySuppressionRate"]/statFactors</xpath>
+    </Operation>
+</Patch>

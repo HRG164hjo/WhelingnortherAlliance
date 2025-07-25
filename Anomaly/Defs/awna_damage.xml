@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <DamageDef ParentName="WNA_DamageBase">
+        <defName>WNA_ShellPsychicDamage</defName>
+        <label>psychic drunkenness</label>
+        <workerClass>DamageWorker_AddGlobal</workerClass>
+        <isExplosive>true</isExplosive>
+        <deathMessage>{0} has died in an explosion.</deathMessage>
+        <hediff>WNA_ShellPsychic</hediff>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <explosionCellFleck>WNA_ShellPsychicFleck</explosionCellFleck>
+        <soundExplosion>Explosion_Stun</soundExplosion>
+        <impactSoundType>Blunt</impactSoundType>
+        <buildingDamageFactor>1</buildingDamageFactor>
+        <plantDamageFactor>1</plantDamageFactor>
+        <corpseDamageFactor>1</corpseDamageFactor>
+        <minDamageToFragment>1</minDamageToFragment>
+        <defaultDamage>1</defaultDamage>
+    </DamageDef>
+
+</Defs>

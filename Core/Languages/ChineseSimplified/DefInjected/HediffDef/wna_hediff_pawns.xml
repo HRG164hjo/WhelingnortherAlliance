@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_Inhuman.label>非人</WNA_Inhuman.label>
+  <WNA_Inhuman.description>此物是源自遥远区域的黑暗力量的造物。它可能曾经是个人类，并且在很多方面都表现得和正常人类一模一样，但它在本质上已经全然不同。</WNA_Inhuman.description>
+
+  <WNA_InAnimal.label>非常造物</WNA_InAnimal.label>
+  <WNA_InAnimal.description>此物经由一些几乎不曾为人所知也几乎无法理解的方式塑造而成。由于其与寻常生物迥然不同的起源，它不需要进食。</WNA_InAnimal.description>
+
+  <WNA_DeathRefusal.label>死亡回避</WNA_DeathRefusal.label>
+  <WNA_DeathRefusal.description>此人见证过威灵诺德对死亡的掌握。现实的涟漪正在改变其身心。如果此人被杀死而尸体没有被摧毁，他就能设法从死亡中返回。</WNA_DeathRefusal.description>
+
+  <sWNA_DeathRefusal.label>经历了死亡回避</sWNA_DeathRefusal.label>
+  <sWNA_DeathRefusal.description>此人从死亡中归来，在一段时间内现实的涟漪将使他免于大多数伤害。值得一提的是这种暂时的现实失稳可能会产生一些意料之外的效果。</sWNA_DeathRefusal.description>
+
+</LanguageData>

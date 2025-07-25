@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="WNA_ItemsBase" MayRequire="ludeon.rimworld.royalty">
+        <defName>WNA_SeedAnima</defName>
+        <label>anima tree seed</label>
+        <description>An egg-like soft jelly ball placed on a small maintaining plate. When planted at somewhere available, this ball of biomass will activate and grow into an anima tree.</description>
+        <graphicData>
+            <texPath>items/wna_treeseed/wna_treeseed</texPath><!--wna_seedanima-->
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.8</drawSize>
+            <color>(153,185,170)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>10</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Plantable">
+                <plantDefToSpawn>Plant_TreeAnima</plantDefToSpawn>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_ItemsBase" MayRequire="ludeon.rimworld.ideology">
+        <defName>WNA_SeedGauranlen</defName>
+        <label>gauranlen tree seed</label>
+        <description>An egg-like soft jelly ball placed on a small maintaining plate. When planted at somewhere available, this ball of biomass will activate and grow into an gauranlen tree.</description>
+        <graphicData>
+            <texPath>items/wna_treeseed/wna_treeseed</texPath><!--wna_seedgauranlen-->
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.8</drawSize>
+            <color>(231,197,162)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>10</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Plantable">
+                <plantDefToSpawn>Plant_TreeGauranlen</plantDefToSpawn>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_ItemsBase" MayRequire="ludeon.rimworld.biotech">
+        <defName>WNA_SeedPolux</defName>
+        <label>polux tree seed</label>
+        <description>An egg-like soft jelly ball placed on a small maintaining plate. When planted at somewhere available, this ball of biomass will activate and grow into an polux tree.</description>
+        <graphicData>
+            <texPath>items/wna_treeseed/wna_treeseed</texPath><!--wna_seedpolux-->
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.8</drawSize>
+            <color>(136,101,139)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>10</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Plantable">
+                <plantDefToSpawn>Plant_TreePolux</plantDefToSpawn>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_ItemsBase" MayRequire="ludeon.rimworld.anomaly">
+        <defName>WNA_SeedHarbinger</defName>
+        <label>harbinger tree seed</label>
+        <description>An egg-like soft jelly ball placed on a small maintaining plate. When planted at somewhere available, this ball of biomass will activate and grow into an harbinger tree.</description>
+        <graphicData>
+            <texPath>items/wna_treeseed/wna_treeseed</texPath><!--wna_seedharbinger-->
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.8</drawSize>
+            <color>(178,144,142)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>10</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Plantable">
+                <plantDefToSpawn>Plant_TreeHarbinger</plantDefToSpawn>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_ItemsBase" MayRequire="ludeon.rimworld.odyssey">
+        <defName>WNA_SeedArchean</defName>
+        <label>archean tree seed</label>
+        <description>An egg-like soft jelly ball placed on a small maintaining plate. When planted at somewhere available, this ball of biomass will activate and grow into an archean tree.</description>
+        <graphicData>
+            <texPath>items/wna_treeseed/wna_treeseed</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.8</drawSize>
+            <color>(178,144,142)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>10</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Plantable">
+                <plantDefToSpawn>Plant_TreeArchean</plantDefToSpawn>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

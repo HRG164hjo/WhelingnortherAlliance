@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- rebel -->
+    <ThingDef ParentName="WNA_WeaponBaseRanged">
+        <defName>WNA_TrapLauncher</defName>
+        <label>spike trap launcher</label>
+        <description>A heavy individual artillery, not designed for directly blasting enemies, but for deploying traps. Its projectile does little harm to its targets, but deploys spike traps in an area. These spike traps are very dangerous.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/InfernoCannon</texPath>
+            <color>(156,156,156)</color>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <statBases>
+            <WorkToMake>4500</WorkToMake>
+            <MarketValue>1200</MarketValue>
+            <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedAngleOffset>0</equippedAngleOffset>
+	    <costList>
+	        <Chemfuel>30</Chemfuel>
+	        <Steel>50</Steel>
+	        <ComponentIndustrial>8</ComponentIndustrial>
+            <ComponentSpacer>3</ComponentSpacer>
+	    </costList>
+        <weaponTags>
+            <li>Tag_TrapLauncher</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>WNA_TrapLauncher_Proj</defaultProjectile>
+                <warmupTime>3</warmupTime>
+                <range>121</range>
+                <soundCast>InfernoCannon_Fire</soundCast>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                <forcedMissRadius>3.5</forcedMissRadius>
+                <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+                <burstShotCount>1</burstShotCount>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <requireLineOfSight>false</requireLineOfSight>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>150</power>
+                <cooldownTime>1</cooldownTime>
+                <armorPenetration>Infinity</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>WNA_AdvArsenal</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+		    <skillRequirements>
+		    	<Crafting>10</Crafting>
+		    </skillRequirements>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+            <recipeUsers>
+                <li>FabricationBench</li>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>WNA_TrapLauncher_Proj</defName>
+        <label>gun proj</label>
+        <graphicData>
+            <texPath>Things/Projectile/LauncherShot</texPath>
+            <color>(74,74,74)</color>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Rotting</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <explosionRadius>9.9</explosionRadius>
+            <stoppingPower>Infinity</stoppingPower>
+            <armorPenetrationBase>Infinity</armorPenetrationBase>
+            <speed>240</speed>
+            <flyOverhead>true</flyOverhead>
+            <postExplosionSpawnThingDef>WNA_SpikeTrapSpawned</postExplosionSpawnThingDef>
+            <postExplosionSpawnThingDefWater>WNA_SpikeTrapSpawned</postExplosionSpawnThingDefWater>
+            <soundExplode>Explosion_EMP</soundExplode>
+            <postExplosionSpawnChance>0.5</postExplosionSpawnChance>
+        </projectile>
+    </ThingDef>
+</Defs>

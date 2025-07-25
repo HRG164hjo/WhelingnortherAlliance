@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThoughtDef>
+        <defName>WNA_ThoughtAteFungus</defName>
+        <durationDays>0</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>ate fungus</label>
+                <description>A unique taste.</description>
+                <baseMoodEffect>0</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

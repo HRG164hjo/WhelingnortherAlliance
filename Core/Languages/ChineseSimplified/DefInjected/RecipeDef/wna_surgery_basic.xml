@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNARecipeTo_WNA_Medikit.label>施用威灵会医疗包</WNARecipeTo_WNA_Medikit.label>
+  <WNARecipeTo_WNA_Medikit.description>施用威灵会医疗包。</WNARecipeTo_WNA_Medikit.description>
+  <WNARecipeTo_WNA_Medikit.jobString>正在施用威灵会医疗包。</WNARecipeTo_WNA_Medikit.jobString>
+
+  <WNA_Inspection.label>灵能探查</WNA_Inspection.label>
+  <WNA_Inspection.description>用心灵力量探查目标，速度更快而且不需要使用医药. 这门技术要求有基本的智力水平。</WNA_Inspection.description>
+  <WNA_Inspection.jobString>探查 TargetA。</WNA_Inspection.jobString>
+
+</LanguageData>

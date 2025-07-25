@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_Halfbeing.label>半成形体</WNA_Halfbeing.label>
+  <WNA_Halfbeing.description>行尸走肉。很久之前威灵会抓获了一只食尸鬼，威灵会的科学家相信他们可以以这只食尸鬼为基础发明出一种更强的全新突变体。但这一项目被威灵会突然而至的沉寂所打断，并且再没被重启过。</WNA_Halfbeing.description>
+  <WNA_Halfbeing.tools.0.label>左手</WNA_Halfbeing.tools.0.label>
+  <WNA_Halfbeing.tools.1.label>右手</WNA_Halfbeing.tools.1.label>
+  <WNA_Halfbeing.tools.2.label>牙齿</WNA_Halfbeing.tools.2.label>
+
+
+</LanguageData>

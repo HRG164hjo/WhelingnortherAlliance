@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AbilityDef>
+        <defName>WNA_MutantSlaughter</defName>
+        <label>mutant slaughter</label>
+        <description>Use dark psychic power to induce chaotic reconfiguration of flesh. This kills a flesh creature in seconds and converts its body into a pile of twisted flesh.</description>
+        <iconPath>UI/Abilities/Slaughter</iconPath>
+        <cooldownTicksRange>600</cooldownTicksRange>
+        <showPsycastEffects>false</showPsycastEffects>
+        <stunTargetWhileCasting>true</stunTargetWhileCasting>
+        <writeCombatLog>true</writeCombatLog>
+        <aiCanUse>true</aiCanUse>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0</warmupTime>
+            <range>14.9</range>
+            <requireLineOfSight>True</requireLineOfSight>
+            <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            <targetParams>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetMechs>false</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_PsychicSlaughter" />
+        </comps>
+    </AbilityDef>
+</Defs>

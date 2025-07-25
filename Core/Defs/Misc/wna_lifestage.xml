@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+    <LifeStageDef>
+        <defName>WNA_HumanlikeAdult</defName>
+        <label>adult</label>
+        <visible>false</visible>
+        <reproductive>false</reproductive>
+        <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass>
+        <canDoRandomMentalBreaks>false</canDoRandomMentalBreaks>
+        <canInitiateSocialInteraction>false</canInitiateSocialInteraction>
+        <sittingOffset>0.18</sittingOffset>
+        <statFactors>
+            <AimingDelayFactor>0</AimingDelayFactor>
+            <BondAnimalChanceFactor>0</BondAnimalChanceFactor>
+            <CertaintyLossFactor>0</CertaintyLossFactor>
+            <Fertility>0</Fertility>
+            <FilthRate>0</FilthRate>
+            <Flammability>0</Flammability>
+            <IncomingDamageFactor>0</IncomingDamageFactor>
+            <MeleeCooldownFactor>0</MeleeCooldownFactor>
+            <PawnTrapSpringChance>0</PawnTrapSpringChance>
+            <PsychicSensitivity>0</PsychicSensitivity>
+            <RangedCooldownFactor>0</RangedCooldownFactor>
+            <StaggerDurationFactor>0</StaggerDurationFactor>
+        </statFactors>
+        <silhouetteGraphicData>
+            <texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanAdult</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </silhouetteGraphicData>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>WNA_AnimalAdult</defName>
+        <label>mature</label>
+        <visible>false</visible>
+        <canDoRandomMentalBreaks>false</canDoRandomMentalBreaks>
+        <reproductive>true</reproductive>
+        <milkable>true</milkable>
+        <shearable>true</shearable>
+        <caravanRideable>true</caravanRideable>
+    </LifeStageDef>
+    
+</Defs>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <PawnKindDef ParentName="WNA_AnimalPawnKindBase">
+		<defName>WNA_FerociousBeast</defName>
+		<label>ferocious hybeast</label>
+		<race>WNA_FerociousBeastRace</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>pawns/wna_ferociousbeast/wna_ferociousbeast</texPath>
+					<drawSize>2.55</drawSize>
+					<color>(165,42,47,200)</color>
+					<drawOffset>(0,0,1.27)</drawOffset>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>focus</texPath>
+					<drawSize>0.45</drawSize>
+					<color>(0,0,0,255)</color>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

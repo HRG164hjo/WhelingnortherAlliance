@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- human -->
+
+  <WNA_BaseDefense.label>基础防御建筑</WNA_BaseDefense.label>
+  <WNA_BaseDefense.description>一些不寻常的技术，能使殖民地更难被攻陷。</WNA_BaseDefense.description>
+
+  <WNA_RebelArsenal.label>反抗军军备</WNA_RebelArsenal.label>
+  <WNA_RebelArsenal.description>回顾威灵诺德人类反抗军的开端，复现他们使用的早期武器装备。</WNA_RebelArsenal.description>
+
+  <WNA_RebelTools.label>实用工具</WNA_RebelTools.label>
+  <WNA_RebelTools.description>了解威灵军部开发的实用工具. 不论是用于从事生产活动还是用来打仗都很实用。</WNA_RebelTools.description>
+
+  <WNA_RebelShield.label>能量护盾</WNA_RebelShield.label>
+  <WNA_RebelShield.description>对威灵军部使用的护盾科技的初步了解. 这种护盾与边缘世界常见的护盾略有不同。</WNA_RebelShield.description>
+
+  <WNA_AdvArsenal.label>先进叛军军备</WNA_AdvArsenal.label>
+  <WNA_AdvArsenal.description>通过研究公开的文献以了解威灵军部使用的更先进的军备。</WNA_AdvArsenal.description>
+
+  <WNA_NexusLegion.label>攻城装备</WNA_NexusLegion.label>
+  <WNA_NexusLegion.description>通过研究公开的科技蓝图，你的殖民者们现在可以复现叛军的核心部队所使用的武器装备。</WNA_NexusLegion.description>
+
+  <WNA_StrikeLegion.label>渗透科技</WNA_StrikeLegion.label>
+  <WNA_StrikeLegion.description>通过研究公开的科技蓝图，你的殖民者们现在掌握了叛军的渗透作战部队所使用的技术。</WNA_StrikeLegion.description>
+
+  <WNA_IronGuardian.label>钢铁长城</WNA_IronGuardian.label>
+  <WNA_IronGuardian.description>现在你的殖民者们有了足够的知识和能力来复现叛军的最重型守卫部队所使用的武器装备。</WNA_IronGuardian.description>
+
+
+  <!-- whelingnorthan -->
+
+  <WNA_BasicRite.label>基本仪式</WNA_BasicRite.label>
+  <WNA_BasicRite.description>关于如何像威灵会会众一样举行仪式的基本知识. 通往威灵秘技之阶梯的第一阶。</WNA_BasicRite.description>
+
+  <WNA_MatterTransformation.label>物质转化</WNA_MatterTransformation.label>
+  <WNA_MatterTransformation.description>关于如何应用威灵秘技重塑物品的学问。</WNA_MatterTransformation.description>
+
+  <WNA_Furniture.label>威灵诺德家具制造</WNA_Furniture.label>
+  <WNA_Furniture.description>建造威灵会风格的家具的技术. 这些家具普遍呈现半透明的质感，并且是凭空建成的。</WNA_Furniture.description>
+
+  <WNA_Structure.label>威灵诺德建筑学</WNA_Structure.label>
+  <WNA_Structure.description>建造墙与门与其他建筑的方法. 通常而言这些建筑无法被暴力摧毁，不论是凭空建成的还是用一块真实的物质造出来的。</WNA_Structure.description>
+
+  <WNA_Terraform.label>威灵诺德环境工程</WNA_Terraform.label>
+  <WNA_Terraform.description>改变周围的环境的技术，有些操作是可逆的而有些则不是。</WNA_Terraform.description>
+
+  <WNA_Security.label>威灵诺德防御设施</WNA_Security.label>
+  <WNA_Security.description>一些应用威灵秘技来守护据点或殖民地或其他什么东西的简单方案。</WNA_Security.description>
+
+  <WNA_StandardArsenal.label>威灵诺德制式装备</WNA_StandardArsenal.label>
+  <WNA_StandardArsenal.description>制作威灵诺德联合会的制式装备的技术. 即使是威灵人自己也不能无视这些武器的威力。</WNA_StandardArsenal.description>
+
+
+</LanguageData>

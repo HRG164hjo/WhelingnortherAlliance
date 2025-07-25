@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--<RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_Focus</defName>
+        <description>Hold a simple rite to focus mana into a stable form.</description>
+        <jobString>holding a rite.</jobString>
+        <label>Focus</label>
+        <products>
+            <WNA_Focus>10</WNA_Focus>
+        </products>
+        <workAmount>600</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+    </RecipeDef>-->
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_PaleWood</defName>
+        <description>Hold a simple rite to transform normal wood into a more advanced form.</description>
+        <jobString>holding a rite.</jobString>
+        <label>make pale wood</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                        <li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+                        <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
+                        <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_MushroomLog</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_ParasolWoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Focus</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WoodLog</li>
+                <li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+                <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
+                <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_MushroomLog</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_ParasolWoodLog</li>
+                <li>WNA_Focus</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_PaleWood>20</WNA_PaleWood>
+        </products>
+        <workAmount>1200</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_ResearchProj_MatterTransformation</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_AshparkleStone</defName>
+        <description>Hold a simple rite to transform normal stones into ashparkle stone.</description>
+        <jobString>holding a rite.</jobString>
+        <label>make ashparkle stone</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Jade</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Focus</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+            <thingDefs>
+                <li>Jade</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                <li>WNA_Focus</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_AshparkleStone>40</WNA_AshparkleStone>
+        </products>
+        <workAmount>1200</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_ResearchProj_MatterTransformation</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_AshparkleStone_Alter</defName>
+        <description>Hold a simple rite to transform normal stones into ashparkle stone.</description>
+        <jobString>holding a rite.</jobString>
+        <label>make ashparkle stone</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Focus</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneChunks</li>
+            </categories>
+            <thingDefs>
+                <li>WNA_Focus</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_AshparkleStone>40</WNA_AshparkleStone>
+        </products>
+        <workAmount>1200</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_ResearchProj_MatterTransformation</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_DarkAsbestos</defName>
+        <description>Hold a simple rite to transform normal stone into dark asbestos.</description>
+        <jobString>holding a rite.</jobString>
+        <label>make dark asbestos</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Focus</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneChunks</li>
+            </categories>
+            <thingDefs>
+                <li>WNA_Focus</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_DarkAsbestos>20</WNA_DarkAsbestos>
+        </products>
+        <workAmount>1200</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_ResearchProj_MatterTransformation</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_DarkAsbestos_Alter</defName>
+        <description>Hold a simple rite to transform normal stone into dark asbestos.</description>
+        <jobString>holding a rite.</jobString>
+        <label>make dark asbestos with stone blocks</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Focus</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+            <thingDefs>
+                <li>WNA_Focus</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_DarkAsbestos>20</WNA_DarkAsbestos>
+        </products>
+        <workAmount>900</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_ResearchProj_MatterTransformation</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_ChimingSteel</defName>
+        <description>Hold a rite to transform plasteel into chiming steel, a material with enormous potential hazards.</description>
+        <jobString>holding a rite.</jobString>
+        <label>make chiming steel</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Focus</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>WNA_Focus</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_ChimingSteel>20</WNA_ChimingSteel>
+        </products>
+        <workAmount>6000</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_ResearchProj_MatterTransformation</researchPrerequisite>
+    </RecipeDef>
+    <!--
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_Shell_ChimingShard</defName>
+        <description>Grab a small piece of chiming steel, and destroy its inner structure with powerful mana, in order to release its destructive power.</description>
+        <jobString>holding a rite.</jobString>
+        <label>processing chiming steel</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_ChimingSteel</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Focus</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_ChimingSteel</li>
+                <li>WNA_Focus</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Shell_ChimingShard>10</WNA_Shell_ChimingShard>
+        </products>
+        <workAmount>6000</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_ResearchProj_ChimingProcessing</researchPrerequisite>
+    </RecipeDef>-->
+
+</Defs>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RecipeDef ParentName="WNA_SurgeriesBase">
+        <defName>WNA_HalfbeingInfusion</defName>
+        <label>halfbeing infusion</label>
+        <description>Turn a person into a strong alive corpse.</description>
+        <workerClass>WNA.Recipe.HalfbeingInfusion</workerClass>
+        <jobString>making TargetA an alive corpse.</jobString>
+        <workAmount>2000</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <targetsBodyPart>false</targetsBodyPart>
+        <isViolation>true</isViolation>
+        <anesthetize>false</anesthetize>
+        <surgeryOutcomeEffect IsNull="True" />
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Intellectual>4</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Shard</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Focus</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Focus</li>
+                <li>Shard</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+</Defs>

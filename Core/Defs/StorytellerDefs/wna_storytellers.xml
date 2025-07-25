@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--<StorytellerDef ParentName="WNA_StorytellerBase">
+        <defName>WNATeller_A</defName>
+        <label>Test</label>
+        <description>Testing.</description>
+        <portraitLarge>inv</portraitLarge>
+        <portraitTiny>inv</portraitTiny>    
+        <listOrder>1000</listOrder>
+        <tutorialMode>true</tutorialMode>
+        <disableAdaptiveTraining>true</disableAdaptiveTraining>
+        <disableAlerts>true</disableAlerts>
+        <disablePermadeath>true</disablePermadeath>
+        <forcedDifficulty>Easy</forcedDifficulty>
+        <comps/>
+    </StorytellerDef>-->
+</Defs>

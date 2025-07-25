@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="WNA_FurnitureBase" Name="WNA_SpikeTraps">
+        <defName>WNA_SpikeTrap</defName>
+        <label>spike trap</label>
+        <description>Several blades half-burried underground with a set of specially designed trigger. If some careless person steps on it, the blades will teach this person an unforgettable lesson - sometimes a last lesson in their life. The heavier this trap is, the more deadly it is.</description>
+        <thingClass>WNA.ThingClass.SpikeTrap</thingClass>
+        <designationCategory>Security</designationCategory>
+        <pathCost>0</pathCost>
+        <graphicData>
+            <texPath>buildings/security/wna_spiketrap</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+        </graphicData>
+    	<drawStyleCategory>Floors</drawStyleCategory>
+        <statBases>
+            <Mass>0.5</Mass>
+            <WorkToBuild>800</WorkToBuild>
+            <Beauty>0</Beauty>
+            <Cleanliness>0</Cleanliness>
+            <TrapMeleeDamage>100</TrapMeleeDamage>
+            <TrapSpringChance>1.0</TrapSpringChance>
+            <MeditationFocusStrength>0</MeditationFocusStrength>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>25</costStuffCount>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_BaseDefense</li>
+        </researchPrerequisites>
+        <building>
+            <isTrap>true</isTrap>
+            <trapDestroyOnSpring>true</trapDestroyOnSpring>
+            <trapDamageCategory>Sharp</trapDamageCategory>
+            <expandHomeArea>false</expandHomeArea>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="WNA_SpikeTraps">
+        <defName>WNA_SpikeTrapSpawned</defName>
+        <label>spike trap deployed</label>
+		<designationCategory>WNA_MainCategory</designationCategory>
+        <minTechLevelToBuild>Archotech</minTechLevelToBuild>
+        <graphicData>
+            <color>(155,155,155,155)</color>
+        </graphicData>
+        <stuffCategories Inherit="false"/>
+        <costStuffCount>0</costStuffCount>
+        <costList/>
+        <statBases>
+            <Mass>5</Mass>
+        </statBases>
+    </ThingDef>
+
+</Defs>

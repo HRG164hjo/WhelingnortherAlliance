@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <PawnKindDef Abstract="true" Name="WNA_AnimalPawnKindBase">
+		<combatPower>40</combatPower>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<wildGroupSize>3~5</wildGroupSize>
+        <canArriveManhunter>false</canArriveManhunter>
+		<defaultFactionType>WNA_FactionWNA</defaultFactionType>
+        <startingHediffs>
+            <li>
+                <def>WNA_InAnimal</def>
+            </li>
+        </startingHediffs>
+	</PawnKindDef>
+
+    <PawnKindDef ParentName="WNA_AnimalPawnKindBase">
+		<defName>WNA_DimBeast</defName>
+		<label>dim hybeast</label>
+		<race>WNA_DimBeastRace</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>pawns/wna_dimbeast/wna_dimbeast</texPath>
+					<drawSize>2.55</drawSize>
+					<color>(234,233,225,200)</color>
+					<drawOffset>(0,0,1.27)</drawOffset>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>focus</texPath>
+					<drawSize>0.45</drawSize>
+					<color>(0,0,0,255)</color>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<PawnKindDef ParentName="WNA_AnimalPawnKindBase">
+		<defName>WNA_ThornBeast</defName>
+		<label>thorn hybeast</label>
+		<race>WNA_ThornBeastRace</race>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>pawns/wna_spearbeast/wna_spearbeast</texPath>
+					<drawSize>2.55</drawSize>
+					<color>(87,184,220,200)</color>
+					<drawOffset>(0,0,1.27)</drawOffset>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>focus</texPath>
+					<drawSize>0.45</drawSize>
+					<color>(0,0,0,255)</color>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

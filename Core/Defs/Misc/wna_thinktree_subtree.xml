@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThinkTreeDef>
+        <defName>WNA_BurningSubtree</defName>
+        <thinkRoot Class="ThinkNode_ConditionalBurning">
+            <subNodes>
+                <li Class="ThinkNode_Priority">
+                    <subNodes>
+                        <li Class="JobGiver_ExtinguishSelf"/>
+                    </subNodes>
+                </li>
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+
+    <ThinkTreeDef>
+        <defName>WNA_DownedSubtree</defName>
+        <thinkRoot Class="ThinkNode_ConditionalDowned">
+            <subNodes>
+                <li Class="ThinkNode_ConditionalCanCrawl">
+                    <subNodes>
+                        <li Class="JobGiver_ReactToCloseMeleeThreat" />
+                        <li Class="ThinkNode_ConditionalPlayerControlledColonist">
+                            <subNodes>
+                                <li Class="JobGiver_PatientGoToBed" />
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_FleeDanger" />
+                    </subNodes>
+                </li>
+                <li Class="ThinkNode_QueuedJob">
+                    <inBedOnly>true</inBedOnly>
+                </li>
+                <li Class="JobGiver_IdleForever"/>
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+</Defs>

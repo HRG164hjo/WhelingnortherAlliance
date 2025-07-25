@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Abstract="True" ParentName="WNA_StructureBase" Name="WNA_WallWithConduit">
+    	<noRightClickDraftAttack>true</noRightClickDraftAttack>
+    	<replaceTags>
+    	  	<li>Wall</li>
+    	</replaceTags>
+		<coversFloor>true</coversFloor>
+    	<drawStyleCategory>Walls</drawStyleCategory>
+		<comps/>
+	</ThingDef>
+    <ThingDef ParentName="WNA_WallWithConduit">
+		<defName>WNA_BaseWall</defName>
+		<label>WNA wall</label>
+		<description>Form a wall from nothing. This technique is hardly known by outsiders.</description>
+		<graphicData>
+			<texPath>buildings/atlas/wna_wall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255,255,255,200)</color>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockLight>false</blockLight>
+		<uiIconPath>buildings/atlas/wna_wall_icon</uiIconPath>
+		<building>
+            <isAirtight>true</isAirtight>
+			<isInert>true</isInert>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
+			<canPlaceOverWall>true</canPlaceOverWall>
+            <supportsWallAttachments>true</supportsWallAttachments>
+			<ai_chillDestination>false</ai_chillDestination>
+            <relatedBuildCommands>
+				<li>WNA_BaseGrid</li>
+                <li>WNA_BaseDoor</li>
+                <li>WNA_BaseODoor</li>
+            </relatedBuildCommands>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+	</ThingDef>
+    <ThingDef ParentName="WNA_WallWithConduit">
+		<defName>WNA_BaseGrid</defName>
+		<label>WNA grid</label>
+		<description>Form a wall that can be shot over from nothing. This technique is hardly known by outsiders.</description>
+		<graphicData>
+			<texPath>buildings/atlas/wna_grid_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255,255,255,200)</color>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<uiIconPath>buildings/atlas/wna_grid_icon</uiIconPath>
+        <fillPercent>0.7</fillPercent>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<blockLight>false</blockLight>
+		<blockWind>false</blockWind>
+		<building>
+			<isInert>true</isInert>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
+			<canPlaceOverWall>true</canPlaceOverWall>
+            <supportsWallAttachments>true</supportsWallAttachments>
+			<ai_chillDestination>false</ai_chillDestination>
+            <relatedBuildCommands>
+				<li>WNA_BaseWall</li>
+                <li>WNA_BaseDoor</li>
+                <li>WNA_BaseODoor</li>
+            </relatedBuildCommands>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+	</ThingDef>
+    <ThingDef ParentName="WNA_WallWithConduit">
+		<defName>WNA_BaseDoor</defName>
+		<label>WNA standard door</label>
+		<description>Form a door from nothing. This technique is hardly known by outsiders.</description>
+		<thingClass>Building_Door</thingClass>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<graphicData>
+			<texPath>buildings/atlas/wna_door_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255,255,255,200)</color>
+		</graphicData>
+		<blockLight>false</blockLight>
+		<uiIconPath>buildings/atlas/wna_door_icon</uiIconPath>
+        <statBases>
+            <DoorOpenSpeed>20</DoorOpenSpeed>
+        </statBases>
+		<building>
+            <isAirtight>true</isAirtight>
+      		<isSupportDoor>true</isSupportDoor>
+			<isInert>true</isInert>
+            <roamerCanOpen>false</roamerCanOpen>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintClass>Blueprint_Door</blueprintClass>
+            <relatedBuildCommands>
+                <li>WNA_BaseWall</li>
+                <li>WNA_BaseODoor</li>
+            </relatedBuildCommands>
+		</building>
+        <drawerType>RealtimeOnly</drawerType>
+        <passability>Standable</passability>
+		<neverMultiSelect>false</neverMultiSelect>
+        <coversFloor>false</coversFloor>
+		<comps>
+			<li Class="CompProperties_Forbiddable">
+				<allowNonPlayer>false</allowNonPlayer>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(127,127,127,0)</glowColor>
+				<colorPickerEnabled>false</colorPickerEnabled>
+				<darklightToggle>false</darklightToggle>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+        <placeWorkers>
+            <li>PlaceWorker_DoorLearnOpeningSpeed</li>
+        </placeWorkers>
+	</ThingDef>
+    <ThingDef ParentName="WNA_WallWithConduit">
+		<defName>WNA_BaseODoor</defName>
+		<label>WNA wide door</label>
+		<description>Form a door from nothing. This technique is hardly known by outsiders.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<size>(2,1)</size>
+		<rotatable>true</rotatable>
+		<graphicData>
+			<texPath>buildings/atlas/wna_odoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255,255,255,200)</color>
+		</graphicData>
+		<uiIconPath>buildings/atlas/wna_odooricon_north</uiIconPath>
+		<blockLight>false</blockLight>
+        <statBases>
+            <DoorOpenSpeed>20</DoorOpenSpeed>
+        </statBases>
+		<building>
+            <isAirtight>true</isAirtight>
+      		<isSupportDoor>true</isSupportDoor>
+			<isInert>true</isInert>
+            <roamerCanOpen>false</roamerCanOpen>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+            <relatedBuildCommands>
+                <li>WNA_BaseWall</li>
+                <li>WNA_BaseDoor</li>
+            </relatedBuildCommands>
+            <blueprintGraphicData>
+                <texPath>buildings/atlas/wna_odooricon</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>EdgeDetect</shaderType>
+                <drawSize>(2.6, 3.1)</drawSize>
+            </blueprintGraphicData>
+            <doorTopGraphic>
+                <texPath>buildings/atlas/wna_odoor_Top</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(3.1, 2.3)</drawSize>
+            </doorTopGraphic>
+            <doorSupportGraphic>
+                <texPath>buildings/atlas/wna_odoor_Support</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(3.1, 2.3)</drawSize>
+            </doorSupportGraphic>
+		</building>
+        <drawerType>RealtimeOnly</drawerType>
+        <passability>Standable</passability>
+		<neverMultiSelect>false</neverMultiSelect>
+        <coversFloor>false</coversFloor>
+		<comps>
+			<li Class="CompProperties_Forbiddable">
+				<allowNonPlayer>false</allowNonPlayer>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(127,127,127,0)</glowColor>
+				<colorPickerEnabled>false</colorPickerEnabled>
+				<darklightToggle>false</darklightToggle>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+        <placeWorkers>
+            <li>PlaceWorker_MultiCellDoor</li>
+        </placeWorkers>
+	</ThingDef>
+
+    <ThingDef ParentName="WNA_WallWithConduit">
+		<defName>WNA_StuffWall</defName>
+		<label>WNA matwall</label>
+		<description>Form a wall from a piece of actual material. This wall blocks light and takes some more work to build.</description>
+		<graphicData>
+			<texPath>buildings/atlas/wna_wall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<uiIconPath>buildings/atlas/wna_wall_icon</uiIconPath>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+            <li>Fabric</li>
+            <li>Leathery</li>
+            <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
+        </stuffCategories>
+        <costStuffCount>1</costStuffCount>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<statBases>
+			<WorkToBuild>80</WorkToBuild>
+		</statBases>
+		<building>
+            <isAirtight>true</isAirtight>
+			<isInert>true</isInert>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
+			<canPlaceOverWall>true</canPlaceOverWall>
+            <supportsWallAttachments>true</supportsWallAttachments>
+			<ai_chillDestination>false</ai_chillDestination>
+            <relatedBuildCommands>
+				<li>WNA_StuffGrid</li>
+				<li>WNA_StuffDoor</li>
+                <li>WNA_StuffODoor</li>
+            </relatedBuildCommands>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+	</ThingDef>
+    <ThingDef ParentName="WNA_WallWithConduit">
+		<defName>WNA_StuffGrid</defName>
+		<label>WNA matgrid</label>
+		<description>Form a wall from a piece of actual material. This wall takes some more work to build.</description>
+		<graphicData>
+			<texPath>buildings/atlas/wna_grid_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<uiIconPath>buildings/atlas/wna_grid_icon</uiIconPath>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+            <li>Fabric</li>
+            <li>Leathery</li>
+            <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
+        </stuffCategories>
+        <fillPercent>0.7</fillPercent>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<blockLight>false</blockLight>
+		<blockWind>false</blockWind>
+		<building>
+			<isInert>true</isInert>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
+			<canPlaceOverWall>true</canPlaceOverWall>
+            <supportsWallAttachments>true</supportsWallAttachments>
+			<ai_chillDestination>false</ai_chillDestination>
+            <relatedBuildCommands>
+				<li>WNA_StuffWall</li>
+                <li>WNA_StuffDoor</li>
+                <li>WNA_StuffODoor</li>
+            </relatedBuildCommands>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+	</ThingDef>
+    <ThingDef ParentName="WNA_WallWithConduit">
+		<defName>WNA_StuffDoor</defName>
+		<label>WNA matdoor</label>
+		<description>Form a door from a piece of actual material. This door blocks light and takes some more work to build.</description>
+		<thingClass>Building_Door</thingClass>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<graphicData>
+			<texPath>buildings/atlas/wna_door_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>buildings/atlas/wna_door_icon</uiIconPath>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+            <li>Fabric</li>
+            <li>Leathery</li>
+            <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
+        </stuffCategories>
+        <costStuffCount>1</costStuffCount>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <statBases>
+			<WorkToBuild>80</WorkToBuild>
+            <DoorOpenSpeed>10</DoorOpenSpeed>
+        </statBases>
+		<building>
+            <isAirtight>true</isAirtight>
+      		<isSupportDoor>true</isSupportDoor>
+			<isInert>true</isInert>
+            <roamerCanOpen>false</roamerCanOpen>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintClass>Blueprint_Door</blueprintClass>
+            <relatedBuildCommands>
+				<li>WNA_StuffGrid</li>
+                <li>WNA_StuffWall</li>
+                <li>WNA_StuffODoor</li>
+            </relatedBuildCommands>
+		</building>
+        <drawerType>RealtimeOnly</drawerType>
+        <passability>Standable</passability>
+		<neverMultiSelect>false</neverMultiSelect>
+        <coversFloor>false</coversFloor>
+		<comps>
+			<li Class="CompProperties_Forbiddable">
+				<allowNonPlayer>false</allowNonPlayer>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+        <placeWorkers>
+            <li>PlaceWorker_DoorLearnOpeningSpeed</li>
+        </placeWorkers>
+	</ThingDef>
+    <ThingDef ParentName="WNA_WallWithConduit">
+		<defName>WNA_StuffODoor</defName>
+		<label>WNA wide matdoor</label>
+		<description>Form a door from a piece of actual material. This door is wide and blocks light and takes some more work to build.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<size>(2,1)</size>
+		<rotatable>true</rotatable>
+		<graphicData>
+			<texPath>buildings/atlas/wna_odoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconPath>buildings/atlas/wna_odooricon_north</uiIconPath>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+            <li>Fabric</li>
+            <li>Leathery</li>
+            <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
+        </stuffCategories>
+        <costStuffCount>1</costStuffCount>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <statBases>
+			<WorkToBuild>80</WorkToBuild>
+            <DoorOpenSpeed>10</DoorOpenSpeed>
+        </statBases>
+		<building>
+            <isAirtight>true</isAirtight>
+      		<isSupportDoor>true</isSupportDoor>
+			<isInert>true</isInert>
+            <roamerCanOpen>false</roamerCanOpen>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+            <relatedBuildCommands>
+				<li>WNA_StuffGrid</li>
+                <li>WNA_StuffWall</li>
+                <li>WNA_StuffDoor</li>
+            </relatedBuildCommands>
+            <blueprintGraphicData>
+                <texPath>buildings/atlas/wna_odooricon</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>EdgeDetect</shaderType>
+                <drawSize>(2.6, 3.1)</drawSize>
+            </blueprintGraphicData>
+            <doorTopGraphic>
+                <texPath>buildings/atlas/wna_odoor_Top</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(3.1, 2.3)</drawSize>
+            </doorTopGraphic>
+            <doorSupportGraphic>
+                <texPath>buildings/atlas/wna_odoor_Support</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(3.1, 2.3)</drawSize>
+            </doorSupportGraphic>
+		</building>
+        <drawerType>RealtimeOnly</drawerType>
+        <passability>Standable</passability>
+		<neverMultiSelect>false</neverMultiSelect>
+        <coversFloor>false</coversFloor>
+		<comps>
+			<li Class="CompProperties_Forbiddable">
+				<allowNonPlayer>false</allowNonPlayer>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(127,127,127,0)</glowColor>
+				<colorPickerEnabled>false</colorPickerEnabled>
+				<darklightToggle>false</darklightToggle>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+        <placeWorkers>
+            <li>PlaceWorker_MultiCellDoor</li>
+        </placeWorkers>
+	</ThingDef>
+	
+	<!-- ==== -->
+    <ThingDef ParentName="WNA_StructureBase">
+		<defName>WNA_ConcreteWall</defName>
+		<label>concrete wall</label>
+		<description>A simple concrete wall, used for fortresses. What's special about this wall is that it can restore itself due to how it is built.</description>
+    	<replaceTags>
+    	  	<li>Wall</li>
+    	</replaceTags>
+		<graphicData>
+			<texPath>buildings/atlas/wna_cementwall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(200,200,200)</color>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+    	<drawStyleCategory>Walls</drawStyleCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<uiIconPath>buildings/atlas/wna_cementwall_icon</uiIconPath>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<useHitPoints>true</useHitPoints>
+		<coversFloor>true</coversFloor>
+    	<noRightClickDraftAttack>true</noRightClickDraftAttack>
+		<statBases>
+			<MaxHitPoints>8000</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
+			<IncomingDamageFactor>0.05</IncomingDamageFactor>
+		</statBases>
+		<building>
+            <isAirtight>true</isAirtight>
+			<isInert>true</isInert>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
+			<canPlaceOverWall>true</canPlaceOverWall>
+            <supportsWallAttachments>true</supportsWallAttachments>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_BaseDefense</li>
+        </researchPrerequisites>
+		<comps>
+			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
+			  	<ticksPerHeal>60</ticksPerHeal>
+				<healPercent>10</healPercent>
+			</li>
+			<li Class="WNA.ThingCompProp.CompDamageLimit">
+			  	<damageLimit>500</damageLimit>
+			</li>
+		</comps>
+	</ThingDef>
+    <ThingDef ParentName="WNA_StructureBase">
+		<defName>WNA_FortressWall</defName>
+		<label>fortress wall</label>
+		<description>An advanced concrete wall, used for fortresses. What's special about this wall is that it can restore itself due to how it is built.</description>
+    	<replaceTags>
+    	  	<li>Wall</li>
+    	</replaceTags>
+		<graphicData>
+			<texPath>buildings/atlas/wna_cementwall_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(80,89,90)</color>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+		</graphicData>
+    	<drawStyleCategory>Walls</drawStyleCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<uiIconPath>buildings/atlas/wna_cementwall_icon</uiIconPath>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+		<useHitPoints>true</useHitPoints>
+		<coversFloor>true</coversFloor>
+    	<noRightClickDraftAttack>true</noRightClickDraftAttack>
+		<statBases>
+			<MaxHitPoints>100000</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<IncomingDamageFactor>0.01</IncomingDamageFactor>
+		</statBases>
+		<building>
+            <isAirtight>true</isAirtight>
+			<isInert>true</isInert>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
+			<canPlaceOverWall>true</canPlaceOverWall>
+            <supportsWallAttachments>true</supportsWallAttachments>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_BaseDefense</li>
+        </researchPrerequisites>
+		<comps>
+			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
+			  	<ticksPerHeal>50</ticksPerHeal>
+				<healPercent>10</healPercent>
+			</li>
+			<li Class="WNA.ThingCompProp.CompDamageLimit">
+			  	<damageLimit>10</damageLimit>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_RiteBeastDivision</defName>
+        <description>divide a corpse so that it can be used for more uses.</description>
+        <jobString>working.</jobString>
+        <label>divide a corpse</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Corpses</li>
+            </categories>
+        </fixedIngredientFilter>
+        <specialProducts>
+            <li>Butchery</li>
+        </specialProducts>
+        <workAmount>300</workAmount>
+        <!--<recipeUsers>
+	        <li>WNA_RiteSpot_Cutter</li>
+	    </recipeUsers>-->
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_RiteRebelStriving</defName>
+        <description>break down a weapon or apparel and see if there's something can be recycled.</description>
+        <jobString>working.</jobString>
+        <label>break down a thing</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Weapons</li>
+                        <li>Apparel</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Weapons</li>
+                <li>Apparel</li>
+            </categories>
+        </fixedIngredientFilter>
+        <specialProducts>
+            <li>Smelted</li>
+        </specialProducts>
+        <workAmount>300</workAmount>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_RiteAbleting</defName>
+        <description>break down slag chunks to retrieve useful things, more productive than traditional methods.</description>
+        <jobString>working.</jobString>
+        <label>rite ableting</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ChunkSlagSteel</li>
+                        <li>ChunkMechanoidSlag</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ChunkSlagSteel</li>
+                <li>ChunkMechanoidSlag</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Steel>15</Steel>
+            <Plasteel>5</Plasteel>
+            <Uranium>5</Uranium>
+            <Silver>5</Silver>
+        </products>
+        <workAmount>300</workAmount>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase" MayRequire="sarg.rimbees">
+        <defName>WNA_RecipeAlphaBees</defName>
+        <description>devide a comb (or a hive) for triple products.</description>
+        <jobString>working.</jobString>
+        <label>divide a comb</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RB_WildHive_Temperate</li>
+                        <li>RB_WildHive_Mild</li>
+                    </thingDefs>
+					<categories>
+						<li>RB_Combs</li>
+					</categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RB_WildHive_Temperate</li>
+                <li>RB_WildHive_Mild</li>
+            </thingDefs>
+            <categories>
+                <li>RB_Combs</li>
+            </categories>
+        </fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+        <workAmount>300</workAmount>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+		<modExtensions>
+			<li Class="RimBees.OutputMultiplierRecipe">
+				<multiplier>1</multiplier>
+			</li>
+		</modExtensions>
+    </RecipeDef>
+
+</Defs>

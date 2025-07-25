@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="WNA_FactionWNA"]/modExtensions</xpath>
+        <value>
+            <li Class="KCSG.CustomGenOption">
+                <canSpawnSettlements>true</canSpawnSettlements>
+                <preventBridgeable>true</preventBridgeable>
+                <tryFindFreeArea>false</tryFindFreeArea>
+                <chooseFromlayouts>
+                    <li>WNASettlement_A</li>
+                    <li>WNASettlement_B</li>
+                    <li>WNASettlement_C</li>
+                    <li>WNASettlement_D</li>
+                    <li>WNASettlement_E</li>
+                    <li>WNASettlement_F</li>
+                    <li>WNASettlement_G</li>
+                </chooseFromlayouts>
+            </li>
+            <li Class="VEF.Factions.FactionDefExtension">
+                <neverConnectToRoads>true</neverConnectToRoads>
+            </li>
+        </value>
+    </Operation>
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="WNA_FactionWNA"]/modExtensions</xpath>
+        <value>
+            <li Class="KCSG.CustomGenOption">
+                <canSpawnSettlements>true</canSpawnSettlements>
+                <preventBridgeable>true</preventBridgeable>
+                <tryFindFreeArea>false</tryFindFreeArea>
+                <chooseFromlayouts>
+                    <li>WNASettlement_A</li>
+                    <li>WNASettlement_B</li>
+                    <li>WNASettlement_C</li>
+                    <li>WNASettlement_D</li>
+                    <li>WNASettlement_E</li>
+                    <li>WNASettlement_F</li>
+                    <li>WNASettlement_G</li>
+                </chooseFromlayouts>
+            </li>
+            <li Class="VEF.Factions.FactionDefExtension">
+                <neverConnectToRoads>true</neverConnectToRoads>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ScenarioDef[defName="WNA_PlayerScenario" or defName="WNA_Player2Scenario"]/scenario/parts</xpath>
+        <value>
+            <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+                <factionDef>WNA_FactionWNA</factionDef>
+                <affectHiddenFactions>True</affectHiddenFactions>
+                <affectStartingGoodwill>True</affectStartingGoodwill>
+                <startingGoodwillRange>100~100</startingGoodwillRange>
+                <affectNaturalGoodwill>False</affectNaturalGoodwill>
+                <def>VFEC_ForcedFactionGoodwill</def>
+            </li>
+            <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill" MayRequireAnyOf="ninedaylongbow.redsun,ninedaylongbow.redsuntechnologyindustry">
+                <factionDef>RedSun</factionDef>
+                <affectHiddenFactions>True</affectHiddenFactions>
+                <affectStartingGoodwill>True</affectStartingGoodwill>
+                <startingGoodwillRange>100~100</startingGoodwillRange>
+                <affectNaturalGoodwill>False</affectNaturalGoodwill>
+                <def>VFEC_ForcedFactionGoodwill</def>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="WNA_AnimalRaceBase"]/comps</xpath>
+        <value>
+            <li Class="VEF.AnimalBehaviours.CompProperties_Floating"></li>
+			<!-- <li Class="VEF.AnimalBehaviours.CompProperties_NoTamingDecay"></li> -->
+			<li Class="VEF.AnimalBehaviours.CompProperties_Draftable">
+				<makeNonFleeingToo>true</makeNonFleeingToo>
+			</li>
+            <li Class="VEF.AnimalBehaviours.CompProperties_Regeneration">
+                <rateInTicks>1</rateInTicks>
+                <healAmount>1000</healAmount>
+                <healAll>true</healAll>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WNA_WNThan" or defName="WNA_Human"]/comps</xpath>
+        <value>
+            <li Class="VEF.AnimalBehaviours.CompProperties_Floating"></li>
+            <li Class="VEF.AnimalBehaviours.CompProperties_Regeneration">
+                <rateInTicks>1</rateInTicks>
+                <healAmount>60000</healAmount>
+                <healAll>true</healAll>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WNA_AllianceHood"]/modExtensions</xpath>
+        <value>
+			<li Class="VEF.Apparels.ApparelExtension">
+				<equippedStatFactors>
+                    <AimingDelayFactor>0</AimingDelayFactor>
+                    <VEF_VerbRangeFactor>2</VEF_VerbRangeFactor>
+				</equippedStatFactors>
+				<pawnCapacityMinLevels>
+					<li>
+						<capacity>Sight</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<minLevel>1</minLevel>
+					</li>
+				</pawnCapacityMinLevels>
+			</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WNA_AllianceCloak"]/modExtensions</xpath>
+        <value>
+			<li Class="VEF.Apparels.ApparelExtension">
+				<equippedStatFactors>
+                    <VEF_VerbCooldownFactor>0</VEF_VerbCooldownFactor>
+                    <MeleeDamageFactor>50</MeleeDamageFactor>
+                    <VEF_RangeAttackDamageFactor>50</VEF_RangeAttackDamageFactor>
+                    <FilthRate>0</FilthRate>
+                    <Flammability>0</Flammability>
+				</equippedStatFactors>
+			</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WNA_AllianceRobe"]/modExtensions</xpath>
+        <value>
+			<li Class="VEF.Apparels.ApparelExtension">
+				<preventDowning>true</preventDowning>
+				<preventBleeding>true</preventBleeding>
+                <preventKilling>true</preventKilling>
+                <preventKillingUntilBrainMissing>true</preventKillingUntilBrainMissing>
+				<pawnCapacityMinLevels>
+					<li>
+						<capacity>Consciousness</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<minLevel>1</minLevel>
+					</li>
+				</pawnCapacityMinLevels>
+			</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WNA_ForceShield"]/modExtensions</xpath>
+        <value>
+			<li Class="VEF.Apparels.ApparelExtension">
+				<preventDowning>true</preventDowning>
+				<preventKilling>true</preventKilling>
+                <preventKillingUntilHealthHPPercentage>0</preventKillingUntilHealthHPPercentage>
+				<preventBleeding>true</preventBleeding>
+				<pawnCapacityMinLevels>
+					<li>
+						<capacity>Consciousness</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<minLevel>1</minLevel>
+					</li>
+                    <li>
+                        <capacity>Sight</capacity>
+						<minLevel>0.7</minLevel>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+						<minLevel>0.7</minLevel>
+                    </li>
+					<li>
+						<capacity>Breathing</capacity>
+						<minLevel>0.7</minLevel>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<minLevel>0.7</minLevel>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<minLevel>0.7</minLevel>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<minLevel>0.7</minLevel>
+					</li>
+				</pawnCapacityMinLevels>
+			</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WNA_Holyorder"]/modExtensions</xpath>
+        <value>
+			<li Class="VEF.Apparels.ApparelExtension">
+				<preventDowning>true</preventDowning>
+				<preventKilling>true</preventKilling>
+                <preventKillingUntilHealthHPPercentage>0</preventKillingUntilHealthHPPercentage>
+				<preventBleeding>true</preventBleeding>
+                <equippedStatFactors>
+					<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">200</ConversionPower>
+					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">200</SocialIdeoSpreadFrequencyFactor>
+				</equippedStatFactors>
+				<pawnCapacityMinLevels>
+					<li>
+						<capacity>Consciousness</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<minLevel>1</minLevel>
+					</li>
+                    <li>
+                        <capacity>Sight</capacity>
+						<minLevel>1</minLevel>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+						<minLevel>1</minLevel>
+                    </li>
+					<li>
+						<capacity>Breathing</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<minLevel>1</minLevel>
+					</li>
+				</pawnCapacityMinLevels>
+			</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="WNA_AmmoHelper"]</xpath>
+        <value>
+			<li Class="VEF.Apparels.ApparelExtension">
+                <equippedStatFactors>
+					<VEF_VerbRangeFactor>1.5</VEF_VerbRangeFactor>
+				</equippedStatFactors>
+			</li>
+        </value>
+    </Operation>
+	
+</Patch>

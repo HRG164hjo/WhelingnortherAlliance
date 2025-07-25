@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Basic -->
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_Focus</defName>
+        <label>focus</label>
+        <description>A strange blob of...it's hard to say what it actually is. But this kind of thing undoubtedly contains considerable energy.</description>
+        <graphicData>
+            <texPath>focus</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.6</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>0</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <!-- Material -->
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_PaleWood</defName>
+        <label>pale wood</label>
+        <description>Fossil-like wood. People have to be careful when making stuff like this as the technique to produce such thing is exactly the technique WNA uses to corrode enemies.</description>
+        <graphicData>
+            <texPath>items/wna_palewood</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(255,255,255)</color>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue>
+            <StuffPower_Armor_Sharp>5.4</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>5.4</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>4</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>80</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>40</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>4</SharpDamageMultiplier>
+            <BluntDamageMultiplier>9</BluntDamageMultiplier>
+        </statBases>
+        <equipmentType>Primary</equipmentType>
+        <comps>
+            <li>
+                <compClass>CompEquippable</compClass>
+            </li>
+        </comps>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <weaponTags Inherit="false">
+            <li>WNATag_NotForUse</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>WNA_CastMelee</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>1</cooldownTime>
+                <armorPenetration>Infinity</armorPenetration>
+            </li>
+        </tools>
+        <stuffProps>
+            <categories>
+                <li>Woody</li>
+                <li>Stony</li>
+            </categories>
+            <appearance>Bricks</appearance>
+            <color>(173,173,173)</color>
+            <commonality>0</commonality>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+            <statOffsets/>
+            <statFactors>
+                <MaxHitPoints>6.5</MaxHitPoints>
+                <Flammability>0</Flammability>
+                <Beauty>3</Beauty>
+                <DoorOpenSpeed>2.5</DoorOpenSpeed>
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_AshparkleStone</defName>
+        <label>ashparkle stone</label>
+        <description>Light and beautyful stone, probably one of the best things for art to ever exist in the universe. People have to be careful when making stuff like this as the technique to produce such thing is exactly the technique WNA uses to corrode enemies.</description>
+        <graphicData>
+            <texPath>items/wna_ashparklestone</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(187,176,187)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue>
+            <StuffPower_Armor_Sharp>9</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>4.5</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>5.4</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+            <BluntDamageMultiplier>15</BluntDamageMultiplier>
+        </statBases>
+        <stuffProps>
+            <categories>
+                <li>Stony</li>
+            </categories>
+            <color>(187,176,187)</color>
+            <commonality>0</commonality>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+            <statFactors>
+                <MaxHitPoints>17</MaxHitPoints>
+                <Flammability>0</Flammability>
+                <Beauty>25</Beauty>
+                <Mass>0.8</Mass>
+                <MeleeWeapon_CooldownMultiplier>0.3</MeleeWeapon_CooldownMultiplier>
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_DarkAsbestos</defName>
+        <label>dark asbestos</label>
+        <description>Asbestos-like substance that is widely used by WNA to make clothing. It's dark but very nice to look at. People have to be careful when making stuff like this as the technique to produce such thing is exactly the technique WNA uses to corrode enemies.</description>
+        <graphicData>
+            <texPath>items/wna_darkasbestos</texPath>
+            <color>(35,35,35)</color>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>12</MarketValue>
+            <StuffPower_Armor_Sharp>28.8</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>20</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>9999</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>9999</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>9999</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <categories>
+                <li>Fabric</li>
+            </categories>
+            <color>(43,43,43)</color>
+            <commonality>0</commonality>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+            <statOffsets/>
+            <statFactors>
+                <MaxHitPoints>2400</MaxHitPoints>
+                <Flammability>0</Flammability>
+                <Beauty>55</Beauty>
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_ChimingSteel</defName>
+        <label>chiming steel</label>
+        <description>Red, luminous, translucent, metal-like material. Although this substance appears to be almost indestructible, the literature claims that it is extremely unstable and has terrifying destructive power. WNA use this to maintain their orbital striking system.</description>
+        <graphicData>
+            <texPath>items/wna_chimingsteel</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(255,20,0,200)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>30</MarketValue>
+            <StuffPower_Armor_Sharp>9999</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>9999</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>2000</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>9999</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>999</SharpDamageMultiplier>
+            <BluntDamageMultiplier>999</BluntDamageMultiplier>
+        </statBases>
+        <stuffProps>
+            <categories>
+                <li>Metallic</li>
+            </categories>
+            <appearance>Metal</appearance>
+            <color>(255,20,0,200)</color>
+            <commonality>0</commonality>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+            <statFactors>
+                <MaxHitPoints>10000</MaxHitPoints>
+                <Flammability>0</Flammability>
+                <Beauty>255</Beauty>
+                <DoorOpenSpeed>4</DoorOpenSpeed>
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <overlightRadius>2</overlightRadius>
+                <glowColor>(255,0,0,0)</glowColor>
+            </li>
+            <!--<li Class="CompProperties_Studiable">
+                <cost>50</cost>
+                <completedLetterTitle>secret revealed: {RESEARCH}</completedLetterTitle>
+                <completedLetterText>After a long time of studying and thinking, {STUDIER_labelShort} has revealed the secret hidden in the {PARENT_label}. Now the relative research can be done at the research bences.</completedLetterText>
+                <completedLetterDef>PositiveEvent</completedLetterDef>
+            </li>-->
+        </comps>
+    </ThingDef>
+
+    <!-- Research items 
+    <ThingDef Abstract="True" ParentName="WNA_ItemsBase" Name="WNA_ResearchItemsBase">
+        <stackLimit>1</stackLimit>
+        <statBases>
+            <Mass>1</Mass>
+            <MarketValue>14400</MarketValue>
+            <Beauty>60</Beauty>
+        </statBases>
+        <tradeTags>
+            <li>WNATradeTags_Research</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Studiable">
+                <cost>550</cost>
+                <completedLetterTitle>secret revealed: {RESEARCH}</completedLetterTitle>
+                <completedLetterText>After a long time of studying and thinking, {STUDIER_labelShort} has revealed the secret hidden in the {PARENT_label}. Now the relative research can be done at the research bences.</completedLetterText>
+                <completedLetterDef>PositiveEvent</completedLetterDef>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_ResearchItemsBase">
+        <defName>WNA_R_Tusk</defName>
+        <label>ancient tusk</label>
+        <description>A tusk craft from old ages. There seems to be something on its surface.</description>
+        <graphicData>
+            <texPath>Things/Item/Special/ElephantTusk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(169,169,169,200)</color>
+            <drawSize>0.5</drawSize>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ResearchItemsBase">
+        <defName>WNA_R_Brick</defName>
+        <label>ancient stonechip</label>
+        <description>Remains of an ancient building. Seems like it have a story.</description>
+        <graphicData>
+            <texPath>items/wna_ri_stonechip</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(200,200,200,200)</color>
+            <drawSize>0.5</drawSize>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ResearchItemsBase">
+        <defName>WNA_R_Scroll</defName>
+        <label>ancient literature fragment</label>
+        <description>A scrap of an ancient scroll. Still something useful left.</description>
+        <graphicData>
+            <texPath>items/wna_ri_scroll</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(255,255,255,200)</color>
+            <drawSize>0.5</drawSize>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ResearchItemsBase">
+        <defName>WNA_R_Skull</defName>
+        <label>ancient head trophy</label>
+        <description>The head of a victim of ancient brutality. There seems to be something on the skin.</description>
+        <graphicData>
+            <texPath>items/wna_ri_head</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(255,255,255,200)</color>
+            <drawSize>0.5</drawSize>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ResearchItemsBase">
+        <defName>WNA_R_Sword</defName>
+        <label>ancient sword</label>
+        <description>A small piece of an ancient sacred sword. Is it whispering something?</description>
+        <graphicData>
+            <texPath>items/wna_ri_sword</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(255,255,255,200)</color>
+            <drawSize>0.6</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.5</MarketValue>
+        </statBases>
+        <equipmentType>Primary</equipmentType>
+        <comps>
+            <li>
+                <compClass>CompEquippable</compClass>
+            </li>
+        </comps>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <weaponTags Inherit="false">
+            <li>WNATag_NotForUse</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>Edge</label>
+                <capacities>
+                    <li>WNA_CastMelee</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>1</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>-->
+
+</Defs>

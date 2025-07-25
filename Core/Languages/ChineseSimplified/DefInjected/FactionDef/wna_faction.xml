@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_FactionWNA.label>威灵诺德联合会</WNA_FactionWNA.label>
+  <WNA_FactionWNA.description>数千年前这些人从偏远星区一颗充满冲突与压迫的星球上崛起，自那以后他们的活动痕迹遍布已知宇宙的所有角落，无孔不入如同阴影，无迹可寻仿佛鬼灵。这些黑衣笼罩的人形以及他们手下的威灵诺德人类反抗军将恐怖和死亡带到了几乎所有他们所及之处。这个教团组织相对年轻，但其起源则更加古老，甚至远早于这个宇宙。\n\n这一威灵诺德联合会的分支已经定居在这个边缘世界上很长时间。尽管他们眼下表现得很平和，他们和这颗星球上的其他派系之前肯定有过数不清的暴力冲突。近期他们似乎重新活跃了起来，试图在这里实现他们的终极目标——威灵天启。</WNA_FactionWNA.description>
+  <WNA_FactionWNA.fixedName>威灵诺德联合会</WNA_FactionWNA.fixedName>
+  <WNA_FactionWNA.pawnsPlural>会众</WNA_FactionWNA.pawnsPlural>
+  <WNA_FactionWNA.leaderTitle>圣徒</WNA_FactionWNA.leaderTitle>
+  <WNA_FactionWNA.ideoName>威灵圣训</WNA_FactionWNA.ideoName>
+  <WNA_FactionWNA.ideoDescription>当古威灵族人危殆之际，正是他们的奋力与牺牲铸成威灵帝国的伟大荣光；当我等先祖崛起微末之中，正是他们的奋力与牺牲铸成了我们威灵诺德联合会。若没有伟大的牺牲便不会有伟大之作，若没有伟大的奉献便无从抵达永恒自在不朽。我们后人将遵循前人为我们引的路；我们明晰我们将负的重负，欣然接受我们的昭昭天命；我们要改变与决定过往、当下与将来。一切存在之物都将沐浴威灵诺德的荣光，他们或许不会理解，但他们必将屈服。</WNA_FactionWNA.ideoDescription>
+
+
+</LanguageData>

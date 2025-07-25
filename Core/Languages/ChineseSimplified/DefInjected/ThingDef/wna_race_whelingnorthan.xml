@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_WNThan.label>威灵族</WNA_WNThan.label>
+  <WNA_WNThan.description>"威灵古国的人们自称为威灵诺德，意为‘他’是他们的立法者，而他们成为其他万物的立法者。现在我们也要用这个名字来称呼我们自己，表明我们已经与我们曾经所为之物永别，而我们所求之物已近在眉睫。尽管与人类仍有诸多相似之处，但我们实际上已经是一种全新的存在."\n\n——"风主"陈澈，威灵诺德联合会主司教士</WNA_WNThan.description>
+  <WNA_WNThan.tools.0.label>左手</WNA_WNThan.tools.0.label>
+  <WNA_WNThan.tools.1.label>右手</WNA_WNThan.tools.1.label>
+  <WNA_WNThan.tools.2.label>牙齿</WNA_WNThan.tools.2.label>
+  <WNA_WNThan.tools.3.label>头槌</WNA_WNThan.tools.3.label>
+
+  <WNA_Human.tools.0.label>左拳</WNA_Human.tools.0.label>
+  <WNA_Human.tools.1.label>右拳</WNA_Human.tools.1.label>
+  <WNA_Human.tools.2.label>牙齿</WNA_Human.tools.2.label>
+  <WNA_Human.tools.3.label>头</WNA_Human.tools.3.label>
+
+
+</LanguageData>

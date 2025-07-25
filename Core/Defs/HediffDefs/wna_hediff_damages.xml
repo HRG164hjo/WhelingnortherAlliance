@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef Abstract="True" Name="WNA_InjuryBase">
+        <hediffClass>Hediff_Injury</hediffClass>
+        <tendable>true</tendable>
+        <displayWound>true</displayWound>
+        <labelNounPretty>{0} in the {1}</labelNounPretty>
+        <defaultLabelColor>(0,0,0)</defaultLabelColor>
+    </HediffDef>
+
+    <HediffDef ParentName="WNA_InjuryBase">
+        <defName>WNA_HPDamage</defName>
+        <label>gunshot</label>
+        <labelNoun>a shot wound</labelNoun>
+        <description>A shot wound caused by hollow point bullet.</description>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <labelTendedWell>bandaged</labelTendedWell>
+                <labelTendedWellInner>sutured</labelTendedWellInner>
+                <labelSolidTendedWell>set</labelSolidTendedWell>
+            </li>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>0.99</infectionChance>
+            </li>
+            <li Class="HediffCompProperties_GetsPermanent">
+                <permanentLabel>old gunshot</permanentLabel>
+                <instantlyPermanentLabel>permanent gunshot injury</instantlyPermanentLabel>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.225</painPerSeverity>
+            <averagePainPerSeverityPermanent>0.025</averagePainPerSeverityPermanent>
+            <bleedRate>0.15</bleedRate>
+            <canMerge>false</canMerge>
+            <destroyedLabel>shot off</destroyedLabel>
+            <destroyedOutLabel>shot out</destroyedOutLabel>
+        </injuryProps>
+    </HediffDef>
+
+    <HediffDef ParentName="WNA_InjuryBase">
+        <defName>WNA_KineticDamage</defName>
+        <label>kinetic burn</label>
+        <labelNoun>an atypical burn</labelNoun>
+        <description>A burn wound caused by WNA's thought-kinetic weapons.</description>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <labelTendedWell>bandaged</labelTendedWell>
+                <labelTendedWellInner>sutured</labelTendedWellInner>
+                <labelSolidTendedWell>set</labelSolidTendedWell>
+            </li>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>0.5</infectionChance>
+            </li>
+            <li Class="HediffCompProperties_GetsPermanent">
+                <permanentLabel>old burn</permanentLabel>
+                <instantlyPermanentLabel>permanent kinetic burn</instantlyPermanentLabel>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.3</painPerSeverity>
+            <averagePainPerSeverityPermanent>0.0025</averagePainPerSeverityPermanent>
+            <bleedRate>0.1</bleedRate>
+            <canMerge>false</canMerge>
+            <destroyedLabel>burned off</destroyedLabel>
+            <destroyedOutLabel>burned out</destroyedOutLabel>
+        </injuryProps>
+    </HediffDef>
+
+    <HediffDef ParentName="WNA_InjuryBase">
+        <defName>WNA_CastDamage</defName>
+        <label>corrosion</label>
+        <labelNoun>whelingnorther corrosion</labelNoun>
+        <description>A horrible melting wound, seems never to heal.</description>
+        <tendable>false</tendable>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>0</infectionChance>
+            </li>
+            <li Class="HediffCompProperties_GetsPermanent">
+                <permanentLabel>molten</permanentLabel>
+                <instantlyPermanentLabel>molten</instantlyPermanentLabel>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>1</painPerSeverity>
+            <averagePainPerSeverityPermanent>1</averagePainPerSeverityPermanent>
+            <bleedRate>1</bleedRate>
+            <canMerge>false</canMerge>
+            <destroyedLabel>molten</destroyedLabel>
+            <destroyedOutLabel>molten</destroyedOutLabel>
+        </injuryProps>
+    </HediffDef>
+    
+    <!---->
+    <HediffDef>
+        <defName>WNA_ScrapBuildup</defName>
+        <label>scrap buildup</label>
+        <description>Multiple hazardous industrial waste accumulate in this person's body. Given that industrial waste is difficult to metabolize, this health condition will lead to long-term health risks. Can lead to lethal accute total organ failure if this condition continue to develop.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0,0,0)</defaultLabelColor>
+        <lethalSeverity>3</lethalSeverity>
+        <canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
+        <makesSickThought>true</makesSickThought>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <taleOnVisible>ToxicityRevealed</taleOnVisible>
+        <comps>
+            <li Class="HediffCompProperties_SurgeryInspectable">
+                <surgicalDetectionDesc>Multiple hazardous industrial waste accumulates in {PAWN_nameDef}'s body. This condition is hard to handle, long-term medical care is suggested.</surgicalDetectionDesc>
+            </li>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.01</severityPerDay>
+                <showDaysToRecover>true</showDaysToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>initial</label>
+                <becomeVisible>false</becomeVisible>
+            </li>
+            <li>
+                <label>initial</label>
+                <minSeverity>0.04</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>OrganDecay</hediff>
+                        <mtbDays>60</mtbDays>
+                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>minor</label>
+                <minSeverity>0.2</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>OrganDecay</hediff>
+                        <mtbDays>30</mtbDays>
+                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>moderate</label>
+                <minSeverity>0.40</minSeverity>
+                <vomitMtbDays>5</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.15</offset>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Dementia</hediff>
+                        <mtbDays>30</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>OrganDecay</hediff>
+                        <mtbDays>15</mtbDays>
+                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>serious</label>
+                <minSeverity>0.60</minSeverity>
+                <vomitMtbDays>1</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.25</offset>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Dementia</hediff>
+                        <mtbDays>15</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>OrganDecay</hediff>
+                        <mtbDays>6</mtbDays>
+                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>extreme</label>
+                <minSeverity>0.80</minSeverity>
+                <vomitMtbDays>0.25</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.10</setMax>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0.10</setMax>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <setMax>0.10</setMax>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Dementia</hediff>
+                        <mtbDays>5</mtbDays>
+                        <partsToAffect>
+                            <li>Brain</li>
+                        </partsToAffect>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>OrganDecay</hediff>
+                        <mtbDays>1</mtbDays>
+                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                    </li>
+                </hediffGivers>
+            </li>
+        </stages>
+    </HediffDef>
+    
+    <HediffDef>
+        <defName>WNA_Corrosion</defName>
+        <label>whelingnorther corrosion</label>
+        <description>An as yet unexplained fatal health condition in which victims often exhibit a unique state of melting upon death. Usually found on victims harmed by WNA rite weapons or directly attacked by Whelingnorthan.\n\nSo far hardly any methods can be used to treat this condition, what people can do is just pray and watch the condition grow worse, finally killing the victim.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0,0,0)</defaultLabelColor>
+        <lethalSeverity>0.5</lethalSeverity>
+        <makesSickThought>true</makesSickThought>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <taleOnVisible>ToxicityRevealed</taleOnVisible>
+        <tendable>false</tendable>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SurgeryInspectable">
+                <surgicalDetectionDesc>{PAWN_nameDef} is melting!</surgicalDetectionDesc>
+            </li>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.1</severityPerDay>
+                <showDaysToRecover>true</showDaysToRecover>
+            </li>
+            <li Class="WNA.HediffCompProp.CompPostRemoveHediff">
+                <hediff>WNA_Corrosion</hediff>
+                <severity>0.1</severity>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>hidden</label>
+                <becomeVisible>false</becomeVisible>
+            </li>
+            <li>
+                <label>severe</label>
+                <minSeverity>0.001</minSeverity>
+                <lifeThreatening>true</lifeThreatening>
+                <vomitMtbDays>0.1</vomitMtbDays>
+                <deathMtbDays>2</deathMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>0.1</postFactor>
+                        <setMax>0.1</setMax>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <postFactor>0.1</postFactor>
+                        <setMax>0.1</setMax>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                    <li>
+                        <capacity>Metabolism</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>extreme</label>
+                <minSeverity>0.1</minSeverity>
+                <lifeThreatening>true</lifeThreatening>
+                <deathMtbDays>0.1</deathMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.01</setMax>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0.01</setMax>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <setMax>0.01</setMax>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <setMax>0.01</setMax>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <setMax>0.01</setMax>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <setMax>0.01</setMax>
+                    </li>
+                    <li>
+                        <capacity>Metabolism</capacity>
+                        <setMax>0.01</setMax>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>fatal</label>
+                <minSeverity>0.4</minSeverity>
+                <lifeThreatening>true</lifeThreatening>
+                <deathMtbDays>0.0000000001</deathMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                    <li>
+                        <capacity>Metabolism</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

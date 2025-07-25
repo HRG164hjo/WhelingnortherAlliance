@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HediffGiverSetDef>
+        <defName>WNA_HediffGiver_WNThan</defName>
+        <hediffGivers>
+            <li Class="WNA.WNAMiscs.HedifferTicker">
+                <hediff>WNA_Inhuman</hediff>
+                <tickInterval>7</tickInterval>
+            </li>
+            <li Class="WNA.WNAMiscs.HedifferRemover">
+                <tickInterval>7</tickInterval>
+            </li>
+        </hediffGivers>
+    </HediffGiverSetDef>
+    
+    <HediffGiverSetDef>
+        <defName>WNA_HediffGiver_Human</defName>
+        <hediffGivers>
+            <li Class="WNA.WNAMiscs.HedifferTicker">
+                <hediff>WNA_DeathRefusal</hediff>
+                <tickInterval>7</tickInterval>
+            </li>
+            <li Class="WNA.WNAMiscs.HedifferRemover">
+                <tickInterval>7</tickInterval>
+            </li>
+        </hediffGivers>
+    </HediffGiverSetDef>
+
+    <HediffGiverSetDef>
+        <defName>WNA_HediffGiver_Beast</defName>
+        <hediffGivers>
+            <li Class="WNA.WNAMiscs.HedifferTicker">
+                <hediff>WNA_InAnimal</hediff>
+                <tickInterval>7</tickInterval>
+            </li>
+            <li Class="WNA.WNAMiscs.HedifferRemover">
+                <tickInterval>7</tickInterval>
+            </li>
+        </hediffGivers>
+    </HediffGiverSetDef>
+
+</Defs>

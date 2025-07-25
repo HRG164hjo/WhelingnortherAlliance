@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <LetterDef>
+        <defName>WNA_MajorThreatLetter</defName>
+        <color>(169,0,0)</color>
+        <flashColor>(0,0,0)</flashColor>
+        <flashInterval>6</flashInterval>
+        <forcedSlowdown>true</forcedSlowdown>
+        <arriveSound>LetterArrive_BadUrgentBig</arriveSound>
+        <pauseMode>MajorThreat</pauseMode>
+    </LetterDef>
+
+    <LetterDef>
+        <defName>WNA_PositiveLetter</defName>
+        <color>(55,55,55)</color>
+        <flashColor>(120,176,216)</flashColor>
+        <flashInterval>6</flashInterval>
+        <arriveSound>LetterArrive_Good</arriveSound>
+    </LetterDef>
+
+</Defs>

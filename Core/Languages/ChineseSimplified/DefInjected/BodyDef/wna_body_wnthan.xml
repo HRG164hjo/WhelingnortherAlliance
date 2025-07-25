@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNABody_WNThan.label>whelingnorthan</WNABody_WNThan.label>
+  <WNABody_WNThan.corePart.parts.8.customLabel>left lung</WNABody_WNThan.corePart.parts.8.customLabel>
+  <WNABody_WNThan.corePart.parts.9.customLabel>right lung</WNABody_WNThan.corePart.parts.9.customLabel>
+  <WNABody_WNThan.corePart.parts.10.customLabel>left kidney</WNABody_WNThan.corePart.parts.10.customLabel>
+  <WNABody_WNThan.corePart.parts.11.customLabel>right kidney</WNABody_WNThan.corePart.parts.11.customLabel>
+  <WNABody_WNThan.corePart.parts.13.parts.0.parts.1.customLabel>left eye</WNABody_WNThan.corePart.parts.13.parts.0.parts.1.customLabel>
+  <WNABody_WNThan.corePart.parts.13.parts.0.parts.2.customLabel>right eye</WNABody_WNThan.corePart.parts.13.parts.0.parts.2.customLabel>
+  <WNABody_WNThan.corePart.parts.13.parts.0.parts.3.customLabel>left ear</WNABody_WNThan.corePart.parts.13.parts.0.parts.3.customLabel>
+  <WNABody_WNThan.corePart.parts.13.parts.0.parts.4.customLabel>right ear</WNABody_WNThan.corePart.parts.13.parts.0.parts.4.customLabel>
+  <WNABody_WNThan.corePart.parts.14.customLabel>left shoulder</WNABody_WNThan.corePart.parts.14.customLabel>
+  <WNABody_WNThan.corePart.parts.14.parts.0.customLabel>left clavicle</WNABody_WNThan.corePart.parts.14.parts.0.customLabel>
+  <WNABody_WNThan.corePart.parts.14.parts.1.customLabel>left arm</WNABody_WNThan.corePart.parts.14.parts.1.customLabel>
+  <WNABody_WNThan.corePart.parts.14.parts.1.parts.0.customLabel>left humerus</WNABody_WNThan.corePart.parts.14.parts.1.parts.0.customLabel>
+  <WNABody_WNThan.corePart.parts.14.parts.1.parts.1.customLabel>left radius</WNABody_WNThan.corePart.parts.14.parts.1.parts.1.customLabel>
+  <WNABody_WNThan.corePart.parts.14.parts.1.parts.2.customLabel>left hand</WNABody_WNThan.corePart.parts.14.parts.1.parts.2.customLabel>
+  <WNABody_WNThan.corePart.parts.14.parts.1.parts.2.parts.0.customLabel>left pinky</WNABody_WNThan.corePart.parts.14.parts.1.parts.2.parts.0.customLabel>
+  <WNABody_WNThan.corePart.parts.14.parts.1.parts.2.parts.1.customLabel>left ring finger</WNABody_WNThan.corePart.parts.14.parts.1.parts.2.parts.1.customLabel>
+  <WNABody_WNThan.corePart.parts.14.parts.1.parts.2.parts.2.customLabel>left middle finger</WNABody_WNThan.corePart.parts.14.parts.1.parts.2.parts.2.customLabel>
+  <WNABody_WNThan.corePart.parts.14.parts.1.parts.2.parts.3.customLabel>left index finger</WNABody_WNThan.corePart.parts.14.parts.1.parts.2.parts.3.customLabel>
+  <WNABody_WNThan.corePart.parts.14.parts.1.parts.2.parts.4.customLabel>left thumb</WNABody_WNThan.corePart.parts.14.parts.1.parts.2.parts.4.customLabel>
+  <WNABody_WNThan.corePart.parts.15.customLabel>right shoulder</WNABody_WNThan.corePart.parts.15.customLabel>
+  <WNABody_WNThan.corePart.parts.15.parts.0.customLabel>right clavicle</WNABody_WNThan.corePart.parts.15.parts.0.customLabel>
+  <WNABody_WNThan.corePart.parts.15.parts.1.customLabel>right arm</WNABody_WNThan.corePart.parts.15.parts.1.customLabel>
+  <WNABody_WNThan.corePart.parts.15.parts.1.parts.0.customLabel>right humerus</WNABody_WNThan.corePart.parts.15.parts.1.parts.0.customLabel>
+  <WNABody_WNThan.corePart.parts.15.parts.1.parts.1.customLabel>right radius</WNABody_WNThan.corePart.parts.15.parts.1.parts.1.customLabel>
+  <WNABody_WNThan.corePart.parts.15.parts.1.parts.2.customLabel>right hand</WNABody_WNThan.corePart.parts.15.parts.1.parts.2.customLabel>
+  <WNABody_WNThan.corePart.parts.15.parts.1.parts.2.parts.0.customLabel>right pinky</WNABody_WNThan.corePart.parts.15.parts.1.parts.2.parts.0.customLabel>
+  <WNABody_WNThan.corePart.parts.15.parts.1.parts.2.parts.1.customLabel>right ring finger</WNABody_WNThan.corePart.parts.15.parts.1.parts.2.parts.1.customLabel>
+  <WNABody_WNThan.corePart.parts.15.parts.1.parts.2.parts.2.customLabel>right middle finger</WNABody_WNThan.corePart.parts.15.parts.1.parts.2.parts.2.customLabel>
+  <WNABody_WNThan.corePart.parts.15.parts.1.parts.2.parts.3.customLabel>right index finger</WNABody_WNThan.corePart.parts.15.parts.1.parts.2.parts.3.customLabel>
+  <WNABody_WNThan.corePart.parts.15.parts.1.parts.2.parts.4.customLabel>right thumb</WNABody_WNThan.corePart.parts.15.parts.1.parts.2.parts.4.customLabel>
+  <WNABody_WNThan.corePart.parts.17.customLabel>left leg</WNABody_WNThan.corePart.parts.17.customLabel>
+  <WNABody_WNThan.corePart.parts.17.parts.0.customLabel>left femur</WNABody_WNThan.corePart.parts.17.parts.0.customLabel>
+  <WNABody_WNThan.corePart.parts.17.parts.1.customLabel>left tibia</WNABody_WNThan.corePart.parts.17.parts.1.customLabel>
+  <WNABody_WNThan.corePart.parts.17.parts.2.customLabel>left foot</WNABody_WNThan.corePart.parts.17.parts.2.customLabel>
+  <WNABody_WNThan.corePart.parts.17.parts.2.parts.0.customLabel>left little toe</WNABody_WNThan.corePart.parts.17.parts.2.parts.0.customLabel>
+  <WNABody_WNThan.corePart.parts.17.parts.2.parts.1.customLabel>left fourth toe</WNABody_WNThan.corePart.parts.17.parts.2.parts.1.customLabel>
+  <WNABody_WNThan.corePart.parts.17.parts.2.parts.2.customLabel>left middle toe</WNABody_WNThan.corePart.parts.17.parts.2.parts.2.customLabel>
+  <WNABody_WNThan.corePart.parts.17.parts.2.parts.3.customLabel>left second toe</WNABody_WNThan.corePart.parts.17.parts.2.parts.3.customLabel>
+  <WNABody_WNThan.corePart.parts.17.parts.2.parts.4.customLabel>left big toe</WNABody_WNThan.corePart.parts.17.parts.2.parts.4.customLabel>
+  <WNABody_WNThan.corePart.parts.18.customLabel>right leg</WNABody_WNThan.corePart.parts.18.customLabel>
+  <WNABody_WNThan.corePart.parts.18.parts.0.customLabel>right femur</WNABody_WNThan.corePart.parts.18.parts.0.customLabel>
+  <WNABody_WNThan.corePart.parts.18.parts.1.customLabel>right tibia</WNABody_WNThan.corePart.parts.18.parts.1.customLabel>
+  <WNABody_WNThan.corePart.parts.18.parts.2.customLabel>right foot</WNABody_WNThan.corePart.parts.18.parts.2.customLabel>
+  <WNABody_WNThan.corePart.parts.18.parts.2.parts.0.customLabel>right little toe</WNABody_WNThan.corePart.parts.18.parts.2.parts.0.customLabel>
+  <WNABody_WNThan.corePart.parts.18.parts.2.parts.1.customLabel>right fourth toe</WNABody_WNThan.corePart.parts.18.parts.2.parts.1.customLabel>
+  <WNABody_WNThan.corePart.parts.18.parts.2.parts.2.customLabel>right middle toe</WNABody_WNThan.corePart.parts.18.parts.2.parts.2.customLabel>
+  <WNABody_WNThan.corePart.parts.18.parts.2.parts.3.customLabel>right second toe</WNABody_WNThan.corePart.parts.18.parts.2.parts.3.customLabel>
+  <WNABody_WNThan.corePart.parts.18.parts.2.parts.4.customLabel>right big toe</WNABody_WNThan.corePart.parts.18.parts.2.parts.4.customLabel>
+
+
+</LanguageData>

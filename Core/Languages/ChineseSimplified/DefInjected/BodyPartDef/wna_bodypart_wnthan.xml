@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- <BodyPartDef>
+        <defName>WNABodyPart_WNthan_Shell</defName>
+        <label>shell</label>
+        <hitPoints>500</hitPoints>
+        <skinCovered>true</skinCovered>
+        <bleedRate>0</bleedRate>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    </BodyPartDef> -->
+
+  <WNABodyPart_WNthan_Anchor.label>锚点</WNABodyPart_WNthan_Anchor.label>
+  <WNABodyPart_WNthan_Subcore.label>次级核心</WNABodyPart_WNthan_Subcore.label>
+
+
+</LanguageData>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <IssueDef>
+        <defName>WNA_I_Proselyte</defName>
+        <label> </label>
+        <iconPath>factions/wna_alliance</iconPath>
+    </IssueDef>
+    <PreceptDef>
+        <defName>WNA_P_Proselyte</defName>
+        <label></label>
+        <impact>High</impact>
+        <issue>WNA_I_Proselyte</issue>
+        <description>...</description>
+        <prefersSlabBed>true</prefersSlabBed>
+        <requiredMemes>
+            <li>Meme_WNA_Ideo</li>
+        </requiredMemes>
+        <associatedMemes>
+            <li>Meme_WNA_Ideo</li>
+        </associatedMemes>
+        <statFactors>
+            <MentalBreakThreshold>0</MentalBreakThreshold>
+            <CertaintyLossFactor>0</CertaintyLossFactor>
+            <SocialIdeoSpreadFrequencyFactor>99999</SocialIdeoSpreadFrequencyFactor>
+            <ConversionPower>99999</ConversionPower>
+            <SuppressionPower>99999</SuppressionPower>
+            <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">10</ActivitySuppressionRate>
+        </statFactors>
+        <comps>
+            <li Class="PreceptComp_SelfTookMemoryThought">
+                <eventDef>AteFungus</eventDef>
+                <thought>WNA_ThoughtAteFungus</thought>
+            </li>
+            <li Class="PreceptComp_SelfTookMemoryThought">
+                <eventDef>AteFungusAsIngredient</eventDef>
+                <thought>WNA_ThoughtAteFungus</thought>
+            </li>
+        </comps>
+    </PreceptDef>
+</Defs>

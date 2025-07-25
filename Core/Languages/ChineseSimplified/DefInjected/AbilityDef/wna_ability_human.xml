@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_Coagulate.label>止血</WNA_Coagulate.label>
+  <WNA_Coagulate.description>使用多种专业的医疗设备进行急救。不需要消耗医疗包。</WNA_Coagulate.description>
+
+  <WNA_SaboteurJump.label>长跃</WNA_SaboteurJump.label>
+  <WNA_SaboteurJump.description>威灵会的破坏者们接受过专业的训练，无需借助任何辅助设备就能进行长距离跳跃。</WNA_SaboteurJump.description>
+  <WNA_SaboteurJump.verbProperties.label>长跃</WNA_SaboteurJump.verbProperties.label>
+
+  <WNA_Aeroblaze.label>天火打击</WNA_Aeroblaze.label>
+  <WNA_Aeroblaze.description>将目标标记为一个轨道打击定位信标。“赤火天锤”卫星网络将立刻开始调整和聚焦，对目标进行一次残酷无情的打击。</WNA_Aeroblaze.description>
+
+
+</LanguageData>

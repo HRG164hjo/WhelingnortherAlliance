@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="../../../../Schemas/MovementDef.xsd">
+	<PathfindingFramework.MovementDef MayRequire="pathfinding.framework">
+		<defName>WNA_Movement</defName>
+		<label>voidwalker</label>
+		<description>WNA masters many useful tricks on traveling, there's hardly any terrain can challenge them.</description>
+        <priority>10000</priority>
+		<defaultCost>0</defaultCost>
+        <ignoreSnow>true</ignoreSnow>
+        <ignoreThings>true</ignoreThings>
+        <ignoreAvoidWander>true</ignoreAvoidWander>
+		<tagCosts>
+            <PF_TerrainTag_WaterDeep>0</PF_TerrainTag_WaterDeep>
+            <PF_TerrainTag_WaterChestDeep>0</PF_TerrainTag_WaterChestDeep>
+            <PF_TerrainTag_WaterShallow>0</PF_TerrainTag_WaterShallow>
+            <PF_TerrainTag_Lava MayRequireAnyOf="BiomesTeam.BiomesCore,ReGrowth.BOTR.Core,sarg.alphabiomes">0</PF_TerrainTag_Lava>
+            <WNA_TerrainTag_Seal>0</WNA_TerrainTag_Seal>
+		</tagCosts>
+	</PathfindingFramework.MovementDef>
+
+</Defs>

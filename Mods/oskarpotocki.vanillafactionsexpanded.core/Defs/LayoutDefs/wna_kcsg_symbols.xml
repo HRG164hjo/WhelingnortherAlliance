@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- Buildings -->
+    <KCSG.SymbolDef>
+        <defName>WNA_FocusWall</defName>
+        <thing>WNA_FocusWall</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_FocusEmbrasure</defName>
+        <thing>WNA_FocusEmbrasure</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_FocusDoor</defName>
+        <thing>WNA_FocusDoor</thing>
+    </KCSG.SymbolDef>
+    
+    <KCSG.SymbolDef>
+        <defName>WNA_LinkTable</defName>
+        <thing>WNA_LinkTable</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_LinkSeat</defName>
+        <thing>WNA_LinkSeat</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_LinkShelf</defName>
+        <thing>WNA_LinkShelf</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_SingleBed</defName>
+        <thing>WNA_SingleBed</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_TorchLamp</defName>
+        <thing>WNA_TorchLamp</thing>
+    </KCSG.SymbolDef>
+    
+    <KCSG.SymbolDef>
+        <defName>WNA_Mortar</defName>
+        <thing>WNA_Mortar</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_Turret_A</defName>
+        <thing>WNA_Turret_A</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_Turret_B</defName>
+        <thing>WNA_Turret_B</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_Turret_C</defName>
+        <thing>WNA_Turret_C</thing>
+    </KCSG.SymbolDef>
+    
+    <KCSG.SymbolDef>
+        <defName>WNA_LootCrate_Currency</defName>
+        <thing>WNA_LootCrate_Currency</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_LootCrate_Exotic</defName>
+        <thing>WNA_LootCrate_Exotic</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_LootCrate_Fabric</defName>
+        <thing>WNA_LootCrate_Fabric</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_LootCrate_Medicine</defName>
+        <thing>WNA_LootCrate_Medicine</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_LootCrate_RawVegi</defName>
+        <thing>WNA_LootCrate_RawVegi</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_LootCrate_Resources</defName>
+        <thing>WNA_LootCrate_Resources</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_LootCrate_Shells</defName>
+        <thing>WNA_LootCrate_Shells</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_LootCrate_WNA</defName>
+        <thing>WNA_LootCrate_WNA</thing>
+    </KCSG.SymbolDef>
+
+    <!-- Items -->
+    <KCSG.SymbolDef>
+        <defName>WNA_ChimingSteel</defName>
+        <thing>WNA_ChimingSteel</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_DarkAsbestos</defName>
+        <thing>WNA_DarkAsbestos</thing>
+    </KCSG.SymbolDef>
+    <KCSG.SymbolDef>
+        <defName>WNA_PaleWood</defName>
+        <thing>WNA_PaleWood</thing>
+    </KCSG.SymbolDef>
+    
+    <KCSG.SymbolDef>
+        <defName>WNA_Shell_ChimingShard</defName>
+        <thing>WNA_Shell_ChimingShard</thing>
+    </KCSG.SymbolDef>
+</Defs>

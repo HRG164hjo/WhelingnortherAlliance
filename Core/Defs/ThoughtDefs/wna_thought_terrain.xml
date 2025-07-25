@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThoughtDef>
+        <defName>WNA_OnFocusFloor</defName>
+        <durationDays>1</durationDays>
+        <developmentalStageFilter>Baby,Child,Adult</developmentalStageFilter><stages>
+            <li>
+                <label>on pale tile</label>
+                <description>A neat place. I like it.</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef>
+        <defName>WNA_InFocusSpring</defName>
+        <durationDays>1</durationDays>
+        <developmentalStageFilter>Baby,Child,Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>in pale spring</label>
+                <description>This water washed my messy thoughts away. I feel so calm and peace.</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef>
+        <defName>WNA_OnFocusSoil</defName>
+        <durationDays>1</durationDays>
+        <developmentalStageFilter>Baby,Child,Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>on dim soil</label>
+                <description>I can feel a pulse of life passing through me, makes me feel refreshed and relaxed.</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

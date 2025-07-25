@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_ShadowRing.label>暗影环绕</WNA_ShadowRing.label>
+  <WNA_ShadowRing.description>阴影环绕在此人周身。一些变化——包括一些显而易见的变化，正在此人身上发生。</WNA_ShadowRing.description>
+
+  <WNA_Mastery.label>技能大师</WNA_Mastery.label>
+  <WNA_Mastery.description>神秘的声音在世界的表象之下回响，向彼此或是自顾自地低语着宝贵的知识。此人能够从这些知识中截取些许，因而成为了多个领域的大师。</WNA_Mastery.description>
+
+  <WNA_IronCurtain.label>铁幕</WNA_IronCurtain.label>
+  <WNA_IronCurtain.description>源自先古威灵帝国的力量流经此人，寻常方式无法对其造成损伤。</WNA_IronCurtain.description>
+
+  <WNA_StillWater.label>心如止水</WNA_StillWater.label>
+  <WNA_StillWater.description>此人已经达成了内在的非凡平静，甚至摆脱了一些生物的原始需求。但这并不意味着他从此就能被随意对待。</WNA_StillWater.description>
+
+
+</LanguageData>

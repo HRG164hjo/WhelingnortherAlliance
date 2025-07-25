@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AbilityDef ParentName="WNA_AbilityBase">
+        <defName>WNA_Coagulate</defName>
+        <label>coagulate</label>
+        <description>Perform first aids with multiple professional medical devices. No medicine is needed.</description>
+        <iconPath>focus</iconPath>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <warmupTime>0</warmupTime>
+            <range>-1</range>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetMechs>true</canTargetMechs>
+                <neverTargetHostileFaction>true</neverTargetHostileFaction>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityCoagulate">
+                <tendQualityRange>400~400</tendQualityRange>
+            </li>
+        </comps>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+    </AbilityDef>
+
+    <AbilityDef ParentName="WNA_AbilityBase">
+        <defName>WNA_SaboteurJump</defName>
+        <label>long jump</label>
+        <description>Saboteurs have recevied professional trainings, they can make long-distance jumps without using any other equipments.</description>
+        <iconPath>focus</iconPath>
+        <cooldownTicksRange>60</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityJump</verbClass>
+            <label>jump</label>
+            <warmupTime>0</warmupTime>
+            <range>99.9</range>
+            <requireLineOfSight>false</requireLineOfSight>
+            <soundCast>Longjump_Jump</soundCast>
+            <soundLanding>Longjump_Land</soundLanding>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <jobDef>CastJump</jobDef>
+    </AbilityDef>
+
+    <AbilityDef ParentName="WNA_AbilityBase">
+        <defName>WNA_Aeroblaze</defName>
+        <label>aeroblaze</label>
+        <description>Mark target as a orbital strike positioning beacon. Chimingblaze Celestrike Satellite Network will then adjust and focus, deliver a merciless strike to the target.</description>
+        <iconPath>focus</iconPath>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0</warmupTime>
+            <range>99.9</range>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetBuildings>true</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilitySpawn">
+                <thingDef>WNA_Ether_Aeroblaze</thingDef>
+                <allowOnBuildings>true</allowOnBuildings>
+            </li>
+            <li Class="CompProperties_AbilityEffecterOnTarget">
+                <effecterDef>Skip_Exit</effecterDef>
+                <maintainForTicks>6</maintainForTicks>
+                <scale>0.42</scale>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDefs>
+                    <li>PsycastSkipInnerExit</li>
+                    <li>PsycastSkipOuterRingExit</li>
+                </fleckDefs>
+                <scale>0.42</scale>
+                <sound>Psycast_Skip_Exit</sound>
+                <preCastTicks>5</preCastTicks>
+            </li>
+        </comps>
+    </AbilityDef>
+
+</Defs>

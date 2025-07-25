@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MealBDsInstantNoodleBase">
+		<defName>WNA_InstaNoodle</defName>
+		<label>WNA insta noodle</label>
+		<description>A WNA-style insta noodle meal.</description>
+        <stackLimit>5000</stackLimit>
+        <pathCost>0</pathCost>
+        <techLevel>Archotech</techLevel>
+        <useHitPoints>false</useHitPoints>
+		<statBases>
+            <Beauty>0</Beauty>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>0.1</Mass>
+			<Nutrition>5</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>mods/bdinstanoodle/insta</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ingestible>
+			<baseIngestTicks>1200</baseIngestTicks>
+			<tasteThought>AteLavishMeal</tasteThought>
+            <babiesCanIngest MayRequire="Ludeon.RimWorld.Biotech">true</babiesCanIngest>
+            <joy>0.40</joy>
+            <joyKind>Gluttonous</joyKind>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_OffsetHemogen">
+                    <offset>5</offset>
+                </li>
+            </outcomeDoers>
+		</ingestible>
+        <thingCategories>
+            <li>WNA_Category_Item</li>
+        </thingCategories>
+		<comps Inherit="false">
+            <li Class="CompProperties_Forbiddable" />
+			<li Class="BDsInstantNoodle.CompProperties_EatenGraphic">
+				<graphicData>
+					<texPath>mods/bdinstanoodle/insta2</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</graphicData>
+			</li>
+		</comps>
+	</ThingDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_InstaNoodle</defName>
+        <description>Use mana and things can be considered as raw food to make meal pack.</description>
+        <jobString>working.</jobString>
+        <label>make WNA insta noodle x4</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Foods</li>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Foods</li>
+                <li>Leathers</li>
+            </categories>
+            <disallowedCategories>
+                <li>FoodMeals</li>
+                <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_InstaNoodle>4</WNA_InstaNoodle>
+        </products>
+        <workAmount>1200</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+	    </recipeUsers>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_InstaNoodle_Bulk</defName>
+        <description>Use mana and things can be considered as raw food to make meal pack.</description>
+        <jobString>working.</jobString>
+        <label>make WNA insta noodle x10</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Foods</li>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Foods</li>
+                <li>Leathers</li>
+            </categories>
+            <disallowedCategories>
+                <li>FoodMeals</li>
+                <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_InstaNoodle>10</WNA_InstaNoodle>
+        </products>
+        <workAmount>3000</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+	    </recipeUsers>
+    </RecipeDef>
+</Defs>

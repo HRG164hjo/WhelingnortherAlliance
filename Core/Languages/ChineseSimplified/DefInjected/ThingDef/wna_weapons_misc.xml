@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- rebel -->
+
+  <WNA_TrapLauncher.label>尖刺陷阱部署器</WNA_TrapLauncher.label>
+  <WNA_TrapLauncher.description>一件重型单兵火炮，不过并不是用来炸碎敌人的，而是用来部署陷阱的。这种火炮发射的弹药对目标造成的伤害微乎其微，但可以在一片区域内部署大量非常危险的尖刺陷阱。</WNA_TrapLauncher.description>
+  <WNA_TrapLauncher.tools.0.label>枪管</WNA_TrapLauncher.tools.0.label>
+
+  <WNA_TrapLauncher_Proj.label>gun proj</WNA_TrapLauncher_Proj.label>
+
+
+</LanguageData>

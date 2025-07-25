@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef>
+        <defName>WNA_AbilityInvisibility</defName>
+        <label>invisibility</label>
+        <hediffClass>HediffWithComps</hediffClass>
+        <description>This pawn is hidden beyond sights.</description>
+        <defaultLabelColor>(0,0,0)</defaultLabelColor>
+        <everCurableByItem>false</everCurableByItem>
+        <comps>
+			<li Class="HediffCompProperties_Invisibility">
+			  	<visibleToPlayer>false</visibleToPlayer>
+                <affectedByDisruptor>false</affectedByDisruptor>
+			</li>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>WNA_AbilityWisdom</defName>
+        <label>bestowed wisdom</label>
+        <hediffClass>HediffWithComps</hediffClass>
+        <description>This pawn is bestowed with wisdom by a Whelingnorther Saint.</description>
+        <defaultLabelColor>(0,0,0)</defaultLabelColor>
+        <everCurableByItem>false</everCurableByItem>
+        <isBad>false</isBad>
+        <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+        <aptitudes>
+            <Shooting>99</Shooting>
+            <Melee>99</Melee>
+            <Construction>99</Construction>
+            <Mining>99</Mining>
+            <Cooking>99</Cooking>
+            <Plants>99</Plants>
+            <Animals>99</Animals>
+            <Crafting>99</Crafting>
+            <Artistic>99</Artistic>
+            <Medicine>99</Medicine>
+            <Social>99</Social>
+            <Intellectual>99</Intellectual>
+        </aptitudes>
+		<comps>
+            <li Class="WNA.HediffCompProp.CompPostRemoveHediff">
+                <hediff>WNA_AbilityWisdom</hediff>
+            </li>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"/>
+		</comps>
+		<modExtensions>
+			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
+				<movementDef>WNA_Movement</movementDef>
+			</li>
+		</modExtensions>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>WNA_PsychicTrauma</defName>
+        <label>psychic trauma</label>
+        <hediffClass>HediffWithComps</hediffClass>
+        <description>The trauma after experiencing psylink deprivation with psylink.</description>
+        <defaultLabelColor>(0,0,0)</defaultLabelColor>
+        <everCurableByItem>false</everCurableByItem>
+        <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+        <blocksSleeping>true</blocksSleeping>
+        <blocksSocialInteraction>true</blocksSocialInteraction>
+        <preventsCrawling>true</preventsCrawling>
+        <aptitudes>
+            <Shooting>-99</Shooting>
+            <Melee>-99</Melee>
+            <Construction>-99</Construction>
+            <Mining>-99</Mining>
+            <Cooking>-99</Cooking>
+            <Plants>-99</Plants>
+            <Animals>-99</Animals>
+            <Crafting>-99</Crafting>
+            <Artistic>-99</Artistic>
+            <Medicine>-99</Medicine>
+            <Social>-99</Social>
+            <Intellectual>-99</Intellectual>
+        </aptitudes>
+        <comps>
+            <li Class="HediffCompProperties_SurgeryInspectable">
+                <surgicalDetectionDesc>Due to the brutal psychic deprivation {PAWN_nameDef} have experienced, {PAWN_nameDef} is suffering from severe psychic trauma and become incapacitied. Whether {PAWN_nameDef} can recover from this condition is uncertain.</surgicalDetectionDesc>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+                <painOffset>1</painOffset>
+                <overrideMoodBase>0</overrideMoodBase>
+                <statFactors>
+                    <GlobalLearningFactor>0</GlobalLearningFactor>
+                    <PainShockThreshold>0</PainShockThreshold>
+                    <PsychicSensitivity>0</PsychicSensitivity>
+                    <PsychicEntropyMax>0</PsychicEntropyMax>
+                    <PsychicEntropyRecoveryRate>0</PsychicEntropyRecoveryRate>
+                    <MeditationFocusGain>0</MeditationFocusGain>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                    <li>
+                        <capacity>Talking</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef>
+        <defName>WNA_Disabled</defName>
+        <label>disabled</label>
+        <hediffClass>HediffWithComps</hediffClass>
+        <description>The trauma after experiencing psylink deprivation without psylink. Commonly this condition can recover in 3 days or so.</description>
+        <defaultLabelColor>(0,0,0)</defaultLabelColor>
+        <blocksSleeping>true</blocksSleeping>
+        <blocksSocialInteraction>true</blocksSocialInteraction>
+        <preventsCrawling>true</preventsCrawling>
+        <maxSeverity>500</maxSeverity>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.7</severityPerDay>
+                <showDaysToRecover>true</showDaysToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <painOffset>1</painOffset>
+                <overrideMoodBase>0</overrideMoodBase>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

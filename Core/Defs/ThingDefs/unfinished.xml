@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef>
+        <defName>WNA_UnfinishedThing</defName>
+        <label>placeholder</label>
+        <thingClass>UnfinishedThing</thingClass>
+        <category>Item</category>
+        <graphicData>
+            <texPath>rite</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.6</drawSize>
+        </graphicData>
+        <altitudeLayer>Item</altitudeLayer>
+        <isUnfinishedThing>true</isUnfinishedThing>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <selectable>true</selectable>
+        <tradeability>None</tradeability>
+        <drawerType>MapMeshOnly</drawerType>
+        <useHitPoints>false</useHitPoints>
+        <statBases>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Beauty>0</Beauty>
+            <Mass>0</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <alwaysHaulable>true</alwaysHaulable>
+        <rotatable>false</rotatable>
+        <pathCost>0</pathCost>
+        <thingCategories>
+            <li>Unfinished</li>
+        </thingCategories>
+    </ThingDef>
+
+</Defs>

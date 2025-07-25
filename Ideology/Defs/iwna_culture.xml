@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <CultureDef>
+        <defName>WNA_WhelingnortherCulture</defName>
+        <label>whelingnorther</label>
+        <description>An otherworld culture said to be from far ancient Whelingnorther Empire.</description>
+        <iconPath>factions/wna_alliance</iconPath>
+        <pawnNameMaker>NamerPersonSophian</pawnNameMaker>
+        <pawnNameMakerFemale>NamerPersonSophianFemale</pawnNameMakerFemale>
+        <ideoNameMaker>NamerIdeoSophian</ideoNameMaker>
+        <deityNameMaker>NamerDeitySophian</deityNameMaker>
+        <deityTypeMaker>DeityTypeMakerSophian</deityTypeMaker>
+        <leaderTitleMaker>WNA_LeaderTitleMaker</leaderTitleMaker>
+        <festivalNameMaker>NamerFestivalSophian</festivalNameMaker>
+        <allowedPlaceTags>
+            <li>OriginSpacer</li>
+        </allowedPlaceTags>
+        <styleItemTags>
+            <li>
+              <tag>Urban</tag>
+              <baseWeight>1</baseWeight>
+              <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoTattoo</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoBeard</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+    </CultureDef>
+
+    <RulePackDef>
+        <defName>WNA_LeaderTitleMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_leaderTitle->saint</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

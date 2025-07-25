@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <TraderKindDef ParentName="WNA_TraderKindBase">
+        <defName>WNA_Trader_Settlement</defName>
+        <label>whelingnorther branch storage</label>
+        <stockGenerators>
+            <li Class="StockGenerator_Animals">
+                <tradeTagsSell>
+                    <li>WNATradeTag_Animal</li>
+                </tradeTagsSell>
+                <tradeTagsBuy>
+                    <li>AnimalCommon</li>
+                    <li>AnimalDryad</li>
+                    <li>AnimalExotic</li>
+                    <li>AnimalFarm</li>
+                    <li>AnimalFighter</li>
+                    <li>AnimalInsect</li>
+                    <li>AnimalPet</li>
+                    <li>AnimalUncommon</li>
+                    <li>WNATradeTag_Animal</li>
+                </tradeTagsBuy>
+                <kindCountRange>1~2</kindCountRange>
+                <countRange>8~10</countRange>
+            </li>
+            <li Class="StockGenerator_Techprints">
+                <countChances>
+                    <li>
+                        <count>5</count>
+                        <chance>1</chance>
+                    </li>
+                </countChances>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+    <TraderKindDef ParentName="WNA_TraderKindBase">
+        <defName>WNA_Trader_Orbital</defName>
+        <label>whelingnorther orbital storage</label>
+        <orbital>true</orbital>
+        <commonality>1</commonality>
+        <stockGenerators>
+            <li Class="StockGenerator_Animals">
+                <tradeTagsSell>
+                    <li>AnimalCommon</li>
+                    <li>AnimalDryad</li>
+                    <li>AnimalExotic</li>
+                    <li>AnimalFarm</li>
+                    <li>AnimalFighter</li>
+                    <li>AnimalInsect</li>
+                    <li>AnimalPet</li>
+                    <li>AnimalUncommon</li>
+                    <li>WNATradeTag_Animal</li>
+                </tradeTagsSell>
+                <tradeTagsBuy>
+                    <li>AnimalCommon</li>
+                    <li>AnimalDryad</li>
+                    <li>AnimalExotic</li>
+                    <li>AnimalFarm</li>
+                    <li>AnimalFighter</li>
+                    <li>AnimalInsect</li>
+                    <li>AnimalPet</li>
+                    <li>AnimalUncommon</li>
+                    <li>WNATradeTag_Animal</li>
+                </tradeTagsBuy>
+                <kindCountRange>1~2</kindCountRange>
+                <countRange>8~10</countRange>
+            </li>
+            <li Class="StockGenerator_Techprints">
+                <countChances>
+                    <li>
+                        <count>10</count>
+                        <chance>1</chance>
+                    </li>
+                </countChances>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+
+    <!--<TraderKindDef ParentName="WNA_TraderKindBase">
+        <defName>WNA_Trader_Visitor</defName>
+        <label>wandering trader</label>
+        <stockGenerators Inherit="false">
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>800~1000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>ComponentIndustrial</thingDef>
+                <price>Cheap</price>
+                <countRange>8~10</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_Meal</thingDef>
+                <price>Cheap</price>
+                <countRange>20~30</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_Medikit</thingDef>
+                <price>Cheap</price>
+                <countRange>8~10</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Dye</thingDef>
+                <price>Cheap</price>
+                <countRange>10~20</countRange>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>Artifact</tradeTag>
+                <thingDefCountRange>0~1</thingDefCountRange>
+                <countRange>0~1</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_MultiDef">
+                <thingDefs>
+                    <li>Cloth</li>
+                    <li>Chocolate</li>
+                    <li>Beer</li>
+                </thingDefs>
+                <price>Cheap</price>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+    
+    <TraderKindDef ParentName="WNA_TraderKindBase">
+        <defName>WNA_Trader_Caravan</defName>
+        <label>alliance trader</label>
+        <stockGenerators Inherit="false">
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>20000~30000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_Meal</thingDef>
+                <price>Cheap</price>
+                <countRange>1000~1000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>ComponentIndustrial</thingDef>
+                <price>Cheap</price>
+                <countRange>100~120</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>ComponentSpacer</thingDef>
+                <price>Cheap</price>
+                <countRange>80~100</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_Medikit</thingDef>
+                <price>Cheap</price>
+                <countRange>80~100</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_Madiewine</thingDef>
+                <price>Cheap</price>
+                <countRange>300~500</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_FlowerTea</thingDef>
+                <price>Cheap</price>
+                <countRange>500~800</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_Dessert</thingDef>
+                <price>Cheap</price>
+                <countRange>300~500</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Beer</thingDef>
+                <price>Cheap</price>
+                <totalPriceRange>300~500</totalPriceRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Chocolate</thingDef>
+                <price>Cheap</price>
+                <totalPriceRange>200~300</totalPriceRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Dye</thingDef>
+                <price>Cheap</price>
+                <countRange>200~300</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Steel</thingDef>
+                <price>Cheap</price>
+                <countRange>1000~1200</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WoodLog</thingDef>
+                <price>Cheap</price>
+                <countRange>1500~2000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Plasteel</thingDef>
+                <price>Cheap</price>
+                <countRange>1000~1200</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Uranium</thingDef>
+                <price>Cheap</price>
+                <countRange>1000~1200</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Gold</thingDef>
+                <price>Cheap</price>
+                <countRange>1000~1200</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Neutroamine</thingDef>
+                <price>Cheap</price>
+                <countRange>200~300</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Chemfuel</thingDef>
+                <price>Cheap</price>
+                <countRange>800~1000</countRange>
+            </li>
+            <li Class="StockGenerator_ReinforcedBarrels">
+                <countRange>20~30</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>Textiles</categoryDef>
+                <thingDefCountRange>1~2</thingDefCountRange>
+                <countRange>800~1000</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Category" MayRequire="sarg.rimbees">
+                <categoryDef>RB_Combs</categoryDef>
+                <thingDefCountRange>1~2</thingDefCountRange>
+                <countRange>800~1000</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_MultiDef" MayRequire="sarg.rimbees">
+                <thingDefs>
+                    <li>RB_WildHive_Temperate</li>
+                    <li>RB_WildHive_Mild</li>
+                </thingDefs>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>FoodRaw</categoryDef>
+                <excludedCategories>
+                    <li>EggsFertilized</li>
+                </excludedCategories>
+                <thingDefCountRange>2~3</thingDefCountRange>
+                <totalPriceRange>800~1000</totalPriceRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>Artifact</tradeTag>
+                <thingDefCountRange>1~2</thingDefCountRange>
+                <countRange>1~2</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>ExoticMisc</tradeTag>
+                <thingDefCountRange>1~2</thingDefCountRange>
+                <countRange>1~1</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Slaves">
+                <respectPopulationIntent>true</respectPopulationIntent>
+                <countRange>2~4</countRange>
+                <price>Cheap</price>
+            </li>
+            <li Class="StockGenerator_Animals">
+                <tradeTagsBuy>
+                    <li>AnimalCommon</li>
+                    <li>AnimalDryad</li>
+                    <li>AnimalExotic</li>
+                    <li>AnimalFarm</li>
+                    <li>AnimalFighter</li>
+                    <li>AnimalInsect</li>
+                    <li>AnimalPet</li>
+                    <li>AnimalUncommon</li>
+                    <li>WNATradeTag_Animal</li>
+                </tradeTagsBuy>
+            </li>
+            <li Class="StockGenerator_Techprints">
+                <countChances>
+                    <li>
+                        <count>1</count>
+                        <chance>1</chance>
+                    </li>
+                </countChances>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>-->
+
+</Defs>

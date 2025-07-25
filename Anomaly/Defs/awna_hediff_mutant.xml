@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef>
+        <defName>WNA_HalfbeingHediff</defName>
+        <label>halfbeing</label>
+        <hediffClass>HediffWithComps</hediffClass>
+        <description>this pawn is a "Halfbeing", an abandoned project of WNA.</description>
+        <defaultLabelColor>(0,0,0)</defaultLabelColor>
+        <makesAlert>false</makesAlert>
+        <everCurableByItem>false</everCurableByItem>
+        <isBad>false</isBad>
+        <duplicationAllowed>false</duplicationAllowed>
+        <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+        <preventsPregnancy>true</preventsPregnancy>
+        <preventsLungRot>true</preventsLungRot>
+        <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+        <aptitudes>
+            <Shooting>99</Shooting>
+            <Melee>99</Melee>
+        </aptitudes>
+        <stages>
+            <li>
+                <painFactor>0</painFactor>
+                <totalBleedFactor>0</totalBleedFactor>
+                <regeneration>60000</regeneration>
+                <showRegenerationStat>false</showRegenerationStat>
+                <statFactors>
+                    <MeleeDamageFactor>5</MeleeDamageFactor>
+                    <MeleeCooldownFactor>0.05</MeleeCooldownFactor>
+                    <MoveSpeed>5</MoveSpeed>
+                    <IncomingDamageFactor>0.05</IncomingDamageFactor>
+                    <PsychicSensitivity>0</PsychicSensitivity>
+                    <StaggerDurationFactor MayRequire="ludeon.rimworld.biotech">0</StaggerDurationFactor>
+                </statFactors>
+                <statOffsets>
+                    <ComfyTemperatureMin>-300</ComfyTemperatureMin>
+                    <ComfyTemperatureMax>500</ComfyTemperatureMax>
+                    <MinimumContainmentStrength>35</MinimumContainmentStrength>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

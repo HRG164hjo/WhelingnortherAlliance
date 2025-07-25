@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNABodyPart_DimBeast_Body.label>外层壳</WNABodyPart_DimBeast_Body.label>
+  <WNABodyPart_DimBeast_Tendril.label>卷须</WNABodyPart_DimBeast_Tendril.label>
+  <WNABodyPart_DimBeast_Shell.label>壳</WNABodyPart_DimBeast_Shell.label>
+  <WNABodyPart_DimBeast_Core.label>核心</WNABodyPart_DimBeast_Core.label>
+  <WNABodyPart_DimBeast_Subcore.label>次级核心</WNABodyPart_DimBeast_Subcore.label>
+
+
+</LanguageData>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7200242-F355-4843-A60C-62980820F4C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WNA</RootNamespace>
+    <AssemblyName>WNA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Core\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\1.4\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbilityCompProp\CompAbilityAscension.cs" />
+    <Compile Include="AbilityCompProp\CompHediffDeprivation.cs" />
+    <Compile Include="Damager\CastTargetEffect.cs" />
+    <Compile Include="Damager\WNA_DamagerBasic.cs" />
+    <Compile Include="Damager\WNA_DamagerCulling.cs" />
+    <Compile Include="DMExtension\KillDownUtility.cs" />
+    <Compile Include="DMExtension\MassCapacity.cs" />
+    <Compile Include="DMExtension\RefuelableExtraStat.cs" />
+    <Compile Include="Harmony.cs" />
+    <Compile Include="HediffClass\DeathRefusal.cs" />
+    <Compile Include="HediffCompProp\CompMechAutoHeal.cs" />
+    <Compile Include="HediffCompProp\CompHealPermaWounds.cs" />
+    <Compile Include="HediffCompProp\CompPostRemoveHediff.cs" />
+    <Compile Include="Incident\InitiateJoin.cs" />
+    <Compile Include="Recipe\HalfbeingInfusion.cs" />
+    <Compile Include="TargetEffect\Ascension.cs" />
+    <Compile Include="ThingClass\SpikeTrap.cs" />
+    <Compile Include="ThingCompProp\CompAOEDamage.cs" />
+    <Compile Include="ThingCompProp\CompApparelEquipHediff.cs" />
+    <Compile Include="ThingCompProp\CompApparelHediffRemover.cs" />
+    <Compile Include="ThingCompProp\CompAttachHediff.cs" />
+    <Compile Include="ThingCompProp\CompDamageLimit.cs" />
+    <Compile Include="ThingCompProp\CompHeatPusher.cs" />
+    <Compile Include="ThingCompProp\CompHydroponics.cs" />
+    <Compile Include="ThingCompProp\CompIsDevourer.cs" />
+    <Compile Include="ThingCompProp\CompShieldGenerator.cs" />
+    <Compile Include="ThingCompProp\CompWeapInviso.cs" />
+    <Compile Include="ThingCompProp\CompThingSelfHeal.cs" />
+    <Compile Include="WNADefOf\WNAMainDefOf.cs" />
+    <Compile Include="WNAHarmony\Patch_KillDownUtility.cs" />
+    <Compile Include="WNAHarmony\Patch_CompRottable.cs" />
+    <Compile Include="WNAHarmony\Patch_Explosion.cs" />
+    <Compile Include="WNAHarmony\Patch_HunterHunt.cs" />
+    <Compile Include="WNAHarmony\Patch_Interaction.cs" />
+    <Compile Include="WNAHarmony\Patch_MassUtility.cs" />
+    <Compile Include="WNAHarmony\Patch_Need.cs" />
+    <Compile Include="WNAHarmony\Patch_Plant.cs" />
+    <Compile Include="WNAHarmony\Patch_RandomDrop.cs" />
+    <Compile Include="WNAHarmony\Patch_Refuelable.cs" />
+    <Compile Include="WNAHarmony\Patch_Roof.cs" />
+    <Compile Include="WNAHarmony\Patch_SkillRecord.cs" />
+    <Compile Include="WNAHarmony\Patch_Training.cs" />
+    <Compile Include="WNAMiscs\Gizmo_ShieldStatus.cs" />
+    <Compile Include="WNAMiscs\HedifferRemover.cs" />
+    <Compile Include="WNAMiscs\HedifferTicker.cs" />
+    <Compile Include="WNAMiscs\WarpOn.cs" />
+    <Compile Include="WNA_HediffGiverRandom.cs" />
+    <Compile Include="AbilityCompProp\CompAbilityResurrect.cs" />
+    <Compile Include="Recipe\Inspection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

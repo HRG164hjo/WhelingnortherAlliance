@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--<BodyPartDef>
+        <defName>WNABodyPart_WNthan_Shell</defName>
+        <label>shell</label>
+        <hitPoints>500</hitPoints>
+        <skinCovered>true</skinCovered>
+        <bleedRate>0</bleedRate>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    </BodyPartDef>-->
+    <BodyPartDef>
+        <defName>WNABodyPart_WNthan_Anchor</defName>
+        <label>anchor</label>
+        <hitPoints>40</hitPoints>
+        <skinCovered>false</skinCovered>
+        <bleedRate>0</bleedRate>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <solid>true</solid>
+        <tags>
+            <li>BloodPumpingSource</li>
+            <li>BloodFiltrationSource</li>
+            <li>MetabolismSource</li>
+            <li>ConsciousnessSource</li>
+        </tags>
+    </BodyPartDef>
+    <BodyPartDef>
+        <defName>WNABodyPart_WNthan_Subcore</defName>
+        <label>subcore</label>
+        <hitPoints>40</hitPoints>
+        <skinCovered>false</skinCovered>
+        <bleedRate>0</bleedRate>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <solid>true</solid>
+        <tags>
+            <li>ManipulationLimbCore</li>
+            <li>MovingLimbCore</li>
+        </tags>
+    </BodyPartDef>
+</Defs>

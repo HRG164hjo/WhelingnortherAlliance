@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Basic -->
+
+  <WNA_Focus.label>聚点</WNA_Focus.label>
+  <WNA_Focus.description>一团奇怪的...难说这究竟是什么。但这种东西无疑含有可观的能量。</WNA_Focus.description>
+
+
+  <!-- Material -->
+
+  <WNA_PaleWood.label>淡白木</WNA_PaleWood.label>
+  <WNA_PaleWood.description>化石状的木料。人们在制作这种材料时必须小心，因为制作这种材料的技术正是威灵会用来融解敌人的技术。</WNA_PaleWood.description>
+  <WNA_PaleWood.tools.0.label>头部</WNA_PaleWood.tools.0.label>
+  <WNA_PaleWood.stuffProps.stuffAdjective>淡白木</WNA_PaleWood.stuffProps.stuffAdjective>
+
+  <WNA_AshparkleStone.label>火花灰石</WNA_AshparkleStone.label>
+  <WNA_AshparkleStone.description>一种轻而美观的石材，可能是宇宙中最适合用作艺术创作的物质之一。人们在制作这种材料时必须小心，因为制作这种材料的技术正是威灵会用来融解敌人的技术。</WNA_AshparkleStone.description>
+  <WNA_AshparkleStone.stuffProps.stuffAdjective>火花灰石</WNA_AshparkleStone.stuffProps.stuffAdjective>
+
+  <WNA_DarkAsbestos.label>黑石棉</WNA_DarkAsbestos.label>
+  <WNA_DarkAsbestos.description>石棉状的物质，被威灵会广泛用作衣料。颜色很暗但很耐看。人们在制作这种材料时必须小心，因为制作这种材料的技术正是威灵会用来融解敌人的技术。</WNA_DarkAsbestos.description>
+  <WNA_DarkAsbestos.stuffProps.stuffAdjective>黑石棉</WNA_DarkAsbestos.stuffProps.stuffAdjective>
+
+  <WNA_ChimingSteel.label>赤明铁</WNA_ChimingSteel.label>
+  <WNA_ChimingSteel.description>通红发光的，半透明的金属状材料。尽管这种物质看起来坚不可摧，文献资料却声称这种物质极度不稳定并且有着骇人的毁灭性力量。威灵会使用这种材料维护他们的轨道打击系统。</WNA_ChimingSteel.description>
+  <WNA_ChimingSteel.stuffProps.stuffAdjective>赤明铁</WNA_ChimingSteel.stuffProps.stuffAdjective>
+
+
+</LanguageData>

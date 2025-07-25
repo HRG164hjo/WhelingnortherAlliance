@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_SpikeTrap.label>尖刺陷阱</WNA_SpikeTrap.label>
+  <WNA_SpikeTrap.description>一些半埋在地下的尖刀和一套专门设计的触发装置。如果有个粗心大意的什么东西踩到这上面，这些尖刀就会给他上一次毕生难忘的课——也许是毕生的最后一课。这种陷阱越重就越致命。</WNA_SpikeTrap.description>
+  <WNA_SpikeTrap_Blueprint.label>尖刺陷阱 (蓝图)</WNA_SpikeTrap_Blueprint.label>
+  <WNA_SpikeTrap_Blueprint_Install.label>尖刺陷阱 (蓝图)</WNA_SpikeTrap_Blueprint_Install.label>
+  <WNA_SpikeTrap_Frame.label>尖刺陷阱 (建造中)</WNA_SpikeTrap_Frame.label>
+  <WNA_SpikeTrap_Frame.description>一些半埋在地下的尖刀和一套专门设计的触发装置。如果有个粗心大意的什么东西踩到这上面，这些尖刀就会给他上一次毕生难忘的课——也许是毕生的最后一课。这种陷阱越重就越致命。</WNA_SpikeTrap_Frame.description>
+
+  <WNA_SpikeTrapSpawned.label>部署的尖刺陷阱</WNA_SpikeTrapSpawned.label>
+  <WNA_SpikeTrapSpawned.description>一些半埋在地下的尖刀和一套专门设计的触发装置。如果有个粗心大意的什么东西踩到这上面，这些尖刀就会给他上一次毕生难忘的课——也许是毕生的最后一课。这种陷阱越重就越致命。</WNA_SpikeTrapSpawned.description>
+  <WNA_SpikeTrapSpawned_Blueprint.label>部署的尖刺陷阱 (蓝图)</WNA_SpikeTrapSpawned_Blueprint.label>
+  <WNA_SpikeTrapSpawned_Blueprint_Install.label>部署的尖刺陷阱 (蓝图)</WNA_SpikeTrapSpawned_Blueprint_Install.label>
+  <WNA_SpikeTrapSpawned_Frame.label>部署的尖刺陷阱 (建造中)</WNA_SpikeTrapSpawned_Frame.label>
+  <WNA_SpikeTrapSpawned_Frame.description>一些半埋在地下的尖刀和一套专门设计的触发装置。如果有个粗心大意的什么东西踩到这上面，这些尖刀就会给他上一次毕生难忘的课——也许是毕生的最后一课。这种陷阱越重就越致命。</WNA_SpikeTrapSpawned_Frame.description>
+
+
+</LanguageData>

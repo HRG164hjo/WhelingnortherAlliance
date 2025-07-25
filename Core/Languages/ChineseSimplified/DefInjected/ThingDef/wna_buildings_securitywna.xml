@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_Mortar.label>法球迫击炮</WNA_Mortar.label>
+  <WNA_Mortar.description>画有仪式图案的石板，能自动形成一个看起来像黑洞的法球。通常被用作迫击炮。</WNA_Mortar.description>
+  <WNA_Mortar_Blueprint.label>法球迫击炮 (蓝图)</WNA_Mortar_Blueprint.label>
+  <WNA_Mortar_Blueprint_Install.label>法球迫击炮 (蓝图)</WNA_Mortar_Blueprint_Install.label>
+  <WNA_Mortar_Frame.label>法球迫击炮 (建造中)</WNA_Mortar_Frame.label>
+  <WNA_Mortar_Frame.description>画有仪式图案的石板，能自动形成一个看起来像黑洞的法球。通常被用作迫击炮。</WNA_Mortar_Frame.description>
+
+  <WNA_Mortar_Gun.label>法球迫击炮</WNA_Mortar_Gun.label>
+  <WNA_Mortar_Gun.description>法球迫击炮。</WNA_Mortar_Gun.description>
+
+  <WNA_Turret_Pale.label>苍白法球</WNA_Turret_Pale.label>
+  <WNA_Turret_Pale.description>一个板状设备，能自动形成一个法球攻击附近的敌人。</WNA_Turret_Pale.description>
+  <WNA_Turret_Pale_Blueprint.label>苍白法球 (蓝图)</WNA_Turret_Pale_Blueprint.label>
+  <WNA_Turret_Pale_Blueprint_Install.label>苍白法球 (蓝图)</WNA_Turret_Pale_Blueprint_Install.label>
+  <WNA_Turret_Pale_Frame.label>苍白法球 (建造中)</WNA_Turret_Pale_Frame.label>
+  <WNA_Turret_Pale_Frame.description>一个板状设备，能自动形成一个法球攻击附近的敌人。</WNA_Turret_Pale_Frame.description>
+
+  <WNA_Turret_Pale_Gun.label>苍白法球</WNA_Turret_Pale_Gun.label>
+  <WNA_Turret_Pale_Gun.description>炮塔武器。</WNA_Turret_Pale_Gun.description>
+
+  <WNA_Turret_Pale_Gun_Proj.label>苍白法球</WNA_Turret_Pale_Gun_Proj.label>
+
+  <WNA_Turret_Shatter.label>破碎法球</WNA_Turret_Shatter.label>
+  <WNA_Turret_Shatter.description>一个板状设备，能自动形成一个法球攻击附近的敌人。它能够引发一次爆炸，威力足以将敌人炸碎。</WNA_Turret_Shatter.description>
+  <WNA_Turret_Shatter_Blueprint.label>破碎法球 (蓝图)</WNA_Turret_Shatter_Blueprint.label>
+  <WNA_Turret_Shatter_Blueprint_Install.label>破碎法球 (蓝图)</WNA_Turret_Shatter_Blueprint_Install.label>
+  <WNA_Turret_Shatter_Frame.label>破碎法球 (建造中)</WNA_Turret_Shatter_Frame.label>
+  <WNA_Turret_Shatter_Frame.description>一个板状设备，能自动形成一个法球攻击附近的敌人。它能够引发一次爆炸，威力足以将敌人炸碎。</WNA_Turret_Shatter_Frame.description>
+
+  <WNA_Turret_Shatter_Gun.label>破碎法球</WNA_Turret_Shatter_Gun.label>
+  <WNA_Turret_Shatter_Gun.description>炮塔武器。</WNA_Turret_Shatter_Gun.description>
+
+  <WNA_Turret_Shatter_Gun_Proj.label>破碎法球</WNA_Turret_Shatter_Gun_Proj.label>
+
+  <WNA_Turret_Lancer.label>标枪法球</WNA_Turret_Lancer.label>
+  <WNA_Turret_Lancer.description>一个板状设备，能自动形成一个法球攻击附近的敌人。它能够向远距离目标发射法力标枪。</WNA_Turret_Lancer.description>
+  <WNA_Turret_Lancer_Blueprint.label>标枪法球 (蓝图)</WNA_Turret_Lancer_Blueprint.label>
+  <WNA_Turret_Lancer_Blueprint_Install.label>标枪法球 (蓝图)</WNA_Turret_Lancer_Blueprint_Install.label>
+  <WNA_Turret_Lancer_Frame.label>标枪法球 (建造中)</WNA_Turret_Lancer_Frame.label>
+  <WNA_Turret_Lancer_Frame.description>一个板状设备，能自动形成一个法球攻击附近的敌人。它能够向远距离目标发射法力标枪。</WNA_Turret_Lancer_Frame.description>
+
+  <WNA_Turret_Lancer_Gun.label>标枪法球</WNA_Turret_Lancer_Gun.label>
+  <WNA_Turret_Lancer_Gun.description>炮塔武器。</WNA_Turret_Lancer_Gun.description>
+
+  <WNA_Turret_Lancer_Gun_Proj.label>标枪法球</WNA_Turret_Lancer_Gun_Proj.label>
+
+
+</LanguageData>

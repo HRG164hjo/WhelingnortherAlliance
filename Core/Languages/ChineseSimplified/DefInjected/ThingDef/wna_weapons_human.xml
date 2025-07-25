@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Technician -->
+
+  <WNA_TechTool.label>重型扳手</WNA_TechTool.label>
+  <WNA_TechTool.description>一个扳手。威灵会要求他们治下的所有人都必须随身携带至少一件武器，因此尽管威灵会的技师们不是战斗人员，他们还是在手头准备了一个重扳手以备不时之需。</WNA_TechTool.description>
+  <WNA_TechTool.tools.0.label>头部</WNA_TechTool.tools.0.label>
+
+
+  <!-- rebel -->
+
+  <WNA_SunsetSniper.label>"日暮"狙击步枪</WNA_SunsetSniper.label>
+  <WNA_SunsetSniper.description>配备了先进瞄具的狙击步枪，可以在相当远的距离击杀敌人。它的空尖弹能造成可观的杀伤，少有人能从它的袭击下逃脱。即使有少数幸运儿能逃出生天，巨大的创伤和难以避免的感染也会令他们痛苦不已。</WNA_SunsetSniper.description>
+  <WNA_SunsetSniper.tools.0.label>枪管</WNA_SunsetSniper.tools.0.label>
+
+  <WNA_SunsetSniper_Proj.label>枪弹</WNA_SunsetSniper_Proj.label>
+
+  <WNA_ScrapCarbine.label>废料卡宾枪</WNA_ScrapCarbine.label>
+  <WNA_ScrapCarbine.description>威灵军部的传统军备。在威灵会的伟大征途之初，叛军部队难以获得稳定的军备供应，于是在多次尝试之后他们发明了这种武器，用非常便宜而且随处可见的材料做成的枪。尽管其火力较弱，它的子弹却能向其受害者体内引入多种多样的工业废物——其中99.9999%是有害的。</WNA_ScrapCarbine.description>
+  <WNA_ScrapCarbine.tools.0.label>枪管</WNA_ScrapCarbine.tools.0.label>
+
+  <WNA_ScrapCarbine_Proj.label>枪弹</WNA_ScrapCarbine_Proj.label>
+
+
+  <!-- saboteur -->
+
+  <WNA_Chainsaw.label>破拆锯</WNA_Chainsaw.label>
+  <WNA_Chainsaw.description>史上最令人望而生畏的武器之一，在动力和效率方面得到了威灵会技师的改良。当破坏者们在敌军营地中央现身并将其启动时，几乎没有门或者墙能承受其攻击。</WNA_Chainsaw.description>
+  <WNA_Chainsaw.tools.0.label>锯齿</WNA_Chainsaw.tools.0.label>
+
+  <WNA_LeadHazeARifle.label>"铅雾"突击步枪</WNA_LeadHazeARifle.label>
+  <WNA_LeadHazeARifle.description>一把适用于近距离战斗的武器。这把枪能在短时间内倾斜出大量含毒的子弹，非常适合用于巷战。在过去的无数战斗中，威灵会的破坏者们用这把枪从内部瓦解了无数钢铁要塞。</WNA_LeadHazeARifle.description>
+  <WNA_LeadHazeARifle.tools.0.label>枪管</WNA_LeadHazeARifle.tools.0.label>
+
+  <WNA_LeadHazeARifle_Proj.label>枪弹</WNA_LeadHazeARifle_Proj.label>
+
+
+  <!-- vanguard -->
+
+  <WNA_FirestormHMG.label>"火风暴"重机枪</WNA_FirestormHMG.label>
+  <WNA_FirestormHMG.description>正如其名，这件重型武器一次就能发射出大量弹药。作为重装攻城步兵，威灵会的先驱部队使用这种武器袭击敌人的据点，撕裂墙壁与战壕，以及在恐惧中颤抖的可怜虫。</WNA_FirestormHMG.description>
+  <WNA_FirestormHMG.tools.0.label>枪管</WNA_FirestormHMG.tools.0.label>
+
+  <WNA_FirestormHMG_Proj.label>枪弹</WNA_FirestormHMG_Proj.label>
+
+  <WNA_KineticRailgun.label>动能轨道炮</WNA_KineticRailgun.label>
+  <WNA_KineticRailgun.description>这件武器笨重而缓慢，但能够发射一枚极具破坏性的弹头，能将一大片区域和其中的建筑和敌人汽化。一种能将思想转化成能量以增强武器威力的技术被用在了这件武器上。目前已知只有威灵会拥有这项技术。</WNA_KineticRailgun.description>
+  <WNA_KineticRailgun.tools.0.label>枪管</WNA_KineticRailgun.tools.0.label>
+
+  <WNA_KineticRailgun_Proj.label>枪弹</WNA_KineticRailgun_Proj.label>
+
+
+  <!-- darknight commando -->
+
+  <WNA_KineticBlade.label>动能短刀</WNA_KineticBlade.label>
+  <WNA_KineticBlade.description>一把刀..。或者一个极具攻击性的念头。思维动能技术使这件武器的存在成为可能。只需要一个特化设计的线圈，任何人都能用他们的思维构造出无形之刃，用来切割任何他们想切割的东西，从西瓜到混凝土墙，再到粗心大意的敌人的脑袋。</WNA_KineticBlade.description>
+  <WNA_KineticBlade.tools.0.label>刃</WNA_KineticBlade.tools.0.label>
+
+  <WNA_KineticCoil.label>动能线圈</WNA_KineticCoil.label>
+  <WNA_KineticCoil.description>由于暗夜特种兵时常执行各种渗透作战任务并且经常陷入缺乏军备供应的情境，思维动能武器在他们手中得到了广泛应用。这种"动能线圈"能把最具攻击性的想法转换成破坏力惊人的能量波，威力不亚于常规子弹而速度更快。</WNA_KineticCoil.description>
+  <WNA_KineticCoil.tools.0.label>枪管</WNA_KineticCoil.tools.0.label>
+
+  <WNA_KineticCoil_Proj.label>枪弹</WNA_KineticCoil_Proj.label>
+
+
+  <!-- iron guardian -->
+
+  <WNA_HowlstormArti.label>"呼啸风暴"单兵火炮</WNA_HowlstormArti.label>
+  <WNA_HowlstormArti.description>钢铁守卫们负有守护重要哨站的重大责任，而他们手上也确实有合适的武器。"呼啸风暴"单兵火炮能进行超长距离的攻击，其炮弹在爆炸时可以用冲击波将目标击晕，并在爆心附近释放多个信标。这些信标将会接入威灵会的赤火天锤卫星网络，在其所在位置召唤一次灾难性的天火打击。</WNA_HowlstormArti.description>
+  <WNA_HowlstormArti.tools.0.label>枪管</WNA_HowlstormArti.tools.0.label>
+
+  <WNA_HowlstormArti_Proj.label>枪弹</WNA_HowlstormArti_Proj.label>
+
+  <WNA_HowlstormHMG.label>"呼啸风暴"重机枪</WNA_HowlstormHMG.label>
+  <WNA_HowlstormHMG.description>钢铁守卫们负有守护重要哨站的重大责任，而他们手上也确实有合适的武器。"呼啸风暴"重机枪是威灵会常规军备中最重也是最令人敬畏的武器之一。它能几乎无间歇地释放出暴雨般的思维动能脉冲以对敌人进行洗礼。如果有幸运儿能跑到离开火者足够近的位置，那么这件具有惊人尺寸和重量的武器将会轻而易举地把这个幸运儿碾成土豆泥。</WNA_HowlstormHMG.description>
+  <WNA_HowlstormHMG.tools.0.label>枪管</WNA_HowlstormHMG.tools.0.label>
+
+  <WNA_HowlstormHMG_Proj.label>枪弹</WNA_HowlstormHMG_Proj.label>
+
+
+</LanguageData>

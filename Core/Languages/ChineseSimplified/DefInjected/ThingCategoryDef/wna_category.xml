@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_Category_Base.label>威灵会目录</WNA_Category_Base.label>
+  <WNA_Category_Buildings.label>威灵会建筑</WNA_Category_Buildings.label>
+  <WNA_Category_Turret.label>威灵会炮塔</WNA_Category_Turret.label>
+  <WNA_Category_Item.label>威灵会物品</WNA_Category_Item.label>
+  <WNA_Category_Weapon.label>威灵会武器</WNA_Category_Weapon.label>
+  <WNA_Category_Shell.label>威灵会炮弹</WNA_Category_Shell.label>
+  <WNA_Category_Apparel.label>威灵会装备</WNA_Category_Apparel.label>
+  <WNA_Category_Artifact.label>威灵会神器</WNA_Category_Artifact.label>
+
+
+</LanguageData>

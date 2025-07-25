@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+        <defName>WNA_Category_Base</defName>
+        <label>WNA base</label>
+        <parent>Root</parent>
+        <iconPath>rite</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>WNA_Category_Buildings</defName>
+        <label>WNA buildings</label>
+        <parent>WNA_Category_Base</parent>
+        <iconPath>rite</iconPath>
+    </ThingCategoryDef>
+    <ThingCategoryDef>
+        <defName>WNA_Category_Turret</defName>
+        <label>WNA turrets</label>
+        <parent>WNA_Category_Buildings</parent>
+        <iconPath>rite</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>WNA_Category_Item</defName>
+        <label>WNA items</label>
+        <parent>WNA_Category_Base</parent>
+        <iconPath>rite</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>WNA_Category_Weapon</defName>
+        <label>WNA weapons</label>
+        <parent>WNA_Category_Base</parent>
+        <iconPath>rite</iconPath>
+    </ThingCategoryDef>
+    <ThingCategoryDef>
+        <defName>WNA_Category_Shell</defName>
+        <label>WNA shells</label>
+        <parent>WNA_Category_Weapon</parent>
+        <iconPath>rite</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>WNA_Category_Apparel</defName>
+        <label>WNA apparel</label>
+        <parent>WNA_Category_Base</parent>
+        <iconPath>rite</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>WNA_Category_Artifact</defName>
+        <label>WNA artifact</label>
+        <parent>WNA_Category_Base</parent>
+        <iconPath>rite</iconPath>
+    </ThingCategoryDef>
+
+</Defs>

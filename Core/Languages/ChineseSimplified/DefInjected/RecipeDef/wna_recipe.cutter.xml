@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_RiteBeastDivision.label>分割尸体</WNA_RiteBeastDivision.label>
+  <WNA_RiteBeastDivision.description>将一具尸体进行分割，这样它就能有更多用处。</WNA_RiteBeastDivision.description>
+  <WNA_RiteBeastDivision.jobString>工作中。</WNA_RiteBeastDivision.jobString>
+
+  <WNA_RiteRebelStriving.label>拆毁物品</WNA_RiteRebelStriving.label>
+  <WNA_RiteRebelStriving.description>拆毁一件武器或装备并尝试回收所有能回收的东西。</WNA_RiteRebelStriving.description>
+  <WNA_RiteRebelStriving.jobString>工作中。</WNA_RiteRebelStriving.jobString>
+
+  <WNA_RiteAbleting.label>销金仪式</WNA_RiteAbleting.label>
+  <WNA_RiteAbleting.description>分解钢渣块以回收有用的资源，比传统的方式更加高产。</WNA_RiteAbleting.description>
+  <WNA_RiteAbleting.jobString>工作中。</WNA_RiteAbleting.jobString>
+
+  <WNA_RecipeAlphaBees.label>分解蜜脾</WNA_RecipeAlphaBees.label>
+  <WNA_RecipeAlphaBees.description>分解一个蜜脾 (或野蜂巢) 以获取有用的资源。</WNA_RecipeAlphaBees.description>
+  <WNA_RecipeAlphaBees.jobString>工作中。</WNA_RecipeAlphaBees.jobString>
+
+
+</LanguageData>

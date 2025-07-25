@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_LinkTable.label>牙白浮桌</WNA_LinkTable.label>
+  <WNA_LinkTable.description>悬浮着的半透明桌子，时常被描述为“象牙色的”。</WNA_LinkTable.description>
+  <WNA_LinkTable_Blueprint.label>牙白浮桌 (蓝图)</WNA_LinkTable_Blueprint.label>
+  <WNA_LinkTable_Blueprint_Install.label>牙白浮桌 (蓝图)</WNA_LinkTable_Blueprint_Install.label>
+  <WNA_LinkTable_Frame.label>牙白浮桌 (建造中)</WNA_LinkTable_Frame.label>
+  <WNA_LinkTable_Frame.description>悬浮着的半透明桌子，时常被描述为“象牙色的”。</WNA_LinkTable_Frame.description>
+
+  <WNA_LinkSeat.label>牙白浮凳</WNA_LinkSeat.label>
+  <WNA_LinkSeat.description>悬浮着的半透明凳子，时常被描述为“象牙色的”。</WNA_LinkSeat.description>
+  <WNA_LinkSeat_Blueprint.label>牙白浮凳 (蓝图)</WNA_LinkSeat_Blueprint.label>
+  <WNA_LinkSeat_Blueprint_Install.label>牙白浮凳 (蓝图)</WNA_LinkSeat_Blueprint_Install.label>
+  <WNA_LinkSeat_Frame.label>牙白浮凳 (建造中)</WNA_LinkSeat_Frame.label>
+  <WNA_LinkSeat_Frame.description>悬浮着的半透明凳子，时常被描述为“象牙色的”。</WNA_LinkSeat_Frame.description>
+
+  <WNA_LinkShelf.label>牙白物架</WNA_LinkShelf.label>
+  <WNA_LinkShelf.description>悬浮着的半透明储物架，单个物架的储物量能与60个普通储物架媲美。</WNA_LinkShelf.description>
+  <WNA_LinkShelf_Blueprint.label>牙白物架 (蓝图)</WNA_LinkShelf_Blueprint.label>
+  <WNA_LinkShelf_Blueprint_Install.label>牙白物架 (蓝图)</WNA_LinkShelf_Blueprint_Install.label>
+  <WNA_LinkShelf_Frame.label>牙白物架 (建造中)</WNA_LinkShelf_Frame.label>
+  <WNA_LinkShelf_Frame.description>悬浮着的半透明储物架，单个物架的储物量能与60个普通储物架媲美。</WNA_LinkShelf_Frame.description>
+
+  <WNA_BasicCrate.label>牙白箱子</WNA_BasicCrate.label>
+  <WNA_BasicCrate.description>一个白色的小箱子，专门为储物而设计。</WNA_BasicCrate.description>
+  <WNA_BasicCrate_Blueprint.label>牙白箱子 (蓝图)</WNA_BasicCrate_Blueprint.label>
+  <WNA_BasicCrate_Blueprint_Install.label>牙白箱子 (蓝图)</WNA_BasicCrate_Blueprint_Install.label>
+  <WNA_BasicCrate_Frame.label>牙白箱子 (建造中)</WNA_BasicCrate_Frame.label>
+  <WNA_BasicCrate_Frame.description>一个白色的小箱子，专门为储物而设计。</WNA_BasicCrate_Frame.description>
+
+  <WNA_SingleBed.label>丝绒软垫</WNA_SingleBed.label>
+  <WNA_SingleBed.description>平平无奇的小型床，不过意外的舒服。</WNA_SingleBed.description>
+  <WNA_SingleBed_Blueprint.label>丝绒软垫 (蓝图)</WNA_SingleBed_Blueprint.label>
+  <WNA_SingleBed_Blueprint_Install.label>丝绒软垫 (蓝图)</WNA_SingleBed_Blueprint_Install.label>
+  <WNA_SingleBed_Frame.label>丝绒软垫 (建造中)</WNA_SingleBed_Frame.label>
+  <WNA_SingleBed_Frame.description>平平无奇的小型床，不过意外的舒服。</WNA_SingleBed_Frame.description>
+
+  <WNA_DoubleBed.label>丝绒软床</WNA_DoubleBed.label>
+  <WNA_DoubleBed.description>一张平平无奇但意外舒适的小型床，为两口子设计。一个人睡或许更好。</WNA_DoubleBed.description>
+  <WNA_DoubleBed_Blueprint.label>丝绒软床 (蓝图)</WNA_DoubleBed_Blueprint.label>
+  <WNA_DoubleBed_Blueprint_Install.label>丝绒软床 (蓝图)</WNA_DoubleBed_Blueprint_Install.label>
+  <WNA_DoubleBed_Frame.label>丝绒软床 (建造中)</WNA_DoubleBed_Frame.label>
+  <WNA_DoubleBed_Frame.description>一张平平无奇但意外舒适的小型床，为两口子设计。一个人睡或许更好。</WNA_DoubleBed_Frame.description>
+
+  <WNA_TorchLamp.label>微光灯炬</WNA_TorchLamp.label>
+  <WNA_TorchLamp.description>威灵会风格的火炬。不过并没有火。</WNA_TorchLamp.description>
+  <WNA_TorchLamp_Blueprint.label>微光灯炬 (蓝图)</WNA_TorchLamp_Blueprint.label>
+  <WNA_TorchLamp_Blueprint_Install.label>微光灯炬 (蓝图)</WNA_TorchLamp_Blueprint_Install.label>
+  <WNA_TorchLamp_Frame.label>微光灯炬 (建造中)</WNA_TorchLamp_Frame.label>
+  <WNA_TorchLamp_Frame.description>威灵会风格的火炬。不过并没有火。</WNA_TorchLamp_Frame.description>
+
+  <WNA_TorchLampB.label>失谐灯炬</WNA_TorchLampB.label>
+  <WNA_TorchLampB.description>威灵会风格的火炬。它会试图把温度推向极热或极冷的极端。</WNA_TorchLampB.description>
+  <WNA_TorchLampB_Blueprint.label>失谐灯炬 (蓝图)</WNA_TorchLampB_Blueprint.label>
+  <WNA_TorchLampB_Blueprint_Install.label>失谐灯炬 (蓝图)</WNA_TorchLampB_Blueprint_Install.label>
+  <WNA_TorchLampB_Frame.label>失谐灯炬 (建造中)</WNA_TorchLampB_Frame.label>
+  <WNA_TorchLampB_Frame.description>威灵会风格的火炬。它会试图把温度推向极热或极冷的极端。</WNA_TorchLampB_Frame.description>
+
+
+</LanguageData>

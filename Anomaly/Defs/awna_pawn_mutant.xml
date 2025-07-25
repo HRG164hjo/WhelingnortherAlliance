@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Human pawns
+    <PawnKindDef ParentName="WNA_PawnsHuman">
+        <defName>WNA_MutantHalfbeing</defName>
+        <label>corpse fighter</label>
+        <mutant>WNA_Halfbeing</mutant>
+        <combatPower>25</combatPower>
+        <isGoodBreacher>true</isGoodBreacher>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+        <ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+        <generateInitialNonFamilyRelations>true</generateInitialNonFamilyRelations>
+        <apparelRequired>
+			<li>WNA_AdvFlakJacket</li>
+			<li>WNA_AdvFlakHead</li>
+			<li>WNA_AllianceRobe</li>
+			<li>WNA_ShieldPack</li>
+        </apparelRequired>
+        <meleeAttackInfectionPathways>
+            <li>EntityAttacked</li>
+        </meleeAttackInfectionPathways>
+    </PawnKindDef> -->
+</Defs>

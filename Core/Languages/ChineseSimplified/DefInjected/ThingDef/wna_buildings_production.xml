@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA_EnergyConverter.label>超能转换器</WNA_EnergyConverter.label>
+  <WNA_EnergyConverter.description>一项威灵会科技，能够将封存在所谓“聚点”中的能量释放出来，并将其转换为更容易利用的形式，比如，电力。</WNA_EnergyConverter.description>
+  <WNA_EnergyConverter_Blueprint.label>超能转换器 (蓝图)</WNA_EnergyConverter_Blueprint.label>
+  <WNA_EnergyConverter_Blueprint_Install.label>超能转换器 (蓝图)</WNA_EnergyConverter_Blueprint_Install.label>
+  <WNA_EnergyConverter_Frame.label>超能转换器 (建造中)</WNA_EnergyConverter_Frame.label>
+  <WNA_EnergyConverter_Frame.description>一项威灵会科技，能够将封存在所谓“焦点”中的能量释放出来，并将其转换为更容易利用的形式，比如，电力。</WNA_EnergyConverter_Frame.description>
+
+  <WNA_CorpseGenerator.label>尸体发电机</WNA_CorpseGenerator.label>
+  <WNA_CorpseGenerator.description>一项粗劣的威灵军部技术。这台机器消耗尸体来发电。不要深入去想它的原理，最好连看都不要多看。</WNA_CorpseGenerator.description>
+  <WNA_CorpseGenerator_Blueprint.label>尸体发电机 (蓝图)</WNA_CorpseGenerator_Blueprint.label>
+  <WNA_CorpseGenerator_Blueprint_Install.label>尸体发电机 (蓝图)</WNA_CorpseGenerator_Blueprint_Install.label>
+  <WNA_CorpseGenerator_Frame.label>尸体发电机 (建造中)</WNA_CorpseGenerator_Frame.label>
+  <WNA_CorpseGenerator_Frame.description>一项粗劣的威灵军部技术。这台机器消耗尸体来发电。不要深入去想它的原理，最好连看都不要多看。</WNA_CorpseGenerator_Frame.description>
+
+  <WNA_MassGenerator.label>质流电机</WNA_MassGenerator.label>
+  <WNA_MassGenerator.description>威灵军部的顶尖技术，将一块石头放进这台机器，它将会慢慢消耗掉这块石头，同时产生惊人的能量。遗憾的是，由于边缘世界缺少一些关键组件和技术，这台发电机并不像其说明书中描述的那样强大和高效。</WNA_MassGenerator.description>
+  <WNA_MassGenerator_Blueprint.label>质流电机 (蓝图)</WNA_MassGenerator_Blueprint.label>
+  <WNA_MassGenerator_Blueprint_Install.label>质流电机 (蓝图)</WNA_MassGenerator_Blueprint_Install.label>
+  <WNA_MassGenerator_Frame.label>质流电机 (建造中)</WNA_MassGenerator_Frame.label>
+  <WNA_MassGenerator_Frame.description>悬浮着的半透明储物架，单个物架的储物量能与60个普通储物架媲美。</WNA_MassGenerator_Frame.description>
+
+
+</LanguageData>

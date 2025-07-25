@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNAWork_Rite.label>仪式</WNAWork_Rite.label>
+  <WNAWork_Rite.description>施行威灵会的仪式，用来做些什么或达成什么目的。</WNAWork_Rite.description>
+  <WNAWork_Rite.labelShort>仪式</WNAWork_Rite.labelShort>
+  <WNAWork_Rite.pawnLabel>教士</WNAWork_Rite.pawnLabel>
+  <WNAWork_Rite.gerundLabel>正在施行仪式</WNAWork_Rite.gerundLabel>
+  <WNAWork_Rite.verb>施行仪式</WNAWork_Rite.verb>
+
+
+</LanguageData>

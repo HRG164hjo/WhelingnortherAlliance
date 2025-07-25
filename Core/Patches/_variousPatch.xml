@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/BiomeDef/allowedPackAnimals</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/BiomeDef/allowedPackAnimals</xpath>
+            <value>
+                <li>WNA_DimBeastRace</li>
+                <li MayRequire="oskarpotocki.vanillafactionsexpanded.core">WNA_FerociousBeastRace</li>
+                <li>WNA_ThornBeastRace</li>
+            </value>
+        </match>
+    </Operation>
+    <!--<Operation Class="PatchOperationConditional">
+        <xpath>Defs/BiomeDef/diseases</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/BiomeDef/diseases</xpath>
+            <value>
+                <li>
+                    <diseaseInc>WNADisease_Curse_FerociousBeast</diseaseInc>
+                    <commonality>10</commonality>
+                </li>
+                <li>
+                    <diseaseInc>WNADiseaseAnimal_Curse_FerociousBeast</diseaseInc>
+                    <commonality>10</commonality>
+                </li>
+            </value>
+        </match>
+    </Operation>-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName!="BasicMechtech"]/heldByFactionCategoryTags</xpath>
+        <value>
+            <li>WNA_FactionWNA</li>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/StatDef[@Name="ArmorRatingBase"]/maxValue</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>Defs/StatDef[@Name="ArmorRatingBase"]/maxValue</xpath>
+        </match>
+    </Operation>
+    
+</Patch>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- mealpack -->
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_Meal</defName>
+        <description>Use mana and things can be considered as raw food to make meal pack.</description>
+        <jobString>working.</jobString>
+        <label>make WNA meal pack</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Foods</li>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>8</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Foods</li>
+                <li>Leathers</li>
+            </categories>
+            <disallowedCategories>
+                <li>FoodMeals</li>
+                <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Meal>1</WNA_Meal>
+        </products>
+        <workAmount>300</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_Meal_Bulk</defName>
+        <description>Use mana and raw food to make meal pack.</description>
+        <jobString>working.</jobString>
+        <label>make WNA meal pack x5</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Foods</li>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Foods</li>
+                <li>Leathers</li>
+            </categories>
+            <disallowedCategories>
+                <li>FoodMeals</li>
+                <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Meal>5</WNA_Meal>
+        </products>
+        <workAmount>1200</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_Meal_Meal</defName>
+        <description>Use whelingnorther techniques to pack normal meals into WNA meal packs.</description>
+        <jobString>working.</jobString>
+        <label>repack meals</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>FoodMeals</li>
+                        <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                        <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>FoodMeals</li>
+                <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+            </categories>
+            <disallowedCategories/>
+            <disallowedThingDefs>
+                <li>WNA_Meal</li>
+                <li MayRequire="3hstltd.foods.instanoodles">WNA_InstaNoodle</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Meal>1</WNA_Meal>
+        </products>
+        <workAmount>100</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- medikit -->
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_Medikit</defName>
+        <description>Use mana and herbal medicine to make medicine pack.</description>
+        <jobString>working.</jobString>
+        <label>make WNA medicine pack</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                    <thingDefs>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
+            </thingDefs>
+            <disallowedThingDefs>
+                <li>WNA_Medikit</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Medikit>1</WNA_Medikit>
+        </products>
+        <workAmount>500</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_Medikit_Bulk</defName>
+        <description>Use mana and herbal medicine to make medicine pack.</description>
+        <jobString>working.</jobString>
+        <label>make WNA medicine pack x5</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                    <thingDefs>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
+            </thingDefs>
+            <disallowedThingDefs>
+                <li>WNA_Medikit</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Medikit>5</WNA_Medikit>
+        </products>
+        <workAmount>2000</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+
+</Defs>

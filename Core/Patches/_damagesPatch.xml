@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WNA_WNThan"or defName="WNA_Human" or @Name="WNABase_BeastRaceBase"]/damageMultipliers</xpath>
+        <value>
+            <li>
+                <damageDef>Flame</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>Burn</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>Frostbite</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>ExecutionCut</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>Stun</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>EMP</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="kentington.saveourship2">
+                <damageDef>VacuumDamage</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="sindre0830.universum">
+                <damageDef>Universum_Decompression_Damage</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="blackmarket420.taofc">
+                <damageDef>GapingWound</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="vanillaexpanded.vpsycastse">
+                <damageDef>VPE_NeuralHeatBlast</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="sarg.alphaanimals">
+                <damageDef>AA_FrostClaws</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="sarg.alphaanimals">
+                <damageDef>AA_FrostBite</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="sarg.alphabiomes">
+                <damageDef>AB_Gangrene</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <!--<li MayRequire="tot.cmc.weaponry">
+                <damageDef>HMB</damageDef>
+                <multiplier>0</multiplier>
+            </li>-->
+            <li MayRequire="ayameduki.haridearn">
+                <damageDef>HAR_IA_Damage_b</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.haridearn">
+                <damageDef>HAR_IA_Damage_Otherside_a</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.haridearn">
+                <damageDef>HAR_IA_Damage_Otherside_b</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.haridhale">
+                <damageDef>HAR_IH_Damage_Attack</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.haridhale">
+                <damageDef>HAR_IH_Damage_a</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.haridhale">
+                <damageDef>HAR_IH_Damage_b</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.haridhale">
+                <damageDef>HAR_IH_Damage_c</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.haridhale">
+                <damageDef>HAR_IH_Damage_d</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.haridhale">
+                <damageDef>HAR_IH_Damage_e</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harlittluna">
+                <damageDef>HAR_LL_EX_Damage_a</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harlittluna">
+                <damageDef>HAR_LL_EX_Damage_b</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harlittluna">
+                <damageDef>HAR_LL_Damage_Attack</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harlittluna">
+                <damageDef>HAR_LL_LC_Damage_a</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harlittluna">
+                <damageDef>HAR_LL_LC_Damage_b</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harlittluna">
+                <damageDef>HAR_LL_LC_Damage_c</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harnearmare">
+                <damageDef>HAR_NM_Skill_Damage_b</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harqualeela">
+                <damageDef>HAR_QL_Damage_a</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harqualeela">
+                <damageDef>HAR_QL_Damage_b</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.bossrequeen">
+                <damageDef>BOSS_RQ_Damage_Z_a</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.bossrequeen">
+                <damageDef>BOSS_RQ_Damage_Z_e</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.bossrequeen">
+                <damageDef>BOSS_RQ_Damage_Z_f</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harsilkiera">
+                <damageDef>HAR_SK_Skill_Damage_b</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harsilkiera">
+                <damageDef>HAR_SK_Skill_Damage_c</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harsolark">
+                <damageDef>HAR_SA_Damage_b</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harxenoorca">
+                <damageDef>HAR_XO_Damage_a</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harxenoorca">
+                <damageDef>HAR_XO_Damage_b</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="ayameduki.harxenoorca">
+                <damageDef>HAR_XO_Damage_c</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <!--
+            <li MayRequire="xxxxx">
+                <damageDef>xxxxx</damageDef>
+                <multiplier>0</multiplier>
+            </li>-->
+        </value>
+    </Operation>
+</Patch>

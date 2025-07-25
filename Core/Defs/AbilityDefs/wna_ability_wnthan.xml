@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AbilityCategoryDef>
+        <defName>WNA_AbilityCategory</defName>
+        <displayOrder>1000</displayOrder>
+    </AbilityCategoryDef>
+
+    <AbilityDef ParentName="WNA_AbilityBase">
+        <defName>WNA_Ascension</defName>
+        <label>ascension</label>
+        <description>Saint of Whelingnorther Alliance is the leader of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, killing them and send them to salvation.</description><!--neta Rain World-->
+        <iconPath>karma</iconPath>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <ai_IsOffensive>true</ai_IsOffensive>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>199.9</range>
+            <warmupTime>0</warmupTime>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetLocations>false</canTargetLocations>
+                <canTargetAnimals>true</canTargetAnimals>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetMechs>true</canTargetMechs>
+                <canTargetBuildings>true</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <comps Inherit="false">
+            <li Class="WNA.AbilityCompProp.CompAbilityAscension"/>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>WNA_Corrosion</hediffDef>
+                <severity>99</severity>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDef>PsychicApplyNeuroquake</fleckDef>
+                <sound>Psycast_Neuroquake_Effect</sound>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="WNA_AbilityBase">
+        <defName>WNA_Wisdom</defName>
+        <label>bestow wisdom</label>
+        <description>The Saint of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills.</description>
+        <iconPath>focus</iconPath>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <range>-1</range>
+            <warmupTime>0</warmupTime>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>false</canTargetSelf>
+                <canTargetLocations>false</canTargetLocations>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>WNA_AbilityWisdom</hediffDef>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDef>PsychicApplyNeuroquake</fleckDef>
+                <sound>Psycast_Neuroquake_Effect</sound>
+            </li>
+        </comps>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+    </AbilityDef>
+
+    <!---->
+
+    <AbilityDef ParentName="WNA_AbilityBase">
+        <defName>WNA_Resurrection</defName>
+        <label>resurrection</label>
+        <description>WNA had mastered the technique of resurrecting newly dead soon after they formed, and now they can ensure anyone they permit to master this skill.</description>
+        <iconPath>karma</iconPath>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>99.9</range>
+            <warmupTime>0</warmupTime>
+            <soundCast>Resurrect_Resolve</soundCast>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetCorpses>true</canTargetCorpses>
+                <canTargetMechs>false</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WNA.AbilityCompProp.CompAbilityResurrect"/>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="WNA_AbilityBase">
+        <defName>WNA_Warp</defName>
+        <label>warp</label>
+        <description>Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.</description>
+        <iconPath>karma</iconPath>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>199.9</range>
+            <warmupTime>0</warmupTime>
+            <soundCast/>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetAnimals>true</canTargetAnimals>
+                <canTargetItems>true</canTargetItems>
+                <canTargetCorpses>true</canTargetCorpses>
+                <canTargetBuildings>true</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityTeleport">
+                <compClass>CompAbilityEffect_Teleport</compClass>
+                <destination>Selected</destination>
+                <requiresLineOfSight>false</requiresLineOfSight>
+                <range>199.9</range>
+                <destClamorType/>
+                <stunTicks>0</stunTicks>
+                <maxBodySize>999999999</maxBodySize>
+                <goodwillImpact>0</goodwillImpact>
+            </li>
+        </comps>
+    </AbilityDef>
+    <AbilityDef ParentName="WNA_AbilityBase">
+        <defName>WNA_Warp2</defName>
+        <label>farskip</label>
+        <description>Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.</description>
+        <iconPath>karma</iconPath>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <targetWorldCell>true</targetWorldCell>
+        <showGizmoOnWorldView>true</showGizmoOnWorldView>
+        <statBases>
+            <Ability_EffectRadius>9.9</Ability_EffectRadius>
+        </statBases>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>99.9</range>
+            <warmupTime>0</warmupTime>
+            <soundCast/>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetAnimals>true</canTargetAnimals>
+                <canTargetItems>true</canTargetItems>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityFarskip">
+                <stunTicks>0</stunTicks>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="WNA_AbilityBase">
+        <defName>WNA_Invisibility</defName>
+        <label>invisibility</label>
+        <description>Focus on a protective thought and cast it around the target. The target will be hidden from sights for a period of time, usually about 5 days. Theoretically the target can be detected but not all people has proper trick or device for such work.</description>
+        <iconPath>karma</iconPath>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <aiCanUse>false</aiCanUse>
+        <statBases>
+            <Ability_Duration>5500</Ability_Duration>
+            <Ability_EffectRadius>5</Ability_EffectRadius>
+        </statBases>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>99.9</range>
+            <warmupTime>0</warmupTime>
+            <soundCast/>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>WNA_AbilityInvisibility</hediffDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="WNA_AbilityBase">
+        <defName>WNA_AvadaKedavra</defName>
+        <label>psiblast</label>
+        <description>Cast an offensive thought directly to the target and detonate it. Benefit from WNA's unique techniques, this explosion is of great power, hardly anything in physical world can resist its attack.</description>
+        <iconPath>focus</iconPath>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0</warmupTime>
+            <range>199.9</range>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetBuildings>true</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilitySpawn">
+                <thingDef>WNA_Ether_Kedavra</thingDef>
+                <allowOnBuildings>true</allowOnBuildings>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="WNA_AbilityBase">
+        <defName>WNA_PsylinkDeprivation</defName>
+        <label>psylink deprivation</label>
+        <description>cast dark power to the victim to rob the victim of their psychic ability. victims with psylinks will lose their psylink and experience severe psychic trauma, and those without psylinks will experience severe psychic shock and become incapacitied for several days.</description>
+        <iconPath>karma</iconPath>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0</warmupTime>
+            <range>99.9</range>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetLocations>false</canTargetLocations>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WNA.AbilityCompProp.CompHediffDeprivation">
+                <hediffToRemove>PsychicAmplifier</hediffToRemove>
+                <hediffTrauma>WNA_PsychicTrauma</hediffTrauma>
+                <hediffFallBack>WNA_Disabled</hediffFallBack>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDef>PsychicApplyNeuroquake</fleckDef>
+                <sound>Psycast_Neuroquake_Effect</sound>
+            </li>
+        </comps>
+    </AbilityDef>
+    
+</Defs>
