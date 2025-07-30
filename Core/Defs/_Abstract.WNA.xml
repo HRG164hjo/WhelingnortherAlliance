@@ -1093,6 +1093,16 @@
 			<li Class="WNA.DMExtension.MassCapacity">
 				<massCapacity>1000000</massCapacity>
 			</li>
+            <li Class="WNA.DMExtension.KillDownUtility">
+                <minLevel>0.4</minLevel>
+                <minCapacities>
+                    <li>Consciousness</li>
+                    <li>Moving</li>
+                    <li>Manipulation</li>
+                    <li>Sight</li>
+                    <li>Hearing</li>
+                </minCapacities>
+            </li>
         </modExtensions>
 	</ThingDef>
 

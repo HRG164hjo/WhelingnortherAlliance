@@ -10,7 +10,7 @@
 					<texPath>pawns/wna_ferociousbeast/wna_ferociousbeast</texPath>
 					<drawSize>2.55</drawSize>
 					<color>(165,42,47,200)</color>
-					<drawOffset>(0,0,1.27)</drawOffset>
+					<drawOffset>(0,0,0)</drawOffset>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>focus</texPath>

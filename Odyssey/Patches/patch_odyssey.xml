@@ -46,7 +46,7 @@
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/ThingDef[defName="GravEngine"]/statBases/SubstructureSupport</xpath>
         <value>
-            <SubstructureSupport>5000</SubstructureSupport>
+            <SubstructureSupport>1117</SubstructureSupport>
         </value>
     </Operation>
     
@@ -59,10 +59,10 @@
         <value>
             <li Class="CompProperties_GravshipFacility">
                 <statOffsets>
-                    <SubstructureSupport>2500</SubstructureSupport>
+                    <SubstructureSupport>885</SubstructureSupport>
                 </statOffsets>
                 <requiresLOS>false</requiresLOS>
-                <maxSimultaneous>12</maxSimultaneous>
+                <maxSimultaneous>8</maxSimultaneous>
                 <maxDistance>18.9</maxDistance>
             </li>
         </value>

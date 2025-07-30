@@ -377,21 +377,21 @@
 			<li Class="WNA.DMExtension.MassCapacity">
 				<massCapacity>10000000</massCapacity>
 			</li>
-			<li Class="WNA.DMExtension.KillDownUtility">
-				<canDieThreshold>1</canDieThreshold>
-				<minLevel>1.0</minLevel>
-				<minCapacities>
-					<li>Consciousness</li>
-					<li>Moving</li>
-					<li>Manipulation</li>
-					<li>Sight</li>
-					<li>Hearing</li>
-					<li>Breathing</li>
-					<li>BloodFiltration</li>
-					<li>BloodPumping</li>
-					<li>Metabolism</li>
-				</minCapacities>
-			</li>
+            <li Class="WNA.DMExtension.KillDownUtility">
+                <canDieThreshold>1</canDieThreshold>
+                <minLevel>1</minLevel>
+                <minCapacities>
+                    <li>Consciousness</li>
+                    <li>Moving</li>
+                    <li>Manipulation</li>
+                    <li>Sight</li>
+                    <li>Hearing</li>
+                    <li>Breathing</li>
+                    <li>BloodFiltration</li>
+                    <li>BloodPumping</li>
+                    <li>Metabolism</li>
+                </minCapacities>
+            </li>
 		</modExtensions>
     </ThingDef>
 
@@ -598,6 +598,15 @@
 			<li Class="WNA.DMExtension.MassCapacity">
 				<massCapacity>35000</massCapacity>
 			</li>
+            <li Class="WNA.DMExtension.KillDownUtility">
+                <minCapacities>
+                    <li>Consciousness</li>
+                    <li>Moving</li>
+                    <li>Manipulation</li>
+                    <li>Sight</li>
+                    <li>Hearing</li>
+                </minCapacities>
+            </li>
         </modExtensions>
     </ThingDef>
 

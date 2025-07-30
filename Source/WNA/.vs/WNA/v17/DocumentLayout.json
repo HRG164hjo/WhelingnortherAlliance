@@ -3,10 +3,12 @@
   "WorkspaceRootPath": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Core\\Defs\\ThingDefs\\wna_race_whelingnorthan.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|c:\\applications\\steam\\steamapps\\common\\rimworld\\mods\\whelingnortheralliance\\source\\wna\\wnaharmony\\patch_refuelable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:wnaharmony\\patch_refuelable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Core\\Defs\\HediffDefs\\wna_hediff_apparels.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|c:\\applications\\steam\\steamapps\\common\\rimworld\\mods\\whelingnortheralliance\\source\\wna\\dmextension\\refuelableextrastat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:dmextension\\refuelableextrastat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,37 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "wna_hediff_apparels.xml",
-              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Core\\Defs\\HediffDefs\\wna_hediff_apparels.xml",
-              "RelativeDocumentMoniker": "..\\..\\Core\\Defs\\HediffDefs\\wna_hediff_apparels.xml",
-              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Core\\Defs\\HediffDefs\\wna_hediff_apparels.xml",
-              "RelativeToolTip": "..\\..\\Core\\Defs\\HediffDefs\\wna_hediff_apparels.xml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADIAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-07-24T14:12:02.921Z",
+              "Title": "RefuelableExtraStat.cs",
+              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\DMExtension\\RefuelableExtraStat.cs",
+              "RelativeDocumentMoniker": "DMExtension\\RefuelableExtraStat.cs",
+              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\DMExtension\\RefuelableExtraStat.cs",
+              "RelativeToolTip": "DMExtension\\RefuelableExtraStat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T02:50:58.162Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "wna_race_whelingnorthan.xml",
-              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Core\\Defs\\ThingDefs\\wna_race_whelingnorthan.xml",
-              "RelativeDocumentMoniker": "..\\..\\Core\\Defs\\ThingDefs\\wna_race_whelingnorthan.xml",
-              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Core\\Defs\\ThingDefs\\wna_race_whelingnorthan.xml",
-              "RelativeToolTip": "..\\..\\Core\\Defs\\ThingDefs\\wna_race_whelingnorthan.xml",
-              "ViewState": "AgIAAGUBAAAAAAAAAAAAAHsBAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-07-24T14:09:42.958Z",
+              "Title": "Patch_Refuelable.cs",
+              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAHarmony\\Patch_Refuelable.cs",
+              "RelativeDocumentMoniker": "WNAHarmony\\Patch_Refuelable.cs",
+              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAHarmony\\Patch_Refuelable.cs",
+              "RelativeToolTip": "WNAHarmony\\Patch_Refuelable.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T02:40:56.672Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }
