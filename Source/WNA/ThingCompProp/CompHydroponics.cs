@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 
 namespace WNA.ThingCompProp
 {
@@ -11,12 +12,14 @@ namespace WNA.ThingCompProp
     {
         public float growthFactor = 1f;
         public float yieldFactor = 1f;
-        public float extraFactor = 1f;
+        public float extraYieldFactor = 1f;
         public int plantCount = 1;
+        public float lowPowerGrowthFactor = 0f;
+        public bool isManual = true;
         public CompHydroponics()
         {
             compClass = typeof(Hydroponics);
-            extraFactor = yieldFactor;
+            extraYieldFactor = yieldFactor;
         }
     }
     public class Hydroponics : ThingComp
@@ -26,7 +29,7 @@ namespace WNA.ThingCompProp
         public int TicksToSpawn;
         public int CurrentHarvestCount;
         public int CurrentSpawnDelay;
-        private readonly List<string> extraCrops = new List<string>
+        public readonly List<string> extraCrops = new List<string>
             {
                 "Plant_TreeHarbinger",
                 /* mashed's ashlands */
@@ -58,7 +61,7 @@ namespace WNA.ThingCompProp
                 "Plant_SnowPine",
                 "Plant_ColdPine",
             };
-        private readonly List<string> extraItems = new List<string>
+        public readonly List<string> extraItems = new List<string>
             {
                 "Meat_Twisted",
                 /* mashed's ashlands */
@@ -90,7 +93,7 @@ namespace WNA.ThingCompProp
                 "Romy_RawPineCones",
                 "Romy_RawPineCones",
             };
-        private readonly List<int> extraAmounts = new List<int>
+        public readonly List<int> extraAmounts = new List<int>
             {
                 30,
                 /* mashed's ashlands */
@@ -136,10 +139,10 @@ namespace WNA.ThingCompProp
             yield return new Command_Action
             {
                 icon = SelectedCrop?.uiIcon ?? BaseContent.BadTex,
-                defaultLabel = SelectedCrop == null ? "Select Crop" : "Change Crop",
+                defaultLabel = SelectedCrop == null ? "WNA.CompHydroponics.SelectCrop".Translate() : "WNA.CompHydroponics.ChangeCrop".Translate(),
                 defaultDesc = SelectedCrop == null ?
-                    "Select a crop to grow" :
-                    $"Currently growing {SelectedCrop.label}. Click to change.",
+            "WNA.CompHydroponics.SelectCropDesc".Translate() :
+            "WNA.CompHydroponics.ChangeCropDesc".Translate(SelectedCrop.label),
                 action = GenerateCropMenu
             };
             if (SelectedCrop != null)
@@ -147,19 +150,33 @@ namespace WNA.ThingCompProp
                 yield return new Command_Action
                 {
                     icon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel"),
-                    defaultLabel = "Clear Crop",
-                    defaultDesc = "Stop growing current crop",
+                    defaultLabel = "WNA.CompHydroponics.ClearCrop".Translate(),
+                    defaultDesc = "WNA.CompHydroponics.ClearCropDesc".Translate(),
                     action = ResetState
                 };
             }
+        }
+        public float GetCurrentGrowthFactor()
+        {
+            float currentGrowthFactor = Props.growthFactor;
+            CompPowerTrader powerComp = parent.GetComp<CompPowerTrader>();
+            if (powerComp != null && !powerComp.PowerOn) currentGrowthFactor *= Props.lowPowerGrowthFactor;
+            CompRefuelable refuelableComp = parent.GetComp<CompRefuelable>();
+            if (refuelableComp != null && !refuelableComp.HasFuel) currentGrowthFactor *= Props.lowPowerGrowthFactor;
+            return currentGrowthFactor;
         }
         public override void CompTick()
         {
             base.CompTick();
             if (Find.TickManager.TicksGame % 240 != 0) return;
-            if (SelectedCrop != null && TicksToSpawn > 0)
+
+            if (SelectedCrop != null)
             {
-                TicksToSpawn = Math.Max(0, TicksToSpawn - 240);
+                float currentGrowthFactor = GetCurrentGrowthFactor();
+                if (currentGrowthFactor > 0)
+                {
+                    TicksToSpawn = Math.Max(0, TicksToSpawn - (int)(240 * currentGrowthFactor));
+                }
                 if (TicksToSpawn <= 0)
                 {
                     SpawnHarvest();
@@ -169,15 +186,26 @@ namespace WNA.ThingCompProp
         }
         public override string CompInspectStringExtra()
         {
-            if (SelectedCrop == null)
+            if (SelectedCrop == null) return "WNA.CompHydroponics.NoCrop".Translate();
+            CompPowerTrader powerComp = parent.GetComp<CompPowerTrader>();
+            CompRefuelable refuelableComp = parent.GetComp<CompRefuelable>();
+            string statusString = "";
+            if (powerComp != null && !powerComp.PowerOn)
             {
-                return "No crop selected";
+                statusString += "WNA.CompHydroponics.LowPower".Translate() + "\n";
             }
+            if (refuelableComp != null && !refuelableComp.HasFuel)
+            {
+                statusString += "WNA.CompHydroponics.NoFuel".Translate() + "\n";
+            }
+            string growthFactorString = "WNA.CompHydroponics.CurrentGrowthFactor".Translate(GetCurrentGrowthFactor().ToString("F2"));
             return string.Concat(
-                $"Containing {Props.plantCount} plantmatter units\n",
-                $"Growing {SelectedCrop.label}\n",
-                $"Harvest in: {TicksToSpawn.ToStringTicksToPeriod()}\n",
-                $"Estimated yield: {CurrentHarvestCount}"
+                statusString,
+                "WNA.CompHydroponics.Contains".Translate(Props.plantCount) + "\n",
+                "WNA.CompHydroponics.Growing".Translate(SelectedCrop.label) + "\n",
+                "WNA.CompHydroponics.HarvestIn".Translate(TicksToSpawn.ToStringTicksToPeriod()) + "\n",
+                "WNA.CompHydroponics.Yield".Translate(CurrentHarvestCount) + "\n",
+                growthFactorString
             );
         }
         public override void PostExposeData()
@@ -224,17 +252,11 @@ namespace WNA.ThingCompProp
                 for (int i = 0; i < extraCrops.Count; i++)
                 {
                     ThingDef extraCropDef = DefDatabase<ThingDef>.GetNamedSilentFail(extraCrops[i]);
-                    if (extraCropDef == null)
+                    ThingDef itemDef = DefDatabase<ThingDef>.GetNamedSilentFail(extraItems[i]);
+                    if (extraCropDef != null && extraCropDef == SelectedCrop && itemDef != null)
                     {
-                        Log.Warning($"Could not find ThingDef for {extraCrops[i]}. Skipping...");
-                        continue;
-                    }
-                    if (extraCropDef != SelectedCrop) continue;
-                    ThingDef item = DefDatabase<ThingDef>.GetNamedSilentFail(extraItems[i]);
-                    if (item != null)
-                    {
-                        int amount = Mathf.RoundToInt(extraAmounts[i] * Props.extraFactor * Props.plantCount);
-                        GenerateExtras(item, amount);
+                        int amount = Mathf.RoundToInt(extraAmounts[i] * Props.extraYieldFactor * Props.plantCount);
+                        GenerateExtras(itemDef, amount);
                     }
                 }
             }
@@ -248,7 +270,6 @@ namespace WNA.ThingCompProp
             if (count <= 0) return;
             try
             {
-                if (thing == null) return;
                 Thing th = ThingMaker.MakeThing(thing);
                 th.stackCount = count;
                 GenPlace.TryPlaceThing(th, parent.Position, parent.Map, ThingPlaceMode.Near);
@@ -258,45 +279,37 @@ namespace WNA.ThingCompProp
                 Log.Error($"Failed to spawn {thing.LabelCap}: {ex}");
             }
         }
+        private void CreateAndAssignAdjustJob()
+        {
+            List<Pawn> freeColonists = Find.AnyPlayerHomeMap.mapPawns.FreeColonists;
+            Pawn actor = null;
+            if (freeColonists.Count > 0)
+            {
+                int randomIndex = Rand.Range(0, freeColonists.Count);
+                actor = freeColonists[randomIndex];
+            }
+            if (actor == null)
+            {
+                Messages.Message("WNA_NoAvailableColonistForAdjustment".Translate(), MessageTypeDefOf.NeutralEvent, false);
+                return;
+            }
+            Job job = JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("WNA_AdjustHydroponics"), parent);
+            actor.jobs.TryTakeOrderedJob(job, JobTag.Misc);
+        }
         public void GenerateCropMenu()
         {
-            List<FloatMenuOption> options = new List<FloatMenuOption>
-                {
-                    new FloatMenuOption("None", () => ChooseCrop(null))
-                };
-            if (Props.yieldFactor == 0)
+            List<FloatMenuOption> options = new List<FloatMenuOption>();
+            if (Props.isManual)
             {
-                foreach (ThingDef plantDef in DefDatabase<ThingDef>.AllDefs.Where(IsValidCrop))
-                {
-                    if (extraCrops.Contains(plantDef.defName))
-                    {
-                        try
-                        {
-                            ThingDef extraCropDef = DefDatabase<ThingDef>.GetNamedSilentFail(plantDef.defName);
-                            if (extraCropDef == null)
-                            {
-                                Log.Warning($"Could not find ThingDef for {plantDef.defName} in the DefDatabase. Skipping...");
-                                continue;
-                            }
-                            options.Add(new FloatMenuOption(
-                                extraCropDef.LabelCap,
-                                () => ChooseCrop(extraCropDef),
-                                extraCropDef,
-                                extraPartWidth: 29f,
-                                extraPartOnGUI: rect => Widgets.InfoCardButton(rect.x + 5f, rect.y + (rect.height - 24f) / 2f, extraCropDef)
-                            ));
-                        }
-                        catch (Exception ex)
-                        {
-                            Log.Error($"An error occurred while processing plant definition {plantDef.defName}: {ex.Message}");
-                        }
-                    }
-                }
+                options.Add(new FloatMenuOption("WNA_SelectCrop".Translate(), CreateAndAssignAdjustJob));
             }
             else
             {
+                options.Add(new FloatMenuOption("WNA_None".Translate(), () => ChooseCrop(null)));
                 foreach (ThingDef plantDef in DefDatabase<ThingDef>.AllDefs.Where(IsValidCrop))
                 {
+                    if (plantDef == null) continue;
+                    if (Props.yieldFactor == 0 && !extraCrops.Contains(plantDef.defName)) continue;
                     options.Add(new FloatMenuOption(
                         plantDef.LabelCap,
                         () => ChooseCrop(plantDef),
@@ -305,10 +318,6 @@ namespace WNA.ThingCompProp
                         extraPartOnGUI: rect => Widgets.InfoCardButton(rect.x + 5f, rect.y + (rect.height - 24f) / 2f, plantDef)
                     ));
                 }
-            }
-            if (options.Count == 1)
-            {
-                options.Add(new FloatMenuOption("No valid crops available", null));
             }
             Find.WindowStack.Add(new FloatMenu(options));
         }

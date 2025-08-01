@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="../../../../Schemas/MovementDef.xsd">
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Schemas/MovementDef.xsd">
+    
 	<PathfindingFramework.MovementDef MayRequire="pathfinding.framework">
 		<defName>WNA_Movement</defName>
 		<label>voidwalker</label>

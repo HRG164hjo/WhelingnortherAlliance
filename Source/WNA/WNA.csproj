@@ -75,6 +75,7 @@
     <Compile Include="HediffCompProp\CompHealPermaWounds.cs" />
     <Compile Include="HediffCompProp\CompPostRemoveHediff.cs" />
     <Compile Include="Incident\InitiateJoin.cs" />
+    <Compile Include="JobDriverClass\AdjustHydroponics.cs" />
     <Compile Include="Recipe\HalfbeingInfusion.cs" />
     <Compile Include="TargetEffect\Ascension.cs" />
     <Compile Include="ThingClass\SpikeTrap.cs" />

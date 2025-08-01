@@ -214,7 +214,7 @@
             <li Class="WNA.ThingCompProp.CompHydroponics">
                 <growthFactor>16</growthFactor>
                 <yieldFactor>9</yieldFactor>
-                <extraFactor>9</extraFactor>
+                <extraYieldFactor>9</extraYieldFactor>
                 <plantCount>100</plantCount>
             </li>
         </comps>

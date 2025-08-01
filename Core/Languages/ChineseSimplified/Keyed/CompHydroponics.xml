@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<WNA.CompHydroponics.SelectCrop>选择作物</WNA.CompHydroponics.SelectCrop>
+	<WNA.CompHydroponics.ChangeCrop>更换作物</WNA.CompHydroponics.ChangeCrop>
+	<WNA.CompHydroponics.SelectCropDesc>选择一种作物进行种植.</WNA.CompHydroponics.SelectCropDesc>
+	<WNA.CompHydroponics.ChangeCropDesc>当前正在培育{0}. 点击更换.</WNA.CompHydroponics.ChangeCropDesc>
+	<WNA.CompHydroponics.ClearCrop>清除作物</WNA.CompHydroponics.ClearCrop>
+	<WNA.CompHydroponics.ClearCropDesc>停止培育当前作物.</WNA.CompHydroponics.ClearCropDesc>
+
+	<WNA.CompHydroponics.NoCrop>未选择作物</WNA.CompHydroponics.NoCrop>
+	<WNA.CompHydroponics.Contains>包含{0}单位植物质</WNA.CompHydroponics.Contains>
+	<WNA.CompHydroponics.Growing>正在种植: {0}</WNA.CompHydroponics.Growing>
+	<WNA.CompHydroponics.HarvestIn>收获于: {0}</WNA.CompHydroponics.HarvestIn>
+	<WNA.CompHydroponics.Yield>预计产量: {0}</WNA.CompHydroponics.Yield>
+	<WNA.CompHydroponics.LowPower>未通电</WNA.CompHydroponics.LowPower>
+	<WNA.CompHydroponics.NoFuel>燃料不足</WNA.CompHydroponics.NoFuel>
+	<WNA.CompHydroponics.CurrentGrowthFactor>当前生长系数: {0}</WNA.CompHydroponics.CurrentGrowthFactor>
+
+	<WNA.CompHydroponics.None>无</WNA.CompHydroponics.None>
+	<WNA.CompHydroponics.NoValidCrop>无可种植作物</WNA.CompHydroponics.NoValidCrop>
+
+</LanguageData>
