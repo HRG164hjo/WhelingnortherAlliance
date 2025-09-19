@@ -138,12 +138,13 @@
         <inspectorTabs>
             <li>ITab_Storage</li>
         </inspectorTabs>
+        <preventDroppingThingsOn>false</preventDroppingThingsOn>
         <building>
             <blueprintClass>Blueprint_Storage</blueprintClass>
             <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
             <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
             <paintable>true</paintable>
-            <maxItemsInCell>500</maxItemsInCell>
+            <maxItemsInCell>900</maxItemsInCell>
             <storageGroupTag>Shelf</storageGroupTag>
             <fixedStorageSettings>
                 <filter>
@@ -297,7 +298,7 @@
                 <overlightRadius>15</overlightRadius>
                 <glowColor>(74,74,74,0)</glowColor>
             </li>
-            <li Class="WNA.ThingCompProp.CompHeatPusher"><!--CompProperties_TempControl-->
+            <li Class="WNA.ThingCompProp.CompHeatPusher">
                 <heatPushStandard>21</heatPushStandard>
                 <heatPushMult>21</heatPushMult>
             </li>

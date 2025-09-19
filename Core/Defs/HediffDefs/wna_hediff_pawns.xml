@@ -176,6 +176,7 @@
             </li>
         </stages>
         <comps>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"/>
             <li Class="WNA.HediffCompProp.CompMechAutoHeal">
                 <repairInterval>15</repairInterval>
             </li>
@@ -214,7 +215,7 @@
                 <hediff>WNA_DeathRefusal</hediff>
             </li>
         </comps>
-    </HediffDef>    
+    </HediffDef>
     <HediffDef>
         <defName>sWNA_DeathRefusal</defName>
         <label>post death refusal</label>

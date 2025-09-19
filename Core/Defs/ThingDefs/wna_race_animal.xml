@@ -12,7 +12,7 @@
 					<li>WNA_CastMelee</li>
 				</capacities>
 				<power>550</power>
-				<cooldownTime>0.1</cooldownTime>
+				<cooldownTime>0</cooldownTime>
 				<armorPenetration>Infinity</armorPenetration>
 				<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
                 <extraMeleeDamages>
@@ -40,7 +40,7 @@
 					<li>WNA_CastMelee</li>
 				</capacities>
 				<power>5500</power>
-				<cooldownTime>0.6</cooldownTime>
+				<cooldownTime>0</cooldownTime>
 				<armorPenetration>Infinity</armorPenetration>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
@@ -52,7 +52,7 @@
 					<li>WNA_CastMelee</li>
 				</capacities>
 				<power>550</power>
-				<cooldownTime>0.6</cooldownTime>
+				<cooldownTime>0</cooldownTime>
 				<armorPenetration>Infinity</armorPenetration>
 				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
@@ -92,7 +92,7 @@
 					<li>WNA_CastMelee</li>
 				</capacities>
 				<power>550</power>
-				<cooldownTime>0.1</cooldownTime>
+				<cooldownTime>0</cooldownTime>
 				<armorPenetration>Infinity</armorPenetration>
 				<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
                 <extraMeleeDamages>
@@ -120,7 +120,7 @@
 					<li>WNA_CastMelee</li>
 				</capacities>
 				<power>5500</power>
-				<cooldownTime>0.6</cooldownTime>
+				<cooldownTime>0</cooldownTime>
 				<armorPenetration>Infinity</armorPenetration>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.6</chanceFactor>
@@ -132,7 +132,7 @@
 					<li>WNA_CastMelee</li>
 				</capacities>
 				<power>550</power>
-				<cooldownTime>0.6</cooldownTime>
+				<cooldownTime>0</cooldownTime>
 				<armorPenetration>Infinity</armorPenetration>
 				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>

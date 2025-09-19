@@ -3,15 +3,8 @@
   "WorkspaceRootPath": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\jobdriverclass\\adjusthydroponics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:jobdriverclass\\adjusthydroponics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|c:\\applications\\steam\\steamapps\\common\\rimworld\\mods\\whelingnortheralliance\\source\\wna\\thingcompprop\\comphydroponics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:thingcompprop\\comphydroponics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Core\\Defs\\JobDefs\\wna_jobs.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|c:\\applications\\steam\\steamapps\\common\\rimworld\\mods\\whelingnortheralliance\\source\\wna\\wnamiscs\\ingredvalgetter_nutrimisc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:wnamiscs\\ingredvalgetter_nutrimisc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -29,40 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "wna_jobs.xml",
-              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Core\\Defs\\JobDefs\\wna_jobs.xml",
-              "RelativeDocumentMoniker": "..\\..\\Core\\Defs\\JobDefs\\wna_jobs.xml",
-              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Core\\Defs\\JobDefs\\wna_jobs.xml",
-              "RelativeToolTip": "..\\..\\Core\\Defs\\JobDefs\\wna_jobs.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-07-30T14:21:01.455Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AdjustHydroponics.cs",
-              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\JobDriverClass\\AdjustHydroponics.cs",
-              "RelativeDocumentMoniker": "JobDriverClass\\AdjustHydroponics.cs",
-              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\JobDriverClass\\AdjustHydroponics.cs",
-              "RelativeToolTip": "JobDriverClass\\AdjustHydroponics.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAJAAAAAAAAAA==",
+              "Title": "IngredValGetter_NutriMisc.cs",
+              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAMiscs\\IngredValGetter_NutriMisc.cs",
+              "RelativeDocumentMoniker": "WNAMiscs\\IngredValGetter_NutriMisc.cs",
+              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAMiscs\\IngredValGetter_NutriMisc.cs",
+              "RelativeToolTip": "WNAMiscs\\IngredValGetter_NutriMisc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T14:20:06.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompHydroponics.cs",
-              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\ThingCompProp\\CompHydroponics.cs",
-              "RelativeDocumentMoniker": "ThingCompProp\\CompHydroponics.cs",
-              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\ThingCompProp\\CompHydroponics.cs",
-              "RelativeToolTip": "ThingCompProp\\CompHydroponics.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMBAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T13:33:01.287Z",
+              "WhenOpened": "2025-09-19T13:43:31.126Z",
               "EditorCaption": ""
             }
           ]

@@ -2,6 +2,7 @@
 <Defs>
     <ThingDef Abstract="True" ParentName="WNA_ApparelBase" Name="WNA_ApparelBaseA">
         <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
             <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Intellectual</workSkill>
@@ -206,7 +207,6 @@
             </layers>
         </apparel>
         <recipeMaker>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <researchPrerequisite>ComplexClothing</researchPrerequisite>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>

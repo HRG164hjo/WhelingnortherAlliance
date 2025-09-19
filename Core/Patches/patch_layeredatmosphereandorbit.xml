@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+	    <mods>
+            <li>Layered Atmosphere and Orbit</li>
+	    </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/WorldObjectDef[@Name="Generated_LAO_FloatingIsland"]/modExtensions/li[@Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension"]/availableBiomes</xpath>
+		            <value>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">Glowforest</li>
+						<li MayRequire="Ludeon.RimWorld.Odyssey">LavaField</li>
+						
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_BlightedAshlands</li>
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_BlightedBogAshlands</li>
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_BlightedPetrifiedForestAshlands</li>
+
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_DustplainAshlands</li>
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_GrazelandAshlands</li>
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_HighlandAshlands</li>
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_SwampAshlands</li>
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_Ashlands</li>
+						
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_ForestAshlands</li>
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_MarshAshlands</li>
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_MeadowAshlands</li>
+						
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_VolcanicAshlands</li>
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_VolcanicBadlandAshlands</li>
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_VolcanicBasaltHillsAshlands</li>
+						<li MayRequire="SirMashedPotato.Ashlands">Mashed_Ashlands_VolcanicSulphurPitsAshlands</li>
+
+						<li MayRequire="sarg.alphabiomes">AB_FeraliskInfestedJungle</li>
+						<li MayRequire="sarg.alphabiomes">AB_RockyCrags</li>
+						<li MayRequire="sarg.alphabiomes">AB_GallatrossGraveyard</li>
+						<li MayRequire="sarg.alphabiomes">AB_GelatinousSuperorganism</li>
+						<li MayRequire="sarg.alphabiomes">AB_IdyllicMeadows</li>
+						<li MayRequire="sarg.alphabiomes">AB_MechanoidIntrusion</li>
+						<li MayRequire="sarg.alphabiomes">AB_MiasmicMangrove</li>
+						<li MayRequire="sarg.alphabiomes">AB_MycoticJungle</li>
+						<li MayRequire="sarg.alphabiomes">AB_OcularForest</li>
+						<li MayRequire="sarg.alphabiomes">AB_PropaneLakes</li>
+						<li MayRequire="sarg.alphabiomes">AB_PyroclasticConflagration</li>
+						<li MayRequire="sarg.alphabiomes">AB_TarPits</li>
+
+						<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_AlpineMeadow</li>
+						<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_Badlands</li>
+						<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_CloudForest</li>
+						<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_CoastalDunes</li>
+						<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_DesertOasis</li>
+						<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_GlacialShield</li>
+						<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_Grasslands</li>
+						<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_Iceberg_NoBeach</li>
+						<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_Marsh</li>
+						<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_Sandbar_NoBeach</li>
+
+						<li MayRequire="ReGrowth.BOTR.AspenForest">RG_AspenForest</li>
+		            </value>
+				</li>
+            </operations>
+	    </match>
+    </Operation>
+    
+</Patch>

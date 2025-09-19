@@ -56,4 +56,8 @@
 	    </match>
     </Operation>
     
+    <Operation Class="PatchOperationRemove">
+	    <xpath>Defs/TerrainDef/changeable</xpath>
+    </Operation>
+    
 </Patch>

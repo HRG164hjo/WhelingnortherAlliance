@@ -105,7 +105,13 @@
                 <canEjectFuel>false</canEjectFuel>
             </li>
         </comps>
+		<modExtensions>
+            <li Class="WNA.DMExtension.RefuelableExtraStat">
+                <useBodySize>true</useBodySize>
+            </li>
+		</modExtensions>
 	</ThingDef>
+
     <ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_MassGenerator</defName>
 		<label>mass dilution generator</label>

@@ -27,6 +27,8 @@ namespace WNA.WNADefOf
         public static HediffDef WNA_PsychicTrauma;
         public static HediffDef WNA_RobeBoost;
         public static HediffDef sWNA_DeathRefusal;
+        public static HediffDef WNA_ChronoFreeze;
+        public static HediffDef WNA_ChronoFreezeMalicious;
 
         public static TerrainDef WNA_FocusFloor;
         public static TerrainDef WNA_FocusSpring;

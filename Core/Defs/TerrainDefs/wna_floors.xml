@@ -11,7 +11,12 @@
         <isPaintable>true</isPaintable>
         <tags>
             <li>FineFloor</li>
+            <li>Substructure</li>
         </tags>
+        <isFoundation MayRequire="Ludeon.Rimworld.Odyssey">true</isFoundation>
+        <placeWorkers>
+            <li MayRequire="Ludeon.Rimworld.Odyssey">PlaceWorker_BuildingsValidOverSubstructure</li>
+        </placeWorkers>
     </TerrainDef>
     <TerrainDef ParentName="WNA_FloorsBase">
         <defName>WNA_FocusSpring</defName>

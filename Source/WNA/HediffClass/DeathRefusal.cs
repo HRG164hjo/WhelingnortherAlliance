@@ -11,7 +11,7 @@ namespace WNA.HediffClass
     {
     	protected int usesLeft;
     
-        private TickTimer resurrectTimer = new TickTimer();
+        private readonly TickTimer resurrectTimer = new TickTimer();
     
         private bool resurrecting;
     
@@ -76,11 +76,13 @@ namespace WNA.HediffClass
             {
                 yield break;
             }
-            Command_ActionWithLimitedUseCount cmdSelfResurrect = new Command_ActionWithLimitedUseCount();
-            cmdSelfResurrect.defaultLabel = "CommandSelfResurrect".Translate();
-            cmdSelfResurrect.defaultDesc = "CommandSelfResurrectDesc".Translate();
-            cmdSelfResurrect.usesLeftGetter = () => usesLeft;
-            cmdSelfResurrect.maxUsesGetter = () => MaxUses;
+            Command_ActionWithLimitedUseCount cmdSelfResurrect = new Command_ActionWithLimitedUseCount
+            {
+                defaultLabel = "CommandSelfResurrect".Translate(),
+                defaultDesc = "CommandSelfResurrectDesc".Translate(),
+                usesLeftGetter = () => usesLeft,
+                maxUsesGetter = () => MaxUses
+            };
             cmdSelfResurrect.UpdateUsesLeft();
             cmdSelfResurrect.icon = Icon.Texture;
             cmdSelfResurrect.action = delegate

@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 using WNA.WNADefOf;
+using WNA.WNAUtility;
 
 namespace WNA.TargetEffect
 {
@@ -8,18 +9,9 @@ namespace WNA.TargetEffect
     {
         public override void DoEffectOn(Pawn user, Thing target)
         {
-            if (target is Pawn pawn && !pawn.Dead)
+            if (target is Pawn pawn && (!pawn.Dead || !pawn.Destroyed))
             {
-                pawn.Kill(new DamageInfo(WNAMainDefOf.WNA_CastRange, 1000000f, 0f, -1f));
-                if (!pawn.Dead || !pawn.Destroyed)
-                {
-                    Hediff hediff = HediffMaker.MakeHediff(WNAMainDefOf.WNA_Corrosion, pawn);
-                    pawn.health.AddHediff(hediff);
-                }
-                if (!pawn.Dead || !pawn.Destroyed)
-                {
-                    pawn.Destroy(DestroyMode.KillFinalize);
-                }
+                General.TotalRemoving(pawn, true);
             }
             else if (!target.Destroyed)
             {

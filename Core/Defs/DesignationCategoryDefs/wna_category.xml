@@ -9,6 +9,7 @@
             <li>Designator_Cancel</li>
             <li>Designator_Deconstruct</li>
             <li>Designator_RemoveFloor</li>
+            <li>Designator_RemoveFoundation</li>
         </specialDesignatorClasses>
     </DesignationCategoryDef>
 

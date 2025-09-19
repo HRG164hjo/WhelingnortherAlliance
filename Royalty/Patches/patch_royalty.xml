@@ -25,5 +25,12 @@
             </li>
         </value>
     </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="Piano"]/building</xpath>
+        <value>
+			<paintable>true</paintable>
+        </value>
+    </Operation>
 
 </Patch>

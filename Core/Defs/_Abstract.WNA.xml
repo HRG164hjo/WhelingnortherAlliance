@@ -410,10 +410,13 @@
         <holdSnowOrSand>false</holdSnowOrSand>
         <isPaintable>true</isPaintable>
         <extinguishesFire>true</extinguishesFire>
+        <preventCraters MayRequire="Ludeon.Rimworld.Odyssey">true</preventCraters>
         <affordances>
             <li>Light</li>
             <li>Medium</li>
             <li>Heavy</li>
+            <li>Walkable</li>
+            <li MayRequire="Ludeon.Rimworld.Odyssey">Substructure</li>
         </affordances>
         <generatedFilth/>
         <statBases>
@@ -421,7 +424,7 @@
             <WorkToBuild>20</WorkToBuild>
             <Beauty>10</Beauty>
             <Cleanliness>10</Cleanliness>
-            <ContainmentStrength MayRequire="ludeon.rimworld.anomaly">1000000</ContainmentStrength>
+            <ContainmentStrength MayRequire="Ludeon.Rimworld.Anomaly">1000000</ContainmentStrength>
         </statBases>
         <pathCost>0</pathCost>
         <fertility>0</fertility>
@@ -468,6 +471,8 @@
 		<tickerType>Normal</tickerType>
         <rotatable>false</rotatable>
 		<neverMultiSelect>true</neverMultiSelect>
+        <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+        <preventDroppingThingsOn>true</preventDroppingThingsOn>
 		<holdsRoof>true</holdsRoof>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
 		<blockLight>true</blockLight>
@@ -962,6 +967,7 @@
             <ToxicResistance>1</ToxicResistance>
             <FilthRate>0</FilthRate>
             <CarryingCapacity>100000</CarryingCapacity>
+			<WorkSpeedGlobal>20</WorkSpeedGlobal>
             <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
             <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">1</PilotingAbility>

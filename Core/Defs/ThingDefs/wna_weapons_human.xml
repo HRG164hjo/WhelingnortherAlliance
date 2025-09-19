@@ -109,6 +109,7 @@
             <soundWorking>Recipe_Smith</soundWorking>
             <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <recipeUsers>
+                <li>TableMachining</li>
                 <li>FabricationBench</li>
             </recipeUsers>
         </recipeMaker>

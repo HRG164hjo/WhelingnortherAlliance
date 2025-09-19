@@ -27,6 +27,7 @@
 		<blockLight>false</blockLight>
 		<uiIconPath>buildings/atlas/wna_wall_icon</uiIconPath>
 		<building>
+			<paintable>true</paintable>
             <isAirtight>true</isAirtight>
 			<isInert>true</isInert>
             <isPlaceOverableWall>true</isPlaceOverableWall>
@@ -67,6 +68,7 @@
 		<blockLight>false</blockLight>
 		<blockWind>false</blockWind>
 		<building>
+			<paintable>true</paintable>
 			<isInert>true</isInert>
             <isPlaceOverableWall>true</isPlaceOverableWall>
 			<canPlaceOverWall>true</canPlaceOverWall>
@@ -102,6 +104,7 @@
             <DoorOpenSpeed>20</DoorOpenSpeed>
         </statBases>
 		<building>
+			<paintable>true</paintable>
             <isAirtight>true</isAirtight>
       		<isSupportDoor>true</isSupportDoor>
 			<isInert>true</isInert>
@@ -160,6 +163,7 @@
             <DoorOpenSpeed>20</DoorOpenSpeed>
         </statBases>
 		<building>
+			<paintable>true</paintable>
             <isAirtight>true</isAirtight>
       		<isSupportDoor>true</isSupportDoor>
 			<isInert>true</isInert>

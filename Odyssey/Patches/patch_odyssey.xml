@@ -50,14 +50,14 @@
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/ThingDef[defName="GravEngine"]/statBases/SubstructureSupport</xpath>
         <value>
-            <SubstructureSupport>10000</SubstructureSupport>
+            <SubstructureSupport>5000</SubstructureSupport>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/ThingDef[defName="GravEngine"]/comps/li[@Class="CompProperties_SubstructureFootprint"]</xpath>
         <value>
             <li Class="CompProperties_SubstructureFootprint">
-                <radius>27.9</radius>
+                <radius>24.9</radius>
             </li>
         </value>
     </Operation>
@@ -67,11 +67,19 @@
         <value>
             <li Class="CompProperties_GravshipFacility">
                 <statOffsets>
-                    <SubstructureSupport>5000</SubstructureSupport>
+                    <SubstructureSupport>2500</SubstructureSupport>
                 </statOffsets>
                 <requiresLOS>false</requiresLOS>
-                <maxSimultaneous>18</maxSimultaneous>
-                <maxDistance>27.9</maxDistance>
+                <maxSimultaneous>12</maxSimultaneous>
+                <maxDistance>24.9</maxDistance>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[defName="GravFieldExtender"]/comps/li[@Class="CompProperties_SubstructureFootprint"]</xpath>
+        <value>
+            <li Class="CompProperties_SubstructureFootprint">
+                <radius>24.9</radius>
             </li>
         </value>
     </Operation>
@@ -83,11 +91,48 @@
             <li>WNA_ReinforcedThruster</li>
         </value>
     </Operation>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="GravEngine"]</xpath>
+        <value>
+            <costList>
+                <Gravcore>1</Gravcore>
+                <GravlitePanel>75</GravlitePanel>
+                <ComponentSpacer>4</ComponentSpacer>
+                <Plasteel>150</Plasteel>
+            </costList>
+            <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+            <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+            <designationCategory>Odyssey</designationCategory>
+            <useHitPoints>false</useHitPoints>
+            <researchPrerequisites>
+                <li>BasicGravtech</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
     
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/BiomeDef/maxFishPopulation</xpath>
         <value>
-            <maxFishPopulation>100000000</maxFishPopulation>
+            <maxFishPopulation>6000000000</maxFishPopulation>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/TerrainDef[defName="Substructure"]/terrainAffordanceNeeded</xpath>
+        <value>
+            <terrainAffordanceNeeded Inherit="false"/>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="WaspDroneTrap"]</xpath>
+        <value>
+            <costList>
+                <Steel>40</Steel>
+                <ComponentIndustrial>1</ComponentIndustrial>
+            </costList>
+            <designationCategory>Security</designationCategory>
+            <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
         </value>
     </Operation>
 </Patch>

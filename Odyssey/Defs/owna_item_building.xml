@@ -41,7 +41,7 @@
                 <maxDistance>500</maxDistance>
             </li>
             <li Class="CompProperties_Refuelable">
-                <fuelCapacity>7500</fuelCapacity>
+                <fuelCapacity>30000</fuelCapacity>
                 <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
                 <initialConfigurableTargetFuelLevel>7500</initialConfigurableTargetFuelLevel>
                 <fuelMultiplier>100</fuelMultiplier>
@@ -60,7 +60,7 @@
                 <canEjectFuel>true</canEjectFuel>
                 <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
             </li>
-        </comps>    
+        </comps>
     </ThingDef>
 
     <ThingDef ParentName="WNA_FurnitureBase">
@@ -127,7 +127,7 @@
                 </flameShaderParameters>
                 <requiresLOS>false</requiresLOS>
                 <maxSimultaneous>8</maxSimultaneous>
-                <maxDistance>500</maxDistance>
+                <maxDistance>1600</maxDistance>
                 <exhaustSettings>
                     <exhaustFleckDef>GravshipThrusterExhaust</exhaustFleckDef>
                     <emissionsPerSecond>40.0</emissionsPerSecond>
@@ -140,6 +140,70 @@
                 </exhaustSettings>
             </li>
             <li Class="CompProperties_Breakdownable" />
-        </comps>    
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+        <defName>WNA_LifeSurpporter</defName>
+        <label>life surporter</label>
+        <description>A wall-mounted life support unit</description>
+        <uiIconPath>Things/Building/LifesupportUnit/LifesupportUnit_MenuIcon</uiIconPath>
+        <graphicData>
+            <texPath>Things/Building/LifesupportUnit/LifesupportUnit</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+            <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+            <drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+            <drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+            <damageData>
+                <enabled>false</enabled>
+            </damageData>
+            <color>(168,167,151)</color>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <statBases>
+            <Mass>0.5</Mass>
+            <WorkToBuild>1500</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>25</Steel>
+        </costList>
+        <researchPrerequisites>
+            <li>StandardGravtech</li>
+        </researchPrerequisites>
+        <rotatable>true</rotatable>
+        <tickerType>Rare</tickerType>
+        <passability>Standable</passability>
+        <building>
+            <isEdifice>false</isEdifice>
+            <isAttachment>true</isAttachment>
+            <expandHomeArea>false</expandHomeArea>
+        </building>
+        <placeWorkers>
+            <li>Placeworker_AttachedToWall</li>
+        </placeWorkers>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-5000</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_AmbientSound">
+                <sound>OxygenPump_Ambient</sound>
+            </li>
+            <li Class="CompProperties_OxygenPusher">
+                <requiresPower>true</requiresPower>
+                <airPerSecondPerHundredCells>0.1</airPerSecondPerHundredCells>
+            </li>
+            <li Class="WNA.ThingCompProp.CompHeatPusher">
+                <heatPushStandard>24</heatPushStandard>
+                <heatPushMult>24</heatPushMult>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>14</glowRadius>
+                <overlightRadius>14</overlightRadius>
+                <glowColor>(124,124,124,0)</glowColor>
+            </li>
+        </comps>
     </ThingDef>
 </Defs>

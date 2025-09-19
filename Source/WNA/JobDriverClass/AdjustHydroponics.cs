@@ -65,11 +65,6 @@ namespace WNA.JobDriverClass
             };
             chooseCrop.defaultCompleteMode = ToilCompleteMode.Never;
             yield return chooseCrop;
-            Toil workWait = new Toil();
-            workWait.defaultDuration = 150;
-            workWait.WithProgressBarToilDelay(BasinInd, false);
-            workWait.defaultCompleteMode = ToilCompleteMode.Delay;
-            yield return workWait;
             yield return new Toil
             {
                 initAction = delegate

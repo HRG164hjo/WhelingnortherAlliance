@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 using WNA.WNADefOf;
+using WNA.WNAUtility;
 
 namespace WNA.AbilityCompProp
 {
@@ -15,16 +16,12 @@ namespace WNA.AbilityCompProp
     {
 
         public new CompAbilityAscension Props => (CompAbilityAscension)props;
-
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             Pawn pawn = target.Pawn;
             base.Apply(target, dest);
-            DamageInfo dkill = new DamageInfo(WNAMainDefOf.WNA_CastRange, float.PositiveInfinity, float.PositiveInfinity, -1f, parent.pawn);
-            pawn.Kill(dkill);
-            pawn.Corpse?.DeSpawn();
+            General.TotalRemoving(pawn, true);
         }
-
         public override bool AICanTargetNow(LocalTargetInfo target)
         {
             return false;
@@ -38,7 +35,6 @@ namespace WNA.AbilityCompProp
             }
             return true;
         }
-
         public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)
         {
             return Valid(target);
