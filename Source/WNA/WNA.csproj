@@ -69,9 +69,8 @@
     <Compile Include="DMExtension\KillDownUtility.cs" />
     <Compile Include="DMExtension\MassCapacity.cs" />
     <Compile Include="DMExtension\RefuelableExtraStat.cs" />
-    <Compile Include="DMExtension\TechnoTypeConfig.cs" />
+    <Compile Include="DMExtension\TechnoConfig.cs" />
     <Compile Include="Harmony.cs" />
-    <Compile Include="HediffClass\ChronoFreeze.cs" />
     <Compile Include="HediffClass\DeathRefusal.cs" />
     <Compile Include="HediffCompProp\CompMechAutoHeal.cs" />
     <Compile Include="HediffCompProp\CompHealPermaWounds.cs" />
@@ -93,6 +92,7 @@
     <Compile Include="ThingCompProp\CompShieldGenerator.cs" />
     <Compile Include="ThingCompProp\CompThingSelfHeal.cs" />
     <Compile Include="WNADefOf\WNAMainDefOf.cs" />
+    <Compile Include="WNAHarmony\Patch_CompTransporter.cs" />
     <Compile Include="WNAHarmony\Patch_KillDownUtility.cs" />
     <Compile Include="WNAHarmony\Patch_CompRottable.cs" />
     <Compile Include="WNAHarmony\Patch_Explosion.cs" />
@@ -100,10 +100,10 @@
     <Compile Include="WNAHarmony\Patch_Interaction.cs" />
     <Compile Include="WNAHarmony\Patch_MassUtility.cs" />
     <Compile Include="WNAHarmony\Patch_Need.cs" />
+    <Compile Include="WNAHarmony\Patch_PawnGenerator.cs" />
     <Compile Include="WNAHarmony\Patch_Plant.cs" />
     <Compile Include="WNAHarmony\Patch_RandomDrop.cs" />
     <Compile Include="WNAHarmony\Patch_Refuelable.cs" />
-    <Compile Include="WNAHarmony\Patch_Renderer.cs" />
     <Compile Include="WNAHarmony\Patch_Roof.cs" />
     <Compile Include="WNAHarmony\Patch_SkillRecord.cs" />
     <Compile Include="WNAHarmony\Patch_Training.cs" />
@@ -112,8 +112,6 @@
     <Compile Include="WNAMiscs\HedifferTicker.cs" />
     <Compile Include="WNAMiscs\IngredValGetter_NutriMisc.cs" />
     <Compile Include="WNAMiscs\WarpOn.cs" />
-    <Compile Include="WNAUtility\ChronoGameComponent.cs" />
-    <Compile Include="WNAUtility\ChronoUtility.cs" />
     <Compile Include="WNAUtility\General.cs" />
     <Compile Include="WNAUtility\MindControlUtility.cs" />
     <Compile Include="WNA_HediffGiverRandom.cs" />

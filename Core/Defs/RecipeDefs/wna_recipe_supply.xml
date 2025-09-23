@@ -144,6 +144,46 @@
 	    </recipeUsers>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNARecipeFor_Meal_MealBulk</defName>
+        <description>Use whelingnorther techniques to pack normal meals into WNA meal packs.</description>
+        <jobString>working.</jobString>
+        <label>repack meals x5</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>FoodMeals</li>
+                        <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                        <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+                    </categories>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>FoodMeals</li>
+                <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+            </categories>
+            <disallowedCategories/>
+            <disallowedThingDefs>
+                <li>WNA_Meal</li>
+                <li MayRequire="3hstltd.foods.instanoodles">WNA_InstaNoodle</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Meal>5</WNA_Meal>
+        </products>
+        <workAmount>250</workAmount>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Basic</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
 
     <!-- medikit -->
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -156,6 +196,7 @@
                 <filter>
                     <categories>
                         <li>Medicine</li>
+                        <li>Drugs</li>
                     </categories>
                     <thingDefs>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
@@ -167,6 +208,7 @@
         <fixedIngredientFilter>
             <categories>
                 <li>Medicine</li>
+                <li>Drugs</li>
             </categories>
             <thingDefs>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
@@ -175,6 +217,17 @@
                 <li>WNA_Medikit</li>
             </disallowedThingDefs>
         </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
+            </thingDefs>
+            <disallowedThingDefs>
+                <li>WNA_Medikit</li>
+            </disallowedThingDefs>
+        </defaultIngredientFilter>
         <products>
             <WNA_Medikit>1</WNA_Medikit>
         </products>
@@ -194,6 +247,7 @@
                 <filter>
                     <categories>
                         <li>Medicine</li>
+                        <li>Drugs</li>
                     </categories>
                     <thingDefs>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
@@ -205,6 +259,7 @@
         <fixedIngredientFilter>
             <categories>
                 <li>Medicine</li>
+                <li>Drugs</li>
             </categories>
             <thingDefs>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
@@ -213,6 +268,17 @@
                 <li>WNA_Medikit</li>
             </disallowedThingDefs>
         </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
+            </thingDefs>
+            <disallowedThingDefs>
+                <li>WNA_Medikit</li>
+            </disallowedThingDefs>
+        </defaultIngredientFilter>
         <products>
             <WNA_Medikit>5</WNA_Medikit>
         </products>

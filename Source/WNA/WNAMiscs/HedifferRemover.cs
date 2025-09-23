@@ -28,7 +28,7 @@ namespace WNA.WNAMiscs
             else if (pawn.Ideo != null && pawn.Ideo.HasPrecept(WNAMainDefOf.WNA_P_Proselyte)) RemoveTargetHediffs(pawn);
             else if (validPawn.Contains(pawn.def.defName)) RemoveTargetHediffs(pawn);
         }
-        private bool isValidHediff(Hediff hediff)
+        private bool IsValidHediff(Hediff hediff)
         {
             return (hediff is Hediff_Injury
                 || (hediff.Severity > 0 && hediff.def.isBad)
@@ -41,7 +41,7 @@ namespace WNA.WNAMiscs
             List<Hediff> hediffsToRemove = new List<Hediff>();
             foreach (Hediff hediff in hediffSet.hediffs)
             {
-                if (isValidHediff(hediff))
+                if (IsValidHediff(hediff))
                 {
                     hediffsToRemove.Add(hediff);
                 }

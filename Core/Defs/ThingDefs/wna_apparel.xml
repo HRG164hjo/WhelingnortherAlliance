@@ -4,7 +4,6 @@
         <recipeMaker>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
-            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Intellectual</workSkill>
             <skillRequirements>
                 <Intellectual>12</Intellectual>
@@ -214,7 +213,6 @@
             <recipeUsers>
                 <li>TableMachining</li>
             </recipeUsers>
-            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <defaultIngredientFilter>
                 <categories>
                     <li>Root</li>
@@ -270,7 +268,6 @@
         </apparel>
         <recipeMaker>
             <researchPrerequisite>WNA_RebelArsenal</researchPrerequisite>
-            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
                 <Crafting>6</Crafting>
@@ -324,7 +321,6 @@
         </apparel>
         <recipeMaker>
             <researchPrerequisite>WNA_RebelArsenal</researchPrerequisite>
-            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
                 <Crafting>6</Crafting>
@@ -377,7 +373,6 @@
         </apparel>
         <recipeMaker>
             <researchPrerequisite>WNA_NexusLegion</researchPrerequisite>
-            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
                 <Crafting>10</Crafting>
@@ -430,7 +425,6 @@
         </apparel>
         <recipeMaker>
             <researchPrerequisite>WNA_NexusLegion</researchPrerequisite>
-            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
                 <Crafting>10</Crafting>
@@ -481,7 +475,6 @@
         </apparel>
         <recipeMaker>
             <researchPrerequisite>WNA_IronGuardian</researchPrerequisite>
-            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
                 <Crafting>14</Crafting>
@@ -535,7 +528,6 @@
         </apparel>
         <recipeMaker>
             <researchPrerequisite>WNA_IronGuardian</researchPrerequisite>
-            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
                 <Crafting>14</Crafting>

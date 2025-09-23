@@ -124,11 +124,11 @@
 		</specialProducts>
         <workAmount>300</workAmount>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
-		<modExtensions>
+		<!--<modExtensions>
 			<li Class="RimBees.OutputMultiplierRecipe">
 				<multiplier>1</multiplier>
 			</li>
-		</modExtensions>
+		</modExtensions>-->
     </RecipeDef>
 
 </Defs>

@@ -1,42 +1,4 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<HediffDef>
-		<defName>WNA_ChronoFreeze</defName>
-		<label>chrono freeze</label>
-		<description>This pawn have just performed a chrono move, and is recovering from its side effects.</description>
-		<hediffClass>WNA.HediffClass.ChronoFreeze</hediffClass>
-		<defaultLabelColor>(188,230,255)</defaultLabelColor>
-		<everCurableByItem>false</everCurableByItem>
-		<isBad>false</isBad>
-		<stages>
-			<li>
-				<socialFightChanceFactor>0</socialFightChanceFactor>
-				<blocksMentalBreaks>true</blocksMentalBreaks>
-			</li>
-		</stages>
-		<comps>
-			<li Class="WNA.HediffCompProp.CompTemporalEffect">
-				<isMalicious>false</isMalicious>
-			</li>
-		</comps>
-	</HediffDef>
-	<HediffDef>
-		<defName>WNA_ChronoFreezeMalicious</defName>
-		<label>chrono freeze</label>
-		<description>This pawn is being slowly wiped out of time and space. If not being rescued in time, this poor soul will be removed. They may be teleported to a really far away place, or just no longer exists.</description>
-		<hediffClass>WNA.HediffClass.ChronoFreezeMalicious</hediffClass>
-		<defaultLabelColor>(188,230,255)</defaultLabelColor>
-		<everCurableByItem>false</everCurableByItem>
-		<isBad>false</isBad>
-		<stages>
-			<li>
-				<socialFightChanceFactor>0</socialFightChanceFactor>
-				<blocksMentalBreaks>true</blocksMentalBreaks>
-			</li>
-		</stages>
-		<comps>
-			<li Class="WNA.HediffCompProp.CompTemporalEffect"/>
-		</comps>
-	</HediffDef>
-
+	
 </Defs>

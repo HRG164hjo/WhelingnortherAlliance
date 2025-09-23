@@ -19,10 +19,10 @@
         <hediffGivers>
             <li Class="WNA.WNAMiscs.HedifferTicker">
                 <hediff>WNA_DeathRefusal</hediff>
-                <tickInterval>7</tickInterval>
+                <tickInterval>29</tickInterval>
             </li>
             <li Class="WNA.WNAMiscs.HedifferRemover">
-                <tickInterval>7</tickInterval>
+                <tickInterval>29</tickInterval>
             </li>
         </hediffGivers>
     </HediffGiverSetDef>
@@ -32,10 +32,10 @@
         <hediffGivers>
             <li Class="WNA.WNAMiscs.HedifferTicker">
                 <hediff>WNA_InAnimal</hediff>
-                <tickInterval>7</tickInterval>
+                <tickInterval>29</tickInterval>
             </li>
             <li Class="WNA.WNAMiscs.HedifferRemover">
-                <tickInterval>7</tickInterval>
+                <tickInterval>29</tickInterval>
             </li>
         </hediffGivers>
     </HediffGiverSetDef>

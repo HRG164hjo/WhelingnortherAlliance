@@ -46,7 +46,7 @@
     <Operation Class="PatchOperationRemove">
 	    <xpath>Defs/ThingDef[defName="Gravcore"]/tradeability</xpath>
     </Operation>
-    
+
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/ThingDef[defName="GravEngine"]/statBases/SubstructureSupport</xpath>
         <value>
@@ -61,7 +61,7 @@
             </li>
         </value>
     </Operation>
-    
+
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/ThingDef[defName="GravFieldExtender"]/comps/li[@Class="CompProperties_GravshipFacility"]</xpath>
         <value>
@@ -83,7 +83,7 @@
             </li>
         </value>
     </Operation>
-    
+
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThingDef[defName="GravEngine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
         <value>
@@ -109,21 +109,21 @@
             </researchPrerequisites>
         </value>
     </Operation>
-    
+
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/BiomeDef/maxFishPopulation</xpath>
         <value>
             <maxFishPopulation>6000000000</maxFishPopulation>
         </value>
     </Operation>
-    
+
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/TerrainDef[defName="Substructure"]/terrainAffordanceNeeded</xpath>
         <value>
             <terrainAffordanceNeeded Inherit="false"/>
         </value>
     </Operation>
-    
+
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThingDef[defName="WaspDroneTrap"]</xpath>
         <value>
@@ -133,6 +133,42 @@
             </costList>
             <designationCategory>Security</designationCategory>
             <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[defName="AncientFortifiedWall"]/building/deconstructible</xpath>
+        <value>
+            <deconstructible>true</deconstructible>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[defName="FuelOptimizer" or defName="SignalJammer" or defName="PilotSubpersonaCore" or defName="GravAnchor"]/statBases/Flammability</xpath>
+        <value>
+            <Flammability>0</Flammability>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="FuelOptimizer" or defName="SignalJammer" or defName="PilotSubpersonaCore" or defName="GravAnchor"]</xpath>
+        <value>
+            <useHitPoints>false</useHitPoints>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="GravAnchor"]</xpath>
+        <value>
+            <minifiedDef>MinifiedGravEngine</minifiedDef>
+            <thingCategories>
+                <li>BuildingsMisc</li>
+            </thingCategories>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="GravAnchor"]/statBases</xpath>
+        <value>
+            <Mass>80</Mass>
         </value>
     </Operation>
 </Patch>

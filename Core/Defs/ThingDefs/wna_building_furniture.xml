@@ -62,7 +62,7 @@
         <comps>
             <li Class="CompProperties_Transporter">
                 <restEffectiveness>1</restEffectiveness>
-                <massCapacity>4000000</massCapacity>
+                <massCapacity>6000000</massCapacity>
                 <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
                 <showOverallStats>false</showOverallStats>
             </li>
@@ -394,9 +394,7 @@
         </placeWorkers>
 	</ThingDef>
 
-
-
-    <ThingDef ParentName="WNA_FurnitureBase">
+<!--<ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_TestAE</defName>
 		<label>WNA_TestAE</label>
 		<description>TEST_OBJECT</description>
@@ -416,5 +414,5 @@
             </li>
         </comps>
         <specialDisplayRadius>5.0</specialDisplayRadius>
-	</ThingDef>
+	</ThingDef>-->
 </Defs>

@@ -25,6 +25,7 @@
             <ConversionPower>99999</ConversionPower>
             <SuppressionPower>99999</SuppressionPower>
             <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">10</ActivitySuppressionRate>
+            <WorkSpeedGlobal>20</WorkSpeedGlobal>
         </statFactors>
         <comps>
             <li Class="PreceptComp_SelfTookMemoryThought">

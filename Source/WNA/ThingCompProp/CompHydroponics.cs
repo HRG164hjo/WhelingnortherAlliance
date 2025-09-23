@@ -136,15 +136,30 @@ namespace WNA.ThingCompProp
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            yield return new Command_Action
+            if (Props.isManual)
             {
-                icon = SelectedCrop?.uiIcon ?? BaseContent.BadTex,
-                defaultLabel = SelectedCrop == null ? "WNA.CompHydroponics.SelectCrop".Translate() : "WNA.CompHydroponics.ChangeCrop".Translate(),
-                defaultDesc = SelectedCrop == null ?
-            "WNA.CompHydroponics.SelectCropDesc".Translate() :
-            "WNA.CompHydroponics.ChangeCropDesc".Translate(SelectedCrop.label),
-                action = GenerateCropMenu
-            };
+                yield return new Command_Action
+                {
+                    icon = SelectedCrop?.uiIcon ?? BaseContent.BadTex,
+                    defaultLabel = SelectedCrop == null ? "WNA.CompHydroponics.SelectCrop".Translate() : "WNA.CompHydroponics.ChangeCrop".Translate(),
+                    defaultDesc = SelectedCrop == null ?
+                        "WNA.CompHydroponics.SelectCropDesc".Translate() :
+                        "WNA.CompHydroponics.ChangeCropDesc".Translate(SelectedCrop.label),
+                    action = CreateAndAssignAdjustJob
+                };
+            }
+            else
+            {
+                yield return new Command_Action
+                {
+                    icon = SelectedCrop?.uiIcon ?? BaseContent.BadTex,
+                    defaultLabel = SelectedCrop == null ? "WNA.CompHydroponics.SelectCrop".Translate() : "WNA.CompHydroponics.ChangeCrop".Translate(),
+                    defaultDesc = SelectedCrop == null ?
+                        "WNA.CompHydroponics.SelectCropDesc".Translate() :
+                        "WNA.CompHydroponics.ChangeCropDesc".Translate(SelectedCrop.label),
+                    action = GenerateCropMenu
+                };
+            }
             if (SelectedCrop != null)
             {
                 yield return new Command_Action
@@ -299,25 +314,18 @@ namespace WNA.ThingCompProp
         public void GenerateCropMenu()
         {
             List<FloatMenuOption> options = new List<FloatMenuOption>();
-            if (Props.isManual)
+            options.Add(new FloatMenuOption("WNA_None".Translate(), () => ChooseCrop(null)));
+            foreach (ThingDef plantDef in DefDatabase<ThingDef>.AllDefs.Where(IsValidCrop))
             {
-                options.Add(new FloatMenuOption("WNA_SelectCrop".Translate(), CreateAndAssignAdjustJob));
-            }
-            else
-            {
-                options.Add(new FloatMenuOption("WNA_None".Translate(), () => ChooseCrop(null)));
-                foreach (ThingDef plantDef in DefDatabase<ThingDef>.AllDefs.Where(IsValidCrop))
-                {
-                    if (plantDef == null) continue;
-                    if (Props.yieldFactor == 0 && !extraCrops.Contains(plantDef.defName)) continue;
-                    options.Add(new FloatMenuOption(
-                        plantDef.LabelCap,
-                        () => ChooseCrop(plantDef),
-                        plantDef,
-                        extraPartWidth: 29f,
-                        extraPartOnGUI: rect => Widgets.InfoCardButton(rect.x + 5f, rect.y + (rect.height - 24f) / 2f, plantDef)
-                    ));
-                }
+                if (plantDef == null) continue;
+                if (Props.yieldFactor == 0 && !extraCrops.Contains(plantDef.defName)) continue;
+                options.Add(new FloatMenuOption(
+                    plantDef.LabelCap,
+                    () => ChooseCrop(plantDef),
+                    plantDef,
+                    extraPartWidth: 29f,
+                    extraPartOnGUI: rect => Widgets.InfoCardButton(rect.x + 5f, rect.y + (rect.height - 24f) / 2f, plantDef)
+                ));
             }
             Find.WindowStack.Add(new FloatMenu(options));
         }

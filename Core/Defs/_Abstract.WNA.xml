@@ -787,6 +787,10 @@
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
             <developmentalStageFilter>Baby,Child,Adult</developmentalStageFilter>
         </apparel>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+        </recipeMaker>
     </ThingDef>
     <ThingDef Abstract="True" ParentName="WNA_ApparelBase" Name="WNA_UtilityBase">
         <apparel>

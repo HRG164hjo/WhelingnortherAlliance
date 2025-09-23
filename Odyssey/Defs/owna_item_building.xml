@@ -4,7 +4,6 @@
         <defName>WNA_UraniumFuelTank</defName>
         <label>uranium fuel tank</label>
         <description>TODO</description>
-        <minTechLevelToBuild>Archotech</minTechLevelToBuild>
         <graphicData>
             <graphicClass>Graphic_Multi</graphicClass>
             <texPath>Things/Building/LargeChemfuelTank/LargeChemfuelTank</texPath>
@@ -12,10 +11,8 @@
             <color>(74,74,74)</color>
         </graphicData>
         <size>(2,2)</size>
-        <useHitPoints>true</useHitPoints>
         <statBases>
-            <MaxHitPoints>300</MaxHitPoints>
-            <Mass>50</Mass>
+            <Mass>40</Mass>
             <Flammability>0</Flammability>
             <Beauty>-10</Beauty>
             <WorkToBuild>4000</WorkToBuild>
@@ -108,7 +105,7 @@
         <comps>
             <li Class="CompProperties_GravshipThruster">
                 <statOffsets>
-                    <GravshipRange>75</GravshipRange>
+                    <GravshipRange>1600</GravshipRange>
                 </statOffsets>
                 <componentTypeDef>Thruster</componentTypeDef>
                 <exclusionAreaSize>(0, 0, 0)</exclusionAreaSize>
@@ -127,7 +124,7 @@
                 </flameShaderParameters>
                 <requiresLOS>false</requiresLOS>
                 <maxSimultaneous>8</maxSimultaneous>
-                <maxDistance>1600</maxDistance>
+                <maxDistance>500</maxDistance>
                 <exhaustSettings>
                     <exhaustFleckDef>GravshipThrusterExhaust</exhaustFleckDef>
                     <emissionsPerSecond>40.0</emissionsPerSecond>
@@ -185,7 +182,7 @@
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerPlant</compClass>
-                <basePowerConsumption>-5000</basePowerConsumption>
+                <basePowerConsumption>-10000</basePowerConsumption>
                 <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_AmbientSound">
@@ -193,11 +190,11 @@
             </li>
             <li Class="CompProperties_OxygenPusher">
                 <requiresPower>true</requiresPower>
-                <airPerSecondPerHundredCells>0.1</airPerSecondPerHundredCells>
+                <airPerSecondPerHundredCells>1</airPerSecondPerHundredCells>
             </li>
             <li Class="WNA.ThingCompProp.CompHeatPusher">
-                <heatPushStandard>24</heatPushStandard>
-                <heatPushMult>24</heatPushMult>
+                <heatPushStandard>21</heatPushStandard>
+                <heatPushMult>21</heatPushMult>
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>14</glowRadius>

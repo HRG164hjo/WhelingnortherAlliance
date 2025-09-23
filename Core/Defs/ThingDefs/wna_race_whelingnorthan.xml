@@ -379,7 +379,7 @@
 			</li>
             <li Class="WNA.DMExtension.KillDownUtility">
                 <canDieThreshold>1</canDieThreshold>
-                <minLevel>1</minLevel>
+                <minLevel>20</minLevel>
                 <minCapacities>
                     <li>Consciousness</li>
                     <li>Moving</li>
