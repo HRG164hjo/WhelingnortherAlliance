@@ -221,6 +221,7 @@
             <li>Ascetic</li>
             <li>Psychopath</li>
             <li>Tough</li>
+            <li>WNA_Trait_Unshakable</li>
         </forcedTraits>
         <apparelRequired>
 			<li>WNA_AllianceHood</li>
