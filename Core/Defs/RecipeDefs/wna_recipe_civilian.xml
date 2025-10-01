@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- civil -->
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_HeatStoneChunk</defName>
+        <label>heat stone chunk</label>
+        <description>treat stone with strong heat to gain resources.</description>
+        <jobString>heating a stone chunk.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneChunks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Quicklime>15</WNA_Quicklime>
+            <WNA_MercuryVial>2</WNA_MercuryVial>
+        </products>
+        <workAmount>450</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	        <li>ElectricCrematorium</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_HeatStoneBlock</defName>
+        <label>heat stone blocks</label>
+        <description>treat stone with strong heat to gain resources.</description>
+        <jobString>heating stone blocks.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Jade</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+            <thingDefs>
+                <li>Jade</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Quicklime>15</WNA_Quicklime>
+            <WNA_MercuryVial>2</WNA_MercuryVial>
+        </products>
+        <workAmount>450</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	        <li>ElectricCrematorium</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeCinnabar</defName>
+        <label>make cinnabar</label>
+        <description>use mercury and sulphur to make cinnabar.</description>
+        <jobString>making cinnabar.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Sulphur</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_MercuryVial</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Sulphur</li>
+                <li>WNA_MercuryVial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Cinnabar>5</WNA_Cinnabar>
+        </products>
+        <workAmount>400</workAmount>
+        <recipeUsers>
+	        <li>DrugLab</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_HeatCinnabar</defName>
+        <label>heat cinnabar</label>
+        <description>treat cinnabar with strong heat to make it decompose into sulphur and mercury.</description>
+        <jobString>heating cinnabar.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Cinnabar</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Cinnabar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Sulphur>5</WNA_Sulphur>
+            <WNA_MercuryVial>5</WNA_MercuryVial>
+        </products>
+        <workAmount>350</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	        <li>ElectricCrematorium</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_RefineCorpse</defName>
+        <label>refine corpse</label>
+        <description>refine a corpse to extract some elements composing organic flesh.</description>
+        <jobString>refining a corpse.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Corpses</li>
+            </categories>
+            <disallowedCategories>
+                <li>CorpsesMechanoid</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <specialFiltersToAllow>
+                <li>AllowCorpsesColonist</li>
+                <li MayRequire="Ludeon.RimWorld.Ideology">AllowCorpsesSlave</li>
+                <li>AllowCorpsesStranger</li>
+            </specialFiltersToAllow>
+        </defaultIngredientFilter>
+        <products>
+            <WNA_Phosphorus>4</WNA_Phosphorus>
+            <WNA_Sulphur>1</WNA_Sulphur>
+            <WNA_HalogenVial>1</WNA_HalogenVial>
+        </products>
+        <workAmount>250</workAmount>
+        <recipeUsers>
+	        <li>ElectricCrematorium</li>
+	        <li>BiofuelRefinery</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeMethanol</defName>
+        <label>make methanol</label>
+        <description>distill wood to extract methanol.</description>
+        <jobString>making methanol.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                        <li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+                        <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
+                        <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_MushroomLog</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_ParasolWoodLog</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_Cork</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_Rattan</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_ReedStalks</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_EbonyWood</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_MahoganyWood</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_RosewoodWood</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_CedarWood</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_Rubber</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WoodLog</li>
+                <li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+                <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
+                <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_MushroomLog</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_ParasolWoodLog</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_Cork</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_Rattan</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_ReedStalks</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_EbonyWood</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_MahoganyWood</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_RosewoodWood</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_CedarWood</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Methanol>30</WNA_Methanol>
+        </products>
+        <workAmount>350</workAmount>
+        <recipeUsers>
+	        <li>ElectricCrematorium</li>
+	        <li>BiofuelRefinery</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeSynthread</defName>
+        <label>make synthread</label>
+        <description>a method to make synthread from chemfuel and halogen. someone may have have been missing this so much.</description>
+        <jobString>refining a corpse.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_HalogenVial</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Chemfuel</li>
+                <li>WNA_HalogenVial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Synthread>45</Synthread>
+        </products>
+        <workAmount>400</workAmount>
+        <recipeUsers>
+	        <li>BiofuelRefinery</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeNeutroamine</defName>
+        <label>make neutroamine</label>
+        <description>a method to make neutroamine from chemfuel and methanol. great for supporting a colony drug business.</description>
+        <jobString>refining a corpse.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Methanol</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Chemfuel</li>
+                <li>WNA_Methanol</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Neutroamine>30</Neutroamine>
+        </products>
+        <workAmount>400</workAmount>
+        <recipeUsers>
+	        <li>BiofuelRefinery</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+
+</Defs>

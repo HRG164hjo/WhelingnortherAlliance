@@ -37,7 +37,7 @@ namespace WNA.WNADefOf
         public static MutantDef WNA_Halfbeing;
 
         public static PawnKindDef WNA_Saint;
-        public static PawnKindDef WNA_Initiate;
+        public static PawnKindDef WNA_Disciple;
 
         public static ThingDef WNA_WNThan;
         public static ThingDef WNA_Human;

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- wna -->
+     <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeDarkAsbestos</defName>
+        <label>make dark asbestos</label>
+        <description>transform stony materials into dark asbestos.</description>
+        <jobString>making dark asbestos.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneChunks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_DarkAsbestos>75</WNA_DarkAsbestos>
+        </products>
+        <workAmount>200</workAmount>
+        <recipeUsers>
+	        <li>WNA_Ritespot</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeDarkAsbestosToo</defName>
+        <label>make dark asbestos</label>
+        <description>transform stony materials into dark asbestos.</description>
+        <jobString>making dark asbestos.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Jade</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Jade</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+            </thingDefs>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_DarkAsbestos>75</WNA_DarkAsbestos>
+        </products>
+        <workAmount>500</workAmount>
+        <recipeUsers>
+	        <li>WNA_Ritespot</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeAshpark</defName>
+        <label>make ashpark</label>
+        <description>make ashpark.</description>
+        <jobString>making ashpark.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Quicklime</li>
+                    </thingDefs>
+                </filter>
+                <count>45</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_MercuryVial</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>WNA_Quicklime</li>
+                <li>Silver</li>
+                <li>WNA_MercuryVial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Ashpark>25</WNA_Ashpark>
+        </products>
+        <workAmount>800</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmithy</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeChimingSteel</defName>
+        <label>make chiming steel</label>
+        <description>ascend ashpark to chiming steel.</description>
+        <jobString>making chiming steel.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Ashpark</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Sulphur</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Focus</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Ashpark</li>
+                <li>WNA_Sulphur</li>
+                <li>WNA_Focus</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_ChimingSteel>25</WNA_ChimingSteel>
+        </products>
+        <workAmount>800</workAmount>
+        <recipeUsers>
+	        <li>WNA_Ritespot</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+</Defs>

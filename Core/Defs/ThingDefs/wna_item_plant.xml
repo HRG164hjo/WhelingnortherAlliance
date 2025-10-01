@@ -5,9 +5,8 @@
         <label>anima tree seed</label>
         <description>An egg-like soft jelly ball placed on a small maintaining plate. When planted at somewhere available, this ball of biomass will activate and grow into an anima tree.</description>
         <graphicData>
-            <texPath>items/wna_treeseed/wna_treeseed</texPath><!--wna_seedanima-->
+            <texPath>item/wna_treeseed</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
             <drawSize>0.8</drawSize>
             <color>(153,185,170)</color>
         </graphicData>
@@ -26,9 +25,8 @@
         <label>gauranlen tree seed</label>
         <description>An egg-like soft jelly ball placed on a small maintaining plate. When planted at somewhere available, this ball of biomass will activate and grow into an gauranlen tree.</description>
         <graphicData>
-            <texPath>items/wna_treeseed/wna_treeseed</texPath><!--wna_seedgauranlen-->
+            <texPath>item/wna_treeseed</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
             <drawSize>0.8</drawSize>
             <color>(231,197,162)</color>
         </graphicData>
@@ -47,9 +45,8 @@
         <label>polux tree seed</label>
         <description>An egg-like soft jelly ball placed on a small maintaining plate. When planted at somewhere available, this ball of biomass will activate and grow into an polux tree.</description>
         <graphicData>
-            <texPath>items/wna_treeseed/wna_treeseed</texPath><!--wna_seedpolux-->
+            <texPath>item/wna_treeseed</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
             <drawSize>0.8</drawSize>
             <color>(136,101,139)</color>
         </graphicData>
@@ -68,9 +65,8 @@
         <label>harbinger tree seed</label>
         <description>An egg-like soft jelly ball placed on a small maintaining plate. When planted at somewhere available, this ball of biomass will activate and grow into an harbinger tree.</description>
         <graphicData>
-            <texPath>items/wna_treeseed/wna_treeseed</texPath><!--wna_seedharbinger-->
+            <texPath>item/wna_treeseed</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
             <drawSize>0.8</drawSize>
             <color>(178,144,142)</color>
         </graphicData>
@@ -89,9 +85,8 @@
         <label>archean tree seed</label>
         <description>An egg-like soft jelly ball placed on a small maintaining plate. When planted at somewhere available, this ball of biomass will activate and grow into an archean tree.</description>
         <graphicData>
-            <texPath>items/wna_treeseed/wna_treeseed</texPath>
+            <texPath>item/wna_treeseed</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
             <drawSize>0.8</drawSize>
             <color>(178,144,142)</color>
         </graphicData>

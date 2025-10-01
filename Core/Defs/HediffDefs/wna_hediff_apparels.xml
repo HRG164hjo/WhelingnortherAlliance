@@ -17,39 +17,39 @@
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <postFactor>5</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>Moving</capacity>
-                        <postFactor>5</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>Manipulation</capacity>
-                        <postFactor>5</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>Sight</capacity>
-                        <postFactor>5</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>Hearing</capacity>
-                        <postFactor>5</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>Breathing</capacity>
-                        <postFactor>5</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>BloodFiltration</capacity>
-                        <postFactor>5</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>BloodPumping</capacity>
-                        <postFactor>5</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>Metabolism</capacity>
-                        <postFactor>5</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                 </capMods>
                 <statFactors>
@@ -67,7 +67,7 @@
     </HediffDef>
     <HediffDef>
         <defName>WNA_RobeBoostLite</defName>
-        <label>robe boost</label>
+        <label>attunement fabric boost</label>
         <hediffClass>HediffWithComps</hediffClass>
         <description>Special designs and techniques in military suit is helping this pawn performing better than normal.</description>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
@@ -75,45 +75,46 @@
         <isBad>false</isBad>
         <comps>
             <li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"/>
         </comps>
         <stages>
             <li>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>7</postFactor>
                     </li>
                     <li>
                         <capacity>Moving</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>7</postFactor>
                     </li>
                     <li>
                         <capacity>Manipulation</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>7</postFactor>
                     </li>
                     <li>
                         <capacity>Sight</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>7</postFactor>
                     </li>
                     <li>
                         <capacity>Hearing</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>7</postFactor>
                     </li>
                     <li>
                         <capacity>Breathing</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>7</postFactor>
                     </li>
                     <li>
                         <capacity>BloodFiltration</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>7</postFactor>
                     </li>
                     <li>
                         <capacity>BloodPumping</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>7</postFactor>
                     </li>
                     <li>
                         <capacity>Metabolism</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>7</postFactor>
                     </li>
                 </capMods>
                 <statFactors>
@@ -123,6 +124,11 @@
                 </statFactors>
             </li>
         </stages>
+		<modExtensions>
+			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
+				<movementDef>WNA_Movement</movementDef>
+			</li>
+		</modExtensions>
     </HediffDef>
 
     <HediffDef>

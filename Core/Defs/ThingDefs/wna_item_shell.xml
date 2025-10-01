@@ -5,7 +5,7 @@
         <label>chiming shell</label>
         <description>A plasteel can containing an unstable chiming steel shard whose inner structure has been disrupted by external energy. When detonated this shell will unleash immense destructive power and blast a large area. It should be pointed out that this method of making use of chiming steel is really wasteful and inefficient as only 0% about its power is released.</description>
         <graphicData>
-            <texPath>items/wna_shells/wnashell_chiming</texPath>
+            <texPath>item/wna_shells/wnashell_chiming</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>0.8</drawSize>
         </graphicData>

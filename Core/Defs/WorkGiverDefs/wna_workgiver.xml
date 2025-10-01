@@ -8,7 +8,7 @@
         <workType>WNAWork_Rite</workType>
         <priorityInType>400</priorityInType>
         <fixedBillGiverDefs>
-            <li>WNA_RiteSpot_Basic</li>
+            <li>WNA_Ritespot</li>
             <li>WNA_RiteSpot_Cutter</li>
         </fixedBillGiverDefs>
         <verb>craft</verb>

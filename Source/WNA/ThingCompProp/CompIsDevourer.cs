@@ -85,7 +85,7 @@ namespace WNA.ThingCompProp
         {
             if (victim == null) return;
             Find.BattleLog.Add(new BattleLogEntry_Event(victim, RulePackDefOf.Event_DevourerDigestionCompleted, Pawn));
-            DamageInfo damageInfo = new DamageInfo(WNAMainDefOf.WNA_CastMelee, float.PositiveInfinity);
+            DamageInfo damageInfo = new DamageInfo(WNAMainDefOf.WNA_CastMelee, float.MaxValue);
             victim.TakeDamage(damageInfo);
             if (!Props.messageDigested.NullOrEmpty() && victim.Faction == Faction.OfPlayer)
             {

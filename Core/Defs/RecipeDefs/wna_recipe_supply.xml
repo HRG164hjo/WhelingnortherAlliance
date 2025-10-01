@@ -2,10 +2,10 @@
 <Defs>
     <!-- mealpack -->
     <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNARecipeFor_Meal</defName>
+        <defName>WNA_CookRation</defName>
         <description>Use mana and things can be considered as raw food to make meal pack.</description>
         <jobString>working.</jobString>
-        <label>make WNA meal pack</label>
+        <label>make WNA militaty ration</label>
         <ingredientValueGetterClass>WNA.WNAMiscs.IngredValGetter_NutriMisc</ingredientValueGetterClass>
         <ingredients>
             <li>
@@ -44,19 +44,21 @@
             </disallowedCategories>
         </defaultIngredientFilter>
         <products>
-            <WNA_Meal>1</WNA_Meal>
+            <WNA_Ration>1</WNA_Ration>
         </products>
         <workAmount>250</workAmount>
         <recipeUsers>
-	        <li>WNA_RiteSpot_Basic</li>
+	        <li>FueledStove</li>
+	        <li>ElectricStove</li>
+	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNARecipeFor_Meal_Bulk</defName>
+        <defName>WNA_CookRationBulk</defName>
         <description>Use mana and raw food to make meal pack.</description>
         <jobString>working.</jobString>
-        <label>make WNA meal pack x5</label>
+        <label>make WNA militaty ration x5</label>
         <ingredientValueGetterClass>WNA.WNAMiscs.IngredValGetter_NutriMisc</ingredientValueGetterClass>
         <ingredients>
             <li>
@@ -95,18 +97,20 @@
             </disallowedCategories>
         </defaultIngredientFilter>
         <products>
-            <WNA_Meal>5</WNA_Meal>
+            <WNA_Ration>5</WNA_Ration>
         </products>
         <workAmount>1000</workAmount>
         <recipeUsers>
-	        <li>WNA_RiteSpot_Basic</li>
+	        <li>FueledStove</li>
+	        <li>ElectricStove</li>
+	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
     
     <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNARecipeFor_Meal_Meal</defName>
-        <description>Use whelingnorther techniques to pack normal meals into WNA meal packs.</description>
+        <defName>WNA_RepackRation</defName>
+        <description>Use whelingnorther techniques to pack normal meals into WNA militaty rations.</description>
         <jobString>working.</jobString>
         <label>repack meals</label>
         <ingredients>
@@ -131,22 +135,25 @@
             </categories>
             <disallowedCategories/>
             <disallowedThingDefs>
-                <li>WNA_Meal</li>
+                <li>WNA_Ration</li>
                 <li MayRequire="3hstltd.foods.instanoodles">WNA_InstaNoodle</li>
             </disallowedThingDefs>
         </fixedIngredientFilter>
         <products>
-            <WNA_Meal>1</WNA_Meal>
+            <WNA_Ration>1</WNA_Ration>
         </products>
-        <workAmount>100</workAmount>
+        <workAmount>60</workAmount>
         <recipeUsers>
-	        <li>WNA_RiteSpot_Basic</li>
+	        <li>FueledStove</li>
+	        <li>ElectricStove</li>
+	        <li>CraftingSpot</li>
+	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNARecipeFor_Meal_MealBulk</defName>
-        <description>Use whelingnorther techniques to pack normal meals into WNA meal packs.</description>
+        <defName>WNA_RepackRationBulk</defName>
+        <description>Use whelingnorther techniques to pack normal meals into WNA militaty rations.</description>
         <jobString>working.</jobString>
         <label>repack meals x5</label>
         <ingredients>
@@ -171,23 +178,26 @@
             </categories>
             <disallowedCategories/>
             <disallowedThingDefs>
-                <li>WNA_Meal</li>
+                <li>WNA_Ration</li>
                 <li MayRequire="3hstltd.foods.instanoodles">WNA_InstaNoodle</li>
             </disallowedThingDefs>
         </fixedIngredientFilter>
         <products>
-            <WNA_Meal>5</WNA_Meal>
+            <WNA_Ration>5</WNA_Ration>
         </products>
-        <workAmount>250</workAmount>
+        <workAmount>100</workAmount>
         <recipeUsers>
-	        <li>WNA_RiteSpot_Basic</li>
+	        <li>FueledStove</li>
+	        <li>ElectricStove</li>
+	        <li>CraftingSpot</li>
+	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
 
     <!-- medikit -->
     <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNARecipeFor_Medikit</defName>
+        <defName>WNAPackMedikit</defName>
         <description>Use mana and herbal medicine to make medicine pack.</description>
         <jobString>working.</jobString>
         <label>make WNA medicine pack</label>
@@ -233,12 +243,13 @@
         </products>
         <workAmount>500</workAmount>
         <recipeUsers>
-	        <li>WNA_RiteSpot_Basic</li>
+	        <li>DrugLab</li>
+	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNARecipeFor_Medikit_Bulk</defName>
+        <defName>WNAPackMedikitBulk</defName>
         <description>Use mana and herbal medicine to make medicine pack.</description>
         <jobString>working.</jobString>
         <label>make WNA medicine pack x5</label>
@@ -284,7 +295,8 @@
         </products>
         <workAmount>2000</workAmount>
         <recipeUsers>
-	        <li>WNA_RiteSpot_Basic</li>
+	        <li>DrugLab</li>
+	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>

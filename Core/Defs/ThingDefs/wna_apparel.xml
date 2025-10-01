@@ -1,179 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef Abstract="True" ParentName="WNA_ApparelBase" Name="WNA_ApparelBaseA">
-        <recipeMaker>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
-            <workSkill>Intellectual</workSkill>
-            <skillRequirements>
-                <Intellectual>12</Intellectual>
-		    	<Artistic>8</Artistic>
-            </skillRequirements>
-            <recipeUsers>
-                <li>WNA_RiteSpot_Basic</li>
-            </recipeUsers>
-        </recipeMaker>
-    </ThingDef>
-
-    <ThingDef ParentName="WNA_ApparelBaseA">
-        <defName>WNA_AllianceHood</defName>
-        <label>alliance hood</label>
-        <description>Upper part of WNA standard equipment. This hood covers their eyes, symbolizing one of the WNA's beliefs - don't be blinded by radiance.</description>
-        <graphicData>
-            <texPath>apparel/alliancehood/icon_alliancehood</texPath>
-        </graphicData>
-	    <costList>
-	        <WNA_Focus>20</WNA_Focus>
-	        <WNA_DarkAsbestos>40</WNA_DarkAsbestos>
-	        <Silver>20</Silver>
-	    </costList>
-        <statBases>
-            <MarketValue>2000</MarketValue>
-            <ArmorRating_Sharp>2000</ArmorRating_Sharp>
-            <ArmorRating_Blunt>2000</ArmorRating_Blunt>
-            <ArmorRating_Heat>2000</ArmorRating_Heat>
-        </statBases>
-        <equippedStatOffsets>
-            <SuppressionPower>2000</SuppressionPower>
-            <ShootingAccuracyPawn>20</ShootingAccuracyPawn>
-            <RangedCooldownFactor>-20</RangedCooldownFactor>
-            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
-            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
-        </equippedStatOffsets>
-        <apparel>
-            <bodyPartGroups>
-                <li>FullHead</li>
-                <li>Neck</li>
-            </bodyPartGroups>
-            <wornGraphicPath>apparel/alliancehood/alliancehood</wornGraphicPath>
-            <layers>
-                <li>Overhead</li>
-                <li>EyeCover</li>
-            </layers>
-            <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
-        </apparel>
-        <modExtensions/>
-    </ThingDef>
-    <ThingDef ParentName="WNA_ApparelBaseA">
-		<defName>WNA_AllianceCloak</defName>
-		<label>alliance cloak</label>
-		<description>Outer layer of WNA standard equipment. This cloak covers almost all of their body, symbolizing one of WNA's thoughts - abnegating what they used to have and to be, to approach transcendence, divinity and salvation.</description>
-		<graphicData>
-			<texPath>apparel/alliancecloak/icon_alliancecloak</texPath>
-		</graphicData>
-	    <costList>
-	        <WNA_Focus>40</WNA_Focus>
-	        <WNA_DarkAsbestos>80</WNA_DarkAsbestos>
-	        <Silver>30</Silver>
-	    </costList>
-        <statBases>
-            <MarketValue>2000</MarketValue>
-            <ArmorRating_Sharp>2000</ArmorRating_Sharp>
-            <ArmorRating_Blunt>2000</ArmorRating_Blunt>
-            <ArmorRating_Heat>2000</ArmorRating_Heat>
-        </statBases>
-        <equippedStatOffsets>
-            <SuppressionPower>2000</SuppressionPower>
-            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
-            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
-        </equippedStatOffsets>
-        <apparel>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-				<li>Hands</li>
-				<li>Feet</li>
-            </bodyPartGroups>
-            <wornGraphicPath>apparel/alliancecloak/alliancecloak</wornGraphicPath>
-            <layers>
-                <li>Shell</li>
-            </layers>
-        </apparel>
-        <modExtensions/>
-    </ThingDef>
-    <ThingDef ParentName="WNA_ApparelBaseA">
-		<defName>WNA_AllianceRobe</defName>
-		<label>alliance robe</label>
-		<description>Inner layer of WNA standard equipment. This robe is durable, reliable and comfortable, exhibiting WNA's good treatment of their own people and their strong logistics scheduling capabilities to some extent.</description>
-		<graphicData>
-			<texPath>apparel/alliancerobe/icon_alliancerobe</texPath>
-            <color>(43,43,43)</color>
-		</graphicData>
-	    <costList>
-	        <WNA_Focus>30</WNA_Focus>
-	        <WNA_DarkAsbestos>60</WNA_DarkAsbestos>
-	        <Silver>20</Silver>
-	    </costList>
-        <statBases>
-            <MarketValue>2000</MarketValue>
-            <ArmorRating_Sharp>2000</ArmorRating_Sharp>
-            <ArmorRating_Blunt>2000</ArmorRating_Blunt>
-            <ArmorRating_Heat>2000</ArmorRating_Heat>
-            <Insulation_Cold>2000</Insulation_Cold>
-            <Insulation_Heat>2000</Insulation_Heat>
-        </statBases>
-        <equippedStatOffsets>
-            <MeleeDodgeChance>10</MeleeDodgeChance>
-            <ImmunityGainSpeed>10</ImmunityGainSpeed>
-            <InjuryHealingFactor>10</InjuryHealingFactor>
-            <CarryingCapacity>100000</CarryingCapacity>
-            <ArmorRating_Sharp>2000</ArmorRating_Sharp>
-            <ArmorRating_Blunt>2000</ArmorRating_Blunt>
-            <ArmorRating_Heat>2000</ArmorRating_Heat>
-            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
-            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
-        </equippedStatOffsets>
-        <apparel>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-				<li>Legs</li>
-				<li>Hands</li>
-				<li>Feet</li>
-            </bodyPartGroups>
-            <wornGraphicPath>apparel/alliancerobe/alliancerobe</wornGraphicPath>
-            <layers>
-                <li>OnSkin</li>
-                <li>Middle</li>
-            </layers>
-        </apparel>
-        <comps>
-            <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
-                <hediff>WNA_RobeBoost</hediff>
-                <checkInterval>50</checkInterval>
-            </li>
-            <li Class="WNA.ThingCompProp.CompApparelHediffRemover">
-                <interval>50</interval>
-                <removeInjury>true</removeInjury>
-            </li>
-        </comps>
-        <modExtensions/>
-    </ThingDef>
-
-    <!---->
-    <ThingDef ParentName="WNA_ApparelBaseA">
-		<defName>WNA_MilitaryRobe</defName>
+    <ThingDef ParentName="WNA_ApparelBase">
+		<defName>WNA_StdMiliSuit</defName>
 		<label>standard military suit</label>
 		<description>WHR standard equipment, a modified version of WNA alliance robe, usually has weaker effect than typical alliance robe, but more suitable for massive producing and arming up troopers as it can be made from various kinds of materials.</description>
 		<graphicData>
 			<texPath>apparel/alliancerobe/icon_alliancerobe</texPath>
+            <color>(183,195,174)</color>
 		</graphicData>
-        <costStuffCount>100</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-            <li>Metallic</li>
-        </stuffCategories>
+	    <costList>
+	        <WNA_AttunementFabric>80</WNA_AttunementFabric>
+	    </costList>
         <statBases>
             <MarketValue>1000</MarketValue>
-            <ArmorRating_Sharp>2</ArmorRating_Sharp>
-            <ArmorRating_Blunt>2</ArmorRating_Blunt>
-            <ArmorRating_Heat>2</ArmorRating_Heat>
+            <ArmorRating_Sharp>25</ArmorRating_Sharp>
+            <ArmorRating_Blunt>20</ArmorRating_Blunt>
+            <ArmorRating_Heat>28</ArmorRating_Heat>
             <StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
@@ -237,15 +79,14 @@
             <color>(160,178,181)</color>
         </graphicData>
 	    <costList>
-	        <Steel>10</Steel>
-	        <Plasteel>10</Plasteel>
-	        <ComponentIndustrial>2</ComponentIndustrial>
+	        <WNA_AttunementFabric>20</WNA_AttunementFabric>
+            <WNA_Desolisium>15</WNA_Desolisium>
 	    </costList>
         <statBases>
             <MarketValue>800</MarketValue>
-            <ArmorRating_Sharp>4.8</ArmorRating_Sharp>
-            <ArmorRating_Blunt>2</ArmorRating_Blunt>
-            <ArmorRating_Heat>3</ArmorRating_Heat>
+            <ArmorRating_Sharp>24</ArmorRating_Sharp>
+            <ArmorRating_Blunt>10</ArmorRating_Blunt>
+            <ArmorRating_Heat>15</ArmorRating_Heat>
         </statBases>
         <equippedStatOffsets>
             <ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
@@ -286,22 +127,21 @@
 			<texPath>apparel/advflakjacket/icon_advflakjacket</texPath>
 		</graphicData>
 	    <costList>
-	        <Cloth>80</Cloth>
-	        <Plasteel>40</Plasteel>
-	        <Steel>40</Steel>
+	        <WNA_AttunementFabric>60</WNA_AttunementFabric>
+            <WNA_Desolisium>40</WNA_Desolisium>
             <ComponentIndustrial>2</ComponentIndustrial>
 	    </costList>
         <statBases>
             <MarketValue>2000</MarketValue>
-            <ArmorRating_Sharp>4.8</ArmorRating_Sharp>
-            <ArmorRating_Blunt>2.5</ArmorRating_Blunt>
-            <ArmorRating_Heat>3.5</ArmorRating_Heat>
-            <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
-            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
+            <ArmorRating_Sharp>24</ArmorRating_Sharp>
+            <ArmorRating_Blunt>12.5</ArmorRating_Blunt>
+            <ArmorRating_Heat>18.5</ArmorRating_Heat>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
         </statBases>
         <equippedStatOffsets>
-            <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
-            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
         </equippedStatOffsets>
         <apparel>
             <developmentalStageFilter>Adult</developmentalStageFilter>
@@ -338,18 +178,17 @@
         <description>A traditional style helmet, though looks plain, it's actually made of alloy plates and several advanced techniques that only held by glitter worlds are applied to it. It's widely used by WNA vanguards, and has already become a symbol of their activities.</description>
         <graphicData>
             <texPath>apparel/vanguardhead/icon_vanguardhead</texPath>
-            <color>(105,105,105)</color>
+            <color>(139,127,94)</color>
         </graphicData>
 	    <costList>
-	        <Uranium>20</Uranium>
-	        <Plasteel>20</Plasteel>
-	        <ComponentSpacer>2</ComponentSpacer>
+            <WNA_Desolisium>45</WNA_Desolisium>
+            <ComponentIndustrial>1</ComponentIndustrial>
 	    </costList>
         <statBases>
             <MarketValue>800</MarketValue>
-            <ArmorRating_Sharp>7.4</ArmorRating_Sharp>
-            <ArmorRating_Blunt>5.5</ArmorRating_Blunt>
-            <ArmorRating_Heat>3.8</ArmorRating_Heat>
+            <ArmorRating_Sharp>74</ArmorRating_Sharp>
+            <ArmorRating_Blunt>55</ArmorRating_Blunt>
+            <ArmorRating_Heat>38</ArmorRating_Heat>
         </statBases>
         <equippedStatOffsets>
             <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
@@ -389,19 +228,19 @@
 		<description>A set of heavy armor containing alloy armor plates and advanced connection components, covered with a layer of strong fabric. This is a design of older times, but it had stood the tests of time and countless battles.</description>
 		<graphicData>
 			<texPath>apparel/vanguardplate/icon_vanguardplate</texPath>
-            <color>(74,74,74)</color>
+            <color>(139,127,94)</color>
 		</graphicData>
 	    <costList>
-	        <Hyperweave>80</Hyperweave>
-	        <Plasteel>60</Plasteel>
-	        <Uranium>40</Uranium>
-            <ComponentSpacer>4</ComponentSpacer>
+            <WNA_Desolisium>80</WNA_Desolisium>
+            <WNA_AttunementFabric>20</WNA_AttunementFabric>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
 	    </costList>
         <statBases>
             <MarketValue>2000</MarketValue>
-            <ArmorRating_Sharp>7.4</ArmorRating_Sharp>
-            <ArmorRating_Blunt>8.5</ArmorRating_Blunt>
-            <ArmorRating_Heat>5.8</ArmorRating_Heat>
+            <ArmorRating_Sharp>84</ArmorRating_Sharp>
+            <ArmorRating_Blunt>85</ArmorRating_Blunt>
+            <ArmorRating_Heat>58</ArmorRating_Heat>
         </statBases>
         <equippedStatOffsets>
             <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
@@ -437,18 +276,17 @@
     </ThingDef>
     
     <ThingDef ParentName="WNA_ApparelBase">
-        <defName>WNA_SuperheavyHead</defName>
-        <label>superheavy helmet</label>
+        <defName>WNA_GuardianHelmet</defName>
+        <label>guardian helmet</label>
         <description>An equipment that goes extreme in combat and defense, at the expense of many other properties including mobility. Some soldiers volenteer to put on this equipment and turn themselves into a humanoid fort, in order to defend something they value.</description>
         <graphicData>
             <texPath>apparel/superheavyhead/icon_superheavyhead</texPath>
             <color>(74,70,74)</color>
         </graphicData>
 	    <costList>
-	        <Hyperweave>30</Hyperweave>
-	        <Uranium>30</Uranium>
-	        <Plasteel>30</Plasteel>
-	        <ComponentSpacer>6</ComponentSpacer>
+            <WNA_Desolisium>60</WNA_Desolisium>
+            <WNA_Voidsteel>20</WNA_Voidsteel>
+            <ComponentSpacer>4</ComponentSpacer>
 	    </costList>
         <statBases>
             <MarketValue>800</MarketValue>
@@ -486,24 +324,23 @@
         <modExtensions/>
     </ThingDef>
     <ThingDef ParentName="WNA_ApparelBase">
-		<defName>WNA_SuperheavyArmor</defName>
-		<label>superheavy powerarmor</label>
+		<defName>WNA_GuardianPowerarmor</defName>
+		<label>guardian powerarmor</label>
 		<description>An equipment that goes extreme in combat and defense, at the expense of many other properties including mobility. Some soldiers volenteer to put on this equipment and turn themselves into a humanoid fort, in order to defend something they value.</description>
 		<graphicData>
 			<texPath>apparel/superheavyarmor/icon_superheavyarmor</texPath>
             <color>(74,70,74)</color>
 		</graphicData>
 	    <costList>
-	        <Hyperweave>120</Hyperweave>
-	        <Plasteel>200</Plasteel>
-	        <Uranium>120</Uranium>
-            <ComponentSpacer>10</ComponentSpacer>
+            <WNA_Desolisium>240</WNA_Desolisium>
+            <WNA_Voidsteel>80</WNA_Voidsteel>
+            <ComponentSpacer>8</ComponentSpacer>
 	    </costList>
         <statBases>
             <MarketValue>2000</MarketValue>
-            <ArmorRating_Sharp>384</ArmorRating_Sharp>
-            <ArmorRating_Blunt>384</ArmorRating_Blunt>
-            <ArmorRating_Heat>384</ArmorRating_Heat>
+            <ArmorRating_Sharp>512</ArmorRating_Sharp>
+            <ArmorRating_Blunt>512</ArmorRating_Blunt>
+            <ArmorRating_Heat>512</ArmorRating_Heat>
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-5</MoveSpeed>
@@ -534,6 +371,504 @@
             </skillRequirements>
             <recipeUsers>
                 <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <modExtensions/>
+    </ThingDef>
+
+    <!--<ThingDef ParentName="WNA_ApparelBase">
+		<defName>WNA_EnclosedBattleSuit</defName>
+		<label>enclosed battle suit</label>
+		<description>todo.</description>
+		<__TODO__/>
+	    <costList>
+	        <WNA_AttunementFabric>100</WNA_AttunementFabric>
+            <WNA_Desolisium>40</WNA_Desolisium>
+            <WNA_Voidsteel>20</WNA_Voidsteel>
+            <ComponentSpacer>3</ComponentSpacer>
+	    </costList>
+        <recipeMaker>
+            <researchPrerequisite/>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>-->
+    
+    <ThingDef ParentName="WNA_BackpackBase">
+        <defName>WNA_Toolkit</defName>
+        <label>tool kit</label>
+        <description>A pack containing multiple tools for complex tasks under various circumstances, from simple repairing and mending to emergent medical assistance.</description>
+        <graphicData>
+            <texPath>apparel/wna_utility</texPath>
+        </graphicData>
+		<tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+			<Mass>0.5</Mass>
+        </statBases>
+	    <costList>
+	        <WNA_AttunementFabric>30</WNA_AttunementFabric>
+            <ComponentIndustrial>4</ComponentIndustrial>
+	    </costList>
+        <equippedStatOffsets>
+            <CarryingCapacity>100000</CarryingCapacity>
+            <ForagedNutritionPerDay>5</ForagedNutritionPerDay>
+            <WorkSpeedGlobal>5</WorkSpeedGlobal>
+            <GeneralLaborSpeed>5</GeneralLaborSpeed>
+            <ConstructSuccessChance>1</ConstructSuccessChance>
+            <FixBrokenDownBuildingSuccessChance>1</FixBrokenDownBuildingSuccessChance>
+            <MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
+            <CleaningSpeed>5</CleaningSpeed>
+            <MedicalTendSpeed>5</MedicalTendSpeed>
+            <MedicalOperationSpeed>5</MedicalOperationSpeed>
+            <MedicalTendQuality>5</MedicalTendQuality>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>WNA_RebelTools</researchPrerequisite>
+            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+            <workSkill>Crafting</workSkill>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+	
+    <ThingDef ParentName="WNA_UtilityBase">
+        <defName>WNA_AmmoLoader</defName>
+        <label>ammo loader</label>
+        <description>A small device capable of helping wearer to handle weapons, from primal bows to the most advanced individual weapons, thus increase the wearer's fire rate.</description>
+        <graphicData>
+            <texPath>apparel/wna_utility</texPath>
+        </graphicData>
+		<tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+			<Mass>0.5</Mass>
+        </statBases>
+	    <costList>
+	        <Steel>45</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+	    </costList>
+        <equippedStatOffsets>
+            <AimingDelayFactor>-0.9</AimingDelayFactor>
+            <RangedCooldownFactor>-1</RangedCooldownFactor>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>WNA_RebelTools</researchPrerequisite>
+            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+            <workSkill>Crafting</workSkill>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+	
+    <ThingDef ParentName="WNA_BackpackBase">
+        <defName>WNA_ShieldPack</defName>
+        <label>shield pack</label>
+        <description>When activated, this device can generate a shield to block ranged attack.</description>
+        <graphicData>
+            <texPath>apparel/wna_utility</texPath>
+        </graphicData>
+		<tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+			<Mass>0.5</Mass>
+        </statBases>
+	    <costList>
+	        <WNA_Trinisium>25</WNA_Trinisium>
+            <ComponentIndustrial>4</ComponentIndustrial>
+	    </costList>
+		<comps>
+            <li Class="WNA.ThingCompProp.ShieldGenerator">
+                <ticksToReset>250</ticksToReset>
+                <energyMax>600</energyMax>
+                <energyLossPerHit>1</energyLossPerHit>
+            </li>
+		</comps>
+        <recipeMaker>
+            <researchPrerequisite>WNA_RebelShield</researchPrerequisite>
+            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+            <workSkill>Crafting</workSkill>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <modExtensions/>
+    </ThingDef>
+
+    <!--<ThingDef ParentName="WNA_UtilityBase">
+		<defName>WNA_ExplosiveBelt</defName>
+		<label>explosive belt</label>
+		<description>todo.</description>
+		<__TODO__/>
+	    <costList>
+	        <Cloth>20</Cloth>
+            <Steel>25</Steel>
+            <Chemfuel>35</Chemfuel>
+	    </costList>
+        <recipeMaker>
+            <researchPrerequisite/>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>-->
+    
+    <ThingDef ParentName="WNA_BackpackBase">
+        <defName>WNA_IllusionCore</defName>
+        <label>illusion core</label>
+        <description>This device can cloak its owner with a stealth field, make its owner invisible form both eyes and sensors. Darknight commandos are equipped with such divice, making them one of the enemies people least want to face.</description>
+        <graphicData>
+            <texPath>apparel/wna_utility</texPath>
+        </graphicData>
+		<tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+			<Mass>0.5</Mass>
+        </statBases>
+        <costList>
+	        <WNA_Desolisium>15</WNA_Desolisium>
+	        <WNA_Trinisium>25</WNA_Trinisium>
+            <ComponentIndustrial>4</ComponentIndustrial>
+	    </costList>
+		<comps>
+            <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
+                <hediff>WNA_IllusionCore</hediff>
+            </li>
+		</comps>
+        <recipeMaker>
+            <researchPrerequisite>WNA_StrikeLegion</researchPrerequisite>
+            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+            <workSkill>Crafting</workSkill>
+            <skillRequirements>
+                <Crafting>15</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <!--<ThingDef ParentName="WNA_UtilityBase">
+		<defName>WNA_LysFieldProjer</defName>
+		<label>lysis field projector</label>
+		<description>todo.</description>
+		<__TODO__/>
+	    <costList>
+	        <WNA_Voidsteel>15</WNA_Voidsteel>
+	        <WNA_Trinisium>45</WNA_Trinisium>
+            <ComponentSpacer>4</ComponentSpacer>
+	    </costList>
+        <recipeMaker>
+            <researchPrerequisite/>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>-->
+	
+    <ThingDef ParentName="WNA_BackpackBase">
+        <defName>WNA_IronPack</defName>
+        <label>iron curtain pack</label>
+        <description>When activated, this device is capable for generating and maintaining a protective shield, make its owner immune to common violence. Iron Guardians are equipped with such device, in order to keep their outpost away from as much dangers as possible.</description>
+        <graphicData>
+            <texPath>apparel/wna_utility</texPath>
+        </graphicData>
+		<tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+			<Mass>0.5</Mass>
+        </statBases>
+        <costList>
+	        <WNA_Voidsteel>30</WNA_Voidsteel>
+	        <WNA_Desolisium>40</WNA_Desolisium>
+            <ComponentSpacer>10</ComponentSpacer>
+	    </costList>
+		<comps>
+            <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
+                <hediff>WNA_ForceShield</hediff>
+            </li>
+            <li Class="WNA.ThingCompProp.ShieldGenerator">
+                <shieldTexPath>others/wna_ironbubble</shieldTexPath>
+                <shieldColor>(1,1,1,1)</shieldColor>
+            </li>
+		</comps>
+        <recipeMaker>
+            <researchPrerequisite>WNA_IronGuardian</researchPrerequisite>
+            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+            <workSkill>Crafting</workSkill>
+            <skillRequirements>
+                <Crafting>15</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <modExtensions/>
+    </ThingDef>
+    
+	<!--<ThingDef ParentName="WNA_UtilityBase">
+		<defName>WNA_PsychicShield</defName>
+		<label>psychic shield</label>
+		<description>todo.</description>
+		<__TODO__/>
+	    <costList>
+	        <WNA_Voidsteel>30</WNA_Voidsteel>
+            <PsychicAmplifier>1</PsychicAmplifier>
+	    </costList>
+        <recipeMaker>
+            <researchPrerequisite/>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+    
+    <ThingDef ParentName="WNA_BackpackBase">
+		<defName>WNA_ChronoPack</defName>
+		<label>chrono pack</label>
+		<description>todo.</description>
+		<__TODO__/>
+	    <costList>
+	        <WNA_AttunementFabric>30</WNA_AttunementFabric>
+	        <WNA_Voidsteel>45</WNA_Voidsteel>
+            <ComponentSpacer>5</ComponentSpacer>
+            <WNA_Focus>1</WNA_Focus>
+	    </costList>
+        <recipeMaker>
+            <researchPrerequisite/>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>-->
+
+    <ThingDef ParentName="WNA_ApparelBase">
+        <defName>WNA_AllianceHood</defName>
+        <label>alliance hood</label>
+        <description>Upper part of WNA standard equipment. This hood covers their eyes, symbolizing one of the WNA's beliefs - don't be blinded by radiance.</description>
+        <graphicData>
+            <texPath>apparel/alliancehood/icon_alliancehood</texPath>
+        </graphicData>
+	    <costList>
+	        <WNA_DarkAsbestos>40</WNA_DarkAsbestos>
+	        <Silver>3</Silver>
+	    </costList>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <ArmorRating_Sharp>100000</ArmorRating_Sharp>
+            <ArmorRating_Blunt>100000</ArmorRating_Blunt>
+            <ArmorRating_Heat>100000</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SuppressionPower>2000</SuppressionPower>
+            <ShootingAccuracyPawn>20</ShootingAccuracyPawn>
+            <RangedCooldownFactor>-20</RangedCooldownFactor>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
+            <workSkill>Intellectual</workSkill>
+            <skillRequirements>
+                <Intellectual>12</Intellectual>
+            </skillRequirements>
+            <recipeUsers>
+                <li>WNA_Ritespot</li>
+            </recipeUsers>
+        </recipeMaker>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+                <li>Neck</li>
+            </bodyPartGroups>
+            <wornGraphicPath>apparel/alliancehood/alliancehood</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+                <li>EyeCover</li>
+            </layers>
+            <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+        </apparel>
+        <modExtensions/>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ApparelBase">
+		<defName>WNA_AllianceCloak</defName>
+		<label>alliance cloak</label>
+		<description>Outer layer of WNA standard equipment. This cloak covers almost all of their body, symbolizing one of WNA's thoughts - abnegating what they used to have and to be, to approach transcendence, divinity and salvation.</description>
+		<graphicData>
+			<texPath>apparel/alliancecloak/icon_alliancecloak</texPath>
+		</graphicData>
+	    <costList>
+	        <WNA_DarkAsbestos>150</WNA_DarkAsbestos>
+	        <Silver>10</Silver>
+	    </costList>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <ArmorRating_Sharp>100000</ArmorRating_Sharp>
+            <ArmorRating_Blunt>100000</ArmorRating_Blunt>
+            <ArmorRating_Heat>100000</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SuppressionPower>2000</SuppressionPower>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
+            <workSkill>Intellectual</workSkill>
+            <skillRequirements>
+                <Intellectual>12</Intellectual>
+            </skillRequirements>
+            <recipeUsers>
+                <li>WNA_Ritespot</li>
+            </recipeUsers>
+        </recipeMaker>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+            </bodyPartGroups>
+            <wornGraphicPath>apparel/alliancecloak/alliancecloak</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+        </apparel>
+        <modExtensions/>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ApparelBase">
+		<defName>WNA_AllianceRobe</defName>
+		<label>alliance robe</label>
+		<description>Inner layer of WNA standard equipment. This robe is durable, reliable and comfortable, exhibiting WNA's good treatment of their own people and their strong logistics scheduling capabilities to some extent.</description>
+		<graphicData>
+			<texPath>apparel/alliancerobe/icon_alliancerobe</texPath>
+            <color>(43,43,43)</color>
+		</graphicData>
+	    <costList>
+	        <WNA_DarkAsbestos>110</WNA_DarkAsbestos>
+	        <Silver>7</Silver>
+	    </costList>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <ArmorRating_Sharp>100000</ArmorRating_Sharp>
+            <ArmorRating_Blunt>100000</ArmorRating_Blunt>
+            <ArmorRating_Heat>100000</ArmorRating_Heat>
+            <Insulation_Cold>2000</Insulation_Cold>
+            <Insulation_Heat>2000</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeDodgeChance>10</MeleeDodgeChance>
+            <ImmunityGainSpeed>10</ImmunityGainSpeed>
+            <InjuryHealingFactor>10</InjuryHealingFactor>
+            <CarryingCapacity>100000</CarryingCapacity>
+            <ArmorRating_Sharp>100000</ArmorRating_Sharp>
+            <ArmorRating_Blunt>100000</ArmorRating_Blunt>
+            <ArmorRating_Heat>100000</ArmorRating_Heat>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
+            <workSkill>Intellectual</workSkill>
+            <skillRequirements>
+                <Intellectual>12</Intellectual>
+            </skillRequirements>
+            <recipeUsers>
+                <li>WNA_Ritespot</li>
+            </recipeUsers>
+        </recipeMaker>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+            </bodyPartGroups>
+            <wornGraphicPath>apparel/alliancerobe/alliancerobe</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+                <li>Middle</li>
+            </layers>
+        </apparel>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
+                <hediff>WNA_RobeBoost</hediff>
+                <checkInterval>50</checkInterval>
+            </li>
+            <li Class="WNA.ThingCompProp.CompApparelHediffRemover">
+                <interval>50</interval>
+                <removeInjury>true</removeInjury>
+            </li>
+        </comps>
+        <modExtensions/>
+    </ThingDef>
+    <ThingDef ParentName="WNA_UtilityBase">
+        <defName>WNA_Holyorder</defName>
+        <label>whelingnorther holyorder</label>
+        <description>An old looking book. Rumour says that WNA artificers made this book with human skin, and used human blood to write down the legends, scriptures and iron-laws of WNA. All whelingnorthan have one this book with them and whenever they are going to say something formally or cast something fatal to their enemies, they will hold this book in their hand.</description>
+        <graphicData>
+            <texPath>apparel/wna_holyorder</texPath>
+        </graphicData>
+		<tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+			<Mass>0.5</Mass>
+        </statBases>
+        <costList>
+            <Leather_Human>75</Leather_Human>
+            <HemogenPack MayRequire="ludeon.rimworld.biotech">3</HemogenPack>
+        </costList>
+        <comps>
+            <li Class="WNA.ThingCompProp.ShieldGenerator">
+                <energyLossPerHit>0</energyLossPerHit>
+                <minDrawSize>2</minDrawSize>
+                <maxDrawSize>2</maxDrawSize>
+                <shieldInstaReset>true</shieldInstaReset>
+            </li>
+        </comps>
+        <recipeMaker>
+            <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
+            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+            <workSkill>Intellectual</workSkill>
+            <skillRequirements>
+                <Intellectual>18</Intellectual>
+		    	<Artistic>18</Artistic>
+            </skillRequirements>
+            <recipeUsers>
+                <li>WNA_Ritespot</li>
             </recipeUsers>
         </recipeMaker>
         <modExtensions/>

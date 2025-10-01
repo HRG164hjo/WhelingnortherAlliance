@@ -40,6 +40,49 @@
 		</value>
 	</Operation>
     
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="Make_ChemfuelFromWood"]</xpath>
+		<value>
+			<allowMixingIngredients>true</allowMixingIngredients>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="Make_ChemfuelFromWood"]/ingredients/li[1]/filter/thingDefs</xpath>
+		<value>
+            <li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+            <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
+            <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+            <li MayRequire="biomesteam.biomescaverns">BMT_MushroomLog</li>
+            <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_ParasolWoodLog</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_Cork</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_Rattan</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_ReedStalks</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_EbonyWood</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_MahoganyWood</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_RosewoodWood</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_CedarWood</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_Rubber</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="Make_ChemfuelFromWood"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+            <li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+            <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
+            <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+            <li MayRequire="biomesteam.biomescaverns">BMT_MushroomLog</li>
+            <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_ParasolWoodLog</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_Cork</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_Rattan</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_ReedStalks</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_EbonyWood</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_MahoganyWood</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_RosewoodWood</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_CedarWood</li>
+            <li MayRequire="VVenchov.VVNewHarvest">VV_Rubber</li>
+		</value>
+	</Operation>
+    
     <Operation Class="PatchOperationRemove">
 	    <xpath>Defs/TerrainDef/changeable</xpath>
     </Operation>
@@ -52,6 +95,10 @@
                 <li>Hydroponic</li>
             </sowTags>
         </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationRemove">
+	    <xpath>Defs/ThingDef[defName="DeepDrill"]/placeWorkers/li[text()="PlaceWorker_InvalidOverSubstructure"]</xpath>
     </Operation>
     
 </Patch>

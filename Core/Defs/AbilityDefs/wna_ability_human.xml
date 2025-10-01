@@ -4,7 +4,7 @@
         <defName>WNA_Coagulate</defName>
         <label>coagulate</label>
         <description>Perform first aids with multiple professional medical devices. No medicine is needed.</description>
-        <iconPath>focus</iconPath>
+        <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
         <verbProperties>
             <verbClass>Verb_CastAbilityTouch</verbClass>
@@ -29,7 +29,7 @@
         <defName>WNA_SaboteurJump</defName>
         <label>long jump</label>
         <description>Saboteurs have recevied professional trainings, they can make long-distance jumps without using any other equipments.</description>
-        <iconPath>focus</iconPath>
+        <iconPath>karma</iconPath>
         <cooldownTicksRange>60</cooldownTicksRange>
         <verbProperties>
             <verbClass>Verb_CastAbilityJump</verbClass>
@@ -52,7 +52,7 @@
         <defName>WNA_Aeroblaze</defName>
         <label>aeroblaze</label>
         <description>Mark target as a orbital strike positioning beacon. Chimingblaze Celestrike Satellite Network will then adjust and focus, deliver a merciless strike to the target.</description>
-        <iconPath>focus</iconPath>
+        <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>

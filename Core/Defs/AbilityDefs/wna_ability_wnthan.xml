@@ -44,7 +44,7 @@
         <defName>WNA_Wisdom</defName>
         <label>bestow wisdom</label>
         <description>The Saint of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills.</description>
-        <iconPath>focus</iconPath>
+        <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
         <verbProperties>
             <verbClass>Verb_CastAbilityTouch</verbClass>
@@ -194,7 +194,7 @@
         <defName>WNA_AvadaKedavra</defName>
         <label>psiblast</label>
         <description>Cast an offensive thought directly to the target and detonate it. Benefit from WNA's unique techniques, this explosion is of great power, hardly anything in physical world can resist its attack.</description>
-        <iconPath>focus</iconPath>
+        <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
         <aiCanUse>true</aiCanUse>
         <verbProperties>

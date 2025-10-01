@@ -19,11 +19,6 @@
                 <price>Cheap</price>
                 <countRange>1200~1200</countRange>
             </li>
-            <li Class="StockGenerator_SingleDef">
-                <thingDef>WNA_Voidmetal</thingDef>
-                <price>Cheap</price>
-                <countRange>800000~1000000</countRange>
-            </li>
         </value>
     </Operation>
 
@@ -42,7 +37,7 @@
 	    <xpath>Defs/TerrainDef[defName="Voidmetal"]</xpath>
         <value>
             <costList>
-                <WNA_Voidmetal>4</WNA_Voidmetal>
+                <WNA_Voidsteel>4</WNA_Voidsteel>
             </costList>
             <!--<minTechLevelToBuild>Archotech</minTechLevelToBuild>-->
         </value>
@@ -62,7 +57,7 @@
 	    <xpath>Defs/ThingDef[defName="VoidmetalWall"]</xpath>
         <value>
             <costList>
-                <WNA_Voidmetal>4</WNA_Voidmetal>
+                <WNA_Voidsteel>4</WNA_Voidsteel>
             </costList>
             <designationCategory>Structure</designationCategory>
             <!--<minTechLevelToBuild>Archotech</minTechLevelToBuild>

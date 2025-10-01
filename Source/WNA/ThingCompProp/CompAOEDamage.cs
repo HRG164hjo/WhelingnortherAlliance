@@ -10,7 +10,7 @@ namespace WNA.ThingCompProp
         public DamageDef damageDef;
         public int damage = 60;
         public float ap = 200;
-        public int radius = 2;
+        public float radius = 2;
         public int rof = 60;
         public int update = 60;
         public bool affectArea = false;

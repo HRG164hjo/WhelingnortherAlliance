@@ -1,96 +1,78 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- rebel -->
-    <ThingDef ParentName="WNA_WeaponBaseRanged">
-        <defName>WNA_TrapLauncher</defName>
-        <label>spike trap launcher</label>
-        <description>A heavy individual artillery, not designed for directly blasting enemies, but for deploying traps. Its projectile does little harm to its targets, but deploys spike traps in an area. These spike traps are very dangerous.</description>
-        <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/InfernoCannon</texPath>
-            <color>(156,156,156)</color>
-            <drawSize>1.2</drawSize>
-        </graphicData>
+    <ThingDef ParentName="WNA_WeaponBasePawn">
+        <defName>WNA_PawnPassiveAcquire</defName>
         <statBases>
-            <WorkToMake>4500</WorkToMake>
-            <MarketValue>1200</MarketValue>
-            <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+            <Mass>0</Mass>
+            <MarketValue>0</MarketValue>
+            <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
         </statBases>
-        <equippedAngleOffset>0</equippedAngleOffset>
-	    <costList>
-	        <Chemfuel>30</Chemfuel>
-	        <Steel>50</Steel>
-	        <ComponentIndustrial>8</ComponentIndustrial>
-            <ComponentSpacer>3</ComponentSpacer>
-	    </costList>
-        <weaponTags>
-            <li>Tag_TrapLauncher</li>
-        </weaponTags>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>WNA_TrapLauncher_Proj</defaultProjectile>
-                <warmupTime>3</warmupTime>
-                <range>121</range>
-                <soundCast>InfernoCannon_Fire</soundCast>
-                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-                <forcedMissRadius>3.5</forcedMissRadius>
+                <defaultProjectile>WNA_PawnPassiveAcquire_Proj</defaultProjectile>
+                <range>14.9</range>
+                <soundCast/>
+                <soundCastTail/>
+                <muzzleFlashScale>0</muzzleFlashScale>
+                <defaultCooldownTime>0</defaultCooldownTime>
+                <warmupTime>0</warmupTime>
+                <linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
                 <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-                <burstShotCount>1</burstShotCount>
-                <targetParams>
-                    <canTargetLocations>true</canTargetLocations>
-                </targetParams>
-                <requireLineOfSight>false</requireLineOfSight>
+                <burstShotCount>3</burstShotCount>
             </li>
         </verbs>
-        <tools>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>150</power>
-                <cooldownTime>1</cooldownTime>
-                <armorPenetration>Infinity</armorPenetration>
-            </li>
-        </tools>
-        <recipeMaker>
-            <researchPrerequisite>WNA_AdvArsenal</researchPrerequisite>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <workSkill>Crafting</workSkill>
-		    <skillRequirements>
-		    	<Crafting>10</Crafting>
-		    </skillRequirements>
-            <effectWorking>Smith</effectWorking>
-            <soundWorking>Recipe_Smith</soundWorking>
-            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
-            <recipeUsers>
-                <li>FabricationBench</li>
-                <li>TableMachining</li>
-            </recipeUsers>
-        </recipeMaker>
     </ThingDef>
-    <ThingDef ParentName="BaseBullet">
-        <defName>WNA_TrapLauncher_Proj</defName>
-        <label>gun proj</label>
+    <ThingDef ParentName="WNA_ProjBase">
+        <defName>WNA_PawnPassiveAcquire_Proj</defName>
+        <label>placeholder</label>
         <graphicData>
-            <texPath>Things/Projectile/LauncherShot</texPath>
-            <color>(74,74,74)</color>
-            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
         </graphicData>
-        <thingClass>Projectile_Explosive</thingClass>
         <projectile>
-            <damageDef>Rotting</damageDef>
-            <damageAmountBase>0</damageAmountBase>
-            <explosionRadius>9.9</explosionRadius>
-            <stoppingPower>Infinity</stoppingPower>
-            <armorPenetrationBase>Infinity</armorPenetrationBase>
-            <speed>240</speed>
-            <flyOverhead>true</flyOverhead>
-            <postExplosionSpawnThingDef>WNA_SpikeTrapSpawned</postExplosionSpawnThingDef>
-            <postExplosionSpawnThingDefWater>WNA_SpikeTrapSpawned</postExplosionSpawnThingDefWater>
-            <soundExplode>Explosion_EMP</soundExplode>
-            <postExplosionSpawnChance>0.5</postExplosionSpawnChance>
+            <damageDef>WNA_CastRange</damageDef>
+            <damageAmountBase>1000000</damageAmountBase>
         </projectile>
     </ThingDef>
+    
+    <ThingDef ParentName="WNA_WeaponBasePawn">
+        <defName>WNA_ThornBeastTurret</defName>
+        <statBases>
+            <Mass>0</Mass>
+            <MarketValue>0</MarketValue>
+            <RangedWeapon_Cooldown>0.05</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <defaultProjectile>WNA_ThornBeastTurret_Proj</defaultProjectile>
+                <range>54.9</range>
+                <soundCast/>
+                <soundCastTail/>
+                <muzzleFlashScale>0</muzzleFlashScale>
+                <defaultCooldownTime>0</defaultCooldownTime>
+                <warmupTime>0</warmupTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <burstShotCount>4</burstShotCount>
+            </li>
+        </verbs>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ProjBase">
+        <defName>WNA_ThornBeastTurret_Proj</defName>
+        <label>placeholder</label>
+        <thingClass>Bullet</thingClass>
+        <graphicData>
+            <texPath>things/Projectile/Needle</texPath>
+            <drawSize>(1,5)</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>WNA_CastRange</damageDef>
+            <damageAmountBase>60</damageAmountBase>
+            <speed>200</speed>
+        </projectile>
+    </ThingDef>
+
 </Defs>

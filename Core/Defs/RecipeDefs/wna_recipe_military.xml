@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- mili -->
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeBaseboard</defName>
+        <label>make fabric baseboard</label>
+        <description>make a baseboard used for making attunement fabric.</description>
+        <jobString>making baseboard.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Silver</li>
+                <li>Gold</li>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_FabricBaseboard>4</WNA_FabricBaseboard>
+        </products>
+        <workAmount>400</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeAttunementFabric</defName>
+        <label>make attunement fabric</label>
+        <description>make attunement fabric with raw material and a baseboard.</description>
+        <jobString>making fabric.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_FabricBaseboard</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Quicklime</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Textiles</li>
+                    </categories>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_FabricBaseboard</li>
+                <li>WNA_Quicklime</li>
+                <li>Silver</li>
+                <li>Gold</li>
+            </thingDefs>
+            <categories>
+                <li>Textiles</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_AttunementFabric>75</WNA_AttunementFabric>
+        </products>
+        <workAmount>500</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeConcrete</defName>
+        <label>make reinforced concrete</label>
+        <description>make an advanced concrete sufficient for building.</description>
+        <jobString>making reinforced concrete.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Quicklime</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Quicklime</li>
+                <li>Steel</li>
+            </thingDefs>
+            <categories>
+                <li>StoneChunks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Concrete>50</WNA_Concrete>
+        </products>
+        <workAmount>500</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeConcreteToo</defName>
+        <label>make reinforced concrete</label>
+        <description>make an advanced concrete sufficient for building.</description>
+        <jobString>making reinforced concrete.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Quicklime</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Jade</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Quicklime</li>
+                <li>Steel</li>
+                <li>Jade</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+            </thingDefs>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Concrete>50</WNA_Concrete>
+        </products>
+        <workAmount>500</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeTrinisium</defName>
+        <label>make trinisium</label>
+        <description>make an alloy sufficient for attacking.</description>
+        <jobString>making trinisium.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>35</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>45</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Uranium</li>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Trinisium>75</WNA_Trinisium>
+        </products>
+        <workAmount>600</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeDesolisium</defName>
+        <label>make desolisium</label>
+        <description>make an alloy sufficient for defending.</description>
+        <jobString>making desolisium.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Silver</li>
+                <li>Gold</li>
+            </thingDefs>
+            <categories>
+                <li>StoneChunks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Desolisium>75</WNA_Desolisium>
+        </products>
+        <workAmount>500</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeDesolisiumToo</defName>
+        <label>make desolisium</label>
+        <description>make an alloy sufficient for defending.</description>
+        <jobString>making desolisium.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Jade</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Silver</li>
+                <li>Gold</li>
+                <li>Jade</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+            </thingDefs>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Desolisium>75</WNA_Desolisium>
+        </products>
+        <workAmount>500</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+</Defs>

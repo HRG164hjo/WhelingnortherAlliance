@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- Human pawns -->
+    <!-- Human Pawns -->
     <PawnKindDef Abstract="True" ParentName="WNA_PawnsBase" Name="WNA_PawnsHuman">
         <race>WNA_Human</race>
         <apparelColor>(74,74,74)</apparelColor>
+        <forcedTraits>
+            <li>WNA_Trait_Unshakable</li>
+        </forcedTraits>
     </PawnKindDef>
     <PawnKindDef ParentName="WNA_PawnsHuman">
         <defName>WNA_Technician</defName>
         <label>technician</label>
-        <combatPower>40</combatPower>
+        <combatPower>30</combatPower>
         <trader>true</trader>
         <weaponTags>
-            <li>Tag_WNATechTool</li>
+            <li>Tag_WNACivilian</li>
         </weaponTags>
         <apparelRequired>
+			<li>WNA_StdMiliSuit</li>
             <li>WNA_AdvFlakHead</li>
-			<li>WNA_AllianceRobe</li>
 			<li>WNA_AdvFlakJacket</li>
 			<li>WNA_Toolkit</li>
         </apparelRequired>
@@ -32,63 +35,64 @@
             <li>ImplantEmpireCommon</li>
         </techHediffsTags>
     </PawnKindDef>
+
     <PawnKindDef ParentName="WNA_PawnsHuman">
-        <defName>WNA_Rebel</defName>
-        <label>rebel</label>
+        <defName>WNA_FieldTroop</defName>
+        <label>field trooper</label>
         <combatPower>30</combatPower>
         <weaponTags>
-            <li>Tag_WNARebel</li>
+            <li>Tag_WNAFieldTroop</li>
         </weaponTags>
         <apparelRequired>
-			<li>WNA_AllianceRobe</li>
+			<li>WNA_StdMiliSuit</li>
 			<li>WNA_AdvFlakJacket</li>
 			<li>WNA_AdvFlakHead</li>
-			<li>WNA_AmmoHelper</li>
+			<li>WNA_AmmoLoader</li>
+			<li>WNA_ShieldPack</li>
         </apparelRequired>
         <forcedTraits>
             <li>Tough</li>
         </forcedTraits>
     </PawnKindDef>
+
     <PawnKindDef ParentName="WNA_PawnsHuman">
-        <defName>WNA_Saboteur</defName>
-        <label>saboteur</label>
+        <defName>WNA_SiegeTroop</defName>
+        <label>siege trooper</label>
+        <combatPower>30</combatPower>
+        <weaponTags>
+            <li>Tag_WNASiegeTroop</li>
+        </weaponTags>
+        <apparelRequired>
+			<li>WNA_StdMiliSuit</li>
+			<li>WNA_AdvFlakJacket</li>
+			<li>WNA_AdvFlakHead</li>
+			<li>WNA_AmmoLoader</li>
+			<li>WNA_ShieldPack</li>
+        </apparelRequired>
+        <forcedTraits>
+            <li>Tough</li>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="WNA_PawnsHuman">
+        <defName>WNA_StrikeForce</defName>
+        <label>strike force</label>
         <combatPower>40</combatPower>
         <weaponTags>
-            <li>Tag_WNASaboteur</li>
+            <li>Tag_WNAStrikeForce</li>
         </weaponTags>
         <apparelRequired>
-			<li>WNA_AllianceRobe</li>
+			<li>WNA_StdMiliSuit</li>
 			<li>WNA_AdvFlakJacket</li>
 			<li>WNA_AdvFlakHead</li>
-			<li>WNA_AmmoHelper</li>
+			<li>WNA_AmmoLoader</li>
+			<li>WNA_ShieldPack</li>
         </apparelRequired>
         <forcedTraits>
-            <li>Nimble</li>
+            <SpeedOffset>2</SpeedOffset>
         </forcedTraits>
-        <abilities>
-            <li>WNA_SaboteurJump</li>
-        </abilities>
     </PawnKindDef>
-    <PawnKindDef ParentName="WNA_PawnsHuman">
-        <defName>WNA_Vanguard</defName>
-        <label>vanguard</label>
-        <combatPower>50</combatPower>
-        <weaponTags>
-            <li>Tag_WNAVanguard</li>
-        </weaponTags>
-        <apparelRequired>
-			<li>WNA_AllianceRobe</li>
-            <li>WNA_VanguardHead</li>
-            <li>WNA_VanguardPlate</li>
-			<li>WNA_AmmoHelper</li>
-        </apparelRequired>
-        <forcedTraits>
-            <li>Tough</li>
-        </forcedTraits>
-        <abilities>
-            <li>WNA_Aeroblaze</li>
-        </abilities>
-    </PawnKindDef>
+    
     <PawnKindDef ParentName="WNA_PawnsHuman">
         <defName>WNA_DarknightComm</defName>
         <label>darknight commando</label>
@@ -97,19 +101,60 @@
             <li>Tag_WNADarknightComm</li>
         </weaponTags>
         <apparelRequired>
-			<li>WNA_AllianceRobe</li>
-			<li>WNA_IllusionCore</li>
+			<li>WNA_StdMiliSuit</li>
 			<li>WNA_AdvFlakJacket</li>
 			<li>WNA_AdvFlakHead</li>
+			<li>WNA_AmmoLoader</li>
+			<li>WNA_IllusionCore</li>
         </apparelRequired>
         <forcedTraits>
-            <li>Psychopath</li>
             <li>Nimble</li>
         </forcedTraits>
         <abilities>
             <li>WNA_PsylinkDeprivation</li>
         </abilities>
     </PawnKindDef>
+
+    <PawnKindDef ParentName="WNA_PawnsHuman">
+        <defName>WNA_LysTroop</defName>
+        <label>lysis troop</label>
+        <combatPower>80</combatPower>
+        <weaponTags>
+            <li>Tag_WNACivilian</li>
+        </weaponTags>
+        <apparelRequired>
+			<li>WNA_StdMiliSuit</li>
+			<li>WNA_AdvFlakJacket</li>
+			<li>WNA_AdvFlakHead</li>
+        </apparelRequired>
+        <forcedTraits>
+            <li>Psychopath</li>
+        </forcedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="WNA_PawnsHuman">
+        <defName>WNA_Vanguard</defName>
+        <label>heavy vanguard</label>
+        <combatPower>50</combatPower>
+        <weaponTags>
+            <li>Tag_WNAVanguard</li>
+        </weaponTags>
+        <apparelRequired>
+			<li>WNA_StdMiliSuit</li>
+            <li>WNA_VanguardHead</li>
+            <li>WNA_VanguardPlate</li>
+			<li>WNA_AmmoLoader</li>
+			<li>WNA_ShieldPack</li>
+        </apparelRequired>
+        <forcedTraits>
+            <li>Tough</li>
+            <li>WNA_Trait_Hypodynamophobia</li>
+        </forcedTraits>
+        <abilities>
+            <li>WNA_Aeroblaze</li>
+        </abilities>
+    </PawnKindDef>
+
     <PawnKindDef ParentName="WNA_PawnsHuman">
         <defName>WNA_IronGuard</defName>
         <label>iron guardian</label>
@@ -119,16 +164,51 @@
             <li>Tag_TrapLauncher</li>
         </weaponTags>
         <apparelRequired>
-            <li>WNA_SuperheavyArmor</li>
-            <li>WNA_SuperheavyHead</li>
-			<li>WNA_AllianceRobe</li>
-			<li>WNA_ForceShield</li>
+			<li>WNA_StdMiliSuit</li>
+            <li>WNA_GuardianHelmet</li>
+            <li>WNA_GuardianPowerarmor</li>
+			<li>WNA_AmmoLoader</li>
+			<li>WNA_IronPack</li>
         </apparelRequired>
         <forcedTraits>
             <li>Psychopath</li>
-            <li>Tough</li>
+            <li>Bloodlust</li>
         </forcedTraits>
-    </PawnKindDef>  
+    </PawnKindDef>
+    
+    <PawnKindDef ParentName="WNA_PawnsHuman">
+        <defName>WNA_StratagemComm</defName>
+        <label>stratagem commando</label>
+        <combatPower>80</combatPower>
+        <weaponTags>
+            <li>Tag_WNACivilian</li>
+        </weaponTags>
+        <apparelRequired>
+			<li>WNA_StdMiliSuit</li>
+			<li>WNA_AdvFlakJacket</li>
+			<li>WNA_AdvFlakHead</li>
+        </apparelRequired>
+        <forcedTraits>
+            <li>Psychopath</li>
+        </forcedTraits>
+    </PawnKindDef>
+    
+    <PawnKindDef ParentName="WNA_PawnsHuman">
+        <defName>WNA_Parasomniant</defName>
+        <label>parasomniant</label>
+        <combatPower>250</combatPower>
+        <weaponTags>
+            <li>Tag_WNACivilian</li>
+        </weaponTags>
+        <apparelRequired>
+			<li>WNA_StdMiliSuit</li>
+			<li>WNA_AdvFlakJacket</li>
+			<li>WNA_AdvFlakHead</li>
+        </apparelRequired>
+        <forcedTraits>
+            <li>Psychopath</li>
+        </forcedTraits>
+    </PawnKindDef>
 
     <!-- Whelingnorthan Pawns -->
     <PawnKindDef Abstract="True" ParentName="WNA_PawnsBase" Name="WNA_PawnsWNThan">
@@ -158,8 +238,8 @@
         <initialResistanceRange>Infinity</initialResistanceRange>
     </PawnKindDef>
     <PawnKindDef ParentName="WNA_PawnsWNThan">
-        <defName>WNA_Initiate</defName>
-        <label>initiate</label>
+        <defName>WNA_Disciple</defName>
+        <label>disciple</label>
         <combatPower>50</combatPower>
         <abilities>
             <li>WNA_Resurrection</li>

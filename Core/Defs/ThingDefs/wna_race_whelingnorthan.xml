@@ -357,10 +357,10 @@
                 </renderNodeProperties>
             </li>
             <li Class="WNA.ThingCompProp.CompAOEDamage">
-                <damageDef>Crush</damageDef>
+                <damageDef>WNA_Culling</damageDef>
                 <damage>1000000</damage>
                 <ap>10000</ap>
-                <radius>5</radius>
+                <radius>14.9</radius>
                 <rof>5</rof>
                 <update>30</update>
                 <affectArea>true</affectArea>

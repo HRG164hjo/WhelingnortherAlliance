@@ -6,9 +6,9 @@ E:\ProgramFiles\Steam\steamapps\common\RimWorld\Mods\Proj_WhelingnortherAlliance
 E:\ProgramFiles\Steam\steamapps\common\RimWorld\Mods\Proj_WhelingnortherAlliance\Source\WNA\obj\Debug\WNA.pdb
 C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\bin\Debug\WNA.dll
 C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\bin\Debug\WNA.pdb
+C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Core\Assemblies\WNA.dll
+C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Core\Assemblies\WNA.pdb
 C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Debug\WNA.csproj.AssemblyReference.cache
 C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Debug\WNA.csproj.CoreCompileInputs.cache
 C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Debug\WNA.dll
 C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Debug\WNA.pdb
-C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Core\Assemblies\WNA.dll
-C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Core\Assemblies\WNA.pdb

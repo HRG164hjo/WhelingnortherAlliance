@@ -155,7 +155,7 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="WNA_ForceShield"]/modExtensions</xpath>
+        <xpath>Defs/ThingDef[defName="WNA_IronPack"]/modExtensions</xpath>
         <value>
 			<li Class="VEF.Apparels.ApparelExtension">
 				<preventDowning>true</preventDowning>
@@ -258,7 +258,7 @@
     </Operation>
 
     <Operation Class="PatchOperationAddModExtension">
-        <xpath>Defs/ThingDef[defName="WNA_AmmoHelper"]</xpath>
+        <xpath>Defs/ThingDef[defName="WNA_AmmoLoader"]</xpath>
         <value>
 			<li Class="VEF.Apparels.ApparelExtension">
                 <equippedStatFactors>

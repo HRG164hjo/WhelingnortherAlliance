@@ -7,18 +7,20 @@
 		<graphicData>
 			<texPath>Things/Building/HoldingPlatform/HoldingPlatform</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3,3)</drawSize>
-			<color>(57,56,57,200)</color>
+			<drawSize>(1,1)</drawSize>
+			<color>(74,57,57,192)</color>
 		</graphicData>
         <useHitPoints>false</useHitPoints>
+        <size>(1,1)</size>
         <statBases>
-            <Mass>50</Mass>
+            <Mass>15</Mass>
 			<WorkToBuild>2000</WorkToBuild>
             <MeditationFocusStrength>1</MeditationFocusStrength>
             <Flammability>0</Flammability>
+            <ContainmentStrength>100000</ContainmentStrength>
         </statBases>
         <costList>
-            <WNA_Voidmetal>40</WNA_Voidmetal>
+            <WNA_Voidsteel>40</WNA_Voidsteel>
         </costList>
         <comps Inherit="False">
             <li Class="CompProperties_AffectedByFacilities">
@@ -27,6 +29,8 @@
                     <li>ElectricInhibitor</li>
                     <li>ShardInhibitor</li>
                     <li>BioferriteHarvester</li>
+                    <li>WNA_BiofeHarvester</li>
+                    <li>WNA_PowerHarvester</li>
                 </linkableFacilities>
             </li>
             <li Class="CompProperties_MeditationFocus">
@@ -87,6 +91,139 @@
 	</ThingDef>
 
     <ThingDef ParentName="WNA_FurnitureBase">
+        <defName>WNA_BiofeHarvester</defName>
+		<label>voidmetal biofe-harvester</label>
+		<description>A bioferrite harvester made of voidmetal.</description>
+        <thingClass>Building_BioferriteHarvester</thingClass>
+		<graphicData>
+			<texPath>Things/Building/BioferriteHarvester/BioferriteHarvester</texPath>
+			<graphicClass>Graphic_Multi_BuildingWorking</graphicClass>
+			<drawSize>(2,1.5)</drawSize>
+            <shaderType>BioferriteHarvester</shaderType>
+            <addTopAltitudeBias>true</addTopAltitudeBias>
+			<color>(74,57,57,192)</color>
+		</graphicData>
+        <size>(1,1)</size>
+        <statBases>
+            <Mass>10</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+            <MeditationFocusStrength>1</MeditationFocusStrength>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <WNA_Voidsteel>30</WNA_Voidsteel>
+        </costList>
+        <drawerType>RealtimeOnly</drawerType>
+        <designationCategory>Anomaly</designationCategory>
+        <defaultPlacingRot>East</defaultPlacingRot>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <comps Inherit="false">
+            <li Class="CompProperties_Facility">
+                <maxDistance>14.9</maxDistance>
+                <maxSimultaneous>12</maxSimultaneous>
+                <requiresLOS>false</requiresLOS>
+                <statOffsets>
+                    <ContainmentStrength>15000</ContainmentStrength>
+                </statOffsets>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_AttachPoints">
+                <points>
+                    <li>
+                        <offset>(.1, 0, .8)</offset>
+                        <type>CableConnection0</type>
+                    </li>
+                    <li>
+                        <offset>(.1, 0, .8)</offset>
+                        <type>CableConnection1</type>
+                    </li>
+                    <li>
+                        <offset>(.1, 0, .8)</offset>
+                        <type>CableConnection2</type>
+                    </li>
+                    <li>
+                        <offset>(.1, 0, .8)</offset>
+                        <type>CableConnection3</type>
+                    </li>
+                    <li>
+                        <offset>(0, 0, .28)</offset>
+                        <type>Exhaust</type>
+                    </li>
+                </points>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+        <defName>WNA_PowerHarvester</defName>
+		<label>voidmetal electroharvester</label>
+		<description>A electroharvester made of voidmetal.</description>
+        <thingClass>Building_Electroharvester</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Electroharvester/Electroharvester</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+            <drawOffset>0,1.5,0</drawOffset>
+			<drawSize>(1.5,2)</drawSize>
+			<color>(74,57,57,192)</color>
+		</graphicData>
+        <size>(1,1)</size>
+        <statBases>
+            <Mass>10</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+            <MeditationFocusStrength>1</MeditationFocusStrength>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <WNA_Voidsteel>30</WNA_Voidsteel>
+        </costList>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <designationCategory>Anomaly</designationCategory>
+        <defaultPlacingRot>East</defaultPlacingRot>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <comps Inherit="false">
+            <li Class="CompProperties_Facility">
+                <compClass>CompFacilityInactiveWhenElectricityDisabled</compClass>
+                <maxDistance>14.9</maxDistance>
+                <maxSimultaneous>12</maxSimultaneous>
+                <requiresLOS>false</requiresLOS>
+                <statOffsets>
+                    <ContainmentStrength>25000</ContainmentStrength>
+                </statOffsets>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlantElectroharvester</compClass>
+                <basePowerConsumption>-100000</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_AttachPoints">
+                <points>
+                    <li>
+                        <offset>(-.5, 0, .4)</offset>
+                        <type>CableConnection0</type>
+                    </li>
+                    <li>
+                        <offset>(-.5, 0, -.3)</offset>
+                        <type>CableConnection1</type>
+                    </li>
+                    <li>
+                        <offset>(-.5, 0, -.2)</offset>
+                        <type>CableConnection2</type>
+                    </li>
+                    <li>
+                        <offset>(-.5, 0, -.1)</offset>
+                        <type>CableConnection3</type>
+                    </li>
+                </points>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_VoidAnchor</defName>
 		<label>void anchor</label>
 		<description>A voidmetal facility, can drain voidmetal from the void sea.</description>
@@ -107,7 +244,7 @@
             <ComponentSpacer>1</ComponentSpacer>
             <Shard>1</Shard>
             <Uranium>20</Uranium>
-            <WNA_Voidmetal>40</WNA_Voidmetal>
+            <WNA_Voidsteel>40</WNA_Voidsteel>
         </costList>
         <comps>
             <li Class="CompProperties_Spawner">
@@ -119,7 +256,7 @@
                 <requiresPower>false</requiresPower>
             </li>
             <li Class="CompProperties_Spawner">
-                <thingToSpawn>WNA_Voidmetal</thingToSpawn>
+                <thingToSpawn>WNA_Voidsteel</thingToSpawn>
                 <spawnCount>75</spawnCount>
                 <spawnIntervalRange>50000~70000</spawnIntervalRange>
                 <writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>

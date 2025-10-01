@@ -5,7 +5,7 @@
         <label>psychic blast shell</label>
         <description>A shell made of bioferrite and enhanced with special techniques. When detonated it can cause a unique psychic phenomena, causing nearby people fall into psychic drunkenness.</description>
         <graphicData>
-            <texPath>items/wna_shells/wnashell_psychic</texPath>
+            <texPath>item/wna_shells/wnashell_psychic</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>0.8</drawSize>
         </graphicData>

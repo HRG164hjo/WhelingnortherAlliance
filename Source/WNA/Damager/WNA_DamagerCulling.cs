@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse;
 using WNA.WNADefOf;
+using static Verse.DamageWorker;
 
 namespace WNA.Damager
 {
@@ -28,77 +29,58 @@ namespace WNA.Damager
         };
         public override DamageResult Apply(DamageInfo dinfo, Thing thing)
         {
-            if (!(thing is Pawn pawn))
-            {
-                return base.Apply(dinfo, thing);
-            }
+            if (!(thing is Pawn pawn)) return base.Apply(dinfo, thing);
             return ApplyToPawn(dinfo, pawn);
         }
 
         private DamageResult ApplyToPawn(DamageInfo dinfo, Pawn pawn)
         {
             DamageResult damageResult = new DamageResult();
-            if (pawn.Destroyed || pawn.Dead)
-            {
-                return damageResult;
-            }
-            if (dinfo.Amount <= 0f || (!DebugSettings.enablePlayerDamage && pawn.Faction == Faction.OfPlayer))
-            {
-                return damageResult;
-            }
-            if (pawn.Destroyed || pawn.Dead)
-            {
-                return damageResult;
-            }
-            if (ExcludedRaces.Contains(pawn.def))
-            {
-                return new DamageResult { totalDamageDealt = 0f };
-            }
-            else
-            {
-                if (!pawn.Dead && !pawn.Destroyed)
-                {
-                    PlayWoundedVoiceSound(dinfo, pawn);
-                    RemoveNonBadHediffs(pawn);
-                    DestroyAllParts(pawn, dinfo);
-                }
-            }
+            if (pawn.Dead || pawn.Destroyed) return damageResult;
+            if (dinfo.Amount <= 0f) return damageResult;
+            if (!DebugSettings.enablePlayerDamage &&
+                pawn.Faction == Faction.OfPlayer) return damageResult;
+            if (ExcludedRaces.Contains(pawn.def)) return new DamageResult { totalDamageDealt = 0f };
+            PlayWoundedVoiceSound(dinfo, pawn);
+            RemoveNonBadHediffs(pawn);
+            DestroyAllParts(pawn, dinfo, damageResult);
+            damageResult.wounded = true;
             return damageResult;
         }
 
-        private void DestroyAllParts(Pawn pawn, DamageInfo dinfo)
+        private void DestroyAllParts(Pawn pawn, DamageInfo dinfo, DamageResult damageResult)
         {
             if (pawn.Destroyed || pawn.Dead) return;
             List<BodyPartRecord> partlist = pawn.health.hediffSet.GetNotMissingParts().ToList();
             foreach (BodyPartRecord part in partlist)
             {
-                if (part == null) continue;
-                if (pawn.Destroyed || pawn.Dead) break;
-                DamageInfo dpartinfo = new DamageInfo(WNAMainDefOf.WNA_CastMelee, float.PositiveInfinity, 999f, -1f, null, part);
-                pawn.TakeDamage(dpartinfo);
+                if (pawn.Dead) break;
+                if (pawn.health.hediffSet.PartIsMissing(part)) continue;
+                Hediff_MissingPart missingPart = (Hediff_MissingPart)HediffMaker.MakeHediff(HediffDefOf.MissingBodyPart, pawn, part);
+                pawn.health.AddHediff(missingPart, part, dinfo, damageResult);
+                damageResult.AddPart(pawn, part);
             }
+            if (!pawn.Dead)
+            {
+                pawn.Kill(dinfo);
+                if (!pawn.Dead) pawn.health.SetDead();
+            }
+            damageResult.totalDamageDealt = float.MaxValue;
         }
         private static void PlayWoundedVoiceSound(DamageInfo dinfo, Pawn pawn)
         {
-            if (!pawn.Dead && pawn.SpawnedOrAnyParentSpawned && dinfo.Def.ExternalViolenceFor(pawn))
-            {
-                LifeStageUtility.PlayNearestLifestageSound(pawn, lifeStage => lifeStage.soundWounded, gene => gene.soundWounded, mutantDef => mutantDef.soundWounded);
-            }
+            if (!pawn.Dead && pawn.SpawnedOrAnyParentSpawned &&
+                dinfo.Def.ExternalViolenceFor(pawn)) LifeStageUtility.PlayNearestLifestageSound(pawn, lifeStage => lifeStage.soundWounded, gene => gene.soundWounded, mutantDef => mutantDef.soundWounded);
         }
         private void RemoveNonBadHediffs(Pawn pawn)
         {
             List<Hediff> hediffsToRemove = new List<Hediff>();
             foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
             {
-                if (!hediff.def.isBad && !ExcludedHediffs.Contains(hediff.def))
-                {
-                    hediffsToRemove.Add(hediff);
-                }
+                if (!hediff.def.isBad &&
+                    !ExcludedHediffs.Contains(hediff.def)) hediffsToRemove.Add(hediff);
             }
-            for (int i = hediffsToRemove.Count - 1; i >= 0; i--)
-            {
-                pawn.health.RemoveHediff(hediffsToRemove[i]);
-            }
+            for (int i = hediffsToRemove.Count - 1; i >= 0; i--) pawn.health.RemoveHediff(hediffsToRemove[i]);
         }
     }
 }

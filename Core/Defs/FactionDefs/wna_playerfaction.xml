@@ -62,7 +62,7 @@
         </apparelStuffFilter>
         <modExtensions>
             <li Class="VEF.Factions.FactionDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
-                <strangerInBlackReplacement>WNA_Initiate</strangerInBlackReplacement>
+                <strangerInBlackReplacement>WNA_Disciple</strangerInBlackReplacement>
             </li>
         </modExtensions>
     </FactionDef>

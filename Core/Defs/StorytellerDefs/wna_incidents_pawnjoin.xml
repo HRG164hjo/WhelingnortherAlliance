@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <IncidentDef>
-        <defName>WNAIncident_InitiateJoin</defName>
-        <label>WNA initiate join</label>
+        <defName>WNAIncident_DiscipleJoin</defName>
+        <label>WNA disciple join</label>
         <category>Misc</category>
         <targetTags>
             <li>Map_PlayerHome</li>
         </targetTags>
-        <!--<workerClass>IncidentWorker_WandererJoin</workerClass>-->
-        <workerClass>WNA.Incident.InitiateJoin</workerClass>
+        <workerClass>WNA.Incident.DiscipleJoin</workerClass>
         <baseChance>2.5</baseChance>
         <populationEffect>IncreaseMedium</populationEffect>
-        <letterLabel>WNA initiate join</letterLabel>
-        <letterText>A WNA initiate named {PAWN_nameDef} just passed by your settlement. \n\nFor some reason, {PAWN_pronoun} stopped {PAWN_possessive} steps and decided to join you.</letterText>
+        <letterLabel>WNA disciple join</letterLabel>
+        <letterText>A WNA disciple named {PAWN_nameDef} just passed by your settlement. \n\nFor some reason, {PAWN_pronoun} stopped {PAWN_possessive} steps and decided to join you.</letterText>
         <letterDef>PositiveEvent</letterDef>
         <minRefireDays>15</minRefireDays>
-        <pawnKind>WNA_Initiate</pawnKind>
+        <pawnKind>WNA_Disciple</pawnKind>
         <requireColonistsPresent>True</requireColonistsPresent>
     </IncidentDef>
 </Defs>

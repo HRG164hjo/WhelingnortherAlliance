@@ -76,7 +76,7 @@
     <Compile Include="HediffCompProp\CompHealPermaWounds.cs" />
     <Compile Include="HediffCompProp\CompPostRemoveHediff.cs" />
     <Compile Include="HediffCompProp\CompTemporalEffect.cs" />
-    <Compile Include="Incident\InitiateJoin.cs" />
+    <Compile Include="Incident\DiscipleJoin.cs" />
     <Compile Include="JobDriverClass\AdjustHydroponics.cs" />
     <Compile Include="Recipe\HalfbeingInfusion.cs" />
     <Compile Include="TargetEffect\Ascension.cs" />
@@ -101,6 +101,7 @@
     <Compile Include="WNAHarmony\Patch_MassUtility.cs" />
     <Compile Include="WNAHarmony\Patch_Need.cs" />
     <Compile Include="WNAHarmony\Patch_PawnGenerator.cs" />
+    <Compile Include="WNAHarmony\Patch_Placeworker.cs" />
     <Compile Include="WNAHarmony\Patch_Plant.cs" />
     <Compile Include="WNAHarmony\Patch_RandomDrop.cs" />
     <Compile Include="WNAHarmony\Patch_Refuelable.cs" />
@@ -111,10 +112,12 @@
     <Compile Include="WNAMiscs\HedifferRemover.cs" />
     <Compile Include="WNAMiscs\HedifferTicker.cs" />
     <Compile Include="WNAMiscs\IngredValGetter_NutriMisc.cs" />
+    <Compile Include="WNAMiscs\ProjType_Inviso.cs" />
+    <Compile Include="WNAMiscs\StockGenerator_BuyAnything.cs" />
+    <Compile Include="WNAMiscs\VerbType_Burst.cs" />
     <Compile Include="WNAMiscs\WarpOn.cs" />
     <Compile Include="WNAUtility\General.cs" />
     <Compile Include="WNAUtility\MindControlUtility.cs" />
-    <Compile Include="WNA_HediffGiverRandom.cs" />
     <Compile Include="AbilityCompProp\CompAbilityResurrect.cs" />
     <Compile Include="Recipe\Inspection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

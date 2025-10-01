@@ -2,11 +2,11 @@
 <Defs>
 
     <!-- ======== -->
-
+    <!-- ======== -->
     <!-- AbilityDef -->
     <AbilityDef Abstract="true" Name="WNA_AbilityBase">
         <category>WNA_AbilityCategory</category>
-        <iconPath>focus</iconPath>
+        <iconPath>karma</iconPath>
         <cooldownTicksRange>60</cooldownTicksRange>
         <stunTargetWhileCasting>true</stunTargetWhileCasting>
         <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
@@ -19,7 +19,7 @@
 
 
     <!-- ======== -->
-
+    <!-- ======== -->
     <!-- DamageDef -->
     <DamageDef Abstract="true" Name="WNA_DamageBase">
         <workerClass>WNA.Damager.WNA_DamagerBasic</workerClass>
@@ -27,9 +27,9 @@
         <overkillPctToDestroyPart>0</overkillPctToDestroyPart>
         <defaultArmorPenetration>Infinity</defaultArmorPenetration>
         <defaultStoppingPower>Infinity</defaultStoppingPower>
-        <buildingDamageFactor>10000</buildingDamageFactor>
-        <plantDamageFactor>10000</plantDamageFactor>
-        <corpseDamageFactor>10000</corpseDamageFactor>
+        <buildingDamageFactor>15</buildingDamageFactor>
+        <plantDamageFactor>15</plantDamageFactor>
+        <corpseDamageFactor>15</corpseDamageFactor>
         <execution>true</execution>
         <externalViolence>false</externalViolence>
         <armorCategory/>
@@ -37,7 +37,7 @@
 
 
     <!-- ======== -->
-
+    <!-- ======== -->
     <!-- IncidentDef -->
     <IncidentDef Name="WNA_DiseaseIncidentBase" Abstract="True">
         <targetTags>
@@ -52,7 +52,7 @@
 
 
     <!-- ======== -->
-
+    <!-- ======== -->
     <!-- PawnKindDef -->
     <PawnKindDef Name="WNA_PawnsBase" Abstract="True">
         <defaultFactionType>WNA_FactionWNA</defaultFactionType>
@@ -106,7 +106,7 @@
         <biocodeWeaponChance>0</biocodeWeaponChance>
         <humanPregnancyChance>0</humanPregnancyChance>
         <fixedInventory>
-            <WNA_Meal>3</WNA_Meal>
+            <WNA_Ration>3</WNA_Ration>
             <WNA_Medikit>3</WNA_Medikit>
         </fixedInventory>
         <chemicalAddictionChance>0</chemicalAddictionChance>
@@ -178,7 +178,7 @@
     
 
     <!-- ======== -->
-
+    <!-- ======== -->
     <!-- RecipeDef -->
     <RecipeDef Abstract="True" Name="WNA_RecipeBase">
         <effectWorking>Cremate</effectWorking>
@@ -214,7 +214,7 @@
 
 
     <!-- ======== -->
-
+    <!-- ======== -->
     <!-- ResearchProjectDef -->
 	<ResearchProjectDef Abstract="true" Name="WNA_ResearchProjBase">
 		<tab>WNA_ResearchTab</tab>
@@ -226,7 +226,7 @@
 
 
     <!-- ======== -->
-
+    <!-- ======== -->
     <!-- StorytellerDef -->
     <StorytellerDef Name="WNA_StorytellerBase" Abstract="True">
         <populationIntentFactorFromPopCurve>
@@ -399,7 +399,7 @@
 
 
     <!-- ======== -->
-
+    <!-- ======== -->
     <!-- TerrainDef -->
     <TerrainDef Abstract="True" Name="WNA_FloorsBase">
         <drawStyleCategory>Floors</drawStyleCategory>
@@ -443,7 +443,7 @@
 
 
     <!-- ======== -->
-
+    <!-- ======== -->
     <!-- ThingDef -->
     <ThingDef Abstract="True" Name="WNA_StructureBase">
 		<designationCategory>WNA_MainCategory</designationCategory>
@@ -528,66 +528,7 @@
             <li>WNA_Furniture</li>
         </researchPrerequisites>
 	</ThingDef>
-    
-    <DesignatorDropdownGroupDef>
-        <defName>WNA_RiteSpotGroup</defName>
-    </DesignatorDropdownGroupDef>
-    <ThingDef Abstract="True" ParentName="BuildingBase" Name="WNA_RiteSpotBase">
-        <designatorDropdown>WNA_RiteSpotGroup</designatorDropdown>
-        <designationCategory>WNA_MainCategory</designationCategory>
-		<terrainAffordanceNeeded/>
-        <altitudeLayer>FloorEmplacement</altitudeLayer>
-        <thingClass>Building_WorkTable</thingClass>
-        <tickerType>Normal</tickerType>
-        <statBases>
-            <Flammability>0</Flammability>
-            <Mass>0</Mass>
-            <WorkToBuild>0</WorkToBuild>
-        </statBases>
-        <graphicData>
-            <texPath>rite</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(1,1)</drawSize>
-        </graphicData>
-        <scatterableOnMapGen>false</scatterableOnMapGen>
-        <useHitPoints>false</useHitPoints>
-        <size>(1,1)</size>
-        <passability>Standable</passability>
-        <hasInteractionCell>True</hasInteractionCell>
-        <interactionCellOffset>(0,0,0)</interactionCellOffset>
-        <surfaceType>Item</surfaceType>
-        <inspectorTabs>
-            <li>ITab_Bills</li>
-        </inspectorTabs>
-        <building>
-            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-            <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-            <ai_chillDestination>false</ai_chillDestination>
-            <artificialForMeditationPurposes>true</artificialForMeditationPurposes>
-            <buildingTags>
-                <li>Production</li>
-            </buildingTags>
-        </building>
-        <comps>
-            <li Class="CompProperties_Forbiddable"/>
-        </comps>
-        <placeWorkers>
-            <li>PlaceWorker_ReportWorkSpeedPenalties</li>
-        </placeWorkers>
-    </ThingDef>
-    <ThingDef ParentName="BuildingBase" Name="WNA_MiscRiteSpellsBase" Abstract="true">
-        <designationCategory>WNA_MainCategory</designationCategory>
-        <designatorDropdown>WNA_RiteSpellGroup</designatorDropdown>
-		<terrainAffordanceNeeded/>
-        <altitudeLayer>FloorEmplacement</altitudeLayer>
-        <useHitPoints>true</useHitPoints>
-        <tickerType>Normal</tickerType>
-        <scatterableOnMapGen>false</scatterableOnMapGen>
-        <passability>Standable</passability>
-        <size>(1,1)</size>
-        <soundImpactDefault/>
-    </ThingDef>
-    
+        
     <ThingDef Abstract="True" ParentName="WNA_StructureBase" Name="WNA_TurretBaseBase"> 
         <thingClass>Building_TurretGun</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
@@ -656,15 +597,19 @@
             <Flammability>0</Flammability>
         </statBases>
     </ThingDef>
-    <ThingDef Abstract="true" ParentName="BaseBullet" Name="WNA_TurrentProjBase">
+    <ThingDef Abstract="true" Name="WNA_ProjBase">
+        <category>Projectile</category>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <thingClass>WNA.WNAMiscs.ProjType_Inviso</thingClass>
         <graphicData>
-            <texPath>focus</texPath>
+            <texPath>inv</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <color>(255,255,255,155)</color>
         </graphicData>
         <projectile>
             <speed>2000</speed>
             <armorPenetrationBase>Infinity</armorPenetrationBase>
+            <stoppingPower>Infinity</stoppingPower>
         </projectile>
     </ThingDef>
     
@@ -808,6 +753,22 @@
             </layers>
         </apparel>
     </ThingDef>
+    <ThingDef Abstract="True" ParentName="WNA_ApparelBase" Name="WNA_BackpackBase">
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <scoreOffset>4</scoreOffset>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <ignoredByNonViolent>false</ignoredByNonViolent>
+            <wearPerDay>0</wearPerDay>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+        </apparel>
+    </ThingDef>
 
     <ThingDef Abstract="True" Name="WNA_WeaponBase">
         <techLevel>Archotech</techLevel>
@@ -903,45 +864,6 @@
 		<building>
             <isEdifice>false</isEdifice>
 		</building>
-    </ThingDef>
-    
-    <ThingDef Abstract="True" Name="WNA_BooksBase">
-        <thingClass>Book</thingClass>
-        <category>Item</category>
-        <selectable>true</selectable>
-        <rotatable>True</rotatable>
-        <altitudeLayer>Item</altitudeLayer>
-        <tickerType>Rare</tickerType>
-        <alwaysHaulable>true</alwaysHaulable>
-        <burnableByRecipe>true</burnableByRecipe>
-        <useHitPoints>false</useHitPoints>
-        <healthAffectsPrice>true</healthAffectsPrice>
-        <drawGUIOverlay>true</drawGUIOverlay>
-        <neverMultiSelect>false</neverMultiSelect>
-        <tradeNeverStack>true</tradeNeverStack>
-        <stackLimit>1</stackLimit>
-        <comps>
-            <li Class="CompProperties_Forbiddable"/>
-            <li>
-                <compClass>CompQuality</compClass>
-            </li>
-        </comps>
-        <thingCategories>
-            <li>Books</li>
-        </thingCategories>
-        <inspectorTabs>
-            <li>ITab_Book</li>
-        </inspectorTabs>
-        <statBases>
-            <MarketValue>50</MarketValue>
-            <DeteriorationRate>0</DeteriorationRate>
-            <Flammability>0</Flammability>
-            <Mass>0.5</Mass>
-            <Beauty>2</Beauty>
-        </statBases>
-        <thingSetMakerTags>
-            <li>RewardStandardMidFreq</li>
-        </thingSetMakerTags>
     </ThingDef>
     
 	<ThingDef Abstract="true" ParentName="BasePawn" Name="WNA_AnimalRaceBase">
@@ -1118,13 +1040,14 @@
 
 
     <!-- ======== -->
-
+    <!-- ======== -->
     <!-- TraderKindDef -->
     <TraderKindDef Abstract="true" Name="WNA_TraderKindBase">
         <hideThingsNotWillingToTrade>true</hideThingsNotWillingToTrade>
         <faction>WNA_FactionWNA</faction>
         <stockGenerators>
-            <li Class="StockGenerator_BuyExpensiveSimple"/>
+            <li Class="WNA.WNAMiscs.StockGenerator_BuyAnything"/>
+            <!--<li Class="StockGenerator_BuyExpensiveSimple"/>
             <li Class="StockGenerator_BuySlaves"/>
             <li Class="StockGenerator_BuyTradeTag"><tag>Armor</tag></li>
             <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
@@ -1142,7 +1065,7 @@
             <li Class="StockGenerator_BuyTradeTag"><tag>PsychicApparel</tag></li>
             <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
             <li Class="StockGenerator_BuyTradeTag"><tag>WeaponMelee</tag></li>
-            <li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
+            <li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>-->
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Silver</thingDef>
                 <countRange>2000000000~2100000000</countRange>
@@ -1199,7 +1122,7 @@
                 <price>Cheap</price>
             </li>
             <li Class="StockGenerator_SingleDef">
-                <thingDef>WNA_Meal</thingDef>
+                <thingDef>WNA_Ration</thingDef>
                 <price>Cheap</price>
                 <countRange>300000~500000</countRange>
             </li>
@@ -1207,6 +1130,11 @@
                 <thingDef>WNA_Medikit</thingDef>
                 <price>Cheap</price>
                 <countRange>300000~500000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_Voidsteel</thingDef>
+                <price>Cheap</price>
+                <countRange>800000~1000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>ComponentIndustrial</thingDef>
@@ -1239,14 +1167,16 @@
                 <countRange>300000~500000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
-                <thingDef>WNA_BookEssay</thingDef>
-                <price>Cheap</price>
-                <countRange>3~5</countRange>
+                <thingDef>TextBook</thingDef>
+                <countRange>2~3</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
-                <thingDef>WNA_BookPoetry</thingDef>
-                <price>Cheap</price>
-                <countRange>3~5</countRange>
+                <thingDef>Schematic</thingDef>
+                <countRange>1~2</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Novel</thingDef>
+                <countRange>2~3</countRange>
             </li>
             <li Class="StockGenerator_Tag">
                 <tradeTag>MortarShell</tradeTag>

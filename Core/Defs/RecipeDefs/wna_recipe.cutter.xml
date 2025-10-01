@@ -130,5 +130,31 @@
 			</li>
 		</modExtensions>-->
     </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase" MayRequire="sarg.rimbees">
+        <defName>WNA_RecipeAlphaBeesToo</defName>
+        <description>produce kibble while getting rid of your never-needed bees.</description>
+        <jobString>working.</jobString>
+        <label>make kibble from bees</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+						<li>RB_BeesAndQueens</li>
+					</categories>
+				</filter>
+				<count>25</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+			<categories>
+				<li>RB_BeesAndQueens</li>
+			</categories>
+        </fixedIngredientFilter>
+		<products>
+			<Kibble>50</Kibble>
+		</products>
+        <workAmount>150</workAmount>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
 
 </Defs>

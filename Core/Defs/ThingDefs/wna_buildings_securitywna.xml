@@ -99,7 +99,7 @@
         <building>
             <turretGunDef>WNA_Turret_Pale_Gun</turretGunDef>
             <turretBurstWarmupTime>0</turretBurstWarmupTime>
-            <turretBurstCooldownTime>0.4</turretBurstCooldownTime>
+            <turretBurstCooldownTime>0.34</turretBurstCooldownTime>
         </building>
     </ThingDef>
     <ThingDef ParentName="WNA_TurrentWeaponBase">
@@ -107,12 +107,12 @@
         <label>pale ball</label>
         <verbs>
             <li>
-                <defaultProjectile>WNA_Turret_Pale_Gun_Proj</defaultProjectile>
-                <verbClass>Verb_Shoot</verbClass>
+                <verbClass>WNA.WNAMiscs.VerbType_Burst</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>WNA_Turret_Pale_Gun_Proj</defaultProjectile>
                 <warmupTime>0</warmupTime>
                 <range>54.9</range>
-                <burstShotCount>6</burstShotCount>
+                <burstShotCount>8</burstShotCount>
                 <soundCast>Shot_NeedleGun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>18</muzzleFlashScale>
@@ -127,15 +127,12 @@
             </li>
         </verbs>
     </ThingDef>
-    <ThingDef ParentName="WNA_TurrentProjBase">
+    <ThingDef ParentName="WNA_ProjBase">
         <defName>WNA_Turret_Pale_Gun_Proj</defName>
         <label>pale ball</label>
-        <graphicData>
-            <drawSize>0.1</drawSize>
-        </graphicData>
         <projectile>
             <damageDef>WNA_CastRange</damageDef>
-            <damageAmountBase>20</damageAmountBase>
+            <damageAmountBase>60</damageAmountBase>
         </projectile>
     </ThingDef>
 
@@ -184,16 +181,13 @@
             </li>
         </verbs>
     </ThingDef>
-    <ThingDef ParentName="WNA_TurrentProjBase">
+    <ThingDef ParentName="WNA_ProjBase">
         <defName>WNA_Turret_Shatter_Gun_Proj</defName>
         <label>shatter ball</label>
         <thingClass>Projectile_Explosive</thingClass>
-        <graphicData>
-            <drawSize>0.5</drawSize>
-        </graphicData>
         <projectile>
             <damageDef>WNA_CastBomb</damageDef>
-            <damageAmountBase>550</damageAmountBase>
+            <damageAmountBase>1250</damageAmountBase>
             <explosionRadius>6.9</explosionRadius>
             <soundExplode>Explosion_GiantBomb</soundExplode>
         </projectile>
@@ -222,8 +216,8 @@
         <label>lancer ball</label>
         <verbs>
             <li>
-                <defaultProjectile>WNA_Turret_Lancer_Gun_Proj</defaultProjectile>
                 <verbClass>Verb_Shoot</verbClass>
+                <defaultProjectile>WNA_Turret_Lancer_Gun_Proj</defaultProjectile>
                 <hasStandardCommand>true</hasStandardCommand>
                 <warmupTime>0</warmupTime>
                 <range>99.9</range>
@@ -242,15 +236,12 @@
             </li>
         </verbs>
     </ThingDef>
-    <ThingDef ParentName="WNA_TurrentProjBase">
+    <ThingDef ParentName="WNA_ProjBase">
         <defName>WNA_Turret_Lancer_Gun_Proj</defName>
         <label>lancer ball</label>
-        <graphicData>
-            <drawSize>(0.1,1)</drawSize>
-        </graphicData>
         <projectile>
             <damageDef>WNA_CastRange</damageDef>
-            <damageAmountBase>50</damageAmountBase>
+            <damageAmountBase>800</damageAmountBase>
         </projectile>
     </ThingDef>
 

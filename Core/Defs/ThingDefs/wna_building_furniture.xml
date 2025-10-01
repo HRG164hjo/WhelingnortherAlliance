@@ -13,7 +13,7 @@
                 <li>PowerConduit</li>
             </linkFlags>
 		</graphicData>
-		<uiIconPath>focus</uiIconPath>
+		<uiIconPath>karma</uiIconPath>
         <drawStyleCategory>Conduits</drawStyleCategory>
         <building>
             <isPowerConduit>true</isPowerConduit>

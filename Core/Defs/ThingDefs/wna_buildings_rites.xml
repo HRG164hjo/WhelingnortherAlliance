@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="WNA_RiteSpotBase">
-        <defName>WNA_RiteSpot_Basic</defName>
+    <ThingDef ParentName="WNA_FurnitureBase" Name="TODO_WNARiteSiteBase">
+        <defName>WNA_Ritespot</defName>
         <label>ritespot</label>
         <description>some mysterious influence is accumulating. this place must be a perfect place for doing something, for example, applying some whelingnorther techniques.</description>
+        <thingClass>Building_WorkTable</thingClass>
         <graphicData>
-            <color>(200,200,200)</color>
+            <texPath>rite</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+            <color>(200,200,200,200)</color>
         </graphicData>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
         <researchPrerequisites>
             <li>WNA_BasicRite</li>
         </researchPrerequisites>
+        <passability>Standable</passability>
+        <statBases>
+            <Flammability>0</Flammability>
+            <Mass>0</Mass>
+            <WorkToBuild>0</WorkToBuild>
+        </statBases>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+            <ai_chillDestination>false</ai_chillDestination>
+            <artificialForMeditationPurposes>true</artificialForMeditationPurposes>
+            <buildingTags>
+                <li>Production</li>
+            </buildingTags>
+        </building>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,0)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+        </placeWorkers>
     </ThingDef>
 
-    <ThingDef ParentName="WNA_RiteSpotBase">
+    <ThingDef ParentName="TODO_WNARiteSiteBase">
         <defName>WNA_RiteSpot_Cutter</defName>
         <label>ritespot</label>
         <description>there seems to be some mysterious ripples. this place should be a good place to make something split or break down.</description>
@@ -22,16 +54,62 @@
         <statBases>
             <WorkTableEfficiencyFactor>1.5</WorkTableEfficiencyFactor>
         </statBases>
-        <researchPrerequisites>
-            <li>WNA_BasicRite</li>
-        </researchPrerequisites>
         <recipes>
             <li>WNA_RiteBeastDivision</li>
             <li>WNA_RiteRebelStriving</li>
             <li>WNA_RiteAbleting</li>
             <li>Make_StoneBlocksAny</li>
             <li MayRequire="sarg.rimbees">WNA_RecipeAlphaBees</li>
+            <li MayRequire="sarg.rimbees">WNA_RecipeAlphaBeesToo</li>
         </recipes>
+    </ThingDef>
+
+
+    <ThingDef ParentName="BuildingBase" Name="WNA_MiscRiteSpellsBase" Abstract="true">
+        <designationCategory>WNA_MainCategory</designationCategory>
+		<terrainAffordanceNeeded/>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <useHitPoints>true</useHitPoints>
+        <tickerType>Normal</tickerType>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <passability>Standable</passability>
+        <size>(1,1)</size>
+        <soundImpactDefault/>
+    </ThingDef>
+    <ThingDef ParentName="WNA_MiscRiteSpellsBase">
+        <defName>WNA_Rite_FocusSpell</defName>
+        <label>focus spell</label>
+        <description>A simple rite that automatically runs. It can accumulate and form mana quickly, but won't last long.</description>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <Flammability>0</Flammability>
+            <Mass>0</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>1</WorkToBuild>
+        </statBases>
+        <graphicData>
+            <texPath>rite2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <researchPrerequisites>
+            <li>WNA_BasicRite</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Spawner">
+                <thingToSpawn>WNA_Focus</thingToSpawn>
+                <spawnCount>1</spawnCount>
+                <spawnIntervalRange>1~6</spawnIntervalRange>
+                <writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
+                <showMessageIfOwned>false</showMessageIfOwned>
+                <requiresPower>false</requiresPower>
+            </li>
+            <li Class="CompProperties_DestroyAfterDelay">
+                <delayTicks>2000</delayTicks>
+                <destroyMode>Vanish</destroyMode>
+                <countdownLabel>fade in</countdownLabel>
+            </li>
+        </comps>
     </ThingDef>
 
 </Defs>

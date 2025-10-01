@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- civil -->
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_Methanol</defName>
+        <label>methanol</label>
+        <description>The simplest alcohol, a very useful chemical substance, can be obtained by distilling wood, poisonous. DO remember that this is absolutely not for drinking.</description>
+        <graphicData>
+            <texPath>item/wna_methanol</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>3</MarketValue>
+        </statBases>
+    </ThingDef>
+    
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_Quicklime</defName>
+        <label>quicklime</label>
+        <description>A hardly soluble, highly alkaline substance, has much as wide applications as much as great potential hazards.</description>
+        <graphicData>
+            <texPath>item/wna_quicklime</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.5</MarketValue>
+        </statBases>
+    </ThingDef>
+    
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_MercuryVial</defName>
+        <label>mercury vial</label>
+        <description>An unique metal that usually appear as liquid. This substance easily volatile and it's steam is highly poisonous, so needs to be carefully contained or operated.</description>
+        <graphicData>
+            <texPath>item/wna_mercuryvial</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>8</MarketValue>
+        </statBases>
+    </ThingDef>
+    
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_Sulphur</defName>
+        <label>sulphur</label>
+        <description>Brittle yellow substance, toxic, smelly, and an essential component of living organisms. However this doesn't mean you should eat sulphur directly.</description>
+        <graphicData>
+            <texPath>item/wna_sulphur</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>3</MarketValue>
+        </statBases>
+    </ThingDef>
+    
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_Phosphorus</defName>
+        <label>white phosphorus</label>
+        <description>Very soft substance. This substance is very dangerous, highly toxic and highly flammable, makes it hard to believe that phosphorus is a vital component of life.</description>
+        <graphicData>
+            <texPath>item/wna_phosphorus</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <MarketValue>3</MarketValue>
+            <Flammability>100</Flammability>
+        </statBases>
+    </ThingDef>
+    
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_HalogenVial</defName>
+        <label>halogen vial</label>
+        <description>A mixture (maybe) of halogen contained in a vial. These substances are among the most active substances in the world, hard to handle, and very useful.</description>
+        <graphicData>
+            <texPath>item/wna_halogenvial</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>15</MarketValue>
+        </statBases>
+    </ThingDef>
+    
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_ParticleVial</defName>
+        <label>particle vial</label>
+        <description>Strange unstable particles found when mass is diluted into energy under certain conditions. Can be safely stored in a magnetic vial, just don't let this vial be destroyed.</description>
+        <graphicData>
+            <texPath>item/wna_particlevial</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <MarketValue>25</MarketValue>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>24.9</explosiveRadius>
+                <damageAmountBase>8000</damageAmountBase>
+                <explosiveDamageType>BombSuper</explosiveDamageType>
+                <explosiveExpandPerStackcount>1</explosiveExpandPerStackcount>
+                <startWickHitPointsPercent>0.4</startWickHitPointsPercent>
+                <chanceToStartFire>1</chanceToStartFire>
+                <damageFalloff>true</damageFalloff>
+                <explosionEffect>GiantExplosion</explosionEffect>
+                <explosionSound>Explosion_GiantBomb</explosionSound>
+                <wickTicks>60~120</wickTicks>
+                <preExplosionSpawnSingleThingDef>CraterLarge</preExplosionSpawnSingleThingDef>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_UraniumBattery</defName>
+        <label>vitalized uranium battery</label>
+        <description>Some uranium stored in a safe container. These uranium is vitalized by strange unstable particles, emitting great energy but will exaust quickly. Don't take it apart before it exausts entirely. You've been warned.</description>
+        <graphicData>
+            <texPath>item/wna_uraniumbattery</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MaxHitPoints>3000</MaxHitPoints>
+            <MarketValue>500</MarketValue>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>54.9</explosiveRadius>
+                <damageAmountBase>1000000</damageAmountBase>
+                <explosiveDamageType>BombSuper</explosiveDamageType>
+                <explosiveExpandPerStackcount>5</explosiveExpandPerStackcount>
+                <startWickHitPointsPercent>0.4</startWickHitPointsPercent>
+                <chanceToStartFire>1</chanceToStartFire>
+                <damageFalloff>true</damageFalloff>
+                <explosionEffect>GiantExplosion</explosionEffect>
+                <explosionSound>Explosion_GiantBomb</explosionSound>
+                <wickTicks>60~120</wickTicks>
+                <preExplosionSpawnSingleThingDef>CraterLarge</preExplosionSpawnSingleThingDef>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <!-- mili -->
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_FabricBaseboard</defName>
+        <label>attunement fabric baseboard</label>
+        <description>A baseboard used for replicating WNA's attunement fabric. In a remote place like rimworld, such thing is a must in fabric pruduction.</description>
+        <graphicData>
+            <texPath>item/wna_fabricbaseboard</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>100</MarketValue>
+        </statBases>
+    </ThingDef>
+    
+    <!-- wna -->
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_Focus</defName>
+        <label>focus</label>
+        <description>Attention, concentration. Focused and solidfied, and carefully contained for further use or preservation.</description>
+        <graphicData>
+            <texPath>item/wna_focus</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>0</MarketValue>
+        </statBases>
+    </ThingDef>
+</Defs>

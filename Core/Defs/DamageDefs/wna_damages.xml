@@ -9,9 +9,6 @@
         <isRanged>true</isRanged>
         <makesAnimalsFlee>true</makesAnimalsFlee>
         <impactSoundType>Bullet</impactSoundType>
-        <buildingDamageFactor>1</buildingDamageFactor>
-        <plantDamageFactor>1</plantDamageFactor>
-        <corpseDamageFactor>1</corpseDamageFactor>
     </DamageDef>
 
     <DamageDef ParentName="WNA_DamageBase">
@@ -24,9 +21,6 @@
         <isRanged>true</isRanged>
         <makesAnimalsFlee>true</makesAnimalsFlee>
         <impactSoundType>Bullet</impactSoundType>
-        <buildingDamageFactor>1</buildingDamageFactor>
-        <plantDamageFactor>1</plantDamageFactor>
-        <corpseDamageFactor>1</corpseDamageFactor>
         <additionalHediffs>
             <li>
                 <hediff>WNA_ScrapBuildup</hediff>
@@ -67,9 +61,9 @@
             </points>
         </cutExtraTargetsCurve>
         <cutCleaveBonus>1.4</cutCleaveBonus>
-        <buildingDamageFactor>20</buildingDamageFactor>
-        <plantDamageFactor>20</plantDamageFactor>
-        <corpseDamageFactor>20</corpseDamageFactor>
+        <buildingDamageFactor>60</buildingDamageFactor>
+        <plantDamageFactor>60</plantDamageFactor>
+        <corpseDamageFactor>60</corpseDamageFactor>
     </DamageDef>
     <ToolCapacityDef>
         <defName>WNA_KineCut</defName>
@@ -100,6 +94,9 @@
         <impactSoundType>Blunt</impactSoundType>
         <minDamageToFragment>15</minDamageToFragment>
         <defaultDamage>500</defaultDamage>
+        <buildingDamageFactor>60</buildingDamageFactor>
+        <plantDamageFactor>60</plantDamageFactor>
+        <corpseDamageFactor>60</corpseDamageFactor>
         <soundExplosion>Explosion_EMP</soundExplosion>
         <combatLogRules>Damage_Bomb</combatLogRules>
         <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
@@ -119,6 +116,9 @@
         <impactSoundType>Slice</impactSoundType>
         <minDamageToFragment>15</minDamageToFragment>
         <defaultDamage>999999</defaultDamage>
+        <buildingDamageFactor>100000</buildingDamageFactor>
+        <plantDamageFactor>100000</plantDamageFactor>
+        <corpseDamageFactor>100000</corpseDamageFactor>
         <soundExplosion>Explosion_Vaporize</soundExplosion>
         <combatLogRules>Damage_Bomb</combatLogRules>
         <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
@@ -148,8 +148,6 @@
         </cutExtraTargetsCurve>
         <cutCleaveBonus>1.4</cutCleaveBonus>
         <buildingDamageFactor>500</buildingDamageFactor>
-        <plantDamageFactor>2</plantDamageFactor>
-        <corpseDamageFactor>2</corpseDamageFactor>
     </DamageDef>
     <ToolCapacityDef>
         <defName>WNA_DemoCut</defName>
@@ -185,6 +183,9 @@
             </points>
         </cutExtraTargetsCurve>
         <cutCleaveBonus>1.4</cutCleaveBonus>
+        <buildingDamageFactor>100000</buildingDamageFactor>
+        <plantDamageFactor>100000</plantDamageFactor>
+        <corpseDamageFactor>100000</corpseDamageFactor>
         <additionalHediffs>
             <li>
                 <hediff>WNA_Corrosion</hediff>
@@ -226,6 +227,9 @@
             </points>
         </cutExtraTargetsCurve>
         <cutCleaveBonus>1.4</cutCleaveBonus>
+        <buildingDamageFactor>100000</buildingDamageFactor>
+        <plantDamageFactor>100000</plantDamageFactor>
+        <corpseDamageFactor>100000</corpseDamageFactor>
         <additionalHediffs>
             <li>
                 <hediff>WNA_Corrosion</hediff>
@@ -259,6 +263,9 @@
         <isRanged>true</isRanged>
         <makesAnimalsFlee>true</makesAnimalsFlee>
         <impactSoundType>Slice</impactSoundType>
+        <buildingDamageFactor>100000</buildingDamageFactor>
+        <plantDamageFactor>100000</plantDamageFactor>
+        <corpseDamageFactor>100000</corpseDamageFactor>
         <additionalHediffs>
             <li>
                 <hediff>WNA_Corrosion</hediff>
@@ -275,6 +282,9 @@
         <isExplosive>true</isExplosive>
         <makesAnimalsFlee>true</makesAnimalsFlee>
         <impactSoundType>Slice</impactSoundType>
+        <buildingDamageFactor>100000</buildingDamageFactor>
+        <plantDamageFactor>100000</plantDamageFactor>
+        <corpseDamageFactor>100000</corpseDamageFactor>
         <additionalHediffs>
             <li>
                 <hediff>WNA_Corrosion</hediff>

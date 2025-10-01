@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="WNA_ItemsBase">
-        <defName>WNA_Meal</defName>
+        <defName>WNA_Ration</defName>
         <label>WNA military ration</label>
         <description>Standard ration pack for Whelingnorther Alliance (especially for Whelingnorther Humanoid Revolt). Produced from highest quality materials - theoretically. Anything that contains nutrients can be used to make this ration if needed.</description>
         <graphicData>
-            <texPath>items/wna_meal</texPath>
+            <texPath>item/wna_ration</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.9</drawSize>
+            <drawSize>0.85</drawSize>
             <color>(255,255,255,250)</color>
         </graphicData>
         <statBases>
@@ -59,15 +59,15 @@
         <description>Medicines and tools packed together in WNA standard, processed from various possible materials. The process has gone through many improvements, thus minimum efforts can lead to maximum effects.</description>
         <thingClass>Medicine</thingClass>
         <graphicData>
-            <texPath>items/wna_medikit</texPath>
+            <texPath>item/wna_medikit</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.6</drawSize>
+            <drawSize>0.75</drawSize>
             <color>(255,255,255,250)</color>
         </graphicData>
         <statBases>
             <MarketValue>20</MarketValue>
             <MedicalPotency>255</MedicalPotency>
-            <MedicalQualityMax>99999</MedicalQualityMax>
+            <MedicalQualityMax>999999</MedicalQualityMax>
             <Mass>0.1</Mass>
         </statBases>
         <comps>
@@ -87,180 +87,5 @@
             <li>Medicine</li>
         </thingCategories>
         <orderedTakeGroup>Medicine</orderedTakeGroup>
-        <uiIconForStackCount>1</uiIconForStackCount>
-        <tickerType>Rare</tickerType>
     </ThingDef>
-
-    <!--<ThingDef ParentName="WNA_ItemsBase">
-        <defName>WNA_Madiewine</defName>
-        <label>WNA madiewine</label>
-        <description>An alcoholic beverage made from rice. Low alcohol content, and has a unique and pleasant flavo. It's bottle is also carefully designed and is just fine for casting a heavy blow. The technique to make such liquor is hardly known by others.</description>
-        <descriptionHyperlinks>
-            <HediffDef>AlcoholHigh</HediffDef>
-            <HediffDef>AlcoholTolerance</HediffDef>
-            <HediffDef>Hangover</HediffDef>
-            <HediffDef>AlcoholAddiction</HediffDef>
-            <HediffDef>Cirrhosis</HediffDef>
-            <HediffDef>ChemicalDamageModerate</HediffDef>
-        </descriptionHyperlinks>
-        <graphicData>
-            <texPath>items/wna_wine</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.8</drawSize>
-        </graphicData>
-        <equippedAngleOffset>-150</equippedAngleOffset>
-        <statBases>
-            <MarketValue>10</MarketValue>
-            <Nutrition>0.2</Nutrition>
-            <Mass>0.2</Mass>
-        </statBases>
-        <socialPropernessMatters>true</socialPropernessMatters>
-        <ingestible>
-            <preferability>NeverForNutrition</preferability>
-            <foodType>Fluid,Processed,Liquor</foodType>
-            <joyKind>Chemical</joyKind>
-            <joy>0.4</joy>
-            <nurseable>true</nurseable>
-            <drugCategory>Social</drugCategory>
-            <ingestSound>Ingest_Beer</ingestSound>
-            <ingestHoldOffsetStanding>
-                <northDefault>
-                    <offset>(0.18,0,0)</offset>
-                </northDefault>
-            </ingestHoldOffsetStanding>
-            <ingestCommandString>Drink {0}</ingestCommandString>
-            <ingestReportString>Drinking {0}.</ingestReportString>
-            <chairSearchRadius>25</chairSearchRadius>
-            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-            <tableDesired>false</tableDesired>
-            <tasteThought>WNA_AteMadiewine</tasteThought>
-            <outcomeDoers>
-                <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>WNA_Tipsy</hediffDef>
-                    <severity>0.5</severity>
-                </li>
-                <li Class="IngestionOutcomeDoer_OffsetNeed">
-                    <need>Joy</need>
-                    <offset>0.4</offset>
-                </li>
-            </outcomeDoers>
-        </ingestible>
-        <equipmentType>Primary</equipmentType>
-        <comps>
-            <li Class="CompProperties_Drug">
-                <chemical>Alcohol</chemical>
-                <listOrder>11</listOrder>
-				<overdoseSeverityOffset>0</overdoseSeverityOffset>
-                <addictiveness>0</addictiveness>
-            </li>
-            <li>
-                <compClass>CompEquippable</compClass>
-            </li>
-        </comps>
-        <weaponClasses>
-            <li>Melee</li>
-        </weaponClasses>
-        <weaponTags Inherit="false">
-            <li>WNATag_NotForUse</li>
-        </weaponTags>
-        <tools>
-            <li>
-                <label>bottle</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>20</power>
-                <cooldownTime>1</cooldownTime>
-            </li>
-        </tools>
-    </ThingDef>
-    <ThingDef ParentName="WNA_ItemsBase">
-        <defName>WNA_FlowerTea</defName>
-        <label>WNA flower tea</label>
-        <description>A tea made of carefully seleted and processed flower petals, first became famous for Saint Lia Sitalia, the founder and first Saint of WNA. This drink can help people found peace, and to some extent, prevent violent social conflicts.</description>
-        <graphicData>
-            <texPath>items/wna_tea</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.6</drawSize>
-        </graphicData>
-        <statBases>
-            <MarketValue>8</MarketValue>
-            <Nutrition>0.05</Nutrition>
-            <Mass>0.05</Mass>
-        </statBases>
-        <socialPropernessMatters>true</socialPropernessMatters>
-        <ingestible>
-            <preferability>NeverForNutrition</preferability>
-            <foodType>Fluid,Processed</foodType>
-            <joyKind>Gluttonous</joyKind>
-            <joy>0.3</joy>
-            <nurseable>true</nurseable>
-            <ingestCommandString>Drink {0}</ingestCommandString>
-            <ingestReportString>Drinking {0}.</ingestReportString>
-            <tasteThought>WNA_AteFlowerTea</tasteThought>
-            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-            <drugCategory>Social</drugCategory>
-			<ingestSound>Ingest_Drink</ingestSound>
-            <outcomeDoers>
-                <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>WNA_TeaBreak</hediffDef>
-                    <severity>0.5</severity>
-                </li>
-            </outcomeDoers>
-        </ingestible>
-        <comps>
-			<li Class="CompProperties_Drug">
-				<listOrder>12</listOrder>
-				<overdoseSeverityOffset>0</overdoseSeverityOffset>
-                <addictiveness>0</addictiveness>
-			</li>
-		</comps>
-    </ThingDef>
-    <ThingDef ParentName="WNA_ItemsBase">
-        <defName>WNA_Dessert</defName>
-        <label>WNA dessert</label>
-        <description>A small box of small colorful tasty balls, can provide lots of sugar for people. The technique to make such candy is hardly known by others.</description>
-        <graphicData>
-            <texPath>items/wna_dessert</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.6</drawSize>
-        </graphicData>
-        <statBases>
-            <MarketValue>15</MarketValue>
-            <Nutrition>1</Nutrition>
-            <Mass>0.1</Mass>
-        </statBases>
-        <socialPropernessMatters>true</socialPropernessMatters>
-        <ingestible>
-            <preferability>NeverForNutrition</preferability>
-            <foodType>Processed</foodType>
-            <joyKind>Gluttonous</joyKind>
-            <joy>1.0</joy>
-            <nurseable>true</nurseable>
-            <tasteThought>WNA_AteDessert</tasteThought>
-            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-            <drugCategory>Social</drugCategory>
-			<ingestSound>Ingest_Pill</ingestSound>
-            <outcomeDoers>
-                <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>WNA_SugarRush</hediffDef>
-                    <severity>0.75</severity>
-                </li>
-                <li Class="IngestionOutcomeDoer_OffsetNeed">
-                    <need>Rest</need>
-                    <offset>0.4</offset>
-                </li>
-                <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
-                  <offset>0.4</offset>
-                </li>
-            </outcomeDoers>
-        </ingestible>
-        <comps>
-			<li Class="CompProperties_Drug">
-				<listOrder>13</listOrder>
-				<overdoseSeverityOffset>0</overdoseSeverityOffset>
-                <addictiveness>0</addictiveness>
-			</li>
-		</comps>
-    </ThingDef>-->
 </Defs>
