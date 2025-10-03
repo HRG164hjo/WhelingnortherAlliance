@@ -490,7 +490,7 @@
             <ComponentIndustrial>4</ComponentIndustrial>
 	    </costList>
 		<comps>
-            <li Class="WNA.ThingCompProp.ShieldGenerator">
+            <li Class="WNA.ThingCompProp.CompShieldGenerator">
                 <ticksToReset>250</ticksToReset>
                 <energyMax>600</energyMax>
                 <energyLossPerHit>1</energyLossPerHit>
@@ -608,7 +608,7 @@
             <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
                 <hediff>WNA_ForceShield</hediff>
             </li>
-            <li Class="WNA.ThingCompProp.ShieldGenerator">
+            <li Class="WNA.ThingCompProp.CompShieldGenerator">
                 <shieldTexPath>others/wna_ironbubble</shieldTexPath>
                 <shieldColor>(1,1,1,1)</shieldColor>
             </li>
@@ -852,7 +852,7 @@
             <HemogenPack MayRequire="ludeon.rimworld.biotech">3</HemogenPack>
         </costList>
         <comps>
-            <li Class="WNA.ThingCompProp.ShieldGenerator">
+            <li Class="WNA.ThingCompProp.CompShieldGenerator">
                 <energyLossPerHit>0</energyLossPerHit>
                 <minDrawSize>2</minDrawSize>
                 <maxDrawSize>2</maxDrawSize>

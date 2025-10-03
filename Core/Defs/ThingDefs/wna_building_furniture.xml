@@ -164,107 +164,6 @@
         </building>
 	</ThingDef>
 
-    <ThingDef ParentName="WNA_FurnitureBase">
-		<defName>WNA_SingleBed</defName>
-		<label>velvet cushion</label>
-		<description>A small, plain, but unexpectedly comfortable bed.</description>
-		<thingClass>Building_Bed</thingClass>
-        <graphicData>
-			<texPath>buildings/misc/wnasinglebed</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>1</drawSize>
-		</graphicData>
-        <statBases>
-            <Comfort>40</Comfort>
-            <BedRestEffectiveness>5</BedRestEffectiveness>
-            <SurgerySuccessChanceFactor>5</SurgerySuccessChanceFactor>
-            <BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">5</BirthRitualQualityOffset>
-        </statBases>
-        <rotatable>true</rotatable>
-        <drawGUIOverlay>true</drawGUIOverlay>
-        <canOverlapZones>false</canOverlapZones>
-        <defaultPlacingRot>South</defaultPlacingRot>
-		<building>
-            <bed_showSleeperBody>false</bed_showSleeperBody>
-            <bed_crib MayRequire="Ludeon.RimWorld.Biotech">True</bed_crib>
-            <isSittable>true</isSittable>
-            <bed_DisplayOwnerType>true</bed_DisplayOwnerType>
-            <bed_emptyCountsForBarracks>true</bed_emptyCountsForBarracks>
-            <buildingTags>
-                <li>Bed</li>
-            </buildingTags>
-		</building>
-        <comps>
-            <li>
-                <compClass>CompQuality</compClass>
-            </li>
-            <li Class="CompProperties_AssignableToPawn">
-                <drawAssignmentOverlay>false</drawAssignmentOverlay>
-                <compClass>CompAssignableToPawn_Bed</compClass>
-            </li>
-            <li Class="CompProperties_AffectedByFacilities">
-                <linkableFacilities>
-                    <li>EndTable</li>
-                    <li>Dresser</li>
-                    <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
-                </linkableFacilities>
-            </li>
-        </comps>
-        <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
-        </placeWorkers>
-	</ThingDef>
-    <ThingDef ParentName="WNA_FurnitureBase">
-		<defName>WNA_DoubleBed</defName>
-		<label>velvet bed</label>
-		<description>A plain but unexpectedly comfortable bed, designed for a couple, even better for single.</description>
-		<thingClass>Building_Bed</thingClass>
-        <graphicData>
-			<texPath>buildings/misc/wnadoublebed</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>2</drawSize>
-		</graphicData>
-        <size>(2,2)</size>
-        <statBases>
-            <Comfort>40</Comfort>
-            <BedRestEffectiveness>5</BedRestEffectiveness>
-            <SurgerySuccessChanceFactor>5</SurgerySuccessChanceFactor>
-            <BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">5</BirthRitualQualityOffset>
-        </statBases>
-        <rotatable>true</rotatable>
-        <drawGUIOverlay>true</drawGUIOverlay>
-        <canOverlapZones>false</canOverlapZones>
-        <defaultPlacingRot>South</defaultPlacingRot>
-		<building>
-            <bed_showSleeperBody>false</bed_showSleeperBody>
-            <isSittable>true</isSittable>
-            <buildingTags>
-                <li>Bed</li>
-            </buildingTags>
-		</building>
-        <comps>
-            <li>
-                <compClass>CompQuality</compClass>
-            </li>
-            <li Class="CompProperties_AssignableToPawn">
-                <drawAssignmentOverlay>false</drawAssignmentOverlay>
-                <compClass>CompAssignableToPawn_Bed</compClass>
-            </li>
-            <li Class="CompProperties_AffectedByFacilities">
-                <linkableFacilities>
-                    <li>EndTable</li>
-                    <li>Dresser</li>
-                    <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
-                </linkableFacilities>
-            </li>
-        </comps>
-        <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
-        </placeWorkers>
-	</ThingDef>
-
     <DesignatorDropdownGroupDef>
         <defName>WNA_TorchGroup</defName>
     </DesignatorDropdownGroupDef>
@@ -415,4 +314,23 @@
         </comps>
         <specialDisplayRadius>5.0</specialDisplayRadius>
 	</ThingDef>-->
+
+    <!-- misc -->
+    <ThingDef ParentName="SleepingSpotBase">
+        <defName>WNA_SlotSleepSpot</defName>
+        <label>slot sleeping spot</label>
+        <description>a sleeping spot occupying 1 tile only.</description>
+        <designationCategory>WNA_MainCategory</designationCategory>
+        <graphicData>
+            <texPath>bedspot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.9,0.9)</drawSize>
+        </graphicData>
+        <uiIconPath>bedspot</uiIconPath>
+        <size>(1,1)</size>
+        <building>
+            <bed_showSleeperBody>false</bed_showSleeperBody>
+        </building>
+    </ThingDef>
+
 </Defs>

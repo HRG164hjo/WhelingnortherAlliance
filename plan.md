@@ -1,5 +1,8 @@
 #### Core:
 WIP code:
+- Patch_Refuelable
+- CompIsDevourer
+
 - ProjClass projs to simulate RA2 projectiles (TODO)
 - TechnoTypeIni.cs flags
 - Chrono moving and warping

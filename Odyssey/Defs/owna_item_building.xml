@@ -105,7 +105,7 @@
         <comps>
             <li Class="CompProperties_GravshipThruster">
                 <statOffsets>
-                    <GravshipRange>1600</GravshipRange>
+                    <GravshipRange>250</GravshipRange>
                 </statOffsets>
                 <componentTypeDef>Thruster</componentTypeDef>
                 <exclusionAreaSize>(0, 0, 0)</exclusionAreaSize>

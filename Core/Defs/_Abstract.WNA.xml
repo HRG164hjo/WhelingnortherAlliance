@@ -83,6 +83,8 @@
         <allowOldAgeInjuries>false</allowOldAgeInjuries>
         <destroyGearOnDrop>false</destroyGearOnDrop>
         <canStrip>false</canStrip>
+        <canOpenAnyDoor>true</canOpenAnyDoor>
+        <ignoresPainShock>true</ignoresPainShock>
         <initialWillRange>200~300</initialWillRange>
         <initialResistanceRange>200~300</initialResistanceRange>
         <royalTitleChance>0</royalTitleChance>
@@ -190,7 +192,7 @@
         </skillRequirements>
     </RecipeDef>
 
-    <RecipeDef Abstract="True" Name="WNA_SurgeriesBase">
+    <RecipeDef Abstract="True" Name="WNA_SurgeryBase">
         <surgeryOutcomeEffect IsNull="True"/>
         <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
         <workSkill>Intellectual</workSkill>
@@ -205,8 +207,6 @@
         <workAmount>1</workAmount>
         <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
 		<recipeUsers>
-			<li>WNA_WNThan</li>
-			<li>WNA_Human</li>
 			<li>Human</li>
 			<li MayRequire="ludeon.rimworld.anomaly">CreepJoiner</li>
 		</recipeUsers>

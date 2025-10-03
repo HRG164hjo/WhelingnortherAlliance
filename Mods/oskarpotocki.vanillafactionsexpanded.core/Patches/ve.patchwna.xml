@@ -100,7 +100,6 @@
 			<li Class="VEF.Apparels.ApparelExtension">
 				<equippedStatFactors>
                     <AimingDelayFactor>0</AimingDelayFactor>
-                    <VEF_VerbRangeFactor>2</VEF_VerbRangeFactor>
 				</equippedStatFactors>
 				<pawnCapacityMinLevels>
 					<li>
@@ -120,7 +119,6 @@
         <value>
 			<li Class="VEF.Apparels.ApparelExtension">
 				<equippedStatFactors>
-                    <VEF_VerbCooldownFactor>0</VEF_VerbCooldownFactor>
                     <MeleeDamageFactor>50</MeleeDamageFactor>
                     <VEF_RangeAttackDamageFactor>50</VEF_RangeAttackDamageFactor>
                     <FilthRate>0</FilthRate>
@@ -253,17 +251,6 @@
 						<minLevel>1</minLevel>
 					</li>
 				</pawnCapacityMinLevels>
-			</li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAddModExtension">
-        <xpath>Defs/ThingDef[defName="WNA_AmmoLoader"]</xpath>
-        <value>
-			<li Class="VEF.Apparels.ApparelExtension">
-                <equippedStatFactors>
-					<VEF_VerbRangeFactor>1.5</VEF_VerbRangeFactor>
-				</equippedStatFactors>
 			</li>
         </value>
     </Operation>

@@ -12,6 +12,12 @@
         <workAmount>60</workAmount>
         <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
         <surgeryOutcomeEffect IsNull="True"/>
+		<recipeUsers>
+			<li>WNA_WNThan</li>
+			<li>WNA_Human</li>
+			<li>Human</li>
+			<li MayRequire="ludeon.rimworld.anomaly">CreepJoiner</li>
+		</recipeUsers>
         <ingredients>
             <li>
                 <filter>
@@ -29,7 +35,7 @@
         </fixedIngredientFilter>
     </RecipeDef>
 
-    <RecipeDef ParentName="WNA_SurgeriesBase">
+    <RecipeDef ParentName="WNA_SurgeryBase">
         <defName>WNA_Inspection</defName>
         <label>psychic inspection</label>
         <description>Inspect target with one's psychic power, faster and no medicine is required. This technique requires basic level of intelligence.</description>
@@ -38,62 +44,43 @@
         <hideBodyPartNames>true</hideBodyPartNames>
         <targetsBodyPart>false</targetsBodyPart>
         <uiIconPath>UI/Icons/SurgicalInspection</uiIconPath>
+		<recipeUsers>
+			<li>WNA_WNThan</li>
+			<li>WNA_Human</li>
+			<li>Human</li>
+			<li MayRequire="ludeon.rimworld.anomaly">CreepJoiner</li>
+		</recipeUsers>
         <skillRequirements>
             <Intellectual>4</Intellectual>
         </skillRequirements>
         <workAmount>60</workAmount>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
-
-    <!--<RecipeDef ParentName="WNA_SurgeriesBase">
-        <defName>WNA_Disabling</defName>
-        <label>disabling</label>
-        <description>Make a victim totally disabled, from mobility to skills, by violence means. No victims would like it.</description>
+    
+    <RecipeDef ParentName="WNA_SurgeryBase">
+        <defName>WNA_VoidDive</defName>
+        <label>void dive</label>
+        <description>force a human into deep coma and turn them into a anchor. the victim must be sober to face the void, thus voidsteel can be drained through them while they're struggling to awake, to escape, or doing anything else, before their consciousness finally fades.</description>
         <workerClass>Recipe_AddHediff</workerClass>
-        <jobString>Disabling TargetA.</jobString>
+        <jobString>Forcing void dive on TargetA.</jobString>
         <hideBodyPartNames>true</hideBodyPartNames>
         <targetsBodyPart>false</targetsBodyPart>
-        <isViolation>true</isViolation>
-		<recipeUsers Inherit="false">
-			<li>Human</li>
-			<li MayRequire="ludeon.rimworld.anomaly">CreepJoiner</li>
-		</recipeUsers>
-        <skillRequirements>
-            <Melee>4</Melee>
-        </skillRequirements>
-        <addsHediff>WNA_Disabled</addsHediff>
-        <workAmount>800</workAmount>
-    </RecipeDef>
-    <RecipeDef ParentName="WNA_SurgeriesBase">
-        <defName>sWNA_Disabling</defName>
-        <label>reabling</label>
-        <description>Give someone medical care in order to get them out of disabled state.</description>
-        <workerClass>Recipe_RemoveHediff</workerClass>
-        <jobString>reabling TargetA.</jobString>
-        <hideBodyPartNames>true</hideBodyPartNames>
-        <targetsBodyPart>false</targetsBodyPart>
-		<recipeUsers Inherit="false">
-			<li>Human</li>
-		</recipeUsers>
-        <skillRequirements>
-            <Medicine>4</Medicine>
-        </skillRequirements>
+        <workAmount>300</workAmount>
         <ingredients>
             <li>
                 <filter>
-                    <thingDefs>
-                        <li>WNA_Medikit</li>
-                    </thingDefs>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
                 </filter>
-                <count>1</count>
+                <count>2</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
-            <thingDefs>
-                <li>WNA_Medikit</li>
-            </thingDefs>
+            <categories>
+                <li>Medicine</li>
+            </categories>
         </fixedIngredientFilter>
-        <removesHediff>WNA_Disabled</removesHediff>
-        <workAmount>2000</workAmount>
-    </RecipeDef>-->
+        <addsHediff>WNA_VoidDiver</addsHediff>
+    </RecipeDef>
 </Defs>

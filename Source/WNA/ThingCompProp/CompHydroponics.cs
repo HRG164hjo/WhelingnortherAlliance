@@ -308,7 +308,7 @@ namespace WNA.ThingCompProp
                 Messages.Message("WNA_NoAvailableColonistForAdjustment".Translate(), MessageTypeDefOf.NeutralEvent, false);
                 return;
             }
-            Job job = JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("WNA_AdjustHydroponics"), parent);
+            Job job = JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("WNA_Job_AdjustHydroponics"), parent);
             actor.jobs.TryTakeOrderedJob(job, JobTag.Misc);
         }
         public void GenerateCropMenu()

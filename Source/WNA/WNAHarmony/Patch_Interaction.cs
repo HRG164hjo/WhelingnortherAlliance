@@ -7,16 +7,17 @@ namespace WNA.WNAHarmony
 {
     public class Patch_Interaction
     {
+        private static bool HasValidIdeo(Pawn pawn)
+        {
+            return pawn.Ideo?.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) ?? false;
+        }
         [HarmonyPatch(typeof(InteractionWorker_Breakup), "RandomSelectionWeight")]
         public class Patch_Breakup
         {
             [HarmonyPostfix]
             private static void PostFix(ref float __result, Pawn initiator)
             {
-                if (initiator.Ideo?.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) == true)
-                {
-                    __result = 0f;
-                }
+                if (HasValidIdeo(initiator)) __result = 0f;
             }
         }
         [HarmonyPatch(typeof(InteractionWorker_ConvertIdeoAttempt), "RandomSelectionWeight")]
@@ -27,14 +28,10 @@ namespace WNA.WNAHarmony
             {
                 if (__result != 0f && initiator.Ideo != null && recipient.Ideo != null)
                 {
-                    if (initiator.Ideo.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) && recipient.Ideo.HasPrecept(WNAMainDefOf.WNA_P_Proselyte))
-                    {
-                        __result = 0f;
-                    }
-                    else if (initiator.Ideo.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) && !recipient.Ideo.HasPrecept(WNAMainDefOf.WNA_P_Proselyte))
-                    {
-                        __result *= 1000f;
-                    }
+                    bool init = HasValidIdeo(initiator);
+                    bool reci = HasValidIdeo(recipient);
+                    if (init && reci) __result = 0f;
+                    else if (init && !reci) __result *= 9999f;
                 }
             }
         }
@@ -44,10 +41,7 @@ namespace WNA.WNAHarmony
             [HarmonyPostfix]
             private static void PostFix(ref float __result, Pawn initiator)
             {
-                if (initiator.Ideo?.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) == true)
-                {
-                    __result = 1f;
-                }
+                if (HasValidIdeo(initiator)) __result = 1f;
             }
         }
         [HarmonyPatch(typeof(InteractionWorker_InhumanRambling), "RandomSelectionWeight")]
@@ -56,10 +50,7 @@ namespace WNA.WNAHarmony
             [HarmonyPostfix]
             private static void PostFix(ref float __result, Pawn initiator)
             {
-                if (initiator.Ideo?.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) == true)
-                {
-                    __result = 0f;
-                }
+                if (HasValidIdeo(initiator)) __result = 0f;
             }
         }
         [HarmonyPatch(typeof(InteractionWorker_Insult), "RandomSelectionWeight")]
@@ -68,10 +59,7 @@ namespace WNA.WNAHarmony
             [HarmonyPostfix]
             private static void PostFix(ref float __result, Pawn initiator)
             {
-                if (initiator.Ideo?.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) == true)
-                {
-                    __result = 0f;
-                }
+                if (HasValidIdeo(initiator)) __result = 0f;
             }
         }
         [HarmonyPatch(typeof(InteractionWorker_KindWords), "RandomSelectionWeight")]
@@ -80,10 +68,7 @@ namespace WNA.WNAHarmony
             [HarmonyPostfix]
             private static void PostFix(ref float __result, Pawn initiator)
             {
-                if (initiator.Ideo?.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) == true)
-                {
-                    __result = 0.5f;
-                }
+                if (HasValidIdeo(initiator)) __result = 1f;
             }
         }
         [HarmonyPatch(typeof(InteractionWorker_MarriageProposal), "RandomSelectionWeight")]
@@ -92,10 +77,7 @@ namespace WNA.WNAHarmony
             [HarmonyPostfix]
             private static void PostFix(ref float __result, Pawn initiator)
             {
-                if (initiator.Ideo?.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) == true)
-                {
-                    __result = 0f;
-                }
+                if (HasValidIdeo(initiator)) __result = 0f;
             }
         }
         [HarmonyPatch(typeof(InteractionWorker_RomanceAttempt), "RandomSelectionWeight")]
@@ -104,10 +86,7 @@ namespace WNA.WNAHarmony
             [HarmonyPostfix]
             private static void PostFix(ref float __result, Pawn initiator)
             {
-                if (initiator.Ideo?.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) == true)
-                {
-                    __result = 0f;
-                }
+                if (HasValidIdeo(initiator)) __result = 0f;
             }
         }
         [HarmonyPatch(typeof(InteractionWorker_Slight), "RandomSelectionWeight")]
@@ -116,10 +95,7 @@ namespace WNA.WNAHarmony
             [HarmonyPostfix]
             private static void PostFix(ref float __result, Pawn initiator)
             {
-                if (initiator.Ideo?.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) == true)
-                {
-                    __result = 0f;
-                }
+                if (HasValidIdeo(initiator)) __result = 0f;
             }
         }
     }

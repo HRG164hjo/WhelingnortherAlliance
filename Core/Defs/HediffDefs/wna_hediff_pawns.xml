@@ -13,6 +13,7 @@
         <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
         <preventsPregnancy>true</preventsPregnancy>
         <preventsLungRot>true</preventsLungRot>
+        <preventsDeath>true</preventsDeath>
         <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
         <allowedMeditationFocusTypes>
           <li>Void</li>

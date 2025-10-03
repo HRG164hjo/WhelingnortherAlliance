@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <RecipeDef ParentName="WNA_SurgeriesBase">
+    <RecipeDef ParentName="WNA_SurgeryBase">
         <defName>WNA_HalfbeingInfusion</defName>
         <label>halfbeing infusion</label>
         <description>Turn a person into a strong alive corpse.</description>

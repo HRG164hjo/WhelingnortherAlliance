@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThoughtDef>
+        <defName>WNA_FacingVoid</defName>
+        <developmentalStageFilter>Baby,Child,Adult</developmentalStageFilter>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>WNA_VoidDiver</hediff>
+        <stages>
+            <li>
+                <label>bad dream</label>
+                <description>everything i can feel is black or empty, is this a nightmare?</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+            <li>
+                <label>it's dark here</label>
+                <description>everything i can feel is black or empty, is this a nightmare?</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+            <li>
+                <label>it's so dark here</label>
+                <description>everything i can feel is black or empty, it's a nightmare, I want to wake up</description>
+                <baseMoodEffect>-15</baseMoodEffect>
+            </li>
+            <li>
+                <label>unusually dark</label>
+                <description>it's so dark and empty here! I'm feeling bad! I want to wake up!</description>
+                <baseMoodEffect>-20</baseMoodEffect>
+            </li>
+            <li>
+                <label>abnormally dark</label>
+                <description>it's so dark and empty here! I'm afraid! why can't I wake up?</description>
+                <baseMoodEffect>-40</baseMoodEffect>
+            </li>
+            <li>
+                <label>facing the void</label>
+                <description>I can feel nothing, dark and void is all I can sense, what the hell is happening to me?!</description>
+                <baseMoodEffect>-60</baseMoodEffect>
+            </li>
+            <li>
+                <label>lost in the void</label>
+                <description>I can feel nothing, even my sense of myself is fading! I'm going to lost!</description>
+                <baseMoodEffect>-999</baseMoodEffect>
+            </li>
+            <li>
+                <label>doomed</label>
+                <description>help! help! get me out! somebody please wake me up! I don't want to die here!</description>
+                <baseMoodEffect>-9999</baseMoodEffect>
+            </li>
+            <li>
+                <label>HELP</label>
+                <description>HELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELP</description>
+                <baseMoodEffect>-9999</baseMoodEffect>
+            </li>
+            <li>
+                <label>help...</label>
+                <description>help...help.....help....help......</description>
+                <baseMoodEffect>-9999</baseMoodEffect>
+            </li>
+            <li>
+                <label>...</label>
+                <description>...</description>
+                <baseMoodEffect>-9999</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

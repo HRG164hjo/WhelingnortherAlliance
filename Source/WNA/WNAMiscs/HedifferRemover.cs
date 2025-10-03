@@ -12,7 +12,8 @@ namespace WNA.WNAMiscs
                 "DarkPsychicShock",
                 "CubeInterest",
                 "CubeWithdrawal",
-                "MetalhorrorImplant"
+                "MetalhorrorImplant",
+                "WNA_VoidDiver"
             };
         private static readonly HashSet<string> validPawn = new HashSet<string>
             {

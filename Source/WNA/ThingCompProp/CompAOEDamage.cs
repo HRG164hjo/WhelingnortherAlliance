@@ -15,6 +15,7 @@ namespace WNA.ThingCompProp
         public int update = 60;
         public bool affectArea = false;
         public bool affectRoof = false;
+        public bool affectPrisoner = false;
 
         public CompAOEDamage()
         {
@@ -77,7 +78,10 @@ namespace WNA.ThingCompProp
         {
             if (!(thing.def.useHitPoints || thing is Pawn)) return false;
             if (parent.Faction == null || thing.Faction == null) return false;
-            return thing.Faction.HostileTo(parent.Faction);
+            bool isHostile = thing.Faction.HostileTo(parent.Faction);
+            if (thing is Pawn pawn && !Props.affectPrisoner)
+                if (!isHostile && pawn.IsPrisonerOfColony) return false;
+            return isHostile;
         }
         protected void DoEffect(Thing thing)
         {

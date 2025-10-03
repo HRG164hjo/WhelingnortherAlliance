@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<JobDef>
-		<defName>WNA_AdjustHydroponics</defName>
+		<defName>WNA_Job_AdjustHydroponics</defName>
 		<driverClass>WNA.JobDriverClass.AdjustHydroponics</driverClass>
-		<reportString>Adjusting hydroponics basin.</reportString>
+		<reportString>adjusting hydroponics basin.</reportString>
 		<casualInterruptible>false</casualInterruptible>
     </JobDef>
 </Defs>
