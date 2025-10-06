@@ -61,7 +61,6 @@
 		<race>
 			<foodType>OmnivoreAnimal,OvivoreAnimal</foodType>
             <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
-			<baseBodySize>4</baseBodySize>
 			<baseHungerRate>1</baseHungerRate>	
 		</race>
         <comps>

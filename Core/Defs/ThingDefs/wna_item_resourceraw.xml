@@ -55,6 +55,9 @@
         <statBases>
             <MarketValue>3</MarketValue>
         </statBases>
+        <deepCommonality>0.4</deepCommonality>
+        <deepCountPerPortion>30</deepCountPerPortion>
+        <deepLumpSizeRange>3~5</deepLumpSizeRange>
     </ThingDef>
     
     <ThingDef ParentName="WNA_ItemsBase">
@@ -72,6 +75,9 @@
             <MarketValue>3</MarketValue>
             <Flammability>100</Flammability>
         </statBases>
+        <deepCommonality>0.4</deepCommonality>
+        <deepCountPerPortion>30</deepCountPerPortion>
+        <deepLumpSizeRange>8~12</deepLumpSizeRange>
     </ThingDef>
     
     <ThingDef ParentName="WNA_ItemsBase">

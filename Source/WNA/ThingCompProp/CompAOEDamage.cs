@@ -80,7 +80,7 @@ namespace WNA.ThingCompProp
             if (parent.Faction == null || thing.Faction == null) return false;
             bool isHostile = thing.Faction.HostileTo(parent.Faction);
             if (thing is Pawn pawn && !Props.affectPrisoner)
-                if (!isHostile && pawn.IsPrisonerOfColony) return false;
+                if (pawn.IsPrisonerOfColony) return false;
             return isHostile;
         }
         protected void DoEffect(Thing thing)

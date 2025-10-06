@@ -87,6 +87,13 @@
 	    <xpath>Defs/TerrainDef/changeable</xpath>
     </Operation>
     
+    <Operation Class="PatchOperationRemove">
+	    <xpath>Defs/ThingDef/plant/interferesWithRoof</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+	    <xpath>Defs/ThingDef/plant/blockAdjacentSow</xpath>
+    </Operation>
+    
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThingDef[defName="Plant_Agave"]/plant</xpath>
         <value>
@@ -99,6 +106,18 @@
     
     <Operation Class="PatchOperationRemove">
 	    <xpath>Defs/ThingDef[defName="DeepDrill"]/placeWorkers/li[text()="PlaceWorker_InvalidOverSubstructure"]</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+	    <xpath>Defs/ThingDef[defName="GroundPenetratingScanner"]/placeWorkers/li[text()="PlaceWorker_NotUnderRoof"]</xpath>
+    </Operation>
+    
+    <Operation Class="PatchOperationAddModExtension">
+	    <xpath>Defs/ThingDef[defName="Human"]</xpath>
+        <value>
+            <li Class="WNA.DMExtension.MassCapacity">
+				<massCapacity>150</massCapacity>
+			</li>
+        </value>
     </Operation>
     
 </Patch>

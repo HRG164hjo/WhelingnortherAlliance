@@ -12,6 +12,7 @@ namespace WNA.HediffClass
         private int spawnTimes = 0;
         private const float maxSeverity = 10f;
         private float severityLevel;
+        private Mote mote;
         public override void PostMake()
         {
             base.PostMake();
@@ -23,6 +24,13 @@ namespace WNA.HediffClass
             base.PostTickInterval(delta);
             if (pawn.Destroyed || pawn.Dead) return;
             spawnInterval -= delta;
+            float yOffset = (float)(pawn.Position.x % 2 + pawn.Position.z % 2) / 10f;
+            if (mote == null || mote.Destroyed)
+            {
+                mote = MoteMaker.MakeAttachedOverlay(pawn, ThingDefOf.Mote_PsyfocusPulse, Vector3.zero);
+                mote.yOffset = yOffset;
+            }
+            mote.Maintain();
             if (spawnInterval <= 0)
             {
                 SpawnResource();

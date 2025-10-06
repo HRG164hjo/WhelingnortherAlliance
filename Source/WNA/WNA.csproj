@@ -81,6 +81,7 @@
     <Compile Include="JobDriverClass\AdjustHydroponics.cs" />
     <Compile Include="Recipe\HalfbeingInfusion.cs" />
     <Compile Include="TargetEffect\Ascension.cs" />
+    <Compile Include="ThingClass\Barrier.cs" />
     <Compile Include="ThingClass\SpikeTrap.cs" />
     <Compile Include="ThingCompProp\CompAOEDamage.cs" />
     <Compile Include="ThingCompProp\CompApparelEquipHediff.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="ThingCompProp\CompShieldGenerator.cs" />
     <Compile Include="ThingCompProp\CompThingSelfHeal.cs" />
     <Compile Include="WNADefOf\WNAMainDefOf.cs" />
+    <Compile Include="WNADefOf\WNASubDefOf.cs" />
     <Compile Include="WNAHarmony\Patch_CompTransporter.cs" />
     <Compile Include="WNAHarmony\Patch_JobMaditate.cs" />
     <Compile Include="WNAHarmony\Patch_KillDownUtility.cs" />

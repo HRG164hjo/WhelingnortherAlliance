@@ -10,16 +10,9 @@
             <li>
                 <filter>
                     <thingDefs>
+                        <li>Steel</li>
                         <li>Silver</li>
                         <li>Gold</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Steel</li>
                     </thingDefs>
                 </filter>
                 <count>30</count>
@@ -27,9 +20,9 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
+                <li>Steel</li>
                 <li>Silver</li>
                 <li>Gold</li>
-                <li>Steel</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
@@ -121,6 +114,8 @@
                 <filter>
                     <thingDefs>
                         <li>Steel</li>
+                        <li>Silver</li>
+                        <li>Gold</li>
                     </thingDefs>
                 </filter>
                 <count>25</count>
@@ -138,6 +133,8 @@
             <thingDefs>
                 <li>WNA_Quicklime</li>
                 <li>Steel</li>
+                <li>Silver</li>
+                <li>Gold</li>
             </thingDefs>
             <categories>
                 <li>StoneChunks</li>
@@ -149,6 +146,7 @@
         <workAmount>500</workAmount>
         <recipeUsers>
 	        <li>ElectricSmelter</li>
+	        <li>ElectricCrematorium</li>
 	    </recipeUsers>
         <researchPrerequisite/>
     </RecipeDef>
@@ -170,6 +168,8 @@
                 <filter>
                     <thingDefs>
                         <li>Steel</li>
+                        <li>Silver</li>
+                        <li>Gold</li>
                     </thingDefs>
                 </filter>
                 <count>25</count>
@@ -181,6 +181,7 @@
                     </categories>
                     <thingDefs>
                         <li>Jade</li>
+                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                         <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
                     </thingDefs>
@@ -192,7 +193,10 @@
             <thingDefs>
                 <li>WNA_Quicklime</li>
                 <li>Steel</li>
+                <li>Silver</li>
+                <li>Gold</li>
                 <li>Jade</li>
+                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                 <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
             </thingDefs>
@@ -206,6 +210,7 @@
         <workAmount>500</workAmount>
         <recipeUsers>
 	        <li>ElectricSmelter</li>
+	        <li>ElectricCrematorium</li>
 	    </recipeUsers>
         <researchPrerequisite/>
     </RecipeDef>
@@ -220,6 +225,8 @@
                 <filter>
                     <thingDefs>
                         <li>Steel</li>
+                        <li>Silver</li>
+                        <li>Gold</li>
                     </thingDefs>
                 </filter>
                 <count>75</count>
@@ -244,6 +251,8 @@
         <fixedIngredientFilter>
             <thingDefs>
                 <li>Steel</li>
+                <li>Silver</li>
+                <li>Gold</li>
                 <li>Uranium</li>
                 <li>Plasteel</li>
             </thingDefs>
@@ -268,18 +277,11 @@
                 <filter>
                     <thingDefs>
                         <li>Steel</li>
-                    </thingDefs>
-                </filter>
-                <count>75</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
                         <li>Silver</li>
                         <li>Gold</li>
                     </thingDefs>
                 </filter>
-                <count>20</count>
+                <count>75</count>
             </li>
             <li>
                 <filter>
@@ -319,18 +321,11 @@
                 <filter>
                     <thingDefs>
                         <li>Steel</li>
-                    </thingDefs>
-                </filter>
-                <count>75</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
                         <li>Silver</li>
                         <li>Gold</li>
                     </thingDefs>
                 </filter>
-                <count>20</count>
+                <count>75</count>
             </li>
             <li>
                 <filter>
@@ -339,6 +334,7 @@
                     </categories>
                     <thingDefs>
                         <li>Jade</li>
+                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                         <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
                     </thingDefs>
@@ -352,6 +348,7 @@
                 <li>Silver</li>
                 <li>Gold</li>
                 <li>Jade</li>
+                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                 <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
             </thingDefs>

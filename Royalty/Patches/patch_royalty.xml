@@ -32,5 +32,24 @@
 			<paintable>true</paintable>
         </value>
     </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="Drape"]</xpath>
+        <value>
+			<comps>
+                <li>
+                    <compClass>CompQuality</compClass>
+                </li>
+            </comps>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[@Name="ThroneBase"]/comps</xpath>
+        <value>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+        </value>
+    </Operation>
 
 </Patch>

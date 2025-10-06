@@ -4,10 +4,11 @@
         <defName>WNA_VoidDiver</defName>
         <label>void diver</label>
         <hediffClass>WNA.HediffClass.VoidDrainer</hediffClass>
-        <description>This pawn is forced t dive into their deepest consciousness where nothing exists, to face the pure void. They may finally fade, but before their life terminates precious voidsteel can be drained through them from the void.</description>
+        <description>This pawn is forced to dive into their deepest consciousness where nothing exists, to face the pure void. They may finally fade, but before their life terminates precious voidsteel can be drained through them from the void.</description>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>
         <blocksSocialInteraction>true</blocksSocialInteraction>
+        <blocksSleeping>true</blocksSleeping>
         <preventsCrawling>true</preventsCrawling>
         <initialSeverity>0.01</initialSeverity>
         <maxSeverity>10</maxSeverity>
@@ -20,7 +21,6 @@
             <li>
                 <minSeverity>0.01</minSeverity>
                 <hungerRateFactor>0</hungerRateFactor>
-                <restFallFactor>300</restFallFactor>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -51,7 +51,6 @@
             <li>
                 <minSeverity>1</minSeverity>
                 <hungerRateFactor>0</hungerRateFactor>
-                <restFallFactor>300</restFallFactor>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -82,7 +81,6 @@
             <li>
                 <minSeverity>2</minSeverity>
                 <hungerRateFactor>0</hungerRateFactor>
-                <restFallFactor>300</restFallFactor>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -113,7 +111,6 @@
             <li>
                 <minSeverity>3</minSeverity>
                 <hungerRateFactor>0</hungerRateFactor>
-                <restFallFactor>300</restFallFactor>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -144,7 +141,6 @@
             <li>
                 <minSeverity>4</minSeverity>
                 <hungerRateFactor>0</hungerRateFactor>
-                <restFallFactor>300</restFallFactor>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -175,7 +171,6 @@
             <li>
                 <minSeverity>5</minSeverity>
                 <hungerRateFactor>0</hungerRateFactor>
-                <restFallFactor>300</restFallFactor>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -206,7 +201,6 @@
             <li>
                 <minSeverity>6</minSeverity>
                 <hungerRateFactor>0</hungerRateFactor>
-                <restFallFactor>300</restFallFactor>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -237,7 +231,6 @@
             <li>
                 <minSeverity>7</minSeverity>
                 <hungerRateFactor>0</hungerRateFactor>
-                <restFallFactor>300</restFallFactor>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -268,7 +261,6 @@
             <li>
                 <minSeverity>8</minSeverity>
                 <hungerRateFactor>0</hungerRateFactor>
-                <restFallFactor>300</restFallFactor>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -299,7 +291,6 @@
             <li>
                 <minSeverity>9</minSeverity>
                 <hungerRateFactor>0</hungerRateFactor>
-                <restFallFactor>300</restFallFactor>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -330,7 +321,6 @@
             <li>
                 <minSeverity>10</minSeverity>
                 <hungerRateFactor>0</hungerRateFactor>
-                <restFallFactor>300</restFallFactor>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>

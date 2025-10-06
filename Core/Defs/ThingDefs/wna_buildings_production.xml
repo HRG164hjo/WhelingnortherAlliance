@@ -9,7 +9,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
             <drawRotated>false</drawRotated>
             <drawSize>(2.0,2.0)</drawSize>
-            <color>(200,200,200,200)</color>
+            <color>(200,200,200,192)</color>
 		</graphicData>
         <size>(2,2)</size>
 		<passability>PassThroughOnly</passability>

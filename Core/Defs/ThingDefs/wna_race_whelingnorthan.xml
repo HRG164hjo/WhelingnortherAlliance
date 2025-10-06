@@ -596,7 +596,7 @@
                 <movementDef>WNA_Movement</movementDef>
             </li>
 			<li Class="WNA.DMExtension.MassCapacity">
-				<massCapacity>35000</massCapacity>
+				<massCapacity>1000000</massCapacity>
 			</li>
             <li Class="WNA.DMExtension.KillDownUtility">
                 <minCapacities>

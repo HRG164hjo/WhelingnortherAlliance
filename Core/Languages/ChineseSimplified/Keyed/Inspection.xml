@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<WNA.Recipe.Inspection.LetterLabel>检查报告</WNA.Recipe.Inspection.LetterLabel>
+	<WNA.Recipe.Inspection.None>{PAWN}没有需要特别关注的健康状况.</WNA.Recipe.Inspection.None>
+	<WNA.Recipe.Inspection.Visible>{PAWN}有以下特殊的健康状况:</WNA.Recipe.Inspection.Visible>
+	<WNA.Recipe.Inspection.Hidden>{PAWN}有以下隐藏的健康状况:</WNA.Recipe.Inspection.Hidden>
+
+</LanguageData>

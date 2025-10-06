@@ -238,7 +238,7 @@
 			<texPath>buildings/misc/wna_torch</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
             <drawRotated>false</drawRotated>
-            <color>(55,55,55,200)</color>
+            <color>(55,55,55,192)</color>
 		</graphicData>
         <statBases>
             <MeditationFocusStrength>8</MeditationFocusStrength>

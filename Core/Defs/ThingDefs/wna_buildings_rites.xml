@@ -9,7 +9,7 @@
             <texPath>rite</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(1,1)</drawSize>
-            <color>(200,200,200,200)</color>
+            <color>(200,200,200,192)</color>
         </graphicData>
         <altitudeLayer>FloorEmplacement</altitudeLayer>
         <researchPrerequisites>

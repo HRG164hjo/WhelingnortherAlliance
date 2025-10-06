@@ -16,7 +16,7 @@
 		<graphicData>
 			<texPath>buildings/atlas/wna_wall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<color>(255,255,255,200)</color>
+			<color>(255,255,255,192)</color>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
 				<li>Wall</li>
@@ -54,7 +54,7 @@
 		<graphicData>
 			<texPath>buildings/atlas/wna_grid_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<color>(255,255,255,200)</color>
+			<color>(255,255,255,192)</color>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
 				<li>Wall</li>
@@ -91,29 +91,25 @@
 		<defName>WNA_BaseDoor</defName>
 		<label>WNA standard door</label>
 		<description>Form a door from nothing. This technique is hardly known by outsiders.</description>
-		<thingClass>Building_Door</thingClass>
-		<altitudeLayer>DoorMoveable</altitudeLayer>
+        <thingClass>WNA.ThingClass.Barrier</thingClass>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<graphicData>
-			<texPath>buildings/atlas/wna_door_Mover</texPath>
+			<texPath>buildings/atlas/wna_door</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<color>(255,255,255,200)</color>
+			<color>(255,255,255,192)</color>
+			<drawSize>0.85</drawSize>
 		</graphicData>
 		<blockLight>false</blockLight>
-		<uiIconPath>buildings/atlas/wna_door_icon</uiIconPath>
+		<uiIconPath>buildings/atlas/wna_door</uiIconPath>
         <statBases>
             <DoorOpenSpeed>20</DoorOpenSpeed>
         </statBases>
 		<building>
 			<paintable>true</paintable>
             <isAirtight>true</isAirtight>
-      		<isSupportDoor>true</isSupportDoor>
 			<isInert>true</isInert>
             <roamerCanOpen>false</roamerCanOpen>
 			<canPlaceOverWall>true</canPlaceOverWall>
-			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
-			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
-			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
-			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintClass>Blueprint_Door</blueprintClass>
             <relatedBuildCommands>
@@ -121,7 +117,7 @@
                 <li>WNA_BaseODoor</li>
             </relatedBuildCommands>
 		</building>
-        <drawerType>RealtimeOnly</drawerType>
+        <drawerType>MapMeshOnly</drawerType>
         <passability>Standable</passability>
 		<neverMultiSelect>false</neverMultiSelect>
         <coversFloor>false</coversFloor>
@@ -149,13 +145,13 @@
 		<label>WNA wide door</label>
 		<description>Form a door from nothing. This technique is hardly known by outsiders.</description>
 		<thingClass>Building_MultiTileDoor</thingClass>
-		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<size>(2,1)</size>
 		<rotatable>true</rotatable>
 		<graphicData>
 			<texPath>buildings/atlas/wna_odoor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<color>(255,255,255,200)</color>
+			<color>(255,255,255,192)</color>
 		</graphicData>
 		<uiIconPath>buildings/atlas/wna_odooricon_north</uiIconPath>
 		<blockLight>false</blockLight>
@@ -169,10 +165,6 @@
 			<isInert>true</isInert>
             <roamerCanOpen>false</roamerCanOpen>
 			<canPlaceOverWall>true</canPlaceOverWall>
-			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
-			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
-			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
-			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintClass>Blueprint_Build</blueprintClass>
             <relatedBuildCommands>
@@ -320,14 +312,15 @@
 		<defName>WNA_StuffDoor</defName>
 		<label>WNA matdoor</label>
 		<description>Form a door from a piece of actual material. This door blocks light and takes some more work to build.</description>
-		<thingClass>Building_Door</thingClass>
-		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<thingClass>WNA.ThingClass.Barrier</thingClass>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<graphicData>
-			<texPath>buildings/atlas/wna_door_Mover</texPath>
+			<texPath>buildings/atlas/wna_mdoor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.85</drawSize>
 		</graphicData>
-		<uiIconPath>buildings/atlas/wna_door_icon</uiIconPath>
+		<uiIconPath>buildings/atlas/wna_mdoor</uiIconPath>
         <stuffCategories>
             <li>Metallic</li>
             <li>Woody</li>
@@ -344,14 +337,9 @@
         </statBases>
 		<building>
             <isAirtight>true</isAirtight>
-      		<isSupportDoor>true</isSupportDoor>
 			<isInert>true</isInert>
             <roamerCanOpen>false</roamerCanOpen>
 			<canPlaceOverWall>true</canPlaceOverWall>
-			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
-			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
-			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
-			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintClass>Blueprint_Door</blueprintClass>
             <relatedBuildCommands>
@@ -360,7 +348,7 @@
                 <li>WNA_StuffODoor</li>
             </relatedBuildCommands>
 		</building>
-        <drawerType>RealtimeOnly</drawerType>
+        <drawerType>MapMeshOnly</drawerType>
         <passability>Standable</passability>
 		<neverMultiSelect>false</neverMultiSelect>
         <coversFloor>false</coversFloor>
@@ -382,7 +370,7 @@
 		<label>WNA wide matdoor</label>
 		<description>Form a door from a piece of actual material. This door is wide and blocks light and takes some more work to build.</description>
 		<thingClass>Building_MultiTileDoor</thingClass>
-		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<size>(2,1)</size>
 		<rotatable>true</rotatable>
 		<graphicData>
@@ -411,10 +399,6 @@
 			<isInert>true</isInert>
             <roamerCanOpen>false</roamerCanOpen>
 			<canPlaceOverWall>true</canPlaceOverWall>
-			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
-			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
-			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
-			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintClass>Blueprint_Build</blueprintClass>
             <relatedBuildCommands>
@@ -474,7 +458,7 @@
 		<graphicData>
 			<texPath>buildings/atlas/wna_cementwall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<color>(200,200,200)</color>
+			<color>(200,200,192)</color>
 			<linkType>Basic</linkType>
 			<linkFlags>
 				<li>Wall</li>

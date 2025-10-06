@@ -5,10 +5,9 @@
         <label>uranium fuel tank</label>
         <description>TODO</description>
         <graphicData>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <texPath>Things/Building/LargeChemfuelTank/LargeChemfuelTank</texPath>
+            <texPath>buildings/misc/wna_fueltank</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(2,2)</drawSize>
-            <color>(74,74,74)</color>
         </graphicData>
         <size>(2,2)</size>
         <statBases>
@@ -141,12 +140,12 @@
     </ThingDef>
 
     <ThingDef ParentName="WNA_FurnitureBase">
-        <defName>WNA_LifeSurpporter</defName>
-        <label>life surporter</label>
+        <defName>WNA_LifeSupporter</defName>
+        <label>life suporter</label>
         <description>A wall-mounted life support unit</description>
-        <uiIconPath>Things/Building/LifesupportUnit/LifesupportUnit_MenuIcon</uiIconPath>
+        <uiIconPath>buildings/wna_lifesupporter/icon</uiIconPath>
         <graphicData>
-            <texPath>Things/Building/LifesupportUnit/LifesupportUnit</texPath>
+            <texPath>buildings/wna_lifesupporter/wna_lifesupporter</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
             <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
@@ -155,16 +154,13 @@
             <damageData>
                 <enabled>false</enabled>
             </damageData>
-            <color>(168,167,151)</color>
         </graphicData>
         <altitudeLayer>BuildingOnTop</altitudeLayer>
         <statBases>
             <Mass>0.5</Mass>
             <WorkToBuild>1500</WorkToBuild>
         </statBases>
-        <costList>
-            <Steel>25</Steel>
-        </costList>
+        <costList/>
         <researchPrerequisites>
             <li>StandardGravtech</li>
         </researchPrerequisites>
@@ -184,9 +180,6 @@
                 <compClass>CompPowerPlant</compClass>
                 <basePowerConsumption>-10000</basePowerConsumption>
                 <transmitsPower>true</transmitsPower>
-            </li>
-            <li Class="CompProperties_AmbientSound">
-                <sound>OxygenPump_Ambient</sound>
             </li>
             <li Class="CompProperties_OxygenPusher">
                 <requiresPower>true</requiresPower>

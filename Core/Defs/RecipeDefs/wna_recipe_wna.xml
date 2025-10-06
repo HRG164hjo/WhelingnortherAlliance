@@ -43,6 +43,7 @@
                     </categories>
                     <thingDefs>
                         <li>Jade</li>
+                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                         <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
                     </thingDefs>
@@ -53,6 +54,7 @@
         <fixedIngredientFilter>
             <thingDefs>
                 <li>Jade</li>
+                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                 <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
             </thingDefs>

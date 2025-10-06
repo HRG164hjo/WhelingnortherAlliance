@@ -1,5 +1,7 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using Verse;
 
 namespace WNA.Recipe
@@ -8,30 +10,43 @@ namespace WNA.Recipe
     {
         public override void ApplyOnPawn(Pawn pawn, BodyPartRecord part, Pawn billDoer, List<Thing> ingredients, Bill bill)
         {
-            if (CheckSurgeryFail(billDoer, pawn, ingredients, part, bill))
+            TaggedString label = "WNA.Recipe.Inspection.LetterLabel".Translate();
+            if (CheckSurgeryFail(billDoer, pawn, ingredients, part, bill)) return;
+            var hediffs = pawn.health.hediffSet.hediffs;
+            StringBuilder sb = new StringBuilder();
+            var visible = hediffs.Where(h => h.Visible &&
+                !(h is Hediff_AddedPart) &&
+                !(h is Hediff_Implant) &&
+                !(h is Hediff_Injury)).ToList();
+            if (visible.Any())
             {
-                return;
+                sb.AppendLine("WNA.Recipe.Inspection.Visible".Translate(pawn.Named("PAWN")));
+                foreach (var h in visible.OrderBy(h => h.LabelCap.ResolveTags()))
+                {
+                    string labelv = h.LabelCap.NullOrEmpty() ? h.def.label : h.LabelCap;
+                    sb.AppendLine($"\t{labelv} ({h.def.defName})");
+                }
             }
-            string desc;
-            SurgicalInspectionOutcome surgicalInspectionOutcome = pawn.DoSurgicalInspection(billDoer, out desc);
-            if (surgicalInspectionOutcome != SurgicalInspectionOutcome.DetectedNoLetter)
+            var hidden = hediffs.Where(h => !h.Visible).ToList();
+            if (hidden.Any())
             {
-                TaggedString label = "LetterSurgicallyInspectedLabel".Translate();
-                TaggedString text = "LetterSurgicallyInspectedHeader".Translate(billDoer.Named("DOCTOR"), pawn.Named("PATIENT"));
-                if (surgicalInspectionOutcome == SurgicalInspectionOutcome.Nothing)
+                sb.AppendLine("WNA.Recipe.Inspection.Hidden".Translate(pawn.Named("PAWN")));
+                foreach (var h in hidden.OrderBy(h => h.LabelCap.ResolveTags()))
                 {
-                    text += " " + "LetterSurgicallyInspectedNothing".Translate(billDoer.Named("DOCTOR"), pawn.Named("PATIENT")).CapitalizeFirst();
+                    string labelh = h.LabelCap.NullOrEmpty() ? h.def.label : h.LabelCap;
+                    sb.AppendLine($"\t{labelh} ({h.def.defName})");
                 }
-                else
-                {
-                    text += desc;
-                }
+            }
+            if (visible.Any() || hidden.Any())
+            {
+                TaggedString text = sb.ToString();
                 Find.LetterStack.ReceiveLetter(label, text, LetterDefOf.NeutralEvent, pawn);
             }
-            if (billDoer != null)
-            {
-                TaleRecorder.RecordTale(TaleDefOf.DidSurgery, billDoer, pawn);
-            }
+            else
+                Find.LetterStack.ReceiveLetter(label,
+                    "WNA.Recipe.Inspection.None".Translate(pawn.Named("PAWN")),
+                    LetterDefOf.NeutralEvent, pawn);
+            if (billDoer != null) TaleRecorder.RecordTale(TaleDefOf.DidSurgery, billDoer, pawn);
         }
     }
 }

@@ -12,29 +12,17 @@ WIP code:
 
 ----
 #### Royalty:
-
-
 ----
 #### Ideology:
-
-
 ----
 #### Biotech:
 mechanitor implant: once implanted buff all connected mechs
-
-
 ----
 #### Anomaly:
-
-
 ----
 #### Odyssey:
-
-
 ----
 #### Misc:
-
-
 ----
 ----
 ----

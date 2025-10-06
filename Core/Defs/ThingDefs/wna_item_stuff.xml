@@ -39,6 +39,10 @@
                 <Beauty>4</Beauty>
             </statFactors>
         </stuffProps>
+        <deepCommonality>0.75</deepCommonality>
+        <deepCountPerCell>500</deepCountPerCell>
+        <deepCountPerPortion>50</deepCountPerPortion>
+        <deepLumpSizeRange>6~10</deepLumpSizeRange>
     </ThingDef>
     
     <!-- mili -->
@@ -109,7 +113,7 @@
     <ThingDef ParentName="WNA_StuffBase">
         <defName>WNA_Concrete</defName>
         <label>reinforced concrete</label>
-        <description>Improved concrete reinforced with metal frame structure, not only practical but also looks not bad.</description>
+        <description>Improved concrete reinforced with metal frame structure, not only practical but also universal, and looks not bad.</description>
         <graphicData>
             <texPath>item/wna_concrete</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -126,7 +130,9 @@
         </statBases>
         <stuffProps>
             <categories>
+                <li>Woody</li>
                 <li>Stony</li>
+                <li>Metallic</li>
             </categories>
             <appearance>Bricks</appearance>
             <color>(94,94,94)</color>
@@ -199,7 +205,7 @@
                 <li>Fabric</li>
                 <li>Leathery</li>
             </categories>
-            <color>(65,65,65,192)</color>
+            <color>(65,60,60,192)</color>
             <statFactors>
                 <MaxHitPoints>8000</MaxHitPoints>
                 <Beauty>5</Beauty>
