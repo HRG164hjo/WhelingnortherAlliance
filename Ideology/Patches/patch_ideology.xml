@@ -50,12 +50,12 @@
         <value>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Skull</thingDef>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
                 <countRange>100000~200000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>WNA_SeedGauranlen</thingDef>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
                 <countRange>10000~15000</countRange>
             </li>
         </value>

@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using Verse;
 using WNA.WNADefOf;
-using static Verse.DamageWorker;
 
 namespace WNA.Damager
 {
-    public class WNA_DamagerCulling : DamageWorker
+    public class DamagerCulling : DamageWorker
     {
         private static readonly HashSet<HediffDef> ExcludedHediffs = new HashSet<HediffDef>
         {

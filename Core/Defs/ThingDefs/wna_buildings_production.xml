@@ -19,6 +19,10 @@
         <researchPrerequisites Inherit="false">
             <li>WNA_MatterTransformation</li>
         </researchPrerequisites>
+        <costList>
+            <Steel>150</Steel>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
         <comps>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Glower">
@@ -134,16 +138,14 @@
         <defaultPlacingRot>South</defaultPlacingRot>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.3</staticSunShadowHeight>
-		<useHitPoints>true</useHitPoints>
-        <statBases Inherit="false">
+        <statBases>
             <Mass>150</Mass>
-            <MaxHitPoints>160000</MaxHitPoints>
             <WorkToBuild>4000</WorkToBuild>
-            <Flammability>0</Flammability>
-            <Beauty>5</Beauty>
+            <Beauty>0</Beauty>
         </statBases>
         <costList>
-            <Steel>150</Steel>
+            <WNA_Desolisium>80</WNA_Desolisium>
+            <WNA_Trinisium>40</WNA_Trinisium>
             <ComponentIndustrial>8</ComponentIndustrial>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
@@ -163,7 +165,6 @@
             <li Class="CompProperties_Refuelable">
                 <fuelConsumptionRate>1.0</fuelConsumptionRate>
                 <fuelCapacity>60.0</fuelCapacity>
-                <fuelMultiplier>60</fuelMultiplier>
                 <fuelFilter>
                     <thingDefs>
                         <li>ChunkSlagSteel</li>
@@ -176,7 +177,23 @@
                 <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
                 <canEjectFuel>false</canEjectFuel>
             </li>
+            <li Class="CompProperties_Spawner">
+                <requiresPower>true</requiresPower>
+                <thingToSpawn>WNA_ParticleVial</thingToSpawn>
+                <spawnCount>1</spawnCount>
+                <spawnIntervalRange>
+                    <min>60000</min>
+                    <max>90000</max>
+                </spawnIntervalRange>
+            </li>
         </comps>
+		<modExtensions>
+            <li Class="WNA.DMExtension.RefuelableExtraStat">
+                <useStat>true</useStat>
+                <multStat>Mass</multStat>
+                <multFactor>2</multFactor>
+            </li>
+		</modExtensions>
 	</ThingDef>
     
     <ThingDef ParentName="WNA_FurnitureBase">
@@ -212,16 +229,16 @@
             <Beauty>-1</Beauty>
         </statBases>
         <costList>
-            <Steel>100</Steel>
-            <ComponentIndustrial>5</ComponentIndustrial>
+            <Steel>60</Steel>
             <WoodLog>40</WoodLog>
+            <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <comps>
             <li Class="WNA.ThingCompProp.CompHydroponics">
                 <growthFactor>16</growthFactor>
                 <yieldFactor>9</yieldFactor>
                 <extraYieldFactor>9</extraYieldFactor>
-                <plantCount>100</plantCount>
+                <plantCount>16</plantCount>
             </li>
         </comps>
 	</ThingDef>

@@ -71,7 +71,7 @@
 	    </recipeUsers>
         <researchPrerequisite/>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeAshpark</defName>
         <label>make ashpark</label>
@@ -128,7 +128,7 @@
 	    </recipeUsers>
         <researchPrerequisite/>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeChimingSteel</defName>
         <label>make chiming steel</label>

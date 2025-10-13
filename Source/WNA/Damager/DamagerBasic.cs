@@ -1,15 +1,13 @@
 ﻿using RimWorld;
-using RimWorld.Planet;
 using System;
 using System.Linq;
-using System.Reflection;
 using UnityEngine;
 using Verse;
 using WNA.WNADefOf;
 
 namespace WNA.Damager
 {
-    public class WNA_DamagerBasic : DamageWorker
+    public class DamagerBasic : DamageWorker
     {
         public override DamageResult Apply(DamageInfo dinfo, Thing thing)
         {

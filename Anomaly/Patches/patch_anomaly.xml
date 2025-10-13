@@ -5,18 +5,18 @@
         <value>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>WNA_SeedHarbinger</thingDef>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
                 <countRange>10000~15000</countRange>
             </li>
             <li Class="StockGenerator_Tag">
                 <tradeTag>Serum</tradeTag>
                 <thingDefCountRange>1~2</thingDefCountRange>
                 <countRange>100000~150000</countRange>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>GoldenCube</thingDef>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
                 <countRange>1200~1200</countRange>
             </li>
         </value>

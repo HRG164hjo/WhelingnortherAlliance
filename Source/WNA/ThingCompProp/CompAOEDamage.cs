@@ -51,7 +51,7 @@ namespace WNA.ThingCompProp
                 if (nextScanTick == 0) nextScanTick = Find.TickManager.TicksGame + Props.update;
                 if (Find.TickManager.TicksGame >= nextScanTick)
                 {
-                    cachedTargets = GetThings(); //GetThings().OrderByDescending(t => t is Pawn p ? p.kindDef.combatPower : 0) .ToList();
+                    cachedTargets = GetThings();
                     nextScanTick = Find.TickManager.TicksGame + Props.update;
                 }
                 if (Find.TickManager.TicksGame >= nextTickEffect)

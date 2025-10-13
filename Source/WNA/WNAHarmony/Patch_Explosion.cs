@@ -12,7 +12,8 @@ namespace WNA.WNAHarmony
             "BombSuper",
             "WNA_CastBomb",
             "WNA_ChimingBlaze",
-            "WNA_KineBomb"
+            "WNA_KineBomb",
+            "WNA_RadBurn"
         };
         private static void RemoveRoofsInExplosion(Explosion explosion)
         {

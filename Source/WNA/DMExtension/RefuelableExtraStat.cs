@@ -7,7 +7,7 @@ namespace WNA.DMExtension
     {
         public bool useBodySize = false;
         public bool useStat = false;
-        public StatDef multStat = StatDefOf.Mass;
+        public StatDef multStat;
         public float multFactor = 1f;
     }
 }

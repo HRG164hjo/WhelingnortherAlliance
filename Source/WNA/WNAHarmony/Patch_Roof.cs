@@ -34,10 +34,7 @@ namespace WNA.WNAHarmony
         {
             public static bool Prefix(Skyfaller __instance)
             {
-                if (__instance?.def?.defName == "WNA_WARPIN")
-                {
-                    return false;
-                }
+                if (__instance?.def?.defName == "WNA_WARPIN" || __instance?.def?.defName == "WNA_Ether_Aeroblaze") return false;
                 return true;
             }
         }

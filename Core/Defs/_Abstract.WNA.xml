@@ -22,7 +22,7 @@
     <!-- ======== -->
     <!-- DamageDef -->
     <DamageDef Abstract="true" Name="WNA_DamageBase">
-        <workerClass>WNA.Damager.WNA_DamagerBasic</workerClass>
+        <workerClass>WNA.Damager.DamagerBasic</workerClass>
         <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
         <overkillPctToDestroyPart>0</overkillPctToDestroyPart>
         <defaultArmorPenetration>Infinity</defaultArmorPenetration>
@@ -599,6 +599,7 @@
     </ThingDef>
     <ThingDef Abstract="true" Name="WNA_ProjBase">
         <category>Projectile</category>
+        <useHitPoints>false</useHitPoints>
         <tickerType>Normal</tickerType>
         <altitudeLayer>Projectile</altitudeLayer>
         <thingClass>WNA.WNAMiscs.ProjType_Inviso</thingClass>
@@ -1197,7 +1198,7 @@
             </li>
             <li Class="StockGenerator_Category" MayRequire="sarg.rimbees">
                 <categoryDef>RB_Combs</categoryDef>
-                <thingDefCountRange>5~8</thingDefCountRange>
+                <thingDefCountRange>8~8</thingDefCountRange>
                 <countRange>300000~500000</countRange>
                 <price>VeryCheap</price>
             </li>

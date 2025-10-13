@@ -56,7 +56,7 @@
         <workAmount>60</workAmount>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_SurgeryBase">
         <defName>WNA_VoidDive</defName>
         <label>void dive</label>

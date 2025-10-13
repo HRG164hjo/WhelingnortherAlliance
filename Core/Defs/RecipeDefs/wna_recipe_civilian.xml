@@ -77,7 +77,7 @@
 	    </recipeUsers>
         <researchPrerequisite/>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeCinnabar</defName>
         <label>make cinnabar</label>
@@ -147,7 +147,7 @@
 	    </recipeUsers>
         <researchPrerequisite/>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_RefineCorpse</defName>
         <label>refine corpse</label>
@@ -190,7 +190,7 @@
 	    </recipeUsers>
         <researchPrerequisite/>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeMethanol</defName>
         <label>make methanol</label>
@@ -246,7 +246,7 @@
 	    </recipeUsers>
         <researchPrerequisite/>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeSynthread</defName>
         <label>make synthread</label>
@@ -285,7 +285,7 @@
 	    </recipeUsers>
         <researchPrerequisite/>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeNeutroamine</defName>
         <label>make neutroamine</label>
@@ -321,6 +321,105 @@
         <workAmount>400</workAmount>
         <recipeUsers>
 	        <li>BiofuelRefinery</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeUraniumBattery</defName>
+        <label>make vitalized uranium battery</label>
+        <description>make an unstable powersource out from uranium.</description>
+        <jobString>making vitalized uranium battery.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_ParticleVial</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Uranium</li>
+                <li>WNA_ParticleVial</li>
+            </thingDefs>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_UraniumBattery>1</WNA_UraniumBattery>
+        </products>
+        <workAmount>800</workAmount>
+        <recipeUsers>
+	        <li>FabricationBench</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeReinforcedBarrel</defName>
+        <label>make reinforced barrel</label>
+        <description>forge a colony produced reinforced barrel.</description>
+        <jobString>forging a reinforced barrel.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>Uranium</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ReinforcedBarrel>1</ReinforcedBarrel>
+        </products>
+        <workAmount>800</workAmount>
+        <recipeUsers>
+	        <li>FueledSmithy</li>
+	        <li>ElectricSmithy</li>
 	    </recipeUsers>
         <researchPrerequisite/>
     </RecipeDef>

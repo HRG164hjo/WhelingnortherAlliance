@@ -2,6 +2,54 @@
 <Defs>
     <!-- mili -->
     <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeAntigrainWarhead</defName>
+        <label>make antigrain warhead</label>
+        <description>Mix uranium and unstable particles and put the mixture into a plasteel shell to make an antigrain warhead.</description>
+        <jobString>making antigrain warhead.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_ParticleVial</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>Uranium</li>
+                <li>WNA_ParticleVial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Shell_AntigrainWarhead>5</Shell_AntigrainWarhead>
+        </products>
+        <workAmount>1500</workAmount>
+        <recipeUsers>
+	        <li>FabricationBench</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+
+    <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeBaseboard</defName>
         <label>make fabric baseboard</label>
         <description>make a baseboard used for making attunement fabric.</description>
@@ -34,7 +82,7 @@
 	    </recipeUsers>
         <researchPrerequisite/>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeAttunementFabric</defName>
         <label>make attunement fabric</label>
@@ -214,7 +262,7 @@
 	    </recipeUsers>
         <researchPrerequisite/>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeTrinisium</defName>
         <label>make trinisium</label>
@@ -266,7 +314,7 @@
 	    </recipeUsers>
         <researchPrerequisite/>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeDesolisium</defName>
         <label>make desolisium</label>

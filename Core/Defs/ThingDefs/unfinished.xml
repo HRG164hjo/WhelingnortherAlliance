@@ -6,7 +6,7 @@
         <thingClass>UnfinishedThing</thingClass>
         <category>Item</category>
         <graphicData>
-            <texPath>rite</texPath>
+            <texPath>karma</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>0.6</drawSize>
         </graphicData>

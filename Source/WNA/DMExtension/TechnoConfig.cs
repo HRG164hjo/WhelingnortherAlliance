@@ -1,20 +1,23 @@
-﻿using Verse;
+﻿using UnityEngine;
+using Verse;
 
 namespace WNA.DMExtension
 {
     public class TechnoConfig : DefModExtension
     {
-        public int mindControlCapacity = 1;
-        public bool infiniteMindControl = false;
-        public bool immuneToMindControl = false;
-        /* 为后续追加的内容做准备
-         *
-         * public bool immuneToRadiation = false; 后续计划的免疫辐射场
-         *
-         * public bool isJumpJet = false; 后续计划的飞行单位
-         *
-         * public bool ironKill = true;
-         *
+        public Vector4? laserInnerColor;
+        public Vector4? laserOuterColor;
+        public float? laserOuterSpread;
+        public float? laserThickness;
+        public int? laserDuration;
+        public static TechnoConfig Get(Def def)
+        {
+            return def?.GetModExtension<TechnoConfig>();
+        }
+        /* public int mindControlCapacity = 1;
+         * public bool infiniteMindControl = false;
+         * public bool immuneToMindControl = false;
+         * 
          * public bool canChronoMove = false; 可以进行超时空移动
          * public bool chronoTrigger = true; 连续超时空移动间需要冷却
          * public bool chronoTriggerFreeze = true; 冷却时使传送者无法进行任何动作

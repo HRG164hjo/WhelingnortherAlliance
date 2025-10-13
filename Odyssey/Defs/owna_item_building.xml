@@ -37,13 +37,13 @@
                 <maxDistance>500</maxDistance>
             </li>
             <li Class="CompProperties_Refuelable">
-                <fuelCapacity>30000</fuelCapacity>
+                <fuelCapacity>10000</fuelCapacity>
                 <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
-                <initialConfigurableTargetFuelLevel>7500</initialConfigurableTargetFuelLevel>
-                <fuelMultiplier>100</fuelMultiplier>
+                <initialConfigurableTargetFuelLevel>100</initialConfigurableTargetFuelLevel>
+                <fuelMultiplier>10000</fuelMultiplier>
                 <fuelFilter>
                     <thingDefs>
-                        <li>Uranium</li>
+                        <li>WNA_UraniumBattery</li>
                     </thingDefs>
                 </fuelFilter>
                 <fuelLabel>Uranium</fuelLabel>

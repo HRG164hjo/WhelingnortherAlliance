@@ -135,4 +135,22 @@
             </li>
         </comps>
     </ThingDef>
+    
+    <ThingDef>
+        <defName>WNA_LaserBeam</defName>
+        <label>laser beam</label>
+        <thingClass>WNA.ThingClass.DummyLaser</thingClass>
+        <graphicData>
+            <texPath>inv</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <altitudeLayer>Skyfaller</altitudeLayer>
+        <tickerType>Normal</tickerType>
+        <drawerType>RealtimeOnly</drawerType>
+        <useHitPoints>false</useHitPoints>
+        <selectable>false</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <alwaysHaulable>false</alwaysHaulable>
+        <designateHaulable>false</designateHaulable>
+    </ThingDef>
 </Defs>

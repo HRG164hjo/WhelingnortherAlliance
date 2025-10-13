@@ -14,6 +14,7 @@ namespace WNA.WNADefOf
         public static DamageDef WNA_KinePoint;
         public static DamageDef WNA_KineBomb;
         public static DamageDef WNA_DemoCut;
+        public static DamageDef WNA_RadBurn;
 
         public static FactionDef WNA_FactionWNA;
 

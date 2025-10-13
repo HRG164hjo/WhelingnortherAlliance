@@ -5,22 +5,22 @@
         <value>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>PsychicAmplifier</thingDef>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
                 <countRange>20000~30000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>BroadshieldCore</thingDef>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
                 <countRange>20000~30000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>AnimusStone</thingDef>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
                 <countRange>2000~3000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>WNA_SeedAnima</thingDef>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
                 <countRange>10000~15000</countRange>
             </li>
         </value>

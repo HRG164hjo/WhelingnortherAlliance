@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|c:\\applications\\steam\\steamapps\\common\\rimworld\\mods\\whelingnortheralliance\\source\\wna\\thingclass\\barrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:thingclass\\barrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|c:\\applications\\steam\\steamapps\\common\\rimworld\\mods\\whelingnortheralliance\\source\\wna\\wnamiscs\\verbtype_laser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:wnamiscs\\verbtype_laser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\thingclass\\dummylaser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:thingclass\\dummylaser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\dmextension\\technoconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:dmextension\\technoconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +30,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Barrier.cs",
-              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\ThingClass\\Barrier.cs",
-              "RelativeDocumentMoniker": "ThingClass\\Barrier.cs",
-              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\ThingClass\\Barrier.cs",
-              "RelativeToolTip": "ThingClass\\Barrier.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA0wB4AAAAoAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "TechnoConfig.cs",
+              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\DMExtension\\TechnoConfig.cs",
+              "RelativeDocumentMoniker": "DMExtension\\TechnoConfig.cs",
+              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\DMExtension\\TechnoConfig.cs",
+              "RelativeToolTip": "DMExtension\\TechnoConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T01:57:10.604Z",
+              "WhenOpened": "2025-10-12T15:02:50.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DummyLaser.cs",
+              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\ThingClass\\DummyLaser.cs",
+              "RelativeDocumentMoniker": "ThingClass\\DummyLaser.cs",
+              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\ThingClass\\DummyLaser.cs",
+              "RelativeToolTip": "ThingClass\\DummyLaser.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T13:59:36.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VerbType_Laser.cs",
+              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAMiscs\\VerbType_Laser.cs",
+              "RelativeDocumentMoniker": "WNAMiscs\\VerbType_Laser.cs",
+              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAMiscs\\VerbType_Laser.cs",
+              "RelativeToolTip": "WNAMiscs\\VerbType_Laser.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAowEwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T13:27:12.716Z",
               "EditorCaption": ""
             }
           ]

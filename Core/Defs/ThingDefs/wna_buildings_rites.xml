@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="WNA_FurnitureBase" Name="TODO_WNARiteSiteBase">
+    <ThingDef ParentName="WNA_FurnitureBase" Name="WNA_RiteSiteBase">
         <defName>WNA_Ritespot</defName>
         <label>ritespot</label>
         <description>some mysterious influence is accumulating. this place must be a perfect place for doing something, for example, applying some whelingnorther techniques.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
-            <texPath>rite</texPath>
+            <texPath>rite/rite_base</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(1,1)</drawSize>
             <color>(200,200,200,192)</color>
@@ -44,11 +44,12 @@
         </placeWorkers>
     </ThingDef>
 
-    <ThingDef ParentName="TODO_WNARiteSiteBase">
+    <ThingDef ParentName="WNA_RiteSiteBase">
         <defName>WNA_RiteSpot_Cutter</defName>
         <label>ritespot</label>
         <description>there seems to be some mysterious ripples. this place should be a good place to make something split or break down.</description>
         <graphicData>
+            <texPath>rite/rite_cut</texPath>
             <color>(127,27,27)</color>
         </graphicData>
         <statBases>
@@ -62,54 +63,6 @@
             <li MayRequire="sarg.rimbees">WNA_RecipeAlphaBees</li>
             <li MayRequire="sarg.rimbees">WNA_RecipeAlphaBeesToo</li>
         </recipes>
-    </ThingDef>
-
-
-    <ThingDef ParentName="BuildingBase" Name="WNA_MiscRiteSpellsBase" Abstract="true">
-        <designationCategory>WNA_MainCategory</designationCategory>
-		<terrainAffordanceNeeded/>
-        <altitudeLayer>FloorEmplacement</altitudeLayer>
-        <useHitPoints>true</useHitPoints>
-        <tickerType>Normal</tickerType>
-        <scatterableOnMapGen>false</scatterableOnMapGen>
-        <passability>Standable</passability>
-        <size>(1,1)</size>
-        <soundImpactDefault/>
-    </ThingDef>
-    <ThingDef ParentName="WNA_MiscRiteSpellsBase">
-        <defName>WNA_Rite_FocusSpell</defName>
-        <label>focus spell</label>
-        <description>A simple rite that automatically runs. It can accumulate and form mana quickly, but won't last long.</description>
-        <useHitPoints>true</useHitPoints>
-        <statBases>
-            <Flammability>0</Flammability>
-            <Mass>0</Mass>
-            <MaxHitPoints>100</MaxHitPoints>
-            <WorkToBuild>1</WorkToBuild>
-        </statBases>
-        <graphicData>
-            <texPath>rite2</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(1,1)</drawSize>
-        </graphicData>
-        <researchPrerequisites>
-            <li>WNA_BasicRite</li>
-        </researchPrerequisites>
-        <comps>
-            <li Class="CompProperties_Spawner">
-                <thingToSpawn>WNA_Focus</thingToSpawn>
-                <spawnCount>1</spawnCount>
-                <spawnIntervalRange>1~6</spawnIntervalRange>
-                <writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
-                <showMessageIfOwned>false</showMessageIfOwned>
-                <requiresPower>false</requiresPower>
-            </li>
-            <li Class="CompProperties_DestroyAfterDelay">
-                <delayTicks>2000</delayTicks>
-                <destroyMode>Vanish</destroyMode>
-                <countdownLabel>fade in</countdownLabel>
-            </li>
-        </comps>
     </ThingDef>
 
 </Defs>

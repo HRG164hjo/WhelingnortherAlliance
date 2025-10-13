@@ -21,7 +21,7 @@
                 <capacities>
                     <li>WNA_DemoCut</li>
                 </capacities>
-                <power>40</power>
+                <power>50</power>
                 <cooldownTime>0.6</cooldownTime>
                 <armorPenetration>Infinity</armorPenetration>
             </li>
@@ -120,7 +120,7 @@
         </graphicData>
         <projectile>
             <damageDef>WNA_HollowPoint</damageDef>
-            <damageAmountBase>250</damageAmountBase>
+            <damageAmountBase>300</damageAmountBase>
         </projectile>
     </ThingDef>
     
@@ -341,10 +341,205 @@
     </ThingDef>
 
     <!-- siege trooper -->
-        <!--单兵核炮-->
-        <!--无人机发射器-->
-        <!--陨星单兵突击炮-->
-     
+    <ThingDef ParentName="WNA_WeaponBaseRanged">
+        <defName>WNA_SunsetSniper_Too</defName>
+        <label>"sunset" sniper mortar mode</label>
+        <description>sunset sniper rifle switched to mortar mode, usually used with smaller-sized antigrain warheads. a single rail can lead shells through proper path, go a long distance and hit target.</description>
+        <graphicData>
+            <texPath>weapons/wna_sunsetsniper_too</texPath>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <statBases>
+            <WorkToMake>4500</WorkToMake>
+            <MarketValue>1200</MarketValue>
+            <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedAngleOffset>0</equippedAngleOffset>
+	    <costList>
+	        <WNA_Trinisium>40</WNA_Trinisium>
+            <ComponentSpacer>1</ComponentSpacer>
+	    </costList>
+        <weaponTags>
+            <li>Tag_WNASiegeTroop</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>WNA_SunsetSniper_Too_Proj</defaultProjectile>
+                <warmupTime>1.67</warmupTime>
+                <range>150</range>
+                <soundCast>Mortar_LaunchA</soundCast>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                <canGoWild>false</canGoWild>
+                <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+                <burstShotCount>1</burstShotCount>
+                <requireLineOfSight>false</requireLineOfSight>
+                <muzzleFlashScale>16</muzzleFlashScale>
+                <forcedMissRadius>1.9</forcedMissRadius>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>rapier</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>50</power>
+                <cooldownTime>1</cooldownTime>
+                <armorPenetration>Infinity</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>WNA_AdvArsenal</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+		    <skillRequirements>
+		    	<Crafting>10</Crafting>
+		    </skillRequirements>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+            <recipeUsers>
+                <li>TableMachining</li>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ProjBase">
+        <defName>WNA_SunsetSniper_Too_Proj</defName>
+        <label>gun proj</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/ShellAntigrainWarhead</texPath>
+        </graphicData>
+        <projectile>
+            <damageDef>BombSuper</damageDef>
+            <damageAmountBase>800</damageAmountBase>
+            <speed>64</speed>
+            <explosionRadius>9.9</explosionRadius>
+            <explosionEffect>GiantExplosion</explosionEffect>
+            <flyOverhead>true</flyOverhead>
+            <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+            <soundExplode>Explosion_GiantBomb</soundExplode>
+            <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+            <soundAmbient>MortarRound_Ambient</soundAmbient>
+            <preExplosionSpawnSingleThingDef>CraterMedium</preExplosionSpawnSingleThingDef>
+        </projectile>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompRadFieldBurst">
+                <config>
+                    <radLevel>200</radLevel>
+                    <radius>9.9</radius>
+                </config>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_WeaponBaseRanged">
+        <defName>WNA_Dawnbreaker</defName>
+        <label>"dawnbreaker" nuclear cannon</label>
+        <description>A individual mortar cannon powered by a vitalized uranium battery, equipped with a special warhead, not effective against buildings, but can release special infectious radiation field over a wide area.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/InfernoCannon</texPath>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <statBases>
+            <WorkToMake>4500</WorkToMake>
+            <MarketValue>2500</MarketValue>
+            <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedAngleOffset>0</equippedAngleOffset>
+	    <costList>
+	        <WNA_Trinisium>55</WNA_Trinisium>
+            <ComponentSpacer>3</ComponentSpacer>
+            <WNA_UraniumBattery>1</WNA_UraniumBattery>
+	    </costList>
+        <weaponTags>
+            <li>Tag_WNASiegeTroop</li>
+            <li>Tag_WNAVanguard</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>WNA_Dawnbreaker_Proj</defaultProjectile>
+                <warmupTime>1.67</warmupTime>
+                <range>180</range>
+                <soundCast>Mortar_LaunchA</soundCast>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                <canGoWild>false</canGoWild>
+                <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+                <burstShotCount>1</burstShotCount>
+                <requireLineOfSight>false</requireLineOfSight>
+                <muzzleFlashScale>16</muzzleFlashScale>
+                <forcedMissRadius>1.9</forcedMissRadius>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>rapier</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>50</power>
+                <cooldownTime>1</cooldownTime>
+                <armorPenetration>Infinity</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>WNA_AdvArsenal</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+		    <skillRequirements>
+		    	<Crafting>10</Crafting>
+		    </skillRequirements>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ProjBase">
+        <defName>WNA_Dawnbreaker_Proj</defName>
+        <label>gun proj</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/ShellFirefoam</texPath>
+            <color>200,100,0</color>
+        </graphicData>
+        <projectile>
+            <damageDef>WNA_RadBurn</damageDef>
+            <damageAmountBase>50</damageAmountBase>
+            <speed>99</speed>
+            <explosionRadius>14.9</explosionRadius>
+            <explosionEffect>GiantExplosion</explosionEffect>
+            <flyOverhead>true</flyOverhead>
+            <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+            <soundExplode>Explosion_GiantBomb</soundExplode>
+            <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+            <soundAmbient>MortarRound_Ambient</soundAmbient>
+            <preExplosionSpawnSingleThingDef>CraterMedium</preExplosionSpawnSingleThingDef>
+        </projectile>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompRadFieldBurst">
+                <config>
+                    <radLevel>500</radLevel>
+                    <radius>14.9</radius>
+                </config>
+            </li>
+        </comps>
+    </ThingDef>
+        <!-- 无人机发射巢 -->
+    
     <!-- strike force -->
     
     <ThingDef ParentName="WNA_WeaponBaseRanged">
@@ -424,9 +619,109 @@
             <damageAmountBase>100</damageAmountBase>
         </projectile>
     </ThingDef>
-
-        <!--电离步枪-->
-     
+    
+    <ThingDef ParentName="WNA_WeaponBaseRanged">
+        <defName>WNA_IonizingRifle</defName>
+        <label>ionizing rifle</label>
+        <description>a beam rifle powered by an unstable-particle emitter, this rifle can generate powerful focused radiation beam to damage it's target, though weak against buildings, this weapon is unusually effective against living enemies.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+        <statBases>
+            <WorkToMake>4500</WorkToMake>
+            <MarketValue>2000</MarketValue>
+            <RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedAngleOffset>0</equippedAngleOffset>
+	    <costList>
+	        <WNA_Trinisium>50</WNA_Trinisium>
+            <ComponentSpacer>2</ComponentSpacer>
+            <WNA_ParticleVial>1</WNA_ParticleVial>
+	    </costList>
+        <weaponTags>
+            <li>Tag_WNAStrikeForce</li>
+            <li>Tag_WNADarknightComm</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>WNA.WNAMiscs.VerbType_Laser</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>WNA_IonizingRifle_Proj</defaultProjectile>
+                <warmupTime>0</warmupTime>
+                <range>54.9</range>
+                <soundCast>GunTail_Heavy</soundCast>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                <canGoWild>false</canGoWild>
+                <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>1</cooldownTime>
+                <armorPenetration>Infinity</armorPenetration>
+                <extraMeleeDamages>
+                    <li>
+                        <def>WNA_RadBurn</def>
+                        <amount>50</amount>
+                    </li>
+                    <li>
+                        <def>EMP</def>
+                        <amount>Infinity</amount>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>WNA_NexusLegion</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+		    <skillRequirements>
+		    	<Crafting>14</Crafting>
+		    </skillRequirements>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <laserInnerColor>(255,155,0,200)</laserInnerColor>
+                <laserOuterColor>(200,100,0,200)</laserOuterColor>
+                <laserOuterSpread>1.2</laserOuterSpread>
+                <laserThickness>0.05</laserThickness>
+                <laserDuration>15</laserDuration>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ProjBase">
+        <defName>WNA_IonizingRifle_Proj</defName>
+        <label>gun proj</label>
+        <graphicData>
+            <texPath>Things/Projectile/ChargeLanceShot</texPath>
+            <color>(255,155,0)</color>
+        </graphicData>
+        <projectile>
+            <damageDef>WNA_RadBurn</damageDef>
+            <damageAmountBase>30</damageAmountBase>
+        </projectile>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompRadFieldBurst">
+                <config>
+                    <radLevel>500</radLevel>
+                    <radius>0.9</radius>
+                </config>
+            </li>
+        </comps>
+    </ThingDef>
+    
     <!-- darknight commando -->
     <ThingDef ParentName="WNA_WeaponBaseMelee">
         <defName>WNA_KineticBlade</defName>
@@ -476,11 +771,90 @@
         </recipeMaker>
     </ThingDef>
     
-        <!--电离步枪-->
-     
     <!-- lysis troop -->
-        <!--裂解步枪-->
-     
+    <ThingDef ParentName="WNA_WeaponBaseRanged">
+        <defName>WNA_LysisRifle</defName>
+        <label>lysis rifle</label>
+        <description>one of the most dreadful weapons invented by whelingnorther military. this weapon can shoot a beam of what called "lysis field", which can weaken the internal interaction of almost anything known, making them extremely fragile, and release a burst of lysis field when they finally break apart.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+        <statBases>
+            <WorkToMake>4500</WorkToMake>
+            <MarketValue>2000</MarketValue>
+            <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedAngleOffset>0</equippedAngleOffset>
+	    <costList>
+	        <WNA_Trinisium>50</WNA_Trinisium>
+            <ComponentSpacer>2</ComponentSpacer>
+            <WNA_ParticleVial>1</WNA_ParticleVial>
+	    </costList>
+        <weaponTags>
+            <li>Tag_WNALysisTroop</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>WNA.WNAMiscs.VerbType_Laser</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>WNA_LysisRifle_Proj</defaultProjectile>
+                <warmupTime>0</warmupTime>
+                <range>72.9</range>
+                <soundCast>GunTail_Heavy</soundCast>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+                <canGoWild>false</canGoWild>
+                <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>40</power>
+                <cooldownTime>0.6</cooldownTime>
+                <armorPenetration>Infinity</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>WNA_NexusLegion</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+		    <skillRequirements>
+		    	<Crafting>14</Crafting>
+		    </skillRequirements>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <laserInnerColor>(255,255,255,200)</laserInnerColor>
+                <laserOuterColor>(255,0,0,200)</laserOuterColor>
+                <laserOuterSpread>1.2</laserOuterSpread>
+                <laserThickness>0.1</laserThickness>
+                <laserDuration>10</laserDuration>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ProjBase">
+        <defName>WNA_LysisRifle_Proj</defName>
+        <label>gun proj</label>
+        <graphicData>
+            <texPath>Things/Projectile/ChargeLanceShot</texPath>
+            <color>(255,0,0)</color>
+        </graphicData>
+        <projectile>
+            <damageDef>WNA_Lysis</damageDef>
+            <damageAmountBase>5</damageAmountBase>
+        </projectile>
+    </ThingDef>
+    
     <!-- heavy vanguard -->
     <ThingDef ParentName="WNA_WeaponBaseRanged">
         <defName>WNA_KineticRailgun</defName>
@@ -562,7 +936,7 @@
             <damageAmountBase>1000</damageAmountBase>
         </projectile>
     </ThingDef>
-     
+    
     <!-- iron guardian -->
     <ThingDef ParentName="WNA_WeaponBaseRanged">
         <defName>WNA_HowlstormArti</defName>
@@ -732,12 +1106,13 @@
             <!-- <spawnsThingDef></spawnsThingDef>-->
         </projectile>
     </ThingDef>
+    <!--导弹巢模式-->
 
-        <!--铁华破城炮-->
-     
+        <!-- 铁华破城炮 -->
+    
     <!-- parasomniant -->
-        <!--永冻射线-->
-        <!--中子步枪-->
+        <!-- 永冻射线 -->
+        <!-- 中子步枪 -->
     
     <!-- whelingnorthan -->
     <ThingDef ParentName="WNA_WeaponBaseMelee">
@@ -792,7 +1167,6 @@
         </recipeMaker>
         <comps/>
     </ThingDef>
-    
     <ThingDef ParentName="WNA_WeaponBaseRanged">
         <defName>WNA_Weapon_RiteLance</defName>
         <label>whelingnorther rite lance</label>
@@ -848,7 +1222,7 @@
                 <compClass>WNA.TargetEffect.Ascension</compClass>
             </li>
             <li Class="CompProperties_TargetEffect_GoodwillImpact">
-                <goodwillImpact>-80</goodwillImpact>
+                <goodwillImpact>-99</goodwillImpact>
             </li>
             <li Class="CompProperties_TargetEffect_FleckConnecting">
                 <fleckDef>PsycastPsychicLine</fleckDef>

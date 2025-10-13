@@ -119,5 +119,16 @@
 			</li>
         </value>
     </Operation>
-    
+        
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/DamageDef[defName="BombSuper"]</xpath>
+        <value>
+            <additionalHediffs>
+                <li>
+                    <hediff>WNA_RadEffect</hediff>
+                    <severityPerDamageDealt>0.01</severityPerDamageDealt>
+                </li>
+            </additionalHediffs>
+        </value>
+    </Operation>
 </Patch>

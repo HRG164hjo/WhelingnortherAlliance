@@ -29,7 +29,7 @@
 	    </recipeUsers>-->
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_RiteRebelStriving</defName>
         <description>break down a weapon or apparel and see if there's something can be recycled.</description>
@@ -58,7 +58,7 @@
         <workAmount>300</workAmount>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_RiteAbleting</defName>
         <description>break down slag chunks to retrieve useful things, more productive than traditional methods.</description>
@@ -90,7 +90,7 @@
         <workAmount>300</workAmount>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase" MayRequire="sarg.rimbees">
         <defName>WNA_RecipeAlphaBees</defName>
         <description>devide a comb (or a hive) for triple products.</description>

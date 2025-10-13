@@ -167,7 +167,51 @@
         <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
     </ManeuverDef>
 
-    <!-- -->
+    <DamageDef ParentName="WNA_DamageBase">
+        <defName>WNA_RadBurn</defName>
+        <label>rad burn</label>
+        <workerClass>WNA.Damager.RadField</workerClass>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} died of radiation.</deathMessage>
+        <hediff>Burn</hediff>
+        <isRanged>true</isRanged>
+        <makesAnimalsFlee>false</makesAnimalsFlee>
+        <impactSoundType/>
+        <buildingDamageFactor>0.1</buildingDamageFactor>
+        <additionalHediffs>
+            <li>
+                <hediff>WNA_RadEffect</hediff>
+                <severityPerDamageDealt>0.5</severityPerDamageDealt>
+            </li>
+        </additionalHediffs>
+        <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+        <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+        <explosionCellFleck>BlastDry</explosionCellFleck>
+        <explosionColorCenter>(255,155,0)</explosionColorCenter>
+        <explosionColorEdge>(200,100,0)</explosionColorEdge>
+    </DamageDef>
+
+    <DamageDef ParentName="WNA_DamageBase">
+        <defName>WNA_Lysis</defName>
+        <label>lysis</label>
+        <!--<workerClass>WNA.Damager.Lysis</workerClass>-->
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} perished in lysis field.</deathMessage>
+        <hediff>Misc</hediff>
+        <isRanged>true</isRanged>
+        <makesAnimalsFlee>false</makesAnimalsFlee>
+        <impactSoundType/>
+        <buildingDamageFactor>100000</buildingDamageFactor>
+        <plantDamageFactor>100000</plantDamageFactor>
+        <corpseDamageFactor>100000</corpseDamageFactor>
+        <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+        <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+        <explosionCellFleck>BlastEMP</explosionCellFleck>
+        <explosionColorCenter>(255,0,0)</explosionColorCenter>
+        <explosionColorEdge>(155,0,0)</explosionColorEdge>
+    </DamageDef>
+
+    <!-- wna -->
     <DamageDef ParentName="WNA_DamageBase">
         <defName>WNA_CastMelee</defName>
         <label>casting</label>
@@ -217,7 +261,7 @@
         <deathMessage>{0} has molten.</deathMessage>
         <hediff>WNA_CastDamage</hediff>
         <impactSoundType>Slice</impactSoundType>
-        <workerClass>WNA.Damager.WNA_DamagerCulling</workerClass>
+        <workerClass>WNA.Damager.DamagerCulling</workerClass>
         <cutExtraTargetsCurve>
             <points>
                 <li>0,1</li>

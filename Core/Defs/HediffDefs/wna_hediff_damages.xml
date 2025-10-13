@@ -237,6 +237,122 @@
             </li>
         </stages>
     </HediffDef>
+
+    <HediffDef>
+        <defName>WNA_RadEffect</defName>
+        <label>rad-field buildup</label>
+        <description>Hazardous effect of being exposed to radiation field. The special radiation field can convert the non-radioactive atoms that consisting normal tissue into radioactive isotopes, causing endogenous radiation that is difficult to eliminate. In extreme cases, the victim themselves will become a strong source of radiation.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0,0,0)</defaultLabelColor>
+        <lethalSeverity>99</lethalSeverity>
+        <canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
+        <makesSickThought>true</makesSickThought>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <taleOnVisible>ToxicityRevealed</taleOnVisible>
+        <tendable>true</tendable>
+        <comps>
+            <li Class="HediffCompProperties_SurgeryInspectable">
+                <surgicalDetectionDesc>Radiation damages can be found in {PAWN_nameDef}'s body. This unusual radiation effect is turning normal tissue into radiation souces, and almost cannot naturally expire.</surgicalDetectionDesc>
+            </li>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_TendDuration">
+                <severityPerDayTended>-0.01</severityPerDayTended>
+                <baseTendDurationHours>48</baseTendDurationHours>
+            </li>
+            <li Class="WNA.HediffCompProp.CompRadFieldSpreader">
+                <config>
+                    <radLevel>10</radLevel>
+                    <radius>4.9</radius>
+                    <edgeFactor>0.3</edgeFactor>
+                    <threshold>3</threshold>
+                    <radLevelDelay>180</radLevelDelay>
+                    <isSeverityRadLevel>true</isSeverityRadLevel>
+                </config>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>minor</label>
+                <vomitMtbDays>5</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>0.9</postFactor>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>OrganDecay</hediff>
+                        <mtbDays>60</mtbDays>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Carcinoma</hediff>
+                        <mtbDays>30</mtbDays>
+                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>obvious</label>
+                <minSeverity>3</minSeverity>
+                <vomitMtbDays>2</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>0.6</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>0.5</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <postFactor>0.4</postFactor>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Carcinoma</hediff>
+                        <mtbDays>30</mtbDays>
+                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                    </li>
+                    <li Class="HediffGiver_Random">
+                        <hediff>OrganDecay</hediff>
+                        <mtbDays>15</mtbDays>
+                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>severe</label>
+                <minSeverity>33</minSeverity>
+                <vomitMtbDays>0.25</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.10</setMax>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                </capMods>
+                <hediffGivers>
+                    <li Class="HediffGiver_Random">
+                        <hediff>Carcinoma</hediff>
+                        <mtbDays>6</mtbDays>
+                        <canAffectAnyLivePart>true</canAffectAnyLivePart>
+                    </li>
+                </hediffGivers>
+            </li>
+        </stages>
+    </HediffDef>
     
     <HediffDef>
         <defName>WNA_Corrosion</defName>

@@ -116,11 +116,11 @@
     </PawnKindDef>
 
     <PawnKindDef ParentName="WNA_PawnsHuman">
-        <defName>WNA_LysTroop</defName>
+        <defName>WNA_LysisTroop</defName>
         <label>lysis troop</label>
         <combatPower>80</combatPower>
         <weaponTags>
-            <li>Tag_WNACivilian</li>
+            <li>Tag_WNALysisTroop</li>
         </weaponTags>
         <apparelRequired>
 			<li>WNA_StdMiliSuit</li>

@@ -107,7 +107,7 @@
 	    </recipeUsers>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
-    
+
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_RepackRation</defName>
         <description>Use whelingnorther techniques to pack normal meals into WNA militaty rations.</description>

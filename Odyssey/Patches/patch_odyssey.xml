@@ -6,39 +6,39 @@
             <li Class="StockGenerator_BuyTradeTag"><tag>GravshipUpgrade</tag></li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Gravcore</thingDef>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
                 <countRange>50000~80000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>GravlitePanel</thingDef>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
                 <countRange>100000~120000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>SentienceCatalyst</thingDef>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
                 <countRange>100000~120000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>ShuttleEngine</thingDef>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
                 <countRange>50000~80000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>BlocksVacstone</thingDef>
-                <price>Cheap</price>
-                <countRange>230000~290000</countRange>
+                <price>VeryCheap</price>
+                <countRange>500000~800000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>WNA_SeedArchean</thingDef>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
                 <countRange>10000~15000</countRange>
             </li>
             <li Class="StockGenerator_Tag">
                 <tradeTag>GravshipUpgrade</tradeTag>
                 <thingDefCountRange>1~2</thingDefCountRange>
                 <countRange>10000~20000</countRange>
-                <price>Cheap</price>
+                <price>VeryCheap</price>
             </li>
         </value>
     </Operation>
@@ -57,7 +57,7 @@
 	    <xpath>Defs/ThingDef[defName="GravEngine"]/comps/li[@Class="CompProperties_SubstructureFootprint"]</xpath>
         <value>
             <li Class="CompProperties_SubstructureFootprint">
-                <radius>24.9</radius>
+                <radius>27.9</radius>
             </li>
         </value>
     </Operation>
@@ -71,7 +71,7 @@
                 </statOffsets>
                 <requiresLOS>false</requiresLOS>
                 <maxSimultaneous>12</maxSimultaneous>
-                <maxDistance>24.9</maxDistance>
+                <maxDistance>27.9</maxDistance>
             </li>
         </value>
     </Operation>
@@ -79,7 +79,7 @@
 	    <xpath>Defs/ThingDef[defName="GravFieldExtender"]/comps/li[@Class="CompProperties_SubstructureFootprint"]</xpath>
         <value>
             <li Class="CompProperties_SubstructureFootprint">
-                <radius>24.9</radius>
+                <radius>18.9</radius>
             </li>
         </value>
     </Operation>
