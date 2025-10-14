@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: casting -->
+  <WNA_CastBomb.label>casting</WNA_CastBomb.label>
+  <!-- EN: {0} has molten. -->
+  <WNA_CastBomb.deathMessage>{0} has molten.</WNA_CastBomb.deathMessage>
+  
+  <!-- EN: casting -->
+  <WNA_CastMelee.label>casting</WNA_CastMelee.label>
+  <!-- EN: {0} has molten. -->
+  <WNA_CastMelee.deathMessage>{0} has molten.</WNA_CastMelee.deathMessage>
+  
+  <!-- EN: casting -->
+  <WNA_CastRange.label>casting</WNA_CastRange.label>
+  <!-- EN: {0} has molten. -->
+  <WNA_CastRange.deathMessage>{0} has molten.</WNA_CastRange.deathMessage>
+  
+  <!-- EN: chiming -->
+  <WNA_ChimingBlaze.label>chiming</WNA_ChimingBlaze.label>
+  <!-- EN: {0} has molten. -->
+  <WNA_ChimingBlaze.deathMessage>{0} has molten.</WNA_ChimingBlaze.deathMessage>
+  
+  <!-- EN: casting -->
+  <WNA_Culling.label>casting</WNA_Culling.label>
+  <!-- EN: {0} has molten. -->
+  <WNA_Culling.deathMessage>{0} has molten.</WNA_Culling.deathMessage>
+  
+  <!-- EN: cut -->
+  <WNA_DemoCut.label>cut</WNA_DemoCut.label>
+  <!-- EN: {0} has been sliced into pieces. -->
+  <WNA_DemoCut.deathMessage>{0} has been sliced into pieces.</WNA_DemoCut.deathMessage>
+  
+  <!-- EN: hollow point -->
+  <WNA_HollowPoint.label>hollow point</WNA_HollowPoint.label>
+  <!-- EN: {0} has been shot to death. -->
+  <WNA_HollowPoint.deathMessage>{0} has been shot to death.</WNA_HollowPoint.deathMessage>
+  
+  <!-- EN: kenetic -->
+  <WNA_KineBomb.label>kenetic</WNA_KineBomb.label>
+  <!-- EN: {0} has been impacted into pieces. -->
+  <WNA_KineBomb.deathMessage>{0} has been impacted into pieces.</WNA_KineBomb.deathMessage>
+  
+  <!-- EN: kenetic -->
+  <WNA_KineCut.label>kenetic</WNA_KineCut.label>
+  <!-- EN: {0} has been impacted into pieces. -->
+  <WNA_KineCut.deathMessage>{0} has been impacted into pieces.</WNA_KineCut.deathMessage>
+  
+  <!-- EN: kenetic -->
+  <WNA_KinePoint.label>kenetic</WNA_KinePoint.label>
+  <!-- EN: {0} has been impacted into pieces. -->
+  <WNA_KinePoint.deathMessage>{0} has been impacted into pieces.</WNA_KinePoint.deathMessage>
+  
+  <!-- EN: lysis -->
+  <WNA_Lysis.label>lysis</WNA_Lysis.label>
+  <!-- EN: {0} perished in lysis field. -->
+  <WNA_Lysis.deathMessage>{0} perished in lysis field.</WNA_Lysis.deathMessage>
+  
+  <!-- EN: rad burn -->
+  <WNA_RadBurn.label>rad burn</WNA_RadBurn.label>
+  <!-- EN: {0} died of radiation. -->
+  <WNA_RadBurn.deathMessage>{0} died of radiation.</WNA_RadBurn.deathMessage>
+  
+  <!-- EN: scrap -->
+  <WNA_ScrapPoint.label>scrap</WNA_ScrapPoint.label>
+  <!-- EN: {0} has been shot to death. -->
+  <WNA_ScrapPoint.deathMessage>{0} has been shot to death.</WNA_ScrapPoint.deathMessage>
+  
+</LanguageData>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make ashpark -->
+  <WNA_MakeAshpark.label>制作灰星铁</WNA_MakeAshpark.label>
+  <!-- EN: make ashpark. -->
+  <WNA_MakeAshpark.description>制作灰星铁.</WNA_MakeAshpark.description>
+  <!-- EN: making ashpark. -->
+  <WNA_MakeAshpark.jobString>正在制作灰星铁.</WNA_MakeAshpark.jobString>
+  
+  <!-- EN: make chiming steel -->
+  <WNA_MakeChimingSteel.label>制作赤明铁</WNA_MakeChimingSteel.label>
+  <!-- EN: ascend ashpark to chiming steel. -->
+  <WNA_MakeChimingSteel.description>将灰星铁升变为赤明铁.</WNA_MakeChimingSteel.description>
+  <!-- EN: making chiming steel. -->
+  <WNA_MakeChimingSteel.jobString>正在制作赤明铁.</WNA_MakeChimingSteel.jobString>
+  
+  <!-- EN: make dark asbestos -->
+  <WNA_MakeDarkAsbestos.label>制作黑石棉</WNA_MakeDarkAsbestos.label>
+  <!-- EN: transform stony materials into dark asbestos. -->
+  <WNA_MakeDarkAsbestos.description>将石质材料转化为黑石棉.</WNA_MakeDarkAsbestos.description>
+  <!-- EN: making dark asbestos. -->
+  <WNA_MakeDarkAsbestos.jobString>正在制作黑石棉.</WNA_MakeDarkAsbestos.jobString>
+  
+  <!-- EN: make dark asbestos -->
+  <WNA_MakeDarkAsbestosToo.label>制作黑石棉</WNA_MakeDarkAsbestosToo.label>
+  <!-- EN: transform stony materials into dark asbestos. -->
+  <WNA_MakeDarkAsbestosToo.description>将石质材料转化为黑石棉.</WNA_MakeDarkAsbestosToo.description>
+  <!-- EN: making dark asbestos. -->
+  <WNA_MakeDarkAsbestosToo.jobString>正在制作黑石棉.</WNA_MakeDarkAsbestosToo.jobString>
+  
+</LanguageData>

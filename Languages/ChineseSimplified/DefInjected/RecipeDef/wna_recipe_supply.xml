@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make WNA militaty ration -->
+  <WNA_CookRation.label>制作威灵会军用口粮</WNA_CookRation.label>
+  <!-- EN: Use mana and things can be considered as raw food to make meal pack. -->
+  <WNA_CookRation.description>Use mana and things can be considered as raw food to make meal pack.</WNA_CookRation.description>
+  <!-- EN: working. -->
+  <WNA_CookRation.jobString>正忙.</WNA_CookRation.jobString>
+  
+  <!-- EN: make WNA militaty ration x5 -->
+  <WNA_CookRationBulk.label>制作威灵会军用口粮 x5</WNA_CookRationBulk.label>
+  <!-- EN: Use mana and raw food to make meal pack. -->
+  <WNA_CookRationBulk.description>Use mana and raw food to make meal pack.</WNA_CookRationBulk.description>
+  <!-- EN: working. -->
+  <WNA_CookRationBulk.jobString>正忙.</WNA_CookRationBulk.jobString>
+  
+  <!-- EN: repack meals -->
+  <WNA_RepackRation.label>重新打包口粮</WNA_RepackRation.label>
+  <!-- EN: Use whelingnorther techniques to pack normal meals into WNA militaty rations. -->
+  <WNA_RepackRation.description>Use whelingnorther techniques to pack normal meals into WNA militaty rations.</WNA_RepackRation.description>
+  <!-- EN: working. -->
+  <WNA_RepackRation.jobString>正忙.</WNA_RepackRation.jobString>
+  
+  <!-- EN: repack meals x5 -->
+  <WNA_RepackRationBulk.label>重新打包口粮 x5</WNA_RepackRationBulk.label>
+  <!-- EN: Use whelingnorther techniques to pack normal meals into WNA militaty rations. -->
+  <WNA_RepackRationBulk.description>Use whelingnorther techniques to pack normal meals into WNA militaty rations.</WNA_RepackRationBulk.description>
+  <!-- EN: working. -->
+  <WNA_RepackRationBulk.jobString>正忙.</WNA_RepackRationBulk.jobString>
+  
+  <!-- EN: make WNA medicine pack -->
+  <WNAPackMedikit.label>制作威灵会军用医药箱</WNAPackMedikit.label>
+  <!-- EN: Use mana and herbal medicine to make medicine pack. -->
+  <WNAPackMedikit.description>Use mana and herbal medicine to make medicine pack.</WNAPackMedikit.description>
+  <!-- EN: working. -->
+  <WNAPackMedikit.jobString>正忙.</WNAPackMedikit.jobString>
+  
+  <!-- EN: make WNA medicine pack x5 -->
+  <WNAPackMedikitBulk.label>制作威灵会军用医药箱 x5</WNAPackMedikitBulk.label>
+  <!-- EN: Use mana and herbal medicine to make medicine pack. -->
+  <WNAPackMedikitBulk.description>Use mana and herbal medicine to make medicine pack.</WNAPackMedikitBulk.description>
+  <!-- EN: working. -->
+  <WNAPackMedikitBulk.jobString>正忙.</WNAPackMedikitBulk.jobString>
+  
+</LanguageData>

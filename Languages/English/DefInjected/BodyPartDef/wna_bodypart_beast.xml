@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: outer shell -->
+  <WNABodyPart_DimBeast_Body.label>outer shell</WNABodyPart_DimBeast_Body.label>
+  
+  <!-- EN: core -->
+  <WNABodyPart_DimBeast_Core.label>core</WNABodyPart_DimBeast_Core.label>
+  
+  <!-- EN: shell -->
+  <WNABodyPart_DimBeast_Shell.label>shell</WNABodyPart_DimBeast_Shell.label>
+  
+  <!-- EN: subcore -->
+  <WNABodyPart_DimBeast_Subcore.label>subcore</WNABodyPart_DimBeast_Subcore.label>
+  
+  <!-- EN: tendril -->
+  <WNABodyPart_DimBeast_Tendril.label>tendril</WNABodyPart_DimBeast_Tendril.label>
+  
+</LanguageData>

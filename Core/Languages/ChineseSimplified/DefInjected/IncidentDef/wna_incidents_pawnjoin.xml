@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <WNAIncident_InitiateJoin.label>威灵会新兵加入</WNAIncident_InitiateJoin.label>
-  <WNAIncident_InitiateJoin.letterText>一个名为 {PAWN_nameDef} 的威灵会新晋者路过了你的定居点. \n\n因为某些原因，{PAWN_pronoun} 停下来 {PAWN_possessive} 脚步并决定加入你。</WNAIncident_InitiateJoin.letterText>
-  <WNAIncident_InitiateJoin.letterLabel>威灵会新兵加入</WNAIncident_InitiateJoin.letterLabel>
-
-
-</LanguageData>

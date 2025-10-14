@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: heat cinnabar -->
+  <WNA_HeatCinnabar.label>heat cinnabar</WNA_HeatCinnabar.label>
+  <!-- EN: treat cinnabar with strong heat to make it decompose into sulphur and mercury. -->
+  <WNA_HeatCinnabar.description>treat cinnabar with strong heat to make it decompose into sulphur and mercury.</WNA_HeatCinnabar.description>
+  <!-- EN: heating cinnabar. -->
+  <WNA_HeatCinnabar.jobString>heating cinnabar.</WNA_HeatCinnabar.jobString>
+  
+  <!-- EN: heat stone blocks -->
+  <WNA_HeatStoneBlock.label>heat stone blocks</WNA_HeatStoneBlock.label>
+  <!-- EN: treat stone with strong heat to gain resources. -->
+  <WNA_HeatStoneBlock.description>treat stone with strong heat to gain resources.</WNA_HeatStoneBlock.description>
+  <!-- EN: heating stone blocks. -->
+  <WNA_HeatStoneBlock.jobString>heating stone blocks.</WNA_HeatStoneBlock.jobString>
+  
+  <!-- EN: heat stone chunk -->
+  <WNA_HeatStoneChunk.label>heat stone chunk</WNA_HeatStoneChunk.label>
+  <!-- EN: treat stone with strong heat to gain resources. -->
+  <WNA_HeatStoneChunk.description>treat stone with strong heat to gain resources.</WNA_HeatStoneChunk.description>
+  <!-- EN: heating a stone chunk. -->
+  <WNA_HeatStoneChunk.jobString>heating a stone chunk.</WNA_HeatStoneChunk.jobString>
+  
+  <!-- EN: make cinnabar -->
+  <WNA_MakeCinnabar.label>make cinnabar</WNA_MakeCinnabar.label>
+  <!-- EN: use mercury and sulphur to make cinnabar. -->
+  <WNA_MakeCinnabar.description>use mercury and sulphur to make cinnabar.</WNA_MakeCinnabar.description>
+  <!-- EN: making cinnabar. -->
+  <WNA_MakeCinnabar.jobString>making cinnabar.</WNA_MakeCinnabar.jobString>
+  
+  <!-- EN: make methanol -->
+  <WNA_MakeMethanol.label>make methanol</WNA_MakeMethanol.label>
+  <!-- EN: distill wood to extract methanol. -->
+  <WNA_MakeMethanol.description>distill wood to extract methanol.</WNA_MakeMethanol.description>
+  <!-- EN: making methanol. -->
+  <WNA_MakeMethanol.jobString>making methanol.</WNA_MakeMethanol.jobString>
+  
+  <!-- EN: make neutroamine -->
+  <WNA_MakeNeutroamine.label>make neutroamine</WNA_MakeNeutroamine.label>
+  <!-- EN: a method to make neutroamine from chemfuel and methanol. great for supporting a colony drug business. -->
+  <WNA_MakeNeutroamine.description>a method to make neutroamine from chemfuel and methanol. great for supporting a colony drug business.</WNA_MakeNeutroamine.description>
+  <!-- EN: refining a corpse. -->
+  <WNA_MakeNeutroamine.jobString>refining a corpse.</WNA_MakeNeutroamine.jobString>
+  
+  <!-- EN: make reinforced barrel -->
+  <WNA_MakeReinforcedBarrel.label>make reinforced barrel</WNA_MakeReinforcedBarrel.label>
+  <!-- EN: forge a colony produced reinforced barrel. -->
+  <WNA_MakeReinforcedBarrel.description>forge a colony produced reinforced barrel.</WNA_MakeReinforcedBarrel.description>
+  <!-- EN: forging a reinforced barrel. -->
+  <WNA_MakeReinforcedBarrel.jobString>forging a reinforced barrel.</WNA_MakeReinforcedBarrel.jobString>
+  
+  <!-- EN: make synthread -->
+  <WNA_MakeSynthread.label>make synthread</WNA_MakeSynthread.label>
+  <!-- EN: a method to make synthread from chemfuel and halogen. someone may have have been missing this so much. -->
+  <WNA_MakeSynthread.description>a method to make synthread from chemfuel and halogen. someone may have have been missing this so much.</WNA_MakeSynthread.description>
+  <!-- EN: refining a corpse. -->
+  <WNA_MakeSynthread.jobString>refining a corpse.</WNA_MakeSynthread.jobString>
+  
+  <!-- EN: make vitalized uranium battery -->
+  <WNA_MakeUraniumBattery.label>make vitalized uranium battery</WNA_MakeUraniumBattery.label>
+  <!-- EN: make an unstable powersource out from uranium. -->
+  <WNA_MakeUraniumBattery.description>make an unstable powersource out from uranium.</WNA_MakeUraniumBattery.description>
+  <!-- EN: making vitalized uranium battery. -->
+  <WNA_MakeUraniumBattery.jobString>making vitalized uranium battery.</WNA_MakeUraniumBattery.jobString>
+  
+  <!-- EN: refine corpse -->
+  <WNA_RefineCorpse.label>refine corpse</WNA_RefineCorpse.label>
+  <!-- EN: refine a corpse to extract some elements composing organic flesh. -->
+  <WNA_RefineCorpse.description>refine a corpse to extract some elements composing organic flesh.</WNA_RefineCorpse.description>
+  <!-- EN: refining a corpse. -->
+  <WNA_RefineCorpse.jobString>refining a corpse.</WNA_RefineCorpse.jobString>
+  
+</LanguageData>

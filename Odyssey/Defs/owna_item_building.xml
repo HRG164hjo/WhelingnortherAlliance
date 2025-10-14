@@ -38,16 +38,14 @@
             </li>
             <li Class="CompProperties_Refuelable">
                 <fuelCapacity>10000</fuelCapacity>
-                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
-                <initialConfigurableTargetFuelLevel>100</initialConfigurableTargetFuelLevel>
                 <fuelMultiplier>10000</fuelMultiplier>
                 <fuelFilter>
                     <thingDefs>
                         <li>WNA_UraniumBattery</li>
                     </thingDefs>
                 </fuelFilter>
-                <fuelLabel>Uranium</fuelLabel>
-                <fuelGizmoLabel>Uranium</fuelGizmoLabel>
+                <fuelLabel>WNA_UraniumBattery</fuelLabel>
+                <fuelGizmoLabel>WNA_UraniumBattery</fuelGizmoLabel>
                 <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
                 <autoRefuelPercent>1</autoRefuelPercent>
                 <showFuelGizmo>true</showFuelGizmo>

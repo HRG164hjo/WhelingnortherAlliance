@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: outer shell -->
+  <WNABodyPart_DimBeast_Body.label>外壳</WNABodyPart_DimBeast_Body.label>
+  
+  <!-- EN: core -->
+  <WNABodyPart_DimBeast_Core.label>核心</WNABodyPart_DimBeast_Core.label>
+  
+  <!-- EN: shell -->
+  <WNABodyPart_DimBeast_Shell.label>外壳</WNABodyPart_DimBeast_Shell.label>
+  
+  <!-- EN: subcore -->
+  <WNABodyPart_DimBeast_Subcore.label>次生核心</WNABodyPart_DimBeast_Subcore.label>
+  
+  <!-- EN: tendril -->
+  <WNABodyPart_DimBeast_Tendril.label>卷须</WNABodyPart_DimBeast_Tendril.label>
+  
+</LanguageData>

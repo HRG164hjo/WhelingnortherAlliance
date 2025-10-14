@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: hypodynamophobia -->
+  <WNA_Trait_Hypodynamophobia.degreeDatas.hypodynamophobia.label>hypodynamophobia</WNA_Trait_Hypodynamophobia.degreeDatas.hypodynamophobia.label>
+  <!-- EN: {PAWN_nameDef} always has an unusual anxiety about the lack of security or defense, {PAWN_possessive} solution is to fire {PAWN_possessive} insanely if {PAWN_pronoun} gets one in hand. -->
+  <WNA_Trait_Hypodynamophobia.degreeDatas.hypodynamophobia.description>{PAWN_nameDef} always has an unusual anxiety about the lack of security or defense, {PAWN_possessive} solution is to fire {PAWN_possessive} insanely if {PAWN_pronoun} gets one in hand.</WNA_Trait_Hypodynamophobia.degreeDatas.hypodynamophobia.description>
+  
+  <!-- EN: unshakable -->
+  <WNA_Trait_Unshakable.degreeDatas.unshakable.label>unshakable</WNA_Trait_Unshakable.degreeDatas.unshakable.label>
+  <!-- EN: Through {PAWN_pronoun} past life, {PAWN_nameDef} has developed unusual willpower, which makes {PAWN_pronoun} incredibly resolute in {PAWN_possessive} path, even seems incomprehensible to others. -->
+  <WNA_Trait_Unshakable.degreeDatas.unshakable.description>Through {PAWN_pronoun} past life, {PAWN_nameDef} has developed unusual willpower, which makes {PAWN_pronoun} incredibly resolute in {PAWN_possessive} path, even seems incomprehensible to others.</WNA_Trait_Unshakable.degreeDatas.unshakable.description>
+  
+</LanguageData>

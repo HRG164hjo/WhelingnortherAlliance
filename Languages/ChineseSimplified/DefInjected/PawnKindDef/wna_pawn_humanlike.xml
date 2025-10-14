@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: darknight commando -->
+  <WNA_DarknightComm.label>暗夜特种兵</WNA_DarknightComm.label>
+  
+  <!-- EN: disciple -->
+  <WNA_Disciple.label>门徒</WNA_Disciple.label>
+  
+  <!-- EN: field trooper -->
+  <WNA_FieldTroop.label>野战部队</WNA_FieldTroop.label>
+  
+  <!-- EN: iron guardian -->
+  <WNA_IronGuard.label>钢铁守卫</WNA_IronGuard.label>
+  
+  <!-- EN: lysis troop -->
+  <WNA_LysisTroop.label>裂解部队</WNA_LysisTroop.label>
+  
+  <!-- EN: parasomniant -->
+  <WNA_Parasomniant.label>永眠部队</WNA_Parasomniant.label>
+  
+  <!-- EN: saint -->
+  <WNA_Saint.label>圣徒</WNA_Saint.label>
+  
+  <!-- EN: siege trooper -->
+  <WNA_SiegeTroop.label>攻城部队</WNA_SiegeTroop.label>
+  
+  <!-- EN: stratagem commando -->
+  <WNA_StratagemComm.label>神策特种兵</WNA_StratagemComm.label>
+  
+  <!-- EN: strike force -->
+  <WNA_StrikeForce.label>强袭先锋</WNA_StrikeForce.label>
+  
+  <!-- EN: technician -->
+  <WNA_Technician.label>工程兵</WNA_Technician.label>
+  
+  <!-- EN: heavy vanguard -->
+  <WNA_Vanguard.label>重装先驱</WNA_Vanguard.label>
+  
+</LanguageData>

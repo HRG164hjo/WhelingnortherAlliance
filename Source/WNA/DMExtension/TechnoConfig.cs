@@ -10,6 +10,8 @@ namespace WNA.DMExtension
         public float? laserOuterSpread;
         public float? laserThickness;
         public int? laserDuration;
+        public bool? ignoreRoof;
+        public bool? ironKill;
         public static TechnoConfig Get(Def def)
         {
             return def?.GetModExtension<TechnoConfig>();

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: transport cargo -->
+  <WNA_TrspCargo.label>transport cargo</WNA_TrspCargo.label>
+  <!-- EN: A single-use transport cargo. -->
+  <WNA_TrspCargo.description>A single-use transport cargo.</WNA_TrspCargo.description>
+  
+  <!-- EN: transport shuttle -->
+  <WNA_TrspShuttle.label>transport shuttle</WNA_TrspShuttle.label>
+  <!-- EN: A transport shuttle. -->
+  <WNA_TrspShuttle.description>A transport shuttle.</WNA_TrspShuttle.description>
+  <!-- EN: {0} is ready to launch again. -->
+  <WNA_TrspShuttle.comps.CompLaunchable.cooldownEndedMessage>{0} is ready to launch again.</WNA_TrspShuttle.comps.CompLaunchable.cooldownEndedMessage>
+  <!-- EN: Uranium -->
+  <WNA_TrspShuttle.comps.CompRefuelable.fuelGizmoLabel>Uranium</WNA_TrspShuttle.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Uranium -->
+  <WNA_TrspShuttle.comps.CompRefuelable.fuelLabel>Uranium</WNA_TrspShuttle.comps.CompRefuelable.fuelLabel>
+  
+</LanguageData>

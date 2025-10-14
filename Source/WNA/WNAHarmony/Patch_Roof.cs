@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using Verse;
+using WNA.DMExtension;
 
 namespace WNA.WNAHarmony
 {
@@ -18,9 +19,8 @@ namespace WNA.WNAHarmony
         {
             try
             {
-                return (T)classType
-                    .GetField(fieldName, BindingFlags.NonPublic | BindingFlags.Static)
-                    ?.GetValue(null);
+                return (T)classType.GetField(fieldName, BindingFlags.NonPublic |
+                    BindingFlags.Static)?.GetValue(null);
             }
             catch
             {
@@ -34,7 +34,9 @@ namespace WNA.WNAHarmony
         {
             public static bool Prefix(Skyfaller __instance)
             {
-                if (__instance?.def?.defName == "WNA_WARPIN" || __instance?.def?.defName == "WNA_Ether_Aeroblaze") return false;
+                TechnoConfig ext = TechnoConfig.Get(__instance?.def);
+                if (ext?.ignoreRoof == true)
+                    return false;
                 return true;
             }
         }

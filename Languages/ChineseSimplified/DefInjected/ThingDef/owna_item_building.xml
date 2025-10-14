@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: life suporter -->
+  <WNA_LifeSupporter.label>life suporter</WNA_LifeSupporter.label>
+  <!-- EN: A wall-mounted life support unit -->
+  <WNA_LifeSupporter.description>A wall-mounted life support unit</WNA_LifeSupporter.description>
+  
+  <!-- EN: reinforced thruster -->
+  <WNA_ReinforcedThruster.label>reinforced thruster</WNA_ReinforcedThruster.label>
+  <!-- EN: TODO -->
+  <WNA_ReinforcedThruster.description>TODO</WNA_ReinforcedThruster.description>
+  
+  <!-- EN: uranium fuel tank -->
+  <WNA_UraniumFuelTank.label>uranium fuel tank</WNA_UraniumFuelTank.label>
+  <!-- EN: TODO -->
+  <WNA_UraniumFuelTank.description>TODO</WNA_UraniumFuelTank.description>
+  <!-- EN: Uranium -->
+  <WNA_UraniumFuelTank.comps.CompRefuelable.fuelGizmoLabel>Uranium</WNA_UraniumFuelTank.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Uranium -->
+  <WNA_UraniumFuelTank.comps.CompRefuelable.fuelLabel>Uranium</WNA_UraniumFuelTank.comps.CompRefuelable.fuelLabel>
+  
+</LanguageData>

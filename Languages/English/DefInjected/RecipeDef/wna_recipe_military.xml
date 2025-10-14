@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make antigrain warhead -->
+  <WNA_MakeAntigrainWarhead.label>make antigrain warhead</WNA_MakeAntigrainWarhead.label>
+  <!-- EN: Mix uranium and unstable particles and put the mixture into a plasteel shell to make an antigrain warhead. -->
+  <WNA_MakeAntigrainWarhead.description>Mix uranium and unstable particles and put the mixture into a plasteel shell to make an antigrain warhead.</WNA_MakeAntigrainWarhead.description>
+  <!-- EN: making antigrain warhead. -->
+  <WNA_MakeAntigrainWarhead.jobString>making antigrain warhead.</WNA_MakeAntigrainWarhead.jobString>
+  
+  <!-- EN: make attunement fabric -->
+  <WNA_MakeAttunementFabric.label>make attunement fabric</WNA_MakeAttunementFabric.label>
+  <!-- EN: make attunement fabric with raw material and a baseboard. -->
+  <WNA_MakeAttunementFabric.description>make attunement fabric with raw material and a baseboard.</WNA_MakeAttunementFabric.description>
+  <!-- EN: making fabric. -->
+  <WNA_MakeAttunementFabric.jobString>making fabric.</WNA_MakeAttunementFabric.jobString>
+  
+  <!-- EN: make fabric baseboard -->
+  <WNA_MakeBaseboard.label>make fabric baseboard</WNA_MakeBaseboard.label>
+  <!-- EN: make a baseboard used for making attunement fabric. -->
+  <WNA_MakeBaseboard.description>make a baseboard used for making attunement fabric.</WNA_MakeBaseboard.description>
+  <!-- EN: making baseboard. -->
+  <WNA_MakeBaseboard.jobString>making baseboard.</WNA_MakeBaseboard.jobString>
+  
+  <!-- EN: make reinforced concrete -->
+  <WNA_MakeConcrete.label>make reinforced concrete</WNA_MakeConcrete.label>
+  <!-- EN: make an advanced concrete sufficient for building. -->
+  <WNA_MakeConcrete.description>make an advanced concrete sufficient for building.</WNA_MakeConcrete.description>
+  <!-- EN: making reinforced concrete. -->
+  <WNA_MakeConcrete.jobString>making reinforced concrete.</WNA_MakeConcrete.jobString>
+  
+  <!-- EN: make reinforced concrete -->
+  <WNA_MakeConcreteToo.label>make reinforced concrete</WNA_MakeConcreteToo.label>
+  <!-- EN: make an advanced concrete sufficient for building. -->
+  <WNA_MakeConcreteToo.description>make an advanced concrete sufficient for building.</WNA_MakeConcreteToo.description>
+  <!-- EN: making reinforced concrete. -->
+  <WNA_MakeConcreteToo.jobString>making reinforced concrete.</WNA_MakeConcreteToo.jobString>
+  
+  <!-- EN: make desolisium -->
+  <WNA_MakeDesolisium.label>make desolisium</WNA_MakeDesolisium.label>
+  <!-- EN: make an alloy sufficient for defending. -->
+  <WNA_MakeDesolisium.description>make an alloy sufficient for defending.</WNA_MakeDesolisium.description>
+  <!-- EN: making desolisium. -->
+  <WNA_MakeDesolisium.jobString>making desolisium.</WNA_MakeDesolisium.jobString>
+  
+  <!-- EN: make desolisium -->
+  <WNA_MakeDesolisiumToo.label>make desolisium</WNA_MakeDesolisiumToo.label>
+  <!-- EN: make an alloy sufficient for defending. -->
+  <WNA_MakeDesolisiumToo.description>make an alloy sufficient for defending.</WNA_MakeDesolisiumToo.description>
+  <!-- EN: making desolisium. -->
+  <WNA_MakeDesolisiumToo.jobString>making desolisium.</WNA_MakeDesolisiumToo.jobString>
+  
+  <!-- EN: make trinisium -->
+  <WNA_MakeTrinisium.label>make trinisium</WNA_MakeTrinisium.label>
+  <!-- EN: make an alloy sufficient for attacking. -->
+  <WNA_MakeTrinisium.description>make an alloy sufficient for attacking.</WNA_MakeTrinisium.description>
+  <!-- EN: making trinisium. -->
+  <WNA_MakeTrinisium.jobString>making trinisium.</WNA_MakeTrinisium.jobString>
+  
+</LanguageData>

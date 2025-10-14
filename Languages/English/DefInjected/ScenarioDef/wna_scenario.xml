@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Crashlanded (WNA) -->
+  <WNA_PlayerScenario.label>Crashlanded (WNA)</WNA_PlayerScenario.label>
+  <!-- EN: Every people encounters accidents, even if they are from Whelingnorther Alliance. Your ship crashed when carrying out a routine. Later you three landed on an unfamiliar area, with debris of your ship scattered around. -->
+  <WNA_PlayerScenario.description>Every people encounters accidents, even if they are from Whelingnorther Alliance. Your ship crashed when carrying out a routine. Later you three landed on an unfamiliar area, with debris of your ship scattered around.</WNA_PlayerScenario.description>
+  <!-- EN: Every people encounters accidents, even if they are from Whelingnorther Alliance. Your ship crashed when carrying out a routine. Later you three landed on an unfamiliar area, with debris of your ship scattered around. -->
+  <WNA_PlayerScenario.scenario.description>Every people encounters accidents, even if they are from Whelingnorther Alliance. Your ship crashed when carrying out a routine. Later you three landed on an unfamiliar area, with debris of your ship scattered around.</WNA_PlayerScenario.scenario.description>
+  <!-- EN: Crashlanded (WNA) -->
+  <WNA_PlayerScenario.scenario.name>Crashlanded (WNA)</WNA_PlayerScenario.scenario.name>
+  <!-- EN: Your ship experienced an accident and crashed before you three fixing it up. Now you three just left the debris of your ship, nothing surrounding is familiar, except the heavy wrench in your hand. -->
+  <WNA_PlayerScenario.scenario.parts.GameStartDialog.text>Your ship experienced an accident and crashed before you three fixing it up. Now you three just left the debris of your ship, nothing surrounding is familiar, except the heavy wrench in your hand.</WNA_PlayerScenario.scenario.parts.GameStartDialog.text>
+  <!-- EN: Three technicians just experienced a ship crash. -->
+  <WNA_PlayerScenario.scenario.summary>Three technicians just experienced a ship crash.</WNA_PlayerScenario.scenario.summary>
+  
+</LanguageData>

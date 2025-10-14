@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make antigrain warhead -->
+  <WNA_MakeAntigrainWarhead.label>制作反粒子弹头</WNA_MakeAntigrainWarhead.label>
+  <!-- EN: Mix uranium and unstable particles and put the mixture into a plasteel shell to make an antigrain warhead. -->
+  <WNA_MakeAntigrainWarhead.description>把铀和不稳定粒子兑到一块然后放进玻璃钢壳子里, 这样就有了反粒子弹头.</WNA_MakeAntigrainWarhead.description>
+  <!-- EN: making antigrain warhead. -->
+  <WNA_MakeAntigrainWarhead.jobString>正在制作反粒子弹头.</WNA_MakeAntigrainWarhead.jobString>
+  
+  <!-- EN: make attunement fabric -->
+  <WNA_MakeAttunementFabric.label>制作同调织物</WNA_MakeAttunementFabric.label>
+  <!-- EN: make attunement fabric with raw material and a baseboard. -->
+  <WNA_MakeAttunementFabric.description>用原材料和一块基板制作同调织物.</WNA_MakeAttunementFabric.description>
+  <!-- EN: making fabric. -->
+  <WNA_MakeAttunementFabric.jobString>正在制作织物.</WNA_MakeAttunementFabric.jobString>
+  
+  <!-- EN: make fabric baseboard -->
+  <WNA_MakeBaseboard.label>制作同调织物基板</WNA_MakeBaseboard.label>
+  <!-- EN: make a baseboard used for making attunement fabric. -->
+  <WNA_MakeBaseboard.description>制作一块用来生产同调织物的基板.</WNA_MakeBaseboard.description>
+  <!-- EN: making baseboard. -->
+  <WNA_MakeBaseboard.jobString>正在制作同调织物基板.</WNA_MakeBaseboard.jobString>
+  
+  <!-- EN: make reinforced concrete -->
+  <WNA_MakeConcrete.label>制作钢筋混凝土</WNA_MakeConcrete.label>
+  <!-- EN: make an advanced concrete sufficient for building. -->
+  <WNA_MakeConcrete.description>制作一种性能优良的建造用混凝土材料.</WNA_MakeConcrete.description>
+  <!-- EN: making reinforced concrete. -->
+  <WNA_MakeConcrete.jobString>正在制作钢筋混凝土.</WNA_MakeConcrete.jobString>
+  
+  <!-- EN: make reinforced concrete -->
+  <WNA_MakeConcreteToo.label>制作钢筋混凝土</WNA_MakeConcreteToo.label>
+  <!-- EN: make an advanced concrete sufficient for building. -->
+  <WNA_MakeConcreteToo.description>制作一种性能优良的建造用混凝土材料.</WNA_MakeConcreteToo.description>
+  <!-- EN: making reinforced concrete. -->
+  <WNA_MakeConcreteToo.jobString>正在制作钢筋混凝土.</WNA_MakeConcreteToo.jobString>
+  
+  <!-- EN: make desolisium -->
+  <WNA_MakeDesolisium.label>制作孤立合金</WNA_MakeDesolisium.label>
+  <!-- EN: make an alloy sufficient for defending. -->
+  <WNA_MakeDesolisium.description>制作一种适用于防御用途的合金.</WNA_MakeDesolisium.description>
+  <!-- EN: making desolisium. -->
+  <WNA_MakeDesolisium.jobString>正在制作孤立合金.</WNA_MakeDesolisium.jobString>
+  
+  <!-- EN: make desolisium -->
+  <WNA_MakeDesolisiumToo.label>制作孤立合金</WNA_MakeDesolisiumToo.label>
+  <!-- EN: make an alloy sufficient for defending. -->
+  <WNA_MakeDesolisiumToo.description>制作一种适用于防御用途的合金.</WNA_MakeDesolisiumToo.description>
+  <!-- EN: making desolisium. -->
+  <WNA_MakeDesolisiumToo.jobString>正在制作孤立合金.</WNA_MakeDesolisiumToo.jobString>
+  
+  <!-- EN: make trinisium -->
+  <WNA_MakeTrinisium.label>制作三相合金</WNA_MakeTrinisium.label>
+  <!-- EN: make an alloy sufficient for attacking. -->
+  <WNA_MakeTrinisium.description>制作一种适用于制造武器的合金.</WNA_MakeTrinisium.description>
+  <!-- EN: making trinisium. -->
+  <WNA_MakeTrinisium.jobString>正在制作三相合金.</WNA_MakeTrinisium.jobString>
+  
+</LanguageData>

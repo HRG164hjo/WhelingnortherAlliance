@@ -14,7 +14,9 @@ namespace WNA.ThingCompProp
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
             base.PostDestroy(mode, previousMap);
-            if (previousMap != null)
+            if (previousMap != null &&
+                (mode == DestroyMode.KillFinalize ||
+                mode == DestroyMode.KillFinalizeLeavingsOnly))
             {
                 RadFieldUtility.RadSpread(
                     parent.Position,

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: dim hybeast -->
+  <WNA_DimBeastRace.label>dim hybeast</WNA_DimBeastRace.label>
+  <!-- EN: A strange ball-like creature, created by Whelinghorther Alliance. There's many stories about the detailed origin of such thing, one stated that Alliance used animal corpses to create them. -->
+  <WNA_DimBeastRace.description>A strange ball-like creature, created by Whelinghorther Alliance. There's many stories about the detailed origin of such thing, one stated that Alliance used animal corpses to create them.</WNA_DimBeastRace.description>
+  <!-- EN: tendril -->
+  <WNA_DimBeastRace.tools.tendril.label>tendril</WNA_DimBeastRace.tools.tendril.label>
+  <!-- EN: head -->
+  <WNA_DimBeastRace.tools.head.label>head</WNA_DimBeastRace.tools.head.label>
+  <!-- EN: horn -->
+  <WNA_DimBeastRace.tools.horn.label>horn</WNA_DimBeastRace.tools.horn.label>
+  
+  <!-- EN: thorn hybeast -->
+  <WNA_ThornBeastRace.label>thorn hybeast</WNA_ThornBeastRace.label>
+  <!-- EN: A strange ball-like beast, even Whelingnorther Alliance is curious about its origion. It can throw spears to whatever it think is a threat, fast and long range. -->
+  <WNA_ThornBeastRace.description>A strange ball-like beast, even Whelingnorther Alliance is curious about its origion. It can throw spears to whatever it think is a threat, fast and long range.</WNA_ThornBeastRace.description>
+  <!-- EN: tendril -->
+  <WNA_ThornBeastRace.tools.tendril.label>tendril</WNA_ThornBeastRace.tools.tendril.label>
+  <!-- EN: head -->
+  <WNA_ThornBeastRace.tools.head.label>head</WNA_ThornBeastRace.tools.head.label>
+  <!-- EN: horn -->
+  <WNA_ThornBeastRace.tools.horn.label>horn</WNA_ThornBeastRace.tools.horn.label>
+  
+</LanguageData>

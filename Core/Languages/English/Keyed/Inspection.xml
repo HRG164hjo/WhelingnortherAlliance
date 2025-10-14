@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-	<WNA.Recipe.Inspection.LetterLabel>Inspection Report</WNA.Recipe.Inspection.LetterLabel>
-	<WNA.Recipe.Inspection.None>{PAWN} has no noticeable health conditions.</WNA.Recipe.Inspection.None>
-	<WNA.Recipe.Inspection.Visible>{PAWN} has the following special health conditions:</WNA.Recipe.Inspection.Visible>
-	<WNA.Recipe.Inspection.Hidden>{PAWN} has the following hidden health conditions:</WNA.Recipe.Inspection.Hidden>
-
-</LanguageData>

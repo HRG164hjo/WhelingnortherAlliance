@@ -251,7 +251,7 @@
         <defName>WNA_MakeSynthread</defName>
         <label>make synthread</label>
         <description>a method to make synthread from chemfuel and halogen. someone may have have been missing this so much.</description>
-        <jobString>refining a corpse.</jobString>
+        <jobString>making synthread.</jobString>
         <ingredients>
             <li>
                 <filter>
@@ -290,7 +290,7 @@
         <defName>WNA_MakeNeutroamine</defName>
         <label>make neutroamine</label>
         <description>a method to make neutroamine from chemfuel and methanol. great for supporting a colony drug business.</description>
-        <jobString>refining a corpse.</jobString>
+        <jobString>making neutroamine.</jobString>
         <ingredients>
             <li>
                 <filter>

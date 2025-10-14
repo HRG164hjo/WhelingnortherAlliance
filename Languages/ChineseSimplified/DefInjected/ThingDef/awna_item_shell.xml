@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: psychic blast shell -->
+  <WNA_ShellPsychic.label>psychic blast shell</WNA_ShellPsychic.label>
+  <!-- EN: A shell made of bioferrite and enhanced with special techniques. When detonated it can cause a unique psychic phenomena, causing nearby people fall into psychic drunkenness. -->
+  <WNA_ShellPsychic.description>A shell made of bioferrite and enhanced with special techniques. When detonated it can cause a unique psychic phenomena, causing nearby people fall into psychic drunkenness.</WNA_ShellPsychic.description>
+  
+  <!-- EN: psychic blast shell -->
+  <WNA_ShellPsychic_Proj.label>psychic blast shell</WNA_ShellPsychic_Proj.label>
+  
+</LanguageData>

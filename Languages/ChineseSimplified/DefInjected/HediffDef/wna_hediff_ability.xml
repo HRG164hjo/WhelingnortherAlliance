@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: invisibility -->
+  <WNA_AbilityInvisibility.label>隐身</WNA_AbilityInvisibility.label>
+  <!-- EN: This pawn is hidden beyond sights. -->
+  <WNA_AbilityInvisibility.description>此人藏形于视界之外.</WNA_AbilityInvisibility.description>
+  
+  <!-- EN: bestowed wisdom -->
+  <WNA_AbilityWisdom.label>获赐智慧</WNA_AbilityWisdom.label>
+  <!-- EN: This pawn is bestowed with wisdom by a Whelingnorther Saint. -->
+  <WNA_AbilityWisdom.description>此人从威灵会的一位圣徒处获得了额外的智慧.</WNA_AbilityWisdom.description>
+  
+  <!-- EN: disabled -->
+  <WNA_Disabled.label>失能</WNA_Disabled.label>
+  <!-- EN: The trauma after experiencing psylink deprivation without psylink. Commonly this condition can recover in 3 days or so. -->
+  <WNA_Disabled.description>没有启灵神经的人遭遇灵能剥夺的后遗症. 一般来说这种情况在大概三天后就会消失.</WNA_Disabled.description>
+  
+  <!-- EN: psychic trauma -->
+  <WNA_PsychicTrauma.label>灵能创伤</WNA_PsychicTrauma.label>
+  <!-- EN: The trauma after experiencing psylink deprivation with psylink. -->
+  <WNA_PsychicTrauma.description>启灵神经被强行剥夺导致的创伤.</WNA_PsychicTrauma.description>
+  <!-- EN: Due to the brutal psychic deprivation {PAWN_nameDef} have experienced, {PAWN_nameDef} is suffering from severe psychic trauma and become incapacitied. Whether {PAWN_nameDef} can recover from this condition is uncertain. -->
+  <WNA_PsychicTrauma.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>由于{PAWN_nameDef}经历的粗暴的灵能剥夺, {PAWN_nameDef}因严重的灵能创伤陷入瘫痪. {PAWN_nameDef}是否能从当前状态中康复尚未可知.</WNA_PsychicTrauma.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>
+  
+</LanguageData>

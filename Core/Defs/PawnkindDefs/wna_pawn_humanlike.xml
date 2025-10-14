@@ -4,9 +4,6 @@
     <PawnKindDef Abstract="True" ParentName="WNA_PawnsBase" Name="WNA_PawnsHuman">
         <race>WNA_Human</race>
         <apparelColor>(74,74,74)</apparelColor>
-        <forcedTraits>
-            <li>WNA_Trait_Unshakable</li>
-        </forcedTraits>
     </PawnKindDef>
     <PawnKindDef ParentName="WNA_PawnsHuman">
         <defName>WNA_Technician</defName>
@@ -221,7 +218,6 @@
             <li>Ascetic</li>
             <li>Psychopath</li>
             <li>Tough</li>
-            <li>WNA_Trait_Unshakable</li>
         </forcedTraits>
         <apparelRequired>
 			<li>WNA_AllianceHood</li>

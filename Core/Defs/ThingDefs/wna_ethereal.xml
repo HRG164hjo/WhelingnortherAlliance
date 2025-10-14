@@ -28,6 +28,11 @@
             <motesPerCell>0</motesPerCell>
             <speed>500</speed>
         </skyfaller>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <ignoreRoof>true</ignoreRoof>
+            </li>
+        </modExtensions>
     </ThingDef>
     <ThingDef>
         <defName>WNA_WARPON</defName>
@@ -79,6 +84,11 @@
                 </points>
             </angleCurve>
         </skyfaller>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <ignoreRoof>true</ignoreRoof>
+            </li>
+        </modExtensions>
     </ThingDef>
     
     <ThingDef ParentName="WNA_EtherealThingBase">

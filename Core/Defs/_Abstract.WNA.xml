@@ -77,6 +77,10 @@
 			<li>Transhumanist</li>
 			<li>Wimp</li>
 		</disallowedTraits>
+        <forcedTraits>
+            <li>WNA_Trait_Unshakable</li>
+            <li MayRequire="Aelanna.Endling">Aelanna_Endling</li>
+        </forcedTraits>
         <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
         <minGenerationAge>18</minGenerationAge>
         <maxGenerationAge>40</maxGenerationAge>

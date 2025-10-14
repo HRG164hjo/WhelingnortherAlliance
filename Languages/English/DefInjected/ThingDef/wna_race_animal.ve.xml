@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ferocious hybeast -->
+  <WNA_FerociousBeastRace.label>ferocious hybeast</WNA_FerociousBeastRace.label>
+  <!-- EN: A dangerous ball-like ghosty beast, it's said that Whelingnorther Alliance created this kind as bio weapons. -->
+  <WNA_FerociousBeastRace.description>A dangerous ball-like ghosty beast, it's said that Whelingnorther Alliance created this kind as bio weapons.</WNA_FerociousBeastRace.description>
+  <!-- EN: tendril -->
+  <WNA_FerociousBeastRace.tools.tendril.label>tendril</WNA_FerociousBeastRace.tools.tendril.label>
+  <!-- EN: head -->
+  <WNA_FerociousBeastRace.tools.head.label>head</WNA_FerociousBeastRace.tools.head.label>
+  <!-- EN: horn -->
+  <WNA_FerociousBeastRace.tools.horn.label>horn</WNA_FerociousBeastRace.tools.horn.label>
+  
+</LanguageData>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: whelingnorther path -->
+  <Meme_WNA_Ideo.label>whelingnorther path</Meme_WNA_Ideo.label>
+  <!-- EN: We devote ourselves to the glorious great career of Whelingnorther. -->
+  <Meme_WNA_Ideo.description>我们奉身于威灵诺德的光辉伟业.</Meme_WNA_Ideo.description>
+  
+  <!-- EN: whelingnorther -->
+  <Structure_WNA_Ideo.label>whelingnorther</Structure_WNA_Ideo.label>
+  <!-- EN: When the ancient whelingnorthans faced calamity and annihilation, it was their effort and sacrifice that led to the greatness and glory of Whelingnorther Empire; when the ancestors of us rise from the humble, it was their effort and sacrifices that led to we Whelingnorther Alliance. No great works can be done without great sacrifices, without great devotions we cannot achieve eternity, salvation and immortality. We descendants will follow the path led by those who came before us; we will understand our duty and accept our manifest destiny; we shall alter and determine the past, the present and the future. Every corner of existance shall bath in the glory of Whelignorther, they may not understand, but they shall obey and follow. -->
+  <Structure_WNA_Ideo.description>在威灵古族危殆之际, 正是他们的奋力与牺牲铸成威灵帝国的伟大荣光; 当我们的前人崛起微末之中, 正是他们的奋力与牺牲铸成了我们威灵诺德联合会. 没有伟大的毁灭便不会有伟大的创生, 没有伟大的牺牲便无从抵达永恒自在不朽. 我们后人将遵行前人为我们寻的正道; 我们明晰我们将负的重负, 欣然接受我们的昭昭天命; 我们将亲手塑造过往、当下与将来. 一切存在之物都将沐浴威灵诺德的荣光, 他们或许不会理解, 但他们必将屈服.</Structure_WNA_Ideo.description>
+  <!-- EN: whelingnorthan -->
+  <Structure_WNA_Ideo.symbolPacks.0.adjective>whelingnorthan</Structure_WNA_Ideo.symbolPacks.0.adjective>
+  <!-- EN: Whelingnorther path -->
+  <Structure_WNA_Ideo.symbolPacks.0.ideoName>Whelingnorther path</Structure_WNA_Ideo.symbolPacks.0.ideoName>
+  <!-- EN: follower -->
+  <Structure_WNA_Ideo.symbolPacks.0.member>follower</Structure_WNA_Ideo.symbolPacks.0.member>
+  <!-- EN: whelingnorther -->
+  <Structure_WNA_Ideo.symbolPacks.0.theme>whelingnorther</Structure_WNA_Ideo.symbolPacks.0.theme>
+  <!-- EN: altar -->
+  <Structure_WNA_Ideo.worshipRoomLabel>altar</Structure_WNA_Ideo.worshipRoomLabel>
+  
+</LanguageData>

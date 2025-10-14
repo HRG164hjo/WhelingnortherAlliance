@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: adv. flak helmet -->
+  <WNA_AdvFlakHead.label>adv. flak helmet</WNA_AdvFlakHead.label>
+  <!-- EN: Simple but useful combat gear, it has special designs against blunt weapons. WNA applied some of their mysterious techniques to this helmet, making it behaves far better than normal flak helmets in fields. -->
+  <WNA_AdvFlakHead.description>Simple but useful combat gear, it has special designs against blunt weapons. WNA applied some of their mysterious techniques to this helmet, making it behaves far better than normal flak helmets in fields.</WNA_AdvFlakHead.description>
+  
+  <!-- EN: adv. flak jacket -->
+  <WNA_AdvFlakJacket.label>adv. flak jacket</WNA_AdvFlakJacket.label>
+  <!-- EN: A heavy flak jacket covering the whole body of wearer. This jacket is strengthed by advanced materials such as alloy fibers, as well as advanced weaving technology. Though not being WNA's best equipment, such jacket is undoubtedly the most cost-efficient and one of the most popular. -->
+  <WNA_AdvFlakJacket.description>A heavy flak jacket covering the whole body of wearer. This jacket is strengthed by advanced materials such as alloy fibers, as well as advanced weaving technology. Though not being WNA's best equipment, such jacket is undoubtedly the most cost-efficient and one of the most popular.</WNA_AdvFlakJacket.description>
+  
+  <!-- EN: alliance cloak -->
+  <WNA_AllianceCloak.label>alliance cloak</WNA_AllianceCloak.label>
+  <!-- EN: Outer layer of WNA standard equipment. This cloak covers almost all of their body, symbolizing one of WNA's thoughts - abnegating what they used to have and to be, to approach transcendence, divinity and salvation. -->
+  <WNA_AllianceCloak.description>Outer layer of WNA standard equipment. This cloak covers almost all of their body, symbolizing one of WNA's thoughts - abnegating what they used to have and to be, to approach transcendence, divinity and salvation.</WNA_AllianceCloak.description>
+  
+  <!-- EN: alliance hood -->
+  <WNA_AllianceHood.label>alliance hood</WNA_AllianceHood.label>
+  <!-- EN: Upper part of WNA standard equipment. This hood covers their eyes, symbolizing one of the WNA's beliefs - don't be blinded by radiance. -->
+  <WNA_AllianceHood.description>Upper part of WNA standard equipment. This hood covers their eyes, symbolizing one of the WNA's beliefs - don't be blinded by radiance.</WNA_AllianceHood.description>
+  
+  <!-- EN: alliance robe -->
+  <WNA_AllianceRobe.label>alliance robe</WNA_AllianceRobe.label>
+  <!-- EN: Inner layer of WNA standard equipment. This robe is durable, reliable and comfortable, exhibiting WNA's good treatment of their own people and their strong logistics scheduling capabilities to some extent. -->
+  <WNA_AllianceRobe.description>Inner layer of WNA standard equipment. This robe is durable, reliable and comfortable, exhibiting WNA's good treatment of their own people and their strong logistics scheduling capabilities to some extent.</WNA_AllianceRobe.description>
+  
+  <!-- EN: ammo loader -->
+  <WNA_AmmoLoader.label>ammo loader</WNA_AmmoLoader.label>
+  <!-- EN: A small device capable of helping wearer to handle weapons, from primal bows to the most advanced individual weapons, thus increase the wearer's fire rate. -->
+  <WNA_AmmoLoader.description>A small device capable of helping wearer to handle weapons, from primal bows to the most advanced individual weapons, thus increase the wearer's fire rate.</WNA_AmmoLoader.description>
+  
+  <!-- EN: guardian helmet -->
+  <WNA_GuardianHelmet.label>guardian helmet</WNA_GuardianHelmet.label>
+  <!-- EN: An equipment that goes extreme in combat and defense, at the expense of many other properties including mobility. Some soldiers volenteer to put on this equipment and turn themselves into a humanoid fort, in order to defend something they value. -->
+  <WNA_GuardianHelmet.description>An equipment that goes extreme in combat and defense, at the expense of many other properties including mobility. Some soldiers volenteer to put on this equipment and turn themselves into a humanoid fort, in order to defend something they value.</WNA_GuardianHelmet.description>
+  
+  <!-- EN: guardian powerarmor -->
+  <WNA_GuardianPowerarmor.label>guardian powerarmor</WNA_GuardianPowerarmor.label>
+  <!-- EN: An equipment that goes extreme in combat and defense, at the expense of many other properties including mobility. Some soldiers volenteer to put on this equipment and turn themselves into a humanoid fort, in order to defend something they value. -->
+  <WNA_GuardianPowerarmor.description>An equipment that goes extreme in combat and defense, at the expense of many other properties including mobility. Some soldiers volenteer to put on this equipment and turn themselves into a humanoid fort, in order to defend something they value.</WNA_GuardianPowerarmor.description>
+  
+  <!-- EN: whelingnorther holyorder -->
+  <WNA_Holyorder.label>whelingnorther holyorder</WNA_Holyorder.label>
+  <!-- EN: An old looking book. Rumour says that WNA artificers made this book with human skin, and used human blood to write down the legends, scriptures and iron-laws of WNA. All whelingnorthan have one this book with them and whenever they are going to say something formally or cast something fatal to their enemies, they will hold this book in their hand. -->
+  <WNA_Holyorder.description>An old looking book. Rumour says that WNA artificers made this book with human skin, and used human blood to write down the legends, scriptures and iron-laws of WNA. All whelingnorthan have one this book with them and whenever they are going to say something formally or cast something fatal to their enemies, they will hold this book in their hand.</WNA_Holyorder.description>
+  
+  <!-- EN: illusion core -->
+  <WNA_IllusionCore.label>illusion core</WNA_IllusionCore.label>
+  <!-- EN: This device can cloak its owner with a stealth field, make its owner invisible form both eyes and sensors. Darknight commandos are equipped with such divice, making them one of the enemies people least want to face. -->
+  <WNA_IllusionCore.description>This device can cloak its owner with a stealth field, make its owner invisible form both eyes and sensors. Darknight commandos are equipped with such divice, making them one of the enemies people least want to face.</WNA_IllusionCore.description>
+  
+  <!-- EN: iron curtain pack -->
+  <WNA_IronPack.label>iron curtain pack</WNA_IronPack.label>
+  <!-- EN: When activated, this device is capable for generating and maintaining a protective shield, make its owner immune to common violence. Iron Guardians are equipped with such device, in order to keep their outpost away from as much dangers as possible. -->
+  <WNA_IronPack.description>When activated, this device is capable for generating and maintaining a protective shield, make its owner immune to common violence. Iron Guardians are equipped with such device, in order to keep their outpost away from as much dangers as possible.</WNA_IronPack.description>
+  
+  <!-- EN: shield pack -->
+  <WNA_ShieldPack.label>shield pack</WNA_ShieldPack.label>
+  <!-- EN: When activated, this device can generate a shield to block ranged attack. -->
+  <WNA_ShieldPack.description>When activated, this device can generate a shield to block ranged attack.</WNA_ShieldPack.description>
+  
+  <!-- EN: standard military suit -->
+  <WNA_StdMiliSuit.label>standard military suit</WNA_StdMiliSuit.label>
+  <!-- EN: WHR standard equipment, a modified version of WNA alliance robe, usually has weaker effect than typical alliance robe, but more suitable for massive producing and arming up troopers as it can be made from various kinds of materials. -->
+  <WNA_StdMiliSuit.description>WHR standard equipment, a modified version of WNA alliance robe, usually has weaker effect than typical alliance robe, but more suitable for massive producing and arming up troopers as it can be made from various kinds of materials.</WNA_StdMiliSuit.description>
+  
+  <!-- EN: tool kit -->
+  <WNA_Toolkit.label>tool kit</WNA_Toolkit.label>
+  <!-- EN: A pack containing multiple tools for complex tasks under various circumstances, from simple repairing and mending to emergent medical assistance. -->
+  <WNA_Toolkit.description>A pack containing multiple tools for complex tasks under various circumstances, from simple repairing and mending to emergent medical assistance.</WNA_Toolkit.description>
+  
+  <!-- EN: vanguard cone -->
+  <WNA_VanguardHead.label>vanguard cone</WNA_VanguardHead.label>
+  <!-- EN: A traditional style helmet, though looks plain, it's actually made of alloy plates and several advanced techniques that only held by glitter worlds are applied to it. It's widely used by WNA vanguards, and has already become a symbol of their activities. -->
+  <WNA_VanguardHead.description>A traditional style helmet, though looks plain, it's actually made of alloy plates and several advanced techniques that only held by glitter worlds are applied to it. It's widely used by WNA vanguards, and has already become a symbol of their activities.</WNA_VanguardHead.description>
+  
+  <!-- EN: vanguard plate -->
+  <WNA_VanguardPlate.label>vanguard plate</WNA_VanguardPlate.label>
+  <!-- EN: A set of heavy armor containing alloy armor plates and advanced connection components, covered with a layer of strong fabric. This is a design of older times, but it had stood the tests of time and countless battles. -->
+  <WNA_VanguardPlate.description>A set of heavy armor containing alloy armor plates and advanced connection components, covered with a layer of strong fabric. This is a design of older times, but it had stood the tests of time and countless battles.</WNA_VanguardPlate.description>
+  
+</LanguageData>

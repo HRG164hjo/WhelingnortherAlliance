@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Whelingnorther New Branch -->
+  <WNA_Factioin_Player.label>Whelingnorther New Branch</WNA_Factioin_Player.label>
+  <!-- EN: Whelingnorther Alliance seeking to expand their influence. -->
+  <WNA_Factioin_Player.description>Whelingnorther Alliance seeking to expand their influence.</WNA_Factioin_Player.description>
+  <!-- EN: leader -->
+  <WNA_Factioin_Player.leaderTitle>leader</WNA_Factioin_Player.leaderTitle>
+  <!-- EN: initiate -->
+  <WNA_Factioin_Player.pawnSingular>initiate</WNA_Factioin_Player.pawnSingular>
+  <!-- EN: initiates -->
+  <WNA_Factioin_Player.pawnsPlural>initiates</WNA_Factioin_Player.pawnsPlural>
+  
+</LanguageData>

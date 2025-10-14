@@ -67,6 +67,7 @@
     <Compile Include="Damager\DamagerBasic.cs" />
     <Compile Include="Damager\DamagerCulling.cs" />
     <Compile Include="Damager\RadField.cs" />
+    <Compile Include="DMExtension\AttachEffectConfig.cs" />
     <Compile Include="DMExtension\KillDownUtility.cs" />
     <Compile Include="DMExtension\MassCapacity.cs" />
     <Compile Include="DMExtension\RefuelableExtraStat.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="ThingCompProp\CompThingSelfHeal.cs" />
     <Compile Include="WNADefOf\WNAMainDefOf.cs" />
     <Compile Include="WNADefOf\WNASubDefOf.cs" />
+    <Compile Include="WNAHarmony\Patch_Caravan.cs" />
     <Compile Include="WNAHarmony\Patch_CompSpawner.cs" />
     <Compile Include="WNAHarmony\Patch_CompTransporter.cs" />
     <Compile Include="WNAHarmony\Patch_JobMaditate.cs" />

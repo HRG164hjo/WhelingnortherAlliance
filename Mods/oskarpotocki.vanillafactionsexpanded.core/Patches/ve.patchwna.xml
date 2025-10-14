@@ -47,28 +47,6 @@
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ScenarioDef[defName="WNA_PlayerScenario" or defName="WNA_Player2Scenario"]/scenario/parts</xpath>
-        <value>
-            <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
-                <factionDef>WNA_FactionWNA</factionDef>
-                <affectHiddenFactions>True</affectHiddenFactions>
-                <affectStartingGoodwill>True</affectStartingGoodwill>
-                <startingGoodwillRange>100~100</startingGoodwillRange>
-                <affectNaturalGoodwill>False</affectNaturalGoodwill>
-                <def>VFEC_ForcedFactionGoodwill</def>
-            </li>
-            <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill" MayRequireAnyOf="ninedaylongbow.redsun,ninedaylongbow.redsuntechnologyindustry">
-                <factionDef>RedSun</factionDef>
-                <affectHiddenFactions>True</affectHiddenFactions>
-                <affectStartingGoodwill>True</affectStartingGoodwill>
-                <startingGoodwillRange>100~100</startingGoodwillRange>
-                <affectNaturalGoodwill>False</affectNaturalGoodwill>
-                <def>VFEC_ForcedFactionGoodwill</def>
-            </li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[@Name="WNA_AnimalRaceBase"]/comps</xpath>
         <value>
             <li Class="VEF.AnimalBehaviours.CompProperties_Floating"></li>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: corpse generator -->
+  <WNA_CorpseGenerator.label>corpse generator</WNA_CorpseGenerator.label>
+  <!-- EN: A rough piece of Whelingnorther Humanoid Revolt tech, this machine consumes corpse to generate power. Better not to think too deep about it, don't even bother looking at it. -->
+  <WNA_CorpseGenerator.description>A rough piece of Whelingnorther Humanoid Revolt tech, this machine consumes corpse to generate power. Better not to think too deep about it, don't even bother looking at it.</WNA_CorpseGenerator.description>
+  
+  <!-- EN: energy converter -->
+  <WNA_EnergyConverter.label>energy converter</WNA_EnergyConverter.label>
+  <!-- EN: A piece of WNA tech, release the power sealed into the form of what called "focus" and convert it into more useable energy like electricity. -->
+  <WNA_EnergyConverter.description>A piece of WNA tech, release the power sealed into the form of what called "focus" and convert it into more useable energy like electricity.</WNA_EnergyConverter.description>
+  
+  <!-- EN: hydroponic basin -->
+  <WNA_Hydroponics.label>hydroponic basin</WNA_Hydroponics.label>
+  <!-- EN: A hydroponic basin, can automatically grow plant tissue and harvest for products. -->
+  <WNA_Hydroponics.description>A hydroponic basin, can automatically grow plant tissue and harvest for products.</WNA_Hydroponics.description>
+  
+  <!-- EN: mass dilution generator -->
+  <WNA_MassGenerator.label>mass dilution generator</WNA_MassGenerator.label>
+  <!-- EN: An elite piece of WHR tech, place a stone chunk in this machine and it will slowly comsume it as well as producing a good amount of eletricity. Unfortunately due to the missing of key components and techniques, this generator is not as powerful and efficiency as the document says. -->
+  <WNA_MassGenerator.description>An elite piece of WHR tech, place a stone chunk in this machine and it will slowly comsume it as well as producing a good amount of eletricity. Unfortunately due to the missing of key components and techniques, this generator is not as powerful and efficiency as the document says.</WNA_MassGenerator.description>
+  
+</LanguageData>

@@ -289,6 +289,11 @@
             <soundExplode>Explosion_EMP</soundExplode>
             <postExplosionSpawnChance>0.5</postExplosionSpawnChance>
         </projectile>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <ignoreRoof>true</ignoreRoof>
+            </li>
+        </modExtensions>
     </ThingDef>
     <ThingDef ParentName="WNA_FurnitureBase" Name="WNA_SpikeTraps">
         <defName>WNA_SpikeTrapSpawned</defName>
@@ -437,6 +442,11 @@
                 </config>
             </li>
         </comps>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <ignoreRoof>true</ignoreRoof>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="WNA_WeaponBaseRanged">
@@ -537,6 +547,11 @@
                 </config>
             </li>
         </comps>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <ignoreRoof>true</ignoreRoof>
+            </li>
+        </modExtensions>
     </ThingDef>
         <!-- 无人机发射巢 -->
     
@@ -1027,6 +1042,11 @@
             <postExplosionSpawnThingDef>WNA_Ether_Aeroblaze</postExplosionSpawnThingDef>
             <postExplosionSpawnChance>0.08</postExplosionSpawnChance>
         </projectile>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <ignoreRoof>true</ignoreRoof>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="WNA_WeaponBaseRanged">

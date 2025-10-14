@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: bad dream -->
+  <WNA_FacingVoid.stages.bad_dream.label>bad dream</WNA_FacingVoid.stages.bad_dream.label>
+  <!-- EN: everything i can feel is black or empty, is this a nightmare? -->
+  <WNA_FacingVoid.stages.bad_dream.description>everything i can feel is black or empty, is this a nightmare?</WNA_FacingVoid.stages.bad_dream.description>
+  <!-- EN: it's dark here -->
+  <WNA_FacingVoid.stages.its_dark_here.label>it's dark here</WNA_FacingVoid.stages.its_dark_here.label>
+  <!-- EN: everything i can feel is black or empty, is this a nightmare? -->
+  <WNA_FacingVoid.stages.its_dark_here.description>everything i can feel is black or empty, is this a nightmare?</WNA_FacingVoid.stages.its_dark_here.description>
+  <!-- EN: it's so dark here -->
+  <WNA_FacingVoid.stages.its_so_dark_here.label>it's so dark here</WNA_FacingVoid.stages.its_so_dark_here.label>
+  <!-- EN: everything i can feel is black or empty, it's a nightmare, I want to wake up -->
+  <WNA_FacingVoid.stages.its_so_dark_here.description>everything i can feel is black or empty, it's a nightmare, I want to wake up</WNA_FacingVoid.stages.its_so_dark_here.description>
+  <!-- EN: unusually dark -->
+  <WNA_FacingVoid.stages.unusually_dark.label>unusually dark</WNA_FacingVoid.stages.unusually_dark.label>
+  <!-- EN: it's so dark and empty here! I'm feeling bad! I want to wake up! -->
+  <WNA_FacingVoid.stages.unusually_dark.description>it's so dark and empty here! I'm feeling bad! I want to wake up!</WNA_FacingVoid.stages.unusually_dark.description>
+  <!-- EN: abnormally dark -->
+  <WNA_FacingVoid.stages.abnormally_dark.label>abnormally dark</WNA_FacingVoid.stages.abnormally_dark.label>
+  <!-- EN: it's so dark and empty here! I'm afraid! why can't I wake up? -->
+  <WNA_FacingVoid.stages.abnormally_dark.description>it's so dark and empty here! I'm afraid! why can't I wake up?</WNA_FacingVoid.stages.abnormally_dark.description>
+  <!-- EN: facing the void -->
+  <WNA_FacingVoid.stages.facing_the_void.label>facing the void</WNA_FacingVoid.stages.facing_the_void.label>
+  <!-- EN: I can feel nothing, dark and void is all I can sense, what the hell is happening to me?! -->
+  <WNA_FacingVoid.stages.facing_the_void.description>I can feel nothing, dark and void is all I can sense, what the hell is happening to me?!</WNA_FacingVoid.stages.facing_the_void.description>
+  <!-- EN: lost in the void -->
+  <WNA_FacingVoid.stages.lost_in_the_void.label>lost in the void</WNA_FacingVoid.stages.lost_in_the_void.label>
+  <!-- EN: I can feel nothing, even my sense of myself is fading! I'm going to lost! -->
+  <WNA_FacingVoid.stages.lost_in_the_void.description>I can feel nothing, even my sense of myself is fading! I'm going to lost!</WNA_FacingVoid.stages.lost_in_the_void.description>
+  <!-- EN: doomed -->
+  <WNA_FacingVoid.stages.doomed.label>doomed</WNA_FacingVoid.stages.doomed.label>
+  <!-- EN: help! help! get me out! somebody please wake me up! I don't want to die here! -->
+  <WNA_FacingVoid.stages.doomed.description>help! help! get me out! somebody please wake me up! I don't want to die here!</WNA_FacingVoid.stages.doomed.description>
+  <!-- EN: HELP -->
+  <WNA_FacingVoid.stages.HELP.label>HELP</WNA_FacingVoid.stages.HELP.label>
+  <!-- EN: HELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELP -->
+  <WNA_FacingVoid.stages.HELP.description>HELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELP</WNA_FacingVoid.stages.HELP.description>
+  <!-- EN: help... -->
+  <WNA_FacingVoid.stages.help.label>help...</WNA_FacingVoid.stages.help.label>
+  <!-- EN: help...help.....help....help...... -->
+  <WNA_FacingVoid.stages.help.description>help...help.....help....help......</WNA_FacingVoid.stages.help.description>
+  <!-- EN: ... -->
+  <WNA_FacingVoid.stages.10.label>...</WNA_FacingVoid.stages.10.label>
+  <!-- EN: ... -->
+  <WNA_FacingVoid.stages.10.description>...</WNA_FacingVoid.stages.10.description>
+  
+</LanguageData>

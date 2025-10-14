@@ -57,7 +57,7 @@
 	    <xpath>Defs/ThingDef[defName="GravEngine"]/comps/li[@Class="CompProperties_SubstructureFootprint"]</xpath>
         <value>
             <li Class="CompProperties_SubstructureFootprint">
-                <radius>27.9</radius>
+                <radius>24.9</radius>
             </li>
         </value>
     </Operation>
@@ -71,7 +71,7 @@
                 </statOffsets>
                 <requiresLOS>false</requiresLOS>
                 <maxSimultaneous>12</maxSimultaneous>
-                <maxDistance>27.9</maxDistance>
+                <maxDistance>24.9</maxDistance>
             </li>
         </value>
     </Operation>
@@ -79,7 +79,7 @@
 	    <xpath>Defs/ThingDef[defName="GravFieldExtender"]/comps/li[@Class="CompProperties_SubstructureFootprint"]</xpath>
         <value>
             <li Class="CompProperties_SubstructureFootprint">
-                <radius>18.9</radius>
+                <radius>16.9</radius>
             </li>
         </value>
     </Operation>
