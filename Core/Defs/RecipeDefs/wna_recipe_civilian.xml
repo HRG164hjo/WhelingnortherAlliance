@@ -241,6 +241,7 @@
         </products>
         <workAmount>350</workAmount>
         <recipeUsers>
+	        <li>ElectricSmelter</li>
 	        <li>ElectricCrematorium</li>
 	        <li>BiofuelRefinery</li>
 	    </recipeUsers>

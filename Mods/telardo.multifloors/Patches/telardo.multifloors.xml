@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[@Name="MF_ElevatorBase" or @ParentName="MF_ElevatorBase" or @Name="MF_StairEntranceBase" or @ParentName="MF_StairEntranceBase"]/statBases/Flammability</xpath>
+        <value>
+            <Flammability>0</Flammability>
+        </value>
+        <success>Always</success>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[@Name="MF_ElevatorBase" or @ParentName="MF_ElevatorBase" or @Name="MF_StairEntranceBase" or @ParentName="MF_StairEntranceBase"]</xpath>
+        <value>
+            <useHitPoints>false</useHitPoints>
+        </value>
+        <success>Always</success>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[defName="MF_SubGravEngine" or defName="MF_VEFPipeConnector"]/statBases/Flammability</xpath>
+        <value>
+            <Flammability>0</Flammability>
+        </value>
+        <success>Always</success>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="MF_SubGravEngine" or defName="MF_VEFPipeConnector"]</xpath>
+        <value>
+            <useHitPoints>false</useHitPoints>
+        </value>
+        <success>Always</success>
+    </Operation>
+</Patch>

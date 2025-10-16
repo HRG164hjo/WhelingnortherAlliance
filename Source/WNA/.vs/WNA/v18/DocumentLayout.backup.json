@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|c:\\applications\\steam\\steamapps\\common\\rimworld\\mods\\whelingnortheralliance\\source\\wna\\thingcompprop\\compradfieldambient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:thingcompprop\\compradfieldambient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|c:\\applications\\steam\\steamapps\\common\\rimworld\\mods\\whelingnortheralliance\\source\\wna\\thingcompprop\\compradfieldburst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:thingcompprop\\compradfieldburst.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|c:\\applications\\steam\\steamapps\\common\\rimworld\\mods\\whelingnortheralliance\\source\\wna\\wnautility\\radfield_mapcomp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:wnautility\\radfield_mapcomp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,34 +17,21 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CompRadFieldBurst.cs",
-              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\ThingCompProp\\CompRadFieldBurst.cs",
-              "RelativeDocumentMoniker": "ThingCompProp\\CompRadFieldBurst.cs",
-              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\ThingCompProp\\CompRadFieldBurst.cs",
-              "RelativeToolTip": "ThingCompProp\\CompRadFieldBurst.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T16:09:40.917Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CompRadFieldAmbient.cs",
-              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\ThingCompProp\\CompRadFieldAmbient.cs",
-              "RelativeDocumentMoniker": "ThingCompProp\\CompRadFieldAmbient.cs",
-              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\ThingCompProp\\CompRadFieldAmbient.cs",
-              "RelativeToolTip": "ThingCompProp\\CompRadFieldAmbient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Title": "RadField_MapComp.cs",
+              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAUtility\\RadField_MapComp.cs",
+              "RelativeDocumentMoniker": "WNAUtility\\RadField_MapComp.cs",
+              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAUtility\\RadField_MapComp.cs",
+              "RelativeToolTip": "WNAUtility\\RadField_MapComp.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowCQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T15:48:48.992Z",
+              "WhenOpened": "2025-10-15T08:39:47.094Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }

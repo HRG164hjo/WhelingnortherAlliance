@@ -83,6 +83,14 @@
                 <multiplier>0</multiplier>
             </li>
             <li>
+                <damageDef>WNA_RadBurn</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>WNA_LysField</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
                 <damageDef>WNA_ChimingBlaze</damageDef>
                 <multiplier>0</multiplier>
             </li>

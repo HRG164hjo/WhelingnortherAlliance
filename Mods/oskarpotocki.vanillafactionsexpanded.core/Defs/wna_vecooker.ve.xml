@@ -3,6 +3,7 @@
     <ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_VECooker</defName>
 		<label>processing tank</label>
+    	<drawStyleCategory>Defenses</drawStyleCategory>
 		<description>A small container but is capable of holding more than the volume it seems. Can be used to process various raw materials.</description>
 		<tickerType>Rare</tickerType>
 		<drawerType>MapMeshAndRealTime</drawerType>

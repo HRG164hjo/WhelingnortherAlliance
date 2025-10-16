@@ -124,6 +124,10 @@
                 <preExplosionSpawnSingleThingDef>CraterLarge</preExplosionSpawnSingleThingDef>
             </li>
             <li Class="WNA.ThingCompProp.CompRadFieldBurst">
+                <modeList>
+                    <li>KillFinalize</li>
+                    <li>KillFinalizeLeavingsOnly</li>
+                </modeList>
                 <config>
                     <radLevel>500</radLevel>
                     <radius>18.9</radius>
@@ -166,14 +170,18 @@
                     <radLevel>500</radLevel>
                     <radius>27.9</radius>
                     <edgeFactor>0.1</edgeFactor>
-                    <threshold>0.4</threshold>
-                    <radLevelDelay>250</radLevelDelay>
+                    <threshold>0.8</threshold>
                 </config>
             </li>
             <li Class="WNA.ThingCompProp.CompRadFieldBurst">
+                <modeList>
+                    <li>KillFinalize</li>
+                    <li>KillFinalizeLeavingsOnly</li>
+                </modeList>
                 <config>
                     <radLevel>500</radLevel>
                     <radius>54.9</radius>
+                    <edgeFactor>1</edgeFactor>
                 </config>
             </li>
         </comps>

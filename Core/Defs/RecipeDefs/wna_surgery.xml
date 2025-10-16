@@ -56,6 +56,32 @@
         <workAmount>60</workAmount>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
+    <RecipeDef ParentName="WNA_SurgeryBase">
+        <defName>WNA_Hemodialysis</defName>
+        <label>blood dialysis</label>
+        <description>Use specially formulated solution to perform blood dialysis on the patient, in order to extract toxic substances accumulated in the patient's body.</description>
+        <workerClass>Recipe_RemoveHediff</workerClass>
+        <jobString>Performing blood dialysis on TargetA.</jobString>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <targetsBodyPart>false</targetsBodyPart>
+        <workAmount>30000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Neutroamine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <removesHediff>WNA_ScrapBuildup</removesHediff>
+    </RecipeDef>
 
     <RecipeDef ParentName="WNA_SurgeryBase">
         <defName>WNA_VoidDive</defName>
@@ -69,17 +95,17 @@
         <ingredients>
             <li>
                 <filter>
-                    <categories>
-                        <li>Medicine</li>
-                    </categories>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
                 </filter>
                 <count>2</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
-            <categories>
-                <li>Medicine</li>
-            </categories>
+            <thingDefs>
+                <li>Neutroamine</li>
+            </thingDefs>
         </fixedIngredientFilter>
         <addsHediff>WNA_VoidDiver</addsHediff>
     </RecipeDef>

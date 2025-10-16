@@ -71,7 +71,7 @@
                 </statOffsets>
                 <requiresLOS>false</requiresLOS>
                 <maxSimultaneous>12</maxSimultaneous>
-                <maxDistance>24.9</maxDistance>
+                <maxDistance>500</maxDistance>
             </li>
         </value>
     </Operation>
@@ -109,11 +109,16 @@
             </researchPrerequisites>
         </value>
     </Operation>
-
+    
     <Operation Class="PatchOperationReplace">
-	    <xpath>Defs/BiomeDef/maxFishPopulation</xpath>
+	    <xpath>Defs/ThingDef[defName="FuelOptimizer"]/comps/li[@Class="CompProperties_GravshipFacility"]</xpath>
         <value>
-            <maxFishPopulation>6000000000</maxFishPopulation>
+            <li Class="CompProperties_GravshipFacility">
+                <fuelSavingsPercent>0.225</fuelSavingsPercent>
+                <requiresLOS>false</requiresLOS>
+                <maxSimultaneous>4</maxSimultaneous>
+                <maxDistance>500</maxDistance>
+            </li>
         </value>
     </Operation>
 
@@ -144,15 +149,31 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-	    <xpath>Defs/ThingDef[defName="FuelOptimizer" or defName="GravcorePowerCell" or defName="SignalJammer" or defName="PilotSubpersonaCore" or defName="GravAnchor"]/statBases/Flammability</xpath>
+	    <xpath>Defs/ThingDef[defName="FuelOptimizer" or defName="OrbitalScanner" or defName="GravcorePowerCell" or defName="SignalJammer" or defName="PilotSubpersonaCore" or defName="GravAnchor"]/statBases/Flammability</xpath>
         <value>
             <Flammability>0</Flammability>
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/ThingDef[defName="FuelOptimizer" or defName="GravcorePowerCell" or defName="SignalJammer" or defName="PilotSubpersonaCore" or defName="GravAnchor"]</xpath>
+	    <xpath>Defs/ThingDef[defName="FuelOptimizer" or defName="OrbitalScanner" or defName="GravcorePowerCell" or defName="SignalJammer" or defName="PilotSubpersonaCore" or defName="GravAnchor"]</xpath>
         <value>
             <useHitPoints>false</useHitPoints>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="OrbitalScanner"]</xpath>
+        <value>
+            <thingCategories>
+                <li>BuildingsMisc</li>
+            </thingCategories>
+            <minifiedDef>MinifiedThing</minifiedDef>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="OrbitalScanner"]/statBases</xpath>
+        <value>
+            <Mass>20</Mass>
         </value>
     </Operation>
     
@@ -173,7 +194,7 @@
     </Operation>
     
     <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/ThingDef[defName="GravAnchor" or defName="FuelOptimizer"]</xpath>
+	    <xpath>Defs/ThingDef[defName="GravAnchor" or defName="FuelOptimizer" or defName="PilotSubpersonaCore"]</xpath>
         <value>
             <designationCategory>Odyssey</designationCategory>
         </value>

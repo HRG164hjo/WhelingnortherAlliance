@@ -95,16 +95,16 @@
                 <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Refuelable">
-                <fuelConsumptionRate>2</fuelConsumptionRate>
-                <fuelCapacity>24.0</fuelCapacity>
-                <fuelMultiplier>12</fuelMultiplier>
-                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
-                <initialConfigurableTargetFuelLevel>12</initialConfigurableTargetFuelLevel>
+                <fuelConsumptionRate>1.428571</fuelConsumptionRate>
+                <fuelCapacity>40.0</fuelCapacity>
+                <fuelMultiplier>10</fuelMultiplier>
                 <fuelFilter>
                     <categories>
                         <li>Corpses</li>
                     </categories>
                 </fuelFilter>
+                <fuelLabel>organic matter</fuelLabel>
+                <fuelGizmoLabel>organic matter</fuelGizmoLabel>
                 <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
                 <canEjectFuel>false</canEjectFuel>
             </li>
@@ -164,16 +164,14 @@
             </li>
             <li Class="CompProperties_Refuelable">
                 <fuelConsumptionRate>1.0</fuelConsumptionRate>
-                <fuelCapacity>60.0</fuelCapacity>
+                <fuelCapacity>360.0</fuelCapacity>
                 <fuelFilter>
-                    <thingDefs>
-                        <li>ChunkSlagSteel</li>
-                        <li>ChunkMechanoidSlag</li>
-                    </thingDefs>
                     <categories>
-                        <li>StoneChunks</li>
+                        <li>Chunks</li>
                     </categories>
                 </fuelFilter>
+                <fuelLabel>mass chunk</fuelLabel>
+                <fuelGizmoLabel>mass chunk</fuelGizmoLabel>
                 <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
                 <canEjectFuel>false</canEjectFuel>
             </li>

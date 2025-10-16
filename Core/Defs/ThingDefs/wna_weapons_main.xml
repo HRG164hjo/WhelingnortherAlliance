@@ -640,7 +640,7 @@
         <label>ionizing rifle</label>
         <description>a beam rifle powered by an unstable-particle emitter, this rifle can generate powerful focused radiation beam to damage it's target, though weak against buildings, this weapon is unusually effective against living enemies.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+            <texPath>weapons/wna_ionizer</texPath>
             <drawSize>1.0</drawSize>
         </graphicData>
         <statBases>
@@ -865,7 +865,7 @@
             <color>(255,0,0)</color>
         </graphicData>
         <projectile>
-            <damageDef>WNA_Lysis</damageDef>
+            <damageDef>WNA_LysField</damageDef>
             <damageAmountBase>5</damageAmountBase>
         </projectile>
     </ThingDef>

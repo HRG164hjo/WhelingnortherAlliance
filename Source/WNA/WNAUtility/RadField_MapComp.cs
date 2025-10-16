@@ -38,9 +38,12 @@ namespace WNA.WNAUtility
             IntVec3 c = map.cellIndices.IndexToCell(index);
             int rawRad = GetRad(c);
             float nrad = (radLevelMax > 0) ? (float)rawRad / (float)radLevelMax : 0f;
-            Color basic = new Color(0.784f, 0.392f, 0f, 0f);
-            float a = Mathf.Lerp(0.5f, 0.9f, Mathf.Clamp01(nrad));
-            Color final = basic;
+            Color final = Color.clear;
+            float r = Mathf.Lerp(0.784314f, 1f, Mathf.Clamp01(nrad));
+            float g = Mathf.Lerp(0.392157f, 0.607843f, Mathf.Clamp01(nrad));
+            float a = Mathf.Lerp(0.4f, 1f, Mathf.Clamp01(nrad));
+            final.r = r;
+            final.g = g;
             final.a = a;
             return final;
         }

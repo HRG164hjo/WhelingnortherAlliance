@@ -44,8 +44,8 @@
                         <li>WNA_UraniumBattery</li>
                     </thingDefs>
                 </fuelFilter>
-                <fuelLabel>WNA_UraniumBattery</fuelLabel>
-                <fuelGizmoLabel>WNA_UraniumBattery</fuelGizmoLabel>
+                <fuelLabel>vitalized uranium battery</fuelLabel>
+                <fuelGizmoLabel>vitalized uranium battery</fuelGizmoLabel>
                 <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
                 <autoRefuelPercent>1</autoRefuelPercent>
                 <showFuelGizmo>true</showFuelGizmo>

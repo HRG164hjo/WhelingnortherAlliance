@@ -25,7 +25,7 @@
             <li>
                 <verbClass>WNA.WNAMiscs.VerbType_Laser</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>WNA_Turret_Pale_Gun_Proj</defaultProjectile>
+                <defaultProjectile>WNA_Turret_Pale_Proj</defaultProjectile>
                 <warmupTime>0</warmupTime>
                 <range>99.9</range>
                 <soundCast>Shot_NeedleGun</soundCast>
@@ -52,7 +52,7 @@
         </modExtensions>
     </ThingDef>
     <ThingDef ParentName="WNA_ProjBase">
-        <defName>WNA_Turret_Pale_Gun_Proj</defName>
+        <defName>WNA_Turret_Pale_Proj</defName>
         <label>pale ball</label>
         <projectile>
             <damageDef>WNA_CastRange</damageDef>
@@ -83,7 +83,7 @@
         <label>shatter ball</label>
         <verbs>
             <li>
-                <defaultProjectile>WNA_Turret_Shatter_Gun_Proj</defaultProjectile>
+                <defaultProjectile>WNA_Turret_Shatter_Proj</defaultProjectile>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <warmupTime>0</warmupTime>
@@ -106,7 +106,7 @@
         </verbs>
     </ThingDef>
     <ThingDef ParentName="WNA_ProjBase">
-        <defName>WNA_Turret_Shatter_Gun_Proj</defName>
+        <defName>WNA_Turret_Shatter_Proj</defName>
         <label>shatter ball</label>
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
@@ -116,10 +116,5 @@
             <soundExplode>Explosion_GiantBomb</soundExplode>
             <flyOverhead>true</flyOverhead>
         </projectile>
-        <modExtensions>
-            <li Class="WNA.DMExtension.TechnoConfig">
-                <ignoreRoof>true</ignoreRoof>
-            </li>
-        </modExtensions>
     </ThingDef>
 </Defs>

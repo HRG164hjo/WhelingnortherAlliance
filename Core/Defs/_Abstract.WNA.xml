@@ -439,7 +439,7 @@
         <researchPrerequisites>
             <li>WNA_Terraform</li>
         </researchPrerequisites>
-        <terrainAffordanceNeeded/>
+        <terrainAffordanceNeeded IsNull="True"/>
         <pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
         <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
         <pollutionColor>(1, 1, 1, 0.3)</pollutionColor>
@@ -482,7 +482,7 @@
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded/>
-		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>	
         <researchPrerequisites>
             <li>WNA_Structure</li>
@@ -491,16 +491,6 @@
 		<constructEffect/>
         <repairEffect>Repair</repairEffect>
         <filthLeaving/>
-        <damageMultipliers>
-            <li>
-                <damageDef>Stun</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>EMP</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-        </damageMultipliers>
     </ThingDef>
 	<ThingDef Abstract="true" ParentName="WNA_StructureBase" Name="WNA_FurnitureBase">
 		<passability>Standable</passability>
@@ -616,6 +606,11 @@
             <armorPenetrationBase>Infinity</armorPenetrationBase>
             <stoppingPower>Infinity</stoppingPower>
         </projectile>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <ignoreRoof>true</ignoreRoof>
+            </li>
+        </modExtensions>
     </ThingDef>
     
     <ThingDef Abstract="True" Name="WNA_ItemsBase">
@@ -929,6 +924,14 @@
                 <multiplier>0</multiplier>
             </li>
             <li>
+                <damageDef>WNA_RadBurn</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>WNA_LysField</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
                 <damageDef>WNA_ChimingBlaze</damageDef>
                 <multiplier>0</multiplier>
             </li>
@@ -1022,6 +1025,9 @@
                 <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
                 <requiresImprisonment>true</requiresImprisonment>
             </li>
+			<li Class="WNA.ThingCompProp.CompDamageLimit">
+			  	<damageLimit>1</damageLimit>
+			</li>
         </comps>
 		<modExtensions>
             <li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">

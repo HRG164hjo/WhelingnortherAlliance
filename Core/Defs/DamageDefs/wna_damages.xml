@@ -176,6 +176,7 @@
         <hediff>Burn</hediff>
         <isRanged>true</isRanged>
         <makesAnimalsFlee>false</makesAnimalsFlee>
+        <causeStun>true</causeStun>
         <impactSoundType/>
         <buildingDamageFactor>0.1</buildingDamageFactor>
         <additionalHediffs>
@@ -192,7 +193,7 @@
     </DamageDef>
 
     <DamageDef ParentName="WNA_DamageBase">
-        <defName>WNA_Lysis</defName>
+        <defName>WNA_LysField</defName>
         <label>lysis</label>
         <!--<workerClass>WNA.Damager.Lysis</workerClass>-->
         <externalViolence>true</externalViolence>
@@ -200,6 +201,7 @@
         <hediff>Misc</hediff>
         <isRanged>true</isRanged>
         <makesAnimalsFlee>false</makesAnimalsFlee>
+        <causeStun>true</causeStun>
         <impactSoundType/>
         <buildingDamageFactor>100000</buildingDamageFactor>
         <plantDamageFactor>100000</plantDamageFactor>
@@ -218,6 +220,7 @@
         <deathMessage>{0} has molten.</deathMessage>
         <hediff>WNA_CastDamage</hediff>
         <impactSoundType>Slice</impactSoundType>
+        <causeStun>true</causeStun>
         <cutExtraTargetsCurve>
             <points>
                 <li>0,1</li>
@@ -262,6 +265,7 @@
         <hediff>WNA_CastDamage</hediff>
         <impactSoundType>Slice</impactSoundType>
         <workerClass>WNA.Damager.DamagerCulling</workerClass>
+        <causeStun>true</causeStun>
         <cutExtraTargetsCurve>
             <points>
                 <li>0,1</li>
@@ -305,6 +309,7 @@
         <deathMessage>{0} has molten.</deathMessage>
         <hediff>WNA_CastDamage</hediff>
         <isRanged>true</isRanged>
+        <causeStun>true</causeStun>
         <makesAnimalsFlee>true</makesAnimalsFlee>
         <impactSoundType>Slice</impactSoundType>
         <buildingDamageFactor>100000</buildingDamageFactor>
@@ -324,6 +329,7 @@
         <deathMessage>{0} has molten.</deathMessage>
         <hediff>WNA_CastDamage</hediff>
         <isExplosive>true</isExplosive>
+        <causeStun>true</causeStun>
         <makesAnimalsFlee>true</makesAnimalsFlee>
         <impactSoundType>Slice</impactSoundType>
         <buildingDamageFactor>100000</buildingDamageFactor>

@@ -449,59 +449,6 @@
 	
 	<!-- ==== -->
     <ThingDef ParentName="WNA_StructureBase">
-		<defName>WNA_ConcreteWall</defName>
-		<label>concrete wall</label>
-		<description>A simple concrete wall, used for fortresses. What's special about this wall is that it can restore itself due to how it is built.</description>
-    	<replaceTags>
-    	  	<li>Wall</li>
-    	</replaceTags>
-		<graphicData>
-			<texPath>buildings/atlas/wna_cementwall_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<color>(200,200,192)</color>
-			<linkType>Basic</linkType>
-			<linkFlags>
-				<li>Wall</li>
-				<li>Rock</li>
-			</linkFlags>
-		</graphicData>
-    	<drawStyleCategory>Walls</drawStyleCategory>
-		<altitudeLayer>Building</altitudeLayer>
-		<uiIconPath>buildings/atlas/wna_cementwall_icon</uiIconPath>
-        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
-		<useHitPoints>true</useHitPoints>
-		<coversFloor>true</coversFloor>
-    	<noRightClickDraftAttack>true</noRightClickDraftAttack>
-		<statBases>
-			<MaxHitPoints>8000</MaxHitPoints>
-			<WorkToBuild>600</WorkToBuild>
-			<IncomingDamageFactor>0.05</IncomingDamageFactor>
-		</statBases>
-		<building>
-            <isAirtight>true</isAirtight>
-			<isInert>true</isInert>
-            <isPlaceOverableWall>true</isPlaceOverableWall>
-			<canPlaceOverWall>true</canPlaceOverWall>
-            <supportsWallAttachments>true</supportsWallAttachments>
-			<ai_chillDestination>false</ai_chillDestination>
-		</building>
-		<costList>
-			<Steel>10</Steel>
-		</costList>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_BaseDefense</li>
-        </researchPrerequisites>
-		<comps>
-			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
-			  	<ticksPerHeal>60</ticksPerHeal>
-				<healPercent>10</healPercent>
-			</li>
-			<li Class="WNA.ThingCompProp.CompDamageLimit">
-			  	<damageLimit>500</damageLimit>
-			</li>
-		</comps>
-	</ThingDef>
-    <ThingDef ParentName="WNA_StructureBase">
 		<defName>WNA_FortressWall</defName>
 		<label>fortress wall</label>
 		<description>An advanced concrete wall, used for fortresses. What's special about this wall is that it can restore itself due to how it is built.</description>
@@ -511,7 +458,7 @@
 		<graphicData>
 			<texPath>buildings/atlas/wna_cementwall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<color>(80,89,90)</color>
+			<color>(94,94,94)</color>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
 				<li>Wall</li>
@@ -526,8 +473,8 @@
 		<coversFloor>true</coversFloor>
     	<noRightClickDraftAttack>true</noRightClickDraftAttack>
 		<statBases>
-			<MaxHitPoints>100000</MaxHitPoints>
-			<WorkToBuild>1500</WorkToBuild>
+			<MaxHitPoints>60000</MaxHitPoints>
+			<WorkToBuild>390</WorkToBuild>
 			<IncomingDamageFactor>0.01</IncomingDamageFactor>
 		</statBases>
 		<building>
@@ -539,18 +486,18 @@
 			<ai_chillDestination>false</ai_chillDestination>
 		</building>
 		<costList>
-			<Steel>10</Steel>
+			<WNA_Concrete>4</WNA_Concrete>
 		</costList>
         <researchPrerequisites Inherit="false">
             <li>WNA_BaseDefense</li>
         </researchPrerequisites>
 		<comps>
 			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
-			  	<ticksPerHeal>50</ticksPerHeal>
+			  	<ticksPerHeal>27</ticksPerHeal>
 				<healPercent>10</healPercent>
 			</li>
 			<li Class="WNA.ThingCompProp.CompDamageLimit">
-			  	<damageLimit>10</damageLimit>
+			  	<damageLimit>1</damageLimit>
 			</li>
 		</comps>
 	</ThingDef>

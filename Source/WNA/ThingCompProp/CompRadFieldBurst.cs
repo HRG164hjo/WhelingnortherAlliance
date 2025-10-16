@@ -1,10 +1,12 @@
-﻿using Verse;
+﻿using System.Collections.Generic;
+using Verse;
 using WNA.WNAUtility;
 
 namespace WNA.ThingCompProp
 {
     public class CompRadFieldBurst : CompProperties
     {
+        public List<DestroyMode> modeList = null;
         public RadSpreadConfig config = new RadSpreadConfig();
         public CompRadFieldBurst() => compClass = typeof(RadFieldBurst);
     }
@@ -14,9 +16,8 @@ namespace WNA.ThingCompProp
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
             base.PostDestroy(mode, previousMap);
-            if (previousMap != null &&
-                (mode == DestroyMode.KillFinalize ||
-                mode == DestroyMode.KillFinalizeLeavingsOnly))
+            if (previousMap == null) return;
+            if (Props.modeList == null || Props.modeList.Contains(mode))
             {
                 RadFieldUtility.RadSpread(
                     parent.Position,

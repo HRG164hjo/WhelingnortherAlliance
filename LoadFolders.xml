@@ -13,5 +13,6 @@
 	    <li IfModActive="pathfinding.framework">Mods/pathfinding.framework</li>
 	    <li IfModActive="sarg.rimbees">Mods/sarg.rimbees</li>
 	    <li IfModActive="vanillaexpanded.vplantsemore">Mods/vanillaexpanded.vplantsemore</li>
+	    <li IfModActive="telardo.multifloors">Mods/telardo.multifloors</li>
 	</v1.6>
 </loadFolders>

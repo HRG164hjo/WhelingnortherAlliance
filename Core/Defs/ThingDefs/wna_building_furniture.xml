@@ -330,6 +330,7 @@
         <size>(1,1)</size>
         <building>
             <bed_showSleeperBody>false</bed_showSleeperBody>
+            <sowTag>Ground</sowTag>
         </building>
     </ThingDef>
 

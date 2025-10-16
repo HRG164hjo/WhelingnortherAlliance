@@ -1,5 +1,294 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <DesignatorDropdownGroupDef>
+        <defName>WNA_Security_TierI</defName>
+        <label>security t1</label>
+    </DesignatorDropdownGroupDef>
 
+    <!---->
+    <ThingDef ParentName="WNA_TurretBaseBase" Name="WNA_HumanTurretBase" Abstract="true">
+        <useHitPoints>true</useHitPoints>
+        <comps>
+			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
+			  	<ticksPerHeal>27</ticksPerHeal>
+				<healPercent>10</healPercent>
+			</li>
+			<li Class="WNA.ThingCompProp.CompDamageLimit">
+			  	<damageLimit>50</damageLimit>
+			</li>
+        </comps>
+        <designationCategory>Security</designationCategory>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_HumanTurretBase">
+        <defName>WNA_SentryGun</defName>
+        <label>sentry gun</label>
+        <description>normal sentry gun.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/TurretMortar_Base</texPath>
+            <drawSize>2.4</drawSize>
+            <drawOffset>(0,0,0.1)</drawOffset>
+            <color>(105,105,105)</color>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/TurretMortar_Base</uiIconPath>
+        <uiIconColor>(105,105,105)</uiIconColor>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <WorkToBuild>750</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>40</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <building>
+            <turretGunDef>WNA_SentryGun_Gun</turretGunDef>
+            <turretTopDrawSize>1.8</turretTopDrawSize>
+            <turretBurstWarmupTime>0</turretBurstWarmupTime>
+            <turretBurstCooldownTime>0.2</turretBurstCooldownTime>
+            <combatPower>15</combatPower>
+            <ai_combatDangerous>true</ai_combatDangerous>
+        </building>
+        <designatorDropdown>WNA_Security_TierI</designatorDropdown>
+    </ThingDef>
+    <ThingDef ParentName="WNA_TurrentWeaponBase">
+        <defName>WNA_SentryGun_Gun</defName>
+        <label>sentry gun</label>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/TurretFoam_Top</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(105,105,105)</color>
+        </graphicData>
+        <verbs>
+            <li>
+                <verbClass>WNA.WNAMiscs.VerbType_Burst</verbClass>
+                <defaultProjectile>WNA_SentryGun_Proj</defaultProjectile>
+                <warmupTime>0</warmupTime>
+                <range>36.9</range>
+                <soundCast>GunShotA</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>8</muzzleFlashScale>
+                <burstShotCount>2</burstShotCount>
+                <canGoWild>false</canGoWild>
+                <targetParams>
+                    <canTargetBuildings>true</canTargetBuildings>
+                </targetParams>
+            </li>
+        </verbs>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ProjBase">
+        <defName>WNA_SentryGun_Proj</defName>
+        <label>sentry gun</label>
+        <projectile>
+            <damageDef>WNA_HollowPoint</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+        </projectile>
+    </ThingDef>
+    
+    <ThingDef ParentName="WNA_HumanTurretBase">
+        <defName>WNA_SentryGun_Toxic</defName>
+        <label>"scorpion" sentry gun</label>
+        <description>toxic sentry gun.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/TurretMortar_Base</texPath>
+            <drawSize>2.4</drawSize>
+            <drawOffset>(0,0,0.1)</drawOffset>
+            <color>(0,200,0)</color>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/TurretMortar_Base</uiIconPath>
+        <uiIconColor>(0,200,0)</uiIconColor>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <WorkToBuild>750</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>40</Steel>
+            <Chemfuel>1</Chemfuel>
+        </costList>
+        <building>
+            <turretGunDef>WNA_SentryGun_Toxic_Gun</turretGunDef>
+            <turretTopDrawSize>1.8</turretTopDrawSize>
+            <turretBurstWarmupTime>0</turretBurstWarmupTime>
+            <turretBurstCooldownTime>0.2</turretBurstCooldownTime>
+            <combatPower>15</combatPower>
+            <ai_combatDangerous>true</ai_combatDangerous>
+        </building>
+        <designatorDropdown>WNA_Security_TierI</designatorDropdown>
+    </ThingDef>
+    <ThingDef ParentName="WNA_TurrentWeaponBase">
+        <defName>WNA_SentryGun_Toxic_Gun</defName>
+        <label>scorpion</label>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/TurretFoam_Top</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(0,200,0)</color>
+        </graphicData>
+        <verbs>
+            <li>
+                <verbClass>WNA.WNAMiscs.VerbType_Burst</verbClass>
+                <defaultProjectile>WNA_SentryGun_Toxic_Proj</defaultProjectile>
+                <warmupTime>0</warmupTime>
+                <range>36.9</range>
+                <soundCast>GunShotA</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>8</muzzleFlashScale>
+                <burstShotCount>2</burstShotCount>
+                <canGoWild>false</canGoWild>
+                <targetParams>
+                    <canTargetBuildings>true</canTargetBuildings>
+                </targetParams>
+            </li>
+        </verbs>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ProjBase">
+        <defName>WNA_SentryGun_Toxic_Proj</defName>
+        <label>scorpion</label>
+        <projectile>
+            <damageDef>WNA_ScrapPoint</damageDef>
+            <damageAmountBase>15</damageAmountBase>
+        </projectile>
+    </ThingDef>
+    
+    <ThingDef ParentName="WNA_HumanTurretBase">
+        <defName>WNA_PrismGun</defName>
+        <label>"comet" laser gun</label>
+        <description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/TurretHeavy_Base</texPath>
+            <drawSize>1.1</drawSize>
+            <drawOffset>(0,0,0.1)</drawOffset>
+            <color>(255,255,255)</color>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/TurretHeavy_Base</uiIconPath>
+        <uiIconColor>(255,255,255)</uiIconColor>
+        <statBases>
+            <MaxHitPoints>850</MaxHitPoints>
+            <WorkToBuild>2250</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>150</Steel>
+            <Plasteel>30</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <building>
+            <turretGunDef>WNA_PrismGun_Gun</turretGunDef>
+            <turretTopDrawSize>2.7</turretTopDrawSize>
+            <turretBurstWarmupTime>0.466667</turretBurstWarmupTime>
+            <turretBurstCooldownTime>0.833333</turretBurstCooldownTime>
+            <combatPower>25</combatPower>
+            <ai_combatDangerous>true</ai_combatDangerous>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>75</basePowerConsumption>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="WNA_TurrentWeaponBase">
+        <defName>WNA_PrismGun_Gun</defName>
+        <label>comet</label>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/TurretFoam_Top</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(255,255,255)</color>
+        </graphicData>
+        <verbs>
+            <li>
+                <verbClass>WNA.WNAMiscs.VerbType_Laser</verbClass>
+                <defaultProjectile>WNA_PrismGun_Proj</defaultProjectile>
+                <warmupTime>0</warmupTime>
+                <range>54.9</range>
+                <soundCast>RocketswarmLauncher_Fire</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <burstShotCount>2</burstShotCount>
+                <canGoWild>false</canGoWild>
+                <targetParams>
+                    <canTargetBuildings>true</canTargetBuildings>
+                </targetParams>
+            </li>
+        </verbs>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <laserInnerColor>(255,123,123,255)</laserInnerColor>
+                <laserOuterColor>(123,123,123,255)</laserOuterColor>
+                <laserOuterSpread>1.2</laserOuterSpread>
+                <laserThickness>0.1</laserThickness>
+                <laserDuration>35</laserDuration>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ProjBase">
+        <defName>WNA_PrismGun_Proj</defName>
+        <label>comet</label>
+        <projectile>
+            <damageDef>WNA_KineBomb</damageDef>
+            <damageAmountBase>300</damageAmountBase>
+        </projectile>
+    </ThingDef>
+
+    <!---->
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_Deadzone</defName>
+		<label>dead zone irradiator</label>
+		<description>A facility that can emit strong radiation field, making a wide area a "dead zone". note that this facility cannot distinguish enemies and allies.</description>
+        <graphicData>
+			<texPath>Things/Building/Misc/FirefoamPopper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <color>(255,155,0)</color>
+		</graphicData>
+        <statBases>
+            <MaxHitPoints>1400</MaxHitPoints>
+            <WorkToBuild>4960</WorkToBuild>
+        </statBases>
+		<passability>PassThroughOnly</passability>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<castEdgeShadows>true</castEdgeShadows>
+        <rotatable>true</rotatable>
+        <specialDisplayRadius>14.9</specialDisplayRadius>
+        <costList>
+            <Uranium>45</Uranium>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <building>
+            <expandHomeArea>false</expandHomeArea>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>14.9</glowRadius>
+                <glowColor>(200,100,0)</glowColor>
+            </li>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>22.9</explosiveRadius>
+                <damageAmountBase>1250</damageAmountBase>
+                <explosiveDamageType>WNA_RadBurn</explosiveDamageType>
+                <explosionEffect>GiantExplosion</explosionEffect>
+                <explosionSound>Explosion_GiantBomb</explosionSound>
+                <wickTicks>15~30</wickTicks>
+                <preExplosionSpawnSingleThingDef>CraterLarge</preExplosionSpawnSingleThingDef>
+            </li>
+            <li Class="WNA.ThingCompProp.CompRadFieldAmbient">
+                <config>
+                    <radLevel>500</radLevel>
+                    <radius>14.9</radius>
+                    <radLevelDelay>500</radLevelDelay>
+                    <threshold>1</threshold>
+                </config>
+            </li>
+            <li Class="WNA.ThingCompProp.CompRadFieldBurst">
+                <modeList>
+                    <li>KillFinalize</li>
+                    <li>KillFinalizeLeavingsOnly</li>
+                </modeList>
+                <config>
+                    <radLevel>500</radLevel>
+                    <radius>22.9</radius>
+                    <edgeFactor>1</edgeFactor>
+                </config>
+            </li>
+        </comps>
+        <designationCategory>Security</designationCategory>
+	</ThingDef>
 
 </Defs>

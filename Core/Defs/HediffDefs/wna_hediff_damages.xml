@@ -264,11 +264,12 @@
             <li Class="WNA.HediffCompProp.CompRadFieldSpreader">
                 <config>
                     <radLevel>10</radLevel>
-                    <radius>4.9</radius>
+                    <radius>0.9</radius>
                     <edgeFactor>0.3</edgeFactor>
                     <threshold>3</threshold>
-                    <radLevelDelay>180</radLevelDelay>
                     <isSeverityRadLevel>true</isSeverityRadLevel>
+                    <isSeverityRadRadius>true</isSeverityRadRadius>
+                    <radRadiusFactor>0.2</radRadiusFactor>
                 </config>
             </li>
         </comps>
@@ -327,12 +328,12 @@
             </li>
             <li>
                 <label>severe</label>
-                <minSeverity>33</minSeverity>
+                <minSeverity>33.001</minSeverity>
                 <vomitMtbDays>0.25</vomitMtbDays>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <setMax>0.10</setMax>
+                        <setMax>0.3</setMax>
                     </li>
                     <li>
                         <capacity>Moving</capacity>
