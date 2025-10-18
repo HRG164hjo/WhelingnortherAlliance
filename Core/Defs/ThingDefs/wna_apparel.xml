@@ -66,8 +66,13 @@
                 <hediff>WNA_RobeBoostLite</hediff>
             </li>
             <li Class="WNA.ThingCompProp.CompApparelHediffRemover"/>
+            <li Class="WNA.ThingCompProp.CompBodyshapeOverride"/>
         </comps>
-        <modExtensions/>
+		<modExtensions>
+			<li Class="WNA.DMExtension.MassCapacity">
+				<massCapacity>600000</massCapacity>
+			</li>
+		</modExtensions>
     </ThingDef>
     
     <ThingDef ParentName="WNA_ApparelBase">
@@ -169,7 +174,9 @@
                 <li>TableMachining</li>
             </recipeUsers>
         </recipeMaker>
-        <modExtensions/>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompBodyshapeOverride"/>
+        </comps>
     </ThingDef>
     
     <ThingDef ParentName="WNA_ApparelBase">
@@ -220,7 +227,6 @@
                 <li>FabricationBench</li>
             </recipeUsers>
         </recipeMaker>
-        <modExtensions/>
     </ThingDef>
     <ThingDef ParentName="WNA_ApparelBase">
 		<defName>WNA_VanguardPlate</defName>
@@ -272,7 +278,9 @@
                 <li>FabricationBench</li>
             </recipeUsers>
         </recipeMaker>
-        <modExtensions/>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompBodyshapeOverride"/>
+        </comps>
     </ThingDef>
     
     <ThingDef ParentName="WNA_ApparelBase">
@@ -373,7 +381,9 @@
                 <li>FabricationBench</li>
             </recipeUsers>
         </recipeMaker>
-        <modExtensions/>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompBodyshapeOverride"/>
+        </comps>
     </ThingDef>
 
     <!--<ThingDef ParentName="WNA_ApparelBase">
@@ -764,6 +774,9 @@
                 <li>Shell</li>
             </layers>
         </apparel>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompBodyshapeOverride"/>
+        </comps>
         <modExtensions/>
     </ThingDef>
     <ThingDef ParentName="WNA_ApparelBase">
@@ -824,6 +837,7 @@
             </layers>
         </apparel>
         <comps>
+            <li Class="WNA.ThingCompProp.CompBodyshapeOverride"/>
             <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
                 <hediff>WNA_RobeBoost</hediff>
                 <checkInterval>50</checkInterval>
@@ -833,7 +847,11 @@
                 <removeInjury>true</removeInjury>
             </li>
         </comps>
-        <modExtensions/>
+		<modExtensions>
+			<li Class="WNA.DMExtension.MassCapacity">
+				<massCapacity>51840000</massCapacity>
+			</li>
+		</modExtensions>
     </ThingDef>
     <ThingDef ParentName="WNA_UtilityBase">
         <defName>WNA_Holyorder</defName>

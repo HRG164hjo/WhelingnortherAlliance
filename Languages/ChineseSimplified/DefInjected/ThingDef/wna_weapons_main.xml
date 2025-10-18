@@ -134,16 +134,16 @@
   <WNA_SunsetSniper_Proj.label>gun proj</WNA_SunsetSniper_Proj.label>
   
   <!-- EN: "sunset" sniper mortar mode -->
-  <WNA_SunsetSniper_Too.label>"sunset" sniper mortar mode</WNA_SunsetSniper_Too.label>
+  <WNA_SunsetArtillery.label>"sunset" sniper artillery mode</WNA_SunsetArtillery.label>
   <!-- EN: sunset sniper rifle switched to mortar mode, usually used with smaller-sized antigrain warheads. a single rail can lead shells through proper path, go a long distance and hit target. -->
-  <WNA_SunsetSniper_Too.description>sunset sniper rifle switched to mortar mode, usually used with smaller-sized antigrain warheads. a single rail can lead shells through proper path, go a long distance and hit target.</WNA_SunsetSniper_Too.description>
+  <WNA_SunsetArtillery.description>sunset sniper rifle switched to mortar mode, usually used with smaller-sized antigrain warheads. a single rail can lead shells through proper path, go a long distance and hit target.</WNA_SunsetArtillery.description>
   <!-- EN: rapier -->
-  <WNA_SunsetSniper_Too.tools.rapier.label>rapier</WNA_SunsetSniper_Too.tools.rapier.label>
+  <WNA_SunsetArtillery.tools.rapier.label>rapier</WNA_SunsetArtillery.tools.rapier.label>
   <!-- EN: "sunset" sniper mortar mode -->
-  <WNA_SunsetSniper_Too.verbs.Verb_Shoot.label>"sunset" sniper mortar mode</WNA_SunsetSniper_Too.verbs.Verb_Shoot.label>
+  <WNA_SunsetArtillery.verbs.Verb_Shoot.label>"sunset" sniper mortar mode</WNA_SunsetArtillery.verbs.Verb_Shoot.label>
   
   <!-- EN: gun proj -->
-  <WNA_SunsetSniper_Too_Proj.label>gun proj</WNA_SunsetSniper_Too_Proj.label>
+  <WNA_SunsetArtillery_Proj.label>gun proj</WNA_SunsetArtillery_Proj.label>
   
   <!-- EN: spike trap launcher -->
   <WNA_TrapLauncher.label>spike trap launcher</WNA_TrapLauncher.label>

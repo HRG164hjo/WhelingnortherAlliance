@@ -708,9 +708,7 @@
         <smeltable>false</smeltable>
         <comps>
             <li Class="CompProperties_Forbiddable"/>
-            <li>
-                <compClass>CompQuality</compClass>
-            </li>
+            <li><compClass>CompQuality</compClass></li>
         </comps>
         <thingCategories>
             <li>WNA_Category_Apparel</li>
@@ -799,12 +797,8 @@
         </statBases>
         <comps>
             <li Class="CompProperties_Forbiddable"/>            
-            <li>
-                <compClass>CompEquippable</compClass>
-            </li>
-            <li>
-                <compClass>CompQuality</compClass>
-            </li>
+            <li><compClass>CompEquippable</compClass></li>
+            <li><compClass>CompQuality</compClass></li>
         </comps>
         <generateAllowChance>1</generateAllowChance>
         <thingCategories>
@@ -1034,7 +1028,7 @@
                 <movementDef>WNA_Movement</movementDef>
             </li>
 			<li Class="WNA.DMExtension.MassCapacity">
-				<massCapacity>1000000</massCapacity>
+				<massCapacity>6000000000</massCapacity>
 			</li>
             <li Class="WNA.DMExtension.KillDownUtility">
                 <minLevel>0.4</minLevel>

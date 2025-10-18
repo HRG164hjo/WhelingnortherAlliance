@@ -96,6 +96,11 @@
                 <armorPenetration>Infinity</armorPenetration>
             </li>
         </tools>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompSwtichMode">
+                <modeIIdefname>WNA_SunsetArtillery</modeIIdefname>
+            </li>
+        </comps>
         <recipeMaker>
             <researchPrerequisite>WNA_AdvArsenal</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -156,7 +161,7 @@
                 <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
                 <canGoWild>false</canGoWild>
                 <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-                <burstShotCount>10</burstShotCount>
+                <burstShotCount>8</burstShotCount>
             </li>
         </verbs>
         <tools>
@@ -347,11 +352,11 @@
 
     <!-- siege trooper -->
     <ThingDef ParentName="WNA_WeaponBaseRanged">
-        <defName>WNA_SunsetSniper_Too</defName>
-        <label>"sunset" sniper mortar mode</label>
+        <defName>WNA_SunsetArtillery</defName>
+        <label>"sunset" sniper artillery mode</label>
         <description>sunset sniper rifle switched to mortar mode, usually used with smaller-sized antigrain warheads. a single rail can lead shells through proper path, go a long distance and hit target.</description>
         <graphicData>
-            <texPath>weapons/wna_sunsetsniper_too</texPath>
+            <texPath>weapons/WNA_SunsetArtillery</texPath>
             <drawSize>1.2</drawSize>
         </graphicData>
         <statBases>
@@ -371,7 +376,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>WNA_SunsetSniper_Too_Proj</defaultProjectile>
+                <defaultProjectile>WNA_SunsetArtillery_Proj</defaultProjectile>
                 <warmupTime>1.67</warmupTime>
                 <range>150</range>
                 <soundCast>Mortar_LaunchA</soundCast>
@@ -398,6 +403,11 @@
                 <armorPenetration>Infinity</armorPenetration>
             </li>
         </tools>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompSwtichMode">
+                <modeIIdefname>WNA_SunsetSniper</modeIIdefname>
+            </li>
+        </comps>
         <recipeMaker>
             <researchPrerequisite>WNA_AdvArsenal</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -415,7 +425,7 @@
         </recipeMaker>
     </ThingDef>
     <ThingDef ParentName="WNA_ProjBase">
-        <defName>WNA_SunsetSniper_Too_Proj</defName>
+        <defName>WNA_SunsetArtillery_Proj</defName>
         <label>gun proj</label>
         <thingClass>Projectile_Explosive</thingClass>
         <graphicData>
@@ -1185,7 +1195,11 @@
             </recipeUsers>
             <displayPriority>200</displayPriority>
         </recipeMaker>
-        <comps/>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompSwtichMode">
+                <modeIIdefname>WNA_Weapon_RiteLance</modeIIdefname>
+            </li>
+        </comps>
     </ThingDef>
     <ThingDef ParentName="WNA_WeaponBaseRanged">
         <defName>WNA_Weapon_RiteLance</defName>
@@ -1246,6 +1260,9 @@
             </li>
             <li Class="CompProperties_TargetEffect_FleckConnecting">
                 <fleckDef>PsycastPsychicLine</fleckDef>
+            </li>
+            <li Class="WNA.ThingCompProp.CompSwtichMode">
+                <modeIIdefname>WNA_Weapon_RiteSword</modeIIdefname>
             </li>
         </comps>
         <recipeMaker>

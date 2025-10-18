@@ -3,9 +3,9 @@
     <ThingDef ParentName="BasePawn">
         <defName>WNA_WNThan</defName>
         <label>whelingnorthan</label>
+        <thingClass>WNA.ThingClass.Whelingnorthan</thingClass>
         <description>"People of Ancient Whelingnorther Empire name themselves as Whelingnorthan, a word indicates that He is the legislator for them, and they became the legislator for other everything. Now we also use this word to name ourselves, indicating that we've bid farewell to what we once were, yet what we are seeking is imminent. While we still have a lot in common with humanity, we are actually a brand new form of existance."\n\n-- Chen Che the "Windlord", Archonpriest of Whelingnorther Alliance</description>
         <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
-        <!--<destroyable>false</destroyable>-->
         <statBases>
             <AimingDelayFactor>0</AimingDelayFactor>
             <ArmorRating_Blunt>Infinity</ArmorRating_Blunt>
@@ -49,7 +49,7 @@
             <PsychicSensitivity>0</PsychicSensitivity>
             <RangedCooldownFactor>0</RangedCooldownFactor>
             <RoyalFavorValue>10</RoyalFavorValue>
-            <SlaveSuppressionFallRate>10000</SlaveSuppressionFallRate>
+            <SlaveSuppressionFallRate>1000000</SlaveSuppressionFallRate>
             <StaggerDurationFactor>0</StaggerDurationFactor>
             <ToxicEnvironmentResistance>10</ToxicEnvironmentResistance>
             <ToxicResistance>10</ToxicResistance>
@@ -57,67 +57,13 @@
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">10</VacuumResistance>
             <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">10</PilotingAbility>
         </statBases>
-        <damageMultipliers>
-            <li>
-                <damageDef>WNA_HollowPoint</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>WNA_ScrapPoint</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>WNA_KinePoint</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>WNA_KineBomb</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>WNA_KineCut</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>WNA_DemoCut</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>WNA_RadBurn</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>WNA_LysField</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>WNA_ChimingBlaze</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>WNA_CastMelee</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>WNA_CastBomb</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>WNA_CastRange</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>WNA_Culling</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-        </damageMultipliers>
         <tools>
             <li>
                 <label>left hand</label>
                 <capacities>
                     <li>WNA_Culling</li>
                 </capacities>
-                <power>5500</power>
+                <power>Infinity</power>
                 <cooldownTime>0.2</cooldownTime>
 				<armorPenetration>Infinity</armorPenetration>
                 <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
@@ -145,7 +91,7 @@
                 <capacities>
                     <li>WNA_Culling</li>
                 </capacities>
-                <power>5500</power>
+                <power>Infinity</power>
                 <cooldownTime>0.2</cooldownTime>
 				<armorPenetration>Infinity</armorPenetration>
                 <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
@@ -174,7 +120,7 @@
                 <capacities>
                     <li>WNA_Culling</li>
                 </capacities>
-                <power>5500</power>
+                <power>Infinity</power>
                 <cooldownTime>0.2</cooldownTime>
 				<armorPenetration>Infinity</armorPenetration>
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
@@ -203,7 +149,7 @@
                 <capacities>
                     <li>WNA_Culling</li>
                 </capacities>
-                <power>1000000</power>
+                <power>Infinity</power>
                 <cooldownTime>0.5</cooldownTime>
 				<armorPenetration>Infinity</armorPenetration>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
@@ -269,7 +215,7 @@
                 </li>
                 <li>
                     <def>WNA_HumanlikeAdult</def>
-                    <minAge>18.000001</minAge>
+                    <minAge>18.0000001</minAge>
                 </li>
             </lifeStageAges>
             <lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
@@ -312,15 +258,7 @@
             <anomalyKnowledge>1</anomalyKnowledge>
         </race>
         <tradeability>None</tradeability>
-        <recipes>
-            <li>ExciseCarcinoma</li>
-            <li>AdministerMechSerumHealer</li>
-            <li>Anesthetize</li>
-            <li>Euthanize</li>
-            <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
-            <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
-            <li MayRequire="Ludeon.RimWorld.Anomaly">SurgicalInspection</li>
-        </recipes>
+        <recipes/>
         <comps>
             <li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_HoldingPlatformTarget">
                 <baseEscapeIntervalMtbDays>1</baseEscapeIntervalMtbDays>
@@ -366,8 +304,8 @@
             </li>
             <li Class="WNA.ThingCompProp.CompAOEDamage">
                 <damageDef>WNA_Culling</damageDef>
-                <damage>1000000</damage>
-                <ap>10000</ap>
+                <damage>Infinity</damage>
+                <ap>Infinity</ap>
                 <radius>14.9</radius>
                 <rof>5</rof>
                 <update>30</update>
@@ -377,13 +315,30 @@
 			<li Class="WNA.ThingCompProp.CompDamageLimit">
 			  	<damageLimit>0</damageLimit>
 			</li>
+            <li Class="AutoBlink.CompProperties_AutoBlink" MayRequire="rabiosus.autoblink">
+                <blinkIntervalTicks>27</blinkIntervalTicks>
+                <delayAfterEligibleTicks>3</delayAfterEligibleTicks>
+                <cellsBeforeTarget>3</cellsBeforeTarget>
+                <maxDistanceToBlink>500</maxDistanceToBlink>
+                <minDistanceToBlink>10</minDistanceToBlink>
+                <postBlinkStanceTicks>0</postBlinkStanceTicks>
+                <excludedJobDefs>
+                    <li>GotoWander</li>
+                </excludedJobDefs>
+                <preBlinkSoundDefs/>
+                <postBlinkSoundDefs/>
+                <preBlinkEffecterDefs/>
+                <postBlinkEffecterDefs/>
+                <preBlinkMoteDefs/>
+                <postBlinkMoteDefs/>
+            </li>
         </comps>
 		<modExtensions>
             <li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
                 <movementDef>WNA_Movement</movementDef>
             </li>
 			<li Class="WNA.DMExtension.MassCapacity">
-				<massCapacity>10000000</massCapacity>
+				<massCapacity>69432165100000000000</massCapacity>
 			</li>
             <li Class="WNA.DMExtension.KillDownUtility">
                 <canDieThreshold>1</canDieThreshold>
@@ -604,7 +559,7 @@
                 <movementDef>WNA_Movement</movementDef>
             </li>
 			<li Class="WNA.DMExtension.MassCapacity">
-				<massCapacity>1000000</massCapacity>
+				<massCapacity>6000000000</massCapacity>
 			</li>
             <li Class="WNA.DMExtension.KillDownUtility">
                 <minCapacities>

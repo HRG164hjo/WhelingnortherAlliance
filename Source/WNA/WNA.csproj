@@ -73,6 +73,9 @@
     <Compile Include="DMExtension\RefuelableExtraStat.cs" />
     <Compile Include="DMExtension\TechnoConfig.cs" />
     <Compile Include="ThingClass\DummyLaser.cs" />
+    <Compile Include="ThingClass\Whelingnorthan.cs" />
+    <Compile Include="ThingCompProp\CompBodyshapeOverride.cs" />
+    <Compile Include="ThingCompProp\CompSwtichMode.cs" />
     <Compile Include="WNAHarmony.cs" />
     <Compile Include="HediffClass\DeathRefusal.cs" />
     <Compile Include="HediffClass\VoidDrainer.cs" />
@@ -130,6 +133,7 @@
     <Compile Include="WNAMiscs\VerbType_Burst.cs" />
     <Compile Include="WNAMiscs\VerbType_Laser.cs" />
     <Compile Include="WNAMiscs\WarpOn.cs" />
+    <Compile Include="WNAUtility\WNAAwakening.cs" />
     <Compile Include="WNAUtility\General.cs" />
     <Compile Include="WNAUtility\RadFieldUtility.cs" />
     <Compile Include="WNAUtility\RadField_MapComp.cs" />
@@ -137,6 +141,7 @@
     <Compile Include="AbilityCompProp\CompAbilityResurrect.cs" />
     <Compile Include="Recipe\Inspection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WNAUtility\WNAFactionUtility.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

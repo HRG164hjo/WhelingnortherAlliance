@@ -117,6 +117,7 @@
                 <li>WNA_BaseODoor</li>
             </relatedBuildCommands>
 		</building>
+        <preventDroppingThingsOn>false</preventDroppingThingsOn>
         <drawerType>MapMeshOnly</drawerType>
         <passability>Standable</passability>
 		<neverMultiSelect>false</neverMultiSelect>
@@ -348,6 +349,7 @@
                 <li>WNA_StuffODoor</li>
             </relatedBuildCommands>
 		</building>
+        <preventDroppingThingsOn>false</preventDroppingThingsOn>
         <drawerType>MapMeshOnly</drawerType>
         <passability>Standable</passability>
 		<neverMultiSelect>false</neverMultiSelect>

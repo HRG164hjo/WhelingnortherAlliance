@@ -24,9 +24,6 @@
             <li>Butchery</li>
         </specialProducts>
         <workAmount>300</workAmount>
-        <!--<recipeUsers>
-	        <li>WNA_RiteSpot_Cutter</li>
-	    </recipeUsers>-->
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
 
@@ -124,11 +121,11 @@
 		</specialProducts>
         <workAmount>300</workAmount>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
-		<!--<modExtensions>
+		<!----><modExtensions>
 			<li Class="RimBees.OutputMultiplierRecipe">
-				<multiplier>1</multiplier>
+				<multiplier>5</multiplier>
 			</li>
-		</modExtensions>-->
+		</modExtensions>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase" MayRequire="sarg.rimbees">
         <defName>WNA_RecipeAlphaBeesToo</defName>

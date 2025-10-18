@@ -60,7 +60,7 @@
 			<li>Soil</li>
 			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_Ash</li>
 		</tags>
-        <fertility>28</fertility>
+        <fertility>40</fertility>
         <edgeType>FadeRough</edgeType>
         <traversedThought>WNA_OnFocusSoil</traversedThought>
     </TerrainDef>

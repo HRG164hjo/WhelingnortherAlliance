@@ -5,6 +5,7 @@
         <label>WNA base</label>
         <parent>Root</parent>
         <iconPath>karma</iconPath>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
@@ -25,6 +26,7 @@
         <label>WNA items</label>
         <parent>WNA_Category_Base</parent>
         <iconPath>karma</iconPath>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
     </ThingCategoryDef>
 
     <ThingCategoryDef>
