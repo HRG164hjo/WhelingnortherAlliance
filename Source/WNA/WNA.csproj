@@ -97,7 +97,6 @@
     <Compile Include="ThingCompProp\CompDamageLimit.cs" />
     <Compile Include="ThingCompProp\CompHeatPusher.cs" />
     <Compile Include="ThingCompProp\CompHydroponics.cs" />
-    <Compile Include="ThingCompProp\CompIsDevourer.cs" />
     <Compile Include="ThingCompProp\CompRadFieldAmbient.cs" />
     <Compile Include="ThingCompProp\CompRadFieldBurst.cs" />
     <Compile Include="ThingCompProp\CompShieldGenerator.cs" />

@@ -20,7 +20,7 @@ namespace WNA.ThingCompProp
                 yield return error;
             }
             if (modeIIdefname.NullOrEmpty())
-                yield return $"[WNA.ThingCompProp.SwitchMode] **modeIIdefname** UNDEFINED!!!";
+                yield return $"[WNA.SwitchMode] **modeIIdefname** UNDEFINED!!!";
         }
     }
     public class SwtichMode : ThingComp
@@ -49,8 +49,8 @@ namespace WNA.ThingCompProp
                     if (targetWeaponDef == null) yield break;
                     yield return new Command_Action
                     {
-                        defaultLabel = "WNA.ThingCompProp.SwitchMode.Label".Translate(),
-                        defaultDesc = "WNA.ThingCompProp.SwitchMode.Desc".Translate(),
+                        defaultLabel = "WNA.SwitchMode.Label".Translate(),
+                        defaultDesc = "WNA.SwitchMode.Desc".Translate(),
                         icon = ContentFinder<Texture2D>.Get("UI/Misc/BadTexture"),
                         action = TryTransformWeapon
                     };

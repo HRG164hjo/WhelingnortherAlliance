@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<WNA.CompHydroponics.SelectCrop>select crop</WNA.CompHydroponics.SelectCrop>
+	<WNA.CompHydroponics.ChangeCrop>change crop</WNA.CompHydroponics.ChangeCrop>
+	<WNA.CompHydroponics.SelectCropDesc>select one crop to grow.</WNA.CompHydroponics.SelectCropDesc>
+	<WNA.CompHydroponics.ChangeCropDesc>growing{0}. click to change crop.</WNA.CompHydroponics.ChangeCropDesc>
+	<WNA.CompHydroponics.ClearCrop>clear crop</WNA.CompHydroponics.ClearCrop>
+	<WNA.CompHydroponics.ClearCropDesc>stop growing current crop.</WNA.CompHydroponics.ClearCropDesc>
+
+	<WNA.CompHydroponics.NoCrop>no crop</WNA.CompHydroponics.NoCrop>
+	<WNA.CompHydroponics.Contains>{0}units of plant matter contained</WNA.CompHydroponics.Contains>
+	<WNA.CompHydroponics.Growing>growing: {0}</WNA.CompHydroponics.Growing>
+	<WNA.CompHydroponics.HarvestIn>harvest in: {0}</WNA.CompHydroponics.HarvestIn>
+	<WNA.CompHydroponics.Yield>estimated yield: {0}</WNA.CompHydroponics.Yield>
+	<WNA.CompHydroponics.LowPower>low power</WNA.CompHydroponics.LowPower>
+	<WNA.CompHydroponics.NoFuel>no fuel</WNA.CompHydroponics.NoFuel>
+	<WNA.CompHydroponics.CurrentGrowthFactor>current growth factor: {0}</WNA.CompHydroponics.CurrentGrowthFactor>
+
+	<WNA.CompHydroponics.None>none</WNA.CompHydroponics.None>
+	<WNA.CompHydroponics.NoValidCrop>no valid crop</WNA.CompHydroponics.NoValidCrop>
+
+	<WNA_None>no crop</WNA_None>
+
+</LanguageData>

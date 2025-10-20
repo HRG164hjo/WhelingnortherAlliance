@@ -259,7 +259,7 @@
             </li>
             <li Class="HediffCompProperties_TendDuration">
                 <severityPerDayTended>-0.01</severityPerDayTended>
-                <baseTendDurationHours>48</baseTendDurationHours>
+                <baseTendDurationHours>24</baseTendDurationHours>
             </li>
             <li Class="WNA.HediffCompProp.CompRadFieldSpreader">
                 <config>

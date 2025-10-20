@@ -20,9 +20,7 @@ namespace WNA.WNAHarmony
             public static bool Prefix(Caravan caravan, ref int __result, StringBuilder explanation)
             {
                 if (caravan == null)
-                {
                     return true;
-                }
                 var pawns = caravan.PawnsListForReading.Where(p => p != null && !p.Dead).ToList();
                 if (!pawns.Any())
                     return true;
@@ -72,7 +70,22 @@ namespace WNA.WNAHarmony
                 int ticksPerMove = Mathf.Max(1, Mathf.RoundToInt(1000f / finalSpeed));
                 __result = ticksPerMove;
                 if (explanation != null)
-                    Log.Warning($"[WNAHarmony.Patch_Caravan] explanation != null");
+                {
+                    float tilesPerDay = 60000f / (float)ticksPerMove;
+                    explanation.Append("CaravanMovementSpeedFull".Translate() + ":");
+                    explanation.AppendLine();
+                    explanation.Append("  " + "FinalCaravanPawnsMovementSpeed".Translate() + ": "
+                                       + tilesPerDay.ToString("0.#") + " " + "TilesPerDay".Translate());
+                    explanation.AppendLine();
+                    explanation.Append("  " + "Base move speed combined (Max + Avg) / 2" + ": " + combinedSpeed.ToString("0.##"));
+                    explanation.AppendLine();
+                    explanation.Append("  " + "Riding Factor (Max + Avg) / 2" + ": " + ridingFactor.ToStringPercent());
+                    explanation.AppendLine();
+                    explanation.Append("  " + "Bonus Factor" + ": " + bonusFactor.ToStringPercent());
+                    explanation.AppendLine();
+                    explanation.Append("  " + "Total Mass Factor" + ": " + totalMassFactor.ToString("0.##"));
+                    explanation.AppendLine();
+                }
                 return false;
             }
         }

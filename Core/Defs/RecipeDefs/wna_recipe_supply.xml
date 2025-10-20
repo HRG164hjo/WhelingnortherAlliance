@@ -3,7 +3,7 @@
     <!-- mealpack -->
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_CookRation</defName>
-        <description>Use mana and things can be considered as raw food to make meal pack.</description>
+        <description>Cook raw materials to make military ration pack.</description>
         <jobString>working.</jobString>
         <label>make WNA militaty ration</label>
         <ingredientValueGetterClass>WNA.WNAMiscs.IngredValGetter_NutriMisc</ingredientValueGetterClass>
@@ -56,7 +56,7 @@
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_CookRationBulk</defName>
-        <description>Use mana and raw food to make meal pack.</description>
+        <description>Cook raw materials to make military ration pack.</description>
         <jobString>working.</jobString>
         <label>make WNA militaty ration x5</label>
         <ingredientValueGetterClass>WNA.WNAMiscs.IngredValGetter_NutriMisc</ingredientValueGetterClass>
@@ -107,10 +107,63 @@
 	    </recipeUsers>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_CookRationMult</defName>
+        <description>Cook raw materials to make military ration pack.</description>
+        <jobString>working.</jobString>
+        <label>make WNA militaty ration x100</label>
+        <ingredientValueGetterClass>WNA.WNAMiscs.IngredValGetter_NutriMisc</ingredientValueGetterClass>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Foods</li>
+                        <li>Leathers</li>
+                        <li>PlantMatter</li>
+                    </categories>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Foods</li>
+                <li>Leathers</li>
+                <li>PlantMatter</li>
+            </categories>
+            <disallowedCategories>
+                <li>FoodMeals</li>
+                <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>Foods</li>
+            </categories>
+            <disallowedCategories>
+                <li>FoodMeals</li>
+                <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+            </disallowedCategories>
+        </defaultIngredientFilter>
+        <products>
+            <WNA_Ration>100</WNA_Ration>
+        </products>
+        <workAmount>5000</workAmount>
+        <recipeUsers>
+	        <li>FueledStove</li>
+	        <li>ElectricStove</li>
+	        <li>WNA_Ritespot</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_RepackRation</defName>
-        <description>Use whelingnorther techniques to pack normal meals into WNA militaty rations.</description>
+        <description>Repack various meals to meet WNA military standard.</description>
         <jobString>working.</jobString>
         <label>repack meals</label>
         <ingredients>
@@ -153,7 +206,7 @@
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_RepackRationBulk</defName>
-        <description>Use whelingnorther techniques to pack normal meals into WNA militaty rations.</description>
+        <description>Repack various meals to meet WNA military standard.</description>
         <jobString>working.</jobString>
         <label>repack meals x5</label>
         <ingredients>
@@ -194,11 +247,54 @@
 	    </recipeUsers>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_RepackRationMult</defName>
+        <description>Repack various meals to meet WNA military standard.</description>
+        <jobString>working.</jobString>
+        <label>repack meals x50</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>FoodMeals</li>
+                        <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                        <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+                    </categories>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>FoodMeals</li>
+                <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+            </categories>
+            <disallowedCategories/>
+            <disallowedThingDefs>
+                <li>WNA_Ration</li>
+                <li MayRequire="3hstltd.foods.instanoodles">WNA_InstaNoodle</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Ration>50</WNA_Ration>
+        </products>
+        <workAmount>300</workAmount>
+        <recipeUsers>
+	        <li>FueledStove</li>
+	        <li>ElectricStove</li>
+	        <li>CraftingSpot</li>
+	        <li>WNA_Ritespot</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
 
     <!-- medikit -->
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNAPackMedikit</defName>
-        <description>Use mana and herbal medicine to make medicine pack.</description>
+        <description>Repack various madicines to meet WNA military standard.</description>
         <jobString>working.</jobString>
         <label>make WNA medicine pack</label>
         <ingredients>
@@ -250,7 +346,7 @@
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNAPackMedikitBulk</defName>
-        <description>Use mana and herbal medicine to make medicine pack.</description>
+        <description>Repack various madicines to meet WNA military standard.</description>
         <jobString>working.</jobString>
         <label>make WNA medicine pack x5</label>
         <ingredients>
@@ -294,6 +390,58 @@
             <WNA_Medikit>5</WNA_Medikit>
         </products>
         <workAmount>2000</workAmount>
+        <recipeUsers>
+	        <li>DrugLab</li>
+	        <li>WNA_Ritespot</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNAPackMedikitMult</defName>
+        <description>Repack various madicines to meet WNA military standard.</description>
+        <jobString>working.</jobString>
+        <label>make WNA medicine pack x100</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                        <li>Drugs</li>
+                    </categories>
+                    <thingDefs>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+                <li>Drugs</li>
+            </categories>
+            <thingDefs>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
+            </thingDefs>
+            <disallowedThingDefs>
+                <li>WNA_Medikit</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
+            </thingDefs>
+            <disallowedThingDefs>
+                <li>WNA_Medikit</li>
+            </disallowedThingDefs>
+        </defaultIngredientFilter>
+        <products>
+            <WNA_Medikit>100</WNA_Medikit>
+        </products>
+        <workAmount>8000</workAmount>
         <recipeUsers>
 	        <li>DrugLab</li>
 	        <li>WNA_Ritespot</li>

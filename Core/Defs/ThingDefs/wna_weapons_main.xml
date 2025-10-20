@@ -356,7 +356,7 @@
         <label>"sunset" sniper artillery mode</label>
         <description>sunset sniper rifle switched to mortar mode, usually used with smaller-sized antigrain warheads. a single rail can lead shells through proper path, go a long distance and hit target.</description>
         <graphicData>
-            <texPath>weapons/WNA_SunsetArtillery</texPath>
+            <texPath>weapons/wna_sunsetartillery</texPath>
             <drawSize>1.2</drawSize>
         </graphicData>
         <statBases>
@@ -378,7 +378,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>WNA_SunsetArtillery_Proj</defaultProjectile>
                 <warmupTime>1.67</warmupTime>
-                <range>150</range>
+                <range>180</range>
                 <soundCast>Mortar_LaunchA</soundCast>
                 <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
                 <canGoWild>false</canGoWild>

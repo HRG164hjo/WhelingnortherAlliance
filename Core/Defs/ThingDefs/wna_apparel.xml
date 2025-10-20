@@ -70,7 +70,7 @@
         </comps>
 		<modExtensions>
 			<li Class="WNA.DMExtension.MassCapacity">
-				<massCapacity>600000</massCapacity>
+				<massCapacity>60000</massCapacity>
 			</li>
 		</modExtensions>
     </ThingDef>
@@ -382,7 +382,17 @@
             </recipeUsers>
         </recipeMaker>
         <comps>
-            <li Class="WNA.ThingCompProp.CompBodyshapeOverride"/>
+            <li Class="WNA.ThingCompProp.CompBodyshapeOverride">
+                <bodyTypes>
+                    <li>Male</li>
+                    <li>Female</li>
+                    <li>Thin</li>
+                    <li>Fat</li>
+                </bodyTypes>
+                <maletype>Hulk</maletype>
+                <femaletype>Hulk</femaletype>
+                <neutype>Hulk</neutype>
+            </li>
         </comps>
     </ThingDef>
 

@@ -101,9 +101,6 @@
 		</graphicData>
 		<blockLight>false</blockLight>
 		<uiIconPath>buildings/atlas/wna_door</uiIconPath>
-        <statBases>
-            <DoorOpenSpeed>20</DoorOpenSpeed>
-        </statBases>
 		<building>
 			<paintable>true</paintable>
             <isAirtight>true</isAirtight>
@@ -334,7 +331,6 @@
         <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
         <statBases>
 			<WorkToBuild>80</WorkToBuild>
-            <DoorOpenSpeed>10</DoorOpenSpeed>
         </statBases>
 		<building>
             <isAirtight>true</isAirtight>
@@ -460,7 +456,6 @@
 		<graphicData>
 			<texPath>buildings/atlas/wna_cementwall_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<color>(94,94,94)</color>
 			<linkType>CornerFiller</linkType>
 			<linkFlags>
 				<li>Wall</li>
@@ -470,7 +465,6 @@
     	<drawStyleCategory>Walls</drawStyleCategory>
 		<altitudeLayer>Building</altitudeLayer>
 		<uiIconPath>buildings/atlas/wna_cementwall_icon</uiIconPath>
-        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
 		<useHitPoints>true</useHitPoints>
 		<coversFloor>true</coversFloor>
     	<noRightClickDraftAttack>true</noRightClickDraftAttack>
@@ -486,6 +480,10 @@
 			<canPlaceOverWall>true</canPlaceOverWall>
             <supportsWallAttachments>true</supportsWallAttachments>
 			<ai_chillDestination>false</ai_chillDestination>
+            <relatedBuildCommands>
+				<li>WNA_FortressDoor</li>
+                <li>WNA_FortressGate</li>
+            </relatedBuildCommands>
 		</building>
 		<costList>
 			<WNA_Concrete>4</WNA_Concrete>
@@ -499,9 +497,149 @@
 				<healPercent>10</healPercent>
 			</li>
 			<li Class="WNA.ThingCompProp.CompDamageLimit">
-			  	<damageLimit>1</damageLimit>
+			  	<damageLimit>50</damageLimit>
 			</li>
 		</comps>
+	</ThingDef>
+    <ThingDef ParentName="WNA_StructureBase">
+		<defName>WNA_FortressDoor</defName>
+		<label>fortress door</label>
+		<description>An advanced concrete gate, used for fortresses. What's special about this gate is that it can restore itself due to how it is built.</description>
+		<thingClass>Building_SupportedDoor</thingClass>
+		<graphicData>
+			<texPath>buildings/atlas/wna_fortdoor_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawerType>RealtimeOnly</drawerType>
+    	<rotatable>true</rotatable>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<uiIconPath>buildings/atlas/wna_fortdoor_icon_north</uiIconPath>
+		<useHitPoints>true</useHitPoints>
+        <passability>Standable</passability>
+		<neverMultiSelect>false</neverMultiSelect>
+        <coversFloor>false</coversFloor>
+		<statBases>
+			<MaxHitPoints>80000</MaxHitPoints>
+			<WorkToBuild>390</WorkToBuild>
+			<IncomingDamageFactor>0.01</IncomingDamageFactor>
+            <DoorOpenSpeed>10</DoorOpenSpeed>
+		</statBases>
+		<building>
+            <isAirtight>true</isAirtight>
+      		<isSupportDoor>true</isSupportDoor>
+			<isInert>true</isInert>
+            <roamerCanOpen>false</roamerCanOpen>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintClass>Blueprint_Door</blueprintClass>
+            <relatedBuildCommands>
+				<li>WNA_FortressWall</li>
+                <li>WNA_FortressGate</li>
+            </relatedBuildCommands>
+            <blueprintGraphicData>
+                <texPath>buildings/atlas/wna_fortdoor_icon</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>EdgeDetect</shaderType>
+                <drawSize>(2.2, 2.2)</drawSize>
+            </blueprintGraphicData>
+            <doorTopGraphic>
+                <texPath>buildings/atlas/wna_fortdoor_top</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(2.2, 2.2)</drawSize>
+            </doorTopGraphic>
+		</building>
+		<costList>
+			<Steel>30</Steel>
+			<WNA_Concrete>8</WNA_Concrete>
+		</costList>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_BaseDefense</li>
+        </researchPrerequisites>
+		<comps>
+			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
+			  	<ticksPerHeal>27</ticksPerHeal>
+				<healPercent>10</healPercent>
+			</li>
+			<li Class="WNA.ThingCompProp.CompDamageLimit">
+			  	<damageLimit>50</damageLimit>
+			</li>
+		</comps>
+        <placeWorkers>
+            <li>PlaceWorker_DoorLearnOpeningSpeed</li>
+        </placeWorkers>
+	</ThingDef>
+    <ThingDef ParentName="WNA_StructureBase">
+		<defName>WNA_FortressGate</defName>
+		<label>fortress gate</label>
+		<description>An advanced concrete gate, used for fortresses. What's special about this gate is that it can restore itself due to how it is built.</description>
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<graphicData>
+			<texPath>buildings/atlas/wna_fortgate_Mover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<drawerType>RealtimeOnly</drawerType>
+    	<size>(2,1)</size>
+    	<rotatable>true</rotatable>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<uiIconPath>buildings/atlas/wna_fortgate_icon_north</uiIconPath>
+		<useHitPoints>true</useHitPoints>
+        <passability>Standable</passability>
+		<neverMultiSelect>false</neverMultiSelect>
+        <coversFloor>false</coversFloor>
+		<statBases>
+			<MaxHitPoints>125000</MaxHitPoints>
+			<WorkToBuild>640</WorkToBuild>
+			<IncomingDamageFactor>0.01</IncomingDamageFactor>
+            <DoorOpenSpeed>10</DoorOpenSpeed>
+		</statBases>
+		<building>
+            <isAirtight>true</isAirtight>
+      		<isSupportDoor>true</isSupportDoor>
+			<isInert>true</isInert>
+            <roamerCanOpen>false</roamerCanOpen>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<blueprintClass>Blueprint_Door</blueprintClass>
+            <relatedBuildCommands>
+				<li>WNA_FortressWall</li>
+                <li>WNA_FortressDoor</li>
+            </relatedBuildCommands>
+            <blueprintGraphicData>
+                <texPath>buildings/atlas/wna_fortgate_icon</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <shaderType>EdgeDetect</shaderType>
+                <drawSize>(2.4, 3.2)</drawSize>
+            </blueprintGraphicData>
+            <doorTopGraphic>
+                <texPath>buildings/atlas/wna_fortgate_top</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(3.2, 2.4)</drawSize>
+            </doorTopGraphic>
+            <doorSupportGraphic>
+                <texPath>buildings/atlas/wna_fortgate_support</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(3.2, 2.4)</drawSize>
+            </doorSupportGraphic>
+		</building>
+		<costList>
+			<Steel>30</Steel>
+			<WNA_Concrete>8</WNA_Concrete>
+		</costList>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_BaseDefense</li>
+        </researchPrerequisites>
+		<comps>
+			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
+			  	<ticksPerHeal>27</ticksPerHeal>
+				<healPercent>10</healPercent>
+			</li>
+			<li Class="WNA.ThingCompProp.CompDamageLimit">
+			  	<damageLimit>50</damageLimit>
+			</li>
+		</comps>
+    	<placeWorkers>
+    	  	<li>PlaceWorker_MultiCellDoor</li>
+    	</placeWorkers>
 	</ThingDef>
 
 </Defs>

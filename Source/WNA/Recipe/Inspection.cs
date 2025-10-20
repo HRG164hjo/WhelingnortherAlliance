@@ -10,7 +10,7 @@ namespace WNA.Recipe
     {
         public override void ApplyOnPawn(Pawn pawn, BodyPartRecord part, Pawn billDoer, List<Thing> ingredients, Bill bill)
         {
-            TaggedString label = "WNA.Recipe.Inspection.LetterLabel".Translate();
+            TaggedString label = "WNA.Inspection.LetterLabel".Translate();
             if (CheckSurgeryFail(billDoer, pawn, ingredients, part, bill)) return;
             var hediffs = pawn.health.hediffSet.hediffs;
             StringBuilder sb = new StringBuilder();
@@ -20,7 +20,7 @@ namespace WNA.Recipe
                 !(h is Hediff_Injury)).ToList();
             if (visible.Any())
             {
-                sb.AppendLine("WNA.Recipe.Inspection.Visible".Translate(pawn.Named("PAWN")));
+                sb.AppendLine("WNA.Inspection.Visible".Translate(pawn.Named("PAWN")));
                 foreach (var h in visible.OrderBy(h => h.LabelCap.ResolveTags()))
                 {
                     string labelv = h.LabelCap.NullOrEmpty() ? h.def.label : h.LabelCap;
@@ -30,7 +30,7 @@ namespace WNA.Recipe
             var hidden = hediffs.Where(h => !h.Visible).ToList();
             if (hidden.Any())
             {
-                sb.AppendLine("WNA.Recipe.Inspection.Hidden".Translate(pawn.Named("PAWN")));
+                sb.AppendLine("WNA.Inspection.Hidden".Translate(pawn.Named("PAWN")));
                 foreach (var h in hidden.OrderBy(h => h.LabelCap.ResolveTags()))
                 {
                     string labelh = h.LabelCap.NullOrEmpty() ? h.def.label : h.LabelCap;
@@ -44,7 +44,7 @@ namespace WNA.Recipe
             }
             else
                 Find.LetterStack.ReceiveLetter(label,
-                    "WNA.Recipe.Inspection.None".Translate(pawn.Named("PAWN")),
+                    "WNA.Inspection.None".Translate(pawn.Named("PAWN")),
                     LetterDefOf.NeutralEvent, pawn);
             if (billDoer != null) TaleRecorder.RecordTale(TaleDefOf.DidSurgery, billDoer, pawn);
         }

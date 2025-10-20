@@ -188,7 +188,7 @@
             <canBePredatorPrey>false</canBePredatorPrey>
             <gestationPeriodDays>15</gestationPeriodDays>
             <baseBodySize>1</baseBodySize>
-            <baseHealthScale>1000000</baseHealthScale>
+            <baseHealthScale>10000000</baseHealthScale>
             <baseHungerRate>0</baseHungerRate>
             <canBecomeShambler>false</canBecomeShambler>
             <isImmuneToInfections>true</isImmuneToInfections>
@@ -423,8 +423,8 @@
             </li>
         </damageMultipliers>
         <race>
-            <baseHealthScale>20</baseHealthScale>
-            <lifeExpectancy>1000</lifeExpectancy>
+            <baseHealthScale>60000</baseHealthScale>
+            <lifeExpectancy>1000000</lifeExpectancy>
             <linkedCorpseKind>Human</linkedCorpseKind>
             <useMeatFrom>Human</useMeatFrom>
             <canBecomeShambler>false</canBecomeShambler>

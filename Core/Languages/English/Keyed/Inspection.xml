@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<WNA.Inspection.LetterLabel>inspection report</WNA.Inspection.LetterLabel>
+	<WNA.Inspection.None>{PAWN}has no noticeable health conditions.</WNA.Inspection.None>
+	<WNA.Inspection.Visible>{PAWN}has these special health conditions:</WNA.Inspection.Visible>
+	<WNA.Inspection.Hidden>{PAWN}has these hidden helath conditions:</WNA.Inspection.Hidden>
+
+</LanguageData>

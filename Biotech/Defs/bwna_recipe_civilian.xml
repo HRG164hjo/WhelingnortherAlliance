@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- civil -->
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_RecyecleWastepack</defName>
+        <label>recycle wastepack</label>
+        <description>treat wastepacks with strong heat to recycle resources.</description>
+        <jobString>recycling waste pack.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Wastepack</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Wastepack</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Uranium>2</Uranium>
+            <WNA_MercuryVial>3</WNA_MercuryVial>
+            <WNA_HalogenVial>5</WNA_HalogenVial>
+        </products>
+        <workAmount>450</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	        <li>ElectricCrematorium</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_RecyecleWastepackBulk</defName>
+        <label>recycle wastepack x10</label>
+        <description>treat wastepacks with strong heat to recycle resources.</description>
+        <jobString>recycling waste pack.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Wastepack</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Wastepack</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Uranium>20</Uranium>
+            <WNA_MercuryVial>30</WNA_MercuryVial>
+            <WNA_HalogenVial>50</WNA_HalogenVial>
+        </products>
+        <workAmount>3000</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	        <li>ElectricCrematorium</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+</Defs>

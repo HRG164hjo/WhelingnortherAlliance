@@ -114,9 +114,9 @@
 	    <xpath>Defs/ThingDef[defName="FuelOptimizer"]/comps/li[@Class="CompProperties_GravshipFacility"]</xpath>
         <value>
             <li Class="CompProperties_GravshipFacility">
-                <fuelSavingsPercent>0.225</fuelSavingsPercent>
+                <fuelSavingsPercent>0.3</fuelSavingsPercent>
                 <requiresLOS>false</requiresLOS>
-                <maxSimultaneous>4</maxSimultaneous>
+                <maxSimultaneous>3</maxSimultaneous>
                 <maxDistance>500</maxDistance>
             </li>
         </value>
@@ -160,6 +160,27 @@
             <useHitPoints>false</useHitPoints>
         </value>
     </Operation>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="GravAnchor" or defName="FuelOptimizer" or defName="PilotSubpersonaCore"]</xpath>
+        <value>
+            <designationCategory>Odyssey</designationCategory>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/RitualOutcomeEffectDef[defName="GravshipLaunch"]/comps/li[label="pilot subpersona core"]</xpath>
+        <value>
+            <li Class="RitualOutcomeComp_GravshipFacilities">
+                <label>pilot subpersona core</label>
+                <facilityQualityOffsets>
+                    <li>
+                        <key>PilotSubpersonaCore</key>
+                        <value>0.40</value>
+                    </li>
+                </facilityQualityOffsets>
+            </li>
+        </value>
+    </Operation>
     
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThingDef[defName="OrbitalScanner"]</xpath>
@@ -190,13 +211,6 @@
 	    <xpath>Defs/ThingDef[defName="GravAnchor"]/statBases</xpath>
         <value>
             <Mass>80</Mass>
-        </value>
-    </Operation>
-    
-    <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/ThingDef[defName="GravAnchor" or defName="FuelOptimizer" or defName="PilotSubpersonaCore"]</xpath>
-        <value>
-            <designationCategory>Odyssey</designationCategory>
         </value>
     </Operation>
 </Patch>
