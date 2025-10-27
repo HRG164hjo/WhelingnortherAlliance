@@ -3,27 +3,37 @@
   
   <!-- EN: artificial soil -->
   <WNA_ArtificialSoil.label>artificial soil</WNA_ArtificialSoil.label>
-  <!-- EN: Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth. -->
-  <WNA_ArtificialSoil.description>Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth.</WNA_ArtificialSoil.description>
+  <!-- EN: Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_ArtificialSoil.description>Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_ArtificialSoil.description>
   
   <!-- EN: pale tile -->
   <WNA_FocusFloor.label>pale tile</WNA_FocusFloor.label>
-  <!-- EN: Colorless fine floor. -->
-  <WNA_FocusFloor.description>Colorless fine floor.</WNA_FocusFloor.description>
+  <!-- EN: Colorless fine floor.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_FocusFloor.description>Colorless fine floor.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_FocusFloor.description>
   
   <!-- EN: dim sand -->
   <WNA_FocusSand.label>dim sand</WNA_FocusSand.label>
-  <!-- EN: These sands have ran out of their color. -->
-  <WNA_FocusSand.description>These sands have ran out of their color.</WNA_FocusSand.description>
+  <!-- EN: These sands have ran out of their color.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_FocusSand.description>These sands have ran out of their color.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_FocusSand.description>
   
   <!-- EN: dim soil -->
   <WNA_FocusSoil.label>dim soil</WNA_FocusSoil.label>
-  <!-- EN: Dim colorless soil, vitality is pulsing through it. -->
-  <WNA_FocusSoil.description>Dim colorless soil, vitality is pulsing through it.</WNA_FocusSoil.description>
+  <!-- EN: Dim colorless soil, vitality is pulsing through it.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_FocusSoil.description>Dim colorless soil, vitality is pulsing through it.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_FocusSoil.description>
   
   <!-- EN: pale spring -->
   <WNA_FocusSpring.label>pale spring</WNA_FocusSpring.label>
-  <!-- EN: Colorless fluid, seems to have some mysterious aspects. -->
-  <WNA_FocusSpring.description>Colorless fluid, seems to have some mysterious aspects.</WNA_FocusSpring.description>
+  <!-- EN: Colorless fluid, seems to have some mysterious aspects.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_FocusSpring.description>Colorless fluid, seems to have some mysterious aspects.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_FocusSpring.description>
   
 </LanguageData>

@@ -314,13 +314,14 @@
             </li>
 			<li Class="WNA.ThingCompProp.CompDamageLimit">
 			  	<damageLimit>0</damageLimit>
+                <canAbsorb>true</canAbsorb>
 			</li>
             <li Class="AutoBlink.CompProperties_AutoBlink" MayRequire="rabiosus.autoblink">
-                <blinkIntervalTicks>27</blinkIntervalTicks>
+                <blinkIntervalTicks>3</blinkIntervalTicks>
                 <delayAfterEligibleTicks>3</delayAfterEligibleTicks>
                 <cellsBeforeTarget>3</cellsBeforeTarget>
                 <maxDistanceToBlink>500</maxDistanceToBlink>
-                <minDistanceToBlink>10</minDistanceToBlink>
+                <minDistanceToBlink>5</minDistanceToBlink>
                 <postBlinkStanceTicks>0</postBlinkStanceTicks>
                 <excludedJobDefs>
                     <li>GotoWander</li>
@@ -336,6 +337,10 @@
 		<modExtensions>
             <li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
                 <movementDef>WNA_Movement</movementDef>
+            </li>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+                <immuneToIronKill>true</immuneToIronKill>
             </li>
 			<li Class="WNA.DMExtension.MassCapacity">
 				<massCapacity>69432165100000000000</massCapacity>
@@ -437,7 +442,7 @@
                 <label>left fist</label>
                 <labelNoLocation>fist</labelNoLocation>
                 <capacities>
-                    <li>Blunt</li>
+                    <li>WNA_DemoCut</li>
                 </capacities>
                 <power>40</power>
                 <cooldownTime>1</cooldownTime>
@@ -465,7 +470,7 @@
                 <label>right fist</label>
                 <labelNoLocation>fist</labelNoLocation>
                 <capacities>
-                    <li>Blunt</li>
+                    <li>WNA_DemoCut</li>
                 </capacities>
                 <power>40</power>
                 <cooldownTime>1</cooldownTime>
@@ -492,7 +497,7 @@
             <li>
                 <label>teeth</label>
                 <capacities>
-                    <li>Bite</li>
+                    <li>WNA_DemoCut</li>
                 </capacities>
                 <power>60</power>
                 <cooldownTime>1</cooldownTime>
@@ -522,7 +527,7 @@
             <li>
                 <label>head</label>
                 <capacities>
-                    <li>Blunt</li>
+                    <li>WNA_DemoCut</li>
                 </capacities>
                 <power>100</power>
                 <cooldownTime>1</cooldownTime>
@@ -552,11 +557,16 @@
         <comps>
 			<li Class="WNA.ThingCompProp.CompDamageLimit">
 			  	<damageLimit>1</damageLimit>
+                <canAbsorb>true</canAbsorb>
 			</li>
         </comps>
 		<modExtensions>
             <li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
                 <movementDef>WNA_Movement</movementDef>
+            </li>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+                <immuneToIronKill>true</immuneToIronKill>
             </li>
 			<li Class="WNA.DMExtension.MassCapacity">
 				<massCapacity>6000000000</massCapacity>

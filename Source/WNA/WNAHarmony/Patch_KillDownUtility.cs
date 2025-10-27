@@ -14,9 +14,9 @@ namespace WNA.WNAHarmony
         {
             "WNA_WNThan",
             "WNA_Human",
-            "WNA_DimBeastRace",
-            "WNA_ThornBeastRace",
-            "WNA_FerociousBeastRace"
+            "WNA_DimBoo",
+            "WNA_ThornBoo",
+            "WNA_FerosBoo"
         };
         private static bool IsTargetRace(Pawn pawn)
         {

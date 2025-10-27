@@ -20,13 +20,9 @@ namespace WNA.Damager
             Pawn casterPawn = CasterPawn;
             Thing thing = currentTarget.Thing;
             if (casterPawn == null || thing == null)
-            {
                 return false;
-            }
             foreach (CompTargetEffect comp in base.EquipmentSource.GetComps<CompTargetEffect>())
-            {
                 comp.DoEffectOn(casterPawn, thing);
-            }
             return true;
         }
     }

@@ -21,6 +21,15 @@
             </li>
         </value>
     </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="Bioferrite"]</xpath>
+        <value>
+            <deepCommonality>0.5</deepCommonality>
+            <deepCountPerPortion>45</deepCountPerPortion>
+            <deepLumpSizeRange>7~8</deepLumpSizeRange>
+        </value>
+    </Operation>
 
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThingDef[defName="WNA_WNThan" or defName="WNA_Human"]/statBases</xpath>
@@ -60,8 +69,6 @@
                 <WNA_Voidsteel>4</WNA_Voidsteel>
             </costList>
             <designationCategory>Structure</designationCategory>
-            <!--<minTechLevelToBuild>Archotech</minTechLevelToBuild>
-            <placingDraggableDimensions>1</placingDraggableDimensions>-->
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
@@ -80,5 +87,24 @@
     
     <Operation Class="PatchOperationRemove">
 	    <xpath>Defs/StatDef[defName="ActivitySuppressionRate"]/statFactors</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="ShardBeacon"]</xpath>
+        <value>
+            <useHitPoints>false</useHitPoints>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[defName="ShardBeacon"]/comps/li[@Class="CompProperties_Facility"]</xpath>
+        <value>
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <PsychicRitualQuality>0.25</PsychicRitualQuality>
+                </statOffsets>
+                <maxSimultaneous>4</maxSimultaneous>
+                <maxDistance>10</maxDistance>
+            </li>
+        </value>
     </Operation>
 </Patch>

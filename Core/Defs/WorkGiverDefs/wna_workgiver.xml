@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <WorkTypeDef>
+        <defName>WNAWork_Rite</defName>
+        <labelShort>rite</labelShort>
+        <pawnLabel>priest</pawnLabel>
+        <gerundLabel>riting</gerundLabel>
+        <description>Carrying out Whelingnorther rites to do something or achieve some goal.</description>
+        <verb>holding a rite</verb>
+        <naturalPriority>400</naturalPriority>
+        <disabledForSlaves>true</disabledForSlaves>
+        <relevantSkills>
+            <li>Intellectual</li>
+        </relevantSkills>
+        <workTags>
+            <li>Intellectual</li>
+            <li>Commoner</li>
+            <li>AllWork</li>
+        </workTags>
+    </WorkTypeDef>
 
+    <!---->
     <WorkGiverDef>
         <defName>WNA_MainWork</defName>
         <label>rite</label>
@@ -19,24 +38,18 @@
         <prioritizeSustains>true</prioritizeSustains>
     </WorkGiverDef>
 
-    <WorkTypeDef>
-        <defName>WNAWork_Rite</defName>
-        <labelShort>rite</labelShort>
-        <pawnLabel>priest</pawnLabel>
-        <gerundLabel>riting</gerundLabel>
-        <description>Carrying out Whelingnorther rites to do something or achieve some goal.</description>
-        <verb>holding a rite</verb>
-        <naturalPriority>400</naturalPriority>
-        <disabledForSlaves>true</disabledForSlaves>
-        <relevantSkills>
-            <li>Intellectual</li>
-        </relevantSkills>
-        <requireCapableColonist>true</requireCapableColonist>
-        <workTags>
-            <li>Intellectual</li>
-            <li>Commoner</li>
-            <li>AllWork</li>
-        </workTags>
-    </WorkTypeDef>
+    <WorkGiverDef>
+        <defName>WNAWork_DeepDrill</defName>
+        <label>drill at starcore drill</label>
+        <giverClass>WNA.WorkGiverClass.DeepDrill</giverClass>
+        <workType>Mining</workType>
+        <priorityInType>50</priorityInType>
+        <verb>deepdrill</verb>
+        <gerund>deepdrilling</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <canBeDoneByMechs>true</canBeDoneByMechs>
+    </WorkGiverDef>
     
 </Defs>

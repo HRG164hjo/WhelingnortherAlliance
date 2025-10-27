@@ -30,9 +30,7 @@ namespace WNA.WNAHarmony
         private static bool IsCertainPawn(Pawn pawn)
         {
             if (pawn == null)
-            {
                 return false;
-            }
             bool isRace = wiseList.Contains(pawn.def.defName);
             bool hasPrecept = pawn.Ideo?.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) == true;
             return isRace || hasPrecept;

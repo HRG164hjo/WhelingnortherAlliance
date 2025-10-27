@@ -3,27 +3,51 @@
   
   <!-- EN: Process hay for chemfuel -->
   <WNA-Hay-Chemfuel.label>Process hay for chemfuel</WNA-Hay-Chemfuel.label>
-  <!-- EN: Turn 75 hay into 25 chemfuel. -->
-  <WNA-Hay-Chemfuel.description>Turn 75 hay into 25 chemfuel.</WNA-Hay-Chemfuel.description>
+  <!-- EN: Turn 75 hay into 25 chemfuel.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA-Hay-Chemfuel.description>Turn 75 hay into 25 chemfuel.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA-Hay-Chemfuel.description>
   
   <!-- EN: Process psychoid leaves for yayo -->
   <WNA-PsychoidLeaves-Yayo.label>Process psychoid leaves for yayo</WNA-PsychoidLeaves-Yayo.label>
-  <!-- EN: Turn 75 psychoid leaves into 25 yayo. -->
-  <WNA-PsychoidLeaves-Yayo.description>Turn 75 psychoid leaves into 25 yayo.</WNA-PsychoidLeaves-Yayo.description>
+  <!-- EN: Turn 75 psychoid leaves into 25 yayo.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA-PsychoidLeaves-Yayo.description>Turn 75 psychoid leaves into 25 yayo.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA-PsychoidLeaves-Yayo.description>
+  
+  <!-- EN: Process mead must for mead -->
+  <WNA-RB-Must-Mead.label>Process mead must for mead</WNA-RB-Must-Mead.label>
+  <!-- EN: Turn 25 mead must into 25 mead.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA-RB-Must-Mead.description>Turn 25 mead must into 25 mead.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA-RB-Must-Mead.description>
+  
+  <!-- EN: Process flower for perfume -->
+  <WNA-Romy-AromaflowerPetals-AncientPerfume.label>Process flower for perfume</WNA-Romy-AromaflowerPetals-AncientPerfume.label>
+  <!-- EN: Turn 25 flower petals into 25 ancient perfume.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA-Romy-AromaflowerPetals-AncientPerfume.description>Turn 25 flower petals into 25 ancient perfume.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA-Romy-AromaflowerPetals-AncientPerfume.description>
   
   <!-- EN: Process smokeleaf leaves for smokeleaf joint -->
   <WNA-SmokeleafLeaves-SmokeleafJoint.label>Process smokeleaf leaves for smokeleaf joint</WNA-SmokeleafLeaves-SmokeleafJoint.label>
-  <!-- EN: Turn 75 smokeleaf leaves into 25 smokeleaf joint. -->
-  <WNA-SmokeleafLeaves-SmokeleafJoint.description>Turn 75 smokeleaf leaves into 25 smokeleaf joint.</WNA-SmokeleafLeaves-SmokeleafJoint.description>
+  <!-- EN: Turn 75 smokeleaf leaves into 25 smokeleaf joint.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA-SmokeleafLeaves-SmokeleafJoint.description>Turn 75 smokeleaf leaves into 25 smokeleaf joint.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA-SmokeleafLeaves-SmokeleafJoint.description>
   
   <!-- EN: Process wood for neutroamine -->
   <WNA-WoodLog-Neutroamine.label>Process wood for neutroamine</WNA-WoodLog-Neutroamine.label>
-  <!-- EN: Turn 75 wood into 20 neutroamine. -->
-  <WNA-WoodLog-Neutroamine.description>Turn 75 wood into 20 neutroamine.</WNA-WoodLog-Neutroamine.description>
+  <!-- EN: Turn 75 wood into 20 neutroamine.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA-WoodLog-Neutroamine.description>Turn 75 wood into 20 neutroamine.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA-WoodLog-Neutroamine.description>
   
   <!-- EN: Process wort for beer -->
   <WNA-Wort-Beer.label>Process wort for beer</WNA-Wort-Beer.label>
-  <!-- EN: Turn 25 wort into 25 beer. -->
-  <WNA-Wort-Beer.description>Turn 25 wort into 25 beer.</WNA-Wort-Beer.description>
+  <!-- EN: Turn 25 wort into 25 beer.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA-Wort-Beer.description>Turn 25 wort into 25 beer.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA-Wort-Beer.description>
   
 </LanguageData>

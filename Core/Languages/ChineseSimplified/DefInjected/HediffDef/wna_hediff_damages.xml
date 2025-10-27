@@ -2,97 +2,111 @@
 <LanguageData>
   
   <!-- EN: corrosion -->
-  <WNA_CastDamage.label>融解</WNA_CastDamage.label>
-  <!-- EN: A horrible melting wound, seems never to heal. -->
-  <WNA_CastDamage.description>熔融状的可怕伤口, 似乎永远不会痊愈.</WNA_CastDamage.description>
+  <WNA_CastDamage.label>corrosion</WNA_CastDamage.label>
+  <!-- EN: A horrible melting wound, seems never to heal.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_CastDamage.description>A horrible melting wound, seems never to heal.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_CastDamage.description>
   <!-- EN: molten -->
-  <WNA_CastDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>融解</WNA_CastDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
+  <WNA_CastDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>molten</WNA_CastDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
   <!-- EN: molten -->
-  <WNA_CastDamage.comps.HediffComp_GetsPermanent.permanentLabel>融解</WNA_CastDamage.comps.HediffComp_GetsPermanent.permanentLabel>
+  <WNA_CastDamage.comps.HediffComp_GetsPermanent.permanentLabel>molten</WNA_CastDamage.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: whelingnorther corrosion -->
-  <WNA_CastDamage.labelNoun>威灵侵染</WNA_CastDamage.labelNoun>
+  <WNA_CastDamage.labelNoun>whelingnorther corrosion</WNA_CastDamage.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <WNA_CastDamage.labelNounPretty>{1}中的{0}</WNA_CastDamage.labelNounPretty>
+  <WNA_CastDamage.labelNounPretty>{0} in the {1}</WNA_CastDamage.labelNounPretty>
   
   <!-- EN: whelingnorther corrosion -->
-  <WNA_Corrosion.label>威灵侵染</WNA_Corrosion.label>
-  <!-- EN: An as yet unexplained fatal health condition in which victims often exhibit a unique state of melting upon death. Usually found on victims harmed by WNA rite weapons or directly attacked by Whelingnorthan.\n\nSo far hardly any methods can be used to treat this condition, what people can do is just pray and watch the condition grow worse, finally killing the victim. -->
-  <WNA_Corrosion.description>一种尚未解明的致命健康状况, 受害者在死前常常呈现出一种独特的熔融状态, 常见于被威灵会仪式武器攻击或被威灵古族直接袭击的受害者身上.\n\n迄今为止几乎没有任何方式能用于治疗这一状况, 人们能做的只有一边祈祷奇迹发生, 一边看着受害者的状况逐渐恶化直至死亡.</WNA_Corrosion.description>
+  <WNA_Corrosion.label>whelingnorther corrosion</WNA_Corrosion.label>
+  <!-- EN: An as yet unexplained fatal health condition in which victims often exhibit a unique state of melting upon death. Usually found on victims harmed by WNA rite weapons or directly attacked by Whelingnorthan.\n\nSo far hardly any methods can be used to treat this condition, what people can do is just pray and watch the condition grow worse, finally killing the victim.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Corrosion.description>An as yet unexplained fatal health condition in which victims often exhibit a unique state of melting upon death. Usually found on victims harmed by WNA rite weapons or directly attacked by Whelingnorthan.
+
+So far hardly any methods can be used to treat this condition, what people can do is just pray and watch the condition grow worse, finally killing the victim.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Corrosion.description>
   <!-- EN: {PAWN_nameDef} is melting! -->
-  <WNA_Corrosion.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>{PAWN_nameDef}正在融化!</WNA_Corrosion.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>
+  <WNA_Corrosion.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>{PAWN_nameDef} is melting!</WNA_Corrosion.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>
   <!-- EN: hidden -->
-  <WNA_Corrosion.stages.hidden.label>隐藏</WNA_Corrosion.stages.hidden.label>
+  <WNA_Corrosion.stages.hidden.label>hidden</WNA_Corrosion.stages.hidden.label>
   <!-- EN: severe -->
-  <WNA_Corrosion.stages.severe.label>严重</WNA_Corrosion.stages.severe.label>
+  <WNA_Corrosion.stages.severe.label>severe</WNA_Corrosion.stages.severe.label>
   <!-- EN: extreme -->
-  <WNA_Corrosion.stages.extreme.label>极端</WNA_Corrosion.stages.extreme.label>
+  <WNA_Corrosion.stages.extreme.label>extreme</WNA_Corrosion.stages.extreme.label>
   <!-- EN: fatal -->
-  <WNA_Corrosion.stages.fatal.label>致命</WNA_Corrosion.stages.fatal.label>
+  <WNA_Corrosion.stages.fatal.label>fatal</WNA_Corrosion.stages.fatal.label>
   
   <!-- EN: gunshot -->
-  <WNA_HPDamage.label>枪伤</WNA_HPDamage.label>
-  <!-- EN: A shot wound caused by hollow point bullet. -->
-  <WNA_HPDamage.description>空尖弹造成的枪击伤口.</WNA_HPDamage.description>
+  <WNA_HPDamage.label>gunshot</WNA_HPDamage.label>
+  <!-- EN: A shot wound caused by hollow point bullet.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_HPDamage.description>A shot wound caused by hollow point bullet.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_HPDamage.description>
   <!-- EN: permanent gunshot injury -->
-  <WNA_HPDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>永久枪伤</WNA_HPDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
+  <WNA_HPDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>permanent gunshot injury</WNA_HPDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
   <!-- EN: old gunshot -->
-  <WNA_HPDamage.comps.HediffComp_GetsPermanent.permanentLabel>旧枪伤</WNA_HPDamage.comps.HediffComp_GetsPermanent.permanentLabel>
+  <WNA_HPDamage.comps.HediffComp_GetsPermanent.permanentLabel>old gunshot</WNA_HPDamage.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: shot off -->
-  <WNA_HPDamage.injuryProps.destroyedLabel>被射毁</WNA_HPDamage.injuryProps.destroyedLabel>
+  <WNA_HPDamage.injuryProps.destroyedLabel>shot off</WNA_HPDamage.injuryProps.destroyedLabel>
   <!-- EN: shot out -->
-  <WNA_HPDamage.injuryProps.destroyedOutLabel>被射毁</WNA_HPDamage.injuryProps.destroyedOutLabel>
+  <WNA_HPDamage.injuryProps.destroyedOutLabel>shot out</WNA_HPDamage.injuryProps.destroyedOutLabel>
   <!-- EN: a shot wound -->
-  <WNA_HPDamage.labelNoun>一处枪伤</WNA_HPDamage.labelNoun>
+  <WNA_HPDamage.labelNoun>a shot wound</WNA_HPDamage.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <WNA_HPDamage.labelNounPretty>{1}中的{0}</WNA_HPDamage.labelNounPretty>
+  <WNA_HPDamage.labelNounPretty>{0} in the {1}</WNA_HPDamage.labelNounPretty>
   
   <!-- EN: kinetic burn -->
-  <WNA_KineticDamage.label>动能烧伤</WNA_KineticDamage.label>
-  <!-- EN: A burn wound caused by WNA's thought-kinetic weapons. -->
-  <WNA_KineticDamage.description>威灵会的念动能武器造成的热灼伤.</WNA_KineticDamage.description>
+  <WNA_KineticDamage.label>kinetic burn</WNA_KineticDamage.label>
+  <!-- EN: A burn wound caused by WNA's thought-kinetic weapons.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_KineticDamage.description>A burn wound caused by WNA's thought-kinetic weapons.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_KineticDamage.description>
   <!-- EN: permanent kinetic burn -->
-  <WNA_KineticDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>永久烧伤</WNA_KineticDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
+  <WNA_KineticDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>permanent kinetic burn</WNA_KineticDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
   <!-- EN: old burn -->
-  <WNA_KineticDamage.comps.HediffComp_GetsPermanent.permanentLabel>旧烧伤</WNA_KineticDamage.comps.HediffComp_GetsPermanent.permanentLabel>
+  <WNA_KineticDamage.comps.HediffComp_GetsPermanent.permanentLabel>old burn</WNA_KineticDamage.comps.HediffComp_GetsPermanent.permanentLabel>
   <!-- EN: burned off -->
-  <WNA_KineticDamage.injuryProps.destroyedLabel>被烧毁</WNA_KineticDamage.injuryProps.destroyedLabel>
+  <WNA_KineticDamage.injuryProps.destroyedLabel>burned off</WNA_KineticDamage.injuryProps.destroyedLabel>
   <!-- EN: burned out -->
-  <WNA_KineticDamage.injuryProps.destroyedOutLabel>被烧毁</WNA_KineticDamage.injuryProps.destroyedOutLabel>
+  <WNA_KineticDamage.injuryProps.destroyedOutLabel>burned out</WNA_KineticDamage.injuryProps.destroyedOutLabel>
   <!-- EN: an atypical burn -->
-  <WNA_KineticDamage.labelNoun>一处非典型烧伤</WNA_KineticDamage.labelNoun>
+  <WNA_KineticDamage.labelNoun>an atypical burn</WNA_KineticDamage.labelNoun>
   <!-- EN: {0} in the {1} -->
-  <WNA_KineticDamage.labelNounPretty>{1}中的{0}</WNA_KineticDamage.labelNounPretty>
+  <WNA_KineticDamage.labelNounPretty>{0} in the {1}</WNA_KineticDamage.labelNounPretty>
   
   <!-- EN: rad-field buildup -->
-  <WNA_RadEffect.label>辐射场累积</WNA_RadEffect.label>
-  <!-- EN: Hazardous effect of being exposed to radiation field. The special radiation field can convert the non-radioactive atoms that consisting normal tissue into radioactive isotopes, causing endogenous radiation that is difficult to eliminate. In extreme cases, the victim themselves will become a strong source of radiation. -->
-  <WNA_RadEffect.description>暴露于辐射场中的危害效应. 这种特殊的辐射场能将构成正常组织的非放射性原子转化为放射性同位素, 造成难以消除的内源性辐射. 极端情况下, 受害者自身也会变成强烈的辐射源.</WNA_RadEffect.description>
+  <WNA_RadEffect.label>rad-field buildup</WNA_RadEffect.label>
+  <!-- EN: Hazardous effect of being exposed to radiation field. The special radiation field can convert the non-radioactive atoms that consisting normal tissue into radioactive isotopes, causing endogenous radiation that is difficult to eliminate. In extreme cases, the victim themselves will become a strong source of radiation.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RadEffect.description>Hazardous effect of being exposed to radiation field. The special radiation field can convert the non-radioactive atoms that consisting normal tissue into radioactive isotopes, causing endogenous radiation that is difficult to eliminate. In extreme cases, the victim themselves will become a strong source of radiation.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RadEffect.description>
   <!-- EN: Radiation damages can be found in {PAWN_nameDef}'s body. This unusual radiation effect is turning normal tissue into radiation souces, and almost cannot naturally expire. -->
-  <WNA_RadEffect.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>{PAWN_nameDef}的身体受到了不寻常的辐射损伤。这种不寻常的辐射效应正在将正常组织转化为辐射源，几乎无法自然消退。</WNA_RadEffect.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>
+  <WNA_RadEffect.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>Radiation damages can be found in {PAWN_nameDef}'s body. This unusual radiation effect is turning normal tissue into radiation souces, and almost cannot naturally expire.</WNA_RadEffect.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>
   <!-- EN: minor -->
-  <WNA_RadEffect.stages.minor.label>轻微</WNA_RadEffect.stages.minor.label>
+  <WNA_RadEffect.stages.minor.label>minor</WNA_RadEffect.stages.minor.label>
   <!-- EN: obvious -->
-  <WNA_RadEffect.stages.obvious.label>显著</WNA_RadEffect.stages.obvious.label>
+  <WNA_RadEffect.stages.obvious.label>obvious</WNA_RadEffect.stages.obvious.label>
   <!-- EN: severe -->
-  <WNA_RadEffect.stages.severe.label>严重</WNA_RadEffect.stages.severe.label>
+  <WNA_RadEffect.stages.severe.label>severe</WNA_RadEffect.stages.severe.label>
   
   <!-- EN: scrap buildup -->
-  <WNA_ScrapBuildup.label>废料堆积</WNA_ScrapBuildup.label>
-  <!-- EN: Multiple hazardous industrial waste accumulate in this person's body. Given that industrial waste is difficult to metabolize, this health condition will lead to long-term health risks. Can lead to lethal accute total organ failure if this condition continue to develop. -->
-  <WNA_ScrapBuildup.description>此人体内积聚了多种有害工业废料. 由于工业废料难以代谢, 这一健康状况会导致长期健康风险. 如果这种状况持续恶化, 可能导致致命的急性全身器官衰竭.</WNA_ScrapBuildup.description>
+  <WNA_ScrapBuildup.label>scrap buildup</WNA_ScrapBuildup.label>
+  <!-- EN: Multiple hazardous industrial waste accumulate in this person's body. Given that industrial waste is difficult to metabolize, this health condition will lead to long-term health risks. Can lead to lethal accute total organ failure if this condition continue to develop.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_ScrapBuildup.description>Multiple hazardous industrial waste accumulate in this person's body. Given that industrial waste is difficult to metabolize, this health condition will lead to long-term health risks. Can lead to lethal accute total organ failure if this condition continue to develop.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_ScrapBuildup.description>
   <!-- EN: Multiple hazardous industrial waste accumulates in {PAWN_nameDef}'s body. This condition is hard to handle, long-term medical care is suggested. -->
-  <WNA_ScrapBuildup.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>{PAWN_nameDef}体内积聚了多种有害工业废料. 这种情况很难应对, 需要长期的健康关怀.</WNA_ScrapBuildup.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>
+  <WNA_ScrapBuildup.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>Multiple hazardous industrial waste accumulates in {PAWN_nameDef}'s body. This condition is hard to handle, long-term medical care is suggested.</WNA_ScrapBuildup.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>
   <!-- EN: initial -->
-  <WNA_ScrapBuildup.stages.initial-0.label>初始</WNA_ScrapBuildup.stages.initial-0.label>
+  <WNA_ScrapBuildup.stages.initial-0.label>initial</WNA_ScrapBuildup.stages.initial-0.label>
   <!-- EN: initial -->
-  <WNA_ScrapBuildup.stages.initial-1.label>初始</WNA_ScrapBuildup.stages.initial-1.label>
+  <WNA_ScrapBuildup.stages.initial-1.label>initial</WNA_ScrapBuildup.stages.initial-1.label>
   <!-- EN: minor -->
-  <WNA_ScrapBuildup.stages.minor.label>轻微</WNA_ScrapBuildup.stages.minor.label>
+  <WNA_ScrapBuildup.stages.minor.label>minor</WNA_ScrapBuildup.stages.minor.label>
   <!-- EN: moderate -->
-  <WNA_ScrapBuildup.stages.moderate.label>中度</WNA_ScrapBuildup.stages.moderate.label>
+  <WNA_ScrapBuildup.stages.moderate.label>moderate</WNA_ScrapBuildup.stages.moderate.label>
   <!-- EN: serious -->
-  <WNA_ScrapBuildup.stages.serious.label>严重</WNA_ScrapBuildup.stages.serious.label>
+  <WNA_ScrapBuildup.stages.serious.label>serious</WNA_ScrapBuildup.stages.serious.label>
   <!-- EN: extreme -->
-  <WNA_ScrapBuildup.stages.extreme.label>极重</WNA_ScrapBuildup.stages.extreme.label>
+  <WNA_ScrapBuildup.stages.extreme.label>extreme</WNA_ScrapBuildup.stages.extreme.label>
   
 </LanguageData>

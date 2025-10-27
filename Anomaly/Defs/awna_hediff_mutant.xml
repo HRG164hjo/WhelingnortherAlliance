@@ -25,19 +25,26 @@
                 <regeneration>60000</regeneration>
                 <showRegenerationStat>false</showRegenerationStat>
                 <statFactors>
-                    <MeleeDamageFactor>5</MeleeDamageFactor>
-                    <MeleeCooldownFactor>0.05</MeleeCooldownFactor>
-                    <MoveSpeed>5</MoveSpeed>
-                    <IncomingDamageFactor>0.05</IncomingDamageFactor>
+                    <MeleeDamageFactor>10</MeleeDamageFactor>
+                    <MeleeCooldownFactor>0.</MeleeCooldownFactor>
+                    <MoveSpeed>10</MoveSpeed>
+                    <IncomingDamageFactor>0</IncomingDamageFactor>
                     <PsychicSensitivity>0</PsychicSensitivity>
                     <StaggerDurationFactor MayRequire="ludeon.rimworld.biotech">0</StaggerDurationFactor>
                 </statFactors>
                 <statOffsets>
-                    <ComfyTemperatureMin>-300</ComfyTemperatureMin>
-                    <ComfyTemperatureMax>500</ComfyTemperatureMax>
-                    <MinimumContainmentStrength>35</MinimumContainmentStrength>
+                    <ComfyTemperatureMin>-2000</ComfyTemperatureMin>
+                    <ComfyTemperatureMax>2000</ComfyTemperatureMax>
+                    <MinimumContainmentStrength>1000000</MinimumContainmentStrength>
                 </statOffsets>
             </li>
         </stages>
+        <comps>
+            <li Class="HediffCompProperties_Invisibility">
+                <visibleToPlayer>false</visibleToPlayer>
+                <fadeDurationTicks>60</fadeDurationTicks>
+            </li>
+            <li Class="WNA.HediffCompProp.CompHediffHediffRemover"/>
+        </comps>
     </HediffDef>
 </Defs>

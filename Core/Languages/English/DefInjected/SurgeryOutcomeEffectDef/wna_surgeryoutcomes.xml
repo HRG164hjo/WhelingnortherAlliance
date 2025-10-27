@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<LanguageData>
-  
-  <!-- EN: Surgery failed on {PATIENT_labelShort} -->
-  <WNA_SOforDisabled.outcomes.0.letterLabel>Surgery failed on {PATIENT_labelShort}</WNA_SOforDisabled.outcomes.0.letterLabel>
-  <!-- EN: {SURGEON_labelShort} has failed in a minor way while operating on {PATIENT_labelShort} ({RECIPE_label}). -->
-  <WNA_SOforDisabled.outcomes.0.letterText>{SURGEON_labelShort} has failed in a minor way while operating on {PATIENT_labelShort} ({RECIPE_label}).</WNA_SOforDisabled.outcomes.0.letterText>
-  
-</LanguageData>

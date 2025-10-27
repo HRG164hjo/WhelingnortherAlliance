@@ -1,32 +1,40 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: iron curatin -->
-  <WNA_IronCurtain.label>金刚不坏</WNA_IronCurtain.label>
-  <!-- EN: The power originating from Ancient Whelingnorther Empire flows through this pawn. Usual methods cannot harm this person. -->
-  <WNA_IronCurtain.description>The power originating from Ancient Whelingnorther Empire flows through this pawn. Usual methods cannot harm this person.</WNA_IronCurtain.description>
-  <!-- EN: iron curatin -->
-  <WNA_IronCurtain.labelShortAdj>金刚不坏</WNA_IronCurtain.labelShortAdj>
-  
   <!-- EN: mastery -->
-  <WNA_Mastery.label>博闻强识</WNA_Mastery.label>
-  <!-- EN: Mysterious voices are echoing beneath the surface of world, whispering knowledge to each other or to just nothing. This creature is able to steal some knowledge from the talks, thus become a master in many fields. -->
-  <WNA_Mastery.description>Mysterious voices are echoing beneath the surface of world, whispering knowledge to each other or to just nothing. This creature is able to steal some knowledge from the talks, thus become a master in many fields.</WNA_Mastery.description>
+  <WNA_Mastery.label>mastery</WNA_Mastery.label>
+  <!-- EN: Mysterious voices are echoing beneath the surface of world, whispering knowledge to each other or to just nothing. This creature is able to steal some knowledge from the talks, thus become a master in many fields.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Mastery.description>Mysterious voices are echoing beneath the surface of world, whispering knowledge to each other or to just nothing. This creature is able to steal some knowledge from the talks, thus become a master in many fields.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Mastery.description>
   <!-- EN: mastery -->
-  <WNA_Mastery.labelShortAdj>博闻强识</WNA_Mastery.labelShortAdj>
+  <WNA_Mastery.labelShortAdj>mastery</WNA_Mastery.labelShortAdj>
   
   <!-- EN: shadow ring -->
-  <WNA_ShadowRing.label>暗影环绕</WNA_ShadowRing.label>
-  <!-- EN: Shades is surrounding this pawn. Some changes, including some obvious visual changes, is happening on this pawn. -->
-  <WNA_ShadowRing.description>Shades is surrounding this pawn. Some changes, including some obvious visual changes, is happening on this pawn.</WNA_ShadowRing.description>
+  <WNA_ShadowRing.label>shadow ring</WNA_ShadowRing.label>
+  <!-- EN: Shades is surrounding this pawn. Some changes, including some obvious visual changes, is happening on this pawn.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_ShadowRing.description>Shades is surrounding this pawn. Some changes, including some obvious visual changes, is happening on this pawn.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_ShadowRing.description>
   <!-- EN: shadow ring -->
-  <WNA_ShadowRing.labelShortAdj>暗影环绕</WNA_ShadowRing.labelShortAdj>
+  <WNA_ShadowRing.labelShortAdj>shadow ring</WNA_ShadowRing.labelShortAdj>
   
   <!-- EN: still water -->
-  <WNA_StillWater.label>心如止水</WNA_StillWater.label>
-  <!-- EN: This pawn has found extraordinary inner peace, even freeing him from some primal needs. But this doesn't mean he can be treated casually. -->
-  <WNA_StillWater.description>This pawn has found extraordinary inner peace, even freeing him from some primal needs. But this doesn't mean he can be treated casually.</WNA_StillWater.description>
+  <WNA_StillWater.label>still water</WNA_StillWater.label>
+  <!-- EN: This pawn has found extraordinary inner peace, even freeing him from some primal needs. But this doesn't mean he can be treated casually.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_StillWater.description>This pawn has found extraordinary inner peace, even freeing him from some primal needs. But this doesn't mean he can be treated casually.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_StillWater.description>
   <!-- EN: still water -->
-  <WNA_StillWater.labelShortAdj>心如止水</WNA_StillWater.labelShortAdj>
+  <WNA_StillWater.labelShortAdj>still water</WNA_StillWater.labelShortAdj>
+  
+  <!-- EN: unshakable -->
+  <WNA_Unshakable.label>unshakable</WNA_Unshakable.label>
+  <!-- EN: The power originating from Ancient Whelingnorther Empire flows through this pawn. Few can stop this person.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Unshakable.description>The power originating from Ancient Whelingnorther Empire flows through this pawn. Few can stop this person.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Unshakable.description>
+  <!-- EN: unshakable -->
+  <WNA_Unshakable.labelShortAdj>unshakable</WNA_Unshakable.labelShortAdj>
   
 </LanguageData>

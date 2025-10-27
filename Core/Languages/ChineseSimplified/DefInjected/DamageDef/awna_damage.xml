@@ -2,8 +2,8 @@
 <LanguageData>
   
   <!-- EN: psychic drunkenness -->
-  <WNA_ShellPsychicDamage.label>灵能沉醉</WNA_ShellPsychicDamage.label>
+  <WNA_ShellPsychicDamage.label>psychic drunkenness</WNA_ShellPsychicDamage.label>
   <!-- EN: {0} has died in an explosion. -->
-  <WNA_ShellPsychicDamage.deathMessage>{0} 被炸死了.</WNA_ShellPsychicDamage.deathMessage>
+  <WNA_ShellPsychicDamage.deathMessage>{0} has died in an explosion.</WNA_ShellPsychicDamage.deathMessage>
   
 </LanguageData>

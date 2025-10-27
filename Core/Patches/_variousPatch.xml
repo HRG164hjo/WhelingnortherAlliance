@@ -5,28 +5,12 @@
         <match Class="PatchOperationAdd">
             <xpath>Defs/BiomeDef/allowedPackAnimals</xpath>
             <value>
-                <li>WNA_DimBeastRace</li>
-                <li MayRequire="oskarpotocki.vanillafactionsexpanded.core">WNA_FerociousBeastRace</li>
-                <li>WNA_ThornBeastRace</li>
+                <li>WNA_DimBoo</li>
+                <li>WNA_FerosBoo</li>
+                <li>WNA_ThornBoo</li>
             </value>
         </match>
     </Operation>
-    <!--<Operation Class="PatchOperationConditional">
-        <xpath>Defs/BiomeDef/diseases</xpath>
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/BiomeDef/diseases</xpath>
-            <value>
-                <li>
-                    <diseaseInc>WNADisease_Curse_FerociousBeast</diseaseInc>
-                    <commonality>10</commonality>
-                </li>
-                <li>
-                    <diseaseInc>WNADiseaseAnimal_Curse_FerociousBeast</diseaseInc>
-                    <commonality>10</commonality>
-                </li>
-            </value>
-        </match>
-    </Operation>-->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ResearchProjectDef[defName!="BasicMechtech"]/heldByFactionCategoryTags</xpath>
         <value>

@@ -2,31 +2,39 @@
 <LanguageData>
   
   <!-- EN: make ashpark -->
-  <WNA_MakeAshpark.label>制作灰星铁</WNA_MakeAshpark.label>
-  <!-- EN: make ashpark. -->
-  <WNA_MakeAshpark.description>制作灰星铁.</WNA_MakeAshpark.description>
+  <WNA_MakeAshpark.label>make ashpark</WNA_MakeAshpark.label>
+  <!-- EN: make ashpark.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_MakeAshpark.description>make ashpark.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MakeAshpark.description>
   <!-- EN: making ashpark. -->
-  <WNA_MakeAshpark.jobString>正在制作灰星铁.</WNA_MakeAshpark.jobString>
+  <WNA_MakeAshpark.jobString>making ashpark.</WNA_MakeAshpark.jobString>
   
   <!-- EN: make chiming steel -->
-  <WNA_MakeChimingSteel.label>制作赤明铁</WNA_MakeChimingSteel.label>
-  <!-- EN: ascend ashpark to chiming steel. -->
-  <WNA_MakeChimingSteel.description>将灰星铁升变为赤明铁.</WNA_MakeChimingSteel.description>
+  <WNA_MakeChimingSteel.label>make chiming steel</WNA_MakeChimingSteel.label>
+  <!-- EN: ascend ashpark to chiming steel.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_MakeChimingSteel.description>ascend ashpark to chiming steel.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MakeChimingSteel.description>
   <!-- EN: making chiming steel. -->
-  <WNA_MakeChimingSteel.jobString>正在制作赤明铁.</WNA_MakeChimingSteel.jobString>
+  <WNA_MakeChimingSteel.jobString>making chiming steel.</WNA_MakeChimingSteel.jobString>
   
   <!-- EN: make dark asbestos -->
-  <WNA_MakeDarkAsbestos.label>制作黑石棉</WNA_MakeDarkAsbestos.label>
-  <!-- EN: transform stony materials into dark asbestos. -->
-  <WNA_MakeDarkAsbestos.description>将石质材料转化为黑石棉.</WNA_MakeDarkAsbestos.description>
+  <WNA_MakeDarkAsbestos.label>make dark asbestos</WNA_MakeDarkAsbestos.label>
+  <!-- EN: transform stony materials into dark asbestos.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_MakeDarkAsbestos.description>transform stony materials into dark asbestos.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MakeDarkAsbestos.description>
   <!-- EN: making dark asbestos. -->
-  <WNA_MakeDarkAsbestos.jobString>正在制作黑石棉.</WNA_MakeDarkAsbestos.jobString>
+  <WNA_MakeDarkAsbestos.jobString>making dark asbestos.</WNA_MakeDarkAsbestos.jobString>
   
   <!-- EN: make dark asbestos -->
-  <WNA_MakeDarkAsbestosToo.label>制作黑石棉</WNA_MakeDarkAsbestosToo.label>
-  <!-- EN: transform stony materials into dark asbestos. -->
-  <WNA_MakeDarkAsbestosToo.description>将石质材料转化为黑石棉.</WNA_MakeDarkAsbestosToo.description>
+  <WNA_MakeDarkAsbestosToo.label>make dark asbestos</WNA_MakeDarkAsbestosToo.label>
+  <!-- EN: transform stony materials into dark asbestos.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_MakeDarkAsbestosToo.description>transform stony materials into dark asbestos.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MakeDarkAsbestosToo.description>
   <!-- EN: making dark asbestos. -->
-  <WNA_MakeDarkAsbestosToo.jobString>正在制作黑石棉.</WNA_MakeDarkAsbestosToo.jobString>
+  <WNA_MakeDarkAsbestosToo.jobString>making dark asbestos.</WNA_MakeDarkAsbestosToo.jobString>
   
 </LanguageData>

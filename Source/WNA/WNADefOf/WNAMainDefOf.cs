@@ -23,16 +23,17 @@ namespace WNA.WNADefOf
         public static HediffDef WNA_Corrosion;
         public static HediffDef WNA_DeathRefusal;
         public static HediffDef WNA_Disabled;
-        public static HediffDef WNA_ForceShield;
         public static HediffDef WNA_IllusionCore;
         public static HediffDef WNA_InAnimal;
         public static HediffDef WNA_Inhuman;
+        public static HediffDef WNA_InMechanoid;
         public static HediffDef WNA_PsychicTrauma;
         public static HediffDef WNA_RobeBoost;
         public static HediffDef sWNA_DeathRefusal;
         public static HediffDef WNA_VoidDiver;
 
         public static JobDef WNA_Job_AdjustHydroponics;
+        public static JobDef WNA_Job_DeepDrilling;
 
         public static PawnKindDef WNA_Saint;
         public static PawnKindDef WNA_Disciple;
@@ -44,6 +45,9 @@ namespace WNA.WNADefOf
 
         public static ThingDef WNA_WNThan;
         public static ThingDef WNA_Human;
+        public static ThingDef WNA_DimBoo;
+        public static ThingDef WNA_ThornBoo;
+        public static ThingDef WNA_FerosBoo;
 
         public static ThingDef WNA_Cinnabar;
         public static ThingDef WNA_Trinisium;
@@ -66,6 +70,8 @@ namespace WNA.WNADefOf
         public static ThingDef WNA_UraniumBattery;
         public static ThingDef WNA_FabricBaseboard;
         public static ThingDef WNA_Focus;
+
+        public static ThingDef WNA_StarcoreDriller;
 
         public static ThingDef WNA_Weapon_RiteSword;
         public static ThingDef WNA_Weapon_RiteLance;

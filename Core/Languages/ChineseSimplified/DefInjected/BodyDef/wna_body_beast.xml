@@ -2,20 +2,20 @@
 <LanguageData>
   
   <!-- EN: beast -->
-  <WNABody_Beast.label>混兽</WNABody_Beast.label>
+  <WNABody_Beast.label>beast</WNABody_Beast.label>
   <!-- EN: hard shell -->
-  <WNABody_Beast.corePart.parts.hard_shell.customLabel>硬质外壳</WNABody_Beast.corePart.parts.hard_shell.customLabel>
+  <WNABody_Beast.corePart.parts.hard_shell.customLabel>hard shell</WNABody_Beast.corePart.parts.hard_shell.customLabel>
   <!-- EN: dim shell -->
-  <WNABody_Beast.corePart.parts.hard_shell.parts.dim_shell.customLabel>暗淡外壳</WNABody_Beast.corePart.parts.hard_shell.parts.dim_shell.customLabel>
+  <WNABody_Beast.corePart.parts.hard_shell.parts.dim_shell.customLabel>dim shell</WNABody_Beast.corePart.parts.hard_shell.parts.dim_shell.customLabel>
   <!-- EN: inner shell -->
-  <WNABody_Beast.corePart.parts.hard_shell.parts.dim_shell.parts.inner_shell.customLabel>内生壳</WNABody_Beast.corePart.parts.hard_shell.parts.dim_shell.parts.inner_shell.customLabel>
+  <WNABody_Beast.corePart.parts.hard_shell.parts.dim_shell.parts.inner_shell.customLabel>inner shell</WNABody_Beast.corePart.parts.hard_shell.parts.dim_shell.parts.inner_shell.customLabel>
   <!-- EN: tendril -->
-  <WNABody_Beast.corePart.parts.tendril-0.customLabel>卷须</WNABody_Beast.corePart.parts.tendril-0.customLabel>
+  <WNABody_Beast.corePart.parts.tendril-0.customLabel>tendril</WNABody_Beast.corePart.parts.tendril-0.customLabel>
   <!-- EN: tendril -->
-  <WNABody_Beast.corePart.parts.tendril-1.customLabel>卷须</WNABody_Beast.corePart.parts.tendril-1.customLabel>
+  <WNABody_Beast.corePart.parts.tendril-1.customLabel>tendril</WNABody_Beast.corePart.parts.tendril-1.customLabel>
   <!-- EN: tendril -->
-  <WNABody_Beast.corePart.parts.tendril-2.customLabel>卷须</WNABody_Beast.corePart.parts.tendril-2.customLabel>
+  <WNABody_Beast.corePart.parts.tendril-2.customLabel>tendril</WNABody_Beast.corePart.parts.tendril-2.customLabel>
   <!-- EN: tendril -->
-  <WNABody_Beast.corePart.parts.tendril-3.customLabel>卷须</WNABody_Beast.corePart.parts.tendril-3.customLabel>
+  <WNABody_Beast.corePart.parts.tendril-3.customLabel>tendril</WNABody_Beast.corePart.parts.tendril-3.customLabel>
   
 </LanguageData>

@@ -24,7 +24,6 @@ namespace WNA.WNAHarmony
                     Patch_JobMaditate.MeditateStartTicks.Add(pawn, GenTicks.TicksGame);
             }
         }
-        //[HarmonyPatch(typeof(RimWorld.JobDriver_Meditate), "EndJobWith", MethodType.Normal)]
         public static class JobDriver_Meditate_EndJobWith
         {
             private static readonly ThingDef rawres = WNAMainDefOf.WNA_Focus;

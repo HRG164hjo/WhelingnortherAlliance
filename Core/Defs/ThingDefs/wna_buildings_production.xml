@@ -6,7 +6,7 @@
 		<description>A piece of WNA tech, release the power sealed into the form of what called "focus" and convert it into more useable energy like electricity.</description>
         <graphicData>
 			<texPath>buildings/production/wna_energyconverter</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<graphicClass>Graphic_Single</graphicClass>
             <drawRotated>false</drawRotated>
             <drawSize>(2.0,2.0)</drawSize>
             <color>(200,200,200,192)</color>
@@ -24,14 +24,13 @@
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
         <comps>
-            <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Glower">
                 <glowRadius>5</glowRadius>
                 <glowColor>(144,144,144,255)</glowColor>
             </li>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerPlant</compClass>
-                <basePowerConsumption>-100000</basePowerConsumption>
+                <basePowerConsumption>-1000000</basePowerConsumption>
                 <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Refuelable">
@@ -57,7 +56,7 @@
 		<description>A rough piece of Whelingnorther Humanoid Revolt tech, this machine consumes corpse to generate power. Better not to think too deep about it, don't even bother looking at it.</description>
         <graphicData Inherit="false">
             <texPath>buildings/production/wna_corpsegenerator</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<graphicClass>Graphic_Single</graphicClass>
             <drawRotated>false</drawRotated>
             <drawSize>(2.1,2.1)</drawSize>
             <damageData>
@@ -122,7 +121,7 @@
 		<description>An elite piece of WHR tech, place a stone chunk in this machine and it will slowly comsume it as well as producing a good amount of eletricity. Unfortunately due to the missing of key components and techniques, this generator is not as powerful and efficiency as the document says.</description>
         <graphicData Inherit="false">
 			<texPath>buildings/production/wna_massgenerator</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<graphicClass>Graphic_Single</graphicClass>
             <drawRotated>false</drawRotated>
             <drawSize>(2,2)</drawSize>
             <damageData>
@@ -138,9 +137,12 @@
         <defaultPlacingRot>South</defaultPlacingRot>
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.3</staticSunShadowHeight>
-        <statBases>
-            <Mass>150</Mass>
+		<useHitPoints>true</useHitPoints>
+        <statBases Inherit="false">
+            <MaxHitPoints>10000</MaxHitPoints>
             <WorkToBuild>4000</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Mass>150</Mass>
             <Beauty>0</Beauty>
         </statBases>
         <costList>
@@ -184,6 +186,29 @@
                     <max>90000</max>
                 </spawnIntervalRange>
             </li>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>199.9</explosiveRadius>
+                <damageAmountBase>1000000</damageAmountBase>
+                <explosiveDamageType>BombSuper</explosiveDamageType>
+                <startWickHitPointsPercent>0.1</startWickHitPointsPercent>
+                <chanceToStartFire>1</chanceToStartFire>
+                <damageFalloff>true</damageFalloff>
+                <explosionEffect>GiantExplosion</explosionEffect>
+                <explosionSound>Explosion_GiantBomb</explosionSound>
+                <wickTicks>1</wickTicks>
+                <preExplosionSpawnSingleThingDef>CraterLarge</preExplosionSpawnSingleThingDef>
+            </li>
+            <li Class="WNA.ThingCompProp.CompRadFieldBurst">
+                <modeList>
+                    <li>KillFinalize</li>
+                    <li>KillFinalizeLeavingsOnly</li>
+                </modeList>
+                <config>
+                    <radLevel>500</radLevel>
+                    <radius>199.9</radius>
+                    <edgeFactor>1</edgeFactor>
+                </config>
+            </li>
         </comps>
 		<modExtensions>
             <li Class="WNA.DMExtension.RefuelableExtraStat">
@@ -200,7 +225,7 @@
 		<description>A hydroponic basin, can automatically grow plant tissue and harvest for products.</description>
         <graphicData Inherit="false">
 			<texPath>buildings/production/wna_hydroponics</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<graphicClass>Graphic_Single</graphicClass>
             <drawRotated>false</drawRotated>
             <drawSize>(2,2)</drawSize>
             <damageData>
@@ -239,6 +264,128 @@
                 <plantCount>55</plantCount>
             </li>
         </comps>
+	</ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_VoidAnchor</defName>
+		<label>void anchor</label>
+		<description>a tank filled with mixed liquid of methanol and neutroamine. can place a freshly harvested brain in it and use it to extract voidsteel from the deep void under one's consciousness. more stable and effective than performing a surgery on someone's flesh body. the brain will be slowly wasted.</description>
+        <graphicData Inherit="false">
+			<texPath>buildings/production/wna_voidanchor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <drawSize>(2,2)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+		</graphicData>
+        <size>(2,2)</size>
+        <rotatable>true</rotatable>
+		<passability>PassThroughOnly</passability>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.3</staticSunShadowHeight>
+		<useHitPoints>true</useHitPoints>
+        <statBases Inherit="false">
+            <Mass>80</Mass>
+            <MaxHitPoints>5000</MaxHitPoints>
+            <WorkToBuild>3000</WorkToBuild>
+            <Beauty>0</Beauty>
+        </statBases>
+        <costList>
+            <Steel>80</Steel>
+            <ComponentSpacer>5</ComponentSpacer>
+            <Neutroamine>80</Neutroamine>
+            <WNA_Methanol>120</WNA_Methanol>
+        </costList>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_AdvArsenal</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>300</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(155,55,55,255)</glowColor>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>0.166667</fuelConsumptionRate>
+                <fuelCapacity>8.0</fuelCapacity>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>WNA_PreservedBrain</li>
+                    </thingDefs>
+                </fuelFilter>
+                <fuelLabel>consciousness</fuelLabel>
+                <fuelGizmoLabel>consciousness</fuelGizmoLabel>
+                <autoRefuelPercent>0.8751</autoRefuelPercent>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                <canEjectFuel>false</canEjectFuel>
+            </li>
+            <li Class="CompProperties_Spawner">
+                <requiresPower>true</requiresPower>
+                <thingToSpawn>WNA_Voidsteel</thingToSpawn>
+                <spawnCount>100</spawnCount>
+                <spawnIntervalRange>
+                    <min>15000</min>
+                    <max>30000</max>
+                </spawnIntervalRange>
+            </li>
+        </comps>
+	</ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_StarcoreDriller</defName>
+		<label>starcore driller</label>
+		<description>a deep drill.</description>
+        <graphicData Inherit="false">
+			<texPath>Things/Building/Misc/MoisturePump</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <color>(74,74,74)</color>
+		</graphicData>
+        <rotatable>true</rotatable>
+		<passability>PassThroughOnly</passability>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.6</staticSunShadowHeight>
+		<useHitPoints>true</useHitPoints>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <statBases Inherit="false">
+            <Mass>50</Mass>
+            <MaxHitPoints>4000</MaxHitPoints>
+            <WorkToBuild>5000</WorkToBuild>
+            <Beauty>0</Beauty>
+        </statBases>
+        <costList>
+            <Steel>80</Steel>
+            <Plasteel>60</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <researchPrerequisites Inherit="false">
+            <li>WNA_AdvArsenal</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>200</basePowerConsumption>
+            </li>
+            <li Class="WNA.ThingCompProp.CompStarcoreDriller">
+                <workPerPortion>2000</workPerPortion>
+                <autoDrillEfficiency>1</autoDrillEfficiency>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
 	</ThingDef>
 
 </Defs>

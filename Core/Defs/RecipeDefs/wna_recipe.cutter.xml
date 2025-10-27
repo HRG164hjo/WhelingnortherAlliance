@@ -90,7 +90,7 @@
 
     <RecipeDef ParentName="WNA_RecipeBase" MayRequire="sarg.rimbees">
         <defName>WNA_RecipeAlphaBees</defName>
-        <description>devide a comb (or a hive) for triple products.</description>
+        <description>devide a comb (or a hive) for products.</description>
         <jobString>working.</jobString>
         <label>divide a comb</label>
         <ingredients>
@@ -121,12 +121,8 @@
 		</specialProducts>
         <workAmount>300</workAmount>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
-		<!--<modExtensions>
-			<li Class="RimBees.OutputMultiplierRecipe">
-				<multiplier>5</multiplier>
-			</li>
-		</modExtensions>-->
     </RecipeDef>
+
     <RecipeDef ParentName="WNA_RecipeBase" MayRequire="sarg.rimbees">
         <defName>WNA_RecipeAlphaBeesToo</defName>
         <description>produce kibble while getting rid of your never-needed bees.</description>

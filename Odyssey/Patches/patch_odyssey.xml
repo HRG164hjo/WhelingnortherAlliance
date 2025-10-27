@@ -43,6 +43,15 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="Obsidian"]</xpath>
+        <value>
+            <deepCommonality>0.5</deepCommonality>
+            <deepCountPerPortion>45</deepCountPerPortion>
+            <deepLumpSizeRange>7~8</deepLumpSizeRange>
+        </value>
+    </Operation>
+
     <Operation Class="PatchOperationRemove">
 	    <xpath>Defs/ThingDef[defName="Gravcore"]/tradeability</xpath>
     </Operation>

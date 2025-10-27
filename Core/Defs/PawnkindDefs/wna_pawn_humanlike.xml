@@ -195,7 +195,7 @@
         <label>parasomniant</label>
         <combatPower>250</combatPower>
         <weaponTags>
-            <li>Tag_WNACivilian</li>
+            <li>Tag_WNAParasomnia</li>
         </weaponTags>
         <apparelRequired>
 			<li>WNA_StdMiliSuit</li>

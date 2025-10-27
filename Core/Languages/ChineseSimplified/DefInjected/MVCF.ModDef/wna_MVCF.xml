@@ -3,7 +3,9 @@
   
   <!-- EN: wna mvcf -->
   <WNA_MVCFDef.label>wna mvcf</WNA_MVCFDef.label>
-  <!-- EN: multiverb. -->
-  <WNA_MVCFDef.description>multiverb.</WNA_MVCFDef.description>
+  <!-- EN: multiverb.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_MVCFDef.description>multiverb.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MVCFDef.description>
   
 </LanguageData>

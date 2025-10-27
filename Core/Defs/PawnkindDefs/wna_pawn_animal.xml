@@ -14,15 +14,15 @@
 	</PawnKindDef>
 
     <PawnKindDef ParentName="WNA_AnimalPawnKindBase">
-		<defName>WNA_DimBeast</defName>
-		<label>dim hybeast</label>
-		<race>WNA_DimBeastRace</race>
+		<defName>WNA_DimBoo</defName>
+		<label>dim boo</label>
+		<race>WNA_DimBoo</race>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>pawns/wna_dimbeast/wna_dimbeast</texPath>
 					<drawSize>2.55</drawSize>
-					<color>(234,233,225,200)</color>
+					<color>(234,233,225,190)</color>
 					<drawOffset>(0,0,0)</drawOffset>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -34,15 +34,15 @@
 		</lifeStages>
 	</PawnKindDef>
 	<PawnKindDef ParentName="WNA_AnimalPawnKindBase">
-		<defName>WNA_ThornBeast</defName>
-		<label>thorn hybeast</label>
-		<race>WNA_ThornBeastRace</race>
+		<defName>WNA_ThornBoo</defName>
+		<label>thorn boo</label>
+		<race>WNA_ThornBoo</race>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>pawns/wna_spearbeast/wna_spearbeast</texPath>
 					<drawSize>2.55</drawSize>
-					<color>(87,184,220,200)</color>
+					<color>(87,184,220,190)</color>
 					<drawOffset>(0,0,0)</drawOffset>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -54,15 +54,15 @@
 		</lifeStages>
 	</PawnKindDef>
     <PawnKindDef ParentName="WNA_AnimalPawnKindBase">
-		<defName>WNA_FerociousBeast</defName>
-		<label>ferocious hybeast</label>
-		<race>WNA_FerociousBeastRace</race>
+		<defName>WNA_FerosBoo</defName>
+		<label>ferocious boo</label>
+		<race>WNA_FerosBoo</race>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>pawns/wna_ferociousbeast/wna_ferociousbeast</texPath>
+					<texPath>pawns/wna_ferosbeast/wna_ferosbeast</texPath>
 					<drawSize>2.55</drawSize>
-					<color>(165,42,47,200)</color>
+					<color>(165,42,47,190)</color>
 					<drawOffset>(0,0,0)</drawOffset>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>

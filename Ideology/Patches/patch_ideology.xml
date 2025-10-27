@@ -7,8 +7,8 @@
             <deityPresets>
                 <li>
                     <nameType>
-                        <name></name>
-                        <type></type>
+                        <name> </name>
+                        <type> </type>
                         <!-- yes there's nothing for "name" and "type" -->
                     </nameType>
                     <gender>None</gender>

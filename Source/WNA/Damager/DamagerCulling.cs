@@ -14,7 +14,6 @@ namespace WNA.Damager
             WNAMainDefOf.WNA_CastDamage,
             WNAMainDefOf.WNA_Corrosion,
             WNAMainDefOf.WNA_DeathRefusal,
-            WNAMainDefOf.WNA_ForceShield,
             WNAMainDefOf.WNA_IllusionCore,
             WNAMainDefOf.WNA_InAnimal,
             WNAMainDefOf.WNA_Inhuman,

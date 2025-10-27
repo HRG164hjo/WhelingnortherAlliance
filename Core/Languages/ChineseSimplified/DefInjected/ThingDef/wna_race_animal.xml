@@ -1,26 +1,43 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: dim hybeast -->
-  <WNA_DimBeastRace.label>dim hybeast</WNA_DimBeastRace.label>
-  <!-- EN: A strange ball-like creature, created by Whelinghorther Alliance. There's many stories about the detailed origin of such thing, one stated that Alliance used animal corpses to create them. -->
-  <WNA_DimBeastRace.description>A strange ball-like creature, created by Whelinghorther Alliance. There's many stories about the detailed origin of such thing, one stated that Alliance used animal corpses to create them.</WNA_DimBeastRace.description>
+  <!-- EN: dim boo -->
+  <WNA_DimBoo.label>dim boo</WNA_DimBoo.label>
+  <!-- EN: A strange ball-like creature, created by Whelinghorther Alliance. There's many stories about the detailed origin of such thing, one stated that Alliance used animal corpses to create them.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_DimBoo.description>A strange ball-like creature, created by Whelinghorther Alliance. There's many stories about the detailed origin of such thing, one stated that Alliance used animal corpses to create them.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_DimBoo.description>
   <!-- EN: tendril -->
-  <WNA_DimBeastRace.tools.tendril.label>tendril</WNA_DimBeastRace.tools.tendril.label>
+  <WNA_DimBoo.tools.tendril.label>tendril</WNA_DimBoo.tools.tendril.label>
   <!-- EN: head -->
-  <WNA_DimBeastRace.tools.head.label>head</WNA_DimBeastRace.tools.head.label>
+  <WNA_DimBoo.tools.head.label>head</WNA_DimBoo.tools.head.label>
   <!-- EN: horn -->
-  <WNA_DimBeastRace.tools.horn.label>horn</WNA_DimBeastRace.tools.horn.label>
+  <WNA_DimBoo.tools.horn.label>horn</WNA_DimBoo.tools.horn.label>
   
-  <!-- EN: thorn hybeast -->
-  <WNA_ThornBeastRace.label>thorn hybeast</WNA_ThornBeastRace.label>
-  <!-- EN: A strange ball-like beast, even Whelingnorther Alliance is curious about its origion. It can throw spears to whatever it think is a threat, fast and long range. -->
-  <WNA_ThornBeastRace.description>A strange ball-like beast, even Whelingnorther Alliance is curious about its origion. It can throw spears to whatever it think is a threat, fast and long range.</WNA_ThornBeastRace.description>
+  <!-- EN: ferocious boo -->
+  <WNA_FerociousBoo.label>ferocious boo</WNA_FerociousBoo.label>
+  <!-- EN: A dangerous ball-like ghosty beast, it's said that Whelingnorther Alliance created this kind as bio weapons.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_FerociousBoo.description>A dangerous ball-like ghosty beast, it's said that Whelingnorther Alliance created this kind as bio weapons.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_FerociousBoo.description>
   <!-- EN: tendril -->
-  <WNA_ThornBeastRace.tools.tendril.label>tendril</WNA_ThornBeastRace.tools.tendril.label>
+  <WNA_FerociousBoo.tools.tendril.label>tendril</WNA_FerociousBoo.tools.tendril.label>
   <!-- EN: head -->
-  <WNA_ThornBeastRace.tools.head.label>head</WNA_ThornBeastRace.tools.head.label>
+  <WNA_FerociousBoo.tools.head.label>head</WNA_FerociousBoo.tools.head.label>
   <!-- EN: horn -->
-  <WNA_ThornBeastRace.tools.horn.label>horn</WNA_ThornBeastRace.tools.horn.label>
+  <WNA_FerociousBoo.tools.horn.label>horn</WNA_FerociousBoo.tools.horn.label>
+  
+  <!-- EN: thorn boo -->
+  <WNA_ThornBoo.label>thorn boo</WNA_ThornBoo.label>
+  <!-- EN: A strange ball-like beast, even Whelingnorther Alliance is curious about its origion. It can throw spears to whatever it think is a threat, fast and long range.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_ThornBoo.description>A strange ball-like beast, even Whelingnorther Alliance is curious about its origion. It can throw spears to whatever it think is a threat, fast and long range.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_ThornBoo.description>
+  <!-- EN: tendril -->
+  <WNA_ThornBoo.tools.tendril.label>tendril</WNA_ThornBoo.tools.tendril.label>
+  <!-- EN: head -->
+  <WNA_ThornBoo.tools.head.label>head</WNA_ThornBoo.tools.head.label>
+  <!-- EN: horn -->
+  <WNA_ThornBoo.tools.horn.label>horn</WNA_ThornBoo.tools.horn.label>
   
 </LanguageData>

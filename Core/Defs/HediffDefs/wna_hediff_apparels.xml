@@ -149,25 +149,4 @@
         <stages/>
     </HediffDef>
 
-    <HediffDef>
-        <defName>WNA_ForceShield</defName>
-        <label>force shield</label>
-        <hediffClass>HediffWithComps</hediffClass>
-        <description>This pawn is protected by an individual force shield.</description>
-        <defaultLabelColor>(0,0,0)</defaultLabelColor>
-        <everCurableByItem>false</everCurableByItem>
-        <isBad>false</isBad>
-        <comps>
-            <li Class="HediffCompProperties_RemoveIfApparelDropped"/>
-        </comps>
-        <stages>
-            <li>
-                <statFactors>
-                    <IncomingDamageFactor>0</IncomingDamageFactor>
-                    <StaggerDurationFactor>0</StaggerDurationFactor>
-                </statFactors>
-            </li>
-        </stages>
-    </HediffDef>
-
 </Defs>

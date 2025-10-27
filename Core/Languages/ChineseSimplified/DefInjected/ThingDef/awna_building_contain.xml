@@ -3,7 +3,9 @@
   
   <!-- EN: voidmetal platform -->
   <WNA_HoldingPlatform.label>voidmetal platform</WNA_HoldingPlatform.label>
-  <!-- EN: A platform made of voidmetal, for holding anomaly entities. -->
-  <WNA_HoldingPlatform.description>A platform made of voidmetal, for holding anomaly entities.</WNA_HoldingPlatform.description>
+  <!-- EN: A platform made of voidmetal, for holding anomaly entities.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_HoldingPlatform.description>A platform made of voidmetal, for holding anomaly entities.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_HoldingPlatform.description>
   
 </LanguageData>

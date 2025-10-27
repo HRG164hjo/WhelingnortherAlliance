@@ -3,52 +3,79 @@
   
   <!-- EN: attunement fabric baseboard -->
   <WNA_FabricBaseboard.label>attunement fabric baseboard</WNA_FabricBaseboard.label>
-  <!-- EN: A baseboard used for replicating WNA's attunement fabric. In a remote place like rimworld, such thing is a must in fabric pruduction. -->
-  <WNA_FabricBaseboard.description>A baseboard used for replicating WNA's attunement fabric. In a remote place like rimworld, such thing is a must in fabric pruduction.</WNA_FabricBaseboard.description>
+  <!-- EN: A baseboard used for replicating WNA's attunement fabric. In a remote place like rimworld, such thing is a must in fabric pruduction.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_FabricBaseboard.description>A baseboard used for replicating WNA's attunement fabric. In a remote place like rimworld, such thing is a must in fabric pruduction.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_FabricBaseboard.description>
   
   <!-- EN: focus -->
   <WNA_Focus.label>focus</WNA_Focus.label>
-  <!-- EN: Attention, concentration. Focused and solidfied, and carefully contained for further use or preservation. -->
-  <WNA_Focus.description>Attention, concentration. Focused and solidfied, and carefully contained for further use or preservation.</WNA_Focus.description>
+  <!-- EN: Attention, concentration. Focused and solidfied, and carefully contained for further use or preservation.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Focus.description>Attention, concentration. Focused and solidfied, and carefully contained for further use or preservation.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Focus.description>
   
   <!-- EN: halogen vial -->
   <WNA_HalogenVial.label>halogen vial</WNA_HalogenVial.label>
-  <!-- EN: A mixture (maybe) of halogen contained in a vial. These substances are among the most active substances in the world, hard to handle, and very useful. -->
-  <WNA_HalogenVial.description>A mixture (maybe) of halogen contained in a vial. These substances are among the most active substances in the world, hard to handle, and very useful.</WNA_HalogenVial.description>
+  <!-- EN: A mixture (maybe) of halogen contained in a vial. These substances are among the most active substances in the world, hard to handle, and very useful.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_HalogenVial.description>A mixture (maybe) of halogen contained in a vial. These substances are among the most active substances in the world, hard to handle, and very useful.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_HalogenVial.description>
   
   <!-- EN: mercury vial -->
   <WNA_MercuryVial.label>mercury vial</WNA_MercuryVial.label>
-  <!-- EN: An unique metal that usually appear as liquid. This substance easily volatile and it's steam is highly poisonous, so needs to be carefully contained or operated. -->
-  <WNA_MercuryVial.description>An unique metal that usually appear as liquid. This substance easily volatile and it's steam is highly poisonous, so needs to be carefully contained or operated.</WNA_MercuryVial.description>
+  <!-- EN: An unique metal that usually appear as liquid. This substance easily volatile and it's steam is highly poisonous, so needs to be carefully contained or operated.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_MercuryVial.description>An unique metal that usually appear as liquid. This substance easily volatile and it's steam is highly poisonous, so needs to be carefully contained or operated.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MercuryVial.description>
   
   <!-- EN: methanol -->
   <WNA_Methanol.label>methanol</WNA_Methanol.label>
-  <!-- EN: The simplest alcohol, a very useful chemical substance, can be obtained by distilling wood, poisonous. DO remember that this is absolutely not for drinking. -->
-  <WNA_Methanol.description>The simplest alcohol, a very useful chemical substance, can be obtained by distilling wood, poisonous. DO remember that this is absolutely not for drinking.</WNA_Methanol.description>
+  <!-- EN: The simplest alcohol, a very useful chemical substance, can be obtained by distilling wood, poisonous. DO remember that this is absolutely not for drinking.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Methanol.description>The simplest alcohol, a very useful chemical substance, can be obtained by distilling wood, poisonous. DO remember that this is absolutely not for drinking.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Methanol.description>
   
   <!-- EN: particle vial -->
   <WNA_ParticleVial.label>particle vial</WNA_ParticleVial.label>
-  <!-- EN: Strange unstable particles found when mass is diluted into energy under certain conditions. Can be safely stored in a magnetic vial, just don't let this vial be destroyed. -->
-  <WNA_ParticleVial.description>Strange unstable particles found when mass is diluted into energy under certain conditions. Can be safely stored in a magnetic vial, just don't let this vial be destroyed.</WNA_ParticleVial.description>
+  <!-- EN: Strange unstable particles found when mass is diluted into energy under certain conditions. Can be safely stored in a magnetic vial, just don't let this vial be destroyed.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_ParticleVial.description>Strange unstable particles found when mass is diluted into energy under certain conditions. Can be safely stored in a magnetic vial, just don't let this vial be destroyed.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_ParticleVial.description>
   
   <!-- EN: white phosphorus -->
   <WNA_Phosphorus.label>white phosphorus</WNA_Phosphorus.label>
-  <!-- EN: Very soft substance. This substance is very dangerous, highly toxic and highly flammable, makes it hard to believe that phosphorus is a vital component of life. -->
-  <WNA_Phosphorus.description>Very soft substance. This substance is very dangerous, highly toxic and highly flammable, makes it hard to believe that phosphorus is a vital component of life.</WNA_Phosphorus.description>
+  <!-- EN: Very soft substance. This substance is very dangerous, highly toxic and highly flammable, makes it hard to believe that phosphorus is a vital component of life.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Phosphorus.description>Very soft substance. This substance is very dangerous, highly toxic and highly flammable, makes it hard to believe that phosphorus is a vital component of life.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Phosphorus.description>
+  
+  <!-- EN: preserved brain -->
+  <WNA_PreservedBrain.label>preserved brain</WNA_PreservedBrain.label>
+  <!-- EN: A biological human brain, carefully treated with methanol and neutroamine and preserved, to keep as much of its vitality for further use.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_PreservedBrain.description>A biological human brain, carefully treated with methanol and neutroamine and preserved, to keep as much of its vitality for further use.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_PreservedBrain.description>
   
   <!-- EN: quicklime -->
   <WNA_Quicklime.label>quicklime</WNA_Quicklime.label>
-  <!-- EN: A hardly soluble, highly alkaline substance, has much as wide applications as much as great potential hazards. -->
-  <WNA_Quicklime.description>A hardly soluble, highly alkaline substance, has much as wide applications as much as great potential hazards.</WNA_Quicklime.description>
+  <!-- EN: A hardly soluble, highly alkaline substance, has much as wide applications as much as great potential hazards.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Quicklime.description>A hardly soluble, highly alkaline substance, has much as wide applications as much as great potential hazards.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Quicklime.description>
   
   <!-- EN: sulphur -->
   <WNA_Sulphur.label>sulphur</WNA_Sulphur.label>
-  <!-- EN: Brittle yellow substance, toxic, smelly, and an essential component of living organisms. However this doesn't mean you should eat sulphur directly. -->
-  <WNA_Sulphur.description>Brittle yellow substance, toxic, smelly, and an essential component of living organisms. However this doesn't mean you should eat sulphur directly.</WNA_Sulphur.description>
+  <!-- EN: Brittle yellow substance, toxic, smelly, and an essential component of living organisms. However this doesn't mean you should eat sulphur directly.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Sulphur.description>Brittle yellow substance, toxic, smelly, and an essential component of living organisms. However this doesn't mean you should eat sulphur directly.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Sulphur.description>
   
   <!-- EN: vitalized uranium battery -->
   <WNA_UraniumBattery.label>vitalized uranium battery</WNA_UraniumBattery.label>
-  <!-- EN: Some uranium stored in a safe container. These uranium is vitalized by strange unstable particles, emitting great energy but will exaust quickly. Don't take it apart before it exausts entirely. You've been warned. -->
-  <WNA_UraniumBattery.description>Some uranium stored in a safe container. These uranium is vitalized by strange unstable particles, emitting great energy but will exaust quickly. Don't take it apart before it exausts entirely. You've been warned.</WNA_UraniumBattery.description>
+  <!-- EN: Some uranium stored in a safe container. These uranium is vitalized by strange unstable particles, emitting great energy but will exaust quickly. Don't take it apart before it exausts entirely. You've been warned.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_UraniumBattery.description>Some uranium stored in a safe container. These uranium is vitalized by strange unstable particles, emitting great energy but will exaust quickly. Don't take it apart before it exausts entirely. You've been warned.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_UraniumBattery.description>
   
 </LanguageData>

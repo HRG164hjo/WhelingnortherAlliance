@@ -51,7 +51,7 @@
 
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeBaseboard</defName>
-        <label>make fabric baseboard</label>
+        <label>make fabric baseboard x4</label>
         <description>make a baseboard used for making attunement fabric.</description>
         <jobString>making baseboard.</jobString>
         <ingredients>
@@ -77,6 +77,39 @@
             <WNA_FabricBaseboard>4</WNA_FabricBaseboard>
         </products>
         <workAmount>400</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeBaseboardBulk</defName>
+        <label>make fabric baseboard x40</label>
+        <description>make a baseboard used for making attunement fabric.</description>
+        <jobString>making baseboard.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li>Silver</li>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>300</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Silver</li>
+                <li>Gold</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_FabricBaseboard>40</WNA_FabricBaseboard>
+        </products>
+        <workAmount>3000</workAmount>
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	    </recipeUsers>
@@ -229,6 +262,7 @@
                     </categories>
                     <thingDefs>
                         <li>Jade</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                         <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                         <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
@@ -244,6 +278,7 @@
                 <li>Silver</li>
                 <li>Gold</li>
                 <li>Jade</li>
+                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                 <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
@@ -382,6 +417,7 @@
                     </categories>
                     <thingDefs>
                         <li>Jade</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                         <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                         <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
@@ -396,6 +432,7 @@
                 <li>Silver</li>
                 <li>Gold</li>
                 <li>Jade</li>
+                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                 <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>

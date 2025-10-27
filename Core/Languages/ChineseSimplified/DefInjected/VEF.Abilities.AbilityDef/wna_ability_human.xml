@@ -3,18 +3,24 @@
   
   <!-- EN: aeroblaze -->
   <WNA_Aeroblaze.label>aeroblaze</WNA_Aeroblaze.label>
-  <!-- EN: Mark target as a orbital strike positioning beacon. Chimingblaze Celestrike Satellite Network will then adjust and focus, deliver a merciless strike to the target. -->
-  <WNA_Aeroblaze.description>Mark target as a orbital strike positioning beacon. Chimingblaze Celestrike Satellite Network will then adjust and focus, deliver a merciless strike to the target.</WNA_Aeroblaze.description>
+  <!-- EN: Mark target as a orbital strike positioning beacon. Chimingblaze Celestrike Satellite Network will then adjust and focus, deliver a merciless strike to the target.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Aeroblaze.description>Mark target as a orbital strike positioning beacon. Chimingblaze Celestrike Satellite Network will then adjust and focus, deliver a merciless strike to the target.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Aeroblaze.description>
   
   <!-- EN: coagulate -->
   <WNA_Coagulate.label>coagulate</WNA_Coagulate.label>
-  <!-- EN: Perform first aids with multiple professional medical devices. No medicine is needed. -->
-  <WNA_Coagulate.description>Perform first aids with multiple professional medical devices. No medicine is needed.</WNA_Coagulate.description>
+  <!-- EN: Perform first aids with multiple professional medical devices. No medicine is needed.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Coagulate.description>Perform first aids with multiple professional medical devices. No medicine is needed.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Coagulate.description>
   
   <!-- EN: long jump -->
   <WNA_SaboteurJump.label>long jump</WNA_SaboteurJump.label>
-  <!-- EN: Saboteurs have recevied professional trainings, they can make long-distance jumps without using any other equipments. -->
-  <WNA_SaboteurJump.description>Saboteurs have recevied professional trainings, they can make long-distance jumps without using any other equipments.</WNA_SaboteurJump.description>
+  <!-- EN: Saboteurs have recevied professional trainings, they can make long-distance jumps without using any other equipments.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_SaboteurJump.description>Saboteurs have recevied professional trainings, they can make long-distance jumps without using any other equipments.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_SaboteurJump.description>
   <!-- EN: jump -->
   <WNA_SaboteurJump.verbProperties.label>jump</WNA_SaboteurJump.verbProperties.label>
   

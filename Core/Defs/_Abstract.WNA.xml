@@ -609,6 +609,8 @@
         <modExtensions>
             <li Class="WNA.DMExtension.TechnoConfig">
                 <ignoreRoof>true</ignoreRoof>
+                <immuneToRadiation>true</immuneToRadiation>
+                <immuneToIronKill>true</immuneToIronKill>
             </li>
         </modExtensions>
     </ThingDef>
@@ -860,7 +862,7 @@
 		</building>
     </ThingDef>
     
-	<ThingDef Abstract="true" ParentName="BasePawn" Name="WNA_AnimalRaceBase">
+	<ThingDef Abstract="true" ParentName="BasePawn" Name="WNA_AnimalBase">
 		<thingCategories>
 		  	<li>Animals</li>
 		</thingCategories>
@@ -879,7 +881,7 @@
             <ComfyTemperatureMax>2000</ComfyTemperatureMax>
             <Flammability>0</Flammability>
             <PawnTrapSpringChance>0</PawnTrapSpringChance>
-            <MoveSpeed>30</MoveSpeed>
+            <MoveSpeed>60</MoveSpeed>
             <PainShockThreshold>1</PainShockThreshold>
             <PsychicSensitivity>0</PsychicSensitivity>
             <LeatherAmount>0</LeatherAmount>
@@ -891,6 +893,8 @@
             <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
             <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">1</PilotingAbility>
+            <MaxFlightTime>2000</MaxFlightTime>
+            <FlightCooldown>0</FlightCooldown>
 		</statBases>
         <tools>
 			<li>
@@ -1001,7 +1005,6 @@
         </damageMultipliers>
 		<tradeTags>
 			<li>WNATradeTag_Animal</li>
-			<li>AnimalInsectSpace</li>
 		</tradeTags>
 		<race>
 			<intelligence>Animal</intelligence>
@@ -1051,6 +1054,9 @@
 			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
             <hasCorpse>false</hasCorpse>
             <hasMeat>false</hasMeat>
+            <flightStartChanceOnJobStart>0.5</flightStartChanceOnJobStart>
+            <canFlyIntoMap>true</canFlyIntoMap>
+            <canLeaveMapFlying>true</canLeaveMapFlying>
 		</race>
 		<recipes>
 		  	<li>ExciseCarcinoma</li>
@@ -1074,11 +1080,16 @@
             </li>
 			<li Class="WNA.ThingCompProp.CompDamageLimit">
 			  	<damageLimit>1</damageLimit>
+                <canAbsorb>true</canAbsorb>
 			</li>
         </comps>
 		<modExtensions>
             <li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
                 <movementDef>WNA_Movement</movementDef>
+            </li>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+                <immuneToIronKill>true</immuneToIronKill>
             </li>
 			<li Class="WNA.DMExtension.MassCapacity">
 				<massCapacity>6000000000</massCapacity>
@@ -1111,13 +1122,13 @@
             </li>
             <li Class="StockGenerator_Category">
                 <categoryDef>Textiles</categoryDef>
-                <thingDefCountRange>3~3</thingDefCountRange>
+                <thingDefCountRange>2~3</thingDefCountRange>
                 <countRange>300000~500000</countRange>
                 <price>VeryCheap</price>
             </li>
             <li Class="StockGenerator_Category">
                 <categoryDef>Leathers</categoryDef>
-                <thingDefCountRange>2~2</thingDefCountRange>
+                <thingDefCountRange>2~3</thingDefCountRange>
                 <countRange>300000~500000</countRange>
                 <price>VeryCheap</price>
             </li>
@@ -1143,7 +1154,7 @@
                     <li>Chocolate</li>
                     <li>Dye</li>
                 </excludedThingDefs>
-                <thingDefCountRange>5~5</thingDefCountRange>
+                <thingDefCountRange>5~8</thingDefCountRange>
                 <countRange>800000~1000000</countRange>
                 <price>VeryCheap</price>
             </li>
@@ -1152,14 +1163,8 @@
                 <excludedCategories>
                     <li>EggsFertilized</li>
                 </excludedCategories>
-                <thingDefCountRange>5~5</thingDefCountRange>
+                <thingDefCountRange>5~8</thingDefCountRange>
                 <countRange>800000~1000000</countRange>
-                <price>VeryCheap</price>
-            </li>
-            <li Class="StockGenerator_Category">
-                <categoryDef>BodyParts</categoryDef>
-                <thingDefCountRange>2~3</thingDefCountRange>
-                <countRange>300000~500000</countRange>
                 <price>VeryCheap</price>
             </li>
             <li Class="StockGenerator_ReinforcedBarrels">
@@ -1180,6 +1185,23 @@
                 <thingDef>WNA_Voidsteel</thingDef>
                 <price>VeryCheap</price>
                 <countRange>800000~1000000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_PreservedBrain</thingDef>
+                <price>VeryCheap</price>
+                <countRange>200000~300000</countRange>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>WNA_Category_Item</categoryDef>
+                <excludedThingDefs>
+                    <li>WNA_Ration</li>
+                    <li>WNA_Medikit</li>
+                    <li>WNA_Voidsteel</li>
+                    <li>WNA_PreservedBrain</li>
+                </excludedThingDefs>
+                <thingDefCountRange>5~5</thingDefCountRange>
+                <countRange>500000~800000</countRange>
+                <price>VeryCheap</price>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Steel</thingDef>
@@ -1245,12 +1267,6 @@
                 <tradeTag>MortarShell</tradeTag>
                 <thingDefCountRange>2~3</thingDefCountRange>
                 <countRange>300000~500000</countRange>
-                <price>VeryCheap</price>
-            </li>
-            <li Class="StockGenerator_Tag">
-                <tradeTag>Artifact</tradeTag>
-                <thingDefCountRange>2~2</thingDefCountRange>
-                <countRange>30000~50000</countRange>
                 <price>VeryCheap</price>
             </li>
             <li Class="StockGenerator_Category" MayRequire="sarg.rimbees">

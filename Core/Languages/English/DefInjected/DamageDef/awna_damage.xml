@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<LanguageData>
-  
-  <!-- EN: psychic drunkenness -->
-  <WNA_ShellPsychicDamage.label>psychic drunkenness</WNA_ShellPsychicDamage.label>
-  <!-- EN: {0} has died in an explosion. -->
-  <WNA_ShellPsychicDamage.deathMessage>{0} has died in an explosion.</WNA_ShellPsychicDamage.deathMessage>
-  
-</LanguageData>

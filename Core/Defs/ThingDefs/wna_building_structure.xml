@@ -91,13 +91,13 @@
 		<defName>WNA_BaseDoor</defName>
 		<label>WNA standard door</label>
 		<description>Form a door from nothing. This technique is hardly known by outsiders.</description>
-        <thingClass>WNA.ThingClass.Barrier</thingClass>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+        <thingClass>WNA.ThingClass.BarrierDoor</thingClass>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
 		<graphicData>
 			<texPath>buildings/atlas/wna_door</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<color>(255,255,255,192)</color>
-			<drawSize>0.85</drawSize>
+			<drawSize>0.9</drawSize>
+			<color>(0,0,0,0)</color>
 		</graphicData>
 		<blockLight>false</blockLight>
 		<uiIconPath>buildings/atlas/wna_door</uiIconPath>
@@ -108,14 +108,27 @@
             <roamerCanOpen>false</roamerCanOpen>
 			<canPlaceOverWall>true</canPlaceOverWall>
 			<ai_chillDestination>false</ai_chillDestination>
-			<blueprintClass>Blueprint_Door</blueprintClass>
             <relatedBuildCommands>
                 <li>WNA_BaseWall</li>
                 <li>WNA_BaseODoor</li>
             </relatedBuildCommands>
+      		<isSupportDoor>true</isSupportDoor>
+			<blueprintClass>Blueprint_Door</blueprintClass>
+            <blueprintGraphicData>
+                <texPath>buildings/atlas/wna_door</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>EdgeDetect</shaderType>
+                <drawSize>0.9</drawSize>
+            </blueprintGraphicData>
+            <doorTopGraphic>
+                <texPath>buildings/atlas/wna_door</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <drawSize>0.9</drawSize>
+				<color>(255,255,255,192)</color>
+            </doorTopGraphic>
 		</building>
         <preventDroppingThingsOn>false</preventDroppingThingsOn>
-        <drawerType>MapMeshOnly</drawerType>
+        <drawerType>RealtimeOnly</drawerType>
         <passability>Standable</passability>
 		<neverMultiSelect>false</neverMultiSelect>
         <coversFloor>false</coversFloor>
@@ -123,27 +136,18 @@
 			<li Class="CompProperties_Forbiddable">
 				<allowNonPlayer>false</allowNonPlayer>
 			</li>
-			<li Class="CompProperties_Glower">
-				<glowRadius>1</glowRadius>
-				<glowColor>(127,127,127,0)</glowColor>
-				<colorPickerEnabled>false</colorPickerEnabled>
-				<darklightToggle>false</darklightToggle>
-			</li>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTransmitter</compClass>
 				<transmitsPower>true</transmitsPower>
 			</li>
 		</comps>
-        <placeWorkers>
-            <li>PlaceWorker_DoorLearnOpeningSpeed</li>
-        </placeWorkers>
 	</ThingDef>
     <ThingDef ParentName="WNA_WallWithConduit">
 		<defName>WNA_BaseODoor</defName>
 		<label>WNA wide door</label>
 		<description>Form a door from nothing. This technique is hardly known by outsiders.</description>
 		<thingClass>Building_MultiTileDoor</thingClass>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
 		<size>(2,1)</size>
 		<rotatable>true</rotatable>
 		<graphicData>
@@ -164,7 +168,7 @@
             <roamerCanOpen>false</roamerCanOpen>
 			<canPlaceOverWall>true</canPlaceOverWall>
 			<ai_chillDestination>false</ai_chillDestination>
-			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintClass>Blueprint_Door</blueprintClass>
             <relatedBuildCommands>
                 <li>WNA_BaseWall</li>
                 <li>WNA_BaseDoor</li>
@@ -310,13 +314,13 @@
 		<defName>WNA_StuffDoor</defName>
 		<label>WNA matdoor</label>
 		<description>Form a door from a piece of actual material. This door blocks light and takes some more work to build.</description>
-		<thingClass>WNA.ThingClass.Barrier</thingClass>
+		<thingClass>WNA.ThingClass.BarrierDoor</thingClass>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<graphicData>
-			<texPath>buildings/atlas/wna_mdoor</texPath>
+			<texPath>buildings/atlas/wna_door</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>0.85</drawSize>
+			<drawSize>0.9</drawSize>
+			<color>(0,0,0,0)</color>
 		</graphicData>
 		<uiIconPath>buildings/atlas/wna_mdoor</uiIconPath>
         <stuffCategories>
@@ -338,12 +342,25 @@
             <roamerCanOpen>false</roamerCanOpen>
 			<canPlaceOverWall>true</canPlaceOverWall>
 			<ai_chillDestination>false</ai_chillDestination>
-			<blueprintClass>Blueprint_Door</blueprintClass>
             <relatedBuildCommands>
 				<li>WNA_StuffGrid</li>
                 <li>WNA_StuffWall</li>
                 <li>WNA_StuffODoor</li>
             </relatedBuildCommands>
+      		<isSupportDoor>true</isSupportDoor>
+			<blueprintClass>Blueprint_Door</blueprintClass>
+            <blueprintGraphicData>
+                <texPath>buildings/atlas/wna_mdoor</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <shaderType>EdgeDetect</shaderType>
+                <drawSize>0.9</drawSize>
+            </blueprintGraphicData>
+            <doorTopGraphic>
+                <texPath>buildings/atlas/wna_mdoor</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
+                <drawSize>0.9</drawSize>
+            </doorTopGraphic>
 		</building>
         <preventDroppingThingsOn>false</preventDroppingThingsOn>
         <drawerType>MapMeshOnly</drawerType>
@@ -359,16 +376,13 @@
 				<transmitsPower>true</transmitsPower>
 			</li>
 		</comps>
-        <placeWorkers>
-            <li>PlaceWorker_DoorLearnOpeningSpeed</li>
-        </placeWorkers>
 	</ThingDef>
     <ThingDef ParentName="WNA_WallWithConduit">
 		<defName>WNA_StuffODoor</defName>
 		<label>WNA wide matdoor</label>
 		<description>Form a door from a piece of actual material. This door is wide and blocks light and takes some more work to build.</description>
 		<thingClass>Building_MultiTileDoor</thingClass>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
 		<size>(2,1)</size>
 		<rotatable>true</rotatable>
 		<graphicData>
@@ -398,7 +412,7 @@
             <roamerCanOpen>false</roamerCanOpen>
 			<canPlaceOverWall>true</canPlaceOverWall>
 			<ai_chillDestination>false</ai_chillDestination>
-			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintClass>Blueprint_Door</blueprintClass>
             <relatedBuildCommands>
 				<li>WNA_StuffGrid</li>
                 <li>WNA_StuffWall</li>
@@ -531,11 +545,11 @@
             <roamerCanOpen>false</roamerCanOpen>
 			<canPlaceOverWall>true</canPlaceOverWall>
 			<ai_chillDestination>false</ai_chillDestination>
-			<blueprintClass>Blueprint_Door</blueprintClass>
             <relatedBuildCommands>
 				<li>WNA_FortressWall</li>
                 <li>WNA_FortressGate</li>
             </relatedBuildCommands>
+			<blueprintClass>Blueprint_Door</blueprintClass>
             <blueprintGraphicData>
                 <texPath>buildings/atlas/wna_fortdoor_icon</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
@@ -556,6 +570,9 @@
             <li>WNA_BaseDefense</li>
         </researchPrerequisites>
 		<comps>
+			<li Class="CompProperties_Forbiddable">
+				<allowNonPlayer>false</allowNonPlayer>
+			</li>
 			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
 			  	<ticksPerHeal>27</ticksPerHeal>
 				<healPercent>10</healPercent>
@@ -629,6 +646,9 @@
             <li>WNA_BaseDefense</li>
         </researchPrerequisites>
 		<comps>
+			<li Class="CompProperties_Forbiddable">
+				<allowNonPlayer>false</allowNonPlayer>
+			</li>
 			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
 			  	<ticksPerHeal>27</ticksPerHeal>
 				<healPercent>10</healPercent>

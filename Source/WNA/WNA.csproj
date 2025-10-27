@@ -66,15 +66,23 @@
     <Compile Include="Damager\CastTargetEffect.cs" />
     <Compile Include="Damager\DamagerBasic.cs" />
     <Compile Include="Damager\DamagerCulling.cs" />
+    <Compile Include="Damager\IronKiller.cs" />
+    <Compile Include="Damager\LysField.cs" />
     <Compile Include="Damager\RadField.cs" />
-    <Compile Include="DMExtension\AttachEffectConfig.cs" />
     <Compile Include="DMExtension\KillDownUtility.cs" />
     <Compile Include="DMExtension\MassCapacity.cs" />
+    <Compile Include="DMExtension\MechSkillOffset.cs" />
     <Compile Include="DMExtension\RefuelableExtraStat.cs" />
     <Compile Include="DMExtension\TechnoConfig.cs" />
+    <Compile Include="HediffCompProp\CompHediffHediffRemover.cs" />
+    <Compile Include="JobDriverClass\DeepDrilling.cs" />
+    <Compile Include="Recipe\TargetedHarvest.cs" />
     <Compile Include="ThingClass\DummyLaser.cs" />
     <Compile Include="ThingClass\Whelingnorthan.cs" />
     <Compile Include="ThingCompProp\CompBodyshapeOverride.cs" />
+    <Compile Include="ThingCompProp\CompIronApparel.cs" />
+    <Compile Include="ThingCompProp\CompIronGuardian.cs" />
+    <Compile Include="ThingCompProp\CompStarcoreDriller.cs" />
     <Compile Include="ThingCompProp\CompSwtichMode.cs" />
     <Compile Include="WNAHarmony.cs" />
     <Compile Include="HediffClass\DeathRefusal.cs" />
@@ -88,7 +96,7 @@
     <Compile Include="JobDriverClass\AdjustHydroponics.cs" />
     <Compile Include="Recipe\HalfbeingInfusion.cs" />
     <Compile Include="TargetEffect\Ascension.cs" />
-    <Compile Include="ThingClass\Barrier.cs" />
+    <Compile Include="ThingClass\BarrierDoor.cs" />
     <Compile Include="ThingClass\SpikeTrap.cs" />
     <Compile Include="ThingCompProp\CompAOEDamage.cs" />
     <Compile Include="ThingCompProp\CompApparelEquipHediff.cs" />
@@ -114,6 +122,8 @@
     <Compile Include="WNAHarmony\Patch_Interaction.cs" />
     <Compile Include="WNAHarmony\Patch_MassUtility.cs" />
     <Compile Include="WNAHarmony\Patch_Need.cs" />
+    <Compile Include="WNAHarmony\Patch_CompOverseerSubject.cs" />
+    <Compile Include="WNAHarmony\Patch_Passability.cs" />
     <Compile Include="WNAHarmony\Patch_PawnGenerator.cs" />
     <Compile Include="WNAHarmony\Patch_Placeworker.cs" />
     <Compile Include="WNAHarmony\Patch_Plant.cs" />
@@ -122,16 +132,23 @@
     <Compile Include="WNAHarmony\Patch_Roof.cs" />
     <Compile Include="WNAHarmony\Patch_SkillRecord.cs" />
     <Compile Include="WNAHarmony\Patch_Training.cs" />
+    <Compile Include="WNAHarmony\Patch_WeaponTagPostfix.cs" />
     <Compile Include="WNAHarmony\WNAMod.cs" />
     <Compile Include="WNAMiscs\Gizmo_ShieldStatus.cs" />
     <Compile Include="WNAMiscs\HedifferRemover.cs" />
     <Compile Include="WNAMiscs\HedifferTicker.cs" />
     <Compile Include="WNAMiscs\IngredValGetter_NutriMisc.cs" />
     <Compile Include="WNAMiscs\ProjType_Inviso.cs" />
+    <Compile Include="WNAMiscs\ProjType_IronBlast.cs" />
     <Compile Include="WNAMiscs\StockGenerator_BuyAnything.cs" />
     <Compile Include="WNAMiscs\VerbType_Burst.cs" />
+    <Compile Include="WNAMiscs\VerbType_IronBlast.cs" />
     <Compile Include="WNAMiscs\VerbType_Laser.cs" />
     <Compile Include="WNAMiscs\WarpOn.cs" />
+    <Compile Include="WNAUtility\IronCurtainUtility.cs" />
+    <Compile Include="WNAUtility\Iron_GameComp.cs" />
+    <Compile Include="WNAUtility\LysFieldUtility.cs" />
+    <Compile Include="WNAUtility\LysField_GameComp.cs" />
     <Compile Include="WNAUtility\WNAAwakening.cs" />
     <Compile Include="WNAUtility\General.cs" />
     <Compile Include="WNAUtility\RadFieldUtility.cs" />
@@ -141,6 +158,7 @@
     <Compile Include="Recipe\Inspection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WNAUtility\WNAFactionUtility.cs" />
+    <Compile Include="WorkGiverClass\DeepDrill.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

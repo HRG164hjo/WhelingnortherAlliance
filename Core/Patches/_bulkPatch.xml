@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+	    <mods>
+            <li>Deep Stack</li>
+	    </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+    <!-- supply -->
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_CookRationMult</defName>
+        <description>Cook raw materials to make military ration pack.</description>
+        <jobString>working.</jobString>
+        <label>make WNA militaty ration x100</label>
+        <ingredientValueGetterClass>WNA.WNAMiscs.IngredValGetter_NutriMisc</ingredientValueGetterClass>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Foods</li>
+                        <li>Leathers</li>
+                        <li>PlantMatter</li>
+                    </categories>
+                </filter>
+                <count>80</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Foods</li>
+                <li>Leathers</li>
+                <li>PlantMatter</li>
+            </categories>
+            <disallowedCategories>
+                <li>FoodMeals</li>
+                <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+            </disallowedCategories>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>Foods</li>
+            </categories>
+            <disallowedCategories>
+                <li>FoodMeals</li>
+                <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+            </disallowedCategories>
+        </defaultIngredientFilter>
+        <products>
+            <WNA_Ration>200</WNA_Ration>
+        </products>
+        <workAmount>5000</workAmount>
+        <recipeUsers>
+	        <li>FueledStove</li>
+	        <li>ElectricStove</li>
+	        <li>WNA_Ritespot</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_RepackRationMult</defName>
+        <description>Repack various meals to meet WNA military standard.</description>
+        <jobString>working.</jobString>
+        <label>repack meals x50</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>FoodMeals</li>
+                        <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                        <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                        <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+                    </categories>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>FoodMeals</li>
+                <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
+                <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
+                <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+            </categories>
+            <disallowedCategories/>
+            <disallowedThingDefs>
+                <li>WNA_Ration</li>
+                <li MayRequire="3hstltd.foods.instanoodles">WNA_InstaNoodle</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Ration>50</WNA_Ration>
+        </products>
+        <workAmount>300</workAmount>
+        <recipeUsers>
+	        <li>FueledStove</li>
+	        <li>ElectricStove</li>
+	        <li>CraftingSpot</li>
+	        <li>WNA_Ritespot</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNAPackMedikitMult</defName>
+        <description>Repack various madicines to meet WNA military standard.</description>
+        <jobString>working.</jobString>
+        <label>make WNA medicine pack x100</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                        <li>Drugs</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Wort</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
+                    </thingDefs>
+                </filter>
+                <count>200</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+                <li>Drugs</li>
+            </categories>
+            <thingDefs>
+                <li>Wort</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
+            </thingDefs>
+            <disallowedThingDefs>
+                <li>WNA_Medikit</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
+            </thingDefs>
+            <disallowedThingDefs>
+                <li>WNA_Medikit</li>
+            </disallowedThingDefs>
+        </defaultIngredientFilter>
+        <products>
+            <WNA_Medikit>200</WNA_Medikit>
+        </products>
+        <workAmount>5000</workAmount>
+        <recipeUsers>
+	        <li>DrugLab</li>
+	        <li>WNA_Ritespot</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- civilian -->
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_HeatStoneBlockBulk</defName>
+        <label>heat stone blocks x50</label>
+        <description>treat stone with strong heat to gain resources.</description>
+        <jobString>heating stone blocks.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Jade</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                    </thingDefs>
+                </filter>
+                <count>1000</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+            <thingDefs>
+                <li>Jade</li>
+                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Quicklime>750</WNA_Quicklime>
+            <WNA_MercuryVial>100</WNA_MercuryVial>
+            <WNA_HalogenVial>50</WNA_HalogenVial>
+        </products>
+        <workAmount>10000</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	        <li>ElectricCrematorium</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeMethanolBulk</defName>
+        <label>make methanol x50</label>
+        <description>distill wood to extract methanol.</description>
+        <jobString>making methanol.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                        <li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+                        <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
+                        <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_MushroomLog</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_ParasolWoodLog</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_Cork</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_Rattan</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_ReedStalks</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_EbonyWood</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_MahoganyWood</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_RosewoodWood</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_CedarWood</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_Rubber</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_Rubber</li>
+                    </thingDefs>
+                </filter>
+                <count>2500</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WoodLog</li>
+                <li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+                <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
+                <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_MushroomLog</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_ParasolWoodLog</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_Cork</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_Rattan</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_ReedStalks</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_EbonyWood</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_MahoganyWood</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_RosewoodWood</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_CedarWood</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_Rubber</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Methanol>1500</WNA_Methanol>
+        </products>
+        <workAmount>10000</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	        <li>ElectricCrematorium</li>
+	        <li>BiofuelRefinery</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeSynthreadBulk</defName>
+        <label>make synthread x50</label>
+        <description>a method to make synthread from chemfuel and halogen. someone may have have been missing this so much.</description>
+        <jobString>making synthread.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>1500</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_HalogenVial</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Chemfuel</li>
+                <li>WNA_HalogenVial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Synthread>2250</Synthread>
+        </products>
+        <workAmount>6000</workAmount>
+        <recipeUsers>
+	        <li>BiofuelRefinery</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+
+    <!-- bees -->
+    <RecipeDef ParentName="WNA_RecipeBase" MayRequire="sarg.rimbees">
+        <defName>WNA_RecipeAlphaBeesBulk</defName>
+        <description>devide some comb (or a hive) for products.</description>
+        <jobString>working.</jobString>
+        <label>divide 50 combs</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RB_WildHive_Temperate</li>
+                        <li>RB_WildHive_Mild</li>
+                    </thingDefs>
+					<categories>
+						<li>RB_Combs</li>
+					</categories>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RB_WildHive_Temperate</li>
+                <li>RB_WildHive_Mild</li>
+            </thingDefs>
+            <categories>
+                <li>RB_Combs</li>
+            </categories>
+        </fixedIngredientFilter>
+		<specialProducts>
+			<li>Butchery</li>
+		</specialProducts>
+        <workAmount>500</workAmount>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+		<recipeUsers>
+			<li>WNA_RiteSpot_Cutter</li>
+		</recipeUsers>
+		<modExtensions>
+			<li Class="RimBees.OutputMultiplierRecipe">
+				<multiplier>50</multiplier>
+			</li>
+		</modExtensions>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase" MayRequire="sarg.rimbees">
+        <defName>WNA_RecipeAlphaBeesTooBulk</defName>
+        <description>produce kibble while getting rid of your never-needed bees.</description>
+        <jobString>working.</jobString>
+        <label>make kibble from bees x50</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+						<li>RB_BeesAndQueens</li>
+					</categories>
+				</filter>
+				<count>1250</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+			<categories>
+				<li>RB_BeesAndQueens</li>
+			</categories>
+        </fixedIngredientFilter>
+		<products>
+			<Kibble>2500</Kibble>
+		</products>
+        <workAmount>250</workAmount>
+		<recipeUsers>
+			<li>WNA_RiteSpot_Cutter</li>
+		</recipeUsers>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+    
+	<RecipeDef MayRequire="sarg.rimbees">
+		<defName>WNA_RB_WaxToChemfuelBulk</defName>
+		<label>make chemfuel from wax x100</label>
+		<description>Make a batch of chemfuel from wax. This is a very inefficient method of getting chemfuel, but useful to get rid of unwanted beeswax.</description>
+		<jobString>Refining chemfuel from wax.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>6000</workAmount>
+		<recipeUsers>
+			<li>BiofuelRefinery</li>	  
+		</recipeUsers>	
+		 <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+				 <categories>
+						<li>RB_BeeswaxCategory</li>
+					</categories>
+				</filter>
+				<count>7500</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>RB_BeeswaxCategory</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<Chemfuel>3500</Chemfuel>
+		</products>
+	</RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeAttunementFabricMult</defName>
+        <label>make attunement fabric x100</label>
+        <description>make attunement fabric with raw material and a baseboard.</description>
+        <jobString>making fabric.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_FabricBaseboard</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Quicklime</li>
+                    </thingDefs>
+                </filter>
+                <count>1000</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>1000</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Textiles</li>
+                    </categories>
+                </filter>
+                <count>4000</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_FabricBaseboard</li>
+                <li>WNA_Quicklime</li>
+                <li>Silver</li>
+                <li>Gold</li>
+            </thingDefs>
+            <categories>
+                <li>Textiles</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_AttunementFabric>7500</WNA_AttunementFabric>
+        </products>
+        <workAmount>10000</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeConcreteMult</defName>
+        <label>make reinforced concrete x100</label>
+        <description>make an advanced concrete sufficient for building.</description>
+        <jobString>making reinforced concrete.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Quicklime</li>
+                    </thingDefs>
+                </filter>
+                <count>1500</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li>Silver</li>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>2500</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Jade</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                    </thingDefs>
+                </filter>
+                <count>2000</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Quicklime</li>
+                <li>Steel</li>
+                <li>Silver</li>
+                <li>Gold</li>
+                <li>Jade</li>
+                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+            </thingDefs>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Concrete>5000</WNA_Concrete>
+        </products>
+        <workAmount>10000</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	        <li>ElectricCrematorium</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
+            </value>
+	    </match>
+    </Operation>
+</Patch>

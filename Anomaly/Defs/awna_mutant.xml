@@ -43,30 +43,6 @@
         <removeChronicIllnesses>true</removeChronicIllnesses>
         <removePermanentInjuries>true</removePermanentInjuries>
         <removeAddictions>true</removeAddictions>
-        <removesHediffs>
-            <li>CorpseTorment</li>
-            <li>CryptosleepSickness</li>
-            <li>CubeComa</li>
-            <li>CubeInterest</li>
-            <li>CubeRage</li>
-            <li>CubeWithdrawal</li>
-            <li>LuciferiumAddiction</li>
-            <li>HeartAttack</li>
-            <li>Inhumanized</li>
-            <li>Scaria</li>
-            <li>ToxicBuildup</li>
-            <li MayRequire="Ludeon.RimWorld.Royalty">PsychicAmplifier</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">MechlinkImplant</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">PregnantHuman</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">PregnancyLabor</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">HemogenAmplified</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestExhaustion</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">InterruptedDeathrest</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">HemogenCraving</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">Deathrest</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">RegenerationComa</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">PostpartumExhaustion</li>
-        </removesHediffs>
         <forcedHeadTypes>
             <li>WNA_Head_Halfbeing</li>
         </forcedHeadTypes>
@@ -86,7 +62,6 @@
         <soundAttack/>
         <soundWounded/>
         <soundDeath/>
-        <standingAnimation>ShamblerSway</standingAnimation>
         <producesBioferrite>false</producesBioferrite>
         <deathLetter/>
         <tools>
@@ -127,9 +102,6 @@
                 <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
             </li>
         </tools>
-        <abilities>
-            <li>WNA_MutantSlaughter</li>
-        </abilities>
     </MutantDef>
 
 </Defs>

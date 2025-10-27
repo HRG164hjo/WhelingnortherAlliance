@@ -46,6 +46,7 @@
                     </categories>
                     <thingDefs>
                         <li>Jade</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                         <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                         <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
@@ -60,6 +61,7 @@
             </categories>
             <thingDefs>
                 <li>Jade</li>
+                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                 <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
@@ -214,6 +216,7 @@
                         <li MayRequire="VVenchov.VVNewHarvest">VV_RosewoodWood</li>
                         <li MayRequire="VVenchov.VVNewHarvest">VV_CedarWood</li>
                         <li MayRequire="VVenchov.VVNewHarvest">VV_Rubber</li>
+                        <li MayRequire="VVenchov.VVNewHarvest">VV_Rubber</li>
                     </thingDefs>
                 </filter>
                 <count>50</count>
@@ -234,6 +237,7 @@
                 <li MayRequire="VVenchov.VVNewHarvest">VV_MahoganyWood</li>
                 <li MayRequire="VVenchov.VVNewHarvest">VV_RosewoodWood</li>
                 <li MayRequire="VVenchov.VVNewHarvest">VV_CedarWood</li>
+                <li MayRequire="VVenchov.VVNewHarvest">VV_Rubber</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>

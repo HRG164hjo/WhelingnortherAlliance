@@ -1,24 +1,66 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: divide a comb -->
+  <WNA_RecipeAlphaBees.label>divide a comb</WNA_RecipeAlphaBees.label>
+  <!-- EN: devide a comb (or a hive) for products.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RecipeAlphaBees.description>devide a comb (or a hive) for products.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RecipeAlphaBees.description>
+  <!-- EN: working. -->
+  <WNA_RecipeAlphaBees.jobString>working.</WNA_RecipeAlphaBees.jobString>
+  
+  <!-- EN: divide 50 combs -->
+  <WNA_RecipeAlphaBeesBulk.label>divide 50 combs</WNA_RecipeAlphaBeesBulk.label>
+  <!-- EN: devide some comb (or a hive) for products.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RecipeAlphaBeesBulk.description>devide some comb (or a hive) for products.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RecipeAlphaBeesBulk.description>
+  <!-- EN: working. -->
+  <WNA_RecipeAlphaBeesBulk.jobString>working.</WNA_RecipeAlphaBeesBulk.jobString>
+  
+  <!-- EN: make kibble from bees -->
+  <WNA_RecipeAlphaBeesToo.label>make kibble from bees</WNA_RecipeAlphaBeesToo.label>
+  <!-- EN: produce kibble while getting rid of your never-needed bees.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RecipeAlphaBeesToo.description>produce kibble while getting rid of your never-needed bees.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RecipeAlphaBeesToo.description>
+  <!-- EN: working. -->
+  <WNA_RecipeAlphaBeesToo.jobString>working.</WNA_RecipeAlphaBeesToo.jobString>
+  
+  <!-- EN: make kibble from bees x50 -->
+  <WNA_RecipeAlphaBeesTooBulk.label>make kibble from bees x50</WNA_RecipeAlphaBeesTooBulk.label>
+  <!-- EN: produce kibble while getting rid of your never-needed bees.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RecipeAlphaBeesTooBulk.description>produce kibble while getting rid of your never-needed bees.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RecipeAlphaBeesTooBulk.description>
+  <!-- EN: working. -->
+  <WNA_RecipeAlphaBeesTooBulk.jobString>working.</WNA_RecipeAlphaBeesTooBulk.jobString>
+  
   <!-- EN: rite ableting -->
   <WNA_RiteAbleting.label>rite ableting</WNA_RiteAbleting.label>
-  <!-- EN: break down slag chunks to retrieve useful things, more productive than traditional methods. -->
-  <WNA_RiteAbleting.description>break down slag chunks to retrieve useful things, more productive than traditional methods.</WNA_RiteAbleting.description>
+  <!-- EN: break down slag chunks to retrieve useful things, more productive than traditional methods.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RiteAbleting.description>break down slag chunks to retrieve useful things, more productive than traditional methods.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RiteAbleting.description>
   <!-- EN: working. -->
   <WNA_RiteAbleting.jobString>working.</WNA_RiteAbleting.jobString>
   
   <!-- EN: divide a corpse -->
   <WNA_RiteBeastDivision.label>divide a corpse</WNA_RiteBeastDivision.label>
-  <!-- EN: divide a corpse so that it can be used for more uses. -->
-  <WNA_RiteBeastDivision.description>divide a corpse so that it can be used for more uses.</WNA_RiteBeastDivision.description>
+  <!-- EN: divide a corpse so that it can be used for more uses.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RiteBeastDivision.description>divide a corpse so that it can be used for more uses.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RiteBeastDivision.description>
   <!-- EN: working. -->
   <WNA_RiteBeastDivision.jobString>working.</WNA_RiteBeastDivision.jobString>
   
   <!-- EN: break down a thing -->
   <WNA_RiteRebelStriving.label>break down a thing</WNA_RiteRebelStriving.label>
-  <!-- EN: break down a weapon or apparel and see if there's something can be recycled. -->
-  <WNA_RiteRebelStriving.description>break down a weapon or apparel and see if there's something can be recycled.</WNA_RiteRebelStriving.description>
+  <!-- EN: break down a weapon or apparel and see if there's something can be recycled.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RiteRebelStriving.description>break down a weapon or apparel and see if there's something can be recycled.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RiteRebelStriving.description>
   <!-- EN: working. -->
   <WNA_RiteRebelStriving.jobString>working.</WNA_RiteRebelStriving.jobString>
   

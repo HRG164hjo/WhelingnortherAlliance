@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="WNA_WNThan" or defName="WNA_Human" or @Name="WNA_AnimalRaceBase"]/statBases</xpath>
+        <xpath>Defs/ThingDef[defName="WNA_WNThan" or defName="WNA_Human" or @Name="WNA_AnimalBase"]/statBases</xpath>
         <value>
             <Mashed_Ashlands_AshResistance MayRequire="sirmashedpotato.ashlands">10</Mashed_Ashlands_AshResistance>
             

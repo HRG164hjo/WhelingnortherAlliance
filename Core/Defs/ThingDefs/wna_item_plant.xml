@@ -11,7 +11,7 @@
             <color>(153,185,170)</color>
         </graphicData>
         <statBases>
-            <MarketValue>10</MarketValue>
+            <MarketValue>50</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Plantable">
@@ -31,7 +31,7 @@
             <color>(231,197,162)</color>
         </graphicData>
         <statBases>
-            <MarketValue>10</MarketValue>
+            <MarketValue>50</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Plantable">
@@ -51,7 +51,7 @@
             <color>(136,101,139)</color>
         </graphicData>
         <statBases>
-            <MarketValue>10</MarketValue>
+            <MarketValue>50</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Plantable">
@@ -71,7 +71,7 @@
             <color>(178,144,142)</color>
         </graphicData>
         <statBases>
-            <MarketValue>10</MarketValue>
+            <MarketValue>50</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Plantable">
@@ -91,7 +91,7 @@
             <color>(178,144,142)</color>
         </graphicData>
         <statBases>
-            <MarketValue>10</MarketValue>
+            <MarketValue>50</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Plantable">

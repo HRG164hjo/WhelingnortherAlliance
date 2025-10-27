@@ -6,7 +6,7 @@
 		<description>WHR standard equipment, a modified version of WNA alliance robe, usually has weaker effect than typical alliance robe, but more suitable for massive producing and arming up troopers as it can be made from various kinds of materials.</description>
 		<graphicData>
 			<texPath>apparel/alliancerobe/icon_alliancerobe</texPath>
-            <color>(183,195,174)</color>
+            <color>(180,189,199)</color>
 		</graphicData>
 	    <costList>
 	        <WNA_AttunementFabric>80</WNA_AttunementFabric>
@@ -458,6 +458,11 @@
                 <li>TableMachining</li>
             </recipeUsers>
         </recipeMaker>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+        </modExtensions>
     </ThingDef>
 	
     <ThingDef ParentName="WNA_UtilityBase">
@@ -513,7 +518,6 @@
             <li Class="WNA.ThingCompProp.CompShieldGenerator">
                 <ticksToReset>250</ticksToReset>
                 <energyMax>600</energyMax>
-                <energyLossPerHit>1</energyLossPerHit>
             </li>
 		</comps>
         <recipeMaker>
@@ -527,7 +531,11 @@
                 <li>TableMachining</li>
             </recipeUsers>
         </recipeMaker>
-        <modExtensions/>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <!--<ThingDef ParentName="WNA_UtilityBase">
@@ -625,12 +633,12 @@
             <ComponentSpacer>10</ComponentSpacer>
 	    </costList>
 		<comps>
-            <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
-                <hediff>WNA_ForceShield</hediff>
-            </li>
+            <li Class="WNA.ThingCompProp.CompIronApparel"/>
             <li Class="WNA.ThingCompProp.CompShieldGenerator">
                 <shieldTexPath>others/wna_ironbubble</shieldTexPath>
                 <shieldColor>(1,1,1,1)</shieldColor>
+                <energyGenPerTick>1000000</energyGenPerTick>
+                <energyLossPerHit>0</energyLossPerHit>
             </li>
 		</comps>
         <recipeMaker>
@@ -644,7 +652,11 @@
                 <li>FabricationBench</li>
             </recipeUsers>
         </recipeMaker>
-        <modExtensions/>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+        </modExtensions>
     </ThingDef>
     
 	<!--<ThingDef ParentName="WNA_UtilityBase">
@@ -735,7 +747,11 @@
             </layers>
             <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
         </apparel>
-        <modExtensions/>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+        </modExtensions>
     </ThingDef>
     <ThingDef ParentName="WNA_ApparelBase">
 		<defName>WNA_AllianceCloak</defName>
@@ -787,7 +803,11 @@
         <comps>
             <li Class="WNA.ThingCompProp.CompBodyshapeOverride"/>
         </comps>
-        <modExtensions/>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+        </modExtensions>
     </ThingDef>
     <ThingDef ParentName="WNA_ApparelBase">
 		<defName>WNA_AllianceRobe</defName>
@@ -861,7 +881,10 @@
 			<li Class="WNA.DMExtension.MassCapacity">
 				<massCapacity>51840000</massCapacity>
 			</li>
-		</modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+        </modExtensions>
     </ThingDef>
     <ThingDef ParentName="WNA_UtilityBase">
         <defName>WNA_Holyorder</defName>
@@ -885,6 +908,10 @@
                 <minDrawSize>2</minDrawSize>
                 <maxDrawSize>2</maxDrawSize>
                 <shieldInstaReset>true</shieldInstaReset>
+                <energyGenPerTick>1000000</energyGenPerTick>
+            </li>
+            <li Class="WNA.ThingCompProp.CompIronApparel">
+                <interval>250</interval>
             </li>
         </comps>
         <recipeMaker>
@@ -899,7 +926,11 @@
                 <li>WNA_Ritespot</li>
             </recipeUsers>
         </recipeMaker>
-        <modExtensions/>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+        </modExtensions>
     </ThingDef>
 
 </Defs>

@@ -62,9 +62,9 @@
         <comps>
             <li Class="CompProperties_Transporter">
                 <restEffectiveness>1</restEffectiveness>
-                <massCapacity>6000000</massCapacity>
+                <massCapacity>6000000000</massCapacity>
                 <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
-                <showOverallStats>false</showOverallStats>
+                <showOverallStats>true</showOverallStats>
             </li>
         </comps>
 	</ThingDef>
@@ -132,6 +132,7 @@
         <drawStyleCategory>Defenses</drawStyleCategory>
 		<uiIconPath>buildings/atlas/wna_shelf_icon</uiIconPath>
         <surfaceType>Item</surfaceType>
+        <preventDroppingThingsOn>false</preventDroppingThingsOn>
         <statBases>
             <MarketValue>0</MarketValue>
         </statBases>
@@ -332,6 +333,55 @@
             <bed_showSleeperBody>false</bed_showSleeperBody>
             <sowTag>Ground</sowTag>
         </building>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+        <defName>WNA_WallSafe</defName>
+        <label>wall safe</label>
+        <description>A wall-mounted storage unit.</description>
+        <uiIconPath>buildings/wna_wallsafe/icon</uiIconPath>
+        <graphicData>
+            <texPath>buildings/wna_wallsafe/wna_wallsafe</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+            <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+            <drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+            <drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+            <damageData>
+                <enabled>false</enabled>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <statBases>
+            <Mass>0.5</Mass>
+            <WorkToBuild>1500</WorkToBuild>
+        </statBases>
+        <costList/>
+        <researchPrerequisites>
+            <li>StandardGravtech</li>
+        </researchPrerequisites>
+        <rotatable>true</rotatable>
+        <tickerType>Rare</tickerType>
+        <passability>Standable</passability>
+        <building>
+            <isEdifice>false</isEdifice>
+            <isAttachment>true</isAttachment>
+            <expandHomeArea>false</expandHomeArea>
+        </building>
+        <placeWorkers>
+            <li>Placeworker_AttachedToWall</li>
+        </placeWorkers>
+        <inspectorTabs>
+            <li>ITab_ContentsTransporter</li>
+        </inspectorTabs>
+        <comps>
+            <li Class="CompProperties_Transporter">
+                <restEffectiveness>1</restEffectiveness>
+                <massCapacity>4000000</massCapacity>
+                <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+                <showOverallStats>true</showOverallStats>
+            </li>
+        </comps>
     </ThingDef>
 
 </Defs>

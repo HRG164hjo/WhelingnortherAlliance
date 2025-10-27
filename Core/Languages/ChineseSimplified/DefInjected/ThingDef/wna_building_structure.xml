@@ -3,52 +3,79 @@
   
   <!-- EN: WNA standard door -->
   <WNA_BaseDoor.label>WNA standard door</WNA_BaseDoor.label>
-  <!-- EN: Form a door from nothing. This technique is hardly known by outsiders. -->
-  <WNA_BaseDoor.description>Form a door from nothing. This technique is hardly known by outsiders.</WNA_BaseDoor.description>
+  <!-- EN: Form a door from nothing. This technique is hardly known by outsiders.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_BaseDoor.description>Form a door from nothing. This technique is hardly known by outsiders.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_BaseDoor.description>
   
   <!-- EN: WNA grid -->
   <WNA_BaseGrid.label>WNA grid</WNA_BaseGrid.label>
-  <!-- EN: Form a wall that can be shot over from nothing. This technique is hardly known by outsiders. -->
-  <WNA_BaseGrid.description>Form a wall that can be shot over from nothing. This technique is hardly known by outsiders.</WNA_BaseGrid.description>
+  <!-- EN: Form a wall that can be shot over from nothing. This technique is hardly known by outsiders.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_BaseGrid.description>Form a wall that can be shot over from nothing. This technique is hardly known by outsiders.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_BaseGrid.description>
   
   <!-- EN: WNA wide door -->
   <WNA_BaseODoor.label>WNA wide door</WNA_BaseODoor.label>
-  <!-- EN: Form a door from nothing. This technique is hardly known by outsiders. -->
-  <WNA_BaseODoor.description>Form a door from nothing. This technique is hardly known by outsiders.</WNA_BaseODoor.description>
+  <!-- EN: Form a door from nothing. This technique is hardly known by outsiders.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_BaseODoor.description>Form a door from nothing. This technique is hardly known by outsiders.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_BaseODoor.description>
   
   <!-- EN: WNA wall -->
   <WNA_BaseWall.label>WNA wall</WNA_BaseWall.label>
-  <!-- EN: Form a wall from nothing. This technique is hardly known by outsiders. -->
-  <WNA_BaseWall.description>Form a wall from nothing. This technique is hardly known by outsiders.</WNA_BaseWall.description>
+  <!-- EN: Form a wall from nothing. This technique is hardly known by outsiders.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_BaseWall.description>Form a wall from nothing. This technique is hardly known by outsiders.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_BaseWall.description>
   
-  <!-- EN: concrete wall -->
-  <WNA_ConcreteWall.label>concrete wall</WNA_ConcreteWall.label>
-  <!-- EN: A simple concrete wall, used for fortresses. What's special about this wall is that it can restore itself due to how it is built. -->
-  <WNA_ConcreteWall.description>A simple concrete wall, used for fortresses. What's special about this wall is that it can restore itself due to how it is built.</WNA_ConcreteWall.description>
+  <!-- EN: fortress door -->
+  <WNA_FortressDoor.label>fortress door</WNA_FortressDoor.label>
+  <!-- EN: An advanced concrete gate, used for fortresses. What's special about this gate is that it can restore itself due to how it is built.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_FortressDoor.description>An advanced concrete gate, used for fortresses. What's special about this gate is that it can restore itself due to how it is built.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_FortressDoor.description>
+  
+  <!-- EN: fortress gate -->
+  <WNA_FortressGate.label>fortress gate</WNA_FortressGate.label>
+  <!-- EN: An advanced concrete gate, used for fortresses. What's special about this gate is that it can restore itself due to how it is built.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_FortressGate.description>An advanced concrete gate, used for fortresses. What's special about this gate is that it can restore itself due to how it is built.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_FortressGate.description>
   
   <!-- EN: fortress wall -->
   <WNA_FortressWall.label>fortress wall</WNA_FortressWall.label>
-  <!-- EN: An advanced concrete wall, used for fortresses. What's special about this wall is that it can restore itself due to how it is built. -->
-  <WNA_FortressWall.description>An advanced concrete wall, used for fortresses. What's special about this wall is that it can restore itself due to how it is built.</WNA_FortressWall.description>
+  <!-- EN: An advanced concrete wall, used for fortresses. What's special about this wall is that it can restore itself due to how it is built.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_FortressWall.description>An advanced concrete wall, used for fortresses. What's special about this wall is that it can restore itself due to how it is built.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_FortressWall.description>
   
   <!-- EN: WNA matdoor -->
   <WNA_StuffDoor.label>WNA matdoor</WNA_StuffDoor.label>
-  <!-- EN: Form a door from a piece of actual material. This door blocks light and takes some more work to build. -->
-  <WNA_StuffDoor.description>Form a door from a piece of actual material. This door blocks light and takes some more work to build.</WNA_StuffDoor.description>
+  <!-- EN: Form a door from a piece of actual material. This door blocks light and takes some more work to build.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_StuffDoor.description>Form a door from a piece of actual material. This door blocks light and takes some more work to build.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_StuffDoor.description>
   
   <!-- EN: WNA matgrid -->
   <WNA_StuffGrid.label>WNA matgrid</WNA_StuffGrid.label>
-  <!-- EN: Form a wall from a piece of actual material. This wall takes some more work to build. -->
-  <WNA_StuffGrid.description>Form a wall from a piece of actual material. This wall takes some more work to build.</WNA_StuffGrid.description>
+  <!-- EN: Form a wall from a piece of actual material. This wall takes some more work to build.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_StuffGrid.description>Form a wall from a piece of actual material. This wall takes some more work to build.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_StuffGrid.description>
   
   <!-- EN: WNA wide matdoor -->
   <WNA_StuffODoor.label>WNA wide matdoor</WNA_StuffODoor.label>
-  <!-- EN: Form a door from a piece of actual material. This door is wide and blocks light and takes some more work to build. -->
-  <WNA_StuffODoor.description>Form a door from a piece of actual material. This door is wide and blocks light and takes some more work to build.</WNA_StuffODoor.description>
+  <!-- EN: Form a door from a piece of actual material. This door is wide and blocks light and takes some more work to build.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_StuffODoor.description>Form a door from a piece of actual material. This door is wide and blocks light and takes some more work to build.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_StuffODoor.description>
   
   <!-- EN: WNA matwall -->
   <WNA_StuffWall.label>WNA matwall</WNA_StuffWall.label>
-  <!-- EN: Form a wall from a piece of actual material. This wall blocks light and takes some more work to build. -->
-  <WNA_StuffWall.description>Form a wall from a piece of actual material. This wall blocks light and takes some more work to build.</WNA_StuffWall.description>
+  <!-- EN: Form a wall from a piece of actual material. This wall blocks light and takes some more work to build.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_StuffWall.description>Form a wall from a piece of actual material. This wall blocks light and takes some more work to build.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_StuffWall.description>
   
 </LanguageData>

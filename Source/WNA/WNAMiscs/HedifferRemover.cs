@@ -6,22 +6,26 @@ namespace WNA.WNAMiscs
 {
     public class HedifferRemover : HediffGiver
     {
-        public int tickInterval = 600;
-        private static readonly HashSet<string> includedHediffs = new HashSet<string>
+        public int tickInterval = 250;
+        private static readonly HashSet<string> includedHediffs = new HashSet<string> { };
+        static HedifferRemover()
+        {
+            includedHediffs.Add("WNA_VoidDiver");
+            if (ModsConfig.AnomalyActive)
             {
-                "DarkPsychicShock",
-                "CubeInterest",
-                "CubeWithdrawal",
-                "MetalhorrorImplant",
-                "WNA_VoidDiver"
-            };
+                includedHediffs.Add("DarkPsychicShock");
+                includedHediffs.Add("CubeInterest");
+                includedHediffs.Add("CubeWithdrawal");
+                includedHediffs.Add("MetalhorrorImplant");
+            }
+        }
         private static readonly HashSet<string> validPawn = new HashSet<string>
             {
                 "WNA_WNThan",
                 "WNA_Human",
-                "WNA_DimBeastRace",
-                "WNA_ThornBeastRace",
-                "WNA_FerociousBeastRace"
+                "WNA_DimBoo",
+                "WNA_ThornBoo",
+                "WNA_FerosBoo"
             };
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
@@ -43,14 +47,10 @@ namespace WNA.WNAMiscs
             foreach (Hediff hediff in hediffSet.hediffs)
             {
                 if (IsValidHediff(hediff))
-                {
                     hediffsToRemove.Add(hediff);
-                }
             }
             foreach (Hediff hediff in hediffsToRemove)
-            {
                 pawn.health.RemoveHediff(hediff);
-            }
         }
     }
 }

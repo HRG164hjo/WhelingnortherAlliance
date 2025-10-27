@@ -10,9 +10,7 @@
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/HediffGiverSetDef[defName="Human"]/hediffGivers</xpath>
         <value>
-            <li Class="WNA.WNAMiscs.HedifferRemover">
-                <tickInterval>600</tickInterval>
-            </li>
+            <li Class="WNA.WNAMiscs.HedifferRemover"/>
         </value>
     </Operation>
     

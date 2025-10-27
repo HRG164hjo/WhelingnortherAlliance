@@ -3,42 +3,111 @@
   
   <!-- EN: ascension -->
   <WNA_Ascension.label>ascension</WNA_Ascension.label>
-  <!-- EN: Saint of Whelingnorther Alliance is the leader of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, killing them and send them to salvation. -->
-  <WNA_Ascension.description>Saint of Whelingnorther Alliance is the leader of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, killing them and send them to salvation.</WNA_Ascension.description>
+  <!-- EN: Saint of Whelingnorther Alliance is the leader of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, killing them and send them to salvation.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Ascension.description>Saint of Whelingnorther Alliance is the leader of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, killing them and send them to salvation.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Ascension.description>
+  <!-- EN: <color=#E6E64CFF>Ascension</color>\n\nSaint of Whelingnorther Alliance is the leader of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, killing them and send them to salvation.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Ascension.cachedTooltip>&lt;color=#E6E64CFF>Ascension&lt;/color>
+
+Saint of Whelingnorther Alliance is the leader of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, killing them and send them to salvation.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Ascension.cachedTooltip>
   
   <!-- EN: psiblast -->
   <WNA_AvadaKedavra.label>psiblast</WNA_AvadaKedavra.label>
-  <!-- EN: Cast an offensive thought directly to the target and detonate it. Benefit from WNA's unique techniques, this explosion is of great power, hardly anything in physical world can resist its attack. -->
-  <WNA_AvadaKedavra.description>Cast an offensive thought directly to the target and detonate it. Benefit from WNA's unique techniques, this explosion is of great power, hardly anything in physical world can resist its attack.</WNA_AvadaKedavra.description>
+  <!-- EN: Cast an offensive thought directly to the target and detonate it. Benefit from WNA's unique techniques, this explosion is of great power, hardly anything in physical world can resist its attack.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_AvadaKedavra.description>Cast an offensive thought directly to the target and detonate it. Benefit from WNA's unique techniques, this explosion is of great power, hardly anything in physical world can resist its attack.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_AvadaKedavra.description>
+  <!-- EN: <color=#E6E64CFF>Psiblast</color>\n\nCast an offensive thought directly to the target and detonate it. Benefit from WNA's unique techniques, this explosion is of great power, hardly anything in physical world can resist its attack.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_AvadaKedavra.cachedTooltip>&lt;color=#E6E64CFF>Psiblast&lt;/color>
+
+Cast an offensive thought directly to the target and detonate it. Benefit from WNA's unique techniques, this explosion is of great power, hardly anything in physical world can resist its attack.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_AvadaKedavra.cachedTooltip>
   
   <!-- EN: invisibility -->
   <WNA_Invisibility.label>invisibility</WNA_Invisibility.label>
-  <!-- EN: Focus on a protective thought and cast it around the target. The target will be hidden from sights for a period of time, usually about 5 days. Theoretically the target can be detected but not all people has proper trick or device for such work. -->
-  <WNA_Invisibility.description>Focus on a protective thought and cast it around the target. The target will be hidden from sights for a period of time, usually about 5 days. Theoretically the target can be detected but not all people has proper trick or device for such work.</WNA_Invisibility.description>
+  <!-- EN: Focus on a protective thought and cast it around the target. The target will be hidden from sights for a period of time, usually about 5 days. Theoretically the target can be detected but not all people has proper trick or device for such work.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Invisibility.description>Focus on a protective thought and cast it around the target. The target will be hidden from sights for a period of time, usually about 5 days. Theoretically the target can be detected but not all people has proper trick or device for such work.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Invisibility.description>
+  <!-- EN: <color=#E6E64CFF>Invisibility</color>\n\nFocus on a protective thought and cast it around the target. The target will be hidden from sights for a period of time, usually about 5 days. Theoretically the target can be detected but not all people has proper trick or device for such work.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i>\n\nEffect duration: 5.5 days\nEffect radius: 5 -->
+  <WNA_Invisibility.cachedTooltip>&lt;color=#E6E64CFF>Invisibility&lt;/color>
+
+Focus on a protective thought and cast it around the target. The target will be hidden from sights for a period of time, usually about 5 days. Theoretically the target can be detected but not all people has proper trick or device for such work.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i>
+
+Effect duration: 5.5 days
+Effect radius: 5</WNA_Invisibility.cachedTooltip>
   
   <!-- EN: psylink deprivation -->
   <WNA_PsylinkDeprivation.label>psylink deprivation</WNA_PsylinkDeprivation.label>
-  <!-- EN: cast dark power to the victim to rob the victim of their psychic ability. victims with psylinks will lose their psylink and experience severe psychic trauma, and those without psylinks will experience severe psychic shock and become incapacitied for several days. -->
-  <WNA_PsylinkDeprivation.description>cast dark power to the victim to rob the victim of their psychic ability. victims with psylinks will lose their psylink and experience severe psychic trauma, and those without psylinks will experience severe psychic shock and become incapacitied for several days.</WNA_PsylinkDeprivation.description>
+  <!-- EN: cast dark power to the victim to rob the victim of their psychic ability. victims with psylinks will lose their psylink and experience severe psychic trauma, and those without psylinks will experience severe psychic shock and become incapacitied for several days.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_PsylinkDeprivation.description>cast dark power to the victim to rob the victim of their psychic ability. victims with psylinks will lose their psylink and experience severe psychic trauma, and those without psylinks will experience severe psychic shock and become incapacitied for several days.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_PsylinkDeprivation.description>
+  <!-- EN: <color=#E6E64CFF>Psylink deprivation</color>\n\ncast dark power to the victim to rob the victim of their psychic ability. victims with psylinks will lose their psylink and experience severe psychic trauma, and those without psylinks will experience severe psychic shock and become incapacitied for several days.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_PsylinkDeprivation.cachedTooltip>&lt;color=#E6E64CFF>Psylink deprivation&lt;/color>
+
+cast dark power to the victim to rob the victim of their psychic ability. victims with psylinks will lose their psylink and experience severe psychic trauma, and those without psylinks will experience severe psychic shock and become incapacitied for several days.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_PsylinkDeprivation.cachedTooltip>
   
   <!-- EN: resurrection -->
   <WNA_Resurrection.label>resurrection</WNA_Resurrection.label>
-  <!-- EN: WNA had mastered the technique of resurrecting newly dead soon after they formed, and now they can ensure anyone they permit to master this skill. -->
-  <WNA_Resurrection.description>WNA had mastered the technique of resurrecting newly dead soon after they formed, and now they can ensure anyone they permit to master this skill.</WNA_Resurrection.description>
+  <!-- EN: WNA had mastered the technique of resurrecting newly dead soon after they formed, and now they can ensure anyone they permit to master this skill.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Resurrection.description>WNA had mastered the technique of resurrecting newly dead soon after they formed, and now they can ensure anyone they permit to master this skill.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Resurrection.description>
+  <!-- EN: <color=#E6E64CFF>Resurrection</color>\n\nWNA had mastered the technique of resurrecting newly dead soon after they formed, and now they can ensure anyone they permit to master this skill.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Resurrection.cachedTooltip>&lt;color=#E6E64CFF>Resurrection&lt;/color>
+
+WNA had mastered the technique of resurrecting newly dead soon after they formed, and now they can ensure anyone they permit to master this skill.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Resurrection.cachedTooltip>
   
   <!-- EN: warp -->
   <WNA_Warp.label>warp</WNA_Warp.label>
-  <!-- EN: Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick. -->
-  <WNA_Warp.description>Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.</WNA_Warp.description>
+  <!-- EN: Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Warp.description>Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Warp.description>
+  <!-- EN: <color=#E6E64CFF>Warp</color>\n\nRumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Warp.cachedTooltip>&lt;color=#E6E64CFF>Warp&lt;/color>
+
+Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Warp.cachedTooltip>
   
   <!-- EN: farskip -->
   <WNA_Warp2.label>farskip</WNA_Warp2.label>
-  <!-- EN: Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick. -->
-  <WNA_Warp2.description>Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.</WNA_Warp2.description>
+  <!-- EN: Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Warp2.description>Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Warp2.description>
+  <!-- EN: <color=#E6E64CFF>Farskip</color>\n\nRumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i>\n\nEffect radius: 10 -->
+  <WNA_Warp2.cachedTooltip>&lt;color=#E6E64CFF>Farskip&lt;/color>
+
+Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i>
+
+Effect radius: 10</WNA_Warp2.cachedTooltip>
   
   <!-- EN: bestow wisdom -->
   <WNA_Wisdom.label>bestow wisdom</WNA_Wisdom.label>
-  <!-- EN: The Saint of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills. -->
-  <WNA_Wisdom.description>The Saint of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills.</WNA_Wisdom.description>
+  <!-- EN: The Saint of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Wisdom.description>The Saint of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Wisdom.description>
+  <!-- EN: <color=#E6E64CFF>Bestow wisdom</color>\n\nThe Saint of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Wisdom.cachedTooltip>&lt;color=#E6E64CFF>Bestow wisdom&lt;/color>
+
+The Saint of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Wisdom.cachedTooltip>
   
 </LanguageData>

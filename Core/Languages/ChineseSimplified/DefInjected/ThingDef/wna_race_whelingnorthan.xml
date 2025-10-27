@@ -3,8 +3,10 @@
   
   <!-- EN: human -->
   <WNA_Human.label>human</WNA_Human.label>
-  <!-- EN: A baseline human, mostly unmodified by gene engineering and mostly unchanged by evolutionary pressures on non-Earth planets. -->
-  <WNA_Human.description>A baseline human, mostly unmodified by gene engineering and mostly unchanged by evolutionary pressures on non-Earth planets.</WNA_Human.description>
+  <!-- EN: A baseline human, mostly unmodified by gene engineering and mostly unchanged by evolutionary pressures on non-Earth planets.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Human.description>A baseline human, mostly unmodified by gene engineering and mostly unchanged by evolutionary pressures on non-Earth planets.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Human.description>
   <!-- EN: left fist -->
   <WNA_Human.tools.left_fist-0.label>left fist</WNA_Human.tools.left_fist-0.label>
   <!-- EN: fist -->
@@ -32,10 +34,12 @@
   
   <!-- EN: whelingnorthan -->
   <WNA_WNThan.label>whelingnorthan</WNA_WNThan.label>
-  <!-- EN: "People of Ancient Whelingnorther Empire name themselves as Whelingnorthan, a word indicates that He is the legislator for them, and they became the legislator for other everything. Now we also use this word to name ourselves, indicating that we've bid farewell to what we once were, yet what we are seeking is imminent. While we still have a lot in common with humanity, we are actually a brand new form of existance."\n\n- - Chen Che the "Windlord", Archonpriest of Whelingnorther Alliance -->
+  <!-- EN: "People of Ancient Whelingnorther Empire name themselves as Whelingnorthan, a word indicates that He is the legislator for them, and they became the legislator for other everything. Now we also use this word to name ourselves, indicating that we've bid farewell to what we once were, yet what we are seeking is imminent. While we still have a lot in common with humanity, we are actually a brand new form of existance."\n\n- - Chen Che the "Windlord", Archonpriest of Whelingnorther Alliance\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
   <WNA_WNThan.description>"People of Ancient Whelingnorther Empire name themselves as Whelingnorthan, a word indicates that He is the legislator for them, and they became the legislator for other everything. Now we also use this word to name ourselves, indicating that we've bid farewell to what we once were, yet what we are seeking is imminent. While we still have a lot in common with humanity, we are actually a brand new form of existance."
 
--- Chen Che the "Windlord", Archonpriest of Whelingnorther Alliance</WNA_WNThan.description>
+-- Chen Che the "Windlord", Archonpriest of Whelingnorther Alliance
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_WNThan.description>
   <!-- EN: left hand -->
   <WNA_WNThan.tools.left_hand.label>left hand</WNA_WNThan.tools.left_hand.label>
   <!-- EN: right hand -->

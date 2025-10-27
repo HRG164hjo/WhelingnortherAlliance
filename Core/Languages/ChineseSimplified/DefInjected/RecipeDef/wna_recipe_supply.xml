@@ -2,45 +2,84 @@
 <LanguageData>
   
   <!-- EN: make WNA militaty ration -->
-  <WNA_CookRation.label>制作威灵会军用口粮</WNA_CookRation.label>
-  <!-- EN: Use mana and things can be considered as raw food to make meal pack. -->
-  <WNA_CookRation.description>Use mana and things can be considered as raw food to make meal pack.</WNA_CookRation.description>
+  <WNA_CookRation.label>make WNA militaty ration</WNA_CookRation.label>
+  <!-- EN: Cook raw materials to make military ration pack.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_CookRation.description>Cook raw materials to make military ration pack.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_CookRation.description>
   <!-- EN: working. -->
-  <WNA_CookRation.jobString>正忙.</WNA_CookRation.jobString>
+  <WNA_CookRation.jobString>working.</WNA_CookRation.jobString>
   
   <!-- EN: make WNA militaty ration x5 -->
-  <WNA_CookRationBulk.label>制作威灵会军用口粮 x5</WNA_CookRationBulk.label>
-  <!-- EN: Use mana and raw food to make meal pack. -->
-  <WNA_CookRationBulk.description>Use mana and raw food to make meal pack.</WNA_CookRationBulk.description>
+  <WNA_CookRationBulk.label>make WNA militaty ration x5</WNA_CookRationBulk.label>
+  <!-- EN: Cook raw materials to make military ration pack.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_CookRationBulk.description>Cook raw materials to make military ration pack.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_CookRationBulk.description>
   <!-- EN: working. -->
-  <WNA_CookRationBulk.jobString>正忙.</WNA_CookRationBulk.jobString>
+  <WNA_CookRationBulk.jobString>working.</WNA_CookRationBulk.jobString>
+  
+  <!-- EN: make WNA militaty ration x100 -->
+  <WNA_CookRationMult.label>make WNA militaty ration x100</WNA_CookRationMult.label>
+  <!-- EN: Cook raw materials to make military ration pack.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_CookRationMult.description>Cook raw materials to make military ration pack.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_CookRationMult.description>
+  <!-- EN: working. -->
+  <WNA_CookRationMult.jobString>working.</WNA_CookRationMult.jobString>
   
   <!-- EN: repack meals -->
-  <WNA_RepackRation.label>重新打包口粮</WNA_RepackRation.label>
-  <!-- EN: Use whelingnorther techniques to pack normal meals into WNA militaty rations. -->
-  <WNA_RepackRation.description>Use whelingnorther techniques to pack normal meals into WNA militaty rations.</WNA_RepackRation.description>
+  <WNA_RepackRation.label>repack meals</WNA_RepackRation.label>
+  <!-- EN: Repack various meals to meet WNA military standard.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RepackRation.description>Repack various meals to meet WNA military standard.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RepackRation.description>
   <!-- EN: working. -->
-  <WNA_RepackRation.jobString>正忙.</WNA_RepackRation.jobString>
+  <WNA_RepackRation.jobString>working.</WNA_RepackRation.jobString>
   
   <!-- EN: repack meals x5 -->
-  <WNA_RepackRationBulk.label>重新打包口粮 x5</WNA_RepackRationBulk.label>
-  <!-- EN: Use whelingnorther techniques to pack normal meals into WNA militaty rations. -->
-  <WNA_RepackRationBulk.description>Use whelingnorther techniques to pack normal meals into WNA militaty rations.</WNA_RepackRationBulk.description>
+  <WNA_RepackRationBulk.label>repack meals x5</WNA_RepackRationBulk.label>
+  <!-- EN: Repack various meals to meet WNA military standard.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RepackRationBulk.description>Repack various meals to meet WNA military standard.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RepackRationBulk.description>
   <!-- EN: working. -->
-  <WNA_RepackRationBulk.jobString>正忙.</WNA_RepackRationBulk.jobString>
+  <WNA_RepackRationBulk.jobString>working.</WNA_RepackRationBulk.jobString>
+  
+  <!-- EN: repack meals x50 -->
+  <WNA_RepackRationMult.label>repack meals x50</WNA_RepackRationMult.label>
+  <!-- EN: Repack various meals to meet WNA military standard.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RepackRationMult.description>Repack various meals to meet WNA military standard.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RepackRationMult.description>
+  <!-- EN: working. -->
+  <WNA_RepackRationMult.jobString>working.</WNA_RepackRationMult.jobString>
   
   <!-- EN: make WNA medicine pack -->
-  <WNAPackMedikit.label>制作威灵会军用医药箱</WNAPackMedikit.label>
-  <!-- EN: Use mana and herbal medicine to make medicine pack. -->
-  <WNAPackMedikit.description>Use mana and herbal medicine to make medicine pack.</WNAPackMedikit.description>
+  <WNAPackMedikit.label>make WNA medicine pack</WNAPackMedikit.label>
+  <!-- EN: Repack various madicines to meet WNA military standard.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNAPackMedikit.description>Repack various madicines to meet WNA military standard.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNAPackMedikit.description>
   <!-- EN: working. -->
-  <WNAPackMedikit.jobString>正忙.</WNAPackMedikit.jobString>
+  <WNAPackMedikit.jobString>working.</WNAPackMedikit.jobString>
   
   <!-- EN: make WNA medicine pack x5 -->
-  <WNAPackMedikitBulk.label>制作威灵会军用医药箱 x5</WNAPackMedikitBulk.label>
-  <!-- EN: Use mana and herbal medicine to make medicine pack. -->
-  <WNAPackMedikitBulk.description>Use mana and herbal medicine to make medicine pack.</WNAPackMedikitBulk.description>
+  <WNAPackMedikitBulk.label>make WNA medicine pack x5</WNAPackMedikitBulk.label>
+  <!-- EN: Repack various madicines to meet WNA military standard.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNAPackMedikitBulk.description>Repack various madicines to meet WNA military standard.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNAPackMedikitBulk.description>
   <!-- EN: working. -->
-  <WNAPackMedikitBulk.jobString>正忙.</WNAPackMedikitBulk.jobString>
+  <WNAPackMedikitBulk.jobString>working.</WNAPackMedikitBulk.jobString>
+  
+  <!-- EN: make WNA medicine pack x100 -->
+  <WNAPackMedikitMult.label>make WNA medicine pack x100</WNAPackMedikitMult.label>
+  <!-- EN: Repack various madicines to meet WNA military standard.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNAPackMedikitMult.description>Repack various madicines to meet WNA military standard.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNAPackMedikitMult.description>
+  <!-- EN: working. -->
+  <WNAPackMedikitMult.jobString>working.</WNAPackMedikitMult.jobString>
   
 </LanguageData>

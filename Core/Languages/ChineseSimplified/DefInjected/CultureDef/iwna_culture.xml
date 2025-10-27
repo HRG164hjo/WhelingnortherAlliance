@@ -2,8 +2,10 @@
 <LanguageData>
   
   <!-- EN: whelingnorther -->
-  <WNA_WhelingnortherCulture.label>威灵诺德</WNA_WhelingnortherCulture.label>
-  <!-- EN: An otherworld culture said to be from far ancient Whelingnorther Empire. -->
-  <WNA_WhelingnortherCulture.description>一种据说来自先古威灵帝国的异域文化.</WNA_WhelingnortherCulture.description>
+  <WNA_WhelingnortherCulture.label>whelingnorther</WNA_WhelingnortherCulture.label>
+  <!-- EN: An otherworld culture said to be from far ancient Whelingnorther Empire.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_WhelingnortherCulture.description>An otherworld culture said to be from far ancient Whelingnorther Empire.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_WhelingnortherCulture.description>
   
 </LanguageData>

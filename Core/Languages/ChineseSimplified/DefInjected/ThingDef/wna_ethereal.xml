@@ -5,16 +5,19 @@
   <sWNA_Ether_Kedavra.label>placeholder</sWNA_Ether_Kedavra.label>
   
   <!-- EN: aeroblaze -->
-  <WNA_Ether_Aeroblaze.label>天火</WNA_Ether_Aeroblaze.label>
+  <WNA_Ether_Aeroblaze.label>aeroblaze</WNA_Ether_Aeroblaze.label>
   
   <!-- EN: placeholder -->
   <WNA_Ether_HowlstormHMG.label>placeholder</WNA_Ether_HowlstormHMG.label>
+  
+  <!-- EN: iron kill effect -->
+  <WNA_Ether_IronEffect.label>iron kill effect</WNA_Ether_IronEffect.label>
   
   <!-- EN: avada kedavra! -->
   <WNA_Ether_Kedavra.label>avada kedavra!</WNA_Ether_Kedavra.label>
   
   <!-- EN: laser beam -->
-  <WNA_LaserBeam.label>激光</WNA_LaserBeam.label>
+  <WNA_LaserBeam.label>laser beam</WNA_LaserBeam.label>
   
   <!-- EN: drop pod (incoming) -->
   <WNA_WARPIN.label>drop pod (incoming)</WNA_WARPIN.label>

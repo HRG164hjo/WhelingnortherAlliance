@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: dead zone irradiator -->
+  <WNA_Deadzone.label>dead zone irradiator</WNA_Deadzone.label>
+  <!-- EN: A facility that can emit strong radiation field, making a wide area a "dead zone". note that this facility cannot distinguish enemies and allies.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Deadzone.description>A facility that can emit strong radiation field, making a wide area a "dead zone". note that this facility cannot distinguish enemies and allies.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Deadzone.description>
+  
+  <!-- EN: "comet" laser gun -->
+  <WNA_PrismGun.label>"comet" laser gun</WNA_PrismGun.label>
+  <!-- EN: A slab-like facility, can automatically form a mana ball and actively attack nearby enemies.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_PrismGun.description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_PrismGun.description>
+  
+  <!-- EN: comet -->
+  <WNA_PrismGun_Gun.label>comet</WNA_PrismGun_Gun.label>
+  <!-- EN: turret weapon.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_PrismGun_Gun.description>turret weapon.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_PrismGun_Gun.description>
+  <!-- EN: comet -->
+  <WNA_PrismGun_Gun.verbs.VerbType_Laser.label>comet</WNA_PrismGun_Gun.verbs.VerbType_Laser.label>
+  
+  <!-- EN: comet -->
+  <WNA_PrismGun_Proj.label>comet</WNA_PrismGun_Proj.label>
+  
+  <!-- EN: "scorpion"sentry gun -->
+  <WNA_SentryGun.label>"scorpion"sentry gun</WNA_SentryGun.label>
+  <!-- EN: sentry gun.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_SentryGun.description>sentry gun.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_SentryGun.description>
+  
+  <!-- EN: sentry gun -->
+  <WNA_SentryGun_Gun.label>sentry gun</WNA_SentryGun_Gun.label>
+  <!-- EN: turret weapon.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_SentryGun_Gun.description>turret weapon.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_SentryGun_Gun.description>
+  <!-- EN: sentry gun -->
+  <WNA_SentryGun_Gun.verbs.VerbType_Burst.label>sentry gun</WNA_SentryGun_Gun.verbs.VerbType_Burst.label>
+  
+  <!-- EN: sentry gun -->
+  <WNA_SentryGun_Proj.label>sentry gun</WNA_SentryGun_Proj.label>
+  
+</LanguageData>

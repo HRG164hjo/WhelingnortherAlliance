@@ -17,6 +17,7 @@ namespace WNA.Recipe
             var visible = hediffs.Where(h => h.Visible &&
                 !(h is Hediff_AddedPart) &&
                 !(h is Hediff_Implant) &&
+                !(h is Hediff_MissingPart) &&
                 !(h is Hediff_Injury)).ToList();
             if (visible.Any())
             {

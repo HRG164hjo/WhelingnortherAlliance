@@ -9,14 +9,14 @@
         <inheritable>true</inheritable>
         <genes>
 			<li>WNA_ShadowRing</li>
-			<li>WNA_IronCurtain</li>
+			<li>WNA_Unshakable</li>
 			<li>WNA_StillWater</li>
 			<li>WNA_Mastery</li>
 			<li>PerfectImmunity</li>
 			<li>DiseaseFree</li>
 			<li>TotalHealing</li>
 			<li>Skin_SheerWhite</li>
-			<li>Hair_SnowWhite</li><!--Hair_InkBlack-->
+			<li>Hair_SnowWhite</li>
 			<li>Ageless</li>
             <li MayRequire="vanillaracesexpanded.fungoid">VRE_Telepathy</li>
             <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfector</li>
@@ -82,19 +82,16 @@
         <modExtensions>
             <li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">	
                 <hideGene>true</hideGene>
-                <!--<caravanCarryingFactor>100000</caravanCarryingFactor>-->
-                <diseaseProgressionFactor>0</diseaseProgressionFactor>
-				<globalSkillLossMultiplier>0</globalSkillLossMultiplier>
 				<skillDegradation>false</skillDegradation>
             </li>
         </modExtensions>
     </GeneDef>
 
     <GeneDef ParentName="WNA_GeneBase">
-        <defName>WNA_IronCurtain</defName>
-        <label>iron curatin</label>
-        <labelShortAdj>iron curatin</labelShortAdj>
-        <description>The power originating from Ancient Whelingnorther Empire flows through this pawn. Usual methods cannot harm this person.</description>
+        <defName>WNA_Unshakable</defName>
+        <label>unshakable</label>
+        <labelShortAdj>unshakable</labelShortAdj>
+        <description>The power originating from Ancient Whelingnorther Empire flows through this pawn. Few can stop this person.</description>
         <iconPath>UI/Icons/Genes/Gene_Unstoppable</iconPath>
         <painFactor>0</painFactor>
         <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
@@ -105,10 +102,14 @@
         <statOffsets>
             <ComfyTemperatureMin>-9999</ComfyTemperatureMin>
             <ComfyTemperatureMax>9999</ComfyTemperatureMax>
+            <PsychicSensitivity>-9999</PsychicSensitivity>
+            <IncomingDamageFactor>-9999</IncomingDamageFactor>
+            <StaggerDurationFactor>-9999</StaggerDurationFactor>
         </statOffsets>
         <statFactors>
             <PsychicSensitivity>0</PsychicSensitivity>
             <IncomingDamageFactor>0</IncomingDamageFactor>
+            <StaggerDurationFactor>0</StaggerDurationFactor>
         </statFactors>
         <modExtensions>
             <li Class="Universum.Utilities.Gene.Properties" MayRequire="sindre0830.Universum">

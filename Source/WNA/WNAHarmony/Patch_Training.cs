@@ -11,9 +11,9 @@ namespace WNA.WNAHarmony
     {
         private static readonly HashSet<string> trainlessList = new HashSet<string>
         {
-            "WNA_DimBeastRace",
-            "WNA_ThornBeastRace",
-            "WNA_FerociousBeastRace"
+            "WNA_DimBoo",
+            "WNA_ThornBoo",
+            "WNA_FerosBoo"
         };
         private static readonly FieldInfo _countDecayFrom = AccessTools.Field(typeof(Pawn_TrainingTracker), "countDecayFrom");
         private static readonly FieldInfo _steps = AccessTools.Field(typeof(Pawn_TrainingTracker), "steps");

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<ThingDef ParentName="WNA_AnimalRaceBase">
-		<defName>WNA_DimBeastRace</defName>
-		<label>dim hybeast</label>
+	<ThingDef ParentName="WNA_AnimalBase">
+		<defName>WNA_DimBoo</defName>
+		<label>dim boo</label>
 		<description>A strange ball-like creature, created by Whelinghorther Alliance. There's many stories about the detailed origin of such thing, one stated that Alliance used animal corpses to create them.</description>
 		<race>
 			<foodType>OmnivoreRoughAnimal</foodType>
@@ -27,9 +27,9 @@
 			</li>
         </comps>
 	</ThingDef>
-	<ThingDef ParentName="WNA_AnimalRaceBase">
-		<defName>WNA_ThornBeastRace</defName>
-		<label>thorn hybeast</label>
+	<ThingDef ParentName="WNA_AnimalBase">
+		<defName>WNA_ThornBoo</defName>
+		<label>thorn boo</label>
 		<description>A strange ball-like beast, even Whelingnorther Alliance is curious about its origion. It can throw spears to whatever it think is a threat, fast and long range.</description>
 		<race>
 			<foodType>OmnivoreAnimal,OvivoreAnimal</foodType>
@@ -37,14 +37,14 @@
 		</race>
         <comps>
 			<li Class="CompProperties_TurretGun">
-				<turretDef>WNA_ThornBeastTurret</turretDef>
+				<turretDef>WNA_ThornBooTurret</turretDef>
 				<angleOffset>-90</angleOffset>
 			</li>
         </comps>
 	</ThingDef>
-	<ThingDef ParentName="WNA_AnimalRaceBase">
-		<defName>WNA_FerociousBeastRace</defName>
-		<label>ferocious hybeast</label>
+	<ThingDef ParentName="WNA_AnimalBase">
+		<defName>WNA_FerosBoo</defName>
+		<label>ferocious boo</label>
 		<description>A dangerous ball-like ghosty beast, it's said that Whelingnorther Alliance created this kind as bio weapons.</description>
 		<race>
 			<foodType>OmnivoreAnimal,OvivoreAnimal</foodType>
@@ -53,7 +53,7 @@
 		</race>
         <comps>
             <li Class="WNA.ThingCompProp.CompAOEDamage">
-                <damageDef>WNA_CastMelee</damageDef>
+                <damageDef>Bite</damageDef>
                 <damage>Infinity</damage>
                 <ap>Infinity</ap>
                 <radius>6.9</radius>

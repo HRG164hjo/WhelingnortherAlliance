@@ -3,8 +3,10 @@
   
   <!-- EN: advanced arsenal -->
   <WNA_AdvArsenal.label>advanced arsenal</WNA_AdvArsenal.label>
-  <!-- EN: study some published literatures of WHR and gain some insights of their more advanced arsenal. -->
-  <WNA_AdvArsenal.description>study some published literatures of WHR and gain some insights of their more advanced arsenal.</WNA_AdvArsenal.description>
+  <!-- EN: study some published literatures of WHR and gain some insights of their more advanced arsenal.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_AdvArsenal.description>study some published literatures of WHR and gain some insights of their more advanced arsenal.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_AdvArsenal.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -162,8 +164,10 @@
   
   <!-- EN: basic defense structure -->
   <WNA_BaseDefense.label>basic defense structure</WNA_BaseDefense.label>
-  <!-- EN: unusual techniques that can be used to build your colony harder to handle. -->
-  <WNA_BaseDefense.description>unusual techniques that can be used to build your colony harder to handle.</WNA_BaseDefense.description>
+  <!-- EN: unusual techniques that can be used to build your colony harder to handle.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_BaseDefense.description>unusual techniques that can be used to build your colony harder to handle.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_BaseDefense.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -321,8 +325,10 @@
   
   <!-- EN: basic rite -->
   <WNA_BasicRite.label>basic rite</WNA_BasicRite.label>
-  <!-- EN: basic knowladge of holding rites like those Whelingnorthans. the first step towards mysterious whelingnorther techniques. -->
-  <WNA_BasicRite.description>basic knowladge of holding rites like those Whelingnorthans. the first step towards mysterious whelingnorther techniques.</WNA_BasicRite.description>
+  <!-- EN: basic knowladge of holding rites like those Whelingnorthans. the first step towards mysterious whelingnorther techniques.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_BasicRite.description>basic knowladge of holding rites like those Whelingnorthans. the first step towards mysterious whelingnorther techniques.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_BasicRite.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -480,8 +486,10 @@
   
   <!-- EN: whelingnorther furniture -->
   <WNA_Furniture.label>whelingnorther furniture</WNA_Furniture.label>
-  <!-- EN: the technique of forming WNA style furnitures. these furnitures usually looks translucent and are built out of nothing. -->
-  <WNA_Furniture.description>the technique of forming WNA style furnitures. these furnitures usually looks translucent and are built out of nothing.</WNA_Furniture.description>
+  <!-- EN: the technique of forming WNA style furnitures. these furnitures usually looks translucent and are built out of nothing.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Furniture.description>the technique of forming WNA style furnitures. these furnitures usually looks translucent and are built out of nothing.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Furniture.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -639,8 +647,10 @@
   
   <!-- EN: the wall of iron -->
   <WNA_IronGuardian.label>the wall of iron</WNA_IronGuardian.label>
-  <!-- EN: now your colonists have enough understanding and ability to replica the arsenal used by the heaviest guardian troopers of the rebels. -->
-  <WNA_IronGuardian.description>now your colonists have enough understanding and ability to replica the arsenal used by the heaviest guardian troopers of the rebels.</WNA_IronGuardian.description>
+  <!-- EN: now your colonists have enough understanding and ability to replica the arsenal used by the heaviest guardian troopers of the rebels.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_IronGuardian.description>now your colonists have enough understanding and ability to replica the arsenal used by the heaviest guardian troopers of the rebels.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_IronGuardian.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -798,8 +808,10 @@
   
   <!-- EN: matter transformation -->
   <WNA_MatterTransformation.label>matter transformation</WNA_MatterTransformation.label>
-  <!-- EN: the knowledge of using whelingnorther technique to reform normal materials. -->
-  <WNA_MatterTransformation.description>the knowledge of using whelingnorther technique to reform normal materials.</WNA_MatterTransformation.description>
+  <!-- EN: the knowledge of using whelingnorther technique to reform normal materials.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_MatterTransformation.description>the knowledge of using whelingnorther technique to reform normal materials.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MatterTransformation.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -957,8 +969,10 @@
   
   <!-- EN: siege equipment -->
   <WNA_NexusLegion.label>siege equipment</WNA_NexusLegion.label>
-  <!-- EN: by studying the published techprints your colonists can now replica the armor and weapon used by the rebels' main forces. -->
-  <WNA_NexusLegion.description>by studying the published techprints your colonists can now replica the armor and weapon used by the rebels' main forces.</WNA_NexusLegion.description>
+  <!-- EN: by studying the published techprints your colonists can now replica the armor and weapon used by the rebels' main forces.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_NexusLegion.description>by studying the published techprints your colonists can now replica the armor and weapon used by the rebels' main forces.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_NexusLegion.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1116,8 +1130,10 @@
   
   <!-- EN: rebels arsenal -->
   <WNA_RebelArsenal.label>rebels arsenal</WNA_RebelArsenal.label>
-  <!-- EN: dig back to the youth of the Whelingnorther Humanoid Revolt and recreate their early-time apparels and weapons. -->
-  <WNA_RebelArsenal.description>dig back to the youth of the Whelingnorther Humanoid Revolt and recreate their early-time apparels and weapons.</WNA_RebelArsenal.description>
+  <!-- EN: dig back to the youth of the Whelingnorther Humanoid Revolt and recreate their early-time apparels and weapons.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RebelArsenal.description>dig back to the youth of the Whelingnorther Humanoid Revolt and recreate their early-time apparels and weapons.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RebelArsenal.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1275,8 +1291,10 @@
   
   <!-- EN: energy shield -->
   <WNA_RebelShield.label>energy shield</WNA_RebelShield.label>
-  <!-- EN: primary understanding of energy shields used by WHR, which is a little different from common shield belts. -->
-  <WNA_RebelShield.description>primary understanding of energy shields used by WHR, which is a little different from common shield belts.</WNA_RebelShield.description>
+  <!-- EN: primary understanding of energy shields used by WHR, which is a little different from common shield belts.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RebelShield.description>primary understanding of energy shields used by WHR, which is a little different from common shield belts.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RebelShield.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1434,8 +1452,10 @@
   
   <!-- EN: practical tools -->
   <WNA_RebelTools.label>practical tools</WNA_RebelTools.label>
-  <!-- EN: Gain some insights of the neat tools developed by WHR. Good for both production and combat. -->
-  <WNA_RebelTools.description>Gain some insights of the neat tools developed by WHR. Good for both production and combat.</WNA_RebelTools.description>
+  <!-- EN: Gain some insights of the neat tools developed by WHR. Good for both production and combat.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_RebelTools.description>Gain some insights of the neat tools developed by WHR. Good for both production and combat.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RebelTools.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1593,8 +1613,10 @@
   
   <!-- EN: whelingnorther defence system -->
   <WNA_Security.label>whelingnorther defence system</WNA_Security.label>
-  <!-- EN: some most simple methods to use whelingnorther technique to defend an outpost, a colony ot something else. -->
-  <WNA_Security.description>some most simple methods to use whelingnorther technique to defend an outpost, a colony ot something else.</WNA_Security.description>
+  <!-- EN: some most simple methods to use whelingnorther technique to defend an outpost, a colony ot something else.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Security.description>some most simple methods to use whelingnorther technique to defend an outpost, a colony ot something else.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Security.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1752,8 +1774,10 @@
   
   <!-- EN: whelingnorther standard equipment -->
   <WNA_StandardArsenal.label>whelingnorther standard equipment</WNA_StandardArsenal.label>
-  <!-- EN: the technique of crafting WNA standard equipments. even whelingnorthan themselves cannot ignore the power of these weapons. -->
-  <WNA_StandardArsenal.description>the technique of crafting WNA standard equipments. even whelingnorthan themselves cannot ignore the power of these weapons.</WNA_StandardArsenal.description>
+  <!-- EN: the technique of crafting WNA standard equipments. even whelingnorthan themselves cannot ignore the power of these weapons.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_StandardArsenal.description>the technique of crafting WNA standard equipments. even whelingnorthan themselves cannot ignore the power of these weapons.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_StandardArsenal.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1911,8 +1935,10 @@
   
   <!-- EN: infiltration equipment -->
   <WNA_StrikeLegion.label>infiltration equipment</WNA_StrikeLegion.label>
-  <!-- EN: by studying the published techprints your colonists now masters the techniques used by the rebels' infiltration forces. -->
-  <WNA_StrikeLegion.description>by studying the published techprints your colonists now masters the techniques used by the rebels' infiltration forces.</WNA_StrikeLegion.description>
+  <!-- EN: by studying the published techprints your colonists now masters the techniques used by the rebels' infiltration forces.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_StrikeLegion.description>by studying the published techprints your colonists now masters the techniques used by the rebels' infiltration forces.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_StrikeLegion.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -2070,8 +2096,10 @@
   
   <!-- EN: whelingnorther structure -->
   <WNA_Structure.label>whelingnorther structure</WNA_Structure.label>
-  <!-- EN: the technique of building walls, doors, and other thing. in common cases these buildings are invincible, whether built from thin air or a piece of actual material. -->
-  <WNA_Structure.description>the technique of building walls, doors, and other thing. in common cases these buildings are invincible, whether built from thin air or a piece of actual material.</WNA_Structure.description>
+  <!-- EN: the technique of building walls, doors, and other thing. in common cases these buildings are invincible, whether built from thin air or a piece of actual material.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Structure.description>the technique of building walls, doors, and other thing. in common cases these buildings are invincible, whether built from thin air or a piece of actual material.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Structure.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -2229,8 +2257,10 @@
   
   <!-- EN: whelingnorther terraforming -->
   <WNA_Terraform.label>whelingnorther terraforming</WNA_Terraform.label>
-  <!-- EN: the technique of changing the environment, reversible or irreversible. -->
-  <WNA_Terraform.description>the technique of changing the environment, reversible or irreversible.</WNA_Terraform.description>
+  <!-- EN: the technique of changing the environment, reversible or irreversible.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Terraform.description>the technique of changing the environment, reversible or irreversible.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Terraform.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>

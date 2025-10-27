@@ -2,68 +2,73 @@
 <LanguageData>
   
   <!-- EN: casting -->
-  <WNA_CastBomb.label>法术</WNA_CastBomb.label>
+  <WNA_CastBomb.label>casting</WNA_CastBomb.label>
   <!-- EN: {0} has molten. -->
-  <WNA_CastBomb.deathMessage>{0} 消融了.</WNA_CastBomb.deathMessage>
+  <WNA_CastBomb.deathMessage>{0} has molten.</WNA_CastBomb.deathMessage>
   
   <!-- EN: casting -->
-  <WNA_CastMelee.label>法术</WNA_CastMelee.label>
+  <WNA_CastMelee.label>casting</WNA_CastMelee.label>
   <!-- EN: {0} has molten. -->
-  <WNA_CastMelee.deathMessage>{0} 消融了.</WNA_CastMelee.deathMessage>
+  <WNA_CastMelee.deathMessage>{0} has molten.</WNA_CastMelee.deathMessage>
   
   <!-- EN: casting -->
-  <WNA_CastRange.label>法术</WNA_CastRange.label>
+  <WNA_CastRange.label>casting</WNA_CastRange.label>
   <!-- EN: {0} has molten. -->
-  <WNA_CastRange.deathMessage>{0} 消融了.</WNA_CastRange.deathMessage>
+  <WNA_CastRange.deathMessage>{0} has molten.</WNA_CastRange.deathMessage>
   
   <!-- EN: chiming -->
   <WNA_ChimingBlaze.label>chiming</WNA_ChimingBlaze.label>
   <!-- EN: {0} has molten. -->
-  <WNA_ChimingBlaze.deathMessage>{0} 消融了.</WNA_ChimingBlaze.deathMessage>
+  <WNA_ChimingBlaze.deathMessage>{0} has molten.</WNA_ChimingBlaze.deathMessage>
   
   <!-- EN: casting -->
-  <WNA_Culling.label>法术</WNA_Culling.label>
+  <WNA_Culling.label>casting</WNA_Culling.label>
   <!-- EN: {0} has molten. -->
-  <WNA_Culling.deathMessage>{0} 消融了.</WNA_Culling.deathMessage>
+  <WNA_Culling.deathMessage>{0} has molten.</WNA_Culling.deathMessage>
   
   <!-- EN: cut -->
-  <WNA_DemoCut.label>破拆切割</WNA_DemoCut.label>
+  <WNA_DemoCut.label>cut</WNA_DemoCut.label>
   <!-- EN: {0} has been sliced into pieces. -->
-  <WNA_DemoCut.deathMessage>{0} 被剁碎了.</WNA_DemoCut.deathMessage>
+  <WNA_DemoCut.deathMessage>{0} has been sliced into pieces.</WNA_DemoCut.deathMessage>
   
   <!-- EN: hollow point -->
-  <WNA_HollowPoint.label>空尖弹</WNA_HollowPoint.label>
+  <WNA_HollowPoint.label>hollow point</WNA_HollowPoint.label>
   <!-- EN: {0} has been shot to death. -->
-  <WNA_HollowPoint.deathMessage>{0} 被击毙.</WNA_HollowPoint.deathMessage>
-  
-  <!-- EN: kenetic -->
-  <WNA_KineBomb.label>动能</WNA_KineBomb.label>
-  <!-- EN: {0} has been impacted into pieces. -->
-  <WNA_KineBomb.deathMessage>{0} 被冲击力撕碎.</WNA_KineBomb.deathMessage>
-  
-  <!-- EN: kenetic -->
-  <WNA_KineCut.label>动能</WNA_KineCut.label>
-  <!-- EN: {0} has been impacted into pieces. -->
-  <WNA_KineCut.deathMessage>{0} 被冲击力撕碎.</WNA_KineCut.deathMessage>
-  
-  <!-- EN: kenetic -->
-  <WNA_KinePoint.label>动能</WNA_KinePoint.label>
-  <!-- EN: {0} has been impacted into pieces. -->
-  <WNA_KinePoint.deathMessage>{0} 被冲击力撕碎.</WNA_KinePoint.deathMessage>
+  <WNA_HollowPoint.deathMessage>{0} has been shot to death.</WNA_HollowPoint.deathMessage>
   
   <!-- EN: lysis -->
-  <WNA_Lysis.label>裂解力场</WNA_Lysis.label>
+  <WNA_IronKill.label>lysis</WNA_IronKill.label>
   <!-- EN: {0} perished in lysis field. -->
-  <WNA_Lysis.deathMessage>{0} 被裂解力场分解.</WNA_Lysis.deathMessage>
+  <WNA_IronKill.deathMessage>{0} perished in lysis field.</WNA_IronKill.deathMessage>
+  
+  <!-- EN: kenetic -->
+  <WNA_KineBomb.label>kenetic</WNA_KineBomb.label>
+  <!-- EN: {0} has been impacted into pieces. -->
+  <WNA_KineBomb.deathMessage>{0} has been impacted into pieces.</WNA_KineBomb.deathMessage>
+  
+  <!-- EN: kenetic -->
+  <WNA_KineCut.label>kenetic</WNA_KineCut.label>
+  <!-- EN: {0} has been impacted into pieces. -->
+  <WNA_KineCut.deathMessage>{0} has been impacted into pieces.</WNA_KineCut.deathMessage>
+  
+  <!-- EN: kenetic -->
+  <WNA_KinePoint.label>kenetic</WNA_KinePoint.label>
+  <!-- EN: {0} has been impacted into pieces. -->
+  <WNA_KinePoint.deathMessage>{0} has been impacted into pieces.</WNA_KinePoint.deathMessage>
+  
+  <!-- EN: lysis -->
+  <WNA_LysField.label>lysis</WNA_LysField.label>
+  <!-- EN: {0} perished in lysis field. -->
+  <WNA_LysField.deathMessage>{0} perished in lysis field.</WNA_LysField.deathMessage>
   
   <!-- EN: rad burn -->
-  <WNA_RadBurn.label>辐射灼伤</WNA_RadBurn.label>
+  <WNA_RadBurn.label>rad burn</WNA_RadBurn.label>
   <!-- EN: {0} died of radiation. -->
-  <WNA_RadBurn.deathMessage>{0} 被辐射灼烧致死.</WNA_RadBurn.deathMessage>
+  <WNA_RadBurn.deathMessage>{0} died of radiation.</WNA_RadBurn.deathMessage>
   
   <!-- EN: scrap -->
-  <WNA_ScrapPoint.label>毒弹</WNA_ScrapPoint.label>
+  <WNA_ScrapPoint.label>scrap</WNA_ScrapPoint.label>
   <!-- EN: {0} has been shot to death. -->
-  <WNA_ScrapPoint.deathMessage>{0} 被击毙.</WNA_ScrapPoint.deathMessage>
+  <WNA_ScrapPoint.deathMessage>{0} has been shot to death.</WNA_ScrapPoint.deathMessage>
   
 </LanguageData>

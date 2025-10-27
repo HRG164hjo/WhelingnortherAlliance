@@ -3,8 +3,10 @@
   
   <!-- EN: mortaliner -->
   <WNA_Mortaliner.label>mortaliner</WNA_Mortaliner.label>
-  <!-- EN: These pawns have ascended higher than normal people. They won't age, won't easily get sick, and have already got rid of some primal needs. Despite this, WNA still consider them as mortal - as they can still be, albeit not easily, killed. -->
-  <WNA_Mortaliner.description>These pawns have ascended higher than normal people. They won't age, won't easily get sick, and have already got rid of some primal needs. Despite this, WNA still consider them as mortal - as they can still be, albeit not easily, killed.</WNA_Mortaliner.description>
+  <!-- EN: These pawns have ascended higher than normal people. They won't age, won't easily get sick, and have already got rid of some primal needs. Despite this, WNA still consider them as mortal - as they can still be, albeit not easily, killed.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <WNA_Mortaliner.description>These pawns have ascended higher than normal people. They won't age, won't easily get sick, and have already got rid of some primal needs. Despite this, WNA still consider them as mortal - as they can still be, albeit not easily, killed.
+
+&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Mortaliner.description>
   <!-- EN: Mortaliner. -->
   <WNA_Mortaliner.descriptionShort>Mortaliner.</WNA_Mortaliner.descriptionShort>
   

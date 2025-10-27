@@ -100,7 +100,7 @@
 
     <HediffDef>
         <defName>WNA_InMechanoid</defName>
-        <label>automation creation</label>
+        <label>abnormal automation</label>
         <hediffClass>HediffWithComps</hediffClass>
         <description>This mechanoid is designed or enhanced by some unique techniques of WNA.</description>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
@@ -129,61 +129,64 @@
                     <MeleeDodgeChance>10</MeleeDodgeChance>
                     <VEF_VerbRangeFactor MayRequire="oskarpotocki.vanillafactionsexpanded.core">2</VEF_VerbRangeFactor>
                     <VEF_RangeAttackDamageFactor MayRequire="oskarpotocki.vanillafactionsexpanded.core">3</VEF_RangeAttackDamageFactor>
+                    <FishingSpeed MayRequire="ludeon.rimworld.odyssey">60</FishingSpeed>
+                    <FishingYield MayRequire="ludeon.rimworld.odyssey">10</FishingYield>
                 </statFactors>
                 <statOffsets>
                     <CarryingCapacity>10000</CarryingCapacity>
                     <EMPResistance>10</EMPResistance>
                     <EnergyShieldRechargeRate>50</EnergyShieldRechargeRate>
                     <EnergyShieldEnergyMax>50</EnergyShieldEnergyMax>
+                    <EMPResistance MayRequireAnyOf="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Anomaly">100</EMPResistance>
                 </statOffsets>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>Moving</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>Manipulation</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>Sight</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>Hearing</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>Breathing</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>BloodFiltration</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>BloodPumping</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                     <li>
                         <capacity>Metabolism</capacity>
-                        <postFactor>3</postFactor>
+                        <postFactor>20</postFactor>
                     </li>
                 </capMods>
             </li>
         </stages>
         <comps>
-			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"/>
             <li Class="WNA.HediffCompProp.CompMechAutoHeal">
-                <repairInterval>15</repairInterval>
+                <repairInterval>27</repairInterval>
             </li>
             <li Class="WNA.HediffCompProp.CompPostRemoveHediff">
                 <hediff>WNA_InMechanoid</hediff>
             </li>
+            <li Class="WNA.HediffCompProp.CompHediffHediffRemover"/>
         </comps>
 		<modExtensions>
 			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">

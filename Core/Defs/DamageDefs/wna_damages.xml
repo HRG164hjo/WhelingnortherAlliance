@@ -195,7 +195,7 @@
     <DamageDef ParentName="WNA_DamageBase">
         <defName>WNA_LysField</defName>
         <label>lysis</label>
-        <!--<workerClass>WNA.Damager.Lysis</workerClass>-->
+        <workerClass>WNA.Damager.LysField</workerClass>
         <externalViolence>true</externalViolence>
         <deathMessage>{0} perished in lysis field.</deathMessage>
         <hediff>Misc</hediff>
@@ -203,13 +203,34 @@
         <makesAnimalsFlee>false</makesAnimalsFlee>
         <causeStun>true</causeStun>
         <impactSoundType/>
-        <buildingDamageFactor>100000</buildingDamageFactor>
-        <plantDamageFactor>100000</plantDamageFactor>
-        <corpseDamageFactor>100000</corpseDamageFactor>
+        <buildingDamageFactor>1</buildingDamageFactor>
+        <plantDamageFactor>1</plantDamageFactor>
+        <corpseDamageFactor>1</corpseDamageFactor>
         <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
         <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
         <explosionCellFleck>BlastEMP</explosionCellFleck>
         <explosionColorCenter>(255,0,0)</explosionColorCenter>
+        <explosionColorEdge>(155,0,0)</explosionColorEdge>
+    </DamageDef>
+
+    <DamageDef ParentName="WNA_DamageBase">
+        <defName>WNA_IronKill</defName>
+        <label>lysis</label>
+        <workerClass>WNA.Damager.IronKiller</workerClass>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} perished in lysis field.</deathMessage>
+        <hediff>Misc</hediff>
+        <isRanged>true</isRanged>
+        <makesAnimalsFlee>false</makesAnimalsFlee>
+        <causeStun>true</causeStun>
+        <impactSoundType/>
+        <buildingDamageFactor>1</buildingDamageFactor>
+        <plantDamageFactor>1</plantDamageFactor>
+        <corpseDamageFactor>1</corpseDamageFactor>
+        <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+        <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+        <explosionCellFleck>Fleck_Vaporize</explosionCellFleck>
+        <explosionColorCenter>(17,17,17)</explosionColorCenter>
         <explosionColorEdge>(155,0,0)</explosionColorEdge>
     </DamageDef>
 

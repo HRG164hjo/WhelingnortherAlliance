@@ -11,6 +11,7 @@
             <statFactors>
                 <Flammability>0</Flammability>
             </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
         <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     </ThingDef>
@@ -25,7 +26,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>5</MarketValue>
+            <MarketValue>75</MarketValue>
         </statBases>
         <stuffProps>
             <categories>
@@ -34,10 +35,16 @@
             <appearance>Bricks</appearance>
             <color>(182,65,57)</color>
             <commonality>0.5</commonality>
+            <statOffsets>
+                <Beauty>20</Beauty>
+            </statOffsets>
             <statFactors>
                 <MaxHitPoints>0.6</MaxHitPoints>
                 <Beauty>4</Beauty>
+                <WorkToMake>1.1</WorkToMake>
+                <WorkToBuild>1.1</WorkToBuild>
             </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
         <deepCommonality>0.75</deepCommonality>
         <deepCountPerCell>500</deepCountPerCell>
@@ -56,7 +63,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>15</MarketValue>
+            <MarketValue>35</MarketValue>
             <StuffPower_Armor_Sharp>6.4</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>5.0</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>4.6</StuffPower_Armor_Heat>
@@ -75,6 +82,7 @@
                 <MaxHitPoints>25</MaxHitPoints>
                 <DoorOpenSpeed>1.5</DoorOpenSpeed>
             </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
     </ThingDef>
     
@@ -88,7 +96,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>15</MarketValue>
+            <MarketValue>35</MarketValue>
             <StuffPower_Armor_Sharp>24.5</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>22.0</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>20.0</StuffPower_Armor_Heat>
@@ -107,6 +115,7 @@
                 <MaxHitPoints>225</MaxHitPoints>
                 <DoorOpenSpeed>1.5</DoorOpenSpeed>
             </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
     </ThingDef>
     
@@ -137,11 +146,14 @@
             <appearance>Bricks</appearance>
             <color>(94,94,94)</color>
             <statOffsets>
-                <Beauty>1</Beauty>
+                <Beauty>4</Beauty>
             </statOffsets>
             <statFactors>
                 <MaxHitPoints>40</MaxHitPoints>
+                <WorkToMake>2.5</WorkToMake>
+                <WorkToBuild>2.5</WorkToBuild>
             </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
     </ThingDef>
     
@@ -152,10 +164,11 @@
         <graphicData>
             <texPath>item/wna_attunementfabric</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(180,189,199)</color>
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>8</MarketValue>
+            <MarketValue>35</MarketValue>
             <StuffPower_Armor_Sharp>25</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>20</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>28</StuffPower_Armor_Heat>
@@ -167,14 +180,17 @@
                 <li>Fabric</li>
                 <li>Leathery</li>
             </categories>
-            <color>(183,195,174)</color>
+            <color>(180,189,199)</color>
             <statOffsets>
-                <Beauty>1</Beauty>
+                <Beauty>20</Beauty>
             </statOffsets>
             <statFactors>
                 <MaxHitPoints>30</MaxHitPoints>
                 <Beauty>1.5</Beauty>
+                <WorkToMake>0.75</WorkToMake>
+                <WorkToBuild>0.75</WorkToBuild>
             </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
     </ThingDef>
     
@@ -188,7 +204,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>20</MarketValue>
+            <MarketValue>100</MarketValue>
             <StuffPower_Armor_Sharp>1386</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>1481</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>1262</StuffPower_Armor_Heat>
@@ -210,7 +226,10 @@
                 <MaxHitPoints>8000</MaxHitPoints>
                 <Beauty>5</Beauty>
                 <Mass>0.1</Mass>
+                <WorkToMake>1.2</WorkToMake>
+                <WorkToBuild>1.2</WorkToBuild>
             </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
     </ThingDef>
 
@@ -225,7 +244,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>10</MarketValue>
+            <MarketValue>55</MarketValue>
             <StuffPower_Armor_Sharp>2500</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>1000</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>4000</StuffPower_Armor_Heat>
@@ -241,6 +260,7 @@
                 <MaxHitPoints>15000</MaxHitPoints>
                 <Beauty>5</Beauty>
             </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
     </ThingDef>
     
@@ -254,7 +274,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>25</MarketValue>
+            <MarketValue>20</MarketValue>
         </statBases>
         <stuffProps>
             <categories>
@@ -266,6 +286,7 @@
                 <Beauty>5</Beauty>
                 <Mass>0.1</Mass>
             </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
     </ThingDef>
     
@@ -279,7 +300,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>30</MarketValue>
+            <MarketValue>500</MarketValue>
             <StuffPower_Armor_Sharp>100000</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>100000</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>100000</StuffPower_Armor_Heat>
@@ -295,8 +316,11 @@
             <color>(255,0,0,192)</color>
             <statFactors>
                 <MaxHitPoints>100000</MaxHitPoints>
-                <Beauty>5</Beauty>
+                <Beauty>10</Beauty>
+                <WorkToMake>10</WorkToMake>
+                <WorkToBuild>10</WorkToBuild>
             </statFactors>
+            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
         <comps>
             <li Class="CompProperties_Glower">

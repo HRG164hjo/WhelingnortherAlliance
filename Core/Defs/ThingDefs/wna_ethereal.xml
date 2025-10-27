@@ -163,4 +163,37 @@
         <alwaysHaulable>false</alwaysHaulable>
         <designateHaulable>false</designateHaulable>
     </ThingDef>
+    
+    <ThingDef ParentName="WNA_EtherealThingBase">
+        <defName>WNA_Ether_IronEffect</defName>
+        <label>iron kill effect</label>
+        <altitudeLayer>Filth</altitudeLayer>
+        <graphicData>
+            <graphicClass>Graphic_FleckSplash</graphicClass>
+            <texPath>Things/Mote/WaterRipple</texPath>
+            <shaderType>Transparent</shaderType>
+            <color>(155,0,0,200)</color>
+            <drawSize>4</drawSize>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_DestroyAfterDelay">
+                <delayTicks>500</delayTicks>
+                <destroyMode>Vanish</destroyMode>
+            </li>
+            <li Class="WNA.ThingCompProp.CompAOEDamage">
+                <damageDef>WNA_IronKill</damageDef>
+                <damage>Infinity</damage>
+                <ap>Infinity</ap>
+                <radius>4.9</radius>
+                <rof>1</rof>
+                <update>15</update>
+                <affectArea>true</affectArea>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToIronKill>true</immuneToIronKill>
+            </li>
+        </modExtensions>
+    </ThingDef>
 </Defs>

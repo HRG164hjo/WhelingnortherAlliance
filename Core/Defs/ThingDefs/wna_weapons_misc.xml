@@ -37,7 +37,7 @@
     </ThingDef>
     
     <ThingDef ParentName="WNA_WeaponBasePawn">
-        <defName>WNA_ThornBeastTurret</defName>
+        <defName>WNA_ThornBooTurret</defName>
         <statBases>
             <Mass>0</Mass>
             <MarketValue>0</MarketValue>
@@ -46,7 +46,7 @@
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>WNA_ThornBeastTurret_Proj</defaultProjectile>
+                <defaultProjectile>WNA_ThornBooTurret_Proj</defaultProjectile>
                 <range>54.9</range>
                 <soundCast/>
                 <soundCastTail/>
@@ -61,7 +61,7 @@
         </verbs>
     </ThingDef>
     <ThingDef ParentName="WNA_ProjBase">
-        <defName>WNA_ThornBeastTurret_Proj</defName>
+        <defName>WNA_ThornBooTurret_Proj</defName>
         <label>placeholder</label>
         <thingClass>Bullet</thingClass>
         <graphicData>
