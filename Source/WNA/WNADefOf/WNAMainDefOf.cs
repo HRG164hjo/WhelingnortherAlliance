@@ -15,6 +15,8 @@ namespace WNA.WNADefOf
         public static DamageDef WNA_KineBomb;
         public static DamageDef WNA_DemoCut;
         public static DamageDef WNA_RadBurn;
+        public static DamageDef WNA_LysField;
+        public static DamageDef WNA_IronKill;
 
         public static FactionDef WNA_FactionWNA;
 
@@ -42,6 +44,8 @@ namespace WNA.WNADefOf
         public static TerrainDef WNA_FocusSpring;
         public static TerrainDef WNA_FocusSoil;
         public static TerrainDef WNA_FocusSand;
+
+        public static ResearchProjectDef WNA_TheEnlightment;
 
         public static ThingDef WNA_WNThan;
         public static ThingDef WNA_Human;
@@ -77,7 +81,6 @@ namespace WNA.WNADefOf
         public static ThingDef WNA_Weapon_RiteLance;
 
         public static TraitDef WNA_Trait_Unshakable;
-        public static TraitDef WNA_Trait_Hypodynamophobia;
 
         [MayRequireIdeology]
         public static PreceptDef WNA_P_Proselyte;

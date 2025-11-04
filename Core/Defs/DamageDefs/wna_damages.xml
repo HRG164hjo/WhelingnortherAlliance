@@ -167,7 +167,7 @@
         <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
     </ManeuverDef>
 
-    <DamageDef ParentName="WNA_DamageBase">
+    <DamageDef ParentName="WNA_DamageBase" Name="WNA_RadBurnBase">
         <defName>WNA_RadBurn</defName>
         <label>rad burn</label>
         <workerClass>WNA.Damager.RadField</workerClass>
@@ -178,7 +178,7 @@
         <makesAnimalsFlee>false</makesAnimalsFlee>
         <causeStun>true</causeStun>
         <impactSoundType/>
-        <buildingDamageFactor>0.1</buildingDamageFactor>
+        <buildingDamageFactor>0.34</buildingDamageFactor>
         <additionalHediffs>
             <li>
                 <hediff>WNA_RadEffect</hediff>
@@ -191,6 +191,16 @@
         <explosionColorCenter>(255,155,0)</explosionColorCenter>
         <explosionColorEdge>(200,100,0)</explosionColorEdge>
     </DamageDef>
+    <DamageDef ParentName="WNA_RadBurnBase">
+        <defName>WNA_RadBeam</defName>
+        <additionalHediffs>
+            <li>
+                <hediff>WNA_RadRing</hediff>
+                <severityPerDamageDealt>1</severityPerDamageDealt>
+            </li>
+        </additionalHediffs>
+        <buildingDamageFactor>1</buildingDamageFactor>
+    </DamageDef>
 
     <DamageDef ParentName="WNA_DamageBase">
         <defName>WNA_LysField</defName>
@@ -198,7 +208,7 @@
         <workerClass>WNA.Damager.LysField</workerClass>
         <externalViolence>true</externalViolence>
         <deathMessage>{0} perished in lysis field.</deathMessage>
-        <hediff>Misc</hediff>
+        <hediff>Shredded</hediff>
         <isRanged>true</isRanged>
         <makesAnimalsFlee>false</makesAnimalsFlee>
         <causeStun>true</causeStun>
@@ -215,7 +225,7 @@
 
     <DamageDef ParentName="WNA_DamageBase">
         <defName>WNA_IronKill</defName>
-        <label>lysis</label>
+        <label>iron kill</label>
         <workerClass>WNA.Damager.IronKiller</workerClass>
         <externalViolence>true</externalViolence>
         <deathMessage>{0} perished in lysis field.</deathMessage>

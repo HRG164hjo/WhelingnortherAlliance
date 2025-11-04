@@ -54,7 +54,7 @@
         <comps>
             <li Class="WNA.ThingCompProp.CompAOEDamage">
                 <damageDef>Bite</damageDef>
-                <damage>Infinity</damage>
+                <damage>2000</damage>
                 <ap>Infinity</ap>
                 <radius>6.9</radius>
                 <rof>7</rof>
@@ -63,8 +63,8 @@
                 <affectRoof>false</affectRoof>
             </li>
 			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.AnimalBehaviours.CompProperties_Blink">
-				<blinkInterval>500</blinkInterval>
-				<distance>5~20</distance>
+				<blinkInterval>200</blinkInterval>
+				<distance>7~25</distance>
 				<warpEffect>true</warpEffect>
 				<blinkWhenManhunter>true</blinkWhenManhunter>
 			</li>

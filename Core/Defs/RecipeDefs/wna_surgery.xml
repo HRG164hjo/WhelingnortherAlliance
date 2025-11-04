@@ -54,7 +54,7 @@
             <Intellectual>4</Intellectual>
         </skillRequirements>
         <workAmount>60</workAmount>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_TheEnlightment</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_SurgeryBase">
         <defName>WNA_Hemodialysis</defName>
@@ -81,6 +81,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <removesHediff>WNA_ScrapBuildup</removesHediff>
+        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_SurgeryBase">
@@ -108,12 +109,16 @@
             </thingDefs>
         </fixedIngredientFilter>
         <addsHediff>WNA_VoidDiver</addsHediff>
+        <researchPrerequisites>
+            <li>WNA_HumanUsage</li>
+            <li>WNA_TheVoid</li>
+        </researchPrerequisites>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_SurgeryBase">
         <defName>WNA_BrainHarvest</defName>
         <label>harvest brain</label>
-        <description>harvest brain.</description>
+        <description>harvest a fresh brain and quickly preserve it with properly mixed liquid.</description>
         <workerClass>WNA.Recipe.TargetedHarvest</workerClass>
         <jobString>harvesting TargetA.</jobString>
         <hideBodyPartNames>true</hideBodyPartNames>
@@ -151,30 +156,6 @@
         <appliedOnFixedBodyParts>
             <li>Brain</li>
         </appliedOnFixedBodyParts>
+        <researchPrerequisite>WNA_HumanUsage</researchPrerequisite>
     </RecipeDef>
-    <!--<RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
-        <defName>WNA_InstallPreservedBrain</defName>
-        <label>install a preserved brain</label>
-        <description>Install a preserved brain.</description>
-        <descriptionHyperlinks><ThingDef>WNA_PreservedBrain</ThingDef></descriptionHyperlinks>
-        <jobString>Installing a preserved brain.</jobString>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>WNA_PreservedBrain</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>WNA_PreservedBrain</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <appliedOnFixedBodyParts>
-            <li>Brain</li>
-        </appliedOnFixedBodyParts>
-    </RecipeDef>-->
 </Defs>

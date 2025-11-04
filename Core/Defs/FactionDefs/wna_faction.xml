@@ -40,13 +40,15 @@
         <backstoryFilters>
             <li>
                 <categories>
-                    <li>Offworld</li>
-                    <li>Tribal</li>
-                    <li>Pirate</li>
-                    <li>Outlander</li>
-                    <li>ImperialCommon</li>
-                    <li>Outsider</li>
+                    <li>WNA_Backstory_Norm</li>
                 </categories>
+                <commonality>0.8</commonality>
+            </li>
+            <li>
+                <categories>
+                    <li>WNA_Backstory_Uplifted</li>
+                </categories>
+                <commonality>0.2</commonality>
             </li>
         </backstoryFilters>
         <caravanTraderKinds/>

@@ -114,27 +114,26 @@
                 <statFactors>
                     <AimingDelayFactor>0</AimingDelayFactor>
                     <BandwidthCost>0</BandwidthCost>
-                    <CleaningSpeed>10</CleaningSpeed>
+                    <CleaningSpeed>20</CleaningSpeed>
                     <ControlTakingTime>0.01</ControlTakingTime>
                     <FoodPoisonChance>0</FoodPoisonChance>
-                    <GeneralLaborSpeed>10</GeneralLaborSpeed>
+                    <GeneralLaborSpeed>20</GeneralLaborSpeed>
                     <IncomingDamageFactor>0</IncomingDamageFactor>
                     <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
-                    <MedicalTendSpeed>10</MedicalTendSpeed>
-                    <MedicalOperationSpeed>10</MedicalOperationSpeed>
-                    <MoveSpeed>10</MoveSpeed>
+                    <MedicalTendSpeed>20</MedicalTendSpeed>
+                    <MedicalOperationSpeed>20</MedicalOperationSpeed>
+                    <MoveSpeed>20</MoveSpeed>
                     <RangedCooldownFactor>0.01</RangedCooldownFactor>
-                    <WorkSpeedGlobal>10</WorkSpeedGlobal>
+                    <WorkSpeedGlobal>20</WorkSpeedGlobal>
                     <MeleeCooldownFactor>0</MeleeCooldownFactor>
-                    <MeleeDodgeChance>10</MeleeDodgeChance>
-                    <VEF_VerbRangeFactor MayRequire="oskarpotocki.vanillafactionsexpanded.core">2</VEF_VerbRangeFactor>
-                    <VEF_RangeAttackDamageFactor MayRequire="oskarpotocki.vanillafactionsexpanded.core">3</VEF_RangeAttackDamageFactor>
-                    <FishingSpeed MayRequire="ludeon.rimworld.odyssey">60</FishingSpeed>
-                    <FishingYield MayRequire="ludeon.rimworld.odyssey">10</FishingYield>
+                    <MeleeDodgeChance>20</MeleeDodgeChance>
+                    <WorkSpeedGlobal>20</WorkSpeedGlobal>
+                    <FishingSpeed MayRequire="ludeon.rimworld.odyssey">20</FishingSpeed>
+                    <FishingYield MayRequire="ludeon.rimworld.odyssey">20</FishingYield>
                 </statFactors>
                 <statOffsets>
-                    <CarryingCapacity>10000</CarryingCapacity>
-                    <EMPResistance>10</EMPResistance>
+                    <CarryingCapacity>100000</CarryingCapacity>
+                    <EMPResistance>20</EMPResistance>
                     <EnergyShieldRechargeRate>50</EnergyShieldRechargeRate>
                     <EnergyShieldEnergyMax>50</EnergyShieldEnergyMax>
                     <EMPResistance MayRequireAnyOf="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Anomaly">100</EMPResistance>

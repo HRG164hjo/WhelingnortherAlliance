@@ -31,7 +31,7 @@
 	        <li>ElectricSmelter</li>
 	        <li>ElectricCrematorium</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_HeatStoneBlock</defName>
@@ -77,7 +77,7 @@
 	        <li>ElectricSmelter</li>
 	        <li>ElectricCrematorium</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -116,7 +116,7 @@
         <recipeUsers>
 	        <li>DrugLab</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_HeatCinnabar</defName>
@@ -147,7 +147,7 @@
 	        <li>ElectricSmelter</li>
 	        <li>ElectricCrematorium</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -190,7 +190,7 @@
 	        <li>ElectricCrematorium</li>
 	        <li>BiofuelRefinery</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -249,7 +249,7 @@
 	        <li>ElectricCrematorium</li>
 	        <li>BiofuelRefinery</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -288,7 +288,7 @@
         <recipeUsers>
 	        <li>BiofuelRefinery</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -327,7 +327,7 @@
         <recipeUsers>
 	        <li>BiofuelRefinery</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -386,7 +386,7 @@
         <recipeUsers>
 	        <li>FabricationBench</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -426,7 +426,7 @@
 	        <li>FueledSmithy</li>
 	        <li>ElectricSmithy</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
     </RecipeDef>
 
 </Defs>

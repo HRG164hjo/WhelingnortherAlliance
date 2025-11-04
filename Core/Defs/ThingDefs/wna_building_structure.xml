@@ -8,6 +8,9 @@
 		<coversFloor>true</coversFloor>
     	<drawStyleCategory>Walls</drawStyleCategory>
 		<comps/>
+        <researchPrerequisites>
+            <li>WNA_SecretTech</li>
+        </researchPrerequisites>
 	</ThingDef>
     <ThingDef ParentName="WNA_WallWithConduit">
 		<defName>WNA_BaseWall</defName>
@@ -502,8 +505,8 @@
 		<costList>
 			<WNA_Concrete>4</WNA_Concrete>
 		</costList>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_BaseDefense</li>
+        <researchPrerequisites>
+            <li>WNA_StandardArsenal</li>
         </researchPrerequisites>
 		<comps>
 			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
@@ -563,11 +566,10 @@
             </doorTopGraphic>
 		</building>
 		<costList>
-			<Steel>30</Steel>
-			<WNA_Concrete>8</WNA_Concrete>
+			<WNA_Concrete>15</WNA_Concrete>
 		</costList>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_BaseDefense</li>
+        <researchPrerequisites>
+            <li>WNA_StandardArsenal</li>
         </researchPrerequisites>
 		<comps>
 			<li Class="CompProperties_Forbiddable">
@@ -606,7 +608,7 @@
 		<statBases>
 			<MaxHitPoints>125000</MaxHitPoints>
 			<WorkToBuild>640</WorkToBuild>
-			<IncomingDamageFactor>0.01</IncomingDamageFactor>
+			<IncomingDamageFactor>0.1</IncomingDamageFactor>
             <DoorOpenSpeed>10</DoorOpenSpeed>
 		</statBases>
 		<building>
@@ -639,11 +641,10 @@
             </doorSupportGraphic>
 		</building>
 		<costList>
-			<Steel>30</Steel>
-			<WNA_Concrete>8</WNA_Concrete>
+			<WNA_Concrete>25</WNA_Concrete>
 		</costList>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_BaseDefense</li>
+        <researchPrerequisites>
+            <li>WNA_StandardArsenal</li>
         </researchPrerequisites>
 		<comps>
 			<li Class="CompProperties_Forbiddable">

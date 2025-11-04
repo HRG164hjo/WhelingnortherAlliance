@@ -51,5 +51,13 @@
             </li>
         </value>
     </Operation>
-
+    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThoughtDef[defName="AteFoodInappropriateForTitle" or defName="AnimaScream"]</xpath>
+        <value>
+            <nullifyingPrecepts MayRequire="ludeon.rimworld.ideology">
+                <li>WNA_P_Proselyte</li>
+            </nullifyingPrecepts>
+        </value>
+    </Operation>
 </Patch>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <BackstoryDef>
+        <defName>WNA_BC_UpliftedAnimal</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Uplifted</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>uplifted Animal</title>
+        <titleShort>uplifted</titleShort>
+        <description>[PAWN_nameDef] used to be an animal before [PAWN_pronoun] was reshaped to [PAWN_possessive] current form. [PAWN_nameDef] still keeps some memories and skills from [PAWN_possessive] animal ages, though some of them are no longer useful for [PAWN_possessive] current form.</description>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_UpliftedMech</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Uplifted</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>uplifted mechanoid</title>
+        <titleShort>uplifted</titleShort>
+        <description>[PAWN_nameDef] used to be a mechanoid controlled by a mechhive or some controller else, and was reshaped to [PAWN_possessive] current form. [PAWN_nameDef] still keeps some beneficial skills from [PAWN_possessive] past as a toaster.</description>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_UpliftedEntity</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Uplifted</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>uplifted entity</title>
+        <titleShort>uplifted</titleShort>
+        <description>[PAWN_nameDef] used to be a twisted creature created by some dark source, and was reshaped to [PAWN_possessive] current form. Though the twisted past hardly left something useful for [PAWN_nameDef], [PAWN_pronoun] still managed to found something from that past.</description>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_UpliftedPlant</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Uplifted</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>uplifted plant</title>
+        <titleShort>uplifted</titleShort>
+        <description>[PAWN_nameDef] used to be a plant, living a normal plant life until was reshaped to [PAWN_possessive] current form. It's hard to tell whether this past left something good or bad for [PAWN_nameDef].</description>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>WNA_BC_ClonedSoildier</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>cloned soildier</title>
+        <titleShort>cloned</titleShort>
+        <description>[PAWN_nameDef] was born in a clone vat as a clone soildier designed for battlefield and after-war rebuild. As a fruit of a high-quality clone soildier project, [PAWN_pronoun] has many pre-programmed knowledge and skills in [PAWN_possessive] head.</description>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>4</Melee>
+            <Medicine>4</Medicine>
+            <Construction>4</Construction>
+            <Crafting>4</Crafting>
+        </skillGains>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_Synthetic</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>synthetic humanlike</title>
+        <titleShort>synthetic</titleShort>
+        <description>[PAWN_nameDef] was a fruit of a synthetic human project, printed from raw non-organic material and brought to life in a factory. This past seems resulting some problems in [PAWN_possessive] head, as [PAWN_pronoun] is always having trouble understanding artworks.</description>
+        <workDisables>Artistic</workDisables>
+        <forcedTraits>
+            <WNA_Trait_Unshakable>0</WNA_Trait_Unshakable>
+        </forcedTraits>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_ThirdGenChild</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>third generation child</title>
+        <titleShort>third-gen</titleShort>
+        <description>[PAWN_nameDef]'s parents were residents under the shelter of Whelingnorther Alliance, [PAWN_nameDef] is also a resident under the shelter of Whelingnorther Alliance. Thanks to the protection ofWhelingnorther Alliance, nothing tragic happened to [PAWN_nameDef] during [PAWN_possessive] growth, but sadly there's also nothing memorable happened to [PAWN_objective] too.</description>
+    </BackstoryDef>
+    
+    <BackstoryDef>
+        <defName>WNA_BC_MidworldCivilian</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>midworld civilian</title>
+        <titleShort>revenger</titleShort>
+        <description>[PAWN_nameDef] lived a normal child life, had a normal family, entered a normal school, had normal friends, experienced no defficiency, and is positive about [PAWN_possessive] brilliant future.</description>
+        <forcedTraits>
+            <NaturalMood>1</NaturalMood>
+        </forcedTraits>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_MidworldRevenger</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>midworld revenger</title>
+        <titleShort>revenger</titleShort>
+        <description>[PAWN_nameDef] used to have a happy family, until external forced torn [PAWN_possessive] family apart. Since then [PAWN_nameDef] became a strange person. [PAWN_pronoun] know who [PAWN_possessive] enemy is, but curretnly [PAWN_pronoun] just unable to revenge.</description>
+        <workDisables>Social</workDisables>
+        <forcedTraits>
+            <Psychopath>0</Psychopath>
+        </forcedTraits>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_PeasantChild</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>peasant child</title>
+        <titleShort>peasant</titleShort>
+        <description>[PAWN_nameDef] had grown up in the fields, had to help [PAWN_possessive] family with farm work since a young age.</description>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_Student</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>student</title>
+        <titleShort>student</titleShort>
+        <description>[PAWN_nameDef] entered school when [PAWN_pronoun] was around 6. The most valuable knowledge [PAWN_pronoun] learned from school is how to learn.</description>
+        <workDisables>Social</workDisables>
+        <forcedTraits>
+            <FastLearner>0</FastLearner>
+        </forcedTraits>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_DeadChild</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>dead child</title>
+        <titleShort>deadchild</titleShort>
+        <description>No matter it's because war, famine, sickness or just irresponsible parents, [PAWN_nameDef] was dead. Luckily Whelingnorther Alliance found [PAWN_objective], brought [PAWN_objective] back and revived [PAWN_objective].</description>
+        <forcedTraits>
+            <NaturalMood>1</NaturalMood>
+        </forcedTraits>
+    </BackstoryDef>
+</Defs>

@@ -13,6 +13,9 @@
                 <li>PowerConduit</li>
             </linkFlags>
 		</graphicData>
+        <researchPrerequisites>
+            <li>WNA_SecretTech</li>
+        </researchPrerequisites>
 		<uiIconPath>karma</uiIconPath>
         <drawStyleCategory>Conduits</drawStyleCategory>
         <building>
@@ -52,8 +55,8 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_MatterTransformation</li>
+        <researchPrerequisites>
+            <li>WNA_SecretTech</li>
         </researchPrerequisites>
 		<size>(1,1)</size>
         <inspectorTabs>
@@ -81,6 +84,9 @@
 				<li>Custom6</li>
 			</linkFlags>
 		</graphicData>
+        <researchPrerequisites>
+            <li>WNA_SecretTech</li>
+        </researchPrerequisites>
         <drawStyleCategory>Defenses</drawStyleCategory>
 		<uiIconPath>buildings/atlas/wna_table_icon</uiIconPath>
         <surfaceType>Eat</surfaceType>
@@ -91,7 +97,6 @@
             </relatedBuildCommands>
 		</building>
 	</ThingDef>
-
     <ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_LinkSeat</defName>
 		<label>ivory seat</label>
@@ -104,6 +109,9 @@
 				<li>Custom7</li>
 			</linkFlags>
 		</graphicData>
+        <researchPrerequisites>
+            <li>WNA_SecretTech</li>
+        </researchPrerequisites>
         <drawStyleCategory>Defenses</drawStyleCategory>
 		<uiIconPath>buildings/atlas/wna_seat_icon</uiIconPath>
         <surfaceType>Item</surfaceType>
@@ -129,6 +137,9 @@
 				<li>Custom6</li>
 			</linkFlags>
 		</graphicData>
+        <researchPrerequisites>
+            <li>WNA_SecretTech</li>
+        </researchPrerequisites>
         <drawStyleCategory>Defenses</drawStyleCategory>
 		<uiIconPath>buildings/atlas/wna_shelf_icon</uiIconPath>
         <surfaceType>Item</surfaceType>
@@ -178,6 +189,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
             <drawRotated>false</drawRotated>
 		</graphicData>
+        <researchPrerequisites>
+            <li>WNA_SecretTech</li>
+        </researchPrerequisites>
         <statBases>
             <MeditationFocusStrength>8</MeditationFocusStrength>
         </statBases>
@@ -241,6 +255,9 @@
             <drawRotated>false</drawRotated>
             <color>(55,55,55,192)</color>
 		</graphicData>
+        <researchPrerequisites>
+            <li>WNA_SecretTech</li>
+        </researchPrerequisites>
         <statBases>
             <MeditationFocusStrength>8</MeditationFocusStrength>
         </statBases>
@@ -334,14 +351,14 @@
             <sowTag>Ground</sowTag>
         </building>
     </ThingDef>
-
+    
     <ThingDef ParentName="WNA_FurnitureBase">
-        <defName>WNA_WallSafe</defName>
-        <label>wall safe</label>
-        <description>A wall-mounted storage unit.</description>
-        <uiIconPath>buildings/wna_wallsafe/icon</uiIconPath>
+        <defName>WNA_LifeSupporter</defName>
+        <label>life suporter</label>
+        <description>A wall-mounted life support unit</description>
+        <uiIconPath>buildings/wna_lifesupporter/icon</uiIconPath>
         <graphicData>
-            <texPath>buildings/wna_wallsafe/wna_wallsafe</texPath>
+            <texPath>buildings/wna_lifesupporter/wna_lifesupporter</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
             <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
@@ -358,7 +375,66 @@
         </statBases>
         <costList/>
         <researchPrerequisites>
-            <li>StandardGravtech</li>
+            <li>WNA_CivilianTech</li>
+        </researchPrerequisites>
+        <rotatable>true</rotatable>
+        <tickerType>Rare</tickerType>
+        <passability>Standable</passability>
+        <building>
+            <isEdifice>false</isEdifice>
+            <isAttachment>true</isAttachment>
+            <expandHomeArea>false</expandHomeArea>
+        </building>
+        <placeWorkers>
+            <li>Placeworker_AttachedToWall</li>
+        </placeWorkers>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-10000</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_OxygenPusher" MayRequire="ludeon.rimworld.odyssey">
+                <requiresPower>true</requiresPower>
+                <airPerSecondPerHundredCells>1</airPerSecondPerHundredCells>
+            </li>
+            <li Class="WNA.ThingCompProp.CompHeatPusher">
+                <heatPushStandard>21</heatPushStandard>
+                <heatPushMult>21</heatPushMult>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>14</glowRadius>
+                <overlightRadius>14</overlightRadius>
+                <glowColor>(124,124,124,0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+        <defName>WNA_WallSafe</defName>
+        <label>wall safe</label>
+        <description>A wall-mounted storage unit.</description>
+        <uiIconPath>buildings/wna_wallsafe/icon</uiIconPath>
+        <graphicData>
+            <texPath>buildings/wna_wallsafe/wna_wallsafe</texPath>
+            <color>(255,255,255,255)</color>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+            <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+            <drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+            <drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+            <damageData>
+                <enabled>false</enabled>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <statBases>
+            <Mass>0.5</Mass>
+            <WorkToBuild>1500</WorkToBuild>
+        </statBases>
+        <costList/>
+        <researchPrerequisites>
+            <li>WNA_StandardArsenal</li>
         </researchPrerequisites>
         <rotatable>true</rotatable>
         <tickerType>Rare</tickerType>

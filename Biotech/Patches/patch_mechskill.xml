@@ -30,6 +30,17 @@
                     <xpath>Defs/ThingDef[defName="DMS_Mech_Lady"]/race/mechEnabledWorkTypes</xpath>
                     <value>
                         <li>WNAWork_Rite</li>
+                        <li>Smithing</li>
+                    </value>
+				</li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DMS_LabReactor"]/recipes</xpath>
+                    <value>
+	                    <li MayRequire="Oblitus.Carbon">Carbon_MakeChemfuelFromHaygrass</li>
+	                    <li MayRequire="Oblitus.Carbon">Carbon_MakeCarbonWeave</li>
+	                    <li MayRequire="Oblitus.Carbon">Carbon_MakeCarbonFiber</li>
+	                    <li MayRequire="Oblitus.Carbon">Carbon_MakeDiamond</li>
                     </value>
 				</li>
             </operations>
@@ -53,18 +64,15 @@
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="DMS_Mech_Armiman"]/race/mechEnabledWorkTypes</xpath>
                     <value>
+                        <li>WNAWork_Rite</li>
                         <li>Hunting</li>
+                        <li>Crafting</li>
                     </value>
 				</li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="DMS_Mech_Maiden"]/race/mechEnabledWorkTypes</xpath>
                     <value>
                         <li>Childcare</li>
-                    </value>
-				</li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="DMS_Mech_Maiden"]/race/mechEnabledWorkTypes</xpath>
-                    <value>
                         <li>WNAWork_Rite</li>
                     </value>
 				</li>
@@ -72,12 +80,6 @@
                     <xpath>Defs/ThingDef[defName="DMS_Mech_Maiden" or defName="DMS_Mech_BigSister" or defName="DMS_Mech_Armiman" or defName="DMS_Mech_Lady"]/modExtensions/li[@Class="Fortified.MechWeaponExtension"]/UsableTechLevels</xpath>
                     <value>
                         <li>Archotech</li>
-                    </value>
-				</li>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="DMS_Mech_Armiman"]/race/mechEnabledWorkTypes</xpath>
-                    <value>
-                        <li>Hunting</li>
                     </value>
 				</li>
             </operations>

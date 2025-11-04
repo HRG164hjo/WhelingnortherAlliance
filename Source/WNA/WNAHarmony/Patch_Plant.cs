@@ -11,7 +11,7 @@ namespace WNA.WNAHarmony
         private static readonly HashSet<string> terrainList = new HashSet<string>
         {
             "WNA_FocusSoil",
-            "WNA_ArtificialSoil"
+            "WNA_BridgeSoil"
         };
         private static readonly MethodInfo TargetMethod = AccessTools.Method(typeof(Plant), "CheckMakeLeafless", new System.Type[] { });
         [HarmonyPatch]
@@ -24,9 +24,7 @@ namespace WNA.WNAHarmony
 
                 TerrainDef terrain = __instance.Map.terrainGrid.TerrainAt(__instance.Position);
                 if (terrain != null && terrainList.Contains(terrain.defName))
-                {
                     return false;
-                }
                 return true;
             }
         }
@@ -38,9 +36,7 @@ namespace WNA.WNAHarmony
                 if (!__instance.Spawned) return;
                 TerrainDef terrain = __instance.Map.terrainGrid.TerrainAt(__instance.Position);
                 if (terrain != null && terrainList.Contains(terrain.defName))
-                {
                     __result = 0f;
-                }
             }
         }
         [HarmonyPatch(typeof(Plant), nameof(Plant.GrowthRate), MethodType.Getter)]
@@ -52,7 +48,7 @@ namespace WNA.WNAHarmony
                 TerrainDef terrain = __instance.Map.terrainGrid.TerrainAt(__instance.Position);
                 if (terrain != null && terrainList.Contains(terrain.defName))
                 {
-                    __result = terrain.fertility;
+                    __result += terrain.fertility;
                     return false;
                 }
                 return true;

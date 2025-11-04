@@ -5,8 +5,8 @@
         <defName>WNA_Voidseal</defName>
         <label>void seal</label>
         <description>Dark red runes drawn on black background, looks a little unsetting. Such seal can block pawns from passing.</description>
-        <texturePath>buildings/terrain/wna_seal</texturePath>
-		<natural>true</natural><!--<layerable>false</layerable>-->
+        <texturePath>terrains/wna_seal</texturePath>
+		<natural>true</natural>
         <constructEffect>ConstructWood</constructEffect>
         <fertility>0</fertility>
         <edgeType>Hard</edgeType>

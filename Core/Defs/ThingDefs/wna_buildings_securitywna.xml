@@ -17,6 +17,9 @@
             <turretBurstWarmupTime>0</turretBurstWarmupTime>
             <turretBurstCooldownTime>0.01</turretBurstCooldownTime>
         </building>
+        <researchPrerequisites>
+            <li>WNA_SecretTech</li>
+        </researchPrerequisites>
     </ThingDef>
     <ThingDef ParentName="WNA_TurrentWeaponBase">
         <defName>WNA_Turret_Pale_Gun</defName>
@@ -33,6 +36,7 @@
                 <muzzleFlashScale>18</muzzleFlashScale>
                 <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
                 <canGoWild>false</canGoWild>
+                <requireLineOfSight>false</requireLineOfSight>
                 <targetParams>
                     <canTargetLocations>false</canTargetLocations>
                     <canTargetBuildings>true</canTargetBuildings>
@@ -57,6 +61,7 @@
         <projectile>
             <damageDef>WNA_CastRange</damageDef>
             <damageAmountBase>150</damageAmountBase>
+            <flyOverhead>true</flyOverhead>
         </projectile>
     </ThingDef>
 
@@ -77,6 +82,9 @@
             <turretBurstWarmupTime>0</turretBurstWarmupTime>
             <turretBurstCooldownTime>1.6</turretBurstCooldownTime>
         </building>
+        <researchPrerequisites>
+            <li>WNA_SecretTech</li>
+        </researchPrerequisites>
     </ThingDef>
     <ThingDef ParentName="WNA_TurrentWeaponBase">
         <defName>WNA_Turret_Shatter_Gun</defName>
@@ -96,6 +104,7 @@
                 <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
                 <canGoWild>false</canGoWild>
                 <forcedMissRadius>1</forcedMissRadius>
+                <requireLineOfSight>false</requireLineOfSight>
                 <targetParams>
                     <canTargetLocations>false</canTargetLocations>
                     <canTargetBuildings>true</canTargetBuildings>

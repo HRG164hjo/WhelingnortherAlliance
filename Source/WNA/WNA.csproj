@@ -111,10 +111,11 @@
     <Compile Include="ThingCompProp\CompThingSelfHeal.cs" />
     <Compile Include="WNADefOf\WNAMainDefOf.cs" />
     <Compile Include="WNADefOf\WNASubDefOf.cs" />
+    <Compile Include="WNAHarmony\Patch_Breakout.cs" />
     <Compile Include="WNAHarmony\Patch_Caravan.cs" />
     <Compile Include="WNAHarmony\Patch_CompSpawner.cs" />
     <Compile Include="WNAHarmony\Patch_CompTransporter.cs" />
-    <Compile Include="WNAHarmony\Patch_JobMaditate.cs" />
+    <Compile Include="WNAHarmony\Patch_JobMeditate.cs" />
     <Compile Include="WNAHarmony\Patch_KillDownUtility.cs" />
     <Compile Include="WNAHarmony\Patch_CompRottable.cs" />
     <Compile Include="WNAHarmony\Patch_Explosion.cs" />

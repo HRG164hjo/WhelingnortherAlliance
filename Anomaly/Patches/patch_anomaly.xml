@@ -48,7 +48,6 @@
             <costList>
                 <WNA_Voidsteel>4</WNA_Voidsteel>
             </costList>
-            <!--<minTechLevelToBuild>Archotech</minTechLevelToBuild>-->
         </value>
     </Operation>
 
@@ -105,6 +104,15 @@
                 <maxSimultaneous>4</maxSimultaneous>
                 <maxDistance>10</maxDistance>
             </li>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThoughtDef[defName="AteTwistedMeat" or defName="VoidClosed" or defName="Chimera" or defName="PsychicRitualGuilt" or defName="VoidCuriosity" or defName="VoidCuriositySatisfied" or defName="BecameGhoul" or defName="SpokeToDisturbing" or defName="GhoulNegative" or defName="GhoulPositive" or defName="GrayPall" or defName="UnnaturalDarkness" or defName="HateChantDrone" or defName="HarbingerScream" or defName="SwallowedByDarkness" or defName="Voidsight" or defName="SpokeToDisturbingMood" or defName="DeadlifeDust" or defName="DeathRefusalSickness"]</xpath>
+        <value>
+            <nullifyingPrecepts MayRequire="ludeon.rimworld.ideology">
+                <li>WNA_P_Proselyte</li>
+            </nullifyingPrecepts>
         </value>
     </Operation>
 </Patch>

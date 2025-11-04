@@ -13,7 +13,6 @@
         <statBases>
             <MarketValue>40</MarketValue>
             <Nutrition>2</Nutrition>
-            <Mass>0.1</Mass>
         </statBases>
         <socialPropernessMatters>true</socialPropernessMatters>
         <ingestible>
@@ -25,38 +24,38 @@
             <tasteThought>WNA_AteMealPack</tasteThought>
             <ingestEffect>EatVegetarian</ingestEffect>
             <ingestSound>Meal_Eat</ingestSound>
-            <babiesCanIngest MayRequire="Ludeon.RimWorld.Biotech">true</babiesCanIngest>
+            <babiesCanIngest>true</babiesCanIngest>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_OffsetHemogen">
-                    <offset>1.0</offset>
+                    <offset>2.0</offset>
                 </li>
                 <li Class="IngestionOutcomeDoer_OffsetNeed">
                     <need>Mood</need>
-                    <offset>1.0</offset>
+                    <offset>2.0</offset>
                 </li>
                 <li Class="IngestionOutcomeDoer_OffsetNeed">
                     <need>Rest</need>
-                    <offset>1.0</offset>
+                    <offset>2.0</offset>
                 </li>
                 <li Class="IngestionOutcomeDoer_OffsetNeed">
                     <need>Joy</need>
-                    <offset>1.0</offset>
+                    <offset>2.0</offset>
                 </li>
                 <li Class="IngestionOutcomeDoer_OffsetNeed">
                     <need>Comfort</need>
-                    <offset>1.0</offset>
+                    <offset>2.0</offset>
                 </li>
                 <li MayRequire="ludeon.rimworld.biotech" Class="IngestionOutcomeDoer_OffsetNeed">
                     <need>Deathrest</need>
-                    <offset>1.0</offset>
+                    <offset>2.0</offset>
                 </li>
                 <li MayRequire="ludeon.rimworld.biotech" Class="IngestionOutcomeDoer_OffsetNeed">
                     <need>Play</need>
-                    <offset>1.0</offset>
+                    <offset>2.0</offset>
                 </li>
                 <li MayRequire="ludeon.rimworld.odyssey" Class="IngestionOutcomeDoer_Psilocap">
                     <chanceBreakdown>0</chanceBreakdown>
-                    <chanceInspiration>0.05</chanceInspiration>
+                    <chanceInspiration>0.2</chanceInspiration>
                 </li>
             </outcomeDoers>
         </ingestible>
@@ -80,7 +79,6 @@
             <MarketValue>50</MarketValue>
             <MedicalPotency>255</MedicalPotency>
             <MedicalQualityMax>999999</MedicalQualityMax>
-            <Mass>0.1</Mass>
         </statBases>
         <comps>
             <li Class="CompProperties_Usable">

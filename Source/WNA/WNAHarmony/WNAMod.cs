@@ -16,7 +16,7 @@ namespace WNA.WNAHarmony
                 new System.Type[] { typeof(Verse.AI.JobCondition) }
             );
             MethodInfo postfix = HarmonyLib.AccessTools.Method(
-                typeof(Patch_JobMaditate.JobDriver_Meditate_EndJobWith),
+                typeof(Patch_JobMeditate.JobDriver_Meditate_EndJobWith),
                 "Postfix"
             );
             if (original != null && postfix != null)

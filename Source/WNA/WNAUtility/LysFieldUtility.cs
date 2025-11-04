@@ -2,34 +2,48 @@
 using RimWorld;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Verse;
 using WNA.DMExtension;
+using WNA.WNADefOf;
 
 namespace WNA.WNAUtility
 {
     public static class LysisFieldUtility
     {
+        private static bool spreading = false;
         public static void SpreadLysisField(Map map, IntVec3 center, int sourceLevel)
         {
             if (map == null || sourceLevel <= 0) return;
-
-            int newLevel = (int)Math.Ceiling(sourceLevel * 0.5f);
-            float radius = 4.9f;
-
-            foreach (var cell in GenRadial.RadialCellsAround(center, radius, true))
+            if (spreading) return;
+            spreading = true;
+            try
             {
-                if (!cell.InBounds(map)) continue;
-                List<Thing> things = cell.GetThingList(map);
-                if (things == null || things.Count == 0) continue;
-
-                foreach (var t in things)
+                int newLevel = (int)Math.Ceiling(sourceLevel * 0.5f);
+                float radius = 4.9f + (float)Math.Sqrt(sourceLevel);
+                float scale = Mathf.Clamp01(sourceLevel / 30f);
+                FleckMaker.Static(center, map, FleckDefOf.ExplosionFlash, scale);
+                foreach (var cell in GenRadial.RadialCellsAround(center, radius, true))
                 {
-                    if (t == null || t.Destroyed) continue;
-                    if (t.def.category == ThingCategory.Building && t.def.passability == Traversability.Impassable)
-                        continue;
-                    LysField_GameComp.Instance?.AddOrUpdateField(t, newLevel, 90);
+                    if (!cell.InBounds(map)) continue;
+                    var things = cell.GetThingList(map);
+                    if (things == null || things.Count == 0) continue;
+                    foreach (var t in things.ToList())
+                    {
+                        if (t == null || t.Destroyed) continue;
+                        if (!t.def.destroyable) continue;
+                        TechnoConfig cfg = TechnoConfig.Get(t.def);
+                        if (cfg != null && cfg.immuneToRadiation == true) continue;
+                        LysField_GameComp.Instance?.AddOrUpdateField(t, newLevel, 90);
+                        DamageInfo dinfo = new DamageInfo(WNAMainDefOf.WNA_LysField, sourceLevel, float.MaxValue);
+                        t.TakeDamage(dinfo);
+                    }
                 }
+            }
+            finally
+            {
+                spreading = false;
             }
         }
         public static int GetLysisLevel(Thing thing)
@@ -58,23 +72,16 @@ namespace WNA.WNAUtility
                 if (__instance.MapHeld != null) __instance.Destroy(DestroyMode.KillFinalize);
         }
     }
-    [HarmonyPatch(typeof(Thing), "Destroy")]
-    public static class Patch_Thing_Destroy
+    [HarmonyPatch(typeof(Thing), "Kill")]
+    public static class Patch_Thing_Kill
     {
-        static void Postfix(Thing __instance, DestroyMode mode)
+        static void Postfix(Thing __instance)
         {
             if (__instance == null || __instance.MapHeld == null) return;
             var manager = LysField_GameComp.Instance;
             int level = manager?.GetLevel(__instance) ?? 0;
             if (level > 0)
-            {
-                float intensity = Mathf.Clamp01(level / 30f);
-                float scale = 1.5f + 4f * intensity;
-                FleckMaker.Static(__instance.PositionHeld, __instance.MapHeld, FleckDefOf.ExplosionFlash, scale);
-                FleckMaker.ThrowSmoke(__instance.DrawPos, __instance.MapHeld, 0.8f + 1.2f * intensity);
-                manager.Spread(__instance.MapHeld, __instance.PositionHeld, level);
-                manager.Remove(__instance);
-            }
+                LysisFieldUtility.SpreadLysisField(__instance.MapHeld, __instance.PositionHeld, level);
         }
     }
 }

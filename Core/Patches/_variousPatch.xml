@@ -25,4 +25,34 @@
         </match>
     </Operation>
     
+    <Operation Class="PatchOperationInsert">
+        <xpath>Defs/ThingDef[comps]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="ToolCabinet"]</xpath>
+        <order>Append</order>
+        <value>
+            <li>WNA_AssistCabinet</li>
+            <li>WNA_Duplicator</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="FueledStove" or defName="ElectricStove" or defName="Brewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="FueledStove" or defName="ElectricStove" or defName="Brewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+            <value>
+                <li>WNA_AssistCabinet</li>
+                <li>WNA_Duplicator</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="FueledStove" or defName="ElectricStove" or defName="Brewery"]/comps</xpath>
+            <value>
+                <li Class="CompProperties_AffectedByFacilities">
+                    <linkableFacilities>
+                        <li>WNA_AssistCabinet</li>
+                        <li>WNA_Duplicator</li>
+                    </linkableFacilities>
+                </li>
+            </value>
+        </nomatch>
+    </Operation>
+    
 </Patch>

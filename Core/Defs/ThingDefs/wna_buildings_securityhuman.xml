@@ -20,6 +20,45 @@
         <designationCategory>Security</designationCategory>
     </ThingDef>
 
+    <!---->
+	<ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_SpikeTrap</defName>
+		<label>spike trap</label>
+		<description>Several blades half-burried underground with a set of specially designed trigger. If some careless person steps on it, the blades will teach this person an unforgettable lesson - sometimes a last lesson in their life. The heavier this trap is, the more deadly it is.</description>
+		<designationCategory>Security</designationCategory>
+		<thingClass>WNA.ThingClass.SpikeTrap</thingClass>
+		<pathCost>0</pathCost>
+		<graphicData>
+			<texPath>buildings/security/wna_spiketrap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<drawStyleCategory>Floors</drawStyleCategory>
+		<statBases>
+			<Mass>2.5</Mass>
+			<WorkToBuild>800</WorkToBuild>
+			<Beauty>0</Beauty>
+			<Cleanliness>0</Cleanliness>
+			<TrapMeleeDamage>100</TrapMeleeDamage>
+			<TrapSpringChance>1.0</TrapSpringChance>
+			<MeditationFocusStrength>0</MeditationFocusStrength>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<building>
+			<isTrap>true</isTrap>
+			<trapDestroyOnSpring>true</trapDestroyOnSpring>
+			<trapDamageCategory>Sharp</trapDamageCategory>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+	</ThingDef>
+
+    <!---->
     <ThingDef ParentName="WNA_HumanTurretBase">
         <defName>WNA_SentryGun</defName>
         <label>"scorpion"sentry gun</label>
@@ -49,6 +88,9 @@
             <combatPower>15</combatPower>
             <ai_combatDangerous>true</ai_combatDangerous>
         </building>
+        <researchPrerequisites>
+            <li>WNA_StandardArsenal</li>
+        </researchPrerequisites>
     </ThingDef>
     <ThingDef ParentName="WNA_TurrentWeaponBase">
         <defName>WNA_SentryGun_Gun</defName>
@@ -114,6 +156,9 @@
             <combatPower>25</combatPower>
             <ai_combatDangerous>true</ai_combatDangerous>
         </building>
+        <researchPrerequisites>
+            <li>WNA_StandardArsenal</li>
+        </researchPrerequisites>
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
@@ -225,6 +270,10 @@
             </li>
         </comps>
         <designationCategory>Security</designationCategory>
+        <researchPrerequisites>
+            <li>WNA_StandardArsenal</li>
+            <li>WNA_ParticleArmory</li>
+        </researchPrerequisites>
 	</ThingDef>
 
 </Defs>

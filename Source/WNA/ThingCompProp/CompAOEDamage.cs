@@ -58,13 +58,8 @@ namespace WNA.ThingCompProp
                 {
                     if (Props.affectRoof) RemoveRoofs();
                     if (Props.affectArea)
-                    {
                         foreach (var target in cachedTargets) DoEffect(target);
-                    }
-                    else
-                    {
-                        if (cachedTargets.Count > 0 && cachedTargets.TryRandomElement(out Thing target)) DoEffect(target);
-                    }
+                    else if(cachedTargets.Count > 0 && cachedTargets.TryRandomElement(out Thing target)) DoEffect(target);
                     nextTickEffect = NextTickEffect;
                 }
             }
@@ -87,7 +82,8 @@ namespace WNA.ThingCompProp
         {
             if (thing.Destroyed) return;
             if (thing is Pawn pawn && pawn.Dead) return;
-            var dinfo = new DamageInfo(Props.damageDef, Props.damage, armorPenetration: Props.ap, instigator: parent);
+            DamageInfo dinfo = new DamageInfo(Props.damageDef, Props.damage, Props.ap,
+                -1, parent, null, parent.def, DamageInfo.SourceCategory.ThingOrUnknown);
             thing.TakeDamage(dinfo);
         }
         private void RemoveRoofs()

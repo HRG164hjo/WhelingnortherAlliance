@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
+using WNA.DMExtension;
 
 namespace WNA.WNAUtility
 {
@@ -55,6 +56,8 @@ namespace WNA.WNAUtility
         {
             if (thing == null || thing.Destroyed) return;
             if (!thing.def.isSaveable) return;
+            TechnoConfig cfg = TechnoConfig.Get(thing.def);
+            if (cfg != null && cfg.immuneToRadiation == true) return;
             if (!active.TryGetValue(thing, out var data))
             {
                 data = new LysisFieldData(addLevel, addDuration);
@@ -65,6 +68,9 @@ namespace WNA.WNAUtility
                 data.level = Math.Min(data.level + addLevel, 31);
                 data.duration = Math.Max(data.duration, addDuration);
             }
+            int lvl = GetLevel(thing);
+            if (lvl >= 31 && !thing.Destroyed)
+                thing.Kill();
         }
         public int GetLevel(Thing thing)
         {
@@ -77,25 +83,6 @@ namespace WNA.WNAUtility
         {
             if (thing == null) return;
             active.Remove(thing);
-        }
-        public void Spread(Map map, IntVec3 center, int sourceLevel)
-        {
-            if (map == null || sourceLevel <= 0) return;
-            int newLevel = (int)Math.Ceiling(sourceLevel * 0.5f);
-            float radius = 5f;
-            foreach (var cell in GenRadial.RadialCellsAround(center, radius, true))
-            {
-                if (!cell.InBounds(map)) continue;
-                foreach (var t in cell.GetThingList(map))
-                {
-                    if (t == null || t.Destroyed) continue;
-                    if (!t.def.destroyable) continue;
-                    AddOrUpdateField(t, newLevel, 90);
-                    int lvl = GetLevel(t);
-                    if (lvl >= 31 && !t.Destroyed)
-                        t.Destroy(DestroyMode.KillFinalize);
-                }
-            }
         }
         public override void ExposeData()
         {

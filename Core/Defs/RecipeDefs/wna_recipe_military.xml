@@ -46,7 +46,7 @@
         <recipeUsers>
 	        <li>FabricationBench</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -80,7 +80,7 @@
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeBaseboardBulk</defName>
@@ -113,7 +113,7 @@
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -174,7 +174,7 @@
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -229,7 +229,7 @@
 	        <li>ElectricSmelter</li>
 	        <li>ElectricCrematorium</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeConcreteToo</defName>
@@ -295,7 +295,7 @@
 	        <li>ElectricSmelter</li>
 	        <li>ElectricCrematorium</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -347,7 +347,7 @@
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -392,7 +392,7 @@
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeDesolisiumToo</defName>
@@ -448,6 +448,6 @@
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
     </RecipeDef>
 </Defs>

@@ -1,4 +1,5 @@
 ﻿using Verse;
+using WNA.WNAUtility;
 
 namespace WNA.Damager
 {
@@ -13,8 +14,10 @@ namespace WNA.Damager
             var result = base.Apply(dinfo, thing);
             if (thing != null && thing.MapHeld != null)
             {
-                var manager = WNAUtility.LysField_GameComp.Instance;
+                var manager = LysField_GameComp.Instance;
                 manager?.AddOrUpdateField(thing, 1, 90);
+                int lvl = manager.GetLevel(thing);
+                LysisFieldUtility.SpreadLysisField(thing.Map, thing.Position, lvl);
             }
             return result;
         }

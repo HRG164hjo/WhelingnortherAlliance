@@ -7,9 +7,8 @@
             <deityPresets>
                 <li>
                     <nameType>
-                        <name> </name>
-                        <type> </type>
-                        <!-- yes there's nothing for "name" and "type" -->
+                        <name/>
+                        <type/>
                     </nameType>
                     <gender>None</gender>
                     <iconPath>inv</iconPath>
@@ -79,5 +78,14 @@
                 <li>Meme_WNA_Ideo</li>
             </value>
 	    </match>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThoughtDef[defName="AteNonFungusPlant_Despised" or defName="AteNonFungusMealWithPlants_Despised" or defName="AteFungus_Despised" or defName="AteFungusAsIngredient_Despised"]</xpath>
+        <value>
+            <nullifyingPrecepts MayRequire="ludeon.rimworld.ideology">
+                <li>WNA_P_Proselyte</li>
+            </nullifyingPrecepts>
+        </value>
     </Operation>
 </Patch>

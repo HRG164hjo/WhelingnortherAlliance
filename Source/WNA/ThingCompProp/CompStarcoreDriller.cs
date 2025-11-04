@@ -73,7 +73,7 @@ namespace WNA.ThingCompProp
                 : Props.autoDrillEfficiency * 1f;
             float num = speed * delta;
             portionProgress += num;
-            portionYieldPct += num * (driller?.GetStatValue(StatDefOf.MiningYield) ?? 1f) / Props.workPerPortion;
+            portionYieldPct += num * (driller?.GetStatValue(StatDefOf.MiningYield) ?? 1f);
             lastUsedTick = Find.TickManager.TicksGame;
             if (portionProgress > Props.workPerPortion)
             {
@@ -86,7 +86,7 @@ namespace WNA.ThingCompProp
         {
             ThingDef resDef = selectedResource ?? GetDefaultResource();
             if (resDef == null) return;
-            int num = resDef.deepCountPerPortion > 0 ? resDef.deepCountPerPortion : 30;
+            int num = resDef.deepCountPerPortion > 0 ? Mathf.Max(resDef.deepCountPerPortion, 30) : 30;
             int stackCount = Mathf.Max(1, GenMath.RoundRandom(num * yieldPct));
             Thing thing = ThingMaker.MakeThing(resDef);
             thing.stackCount = stackCount;
@@ -100,8 +100,8 @@ namespace WNA.ThingCompProp
                 var rock = DeepDrillUtility.RockForTerrain(map.terrainGrid.BaseTerrainAt(parent.Position));
                 if (rock != null) return rock.building.mineableThing;
             }
-            return WNAMainDefOf.WNA_Quicklime;
-            /*DeepDrillUtility.Rocks.RandomElement().building.mineableThing;*/
+            return DeepDrillUtility.Rocks.RandomElement().building.mineableThing;
+            /*WNAMainDefOf.WNA_Quicklime*/
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {

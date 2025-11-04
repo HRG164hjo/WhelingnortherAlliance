@@ -72,5 +72,22 @@ namespace WNA.WNAHarmony
                 }
             }
         }
+        [HarmonyPatch(typeof(CompTransporter))]
+        [HarmonyPatch("PostExposeData")]
+        public static class CompTransporter_PostExposeData_Fix
+        {
+            public static void Prefix(CompTransporter __instance)
+            {
+                if (Scribe.mode == LoadSaveMode.Saving)
+                {
+                    List<TransferableOneWay> leftToLoad = __instance.leftToLoad;
+                    if (leftToLoad != null)
+                    {
+                        leftToLoad.RemoveAll((TransferableOneWay t) => t == null);
+                        leftToLoad.RemoveAll((TransferableOneWay t) => !t.HasAnyThing);
+                    }
+                }
+            }
+        }
     }
 }

@@ -2,6 +2,7 @@
 using RimWorld;
 using System;
 using Verse;
+using WNA.WNADefOf;
 
 namespace WNA.WNAHarmony
 {
@@ -13,7 +14,9 @@ namespace WNA.WNAHarmony
         {
             public static void Postfix(ref float __result, Verb ownerVerb, Pawn attacker)
             {
-                if (attacker == null || ownerVerb.EquipmentSource == null)
+                if (!(attacker.Faction.def == WNAMainDefOf.WNA_FactionWNA ||
+                    (attacker.Faction == Faction.OfPlayer && WNAMainDefOf.WNA_TheEnlightment.IsFinished)) ||
+                    ownerVerb.EquipmentSource == null)
                     return;
                 ThingDef weaponDef = ownerVerb.EquipmentSource.def;
                 if (weaponDef.weaponTags == null || !weaponDef.weaponTags.Contains("Tag_WNACivilian"))

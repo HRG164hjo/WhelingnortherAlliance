@@ -81,6 +81,7 @@
             <statFactors>
                 <MaxHitPoints>25</MaxHitPoints>
                 <DoorOpenSpeed>1.5</DoorOpenSpeed>
+                <IncomingDamageFactor>0.1</IncomingDamageFactor>
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
@@ -114,6 +115,7 @@
             <statFactors>
                 <MaxHitPoints>225</MaxHitPoints>
                 <DoorOpenSpeed>1.5</DoorOpenSpeed>
+                <IncomingDamageFactor>0.1</IncomingDamageFactor>
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
@@ -144,7 +146,7 @@
                 <li>Metallic</li>
             </categories>
             <appearance>Bricks</appearance>
-            <color>(94,94,94)</color>
+            <color>(86,88,94)</color>
             <statOffsets>
                 <Beauty>4</Beauty>
             </statOffsets>
@@ -152,6 +154,7 @@
                 <MaxHitPoints>40</MaxHitPoints>
                 <WorkToMake>2.5</WorkToMake>
                 <WorkToBuild>2.5</WorkToBuild>
+                <IncomingDamageFactor>0.1</IncomingDamageFactor>
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
@@ -189,6 +192,7 @@
                 <Beauty>1.5</Beauty>
                 <WorkToMake>0.75</WorkToMake>
                 <WorkToBuild>0.75</WorkToBuild>
+                <IncomingDamageFactor>0.1</IncomingDamageFactor>
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
@@ -228,6 +232,7 @@
                 <Mass>0.1</Mass>
                 <WorkToMake>1.2</WorkToMake>
                 <WorkToBuild>1.2</WorkToBuild>
+                <IncomingDamageFactor>0</IncomingDamageFactor>
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
@@ -259,6 +264,7 @@
             <statFactors>
                 <MaxHitPoints>15000</MaxHitPoints>
                 <Beauty>5</Beauty>
+                <IncomingDamageFactor>0</IncomingDamageFactor>
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
@@ -284,7 +290,7 @@
             <statFactors>
                 <MaxHitPoints>5</MaxHitPoints>
                 <Beauty>5</Beauty>
-                <Mass>0.1</Mass>
+                <Mass>0.5</Mass>
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
@@ -319,6 +325,7 @@
                 <Beauty>10</Beauty>
                 <WorkToMake>10</WorkToMake>
                 <WorkToBuild>10</WorkToBuild>
+                <IncomingDamageFactor>0</IncomingDamageFactor>
             </statFactors>
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>

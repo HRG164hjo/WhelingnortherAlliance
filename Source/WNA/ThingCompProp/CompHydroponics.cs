@@ -183,14 +183,14 @@ namespace WNA.ThingCompProp
         public override void CompTick()
         {
             base.CompTick();
-            if (Find.TickManager.TicksGame % 240 != 0) return;
+            if (Find.TickManager.TicksGame % 60 != 0) return;
 
             if (SelectedCrop != null)
             {
                 float currentGrowthFactor = GetCurrentGrowthFactor();
                 if (currentGrowthFactor > 0)
                 {
-                    TicksToSpawn = Math.Max(0, TicksToSpawn - (int)(240 * currentGrowthFactor));
+                    TicksToSpawn = Math.Max(0, TicksToSpawn - (int)(60 * currentGrowthFactor));
                 }
                 if (TicksToSpawn <= 0)
                 {

@@ -48,7 +48,7 @@
             </layers>
         </apparel>
         <recipeMaker>
-            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Machining</soundWorking>
@@ -71,6 +71,24 @@
 		<modExtensions>
 			<li Class="WNA.DMExtension.MassCapacity">
 				<massCapacity>60000</massCapacity>
+			</li>
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
+				<preventDowning>true</preventDowning>
+				<preventBleeding>true</preventBleeding>
+                <pawnCapacityMinLevels>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <minLevel>0.6</minLevel>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <minLevel>0.4</minLevel>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <minLevel>0.6</minLevel>
+                    </li>
+                </pawnCapacityMinLevels>
 			</li>
 		</modExtensions>
     </ThingDef>
@@ -113,7 +131,7 @@
             <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
         </apparel>
         <recipeMaker>
-            <researchPrerequisite>WNA_RebelArsenal</researchPrerequisite>
+            <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
                 <Crafting>6</Crafting>
@@ -165,7 +183,7 @@
             </layers>
         </apparel>
         <recipeMaker>
-            <researchPrerequisite>WNA_RebelArsenal</researchPrerequisite>
+            <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
                 <Crafting>6</Crafting>
@@ -218,7 +236,7 @@
             <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
         </apparel>
         <recipeMaker>
-            <researchPrerequisite>WNA_NexusLegion</researchPrerequisite>
+            <researchPrerequisite>WNA_AdvancedArsenal</researchPrerequisite>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
                 <Crafting>10</Crafting>
@@ -269,7 +287,7 @@
             </layers>
         </apparel>
         <recipeMaker>
-            <researchPrerequisite>WNA_NexusLegion</researchPrerequisite>
+            <researchPrerequisite>WNA_AdvancedArsenal</researchPrerequisite>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
                 <Crafting>10</Crafting>
@@ -418,7 +436,7 @@
         </recipeMaker>
     </ThingDef>-->
     
-    <ThingDef ParentName="WNA_BackpackBase">
+    <ThingDef ParentName="WNA_UtilityBase">
         <defName>WNA_Toolkit</defName>
         <label>tool kit</label>
         <description>A pack containing multiple tools for complex tasks under various circumstances, from simple repairing and mending to emergent medical assistance.</description>
@@ -448,7 +466,7 @@
             <MedicalTendQuality>5</MedicalTendQuality>
         </equippedStatOffsets>
         <recipeMaker>
-            <researchPrerequisite>WNA_RebelTools</researchPrerequisite>
+            <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
             <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
@@ -482,11 +500,11 @@
             <ComponentIndustrial>3</ComponentIndustrial>
 	    </costList>
         <equippedStatOffsets>
-            <AimingDelayFactor>-0.9</AimingDelayFactor>
+            <AimingDelayFactor>-1</AimingDelayFactor>
             <RangedCooldownFactor>-1</RangedCooldownFactor>
         </equippedStatOffsets>
         <recipeMaker>
-            <researchPrerequisite>WNA_RebelTools</researchPrerequisite>
+            <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
             <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
@@ -496,6 +514,13 @@
                 <li>TableMachining</li>
             </recipeUsers>
         </recipeMaker>
+        <modExtensions>
+            <li Class="VEF.Apparels.ApparelExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+				<equippedStatFactors>
+                    <VEF_VerbRangeFactor>2</VEF_VerbRangeFactor>
+				</equippedStatFactors>
+			</li>
+        </modExtensions>
     </ThingDef>
 	
     <ThingDef ParentName="WNA_BackpackBase">
@@ -521,7 +546,7 @@
             </li>
 		</comps>
         <recipeMaker>
-            <researchPrerequisite>WNA_RebelShield</researchPrerequisite>
+            <researchPrerequisite>WNA_FieldAnalysis</researchPrerequisite>
             <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
@@ -582,7 +607,10 @@
             </li>
 		</comps>
         <recipeMaker>
-            <researchPrerequisite>WNA_StrikeLegion</researchPrerequisite>
+            <researchPrerequisites>
+                <li>WNA_FieldAnalysis</li>
+                <li>WNA_AdvancedArsenal</li>
+            </researchPrerequisites>
             <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
@@ -592,6 +620,11 @@
                 <li>FabricationBench</li>
             </recipeUsers>
         </recipeMaker>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <!--<ThingDef ParentName="WNA_UtilityBase">
@@ -605,7 +638,7 @@
             <ComponentSpacer>4</ComponentSpacer>
 	    </costList>
         <recipeMaker>
-            <researchPrerequisite/>
+            <researchPrerequisite>WNA_LysisField</researchPrerequisite>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Machining</soundWorking>
@@ -669,7 +702,7 @@
             <PsychicAmplifier>1</PsychicAmplifier>
 	    </costList>
         <recipeMaker>
-            <researchPrerequisite/>
+            <researchPrerequisite>WNA_PsyhicDawn</researchPrerequisite>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Machining</soundWorking>
@@ -691,7 +724,7 @@
             <WNA_Focus>1</WNA_Focus>
 	    </costList>
         <recipeMaker>
-            <researchPrerequisite/>
+            <researchPrerequisite>WNA_Parasomnia</researchPrerequisite>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Machining</soundWorking>
@@ -726,7 +759,7 @@
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
         </equippedStatOffsets>
         <recipeMaker>
-            <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
+            <researchPrerequisite>WNA_CeremonyEquipment</researchPrerequisite>
             <workSkill>Intellectual</workSkill>
             <skillRequirements>
                 <Intellectual>12</Intellectual>
@@ -776,7 +809,7 @@
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
         </equippedStatOffsets>
         <recipeMaker>
-            <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
+            <researchPrerequisite>WNA_CeremonyEquipment</researchPrerequisite>
             <workSkill>Intellectual</workSkill>
             <skillRequirements>
                 <Intellectual>12</Intellectual>
@@ -841,7 +874,7 @@
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
         </equippedStatOffsets>
         <recipeMaker>
-            <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
+            <researchPrerequisite>WNA_CeremonyEquipment</researchPrerequisite>
             <workSkill>Intellectual</workSkill>
             <skillRequirements>
                 <Intellectual>12</Intellectual>
@@ -884,6 +917,26 @@
             <li Class="WNA.DMExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
+				<preventDowning>true</preventDowning>
+				<preventBleeding>true</preventBleeding>
+                <preventKilling>true</preventKilling>
+                <preventKillingUntilHealthHPPercentage>0.01</preventKillingUntilHealthHPPercentage>
+                <pawnCapacityMinLevels>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <minLevel>2</minLevel>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <minLevel>2</minLevel>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <minLevel>2</minLevel>
+                    </li>
+                </pawnCapacityMinLevels>
+			</li>
         </modExtensions>
     </ThingDef>
     <ThingDef ParentName="WNA_UtilityBase">
@@ -915,7 +968,7 @@
             </li>
         </comps>
         <recipeMaker>
-            <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
+            <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
             <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Intellectual</workSkill>
             <skillRequirements>

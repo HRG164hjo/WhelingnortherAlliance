@@ -269,7 +269,7 @@
                     <threshold>3</threshold>
                     <isSeverityRadLevel>true</isSeverityRadLevel>
                     <isSeverityRadRadius>true</isSeverityRadRadius>
-                    <radRadiusFactor>0.2</radRadiusFactor>
+                    <radRadiusFactor>0.6</radRadiusFactor>
                 </config>
             </li>
         </comps>
@@ -351,6 +351,34 @@
                         <canAffectAnyLivePart>true</canAffectAnyLivePart>
                     </li>
                 </hediffGivers>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef>
+        <defName>WNA_RadRing</defName>
+        <label>radiation ring</label>
+        <description>Acute radiation build-up is making this poor little thing emitting radiation field.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(200,100,0)</defaultLabelColor>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>200~300</disappearsAfterTicks>
+            </li>
+            <li Class="WNA.HediffCompProp.CompRadFieldSpreader">
+                <config>
+                    <radLevel>300</radLevel>
+                    <radius>7.9</radius>
+                    <edgeFactor>0.34</edgeFactor>
+                    <threshold>0</threshold>
+                    <radLevelDelay>27</radLevelDelay>
+                </config>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <vomitMtbDays>0.041667</vomitMtbDays>
             </li>
         </stages>
     </HediffDef>

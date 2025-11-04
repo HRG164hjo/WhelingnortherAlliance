@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PipeSystem.ProcessDef Name="WNA_VECookerBillsMain" Abstract="true">
+		<spawnOnInteractionCell>true</spawnOnInteractionCell>
+		<autoExtract>true</autoExtract>
+		<useIngredients>true</useIngredients>
+		<transfersIngredientList>true</transfersIngredientList>
+		<priorityInBillList>0</priorityInBillList>
+		<noPowerDestroysProgress>false</noPowerDestroysProgress>
+		<noPowerDestroysMessage>WNA_KEY_Facility_Need_Power</noPowerDestroysMessage>
+		<noPowerDestroysInitialWarning>WNA_KEY_Facility_Process_Failure</noPowerDestroysInitialWarning>
+		<rareTicksToDestroy>2000</rareTicksToDestroy>
+		<destroyIngredientsOnStart>true</destroyIngredientsOnStart>
+	</PipeSystem.ProcessDef>
+
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain">
+		<defName>WNA_Hay_Chemfuel</defName>
+		<label>Process hay for chemfuel</label>
+		<description>Turn 75 hay into 25 chemfuel.</description>
+		<ingredients>
+			<li>
+				<thing>Hay</thing>
+				<countNeeded>75</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>Chemfuel</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>40000</ticks>
+	</PipeSystem.ProcessDef>
+    <PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain">
+		<defName>WNA_PsychoidLeaves_Yayo</defName>
+		<label>Process psychoid leaves for yayo</label>
+		<description>Turn 75 psychoid leaves into 25 yayo.</description>
+		<ingredients>
+			<li>
+				<thing>PsychoidLeaves</thing>
+				<countNeeded>75</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>Yayo</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>40000</ticks>
+	</PipeSystem.ProcessDef>
+    <PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain">
+		<defName>WNA_SmokeleafLeaves_SmokeleafJoint</defName>
+		<label>Process smokeleaf leaves for smokeleaf joint</label>
+		<description>Turn 75 smokeleaf leaves into 25 smokeleaf joint.</description>
+		<ingredients>
+			<li>
+				<thing>SmokeleafLeaves</thing>
+				<countNeeded>75</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>SmokeleafJoint</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>250</ticks>
+	</PipeSystem.ProcessDef>
+    <PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain">
+		<defName>WNA_WoodLog_Neutroamine</defName>
+		<label>Process wood for neutroamine</label>
+		<description>Turn 50 wood into 20 neutroamine.</description>
+		<ingredients>
+			<li>
+				<thing>WoodLog</thing>
+				<countNeeded>50</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>Neutroamine</thing>
+				<count>20</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+    <PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain">
+		<defName>WNA_Wort_Beer</defName>
+		<label>Process wort for beer</label>
+		<description>Turn 25 wort into 25 beer.</description>
+		<ingredients>
+			<li>
+				<thing>Wort</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>Beer</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sarg.rimbees">
+		<defName>WNA_RB_Must_Mead</defName>
+		<label>Process mead must for mead</label>
+		<description>Turn 25 mead must into 25 mead.</description>
+		<ingredients>
+			<li>
+				<thing>RB_Must</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>RB_Mead</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="romyashi.perfumes">
+		<defName>WNA_Romy_AromaflowerPetals_AncientPerfume</defName>
+		<label>Process flower for perfume</label>
+		<description>Turn 25 flower petals into 15 ancient perfume.</description>
+		<ingredients>
+			<li>
+				<thing>Romy_AromaflowerPetals</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>Romy_AncientPerfume</thing>
+				<count>15</count>
+			</li>
+		</results>
+		<ticks>2000</ticks>
+	</PipeSystem.ProcessDef>
+	
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="tidal.grainsandbrewing">
+		<defName>WNA_GAB_Baiju</defName>
+		<label>Process baijiu mash for baijiu</label>
+		<description>Turn 25 baijiu mash into 25 baijiu.</description>
+		<ingredients>
+			<li>
+				<thing>GAB_BaijuMash</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>GAB_Baiju</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="tidal.grainsandbrewing">
+		<defName>WNA_GAB_Ether</defName>
+		<label>Process ethanol for ether</label>
+		<description>Turn 25 ethanol into 25 ether.</description>
+		<ingredients>
+			<li>
+				<thing>GAB_Ethanol</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>GAB_Ether</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="tidal.grainsandbrewing">
+		<defName>WNA_GAB_Raksi</defName>
+		<label>Process raksi mash for raksi</label>
+		<description>Turn 25 raksi mash into 25 raksi.</description>
+		<ingredients>
+			<li>
+				<thing>GAB_RaksiMash</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>GAB_Raksi</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="tidal.grainsandbrewing">
+		<defName>WNA_GAB_Kvass</defName>
+		<label>Process unfermented kvass for kvass</label>
+		<description>Turn 25 unfermented kvass into 25 kvass.</description>
+		<ingredients>
+			<li>
+				<thing>GAB_UnfermentedKvass</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>GAB_Kvass</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="tidal.grainsandbrewing">
+		<defName>WNA_GAB_Vinegar</defName>
+		<label>Process vinegar must for vinegar</label>
+		<description>Turn 25 vinegar must into 25 vinegar.</description>
+		<ingredients>
+			<li>
+				<thing>GAB_VinegarMust</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>GAB_Vinegar</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sirmashedpotato.ashlands">
+		<defName>WNA_Mashed_DagothBrandy</defName>
+		<label>Process shein for dagoth brandy</label>
+		<description>Turn 25 shein into 25 dagoth brandy.</description>
+		<ingredients>
+			<li>
+				<thing>Mashed_Ashlands_AlcoholShein</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>Mashed_Ashlands_AlcoholDagothBrandy</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sirmashedpotato.ashlands">
+		<defName>WNA_Mashed_Shein</defName>
+		<label>Process comberry precursor for shein</label>
+		<description>Turn 25 comberry precursor into 25 shein.</description>
+		<ingredients>
+			<li>
+				<thing>Mashed_Ashlands_ComberryPrecursor</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>Mashed_Ashlands_AlcoholShein</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sirmashedpotato.ashlands">
+		<defName>WNA_Mashed_Flin</defName>
+		<label>Process meadow rye precursor for flin</label>
+		<description>Turn 25 meadow rye precursor into 25 flin.</description>
+		<ingredients>
+			<li>
+				<thing>Mashed_Ashlands_MeadowRyePrecursor</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>Mashed_Ashlands_AlcoholFlin</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sirmashedpotato.ashlands">
+		<defName>WNA_Mashed_Mazte</defName>
+		<label>Process saltrice precursor for mazte</label>
+		<description>Turn 25 saltrice precursor into 25 mazte.</description>
+		<ingredients>
+			<li>
+				<thing>Mashed_Ashlands_SaltricePrecursor</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>Mashed_Ashlands_AlcoholMazte</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sirmashedpotato.ashlands">
+		<defName>WNA_Mashed_Sujamma</defName>
+		<label>Process wickwheat precursor for sujamma</label>
+		<description>Turn 25 wickwheat precursor into 25 sujamma.</description>
+		<ingredients>
+			<li>
+				<thing>Mashed_Ashlands_WickwheatPrecursor</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>Mashed_Ashlands_AlcoholSujamma</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcooke">
+		<defName>WNA_VCE_SoupSimple</defName>
+		<label>cook simple soup</label>
+		<description>150% of normal producing.</description>
+		<ingredients>
+			<li>
+				<thing>VCE_UncookedSoupSimple</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VCE_CookedSoupSimple</thing>
+				<count>15</count>
+			</li>
+		</results>
+		<ticks>2000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcooke">
+		<defName>WNA_VCE_SoupFine</defName>
+		<label>cook simple soup</label>
+		<description>150% of normal producing.</description>
+		<ingredients>
+			<li>
+				<thing>VCE_UncookedSoupFine</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VCE_CookedSoupFine</thing>
+				<count>15</count>
+			</li>
+		</results>
+		<ticks>2000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcooke">
+		<defName>WNA_VCE_SoupLavish</defName>
+		<label>cook simple soup</label>
+		<description>150% of normal producing.</description>
+		<ingredients>
+			<li>
+				<thing>VCE_UncookedSoupLavish</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VCE_CookedSoupLavish</thing>
+				<count>15</count>
+			</li>
+		</results>
+		<ticks>2000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcooke">
+		<defName>WNA_VCE_SoupGourmet</defName>
+		<label>cook simple soup</label>
+		<description>150% of normal producing.</description>
+		<ingredients>
+			<li>
+				<thing>VCE_UncookedSoupGourmet</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VCE_CookedSoupGourmet</thing>
+				<count>15</count>
+			</li>
+		</results>
+		<ticks>2000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcooke">
+		<defName>WNA_VCE_Cheese</defName>
+		<label>cook simple soup</label>
+		<description>150% of normal producing.</description>
+		<ingredients>
+			<li>
+				<thing>Milk</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VCE_Cheese</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticksQuality>
+			<li>60000</li>
+			<li>60000</li>
+			<li>60000</li>
+			<li>60000</li>
+			<li>60000</li>
+			<li>60000</li>
+			<li>60000</li>
+		</ticksQuality>
+		<stopAtQuality>true</stopAtQuality>
+		<allowExtractAtCurrentQuality>true</allowExtractAtCurrentQuality>
+	</PipeSystem.ProcessDef>
+
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookebakery">
+		<defName>WNA_VCE_StewSimple</defName>
+		<label>cook simple stew</label>
+		<description>150% of normal producing.</description>
+		<ingredients>
+			<li>
+				<thing>VCE_UncookedStewSimple</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VCE_CookedStewSimple</thing>
+				<count>15</count>
+			</li>
+		</results>
+		<ticks>2500</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookebakery">
+		<defName>WNA_VCE_StewFine</defName>
+		<label>cook fine stew</label>
+		<description>150% of normal producing.</description>
+		<ingredients>
+			<li>
+				<thing>VCE_UncookedStewFine</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VCE_CookedStewFine</thing>
+				<count>15</count>
+			</li>
+		</results>
+		<ticks>2500</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookebakery">
+		<defName>WNA_VCE_StewLavish</defName>
+		<label>cook lavish stew</label>
+		<description>150% of normal producing.</description>
+		<ingredients>
+			<li>
+				<thing>VCE_UncookedStewLavish</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VCE_CookedStewLavish</thing>
+				<count>15</count>
+			</li>
+		</results>
+		<ticks>2500</ticks>
+	</PipeSystem.ProcessDef>
+	
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookesushi">
+		<defName>WNA_VCE_SoySauce</defName>
+		<label>ferment soybeans into soy sauce</label>
+		<description>turn 30 soybeans into 30 soy sauce.</description>
+		<ingredients>
+			<li>
+				<thing>VCE_RawSoybean</thing>
+				<countNeeded>30</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VCE_SoySauce</thing>
+				<count>30</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookebakery">
+		<defName>WNA_VCE_ConfectionSimple</defName>
+		<label>bake simple confections</label>
+		<description>125% of normal producing.</description>
+		<ingredients>
+			<li>
+				<thing>VCE_NormalCakeBatter</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VCE_SimpleConfection</thing>
+				<count>5</count>
+			</li>
+		</results>
+		<ticks>1500</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookebakery">
+		<defName>WNA_VCE_ConfectionFine</defName>
+		<label>bake fine confections</label>
+		<description>125% of normal producing.</description>
+		<ingredients>
+			<li>
+				<thing>VCE_NormalCakeBatter</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+			<li>
+				<thing>Milk</thing>
+				<countNeeded>15</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VCE_FineConfection</thing>
+				<count>5</count>
+			</li>
+		</results>
+		<ticks>1500</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookebakery">
+		<defName>WNA_VCE_ConfectionLavish</defName>
+		<label>bake lavish confections</label>
+		<description>125% of normal producing.</description>
+		<ingredients>
+			<li>
+				<thing>VCE_NormalCakeBatter</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+			<li>
+				<thing>Milk</thing>
+				<countNeeded>15</countNeeded>
+			</li>
+			<li>
+				<thingCategory>PlantFoodRaw</thingCategory>
+				<countNeeded>30</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VCE_LavishConfection</thing>
+				<count>5</count>
+			</li>
+		</results>
+		<ticks>1500</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookebakery">
+		<defName>WNA_VCE_ConfectionGourmet</defName>
+		<label>bake gourmet confections</label>
+		<description>125% of normal producing.</description>
+		<ingredients>
+			<li>
+				<thing>VCE_GourmetCakeBatter</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VCE_GourmetConfection</thing>
+				<count>5</count>
+			</li>
+		</results>
+		<ticks>1500</ticks>
+	</PipeSystem.ProcessDef>
+	
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vbrewe">
+		<defName>WNA_VBE_Syrup_Soda</defName>
+		<label>turn syrup into soda</label>
+		<description>turn 25 syrup into 25 soda.</description>
+		<ingredients>
+			<li>
+				<thing>VBE_SodaSyrup</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VBE_Soda</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>2000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vbrewe">
+		<defName>WNA_VBE_Whiskey</defName>
+		<label>ferment whiskey mash into whiskey</label>
+		<description>turn 50 whiskey mash into 50 whiskey.</description>
+		<ingredients>
+			<li>
+				<thing>VBE_WhiskeyMash</thing>
+				<countNeeded>50</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VBE_Whiskey</thing>
+				<count>50</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vbrewe">
+		<defName>WNA_VBE_DoubleWhiskey</defName>
+		<label>ferment whiskey into double whiskey</label>
+		<description>turn 50 whiskey into 50 double whiskey.</description>
+		<ingredients>
+			<li>
+				<thing>VBE_Whiskey</thing>
+				<countNeeded>50</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VBE_DoubleWhiskey</thing>
+				<count>50</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vbrewe">
+		<defName>WNA_VBE_Tequila</defName>
+		<label>ferment tequila must into tequila</label>
+		<description>turn 25 tequila must into 25 tequila.</description>
+		<ingredients>
+			<li>
+				<thing>VBE_TequilaMust</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VBE_Tequila</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vbrewe">
+		<defName>WNA_VBE_Vodka</defName>
+		<label>ferment vodka mash into vodka</label>
+		<description>turn 25 vodka mash into 25 vodka.</description>
+		<ingredients>
+			<li>
+				<thing>VBE_VodkaMash</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VBE_Vodka</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vbrewe">
+		<defName>WNA_VBE_Gin</defName>
+		<label>ferment gin mush into gin</label>
+		<description>turn 25 gin mush into 25 gin.</description>
+		<ingredients>
+			<li>
+				<thing>VBE_GinMush</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VBE_Gin</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vbrewe">
+		<defName>WNA_VBE_Ambrandy</defName>
+		<label>ferment ambrandy must into ambrandy</label>
+		<description>166.7% yield</description>
+		<ingredients>
+			<li>
+				<thing>VBE_AmbrandyMust</thing>
+				<countNeeded>1</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>VBE_Ambrandy</thing>
+				<count>5</count>
+			</li>
+		</results>
+		<ticksQuality>
+			<li>60000</li>
+			<li>60000</li>
+			<li>60000</li>
+			<li>60000</li>
+			<li>60000</li>
+			<li>60000</li>
+			<li>60000</li>
+		</ticksQuality>
+		<stopAtQuality>true</stopAtQuality>
+		<allowExtractAtCurrentQuality>true</allowExtractAtCurrentQuality>
+	</PipeSystem.ProcessDef>
+    
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sarg.alphacrafts">
+		<defName>WNA_AC_InfusedOil</defName>
+		<label>infuse oil into infused oil</label>
+		<description>turn 10 oil into 10 infused oil.</description>
+		<ingredients>
+			<li>
+				<thing>AC_Oil</thing>
+				<countNeeded>10</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>AC_InfusedOil</thing>
+				<count>10</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sarg.alphacrafts">
+		<defName>WNA_AC_TruffleOil</defName>
+		<label>infuse oil and fungus into truffle oil</label>
+		<description>now with 250% efficiency</description>
+		<ingredients>
+			<li>
+				<thing>AC_Oil</thing>
+				<countNeeded>15</countNeeded>
+			</li>
+			<li>
+				<thing>RawFungus</thing>
+				<countNeeded>50</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>AC_TruffleOil</thing>
+				<count>15</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sarg.alphacrafts">
+		<defName>WNA_AC_BalsamicVinegar</defName>
+		<label>infuse vinegar and berries into balsamic vinegar</label>
+		<description>now with 125% efficiency</description>
+		<ingredients>
+			<li>
+				<thing>AC_Vinegar</thing>
+				<countNeeded>15</countNeeded>
+			</li>
+			<li>
+				<thing>RawBerries</thing>
+				<countNeeded>50</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>AC_BalsamicVinegar</thing>
+				<count>15</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sarg.alphacrafts">
+		<defName>WNA_AC_Vegemite</defName>
+		<label>make vegemite from brewer’s yeast</label>
+		<description>turn 20 wort and 3 vegetable puree into 8 vegemite.</description>
+		<ingredients>
+			<li>
+				<thing>Wort</thing>
+				<countNeeded>20</countNeeded>
+			</li>
+			<li>
+				<thing>AC_Puree</thing>
+				<countNeeded>3</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>AC_Vegemite</thing>
+				<count>8</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sarg.alphacrafts">
+		<defName>WNA_AC_Vinegar</defName>
+		<label>ferment rice into vinegar</label>
+		<description>turn 50 rice into 50 vinegar.</description>
+		<ingredients>
+			<li>
+				<thing>RawRice</thing>
+				<countNeeded>50</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>AC_Vinegar</thing>
+				<count>50</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sarg.alphacrafts">
+		<defName>WNA_AC_Kefir</defName>
+		<label>ferment milk into kefir</label>
+		<description>turn 50 milk into 25 kefir.</description>
+		<ingredients>
+			<li>
+				<thing>Milk</thing>
+				<countNeeded>50</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>AC_Kefir</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sarg.alphacrafts">
+		<defName>WNA_AC_Lassi</defName>
+		<label>ferment yoghurt into lassi</label>
+		<description>turn 20 yoghurt into 20 lassi.</description>
+		<ingredients>
+			<li>
+				<thing>VCE_Yoghurt</thing>
+				<countNeeded>20</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>AC_Lassi</thing>
+				<count>20</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sarg.alphacrafts">
+		<defName>WNA_AC_Sake</defName>
+		<label>ferment rice into sake</label>
+		<description>turn 75 rice into 25 sake.</description>
+		<ingredients>
+			<li>
+				<thing>RawRice</thing>
+				<countNeeded>75</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>AC_Sake</thing>
+				<count>25</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="sarg.alphacrafts">
+		<defName>WNA_AC_ChocolateLiquor</defName>
+		<label>ferment chocolate into liquor</label>
+		<description>turn 50 chocolate into 30 chocolate liquor.</description>
+		<ingredients>
+			<li>
+				<thing>Chocolate</thing>
+				<countNeeded>50</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>AC_ChocolateLiquor</thing>
+				<count>30</count>
+			</li>
+		</results>
+		<ticks>60000</ticks>
+	</PipeSystem.ProcessDef>
+
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">
+		<defName>WNA_HX_Silk</defName>
+		<label>turn tussah cocoon into silk</label>
+		<description>turn 30 tussah cocoon into 30 silk.</description>
+		<ingredients>
+			<li>
+				<thing>TussahCocoon</thing>
+				<countNeeded>30</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>HX_silk</thing>
+				<count>30</count>
+			</li>
+		</results>
+		<ticks>2000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">
+		<defName>WNA_HX_CivilCeramics</defName>
+		<label>turn quartz into ceramics</label>
+		<description>turn 30 quartz blocks into 30 civil ceramics.</description>
+		<ingredients>
+			<li>
+				<thing>BlocksQuartz</thing>
+				<countNeeded>30</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>HX_CivilCeramics</thing>
+				<count>30</count>
+			</li>
+		</results>
+		<ticks>2500</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">
+		<defName>WNA_HX_MilitaryCeramics</defName>
+		<label>turn civil ceramics into military ceramics</label>
+		<description>turn 30 civil ceramics into 30 military ceramics.</description>
+		<ingredients>
+			<li>
+				<thing>HX_CivilCeramics</thing>
+				<countNeeded>30</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>HX_MilitaryCeramics</thing>
+				<count>30</count>
+			</li>
+		</results>
+		<ticks>4000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">
+		<defName>WNA_HX_ChineseMedicinePackage</defName>
+		<label>turn realgar stone and mugwort leaf into chinese medicine package</label>
+		<description>turn 25 realgar stone and 25 mugwort leaf into 15 chinese medicine package.</description>
+		<ingredients>
+			<li>
+				<thing>RealgarStone</thing>
+				<countNeeded>25</countNeeded>
+			</li>
+			<li>
+				<thing>MugwortLeaf</thing>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>ChineseMedicinePackage</thing>
+				<count>15</count>
+			</li>
+		</results>
+		<ticks>4000</ticks>
+	</PipeSystem.ProcessDef>
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">
+		<defName>WNA_HX_Silk</defName>
+		<label>turn mugwort leaf into moxibustion stick</label>
+		<description>turn 30 tussah cocoon into 10 moxibustion sticks.</description>
+		<ingredients>
+			<li>
+				<thing>MugwortLeaf</thing>
+				<countNeeded>30</countNeeded>
+			</li>
+		</ingredients>
+		<results>
+			<li>
+				<thing>MoxibustionStick</thing>
+				<count>10</count>
+			</li>
+		</results>
+		<ticks>500</ticks>
+	</PipeSystem.ProcessDef>
+</Defs>

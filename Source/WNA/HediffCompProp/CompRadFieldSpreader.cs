@@ -1,6 +1,7 @@
 ﻿using Verse;
 using WNA.ThingCompProp;
 using WNA.WNAUtility;
+using System;
 
 namespace WNA.HediffCompProp
 {
@@ -26,7 +27,7 @@ namespace WNA.HediffCompProp
                     if(Props.config.isSeverityRadLevel)
                         finalRadLevel *= s * Props.config.radLevelFactor;
                     if (Props.config.isSeverityRadRadius)
-                        finalRadius *= s * Props.config.radRadiusFactor;
+                        finalRadius *= (float)Math.Sqrt(s) * Props.config.radRadiusFactor;
                     RadFieldUtility.RadSpread(
                         pawn.Position,
                         pawn.Map,

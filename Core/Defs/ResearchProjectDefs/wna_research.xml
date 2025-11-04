@@ -1,196 +1,286 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- human -->
+	<ResearchProjectTagDef>
+		<defName>WNA_PlayerStart</defName>
+	</ResearchProjectTagDef>
+	<ResearchTabDef>
+		<defName>WNA_ResearchTab</defName>
+		<label>whelingnorther technique</label>
+		<generalTitle>whelingnorther technique</generalTitle>
+		<generalDescription>Research projects from HRG164hjo's mod "WNA - Whelingnorther Alliance"</generalDescription>
+	</ResearchTabDef>
+
+	<!-- civilian -->
 	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_BaseDefense</defName>
-		<label>basic defense structure</label>
-		<description>unusual techniques that can be used to build your colony harder to handle.</description>
-		<baseCost>1000</baseCost>
+		<defName>WNA_CivilianTech</defName>
+		<label>civilian techniques</label>
+		<description>practical techniques for civilian benefits, aiming for improving quality of life.</description>
+		<baseCost>500</baseCost>
 		<researchViewX>0</researchViewX>
-		<researchViewY>1</researchViewY>
-        <techprintCount>1</techprintCount>
-        <techprintCommonality>1</techprintCommonality>
-		<heldByFactionCategoryTags/>
-        <techprintMarketValue>2000</techprintMarketValue>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_RebelArsenal</defName>
-		<label>rebels arsenal</label>
-		<description>dig back to the youth of the Whelingnorther Humanoid Revolt and recreate their early-time apparels and weapons.</description>
+		<defName>WNA_HumanUsage</defName>
+		<label>usage of excess lives</label>
+		<description>sometimes there can be excess lives that causing burden to our community, and here's some tricks about how to get rid of them while doing good, or at least no harm to our community.</description>
 		<baseCost>1000</baseCost>
-		<researchViewX>1</researchViewX>
-		<researchViewY>1</researchViewY>
-        <prerequisites>
-            <li>WNA_BaseDefense</li>
-        </prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_RebelTools</defName>
-		<label>practical tools</label>
-		<description>Gain some insights of the neat tools developed by WHR. Good for both production and combat.</description>
-		<baseCost>3000</baseCost>
-		<researchViewX>1</researchViewX>
-		<researchViewY>2</researchViewY>
-        <prerequisites>
-            <li>WNA_RebelArsenal</li>
-        </prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_RebelShield</defName>
-		<label>energy shield</label>
-		<description>primary understanding of energy shields used by WHR, which is a little different from common shield belts.</description>
-		<baseCost>3000</baseCost>
-		<researchViewX>1</researchViewX>
-		<researchViewY>0</researchViewY>
-        <prerequisites>
-            <li>WNA_RebelArsenal</li>
-			<li>WNA_RebelTools</li>
-        </prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_AdvArsenal</defName>
-		<label>advanced arsenal</label>
-		<description>study some published literatures of WHR and gain some insights of their more advanced arsenal.</description>
-		<baseCost>5000</baseCost>
-		<researchViewX>2</researchViewX>
-		<researchViewY>1</researchViewY>
-        <techprintCount>1</techprintCount>
-        <techprintCommonality>1</techprintCommonality>
-		<heldByFactionCategoryTags/>
-        <techprintMarketValue>2000</techprintMarketValue>
-        <prerequisites>
-            <li>WNA_RebelArsenal</li>
-			<li>WNA_RebelTools</li>
-        </prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_NexusLegion</defName>
-		<label>siege equipment</label>
-		<description>by studying the published techprints your colonists can now replica the armor and weapon used by the rebels' main forces.</description>
-		<baseCost>2000</baseCost>
-		<researchViewX>2</researchViewX>
-		<researchViewY>2</researchViewY>
-        <prerequisites>
-            <li>WNA_AdvArsenal</li>
-        </prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_StrikeLegion</defName>
-		<label>infiltration equipment</label>
-		<description>by studying the published techprints your colonists now masters the techniques used by the rebels' infiltration forces.</description>
-		<baseCost>2000</baseCost>
 		<researchViewX>2</researchViewX>
 		<researchViewY>0</researchViewY>
-        <prerequisites>
-            <li>WNA_AdvArsenal</li>
-        </prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_IronGuardian</defName>
-		<label>the wall of iron</label>
-		<description>now your colonists have enough understanding and ability to replica the arsenal used by the heaviest guardian troopers of the rebels.</description>
-		<baseCost>4000</baseCost>
-		<researchViewX>3</researchViewX>
-		<researchViewY>1</researchViewY>
-        <prerequisites>
-            <li>WNA_AdvArsenal</li>
-        </prerequisites>
+		<prerequisites>
+			<li>WNA_CivilianTech</li>
+		</prerequisites>
 	</ResearchProjectDef>
 
-	<!-- whelingnorthan -->
+	<!-- military -->
 	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_BasicRite</defName>
-		<label>basic rite</label>
-		<description>basic knowladge of holding rites like those Whelingnorthans. the first step towards mysterious whelingnorther techniques.</description>
-		<baseCost>1000</baseCost>
-		<researchViewX>3</researchViewX>
-		<researchViewY>4</researchViewY>
-        <techprintCount>1</techprintCount>
-        <techprintCommonality>1</techprintCommonality>
-		<heldByFactionCategoryTags/>
-        <techprintMarketValue>2000</techprintMarketValue>
-        <prerequisites>
-            <li>WNA_AdvArsenal</li>
-        </prerequisites>
+		<defName>WNA_MilitarySupply</defName>
+		<label>military supply</label>
+		<description>the special techniques of how to make whelingnorther military supplies out from common resources. these special techniques is hold secret by Whelingnorther Alliance.</description>
+		<baseCost>2000</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>2</researchViewY>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<techprintMarketValue>2000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>WNA_FactionWNA</li>
+		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_MatterTransformation</defName>
-		<label>matter transformation</label>
-		<description>the knowledge of using whelingnorther technique to reform normal materials.</description>
-		<baseCost>3000</baseCost>
-		<researchViewX>4</researchViewX>
-		<researchViewY>4</researchViewY>
-        <prerequisites>
-            <li>WNA_BasicRite</li>
-        </prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_Furniture</defName>
-		<label>whelingnorther furniture</label>
-		<description>the technique of forming WNA style furnitures. these furnitures usually looks translucent and are built out of nothing.</description>
-		<baseCost>5000</baseCost>
-		<researchViewX>5</researchViewX>
-		<researchViewY>4</researchViewY>
-        <prerequisites>
-            <li>WNA_MatterTransformation</li>
-        </prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_Structure</defName>
-		<label>whelingnorther structure</label>
-		<description>the technique of building walls, doors, and other thing. in common cases these buildings are invincible, whether built from thin air or a piece of actual material.</description>
-		<baseCost>5000</baseCost>
-		<researchViewX>5</researchViewX>
-		<researchViewY>4.5</researchViewY>
-        <prerequisites>
-            <li>WNA_MatterTransformation</li>
-        </prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_Terraform</defName>
-		<label>whelingnorther terraforming</label>
-		<description>the technique of changing the environment, reversible or irreversible.</description>
-		<baseCost>5000</baseCost>
-		<researchViewX>5</researchViewX>
-		<researchViewY>5</researchViewY>
-        <prerequisites>
-            <li>WNA_MatterTransformation</li>
-        </prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_Security</defName>
-		<label>whelingnorther defence system</label>
-		<description>some most simple methods to use whelingnorther technique to defend an outpost, a colony ot something else.</description>
-		<baseCost>5000</baseCost>
-		<researchViewX>6</researchViewX>
-		<researchViewY>4</researchViewY>
-        <prerequisites>
-            <li>WNA_MatterTransformation</li>
-        </prerequisites>
+		<defName>WNA_MilitaryMaterial</defName>
+		<label>military material</label>
+		<description>the special techniques of how to make unique materials used by whelingnorther military. these special techniques is hold secret by Whelingnorther Alliance.</description>
+		<baseCost>2000</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>3</researchViewY>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<techprintMarketValue>2000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>WNA_FactionWNA</li>
+		</heldByFactionCategoryTags>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
 		<defName>WNA_StandardArsenal</defName>
-		<label>whelingnorther standard equipment</label>
-		<description>the technique of crafting WNA standard equipments. even whelingnorthan themselves cannot ignore the power of these weapons.</description>
-		<baseCost>15000</baseCost>
-		<researchViewX>6</researchViewX>
-		<researchViewY>4</researchViewY>
-        <prerequisites>
-            <li>WNA_MatterTransformation</li>
-        </prerequisites>
+		<label>standard arsenal</label>
+		<description>the standard arsenal used by whelingnorther alliance to arm their soldiers.</description>
+		<baseCost>3000</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2.5</researchViewY>
+		<prerequisites>
+			<li>WNA_MilitarySupply</li>
+			<li>WNA_MilitaryMaterial</li>
+			<li>WNA_CivilianTech</li>
+		</prerequisites>
 	</ResearchProjectDef>
 	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_FieldAnalysis</defName>
+		<label>field analysis</label>
+		<description>basic theories and techniques to manipulate field instead of manipulate solid matter.</description>
+		<baseCost>4000</baseCost>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1.5</researchViewY>
+		<prerequisites>
+			<li>WNA_StandardArsenal</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_ParticleArmory</defName>
+		<label>particle armory</label>
+		<description>basic theories and techniques about how to produce and make use of unique particles that exists in nature world or not.</description>
+		<baseCost>4000</baseCost>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3.5</researchViewY>
+		<prerequisites>
+			<li>WNA_StandardArsenal</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_AdvancedArsenal</defName>
+		<label>advanced arsenal</label>
+		<description>the advanced technology used by whelingnorther alliance to arm their elite fighters.</description>
+		<baseCost>5000</baseCost>
+		<researchViewX>4</researchViewX>
+		<researchViewY>2.5</researchViewY>
+		<prerequisites>
+			<li>WNA_StandardArsenal</li>
+		</prerequisites>
+		<techprintCount>2</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<techprintMarketValue>2000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>WNA_FactionWNA</li>
+		</heldByFactionCategoryTags>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_AdvancedProduction</defName>
+		<label>advanced production</label>
+		<description>advanced production.</description>
+		<baseCost>4000</baseCost>
+		<researchViewX>4</researchViewX>
+		<researchViewY>4</researchViewY>
+		<prerequisites>
+			<li>WNA_AdvancedArsenal</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_LysisField</defName>
+		<label>lysis field</label>
+		<description>an artificial field that can weaken inner bounds of solid matter, resulting it being fragile. when affect matter can no longer tolerate it and breaks down, this field can spread to other things.</description>
+		<baseCost>5000</baseCost>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1.5</researchViewY>
+		<prerequisites>
+			<li>WNA_AdvancedArsenal</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_IronGuardian</defName>
+		<label>advanced arsenal</label>
+		<description>the advanced technology used by whelingnorther alliance to arm their elite fighters.</description>
+		<baseCost>5000</baseCost>
+		<researchViewX>5</researchViewX>
+		<researchViewY>3.5</researchViewY>
+		<prerequisites>
+			<li>WNA_AdvancedArsenal</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_PsyhicDawn</defName>
+		<label>psychic dawn</label>
+		<description>mind over matter.</description>
+		<baseCost>5000</baseCost>
+		<researchViewX>6</researchViewX>
+		<researchViewY>1.5</researchViewY>
+		<prerequisites>
+			<li>WNA_AdvancedArsenal</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_Parasomnia</defName>
+		<label>parasomnia</label>
+		<description>parasomnia.</description>
+		<baseCost>5000</baseCost>
+		<researchViewX>6</researchViewX>
+		<researchViewY>3.5</researchViewY>
+		<prerequisites>
+			<li>WNA_AdvancedArsenal</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_TheVoid</defName>
+		<label>reach to the void</label>
+		<description>wipe  out  ego \n\nstep  into  void \n\nall  mind  expire \n\nwhole  world  ascend</description>
+		<baseCost>8000</baseCost>
+		<researchViewX>7</researchViewX>
+		<researchViewY>2.5</researchViewY>
+		<prerequisites>
+			<li>WNA_AdvancedArsenal</li>
+		</prerequisites>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>0.5</techprintCommonality>
+		<techprintMarketValue>4000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>WNA_FactionWNA</li>
+		</heldByFactionCategoryTags>
+	</ResearchProjectDef>
+
+	<!-- whelingnorthan -->
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_TheEnlightment</defName>
+		<label>the enlightment</label>
+		<description>the enlightment.</description>
+		<baseCost>60</baseCost>
+		<researchViewX>1</researchViewX>
+		<researchViewY>5</researchViewY>
+		<techprintCount>2</techprintCount>
+		<techprintCommonality>0.5</techprintCommonality>
+		<heldByFactionCategoryTags>
+			<li>WNA_FactionWNA</li>
+		</heldByFactionCategoryTags>
+		<techprintMarketValue>250</techprintMarketValue>
+		<prerequisites>
+			<li>WNA_AdvancedArsenal</li>
+			<li>WNA_TheVoid</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_BasicRite</defName>
+		<label>basic rite</label>
+		<description>basic rite.</description>
+		<baseCost>1000</baseCost>
+		<researchViewX>2</researchViewX>
+		<researchViewY>5</researchViewY>
+		<prerequisites>
+			<li>WNA_TheEnlightment</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_Transmutation</defName>
+		<label>matter transmutation</label>
+		<description>matter transmutation.</description>
+		<baseCost>2500</baseCost>
+		<researchViewX>2</researchViewX>
+		<researchViewY>6.5</researchViewY>
+		<prerequisites>
+			<li>WNA_BasicRite</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_CeremonyEquipment</defName>
+		<label>ceremony equipment</label>
+		<description>basic rite.</description>
+		<baseCost>3000</baseCost>
+		<researchViewX>3</researchViewX>
+		<researchViewY>6.5</researchViewY>
+		<prerequisites>
+			<li>WNA_Transmutation</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_SecretTech</defName>
+		<label>secret techniques</label>
+		<description>secret techniques.</description>
+		<baseCost>4000</baseCost>
+		<researchViewX>4</researchViewX>
+		<researchViewY>5</researchViewY>
+		<prerequisites>
+			<li>WNA_BasicRite</li>
+		</prerequisites>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>0.5</techprintCommonality>
+		<techprintMarketValue>4000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>WNA_FactionWNA</li>
+		</heldByFactionCategoryTags>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_WhelingnortherApocalypse</defName>
+		<label>whelingnorther apocalypse</label>
+		<description>!!-TODO-!!.</description>
+		<baseCost>Infinity</baseCost>
+		<researchViewX>7</researchViewX>
+		<researchViewY>5</researchViewY>
+		<prerequisites>
+			<li>WNA_CeremonyEquipment</li>
+			<li>WNA_SecretTech</li>
+		</prerequisites>
+	</ResearchProjectDef>
 </Defs>

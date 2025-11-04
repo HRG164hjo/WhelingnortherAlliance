@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using UnityEngine;
 using Verse;
+using WNA.WNADefOf;
 
 namespace WNA.ThingClass
 {
@@ -15,7 +16,7 @@ namespace WNA.ThingClass
             {
                 if (Faction == null) return false;
                 Pawn p = TraverseParms.For(TraverseMode.PassDoors).pawn;
-                if (p != null && !p.HostileTo(this) && p.Faction == Faction.OfPlayer)
+                if (p != null && (p.Faction.def == WNAMainDefOf.WNA_FactionWNA || p.Faction == Faction.OfPlayer))
                     return true;
                 return false;
             }
@@ -35,8 +36,16 @@ namespace WNA.ThingClass
         }
         public override bool PawnCanOpen(Pawn p)
         {
-            if (p.CanOpenAnyDoor) return true;
             if (!p.CanOpenDoors) return false;
+            if ((p.CanOpenAnyDoor && p.Faction.def == WNAMainDefOf.WNA_FactionWNA && !p.IsPrisonerOfColony)
+                || p.Faction == Faction.OfPlayer)
+            {
+                if (p.InMentalState) return false;
+                return true;
+            }
+            return false;
+            /*if (!p.CanOpenDoors) return false;
+            if (p.CanOpenAnyDoor && (p.Faction.def == WNAMainDefOf.WNA_FactionWNA || p.Faction == Faction.OfPlayer)) return true;
             if (p.HostileTo(this) ||
                 p.InMentalState ||
                 p.IsWildMan() ||
@@ -45,7 +54,7 @@ namespace WNA.ThingClass
                 return false;
             if (Faction == null)
                 return p.RaceProps.canOpenFactionlessDoors;
-            return !p.HostileTo(this);
+            return !p.HostileTo(this);*/
         }
         public override bool BlocksPawn(Pawn p)
         {

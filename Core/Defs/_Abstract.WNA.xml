@@ -104,11 +104,7 @@
         </apparelDisallowTags>
         <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
         <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-        <techHediffsDisallowTags>
-            <li>Simple</li>
-            <li>PainCauser</li>
-        </techHediffsDisallowTags>
-        <techHediffsMoney>100000~100000</techHediffsMoney>
+        <techHediffsMoney>0</techHediffsMoney>
         <biocodeWeaponChance>0</biocodeWeaponChance>
         <humanPregnancyChance>0</humanPregnancyChance>
         <fixedInventory>
@@ -223,9 +219,7 @@
 	<ResearchProjectDef Abstract="true" Name="WNA_ResearchProjBase">
 		<tab>WNA_ResearchTab</tab>
 		<techLevel>Archotech</techLevel>
-        <tags>
-            <li>WNA_PlayerStart</li>
-        </tags>
+        <tags><li>WNA_PlayerStart</li></tags>
     </ResearchProjectDef>
 
 
@@ -409,12 +403,14 @@
         <drawStyleCategory>Floors</drawStyleCategory>
         <renderPrecedence>400</renderPrecedence>
 	    <layerable>true</layerable>
+        <preventCraters>true</preventCraters>
         <takeFootprints>false</takeFootprints>
         <natural>false</natural>
         <holdSnowOrSand>false</holdSnowOrSand>
         <isPaintable>true</isPaintable>
         <extinguishesFire>true</extinguishesFire>
-        <preventCraters MayRequire="Ludeon.Rimworld.Odyssey">true</preventCraters>
+        <preventCraters>true</preventCraters>
+        <constructEffect>ConstructWood</constructEffect>
         <affordances>
             <li>Light</li>
             <li>Medium</li>
@@ -436,10 +432,8 @@
             <li>None</li>
         </filthAcceptanceMask>
         <designationCategory>WNA_MainCategory</designationCategory>
-        <researchPrerequisites>
-            <li>WNA_Terraform</li>
-        </researchPrerequisites>
         <terrainAffordanceNeeded IsNull="True"/>
+		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
         <pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
         <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
         <pollutionColor>(1, 1, 1, 0.3)</pollutionColor>
@@ -484,9 +478,6 @@
 		<terrainAffordanceNeeded/>
 		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>	
-        <researchPrerequisites>
-            <li>WNA_Structure</li>
-        </researchPrerequisites>
 		<costList/>
 		<constructEffect/>
         <repairEffect>Repair</repairEffect>
@@ -518,9 +509,6 @@
         <thingCategories>
             <li>WNA_Category_Buildings</li>
         </thingCategories>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_Furniture</li>
-        </researchPrerequisites>
 	</ThingDef>
         
     <ThingDef Abstract="True" ParentName="WNA_StructureBase" Name="WNA_TurretBaseBase"> 
@@ -559,9 +547,6 @@
         <thingCategories>
             <li>WNA_Category_Turret</li>
         </thingCategories>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_Security</li>
-        </researchPrerequisites>
     </ThingDef>
     <ThingDef Abstract="True" ParentName="BaseWeapon" Name="WNA_TurrentWeaponBase">
         <destroyOnDrop>True</destroyOnDrop>
@@ -634,7 +619,7 @@
         <stackLimit>5000</stackLimit>
         <statBases>
             <Beauty>0</Beauty>
-            <Mass>0.01</Mass>
+            <Mass>0.002</Mass>
             <Flammability>0</Flammability>
             <DeteriorationRate>0</DeteriorationRate>
         </statBases>
@@ -689,16 +674,13 @@
             <Insulation_Heat>2000</Insulation_Heat>
         </statBases>
         <equippedStatOffsets>
-            <PainShockThreshold>0.3</PainShockThreshold>
-            <SocialImpact>0.3</SocialImpact>
-
+            <PainShockThreshold>1</PainShockThreshold>
+            <SocialImpact>1</SocialImpact>
             <ToxicResistance>1</ToxicResistance>
             <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
             <Flammability>-1</Flammability>
-
-            <ResearchSpeed MayRequire="Ludeon.RimWorld.Anomaly">0.3</ResearchSpeed>
-            <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.3</EntityStudyRate>
-
+            <ResearchSpeed MayRequire="Ludeon.RimWorld.Anomaly">1</ResearchSpeed>
+            <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">1</EntityStudyRate>
             <StaggerDurationFactor MayRequire="Ludeon.RimWorld.Biotech">-1</StaggerDurationFactor>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1</SlaveSuppressionOffset>
             <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">1</SuppressionPower>

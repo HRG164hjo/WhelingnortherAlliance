@@ -8,7 +8,7 @@ using WNA.WNADefOf;
 
 namespace WNA.WNAHarmony
 {
-    public class Patch_JobMaditate
+    public class Patch_JobMeditate
     {
         public static Dictionary<Pawn, int> MeditateStartTicks = new Dictionary<Pawn, int>();
         [HarmonyPatch(typeof(JobDriver_Meditate), "Notify_Starting", MethodType.Normal)]
@@ -18,10 +18,10 @@ namespace WNA.WNAHarmony
             {
                 Pawn pawn = __instance.pawn;
                 if (pawn == null) return;
-                if (Patch_JobMaditate.MeditateStartTicks.ContainsKey(pawn))
-                    Patch_JobMaditate.MeditateStartTicks[pawn] = GenTicks.TicksGame;
+                if (MeditateStartTicks.ContainsKey(pawn))
+                    MeditateStartTicks[pawn] = GenTicks.TicksGame;
                 else
-                    Patch_JobMaditate.MeditateStartTicks.Add(pawn, GenTicks.TicksGame);
+                    MeditateStartTicks.Add(pawn, GenTicks.TicksGame);
             }
         }
         public static class JobDriver_Meditate_EndJobWith
@@ -34,26 +34,22 @@ namespace WNA.WNAHarmony
             private static readonly TraitDef traitvanilla = TraitDef.Named("Nerves");
             public static void Postfix(JobDriver __instance, JobCondition condition)
             {
-                if (!(__instance is RimWorld.JobDriver_Meditate meditateDriver)) return;
+                if (!(__instance is JobDriver_Meditate meditateDriver)) return;
                 Pawn pawn = meditateDriver.pawn;
                 if (pawn == null) return;
                 if (condition != JobCondition.Succeeded &&
                     condition != JobCondition.InterruptForced &&
                     condition != JobCondition.InterruptOptional)
                 {
-                    Patch_JobMaditate.MeditateStartTicks.Remove(pawn);
+                    MeditateStartTicks.Remove(pawn);
                     return;
                 }
-                if (!Patch_JobMaditate.MeditateStartTicks.TryGetValue(pawn, out int startTick))
-                {
+                if (!MeditateStartTicks.TryGetValue(pawn, out int startTick))
                     return;
-                }
-                Patch_JobMaditate.MeditateStartTicks.Remove(pawn);
+                MeditateStartTicks.Remove(pawn);
                 int meditationDurationTicks = GenTicks.TicksGame - startTick;
                 if (meditationDurationTicks < 250)
-                {
                     return;
-                }
                 if (!IsValidPawn(pawn)) return;
                 float consc = pawn.health.capacities.GetLevel(PawnCapacityDefOf.Consciousness);
                 float skill = pawn.skills.GetSkill(SkillDefOf.Intellectual).Level;
@@ -69,12 +65,16 @@ namespace WNA.WNAHarmony
             private static bool IsValidPawn(Pawn pawn)
             {
                 Trait validTrait = pawn.story.traits.GetTrait(traitvanilla);
-                if (pawn.def == wnthan || pawn.def == whuman)
-                    return true;
-                if (pawn.Ideo == null || !pawn.Ideo.HasPrecept(wnpros))
-                    return false;
-                if ((pawn.story.traits.HasTrait(traitwna)) || (validTrait != null && validTrait.Degree == 2))
-                    return true;
+                if (pawn.Faction.def == WNAMainDefOf.WNA_FactionWNA ||
+                    (pawn.Faction == Faction.OfPlayer && WNAMainDefOf.WNA_TheEnlightment.IsFinished))
+                {
+                    if (pawn.def == wnthan || pawn.def == whuman)
+                        return true;
+                    if (pawn.Ideo == null || !pawn.Ideo.HasPrecept(wnpros))
+                        return false;
+                    if ((pawn.story.traits.HasTrait(traitwna)) || (validTrait != null && validTrait.Degree == 2))
+                        return true;
+                }
                 return false;
             }
         }

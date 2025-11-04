@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <BackstoryDef>
+        <defName>WNA_BA_FaithfulBeliever</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+            <li>WNA_Backstory_Uplifted</li>
+        </spawnCategories>
+        <slot>Adulthood</slot>
+        <title>faithful believer</title>
+        <titleShort>faithful</titleShort>
+        <description>[PAWN_nameDef] had been serving for the great work for Whelingnorther Alliance since [PAWN_possessive] grown-up. [PAWN_nameDef] had worked in various positions, gradually forged unshakable will through the years of work.</description>
+        <forcedTraits>
+            <Tough>0</Tough>
+            <WNA_Trait_Unshakable>0</WNA_Trait_Unshakable>
+        </forcedTraits>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BA_FanaticBeliever</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+            <li>WNA_Backstory_Uplifted</li>
+        </spawnCategories>
+        <slot>Adulthood</slot>
+        <title>fanatic believer</title>
+        <titleShort>fanatic</titleShort>
+        <description>[PAWN_nameDef] had been serving for the great work for Whelingnorther Alliance since [PAWN_possessive] grown-up. However [PAWN_pronoun] seemed to have taken a strange path, become increasingly insane and cruel through the years of work.</description>
+        <forcedTraits>
+            <Psychopath>0</Psychopath>
+            <Bloodlust>0</Bloodlust>
+            <WNA_Trait_Unshakable>0</WNA_Trait_Unshakable>
+        </forcedTraits>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BA_FirstGen</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Adulthood</slot>
+        <title>first generation member</title>
+        <titleShort>first-gen</titleShort>
+        <description>When facing the pursuit of two superpowers, [PAWN_nameDef] recieved the enlightment from far-ancient civilization the Whelingnorther Empire. With this power [PAWN_pronoun] and [PAWN_possessive] followers got rid of the pursuit, and finally founded the Whelingnorther Alliance.</description>
+        <forcedTraits>
+            <Tough>0</Tough>
+            <WNA_Trait_Unshakable>0</WNA_Trait_Unshakable>
+        </forcedTraits>
+        <shuffleable>false</shuffleable>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BA_SecondGen</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Adulthood</slot>
+        <title>second generation member</title>
+        <titleShort>second-gen</titleShort>
+        <description>[PAWN_nameDef] is a second generation member of Whelingnorther Alliance, which means [PAWN_pronoun] has been accused of crimes he didn't commit, whether for political, legal, or other reasons. Luckily with the aid of Whelingnorther Alliance, [PAWN_pronoun] washed away the false accusation with blood.</description>
+        <forcedTraits>
+            <Bloodlust>0</Bloodlust>
+            <WNA_Trait_Unshakable>0</WNA_Trait_Unshakable>
+        </forcedTraits>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BA_ThirdGen</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+            <li>WNA_Backstory_Uplifted</li>
+        </spawnCategories>
+        <slot>Adulthood</slot>
+        <title>third generation member</title>
+        <titleShort>third-gen</titleShort>
+        <description>[PAWN_nameDef] grown up under the shelter of Whelingnorther Alliance as a resident, enjoying the material support and education provided by Whelingnorther Alliance. When [PAWN_pronoun] finally grow up and decided to serve in Whelingnorther Military, [PAWN_pronoun] officially became a national of Whelingnorther Alliance.</description>
+        <forcedTraits>
+            <Psychopath>0</Psychopath>
+            <WNA_Trait_Unshakable>0</WNA_Trait_Unshakable>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>WNA_BA_MidworldRevenger</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Adulthood</slot>
+        <title>midworld revenger</title>
+        <titleShort>revenger</titleShort>
+        <description>The day come for [PAWN_nameDef] when Whelingnorther Alliance cast their shade over the world [PAWN_nameDef] lives in, and with the aid from Whelingnorther Alliance [PAWN_pronoun] slained all [PAWN_possessive] rivals. The fruit of revenge is unbelievably sweet,  [PAWN_nameDef] sang the praises of Whelingnorther and became a fanatic believer.</description>
+        <workDisables>Social</workDisables>
+        <forcedTraits>
+            <Bloodlust>0</Bloodlust>
+            <WNA_Trait_Unshakable>0</WNA_Trait_Unshakable>
+        </forcedTraits>
+        <possessions>
+            <Skull>9</Skull>
+        </possessions>
+    </BackstoryDef>
+    
+    <BackstoryDef>
+        <defName>WNA_BC_MidworldPeasant</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Adulthood</slot>
+        <title>midworld peasant</title>
+        <titleShort>peasant</titleShort>
+        <description>[PAWN_nameDef] grown up in the fields, before Whelingnorther Alliance's influence interrupting [PAWN_possessive] life, everything [PAWN_pronoun] had in [PAWN_possessive] daily routine is endless farmwork.</description>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_FactoryWorker</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Adulthood</slot>
+        <title>factory worker</title>
+        <titleShort>worker</titleShort>
+        <description>[PAWN_nameDef] worked in a factory for living. Everyday [PAWN_pronoun] has to face dangerous facilities, insufficient protections, heavy workload, endless overtime and unreasonable boss, until the arrival of Whelingnorther Alliance changed all of this.</description>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_MidworldRebel</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Adulthood</slot>
+        <title>midworld rebel</title>
+        <titleShort>rebel</titleShort>
+        <description>Before the arrival of Whelingnorther Alliance, [PAWN_nameDef] has been participating in armed rebellion to overthrow the rule of the privileged class. After the arrival of Whelingnorther Alliance, [PAWN_nameDef] joined them to slain more privileged.</description>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_Homeless</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Adulthood</slot>
+        <title>homeless</title>
+        <titleShort>homeless</titleShort>
+        <description>[PAWN_nameDef] had lost [PAWN_possessive] home and all property, had to wander in the streets and sleep on the ground. When Whelingnorther Alliance reached to [PAWN_nameDef]'s world, [PAWN_nameDef] decided to join them, in order to make people won't become homeless anyore.</description>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_Hopeless</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Adulthood</slot>
+        <title>hopeless</title>
+        <titleShort>hopeless</titleShort>
+        <description>[PAWN_nameDef] is eager for [PAWN_possessive] own termination, like a hunger man is eager for food, tired man is eager for a rest, a revenger is eager for beheading his rival.</description>
+        <forcedTraits>
+            <NaturalMood>-2</NaturalMood>
+            <TorturedArtist>0</TorturedArtist>
+        </forcedTraits>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_DesperateRevenger</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Adulthood</slot>
+        <title>desperate revenger</title>
+        <titleShort>desperate</titleShort>
+        <description>Before the arrival of Whelingnorther Alliance, a false accusation made [PAWN_nameDef] lost all [PAWN_possessive] fame abd belongings. Whelingnorther Alliance helped [PAWN_objective] break out from the jail and killed every people responsible for [PAWN_possessive] false asscusation.</description>
+        <possessions>
+            <Skull>9</Skull>
+        </possessions>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_Martyr</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Adulthood</slot>
+        <title>martyr</title>
+        <titleShort>martyr</titleShort>
+        <description>The idea of Whelingnorther Alliance has deeply moved [PAWN_nameDef] since [PAWN_possessive] young age. [PAWN_nameDef] is prepared to gave up all of [PAWN_objective] and sacrifice for the great work of Whelingnorther Alliance.</description>
+        <forcedTraits>
+            <Tough>0</Tough>
+            <Ascetic>0</Ascetic>
+        </forcedTraits>
+    </BackstoryDef>
+</Defs>

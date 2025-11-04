@@ -15,11 +15,22 @@
                 </filter>
                 <count>1</count>
             </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_MercuryVial</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
         </ingredients>
         <fixedIngredientFilter>
             <categories>
                 <li>StoneChunks</li>
             </categories>
+            <thingDefs>
+                <li>WNA_MercuryVial</li>
+            </thingDefs>
         </fixedIngredientFilter>
         <products>
             <WNA_DarkAsbestos>75</WNA_DarkAsbestos>
@@ -51,6 +62,14 @@
                 </filter>
                 <count>20</count>
             </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_MercuryVial</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
@@ -59,6 +78,7 @@
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                 <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                <li>WNA_MercuryVial</li>
             </thingDefs>
             <categories>
                 <li>StoneBlocks</li>

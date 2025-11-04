@@ -53,7 +53,7 @@
             <color>(127,27,27)</color>
         </graphicData>
         <statBases>
-            <WorkTableEfficiencyFactor>1.5</WorkTableEfficiencyFactor>
+            <WorkTableEfficiencyFactor>2</WorkTableEfficiencyFactor>
         </statBases>
         <recipes>
             <li>WNA_RiteBeastDivision</li>

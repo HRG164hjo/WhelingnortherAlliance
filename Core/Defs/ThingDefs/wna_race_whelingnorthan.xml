@@ -23,7 +23,7 @@
             <FilthRate>0</FilthRate>
             <Flammability>0</Flammability>
             <ForagedNutritionPerDay>1000</ForagedNutritionPerDay>
-            <GeneralLaborSpeed>10</GeneralLaborSpeed>
+            <GeneralLaborSpeed>20</GeneralLaborSpeed>
 			<GlobalLearningFactor>10000</GlobalLearningFactor>
             <ImmunityGainSpeed>10000</ImmunityGainSpeed>
             <IncomingDamageFactor>0</IncomingDamageFactor>
@@ -32,10 +32,10 @@
             <LeatherAmount>0</LeatherAmount>
             <MarketValue>0</MarketValue>
             <Mass>0</Mass>
-            <MedicalSurgerySuccessChance>10</MedicalSurgerySuccessChance>
+            <MedicalSurgerySuccessChance>20</MedicalSurgerySuccessChance>
             <MeatAmount>0</MeatAmount>
             <MeleeCooldownFactor>0</MeleeCooldownFactor>
-            <MeleeDodgeChance>10</MeleeDodgeChance>
+            <MeleeDodgeChance>20</MeleeDodgeChance>
             <MeleeArmorPenetration>Infinity</MeleeArmorPenetration>
             <MentalBreakThreshold>0</MentalBreakThreshold>
             <MortarMissRadiusFactor>0</MortarMissRadiusFactor>
@@ -48,14 +48,14 @@
             <PsychicEntropyRecoveryRate>1000000</PsychicEntropyRecoveryRate>
             <PsychicSensitivity>0</PsychicSensitivity>
             <RangedCooldownFactor>0</RangedCooldownFactor>
-            <RoyalFavorValue>10</RoyalFavorValue>
+            <RoyalFavorValue>20</RoyalFavorValue>
             <SlaveSuppressionFallRate>1000000</SlaveSuppressionFallRate>
             <StaggerDurationFactor>0</StaggerDurationFactor>
-            <ToxicEnvironmentResistance>10</ToxicEnvironmentResistance>
-            <ToxicResistance>10</ToxicResistance>
-			<WorkSpeedGlobal>10</WorkSpeedGlobal>
-            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">10</VacuumResistance>
-            <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">10</PilotingAbility>
+            <ToxicEnvironmentResistance>20</ToxicEnvironmentResistance>
+            <ToxicResistance>20</ToxicResistance>
+			<WorkSpeedGlobal>20</WorkSpeedGlobal>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">20</VacuumResistance>
+            <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">20</PilotingAbility>
         </statBases>
         <tools>
             <li>
@@ -221,21 +221,21 @@
             <lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
                 <Firefighter>7</Firefighter>
                 <Patient>0</Patient>
-                <Doctor>10</Doctor>
+                <Doctor>20</Doctor>
                 <PatientBedRest>0</PatientBedRest>
                 <Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
                 <BasicWorker>3</BasicWorker>
-                <Warden>10</Warden>
+                <Warden>20</Warden>
                 <Handling>7</Handling>
                 <Cooking>7</Cooking>
                 <Hunting>7</Hunting>
-                <Construction>10</Construction>
+                <Construction>20</Construction>
                 <Growing>7</Growing>
                 <Mining>7</Mining>
                 <PlantCutting>7</PlantCutting>
                 <Smithing>13</Smithing>
                 <Tailoring>7</Tailoring>
-                <Art>10</Art>
+                <Art>20</Art>
                 <Crafting>7</Crafting>
                 <Hauling>3</Hauling>
                 <Cleaning>3</Cleaning>

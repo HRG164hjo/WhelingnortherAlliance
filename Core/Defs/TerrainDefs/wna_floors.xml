@@ -1,115 +1,167 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <TerrainDef ParentName="WNA_FloorsBase">
-        <defName>WNA_FocusFloor</defName>
-        <label>pale tile</label>
-        <description>Colorless fine floor.</description>
-        <texturePath>buildings/terrain/wna_floor</texturePath>
-        <constructEffect>ConstructWood</constructEffect>
-        <edgeType>Hard</edgeType>
-        <traversedThought>WNA_OnFocusFloor</traversedThought>
-        <isPaintable>true</isPaintable>
-        <tags>
-            <li>FineFloor</li>
-            <li>Substructure</li>
-        </tags>
-        <isFoundation MayRequire="Ludeon.Rimworld.Odyssey">true</isFoundation>
-        <placeWorkers>
-            <li MayRequire="Ludeon.Rimworld.Odyssey">PlaceWorker_BuildingsValidOverSubstructure</li>
-        </placeWorkers>
-    </TerrainDef>
-    <TerrainDef ParentName="WNA_FloorsBase">
-        <defName>WNA_FocusSpring</defName>
-        <label>pale spring</label>
-        <description>Colorless fluid, seems to have some mysterious aspects.</description>
-        <texturePath>buildings/terrain/wna_spring</texturePath>
-        <waterDepthShader>Map/WaterDepth</waterDepthShader>
-        <natural>true</natural>
-	    <layerable>false</layerable>
-        <renderPrecedence>394</renderPrecedence>
-        <constructEffect>ConstructWood</constructEffect>
-        <avoidWander>true</avoidWander>
-        <takeSplashes>true</takeSplashes>
-        <affordances>
-            <li>ShallowWater</li>
-            <li>MovingFluid</li>
-        </affordances>
-        <tags>
-            <li>Water</li>
-        </tags>
-        <edgeType>Water</edgeType>
-        <traversedThought>WNA_InFocusSpring</traversedThought>
-    </TerrainDef>
-    <TerrainDef ParentName="WNA_FloorsBase">
-        <defName>WNA_FocusSoil</defName>
-        <label>dim soil</label>
-        <description>Dim colorless soil, vitality is pulsing through it.</description>
-        <texturePath>buildings/terrain/wna_soil</texturePath>
-        <natural>true</natural>
-	    <layerable>false</layerable>
-        <renderPrecedence>394</renderPrecedence>
-        <constructEffect>ConstructWood</constructEffect>
-        <affordances>
-			<li>Diggable</li>
-            <li>GrowSoil</li>
-			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_GrowAsh</li>
-			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_AshCastle</li>
-			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_GrowSoilVine</li>
-        </affordances>
+	<TerrainDef ParentName="WNA_FloorsBase">
+		<defName>WNA_FocusFloor</defName>
+		<label>pale tile</label>
+		<description>Colorless fine floor.</description>
+		<texturePath>terrains/wna_floor</texturePath>
+		<edgeType>Hard</edgeType>
+		<traversedThought>WNA_OnFocusFloor</traversedThought>
+		<isPaintable>true</isPaintable>
 		<tags>
-			<li>Soil</li>
-			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_Ash</li>
+			<li>FineFloor</li>
+			<li>Substructure</li>
 		</tags>
-        <fertility>40</fertility>
-        <edgeType>FadeRough</edgeType>
-        <traversedThought>WNA_OnFocusSoil</traversedThought>
-    </TerrainDef>
-    <TerrainDef ParentName="WNA_FloorsBase">
-        <defName>WNA_FocusSand</defName>
-        <label>dim sand</label>
-        <description>These sands have ran out of their color.</description>
-        <texturePath>buildings/terrain/wna_sand</texturePath>
+		<isFoundation>true</isFoundation>
+		<researchPrerequisites>
+			<li>WNA_SecretTech</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">PlaceWorker_BuildingsValidOverSubstructure</li>
+		</placeWorkers>
+	</TerrainDef>
+	<TerrainDef ParentName="WNA_FloorsBase">
+		<defName>WNA_FocusSpring</defName>
+		<label>pale spring</label>
+		<description>Colorless fluid, seems to have some mysterious aspects.</description>
+		<texturePath>terrains/wna_spring</texturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<natural>true</natural>
-	    <layerable>false</layerable>
-        <renderPrecedence>394</renderPrecedence>
-        <constructEffect>ConstructWood</constructEffect>
-        <affordances>
+		<layerable>false</layerable>
+		<renderPrecedence>399</renderPrecedence>
+		<avoidWander>true</avoidWander>
+		<takeSplashes>true</takeSplashes>
+		<affordances Inherit="false">
+			<li>ShallowWater</li>
+			<li>MovingFluid</li>
+		</affordances>
+		<tags>
+			<li>Water</li>
+		</tags>
+		<edgeType>Water</edgeType>
+		<traversedThought>WNA_InFocusSpring</traversedThought>
+		<researchPrerequisites>
+			<li>WNA_SecretTech</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	<TerrainDef ParentName="WNA_FloorsBase">
+		<defName>WNA_FocusSoil</defName>
+		<label>dim soil</label>
+		<description>Dim colorless soil, vitality is pulsing through it.</description>
+		<texturePath>terrains/wna_soil</texturePath>
+		<natural>true</natural>
+		<layerable>false</layerable>
+		<renderPrecedence>399</renderPrecedence>
+		<affordances>
 			<li>Diggable</li>
-        </affordances>
-        <fertility>0</fertility>
-        <edgeType>FadeRough</edgeType>
-    </TerrainDef>
-
-    <TerrainDef ParentName="WNA_FloorsBase">
-        <defName>WNA_ArtificialSoil</defName>
-        <label>artificial soil</label>
-        <description>Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth.</description>
-        <texturePath>buildings/terrain/wna_soil</texturePath>
-        <renderPrecedence>394</renderPrecedence>
-        <constructEffect>ConstructWood</constructEffect>
-        <affordances Inherit="false">
-            <li>Light</li>
-            <li>GrowSoil</li>
+			<li>GrowSoil</li>
 			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_GrowAsh</li>
 			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_AshCastle</li>
 			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_GrowSoilVine</li>
-        </affordances>
-        <costList>
-            <WoodLog>1</WoodLog>
-            <Steel>1</Steel>
-        </costList>
-        <statBases Inherit="false">
-            <WorkToBuild>250</WorkToBuild>
-        </statBases>
+		</affordances>
 		<tags>
 			<li>Soil</li>
 			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_Ash</li>
 		</tags>
-        <fertility>4.2</fertility>
-        <edgeType>FadeRough</edgeType>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_BaseDefense</li>
-        </researchPrerequisites>
-    </TerrainDef>
-    
+		<fertility>40</fertility>
+		<edgeType>FadeRough</edgeType>
+		<traversedThought>WNA_OnFocusSoil</traversedThought>
+		<researchPrerequisites>
+			<li>WNA_SecretTech</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	<TerrainDef ParentName="WNA_FloorsBase">
+		<defName>WNA_FocusSand</defName>
+		<label>dim sand</label>
+		<description>These sands have ran out of their color.</description>
+		<texturePath>terrains/wna_sand</texturePath>
+		<natural>true</natural>
+		<layerable>false</layerable>
+		<renderPrecedence>399</renderPrecedence>
+		<affordances>
+			<li>Diggable</li>
+		</affordances>
+		<fertility>0</fertility>
+		<edgeType>FadeRough</edgeType>
+		<researchPrerequisites>
+			<li>WNA_SecretTech</li>
+		</researchPrerequisites>
+	</TerrainDef>
+
+	<TerrainDef ParentName="WNA_FloorsBase">
+		<defName>WNA_BridgeFloor</defName>
+		<label>concrete platform</label>
+		<description>Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth.</description>
+		<texturePath>terrains/wna_bridgefloor</texturePath>
+		<isFoundation>true</isFoundation>
+		<bridge>true</bridge>
+		<bridgePropsPath>terrains/props/edgeprop</bridgePropsPath>
+		<spaceBridgePropsPath>terrains/props/edgeprop</spaceBridgePropsPath>
+		<costList>
+			<WNA_Concrete>1</WNA_Concrete>
+		</costList>
+		<statBases Inherit="false">
+			<WorkToBuild>400</WorkToBuild>
+		</statBases>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+		<researchPrerequisites>
+			<li>WNA_MilitaryMaterial</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	<TerrainDef ParentName="WNA_FloorsBase">
+		<defName>WNA_BridgeCarpet</defName>
+		<label>carpet platform</label>
+		<description>Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth.</description>
+		<texturePath>terrains/wna_bridgecarpet</texturePath>
+		<isFoundation>true</isFoundation>
+		<bridge>true</bridge>
+		<bridgePropsPath>terrains/props/edgeprop</bridgePropsPath>
+		<spaceBridgePropsPath>terrains/props/edgeprop</spaceBridgePropsPath>
+		<costList>
+			<WNA_AttunementFabric>1</WNA_AttunementFabric>
+		</costList>
+		<statBases Inherit="false">
+			<WorkToBuild>400</WorkToBuild>
+		</statBases>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+		<researchPrerequisites>
+			<li>WNA_MilitaryMaterial</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	<TerrainDef ParentName="WNA_FloorsBase">
+		<defName>WNA_BridgeSoil</defName>
+		<label>artificial soil</label>
+		<description>Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth.</description>
+		<texturePath>terrains/wna_bridgesoil</texturePath>
+		<isFoundation>true</isFoundation>
+		<bridge>true</bridge>
+		<bridgePropsPath>terrains/props/edgeprop</bridgePropsPath>
+		<spaceBridgePropsPath>terrains/props/edgeprop</spaceBridgePropsPath>
+		<affordances Inherit="false">
+			<li>Light</li>
+			<li>GrowSoil</li>
+			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_GrowAsh</li>
+			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_AshCastle</li>
+			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_GrowSoilVine</li>
+		</affordances>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+		<statBases Inherit="false">
+			<WorkToBuild>400</WorkToBuild>
+		</statBases>
+		<tags>
+			<li>Soil</li>
+			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_Ash</li>
+		</tags>
+		<fertility>6</fertility>
+		<researchPrerequisites>
+			<li>WNA_MilitaryMaterial</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	
 </Defs>

@@ -16,8 +16,8 @@
         <defaultPlacingRot>South</defaultPlacingRot>
 		<castEdgeShadows>true</castEdgeShadows>
         <rotatable>true</rotatable>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_MatterTransformation</li>
+        <researchPrerequisites>
+            <li>WNA_Transmutation</li>
         </researchPrerequisites>
         <costList>
             <Steel>150</Steel>
@@ -84,8 +84,8 @@
             <Steel>80</Steel>
             <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_BaseDefense</li>
+        <researchPrerequisites>
+            <li>WNA_HumanUsage</li>
         </researchPrerequisites>
         <comps>
             <li Class="CompProperties_Power">
@@ -151,8 +151,8 @@
             <ComponentIndustrial>8</ComponentIndustrial>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_AdvArsenal</li>
+        <researchPrerequisites>
+            <li>WNA_ParticleArmory</li>
         </researchPrerequisites>
         <comps>
             <li Class="CompProperties_Glower">
@@ -235,8 +235,8 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
 		</graphicData>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_AdvArsenal</li>
+        <researchPrerequisites>
+            <li>WNA_CivilianTech</li>
         </researchPrerequisites>
         <size>(2,2)</size>
         <rotatable>true</rotatable>
@@ -261,7 +261,8 @@
                 <growthFactor>16</growthFactor>
                 <yieldFactor>10</yieldFactor>
                 <extraYieldFactor>10</extraYieldFactor>
-                <plantCount>55</plantCount>
+                <plantCount>80</plantCount>
+                <isManual>false</isManual>
             </li>
         </comps>
 	</ThingDef>
@@ -301,8 +302,9 @@
             <Neutroamine>80</Neutroamine>
             <WNA_Methanol>120</WNA_Methanol>
         </costList>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_AdvArsenal</li>
+        <researchPrerequisites>
+            <li>WNA_TheVoid</li>
+            <li>WNA_HumanUsage</li>
         </researchPrerequisites>
         <comps>
             <li Class="CompProperties_Power">
@@ -368,8 +370,8 @@
             <Plasteel>60</Plasteel>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
-        <researchPrerequisites Inherit="false">
-            <li>WNA_AdvArsenal</li>
+        <researchPrerequisites>
+            <li>WNA_AdvancedProduction</li>
         </researchPrerequisites>
         <comps>
             <li Class="CompProperties_Power">
@@ -377,7 +379,7 @@
                 <basePowerConsumption>200</basePowerConsumption>
             </li>
             <li Class="WNA.ThingCompProp.CompStarcoreDriller">
-                <workPerPortion>2000</workPerPortion>
+                <workPerPortion>60000</workPerPortion>
                 <autoDrillEfficiency>1</autoDrillEfficiency>
             </li>
             <li Class="CompProperties_Flickable"/>
@@ -385,6 +387,102 @@
         </comps>
         <placeWorkers>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+	</ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_AssistCabinet</defName>
+		<label>assistant cabinet</label>
+		<description>a tool cabinet.</description>
+        <graphicData Inherit="false">
+			<texPath>Things/Building/Misc/MultiAnalyzer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <drawSize>1</drawSize>
+            <color>(180,173,150)</color>
+		</graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <rotatable>true</rotatable>
+		<passability>PassThroughOnly</passability>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.6</staticSunShadowHeight>
+		<useHitPoints>true</useHitPoints>
+        <statBases Inherit="false">
+            <Mass>10</Mass>
+            <MaxHitPoints>1000</MaxHitPoints>
+            <WorkToBuild>1200</WorkToBuild>
+            <Beauty>3</Beauty>
+        </statBases>
+        <costList>
+            <Steel>60</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <building>
+            <isEdifice>false</isEdifice>
+		</building>
+        <clearBuildingArea>false</clearBuildingArea>
+        <researchPrerequisites>
+            <li>WNA_CivilianTech</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <WorkTableWorkSpeedFactor>20</WorkTableWorkSpeedFactor>
+                </statOffsets>
+                <maxSimultaneous>8</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+	</ThingDef>
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_Duplicator</defName>
+		<label>duplicator</label>
+		<description>a duplicator increasing recipe output.</description>
+        <graphicData Inherit="false">
+			<texPath>Things/Building/Misc/MultiAnalyzer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <drawSize>1</drawSize>
+            <color>(255,235,122)</color>
+		</graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <rotatable>true</rotatable>
+		<passability>PassThroughOnly</passability>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.6</staticSunShadowHeight>
+		<useHitPoints>true</useHitPoints>
+        <statBases Inherit="false">
+            <Mass>10</Mass>
+            <MaxHitPoints>1000</MaxHitPoints>
+            <WorkToBuild>6000</WorkToBuild>
+            <Beauty>6</Beauty>
+        </statBases>
+        <costList>
+            <Steel>40</Steel>
+            <Gold>2</Gold>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <researchPrerequisites>
+            <li>WNA_AdvancedProduction</li>
+        </researchPrerequisites>
+        <building>
+            <isEdifice>false</isEdifice>
+		</building>
+        <clearBuildingArea>false</clearBuildingArea>
+        <comps>
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <WorkTableEfficiencyFactor>2</WorkTableEfficiencyFactor>
+                </statOffsets>
+                <maxSimultaneous>8</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
         </placeWorkers>
 	</ThingDef>
 

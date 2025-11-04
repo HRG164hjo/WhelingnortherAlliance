@@ -222,4 +222,13 @@
             <Mass>80</Mass>
         </value>
     </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThoughtDef[defName="BlowingSand" or defName="MadeStatueOfMe"]</xpath>
+        <value>
+            <nullifyingPrecepts MayRequire="ludeon.rimworld.ideology">
+                <li>WNA_P_Proselyte</li>
+            </nullifyingPrecepts>
+        </value>
+    </Operation>
 </Patch>

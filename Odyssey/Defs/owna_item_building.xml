@@ -7,7 +7,7 @@
         <graphicData>
             <texPath>buildings/misc/wna_fueltank</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(2,2)</drawSize>
+            <drawSize>2</drawSize>
         </graphicData>
         <size>(2,2)</size>
         <statBases>
@@ -63,8 +63,8 @@
         <description>TODO</description>
         <graphicData>
             <graphicClass>Graphic_Multi</graphicClass>
-            <texPath>Things/Building/LateralThruster/LateralThruster</texPath>
-            <drawSize>(2,2)</drawSize>
+            <texPath>Things/Building/Ship/ShipEngine</texPath>
+            <drawSize>(2.85,2.15)</drawSize>
             <color>(74,74,74)</color>
         </graphicData>
         <size>(2,2)</size>
@@ -137,61 +137,4 @@
         </comps>
     </ThingDef>
 
-    <ThingDef ParentName="WNA_FurnitureBase">
-        <defName>WNA_LifeSupporter</defName>
-        <label>life suporter</label>
-        <description>A wall-mounted life support unit</description>
-        <uiIconPath>buildings/wna_lifesupporter/icon</uiIconPath>
-        <graphicData>
-            <texPath>buildings/wna_lifesupporter/wna_lifesupporter</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
-            <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
-            <drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
-            <drawOffsetEast>(0.9,0,0)</drawOffsetEast>
-            <damageData>
-                <enabled>false</enabled>
-            </damageData>
-        </graphicData>
-        <altitudeLayer>BuildingOnTop</altitudeLayer>
-        <statBases>
-            <Mass>0.5</Mass>
-            <WorkToBuild>1500</WorkToBuild>
-        </statBases>
-        <costList/>
-        <researchPrerequisites>
-            <li>StandardGravtech</li>
-        </researchPrerequisites>
-        <rotatable>true</rotatable>
-        <tickerType>Rare</tickerType>
-        <passability>Standable</passability>
-        <building>
-            <isEdifice>false</isEdifice>
-            <isAttachment>true</isAttachment>
-            <expandHomeArea>false</expandHomeArea>
-        </building>
-        <placeWorkers>
-            <li>Placeworker_AttachedToWall</li>
-        </placeWorkers>
-        <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerPlant</compClass>
-                <basePowerConsumption>-10000</basePowerConsumption>
-                <transmitsPower>true</transmitsPower>
-            </li>
-            <li Class="CompProperties_OxygenPusher">
-                <requiresPower>true</requiresPower>
-                <airPerSecondPerHundredCells>1</airPerSecondPerHundredCells>
-            </li>
-            <li Class="WNA.ThingCompProp.CompHeatPusher">
-                <heatPushStandard>21</heatPushStandard>
-                <heatPushMult>21</heatPushMult>
-            </li>
-            <li Class="CompProperties_Glower">
-                <glowRadius>14</glowRadius>
-                <overlightRadius>14</overlightRadius>
-                <glowColor>(124,124,124,0)</glowColor>
-            </li>
-        </comps>
-    </ThingDef>
 </Defs>

@@ -13,8 +13,10 @@
                     <categories>
                         <li>Foods</li>
                         <li>Leathers</li>
-                        <li>PlantMatter</li>
                     </categories>
+                    <thingDefs>
+                        <li MayRequire="sarg.alphabiomes">AB_RawFrostLeaf</li>
+                    </thingDefs>
                 </filter>
                 <count>0.4</count>
             </li>
@@ -23,10 +25,14 @@
             <categories>
                 <li>Foods</li>
                 <li>Leathers</li>
-                <li>PlantMatter</li>
             </categories>
+            <thingDefs>
+                <li MayRequire="sarg.alphabiomes">AB_RawFrostLeaf</li>
+            </thingDefs>
             <disallowedCategories>
                 <li>FoodMeals</li>
+                <li>Drugs</li>
+                <li MayRequire="sarg.alphacrafts">AC_ArtisanProducts</li>
                 <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
                 <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
                 <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
@@ -36,8 +42,13 @@
             <categories>
                 <li>Foods</li>
             </categories>
+            <thingDefs>
+                <li MayRequire="sarg.alphabiomes">AB_RawFrostLeaf</li>
+            </thingDefs>
             <disallowedCategories>
                 <li>FoodMeals</li>
+                <li>Drugs</li>
+                <li MayRequire="sarg.alphacrafts">AC_ArtisanProducts</li>
                 <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
                 <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
                 <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
@@ -52,7 +63,7 @@
 	        <li>ElectricStove</li>
 	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_CookRationBulk</defName>
@@ -66,8 +77,10 @@
                     <categories>
                         <li>Foods</li>
                         <li>Leathers</li>
-                        <li>PlantMatter</li>
                     </categories>
+                    <thingDefs>
+                        <li MayRequire="sarg.alphabiomes">AB_RawFrostLeaf</li>
+                    </thingDefs>
                 </filter>
                 <count>2.0</count>
             </li>
@@ -76,36 +89,47 @@
             <categories>
                 <li>Foods</li>
                 <li>Leathers</li>
-                <li>PlantMatter</li>
             </categories>
+            <thingDefs>
+                <li MayRequire="sarg.alphabiomes">AB_RawFrostLeaf</li>
+            </thingDefs>
             <disallowedCategories>
                 <li>FoodMeals</li>
+                <li>Drugs</li>
+                <li MayRequire="sarg.alphacrafts">AC_ArtisanProducts</li>
                 <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
                 <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
                 <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+                <li MayRequire="vanillaexpanded.vcookebakery">VCE_CakeBatters</li>
             </disallowedCategories>
         </fixedIngredientFilter>
         <defaultIngredientFilter>
             <categories>
                 <li>Foods</li>
             </categories>
+            <thingDefs>
+                <li MayRequire="sarg.alphabiomes">AB_RawFrostLeaf</li>
+            </thingDefs>
             <disallowedCategories>
                 <li>FoodMeals</li>
+                <li>Drugs</li>
+                <li MayRequire="sarg.alphacrafts">AC_ArtisanProducts</li>
                 <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
                 <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
                 <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+                <li MayRequire="vanillaexpanded.vcookebakery">VCE_CakeBatters</li>
             </disallowedCategories>
         </defaultIngredientFilter>
         <products>
             <WNA_Ration>5</WNA_Ration>
         </products>
-        <workAmount>1000</workAmount>
+        <workAmount>800</workAmount>
         <recipeUsers>
 	        <li>FueledStove</li>
 	        <li>ElectricStove</li>
 	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -121,6 +145,7 @@
                         <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
                         <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
                         <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+                        <li MayRequire="vanillaexpanded.vcookebakery">VCE_CakeBatters</li>
                     </categories>
                 </filter>
                 <count>1</count>
@@ -132,11 +157,13 @@
                 <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
                 <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
                 <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+                <li MayRequire="vanillaexpanded.vcookebakery">VCE_CakeBatters</li>
             </categories>
-            <disallowedCategories/>
+            <disallowedCategories>
+                <li>Drugs</li>
+            </disallowedCategories>
             <disallowedThingDefs>
                 <li>WNA_Ration</li>
-                <li MayRequire="3hstltd.foods.instanoodles">WNA_InstaNoodle</li>
             </disallowedThingDefs>
         </fixedIngredientFilter>
         <products>
@@ -149,7 +176,7 @@
 	        <li>CraftingSpot</li>
 	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_RepackRationBulk</defName>
@@ -164,6 +191,7 @@
                         <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
                         <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
                         <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+                        <li MayRequire="vanillaexpanded.vcookebakery">VCE_CakeBatters</li>
                     </categories>
                 </filter>
                 <count>5</count>
@@ -175,11 +203,13 @@
                 <li MayRequire="vanillaexpanded.vcooke">VCE_UncookedSoups</li>
                 <li MayRequire="vanillaexpanded.vcookestews">VCE_UncookedStews</li>
                 <li MayRequire="vanillaexpanded.vbrewe">VBE_Drinks</li>
+                <li MayRequire="vanillaexpanded.vcookebakery">VCE_CakeBatters</li>
             </categories>
-            <disallowedCategories/>
+            <disallowedCategories>
+                <li>Drugs</li>
+            </disallowedCategories>
             <disallowedThingDefs>
                 <li>WNA_Ration</li>
-                <li MayRequire="3hstltd.foods.instanoodles">WNA_InstaNoodle</li>
             </disallowedThingDefs>
         </fixedIngredientFilter>
         <products>
@@ -192,15 +222,110 @@
 	        <li>CraftingSpot</li>
 	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
     </RecipeDef>
 
     <!-- medikit -->
     <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNAPackMedikit</defName>
-        <description>Repack various madicines to meet WNA military standard.</description>
+        <defName>WNA_MakeMedikit</defName>
+        <description>use useful materials to make madicines.</description>
         <jobString>working.</jobString>
         <label>make WNA medicine pack</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>PlantMatter</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Wort</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>PlantMatter</li>
+            </categories>
+            <thingDefs>
+                <li>Wort</li>
+            </thingDefs>
+            <disallowedThingDefs>
+                <li>WNA_Medikit</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>PlantMatter</li>
+            </categories>
+            <disallowedThingDefs>
+                <li>WNA_Medikit</li>
+            </disallowedThingDefs>
+        </defaultIngredientFilter>
+        <products>
+            <WNA_Medikit>1</WNA_Medikit>
+        </products>
+        <workAmount>250</workAmount>
+        <recipeUsers>
+	        <li>DrugLab</li>
+	        <li>WNA_Ritespot</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeMedikitBulk</defName>
+        <description>use useful materials to make madicines.</description>
+        <jobString>working.</jobString>
+        <label>make WNA medicine pack x5</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>PlantMatter</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Wort</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>PlantMatter</li>
+            </categories>
+            <thingDefs>
+                <li>Wort</li>
+            </thingDefs>
+            <disallowedThingDefs>
+                <li>WNA_Medikit</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>PlantMatter</li>
+            </categories>
+            <disallowedThingDefs>
+                <li>WNA_Medikit</li>
+            </disallowedThingDefs>
+        </defaultIngredientFilter>
+        <products>
+            <WNA_Medikit>5</WNA_Medikit>
+        </products>
+        <workAmount>800</workAmount>
+        <recipeUsers>
+	        <li>DrugLab</li>
+	        <li>WNA_Ritespot</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_PackMedikit</defName>
+        <description>Repack various madicines to meet WNA military standard.</description>
+        <jobString>working.</jobString>
+        <label>pack WNA medicine pack</label>
         <ingredients>
             <li>
                 <filter>
@@ -208,10 +333,6 @@
                         <li>Medicine</li>
                         <li>Drugs</li>
                     </categories>
-                    <thingDefs>
-                        <li>Wort</li>
-                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
-                    </thingDefs>
                 </filter>
                 <count>1</count>
             </li>
@@ -221,10 +342,6 @@
                 <li>Medicine</li>
                 <li>Drugs</li>
             </categories>
-            <thingDefs>
-                <li>Wort</li>
-                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
-            </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>
             </disallowedThingDefs>
@@ -233,9 +350,6 @@
             <categories>
                 <li>Medicine</li>
             </categories>
-            <thingDefs>
-                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
-            </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>
             </disallowedThingDefs>
@@ -243,18 +357,18 @@
         <products>
             <WNA_Medikit>1</WNA_Medikit>
         </products>
-        <workAmount>500</workAmount>
+        <workAmount>250</workAmount>
         <recipeUsers>
 	        <li>DrugLab</li>
 	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNAPackMedikitBulk</defName>
+        <defName>WNA_PackMedikitBulk</defName>
         <description>Repack various madicines to meet WNA military standard.</description>
         <jobString>working.</jobString>
-        <label>make WNA medicine pack x5</label>
+        <label>pack WNA medicine pack x5</label>
         <ingredients>
             <li>
                 <filter>
@@ -262,10 +376,6 @@
                         <li>Medicine</li>
                         <li>Drugs</li>
                     </categories>
-                    <thingDefs>
-                        <li>Wort</li>
-                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
-                    </thingDefs>
                 </filter>
                 <count>5</count>
             </li>
@@ -275,10 +385,6 @@
                 <li>Medicine</li>
                 <li>Drugs</li>
             </categories>
-            <thingDefs>
-                <li>Wort</li>
-                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
-            </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>
             </disallowedThingDefs>
@@ -287,9 +393,6 @@
             <categories>
                 <li>Medicine</li>
             </categories>
-            <thingDefs>
-                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_RawMuck</li>
-            </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>
             </disallowedThingDefs>
@@ -297,12 +400,12 @@
         <products>
             <WNA_Medikit>5</WNA_Medikit>
         </products>
-        <workAmount>2000</workAmount>
+        <workAmount>800</workAmount>
         <recipeUsers>
 	        <li>DrugLab</li>
 	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
     </RecipeDef>
 
 </Defs>

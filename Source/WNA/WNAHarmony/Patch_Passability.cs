@@ -32,13 +32,13 @@ namespace WNA.WNAHarmony
         };
         public static bool IsValidPawn(Pawn pawn)
         {
-            if (pawn == null)
+            if (pawn == null || pawn.Faction == null)
                 return false;
             if (pawn?.def != null && freeRaces.Contains(pawn.def.defName))
                 return true;
             if (pawn.health?.hediffSet?.hediffs?.Any(h => h.def != null && freeHediffs.Contains(h.def.defName)) == true)
                 return true;
-            if (pawn.Ideo != null && pawn.Ideo.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) && (pawn.Faction.def.defName == "WNA_FactionWNA" || pawn.Faction == Faction.OfPlayer))
+            if (pawn.Ideo != null && pawn.Ideo.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) && (pawn.Faction.def.defName == "WNA_FactionWNA" || (pawn.Faction == Faction.OfPlayer && WNAMainDefOf.WNA_TheEnlightment.IsFinished)))
                 return true;
             return false;
         }
@@ -89,7 +89,7 @@ namespace WNA.WNAHarmony
             }
             catch (Exception ex)
             {
-                Log.Error($"[WNA] TerrainFreeMovement_Patch error: {ex}");
+                Log.Error($"[WNA] Patch_Passability error: {ex}");
             }
         }
     }
