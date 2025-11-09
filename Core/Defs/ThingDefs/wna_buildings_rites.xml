@@ -59,7 +59,6 @@
             <li>WNA_RiteBeastDivision</li>
             <li>WNA_RiteRebelStriving</li>
             <li>WNA_RiteAbleting</li>
-            <li>Make_StoneBlocksAny</li>
             <li MayRequire="sarg.rimbees">WNA_RecipeAlphaBees</li>
             <li MayRequire="sarg.rimbees">WNA_RecipeAlphaBeesToo</li>
         </recipes>

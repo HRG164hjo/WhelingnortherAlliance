@@ -55,4 +55,26 @@
         </nomatch>
     </Operation>
     
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ChunkMechanoidSlag"]</xpath>
+        <value>
+            <smeltable>true</smeltable>
+            <smeltProducts>
+                <Steel>15</Steel>
+                <Plasteel>5</Plasteel>
+                <Silver>10</Silver>
+            </smeltProducts>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[@ParentName="MechSerumBase"]/tradeability</xpath>
+    </Operation>
+
+    <!--<Operation Class="PatchOperationAdd">
+        <xpath>Defs/RoofDef[defName="RoofConstructed"]</xpath>
+        <value>
+            <canCollapse>false</canCollapse>
+        </value>
+    </Operation>-->
 </Patch>

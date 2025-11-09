@@ -51,7 +51,7 @@
 
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeBaseboard</defName>
-        <label>make fabric baseboard x4</label>
+        <label>make fabric baseboard</label>
         <description>make a baseboard used for making attunement fabric.</description>
         <jobString>making baseboard.</jobString>
         <ingredients>
@@ -61,9 +61,12 @@
                         <li>Steel</li>
                         <li>Silver</li>
                         <li>Gold</li>
+                        <li>Plasteel</li>
+                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                     </thingDefs>
                 </filter>
-                <count>30</count>
+                <count>25</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -71,10 +74,13 @@
                 <li>Steel</li>
                 <li>Silver</li>
                 <li>Gold</li>
+                <li>Plasteel</li>
+                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <WNA_FabricBaseboard>4</WNA_FabricBaseboard>
+            <WNA_FabricBaseboard>1</WNA_FabricBaseboard>
         </products>
         <workAmount>400</workAmount>
         <recipeUsers>
@@ -84,7 +90,7 @@
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeBaseboardBulk</defName>
-        <label>make fabric baseboard x40</label>
+        <label>make fabric baseboard x20</label>
         <description>make a baseboard used for making attunement fabric.</description>
         <jobString>making baseboard.</jobString>
         <ingredients>
@@ -94,9 +100,12 @@
                         <li>Steel</li>
                         <li>Silver</li>
                         <li>Gold</li>
+                        <li>Plasteel</li>
+                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                     </thingDefs>
                 </filter>
-                <count>300</count>
+                <count>500</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -104,10 +113,13 @@
                 <li>Steel</li>
                 <li>Silver</li>
                 <li>Gold</li>
+                <li>Plasteel</li>
+                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <WNA_FabricBaseboard>40</WNA_FabricBaseboard>
+            <WNA_FabricBaseboard>20</WNA_FabricBaseboard>
         </products>
         <workAmount>3000</workAmount>
         <recipeUsers>
@@ -140,15 +152,6 @@
             </li>
             <li>
                 <filter>
-                    <thingDefs>
-                        <li>Silver</li>
-                        <li>Gold</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-            <li>
-                <filter>
                     <categories>
                         <li>Textiles</li>
                     </categories>
@@ -160,8 +163,6 @@
             <thingDefs>
                 <li>WNA_FabricBaseboard</li>
                 <li>WNA_Quicklime</li>
-                <li>Silver</li>
-                <li>Gold</li>
             </thingDefs>
             <categories>
                 <li>Textiles</li>
@@ -186,17 +187,12 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>WNA_Quicklime</li>
-                    </thingDefs>
-                </filter>
-                <count>15</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
                         <li>Steel</li>
                         <li>Silver</li>
                         <li>Gold</li>
+                        <li>Plasteel</li>
+                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                     </thingDefs>
                 </filter>
                 <count>25</count>
@@ -212,17 +208,19 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>WNA_Quicklime</li>
                 <li>Steel</li>
                 <li>Silver</li>
                 <li>Gold</li>
+                <li>Plasteel</li>
+                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
             </thingDefs>
             <categories>
                 <li>StoneChunks</li>
             </categories>
         </fixedIngredientFilter>
         <products>
-            <WNA_Concrete>50</WNA_Concrete>
+            <WNA_Concrete>40</WNA_Concrete>
         </products>
         <workAmount>500</workAmount>
         <recipeUsers>
@@ -240,17 +238,12 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>WNA_Quicklime</li>
-                    </thingDefs>
-                </filter>
-                <count>15</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
                         <li>Steel</li>
                         <li>Silver</li>
                         <li>Gold</li>
+                        <li>Plasteel</li>
+                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                     </thingDefs>
                 </filter>
                 <count>25</count>
@@ -262,6 +255,7 @@
                     </categories>
                     <thingDefs>
                         <li>Jade</li>
+                        <li>WNA_Quicklime</li>
                         <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                         <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                         <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
@@ -273,11 +267,14 @@
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
-                <li>WNA_Quicklime</li>
                 <li>Steel</li>
                 <li>Silver</li>
                 <li>Gold</li>
+                <li>Plasteel</li>
+                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                 <li>Jade</li>
+                <li>WNA_Quicklime</li>
                 <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                 <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
@@ -288,64 +285,12 @@
             </categories>
         </fixedIngredientFilter>
         <products>
-            <WNA_Concrete>50</WNA_Concrete>
+            <WNA_Concrete>40</WNA_Concrete>
         </products>
         <workAmount>500</workAmount>
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	        <li>ElectricCrematorium</li>
-	    </recipeUsers>
-        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
-    </RecipeDef>
-
-    <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNA_MakeTrinisium</defName>
-        <label>make trinisium</label>
-        <description>make an alloy sufficient for attacking.</description>
-        <jobString>making trinisium.</jobString>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Steel</li>
-                        <li>Silver</li>
-                        <li>Gold</li>
-                    </thingDefs>
-                </filter>
-                <count>75</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Uranium</li>
-                    </thingDefs>
-                </filter>
-                <count>35</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Plasteel</li>
-                    </thingDefs>
-                </filter>
-                <count>45</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>Steel</li>
-                <li>Silver</li>
-                <li>Gold</li>
-                <li>Uranium</li>
-                <li>Plasteel</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <WNA_Trinisium>75</WNA_Trinisium>
-        </products>
-        <workAmount>600</workAmount>
-        <recipeUsers>
-	        <li>ElectricSmelter</li>
 	    </recipeUsers>
         <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
     </RecipeDef>
@@ -362,6 +307,9 @@
                         <li>Steel</li>
                         <li>Silver</li>
                         <li>Gold</li>
+                        <li>Plasteel</li>
+                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                     </thingDefs>
                 </filter>
                 <count>75</count>
@@ -380,6 +328,9 @@
                 <li>Steel</li>
                 <li>Silver</li>
                 <li>Gold</li>
+                <li>Plasteel</li>
+                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
             </thingDefs>
             <categories>
                 <li>StoneChunks</li>
@@ -406,9 +357,12 @@
                         <li>Steel</li>
                         <li>Silver</li>
                         <li>Gold</li>
+                        <li>Plasteel</li>
+                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                     </thingDefs>
                 </filter>
-                <count>75</count>
+                <count>50</count>
             </li>
             <li>
                 <filter>
@@ -423,7 +377,7 @@
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
                     </thingDefs>
                 </filter>
-                <count>20</count>
+                <count>30</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -431,6 +385,9 @@
                 <li>Steel</li>
                 <li>Silver</li>
                 <li>Gold</li>
+                <li>Plasteel</li>
+                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                 <li>Jade</li>
                 <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>

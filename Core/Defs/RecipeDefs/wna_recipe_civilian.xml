@@ -110,7 +110,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <WNA_Cinnabar>5</WNA_Cinnabar>
+            <WNA_Cinnabar>10</WNA_Cinnabar>
         </products>
         <workAmount>400</workAmount>
         <recipeUsers>
@@ -130,7 +130,7 @@
                         <li>WNA_Cinnabar</li>
                     </thingDefs>
                 </filter>
-                <count>5</count>
+                <count>10</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -161,6 +161,9 @@
                     <categories>
                         <li>Corpses</li>
                     </categories>
+                    <thingDefs>
+                        <li>Skull</li>
+                    </thingDefs>
                 </filter>
                 <count>1</count>
             </li>
@@ -169,6 +172,9 @@
             <categories>
                 <li>Corpses</li>
             </categories>
+            <thingDefs>
+                <li>Skull</li>
+            </thingDefs>
             <disallowedCategories>
                 <li>CorpsesMechanoid</li>
             </disallowedCategories>
@@ -349,6 +355,13 @@
                     <categories>
                         <li>StoneBlocks</li>
                     </categories>
+                    <thingDefs>
+                        <li>Jade</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                    </thingDefs>
                 </filter>
                 <count>30</count>
             </li>
@@ -374,6 +387,11 @@
                 <li>Steel</li>
                 <li>Uranium</li>
                 <li>WNA_ParticleVial</li>
+                <li>Jade</li>
+                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
             </thingDefs>
             <categories>
                 <li>StoneBlocks</li>
@@ -401,21 +419,21 @@
                         <li>Plasteel</li>
                     </thingDefs>
                 </filter>
-                <count>30</count>
+                <count>25</count>
             </li>
             <li>
                 <filter>
                     <thingDefs>
-                        <li>Uranium</li>
+                        <li>Steel</li>
                     </thingDefs>
                 </filter>
-                <count>20</count>
+                <count>35</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
                 <li>Plasteel</li>
-                <li>Uranium</li>
+                <li>Steel</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>

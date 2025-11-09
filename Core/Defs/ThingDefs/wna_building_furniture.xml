@@ -156,7 +156,7 @@
             <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
             <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
             <paintable>true</paintable>
-            <maxItemsInCell>900</maxItemsInCell>
+            <maxItemsInCell>2000</maxItemsInCell>
             <storageGroupTag>Shelf</storageGroupTag>
             <fixedStorageSettings>
                 <filter>
@@ -168,9 +168,7 @@
             <defaultStorageSettings>
                 <priority>Preferred</priority>
                 <filter>
-                    <categories>
-                        <li>Root</li>
-                    </categories>
+                    <categories/>
                 </filter>
             </defaultStorageSettings>
         </building>
@@ -310,6 +308,59 @@
             <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
         </placeWorkers>
 	</ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+        <defName>WNA_Banner</defName>
+        <label>whelingnorther banner</label>
+        <description>A black banner with red whelingnorther alliance symbol on it.</description>
+        <graphicData>
+            <texPath>buildings/misc/wna_flag</texPath>
+            <color>(255,255,255,255)</color>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
+            <drawOffset>(0,0,0.4)</drawOffset>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <statBases>
+            <Mass>1</Mass>
+            <WorkToBuild>4320</WorkToBuild>
+			<Beauty>4320</Beauty>
+            <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">43200</TerrorSource>
+            <ContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">Infinity</ContainmentStrength>
+        </statBases>
+        <costList>
+            <WNA_DarkAsbestos>36</WNA_DarkAsbestos>
+            <WNA_ChimingSteel>12</WNA_ChimingSteel>
+        </costList>
+        <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+        <rotatable>true</rotatable>
+        <tickerType>Rare</tickerType>
+        <passability>Standable</passability>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>12</glowRadius>
+                <overlightRadius>12</overlightRadius>
+                <glowColor>(255,0,0,155)</glowColor>
+            </li>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Artistic</li>
+                    <li>Dignified</li>
+                    <li>Flame</li>
+                    <li>Minimal</li>
+                    <li>Morbid</li>
+                    <li>Natural</li>
+                    <li MayRequire="ludeon.rimworld.anomaly">Void</li>
+                </focusTypes>
+            </li>
+        </comps>
+		<modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToIronKill>true</immuneToIronKill>
+            </li>
+		</modExtensions>
+    </ThingDef>
 
 <!--<ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_TestAE</defName>

@@ -38,7 +38,7 @@
             </li>
             <li Class="CompProperties_Refuelable">
                 <fuelCapacity>10000</fuelCapacity>
-                <fuelMultiplier>10000</fuelMultiplier>
+                <fuelMultiplier>1000</fuelMultiplier>
                 <fuelFilter>
                     <thingDefs>
                         <li>WNA_UraniumBattery</li>

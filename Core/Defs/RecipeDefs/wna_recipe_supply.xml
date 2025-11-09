@@ -333,6 +333,18 @@
                         <li>Medicine</li>
                         <li>Drugs</li>
                     </categories>
+                    <thingDefs>
+                        <li MayRequire="ludeon.rimworld.biotech">ArchiteCapsule</li>
+                        <li MayRequire="ludeon.rimworld.biotech">DeathrestCapacitySerum</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">SentienceCatalyst</li>
+                        <li>MechSerumHealer</li>
+                        <li>MechSerumResurrector</li>
+                        <li MayRequire="ludeon.rimworld.ideology">GauranlenSeed</li>
+                        <li MayRequire="ludeon.rimworld.biotech">PoluxSeed</li>
+                        <li MayRequire="ludeon.rimworld.anomaly">HarbingerSeed</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
+                        <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
+                    </thingDefs>
                 </filter>
                 <count>1</count>
             </li>
@@ -342,6 +354,18 @@
                 <li>Medicine</li>
                 <li>Drugs</li>
             </categories>
+            <thingDefs>
+                <li MayRequire="ludeon.rimworld.biotech">ArchiteCapsule</li>
+                <li MayRequire="ludeon.rimworld.biotech">DeathrestCapacitySerum</li>
+                <li MayRequire="ludeon.rimworld.odyssey">SentienceCatalyst</li>
+                <li>MechSerumHealer</li>
+                <li>MechSerumResurrector</li>
+                <li MayRequire="ludeon.rimworld.ideology">GauranlenSeed</li>
+                <li MayRequire="ludeon.rimworld.biotech">PoluxSeed</li>
+                <li MayRequire="ludeon.rimworld.anomaly">HarbingerSeed</li>
+                <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
+                <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
+            </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>
             </disallowedThingDefs>
@@ -376,6 +400,18 @@
                         <li>Medicine</li>
                         <li>Drugs</li>
                     </categories>
+                    <thingDefs>
+                        <li MayRequire="ludeon.rimworld.biotech">ArchiteCapsule</li>
+                        <li MayRequire="ludeon.rimworld.biotech">DeathrestCapacitySerum</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">SentienceCatalyst</li>
+                        <li>MechSerumHealer</li>
+                        <li>MechSerumResurrector</li>
+                        <li MayRequire="ludeon.rimworld.ideology">GauranlenSeed</li>
+                        <li MayRequire="ludeon.rimworld.biotech">PoluxSeed</li>
+                        <li MayRequire="ludeon.rimworld.anomaly">HarbingerSeed</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
+                        <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
+                    </thingDefs>
                 </filter>
                 <count>5</count>
             </li>
@@ -385,6 +421,18 @@
                 <li>Medicine</li>
                 <li>Drugs</li>
             </categories>
+            <thingDefs>
+                <li MayRequire="ludeon.rimworld.biotech">ArchiteCapsule</li>
+                <li MayRequire="ludeon.rimworld.biotech">DeathrestCapacitySerum</li>
+                <li MayRequire="ludeon.rimworld.odyssey">SentienceCatalyst</li>
+                <li>MechSerumHealer</li>
+                <li>MechSerumResurrector</li>
+                <li MayRequire="ludeon.rimworld.ideology">GauranlenSeed</li>
+                <li MayRequire="ludeon.rimworld.biotech">PoluxSeed</li>
+                <li MayRequire="ludeon.rimworld.anomaly">HarbingerSeed</li>
+                <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
+                <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
+            </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>
             </disallowedThingDefs>

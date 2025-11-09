@@ -30,7 +30,8 @@
         <label>long jump</label>
         <description>Saboteurs have recevied professional trainings, they can make long-distance jumps without using any other equipments.</description>
         <iconPath>karma</iconPath>
-        <cooldownTicksRange>60</cooldownTicksRange>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
         <verbProperties>
             <verbClass>Verb_CastAbilityJump</verbClass>
             <label>jump</label>
@@ -54,6 +55,7 @@
         <description>Mark target as a orbital strike positioning beacon. Chimingblaze Celestrike Satellite Network will then adjust and focus, deliver a merciless strike to the target.</description>
         <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
             <warmupTime>0</warmupTime>

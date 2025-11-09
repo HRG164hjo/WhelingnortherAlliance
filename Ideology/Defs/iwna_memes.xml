@@ -119,6 +119,15 @@
             <li>WNA_P_Proselyte</li>
          </li>
       </requireOne>
+      <addDesignators>
+         <li>WNA_Banner</li>
+      </addDesignators>
+      <agreeableTraits>
+         <Nerves>2</Nerves>
+         <li>WNA_Trait_Unshakable</li>
+         <li>Ascetic</li>
+         <li>Asexual</li>
+      </agreeableTraits>
    </MemeDef>
 
    <IdeoStoryPatternDef>

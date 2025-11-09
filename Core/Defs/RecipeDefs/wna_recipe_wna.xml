@@ -39,7 +39,7 @@
         <recipeUsers>
 	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_Transmutation</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeDarkAsbestosToo</defName>
@@ -91,7 +91,7 @@
         <recipeUsers>
 	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_Transmutation</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -148,7 +148,7 @@
         <recipeUsers>
 	        <li>ElectricSmithy</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_Transmutation</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -196,6 +196,6 @@
         <recipeUsers>
 	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
-        <researchPrerequisite/>
+        <researchPrerequisite>WNA_Transmutation</researchPrerequisite>
     </RecipeDef>
 </Defs>

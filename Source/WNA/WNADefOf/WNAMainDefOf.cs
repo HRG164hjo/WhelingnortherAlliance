@@ -45,6 +45,7 @@ namespace WNA.WNADefOf
         public static TerrainDef WNA_FocusSoil;
         public static TerrainDef WNA_FocusSand;
 
+        public static ResearchProjectDef WNA_PsychicDawn;
         public static ResearchProjectDef WNA_TheEnlightment;
 
         public static ThingDef WNA_WNThan;
@@ -54,7 +55,6 @@ namespace WNA.WNADefOf
         public static ThingDef WNA_FerosBoo;
 
         public static ThingDef WNA_Cinnabar;
-        public static ThingDef WNA_Trinisium;
         public static ThingDef WNA_Desolisium;
         public static ThingDef WNA_Concrete;
         public static ThingDef WNA_AttunementFabric;

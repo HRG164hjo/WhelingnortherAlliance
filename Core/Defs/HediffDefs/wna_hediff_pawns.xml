@@ -129,7 +129,7 @@
                     <MeleeDodgeChance>20</MeleeDodgeChance>
                     <WorkSpeedGlobal>20</WorkSpeedGlobal>
                     <FishingSpeed MayRequire="ludeon.rimworld.odyssey">20</FishingSpeed>
-                    <FishingYield MayRequire="ludeon.rimworld.odyssey">20</FishingYield>
+                    <!--<FishingYield MayRequire="ludeon.rimworld.odyssey">20</FishingYield>-->
                 </statFactors>
                 <statOffsets>
                     <CarryingCapacity>100000</CarryingCapacity>

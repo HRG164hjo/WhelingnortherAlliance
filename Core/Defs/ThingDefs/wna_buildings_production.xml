@@ -146,8 +146,8 @@
             <Beauty>0</Beauty>
         </statBases>
         <costList>
-            <WNA_Desolisium>80</WNA_Desolisium>
-            <WNA_Trinisium>40</WNA_Trinisium>
+            <WNA_Desolisium>40</WNA_Desolisium>
+            <WNA_Concrete>80</WNA_Concrete>
             <ComponentIndustrial>8</ComponentIndustrial>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
@@ -380,7 +380,7 @@
             </li>
             <li Class="WNA.ThingCompProp.CompStarcoreDriller">
                 <workPerPortion>60000</workPerPortion>
-                <autoDrillEfficiency>1</autoDrillEfficiency>
+                <autoDrillEfficiency>20</autoDrillEfficiency>
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Forbiddable"/>

@@ -52,47 +52,13 @@
         <deepLumpSizeRange>6~10</deepLumpSizeRange>
     </ThingDef>
     
-    <!-- mili -->
-    <ThingDef ParentName="WNA_StuffBase">
-        <defName>WNA_Trinisium</defName>
-        <label>trinisium alloy</label>
-        <description>A copy of an military alloy material which possesses deep blue hue, excellent malleablitily and conduction properties. Great for making weapons.</description>
-        <graphicData>
-            <texPath>item/wna_trinisium</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.85</drawSize>
-        </graphicData>
-        <statBases>
-            <MarketValue>35</MarketValue>
-            <StuffPower_Armor_Sharp>6.4</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>5.0</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>4.6</StuffPower_Armor_Heat>
-            <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
-            <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
-            <SharpDamageMultiplier>35</SharpDamageMultiplier>
-            <BluntDamageMultiplier>20</BluntDamageMultiplier>
-        </statBases>
-        <stuffProps>
-            <categories>
-                <li>Metallic</li>
-            </categories>
-            <appearance>Metal</appearance>
-            <color>(76,87,100)</color>
-            <statFactors>
-                <MaxHitPoints>25</MaxHitPoints>
-                <DoorOpenSpeed>1.5</DoorOpenSpeed>
-                <IncomingDamageFactor>0.1</IncomingDamageFactor>
-            </statFactors>
-            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
-        </stuffProps>
-    </ThingDef>
-    
+    <!-- mili -->    
     <ThingDef ParentName="WNA_StuffBase">
         <defName>WNA_Desolisium</defName>
         <label>desolisium alloy</label>
         <description>A copy of an military alloy material which possesses brown hue, excellent durability and insulation properties. Great for making armors.</description>
         <graphicData>
-            <texPath>item/wna_desolisium</texPath>
+            <texPath>item/wna_alloy</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>0.85</drawSize>
         </graphicData>
@@ -103,15 +69,15 @@
             <StuffPower_Armor_Heat>20.0</StuffPower_Armor_Heat>
             <StuffPower_Insulation_Cold>60</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>60</StuffPower_Insulation_Heat>
-            <SharpDamageMultiplier>5</SharpDamageMultiplier>
-            <BluntDamageMultiplier>8</BluntDamageMultiplier>
+            <SharpDamageMultiplier>35</SharpDamageMultiplier>
+            <BluntDamageMultiplier>20</BluntDamageMultiplier>
         </statBases>
         <stuffProps>
             <categories>
                 <li>Metallic</li>
             </categories>
             <appearance>Metal</appearance>
-            <color>(139,127,94)</color>
+            <color>(180,189,199)</color>
             <statFactors>
                 <MaxHitPoints>225</MaxHitPoints>
                 <DoorOpenSpeed>1.5</DoorOpenSpeed>

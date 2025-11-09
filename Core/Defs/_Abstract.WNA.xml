@@ -12,7 +12,7 @@
         <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
         <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
         <hostile>false</hostile>
-        <aiCanUse>true</aiCanUse>
+        <aiCanUse>false</aiCanUse>
         <writeCombatLog>true</writeCombatLog>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     </AbilityDef>
@@ -89,8 +89,8 @@
         <canStrip>false</canStrip>
         <canOpenAnyDoor>true</canOpenAnyDoor>
         <ignoresPainShock>true</ignoresPainShock>
-        <initialWillRange>200~300</initialWillRange>
-        <initialResistanceRange>200~300</initialResistanceRange>
+        <initialWillRange>2000~3000</initialWillRange>
+        <initialResistanceRange>2000~3000</initialResistanceRange>
         <royalTitleChance>0</royalTitleChance>
         <isFighter>true</isFighter>
         <allowInMechClusters>false</allowInMechClusters>
@@ -120,6 +120,8 @@
                 <WNA_Mortaliner>999</WNA_Mortaliner>
             </xenotypeChances>
         </xenotypeSet>
+        <nameMaker>WNA_NamerPawn</nameMaker>
+        <nameMakerFemale>WNA_NamerPawnF</nameMakerFemale>
         <skills>
             <li>
                 <skill>Shooting</skill>
@@ -482,6 +484,11 @@
 		<constructEffect/>
         <repairEffect>Repair</repairEffect>
         <filthLeaving/>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToIronKill>true</immuneToIronKill>
+            </li>
+        </modExtensions>
     </ThingDef>
 	<ThingDef Abstract="true" ParentName="WNA_StructureBase" Name="WNA_FurnitureBase">
 		<passability>Standable</passability>
@@ -875,7 +882,7 @@
             <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
             <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">1</PilotingAbility>
-            <MaxFlightTime>2000</MaxFlightTime>
+            <MaxFlightTime>60000</MaxFlightTime>
             <FlightCooldown>0</FlightCooldown>
 		</statBases>
         <tools>
@@ -1036,7 +1043,7 @@
 			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
             <hasCorpse>false</hasCorpse>
             <hasMeat>false</hasMeat>
-            <flightStartChanceOnJobStart>0.5</flightStartChanceOnJobStart>
+            <flightStartChanceOnJobStart>1</flightStartChanceOnJobStart>
             <canFlyIntoMap>true</canFlyIntoMap>
             <canLeaveMapFlying>true</canLeaveMapFlying>
 		</race>
@@ -1104,13 +1111,13 @@
             </li>
             <li Class="StockGenerator_Category">
                 <categoryDef>Textiles</categoryDef>
-                <thingDefCountRange>2~3</thingDefCountRange>
+                <thingDefCountRange>3~3</thingDefCountRange>
                 <countRange>300000~500000</countRange>
                 <price>VeryCheap</price>
             </li>
             <li Class="StockGenerator_Category">
                 <categoryDef>Leathers</categoryDef>
-                <thingDefCountRange>2~3</thingDefCountRange>
+                <thingDefCountRange>3~3</thingDefCountRange>
                 <countRange>300000~500000</countRange>
                 <price>VeryCheap</price>
             </li>
@@ -1124,7 +1131,7 @@
                     <li>ComponentSpacer</li>
                     <li>Neutroamine</li>
                 </excludedThingDefs>
-                <thingDefCountRange>3~5</thingDefCountRange>
+                <thingDefCountRange>5~5</thingDefCountRange>
                 <countRange>300000~500000</countRange>
                 <price>VeryCheap</price>
             </li>
@@ -1136,7 +1143,7 @@
                     <li>Chocolate</li>
                     <li>Dye</li>
                 </excludedThingDefs>
-                <thingDefCountRange>5~8</thingDefCountRange>
+                <thingDefCountRange>8~8</thingDefCountRange>
                 <countRange>800000~1000000</countRange>
                 <price>VeryCheap</price>
             </li>
@@ -1145,7 +1152,7 @@
                 <excludedCategories>
                     <li>EggsFertilized</li>
                 </excludedCategories>
-                <thingDefCountRange>5~8</thingDefCountRange>
+                <thingDefCountRange>8~8</thingDefCountRange>
                 <countRange>800000~1000000</countRange>
                 <price>VeryCheap</price>
             </li>
@@ -1231,23 +1238,18 @@
                 <countRange>500000~800000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
-                <thingDef>TextBook</thingDef>
-                <countRange>2~3</countRange>
+                <thingDef>Skull</thingDef>
                 <price>VeryCheap</price>
+                <countRange>100000~200000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
-                <thingDef>Schematic</thingDef>
-                <countRange>1~2</countRange>
+                <thingDef>MechSerumResurrector</thingDef>
                 <price>VeryCheap</price>
-            </li>
-            <li Class="StockGenerator_SingleDef">
-                <thingDef>Novel</thingDef>
-                <countRange>2~3</countRange>
-                <price>VeryCheap</price>
+                <countRange>300000~500000</countRange>
             </li>
             <li Class="StockGenerator_Tag">
                 <tradeTag>MortarShell</tradeTag>
-                <thingDefCountRange>2~3</thingDefCountRange>
+                <thingDefCountRange>3~3</thingDefCountRange>
                 <countRange>300000~500000</countRange>
                 <price>VeryCheap</price>
             </li>

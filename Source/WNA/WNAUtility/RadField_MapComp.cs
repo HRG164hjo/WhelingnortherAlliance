@@ -42,7 +42,7 @@ namespace WNA.WNAUtility
             Color final = Color.clear;
             float r = Mathf.Lerp(0.784314f, 1f, Mathf.Clamp01(nrad));
             float g = Mathf.Lerp(0.392157f, 0.607843f, Mathf.Clamp01(nrad));
-            float a = Mathf.Lerp(0.4f, 1f, Mathf.Clamp01(nrad));
+            float a = Mathf.Lerp(0.1f, 1f, Mathf.Clamp01(nrad));
             final.r = r;
             final.g = g;
             final.a = a;

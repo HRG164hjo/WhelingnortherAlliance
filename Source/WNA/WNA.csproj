@@ -82,6 +82,7 @@
     <Compile Include="ThingCompProp\CompBodyshapeOverride.cs" />
     <Compile Include="ThingCompProp\CompIronApparel.cs" />
     <Compile Include="ThingCompProp\CompIronGuardian.cs" />
+    <Compile Include="ThingCompProp\CompMultiUse.cs" />
     <Compile Include="ThingCompProp\CompStarcoreDriller.cs" />
     <Compile Include="ThingCompProp\CompSwtichMode.cs" />
     <Compile Include="WNAHarmony.cs" />
@@ -129,9 +130,11 @@
     <Compile Include="WNAHarmony\Patch_Placeworker.cs" />
     <Compile Include="WNAHarmony\Patch_Plant.cs" />
     <Compile Include="WNAHarmony\Patch_RandomDrop.cs" />
+    <Compile Include="WNAHarmony\Patch_RecipeWorker.cs" />
     <Compile Include="WNAHarmony\Patch_Refuelable.cs" />
     <Compile Include="WNAHarmony\Patch_Roof.cs" />
     <Compile Include="WNAHarmony\Patch_SkillRecord.cs" />
+    <Compile Include="WNAHarmony\Patch_TendUtility.cs" />
     <Compile Include="WNAHarmony\Patch_Training.cs" />
     <Compile Include="WNAHarmony\Patch_WeaponTagPostfix.cs" />
     <Compile Include="WNAHarmony\WNAMod.cs" />

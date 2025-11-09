@@ -5,7 +5,6 @@ using System.Linq;
 using UnityEngine;
 using Verse;
 using Verse.AI;
-using WNA.WNADefOf;
 
 namespace WNA.ThingCompProp
 {
@@ -101,7 +100,6 @@ namespace WNA.ThingCompProp
                 if (rock != null) return rock.building.mineableThing;
             }
             return DeepDrillUtility.Rocks.RandomElement().building.mineableThing;
-            /*WNAMainDefOf.WNA_Quicklime*/
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {

@@ -78,7 +78,6 @@
         <description>WNA had mastered the technique of resurrecting newly dead soon after they formed, and now they can ensure anyone they permit to master this skill.</description>
         <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
-        <aiCanUse>true</aiCanUse>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
             <range>99.9</range>
@@ -103,7 +102,6 @@
         <description>Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.</description>
         <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
-        <aiCanUse>true</aiCanUse>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
             <range>199.9</range>
@@ -167,7 +165,6 @@
         <description>Focus on a protective thought and cast it around the target. The target will be hidden from sights for a period of time, usually about 5 days. Theoretically the target can be detected but not all people has proper trick or device for such work.</description>
         <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
-        <aiCanUse>false</aiCanUse>
         <statBases>
             <Ability_Duration>5500</Ability_Duration>
             <Ability_EffectRadius>5</Ability_EffectRadius>

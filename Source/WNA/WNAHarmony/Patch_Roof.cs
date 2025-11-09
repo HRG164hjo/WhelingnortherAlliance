@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using Verse;
 using WNA.DMExtension;
+using WNA.WNADefOf;
 
 namespace WNA.WNAHarmony
 {
@@ -66,6 +67,26 @@ namespace WNA.WNAHarmony
                     }
                 }
                 return false;
+            }
+        }
+        [HarmonyPatch(typeof(RoofCollapseCellsFinder))]
+        [HarmonyPatch("ProcessRoofHolderDespawned")]
+        public static class PreventCollapseOnHolderDespawn
+        {
+            private static ResearchProjectDef research = WNAMainDefOf.WNA_PsychicDawn;
+            public static bool Prefix()
+            {
+                return research != null && research.IsFinished ? false : true;
+            }
+        }
+        [HarmonyPatch(typeof(RoofCollapserImmediate))]
+        [HarmonyPatch("DropRoofInCells", new Type[] { typeof(IEnumerable<IntVec3>), typeof(Map), typeof(List<Thing>) })]
+        public static class PreventImmediateRoofCollapse
+        {
+            private static ResearchProjectDef research = WNAMainDefOf.WNA_PsychicDawn;
+            public static bool Prefix()
+            {
+                return research != null && research.IsFinished ? false : true;
             }
         }
     }

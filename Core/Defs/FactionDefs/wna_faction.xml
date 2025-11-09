@@ -20,12 +20,14 @@
         <canStageAttacks>false</canStageAttacks>
         <leaderTitle>saint</leaderTitle>
         <fixedName>Whellingnorther Alliance</fixedName>
-        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <settlementNameMaker>WNA_NamerSettlement</settlementNameMaker>
         <techLevel>Archotech</techLevel>
         <autoFlee>false</autoFlee>
-        <colorSpectrum>
-            <li>(0,0,0)</li>
-        </colorSpectrum>
+        <canRequestTraders>false</canRequestTraders>
+        <canRequestOrbitalTrader>true</canRequestOrbitalTrader>
+        <layerBlacklist/>
+        <arrivalLayerBlacklist/>
+        <colorSpectrum> <li>(0,0,0)</li> </colorSpectrum>
         <permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
         <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
         <hidden>false</hidden>
@@ -34,6 +36,7 @@
         </allowedCultures>
         <apparelStuffFilter>
             <thingDefs>
+                <li>WNA_AttunementFabric</li>
                 <li>WNA_DarkAsbestos</li>
             </thingDefs>
         </apparelStuffFilter>
@@ -53,6 +56,9 @@
         </backstoryFilters>
         <caravanTraderKinds/>
         <visitorTraderKinds/>
+        <orbitalTraderKinds>
+            <li>WNA_Trader_Orbital</li>
+        </orbitalTraderKinds>
         <baseTraderKinds>
             <li>WNA_Trader_Settlement</li>
         </baseTraderKinds>
@@ -175,5 +181,121 @@
             </fixedParams>
         </root>
     </ThingSetMakerDef>
+
+    <RulePackDef>
+        <defName>WNA_NamerSettlement</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=2)->[prefix] [postfx]</li>
+                <li>r_name->[prefix] "[elseCode]"</li>
+                <li>r_name->[elseCode] [postfx]</li>
+                <li>r_name->[Digit][Digit][Digit]th Field Task</li>
+                <li>r_name->[Digit][Digit][Digit]th Military Control</li>
+                <li>r_name->[Digit][Digit][Digit]th Ceasefire</li>
+                <li>r_name->[Digit][Digit][Digit]th Dead Zone</li>
+                <li>r_name->[Digit][Digit][Digit]th Skirmish</li>
+                <li>r_name->Mission [syls][syls][syls]</li>
+                <li>r_name->Mission [syls][syls][syls][syls]</li>
+                <li>r_name->Protocol [syls][syls][syls]</li>
+                <li>r_name->Protocol [syls][syls][syls][syls]</li>
+                <li>r_name->Skirmish [syls][syls][syls]</li>
+                <li>r_name->Skirmish [syls][syls][syls][syls]</li>
+                <!---->
+                <li>postfx(p=3)->[code][code][code]</li>
+                <li>postfx->[code][code][code][code]</li>
+                <!---->
+                <li>code(p=3)->[Digit]</li>
+                <li>code->[Letter]</li>
+                <!---->
+                <li>syls->[SylB]</li>
+                <li>syls->[SylE]</li>
+                <!---->
+                <li>elseCode->[Color]</li>
+                <li>elseCode->[ColorBadass]</li>
+                <li>elseCode->[Vegetable]</li>
+                <li>elseCode->[Animal]</li>
+                <li>elseCode->[AnimalBadass]</li>
+                <li>elseCode->[AnimalGroup]</li>
+                <li>elseCode->[TerrainFeature]</li>
+                <li>elseCode->[NaturalObject]</li>
+                <li>elseCode->[TreeType]</li>
+                <li>elseCode->[Gore]</li>
+                <li>elseCode->[Mechanoid]</li>
+                <li>elseCode->[Community]</li>
+                <li>elseCode->[BodyPart]</li>
+                <li>elseCode->Underhang</li>
+                <!---->
+                <li>prefix->Area</li>
+                <li>prefix->Border</li>
+                <li>prefix->Camp</li>
+                <li>prefix->Foundation</li>
+                <li>prefix->Frontier</li>
+                <li>prefix->Mission</li>
+                <li>prefix->Outpost</li>
+                <li>prefix->Outskirts</li>
+                <li>prefix->Settlement</li>
+                <li>prefix->Site</li>
+                <li>prefix->Zone</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+    
+    <RulePackDef>
+        <defName>WNA_NamerPawn</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=3)->[postfx] [prefix]</li>
+                <li>r_name->[ImperialNameFirstMale] [ImperialNameLast]</li>
+                <li>r_name->[randName] [ImperialNameLast]</li>
+                <li>r_name(p=0.1)->[codeName] [codeName]</li>
+                <!---->
+                <li>randName(p=2)->[SylB][SylB][SylB]</li>
+                <li>randName->[SylB][SylB][SylB][SylB]</li>
+                <li>codeName->[pre]-[pos]</li>
+                <li>pre(p=3)->[code][code][code]</li>
+                <li>pre->[code][code][code][code]</li>
+                <li>pos(p=3)->[code][code][code]</li>
+                <li>pos->[code][code][code][code]</li>
+                <!---->
+                <li>code->[Digit]</li>
+                <li>code->[Letter]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>ImperialNameFirstMale->Names/Imperial_First_Male</li>
+                <li>ImperialNameLast->Names/Imperial_Last</li>
+                <li>prefix->Names/wna_name</li>
+                <li>postfx->Names/wna_family</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+    
+    <RulePackDef>
+        <defName>WNA_NamerPawnF</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=3)->[postfx] [prefix]</li>
+                <li>r_name->[ImperialNameFirstFemale] [ImperialNameLast]</li>
+                <li>r_name->[randName] [ImperialNameLast]</li>
+                <li>r_name(p=0.1)->[codeName] [codeName]</li>
+                <!---->
+                <li>randName(p=2)->[SylB][SylB][SylB]</li>
+                <li>randName->[SylB][SylB][SylB][SylB]</li>
+                <li>codeName->[pre]-[pos]</li>
+                <li>pre(p=3)->[code][code][code]</li>
+                <li>pre->[code][code][code][code]</li>
+                <li>pos(p=3)->[code][code][code]</li>
+                <li>pos->[code][code][code][code]</li>
+                <!---->
+                <li>code->[Digit]</li>
+                <li>code->[Letter]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>ImperialNameFirstFemale->Names/Imperial_First_Female</li>
+                <li>ImperialNameLast->Names/Imperial_Last</li>
+                <li>prefix->Names/wna_namef</li>
+                <li>postfx->Names/wna_family</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
     
 </Defs>

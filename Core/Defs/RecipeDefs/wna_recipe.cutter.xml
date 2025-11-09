@@ -22,6 +22,7 @@
         </fixedIngredientFilter>
         <specialProducts>
             <li>Butchery</li>
+            <li>Smelted</li>
         </specialProducts>
         <workAmount>300</workAmount>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
@@ -50,6 +51,7 @@
             </categories>
         </fixedIngredientFilter>
         <specialProducts>
+            <li>Butchery</li>
             <li>Smelted</li>
         </specialProducts>
         <workAmount>300</workAmount>
@@ -64,26 +66,26 @@
         <ingredients>
             <li>
                 <filter>
-                    <thingDefs>
+                    <categories>
+                        <li>Chunks</li>
                         <li>ChunkSlagSteel</li>
                         <li>ChunkMechanoidSlag</li>
-                    </thingDefs>
+                    </categories>
                 </filter>
                 <count>1</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
-            <thingDefs>
+            <categories>
+                <li>Chunks</li>
                 <li>ChunkSlagSteel</li>
                 <li>ChunkMechanoidSlag</li>
-            </thingDefs>
+            </categories>
         </fixedIngredientFilter>
-        <products>
-            <Steel>15</Steel>
-            <Plasteel>5</Plasteel>
-            <Uranium>5</Uranium>
-            <Silver>5</Silver>
-        </products>
+        <specialProducts>
+            <li>Butchery</li>
+            <li>Smelted</li>
+        </specialProducts>
         <workAmount>300</workAmount>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
@@ -118,6 +120,7 @@
         </fixedIngredientFilter>
 		<specialProducts>
 			<li>Butchery</li>
+            <li>Smelted</li>
 		</specialProducts>
         <workAmount>300</workAmount>
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>

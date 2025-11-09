@@ -6,6 +6,14 @@
         <stockGenerators>
             <li Class="StockGenerator_Animals">
                 <tradeTagsSell>
+                    <li>AnimalCommon</li>
+                    <li>AnimalDryad</li>
+                    <li>AnimalExotic</li>
+                    <li>AnimalFarm</li>
+                    <li>AnimalFighter</li>
+                    <li>AnimalInsect</li>
+                    <li>AnimalPet</li>
+                    <li>AnimalUncommon</li>
                     <li>WNATradeTag_Animal</li>
                 </tradeTagsSell>
                 <tradeTagsBuy>
@@ -19,7 +27,7 @@
                     <li>AnimalUncommon</li>
                     <li>WNATradeTag_Animal</li>
                 </tradeTagsBuy>
-                <kindCountRange>1~2</kindCountRange>
+                <kindCountRange>2~3</kindCountRange>
                 <countRange>8~10</countRange>
             </li>
             <li Class="StockGenerator_Techprints">
@@ -38,32 +46,6 @@
         <orbital>true</orbital>
         <commonality>1</commonality>
         <stockGenerators>
-            <li Class="StockGenerator_Animals">
-                <tradeTagsSell>
-                    <li>AnimalCommon</li>
-                    <li>AnimalDryad</li>
-                    <li>AnimalExotic</li>
-                    <li>AnimalFarm</li>
-                    <li>AnimalFighter</li>
-                    <li>AnimalInsect</li>
-                    <li>AnimalPet</li>
-                    <li>AnimalUncommon</li>
-                    <li>WNATradeTag_Animal</li>
-                </tradeTagsSell>
-                <tradeTagsBuy>
-                    <li>AnimalCommon</li>
-                    <li>AnimalDryad</li>
-                    <li>AnimalExotic</li>
-                    <li>AnimalFarm</li>
-                    <li>AnimalFighter</li>
-                    <li>AnimalInsect</li>
-                    <li>AnimalPet</li>
-                    <li>AnimalUncommon</li>
-                    <li>WNATradeTag_Animal</li>
-                </tradeTagsBuy>
-                <kindCountRange>1~2</kindCountRange>
-                <countRange>8~10</countRange>
-            </li>
             <li Class="StockGenerator_Techprints">
                 <countChances>
                     <li>

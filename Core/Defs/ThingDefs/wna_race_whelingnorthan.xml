@@ -56,6 +56,8 @@
 			<WorkSpeedGlobal>20</WorkSpeedGlobal>
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">20</VacuumResistance>
             <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">20</PilotingAbility>
+            <FishingSpeed MayRequire="ludeon.rimworld.odyssey">20</FishingSpeed>
+            <FishingYield MayRequire="ludeon.rimworld.odyssey">20</FishingYield>
         </statBases>
         <tools>
             <li>
@@ -317,12 +319,12 @@
                 <canAbsorb>true</canAbsorb>
 			</li>
             <li Class="AutoBlink.CompProperties_AutoBlink" MayRequire="rabiosus.autoblink">
-                <blinkIntervalTicks>3</blinkIntervalTicks>
-                <delayAfterEligibleTicks>3</delayAfterEligibleTicks>
-                <cellsBeforeTarget>3</cellsBeforeTarget>
-                <maxDistanceToBlink>500</maxDistanceToBlink>
-                <minDistanceToBlink>5</minDistanceToBlink>
+                <blinkIntervalTicks>1</blinkIntervalTicks>
+                <delayAfterEligibleTicks>0</delayAfterEligibleTicks>
                 <postBlinkStanceTicks>0</postBlinkStanceTicks>
+                <cellsBeforeTarget>1</cellsBeforeTarget>
+                <maxDistanceToBlink>500</maxDistanceToBlink>
+                <minDistanceToBlink>1</minDistanceToBlink>
                 <excludedJobDefs>
                     <li>GotoWander</li>
                 </excludedJobDefs>
@@ -332,6 +334,7 @@
                 <postBlinkEffecterDefs/>
                 <preBlinkMoteDefs/>
                 <postBlinkMoteDefs/>
+                <drawGizmo>false</drawGizmo>
             </li>
         </comps>
 		<modExtensions>

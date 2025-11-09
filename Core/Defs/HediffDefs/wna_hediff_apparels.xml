@@ -149,4 +149,34 @@
         <stages/>
     </HediffDef>
 
+    <HediffDef>
+        <defName>WNA_ChronoPack</defName>
+        <label>phase pack</label>
+        <hediffClass>HediffWithComps</hediffClass>
+        <description>phase pack.</description>
+        <defaultLabelColor>(0,0,0)</defaultLabelColor>
+        <everCurableByItem>false</everCurableByItem>
+        <isBad>false</isBad>
+        <comps>
+			<li MayRequire="rabiosus.autoblink" Class="AutoBlink.HediffCompProperties_AutoBlink">
+                <blinkIntervalTicks>27</blinkIntervalTicks>
+                <delayAfterEligibleTicks>0</delayAfterEligibleTicks>
+                <postBlinkStanceTicks>0</postBlinkStanceTicks>
+                <cellsBeforeTarget>1</cellsBeforeTarget>
+                <maxDistanceToBlink>500</maxDistanceToBlink>
+                <minDistanceToBlink>1</minDistanceToBlink>
+                <excludedJobDefs>
+                    <li>GotoWander</li>
+                </excludedJobDefs>
+                <preBlinkSoundDefs/>
+                <postBlinkSoundDefs/>
+                <preBlinkEffecterDefs/>
+                <postBlinkEffecterDefs/>
+                <preBlinkMoteDefs/>
+                <postBlinkMoteDefs/>
+			</li>
+        </comps>
+        <stages/>
+    </HediffDef>
+
 </Defs>

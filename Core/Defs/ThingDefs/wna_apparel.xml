@@ -16,18 +16,18 @@
             <ArmorRating_Sharp>25</ArmorRating_Sharp>
             <ArmorRating_Blunt>20</ArmorRating_Blunt>
             <ArmorRating_Heat>28</ArmorRating_Heat>
-            <StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+            <StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>2</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>2</StuffEffectMultiplierInsulation_Heat>
         </statBases>
         <equippedStatOffsets>
             <MeleeDodgeChance>1</MeleeDodgeChance>
-            <ImmunityGainSpeed>3</ImmunityGainSpeed>
-            <InjuryHealingFactor>3</InjuryHealingFactor>
-            <CarryingCapacity>10000</CarryingCapacity>
-            <ArmorRating_Sharp>1</ArmorRating_Sharp>
-            <ArmorRating_Blunt>1</ArmorRating_Blunt>
-            <ArmorRating_Heat>1</ArmorRating_Heat>
+            <ImmunityGainSpeed>5</ImmunityGainSpeed>
+            <InjuryHealingFactor>5</InjuryHealingFactor>
+            <CarryingCapacity>100000</CarryingCapacity>
+            <ArmorRating_Sharp>2</ArmorRating_Sharp>
+            <ArmorRating_Blunt>2</ArmorRating_Blunt>
+            <ArmorRating_Heat>2</ArmorRating_Heat>
             <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
         </equippedStatOffsets>
@@ -413,28 +413,6 @@
             </li>
         </comps>
     </ThingDef>
-
-    <!--<ThingDef ParentName="WNA_ApparelBase">
-		<defName>WNA_EnclosedBattleSuit</defName>
-		<label>enclosed battle suit</label>
-		<description>todo.</description>
-		<__TODO__/>
-	    <costList>
-	        <WNA_AttunementFabric>100</WNA_AttunementFabric>
-            <WNA_Desolisium>40</WNA_Desolisium>
-            <WNA_Voidsteel>20</WNA_Voidsteel>
-            <ComponentSpacer>3</ComponentSpacer>
-	    </costList>
-        <recipeMaker>
-            <researchPrerequisite/>
-            <workSkill>Crafting</workSkill>
-            <effectWorking>Smith</effectWorking>
-            <soundWorking>Recipe_Machining</soundWorking>
-            <recipeUsers>
-                <li>FabricationBench</li>
-            </recipeUsers>
-        </recipeMaker>
-    </ThingDef>-->
     
     <ThingDef ParentName="WNA_UtilityBase">
         <defName>WNA_Toolkit</defName>
@@ -464,6 +442,7 @@
             <MedicalTendSpeed>5</MedicalTendSpeed>
             <MedicalOperationSpeed>5</MedicalOperationSpeed>
             <MedicalTendQuality>5</MedicalTendQuality>
+            <FishingSpeed MayRequire="ludeon.rimworld.odyssey">5</FishingSpeed>
         </equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
@@ -480,7 +459,10 @@
             <li Class="WNA.DMExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
-        </modExtensions>
+			<li Class="WNA.DMExtension.MassCapacity">
+				<massCapacity>60000</massCapacity>
+			</li>
+		</modExtensions>
     </ThingDef>
 	
     <ThingDef ParentName="WNA_UtilityBase">
@@ -536,7 +518,7 @@
 			<Mass>0.5</Mass>
         </statBases>
 	    <costList>
-	        <WNA_Trinisium>25</WNA_Trinisium>
+	        <WNA_Desolisium>25</WNA_Desolisium>
             <ComponentIndustrial>4</ComponentIndustrial>
 	    </costList>
 		<comps>
@@ -562,27 +544,6 @@
             </li>
         </modExtensions>
     </ThingDef>
-
-    <!--<ThingDef ParentName="WNA_UtilityBase">
-		<defName>WNA_ExplosiveBelt</defName>
-		<label>explosive belt</label>
-		<description>todo.</description>
-		<__TODO__/>
-	    <costList>
-	        <Cloth>20</Cloth>
-            <Steel>25</Steel>
-            <Chemfuel>35</Chemfuel>
-	    </costList>
-        <recipeMaker>
-            <researchPrerequisite/>
-            <workSkill>Crafting</workSkill>
-            <effectWorking>Smith</effectWorking>
-            <soundWorking>Recipe_Machining</soundWorking>
-            <recipeUsers>
-                <li>TableMachining</li>
-            </recipeUsers>
-        </recipeMaker>
-    </ThingDef>-->
     
     <ThingDef ParentName="WNA_BackpackBase">
         <defName>WNA_IllusionCore</defName>
@@ -597,8 +558,7 @@
 			<Mass>0.5</Mass>
         </statBases>
         <costList>
-	        <WNA_Desolisium>15</WNA_Desolisium>
-	        <WNA_Trinisium>25</WNA_Trinisium>
+	        <WNA_Desolisium>40</WNA_Desolisium>
             <ComponentIndustrial>4</ComponentIndustrial>
 	    </costList>
 		<comps>
@@ -626,27 +586,6 @@
             </li>
         </modExtensions>
     </ThingDef>
-
-    <!--<ThingDef ParentName="WNA_UtilityBase">
-		<defName>WNA_LysFieldProjer</defName>
-		<label>lysis field projector</label>
-		<description>todo.</description>
-		<__TODO__/>
-	    <costList>
-	        <WNA_Voidsteel>15</WNA_Voidsteel>
-	        <WNA_Trinisium>45</WNA_Trinisium>
-            <ComponentSpacer>4</ComponentSpacer>
-	    </costList>
-        <recipeMaker>
-            <researchPrerequisite>WNA_LysisField</researchPrerequisite>
-            <workSkill>Crafting</workSkill>
-            <effectWorking>Smith</effectWorking>
-            <soundWorking>Recipe_Machining</soundWorking>
-            <recipeUsers>
-                <li>FabricationBench</li>
-            </recipeUsers>
-        </recipeMaker>
-    </ThingDef>-->
 	
     <ThingDef ParentName="WNA_BackpackBase">
         <defName>WNA_IronPack</defName>
@@ -710,19 +649,31 @@
                 <li>FabricationBench</li>
             </recipeUsers>
         </recipeMaker>
-    </ThingDef>
+    </ThingDef>-->
     
     <ThingDef ParentName="WNA_BackpackBase">
 		<defName>WNA_ChronoPack</defName>
-		<label>chrono pack</label>
-		<description>todo.</description>
-		<__TODO__/>
+		<label>phase pack</label>
+		<description>phase pack.</description>
+		<graphicData>
+            <texPath>apparel/wna_utility</texPath>
+        </graphicData>
+		<tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+			<Mass>0.5</Mass>
+        </statBases>
 	    <costList>
 	        <WNA_AttunementFabric>30</WNA_AttunementFabric>
 	        <WNA_Voidsteel>45</WNA_Voidsteel>
             <ComponentSpacer>5</ComponentSpacer>
             <WNA_Focus>1</WNA_Focus>
 	    </costList>
+		<comps>
+            <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
+                <hediff>WNA_ChronoPack</hediff>
+            </li>
+		</comps>
         <recipeMaker>
             <researchPrerequisite>WNA_Parasomnia</researchPrerequisite>
             <workSkill>Crafting</workSkill>
@@ -732,7 +683,12 @@
                 <li>FabricationBench</li>
             </recipeUsers>
         </recipeMaker>
-    </ThingDef>-->
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+        </modExtensions>
+    </ThingDef>
 
     <ThingDef ParentName="WNA_ApparelBase">
         <defName>WNA_AllianceHood</defName>
@@ -740,6 +696,7 @@
         <description>Upper part of WNA standard equipment. This hood covers their eyes, symbolizing one of the WNA's beliefs - don't be blinded by radiance.</description>
         <graphicData>
             <texPath>apparel/alliancehood/icon_alliancehood</texPath>
+            <drawSize>0.9</drawSize>
         </graphicData>
 	    <costList>
 	        <WNA_DarkAsbestos>40</WNA_DarkAsbestos>
@@ -792,6 +749,7 @@
 		<description>Outer layer of WNA standard equipment. This cloak covers almost all of their body, symbolizing one of WNA's thoughts - abnegating what they used to have and to be, to approach transcendence, divinity and salvation.</description>
 		<graphicData>
 			<texPath>apparel/alliancecloak/icon_alliancecloak</texPath>
+            <drawSize>0.9</drawSize>
 		</graphicData>
 	    <costList>
 	        <WNA_DarkAsbestos>150</WNA_DarkAsbestos>
@@ -958,8 +916,8 @@
         <comps>
             <li Class="WNA.ThingCompProp.CompShieldGenerator">
                 <energyLossPerHit>0</energyLossPerHit>
-                <minDrawSize>2</minDrawSize>
-                <maxDrawSize>2</maxDrawSize>
+                <minDrawSize>2.1</minDrawSize>
+                <maxDrawSize>2.4</maxDrawSize>
                 <shieldInstaReset>true</shieldInstaReset>
                 <energyGenPerTick>1000000</energyGenPerTick>
             </li>

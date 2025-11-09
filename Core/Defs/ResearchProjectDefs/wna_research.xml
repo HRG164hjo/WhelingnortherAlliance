@@ -145,7 +145,7 @@
 	
 	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
 		<defName>WNA_IronGuardian</defName>
-		<label>advanced arsenal</label>
+		<label>iron guardian</label>
 		<description>the advanced technology used by whelingnorther alliance to arm their elite fighters.</description>
 		<baseCost>5000</baseCost>
 		<researchViewX>5</researchViewX>
@@ -156,7 +156,7 @@
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_PsyhicDawn</defName>
+		<defName>WNA_PsychicDawn</defName>
 		<label>psychic dawn</label>
 		<description>mind over matter.</description>
 		<baseCost>5000</baseCost>
@@ -184,10 +184,13 @@
 		<label>reach to the void</label>
 		<description>wipe  out  ego \n\nstep  into  void \n\nall  mind  expire \n\nwhole  world  ascend</description>
 		<baseCost>8000</baseCost>
-		<researchViewX>7</researchViewX>
+		<researchViewX>9</researchViewX>
 		<researchViewY>2.5</researchViewY>
 		<prerequisites>
-			<li>WNA_AdvancedArsenal</li>
+			<li>WNA_LysisField</li>
+			<li>WNA_PsychicDawn</li>
+			<li>WNA_IronGuardian</li>
+			<li>WNA_Parasomnia</li>
 		</prerequisites>
 		<techprintCount>1</techprintCount>
 		<techprintCommonality>0.5</techprintCommonality>
@@ -212,7 +215,6 @@
 		</heldByFactionCategoryTags>
 		<techprintMarketValue>250</techprintMarketValue>
 		<prerequisites>
-			<li>WNA_AdvancedArsenal</li>
 			<li>WNA_TheVoid</li>
 		</prerequisites>
 	</ResearchProjectDef>
@@ -234,7 +236,7 @@
 		<label>matter transmutation</label>
 		<description>matter transmutation.</description>
 		<baseCost>2500</baseCost>
-		<researchViewX>2</researchViewX>
+		<researchViewX>3</researchViewX>
 		<researchViewY>6.5</researchViewY>
 		<prerequisites>
 			<li>WNA_BasicRite</li>
@@ -246,7 +248,7 @@
 		<label>ceremony equipment</label>
 		<description>basic rite.</description>
 		<baseCost>3000</baseCost>
-		<researchViewX>3</researchViewX>
+		<researchViewX>5</researchViewX>
 		<researchViewY>6.5</researchViewY>
 		<prerequisites>
 			<li>WNA_Transmutation</li>
@@ -258,7 +260,7 @@
 		<label>secret techniques</label>
 		<description>secret techniques.</description>
 		<baseCost>4000</baseCost>
-		<researchViewX>4</researchViewX>
+		<researchViewX>5</researchViewX>
 		<researchViewY>5</researchViewY>
 		<prerequisites>
 			<li>WNA_BasicRite</li>
@@ -276,7 +278,7 @@
 		<label>whelingnorther apocalypse</label>
 		<description>!!-TODO-!!.</description>
 		<baseCost>Infinity</baseCost>
-		<researchViewX>7</researchViewX>
+		<researchViewX>9</researchViewX>
 		<researchViewY>5</researchViewY>
 		<prerequisites>
 			<li>WNA_CeremonyEquipment</li>

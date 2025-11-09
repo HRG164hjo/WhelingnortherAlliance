@@ -14,9 +14,12 @@ namespace WNA.WNAHarmony
         {
             public static void Postfix(ref float __result, Verb ownerVerb, Pawn attacker)
             {
+                if (attacker == null || attacker.Faction == null)
+                    return;
+                if (ownerVerb.EquipmentSource == null)
+                    return;
                 if (!(attacker.Faction.def == WNAMainDefOf.WNA_FactionWNA ||
-                    (attacker.Faction == Faction.OfPlayer && WNAMainDefOf.WNA_TheEnlightment.IsFinished)) ||
-                    ownerVerb.EquipmentSource == null)
+                      (attacker.Faction == Faction.OfPlayer && WNAMainDefOf.WNA_TheEnlightment.IsFinished)))
                     return;
                 ThingDef weaponDef = ownerVerb.EquipmentSource.def;
                 if (weaponDef.weaponTags == null || !weaponDef.weaponTags.Contains("Tag_WNACivilian"))

@@ -125,7 +125,7 @@ namespace WNA.ThingCompProp
                 10,
                 10,
             };
-        #region 碍眼
+        #region
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);

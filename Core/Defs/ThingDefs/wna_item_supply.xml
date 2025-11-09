@@ -92,6 +92,9 @@
             <li Class="CompProperties_UseEffectPlaySound">
                 <soundOnUsed>MechSerumUsed</soundOnUsed>
             </li>
+            <li Class="WNA.ThingCompProp.CompMultiUse">
+                <uses>72</uses>
+            </li>
         </comps>
         <thingCategories>
             <li>Medicine</li>
