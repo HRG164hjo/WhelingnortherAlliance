@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<WNA.SwitchMode.Label>switch mode</WNA.SwitchMode.Label>
-	<WNA.SwitchMode.Desc>switch current weapon to another mode.</WNA.SwitchMode.Desc>
+	<WNA.SwitchMode.Label>切换模式</WNA.SwitchMode.Label>
+	<WNA.SwitchMode.Desc>将当前的武器改装为另一种模式.</WNA.SwitchMode.Desc>
 
 </LanguageData>

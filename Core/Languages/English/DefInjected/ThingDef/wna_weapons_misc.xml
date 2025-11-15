@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: placeholder -->
+  <WNA_PawnPassiveAcquire.label>placeholder</WNA_PawnPassiveAcquire.label>
+  <!-- EN: placeholder. -->
+  <WNA_PawnPassiveAcquire.description>placeholder.</WNA_PawnPassiveAcquire.description>
+  <!-- EN: placeholder -->
+  <WNA_PawnPassiveAcquire.verbs.Verb_Shoot.label>placeholder</WNA_PawnPassiveAcquire.verbs.Verb_Shoot.label>
+  
+  <!-- EN: placeholder -->
+  <WNA_PawnPassiveAcquire_Proj.label>placeholder</WNA_PawnPassiveAcquire_Proj.label>
+  
+  <!-- EN: placeholder -->
+  <WNA_ThornBooTurret.label>placeholder</WNA_ThornBooTurret.label>
+  <!-- EN: placeholder. -->
+  <WNA_ThornBooTurret.description>placeholder.</WNA_ThornBooTurret.description>
+  <!-- EN: placeholder -->
+  <WNA_ThornBooTurret.verbs.Verb_Shoot.label>placeholder</WNA_ThornBooTurret.verbs.Verb_Shoot.label>
+  
+  <!-- EN: placeholder -->
+  <WNA_ThornBooTurret_Proj.label>placeholder</WNA_ThornBooTurret_Proj.label>
+  
+</LanguageData>

@@ -54,6 +54,22 @@
             </value>
         </nomatch>
     </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef/autoFlee</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/FactionDef</xpath>
+            <value>
+                <autoFlee>false</autoFlee>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/FactionDef/autoFlee</xpath>
+            <value>
+                <autoFlee>false</autoFlee>
+            </value>
+        </match>
+    </Operation>
     
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="ChunkMechanoidSlag"]</xpath>

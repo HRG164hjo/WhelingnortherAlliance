@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>r_name(p=2)->[postfx] [prefix]</li>
+    <li>r_name->[ImperialNameFirstMale] [ImperialNameLast]</li>
+    <li>r_name->[randName] [ImperialNameLast]</li>
+    <li>r_name(p=0.1)->[codeName] [codeName]</li>
+    <li>randName(p=2)->[SylB][SylB][SylB]</li>
+    <li>randName->[SylB][SylB][SylB][SylB]</li>
+    <li>codeName->[pre]-[pos]</li>
+    <li>pre(p=3)->[code][code][code]</li>
+    <li>pre->[code][code][code][code]</li>
+    <li>pos(p=3)->[code][code][code]</li>
+    <li>pos->[code][code][code][code]</li>
+    <li>code->[Digit]</li>
+    <li>code->[Letter]</li>
+  -->
+  <WNA_NamerPawn.rulePack.rulesStrings>
+    <li>r_name(p=2)->[postfx] [prefix]</li>
+    <li>r_name->[ImperialNameFirstMale] [ImperialNameLast]</li>
+    <li>r_name->[randName] [ImperialNameLast]</li>
+    <li>r_name(p=0.1)->[codeName] [codeName]</li>
+    <li>randName(p=2)->[SylB][SylB][SylB]</li>
+    <li>randName->[SylB][SylB][SylB][SylB]</li>
+    <li>codeName->[pre]-[pos]</li>
+    <li>pre(p=3)->[code][code][code]</li>
+    <li>pre->[code][code][code][code]</li>
+    <li>pos(p=3)->[code][code][code]</li>
+    <li>pos->[code][code][code][code]</li>
+    <li>code->[Digit]</li>
+    <li>code->[Letter]</li>
+  </WNA_NamerPawn.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name->[postfx] [prefix]</li>
+  -->
+  <WNA_NamerPawnW.rulePack.rulesStrings>
+    <li>r_name->[postfx] [prefix]</li>
+  </WNA_NamerPawnW.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name->[pfix] [Digit][Digit][Digit]</li>
+    <li>r_name->[pfix] [Digit][Digit][Digit][Digit]</li>
+    <li>r_name->[Digit][Digit][Digit]th [pfix]</li>
+    <li>r_name->[Digit][Digit][Digit][Digit]th [pfix]</li>
+    <li>r_name->[randChar]-[randChar]</li>
+    <li>r_name->[code]x[code][code][code][code][code][code][code][code]</li>
+    <li>randChar->[code][code][code]</li>
+    <li>randChar->[code][code][code][code]</li>
+    <li>code->[Digit]</li>
+    <li>code->[Letter]</li>
+    <li>pfix->Alley</li>
+    <li>pfix->Annex</li>
+    <li>pfix->Area</li>
+    <li>pfix->Array</li>
+    <li>pfix->Border</li>
+    <li>pfix->Camp</li>
+    <li>pfix->Canopy</li>
+    <li>pfix->Caretaker</li>
+    <li>pfix->Ceasefire</li>
+    <li>pfix->Citadel</li>
+    <li>pfix->Complex</li>
+    <li>pfix->Construct</li>
+    <li>pfix->Crypts</li>
+    <li>pfix->Dawn</li>
+    <li>pfix(p=3)->Dead Zone</li>
+    <li>pfix->End</li>
+    <li>pfix->Expanse</li>
+    <li>pfix->Expedition</li>
+    <li>pfix->Exterior</li>
+    <li>pfix->Facility</li>
+    <li>pfix(p=5)->Field Task</li>
+    <li>pfix->Foundation</li>
+    <li>pfix->Fortress</li>
+    <li>pfix->Fringe</li>
+    <li>pfix->Frontier</li>
+    <li>pfix->Garden</li>
+    <li>pfix->Gateway</li>
+    <li>pfix->Grove</li>
+    <li>pfix(p=5)->Military Control</li>
+    <li>pfix->Mission</li>
+    <li>pfix->Nexus</li>
+    <li>pfix->Outpost</li>
+    <li>pfix->Outskirts</li>
+    <li>pfix->Path</li>
+    <li>pfix->Protocol</li>
+    <li>pfix->Ridge</li>
+    <li>pfix->Rim</li>
+    <li>pfix->Sanctuary</li>
+    <li>pfix->Settlement</li>
+    <li>pfix->Shelter</li>
+    <li>pfix->Sidehouse</li>
+    <li>pfix->Site</li>
+    <li>pfix->Spire</li>
+    <li>pfix->Sublink</li>
+    <li>pfix->Surface</li>
+    <li>pfix->Terrace</li>
+    <li>pfix->Tract</li>
+    <li>pfix->Underhang</li>
+    <li>pfix->Wall</li>
+    <li>pfix->Waste</li>
+    <li>pfix->Zone</li>
+    <li>pfix->''CENSORED''</li>
+    <li>pfix->''UNKNOWN''</li>
+    <li>pfix->███████</li>
+    <li>r_name(p=0.02)->Celestial Throne</li>
+    <li>r_name(p=0.02)->Sky Temple</li>
+    <li>r_name(p=0.02)->Pristine Jewel</li>
+    <li>r_name(p=0.02)->Emerald Mausoleum</li>
+    <li>r_name(p=0.02)->Walled Garden</li>
+    <li>r_name(p=0.02)->Prophet's Retreat</li>
+    <li>r_name(p=0.02)->The Cradle</li>
+    <li>r_name(p=0.02)->The Preserve</li>
+    <li>r_name(p=0.02)->Font of Knowledge</li>
+    <li>r_name(p=0.02)->The Archives</li>
+    <li>r_name(p=0.02)->Last Thought</li>
+    <li>r_name(p=0.02)->Ithome's Gate</li>
+    <li>r_name(p=0.02)->Looks to the Moon</li>
+    <li>r_name(p=0.02)->Five Pebbles</li>
+    <li>r_name(p=0.02)->Outer Expanse</li>
+    <li>r_name(p=0.02)->Outer Rim</li>
+    <li>r_name(p=0.02)->Memory Crypts</li>
+    <li>r_name(p=0.02)->Rubicon</li>
+    <li>r_name(p=0.02)->Aether Ridge</li>
+    <li>r_name(p=0.02)->Daemon</li>
+    <li>r_name(p=0.02)->Shattered Terrace</li>
+    <li>r_name(p=0.02)->Ancient Urban</li>
+  -->
+  <WNA_NamerSettlement.rulePack.rulesStrings>
+    <li>r_name->[pfix] [Digit][Digit][Digit]</li>
+    <li>r_name->[pfix] [Digit][Digit][Digit][Digit]</li>
+    <li>r_name->[Digit][Digit][Digit]th [pfix]</li>
+    <li>r_name->[Digit][Digit][Digit][Digit]th [pfix]</li>
+    <li>r_name->[randChar]-[randChar]</li>
+    <li>r_name->[code]x[code][code][code][code][code][code][code][code]</li>
+    <li>randChar->[code][code][code]</li>
+    <li>randChar->[code][code][code][code]</li>
+    <li>code->[Digit]</li>
+    <li>code->[Letter]</li>
+    <li>pfix->巷道</li>
+    <li>pfix->别馆</li>
+    <li>pfix->地区</li>
+    <li>pfix->阵列</li>
+    <li>pfix->边境</li>
+    <li>pfix->营地</li>
+    <li>pfix->天棚</li>
+    <li>pfix->停火线</li>
+    <li>pfix->城堡</li>
+    <li>pfix->复合体</li>
+    <li>pfix->构造</li>
+    <li>pfix->陵墓</li>
+    <li>pfix->破晓</li>
+    <li>pfix(p=3)->死区</li>
+    <li>pfix->终局</li>
+    <li>pfix->瀚土</li>
+    <li>pfix->远征</li>
+    <li>pfix->外缘</li>
+    <li>pfix->设施</li>
+    <li>pfix(p=5)->实务部队</li>
+    <li>pfix->基地</li>
+    <li>pfix->要塞</li>
+    <li>pfix->边缘</li>
+    <li>pfix->前线</li>
+    <li>pfix->花园</li>
+    <li>pfix->门户</li>
+    <li>pfix->丛林</li>
+    <li>pfix(p=5)->军事管制</li>
+    <li>pfix->任务</li>
+    <li>pfix->枢纽</li>
+    <li>pfix->哨站</li>
+    <li>pfix->郊区</li>
+    <li>pfix->路径</li>
+    <li>pfix->保存室</li>
+    <li>pfix->协议</li>
+    <li>pfix->地区</li>
+    <li>pfix->山脊</li>
+    <li>pfix->边缘</li>
+    <li>pfix->圣所</li>
+    <li>pfix->定居点</li>
+    <li>pfix->庇护所</li>
+    <li>pfix->侧屋</li>
+    <li>pfix->站点</li>
+    <li>pfix->尖塔</li>
+    <li>pfix->子链</li>
+    <li>pfix->表面</li>
+    <li>pfix->露台</li>
+    <li>pfix->地带</li>
+    <li>pfix->下悬挂</li>
+    <li>pfix->高墙</li>
+    <li>pfix->区域</li>
+    <li>pfix->''CENSORED''</li>
+    <li>pfix->''不明''</li>
+    <li>pfix->███████</li>
+    <li>r_name(p=0.02)->天国王座</li>
+    <li>r_name(p=0.02)->天空神庙</li>
+    <li>r_name(p=0.02)->至纯珠宝</li>
+    <li>r_name(p=0.02)->翡翠陵墓</li>
+    <li>r_name(p=0.02)->围墙花园</li>
+    <li>r_name(p=0.02)->先知隐所</li>
+    <li>r_name(p=0.02)->摇篮</li>
+    <li>r_name(p=0.02)->保留地</li>
+    <li>r_name(p=0.02)->知识泉源</li>
+    <li>r_name(p=0.02)->档案馆</li>
+    <li>r_name(p=0.02)->最后的思绪</li>
+    <li>r_name(p=0.02)->伊索默之门</li>
+    <li>r_name(p=0.02)->仰望皓月</li>
+    <li>r_name(p=0.02)->五卵石</li>
+    <li>r_name(p=0.02)->外层空间</li>
+    <li>r_name(p=0.02)->外缘</li>
+    <li>r_name(p=0.02)->记忆陵墓</li>
+    <li>r_name(p=0.02)->魔方节点</li>
+    <li>r_name(p=0.02)->以太山脊</li>
+    <li>r_name(p=0.02)->守护神</li>
+    <li>r_name(p=0.02)->破碎露台</li>
+    <li>r_name(p=0.02)->上古城市</li>
+    <li>r_name(p=0.02)->车站别馆</li>
+  </WNA_NamerSettlement.rulePack.rulesStrings>
+  
+</LanguageData>

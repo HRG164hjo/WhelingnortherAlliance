@@ -237,9 +237,6 @@
                     <categories>
                         <li>PlantMatter</li>
                     </categories>
-                    <thingDefs>
-                        <li>Wort</li>
-                    </thingDefs>
                 </filter>
                 <count>8</count>
             </li>
@@ -248,9 +245,6 @@
             <categories>
                 <li>PlantMatter</li>
             </categories>
-            <thingDefs>
-                <li>Wort</li>
-            </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>
             </disallowedThingDefs>
@@ -284,9 +278,6 @@
                     <categories>
                         <li>PlantMatter</li>
                     </categories>
-                    <thingDefs>
-                        <li>Wort</li>
-                    </thingDefs>
                 </filter>
                 <count>40</count>
             </li>
@@ -295,9 +286,6 @@
             <categories>
                 <li>PlantMatter</li>
             </categories>
-            <thingDefs>
-                <li>Wort</li>
-            </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>
             </disallowedThingDefs>
@@ -334,6 +322,7 @@
                         <li>Drugs</li>
                     </categories>
                     <thingDefs>
+                        <li>Neutroamine</li>
                         <li MayRequire="ludeon.rimworld.biotech">ArchiteCapsule</li>
                         <li MayRequire="ludeon.rimworld.biotech">DeathrestCapacitySerum</li>
                         <li MayRequire="ludeon.rimworld.odyssey">SentienceCatalyst</li>
@@ -344,6 +333,7 @@
                         <li MayRequire="ludeon.rimworld.anomaly">HarbingerSeed</li>
                         <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
                         <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
+                        <li MayRequire="romyashi.moreplantproducts">Romy_Luciferin</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -355,6 +345,7 @@
                 <li>Drugs</li>
             </categories>
             <thingDefs>
+                <li>Neutroamine</li>
                 <li MayRequire="ludeon.rimworld.biotech">ArchiteCapsule</li>
                 <li MayRequire="ludeon.rimworld.biotech">DeathrestCapacitySerum</li>
                 <li MayRequire="ludeon.rimworld.odyssey">SentienceCatalyst</li>
@@ -365,6 +356,7 @@
                 <li MayRequire="ludeon.rimworld.anomaly">HarbingerSeed</li>
                 <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
                 <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
+                <li MayRequire="romyashi.moreplantproducts">Romy_Luciferin</li>
             </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>
@@ -401,6 +393,7 @@
                         <li>Drugs</li>
                     </categories>
                     <thingDefs>
+                        <li>Neutroamine</li>
                         <li MayRequire="ludeon.rimworld.biotech">ArchiteCapsule</li>
                         <li MayRequire="ludeon.rimworld.biotech">DeathrestCapacitySerum</li>
                         <li MayRequire="ludeon.rimworld.odyssey">SentienceCatalyst</li>
@@ -411,6 +404,7 @@
                         <li MayRequire="ludeon.rimworld.anomaly">HarbingerSeed</li>
                         <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
                         <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
+                        <li MayRequire="romyashi.moreplantproducts">Romy_Luciferin</li>
                     </thingDefs>
                 </filter>
                 <count>5</count>
@@ -422,6 +416,7 @@
                 <li>Drugs</li>
             </categories>
             <thingDefs>
+                <li>Neutroamine</li>
                 <li MayRequire="ludeon.rimworld.biotech">ArchiteCapsule</li>
                 <li MayRequire="ludeon.rimworld.biotech">DeathrestCapacitySerum</li>
                 <li MayRequire="ludeon.rimworld.odyssey">SentienceCatalyst</li>
@@ -432,6 +427,7 @@
                 <li MayRequire="ludeon.rimworld.anomaly">HarbingerSeed</li>
                 <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
                 <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
+                <li MayRequire="romyashi.moreplantproducts">Romy_Luciferin</li>
             </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>

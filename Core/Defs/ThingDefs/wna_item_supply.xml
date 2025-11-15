@@ -55,7 +55,11 @@
                 </li>
                 <li MayRequire="ludeon.rimworld.odyssey" Class="IngestionOutcomeDoer_Psilocap">
                     <chanceBreakdown>0</chanceBreakdown>
-                    <chanceInspiration>0.2</chanceInspiration>
+                    <chanceInspiration>0.01</chanceInspiration>
+                </li>
+                <li MayRequire="Aelanna.BetterPyromania" Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Fire</need>
+                    <offset>2.0</offset>
                 </li>
             </outcomeDoers>
         </ingestible>

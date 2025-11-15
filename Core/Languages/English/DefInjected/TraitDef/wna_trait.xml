@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: unshakable -->
+  <WNA_Trait_Unshakable.degreeDatas.unshakable.label>unshakable</WNA_Trait_Unshakable.degreeDatas.unshakable.label>
+  <!-- EN: Through {PAWN_pronoun} past life, {PAWN_nameDef} has developed unusual willpower, which makes {PAWN_pronoun} incredibly resolute in {PAWN_possessive} path, even seems incomprehensible to others. -->
+  <WNA_Trait_Unshakable.degreeDatas.unshakable.description>Through {PAWN_pronoun} past life, {PAWN_nameDef} has developed unusual willpower, which makes {PAWN_pronoun} incredibly resolute in {PAWN_possessive} path, even seems incomprehensible to others.</WNA_Trait_Unshakable.degreeDatas.unshakable.description>
+  
+</LanguageData>

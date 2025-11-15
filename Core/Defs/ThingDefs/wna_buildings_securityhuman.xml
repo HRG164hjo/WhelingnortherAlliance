@@ -9,6 +9,7 @@
     <ThingDef ParentName="WNA_TurretBaseBase" Name="WNA_HumanTurretBase" Abstract="true">
         <useHitPoints>true</useHitPoints>
         <comps>
+            <li Class="CompProperties_Forbiddable"/>
 			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
 			  	<ticksPerHeal>27</ticksPerHeal>
 				<healPercent>10</healPercent>
@@ -61,9 +62,10 @@
     <!---->
     <ThingDef ParentName="WNA_HumanTurretBase">
         <defName>WNA_SentryGun</defName>
-        <label>"scorpion"sentry gun</label>
+        <label>"scorpion" sentry gun</label>
         <description>sentry gun.</description>
 		<graphicData>
+            <graphicClass>WNA.WNAMiscs.Graph_Inviso</graphicClass>
 			<texPath>Things/Building/Security/TurretMortar_Base</texPath>
             <drawSize>2.4</drawSize>
             <drawOffset>(0,0,0.1)</drawOffset>
@@ -91,13 +93,15 @@
         <researchPrerequisites>
             <li>WNA_StandardArsenal</li>
         </researchPrerequisites>
+        <comps>
+            <li Class="WNA.ThingCompProp.CompCamoPillbox"/>
+        </comps>
     </ThingDef>
     <ThingDef ParentName="WNA_TurrentWeaponBase">
         <defName>WNA_SentryGun_Gun</defName>
         <label>sentry gun</label>
         <graphicData>
             <texPath>cannons/wna_sentrygun</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <color>(105,105,105)</color>
         </graphicData>
         <verbs>
@@ -127,7 +131,7 @@
     </ThingDef>
     
     <ThingDef ParentName="WNA_HumanTurretBase">
-        <defName>WNA_PrismGun</defName>
+        <defName>WNA_PrismTower</defName>
         <label>"comet" laser gun</label>
         <description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies.</description>
 		<graphicData>
@@ -148,7 +152,7 @@
             <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <building>
-            <turretGunDef>WNA_PrismGun_Gun</turretGunDef>
+            <turretGunDef>WNA_PrismTower_Gun</turretGunDef>
             <turretTopDrawSize>1.8</turretTopDrawSize>
             <turretTopOffset>(0,0.1)</turretTopOffset>
             <turretBurstWarmupTime>0.466667</turretBurstWarmupTime>
@@ -167,17 +171,16 @@
         </comps>
     </ThingDef>
     <ThingDef ParentName="WNA_TurrentWeaponBase">
-        <defName>WNA_PrismGun_Gun</defName>
+        <defName>WNA_PrismTower_Gun</defName>
         <label>comet</label>
         <graphicData>
             <texPath>cannons/wna_cometgun</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
             <color>(255,255,255)</color>
         </graphicData>
         <verbs>
             <li>
                 <verbClass>WNA.WNAMiscs.VerbType_Laser</verbClass>
-                <defaultProjectile>WNA_PrismGun_Proj</defaultProjectile>
+                <defaultProjectile>WNA_PrismTower_Proj</defaultProjectile>
                 <warmupTime>0</warmupTime>
                 <range>63.9</range>
                 <soundCast>RocketswarmLauncher_Fire</soundCast>
@@ -199,12 +202,195 @@
         </modExtensions>
     </ThingDef>
     <ThingDef ParentName="WNA_ProjBase">
-        <defName>WNA_PrismGun_Proj</defName>
+        <defName>WNA_PrismTower_Proj</defName>
         <label>comet</label>
         <projectile>
             <damageDef>WNA_KineBomb</damageDef>
             <damageAmountBase>300</damageAmountBase>
         </projectile>
+    </ThingDef>
+    
+    <ThingDef ParentName="WNA_HumanTurretBase">
+        <defName>WNA_DesoTurret</defName>
+        <label>desolator turret</label>
+        <description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/TurretHeavy_Base</texPath>
+            <drawSize>1.1</drawSize>
+            <drawOffset>(0,0,0.1)</drawOffset>
+            <color>(255,155,0)</color>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/TurretHeavy_Base</uiIconPath>
+        <uiIconColor>(255,155,0)</uiIconColor>
+        <statBases>
+            <MaxHitPoints>850</MaxHitPoints>
+            <WorkToBuild>2250</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>150</Steel>
+            <Plasteel>30</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <building>
+            <turretGunDef>WNA_DesoTurret_Gun</turretGunDef>
+            <turretTopDrawSize>1.8</turretTopDrawSize>
+            <turretTopOffset>(0,0.1)</turretTopOffset>
+            <turretBurstWarmupTime>0</turretBurstWarmupTime>
+            <turretBurstCooldownTime>0.666667</turretBurstCooldownTime>
+            <combatPower>25</combatPower>
+            <ai_combatDangerous>true</ai_combatDangerous>
+        </building>
+        <researchPrerequisites>
+            <li>WNA_ParticleArmory</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>75</basePowerConsumption>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="WNA_TurrentWeaponBase">
+        <defName>WNA_DesoTurret_Gun</defName>
+        <label>desolator</label>
+        <graphicData>
+            <texPath>cannons/wna_cometgun</texPath>
+            <color>(200,100,0)</color>
+        </graphicData>
+        <verbs>
+            <li>
+                <verbClass>WNA.WNAMiscs.VerbType_Laser</verbClass>
+                <defaultProjectile>WNA_DesoTurret_Proj</defaultProjectile>
+                <warmupTime>0</warmupTime>
+                <range>63.9</range>
+                <soundCast>RocketswarmLauncher_Fire</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <canGoWild>false</canGoWild>
+                <targetParams>
+                    <canTargetBuildings>true</canTargetBuildings>
+                </targetParams>
+            </li>
+        </verbs>
+		<modExtensions>
+			<li Class="WNA.DMExtension.TechnoConfig">
+				<laserInnerColor>(255,155,0,200)</laserInnerColor>
+				<laserOuterColor>(200,100,0,200)</laserOuterColor>
+				<laserOuterSpread>1.2</laserOuterSpread>
+				<laserThickness>0.08</laserThickness>
+				<laserDuration>60</laserDuration>
+			</li>
+		</modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ProjBase">
+        <defName>WNA_DesoTurret_Proj</defName>
+        <label>radbeam</label>
+        <projectile>
+			<damageDef>WNA_RadBeam</damageDef>
+			<damageAmountBase>150</damageAmountBase>
+        </projectile>
+        <comps>
+			<li Class="WNA.ThingCompProp.CompRadFieldBurst">
+				<config>
+					<radLevel>500</radLevel>
+					<radius>10.9</radius>
+				</config>
+			</li>
+        </comps>
+    </ThingDef>
+
+    <!---->
+    <ThingDef ParentName="WNA_HumanTurretBase">
+        <defName>WNA_AdvMortar</defName>
+        <label>adv. mortar</label>
+        <description>sentry gun.</description>
+		<graphicData>
+			<texPath>Things/Building/Mech/TurretMechMini_Base</texPath>
+            <drawSize>2</drawSize>
+            <drawOffset>(0,0,0.1)</drawOffset>
+            <color>(127,127,127)</color>
+		</graphicData>
+		<uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
+        <uiIconColor>(127,127,127)</uiIconColor>
+        <size>(2,2)</size>
+        <statBases>
+            <MaxHitPoints>5000</MaxHitPoints>
+            <WorkToBuild>7500</WorkToBuild>
+        </statBases>
+        <costList>
+            <WNA_Desolisium>40</WNA_Desolisium>
+            <WNA_Concrete>60</WNA_Concrete>
+            <ReinforcedBarrel>1</ReinforcedBarrel>
+        </costList>
+        <building>
+            <turretGunDef>WNA_AdvMortar_Gun</turretGunDef>
+            <turretTopDrawSize>3.4</turretTopDrawSize>
+            <turretTopOffset>(0,0.34)</turretTopOffset>
+            <turretBurstWarmupTime>0</turretBurstWarmupTime>
+            <turretBurstCooldownTime>0.833333</turretBurstCooldownTime>
+            <combatPower>100000</combatPower>
+            <ai_combatDangerous>true</ai_combatDangerous>
+        </building>
+        <inspectorTabs>
+            <li>ITab_Shells</li>
+        </inspectorTabs>
+        <researchPrerequisites>
+            <li>WNA_StandardArsenal</li>
+        </researchPrerequisites>
+        <placeWorkers Inherit="false">
+            <li>PlaceWorker_NotUnderRoof</li>
+            <li>PlaceWorker_TurretTop</li>
+        </placeWorkers>
+        <comps>
+            <li Class="CompProperties_Mannable">
+                <manWorkType>AllWork</manWorkType>
+                <planetLayerWhitelist IsNull="true"/>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="WNA_TurrentWeaponBase">
+        <defName>WNA_AdvMortar_Gun</defName>
+        <label>adv mortar</label>
+        <graphicData>
+            <texPath>Things/Building/Security/TurretSniper_Top</texPath>
+        </graphicData>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <warmupTime>0</warmupTime>
+                <minRange>24.9</minRange>
+                <range>500</range>
+                <forcedMissRadius>0.1</forcedMissRadius>
+                <soundCast>Mortar_LaunchA</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>16</muzzleFlashScale>
+                <burstShotCount>1</burstShotCount>
+                <canGoWild>false</canGoWild>
+                <isMortar>true</isMortar>
+                <requireLineOfSight>false</requireLineOfSight>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_ChangeableProjectile"/>
+        </comps>
+        <building>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>MortarShells</li>
+                    </categories>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings>
+                <filter>
+                    <categories>
+                        <li>MortarShells</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+        </building>
     </ThingDef>
 
     <!---->

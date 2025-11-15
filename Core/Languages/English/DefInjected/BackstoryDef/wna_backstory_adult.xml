@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: [PAWN_nameDef] had been serving for the great work for Whelingnorther Alliance since [PAWN_possessive] grown-up. [PAWN_nameDef] had worked in various positions, gradually forged unshakable will through the years of work. -->
+  <WNA_BA_FaithfulBeliever.description>[PAWN_nameDef] had been serving for the great work for Whelingnorther Alliance since [PAWN_possessive] grown-up. [PAWN_nameDef] had worked in various positions, gradually forged unshakable will through the years of work.</WNA_BA_FaithfulBeliever.description>
+  <!-- EN: faithful believer -->
+  <WNA_BA_FaithfulBeliever.title>faithful believer</WNA_BA_FaithfulBeliever.title>
+  <!-- EN: faithful -->
+  <WNA_BA_FaithfulBeliever.titleShort>faithful</WNA_BA_FaithfulBeliever.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] had been serving for the great work for Whelingnorther Alliance since [PAWN_possessive] grown-up. However [PAWN_pronoun] seemed to have taken a strange path, become increasingly insane and cruel through the years of work. -->
+  <WNA_BA_FanaticBeliever.description>[PAWN_nameDef] had been serving for the great work for Whelingnorther Alliance since [PAWN_possessive] grown-up. However [PAWN_pronoun] seemed to have taken a strange path, become increasingly insane and cruel through the years of work.</WNA_BA_FanaticBeliever.description>
+  <!-- EN: fanatic believer -->
+  <WNA_BA_FanaticBeliever.title>fanatic believer</WNA_BA_FanaticBeliever.title>
+  <!-- EN: fanatic -->
+  <WNA_BA_FanaticBeliever.titleShort>fanatic</WNA_BA_FanaticBeliever.titleShort>
+  
+  <!-- EN: When facing the pursuit of two superpowers, [PAWN_nameDef] recieved the enlightment from far-ancient civilization the Whelingnorther Empire. With this power [PAWN_pronoun] and [PAWN_possessive] followers got rid of the pursuit, and finally founded the Whelingnorther Alliance. -->
+  <WNA_BA_FirstGen.description>When facing the pursuit of two superpowers, [PAWN_nameDef] recieved the enlightment from far-ancient civilization the Whelingnorther Empire. With this power [PAWN_pronoun] and [PAWN_possessive] followers got rid of the pursuit, and finally founded the Whelingnorther Alliance.</WNA_BA_FirstGen.description>
+  <!-- EN: first generation member -->
+  <WNA_BA_FirstGen.title>first generation member</WNA_BA_FirstGen.title>
+  <!-- EN: first-gen -->
+  <WNA_BA_FirstGen.titleShort>first-gen</WNA_BA_FirstGen.titleShort>
+  
+  <!-- EN: The day come for [PAWN_nameDef] when Whelingnorther Alliance cast their shade over the world [PAWN_nameDef] lives in, and with the aid from Whelingnorther Alliance [PAWN_pronoun] slained all [PAWN_possessive] rivals. The fruit of revenge is unbelievably sweet,  [PAWN_nameDef] sang the praises of Whelingnorther and became a fanatic believer. -->
+  <WNA_BA_MidworldRevenger.description>The day come for [PAWN_nameDef] when Whelingnorther Alliance cast their shade over the world [PAWN_nameDef] lives in, and with the aid from Whelingnorther Alliance [PAWN_pronoun] slained all [PAWN_possessive] rivals. The fruit of revenge is unbelievably sweet,  [PAWN_nameDef] sang the praises of Whelingnorther and became a fanatic believer.</WNA_BA_MidworldRevenger.description>
+  <!-- EN: midworld revenger -->
+  <WNA_BA_MidworldRevenger.title>midworld revenger</WNA_BA_MidworldRevenger.title>
+  <!-- EN: revenger -->
+  <WNA_BA_MidworldRevenger.titleShort>revenger</WNA_BA_MidworldRevenger.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is a second generation member of Whelingnorther Alliance, which means [PAWN_pronoun] has been accused of crimes he didn't commit, whether for political, legal, or other reasons. Luckily with the aid of Whelingnorther Alliance, [PAWN_pronoun] washed away the false accusation with blood. -->
+  <WNA_BA_SecondGen.description>[PAWN_nameDef] is a second generation member of Whelingnorther Alliance, which means [PAWN_pronoun] has been accused of crimes he didn't commit, whether for political, legal, or other reasons. Luckily with the aid of Whelingnorther Alliance, [PAWN_pronoun] washed away the false accusation with blood.</WNA_BA_SecondGen.description>
+  <!-- EN: second generation member -->
+  <WNA_BA_SecondGen.title>second generation member</WNA_BA_SecondGen.title>
+  <!-- EN: second-gen -->
+  <WNA_BA_SecondGen.titleShort>second-gen</WNA_BA_SecondGen.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] grown up under the shelter of Whelingnorther Alliance as a resident, enjoying the material support and education provided by Whelingnorther Alliance. When [PAWN_pronoun] finally grow up and decided to serve in Whelingnorther Military, [PAWN_pronoun] officially became a national of Whelingnorther Alliance. -->
+  <WNA_BA_ThirdGen.description>[PAWN_nameDef] grown up under the shelter of Whelingnorther Alliance as a resident, enjoying the material support and education provided by Whelingnorther Alliance. When [PAWN_pronoun] finally grow up and decided to serve in Whelingnorther Military, [PAWN_pronoun] officially became a national of Whelingnorther Alliance.</WNA_BA_ThirdGen.description>
+  <!-- EN: third generation member -->
+  <WNA_BA_ThirdGen.title>third generation member</WNA_BA_ThirdGen.title>
+  <!-- EN: third-gen -->
+  <WNA_BA_ThirdGen.titleShort>third-gen</WNA_BA_ThirdGen.titleShort>
+  
+  <!-- EN: Before the arrival of Whelingnorther Alliance, a false accusation made [PAWN_nameDef] lost all [PAWN_possessive] fame abd belongings. Whelingnorther Alliance helped [PAWN_objective] break out from the jail and killed every people responsible for [PAWN_possessive] false asscusation. -->
+  <WNA_BC_DesperateRevenger.description>Before the arrival of Whelingnorther Alliance, a false accusation made [PAWN_nameDef] lost all [PAWN_possessive] fame abd belongings. Whelingnorther Alliance helped [PAWN_objective] break out from the jail and killed every people responsible for [PAWN_possessive] false asscusation.</WNA_BC_DesperateRevenger.description>
+  <!-- EN: desperate revenger -->
+  <WNA_BC_DesperateRevenger.title>desperate revenger</WNA_BC_DesperateRevenger.title>
+  <!-- EN: desperate -->
+  <WNA_BC_DesperateRevenger.titleShort>desperate</WNA_BC_DesperateRevenger.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] worked in a factory for living. Everyday [PAWN_pronoun] has to face dangerous facilities, insufficient protections, heavy workload, endless overtime and unreasonable boss, until the arrival of Whelingnorther Alliance changed all of this. -->
+  <WNA_BC_FactoryWorker.description>[PAWN_nameDef] worked in a factory for living. Everyday [PAWN_pronoun] has to face dangerous facilities, insufficient protections, heavy workload, endless overtime and unreasonable boss, until the arrival of Whelingnorther Alliance changed all of this.</WNA_BC_FactoryWorker.description>
+  <!-- EN: factory worker -->
+  <WNA_BC_FactoryWorker.title>factory worker</WNA_BC_FactoryWorker.title>
+  <!-- EN: worker -->
+  <WNA_BC_FactoryWorker.titleShort>worker</WNA_BC_FactoryWorker.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] had lost [PAWN_possessive] home and all property, had to wander in the streets and sleep on the ground. When Whelingnorther Alliance reached to [PAWN_nameDef]'s world, [PAWN_nameDef] decided to join them, in order to make people won't become homeless anyore. -->
+  <WNA_BC_Homeless.description>[PAWN_nameDef] had lost [PAWN_possessive] home and all property, had to wander in the streets and sleep on the ground. When Whelingnorther Alliance reached to [PAWN_nameDef]'s world, [PAWN_nameDef] decided to join them, in order to make people won't become homeless anyore.</WNA_BC_Homeless.description>
+  <!-- EN: homeless -->
+  <WNA_BC_Homeless.title>homeless</WNA_BC_Homeless.title>
+  <!-- EN: homeless -->
+  <WNA_BC_Homeless.titleShort>homeless</WNA_BC_Homeless.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is eager for [PAWN_possessive] own termination, like a hunger man is eager for food, tired man is eager for a rest, a revenger is eager for beheading his rival. -->
+  <WNA_BC_Hopeless.description>[PAWN_nameDef] is eager for [PAWN_possessive] own termination, like a hunger man is eager for food, tired man is eager for a rest, a revenger is eager for beheading his rival.</WNA_BC_Hopeless.description>
+  <!-- EN: hopeless -->
+  <WNA_BC_Hopeless.title>hopeless</WNA_BC_Hopeless.title>
+  <!-- EN: hopeless -->
+  <WNA_BC_Hopeless.titleShort>hopeless</WNA_BC_Hopeless.titleShort>
+  
+  <!-- EN: The idea of Whelingnorther Alliance has deeply moved [PAWN_nameDef] since [PAWN_possessive] young age. [PAWN_nameDef] is prepared to gave up all of [PAWN_objective] and sacrifice for the great work of Whelingnorther Alliance. -->
+  <WNA_BC_Martyr.description>The idea of Whelingnorther Alliance has deeply moved [PAWN_nameDef] since [PAWN_possessive] young age. [PAWN_nameDef] is prepared to gave up all of [PAWN_objective] and sacrifice for the great work of Whelingnorther Alliance.</WNA_BC_Martyr.description>
+  <!-- EN: martyr -->
+  <WNA_BC_Martyr.title>martyr</WNA_BC_Martyr.title>
+  <!-- EN: martyr -->
+  <WNA_BC_Martyr.titleShort>martyr</WNA_BC_Martyr.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] grown up in the fields, before Whelingnorther Alliance's influence interrupting [PAWN_possessive] life, everything [PAWN_pronoun] had in [PAWN_possessive] daily routine is endless farmwork. -->
+  <WNA_BC_MidworldPeasant.description>[PAWN_nameDef] grown up in the fields, before Whelingnorther Alliance's influence interrupting [PAWN_possessive] life, everything [PAWN_pronoun] had in [PAWN_possessive] daily routine is endless farmwork.</WNA_BC_MidworldPeasant.description>
+  <!-- EN: midworld peasant -->
+  <WNA_BC_MidworldPeasant.title>midworld peasant</WNA_BC_MidworldPeasant.title>
+  <!-- EN: peasant -->
+  <WNA_BC_MidworldPeasant.titleShort>peasant</WNA_BC_MidworldPeasant.titleShort>
+  
+  <!-- EN: Before the arrival of Whelingnorther Alliance, [PAWN_nameDef] has been participating in armed rebellion to overthrow the rule of the privileged class. After the arrival of Whelingnorther Alliance, [PAWN_nameDef] joined them to slain more privileged. -->
+  <WNA_BC_MidworldRebel.description>Before the arrival of Whelingnorther Alliance, [PAWN_nameDef] has been participating in armed rebellion to overthrow the rule of the privileged class. After the arrival of Whelingnorther Alliance, [PAWN_nameDef] joined them to slain more privileged.</WNA_BC_MidworldRebel.description>
+  <!-- EN: midworld rebel -->
+  <WNA_BC_MidworldRebel.title>midworld rebel</WNA_BC_MidworldRebel.title>
+  <!-- EN: rebel -->
+  <WNA_BC_MidworldRebel.titleShort>rebel</WNA_BC_MidworldRebel.titleShort>
+  
+</LanguageData>

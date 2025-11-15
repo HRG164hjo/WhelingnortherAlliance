@@ -16,9 +16,6 @@
 		<researchPrerequisites>
 			<li>WNA_SecretTech</li>
 		</researchPrerequisites>
-		<placeWorkers>
-			<li MayRequire="Ludeon.Rimworld.Odyssey">PlaceWorker_BuildingsValidOverSubstructure</li>
-		</placeWorkers>
 	</TerrainDef>
 	<TerrainDef ParentName="WNA_FloorsBase">
 		<defName>WNA_FocusSpring</defName>

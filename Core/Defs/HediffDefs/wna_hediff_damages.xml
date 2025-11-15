@@ -364,7 +364,7 @@
         <maxSeverity>1</maxSeverity>
         <comps>
             <li Class="HediffCompProperties_Disappears">
-                <disappearsAfterTicks>200~300</disappearsAfterTicks>
+                <disappearsAfterTicks>1200~2000</disappearsAfterTicks>
             </li>
             <li Class="WNA.HediffCompProp.CompRadFieldSpreader">
                 <config>

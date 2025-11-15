@@ -3,7 +3,8 @@
     <!-- Human Pawns -->
     <PawnKindDef Abstract="True" ParentName="WNA_PawnsBase" Name="WNA_PawnsHuman">
         <race>WNA_Human</race>
-        <apparelColor>(74,74,74)</apparelColor>
+        <nameMaker>WNA_NamerPawn</nameMaker>
+        <nameMakerFemale>WNA_NamerPawn</nameMakerFemale>
     </PawnKindDef>
     <PawnKindDef ParentName="WNA_PawnsHuman">
         <defName>WNA_Technician</defName>
@@ -107,9 +108,6 @@
         <forcedTraits>
             <li>Nimble</li>
         </forcedTraits>
-        <abilities>
-            <li>WNA_PsylinkDeprivation</li>
-        </abilities>
     </PawnKindDef>
 
     <PawnKindDef ParentName="WNA_PawnsHuman">
@@ -187,6 +185,9 @@
         <forcedTraits>
             <li>Psychopath</li>
         </forcedTraits>
+        <abilities>
+            <li>WNA_PsylinkDeprivation</li>
+        </abilities>
     </PawnKindDef>
     
     <PawnKindDef ParentName="WNA_PawnsHuman">
@@ -209,6 +210,8 @@
     <!-- Whelingnorthan Pawns -->
     <PawnKindDef Abstract="True" ParentName="WNA_PawnsBase" Name="WNA_PawnsWNThan">
         <race>WNA_WNThan</race>
+        <nameMaker>WNA_NamerPawnW</nameMaker>
+        <nameMakerFemale>WNA_NamerPawnW</nameMakerFemale>
         <weaponTags>
             <li>Tag_WNANormalWP</li>
         </weaponTags>

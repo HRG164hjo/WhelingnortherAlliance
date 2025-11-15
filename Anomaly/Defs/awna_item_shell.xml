@@ -5,9 +5,8 @@
         <label>psychic blast shell</label>
         <description>A shell made of bioferrite and enhanced with special techniques. When detonated it can cause a unique psychic phenomena, causing nearby people fall into psychic drunkenness.</description>
         <graphicData>
-            <texPath>item/wna_shells/wnashell_psychic</texPath>
+            <texPath>item/wna_shells/psychic</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.8</drawSize>
         </graphicData>
         <statBases>
             <MarketValue>100</MarketValue>
@@ -25,8 +24,10 @@
             <targetCountAdjustment>5</targetCountAdjustment>
             <workSkill>Crafting</workSkill>
             <recipeUsers>
+	            <li>FueledSmithy</li>
+	            <li>ElectricSmithy</li>
+	            <li>TableMachining</li>
                 <li>BioferriteShaper</li>
-                <li>TableMachining</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>4</Crafting>
@@ -34,14 +35,12 @@
             <displayPriority>100</displayPriority>
         </recipeMaker>
     </ThingDef>
-    <ThingDef ParentName="BaseBullet">
+    <ThingDef ParentName="WNA_ProjBase">
         <defName>WNA_ShellPsychic_Proj</defName>
         <label>psychic blast shell</label>
         <graphicData>
-            <texPath>projectiles/wnashell_psychic</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
-            <drawSize>0.5</drawSize>
+            <texPath>Things/Projectile/ShellFirefoam</texPath>
+            <color>(100,80,80)</color>
         </graphicData>
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>

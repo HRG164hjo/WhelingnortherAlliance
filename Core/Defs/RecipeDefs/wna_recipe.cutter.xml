@@ -68,8 +68,6 @@
                 <filter>
                     <categories>
                         <li>Chunks</li>
-                        <li>ChunkSlagSteel</li>
-                        <li>ChunkMechanoidSlag</li>
                     </categories>
                 </filter>
                 <count>1</count>
@@ -78,8 +76,6 @@
         <fixedIngredientFilter>
             <categories>
                 <li>Chunks</li>
-                <li>ChunkSlagSteel</li>
-                <li>ChunkMechanoidSlag</li>
             </categories>
         </fixedIngredientFilter>
         <specialProducts>

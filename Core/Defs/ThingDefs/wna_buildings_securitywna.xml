@@ -61,7 +61,6 @@
         <projectile>
             <damageDef>WNA_CastRange</damageDef>
             <damageAmountBase>150</damageAmountBase>
-            <flyOverhead>true</flyOverhead>
         </projectile>
     </ThingDef>
 

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: mastery -->
+  <WNA_Mastery.label>mastery</WNA_Mastery.label>
+  <!-- EN: Mysterious voices are echoing beneath the surface of world, whispering knowledge to each other or to just nothing. This creature is able to steal some knowledge from the talks, thus become a master in many fields. -->
+  <WNA_Mastery.description>Mysterious voices are echoing beneath the surface of world, whispering knowledge to each other or to just nothing. This creature is able to steal some knowledge from the talks, thus become a master in many fields.</WNA_Mastery.description>
+  <!-- EN: mastery -->
+  <WNA_Mastery.labelShortAdj>mastery</WNA_Mastery.labelShortAdj>
+  
+  <!-- EN: shadow ring -->
+  <WNA_ShadowRing.label>shadow ring</WNA_ShadowRing.label>
+  <!-- EN: Shades is surrounding this pawn. Some changes, including some obvious visual changes, is happening on this pawn. -->
+  <WNA_ShadowRing.description>Shades is surrounding this pawn. Some changes, including some obvious visual changes, is happening on this pawn.</WNA_ShadowRing.description>
+  <!-- EN: shadow ring -->
+  <WNA_ShadowRing.labelShortAdj>shadow ring</WNA_ShadowRing.labelShortAdj>
+  
+  <!-- EN: still water -->
+  <WNA_StillWater.label>still water</WNA_StillWater.label>
+  <!-- EN: This pawn has found extraordinary inner peace, even freeing him from some primal needs. But this doesn't mean he can be treated casually. -->
+  <WNA_StillWater.description>This pawn has found extraordinary inner peace, even freeing him from some primal needs. But this doesn't mean he can be treated casually.</WNA_StillWater.description>
+  <!-- EN: still water -->
+  <WNA_StillWater.labelShortAdj>still water</WNA_StillWater.labelShortAdj>
+  
+  <!-- EN: unshakable -->
+  <WNA_Unshakable.label>unshakable</WNA_Unshakable.label>
+  <!-- EN: The power originating from Ancient Whelingnorther Empire flows through this pawn. Few can stop this person. -->
+  <WNA_Unshakable.description>The power originating from Ancient Whelingnorther Empire flows through this pawn. Few can stop this person.</WNA_Unshakable.description>
+  <!-- EN: unshakable -->
+  <WNA_Unshakable.labelShortAdj>unshakable</WNA_Unshakable.labelShortAdj>
+  
+</LanguageData>

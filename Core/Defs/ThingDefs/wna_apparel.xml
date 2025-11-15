@@ -203,7 +203,6 @@
         <description>A traditional style helmet, though looks plain, it's actually made of alloy plates and several advanced techniques that only held by glitter worlds are applied to it. It's widely used by WNA vanguards, and has already become a symbol of their activities.</description>
         <graphicData>
             <texPath>apparel/vanguardhead/icon_vanguardhead</texPath>
-            <color>(139,127,94)</color>
         </graphicData>
 	    <costList>
             <WNA_Desolisium>45</WNA_Desolisium>
@@ -252,7 +251,6 @@
 		<description>A set of heavy armor containing alloy armor plates and advanced connection components, covered with a layer of strong fabric. This is a design of older times, but it had stood the tests of time and countless battles.</description>
 		<graphicData>
 			<texPath>apparel/vanguardplate/icon_vanguardplate</texPath>
-            <color>(139,127,94)</color>
 		</graphicData>
 	    <costList>
             <WNA_Desolisium>80</WNA_Desolisium>
@@ -559,7 +557,50 @@
         </statBases>
         <costList>
 	        <WNA_Desolisium>40</WNA_Desolisium>
-            <ComponentIndustrial>4</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+	    </costList>
+		<comps>
+            <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
+                <hediff>WNA_IllusionCore</hediff>
+            </li>
+		</comps>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>WNA_FieldAnalysis</li>
+                <li>WNA_AdvancedArsenal</li>
+            </researchPrerequisites>
+            <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+            <workSkill>Crafting</workSkill>
+            <skillRequirements>
+                <Crafting>15</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    
+    <ThingDef ParentName="WNA_UtilityBase">
+        <defName>WNA_DeadzoneBelt</defName>
+        <label>"dead zone" radiation belt</label>
+        <description>This device generate a strong radiation field surrounding its wearer. Note that radiation doesn't have eyes, make sure yout ally is radiation proof.</description>
+        <graphicData>
+            <texPath>apparel/wna_utility</texPath>
+        </graphicData>
+		<tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+			<Mass>0.5</Mass>
+        </statBases>
+        <costList>
+	        <WNA_Desolisium>60</WNA_Desolisium>
+            <ComponentSpacer>2</ComponentSpacer>
+            <WNA_UraniumBattery>2</WNA_UraniumBattery>
 	    </costList>
 		<comps>
             <li Class="WNA.ThingCompProp.CompApparelEquipHediff">

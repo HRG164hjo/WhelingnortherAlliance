@@ -398,7 +398,7 @@
             </categories>
         </fixedIngredientFilter>
         <products>
-            <WNA_UraniumBattery>1</WNA_UraniumBattery>
+            <WNA_UraniumBattery>10</WNA_UraniumBattery>
         </products>
         <workAmount>800</workAmount>
         <recipeUsers>
@@ -417,6 +417,8 @@
                 <filter>
                     <thingDefs>
                         <li>Plasteel</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
+                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                     </thingDefs>
                 </filter>
                 <count>25</count>
@@ -425,6 +427,9 @@
                 <filter>
                     <thingDefs>
                         <li>Steel</li>
+                        <li>Silver</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
+                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                     </thingDefs>
                 </filter>
                 <count>35</count>
@@ -434,6 +439,10 @@
             <thingDefs>
                 <li>Plasteel</li>
                 <li>Steel</li>
+                <li>Silver</li>
+                <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
+                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>

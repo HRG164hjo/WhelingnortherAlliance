@@ -219,7 +219,6 @@
         <description>cast dark power to the victim to rob the victim of their psychic ability. victims with psylinks will lose their psylink and experience severe psychic trauma, and those without psylinks will experience severe psychic shock and become incapacitied for several days.</description>
         <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
-        <aiCanUse>true</aiCanUse>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
             <warmupTime>0</warmupTime>

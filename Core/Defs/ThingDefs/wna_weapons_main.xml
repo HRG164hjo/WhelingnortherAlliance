@@ -521,8 +521,8 @@
 		<comps>
 			<li Class="WNA.ThingCompProp.CompRadFieldBurst">
 				<config>
-					<radLevel>500</radLevel>
-					<radius>14.9</radius>
+					<radLevel>2000</radLevel>
+					<radius>19.9</radius>
 				</config>
 			</li>
 		</comps>
@@ -610,7 +610,7 @@
 	
 	<ThingDef ParentName="WNA_WeaponBaseRanged">
 		<defName>WNA_IonizingRifle</defName>
-		<label>ionizing rifle</label>
+		<label>"dead zone" ionizing rifle</label>
 		<description>a beam rifle powered by an unstable-particle emitter, this rifle can generate powerful focused radiation beam to damage it's target, though weak against buildings, this weapon is unusually effective against living enemies.</description>
 		<graphicData>
 			<texPath>weapons/wna_ionizer</texPath>
@@ -625,7 +625,7 @@
 		<costList>
 			<WNA_Desolisium>50</WNA_Desolisium>
 			<ComponentSpacer>2</ComponentSpacer>
-			<WNA_ParticleVial>1</WNA_ParticleVial>
+			<WNA_UraniumBattery>1</WNA_UraniumBattery>
 		</costList>
 		<weaponTags>
 			<li>Tag_WNAStrikeForce</li>
@@ -703,7 +703,7 @@
 		<comps>
 			<li Class="WNA.ThingCompProp.CompRadFieldBurst">
 				<config>
-					<radLevel>500</radLevel>
+					<radLevel>2000</radLevel>
 					<radius>0.9</radius>
 				</config>
 			</li>
@@ -728,7 +728,7 @@
 		<costList>
 			<WNA_Desolisium>50</WNA_Desolisium>
 			<ComponentSpacer>2</ComponentSpacer>
-			<WNA_ParticleVial>1</WNA_ParticleVial>
+			<WNA_UraniumBattery>1</WNA_UraniumBattery>
 		</costList>
 		<weaponTags>
 			<li>Tag_WNALysisTroop</li>
@@ -1249,7 +1249,7 @@
 		<costList>
 			<WNA_Desolisium>50</WNA_Desolisium>
 			<ComponentSpacer>2</ComponentSpacer>
-			<WNA_ParticleVial>1</WNA_ParticleVial>
+			<WNA_UraniumBattery>1</WNA_UraniumBattery>
 		</costList>
 		<weaponTags>
 			<li>Tag_WNAParasomnia</li>
@@ -1332,7 +1332,7 @@
 		<costList>
 			<WNA_Desolisium>50</WNA_Desolisium>
 			<ComponentSpacer>2</ComponentSpacer>
-			<WNA_ParticleVial>1</WNA_ParticleVial>
+			<WNA_UraniumBattery>1</WNA_UraniumBattery>
 		</costList>
 		<weaponTags>
 			<li>Tag_WNAParasomnia</li>

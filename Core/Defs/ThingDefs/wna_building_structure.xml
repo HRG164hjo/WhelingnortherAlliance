@@ -536,7 +536,7 @@
 		<neverMultiSelect>false</neverMultiSelect>
         <coversFloor>false</coversFloor>
 		<statBases>
-			<MaxHitPoints>80000</MaxHitPoints>
+			<MaxHitPoints>60000</MaxHitPoints>
 			<WorkToBuild>390</WorkToBuild>
 			<IncomingDamageFactor>0.01</IncomingDamageFactor>
             <DoorOpenSpeed>10</DoorOpenSpeed>
@@ -606,7 +606,7 @@
 		<neverMultiSelect>false</neverMultiSelect>
         <coversFloor>false</coversFloor>
 		<statBases>
-			<MaxHitPoints>125000</MaxHitPoints>
+			<MaxHitPoints>90000</MaxHitPoints>
 			<WorkToBuild>640</WorkToBuild>
 			<IncomingDamageFactor>0.1</IncomingDamageFactor>
             <DoorOpenSpeed>10</DoorOpenSpeed>

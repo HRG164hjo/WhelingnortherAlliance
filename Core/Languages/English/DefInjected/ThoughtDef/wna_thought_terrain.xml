@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: in pale spring -->
+  <WNA_InFocusSpring.stages.in_pale_spring.label>in pale spring</WNA_InFocusSpring.stages.in_pale_spring.label>
+  <!-- EN: This water washed my messy thoughts away. I feel so calm and peace. -->
+  <WNA_InFocusSpring.stages.in_pale_spring.description>This water washed my messy thoughts away. I feel so calm and peace.</WNA_InFocusSpring.stages.in_pale_spring.description>
+  
+  <!-- EN: on pale tile -->
+  <WNA_OnFocusFloor.stages.on_pale_tile.label>on pale tile</WNA_OnFocusFloor.stages.on_pale_tile.label>
+  <!-- EN: A neat place. I like it. -->
+  <WNA_OnFocusFloor.stages.on_pale_tile.description>A neat place. I like it.</WNA_OnFocusFloor.stages.on_pale_tile.description>
+  
+  <!-- EN: on dim soil -->
+  <WNA_OnFocusSoil.stages.on_dim_soil.label>on dim soil</WNA_OnFocusSoil.stages.on_dim_soil.label>
+  <!-- EN: I can feel a pulse of life passing through me, makes me feel refreshed and relaxed. -->
+  <WNA_OnFocusSoil.stages.on_dim_soil.description>I can feel a pulse of life passing through me, makes me feel refreshed and relaxed.</WNA_OnFocusSoil.stages.on_dim_soil.description>
+  
+</LanguageData>

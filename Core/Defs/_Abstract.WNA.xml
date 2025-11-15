@@ -120,8 +120,6 @@
                 <WNA_Mortaliner>999</WNA_Mortaliner>
             </xenotypeChances>
         </xenotypeSet>
-        <nameMaker>WNA_NamerPawn</nameMaker>
-        <nameMakerFemale>WNA_NamerPawnF</nameMakerFemale>
         <skills>
             <li>
                 <skill>Shooting</skill>
@@ -1125,6 +1123,8 @@
                 <categoryDef>Manufactured</categoryDef>
                 <excludedCategories>
                     <li>MortarShells</li>
+                    <li MayRequire="sarg.rimbees">RB_Beekeeping</li>
+                    <li MayRequire="sarg.rimbees">RB_BeesAndQueens</li>
                 </excludedCategories>
                 <excludedThingDefs>
                     <li>ComponentIndustrial</li>
@@ -1256,7 +1256,13 @@
             <li Class="StockGenerator_Category" MayRequire="sarg.rimbees">
                 <categoryDef>RB_Combs</categoryDef>
                 <thingDefCountRange>8~8</thingDefCountRange>
-                <countRange>300000~500000</countRange>
+                <countRange>500000~800000</countRange>
+                <price>VeryCheap</price>
+            </li>
+            <li Class="StockGenerator_Category" MayRequire="sarg.rimbees">
+                <categoryDef>RB_Beekeeping</categoryDef>
+                <thingDefCountRange>4~4</thingDefCountRange>
+                <countRange>500000~800000</countRange>
                 <price>VeryCheap</price>
             </li>
         </stockGenerators>

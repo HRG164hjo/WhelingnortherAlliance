@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="WNA_ShellBase">
-        <defName>WNA_ShellChiming</defName>
-        <label>chiming shell</label>
+        <defName>WNA_ShellFlame</defName>
+        <label>flame shell</label>
         <description>A plasteel can containing an unstable chiming steel shard whose inner structure has been disrupted by external energy. When detonated this shell will unleash immense destructive power and blast a large area. It should be pointed out that this method of making use of chiming steel is really wasteful and inefficient as only 0% about its power is released.</description>
         <graphicData>
-            <texPath>item/wna_shells/wnashell_chiming</texPath>
+            <texPath>item/wna_shells/flame</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.8</drawSize>
         </graphicData>
         <statBases>
             <MarketValue>2000</MarketValue>
         </statBases>
-        <projectileWhenLoaded>WNA_ShellChiming_Proj</projectileWhenLoaded>
+        <projectileWhenLoaded>WNA_ShellFlame_Proj</projectileWhenLoaded>
         <costList>
-            <WNA_ChimingSteel>1</WNA_ChimingSteel>
-            <Plasteel>4</Plasteel>
-            <WNA_Focus>10</WNA_Focus>
+            <Chemfuel>5</Chemfuel>
+            <WNA_Phosphorus>1</WNA_Phosphorus>
         </costList>
         <recipeMaker>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -25,8 +23,11 @@
             <workAmount>800</workAmount>
             <targetCountAdjustment>5</targetCountAdjustment>
             <workSkill>Crafting</workSkill>
+            <bulkRecipeCount>10</bulkRecipeCount>
             <recipeUsers>
-                <li>FabricationBench</li>
+	            <li>FueledSmithy</li>
+	            <li>ElectricSmithy</li>
+	            <li>TableMachining</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>10</Crafting>
@@ -34,14 +35,74 @@
             <displayPriority>100</displayPriority>
         </recipeMaker>
     </ThingDef>
-    <ThingDef ParentName="BaseBullet">
+    <ThingDef ParentName="WNA_ProjBase">
+        <defName>WNA_ShellFlame_Proj</defName>
+        <label>flame shell</label>
+        <graphicData>
+            <texPath>Things/Projectile/ShellFirefoam</texPath>
+            <color>(217,147,89)</color>
+        </graphicData>
+        <thingClass>Projectile_DoomsdayRocket</thingClass>
+        <projectile>
+            <damageDef>Flame</damageDef>
+            <damageAmountBase>45</damageAmountBase>
+            <stoppingPower>Infinity</stoppingPower>
+            <speed>200</speed>
+            <armorPenetrationBase>Infinity</armorPenetrationBase>
+            <explosionRadius>7.9</explosionRadius>
+            <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+            <preExplosionSpawnChance>0.34</preExplosionSpawnChance>
+            <flyOverhead>true</flyOverhead>
+            <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+            <soundExplode>Explosion_Vaporize</soundExplode>
+            <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+            <soundAmbient>MortarRound_Ambient</soundAmbient>
+            <ai_IsIncendiary>true</ai_IsIncendiary>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="WNA_ShellBase">
+        <defName>WNA_ShellChiming</defName>
+        <label>chiming shell</label>
+        <description>A plasteel can containing an unstable chiming steel shard whose inner structure has been disrupted by external energy. When detonated this shell will unleash immense destructive power and blast a large area. It should be pointed out that this method of making use of chiming steel is really wasteful and inefficient as only 0% about its power is released.</description>
+        <graphicData>
+            <texPath>item/wna_shells/chiming</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+        </statBases>
+        <projectileWhenLoaded>WNA_ShellChiming_Proj</projectileWhenLoaded>
+        <costList>
+            <WNA_ChimingSteel>1</WNA_ChimingSteel>
+            <Plasteel>75</Plasteel>
+            <WNA_Focus>5</WNA_Focus>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <effectWorking>Cook</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <workAmount>800</workAmount>
+            <targetCountAdjustment>5</targetCountAdjustment>
+            <productCount>15</productCount>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+	            <li>FueledSmithy</li>
+	            <li>ElectricSmithy</li>
+	            <li>TableMachining</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <displayPriority>100</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+    <ThingDef ParentName="WNA_ProjBase">
         <defName>WNA_ShellChiming_Proj</defName>
         <label>chiming shell</label>
         <graphicData>
-            <texPath>projectiles/wnashell_chiming</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
-            <drawSize>0.5</drawSize>
+            <texPath>Things/Projectile/ShellFirefoam</texPath>
+            <color>(163,0,70)</color>
         </graphicData>
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
@@ -50,7 +111,7 @@
             <stoppingPower>Infinity</stoppingPower>
             <speed>2000</speed>
             <armorPenetrationBase>Infinity</armorPenetrationBase>
-            <explosionRadius>56.4</explosionRadius>
+            <explosionRadius>56.9</explosionRadius>
             <flyOverhead>true</flyOverhead>
             <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
             <soundExplode>Explosion_Vaporize</soundExplode>

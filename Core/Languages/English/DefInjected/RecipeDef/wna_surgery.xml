@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: harvest brain -->
+  <WNA_BrainHarvest.label>harvest brain</WNA_BrainHarvest.label>
+  <!-- EN: harvest a fresh brain and quickly preserve it with properly mixed liquid. -->
+  <WNA_BrainHarvest.description>harvest a fresh brain and quickly preserve it with properly mixed liquid.</WNA_BrainHarvest.description>
+  <!-- EN: harvesting TargetA. -->
+  <WNA_BrainHarvest.jobString>harvesting TargetA.</WNA_BrainHarvest.jobString>
+  
+  <!-- EN: blood dialysis -->
+  <WNA_Hemodialysis.label>blood dialysis</WNA_Hemodialysis.label>
+  <!-- EN: Use specially formulated solution to perform blood dialysis on the patient, in order to extract toxic substances accumulated in the patient's body. -->
+  <WNA_Hemodialysis.description>Use specially formulated solution to perform blood dialysis on the patient, in order to extract toxic substances accumulated in the patient's body.</WNA_Hemodialysis.description>
+  <!-- EN: Performing blood dialysis on TargetA. -->
+  <WNA_Hemodialysis.jobString>Performing blood dialysis on TargetA.</WNA_Hemodialysis.jobString>
+  
+  <!-- EN: psychic inspection -->
+  <WNA_Inspection.label>psychic inspection</WNA_Inspection.label>
+  <!-- EN: Inspect target with one's psychic power, faster and no medicine is required. This technique requires basic level of intelligence. -->
+  <WNA_Inspection.description>Inspect target with one's psychic power, faster and no medicine is required. This technique requires basic level of intelligence.</WNA_Inspection.description>
+  <!-- EN: Inspecting TargetA. -->
+  <WNA_Inspection.jobString>Inspecting TargetA.</WNA_Inspection.jobString>
+  
+  <!-- EN: void dive -->
+  <WNA_VoidDive.label>void dive</WNA_VoidDive.label>
+  <!-- EN: force a human into deep coma and turn them into a anchor. the victim must be sober to face the void, thus voidsteel can be drained through them while they're struggling to awake, to escape, or doing anything else, before their consciousness finally fades. -->
+  <WNA_VoidDive.description>force a human into deep coma and turn them into a anchor. the victim must be sober to face the void, thus voidsteel can be drained through them while they're struggling to awake, to escape, or doing anything else, before their consciousness finally fades.</WNA_VoidDive.description>
+  <!-- EN: Forcing void dive on TargetA. -->
+  <WNA_VoidDive.jobString>Forcing void dive on TargetA.</WNA_VoidDive.jobString>
+  
+  <!-- EN: administer medicine pack -->
+  <WNARecipeTo_WNA_Medikit.label>administer medicine pack</WNARecipeTo_WNA_Medikit.label>
+  <!-- EN: Administer a WNA medicine pack. -->
+  <WNARecipeTo_WNA_Medikit.description>Administer a WNA medicine pack.</WNARecipeTo_WNA_Medikit.description>
+  <!-- EN: Administering medicine pack. -->
+  <WNARecipeTo_WNA_Medikit.jobString>Administering medicine pack.</WNARecipeTo_WNA_Medikit.jobString>
+  
+</LanguageData>

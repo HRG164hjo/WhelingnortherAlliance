@@ -7,6 +7,43 @@
         <match Class="PatchOperationAdd">
             <xpath>/Defs</xpath>
             <value>
+    <!-- rite -->
+    <RecipeDef ParentName="WNA_RecipeBase" MayRequire="sarg.rimbees">
+        <defName>WNA_RiteAbletingMult</defName>
+        <description>break down slag chunks to retrieve useful things, more productive than traditional methods.</description>
+        <jobString>working.</jobString>
+        <label>rite ableting x50</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Chunks</li>
+                    </categories>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Chunks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <specialProducts>
+            <li>Butchery</li>
+            <li>Smelted</li>
+        </specialProducts>
+        <workAmount>300</workAmount>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <recipeUsers>
+	        <li>WNA_RiteSpot_Cutter</li>
+	    </recipeUsers>
+		<modExtensions>
+			<li Class="RimBees.OutputMultiplierRecipe">
+				<multiplier>50</multiplier>
+			</li>
+		</modExtensions>
+    </RecipeDef>
+
     <!-- supply -->
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_CookRationMult</defName>
@@ -132,9 +169,6 @@
                     <categories>
                         <li>PlantMatter</li>
                     </categories>
-                    <thingDefs>
-                        <li>Wort</li>
-                    </thingDefs>
                 </filter>
                 <count>800</count>
             </li>
@@ -143,9 +177,6 @@
             <categories>
                 <li>PlantMatter</li>
             </categories>
-            <thingDefs>
-                <li>Wort</li>
-            </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>
             </disallowedThingDefs>
@@ -181,6 +212,7 @@
                         <li>Drugs</li>
                     </categories>
                     <thingDefs>
+                        <li>Neutroamine</li>
                         <li MayRequire="ludeon.rimworld.biotech">ArchiteCapsule</li>
                         <li MayRequire="ludeon.rimworld.biotech">DeathrestCapacitySerum</li>
                         <li MayRequire="ludeon.rimworld.odyssey">SentienceCatalyst</li>
@@ -191,6 +223,7 @@
                         <li MayRequire="ludeon.rimworld.anomaly">HarbingerSeed</li>
                         <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
                         <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
+                        <li MayRequire="romyashi.moreplantproducts">Romy_Luciferin</li>
                     </thingDefs>
                 </filter>
                 <count>100</count>
@@ -202,6 +235,7 @@
                 <li>Drugs</li>
             </categories>
             <thingDefs>
+                <li>Neutroamine</li>
                 <li MayRequire="ludeon.rimworld.biotech">ArchiteCapsule</li>
                 <li MayRequire="ludeon.rimworld.biotech">DeathrestCapacitySerum</li>
                 <li MayRequire="ludeon.rimworld.odyssey">SentienceCatalyst</li>
@@ -212,6 +246,7 @@
                 <li MayRequire="ludeon.rimworld.anomaly">HarbingerSeed</li>
                 <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
                 <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
+                <li MayRequire="romyashi.moreplantproducts">Romy_Luciferin</li>
             </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>
@@ -550,11 +585,12 @@
                         <li>Silver</li>
                         <li>Gold</li>
                         <li>Plasteel</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                     </thingDefs>
                 </filter>
-                <count>2500</count>
+                <count>1500</count>
             </li>
             <li>
                 <filter>
@@ -579,10 +615,11 @@
                 <li>Silver</li>
                 <li>Gold</li>
                 <li>Plasteel</li>
+                <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
-                <li>Jade</li>
                 <li>WNA_Quicklime</li>
+                <li>Jade</li>
                 <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                 <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
@@ -593,7 +630,7 @@
             </categories>
         </fixedIngredientFilter>
         <products>
-            <WNA_Concrete>4000</WNA_Concrete>
+            <WNA_Concrete>4500</WNA_Concrete>
         </products>
         <workAmount>10000</workAmount>
         <recipeUsers>
@@ -616,6 +653,7 @@
                         <li>Silver</li>
                         <li>Gold</li>
                         <li>Plasteel</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                     </thingDefs>
@@ -628,6 +666,7 @@
                         <li>StoneBlocks</li>
                     </categories>
                     <thingDefs>
+                        <li>WNA_Quicklime</li>
                         <li>Jade</li>
                         <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                         <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
@@ -644,8 +683,10 @@
                 <li>Silver</li>
                 <li>Gold</li>
                 <li>Plasteel</li>
+                <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                <li>WNA_Quicklime</li>
                 <li>Jade</li>
                 <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>

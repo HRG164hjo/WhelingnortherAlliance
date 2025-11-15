@@ -80,6 +80,7 @@
     <Compile Include="ThingClass\DummyLaser.cs" />
     <Compile Include="ThingClass\Whelingnorthan.cs" />
     <Compile Include="ThingCompProp\CompBodyshapeOverride.cs" />
+    <Compile Include="ThingCompProp\CompCamoPillbox.cs" />
     <Compile Include="ThingCompProp\CompIronApparel.cs" />
     <Compile Include="ThingCompProp\CompIronGuardian.cs" />
     <Compile Include="ThingCompProp\CompMultiUse.cs" />
@@ -139,6 +140,7 @@
     <Compile Include="WNAHarmony\Patch_WeaponTagPostfix.cs" />
     <Compile Include="WNAHarmony\WNAMod.cs" />
     <Compile Include="WNAMiscs\Gizmo_ShieldStatus.cs" />
+    <Compile Include="WNAMiscs\Graph_Inviso.cs" />
     <Compile Include="WNAMiscs\HedifferRemover.cs" />
     <Compile Include="WNAMiscs\HedifferTicker.cs" />
     <Compile Include="WNAMiscs\IngredValGetter_NutriMisc.cs" />

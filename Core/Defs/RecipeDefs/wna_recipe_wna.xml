@@ -146,6 +146,7 @@
         </products>
         <workAmount>800</workAmount>
         <recipeUsers>
+	        <li>FueledSmithy</li>
 	        <li>ElectricSmithy</li>
 	    </recipeUsers>
         <researchPrerequisite>WNA_Transmutation</researchPrerequisite>

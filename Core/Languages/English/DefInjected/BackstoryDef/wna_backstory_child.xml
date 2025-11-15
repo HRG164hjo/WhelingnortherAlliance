@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: [PAWN_nameDef] was born in a clone vat as a clone soildier designed for battlefield and after-war rebuild. As a fruit of a high-quality clone soildier project, [PAWN_pronoun] has many pre-programmed knowledge and skills in [PAWN_possessive] head. -->
+  <WNA_BC_ClonedSoildier.description>[PAWN_nameDef] was born in a clone vat as a clone soildier designed for battlefield and after-war rebuild. As a fruit of a high-quality clone soildier project, [PAWN_pronoun] has many pre-programmed knowledge and skills in [PAWN_possessive] head.</WNA_BC_ClonedSoildier.description>
+  <!-- EN: cloned soildier -->
+  <WNA_BC_ClonedSoildier.title>cloned soildier</WNA_BC_ClonedSoildier.title>
+  <!-- EN: cloned -->
+  <WNA_BC_ClonedSoildier.titleShort>cloned</WNA_BC_ClonedSoildier.titleShort>
+  
+  <!-- EN: No matter it's because war, famine, sickness or just irresponsible parents, [PAWN_nameDef] was dead. Luckily Whelingnorther Alliance found [PAWN_objective], brought [PAWN_objective] back and revived [PAWN_objective]. -->
+  <WNA_BC_DeadChild.description>No matter it's because war, famine, sickness or just irresponsible parents, [PAWN_nameDef] was dead. Luckily Whelingnorther Alliance found [PAWN_objective], brought [PAWN_objective] back and revived [PAWN_objective].</WNA_BC_DeadChild.description>
+  <!-- EN: dead child -->
+  <WNA_BC_DeadChild.title>dead child</WNA_BC_DeadChild.title>
+  <!-- EN: deadchild -->
+  <WNA_BC_DeadChild.titleShort>deadchild</WNA_BC_DeadChild.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] lived a normal child life, had a normal family, entered a normal school, had normal friends, experienced no defficiency, and is positive about [PAWN_possessive] brilliant future. -->
+  <WNA_BC_MidworldCivilian.description>[PAWN_nameDef] lived a normal child life, had a normal family, entered a normal school, had normal friends, experienced no defficiency, and is positive about [PAWN_possessive] brilliant future.</WNA_BC_MidworldCivilian.description>
+  <!-- EN: midworld civilian -->
+  <WNA_BC_MidworldCivilian.title>midworld civilian</WNA_BC_MidworldCivilian.title>
+  <!-- EN: revenger -->
+  <WNA_BC_MidworldCivilian.titleShort>revenger</WNA_BC_MidworldCivilian.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] used to have a happy family, until external forced torn [PAWN_possessive] family apart. Since then [PAWN_nameDef] became a strange person. [PAWN_pronoun] know who [PAWN_possessive] enemy is, but curretnly [PAWN_pronoun] just unable to revenge. -->
+  <WNA_BC_MidworldRevenger.description>[PAWN_nameDef] used to have a happy family, until external forced torn [PAWN_possessive] family apart. Since then [PAWN_nameDef] became a strange person. [PAWN_pronoun] know who [PAWN_possessive] enemy is, but curretnly [PAWN_pronoun] just unable to revenge.</WNA_BC_MidworldRevenger.description>
+  <!-- EN: midworld revenger -->
+  <WNA_BC_MidworldRevenger.title>midworld revenger</WNA_BC_MidworldRevenger.title>
+  <!-- EN: revenger -->
+  <WNA_BC_MidworldRevenger.titleShort>revenger</WNA_BC_MidworldRevenger.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] had grown up in the fields, had to help [PAWN_possessive] family with farm work since a young age. -->
+  <WNA_BC_PeasantChild.description>[PAWN_nameDef] had grown up in the fields, had to help [PAWN_possessive] family with farm work since a young age.</WNA_BC_PeasantChild.description>
+  <!-- EN: peasant child -->
+  <WNA_BC_PeasantChild.title>peasant child</WNA_BC_PeasantChild.title>
+  <!-- EN: peasant -->
+  <WNA_BC_PeasantChild.titleShort>peasant</WNA_BC_PeasantChild.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] entered school when [PAWN_pronoun] was around 6. The most valuable knowledge [PAWN_pronoun] learned from school is how to learn. -->
+  <WNA_BC_Student.description>[PAWN_nameDef] entered school when [PAWN_pronoun] was around 6. The most valuable knowledge [PAWN_pronoun] learned from school is how to learn.</WNA_BC_Student.description>
+  <!-- EN: student -->
+  <WNA_BC_Student.title>student</WNA_BC_Student.title>
+  <!-- EN: student -->
+  <WNA_BC_Student.titleShort>student</WNA_BC_Student.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] was a fruit of a synthetic human project, printed from raw non-organic material and brought to life in a factory. This past seems resulting some problems in [PAWN_possessive] head, as [PAWN_pronoun] is always having trouble understanding artworks. -->
+  <WNA_BC_Synthetic.description>[PAWN_nameDef] was a fruit of a synthetic human project, printed from raw non-organic material and brought to life in a factory. This past seems resulting some problems in [PAWN_possessive] head, as [PAWN_pronoun] is always having trouble understanding artworks.</WNA_BC_Synthetic.description>
+  <!-- EN: synthetic humanlike -->
+  <WNA_BC_Synthetic.title>synthetic humanlike</WNA_BC_Synthetic.title>
+  <!-- EN: synthetic -->
+  <WNA_BC_Synthetic.titleShort>synthetic</WNA_BC_Synthetic.titleShort>
+  
+  <!-- EN: [PAWN_nameDef]'s parents were residents under the shelter of Whelingnorther Alliance, [PAWN_nameDef] is also a resident under the shelter of Whelingnorther Alliance. Thanks to the protection ofWhelingnorther Alliance, nothing tragic happened to [PAWN_nameDef] during [PAWN_possessive] growth, but sadly there's also nothing memorable happened to [PAWN_objective] too. -->
+  <WNA_BC_ThirdGenChild.description>[PAWN_nameDef]'s parents were residents under the shelter of Whelingnorther Alliance, [PAWN_nameDef] is also a resident under the shelter of Whelingnorther Alliance. Thanks to the protection ofWhelingnorther Alliance, nothing tragic happened to [PAWN_nameDef] during [PAWN_possessive] growth, but sadly there's also nothing memorable happened to [PAWN_objective] too.</WNA_BC_ThirdGenChild.description>
+  <!-- EN: third generation child -->
+  <WNA_BC_ThirdGenChild.title>third generation child</WNA_BC_ThirdGenChild.title>
+  <!-- EN: third-gen -->
+  <WNA_BC_ThirdGenChild.titleShort>third-gen</WNA_BC_ThirdGenChild.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] used to be an animal before [PAWN_pronoun] was reshaped to [PAWN_possessive] current form. [PAWN_nameDef] still keeps some memories and skills from [PAWN_possessive] animal ages, though some of them are no longer useful for [PAWN_possessive] current form. -->
+  <WNA_BC_UpliftedAnimal.description>[PAWN_nameDef] used to be an animal before [PAWN_pronoun] was reshaped to [PAWN_possessive] current form. [PAWN_nameDef] still keeps some memories and skills from [PAWN_possessive] animal ages, though some of them are no longer useful for [PAWN_possessive] current form.</WNA_BC_UpliftedAnimal.description>
+  <!-- EN: uplifted Animal -->
+  <WNA_BC_UpliftedAnimal.title>uplifted Animal</WNA_BC_UpliftedAnimal.title>
+  <!-- EN: uplifted -->
+  <WNA_BC_UpliftedAnimal.titleShort>uplifted</WNA_BC_UpliftedAnimal.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] used to be a twisted creature created by some dark source, and was reshaped to [PAWN_possessive] current form. Though the twisted past hardly left something useful for [PAWN_nameDef], [PAWN_pronoun] still managed to found something from that past. -->
+  <WNA_BC_UpliftedEntity.description>[PAWN_nameDef] used to be a twisted creature created by some dark source, and was reshaped to [PAWN_possessive] current form. Though the twisted past hardly left something useful for [PAWN_nameDef], [PAWN_pronoun] still managed to found something from that past.</WNA_BC_UpliftedEntity.description>
+  <!-- EN: uplifted entity -->
+  <WNA_BC_UpliftedEntity.title>uplifted entity</WNA_BC_UpliftedEntity.title>
+  <!-- EN: uplifted -->
+  <WNA_BC_UpliftedEntity.titleShort>uplifted</WNA_BC_UpliftedEntity.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] used to be a mechanoid controlled by a mechhive or some controller else, and was reshaped to [PAWN_possessive] current form. [PAWN_nameDef] still keeps some beneficial skills from [PAWN_possessive] past as a toaster. -->
+  <WNA_BC_UpliftedMech.description>[PAWN_nameDef] used to be a mechanoid controlled by a mechhive or some controller else, and was reshaped to [PAWN_possessive] current form. [PAWN_nameDef] still keeps some beneficial skills from [PAWN_possessive] past as a toaster.</WNA_BC_UpliftedMech.description>
+  <!-- EN: uplifted mechanoid -->
+  <WNA_BC_UpliftedMech.title>uplifted mechanoid</WNA_BC_UpliftedMech.title>
+  <!-- EN: uplifted -->
+  <WNA_BC_UpliftedMech.titleShort>uplifted</WNA_BC_UpliftedMech.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] used to be a plant, living a normal plant life until was reshaped to [PAWN_possessive] current form. It's hard to tell whether this past left something good or bad for [PAWN_nameDef]. -->
+  <WNA_BC_UpliftedPlant.description>[PAWN_nameDef] used to be a plant, living a normal plant life until was reshaped to [PAWN_possessive] current form. It's hard to tell whether this past left something good or bad for [PAWN_nameDef].</WNA_BC_UpliftedPlant.description>
+  <!-- EN: uplifted plant -->
+  <WNA_BC_UpliftedPlant.title>uplifted plant</WNA_BC_UpliftedPlant.title>
+  <!-- EN: uplifted -->
+  <WNA_BC_UpliftedPlant.titleShort>uplifted</WNA_BC_UpliftedPlant.titleShort>
+  
+</LanguageData>

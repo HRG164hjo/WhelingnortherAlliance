@@ -186,56 +186,96 @@
         <defName>WNA_NamerSettlement</defName>
         <rulePack>
             <rulesStrings>
-                <li>r_name(p=2)->[prefix] [postfx]</li>
-                <li>r_name->[prefix] "[elseCode]"</li>
-                <li>r_name->[elseCode] [postfx]</li>
-                <li>r_name->[Digit][Digit][Digit]th Field Task</li>
-                <li>r_name->[Digit][Digit][Digit]th Military Control</li>
-                <li>r_name->[Digit][Digit][Digit]th Ceasefire</li>
-                <li>r_name->[Digit][Digit][Digit]th Dead Zone</li>
-                <li>r_name->[Digit][Digit][Digit]th Skirmish</li>
-                <li>r_name->Mission [syls][syls][syls]</li>
-                <li>r_name->Mission [syls][syls][syls][syls]</li>
-                <li>r_name->Protocol [syls][syls][syls]</li>
-                <li>r_name->Protocol [syls][syls][syls][syls]</li>
-                <li>r_name->Skirmish [syls][syls][syls]</li>
-                <li>r_name->Skirmish [syls][syls][syls][syls]</li>
+                <li>r_name->[pfix] [Digit][Digit][Digit]</li>
+                <li>r_name->[pfix] [Digit][Digit][Digit][Digit]</li>
+                <li>r_name->[Digit][Digit][Digit]th [pfix]</li>
+                <li>r_name->[Digit][Digit][Digit][Digit]th [pfix]</li>
+                <li>r_name->[randChar]-[randChar]</li>
+                <li>r_name->[code]x[code][code][code][code][code][code][code][code]</li>
                 <!---->
-                <li>postfx(p=3)->[code][code][code]</li>
-                <li>postfx->[code][code][code][code]</li>
-                <!---->
-                <li>code(p=3)->[Digit]</li>
+                <li>randChar->[code][code][code]</li>
+                <li>randChar->[code][code][code][code]</li>
+                <li>code->[Digit]</li>
                 <li>code->[Letter]</li>
                 <!---->
-                <li>syls->[SylB]</li>
-                <li>syls->[SylE]</li>
+                <li>pfix->Alley</li>
+                <li>pfix->Annex</li>
+                <li>pfix->Area</li>
+                <li>pfix->Array</li>
+                <li>pfix->Border</li>
+                <li>pfix->Camp</li>
+                <li>pfix->Canopy</li>
+                <li>pfix->Ceasefire</li>
+                <li>pfix->Citadel</li>
+                <li>pfix->Complex</li>
+                <li>pfix->Construct</li>
+                <li>pfix->Crypts</li>
+                <li>pfix->Dawn</li>
+                <li>pfix(p=3)->Dead Zone</li>
+                <li>pfix->End</li>
+                <li>pfix->Expanse</li>
+                <li>pfix->Expedition</li>
+                <li>pfix->Exterior</li>
+                <li>pfix->Facility</li>
+                <li>pfix(p=5)->Field Task</li>
+                <li>pfix->Foundation</li>
+                <li>pfix->Fortress</li>
+                <li>pfix->Fringe</li>
+                <li>pfix->Frontier</li>
+                <li>pfix->Garden</li>
+                <li>pfix->Gateway</li>
+                <li>pfix->Grove</li>
+                <li>pfix(p=5)->Military Control</li>
+                <li>pfix->Mission</li>
+                <li>pfix->Nexus</li>
+                <li>pfix->Outpost</li>
+                <li>pfix->Outskirts</li>
+                <li>pfix->Path</li>
+                <li>pfix->Preserve</li>
+                <li>pfix->Protocol</li>
+                <li>pfix->Region</li>
+                <li>pfix->Ridge</li>
+                <li>pfix->Rim</li>
+                <li>pfix->Sanctuary</li>
+                <li>pfix->Settlement</li>
+                <li>pfix->Shelter</li>
+                <li>pfix->Sidehouse</li>
+                <li>pfix->Site</li>
+                <li>pfix->Spire</li>
+                <li>pfix->Sublink</li>
+                <li>pfix->Surface</li>
+                <li>pfix->Terrace</li>
+                <li>pfix->Tract</li>
+                <li>pfix->Underhang</li>
+                <li>pfix->Wall</li>
+                <li>pfix->Zone</li>
+                <li>pfix->''CENSORED''</li>
+                <li>pfix->''UNKNOWN''</li>
+                <li>pfix->███████</li>
                 <!---->
-                <li>elseCode->[Color]</li>
-                <li>elseCode->[ColorBadass]</li>
-                <li>elseCode->[Vegetable]</li>
-                <li>elseCode->[Animal]</li>
-                <li>elseCode->[AnimalBadass]</li>
-                <li>elseCode->[AnimalGroup]</li>
-                <li>elseCode->[TerrainFeature]</li>
-                <li>elseCode->[NaturalObject]</li>
-                <li>elseCode->[TreeType]</li>
-                <li>elseCode->[Gore]</li>
-                <li>elseCode->[Mechanoid]</li>
-                <li>elseCode->[Community]</li>
-                <li>elseCode->[BodyPart]</li>
-                <li>elseCode->Underhang</li>
-                <!---->
-                <li>prefix->Area</li>
-                <li>prefix->Border</li>
-                <li>prefix->Camp</li>
-                <li>prefix->Foundation</li>
-                <li>prefix->Frontier</li>
-                <li>prefix->Mission</li>
-                <li>prefix->Outpost</li>
-                <li>prefix->Outskirts</li>
-                <li>prefix->Settlement</li>
-                <li>prefix->Site</li>
-                <li>prefix->Zone</li>
+                <li>r_name(p=0.02)->Celestial Throne</li>
+                <li>r_name(p=0.02)->Sky Temple</li>
+                <li>r_name(p=0.02)->Pristine Jewel</li>
+                <li>r_name(p=0.02)->Emerald Mausoleum</li>
+                <li>r_name(p=0.02)->Walled Garden</li>
+                <li>r_name(p=0.02)->Prophet's Retreat</li>
+                <li>r_name(p=0.02)->The Cradle</li>
+                <li>r_name(p=0.02)->The Preserve</li>
+                <li>r_name(p=0.02)->Font of Knowledge</li>
+                <li>r_name(p=0.02)->The Archives</li>
+                <li>r_name(p=0.02)->Last Thought</li>
+                <li>r_name(p=0.02)->Ithome's Gate</li>
+                <li>r_name(p=0.02)->Looks to the Moon</li>
+                <li>r_name(p=0.02)->Five Pebbles</li>
+                <li>r_name(p=0.02)->Outer Expanse</li>
+                <li>r_name(p=0.02)->Outer Rim</li>
+                <li>r_name(p=0.02)->Memory Crypts</li>
+                <li>r_name(p=0.02)->Rubicon</li>
+                <li>r_name(p=0.02)->Aether Ridge</li>
+                <li>r_name(p=0.02)->Daemon</li>
+                <li>r_name(p=0.02)->Shattered Terrace</li>
+                <li>r_name(p=0.02)->Ancient Urban</li>
+                <li>r_name(p=0.02)->Station Annex</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
@@ -244,7 +284,7 @@
         <defName>WNA_NamerPawn</defName>
         <rulePack>
             <rulesStrings>
-                <li>r_name(p=3)->[postfx] [prefix]</li>
+                <li>r_name(p=2)->[postfx] [prefix]</li>
                 <li>r_name->[ImperialNameFirstMale] [ImperialNameLast]</li>
                 <li>r_name->[randName] [ImperialNameLast]</li>
                 <li>r_name(p=0.1)->[codeName] [codeName]</li>
@@ -270,29 +310,13 @@
     </RulePackDef>
     
     <RulePackDef>
-        <defName>WNA_NamerPawnF</defName>
+        <defName>WNA_NamerPawnW</defName>
         <rulePack>
             <rulesStrings>
-                <li>r_name(p=3)->[postfx] [prefix]</li>
-                <li>r_name->[ImperialNameFirstFemale] [ImperialNameLast]</li>
-                <li>r_name->[randName] [ImperialNameLast]</li>
-                <li>r_name(p=0.1)->[codeName] [codeName]</li>
-                <!---->
-                <li>randName(p=2)->[SylB][SylB][SylB]</li>
-                <li>randName->[SylB][SylB][SylB][SylB]</li>
-                <li>codeName->[pre]-[pos]</li>
-                <li>pre(p=3)->[code][code][code]</li>
-                <li>pre->[code][code][code][code]</li>
-                <li>pos(p=3)->[code][code][code]</li>
-                <li>pos->[code][code][code][code]</li>
-                <!---->
-                <li>code->[Digit]</li>
-                <li>code->[Letter]</li>
+                <li>r_name->[postfx] [prefix]</li>
             </rulesStrings>
             <rulesFiles>
-                <li>ImperialNameFirstFemale->Names/Imperial_First_Female</li>
-                <li>ImperialNameLast->Names/Imperial_Last</li>
-                <li>prefix->Names/wna_namef</li>
+                <li>prefix->Names/wna_name</li>
                 <li>postfx->Names/wna_family</li>
             </rulesFiles>
         </rulePack>

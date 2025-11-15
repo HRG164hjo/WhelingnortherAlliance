@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Process hay for chemfuel -->
+  <WNA_Hay_Chemfuel.label>Process hay for chemfuel</WNA_Hay_Chemfuel.label>
+  <!-- EN: Turn 75 hay into 25 chemfuel. -->
+  <WNA_Hay_Chemfuel.description>Turn 75 hay into 25 chemfuel.</WNA_Hay_Chemfuel.description>
+  
+  <!-- EN: Process psychoid leaves for yayo -->
+  <WNA_PsychoidLeaves_Yayo.label>Process psychoid leaves for yayo</WNA_PsychoidLeaves_Yayo.label>
+  <!-- EN: Turn 75 psychoid leaves into 25 yayo. -->
+  <WNA_PsychoidLeaves_Yayo.description>Turn 75 psychoid leaves into 25 yayo.</WNA_PsychoidLeaves_Yayo.description>
+  
+  <!-- EN: Process smokeleaf leaves for smokeleaf joint -->
+  <WNA_SmokeleafLeaves_SmokeleafJoint.label>Process smokeleaf leaves for smokeleaf joint</WNA_SmokeleafLeaves_SmokeleafJoint.label>
+  <!-- EN: Turn 75 smokeleaf leaves into 25 smokeleaf joint. -->
+  <WNA_SmokeleafLeaves_SmokeleafJoint.description>Turn 75 smokeleaf leaves into 25 smokeleaf joint.</WNA_SmokeleafLeaves_SmokeleafJoint.description>
+  
+  <!-- EN: Process wood for neutroamine -->
+  <WNA_WoodLog_Neutroamine.label>Process wood for neutroamine</WNA_WoodLog_Neutroamine.label>
+  <!-- EN: Turn 50 wood into 20 neutroamine. -->
+  <WNA_WoodLog_Neutroamine.description>Turn 50 wood into 20 neutroamine.</WNA_WoodLog_Neutroamine.description>
+  
+  <!-- EN: Process wort for beer -->
+  <WNA_Wort_Beer.label>Process wort for beer</WNA_Wort_Beer.label>
+  <!-- EN: Turn 25 wort into 25 beer. -->
+  <WNA_Wort_Beer.description>Turn 25 wort into 25 beer.</WNA_Wort_Beer.description>
+  
+</LanguageData>
