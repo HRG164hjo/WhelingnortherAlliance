@@ -334,6 +334,8 @@
                         <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
                         <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
                         <li MayRequire="romyashi.moreplantproducts">Romy_Luciferin</li>
+                        <li MayRequire="sirmashedpotato.bloodmoon">Mashed_Bloodmoon_WerewolfBlood</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_BlightCure</li>
                     </thingDefs>
                 </filter>
                 <count>1</count>
@@ -357,6 +359,8 @@
                 <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
                 <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
                 <li MayRequire="romyashi.moreplantproducts">Romy_Luciferin</li>
+                <li MayRequire="sirmashedpotato.bloodmoon">Mashed_Bloodmoon_WerewolfBlood</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_BlightCure</li>
             </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>
@@ -405,6 +409,8 @@
                         <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
                         <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
                         <li MayRequire="romyashi.moreplantproducts">Romy_Luciferin</li>
+                        <li MayRequire="sirmashedpotato.bloodmoon">Mashed_Bloodmoon_WerewolfBlood</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_BlightCure</li>
                     </thingDefs>
                 </filter>
                 <count>5</count>
@@ -428,6 +434,8 @@
                 <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
                 <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
                 <li MayRequire="romyashi.moreplantproducts">Romy_Luciferin</li>
+                <li MayRequire="sirmashedpotato.bloodmoon">Mashed_Bloodmoon_WerewolfBlood</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_BlightCure</li>
             </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>

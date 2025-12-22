@@ -31,6 +31,18 @@
 			<li>WNA_CivilianTech</li>
 		</prerequisites>
 	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
+		<defName>WNA_AdvancedProduction</defName>
+		<label>advanced production</label>
+		<description>advanced production.</description>
+		<baseCost>4000</baseCost>
+		<researchViewX>4</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+			<li>WNA_AdvancedArsenal</li>
+		</prerequisites>
+	</ResearchProjectDef>
 
 	<!-- military -->
 	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
@@ -117,18 +129,6 @@
 		<heldByFactionCategoryTags>
 			<li>WNA_FactionWNA</li>
 		</heldByFactionCategoryTags>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_AdvancedProduction</defName>
-		<label>advanced production</label>
-		<description>advanced production.</description>
-		<baseCost>4000</baseCost>
-		<researchViewX>4</researchViewX>
-		<researchViewY>4</researchViewY>
-		<prerequisites>
-			<li>WNA_AdvancedArsenal</li>
-		</prerequisites>
 	</ResearchProjectDef>
 	
 	<ResearchProjectDef ParentName="WNA_ResearchProjBase">

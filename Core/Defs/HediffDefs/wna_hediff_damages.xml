@@ -255,10 +255,10 @@
                 <surgicalDetectionDesc>Radiation damages can be found in {PAWN_nameDef}'s body. This unusual radiation effect is turning normal tissue into radiation souces, and almost cannot naturally expire.</surgicalDetectionDesc>
             </li>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>0</severityPerDay>
+                <severityPerDay>0.1</severityPerDay>
             </li>
             <li Class="HediffCompProperties_TendDuration">
-                <severityPerDayTended>-0.01</severityPerDayTended>
+                <severityPerDayTended>-0.11</severityPerDayTended>
                 <baseTendDurationHours>24</baseTendDurationHours>
             </li>
             <li Class="WNA.HediffCompProp.CompRadFieldSpreader">

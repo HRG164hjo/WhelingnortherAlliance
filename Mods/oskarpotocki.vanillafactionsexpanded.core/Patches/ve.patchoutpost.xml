@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Outposts Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/WorldObjectDef[defName="Outpost_Encampment"]/modExtensions/li[@Class="Outposts.OutpostExtension"]/ProvidedFood</xpath>
+                    <value>
+                        <ProvidedFood>WNA_Ration</ProvidedFood>
+                    </value>
+                </li>
+            </operations>
+        </match>
+	</Operation>
+</Patch>

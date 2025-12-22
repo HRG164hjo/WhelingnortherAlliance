@@ -130,14 +130,9 @@
   <WNA_NamerSettlement.rulePack.rulesStrings>
     <li>r_name->[pfix] [Digit][Digit][Digit]</li>
     <li>r_name->[pfix] [Digit][Digit][Digit][Digit]</li>
-    <li>r_name->[Digit][Digit][Digit]th [pfix]</li>
-    <li>r_name->[Digit][Digit][Digit][Digit]th [pfix]</li>
-    <li>r_name->[randChar]-[randChar]</li>
-    <li>r_name->[code]x[code][code][code][code][code][code][code][code]</li>
-    <li>randChar->[code][code][code]</li>
-    <li>randChar->[code][code][code][code]</li>
-    <li>code->[Digit]</li>
-    <li>code->[Letter]</li>
+    <li>r_name->第[Digit][Digit][Digit] [pfix]</li>
+    <li>r_name->第[Digit][Digit][Digit][Digit] [pfix]</li>
+    <!---->
     <li>pfix->巷道</li>
     <li>pfix->别馆</li>
     <li>pfix->地区</li>
@@ -149,6 +144,7 @@
     <li>pfix->城堡</li>
     <li>pfix->复合体</li>
     <li>pfix->构造</li>
+    <li>pfix->回廊</li>
     <li>pfix->陵墓</li>
     <li>pfix->破晓</li>
     <li>pfix(p=3)->死区</li>
@@ -157,7 +153,7 @@
     <li>pfix->远征</li>
     <li>pfix->外缘</li>
     <li>pfix->设施</li>
-    <li>pfix(p=5)->实务部队</li>
+    <li>pfix(p=5)->实务实施</li>
     <li>pfix->基地</li>
     <li>pfix->要塞</li>
     <li>pfix->边缘</li>
@@ -192,6 +188,34 @@
     <li>pfix->''CENSORED''</li>
     <li>pfix->''不明''</li>
     <li>pfix->███████</li>
+    <li>pfix->小屋</li>
+    <li>pfix->摇篮</li>
+    <li>pfix->出口</li>
+    <li>pfix(p=3)->戒严区</li>
+    <li>pfix->导管</li>
+    <li>pfix->海岸线</li>
+    <li>pfix->岛屿</li>
+    <li>pfix->深渊</li>
+    <li>pfix->汇流</li>
+    <li>pfix->大都会</li>
+    <li>pfix->大教堂</li>
+    <li>pfix->皮层</li>
+    <li>pfix->终端</li>
+    <li>pfix->歧管</li>
+    <li>pfix->管风琴</li>
+    <li>pfix->铁路</li>
+    <li>pfix->恶地</li>
+    <li>pfix->发射器</li>
+    <li>pfix->中继器</li>
+    <li>pfix->监察者</li>
+    <li>pfix->守卫者</li>
+    <li>pfix->王座</li>
+    <li>pfix->神庙</li>
+    <li>pfix->实验室</li>
+    <li>pfix(p=0.1)->迭代器</li>
+    <li>pfix(p=0.1)->摘星者</li>
+    <li>pfix(p=0.1)->方尖碑</li>
+    <!---->
     <li>r_name(p=0.02)->天国王座</li>
     <li>r_name(p=0.02)->天空神庙</li>
     <li>r_name(p=0.02)->至纯珠宝</li>
@@ -215,6 +239,7 @@
     <li>r_name(p=0.02)->破碎露台</li>
     <li>r_name(p=0.02)->上古城市</li>
     <li>r_name(p=0.02)->车站别馆</li>
+    <li>r_name(p=0.02)->不幸演化</li>
   </WNA_NamerSettlement.rulePack.rulesStrings>
   
 </LanguageData>

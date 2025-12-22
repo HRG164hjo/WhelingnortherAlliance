@@ -12,7 +12,7 @@ namespace WNA.WNAUtility
     {
         private List<int> radLevel;
         public int radLevelMax = 2000;
-        private int radLevelDelay = 90;
+        private int radLevelDelay = 29;
         private int radLevelDecay = 2;
         private float radLevelFactor = 0.1f;
         public RadField_MapComp(Map map) : base(map) { }

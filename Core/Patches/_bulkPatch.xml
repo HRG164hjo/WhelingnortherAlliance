@@ -49,7 +49,7 @@
         <defName>WNA_CookRationMult</defName>
         <description>Cook raw materials to make military ration pack.</description>
         <jobString>working.</jobString>
-        <label>make WNA militaty ration x100</label>
+        <label>make WNA militaty ration x200</label>
         <ingredientValueGetterClass>WNA.WNAMiscs.IngredValGetter_NutriMisc</ingredientValueGetterClass>
         <ingredients>
             <li>
@@ -115,7 +115,7 @@
         <defName>WNA_RepackRationMult</defName>
         <description>Repack various meals to meet WNA military standard.</description>
         <jobString>working.</jobString>
-        <label>repack meals x50</label>
+        <label>repack meals x200</label>
         <ingredients>
             <li>
                 <filter>
@@ -127,7 +127,7 @@
                         <li MayRequire="vanillaexpanded.vcookebakery">VCE_CakeBatters</li>
                     </categories>
                 </filter>
-                <count>50</count>
+                <count>200</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -146,7 +146,7 @@
             </disallowedThingDefs>
         </fixedIngredientFilter>
         <products>
-            <WNA_Ration>50</WNA_Ration>
+            <WNA_Ration>200</WNA_Ration>
         </products>
         <workAmount>300</workAmount>
         <recipeUsers>
@@ -162,7 +162,7 @@
         <defName>WNA_MakeMedikitMult</defName>
         <description>use useful materials to make madicines.</description>
         <jobString>working.</jobString>
-        <label>make WNA medicine pack x100</label>
+        <label>make WNA medicine pack x200</label>
         <ingredients>
             <li>
                 <filter>
@@ -170,7 +170,7 @@
                         <li>PlantMatter</li>
                     </categories>
                 </filter>
-                <count>800</count>
+                <count>1600</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -190,7 +190,7 @@
             </disallowedThingDefs>
         </defaultIngredientFilter>
         <products>
-            <WNA_Medikit>100</WNA_Medikit>
+            <WNA_Medikit>200</WNA_Medikit>
         </products>
         <workAmount>5000</workAmount>
         <recipeUsers>
@@ -203,7 +203,7 @@
         <defName>WNA_PackMedikitMult</defName>
         <description>Repack various madicines to meet WNA military standard.</description>
         <jobString>working.</jobString>
-        <label>pack WNA medicine pack x100</label>
+        <label>pack WNA medicine pack x500</label>
         <ingredients>
             <li>
                 <filter>
@@ -224,9 +224,11 @@
                         <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
                         <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
                         <li MayRequire="romyashi.moreplantproducts">Romy_Luciferin</li>
+                        <li MayRequire="sirmashedpotato.bloodmoon">Mashed_Bloodmoon_WerewolfBlood</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_BlightCure</li>
                     </thingDefs>
                 </filter>
-                <count>100</count>
+                <count>500</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -247,6 +249,8 @@
                 <li MayRequire="ludeon.rimworld.odyssey">ArcheanSeed</li>
                 <li MayRequire="regrowth.botr.core">RG_AnimaSeed</li>
                 <li MayRequire="romyashi.moreplantproducts">Romy_Luciferin</li>
+                <li MayRequire="sirmashedpotato.bloodmoon">Mashed_Bloodmoon_WerewolfBlood</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_BlightCure</li>
             </thingDefs>
             <disallowedThingDefs>
                 <li>WNA_Medikit</li>
@@ -261,7 +265,7 @@
             </disallowedThingDefs>
         </defaultIngredientFilter>
         <products>
-            <WNA_Medikit>100</WNA_Medikit>
+            <WNA_Medikit>500</WNA_Medikit>
         </products>
         <workAmount>5000</workAmount>
         <recipeUsers>
@@ -273,8 +277,55 @@
 
     <!-- civilian -->
     <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeReinforcedBarrelBulk</defName>
+        <label>make reinforced barrel x50</label>
+        <description>forge a colony produced reinforced barrel.</description>
+        <jobString>forging a reinforced barrel.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
+                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                    </thingDefs>
+                </filter>
+                <count>2250</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
+                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                    </thingDefs>
+                </filter>
+                <count>1250</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>Steel</li>
+                <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
+                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ReinforcedBarrel>50</ReinforcedBarrel>
+        </products>
+        <workAmount>8000</workAmount>
+        <recipeUsers>
+	        <li>FueledSmithy</li>
+	        <li>ElectricSmithy</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_HeatStoneBlockBulk</defName>
-        <label>heat stone blocks x50</label>
+        <label>heat stone blocks x200</label>
         <description>treat stone with strong heat to gain resources.</description>
         <jobString>heating stone blocks.</jobString>
         <ingredients>
@@ -289,9 +340,11 @@
                         <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                         <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
                     </thingDefs>
                 </filter>
-                <count>1000</count>
+                <count>4000</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -304,12 +357,14 @@
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                 <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <WNA_Quicklime>750</WNA_Quicklime>
-            <WNA_MercuryVial>100</WNA_MercuryVial>
-            <WNA_HalogenVial>50</WNA_HalogenVial>
+            <WNA_Quicklime>3000</WNA_Quicklime>
+            <WNA_MercuryVial>400</WNA_MercuryVial>
+            <WNA_HalogenVial>200</WNA_HalogenVial>
         </products>
         <workAmount>10000</workAmount>
         <recipeUsers>
@@ -413,6 +468,245 @@
         <workAmount>6000</workAmount>
         <recipeUsers>
 	        <li>BiofuelRefinery</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    </RecipeDef>
+
+    <!-- mili -->
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeAttunementFabricMult</defName>
+        <label>make attunement fabric x100</label>
+        <description>make attunement fabric with raw material and a baseboard.</description>
+        <jobString>making fabric.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_FabricBaseboard</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Quicklime</li>
+                    </thingDefs>
+                </filter>
+                <count>1000</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Textiles</li>
+                    </categories>
+                </filter>
+                <count>4000</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_FabricBaseboard</li>
+                <li>WNA_Quicklime</li>
+            </thingDefs>
+            <categories>
+                <li>Textiles</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_AttunementFabric>7500</WNA_AttunementFabric>
+        </products>
+        <workAmount>10000</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeConcreteMult</defName>
+        <label>make reinforced concrete x100</label>
+        <description>make an advanced concrete sufficient for building.</description>
+        <jobString>making reinforced concrete.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li>Silver</li>
+                        <li>Gold</li>
+                        <li>Plasteel</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
+                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                    </thingDefs>
+                </filter>
+                <count>1000</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                    <thingDefs>
+                        <li>WNA_Quicklime</li>
+                        <li>Jade</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
+                    </thingDefs>
+                </filter>
+                <count>2000</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Silver</li>
+                <li>Gold</li>
+                <li>Plasteel</li>
+                <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
+                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                <li>WNA_Quicklime</li>
+                <li>Jade</li>
+                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
+            </thingDefs>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Concrete>5000</WNA_Concrete>
+        </products>
+        <workAmount>10000</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	        <li>ElectricCrematorium</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeDesolisiumMult</defName>
+        <label>make desolisium x100</label>
+        <description>make an alloy sufficient for defending.</description>
+        <jobString>making desolisium.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                        <li>Silver</li>
+                        <li>Gold</li>
+                        <li>Plasteel</li>
+                        <li>Uranium</li>
+                        <li>WNA_MercuryVial</li>
+                        <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
+                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                    </thingDefs>
+                </filter>
+                <count>5000</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                    <thingDefs>
+                        <li>WNA_Quicklime</li>
+                        <li>Jade</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
+                    </thingDefs>
+                </filter>
+                <count>3000</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Silver</li>
+                <li>Gold</li>
+                <li>Plasteel</li>
+                <li>Uranium</li>
+                <li>WNA_MercuryVial</li>
+                <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
+                <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
+                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                <li>WNA_Quicklime</li>
+                <li>Jade</li>
+                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
+            </thingDefs>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Desolisium>7500</WNA_Desolisium>
+        </products>
+        <workAmount>8000</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	    </recipeUsers>
+        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_MakeCinnabarMult</defName>
+        <label>make cinnabar x100</label>
+        <description>use mercury and sulphur to make cinnabar.</description>
+        <jobString>making cinnabar.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Sulphur</li>
+                    </thingDefs>
+                </filter>
+                <count>500</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_MercuryVial</li>
+                    </thingDefs>
+                </filter>
+                <count>500</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Sulphur</li>
+                <li>WNA_MercuryVial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <WNA_Cinnabar>1000</WNA_Cinnabar>
+        </products>
+        <workAmount>8000</workAmount>
+        <recipeUsers>
+	        <li>DrugLab</li>
 	    </recipeUsers>
         <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
     </RecipeDef>
@@ -521,230 +815,6 @@
 			<Chemfuel>3500</Chemfuel>
 		</products>
 	</RecipeDef>
-    
-    <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNA_MakeAttunementFabricMult</defName>
-        <label>make attunement fabric x100</label>
-        <description>make attunement fabric with raw material and a baseboard.</description>
-        <jobString>making fabric.</jobString>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>WNA_FabricBaseboard</li>
-                    </thingDefs>
-                </filter>
-                <count>100</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>WNA_Quicklime</li>
-                    </thingDefs>
-                </filter>
-                <count>1000</count>
-            </li>
-            <li>
-                <filter>
-                    <categories>
-                        <li>Textiles</li>
-                    </categories>
-                </filter>
-                <count>4000</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>WNA_FabricBaseboard</li>
-                <li>WNA_Quicklime</li>
-            </thingDefs>
-            <categories>
-                <li>Textiles</li>
-            </categories>
-        </fixedIngredientFilter>
-        <products>
-            <WNA_AttunementFabric>7500</WNA_AttunementFabric>
-        </products>
-        <workAmount>10000</workAmount>
-        <recipeUsers>
-	        <li>ElectricSmelter</li>
-	    </recipeUsers>
-        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
-    </RecipeDef>
-    
-    <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNA_MakeConcreteMult</defName>
-        <label>make reinforced concrete x100</label>
-        <description>make an advanced concrete sufficient for building.</description>
-        <jobString>making reinforced concrete.</jobString>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Steel</li>
-                        <li>Silver</li>
-                        <li>Gold</li>
-                        <li>Plasteel</li>
-                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
-                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
-                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
-                    </thingDefs>
-                </filter>
-                <count>1500</count>
-            </li>
-            <li>
-                <filter>
-                    <categories>
-                        <li>StoneBlocks</li>
-                    </categories>
-                    <thingDefs>
-                        <li>WNA_Quicklime</li>
-                        <li>Jade</li>
-                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
-                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
-                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
-                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
-                    </thingDefs>
-                </filter>
-                <count>2000</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>Steel</li>
-                <li>Silver</li>
-                <li>Gold</li>
-                <li>Plasteel</li>
-                <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
-                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
-                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
-                <li>WNA_Quicklime</li>
-                <li>Jade</li>
-                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
-                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
-                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
-                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
-            </thingDefs>
-            <categories>
-                <li>StoneBlocks</li>
-            </categories>
-        </fixedIngredientFilter>
-        <products>
-            <WNA_Concrete>4500</WNA_Concrete>
-        </products>
-        <workAmount>10000</workAmount>
-        <recipeUsers>
-	        <li>ElectricSmelter</li>
-	        <li>ElectricCrematorium</li>
-	    </recipeUsers>
-        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
-    </RecipeDef>
-    
-    <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNA_MakeDesolisiumMult</defName>
-        <label>make desolisium x100</label>
-        <description>make an alloy sufficient for defending.</description>
-        <jobString>making desolisium.</jobString>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Steel</li>
-                        <li>Silver</li>
-                        <li>Gold</li>
-                        <li>Plasteel</li>
-                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
-                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
-                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
-                    </thingDefs>
-                </filter>
-                <count>5000</count>
-            </li>
-            <li>
-                <filter>
-                    <categories>
-                        <li>StoneBlocks</li>
-                    </categories>
-                    <thingDefs>
-                        <li>WNA_Quicklime</li>
-                        <li>Jade</li>
-                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
-                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
-                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
-                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
-                    </thingDefs>
-                </filter>
-                <count>3000</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>Steel</li>
-                <li>Silver</li>
-                <li>Gold</li>
-                <li>Plasteel</li>
-                <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
-                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
-                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
-                <li>WNA_Quicklime</li>
-                <li>Jade</li>
-                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
-                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
-                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
-                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
-            </thingDefs>
-            <categories>
-                <li>StoneBlocks</li>
-            </categories>
-        </fixedIngredientFilter>
-        <products>
-            <WNA_Desolisium>7500</WNA_Desolisium>
-        </products>
-        <workAmount>8000</workAmount>
-        <recipeUsers>
-	        <li>ElectricSmelter</li>
-	    </recipeUsers>
-        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
-    </RecipeDef>
-
-    <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNA_MakeCinnabarMult</defName>
-        <label>make cinnabar x100</label>
-        <description>use mercury and sulphur to make cinnabar.</description>
-        <jobString>making cinnabar.</jobString>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>WNA_Sulphur</li>
-                    </thingDefs>
-                </filter>
-                <count>500</count>
-            </li>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>WNA_MercuryVial</li>
-                    </thingDefs>
-                </filter>
-                <count>500</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>WNA_Sulphur</li>
-                <li>WNA_MercuryVial</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-        <products>
-            <WNA_Cinnabar>1000</WNA_Cinnabar>
-        </products>
-        <workAmount>8000</workAmount>
-        <recipeUsers>
-	        <li>DrugLab</li>
-	    </recipeUsers>
-        <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
-    </RecipeDef>
             </value>
 	    </match>
     </Operation>

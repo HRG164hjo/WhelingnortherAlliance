@@ -83,7 +83,7 @@
 			<li>WNA_StdMiliSuit</li>
 			<li>WNA_AdvFlakJacket</li>
 			<li>WNA_AdvFlakHead</li>
-			<li>WNA_AmmoLoader</li>
+			<li>WNA_DeadzoneBelt</li>
 			<li>WNA_ShieldPack</li>
         </apparelRequired>
         <forcedTraits>

@@ -10,7 +10,7 @@ namespace WNA.WNAUtility
         public float radius = 5f;
         public float edgeFactor = 0.4f;
         public float threshold = 0.6f;
-        public int radLevelDelay = 90;
+        public int radLevelDelay = 60;
         // --- Hediff 动态参数 ---
         public bool isSeverityRadLevel = false;
         public float radLevelFactor = 1f;

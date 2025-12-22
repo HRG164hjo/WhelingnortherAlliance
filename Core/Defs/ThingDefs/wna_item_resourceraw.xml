@@ -209,6 +209,20 @@
         </statBases>
     </ThingDef>
     
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_MassChunk</defName>
+        <label>mass chunk</label>
+        <description>A smooth mass chunk, weighing exactly 30 kg. Very smooth on touch.</description>
+        <graphicData>
+            <texPath>item/wna_masschunk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1</MarketValue>
+            <Mass>30</Mass>
+        </statBases>
+    </ThingDef>
+    
     <!-- mili -->
     <ThingDef ParentName="WNA_ItemsBase">
         <defName>WNA_FabricBaseboard</defName>

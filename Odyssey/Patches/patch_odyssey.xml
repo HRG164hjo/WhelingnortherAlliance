@@ -158,19 +158,19 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-	    <xpath>Defs/ThingDef[defName="FuelOptimizer" or defName="OrbitalScanner" or defName="GravcorePowerCell" or defName="SignalJammer" or defName="PilotSubpersonaCore" or defName="GravAnchor"]/statBases/Flammability</xpath>
+	    <xpath>Defs/ThingDef[defName="FuelOptimizer" or defName="GravshipShieldGenerator" or defName="OrbitalScanner" or defName="GravcorePowerCell" or defName="SignalJammer" or defName="PilotSubpersonaCore" or defName="GravAnchor"]/statBases/Flammability</xpath>
         <value>
             <Flammability>0</Flammability>
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/ThingDef[defName="FuelOptimizer" or defName="OrbitalScanner" or defName="GravcorePowerCell" or defName="SignalJammer" or defName="PilotSubpersonaCore" or defName="GravAnchor"]</xpath>
+	    <xpath>Defs/ThingDef[defName="FuelOptimizer" or defName="GravshipShieldGenerator" or defName="OrbitalScanner" or defName="GravcorePowerCell" or defName="SignalJammer" or defName="PilotSubpersonaCore" or defName="GravAnchor"]</xpath>
         <value>
             <useHitPoints>false</useHitPoints>
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/ThingDef[defName="GravAnchor" or defName="FuelOptimizer" or defName="PilotSubpersonaCore"]</xpath>
+	    <xpath>Defs/ThingDef[defName="GravAnchor" or defName="GravshipShieldGenerator" or defName="FuelOptimizer" or defName="PilotSubpersonaCore"]</xpath>
         <value>
             <designationCategory>Odyssey</designationCategory>
         </value>
@@ -234,5 +234,49 @@
     
     <Operation Class="PatchOperationRemove">
 	    <xpath>Defs/WorldObjectDef/requiresSignalJammerToReach</xpath>
+    </Operation>
+    
+    <Operation Class="PatchOperationRemove">
+	    <xpath>Defs/ThingDef[defName="GravshipShieldGenerator"]/comps/li[@Class="CompProperties_Interactable"]</xpath>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[defName="GravshipShieldGenerator"]/specialDisplayRadius</xpath>
+        <value>
+            <specialDisplayRadius>27.9</specialDisplayRadius>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[defName="GravshipShieldGenerator"]/comps/li[@Class="CompProperties_ProjectileInterceptor"]</xpath>
+        <value>
+            <li Class="CompProperties_ProjectileInterceptor">
+                <radius>27.9</radius>
+                <cooldownTicks>0</cooldownTicks>
+                <disarmedByEmpForTicks>0</disarmedByEmpForTicks>
+                <interceptGroundProjectiles>true</interceptGroundProjectiles>
+                <interceptAirProjectiles>true</interceptAirProjectiles>
+                <interceptNonHostileProjectiles>false</interceptNonHostileProjectiles>
+                <interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+                <drawWithNoSelection>true</drawWithNoSelection>
+                <chargeDurationTicks>1</chargeDurationTicks>
+                <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+                <color>(0.4,0.4,0.4)</color>
+                <minIdleAlpha>0.2</minIdleAlpha>
+                <activeSound>BulletShield_Ambience</activeSound>
+            </li>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationRemove">
+	    <xpath>Defs/ThingDef[defName="MechPylon"]/building/deconstructible</xpath>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="MechPylon"]</xpath>
+        <value>
+            <costList>
+                <ChunkMechanoidSlag>2</ChunkMechanoidSlag>
+                <GravlitePanel>15</GravlitePanel>
+            </costList>
+		    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+        </value>
     </Operation>
 </Patch>

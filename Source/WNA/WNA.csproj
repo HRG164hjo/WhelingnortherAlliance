@@ -123,7 +123,9 @@
     <Compile Include="WNAHarmony\Patch_Explosion.cs" />
     <Compile Include="WNAHarmony\Patch_HunterHunt.cs" />
     <Compile Include="WNAHarmony\Patch_Interaction.cs" />
+    <Compile Include="WNAHarmony\Patch_Job_Lovin.cs" />
     <Compile Include="WNAHarmony\Patch_MassUtility.cs" />
+    <Compile Include="WNAHarmony\Patch_Job_Mining.cs" />
     <Compile Include="WNAHarmony\Patch_Need.cs" />
     <Compile Include="WNAHarmony\Patch_CompOverseerSubject.cs" />
     <Compile Include="WNAHarmony\Patch_Passability.cs" />

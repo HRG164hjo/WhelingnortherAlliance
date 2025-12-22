@@ -200,7 +200,7 @@
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                     </thingDefs>
                 </filter>
-                <count>15</count>
+                <count>10</count>
             </li>
             <li>
                 <filter>
@@ -226,7 +226,7 @@
             </categories>
         </fixedIngredientFilter>
         <products>
-            <WNA_Concrete>45</WNA_Concrete>
+            <WNA_Concrete>50</WNA_Concrete>
         </products>
         <workAmount>500</workAmount>
         <recipeUsers>
@@ -253,7 +253,7 @@
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                     </thingDefs>
                 </filter>
-                <count>15</count>
+                <count>10</count>
             </li>
             <li>
                 <filter>
@@ -267,6 +267,8 @@
                         <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                         <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
                     </thingDefs>
                 </filter>
                 <count>20</count>
@@ -287,13 +289,15 @@
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                 <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
             </thingDefs>
             <categories>
                 <li>StoneBlocks</li>
             </categories>
         </fixedIngredientFilter>
         <products>
-            <WNA_Concrete>45</WNA_Concrete>
+            <WNA_Concrete>50</WNA_Concrete>
         </products>
         <workAmount>500</workAmount>
         <recipeUsers>
@@ -316,6 +320,9 @@
                         <li>Silver</li>
                         <li>Gold</li>
                         <li>Plasteel</li>
+                        <li>Uranium</li>
+                        <li>WNA_MercuryVial</li>
+                        <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
@@ -338,6 +345,9 @@
                 <li>Silver</li>
                 <li>Gold</li>
                 <li>Plasteel</li>
+                <li>Uranium</li>
+                <li>WNA_MercuryVial</li>
+                <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
                 <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
@@ -368,6 +378,9 @@
                         <li>Silver</li>
                         <li>Gold</li>
                         <li>Plasteel</li>
+                        <li>Uranium</li>
+                        <li>WNA_MercuryVial</li>
+                        <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
@@ -387,6 +400,8 @@
                         <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                         <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
                     </thingDefs>
                 </filter>
                 <count>30</count>
@@ -398,6 +413,9 @@
                 <li>Silver</li>
                 <li>Gold</li>
                 <li>Plasteel</li>
+                <li>Uranium</li>
+                <li>WNA_MercuryVial</li>
+                <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
                 <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
@@ -407,6 +425,8 @@
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                 <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
             </thingDefs>
             <categories>
                 <li>StoneBlocks</li>

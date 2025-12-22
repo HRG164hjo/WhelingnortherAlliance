@@ -412,7 +412,7 @@
         <defaultPlacingRot>South</defaultPlacingRot>
 		<castEdgeShadows>true</castEdgeShadows>
         <rotatable>true</rotatable>
-        <specialDisplayRadius>14.9</specialDisplayRadius>
+        <specialDisplayRadius>27.9</specialDisplayRadius>
         <costList>
             <Uranium>45</Uranium>
             <ComponentIndustrial>2</ComponentIndustrial>
@@ -437,9 +437,9 @@
             </li>
             <li Class="WNA.ThingCompProp.CompRadFieldAmbient">
                 <config>
-                    <radLevel>500</radLevel>
-                    <radius>14.9</radius>
-                    <radLevelDelay>250</radLevelDelay>
+                    <radLevel>2000</radLevel>
+                    <radius>27.9</radius>
+                    <radLevelDelay>97</radLevelDelay>
                     <threshold>1.1</threshold>
                 </config>
             </li>

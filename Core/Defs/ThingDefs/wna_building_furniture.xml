@@ -39,6 +39,8 @@
         <placeWorkers>
             <li>PlaceWorker_Conduit</li>
         </placeWorkers>
+        <minifiedDef Inherit="false" IsNull="true"/>
+        <thingCategories Inherit="false" IsNull="true"/>
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTransmitter</compClass>

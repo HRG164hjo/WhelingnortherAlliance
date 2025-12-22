@@ -72,24 +72,6 @@
 			<li Class="WNA.DMExtension.MassCapacity">
 				<massCapacity>60000</massCapacity>
 			</li>
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
-				<preventDowning>true</preventDowning>
-				<preventBleeding>true</preventBleeding>
-                <pawnCapacityMinLevels>
-                    <li>
-                        <capacity>Consciousness</capacity>
-                        <minLevel>0.6</minLevel>
-                    </li>
-                    <li>
-                        <capacity>Moving</capacity>
-                        <minLevel>0.4</minLevel>
-                    </li>
-                    <li>
-                        <capacity>Manipulation</capacity>
-                        <minLevel>0.6</minLevel>
-                    </li>
-                </pawnCapacityMinLevels>
-			</li>
 		</modExtensions>
     </ThingDef>
     
@@ -604,13 +586,12 @@
 	    </costList>
 		<comps>
             <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
-                <hediff>WNA_IllusionCore</hediff>
+                <hediff>WNA_DeadzoneBelt</hediff>
             </li>
 		</comps>
         <recipeMaker>
             <researchPrerequisites>
-                <li>WNA_FieldAnalysis</li>
-                <li>WNA_AdvancedArsenal</li>
+                <li>WNA_ParticleArmory</li>
             </researchPrerequisites>
             <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
             <workSkill>Crafting</workSkill>

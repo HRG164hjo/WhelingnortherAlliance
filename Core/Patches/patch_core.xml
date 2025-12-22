@@ -111,6 +111,16 @@
 	    <xpath>Defs/TerrainDef/changeable</xpath>
     </Operation>
     
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/TerrainDef[defName="BrokenAsphalt" or defName="PackedDirt"]</xpath>
+        <value>
+            <drawStyleCategory>Floors</drawStyleCategory>
+            <designationCategory>Floors</designationCategory>
+            <constructEffect>ConstructDirt</constructEffect>
+            <terrainAffordanceNeeded>Walkable</terrainAffordanceNeeded>
+        </value>
+    </Operation>
+    
     <!-- -->
     <Operation Class="PatchOperationConditional">
 	    <xpath>Defs/ThingDef/intricate</xpath>

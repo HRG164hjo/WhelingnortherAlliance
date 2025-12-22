@@ -624,7 +624,7 @@
         <stackLimit>5000</stackLimit>
         <statBases>
             <Beauty>0</Beauty>
-            <Mass>0.002</Mass>
+            <Mass>0.008</Mass>
             <Flammability>0</Flammability>
             <DeteriorationRate>0</DeteriorationRate>
         </statBases>

@@ -50,6 +50,8 @@
                         <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                         <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
                     </thingDefs>
                 </filter>
                 <count>20</count>
@@ -65,6 +67,8 @@
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
                 <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
@@ -421,25 +425,23 @@
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                     </thingDefs>
                 </filter>
-                <count>25</count>
+                <count>45</count>
             </li>
             <li>
                 <filter>
                     <thingDefs>
                         <li>Steel</li>
-                        <li>Silver</li>
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                     </thingDefs>
                 </filter>
-                <count>35</count>
+                <count>25</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
                 <li>Plasteel</li>
                 <li>Steel</li>
-                <li>Silver</li>
                 <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>

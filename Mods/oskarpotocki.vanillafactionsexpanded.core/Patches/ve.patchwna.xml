@@ -89,13 +89,37 @@
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WNA_StdMiliSuit"]/modExtensions</xpath>
+        <value>
+			<li Class="VEF.Apparels.ApparelExtension">
+				<preventDowning>true</preventDowning>
+				<preventBleeding>true</preventBleeding>
+                <preventKilling>true</preventKilling>
+                <preventKillingUntilHealthHPPercentage>0.05</preventKillingUntilHealthHPPercentage>
+				<pawnCapacityMinLevels>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <minLevel>0.6</minLevel>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <minLevel>0.6</minLevel>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <minLevel>0.6</minLevel>
+                    </li>
+				</pawnCapacityMinLevels>
+			</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="WNA_AllianceRobe"]/modExtensions</xpath>
         <value>
 			<li Class="VEF.Apparels.ApparelExtension">
 				<preventDowning>true</preventDowning>
 				<preventBleeding>true</preventBleeding>
                 <preventKilling>true</preventKilling>
-                <preventKillingUntilBrainMissing>true</preventKillingUntilBrainMissing>
 				<pawnCapacityMinLevels>
 					<li>
 						<capacity>Consciousness</capacity>

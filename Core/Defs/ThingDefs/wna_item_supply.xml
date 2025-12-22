@@ -97,7 +97,7 @@
                 <soundOnUsed>MechSerumUsed</soundOnUsed>
             </li>
             <li Class="WNA.ThingCompProp.CompMultiUse">
-                <uses>72</uses>
+                <uses>28</uses>
             </li>
         </comps>
         <thingCategories>

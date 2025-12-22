@@ -151,7 +151,7 @@
 
     <HediffDef>
         <defName>WNA_DeadzoneBelt</defName>
-        <label>"dead zone" radiation ring</label>
+        <label>irradiating</label>
         <hediffClass>HediffWithComps</hediffClass>
         <description>This pawn is emitting deadly radiation field.</description>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
@@ -161,11 +161,11 @@
             <li Class="HediffCompProperties_RemoveIfApparelDropped"/>
             <li Class="WNA.HediffCompProp.CompRadFieldSpreader">
                 <config>
-                    <radLevel>1000</radLevel>
+                    <radLevel>2000</radLevel>
                     <radius>9.9</radius>
-                    <edgeFactor>0.5</edgeFactor>
+                    <edgeFactor>0.25</edgeFactor>
                     <threshold>0</threshold>
-                    <radLevelDelay>60</radLevelDelay>
+                    <radLevelDelay>27</radLevelDelay>
                 </config>
             </li>
         </comps>
