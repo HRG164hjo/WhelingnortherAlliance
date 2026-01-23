@@ -3,10 +3,8 @@
   
   <!-- EN: psychic blast shell -->
   <WNA_ShellPsychic.label>psychic blast shell</WNA_ShellPsychic.label>
-  <!-- EN: A shell made of bioferrite and enhanced with special techniques. When detonated it can cause a unique psychic phenomena, causing nearby people fall into psychic drunkenness.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_ShellPsychic.description>A shell made of bioferrite and enhanced with special techniques. When detonated it can cause a unique psychic phenomena, causing nearby people fall into psychic drunkenness.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_ShellPsychic.description>
+  <!-- EN: A shell made of bioferrite and enhanced with special techniques. When detonated it can cause a unique psychic phenomena, causing nearby people fall into psychic drunkenness. -->
+  <WNA_ShellPsychic.description>A shell made of bioferrite and enhanced with special techniques. When detonated it can cause a unique psychic phenomena, causing nearby people fall into psychic drunkenness.</WNA_ShellPsychic.description>
   
   <!-- EN: psychic blast shell -->
   <WNA_ShellPsychic_Proj.label>psychic blast shell</WNA_ShellPsychic_Proj.label>

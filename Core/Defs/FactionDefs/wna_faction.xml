@@ -191,113 +191,35 @@
                 <li>r_name->[Digit][Digit][Digit]th [pfix]</li>
                 <li>r_name->[Digit][Digit][Digit][Digit]th [pfix]</li>
                 <!---->
-                <li>pfix->Alley</li>
-                <li>pfix->Annex</li>
-                <li>pfix->Area</li>
-                <li>pfix->Array</li>
-                <li>pfix->Border</li>
-                <li>pfix->Camp</li>
-                <li>pfix->Canopy</li>
-                <li>pfix->Ceasefire</li>
-                <li>pfix->Citadel</li>
-                <li>pfix->Complex</li>
-                <li>pfix->Construct</li>
-                <li>pfix->Corridor</li>
-                <li>pfix->Crypts</li>
-                <li>pfix->Dawn</li>
-                <li>pfix(p=3)->Dead Zone</li>
-                <li>pfix->End</li>
-                <li>pfix->Expanse</li>
-                <li>pfix->Expedition</li>
-                <li>pfix->Exterior</li>
                 <li>pfix->Facility</li>
-                <li>pfix(p=5)->Field Task</li>
-                <li>pfix->Foundation</li>
-                <li>pfix->Fortress</li>
-                <li>pfix->Fringe</li>
-                <li>pfix->Frontier</li>
-                <li>pfix->Garden</li>
-                <li>pfix->Gateway</li>
-                <li>pfix->Grove</li>
-                <li>pfix(p=5)->Military Control</li>
-                <li>pfix->Mission</li>
-                <li>pfix->Nexus</li>
                 <li>pfix->Outpost</li>
-                <li>pfix->Outskirts</li>
-                <li>pfix->Path</li>
-                <li>pfix->Preserve</li>
-                <li>pfix->Protocol</li>
-                <li>pfix->Region</li>
-                <li>pfix->Ridge</li>
-                <li>pfix->Rim</li>
-                <li>pfix->Sanctuary</li>
-                <li>pfix->Settlement</li>
-                <li>pfix->Shelter</li>
-                <li>pfix->Sidehouse</li>
                 <li>pfix->Site</li>
-                <li>pfix->Spire</li>
-                <li>pfix->Sublink</li>
-                <li>pfix->Surface</li>
-                <li>pfix->Terrace</li>
-                <li>pfix->Tract</li>
-                <li>pfix->Underhang</li>
-                <li>pfix->Wall</li>
-                <li>pfix->Zone</li>
-                <li>pfix->''CENSORED''</li>
-                <li>pfix->''UNKNOWN''</li>
-                <li>pfix->███████</li>
-                <li>pfix->Cabin</li>
-                <li>pfix->Cradle</li>
-                <li>pfix->Exit</li>
-                <li>pfix(p=3)->Martial Zone</li>
-                <li>pfix->Conduit</li>
-                <li>pfix->Shoreline</li>
-                <li>pfix->Island</li>
-                <li>pfix->Depths</li>
-                <li>pfix->Conflux</li>
-                <li>pfix->Metropolis</li>
-                <li>pfix->Cathedral</li>
-                <li>pfix->Cortex</li>
-                <li>pfix->Terminus</li>
-                <li>pfix->Manifold</li>
-                <li>pfix->Organ</li>
-                <li>pfix->Railway</li>
-                <li>pfix->Badlands</li>
-                <li>pfix->Emitter</li>
-                <li>pfix->Relay</li>
-                <li>pfix->Watcher</li>
-                <li>pfix->Guardian</li>
-                <li>pfix->Throne</li>
-                <li>pfix->Temple</li>
-                <li>pfix->Laboratory</li>
-                <li>pfix(p=0.1)->Iterator</li>
-                <li>pfix(p=0.1)->Starcatcher</li>
-                <li>pfix(p=0.1)->Pyramid</li>
+                <li>pfix(p=4)->Field Task</li>
                 <!---->
-                <li>r_name(p=0.02)->Celestial Throne</li>
-                <li>r_name(p=0.02)->Sky Temple</li>
-                <li>r_name(p=0.02)->Pristine Jewel</li>
-                <li>r_name(p=0.02)->Emerald Mausoleum</li>
-                <li>r_name(p=0.02)->Walled Garden</li>
-                <li>r_name(p=0.02)->Prophet's Retreat</li>
-                <li>r_name(p=0.02)->The Cradle</li>
-                <li>r_name(p=0.02)->The Preserve</li>
-                <li>r_name(p=0.02)->Font of Knowledge</li>
-                <li>r_name(p=0.02)->The Archives</li>
-                <li>r_name(p=0.02)->Last Thought</li>
-                <li>r_name(p=0.02)->Ithome's Gate</li>
-                <li>r_name(p=0.02)->Looks to the Moon</li>
-                <li>r_name(p=0.02)->Five Pebbles</li>
-                <li>r_name(p=0.02)->Outer Expanse</li>
-                <li>r_name(p=0.02)->Outer Rim</li>
-                <li>r_name(p=0.02)->Memory Crypts</li>
-                <li>r_name(p=0.02)->Rubicon</li>
-                <li>r_name(p=0.02)->Aether Ridge</li>
-                <li>r_name(p=0.02)->Daemon</li>
-                <li>r_name(p=0.02)->Shattered Terrace</li>
-                <li>r_name(p=0.02)->Ancient Urban</li>
-                <li>r_name(p=0.02)->Station Annex</li>
-                <li>r_name(p=0.02)->Unfortunate Evolution</li>
+                <li>r_name(p=0.01)->Celestial Throne</li>
+                <li>r_name(p=0.01)->Sky Temple</li>
+                <li>r_name(p=0.01)->Pristine Jewel</li>
+                <li>r_name(p=0.01)->Emerald Mausoleum</li>
+                <li>r_name(p=0.01)->Walled Garden</li>
+                <li>r_name(p=0.01)->Prophet's Retreat</li>
+                <li>r_name(p=0.01)->The Cradle</li>
+                <li>r_name(p=0.01)->The Preserve</li>
+                <li>r_name(p=0.01)->Font of Knowledge</li>
+                <li>r_name(p=0.01)->The Archives</li>
+                <li>r_name(p=0.01)->Last Thought</li>
+                <li>r_name(p=0.01)->Ithome's Gate</li>
+                <li>r_name(p=0.01)->Looks to the Moon</li>
+                <li>r_name(p=0.01)->Five Pebbles</li>
+                <li>r_name(p=0.01)->Outer Expanse</li>
+                <li>r_name(p=0.01)->Outer Rim</li>
+                <li>r_name(p=0.01)->Memory Crypts</li>
+                <li>r_name(p=0.01)->Rubicon</li>
+                <li>r_name(p=0.01)->Aether Ridge</li>
+                <li>r_name(p=0.01)->Daemon</li>
+                <li>r_name(p=0.01)->Shattered Terrace</li>
+                <li>r_name(p=0.01)->Ancient Urban</li>
+                <li>r_name(p=0.01)->Station Annex</li>
+                <li>r_name(p=0.01)->Unfortunate Evolution</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>

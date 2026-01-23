@@ -3,9 +3,7 @@
   
   <!-- EN: halfbeing -->
   <WNA_HalfbeingHediff.label>halfbeing</WNA_HalfbeingHediff.label>
-  <!-- EN: this pawn is a "Halfbeing", an abandoned project of WNA.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_HalfbeingHediff.description>this pawn is a "Halfbeing", an abandoned project of WNA.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_HalfbeingHediff.description>
+  <!-- EN: this pawn is a "Halfbeing", an abandoned project of WNA. -->
+  <WNA_HalfbeingHediff.description>this pawn is a "Halfbeing", an abandoned project of WNA.</WNA_HalfbeingHediff.description>
   
 </LanguageData>

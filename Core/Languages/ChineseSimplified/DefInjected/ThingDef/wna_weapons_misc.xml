@@ -3,10 +3,8 @@
   
   <!-- EN: placeholder -->
   <WNA_PawnPassiveAcquire.label>placeholder</WNA_PawnPassiveAcquire.label>
-  <!-- EN: placeholder.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_PawnPassiveAcquire.description>placeholder.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_PawnPassiveAcquire.description>
+  <!-- EN: placeholder. -->
+  <WNA_PawnPassiveAcquire.description>placeholder.</WNA_PawnPassiveAcquire.description>
   <!-- EN: placeholder -->
   <WNA_PawnPassiveAcquire.verbs.Verb_Shoot.label>placeholder</WNA_PawnPassiveAcquire.verbs.Verb_Shoot.label>
   
@@ -15,10 +13,8 @@
   
   <!-- EN: placeholder -->
   <WNA_ThornBooTurret.label>placeholder</WNA_ThornBooTurret.label>
-  <!-- EN: placeholder.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_ThornBooTurret.description>placeholder.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_ThornBooTurret.description>
+  <!-- EN: placeholder. -->
+  <WNA_ThornBooTurret.description>placeholder.</WNA_ThornBooTurret.description>
   <!-- EN: placeholder -->
   <WNA_ThornBooTurret.verbs.Verb_Shoot.label>placeholder</WNA_ThornBooTurret.verbs.Verb_Shoot.label>
   

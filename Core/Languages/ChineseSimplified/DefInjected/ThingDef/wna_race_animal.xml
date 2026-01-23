@@ -3,10 +3,8 @@
   
   <!-- EN: dim boo -->
   <WNA_DimBoo.label>dim boo</WNA_DimBoo.label>
-  <!-- EN: A strange ball-like creature, created by Whelinghorther Alliance. There's many stories about the detailed origin of such thing, one stated that Alliance used animal corpses to create them.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_DimBoo.description>A strange ball-like creature, created by Whelinghorther Alliance. There's many stories about the detailed origin of such thing, one stated that Alliance used animal corpses to create them.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_DimBoo.description>
+  <!-- EN: A strange ball-like creature, created by Whelinghorther Alliance. There's many stories about the detailed origin of such thing, one stated that Alliance used animal corpses to create them. -->
+  <WNA_DimBoo.description>A strange ball-like creature, created by Whelinghorther Alliance. There's many stories about the detailed origin of such thing, one stated that Alliance used animal corpses to create them.</WNA_DimBoo.description>
   <!-- EN: tendril -->
   <WNA_DimBoo.tools.tendril.label>tendril</WNA_DimBoo.tools.tendril.label>
   <!-- EN: head -->
@@ -15,24 +13,20 @@
   <WNA_DimBoo.tools.horn.label>horn</WNA_DimBoo.tools.horn.label>
   
   <!-- EN: ferocious boo -->
-  <WNA_FerociousBoo.label>ferocious boo</WNA_FerociousBoo.label>
-  <!-- EN: A dangerous ball-like ghosty beast, it's said that Whelingnorther Alliance created this kind as bio weapons.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_FerociousBoo.description>A dangerous ball-like ghosty beast, it's said that Whelingnorther Alliance created this kind as bio weapons.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_FerociousBoo.description>
+  <WNA_FerosBoo.label>ferocious boo</WNA_FerosBoo.label>
+  <!-- EN: A dangerous ball-like ghosty beast, it's said that Whelingnorther Alliance created this kind as bio weapons. -->
+  <WNA_FerosBoo.description>A dangerous ball-like ghosty beast, it's said that Whelingnorther Alliance created this kind as bio weapons.</WNA_FerosBoo.description>
   <!-- EN: tendril -->
-  <WNA_FerociousBoo.tools.tendril.label>tendril</WNA_FerociousBoo.tools.tendril.label>
+  <WNA_FerosBoo.tools.tendril.label>tendril</WNA_FerosBoo.tools.tendril.label>
   <!-- EN: head -->
-  <WNA_FerociousBoo.tools.head.label>head</WNA_FerociousBoo.tools.head.label>
+  <WNA_FerosBoo.tools.head.label>head</WNA_FerosBoo.tools.head.label>
   <!-- EN: horn -->
-  <WNA_FerociousBoo.tools.horn.label>horn</WNA_FerociousBoo.tools.horn.label>
+  <WNA_FerosBoo.tools.horn.label>horn</WNA_FerosBoo.tools.horn.label>
   
   <!-- EN: thorn boo -->
   <WNA_ThornBoo.label>thorn boo</WNA_ThornBoo.label>
-  <!-- EN: A strange ball-like beast, even Whelingnorther Alliance is curious about its origion. It can throw spears to whatever it think is a threat, fast and long range.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_ThornBoo.description>A strange ball-like beast, even Whelingnorther Alliance is curious about its origion. It can throw spears to whatever it think is a threat, fast and long range.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_ThornBoo.description>
+  <!-- EN: A strange ball-like beast, even Whelingnorther Alliance is curious about its origion. It can throw spears to whatever it think is a threat, fast and long range. -->
+  <WNA_ThornBoo.description>A strange ball-like beast, even Whelingnorther Alliance is curious about its origion. It can throw spears to whatever it think is a threat, fast and long range.</WNA_ThornBoo.description>
   <!-- EN: tendril -->
   <WNA_ThornBoo.tools.tendril.label>tendril</WNA_ThornBoo.tools.tendril.label>
   <!-- EN: head -->

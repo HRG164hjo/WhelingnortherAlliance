@@ -3,10 +3,8 @@
   
   <!-- EN: halfbeing -->
   <WNA_Halfbeing.label>halfbeing</WNA_Halfbeing.label>
-  <!-- EN: A walking dead. Long time ago a ghoul was captured by WNA. Scientists of WNA believed that they can invent a brand new and more advanced mutant based on that ghoul, but this project was interrupted by the sudden rest of WNA, and had never been continued since.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_Halfbeing.description>A walking dead. Long time ago a ghoul was captured by WNA. Scientists of WNA believed that they can invent a brand new and more advanced mutant based on that ghoul, but this project was interrupted by the sudden rest of WNA, and had never been continued since.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Halfbeing.description>
+  <!-- EN: A walking dead. Long time ago a ghoul was captured by WNA. Scientists of WNA believed that they can invent a brand new and more advanced mutant based on that ghoul, but this project was interrupted by the sudden rest of WNA, and had never been continued since. -->
+  <WNA_Halfbeing.description>A walking dead. Long time ago a ghoul was captured by WNA. Scientists of WNA believed that they can invent a brand new and more advanced mutant based on that ghoul, but this project was interrupted by the sudden rest of WNA, and had never been continued since.</WNA_Halfbeing.description>
   <!-- EN: left hand -->
   <WNA_Halfbeing.tools.left_hand.label>left hand</WNA_Halfbeing.tools.left_hand.label>
   <!-- EN: hand -->

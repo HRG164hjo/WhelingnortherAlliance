@@ -74,6 +74,15 @@
             </value>
 	    </match>
     </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="Apparel_Shadecone" or defName="Apparel_Slicecap"]/apparel</xpath>
+        <value>
+            <renderSkipFlags>
+                <li>None</li>
+            </renderSkipFlags>
+        </value>
+    </Operation>
 
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThoughtDef[defName="AteNonFungusPlant_Despised" or defName="AteNonFungusMealWithPlants_Despised" or defName="AteFungus_Despised" or defName="AteFungusAsIngredient_Despised"]</xpath>

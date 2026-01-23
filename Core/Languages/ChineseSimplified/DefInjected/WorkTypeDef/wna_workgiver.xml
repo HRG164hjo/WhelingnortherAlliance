@@ -1,10 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: Carrying out Whelingnorther rites to do something or achieve some goal.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNAWork_Rite.description>Carrying out Whelingnorther rites to do something or achieve some goal.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNAWork_Rite.description>
+  <!-- EN: Carrying out Whelingnorther rites to do something or achieve some goal. -->
+  <WNAWork_Rite.description>Carrying out Whelingnorther rites to do something or achieve some goal.</WNAWork_Rite.description>
   <!-- EN: riting -->
   <WNAWork_Rite.gerundLabel>riting</WNAWork_Rite.gerundLabel>
   <!-- EN: rite -->

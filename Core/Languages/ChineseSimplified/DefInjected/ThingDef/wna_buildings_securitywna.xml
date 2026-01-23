@@ -3,17 +3,13 @@
   
   <!-- EN: pale ball -->
   <WNA_Turret_Pale.label>pale ball</WNA_Turret_Pale.label>
-  <!-- EN: A slab-like facility, can automatically form a mana ball and actively attack nearby enemies.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_Turret_Pale.description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Turret_Pale.description>
+  <!-- EN: A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. -->
+  <WNA_Turret_Pale.description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies.</WNA_Turret_Pale.description>
   
   <!-- EN: pale ball -->
   <WNA_Turret_Pale_Gun.label>pale ball</WNA_Turret_Pale_Gun.label>
-  <!-- EN: turret weapon.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_Turret_Pale_Gun.description>turret weapon.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Turret_Pale_Gun.description>
+  <!-- EN: turret weapon. -->
+  <WNA_Turret_Pale_Gun.description>turret weapon.</WNA_Turret_Pale_Gun.description>
   <!-- EN: pale ball -->
   <WNA_Turret_Pale_Gun.verbs.VerbType_Laser.label>pale ball</WNA_Turret_Pale_Gun.verbs.VerbType_Laser.label>
   
@@ -22,17 +18,13 @@
   
   <!-- EN: shatter ball -->
   <WNA_Turret_Shatter.label>shatter ball</WNA_Turret_Shatter.label>
-  <!-- EN: A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. It can cause an explosion and usually powerful enough to blow a person apart.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_Turret_Shatter.description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. It can cause an explosion and usually powerful enough to blow a person apart.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Turret_Shatter.description>
+  <!-- EN: A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. It can cause an explosion and usually powerful enough to blow a person apart. -->
+  <WNA_Turret_Shatter.description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. It can cause an explosion and usually powerful enough to blow a person apart.</WNA_Turret_Shatter.description>
   
   <!-- EN: shatter ball -->
   <WNA_Turret_Shatter_Gun.label>shatter ball</WNA_Turret_Shatter_Gun.label>
-  <!-- EN: turret weapon.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_Turret_Shatter_Gun.description>turret weapon.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Turret_Shatter_Gun.description>
+  <!-- EN: turret weapon. -->
+  <WNA_Turret_Shatter_Gun.description>turret weapon.</WNA_Turret_Shatter_Gun.description>
   <!-- EN: shatter ball -->
   <WNA_Turret_Shatter_Gun.verbs.Verb_Shoot.label>shatter ball</WNA_Turret_Shatter_Gun.verbs.Verb_Shoot.label>
   

@@ -36,8 +36,8 @@
   <!-- EN: {0} has been shot to death. -->
   <WNA_HollowPoint.deathMessage>{0} has been shot to death.</WNA_HollowPoint.deathMessage>
   
-  <!-- EN: lysis -->
-  <WNA_IronKill.label>lysis</WNA_IronKill.label>
+  <!-- EN: iron kill -->
+  <WNA_IronKill.label>iron kill</WNA_IronKill.label>
   <!-- EN: {0} perished in lysis field. -->
   <WNA_IronKill.deathMessage>{0} perished in lysis field.</WNA_IronKill.deathMessage>
   
@@ -60,6 +60,11 @@
   <WNA_LysField.label>lysis</WNA_LysField.label>
   <!-- EN: {0} perished in lysis field. -->
   <WNA_LysField.deathMessage>{0} perished in lysis field.</WNA_LysField.deathMessage>
+  
+  <!-- EN: rad burn -->
+  <WNA_RadBeam.label>rad burn</WNA_RadBeam.label>
+  <!-- EN: {0} died of radiation. -->
+  <WNA_RadBeam.deathMessage>{0} died of radiation.</WNA_RadBeam.deathMessage>
   
   <!-- EN: rad burn -->
   <WNA_RadBurn.label>rad burn</WNA_RadBurn.label>

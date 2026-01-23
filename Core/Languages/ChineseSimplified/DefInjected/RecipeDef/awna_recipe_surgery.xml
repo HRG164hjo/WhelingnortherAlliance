@@ -3,10 +3,8 @@
   
   <!-- EN: halfbeing infusion -->
   <WNA_HalfbeingInfusion.label>halfbeing infusion</WNA_HalfbeingInfusion.label>
-  <!-- EN: Turn a person into a strong alive corpse.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_HalfbeingInfusion.description>Turn a person into a strong alive corpse.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_HalfbeingInfusion.description>
+  <!-- EN: Turn a person into a strong alive corpse. -->
+  <WNA_HalfbeingInfusion.description>Turn a person into a strong alive corpse.</WNA_HalfbeingInfusion.description>
   <!-- EN: making TargetA an alive corpse. -->
   <WNA_HalfbeingInfusion.jobString>making TargetA an alive corpse.</WNA_HalfbeingInfusion.jobString>
   

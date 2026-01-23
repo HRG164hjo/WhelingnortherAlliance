@@ -3,16 +3,12 @@
   
   <!-- EN: dived into the void -->
   <sWNA_VoidDiver.label>dived into the void</sWNA_VoidDiver.label>
-  <!-- EN: This pawn dived and faded into the void.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <sWNA_VoidDiver.description>This pawn dived and faded into the void.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></sWNA_VoidDiver.description>
+  <!-- EN: This pawn dived and faded into the void. -->
+  <sWNA_VoidDiver.description>This pawn dived and faded into the void.</sWNA_VoidDiver.description>
   
   <!-- EN: void diver -->
   <WNA_VoidDiver.label>void diver</WNA_VoidDiver.label>
-  <!-- EN: This pawn is forced to dive into their deepest consciousness where nothing exists, to face the pure void. They may finally fade, but before their life terminates precious voidsteel can be drained through them from the void.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_VoidDiver.description>This pawn is forced to dive into their deepest consciousness where nothing exists, to face the pure void. They may finally fade, but before their life terminates precious voidsteel can be drained through them from the void.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_VoidDiver.description>
+  <!-- EN: This pawn is forced to dive into their deepest consciousness where nothing exists, to face the pure void. They may finally fade, but before their life terminates precious voidsteel can be drained through them from the void. -->
+  <WNA_VoidDiver.description>This pawn is forced to dive into their deepest consciousness where nothing exists, to face the pure void. They may finally fade, but before their life terminates precious voidsteel can be drained through them from the void.</WNA_VoidDiver.description>
   
 </LanguageData>

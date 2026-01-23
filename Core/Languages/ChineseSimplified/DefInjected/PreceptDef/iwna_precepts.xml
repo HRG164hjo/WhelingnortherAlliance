@@ -1,9 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: ...\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_P_Proselyte.description>...
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_P_Proselyte.description>
+  <!-- EN: ... -->
+  <WNA_P_Proselyte.description>...</WNA_P_Proselyte.description>
   
 </LanguageData>

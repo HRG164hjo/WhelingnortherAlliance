@@ -53,6 +53,15 @@
     </Operation>
     
     <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="Apparel_Coronet" or defName="Apparel_Crown" or defName="Apparel_PsyfocusHelmet" or defName="Apparel_EltexSkullcap" or defName="Apparel_HatLadies" or defName="Apparel_HatTop" or defName="Apparel_CrownStellic"]/apparel</xpath>
+        <value>
+            <renderSkipFlags>
+                <li>None</li>
+            </renderSkipFlags>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThoughtDef[defName="AteFoodInappropriateForTitle" or defName="AnimaScream"]</xpath>
         <value>
             <nullifyingPrecepts MayRequire="ludeon.rimworld.ideology">

@@ -3,10 +3,8 @@
   
   <!-- EN: corrosion -->
   <WNA_CastDamage.label>corrosion</WNA_CastDamage.label>
-  <!-- EN: A horrible melting wound, seems never to heal.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_CastDamage.description>A horrible melting wound, seems never to heal.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_CastDamage.description>
+  <!-- EN: A horrible melting wound, seems never to heal. -->
+  <WNA_CastDamage.description>A horrible melting wound, seems never to heal.</WNA_CastDamage.description>
   <!-- EN: molten -->
   <WNA_CastDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>molten</WNA_CastDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
   <!-- EN: molten -->
@@ -18,12 +16,10 @@
   
   <!-- EN: whelingnorther corrosion -->
   <WNA_Corrosion.label>whelingnorther corrosion</WNA_Corrosion.label>
-  <!-- EN: An as yet unexplained fatal health condition in which victims often exhibit a unique state of melting upon death. Usually found on victims harmed by WNA rite weapons or directly attacked by Whelingnorthan.\n\nSo far hardly any methods can be used to treat this condition, what people can do is just pray and watch the condition grow worse, finally killing the victim.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
+  <!-- EN: An as yet unexplained fatal health condition in which victims often exhibit a unique state of melting upon death. Usually found on victims harmed by WNA rite weapons or directly attacked by Whelingnorthan.\n\nSo far hardly any methods can be used to treat this condition, what people can do is just pray and watch the condition grow worse, finally killing the victim. -->
   <WNA_Corrosion.description>An as yet unexplained fatal health condition in which victims often exhibit a unique state of melting upon death. Usually found on victims harmed by WNA rite weapons or directly attacked by Whelingnorthan.
 
-So far hardly any methods can be used to treat this condition, what people can do is just pray and watch the condition grow worse, finally killing the victim.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Corrosion.description>
+So far hardly any methods can be used to treat this condition, what people can do is just pray and watch the condition grow worse, finally killing the victim.</WNA_Corrosion.description>
   <!-- EN: {PAWN_nameDef} is melting! -->
   <WNA_Corrosion.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>{PAWN_nameDef} is melting!</WNA_Corrosion.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>
   <!-- EN: hidden -->
@@ -37,10 +33,8 @@ So far hardly any methods can be used to treat this condition, what people can d
   
   <!-- EN: gunshot -->
   <WNA_HPDamage.label>gunshot</WNA_HPDamage.label>
-  <!-- EN: A shot wound caused by hollow point bullet.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_HPDamage.description>A shot wound caused by hollow point bullet.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_HPDamage.description>
+  <!-- EN: A shot wound caused by hollow point bullet. -->
+  <WNA_HPDamage.description>A shot wound caused by hollow point bullet.</WNA_HPDamage.description>
   <!-- EN: permanent gunshot injury -->
   <WNA_HPDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>permanent gunshot injury</WNA_HPDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
   <!-- EN: old gunshot -->
@@ -56,10 +50,8 @@ So far hardly any methods can be used to treat this condition, what people can d
   
   <!-- EN: kinetic burn -->
   <WNA_KineticDamage.label>kinetic burn</WNA_KineticDamage.label>
-  <!-- EN: A burn wound caused by WNA's thought-kinetic weapons.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_KineticDamage.description>A burn wound caused by WNA's thought-kinetic weapons.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_KineticDamage.description>
+  <!-- EN: A burn wound caused by WNA's thought-kinetic weapons. -->
+  <WNA_KineticDamage.description>A burn wound caused by WNA's thought-kinetic weapons.</WNA_KineticDamage.description>
   <!-- EN: permanent kinetic burn -->
   <WNA_KineticDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>permanent kinetic burn</WNA_KineticDamage.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
   <!-- EN: old burn -->
@@ -75,10 +67,8 @@ So far hardly any methods can be used to treat this condition, what people can d
   
   <!-- EN: rad-field buildup -->
   <WNA_RadEffect.label>rad-field buildup</WNA_RadEffect.label>
-  <!-- EN: Hazardous effect of being exposed to radiation field. The special radiation field can convert the non-radioactive atoms that consisting normal tissue into radioactive isotopes, causing endogenous radiation that is difficult to eliminate. In extreme cases, the victim themselves will become a strong source of radiation.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_RadEffect.description>Hazardous effect of being exposed to radiation field. The special radiation field can convert the non-radioactive atoms that consisting normal tissue into radioactive isotopes, causing endogenous radiation that is difficult to eliminate. In extreme cases, the victim themselves will become a strong source of radiation.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RadEffect.description>
+  <!-- EN: Hazardous effect of being exposed to radiation field. The special radiation field can convert the non-radioactive atoms that consisting normal tissue into radioactive isotopes, causing endogenous radiation that is difficult to eliminate. In extreme cases, the victim themselves will become a strong source of radiation. -->
+  <WNA_RadEffect.description>Hazardous effect of being exposed to radiation field. The special radiation field can convert the non-radioactive atoms that consisting normal tissue into radioactive isotopes, causing endogenous radiation that is difficult to eliminate. In extreme cases, the victim themselves will become a strong source of radiation.</WNA_RadEffect.description>
   <!-- EN: Radiation damages can be found in {PAWN_nameDef}'s body. This unusual radiation effect is turning normal tissue into radiation souces, and almost cannot naturally expire. -->
   <WNA_RadEffect.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>Radiation damages can be found in {PAWN_nameDef}'s body. This unusual radiation effect is turning normal tissue into radiation souces, and almost cannot naturally expire.</WNA_RadEffect.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>
   <!-- EN: minor -->
@@ -88,12 +78,15 @@ So far hardly any methods can be used to treat this condition, what people can d
   <!-- EN: severe -->
   <WNA_RadEffect.stages.severe.label>severe</WNA_RadEffect.stages.severe.label>
   
+  <!-- EN: radiation ring -->
+  <WNA_RadRing.label>radiation ring</WNA_RadRing.label>
+  <!-- EN: Acute radiation build-up is making this poor little thing emitting radiation field. -->
+  <WNA_RadRing.description>Acute radiation build-up is making this poor little thing emitting radiation field.</WNA_RadRing.description>
+  
   <!-- EN: scrap buildup -->
   <WNA_ScrapBuildup.label>scrap buildup</WNA_ScrapBuildup.label>
-  <!-- EN: Multiple hazardous industrial waste accumulate in this person's body. Given that industrial waste is difficult to metabolize, this health condition will lead to long-term health risks. Can lead to lethal accute total organ failure if this condition continue to develop.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_ScrapBuildup.description>Multiple hazardous industrial waste accumulate in this person's body. Given that industrial waste is difficult to metabolize, this health condition will lead to long-term health risks. Can lead to lethal accute total organ failure if this condition continue to develop.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_ScrapBuildup.description>
+  <!-- EN: Multiple hazardous industrial waste accumulate in this person's body. Given that industrial waste is difficult to metabolize, this health condition will lead to long-term health risks. Can lead to lethal accute total organ failure if this condition continue to develop. -->
+  <WNA_ScrapBuildup.description>Multiple hazardous industrial waste accumulate in this person's body. Given that industrial waste is difficult to metabolize, this health condition will lead to long-term health risks. Can lead to lethal accute total organ failure if this condition continue to develop.</WNA_ScrapBuildup.description>
   <!-- EN: Multiple hazardous industrial waste accumulates in {PAWN_nameDef}'s body. This condition is hard to handle, long-term medical care is suggested. -->
   <WNA_ScrapBuildup.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>Multiple hazardous industrial waste accumulates in {PAWN_nameDef}'s body. This condition is hard to handle, long-term medical care is suggested.</WNA_ScrapBuildup.comps.HediffComp_SurgeryInspectable.surgicalDetectionDesc>
   <!-- EN: initial -->

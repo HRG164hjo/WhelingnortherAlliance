@@ -3,9 +3,7 @@
   
   <!-- EN: whelingnorther -->
   <WNA_MainCategory.label>whelingnorther</WNA_MainCategory.label>
-  <!-- EN: placeholder.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_MainCategory.description>placeholder.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MainCategory.description>
+  <!-- EN: placeholder. -->
+  <WNA_MainCategory.description>placeholder.</WNA_MainCategory.description>
   
 </LanguageData>

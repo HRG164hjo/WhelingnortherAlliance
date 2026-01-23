@@ -1,67 +1,59 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: whelingnorther banner -->
+  <WNA_Banner.label>whelingnorther banner</WNA_Banner.label>
+  <!-- EN: A black banner with red whelingnorther alliance symbol on it. -->
+  <WNA_Banner.description>A black banner with red whelingnorther alliance symbol on it.</WNA_Banner.description>
+  
   <!-- EN: ivory crate -->
   <WNA_BasicCrate.label>ivory crate</WNA_BasicCrate.label>
-  <!-- EN: A small white box, specially designed for storaging items.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_BasicCrate.description>A small white box, specially designed for storaging items.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_BasicCrate.description>
+  <!-- EN: A small white box, specially designed for storaging items. -->
+  <WNA_BasicCrate.description>A small white box, specially designed for storaging items.</WNA_BasicCrate.description>
   
   <!-- EN: invisible conduit -->
   <WNA_Conduit.label>invisible conduit</WNA_Conduit.label>
-  <!-- EN: Wires can transport electricity, pipies can transport liquids, and this invisible conduit can transport more things.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_Conduit.description>Wires can transport electricity, pipies can transport liquids, and this invisible conduit can transport more things.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Conduit.description>
+  <!-- EN: Wires can transport electricity, pipies can transport liquids, and this invisible conduit can transport more things. -->
+  <WNA_Conduit.description>Wires can transport electricity, pipies can transport liquids, and this invisible conduit can transport more things.</WNA_Conduit.description>
+  
+  <!-- EN: life suporter -->
+  <WNA_LifeSupporter.label>life suporter</WNA_LifeSupporter.label>
+  <!-- EN: A wall-mounted life support unit -->
+  <WNA_LifeSupporter.description>A wall-mounted life support unit</WNA_LifeSupporter.description>
   
   <!-- EN: ivory seat -->
   <WNA_LinkSeat.label>ivory seat</WNA_LinkSeat.label>
-  <!-- EN: Floating translucent stool, sometimes described as "ivory-like in color".\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_LinkSeat.description>Floating translucent stool, sometimes described as "ivory-like in color".
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_LinkSeat.description>
+  <!-- EN: Floating translucent stool, sometimes described as "ivory-like in color". -->
+  <WNA_LinkSeat.description>Floating translucent stool, sometimes described as "ivory-like in color".</WNA_LinkSeat.description>
   
   <!-- EN: ivory shelf -->
   <WNA_LinkShelf.label>ivory shelf</WNA_LinkShelf.label>
-  <!-- EN: Floating translucent shelf, one can equal to 60 normal shelf.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_LinkShelf.description>Floating translucent shelf, one can equal to 60 normal shelf.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_LinkShelf.description>
+  <!-- EN: Floating translucent shelf, one can equal to 60 normal shelf. -->
+  <WNA_LinkShelf.description>Floating translucent shelf, one can equal to 60 normal shelf.</WNA_LinkShelf.description>
   
   <!-- EN: ivory table -->
   <WNA_LinkTable.label>ivory table</WNA_LinkTable.label>
-  <!-- EN: Floating translucent table, sometimes described as "ivory-like in color".\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_LinkTable.description>Floating translucent table, sometimes described as "ivory-like in color".
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_LinkTable.description>
+  <!-- EN: Floating translucent table, sometimes described as "ivory-like in color". -->
+  <WNA_LinkTable.description>Floating translucent table, sometimes described as "ivory-like in color".</WNA_LinkTable.description>
   
   <!-- EN: slot sleeping spot -->
   <WNA_SlotSleepSpot.label>slot sleeping spot</WNA_SlotSleepSpot.label>
-  <!-- EN: a sleeping spot occupying 1 tile only.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_SlotSleepSpot.description>a sleeping spot occupying 1 tile only.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_SlotSleepSpot.description>
+  <!-- EN: a sleeping spot occupying 1 tile only. -->
+  <WNA_SlotSleepSpot.description>a sleeping spot occupying 1 tile only.</WNA_SlotSleepSpot.description>
   
   <!-- EN: shimmer torch -->
   <WNA_TorchLamp.label>shimmer torch</WNA_TorchLamp.label>
-  <!-- EN: A WNA style torch. It doesn't flame, though.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_TorchLamp.description>A WNA style torch. It doesn't flame, though.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_TorchLamp.description>
+  <!-- EN: A WNA style torch. It doesn't flame, though. -->
+  <WNA_TorchLamp.description>A WNA style torch. It doesn't flame, though.</WNA_TorchLamp.description>
   
   <!-- EN: discord torch -->
   <WNA_TorchLampB.label>discord torch</WNA_TorchLampB.label>
-  <!-- EN: A WNA style torch. it will drive nearby temperature to extreme.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_TorchLampB.description>A WNA style torch. it will drive nearby temperature to extreme.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_TorchLampB.description>
+  <!-- EN: A WNA style torch. it will drive nearby temperature to extreme. -->
+  <WNA_TorchLampB.description>A WNA style torch. it will drive nearby temperature to extreme.</WNA_TorchLampB.description>
   
   <!-- EN: wall safe -->
   <WNA_WallSafe.label>wall safe</WNA_WallSafe.label>
-  <!-- EN: A wall-mounted storage unit.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_WallSafe.description>A wall-mounted storage unit.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_WallSafe.description>
+  <!-- EN: A wall-mounted storage unit. -->
+  <WNA_WallSafe.description>A wall-mounted storage unit.</WNA_WallSafe.description>
   
 </LanguageData>

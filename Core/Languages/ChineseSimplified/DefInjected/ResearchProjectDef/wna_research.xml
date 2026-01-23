@@ -2,11 +2,9 @@
 <LanguageData>
   
   <!-- EN: advanced arsenal -->
-  <WNA_AdvArsenal.label>advanced arsenal</WNA_AdvArsenal.label>
-  <!-- EN: study some published literatures of WHR and gain some insights of their more advanced arsenal.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_AdvArsenal.description>study some published literatures of WHR and gain some insights of their more advanced arsenal.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_AdvArsenal.description>
+  <WNA_AdvancedArsenal.label>advanced arsenal</WNA_AdvancedArsenal.label>
+  <!-- EN: the advanced technology used by whelingnorther alliance to arm their elite fighters. -->
+  <WNA_AdvancedArsenal.description>the advanced technology used by whelingnorther alliance to arm their elite fighters.</WNA_AdvancedArsenal.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -84,7 +82,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
-  <WNA_AdvArsenal.generalRules.rulesStrings>
+  <WNA_AdvancedArsenal.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
     <li>subject_story->simplified the intricate to make way for practical applications</li>
@@ -160,14 +158,12 @@
     <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
-  </WNA_AdvArsenal.generalRules.rulesStrings>
+  </WNA_AdvancedArsenal.generalRules.rulesStrings>
   
-  <!-- EN: basic defense structure -->
-  <WNA_BaseDefense.label>basic defense structure</WNA_BaseDefense.label>
-  <!-- EN: unusual techniques that can be used to build your colony harder to handle.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_BaseDefense.description>unusual techniques that can be used to build your colony harder to handle.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_BaseDefense.description>
+  <!-- EN: advanced production -->
+  <WNA_AdvancedProduction.label>advanced production</WNA_AdvancedProduction.label>
+  <!-- EN: advanced production. -->
+  <WNA_AdvancedProduction.description>advanced production.</WNA_AdvancedProduction.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -245,7 +241,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
-  <WNA_BaseDefense.generalRules.rulesStrings>
+  <WNA_AdvancedProduction.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
     <li>subject_story->simplified the intricate to make way for practical applications</li>
@@ -321,14 +317,12 @@
     <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
-  </WNA_BaseDefense.generalRules.rulesStrings>
+  </WNA_AdvancedProduction.generalRules.rulesStrings>
   
   <!-- EN: basic rite -->
   <WNA_BasicRite.label>basic rite</WNA_BasicRite.label>
-  <!-- EN: basic knowladge of holding rites like those Whelingnorthans. the first step towards mysterious whelingnorther techniques.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_BasicRite.description>basic knowladge of holding rites like those Whelingnorthans. the first step towards mysterious whelingnorther techniques.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_BasicRite.description>
+  <!-- EN: basic rite. -->
+  <WNA_BasicRite.description>basic rite.</WNA_BasicRite.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -484,12 +478,10 @@
     <li>subject_gerund->piecing together the elements of advancement</li>
   </WNA_BasicRite.generalRules.rulesStrings>
   
-  <!-- EN: whelingnorther furniture -->
-  <WNA_Furniture.label>whelingnorther furniture</WNA_Furniture.label>
-  <!-- EN: the technique of forming WNA style furnitures. these furnitures usually looks translucent and are built out of nothing.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_Furniture.description>the technique of forming WNA style furnitures. these furnitures usually looks translucent and are built out of nothing.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Furniture.description>
+  <!-- EN: ceremony equipment -->
+  <WNA_CeremonyEquipment.label>ceremony equipment</WNA_CeremonyEquipment.label>
+  <!-- EN: basic rite. -->
+  <WNA_CeremonyEquipment.description>basic rite.</WNA_CeremonyEquipment.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -567,7 +559,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
-  <WNA_Furniture.generalRules.rulesStrings>
+  <WNA_CeremonyEquipment.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
     <li>subject_story->simplified the intricate to make way for practical applications</li>
@@ -643,14 +635,489 @@
     <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
-  </WNA_Furniture.generalRules.rulesStrings>
+  </WNA_CeremonyEquipment.generalRules.rulesStrings>
   
-  <!-- EN: the wall of iron -->
-  <WNA_IronGuardian.label>the wall of iron</WNA_IronGuardian.label>
-  <!-- EN: now your colonists have enough understanding and ability to replica the arsenal used by the heaviest guardian troopers of the rebels.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_IronGuardian.description>now your colonists have enough understanding and ability to replica the arsenal used by the heaviest guardian troopers of the rebels.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_IronGuardian.description>
+  <!-- EN: civilian techniques -->
+  <WNA_CivilianTech.label>civilian techniques</WNA_CivilianTech.label>
+  <!-- EN: practical techniques for civilian benefits, aiming for improving quality of life. -->
+  <WNA_CivilianTech.description>practical techniques for civilian benefits, aiming for improving quality of life.</WNA_CivilianTech.description>
+  <!-- EN:
+    <li>subject->innovation's path</li>
+    <li>subject_story->unveiled simple truths behind complex phenomena</li>
+    <li>subject_story->simplified the intricate to make way for practical applications</li>
+    <li>subject_story->harnessed basic principles to achieve remarkable feats</li>
+    <li>subject_gerund->streamlining the essence of discovery</li>
+    <li>subject->building blocks of progress</li>
+    <li>subject_story->laid the groundwork for monumental leaps forward</li>
+    <li>subject_story->connected dots across disciplines to reveal new insights</li>
+    <li>subject_story->crafted the foundation upon which future innovations stand</li>
+    <li>subject_gerund->laying down the keystones of advancement</li>
+    <li>subject->seeds of tomorrow</li>
+    <li>subject_story->planted ideas that would grow into transformative solutions</li>
+    <li>subject_story->cultivated a garden of knowledge, ripe with potential</li>
+    <li>subject_story->nurtured the roots of change with care and foresight</li>
+    <li>subject_gerund->sowing the future with today’s discoveries</li>
+    <li>subject->the ripple of curiosity</li>
+    <li>subject_story->set forth waves of inquiry that echoed through time</li>
+    <li>subject_story->dropped pebbles of innovation into the pond of knowledge</li>
+    <li>subject_story->watched as one question led to another, expanding the circle of understanding</li>
+    <li>subject_gerund->casting stones to create waves of progress</li>
+    <li>subject->the alchemy of progress</li>
+    <li>subject_story->merged disparate disciplines to unlock new realms of possibility</li>
+    <li>subject_story->turned the impossible into the inevitable through sheer ingenuity</li>
+    <li>subject_story->crafted solutions that reshaped the understanding of what's achievable</li>
+    <li>subject_gerund->blending science and magic into the fabric of reality</li>
+    <li>subject->the tapestry of discovery</li>
+    <li>subject_story->wove together threads of knowledge from the four corners of the world</li>
+    <li>subject_story->revealed patterns in the chaos, charting paths to untold innovations</li>
+    <li>subject_story->embroidered the annals of history with tales of serendipitous breakthroughs</li>
+    <li>subject_gerund->weaving the future from the loom of the present</li>
+    <li>subject->the crucible of creation</li>
+    <li>subject_story->fused raw elements into the building blocks of tomorrow</li>
+    <li>subject_story->tempered the fires of creativity to forge unprecedented technologies</li>
+    <li>subject_story->quenched the thirst for knowledge with the elixir of invention</li>
+    <li>subject_gerund->molding the raw materials of today into the artifacts of the future</li>
+    <li>subject->the beacon of enlightenment</li>
+    <li>subject_story->illuminated the dark corners of ignorance, guiding the way forward</li>
+    <li>subject_story->cast light on the unknown, making the unseen visible to curious minds</li>
+    <li>subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding</li>
+    <li>subject_gerund->lighting the torches of progress and knowledge</li>
+    <li>subject->the frontier of knowledge</li>
+    <li>subject_story->crossed new horizons in the pursuit of understanding</li>
+    <li>subject_story->challenged the status quo with groundbreaking theories</li>
+    <li>subject_story->merged ancient wisdom with modern technology for innovative solutions</li>
+    <li>subject_gerund->pushing the boundaries of science and art</li>
+    <li>subject->the essence of innovation</li>
+    <li>subject_story->transformed everyday materials into extraordinary tools</li>
+    <li>subject_story->paved the way for future generations with sustainable practices</li>
+    <li>subject_story->harnessed the power of nature to fuel new advancements</li>
+    <li>subject_gerund->fostering an ecosystem of creativity and progress</li>
+    <li>subject->the architects of tomorrow</li>
+    <li>subject_story->built the foundations for a utopia where technology serves all</li>
+    <li>subject_story->envisioned a future where harmony between technology and nature thrives</li>
+    <li>subject_story->crafted tools that empower humanity to reach its fullest potential</li>
+    <li>subject_gerund->laying the keystones for future landscapes</li>
+    <li>subject->exploratory leaps</li>
+    <li>subject_story->stepped boldly into uncharted territories of knowledge</li>
+    <li>subject_story->bridged the gap between the known and the unknown</li>
+    <li>subject_story->ventured where curiosity dared to lead</li>
+    <li>subject_gerund->embarking on journeys of discovery</li>
+    <li>subject->the essence of ingenuity</li>
+    <li>subject_story->transformed challenges into opportunities for growth</li>
+    <li>subject_story->applied creative thinking to overcome traditional obstacles</li>
+    <li>subject_story->crafted elegant solutions with a blend of art and science</li>
+    <li>subject_gerund->unlocking potential through innovation</li>
+    <li>subject->knowledge’s harvest</li>
+    <li>subject_story->gathered insights as one reaps the fields at harvest</li>
+    <li>subject_story->cultivated a bounty of understanding from the seeds of inquiry</li>
+    <li>subject_story->shared the fruits of research with the world</li>
+    <li>subject_gerund->reaping the rewards of relentless curiosity</li>
+    <li>subject->the puzzle of progress</li>
+    <li>subject_story->assembled the pieces of mystery to reveal the big picture</li>
+    <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
+    <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
+    <li>subject_gerund->piecing together the elements of advancement</li>
+  -->
+  <WNA_CivilianTech.generalRules.rulesStrings>
+    <li>subject->innovation's path</li>
+    <li>subject_story->unveiled simple truths behind complex phenomena</li>
+    <li>subject_story->simplified the intricate to make way for practical applications</li>
+    <li>subject_story->harnessed basic principles to achieve remarkable feats</li>
+    <li>subject_gerund->streamlining the essence of discovery</li>
+    <li>subject->building blocks of progress</li>
+    <li>subject_story->laid the groundwork for monumental leaps forward</li>
+    <li>subject_story->connected dots across disciplines to reveal new insights</li>
+    <li>subject_story->crafted the foundation upon which future innovations stand</li>
+    <li>subject_gerund->laying down the keystones of advancement</li>
+    <li>subject->seeds of tomorrow</li>
+    <li>subject_story->planted ideas that would grow into transformative solutions</li>
+    <li>subject_story->cultivated a garden of knowledge, ripe with potential</li>
+    <li>subject_story->nurtured the roots of change with care and foresight</li>
+    <li>subject_gerund->sowing the future with today’s discoveries</li>
+    <li>subject->the ripple of curiosity</li>
+    <li>subject_story->set forth waves of inquiry that echoed through time</li>
+    <li>subject_story->dropped pebbles of innovation into the pond of knowledge</li>
+    <li>subject_story->watched as one question led to another, expanding the circle of understanding</li>
+    <li>subject_gerund->casting stones to create waves of progress</li>
+    <li>subject->the alchemy of progress</li>
+    <li>subject_story->merged disparate disciplines to unlock new realms of possibility</li>
+    <li>subject_story->turned the impossible into the inevitable through sheer ingenuity</li>
+    <li>subject_story->crafted solutions that reshaped the understanding of what's achievable</li>
+    <li>subject_gerund->blending science and magic into the fabric of reality</li>
+    <li>subject->the tapestry of discovery</li>
+    <li>subject_story->wove together threads of knowledge from the four corners of the world</li>
+    <li>subject_story->revealed patterns in the chaos, charting paths to untold innovations</li>
+    <li>subject_story->embroidered the annals of history with tales of serendipitous breakthroughs</li>
+    <li>subject_gerund->weaving the future from the loom of the present</li>
+    <li>subject->the crucible of creation</li>
+    <li>subject_story->fused raw elements into the building blocks of tomorrow</li>
+    <li>subject_story->tempered the fires of creativity to forge unprecedented technologies</li>
+    <li>subject_story->quenched the thirst for knowledge with the elixir of invention</li>
+    <li>subject_gerund->molding the raw materials of today into the artifacts of the future</li>
+    <li>subject->the beacon of enlightenment</li>
+    <li>subject_story->illuminated the dark corners of ignorance, guiding the way forward</li>
+    <li>subject_story->cast light on the unknown, making the unseen visible to curious minds</li>
+    <li>subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding</li>
+    <li>subject_gerund->lighting the torches of progress and knowledge</li>
+    <li>subject->the frontier of knowledge</li>
+    <li>subject_story->crossed new horizons in the pursuit of understanding</li>
+    <li>subject_story->challenged the status quo with groundbreaking theories</li>
+    <li>subject_story->merged ancient wisdom with modern technology for innovative solutions</li>
+    <li>subject_gerund->pushing the boundaries of science and art</li>
+    <li>subject->the essence of innovation</li>
+    <li>subject_story->transformed everyday materials into extraordinary tools</li>
+    <li>subject_story->paved the way for future generations with sustainable practices</li>
+    <li>subject_story->harnessed the power of nature to fuel new advancements</li>
+    <li>subject_gerund->fostering an ecosystem of creativity and progress</li>
+    <li>subject->the architects of tomorrow</li>
+    <li>subject_story->built the foundations for a utopia where technology serves all</li>
+    <li>subject_story->envisioned a future where harmony between technology and nature thrives</li>
+    <li>subject_story->crafted tools that empower humanity to reach its fullest potential</li>
+    <li>subject_gerund->laying the keystones for future landscapes</li>
+    <li>subject->exploratory leaps</li>
+    <li>subject_story->stepped boldly into uncharted territories of knowledge</li>
+    <li>subject_story->bridged the gap between the known and the unknown</li>
+    <li>subject_story->ventured where curiosity dared to lead</li>
+    <li>subject_gerund->embarking on journeys of discovery</li>
+    <li>subject->the essence of ingenuity</li>
+    <li>subject_story->transformed challenges into opportunities for growth</li>
+    <li>subject_story->applied creative thinking to overcome traditional obstacles</li>
+    <li>subject_story->crafted elegant solutions with a blend of art and science</li>
+    <li>subject_gerund->unlocking potential through innovation</li>
+    <li>subject->knowledge’s harvest</li>
+    <li>subject_story->gathered insights as one reaps the fields at harvest</li>
+    <li>subject_story->cultivated a bounty of understanding from the seeds of inquiry</li>
+    <li>subject_story->shared the fruits of research with the world</li>
+    <li>subject_gerund->reaping the rewards of relentless curiosity</li>
+    <li>subject->the puzzle of progress</li>
+    <li>subject_story->assembled the pieces of mystery to reveal the big picture</li>
+    <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
+    <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
+    <li>subject_gerund->piecing together the elements of advancement</li>
+  </WNA_CivilianTech.generalRules.rulesStrings>
+  
+  <!-- EN: field analysis -->
+  <WNA_FieldAnalysis.label>field analysis</WNA_FieldAnalysis.label>
+  <!-- EN: basic theories and techniques to manipulate field instead of manipulate solid matter. -->
+  <WNA_FieldAnalysis.description>basic theories and techniques to manipulate field instead of manipulate solid matter.</WNA_FieldAnalysis.description>
+  <!-- EN:
+    <li>subject->innovation's path</li>
+    <li>subject_story->unveiled simple truths behind complex phenomena</li>
+    <li>subject_story->simplified the intricate to make way for practical applications</li>
+    <li>subject_story->harnessed basic principles to achieve remarkable feats</li>
+    <li>subject_gerund->streamlining the essence of discovery</li>
+    <li>subject->building blocks of progress</li>
+    <li>subject_story->laid the groundwork for monumental leaps forward</li>
+    <li>subject_story->connected dots across disciplines to reveal new insights</li>
+    <li>subject_story->crafted the foundation upon which future innovations stand</li>
+    <li>subject_gerund->laying down the keystones of advancement</li>
+    <li>subject->seeds of tomorrow</li>
+    <li>subject_story->planted ideas that would grow into transformative solutions</li>
+    <li>subject_story->cultivated a garden of knowledge, ripe with potential</li>
+    <li>subject_story->nurtured the roots of change with care and foresight</li>
+    <li>subject_gerund->sowing the future with today’s discoveries</li>
+    <li>subject->the ripple of curiosity</li>
+    <li>subject_story->set forth waves of inquiry that echoed through time</li>
+    <li>subject_story->dropped pebbles of innovation into the pond of knowledge</li>
+    <li>subject_story->watched as one question led to another, expanding the circle of understanding</li>
+    <li>subject_gerund->casting stones to create waves of progress</li>
+    <li>subject->the alchemy of progress</li>
+    <li>subject_story->merged disparate disciplines to unlock new realms of possibility</li>
+    <li>subject_story->turned the impossible into the inevitable through sheer ingenuity</li>
+    <li>subject_story->crafted solutions that reshaped the understanding of what's achievable</li>
+    <li>subject_gerund->blending science and magic into the fabric of reality</li>
+    <li>subject->the tapestry of discovery</li>
+    <li>subject_story->wove together threads of knowledge from the four corners of the world</li>
+    <li>subject_story->revealed patterns in the chaos, charting paths to untold innovations</li>
+    <li>subject_story->embroidered the annals of history with tales of serendipitous breakthroughs</li>
+    <li>subject_gerund->weaving the future from the loom of the present</li>
+    <li>subject->the crucible of creation</li>
+    <li>subject_story->fused raw elements into the building blocks of tomorrow</li>
+    <li>subject_story->tempered the fires of creativity to forge unprecedented technologies</li>
+    <li>subject_story->quenched the thirst for knowledge with the elixir of invention</li>
+    <li>subject_gerund->molding the raw materials of today into the artifacts of the future</li>
+    <li>subject->the beacon of enlightenment</li>
+    <li>subject_story->illuminated the dark corners of ignorance, guiding the way forward</li>
+    <li>subject_story->cast light on the unknown, making the unseen visible to curious minds</li>
+    <li>subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding</li>
+    <li>subject_gerund->lighting the torches of progress and knowledge</li>
+    <li>subject->the frontier of knowledge</li>
+    <li>subject_story->crossed new horizons in the pursuit of understanding</li>
+    <li>subject_story->challenged the status quo with groundbreaking theories</li>
+    <li>subject_story->merged ancient wisdom with modern technology for innovative solutions</li>
+    <li>subject_gerund->pushing the boundaries of science and art</li>
+    <li>subject->the essence of innovation</li>
+    <li>subject_story->transformed everyday materials into extraordinary tools</li>
+    <li>subject_story->paved the way for future generations with sustainable practices</li>
+    <li>subject_story->harnessed the power of nature to fuel new advancements</li>
+    <li>subject_gerund->fostering an ecosystem of creativity and progress</li>
+    <li>subject->the architects of tomorrow</li>
+    <li>subject_story->built the foundations for a utopia where technology serves all</li>
+    <li>subject_story->envisioned a future where harmony between technology and nature thrives</li>
+    <li>subject_story->crafted tools that empower humanity to reach its fullest potential</li>
+    <li>subject_gerund->laying the keystones for future landscapes</li>
+    <li>subject->exploratory leaps</li>
+    <li>subject_story->stepped boldly into uncharted territories of knowledge</li>
+    <li>subject_story->bridged the gap between the known and the unknown</li>
+    <li>subject_story->ventured where curiosity dared to lead</li>
+    <li>subject_gerund->embarking on journeys of discovery</li>
+    <li>subject->the essence of ingenuity</li>
+    <li>subject_story->transformed challenges into opportunities for growth</li>
+    <li>subject_story->applied creative thinking to overcome traditional obstacles</li>
+    <li>subject_story->crafted elegant solutions with a blend of art and science</li>
+    <li>subject_gerund->unlocking potential through innovation</li>
+    <li>subject->knowledge’s harvest</li>
+    <li>subject_story->gathered insights as one reaps the fields at harvest</li>
+    <li>subject_story->cultivated a bounty of understanding from the seeds of inquiry</li>
+    <li>subject_story->shared the fruits of research with the world</li>
+    <li>subject_gerund->reaping the rewards of relentless curiosity</li>
+    <li>subject->the puzzle of progress</li>
+    <li>subject_story->assembled the pieces of mystery to reveal the big picture</li>
+    <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
+    <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
+    <li>subject_gerund->piecing together the elements of advancement</li>
+  -->
+  <WNA_FieldAnalysis.generalRules.rulesStrings>
+    <li>subject->innovation's path</li>
+    <li>subject_story->unveiled simple truths behind complex phenomena</li>
+    <li>subject_story->simplified the intricate to make way for practical applications</li>
+    <li>subject_story->harnessed basic principles to achieve remarkable feats</li>
+    <li>subject_gerund->streamlining the essence of discovery</li>
+    <li>subject->building blocks of progress</li>
+    <li>subject_story->laid the groundwork for monumental leaps forward</li>
+    <li>subject_story->connected dots across disciplines to reveal new insights</li>
+    <li>subject_story->crafted the foundation upon which future innovations stand</li>
+    <li>subject_gerund->laying down the keystones of advancement</li>
+    <li>subject->seeds of tomorrow</li>
+    <li>subject_story->planted ideas that would grow into transformative solutions</li>
+    <li>subject_story->cultivated a garden of knowledge, ripe with potential</li>
+    <li>subject_story->nurtured the roots of change with care and foresight</li>
+    <li>subject_gerund->sowing the future with today’s discoveries</li>
+    <li>subject->the ripple of curiosity</li>
+    <li>subject_story->set forth waves of inquiry that echoed through time</li>
+    <li>subject_story->dropped pebbles of innovation into the pond of knowledge</li>
+    <li>subject_story->watched as one question led to another, expanding the circle of understanding</li>
+    <li>subject_gerund->casting stones to create waves of progress</li>
+    <li>subject->the alchemy of progress</li>
+    <li>subject_story->merged disparate disciplines to unlock new realms of possibility</li>
+    <li>subject_story->turned the impossible into the inevitable through sheer ingenuity</li>
+    <li>subject_story->crafted solutions that reshaped the understanding of what's achievable</li>
+    <li>subject_gerund->blending science and magic into the fabric of reality</li>
+    <li>subject->the tapestry of discovery</li>
+    <li>subject_story->wove together threads of knowledge from the four corners of the world</li>
+    <li>subject_story->revealed patterns in the chaos, charting paths to untold innovations</li>
+    <li>subject_story->embroidered the annals of history with tales of serendipitous breakthroughs</li>
+    <li>subject_gerund->weaving the future from the loom of the present</li>
+    <li>subject->the crucible of creation</li>
+    <li>subject_story->fused raw elements into the building blocks of tomorrow</li>
+    <li>subject_story->tempered the fires of creativity to forge unprecedented technologies</li>
+    <li>subject_story->quenched the thirst for knowledge with the elixir of invention</li>
+    <li>subject_gerund->molding the raw materials of today into the artifacts of the future</li>
+    <li>subject->the beacon of enlightenment</li>
+    <li>subject_story->illuminated the dark corners of ignorance, guiding the way forward</li>
+    <li>subject_story->cast light on the unknown, making the unseen visible to curious minds</li>
+    <li>subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding</li>
+    <li>subject_gerund->lighting the torches of progress and knowledge</li>
+    <li>subject->the frontier of knowledge</li>
+    <li>subject_story->crossed new horizons in the pursuit of understanding</li>
+    <li>subject_story->challenged the status quo with groundbreaking theories</li>
+    <li>subject_story->merged ancient wisdom with modern technology for innovative solutions</li>
+    <li>subject_gerund->pushing the boundaries of science and art</li>
+    <li>subject->the essence of innovation</li>
+    <li>subject_story->transformed everyday materials into extraordinary tools</li>
+    <li>subject_story->paved the way for future generations with sustainable practices</li>
+    <li>subject_story->harnessed the power of nature to fuel new advancements</li>
+    <li>subject_gerund->fostering an ecosystem of creativity and progress</li>
+    <li>subject->the architects of tomorrow</li>
+    <li>subject_story->built the foundations for a utopia where technology serves all</li>
+    <li>subject_story->envisioned a future where harmony between technology and nature thrives</li>
+    <li>subject_story->crafted tools that empower humanity to reach its fullest potential</li>
+    <li>subject_gerund->laying the keystones for future landscapes</li>
+    <li>subject->exploratory leaps</li>
+    <li>subject_story->stepped boldly into uncharted territories of knowledge</li>
+    <li>subject_story->bridged the gap between the known and the unknown</li>
+    <li>subject_story->ventured where curiosity dared to lead</li>
+    <li>subject_gerund->embarking on journeys of discovery</li>
+    <li>subject->the essence of ingenuity</li>
+    <li>subject_story->transformed challenges into opportunities for growth</li>
+    <li>subject_story->applied creative thinking to overcome traditional obstacles</li>
+    <li>subject_story->crafted elegant solutions with a blend of art and science</li>
+    <li>subject_gerund->unlocking potential through innovation</li>
+    <li>subject->knowledge’s harvest</li>
+    <li>subject_story->gathered insights as one reaps the fields at harvest</li>
+    <li>subject_story->cultivated a bounty of understanding from the seeds of inquiry</li>
+    <li>subject_story->shared the fruits of research with the world</li>
+    <li>subject_gerund->reaping the rewards of relentless curiosity</li>
+    <li>subject->the puzzle of progress</li>
+    <li>subject_story->assembled the pieces of mystery to reveal the big picture</li>
+    <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
+    <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
+    <li>subject_gerund->piecing together the elements of advancement</li>
+  </WNA_FieldAnalysis.generalRules.rulesStrings>
+  
+  <!-- EN: usage of excess lives -->
+  <WNA_HumanUsage.label>usage of excess lives</WNA_HumanUsage.label>
+  <!-- EN: sometimes there can be excess lives that causing burden to our community, and here's some tricks about how to get rid of them while doing good, or at least no harm to our community. -->
+  <WNA_HumanUsage.description>sometimes there can be excess lives that causing burden to our community, and here's some tricks about how to get rid of them while doing good, or at least no harm to our community.</WNA_HumanUsage.description>
+  <!-- EN:
+    <li>subject->innovation's path</li>
+    <li>subject_story->unveiled simple truths behind complex phenomena</li>
+    <li>subject_story->simplified the intricate to make way for practical applications</li>
+    <li>subject_story->harnessed basic principles to achieve remarkable feats</li>
+    <li>subject_gerund->streamlining the essence of discovery</li>
+    <li>subject->building blocks of progress</li>
+    <li>subject_story->laid the groundwork for monumental leaps forward</li>
+    <li>subject_story->connected dots across disciplines to reveal new insights</li>
+    <li>subject_story->crafted the foundation upon which future innovations stand</li>
+    <li>subject_gerund->laying down the keystones of advancement</li>
+    <li>subject->seeds of tomorrow</li>
+    <li>subject_story->planted ideas that would grow into transformative solutions</li>
+    <li>subject_story->cultivated a garden of knowledge, ripe with potential</li>
+    <li>subject_story->nurtured the roots of change with care and foresight</li>
+    <li>subject_gerund->sowing the future with today’s discoveries</li>
+    <li>subject->the ripple of curiosity</li>
+    <li>subject_story->set forth waves of inquiry that echoed through time</li>
+    <li>subject_story->dropped pebbles of innovation into the pond of knowledge</li>
+    <li>subject_story->watched as one question led to another, expanding the circle of understanding</li>
+    <li>subject_gerund->casting stones to create waves of progress</li>
+    <li>subject->the alchemy of progress</li>
+    <li>subject_story->merged disparate disciplines to unlock new realms of possibility</li>
+    <li>subject_story->turned the impossible into the inevitable through sheer ingenuity</li>
+    <li>subject_story->crafted solutions that reshaped the understanding of what's achievable</li>
+    <li>subject_gerund->blending science and magic into the fabric of reality</li>
+    <li>subject->the tapestry of discovery</li>
+    <li>subject_story->wove together threads of knowledge from the four corners of the world</li>
+    <li>subject_story->revealed patterns in the chaos, charting paths to untold innovations</li>
+    <li>subject_story->embroidered the annals of history with tales of serendipitous breakthroughs</li>
+    <li>subject_gerund->weaving the future from the loom of the present</li>
+    <li>subject->the crucible of creation</li>
+    <li>subject_story->fused raw elements into the building blocks of tomorrow</li>
+    <li>subject_story->tempered the fires of creativity to forge unprecedented technologies</li>
+    <li>subject_story->quenched the thirst for knowledge with the elixir of invention</li>
+    <li>subject_gerund->molding the raw materials of today into the artifacts of the future</li>
+    <li>subject->the beacon of enlightenment</li>
+    <li>subject_story->illuminated the dark corners of ignorance, guiding the way forward</li>
+    <li>subject_story->cast light on the unknown, making the unseen visible to curious minds</li>
+    <li>subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding</li>
+    <li>subject_gerund->lighting the torches of progress and knowledge</li>
+    <li>subject->the frontier of knowledge</li>
+    <li>subject_story->crossed new horizons in the pursuit of understanding</li>
+    <li>subject_story->challenged the status quo with groundbreaking theories</li>
+    <li>subject_story->merged ancient wisdom with modern technology for innovative solutions</li>
+    <li>subject_gerund->pushing the boundaries of science and art</li>
+    <li>subject->the essence of innovation</li>
+    <li>subject_story->transformed everyday materials into extraordinary tools</li>
+    <li>subject_story->paved the way for future generations with sustainable practices</li>
+    <li>subject_story->harnessed the power of nature to fuel new advancements</li>
+    <li>subject_gerund->fostering an ecosystem of creativity and progress</li>
+    <li>subject->the architects of tomorrow</li>
+    <li>subject_story->built the foundations for a utopia where technology serves all</li>
+    <li>subject_story->envisioned a future where harmony between technology and nature thrives</li>
+    <li>subject_story->crafted tools that empower humanity to reach its fullest potential</li>
+    <li>subject_gerund->laying the keystones for future landscapes</li>
+    <li>subject->exploratory leaps</li>
+    <li>subject_story->stepped boldly into uncharted territories of knowledge</li>
+    <li>subject_story->bridged the gap between the known and the unknown</li>
+    <li>subject_story->ventured where curiosity dared to lead</li>
+    <li>subject_gerund->embarking on journeys of discovery</li>
+    <li>subject->the essence of ingenuity</li>
+    <li>subject_story->transformed challenges into opportunities for growth</li>
+    <li>subject_story->applied creative thinking to overcome traditional obstacles</li>
+    <li>subject_story->crafted elegant solutions with a blend of art and science</li>
+    <li>subject_gerund->unlocking potential through innovation</li>
+    <li>subject->knowledge’s harvest</li>
+    <li>subject_story->gathered insights as one reaps the fields at harvest</li>
+    <li>subject_story->cultivated a bounty of understanding from the seeds of inquiry</li>
+    <li>subject_story->shared the fruits of research with the world</li>
+    <li>subject_gerund->reaping the rewards of relentless curiosity</li>
+    <li>subject->the puzzle of progress</li>
+    <li>subject_story->assembled the pieces of mystery to reveal the big picture</li>
+    <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
+    <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
+    <li>subject_gerund->piecing together the elements of advancement</li>
+  -->
+  <WNA_HumanUsage.generalRules.rulesStrings>
+    <li>subject->innovation's path</li>
+    <li>subject_story->unveiled simple truths behind complex phenomena</li>
+    <li>subject_story->simplified the intricate to make way for practical applications</li>
+    <li>subject_story->harnessed basic principles to achieve remarkable feats</li>
+    <li>subject_gerund->streamlining the essence of discovery</li>
+    <li>subject->building blocks of progress</li>
+    <li>subject_story->laid the groundwork for monumental leaps forward</li>
+    <li>subject_story->connected dots across disciplines to reveal new insights</li>
+    <li>subject_story->crafted the foundation upon which future innovations stand</li>
+    <li>subject_gerund->laying down the keystones of advancement</li>
+    <li>subject->seeds of tomorrow</li>
+    <li>subject_story->planted ideas that would grow into transformative solutions</li>
+    <li>subject_story->cultivated a garden of knowledge, ripe with potential</li>
+    <li>subject_story->nurtured the roots of change with care and foresight</li>
+    <li>subject_gerund->sowing the future with today’s discoveries</li>
+    <li>subject->the ripple of curiosity</li>
+    <li>subject_story->set forth waves of inquiry that echoed through time</li>
+    <li>subject_story->dropped pebbles of innovation into the pond of knowledge</li>
+    <li>subject_story->watched as one question led to another, expanding the circle of understanding</li>
+    <li>subject_gerund->casting stones to create waves of progress</li>
+    <li>subject->the alchemy of progress</li>
+    <li>subject_story->merged disparate disciplines to unlock new realms of possibility</li>
+    <li>subject_story->turned the impossible into the inevitable through sheer ingenuity</li>
+    <li>subject_story->crafted solutions that reshaped the understanding of what's achievable</li>
+    <li>subject_gerund->blending science and magic into the fabric of reality</li>
+    <li>subject->the tapestry of discovery</li>
+    <li>subject_story->wove together threads of knowledge from the four corners of the world</li>
+    <li>subject_story->revealed patterns in the chaos, charting paths to untold innovations</li>
+    <li>subject_story->embroidered the annals of history with tales of serendipitous breakthroughs</li>
+    <li>subject_gerund->weaving the future from the loom of the present</li>
+    <li>subject->the crucible of creation</li>
+    <li>subject_story->fused raw elements into the building blocks of tomorrow</li>
+    <li>subject_story->tempered the fires of creativity to forge unprecedented technologies</li>
+    <li>subject_story->quenched the thirst for knowledge with the elixir of invention</li>
+    <li>subject_gerund->molding the raw materials of today into the artifacts of the future</li>
+    <li>subject->the beacon of enlightenment</li>
+    <li>subject_story->illuminated the dark corners of ignorance, guiding the way forward</li>
+    <li>subject_story->cast light on the unknown, making the unseen visible to curious minds</li>
+    <li>subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding</li>
+    <li>subject_gerund->lighting the torches of progress and knowledge</li>
+    <li>subject->the frontier of knowledge</li>
+    <li>subject_story->crossed new horizons in the pursuit of understanding</li>
+    <li>subject_story->challenged the status quo with groundbreaking theories</li>
+    <li>subject_story->merged ancient wisdom with modern technology for innovative solutions</li>
+    <li>subject_gerund->pushing the boundaries of science and art</li>
+    <li>subject->the essence of innovation</li>
+    <li>subject_story->transformed everyday materials into extraordinary tools</li>
+    <li>subject_story->paved the way for future generations with sustainable practices</li>
+    <li>subject_story->harnessed the power of nature to fuel new advancements</li>
+    <li>subject_gerund->fostering an ecosystem of creativity and progress</li>
+    <li>subject->the architects of tomorrow</li>
+    <li>subject_story->built the foundations for a utopia where technology serves all</li>
+    <li>subject_story->envisioned a future where harmony between technology and nature thrives</li>
+    <li>subject_story->crafted tools that empower humanity to reach its fullest potential</li>
+    <li>subject_gerund->laying the keystones for future landscapes</li>
+    <li>subject->exploratory leaps</li>
+    <li>subject_story->stepped boldly into uncharted territories of knowledge</li>
+    <li>subject_story->bridged the gap between the known and the unknown</li>
+    <li>subject_story->ventured where curiosity dared to lead</li>
+    <li>subject_gerund->embarking on journeys of discovery</li>
+    <li>subject->the essence of ingenuity</li>
+    <li>subject_story->transformed challenges into opportunities for growth</li>
+    <li>subject_story->applied creative thinking to overcome traditional obstacles</li>
+    <li>subject_story->crafted elegant solutions with a blend of art and science</li>
+    <li>subject_gerund->unlocking potential through innovation</li>
+    <li>subject->knowledge’s harvest</li>
+    <li>subject_story->gathered insights as one reaps the fields at harvest</li>
+    <li>subject_story->cultivated a bounty of understanding from the seeds of inquiry</li>
+    <li>subject_story->shared the fruits of research with the world</li>
+    <li>subject_gerund->reaping the rewards of relentless curiosity</li>
+    <li>subject->the puzzle of progress</li>
+    <li>subject_story->assembled the pieces of mystery to reveal the big picture</li>
+    <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
+    <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
+    <li>subject_gerund->piecing together the elements of advancement</li>
+  </WNA_HumanUsage.generalRules.rulesStrings>
+  
+  <!-- EN: iron guardian -->
+  <WNA_IronGuardian.label>iron guardian</WNA_IronGuardian.label>
+  <!-- EN: the advanced technology used by whelingnorther alliance to arm their elite fighters. -->
+  <WNA_IronGuardian.description>the advanced technology used by whelingnorther alliance to arm their elite fighters.</WNA_IronGuardian.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -806,12 +1273,10 @@
     <li>subject_gerund->piecing together the elements of advancement</li>
   </WNA_IronGuardian.generalRules.rulesStrings>
   
-  <!-- EN: matter transformation -->
-  <WNA_MatterTransformation.label>matter transformation</WNA_MatterTransformation.label>
-  <!-- EN: the knowledge of using whelingnorther technique to reform normal materials.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_MatterTransformation.description>the knowledge of using whelingnorther technique to reform normal materials.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MatterTransformation.description>
+  <!-- EN: lysis field -->
+  <WNA_LysisField.label>lysis field</WNA_LysisField.label>
+  <!-- EN: an artificial field that can weaken inner bounds of solid matter, resulting it being fragile. when affect matter can no longer tolerate it and breaks down, this field can spread to other things. -->
+  <WNA_LysisField.description>an artificial field that can weaken inner bounds of solid matter, resulting it being fragile. when affect matter can no longer tolerate it and breaks down, this field can spread to other things.</WNA_LysisField.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -889,7 +1354,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
-  <WNA_MatterTransformation.generalRules.rulesStrings>
+  <WNA_LysisField.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
     <li>subject_story->simplified the intricate to make way for practical applications</li>
@@ -965,14 +1430,12 @@
     <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
-  </WNA_MatterTransformation.generalRules.rulesStrings>
+  </WNA_LysisField.generalRules.rulesStrings>
   
-  <!-- EN: siege equipment -->
-  <WNA_NexusLegion.label>siege equipment</WNA_NexusLegion.label>
-  <!-- EN: by studying the published techprints your colonists can now replica the armor and weapon used by the rebels' main forces.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_NexusLegion.description>by studying the published techprints your colonists can now replica the armor and weapon used by the rebels' main forces.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_NexusLegion.description>
+  <!-- EN: military material -->
+  <WNA_MilitaryMaterial.label>military material</WNA_MilitaryMaterial.label>
+  <!-- EN: the special techniques of how to make unique materials used by whelingnorther military. these special techniques is hold secret by Whelingnorther Alliance. -->
+  <WNA_MilitaryMaterial.description>the special techniques of how to make unique materials used by whelingnorther military. these special techniques is hold secret by Whelingnorther Alliance.</WNA_MilitaryMaterial.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1050,7 +1513,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
-  <WNA_NexusLegion.generalRules.rulesStrings>
+  <WNA_MilitaryMaterial.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
     <li>subject_story->simplified the intricate to make way for practical applications</li>
@@ -1126,14 +1589,12 @@
     <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
-  </WNA_NexusLegion.generalRules.rulesStrings>
+  </WNA_MilitaryMaterial.generalRules.rulesStrings>
   
-  <!-- EN: rebels arsenal -->
-  <WNA_RebelArsenal.label>rebels arsenal</WNA_RebelArsenal.label>
-  <!-- EN: dig back to the youth of the Whelingnorther Humanoid Revolt and recreate their early-time apparels and weapons.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_RebelArsenal.description>dig back to the youth of the Whelingnorther Humanoid Revolt and recreate their early-time apparels and weapons.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RebelArsenal.description>
+  <!-- EN: military supply -->
+  <WNA_MilitarySupply.label>military supply</WNA_MilitarySupply.label>
+  <!-- EN: the special techniques of how to make whelingnorther military supplies out from common resources. these special techniques is hold secret by Whelingnorther Alliance. -->
+  <WNA_MilitarySupply.description>the special techniques of how to make whelingnorther military supplies out from common resources. these special techniques is hold secret by Whelingnorther Alliance.</WNA_MilitarySupply.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1211,7 +1672,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
-  <WNA_RebelArsenal.generalRules.rulesStrings>
+  <WNA_MilitarySupply.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
     <li>subject_story->simplified the intricate to make way for practical applications</li>
@@ -1287,14 +1748,12 @@
     <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
-  </WNA_RebelArsenal.generalRules.rulesStrings>
+  </WNA_MilitarySupply.generalRules.rulesStrings>
   
-  <!-- EN: energy shield -->
-  <WNA_RebelShield.label>energy shield</WNA_RebelShield.label>
-  <!-- EN: primary understanding of energy shields used by WHR, which is a little different from common shield belts.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_RebelShield.description>primary understanding of energy shields used by WHR, which is a little different from common shield belts.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RebelShield.description>
+  <!-- EN: parasomnia -->
+  <WNA_Parasomnia.label>parasomnia</WNA_Parasomnia.label>
+  <!-- EN: parasomnia. -->
+  <WNA_Parasomnia.description>parasomnia.</WNA_Parasomnia.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1372,7 +1831,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
-  <WNA_RebelShield.generalRules.rulesStrings>
+  <WNA_Parasomnia.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
     <li>subject_story->simplified the intricate to make way for practical applications</li>
@@ -1448,14 +1907,12 @@
     <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
-  </WNA_RebelShield.generalRules.rulesStrings>
+  </WNA_Parasomnia.generalRules.rulesStrings>
   
-  <!-- EN: practical tools -->
-  <WNA_RebelTools.label>practical tools</WNA_RebelTools.label>
-  <!-- EN: Gain some insights of the neat tools developed by WHR. Good for both production and combat.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_RebelTools.description>Gain some insights of the neat tools developed by WHR. Good for both production and combat.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RebelTools.description>
+  <!-- EN: particle armory -->
+  <WNA_ParticleArmory.label>particle armory</WNA_ParticleArmory.label>
+  <!-- EN: basic theories and techniques about how to produce and make use of unique particles that exists in nature world or not. -->
+  <WNA_ParticleArmory.description>basic theories and techniques about how to produce and make use of unique particles that exists in nature world or not.</WNA_ParticleArmory.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1533,7 +1990,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
-  <WNA_RebelTools.generalRules.rulesStrings>
+  <WNA_ParticleArmory.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
     <li>subject_story->simplified the intricate to make way for practical applications</li>
@@ -1609,14 +2066,12 @@
     <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
-  </WNA_RebelTools.generalRules.rulesStrings>
+  </WNA_ParticleArmory.generalRules.rulesStrings>
   
-  <!-- EN: whelingnorther defence system -->
-  <WNA_Security.label>whelingnorther defence system</WNA_Security.label>
-  <!-- EN: some most simple methods to use whelingnorther technique to defend an outpost, a colony ot something else.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_Security.description>some most simple methods to use whelingnorther technique to defend an outpost, a colony ot something else.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Security.description>
+  <!-- EN: psychic dawn -->
+  <WNA_PsychicDawn.label>psychic dawn</WNA_PsychicDawn.label>
+  <!-- EN: mind over matter. -->
+  <WNA_PsychicDawn.description>mind over matter.</WNA_PsychicDawn.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1694,7 +2149,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
-  <WNA_Security.generalRules.rulesStrings>
+  <WNA_PsychicDawn.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
     <li>subject_story->simplified the intricate to make way for practical applications</li>
@@ -1770,14 +2225,171 @@
     <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
-  </WNA_Security.generalRules.rulesStrings>
+  </WNA_PsychicDawn.generalRules.rulesStrings>
   
-  <!-- EN: whelingnorther standard equipment -->
-  <WNA_StandardArsenal.label>whelingnorther standard equipment</WNA_StandardArsenal.label>
-  <!-- EN: the technique of crafting WNA standard equipments. even whelingnorthan themselves cannot ignore the power of these weapons.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_StandardArsenal.description>the technique of crafting WNA standard equipments. even whelingnorthan themselves cannot ignore the power of these weapons.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_StandardArsenal.description>
+  <!-- EN: secret techniques -->
+  <WNA_SecretTech.label>secret techniques</WNA_SecretTech.label>
+  <!-- EN: secret techniques. -->
+  <WNA_SecretTech.description>secret techniques.</WNA_SecretTech.description>
+  <!-- EN:
+    <li>subject->innovation's path</li>
+    <li>subject_story->unveiled simple truths behind complex phenomena</li>
+    <li>subject_story->simplified the intricate to make way for practical applications</li>
+    <li>subject_story->harnessed basic principles to achieve remarkable feats</li>
+    <li>subject_gerund->streamlining the essence of discovery</li>
+    <li>subject->building blocks of progress</li>
+    <li>subject_story->laid the groundwork for monumental leaps forward</li>
+    <li>subject_story->connected dots across disciplines to reveal new insights</li>
+    <li>subject_story->crafted the foundation upon which future innovations stand</li>
+    <li>subject_gerund->laying down the keystones of advancement</li>
+    <li>subject->seeds of tomorrow</li>
+    <li>subject_story->planted ideas that would grow into transformative solutions</li>
+    <li>subject_story->cultivated a garden of knowledge, ripe with potential</li>
+    <li>subject_story->nurtured the roots of change with care and foresight</li>
+    <li>subject_gerund->sowing the future with today’s discoveries</li>
+    <li>subject->the ripple of curiosity</li>
+    <li>subject_story->set forth waves of inquiry that echoed through time</li>
+    <li>subject_story->dropped pebbles of innovation into the pond of knowledge</li>
+    <li>subject_story->watched as one question led to another, expanding the circle of understanding</li>
+    <li>subject_gerund->casting stones to create waves of progress</li>
+    <li>subject->the alchemy of progress</li>
+    <li>subject_story->merged disparate disciplines to unlock new realms of possibility</li>
+    <li>subject_story->turned the impossible into the inevitable through sheer ingenuity</li>
+    <li>subject_story->crafted solutions that reshaped the understanding of what's achievable</li>
+    <li>subject_gerund->blending science and magic into the fabric of reality</li>
+    <li>subject->the tapestry of discovery</li>
+    <li>subject_story->wove together threads of knowledge from the four corners of the world</li>
+    <li>subject_story->revealed patterns in the chaos, charting paths to untold innovations</li>
+    <li>subject_story->embroidered the annals of history with tales of serendipitous breakthroughs</li>
+    <li>subject_gerund->weaving the future from the loom of the present</li>
+    <li>subject->the crucible of creation</li>
+    <li>subject_story->fused raw elements into the building blocks of tomorrow</li>
+    <li>subject_story->tempered the fires of creativity to forge unprecedented technologies</li>
+    <li>subject_story->quenched the thirst for knowledge with the elixir of invention</li>
+    <li>subject_gerund->molding the raw materials of today into the artifacts of the future</li>
+    <li>subject->the beacon of enlightenment</li>
+    <li>subject_story->illuminated the dark corners of ignorance, guiding the way forward</li>
+    <li>subject_story->cast light on the unknown, making the unseen visible to curious minds</li>
+    <li>subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding</li>
+    <li>subject_gerund->lighting the torches of progress and knowledge</li>
+    <li>subject->the frontier of knowledge</li>
+    <li>subject_story->crossed new horizons in the pursuit of understanding</li>
+    <li>subject_story->challenged the status quo with groundbreaking theories</li>
+    <li>subject_story->merged ancient wisdom with modern technology for innovative solutions</li>
+    <li>subject_gerund->pushing the boundaries of science and art</li>
+    <li>subject->the essence of innovation</li>
+    <li>subject_story->transformed everyday materials into extraordinary tools</li>
+    <li>subject_story->paved the way for future generations with sustainable practices</li>
+    <li>subject_story->harnessed the power of nature to fuel new advancements</li>
+    <li>subject_gerund->fostering an ecosystem of creativity and progress</li>
+    <li>subject->the architects of tomorrow</li>
+    <li>subject_story->built the foundations for a utopia where technology serves all</li>
+    <li>subject_story->envisioned a future where harmony between technology and nature thrives</li>
+    <li>subject_story->crafted tools that empower humanity to reach its fullest potential</li>
+    <li>subject_gerund->laying the keystones for future landscapes</li>
+    <li>subject->exploratory leaps</li>
+    <li>subject_story->stepped boldly into uncharted territories of knowledge</li>
+    <li>subject_story->bridged the gap between the known and the unknown</li>
+    <li>subject_story->ventured where curiosity dared to lead</li>
+    <li>subject_gerund->embarking on journeys of discovery</li>
+    <li>subject->the essence of ingenuity</li>
+    <li>subject_story->transformed challenges into opportunities for growth</li>
+    <li>subject_story->applied creative thinking to overcome traditional obstacles</li>
+    <li>subject_story->crafted elegant solutions with a blend of art and science</li>
+    <li>subject_gerund->unlocking potential through innovation</li>
+    <li>subject->knowledge’s harvest</li>
+    <li>subject_story->gathered insights as one reaps the fields at harvest</li>
+    <li>subject_story->cultivated a bounty of understanding from the seeds of inquiry</li>
+    <li>subject_story->shared the fruits of research with the world</li>
+    <li>subject_gerund->reaping the rewards of relentless curiosity</li>
+    <li>subject->the puzzle of progress</li>
+    <li>subject_story->assembled the pieces of mystery to reveal the big picture</li>
+    <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
+    <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
+    <li>subject_gerund->piecing together the elements of advancement</li>
+  -->
+  <WNA_SecretTech.generalRules.rulesStrings>
+    <li>subject->innovation's path</li>
+    <li>subject_story->unveiled simple truths behind complex phenomena</li>
+    <li>subject_story->simplified the intricate to make way for practical applications</li>
+    <li>subject_story->harnessed basic principles to achieve remarkable feats</li>
+    <li>subject_gerund->streamlining the essence of discovery</li>
+    <li>subject->building blocks of progress</li>
+    <li>subject_story->laid the groundwork for monumental leaps forward</li>
+    <li>subject_story->connected dots across disciplines to reveal new insights</li>
+    <li>subject_story->crafted the foundation upon which future innovations stand</li>
+    <li>subject_gerund->laying down the keystones of advancement</li>
+    <li>subject->seeds of tomorrow</li>
+    <li>subject_story->planted ideas that would grow into transformative solutions</li>
+    <li>subject_story->cultivated a garden of knowledge, ripe with potential</li>
+    <li>subject_story->nurtured the roots of change with care and foresight</li>
+    <li>subject_gerund->sowing the future with today’s discoveries</li>
+    <li>subject->the ripple of curiosity</li>
+    <li>subject_story->set forth waves of inquiry that echoed through time</li>
+    <li>subject_story->dropped pebbles of innovation into the pond of knowledge</li>
+    <li>subject_story->watched as one question led to another, expanding the circle of understanding</li>
+    <li>subject_gerund->casting stones to create waves of progress</li>
+    <li>subject->the alchemy of progress</li>
+    <li>subject_story->merged disparate disciplines to unlock new realms of possibility</li>
+    <li>subject_story->turned the impossible into the inevitable through sheer ingenuity</li>
+    <li>subject_story->crafted solutions that reshaped the understanding of what's achievable</li>
+    <li>subject_gerund->blending science and magic into the fabric of reality</li>
+    <li>subject->the tapestry of discovery</li>
+    <li>subject_story->wove together threads of knowledge from the four corners of the world</li>
+    <li>subject_story->revealed patterns in the chaos, charting paths to untold innovations</li>
+    <li>subject_story->embroidered the annals of history with tales of serendipitous breakthroughs</li>
+    <li>subject_gerund->weaving the future from the loom of the present</li>
+    <li>subject->the crucible of creation</li>
+    <li>subject_story->fused raw elements into the building blocks of tomorrow</li>
+    <li>subject_story->tempered the fires of creativity to forge unprecedented technologies</li>
+    <li>subject_story->quenched the thirst for knowledge with the elixir of invention</li>
+    <li>subject_gerund->molding the raw materials of today into the artifacts of the future</li>
+    <li>subject->the beacon of enlightenment</li>
+    <li>subject_story->illuminated the dark corners of ignorance, guiding the way forward</li>
+    <li>subject_story->cast light on the unknown, making the unseen visible to curious minds</li>
+    <li>subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding</li>
+    <li>subject_gerund->lighting the torches of progress and knowledge</li>
+    <li>subject->the frontier of knowledge</li>
+    <li>subject_story->crossed new horizons in the pursuit of understanding</li>
+    <li>subject_story->challenged the status quo with groundbreaking theories</li>
+    <li>subject_story->merged ancient wisdom with modern technology for innovative solutions</li>
+    <li>subject_gerund->pushing the boundaries of science and art</li>
+    <li>subject->the essence of innovation</li>
+    <li>subject_story->transformed everyday materials into extraordinary tools</li>
+    <li>subject_story->paved the way for future generations with sustainable practices</li>
+    <li>subject_story->harnessed the power of nature to fuel new advancements</li>
+    <li>subject_gerund->fostering an ecosystem of creativity and progress</li>
+    <li>subject->the architects of tomorrow</li>
+    <li>subject_story->built the foundations for a utopia where technology serves all</li>
+    <li>subject_story->envisioned a future where harmony between technology and nature thrives</li>
+    <li>subject_story->crafted tools that empower humanity to reach its fullest potential</li>
+    <li>subject_gerund->laying the keystones for future landscapes</li>
+    <li>subject->exploratory leaps</li>
+    <li>subject_story->stepped boldly into uncharted territories of knowledge</li>
+    <li>subject_story->bridged the gap between the known and the unknown</li>
+    <li>subject_story->ventured where curiosity dared to lead</li>
+    <li>subject_gerund->embarking on journeys of discovery</li>
+    <li>subject->the essence of ingenuity</li>
+    <li>subject_story->transformed challenges into opportunities for growth</li>
+    <li>subject_story->applied creative thinking to overcome traditional obstacles</li>
+    <li>subject_story->crafted elegant solutions with a blend of art and science</li>
+    <li>subject_gerund->unlocking potential through innovation</li>
+    <li>subject->knowledge’s harvest</li>
+    <li>subject_story->gathered insights as one reaps the fields at harvest</li>
+    <li>subject_story->cultivated a bounty of understanding from the seeds of inquiry</li>
+    <li>subject_story->shared the fruits of research with the world</li>
+    <li>subject_gerund->reaping the rewards of relentless curiosity</li>
+    <li>subject->the puzzle of progress</li>
+    <li>subject_story->assembled the pieces of mystery to reveal the big picture</li>
+    <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
+    <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
+    <li>subject_gerund->piecing together the elements of advancement</li>
+  </WNA_SecretTech.generalRules.rulesStrings>
+  
+  <!-- EN: standard arsenal -->
+  <WNA_StandardArsenal.label>standard arsenal</WNA_StandardArsenal.label>
+  <!-- EN: the standard arsenal used by whelingnorther alliance to arm their soldiers. -->
+  <WNA_StandardArsenal.description>the standard arsenal used by whelingnorther alliance to arm their soldiers.</WNA_StandardArsenal.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -1933,12 +2545,10 @@
     <li>subject_gerund->piecing together the elements of advancement</li>
   </WNA_StandardArsenal.generalRules.rulesStrings>
   
-  <!-- EN: infiltration equipment -->
-  <WNA_StrikeLegion.label>infiltration equipment</WNA_StrikeLegion.label>
-  <!-- EN: by studying the published techprints your colonists now masters the techniques used by the rebels' infiltration forces.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_StrikeLegion.description>by studying the published techprints your colonists now masters the techniques used by the rebels' infiltration forces.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_StrikeLegion.description>
+  <!-- EN: the enlightment -->
+  <WNA_TheEnlightment.label>the enlightment</WNA_TheEnlightment.label>
+  <!-- EN: the enlightment. -->
+  <WNA_TheEnlightment.description>the enlightment.</WNA_TheEnlightment.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -2016,7 +2626,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
-  <WNA_StrikeLegion.generalRules.rulesStrings>
+  <WNA_TheEnlightment.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
     <li>subject_story->simplified the intricate to make way for practical applications</li>
@@ -2092,14 +2702,18 @@
     <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
-  </WNA_StrikeLegion.generalRules.rulesStrings>
+  </WNA_TheEnlightment.generalRules.rulesStrings>
   
-  <!-- EN: whelingnorther structure -->
-  <WNA_Structure.label>whelingnorther structure</WNA_Structure.label>
-  <!-- EN: the technique of building walls, doors, and other thing. in common cases these buildings are invincible, whether built from thin air or a piece of actual material.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_Structure.description>the technique of building walls, doors, and other thing. in common cases these buildings are invincible, whether built from thin air or a piece of actual material.
+  <!-- EN: reach to the void -->
+  <WNA_TheVoid.label>reach to the void</WNA_TheVoid.label>
+  <!-- EN: wipe  out  ego \n\nstep  into  void \n\nall  mind  expire \n\nwhole  world  ascend -->
+  <WNA_TheVoid.description>wipe  out  ego 
 
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Structure.description>
+step  into  void 
+
+all  mind  expire 
+
+whole  world  ascend</WNA_TheVoid.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -2177,7 +2791,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
-  <WNA_Structure.generalRules.rulesStrings>
+  <WNA_TheVoid.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
     <li>subject_story->simplified the intricate to make way for practical applications</li>
@@ -2253,14 +2867,12 @@
     <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
-  </WNA_Structure.generalRules.rulesStrings>
+  </WNA_TheVoid.generalRules.rulesStrings>
   
-  <!-- EN: whelingnorther terraforming -->
-  <WNA_Terraform.label>whelingnorther terraforming</WNA_Terraform.label>
-  <!-- EN: the technique of changing the environment, reversible or irreversible.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_Terraform.description>the technique of changing the environment, reversible or irreversible.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Terraform.description>
+  <!-- EN: matter transmutation -->
+  <WNA_Transmutation.label>matter transmutation</WNA_Transmutation.label>
+  <!-- EN: matter transmutation. -->
+  <WNA_Transmutation.description>matter transmutation.</WNA_Transmutation.description>
   <!-- EN:
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
@@ -2338,7 +2950,7 @@
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
   -->
-  <WNA_Terraform.generalRules.rulesStrings>
+  <WNA_Transmutation.generalRules.rulesStrings>
     <li>subject->innovation's path</li>
     <li>subject_story->unveiled simple truths behind complex phenomena</li>
     <li>subject_story->simplified the intricate to make way for practical applications</li>
@@ -2414,6 +3026,165 @@
     <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
     <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
     <li>subject_gerund->piecing together the elements of advancement</li>
-  </WNA_Terraform.generalRules.rulesStrings>
+  </WNA_Transmutation.generalRules.rulesStrings>
+  
+  <!-- EN: whelingnorther apocalypse -->
+  <WNA_WhelingnortherApocalypse.label>whelingnorther apocalypse</WNA_WhelingnortherApocalypse.label>
+  <!-- EN: !!-TODO-!!. -->
+  <WNA_WhelingnortherApocalypse.description>!!-TODO-!!.</WNA_WhelingnortherApocalypse.description>
+  <!-- EN:
+    <li>subject->innovation's path</li>
+    <li>subject_story->unveiled simple truths behind complex phenomena</li>
+    <li>subject_story->simplified the intricate to make way for practical applications</li>
+    <li>subject_story->harnessed basic principles to achieve remarkable feats</li>
+    <li>subject_gerund->streamlining the essence of discovery</li>
+    <li>subject->building blocks of progress</li>
+    <li>subject_story->laid the groundwork for monumental leaps forward</li>
+    <li>subject_story->connected dots across disciplines to reveal new insights</li>
+    <li>subject_story->crafted the foundation upon which future innovations stand</li>
+    <li>subject_gerund->laying down the keystones of advancement</li>
+    <li>subject->seeds of tomorrow</li>
+    <li>subject_story->planted ideas that would grow into transformative solutions</li>
+    <li>subject_story->cultivated a garden of knowledge, ripe with potential</li>
+    <li>subject_story->nurtured the roots of change with care and foresight</li>
+    <li>subject_gerund->sowing the future with today’s discoveries</li>
+    <li>subject->the ripple of curiosity</li>
+    <li>subject_story->set forth waves of inquiry that echoed through time</li>
+    <li>subject_story->dropped pebbles of innovation into the pond of knowledge</li>
+    <li>subject_story->watched as one question led to another, expanding the circle of understanding</li>
+    <li>subject_gerund->casting stones to create waves of progress</li>
+    <li>subject->the alchemy of progress</li>
+    <li>subject_story->merged disparate disciplines to unlock new realms of possibility</li>
+    <li>subject_story->turned the impossible into the inevitable through sheer ingenuity</li>
+    <li>subject_story->crafted solutions that reshaped the understanding of what's achievable</li>
+    <li>subject_gerund->blending science and magic into the fabric of reality</li>
+    <li>subject->the tapestry of discovery</li>
+    <li>subject_story->wove together threads of knowledge from the four corners of the world</li>
+    <li>subject_story->revealed patterns in the chaos, charting paths to untold innovations</li>
+    <li>subject_story->embroidered the annals of history with tales of serendipitous breakthroughs</li>
+    <li>subject_gerund->weaving the future from the loom of the present</li>
+    <li>subject->the crucible of creation</li>
+    <li>subject_story->fused raw elements into the building blocks of tomorrow</li>
+    <li>subject_story->tempered the fires of creativity to forge unprecedented technologies</li>
+    <li>subject_story->quenched the thirst for knowledge with the elixir of invention</li>
+    <li>subject_gerund->molding the raw materials of today into the artifacts of the future</li>
+    <li>subject->the beacon of enlightenment</li>
+    <li>subject_story->illuminated the dark corners of ignorance, guiding the way forward</li>
+    <li>subject_story->cast light on the unknown, making the unseen visible to curious minds</li>
+    <li>subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding</li>
+    <li>subject_gerund->lighting the torches of progress and knowledge</li>
+    <li>subject->the frontier of knowledge</li>
+    <li>subject_story->crossed new horizons in the pursuit of understanding</li>
+    <li>subject_story->challenged the status quo with groundbreaking theories</li>
+    <li>subject_story->merged ancient wisdom with modern technology for innovative solutions</li>
+    <li>subject_gerund->pushing the boundaries of science and art</li>
+    <li>subject->the essence of innovation</li>
+    <li>subject_story->transformed everyday materials into extraordinary tools</li>
+    <li>subject_story->paved the way for future generations with sustainable practices</li>
+    <li>subject_story->harnessed the power of nature to fuel new advancements</li>
+    <li>subject_gerund->fostering an ecosystem of creativity and progress</li>
+    <li>subject->the architects of tomorrow</li>
+    <li>subject_story->built the foundations for a utopia where technology serves all</li>
+    <li>subject_story->envisioned a future where harmony between technology and nature thrives</li>
+    <li>subject_story->crafted tools that empower humanity to reach its fullest potential</li>
+    <li>subject_gerund->laying the keystones for future landscapes</li>
+    <li>subject->exploratory leaps</li>
+    <li>subject_story->stepped boldly into uncharted territories of knowledge</li>
+    <li>subject_story->bridged the gap between the known and the unknown</li>
+    <li>subject_story->ventured where curiosity dared to lead</li>
+    <li>subject_gerund->embarking on journeys of discovery</li>
+    <li>subject->the essence of ingenuity</li>
+    <li>subject_story->transformed challenges into opportunities for growth</li>
+    <li>subject_story->applied creative thinking to overcome traditional obstacles</li>
+    <li>subject_story->crafted elegant solutions with a blend of art and science</li>
+    <li>subject_gerund->unlocking potential through innovation</li>
+    <li>subject->knowledge’s harvest</li>
+    <li>subject_story->gathered insights as one reaps the fields at harvest</li>
+    <li>subject_story->cultivated a bounty of understanding from the seeds of inquiry</li>
+    <li>subject_story->shared the fruits of research with the world</li>
+    <li>subject_gerund->reaping the rewards of relentless curiosity</li>
+    <li>subject->the puzzle of progress</li>
+    <li>subject_story->assembled the pieces of mystery to reveal the big picture</li>
+    <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
+    <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
+    <li>subject_gerund->piecing together the elements of advancement</li>
+  -->
+  <WNA_WhelingnortherApocalypse.generalRules.rulesStrings>
+    <li>subject->innovation's path</li>
+    <li>subject_story->unveiled simple truths behind complex phenomena</li>
+    <li>subject_story->simplified the intricate to make way for practical applications</li>
+    <li>subject_story->harnessed basic principles to achieve remarkable feats</li>
+    <li>subject_gerund->streamlining the essence of discovery</li>
+    <li>subject->building blocks of progress</li>
+    <li>subject_story->laid the groundwork for monumental leaps forward</li>
+    <li>subject_story->connected dots across disciplines to reveal new insights</li>
+    <li>subject_story->crafted the foundation upon which future innovations stand</li>
+    <li>subject_gerund->laying down the keystones of advancement</li>
+    <li>subject->seeds of tomorrow</li>
+    <li>subject_story->planted ideas that would grow into transformative solutions</li>
+    <li>subject_story->cultivated a garden of knowledge, ripe with potential</li>
+    <li>subject_story->nurtured the roots of change with care and foresight</li>
+    <li>subject_gerund->sowing the future with today’s discoveries</li>
+    <li>subject->the ripple of curiosity</li>
+    <li>subject_story->set forth waves of inquiry that echoed through time</li>
+    <li>subject_story->dropped pebbles of innovation into the pond of knowledge</li>
+    <li>subject_story->watched as one question led to another, expanding the circle of understanding</li>
+    <li>subject_gerund->casting stones to create waves of progress</li>
+    <li>subject->the alchemy of progress</li>
+    <li>subject_story->merged disparate disciplines to unlock new realms of possibility</li>
+    <li>subject_story->turned the impossible into the inevitable through sheer ingenuity</li>
+    <li>subject_story->crafted solutions that reshaped the understanding of what's achievable</li>
+    <li>subject_gerund->blending science and magic into the fabric of reality</li>
+    <li>subject->the tapestry of discovery</li>
+    <li>subject_story->wove together threads of knowledge from the four corners of the world</li>
+    <li>subject_story->revealed patterns in the chaos, charting paths to untold innovations</li>
+    <li>subject_story->embroidered the annals of history with tales of serendipitous breakthroughs</li>
+    <li>subject_gerund->weaving the future from the loom of the present</li>
+    <li>subject->the crucible of creation</li>
+    <li>subject_story->fused raw elements into the building blocks of tomorrow</li>
+    <li>subject_story->tempered the fires of creativity to forge unprecedented technologies</li>
+    <li>subject_story->quenched the thirst for knowledge with the elixir of invention</li>
+    <li>subject_gerund->molding the raw materials of today into the artifacts of the future</li>
+    <li>subject->the beacon of enlightenment</li>
+    <li>subject_story->illuminated the dark corners of ignorance, guiding the way forward</li>
+    <li>subject_story->cast light on the unknown, making the unseen visible to curious minds</li>
+    <li>subject_story->ignited the flames of curiosity, kindling a worldwide pursuit of understanding</li>
+    <li>subject_gerund->lighting the torches of progress and knowledge</li>
+    <li>subject->the frontier of knowledge</li>
+    <li>subject_story->crossed new horizons in the pursuit of understanding</li>
+    <li>subject_story->challenged the status quo with groundbreaking theories</li>
+    <li>subject_story->merged ancient wisdom with modern technology for innovative solutions</li>
+    <li>subject_gerund->pushing the boundaries of science and art</li>
+    <li>subject->the essence of innovation</li>
+    <li>subject_story->transformed everyday materials into extraordinary tools</li>
+    <li>subject_story->paved the way for future generations with sustainable practices</li>
+    <li>subject_story->harnessed the power of nature to fuel new advancements</li>
+    <li>subject_gerund->fostering an ecosystem of creativity and progress</li>
+    <li>subject->the architects of tomorrow</li>
+    <li>subject_story->built the foundations for a utopia where technology serves all</li>
+    <li>subject_story->envisioned a future where harmony between technology and nature thrives</li>
+    <li>subject_story->crafted tools that empower humanity to reach its fullest potential</li>
+    <li>subject_gerund->laying the keystones for future landscapes</li>
+    <li>subject->exploratory leaps</li>
+    <li>subject_story->stepped boldly into uncharted territories of knowledge</li>
+    <li>subject_story->bridged the gap between the known and the unknown</li>
+    <li>subject_story->ventured where curiosity dared to lead</li>
+    <li>subject_gerund->embarking on journeys of discovery</li>
+    <li>subject->the essence of ingenuity</li>
+    <li>subject_story->transformed challenges into opportunities for growth</li>
+    <li>subject_story->applied creative thinking to overcome traditional obstacles</li>
+    <li>subject_story->crafted elegant solutions with a blend of art and science</li>
+    <li>subject_gerund->unlocking potential through innovation</li>
+    <li>subject->knowledge’s harvest</li>
+    <li>subject_story->gathered insights as one reaps the fields at harvest</li>
+    <li>subject_story->cultivated a bounty of understanding from the seeds of inquiry</li>
+    <li>subject_story->shared the fruits of research with the world</li>
+    <li>subject_gerund->reaping the rewards of relentless curiosity</li>
+    <li>subject->the puzzle of progress</li>
+    <li>subject_story->assembled the pieces of mystery to reveal the big picture</li>
+    <li>subject_story->matched theory with practice to solve longstanding puzzles</li>
+    <li>subject_story->uncovered hidden connections that unlocked new possibilities</li>
+    <li>subject_gerund->piecing together the elements of advancement</li>
+  </WNA_WhelingnortherApocalypse.generalRules.rulesStrings>
   
 </LanguageData>

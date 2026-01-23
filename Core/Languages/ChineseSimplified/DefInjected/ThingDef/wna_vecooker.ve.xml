@@ -3,9 +3,7 @@
   
   <!-- EN: processing tank -->
   <WNA_VECooker.label>processing tank</WNA_VECooker.label>
-  <!-- EN: A small container but is capable of holding more than the volume it seems. Can be used to process various raw materials.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_VECooker.description>A small container but is capable of holding more than the volume it seems. Can be used to process various raw materials.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_VECooker.description>
+  <!-- EN: A small container but is capable of holding more than the volume it seems. Can be used to process various raw materials. -->
+  <WNA_VECooker.description>A small container but is capable of holding more than the volume it seems. Can be used to process various raw materials.</WNA_VECooker.description>
   
 </LanguageData>

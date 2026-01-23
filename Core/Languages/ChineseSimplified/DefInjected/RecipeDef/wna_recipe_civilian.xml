@@ -3,118 +3,71 @@
   
   <!-- EN: heat cinnabar -->
   <WNA_HeatCinnabar.label>heat cinnabar</WNA_HeatCinnabar.label>
-  <!-- EN: treat cinnabar with strong heat to make it decompose into sulphur and mercury.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_HeatCinnabar.description>treat cinnabar with strong heat to make it decompose into sulphur and mercury.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_HeatCinnabar.description>
+  <!-- EN: treat cinnabar with strong heat to make it decompose into sulphur and mercury. -->
+  <WNA_HeatCinnabar.description>treat cinnabar with strong heat to make it decompose into sulphur and mercury.</WNA_HeatCinnabar.description>
   <!-- EN: heating cinnabar. -->
   <WNA_HeatCinnabar.jobString>heating cinnabar.</WNA_HeatCinnabar.jobString>
   
   <!-- EN: heat stone blocks -->
   <WNA_HeatStoneBlock.label>heat stone blocks</WNA_HeatStoneBlock.label>
-  <!-- EN: treat stone with strong heat to gain resources.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_HeatStoneBlock.description>treat stone with strong heat to gain resources.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_HeatStoneBlock.description>
+  <!-- EN: treat stone with strong heat to gain resources. -->
+  <WNA_HeatStoneBlock.description>treat stone with strong heat to gain resources.</WNA_HeatStoneBlock.description>
   <!-- EN: heating stone blocks. -->
   <WNA_HeatStoneBlock.jobString>heating stone blocks.</WNA_HeatStoneBlock.jobString>
   
-  <!-- EN: heat stone blocks x30 -->
-  <WNA_HeatStoneBlockBulk.label>heat stone blocks x30</WNA_HeatStoneBlockBulk.label>
-  <!-- EN: treat stone with strong heat to gain resources.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_HeatStoneBlockBulk.description>treat stone with strong heat to gain resources.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_HeatStoneBlockBulk.description>
-  <!-- EN: heating stone blocks. -->
-  <WNA_HeatStoneBlockBulk.jobString>heating stone blocks.</WNA_HeatStoneBlockBulk.jobString>
-  
   <!-- EN: heat stone chunk -->
   <WNA_HeatStoneChunk.label>heat stone chunk</WNA_HeatStoneChunk.label>
-  <!-- EN: treat stone with strong heat to gain resources.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_HeatStoneChunk.description>treat stone with strong heat to gain resources.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_HeatStoneChunk.description>
+  <!-- EN: treat stone with strong heat to gain resources. -->
+  <WNA_HeatStoneChunk.description>treat stone with strong heat to gain resources.</WNA_HeatStoneChunk.description>
   <!-- EN: heating a stone chunk. -->
   <WNA_HeatStoneChunk.jobString>heating a stone chunk.</WNA_HeatStoneChunk.jobString>
   
   <!-- EN: make cinnabar -->
   <WNA_MakeCinnabar.label>make cinnabar</WNA_MakeCinnabar.label>
-  <!-- EN: use mercury and sulphur to make cinnabar.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_MakeCinnabar.description>use mercury and sulphur to make cinnabar.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MakeCinnabar.description>
+  <!-- EN: use mercury and sulphur to make cinnabar. -->
+  <WNA_MakeCinnabar.description>use mercury and sulphur to make cinnabar.</WNA_MakeCinnabar.description>
   <!-- EN: making cinnabar. -->
   <WNA_MakeCinnabar.jobString>making cinnabar.</WNA_MakeCinnabar.jobString>
   
   <!-- EN: make methanol -->
   <WNA_MakeMethanol.label>make methanol</WNA_MakeMethanol.label>
-  <!-- EN: distill wood to extract methanol.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_MakeMethanol.description>distill wood to extract methanol.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MakeMethanol.description>
+  <!-- EN: distill wood to extract methanol. -->
+  <WNA_MakeMethanol.description>distill wood to extract methanol.</WNA_MakeMethanol.description>
   <!-- EN: making methanol. -->
   <WNA_MakeMethanol.jobString>making methanol.</WNA_MakeMethanol.jobString>
   
-  <!-- EN: make methanol x20 -->
-  <WNA_MakeMethanolBulk.label>make methanol x20</WNA_MakeMethanolBulk.label>
-  <!-- EN: distill wood to extract methanol.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_MakeMethanolBulk.description>distill wood to extract methanol.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MakeMethanolBulk.description>
-  <!-- EN: making methanol. -->
-  <WNA_MakeMethanolBulk.jobString>making methanol.</WNA_MakeMethanolBulk.jobString>
-  
   <!-- EN: make neutroamine -->
   <WNA_MakeNeutroamine.label>make neutroamine</WNA_MakeNeutroamine.label>
-  <!-- EN: a method to make neutroamine from chemfuel and methanol. great for supporting a colony drug business.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_MakeNeutroamine.description>a method to make neutroamine from chemfuel and methanol. great for supporting a colony drug business.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MakeNeutroamine.description>
+  <!-- EN: a method to make neutroamine from chemfuel and methanol. great for supporting a colony drug business. -->
+  <WNA_MakeNeutroamine.description>a method to make neutroamine from chemfuel and methanol. great for supporting a colony drug business.</WNA_MakeNeutroamine.description>
   <!-- EN: making neutroamine. -->
   <WNA_MakeNeutroamine.jobString>making neutroamine.</WNA_MakeNeutroamine.jobString>
   
   <!-- EN: make reinforced barrel -->
   <WNA_MakeReinforcedBarrel.label>make reinforced barrel</WNA_MakeReinforcedBarrel.label>
-  <!-- EN: forge a colony produced reinforced barrel.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_MakeReinforcedBarrel.description>forge a colony produced reinforced barrel.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MakeReinforcedBarrel.description>
+  <!-- EN: forge a colony produced reinforced barrel. -->
+  <WNA_MakeReinforcedBarrel.description>forge a colony produced reinforced barrel.</WNA_MakeReinforcedBarrel.description>
   <!-- EN: forging a reinforced barrel. -->
   <WNA_MakeReinforcedBarrel.jobString>forging a reinforced barrel.</WNA_MakeReinforcedBarrel.jobString>
   
   <!-- EN: make synthread -->
   <WNA_MakeSynthread.label>make synthread</WNA_MakeSynthread.label>
-  <!-- EN: a method to make synthread from chemfuel and halogen. someone may have have been missing this so much.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_MakeSynthread.description>a method to make synthread from chemfuel and halogen. someone may have have been missing this so much.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MakeSynthread.description>
+  <!-- EN: a method to make synthread from chemfuel and halogen. someone may have have been missing this so much. -->
+  <WNA_MakeSynthread.description>a method to make synthread from chemfuel and halogen. someone may have have been missing this so much.</WNA_MakeSynthread.description>
   <!-- EN: making synthread. -->
   <WNA_MakeSynthread.jobString>making synthread.</WNA_MakeSynthread.jobString>
   
-  <!-- EN: make synthread x20 -->
-  <WNA_MakeSynthreadBulk.label>make synthread x20</WNA_MakeSynthreadBulk.label>
-  <!-- EN: a method to make synthread from chemfuel and halogen. someone may have have been missing this so much.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_MakeSynthreadBulk.description>a method to make synthread from chemfuel and halogen. someone may have have been missing this so much.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MakeSynthreadBulk.description>
-  <!-- EN: making synthread. -->
-  <WNA_MakeSynthreadBulk.jobString>making synthread.</WNA_MakeSynthreadBulk.jobString>
-  
   <!-- EN: make vitalized uranium battery -->
   <WNA_MakeUraniumBattery.label>make vitalized uranium battery</WNA_MakeUraniumBattery.label>
-  <!-- EN: make an unstable powersource out from uranium.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_MakeUraniumBattery.description>make an unstable powersource out from uranium.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_MakeUraniumBattery.description>
+  <!-- EN: make an unstable powersource out from uranium. -->
+  <WNA_MakeUraniumBattery.description>make an unstable powersource out from uranium.</WNA_MakeUraniumBattery.description>
   <!-- EN: making vitalized uranium battery. -->
   <WNA_MakeUraniumBattery.jobString>making vitalized uranium battery.</WNA_MakeUraniumBattery.jobString>
   
   <!-- EN: refine corpse -->
   <WNA_RefineCorpse.label>refine corpse</WNA_RefineCorpse.label>
-  <!-- EN: refine a corpse to extract some elements composing organic flesh.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_RefineCorpse.description>refine a corpse to extract some elements composing organic flesh.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RefineCorpse.description>
+  <!-- EN: refine a corpse to extract some elements composing organic flesh. -->
+  <WNA_RefineCorpse.description>refine a corpse to extract some elements composing organic flesh.</WNA_RefineCorpse.description>
   <!-- EN: refining a corpse. -->
   <WNA_RefineCorpse.jobString>refining a corpse.</WNA_RefineCorpse.jobString>
   

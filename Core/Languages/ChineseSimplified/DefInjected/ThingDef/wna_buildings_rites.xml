@@ -3,16 +3,12 @@
   
   <!-- EN: ritespot -->
   <WNA_Ritespot.label>ritespot</WNA_Ritespot.label>
-  <!-- EN: some mysterious influence is accumulating. this place must be a perfect place for doing something, for example, applying some whelingnorther techniques.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_Ritespot.description>some mysterious influence is accumulating. this place must be a perfect place for doing something, for example, applying some whelingnorther techniques.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_Ritespot.description>
+  <!-- EN: some mysterious influence is accumulating. this place must be a perfect place for doing something, for example, applying some whelingnorther techniques. -->
+  <WNA_Ritespot.description>some mysterious influence is accumulating. this place must be a perfect place for doing something, for example, applying some whelingnorther techniques.</WNA_Ritespot.description>
   
   <!-- EN: ritespot -->
   <WNA_RiteSpot_Cutter.label>ritespot</WNA_RiteSpot_Cutter.label>
-  <!-- EN: there seems to be some mysterious ripples. this place should be a good place to make something split or break down.\n\n<i><color=#66E0E4FF>WNA - Whelingnorther Alliance</color></i> -->
-  <WNA_RiteSpot_Cutter.description>there seems to be some mysterious ripples. this place should be a good place to make something split or break down.
-
-&lt;i>&lt;color=#66E0E4FF>WNA - Whelingnorther Alliance&lt;/color>&lt;/i></WNA_RiteSpot_Cutter.description>
+  <!-- EN: there seems to be some mysterious ripples. this place should be a good place to make something split or break down. -->
+  <WNA_RiteSpot_Cutter.description>there seems to be some mysterious ripples. this place should be a good place to make something split or break down.</WNA_RiteSpot_Cutter.description>
   
 </LanguageData>
