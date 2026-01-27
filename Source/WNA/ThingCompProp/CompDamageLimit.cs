@@ -2,18 +2,18 @@
 
 namespace WNA.ThingCompProp
 {
-    public class CompDamageLimit : CompProperties
+    public class PropDamageLimit : CompProperties
     {
         public int damageLimit = -1;
         public bool canAbsorb = false;
-        public CompDamageLimit()
+        public PropDamageLimit()
         {
-            compClass = typeof(DamageLimit);
+            compClass = typeof(CompDamageLimit);
         }
     }
-    public class DamageLimit : ThingComp
+    public class CompDamageLimit : ThingComp
     {
-        public CompDamageLimit Props => (CompDamageLimit)props;
+        public PropDamageLimit Props => (PropDamageLimit)props;
 
         public override void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {

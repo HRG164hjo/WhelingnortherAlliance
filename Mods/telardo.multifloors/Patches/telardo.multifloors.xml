@@ -13,6 +13,7 @@
 	    <xpath>Defs/ThingDef[@Name="MF_ElevatorBase" or @ParentName="MF_ElevatorBase" or @Name="MF_StairEntranceBase" or @ParentName="MF_StairEntranceBase"]</xpath>
         <value>
             <useHitPoints>false</useHitPoints>
+            <stealable>false</stealable>
         </value>
         <success>Always</success>
     </Operation>
@@ -28,6 +29,7 @@
 	    <xpath>Defs/ThingDef[defName="MF_SubGravEngine" or defName="MF_VEFPipeConnector"]</xpath>
         <value>
             <useHitPoints>false</useHitPoints>
+            <stealable>false</stealable>
         </value>
         <success>Always</success>
     </Operation>

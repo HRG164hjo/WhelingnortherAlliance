@@ -8,7 +8,7 @@ using Verse.AI;
 
 namespace WNA.ThingCompProp
 {
-    public class CompHydroponics : CompProperties
+    public class PropHydroponics : CompProperties
     {
         public float growthFactor = 1f;
         public float yieldFactor = 1f;
@@ -16,15 +16,15 @@ namespace WNA.ThingCompProp
         public int plantCount = 1;
         public float lowPowerGrowthFactor = 0f;
         public bool isManual = true;
-        public CompHydroponics()
+        public PropHydroponics()
         {
-            compClass = typeof(Hydroponics);
+            compClass = typeof(CompHydroponics);
             extraYieldFactor = yieldFactor;
         }
     }
-    public class Hydroponics : ThingComp
+    public class CompHydroponics : ThingComp
     {
-        public CompHydroponics Props => (CompHydroponics)props;
+        public PropHydroponics Props => (PropHydroponics)props;
         public ThingDef SelectedCrop;
         public int TicksToSpawn;
         public int CurrentHarvestCount;
@@ -141,10 +141,10 @@ namespace WNA.ThingCompProp
                 yield return new Command_Action
                 {
                     icon = SelectedCrop?.uiIcon ?? BaseContent.BadTex,
-                    defaultLabel = SelectedCrop == null ? "WNA.CompHydroponics.SelectCrop".Translate() : "WNA.CompHydroponics.ChangeCrop".Translate(),
+                    defaultLabel = SelectedCrop == null ? "WNA.PropHydroponics.SelectCrop".Translate() : "WNA.PropHydroponics.ChangeCrop".Translate(),
                     defaultDesc = SelectedCrop == null ?
-                        "WNA.CompHydroponics.SelectCropDesc".Translate() :
-                        "WNA.CompHydroponics.ChangeCropDesc".Translate(SelectedCrop.label),
+                        "WNA.PropHydroponics.SelectCropDesc".Translate() :
+                        "WNA.PropHydroponics.ChangeCropDesc".Translate(SelectedCrop.label),
                     action = CreateAndAssignAdjustJob
                 };
             }
@@ -153,10 +153,10 @@ namespace WNA.ThingCompProp
                 yield return new Command_Action
                 {
                     icon = SelectedCrop?.uiIcon ?? BaseContent.BadTex,
-                    defaultLabel = SelectedCrop == null ? "WNA.CompHydroponics.SelectCrop".Translate() : "WNA.CompHydroponics.ChangeCrop".Translate(),
+                    defaultLabel = SelectedCrop == null ? "WNA.PropHydroponics.SelectCrop".Translate() : "WNA.PropHydroponics.ChangeCrop".Translate(),
                     defaultDesc = SelectedCrop == null ?
-                        "WNA.CompHydroponics.SelectCropDesc".Translate() :
-                        "WNA.CompHydroponics.ChangeCropDesc".Translate(SelectedCrop.label),
+                        "WNA.PropHydroponics.SelectCropDesc".Translate() :
+                        "WNA.PropHydroponics.ChangeCropDesc".Translate(SelectedCrop.label),
                     action = GenerateCropMenu
                 };
             }
@@ -165,8 +165,8 @@ namespace WNA.ThingCompProp
                 yield return new Command_Action
                 {
                     icon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel"),
-                    defaultLabel = "WNA.CompHydroponics.ClearCrop".Translate(),
-                    defaultDesc = "WNA.CompHydroponics.ClearCropDesc".Translate(),
+                    defaultLabel = "WNA.PropHydroponics.ClearCrop".Translate(),
+                    defaultDesc = "WNA.PropHydroponics.ClearCropDesc".Translate(),
                     action = ResetState
                 };
             }
@@ -201,25 +201,25 @@ namespace WNA.ThingCompProp
         }
         public override string CompInspectStringExtra()
         {
-            if (SelectedCrop == null) return "WNA.CompHydroponics.NoCrop".Translate();
+            if (SelectedCrop == null) return "WNA.PropHydroponics.NoCrop".Translate();
             CompPowerTrader powerComp = parent.GetComp<CompPowerTrader>();
             CompRefuelable refuelableComp = parent.GetComp<CompRefuelable>();
             string statusString = "";
             if (powerComp != null && !powerComp.PowerOn)
             {
-                statusString += "WNA.CompHydroponics.LowPower".Translate() + "\n";
+                statusString += "WNA.PropHydroponics.LowPower".Translate() + "\n";
             }
             if (refuelableComp != null && !refuelableComp.HasFuel)
             {
-                statusString += "WNA.CompHydroponics.NoFuel".Translate() + "\n";
+                statusString += "WNA.PropHydroponics.NoFuel".Translate() + "\n";
             }
-            string growthFactorString = "WNA.CompHydroponics.CurrentGrowthFactor".Translate(GetCurrentGrowthFactor().ToString("F2"));
+            string growthFactorString = "WNA.PropHydroponics.CurrentGrowthFactor".Translate(GetCurrentGrowthFactor().ToString("F2"));
             return string.Concat(
                 statusString,
-                "WNA.CompHydroponics.Contains".Translate(Props.plantCount) + "\n",
-                "WNA.CompHydroponics.Growing".Translate(SelectedCrop.label) + "\n",
-                "WNA.CompHydroponics.HarvestIn".Translate(TicksToSpawn.ToStringTicksToPeriod()) + "\n",
-                "WNA.CompHydroponics.Yield".Translate(CurrentHarvestCount) + "\n",
+                "WNA.PropHydroponics.Contains".Translate(Props.plantCount) + "\n",
+                "WNA.PropHydroponics.Growing".Translate(SelectedCrop.label) + "\n",
+                "WNA.PropHydroponics.HarvestIn".Translate(TicksToSpawn.ToStringTicksToPeriod()) + "\n",
+                "WNA.PropHydroponics.Yield".Translate(CurrentHarvestCount) + "\n",
                 growthFactorString
             );
         }

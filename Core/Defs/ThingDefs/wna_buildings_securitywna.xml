@@ -15,7 +15,7 @@
         <building>
             <turretGunDef>WNA_Turret_Pale_Gun</turretGunDef>
             <turretBurstWarmupTime>0</turretBurstWarmupTime>
-            <turretBurstCooldownTime>0.01</turretBurstCooldownTime>
+            <turretBurstCooldownTime>0.083333</turretBurstCooldownTime>
         </building>
         <researchPrerequisites>
             <li>WNA_SecretTech</li>
@@ -34,6 +34,7 @@
                 <soundCast>Shot_NeedleGun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>18</muzzleFlashScale>
+                <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
                 <canGoWild>false</canGoWild>
                 <requireLineOfSight>false</requireLineOfSight>
@@ -79,7 +80,7 @@
         <building>
             <turretGunDef>WNA_Turret_Shatter_Gun</turretGunDef>
             <turretBurstWarmupTime>0</turretBurstWarmupTime>
-            <turretBurstCooldownTime>1.6</turretBurstCooldownTime>
+            <turretBurstCooldownTime>1.333333</turretBurstCooldownTime>
         </building>
         <researchPrerequisites>
             <li>WNA_SecretTech</li>
@@ -100,7 +101,7 @@
                 <soundCast>Shot_NeedleGun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>18</muzzleFlashScale>
-                <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
                 <canGoWild>false</canGoWild>
                 <forcedMissRadius>1</forcedMissRadius>
                 <requireLineOfSight>false</requireLineOfSight>

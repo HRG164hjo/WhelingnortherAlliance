@@ -5,7 +5,7 @@ using Verse;
 
 namespace WNA.ThingCompProp
 {
-    public class CompAOEDamage : CompProperties
+    public class PropAOEDamage : CompProperties
     {
         public DamageDef damageDef;
         public int damage = 60;
@@ -17,14 +17,14 @@ namespace WNA.ThingCompProp
         public bool affectRoof = false;
         public bool affectPrisoner = false;
 
-        public CompAOEDamage()
+        public PropAOEDamage()
         {
-            this.compClass = typeof(AOEDamage);
+            this.compClass = typeof(CompAOEDamage);
         }
     }
-    public class AOEDamage : ThingComp
+    public class CompAOEDamage : ThingComp
     {
-        public CompAOEDamage Props => (CompAOEDamage)props;
+        public PropAOEDamage Props => (PropAOEDamage)props;
         protected bool Active => parent.Spawned;
         private int nextTickEffect;
         private int nextScanTick;

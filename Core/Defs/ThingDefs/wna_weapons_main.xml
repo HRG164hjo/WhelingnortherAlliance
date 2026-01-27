@@ -98,7 +98,7 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="WNA.ThingCompProp.CompSwtichMode">
+			<li Class="WNA.ThingCompProp.PropSwtichMode">
 				<modeIIdefname>WNA_SunsetArtillery</modeIIdefname>
 			</li>
 		</comps>
@@ -386,7 +386,7 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="WNA.ThingCompProp.CompSwtichMode">
+			<li Class="WNA.ThingCompProp.PropSwtichMode">
 				<modeIIdefname>WNA_SunsetSniper</modeIIdefname>
 			</li>
 		</comps>
@@ -519,7 +519,7 @@
 			<preExplosionSpawnSingleThingDef>CraterMedium</preExplosionSpawnSingleThingDef>
 		</projectile>
 		<comps>
-			<li Class="WNA.ThingCompProp.CompRadFieldBurst">
+			<li Class="WNA.ThingCompProp.PropRadFieldBurst">
 				<config>
 					<radLevel>2000</radLevel>
 					<radius>19.9</radius>
@@ -701,7 +701,7 @@
 			<damageAmountBase>40</damageAmountBase>
 		</projectile>
 		<comps>
-			<li Class="WNA.ThingCompProp.CompRadFieldBurst">
+			<li Class="WNA.ThingCompProp.PropRadFieldBurst">
 				<config>
 					<radLevel>2000</radLevel>
 					<radius>0.9</radius>
@@ -1450,7 +1450,7 @@
 			<displayPriority>200</displayPriority>
 		</recipeMaker>
 		<comps>
-			<li Class="WNA.ThingCompProp.CompSwtichMode">
+			<li Class="WNA.ThingCompProp.PropSwtichMode">
 				<modeIIdefname>WNA_Weapon_RiteLance</modeIIdefname>
 			</li>
 		</comps>
@@ -1515,7 +1515,7 @@
 			<li Class="CompProperties_TargetEffect_FleckConnecting">
 				<fleckDef>PsycastPsychicLine</fleckDef>
 			</li>
-			<li Class="WNA.ThingCompProp.CompSwtichMode">
+			<li Class="WNA.ThingCompProp.PropSwtichMode">
 				<modeIIdefname>WNA_Weapon_RiteSword</modeIIdefname>
 			</li>
 		</comps>

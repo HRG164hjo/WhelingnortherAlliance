@@ -62,11 +62,11 @@
             </defaultIngredientFilter>
         </recipeMaker>
         <comps>
-            <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
+            <li Class="WNA.ThingCompProp.PropApparelEquipHediff">
                 <hediff>WNA_RobeBoostLite</hediff>
             </li>
-            <li Class="WNA.ThingCompProp.CompApparelHediffRemover"/>
-            <li Class="WNA.ThingCompProp.CompBodyshapeOverride"/>
+            <li Class="WNA.ThingCompProp.PropApparelHediffRemover"/>
+            <li Class="WNA.ThingCompProp.PropBodyshapeOverride"/>
         </comps>
 		<modExtensions>
 			<li Class="WNA.DMExtension.MassCapacity">
@@ -175,7 +175,7 @@
             </recipeUsers>
         </recipeMaker>
         <comps>
-            <li Class="WNA.ThingCompProp.CompBodyshapeOverride"/>
+            <li Class="WNA.ThingCompProp.PropBodyshapeOverride"/>
         </comps>
     </ThingDef>
     
@@ -277,7 +277,7 @@
             </recipeUsers>
         </recipeMaker>
         <comps>
-            <li Class="WNA.ThingCompProp.CompBodyshapeOverride"/>
+            <li Class="WNA.ThingCompProp.PropBodyshapeOverride"/>
         </comps>
     </ThingDef>
     
@@ -380,7 +380,7 @@
             </recipeUsers>
         </recipeMaker>
         <comps>
-            <li Class="WNA.ThingCompProp.CompBodyshapeOverride">
+            <li Class="WNA.ThingCompProp.PropBodyshapeOverride">
                 <bodyTypes>
                     <li>Male</li>
                     <li>Female</li>
@@ -406,9 +406,13 @@
             <MarketValue>2000</MarketValue>
 			<Mass>0.5</Mass>
         </statBases>
+        <costStuffCount>30</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
 	    <costList>
-	        <WNA_AttunementFabric>30</WNA_AttunementFabric>
-            <ComponentIndustrial>4</ComponentIndustrial>
+            <ComponentIndustrial>6</ComponentIndustrial>
 	    </costList>
         <equippedStatOffsets>
             <CarryingCapacity>100000</CarryingCapacity>
@@ -502,7 +506,7 @@
             <ComponentIndustrial>4</ComponentIndustrial>
 	    </costList>
 		<comps>
-            <li Class="WNA.ThingCompProp.CompShieldGenerator">
+            <li Class="WNA.ThingCompProp.PropShieldGenerator">
                 <ticksToReset>250</ticksToReset>
                 <energyMax>600</energyMax>
             </li>
@@ -542,7 +546,7 @@
             <ComponentSpacer>4</ComponentSpacer>
 	    </costList>
 		<comps>
-            <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
+            <li Class="WNA.ThingCompProp.PropApparelEquipHediff">
                 <hediff>WNA_IllusionCore</hediff>
             </li>
 		</comps>
@@ -585,7 +589,7 @@
             <WNA_UraniumBattery>2</WNA_UraniumBattery>
 	    </costList>
 		<comps>
-            <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
+            <li Class="WNA.ThingCompProp.PropApparelEquipHediff">
                 <hediff>WNA_DeadzoneBelt</hediff>
             </li>
 		</comps>
@@ -627,8 +631,8 @@
             <ComponentSpacer>10</ComponentSpacer>
 	    </costList>
 		<comps>
-            <li Class="WNA.ThingCompProp.CompIronApparel"/>
-            <li Class="WNA.ThingCompProp.CompShieldGenerator">
+            <li Class="WNA.ThingCompProp.PropIronApparel"/>
+            <li Class="WNA.ThingCompProp.PropShieldGenerator">
                 <shieldTexPath>others/wna_ironbubble</shieldTexPath>
                 <shieldColor>(1,1,1,1)</shieldColor>
                 <energyGenPerTick>1000000</energyGenPerTick>
@@ -692,7 +696,7 @@
             <WNA_Focus>1</WNA_Focus>
 	    </costList>
 		<comps>
-            <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
+            <li Class="WNA.ThingCompProp.PropApparelEquipHediff">
                 <hediff>WNA_ChronoPack</hediff>
             </li>
 		</comps>
@@ -814,7 +818,7 @@
             </layers>
         </apparel>
         <comps>
-            <li Class="WNA.ThingCompProp.CompBodyshapeOverride"/>
+            <li Class="WNA.ThingCompProp.PropBodyshapeOverride"/>
         </comps>
         <modExtensions>
             <li Class="WNA.DMExtension.TechnoConfig">
@@ -880,12 +884,12 @@
             </layers>
         </apparel>
         <comps>
-            <li Class="WNA.ThingCompProp.CompBodyshapeOverride"/>
-            <li Class="WNA.ThingCompProp.CompApparelEquipHediff">
+            <li Class="WNA.ThingCompProp.PropBodyshapeOverride"/>
+            <li Class="WNA.ThingCompProp.PropApparelEquipHediff">
                 <hediff>WNA_RobeBoost</hediff>
                 <checkInterval>50</checkInterval>
             </li>
-            <li Class="WNA.ThingCompProp.CompApparelHediffRemover">
+            <li Class="WNA.ThingCompProp.PropApparelHediffRemover">
                 <interval>50</interval>
                 <removeInjury>true</removeInjury>
             </li>
@@ -936,14 +940,14 @@
             <HemogenPack MayRequire="ludeon.rimworld.biotech">3</HemogenPack>
         </costList>
         <comps>
-            <li Class="WNA.ThingCompProp.CompShieldGenerator">
+            <li Class="WNA.ThingCompProp.PropShieldGenerator">
                 <energyLossPerHit>0</energyLossPerHit>
                 <minDrawSize>2.1</minDrawSize>
                 <maxDrawSize>2.4</maxDrawSize>
                 <shieldInstaReset>true</shieldInstaReset>
                 <energyGenPerTick>1000000</energyGenPerTick>
             </li>
-            <li Class="WNA.ThingCompProp.CompIronApparel">
+            <li Class="WNA.ThingCompProp.PropIronApparel">
                 <interval>250</interval>
             </li>
         </comps>

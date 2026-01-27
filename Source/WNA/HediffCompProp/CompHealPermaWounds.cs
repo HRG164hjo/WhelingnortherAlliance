@@ -4,20 +4,20 @@ using Verse;
 
 namespace WNA.HediffCompProp
 {
-    public class CompHealPermaWounds : HediffCompProperties
+    public class PropHealPermaWounds : HediffCompProperties
     {
         public int wna_healTickerMin = 300;
 
         public int wna_healTickerMax = 500;
-        public CompHealPermaWounds()
+        public PropHealPermaWounds()
         {
-            compClass = typeof(HealPermaWounds);
+            compClass = typeof(CompHealPermaWounds);
         }
     }
-    public class HealPermaWounds : HediffComp
+    public class CompHealPermaWounds : HediffComp
     {
         private int ticksToHeal = 1;
-        public CompHealPermaWounds Props => (CompHealPermaWounds)props;
+        public PropHealPermaWounds Props => (PropHealPermaWounds)props;
         public override void CompPostMake()
         {
             base.CompPostMake();

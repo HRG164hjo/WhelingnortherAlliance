@@ -3,20 +3,20 @@ using Verse;
 
 namespace WNA.ThingCompProp
 {
-    public class CompApparelEquipHediff : CompProperties
+    public class PropApparelEquipHediff : CompProperties
     {
         public HediffDef hediff;
-        public int checkInterval = 250;
+        public int checkInterval = 60;
 
-        public CompApparelEquipHediff()
+        public PropApparelEquipHediff()
         {
-            this.compClass = typeof(ApparelEquipHediff);
+            compClass = typeof(CompApparelEquipHediff);
         }
     }
-    public class ApparelEquipHediff : ThingComp
+    public class CompApparelEquipHediff : ThingComp
     {
         private int ticksUntilCheck = 0;
-        public CompApparelEquipHediff Props => (CompApparelEquipHediff)props;
+        public PropApparelEquipHediff Props => (PropApparelEquipHediff)props;
         public override void Notify_Equipped(Pawn pawn)
         {
             AddHediffIfMissing(pawn);

@@ -11,11 +11,11 @@ namespace WNA.WNAHarmony
     public class Patch_TendUtility
     {
         [HarmonyPrefix]
-        public static bool prefix(Pawn doctor, Pawn patient, Medicine medicine)
+        public static bool Prefix(Pawn doctor, Pawn patient, Medicine medicine)
         {
             if (medicine != null)
             {
-                MultiUse compUse = medicine.TryGetComp<MultiUse>();
+                CompMultiUse compUse = medicine.TryGetComp<CompMultiUse>();
                 if (compUse != null)
                 {
                     if (!patient.health.HasHediffsNeedingTend())

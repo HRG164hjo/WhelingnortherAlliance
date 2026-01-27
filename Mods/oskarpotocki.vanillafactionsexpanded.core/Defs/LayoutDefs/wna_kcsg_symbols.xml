@@ -2,16 +2,16 @@
 <Defs>
     <!-- Buildings -->
     <KCSG.SymbolDef>
-        <defName>WNA_FocusWall</defName>
-        <thing>WNA_FocusWall</thing>
+        <defName>WNA_BaseWall</defName>
+        <thing>WNA_BaseWall</thing>
     </KCSG.SymbolDef>
     <KCSG.SymbolDef>
-        <defName>WNA_FocusEmbrasure</defName>
-        <thing>WNA_FocusEmbrasure</thing>
+        <defName>WNA_BaseGrid</defName>
+        <thing>WNA_BaseGrid</thing>
     </KCSG.SymbolDef>
     <KCSG.SymbolDef>
-        <defName>WNA_FocusDoor</defName>
-        <thing>WNA_FocusDoor</thing>
+        <defName>WNA_BaseDoor</defName>
+        <thing>WNA_BaseDoor</thing>
     </KCSG.SymbolDef>
     
     <KCSG.SymbolDef>
@@ -27,8 +27,8 @@
         <thing>WNA_LinkShelf</thing>
     </KCSG.SymbolDef>
     <KCSG.SymbolDef>
-        <defName>WNA_SingleBed</defName>
-        <thing>WNA_SingleBed</thing>
+        <defName>WNA_SlotSleepSpot</defName>
+        <thing>WNA_SlotSleepSpot</thing>
     </KCSG.SymbolDef>
     <KCSG.SymbolDef>
         <defName>WNA_TorchLamp</defName>
@@ -36,20 +36,16 @@
     </KCSG.SymbolDef>
     
     <KCSG.SymbolDef>
-        <defName>WNA_Mortar</defName>
-        <thing>WNA_Mortar</thing>
+        <defName>WNA_AdvMortar</defName>
+        <thing>WNA_AdvMortar</thing>
     </KCSG.SymbolDef>
     <KCSG.SymbolDef>
-        <defName>WNA_Turret_A</defName>
-        <thing>WNA_Turret_A</thing>
+        <defName>WNA_Turret_Pale</defName>
+        <thing>WNA_Turret_Pale</thing>
     </KCSG.SymbolDef>
     <KCSG.SymbolDef>
-        <defName>WNA_Turret_B</defName>
-        <thing>WNA_Turret_B</thing>
-    </KCSG.SymbolDef>
-    <KCSG.SymbolDef>
-        <defName>WNA_Turret_C</defName>
-        <thing>WNA_Turret_C</thing>
+        <defName>WNA_Turret_Shatter</defName>
+        <thing>WNA_Turret_Shatter</thing>
     </KCSG.SymbolDef>
     
     <KCSG.SymbolDef>
@@ -100,7 +96,7 @@
     </KCSG.SymbolDef>
     
     <KCSG.SymbolDef>
-        <defName>WNA_Shell_ChimingShard</defName>
-        <thing>WNA_Shell_ChimingShard</thing>
+        <defName>WNA_ShellChiming</defName>
+        <thing>WNA_ShellChiming</thing>
     </KCSG.SymbolDef>
 </Defs>

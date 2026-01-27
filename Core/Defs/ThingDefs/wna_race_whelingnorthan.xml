@@ -304,7 +304,7 @@
                     </li>
                 </renderNodeProperties>
             </li>
-            <li Class="WNA.ThingCompProp.CompAOEDamage">
+            <li Class="WNA.ThingCompProp.PropAOEDamage">
                 <damageDef>WNA_Culling</damageDef>
                 <damage>Infinity</damage>
                 <ap>Infinity</ap>
@@ -314,7 +314,7 @@
                 <affectArea>true</affectArea>
                 <affectRoof>false</affectRoof>
             </li>
-			<li Class="WNA.ThingCompProp.CompDamageLimit">
+			<li Class="WNA.ThingCompProp.PropDamageLimit">
 			  	<damageLimit>0</damageLimit>
                 <canAbsorb>true</canAbsorb>
 			</li>
@@ -558,7 +558,7 @@
             </li>
         </tools>
         <comps>
-			<li Class="WNA.ThingCompProp.CompDamageLimit">
+			<li Class="WNA.ThingCompProp.PropDamageLimit">
 			  	<damageLimit>1</damageLimit>
                 <canAbsorb>true</canAbsorb>
 			</li>

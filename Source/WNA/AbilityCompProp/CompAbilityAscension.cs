@@ -5,17 +5,17 @@ using WNA.WNAUtility;
 
 namespace WNA.AbilityCompProp
 {
-    public class CompAbilityAscension : CompProperties_AbilityEffect
+    public class PropAbilityAscension : CompProperties_AbilityEffect
     {
-        public CompAbilityAscension()
+        public PropAbilityAscension()
         {
-            compClass = typeof(AbilityAscension);
+            compClass = typeof(CompAbilityAscension);
         }
     }
-    public class AbilityAscension : CompAbilityEffect
+    public class CompAbilityAscension : CompAbilityEffect
     {
 
-        public new CompAbilityAscension Props => (CompAbilityAscension)props;
+        public new PropAbilityAscension Props => (PropAbilityAscension)props;
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             Pawn pawn = target.Pawn;

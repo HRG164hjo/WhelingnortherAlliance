@@ -61,6 +61,7 @@
             <li>WNA_RiteAbleting</li>
             <li MayRequire="sarg.rimbees">WNA_RecipeAlphaBees</li>
             <li MayRequire="sarg.rimbees">WNA_RecipeAlphaBeesToo</li>
+            <li MayRequire="BreadMo.Cinders">WNA_ChopPolymer</li>
         </recipes>
     </ThingDef>
 

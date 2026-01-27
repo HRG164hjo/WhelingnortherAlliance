@@ -159,7 +159,7 @@
         <isBad>false</isBad>
         <comps>
             <li Class="HediffCompProperties_RemoveIfApparelDropped"/>
-            <li Class="WNA.HediffCompProp.CompRadFieldSpreader">
+            <li Class="WNA.HediffCompProp.PropRadFieldSpreader">
                 <config>
                     <radLevel>2000</radLevel>
                     <radius>9.9</radius>

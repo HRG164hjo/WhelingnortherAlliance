@@ -19,7 +19,7 @@
             </additionalHediffs>
         </value>
     </Operation>
-    
+
     <!-- -->
     <Operation Class="PatchOperationConditional">
 	    <xpath>Defs/FactionDef[defName!="WNA_FactionWNA"]/disallowedMemes</xpath>
@@ -30,7 +30,7 @@
             </value>
         </match>
     </Operation>
-    
+
     <!-- -->
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/HediffDef[defName="CatatonicBreakdown"]/stages/li[1]/capMods</xpath>
@@ -105,22 +105,31 @@
             <li MayRequire="VVenchov.VVNewHarvest">VV_Rubber</li>
 		</value>
 	</Operation>
-    
+
     <!-- -->
     <Operation Class="PatchOperationRemove">
 	    <xpath>Defs/TerrainDef/changeable</xpath>
     </Operation>
-    
+
     <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/TerrainDef[defName="BrokenAsphalt" or defName="PackedDirt"]</xpath>
+	    <xpath>Defs/TerrainDef[defName="BrokenAsphalt"]</xpath>
         <value>
             <drawStyleCategory>Floors</drawStyleCategory>
             <designationCategory>Floors</designationCategory>
             <constructEffect>ConstructDirt</constructEffect>
-            <terrainAffordanceNeeded>Walkable</terrainAffordanceNeeded>
+            <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
         </value>
     </Operation>
-    
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/TerrainDef[defName="PackedDirt"]</xpath>
+        <value>
+            <drawStyleCategory>Floors</drawStyleCategory>
+            <designationCategory>Floors</designationCategory>
+            <constructEffect>ConstructDirt</constructEffect>
+            <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+        </value>
+    </Operation>
+
     <!-- -->
     <Operation Class="PatchOperationConditional">
 	    <xpath>Defs/ThingDef/intricate</xpath>
@@ -128,21 +137,21 @@
             <xpath>Defs/ThingDef/intricate</xpath>
         </match>
     </Operation>
-    
+
     <Operation Class="PatchOperationConditional">
 	    <xpath>Defs/ThingDef/tradeNeverStack</xpath>
         <match Class="PatchOperationRemove">
             <xpath>Defs/ThingDef/tradeNeverStack</xpath>
         </match>
     </Operation>
-    
+
     <Operation Class="PatchOperationRemove">
 	    <xpath>Defs/ThingDef/plant/interferesWithRoof</xpath>
     </Operation>
     <Operation Class="PatchOperationRemove">
 	    <xpath>Defs/ThingDef/plant/blockAdjacentSow</xpath>
     </Operation>
-    
+
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThingDef[defName="Plant_Agave"]/plant</xpath>
         <value>
@@ -152,14 +161,14 @@
             </sowTags>
         </value>
     </Operation>
-    
+
     <Operation Class="PatchOperationRemove">
 	    <xpath>Defs/ThingDef[defName="DeepDrill"]/placeWorkers/li[text()="PlaceWorker_InvalidOverSubstructure"]</xpath>
     </Operation>
     <Operation Class="PatchOperationRemove">
 	    <xpath>Defs/ThingDef[defName="GroundPenetratingScanner"]/placeWorkers/li[text()="PlaceWorker_NotUnderRoof"]</xpath>
     </Operation>
-    
+
     <Operation Class="PatchOperationAddModExtension">
 	    <xpath>Defs/ThingDef[defName="Human"]</xpath>
         <value>
@@ -173,7 +182,7 @@
 	    <xpath>Defs/ThingDef[defName="Bullet_Shell_AntigrainWarhead"]</xpath>
         <value>
             <comps>
-                <li Class="WNA.ThingCompProp.CompRadFieldBurst">
+                <li Class="WNA.ThingCompProp.PropRadFieldBurst">
                     <config>
                         <radLevel>55</radLevel>
                         <radius>9.9</radius>
@@ -182,14 +191,21 @@
             </comps>
         </value>
     </Operation>
-    
+
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Stunnable"]/affectedDamageDefs</xpath>
         <value>
             <li>WNA_RadBurn</li>
         </value>
     </Operation>
-    
+
+    <Operation Class="PatchOperationRemove">
+	    <xpath>Defs/ThingDef[defName="Cloth"]/comps/li[compClass="CompColorable"]</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+	    <xpath>Defs/ThingDef[defName="Cloth"]/colorGeneratorInTraderStock</xpath>
+    </Operation>
+
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThingDef[defName="Apparel_CowboyHat" or defName="Apparel_HatHood" or defName="Apparel_TribalHeaddress" or defName="Apparel_PsychicFoilHelmet"]/apparel</xpath>
         <value>
@@ -198,7 +214,22 @@
             </renderSkipFlags>
         </value>
     </Operation>
-    
+
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[@Name="MechCentipede"]</xpath>
+        <value>
+            <butcherProducts>
+                <ChunkMechanoidSlag>3</ChunkMechanoidSlag>
+            </butcherProducts>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[@Name="BaseMechanoidWalker" or defName="Mech_Termite"]/butcherProducts</xpath>
+        <value>
+            <ChunkMechanoidSlag>2</ChunkMechanoidSlag>
+        </value>
+    </Operation>
+
     <!-- -->
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThoughtDef[defName="Expectations" or defName="AteRawFood" or defName="AteKibble" or defName="AteCorpse" or defName="AteHumanlikeMeatDirect" or defName="AteHumanlikeMeatAsIngredient" or defName="AteInsectMeatDirect" or defName="AteInsectMeatAsIngredient" or defName="AteRottenFood" or defName="AteWithoutTable" or defName="SleepDisturbed" or defName="KnowPrisonerSold" or defName="KnowGuestOrganHarvested" or defName="ButcheredHumanlikeCorpse" or defName="KnowButcheredHumanlikeCorpse" or defName="ButcheredHumanlikeCorpseOpinion" or defName="ObservedLayingCorpse" or defName="WitnessedDeathNonAlly" or defName="DeniedJoining" or defName="PrisonerBanishedToDie" or defName="InsultedMood" or defName="EnvironmentDark" or defName="WrongApparelGender" or defName="ApparelDamaged" or defName="DeadMansApparel" or defName="HumanLeatherApparelSad" or defName="HumanLeatherApparelHappy" or defName="NeedJoy" or defName="NeedComfort" or defName="NeedBeauty" or defName="NeedRoomSize" or defName="NeedOutdoors" or defName="NeedIndoors" or defName="PrisonCell" or defName="PrisonBarracks" or defName="HospitalPatientRoomStats" or defName="SoldPrisoner" or defName="ExecutedPrisoner" or defName="SharedBed" or defName="Pain" or defName="PsychicDrone" or defName="BrawlerUnhappy" or defName="Ascetic" or defName="Greedy" or defName="Jealous" or defName="SleptInBarracks" or defName="SleptInBedroom" or defName="KnowGuestExecuted" or defName="KnowColonistExecuted"]</xpath>

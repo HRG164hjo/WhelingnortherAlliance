@@ -4,15 +4,15 @@ using WNA.WNAUtility;
 
 namespace WNA.ThingCompProp
 {
-    public class CompIronApparel : CompProperties
+    public class PropIronApparel : CompProperties
     {
         public int interval = 2000;
         public int duration = 2000;
-        public CompIronApparel() => this.compClass = typeof(IronApparel);
+        public PropIronApparel() => this.compClass = typeof(CompIronApparel);
     }
-    public class IronApparel : ThingComp
+    public class CompIronApparel : ThingComp
     {
-        public CompIronApparel Props => (CompIronApparel)props;
+        public PropIronApparel Props => (PropIronApparel)props;
         public override void CompTick()
         {
             base.CompTick();

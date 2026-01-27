@@ -10,11 +10,11 @@ namespace WNA.WNAHarmony
         public class Patch_ConsumeIngredient
         {
             [HarmonyPrefix]
-            public static bool prefix(Thing ingredient, RecipeDef recipe, Map map)
+            public static bool Prefix(Thing ingredient, RecipeDef recipe, Map map)
             {
                 if (ingredient != null)
                 {
-                    MultiUse compUse = ingredient.TryGetComp<MultiUse>();
+                    CompMultiUse compUse = ingredient.TryGetComp<CompMultiUse>();
                     if (compUse != null)
                     {
                         if (compUse.Count > 1)

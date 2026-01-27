@@ -69,7 +69,7 @@
                 <restEffectiveness>1</restEffectiveness>
                 <massCapacity>6000000000</massCapacity>
                 <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
-                <showOverallStats>true</showOverallStats>
+                <showOverallStats>false</showOverallStats>
             </li>
         </comps>
 	</ThingDef>
@@ -212,7 +212,7 @@
                 <overlightRadius>15</overlightRadius>
                 <glowColor>(74,74,74,0)</glowColor>
             </li>
-            <li Class="WNA.ThingCompProp.CompHeatPusher">
+            <li Class="WNA.ThingCompProp.PropHeatPusher">
                 <heatPushStandard>21</heatPushStandard>
                 <heatPushMult>21</heatPushMult>
             </li>
@@ -278,7 +278,7 @@
                 <overlightRadius>15</overlightRadius>
                 <glowColor>(74,74,74,0)</glowColor>
             </li>
-            <li Class="WNA.ThingCompProp.CompHeatPusher">
+            <li Class="WNA.ThingCompProp.PropHeatPusher">
                 <heatPushStandard>21</heatPushStandard>
                 <heatPushMult>-21</heatPushMult>
             </li>
@@ -377,7 +377,7 @@
         <researchPrerequisites Inherit="false"/>
 		<size>(1,1)</size>
         <comps>
-            <li Class="WNA.ThingCompProp.CompAttachHediff">
+            <li Class="WNA.ThingCompProp.PropAttachHediff">
                 <affectsOwner>true</affectsOwner>
                 <affectMechanic>true</affectMechanic>
                 <hediffDef>WNA_InMechanoid</hediffDef>
@@ -451,7 +451,7 @@
                 <requiresPower>true</requiresPower>
                 <airPerSecondPerHundredCells>1</airPerSecondPerHundredCells>
             </li>
-            <li Class="WNA.ThingCompProp.CompHeatPusher">
+            <li Class="WNA.ThingCompProp.PropHeatPusher">
                 <heatPushStandard>21</heatPushStandard>
                 <heatPushMult>21</heatPushMult>
             </li>
@@ -506,7 +506,7 @@
         <comps>
             <li Class="CompProperties_Transporter">
                 <restEffectiveness>1</restEffectiveness>
-                <massCapacity>4000000</massCapacity>
+                <massCapacity>6000000</massCapacity>
                 <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
                 <showOverallStats>true</showOverallStats>
             </li>

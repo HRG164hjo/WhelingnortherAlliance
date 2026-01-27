@@ -10,11 +10,11 @@
         <useHitPoints>true</useHitPoints>
         <comps>
             <li Class="CompProperties_Forbiddable"/>
-			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
+			<li Class="WNA.ThingCompProp.PropThingSelfHeal">
 			  	<ticksPerHeal>27</ticksPerHeal>
 				<healPercent>10</healPercent>
 			</li>
-			<li Class="WNA.ThingCompProp.CompDamageLimit">
+			<li Class="WNA.ThingCompProp.PropDamageLimit">
 			  	<damageLimit>50</damageLimit>
 			</li>
         </comps>
@@ -94,7 +94,7 @@
             <li>WNA_StandardArsenal</li>
         </researchPrerequisites>
         <comps>
-            <li Class="WNA.ThingCompProp.CompCamoPillbox"/>
+            <li Class="WNA.ThingCompProp.PropCamoPillbox"/>
         </comps>
     </ThingDef>
     <ThingDef ParentName="WNA_TurrentWeaponBase">
@@ -289,7 +289,7 @@
 			<damageAmountBase>150</damageAmountBase>
         </projectile>
         <comps>
-			<li Class="WNA.ThingCompProp.CompRadFieldBurst">
+			<li Class="WNA.ThingCompProp.PropRadFieldBurst">
 				<config>
 					<radLevel>500</radLevel>
 					<radius>10.9</radius>
@@ -312,6 +312,8 @@
 		<uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
         <uiIconColor>(127,127,127)</uiIconColor>
         <size>(2,2)</size>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,0)</interactionCellOffset>
         <statBases>
             <MaxHitPoints>5000</MaxHitPoints>
             <WorkToBuild>7500</WorkToBuild>
@@ -435,7 +437,7 @@
                 <wickTicks>15~30</wickTicks>
                 <preExplosionSpawnSingleThingDef>CraterLarge</preExplosionSpawnSingleThingDef>
             </li>
-            <li Class="WNA.ThingCompProp.CompRadFieldAmbient">
+            <li Class="WNA.ThingCompProp.PropRadFieldAmbient">
                 <config>
                     <radLevel>2000</radLevel>
                     <radius>27.9</radius>
@@ -443,7 +445,7 @@
                     <threshold>1.1</threshold>
                 </config>
             </li>
-            <li Class="WNA.ThingCompProp.CompRadFieldBurst">
+            <li Class="WNA.ThingCompProp.PropRadFieldBurst">
                 <modeList>
                     <li>KillFinalize</li>
                     <li>KillFinalizeLeavingsOnly</li>

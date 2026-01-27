@@ -4,15 +4,15 @@ using Verse;
 
 namespace WNA.ThingCompProp
 {
-    public class CompBodyshapeOverride : CompProperties
+    public class PropBodyshapeOverride : CompProperties
     {
         public List<BodyTypeDef> bodyTypes;
         public BodyTypeDef maletype;
         public BodyTypeDef femaletype;
         public BodyTypeDef neutype;
-        public CompBodyshapeOverride()
+        public PropBodyshapeOverride()
         {
-            compClass = typeof(BodyshapeOverride);
+            compClass = typeof(CompBodyshapeOverride);
         }
         public override void ResolveReferences(ThingDef parentDef)
         {
@@ -34,9 +34,9 @@ namespace WNA.ThingCompProp
             }
         }
     }
-    public class BodyshapeOverride : ThingComp
+    public class CompBodyshapeOverride : ThingComp
     {
-        public CompBodyshapeOverride Props => (CompBodyshapeOverride)props;
+        public PropBodyshapeOverride Props => (PropBodyshapeOverride)props;
         private BodyTypeDef initial;
         private bool changed = false;
         public override void Notify_Equipped(Pawn pawn)

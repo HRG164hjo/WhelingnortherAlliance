@@ -13,7 +13,7 @@
         <initialSeverity>0.01</initialSeverity>
         <maxSeverity>10</maxSeverity>
         <comps>
-            <li Class="WNA.HediffCompProp.CompPostRemoveHediff">
+            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
                 <hediff>sWNA_VoidDiver</hediff>
             </li>
         </comps>

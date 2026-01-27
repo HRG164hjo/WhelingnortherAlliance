@@ -43,7 +43,7 @@
             <Intellectual>99</Intellectual>
         </aptitudes>
 		<comps>
-            <li Class="WNA.HediffCompProp.CompPostRemoveHediff">
+            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_AbilityWisdom</hediff>
             </li>
 			<li Class="VEF.AnimalBehaviours.HediffCompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core"/>

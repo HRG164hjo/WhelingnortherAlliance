@@ -23,7 +23,7 @@ namespace WNA.WNADefOf
         public static HediffDef WNA_AbilityWisdom;
         public static HediffDef WNA_CastDamage;
         public static HediffDef WNA_Corrosion;
-        public static HediffDef WNA_DeathRefusal;
+        public static HediffDef WNA_DeathEnd;
         public static HediffDef WNA_Disabled;
         public static HediffDef WNA_IllusionCore;
         public static HediffDef WNA_InAnimal;
@@ -31,7 +31,7 @@ namespace WNA.WNADefOf
         public static HediffDef WNA_InMechanoid;
         public static HediffDef WNA_PsychicTrauma;
         public static HediffDef WNA_RobeBoost;
-        public static HediffDef sWNA_DeathRefusal;
+        public static HediffDef sWNA_DeathEnd;
         public static HediffDef WNA_VoidDiver;
 
         public static JobDef WNA_Job_AdjustHydroponics;

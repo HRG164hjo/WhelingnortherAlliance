@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_TestClimateControl</defName>
+		<label>test climate controlling facility</label>
+		<description>todo.</description>
+        <thingClass>WNA.ThingClass.ClimateControl</thingClass>
+        <graphicData>
+			<texPath>Things/Building/Misc/ClimateAdjuster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <drawSize>(3,3)</drawSize>
+		</graphicData>
+        <researchPrerequisites>
+            <li>WNA_SecretTech</li>
+        </researchPrerequisites>
+        <fillPercent>0.15</fillPercent>
+        <defaultPlacingRot>North</defaultPlacingRot>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>500</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_TempControl">
+                <energyPerSecond>-1</energyPerSecond>
+            </li>
+            <li Class="WNA.ThingCompProp.PropClimateControl"/>
+        </comps>
+	</ThingDef>
+
+</Defs>

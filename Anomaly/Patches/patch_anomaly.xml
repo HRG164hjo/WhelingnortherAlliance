@@ -107,6 +107,7 @@
 	    <xpath>Defs/ThingDef[defName="ShardBeacon"]</xpath>
         <value>
             <useHitPoints>false</useHitPoints>
+            <stealable>false</stealable>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">

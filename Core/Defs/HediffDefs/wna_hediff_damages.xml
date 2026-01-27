@@ -261,7 +261,7 @@
                 <severityPerDayTended>-0.11</severityPerDayTended>
                 <baseTendDurationHours>24</baseTendDurationHours>
             </li>
-            <li Class="WNA.HediffCompProp.CompRadFieldSpreader">
+            <li Class="WNA.HediffCompProp.PropRadFieldSpreader">
                 <config>
                     <radLevel>10</radLevel>
                     <radius>0.9</radius>
@@ -366,7 +366,7 @@
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>1200~2000</disappearsAfterTicks>
             </li>
-            <li Class="WNA.HediffCompProp.CompRadFieldSpreader">
+            <li Class="WNA.HediffCompProp.PropRadFieldSpreader">
                 <config>
                     <radLevel>300</radLevel>
                     <radius>7.9</radius>
@@ -403,7 +403,7 @@
                 <severityPerDay>0.1</severityPerDay>
                 <showDaysToRecover>true</showDaysToRecover>
             </li>
-            <li Class="WNA.HediffCompProp.CompPostRemoveHediff">
+            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_Corrosion</hediff>
                 <severity>0.1</severity>
             </li>

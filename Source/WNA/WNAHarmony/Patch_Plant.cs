@@ -39,21 +39,6 @@ namespace WNA.WNAHarmony
                     __result = 0f;
             }
         }
-        [HarmonyPatch(typeof(Plant), nameof(Plant.GrowthRate), MethodType.Getter)]
-        public static class ForGrowthRate
-        {
-            public static bool Prefix(Plant __instance, ref float __result)
-            {
-                if (!__instance.Spawned) return true;
-                TerrainDef terrain = __instance.Map.terrainGrid.TerrainAt(__instance.Position);
-                if (terrain != null && terrainList.Contains(terrain.defName))
-                {
-                    __result += terrain.fertility;
-                    return false;
-                }
-                return true;
-            }
-        }
         [HarmonyPatch(typeof(Plant), nameof(Plant.Dying), MethodType.Getter)]
         public static class ForDying
         {
@@ -65,6 +50,20 @@ namespace WNA.WNAHarmony
                 if (terrain != null && terrainList.Contains(terrain.defName))
                 {
                     __result = false;
+                    return false;
+                }
+                return true;
+            }
+        }
+        public static class ForGrowthRate
+        {
+            public static bool Prefix(Plant __instance, ref float __result)
+            {
+                if (!__instance.Spawned) return true;
+                TerrainDef terrain = __instance.Map.terrainGrid.TerrainAt(__instance.Position);
+                if (terrain != null && terrainList.Contains(terrain.defName))
+                {
+                    __result += terrain.fertility;
                     return false;
                 }
                 return true;

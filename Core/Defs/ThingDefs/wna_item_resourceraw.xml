@@ -129,7 +129,7 @@
                 <wickTicks>60~120</wickTicks>
                 <preExplosionSpawnSingleThingDef>CraterLarge</preExplosionSpawnSingleThingDef>
             </li>
-            <li Class="WNA.ThingCompProp.CompRadFieldBurst">
+            <li Class="WNA.ThingCompProp.PropRadFieldBurst">
                 <modeList>
                     <li>KillFinalize</li>
                     <li>KillFinalizeLeavingsOnly</li>
@@ -171,7 +171,7 @@
                 <wickTicks>60~120</wickTicks>
                 <preExplosionSpawnSingleThingDef>CraterLarge</preExplosionSpawnSingleThingDef>
             </li>
-            <li Class="WNA.ThingCompProp.CompRadFieldAmbient">
+            <li Class="WNA.ThingCompProp.PropRadFieldAmbient">
                 <config>
                     <radLevel>500</radLevel>
                     <radius>27.9</radius>
@@ -179,7 +179,7 @@
                     <threshold>0.8</threshold>
                 </config>
             </li>
-            <li Class="WNA.ThingCompProp.CompRadFieldBurst">
+            <li Class="WNA.ThingCompProp.PropRadFieldBurst">
                 <modeList>
                     <li>KillFinalize</li>
                     <li>KillFinalizeLeavingsOnly</li>

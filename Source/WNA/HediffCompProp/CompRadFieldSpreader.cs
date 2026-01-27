@@ -5,14 +5,14 @@ using System;
 
 namespace WNA.HediffCompProp
 {
-    public class CompRadFieldSpreader : HediffCompProperties
+    public class PropRadFieldSpreader : HediffCompProperties
     {
         public RadSpreadConfig config = new RadSpreadConfig();
-        public CompRadFieldSpreader() => compClass = typeof(RadFieldSpreader);
+        public PropRadFieldSpreader() => compClass = typeof(CompRadFieldSpreader);
     }
-    public class RadFieldSpreader : HediffComp
+    public class CompRadFieldSpreader : HediffComp
     {
-        private CompRadFieldSpreader Props => (CompRadFieldSpreader)props;
+        private PropRadFieldSpreader Props => (PropRadFieldSpreader)props;
         public override void CompPostTick(ref float severityAdjustment)
         {
             base.CompPostTick(ref severityAdjustment);

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+	    <mods>
+            <li>The Dead Man's Switch</li>
+	    </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/RecipeDef[defName="DMS_Make_Tungsteel" or defName="DMS_Make_TungsteelMass" or defName="DMS_Make_Ceramics" or defName="DMS_Make_CeramicsMass"]/ingredients/li[filter/thingDefs/li="Chemfuel"]</xpath>
+				</li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/RecipeDef[defName="DMS_Make_ComponentStamped" or defName="DMS_Make_ComponentStampedMass"]/recipeUsers</xpath>
+                    <value>
+                        <li>TableMachining</li>
+                    </value>
+				</li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DMS_Mech_Lady"]/race/mechEnabledWorkTypes</xpath>
+                    <value>
+                        <li>WNAWork_Rite</li>
+                        <li>Crafting</li>
+                        <li>Smithing</li>
+                    </value>
+				</li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DMS_LabReactor"]/recipes</xpath>
+                    <value>
+	                    <li MayRequire="Oblitus.Carbon">Carbon_MakeChemfuelFromHaygrass</li>
+	                    <li MayRequire="Oblitus.Carbon">Carbon_MakeCarbonWeave</li>
+	                    <li MayRequire="Oblitus.Carbon">Carbon_MakeCarbonFiber</li>
+	                    <li MayRequire="Oblitus.Carbon">Carbon_MakeDiamond</li>
+                    </value>
+				</li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+	                    <RecipeDef>
+                            <defName>WNA_DMSMakePolyester</defName>
+                            <label>Make polyester x10000</label>
+                            <description>Synthesize synthetic polyester fibers using chemfuel.</description>
+                            <jobString>Synthesizing.</jobString>
+                            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                            <effectWorking>Cook</effectWorking>
+                            <soundWorking>Recipe_Machining</soundWorking>
+                            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+                            <recipeUsers>
+                                <li>DMS_ReactionChamber</li>
+                                <li>DMS_LabReactor</li>
+                            </recipeUsers>
+                            <allowMixingIngredients>true</allowMixingIngredients>
+                            <skillRequirements>
+                                <Crafting>5</Crafting>
+                            </skillRequirements>
+                            <workSkill>Crafting</workSkill>
+                            <researchPrerequisite>DMS_Plasfiber</researchPrerequisite>
+                            <workAmount>60000</workAmount>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>Chemfuel</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>5000</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>Chemfuel</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <Polyester>10000</Polyester>
+                            </products>
+                        </RecipeDef>
+	                    <RecipeDef>
+                            <defName>WNA_DMSMakePlasfiber</defName>
+                            <label>Make plasfiber x8000</label>
+                            <description>Synthesize a really large batch of plasfiber.</description>
+                            <jobString>Synthesizing.</jobString>
+                            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                            <effectWorking>Cook</effectWorking>
+                            <soundWorking>Recipe_Machining</soundWorking>
+                            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+                            <recipeUsers>
+                                <li>DMS_ReactionChamber</li>
+                                <li>DMS_LabReactor</li>
+                            </recipeUsers>
+                            <allowMixingIngredients>true</allowMixingIngredients>
+                            <skillRequirements>
+                                <Crafting>5</Crafting>
+                            </skillRequirements>
+                            <workSkill>Crafting</workSkill>
+                            <researchPrerequisite>DMS_Plasfiber</researchPrerequisite>
+                            <workAmount>64000</workAmount>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>Polyester</li>
+                                            <li>Synthread</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>25000</count>
+                                </li>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>Plasteel</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>1500</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>Polyester</li>
+                                    <li>Synthread</li>
+                                    <li>Plasteel</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <Plasfiber>8000</Plasfiber>
+                            </products>
+                        </RecipeDef>
+	                    <RecipeDef>
+                            <defName>WNA_DMSMakeTungsteel</defName>
+                            <label>Make tungsteel x8000</label>
+                            <description>Sinter a really large amount of tungsteel.</description>
+                            <jobString>sintering.</jobString>
+                            <workSpeedStat>SmeltingSpeed</workSpeedStat>
+                            <effectWorking>ConstructMetal</effectWorking>
+                            <soundWorking>Recipe_Machining</soundWorking>
+                            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+                            <recipeUsers>
+                                <li>DMS_Furnace</li>
+                                <li>DMS_LabFurnace</li>
+                            </recipeUsers>
+                            <allowMixingIngredients>true</allowMixingIngredients>
+                            <skillRequirements>
+                                <Crafting>5</Crafting>
+                            </skillRequirements>
+                            <workSkill>Crafting</workSkill>
+                            <researchPrerequisite>DMS_Material</researchPrerequisite>
+                            <workAmount>40000</workAmount>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>Steel</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>8000</count>
+                                </li>
+                                <li>
+                                    <filter>
+                                        <categories>
+                                            <li>StoneBlocks</li>
+                                        </categories>
+                                    </filter>
+                                    <count>8000</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>Steel</li>
+                                </thingDefs>
+                                <categories>
+                                    <li>StoneBlocks</li>
+                                </categories>
+                                <disallowedThingDefs>
+                                    <li MayRequire="aoba.fortress.industrial">FT_WoodConcrete</li>
+                                    <li MayRequire="aoba.fortress.industrial">FT_ReinforcedConcreteBag</li>
+                                </disallowedThingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <Tungsteel>8000</Tungsteel>
+                            </products>
+                        </RecipeDef>
+	                    <RecipeDef>
+                            <defName>WNA_DMSMakeCeramics</defName>
+                            <label>Make ceramics x8000</label>
+                            <description>Making a really large amount of ceramic plates.</description>
+                            <jobString>Making.</jobString>
+                            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                            <effectWorking>Cook</effectWorking>
+                            <soundWorking>Recipe_Machining</soundWorking>
+                            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+                            <recipeUsers>
+                                <li>DMS_Furnace</li>
+                                <li>DMS_LabFurnace</li>
+                            </recipeUsers>
+                            <allowMixingIngredients>true</allowMixingIngredients>
+                            <skillRequirements>
+                                <Crafting>4</Crafting>
+                            </skillRequirements>
+                            <workSkill>Crafting</workSkill>
+                            <researchPrerequisite>DMS_Material</researchPrerequisite>
+                            <workAmount>20000</workAmount>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <categories>
+                                            <li>StoneBlocks</li>
+                                        </categories>
+                                    </filter>
+                                    <count>8000</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>Chemfuel</li>
+                                </thingDefs>
+                                <categories>
+                                    <li>StoneBlocks</li>
+                                </categories>
+                                <disallowedThingDefs>
+                                    <li MayRequire="aoba.fortress.industrial">FT_WoodConcrete</li>
+                                    <li MayRequire="aoba.fortress.industrial">FT_ReinforcedConcreteBag</li>
+                                </disallowedThingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <DMS_Ceramics>8000</DMS_Ceramics>
+                            </products>
+                        </RecipeDef>
+                    </value>
+				</li>
+            </operations>
+	    </match>
+    </Operation>
+
+    <!-- -->
+    <Operation Class="PatchOperationFindMod">
+	    <mods>
+            <li>The Dead Man's Switch - Synthetic</li>
+	    </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DMS_Mech_BigSister"]/race/mechEnabledWorkTypes</xpath>
+                    <value>
+                        <li>Art</li>
+                        <li>Smithing</li>
+                        <li>Mining</li>
+                        <li>Crafting</li>
+                    </value>
+				</li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DMS_Mech_Armiman"]/race/mechEnabledWorkTypes</xpath>
+                    <value>
+                        <li>Hunting</li>
+                        <li>Smithing</li>
+                        <li>Construction</li>
+                    </value>
+				</li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DMS_Mech_Maiden"]/race/mechEnabledWorkTypes</xpath>
+                    <value>
+                        <li>Childcare</li>
+                        <li>WNAWork_Rite</li>
+                        <li>Hauling</li>
+                    </value>
+				</li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DMS_Mech_Maiden" or defName="DMS_Mech_BigSister" or defName="DMS_Mech_Armiman" or defName="DMS_Mech_Lady"]/modExtensions/li[@Class="Fortified.MechWeaponExtension"]/UsableTechLevels</xpath>
+                    <value>
+                        <li>Archotech</li>
+                    </value>
+				</li>
+            </operations>
+	    </match>
+    </Operation>
+    
+</Patch>

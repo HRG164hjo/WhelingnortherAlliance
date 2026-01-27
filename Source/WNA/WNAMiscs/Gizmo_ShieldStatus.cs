@@ -7,7 +7,7 @@ namespace WNA.WNAMiscs
     [StaticConstructorOnStartup]
     public class Gizmo_ShieldStatus : Gizmo
     {
-        public ShieldGenerator shield;
+        public CompShieldGenerator shield;
 
         private static readonly Texture2D FullShieldBarTex = SolidColorMaterials.NewSolidColorTexture(new Color(0.2f, 0.2f, 0.24f));
 

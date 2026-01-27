@@ -4,16 +4,16 @@ using Verse;
 
 namespace WNA.AbilityCompProp
 {
-    public class CompAbilityResurrect : CompProperties_AbilityEffect
+    public class PropAbilityResurrect : CompProperties_AbilityEffect
     {
-        public CompAbilityResurrect()
+        public PropAbilityResurrect()
         {
-            compClass = typeof(AbilityResurrect);
+            compClass = typeof(CompAbilityResurrect);
         }
     }
-    public class AbilityResurrect : CompAbilityEffect
+    public class CompAbilityResurrect : CompAbilityEffect
     {
-        public new CompAbilityResurrect Props => (CompAbilityResurrect)props;
+        public new PropAbilityResurrect Props => (PropAbilityResurrect)props;
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {

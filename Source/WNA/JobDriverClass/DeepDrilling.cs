@@ -18,13 +18,13 @@ namespace WNA.JobDriverClass
             this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
             this.FailOnBurningImmobile(TargetIndex.A);
             this.FailOnThingHavingDesignation(TargetIndex.A, DesignationDefOf.Uninstall);
-            this.FailOn(() => !job.targetA.Thing.TryGetComp<StarcoreDriller>().CanDrillNow());
+            this.FailOn(() => !job.targetA.Thing.TryGetComp<CompStarcoreDriller>().CanDrillNow());
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.InteractionCell);
             Toil work = ToilMaker.MakeToil("MakeNewToils");
             work.tickIntervalAction = delegate (int delta)
             {
                 Pawn actor = work.actor;
-                ((Building)actor.CurJob.targetA.Thing).GetComp<StarcoreDriller>().DrillWorkDone(actor, delta);
+                ((Building)actor.CurJob.targetA.Thing).GetComp<CompStarcoreDriller>().DrillWorkDone(actor, delta);
                 actor.skills?.Learn(SkillDefOf.Mining, 0.065f * (float)delta);
             };
             work.defaultCompleteMode = ToilCompleteMode.Never;

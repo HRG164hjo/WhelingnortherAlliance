@@ -27,8 +27,8 @@ namespace WNA.WNAHarmony
             "WNA_Inhuman",
             "WNA_InAnimal",
             "WNA_InMechanoid",
-            "WNA_DeathRefusal",
-            "sWNA_DeathRefusal"
+            "WNA_DeathEnd",
+            "sWNA_DeathEnd"
         };
         public static bool IsValidPawn(Pawn pawn)
         {

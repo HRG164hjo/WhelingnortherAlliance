@@ -38,7 +38,7 @@ namespace WNA.WorkGiverClass
                 return false;
             if (!pawn.CanReserve(building, 1, -1, null, forced))
                 return false;
-            if (!building.TryGetComp<StarcoreDriller>().CanDrillNow())
+            if (!building.TryGetComp<CompStarcoreDriller>().CanDrillNow())
                 return false;
             if (building.Map.designationManager.DesignationOn(building, DesignationDefOf.Uninstall) != null)
                 return false;

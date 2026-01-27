@@ -6,12 +6,12 @@ using Verse.Sound;
 
 namespace WNA.ThingCompProp
 {
-    public class CompSwtichMode : CompProperties
+    public class PropSwtichMode : CompProperties
     {
         public string modeIIdefname;
-        public CompSwtichMode()
+        public PropSwtichMode()
         {
-            compClass = typeof(SwtichMode);
+            compClass = typeof(CompSwtichMode);
         }
         public override IEnumerable<string> ConfigErrors(ThingDef parentDef)
         {
@@ -23,9 +23,9 @@ namespace WNA.ThingCompProp
                 yield return $"[WNA.SwitchMode] **modeIIdefname** UNDEFINED!!!";
         }
     }
-    public class SwtichMode : ThingComp
+    public class CompSwtichMode : ThingComp
     {
-        public CompSwtichMode Props => (CompSwtichMode)props;
+        public PropSwtichMode Props => (PropSwtichMode)props;
         private ThingDef targetWeaponDef;
         public override void PostPostMake()
         {

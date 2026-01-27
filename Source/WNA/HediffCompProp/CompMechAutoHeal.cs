@@ -3,17 +3,17 @@ using Verse;
 
 namespace WNA.HediffCompProp
 {
-    public class CompMechAutoHeal : HediffCompProperties
+    public class PropMechAutoHeal : HediffCompProperties
     {
         public int repairInterval = 600;
-        public CompMechAutoHeal()
+        public PropMechAutoHeal()
         {
-            compClass = typeof(MechAutoHeal);
+            compClass = typeof(CompMechAutoHeal);
         }
     }
-    public class MechAutoHeal : HediffComp
+    public class CompMechAutoHeal : HediffComp
     {
-        public CompMechAutoHeal Props => (CompMechAutoHeal)props;
+        public PropMechAutoHeal Props => (PropMechAutoHeal)props;
         private int ticksToNextRepair;
         public int RepairInterval => Props.repairInterval;
 
@@ -34,10 +34,11 @@ namespace WNA.HediffCompProp
             List<Hediff> hediffsToRemove = new List<Hediff>();
             foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
             {
-                if (hediff is Hediff_Injury || (hediff is Hediff && hediff.Severity > 0 && hediff.def.isBad))
-                {
+                if (hediff is Hediff_Injury ||
+                    (hediff is Hediff &&
+                    hediff.Severity > 0 &&
+                    hediff.def.isBad))
                     hediffsToRemove.Add(hediff);
-                }
             }
             foreach (Hediff hediff in hediffsToRemove)
             {

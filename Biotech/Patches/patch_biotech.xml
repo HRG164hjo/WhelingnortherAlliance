@@ -9,6 +9,7 @@
         </value>
     </Operation>
 
+    <!-- -->
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/GeneDef[defName="WNA_StillWater"]/disablesNeeds</xpath>
         <value>
@@ -17,14 +18,7 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/ThoughtDef[defName="EnvironmentDark"]/nullifyingGenes</xpath>
-        <value>
-            <li>WNA_ShadowRing</li>
-            <li>WNA_StillWater</li>
-        </value>
-    </Operation>
-
+    <!-- -->
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThingDef[defName="WNA_WNThan"]/comps</xpath>
         <value>
@@ -34,6 +28,35 @@
         </value>
     </Operation>
     
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[@Name="LightMechanoid"]/butcherProducts</xpath>
+        <value>
+            <ChunkMechanoidSlag>1</ChunkMechanoidSlag>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[@Name="HeavyMechanoid"]/butcherProducts</xpath>
+        <value>
+            <ChunkMechanoidSlag>3</ChunkMechanoidSlag>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[@Name="SuperHeavyMechanoid"]/butcherProducts</xpath>
+        <value>
+            <ChunkMechanoidSlag>5</ChunkMechanoidSlag>
+        </value>
+    </Operation>
+
+    <!-- -->
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThoughtDef[defName="EnvironmentDark"]/nullifyingGenes</xpath>
+        <value>
+            <li>WNA_ShadowRing</li>
+            <li>WNA_StillWater</li>
+        </value>
+    </Operation>
+    
+    <!-- -->
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/TraderKindDef[@Name="WNA_TraderKindBase"]/stockGenerators</xpath>
         <value>

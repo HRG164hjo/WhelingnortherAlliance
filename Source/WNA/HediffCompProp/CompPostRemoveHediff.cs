@@ -2,18 +2,18 @@
 
 namespace WNA.HediffCompProp
 {
-    public class CompPostRemoveHediff : HediffCompProperties
+    public class PropPostRemoveHediff : HediffCompProperties
     {
         public HediffDef hediff = null;
         public float severity = 1f;
-        public CompPostRemoveHediff()
+        public PropPostRemoveHediff()
         {
-            compClass = typeof(PostRemoveHediff);
+            compClass = typeof(CompPostRemoveHediff);
         }
     }
-    public class PostRemoveHediff : HediffComp
+    public class CompPostRemoveHediff : HediffComp
     {
-        public CompPostRemoveHediff Props => (CompPostRemoveHediff)props;
+        public PropPostRemoveHediff Props => (PropPostRemoveHediff)props;
         public override void CompPostPostRemoved()
         {
             base.CompPostPostRemoved();

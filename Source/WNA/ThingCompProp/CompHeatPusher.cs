@@ -2,19 +2,19 @@
 
 namespace WNA.ThingCompProp
 {
-    public class CompHeatPusher : CompProperties
+    public class PropHeatPusher : CompProperties
     {
         public float heatPushStandard = 0f;
         public float heatPushMult = 0f;
-        public CompHeatPusher()
+        public PropHeatPusher()
         {
-            compClass = typeof(HeatPusher);
+            compClass = typeof(CompHeatPusher);
         }
     }
-    public class HeatPusher : ThingComp
+    public class CompHeatPusher : ThingComp
     {
         public bool enabled = true;
-        public CompHeatPusher Props => (CompHeatPusher)props;
+        public PropHeatPusher Props => (PropHeatPusher)props;
         public virtual bool ShouldBeActive
         {
             get
@@ -23,9 +23,9 @@ namespace WNA.ThingCompProp
                 {
                     return false;
                 }
-                CompHeatPusher compHeatPusher = Props;
+                PropHeatPusher compprop = Props;
                 float ambientTemperature = parent.AmbientTemperature;
-                if (enabled && ambientTemperature != compHeatPusher.heatPushStandard)
+                if (enabled && ambientTemperature != compprop.heatPushStandard)
                 {
                     return true;
                 }

@@ -4,7 +4,7 @@ using Verse;
 
 namespace WNA.ThingCompProp
 {
-    public class CompAttachHediff : CompProperties
+    public class PropAttachHediff : CompProperties
     {
         public bool affectsOwner = false;
         public bool affectsNeutral = false;
@@ -20,14 +20,14 @@ namespace WNA.ThingCompProp
         public List<HediffDef> immunity_Hediffs = new List<HediffDef>();
         public List<PreceptDef> immunity_Precepts = new List<PreceptDef>();
         public List<ThingDef> immunity_Races = new List<ThingDef>();
-        public CompAttachHediff()
+        public PropAttachHediff()
         {
-            compClass = typeof(AttachHediff);
+            compClass = typeof(CompAttachHediff);
         }
     }
-    public class AttachHediff : ThingComp
+    public class CompAttachHediff : ThingComp
     {
-        public CompAttachHediff Props => (CompAttachHediff)props;
+        public PropAttachHediff Props => (PropAttachHediff)props;
         public override void CompTick()
         {
             base.CompTick();

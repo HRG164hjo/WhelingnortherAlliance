@@ -3,19 +3,19 @@ using WNA.WNAUtility;
 
 namespace WNA.ThingCompProp
 {
-    public class CompIronGuardian : CompProperties
+    public class PropIronGuardian : CompProperties
     {
         public int interval = 250;
         public float radius = 10f;
         public int duration = 2400;
-        public CompIronGuardian()
+        public PropIronGuardian()
         {
-            compClass = typeof(IronGuardian);
+            compClass = typeof(CompIronGuardian);
         }
     }
-    public class IronGuardian : ThingComp
+    public class CompIronGuardian : ThingComp
     {
-        public CompIronGuardian Props => (CompIronGuardian)props;
+        public PropIronGuardian Props => (PropIronGuardian)props;
         public override void CompTick()
         {
             base.CompTick();

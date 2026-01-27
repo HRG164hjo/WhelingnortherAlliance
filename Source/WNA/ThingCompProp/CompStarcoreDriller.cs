@@ -8,18 +8,18 @@ using Verse.AI;
 
 namespace WNA.ThingCompProp
 {
-    public class CompStarcoreDriller : CompProperties
+    public class PropStarcoreDriller : CompProperties
     {
-        public CompStarcoreDriller()
+        public PropStarcoreDriller()
         {
-            compClass = typeof(StarcoreDriller);
+            compClass = typeof(CompStarcoreDriller);
         }
         public float workPerPortion = 6000f;
         public float autoDrillEfficiency = 0.3f;
     }
-    public class StarcoreDriller : ThingComp
+    public class CompStarcoreDriller : ThingComp
     {
-        public CompStarcoreDriller Props => (CompStarcoreDriller)props;
+        public PropStarcoreDriller Props => (PropStarcoreDriller)props;
         private CompPowerTrader powerComp;
         private float portionProgress;
         private float portionYieldPct;
@@ -130,11 +130,11 @@ namespace WNA.ThingCompProp
     }
     public class Dialog_SelectResource : Window
     {
-        private readonly StarcoreDriller drill;
+        private readonly CompStarcoreDriller drill;
         public override Vector2 InitialSize => new Vector2(500f, 600f);
         private Vector2 scrollPosition = Vector2.zero;
         private float scrollViewHeight;
-        public Dialog_SelectResource(StarcoreDriller drill)
+        public Dialog_SelectResource(CompStarcoreDriller drill)
         {
             this.drill = drill;
             forcePause = true;
@@ -203,7 +203,7 @@ namespace WNA.ThingCompProp
         {
             if (__result) return;
             if (!(t is Building building)) return;
-            var comp = building.TryGetComp<StarcoreDriller>();
+            var comp = building.TryGetComp<CompStarcoreDriller>();
             if (comp == null) return;
             if (comp.IsAutoMode()) return;
             if (!comp.CanDrillNow()) return;

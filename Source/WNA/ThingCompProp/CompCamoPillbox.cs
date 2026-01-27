@@ -4,20 +4,20 @@ using Verse;
 
 namespace WNA.ThingCompProp
 {
-    public class CompCamoPillbox : CompProperties
+    public class PropCamoPillbox : CompProperties
     {
         public bool visibleToPlayer = false;
         public int fadeDurationTicks = 27;
         public int recoverFromDisruptedTicks = 250;
         public bool affectedByDisruptor = true;
-        public CompCamoPillbox()
+        public PropCamoPillbox()
         {
-            compClass = typeof(CamoPillbox);
+            compClass = typeof(CompCamoPillbox);
         }
     }
-    public class CamoPillbox : ThingComp
+    public class CompCamoPillbox : ThingComp
     {
-        public CompCamoPillbox Props => (CompCamoPillbox)props;
+        public PropCamoPillbox Props => (PropCamoPillbox)props;
         private int lastDisrupted = -99999;
         private bool wasForcedVisibleLastTick;
         private bool everVisible;

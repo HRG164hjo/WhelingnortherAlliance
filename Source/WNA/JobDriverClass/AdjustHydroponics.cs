@@ -23,7 +23,7 @@ namespace WNA.JobDriverClass
             {
                 Pawn actor = chooseCrop.actor;
                 Thing hydroponicsThing = job.targetA.Thing;
-                Hydroponics compHydroponics = hydroponicsThing?.TryGetComp<Hydroponics>();
+                CompHydroponics compHydroponics = hydroponicsThing?.TryGetComp<CompHydroponics>();
 
                 if (compHydroponics == null)
                 {

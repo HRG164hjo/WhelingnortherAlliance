@@ -3,14 +3,14 @@ using WNA.WNAUtility;
 
 namespace WNA.ThingCompProp
 {
-    public class CompRadFieldAmbient : CompProperties
+    public class PropRadFieldAmbient : CompProperties
     {
         public RadSpreadConfig config = new RadSpreadConfig();
-        public CompRadFieldAmbient() => compClass = typeof(RadFieldAmbient);
+        public PropRadFieldAmbient() => compClass = typeof(CompRadFieldAmbient);
     }
-    public class RadFieldAmbient : ThingComp
+    public class CompRadFieldAmbient : ThingComp
     {
-        private CompRadFieldAmbient Props => (CompRadFieldAmbient)props;
+        private PropRadFieldAmbient Props => (PropRadFieldAmbient)props;
         public override void CompTick()
         {
             base.CompTick();

@@ -64,7 +64,7 @@
             </li>
         </stages>
         <comps>
-            <li Class="WNA.HediffCompProp.CompPostRemoveHediff">
+            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_Inhuman</hediff>
             </li>
         </comps>
@@ -91,8 +91,8 @@
             </li>
         </stages>
         <comps>
-            <li Class="WNA.HediffCompProp.CompHealPermaWounds"/>
-            <li Class="WNA.HediffCompProp.CompPostRemoveHediff">
+            <li Class="WNA.HediffCompProp.PropHealPermaWounds"/>
+            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_InAnimal</hediff>
             </li>
         </comps>
@@ -114,26 +114,25 @@
                 <statFactors>
                     <AimingDelayFactor>0</AimingDelayFactor>
                     <BandwidthCost>0</BandwidthCost>
-                    <CleaningSpeed>20</CleaningSpeed>
+                    <CleaningSpeed>10</CleaningSpeed>
                     <ControlTakingTime>0.01</ControlTakingTime>
                     <FoodPoisonChance>0</FoodPoisonChance>
-                    <GeneralLaborSpeed>20</GeneralLaborSpeed>
+                    <GeneralLaborSpeed>10</GeneralLaborSpeed>
                     <IncomingDamageFactor>0</IncomingDamageFactor>
                     <MechEnergyLossPerHP>0</MechEnergyLossPerHP>
-                    <MedicalTendSpeed>20</MedicalTendSpeed>
-                    <MedicalOperationSpeed>20</MedicalOperationSpeed>
-                    <MoveSpeed>20</MoveSpeed>
+                    <MedicalTendSpeed>10</MedicalTendSpeed>
+                    <MedicalOperationSpeed>10</MedicalOperationSpeed>
+                    <MoveSpeed>10</MoveSpeed>
                     <RangedCooldownFactor>0.01</RangedCooldownFactor>
-                    <WorkSpeedGlobal>20</WorkSpeedGlobal>
+                    <WorkSpeedGlobal>10</WorkSpeedGlobal>
                     <MeleeCooldownFactor>0</MeleeCooldownFactor>
-                    <MeleeDodgeChance>20</MeleeDodgeChance>
-                    <WorkSpeedGlobal>20</WorkSpeedGlobal>
-                    <FishingSpeed MayRequire="ludeon.rimworld.odyssey">20</FishingSpeed>
-                    <!--<FishingYield MayRequire="ludeon.rimworld.odyssey">20</FishingYield>-->
+                    <MeleeDodgeChance>10</MeleeDodgeChance>
+                    <WorkSpeedGlobal>10</WorkSpeedGlobal>
+                    <FishingSpeed MayRequire="ludeon.rimworld.odyssey">10</FishingSpeed>
                 </statFactors>
                 <statOffsets>
                     <CarryingCapacity>100000</CarryingCapacity>
-                    <EMPResistance>20</EMPResistance>
+                    <EMPResistance>10</EMPResistance>
                     <EnergyShieldRechargeRate>50</EnergyShieldRechargeRate>
                     <EnergyShieldEnergyMax>50</EnergyShieldEnergyMax>
                     <EMPResistance MayRequireAnyOf="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Anomaly">100</EMPResistance>
@@ -141,51 +140,51 @@
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <postFactor>20</postFactor>
+                        <postFactor>10</postFactor>
                     </li>
                     <li>
                         <capacity>Moving</capacity>
-                        <postFactor>20</postFactor>
+                        <postFactor>10</postFactor>
                     </li>
                     <li>
                         <capacity>Manipulation</capacity>
-                        <postFactor>20</postFactor>
+                        <postFactor>10</postFactor>
                     </li>
                     <li>
                         <capacity>Sight</capacity>
-                        <postFactor>20</postFactor>
+                        <postFactor>10</postFactor>
                     </li>
                     <li>
                         <capacity>Hearing</capacity>
-                        <postFactor>20</postFactor>
+                        <postFactor>10</postFactor>
                     </li>
                     <li>
                         <capacity>Breathing</capacity>
-                        <postFactor>20</postFactor>
+                        <postFactor>10</postFactor>
                     </li>
                     <li>
                         <capacity>BloodFiltration</capacity>
-                        <postFactor>20</postFactor>
+                        <postFactor>10</postFactor>
                     </li>
                     <li>
                         <capacity>BloodPumping</capacity>
-                        <postFactor>20</postFactor>
+                        <postFactor>10</postFactor>
                     </li>
                     <li>
                         <capacity>Metabolism</capacity>
-                        <postFactor>20</postFactor>
+                        <postFactor>10</postFactor>
                     </li>
                 </capMods>
             </li>
         </stages>
         <comps>
-            <li Class="WNA.HediffCompProp.CompMechAutoHeal">
-                <repairInterval>27</repairInterval>
+            <li Class="WNA.HediffCompProp.PropMechAutoHeal">
+                <repairInterval>29</repairInterval>
             </li>
-            <li Class="WNA.HediffCompProp.CompPostRemoveHediff">
+            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_InMechanoid</hediff>
             </li>
-            <li Class="WNA.HediffCompProp.CompHediffHediffRemover"/>
+            <li Class="WNA.HediffCompProp.PropHediffHediffRemover"/>
         </comps>
 		<modExtensions>
 			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
@@ -195,10 +194,10 @@
     </HediffDef>
 
     <HediffDef>
-        <defName>WNA_DeathRefusal</defName>
+        <defName>WNA_DeathEnd</defName>
         <label>death refusal</label>
         <description>This pawn have witnessed Whelingnorther's control over death. Ripples of reality is altering their body and mind. If this pawn is killed and their corpse isn't destroyed, they'll be able to crawl back from death.</description>
-        <hediffClass>WNA.HediffClass.DeathRefusal</hediffClass>
+        <hediffClass>WNA.HediffClass.DeathEnd</hediffClass>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>
@@ -214,13 +213,13 @@
             </li>
         </stages>
         <comps>
-            <li Class="WNA.HediffCompProp.CompPostRemoveHediff">
-                <hediff>WNA_DeathRefusal</hediff>
+            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
+                <hediff>WNA_DeathEnd</hediff>
             </li>
         </comps>
     </HediffDef>
     <HediffDef>
-        <defName>sWNA_DeathRefusal</defName>
+        <defName>sWNA_DeathEnd</defName>
         <label>post death refusal</label>
         <hediffClass>HediffWithComps</hediffClass>
         <description>This pawn is back from death, for a short period of time the ripples of reality will keep this pawn free from many common harms. Note that this temperary instability of reality may cause some unexpected effects.</description>
@@ -231,6 +230,9 @@
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>10000~20000</disappearsAfterTicks>
                 <showRemainingTime>true</showRemainingTime>
+            </li>
+            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
+                <hediff>WNA_DeathEnd</hediff>
             </li>
         </comps>
         <stages>

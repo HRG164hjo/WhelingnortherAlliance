@@ -198,7 +198,7 @@
                 <wickTicks>1</wickTicks>
                 <preExplosionSpawnSingleThingDef>CraterLarge</preExplosionSpawnSingleThingDef>
             </li>
-            <li Class="WNA.ThingCompProp.CompRadFieldBurst">
+            <li Class="WNA.ThingCompProp.PropRadFieldBurst">
                 <modeList>
                     <li>KillFinalize</li>
                     <li>KillFinalizeLeavingsOnly</li>
@@ -257,7 +257,7 @@
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <comps>
-            <li Class="WNA.ThingCompProp.CompHydroponics">
+            <li Class="WNA.ThingCompProp.PropHydroponics">
                 <growthFactor>16</growthFactor>
                 <yieldFactor>10</yieldFactor>
                 <extraYieldFactor>10</extraYieldFactor>
@@ -378,7 +378,7 @@
                 <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>200</basePowerConsumption>
             </li>
-            <li Class="WNA.ThingCompProp.CompStarcoreDriller">
+            <li Class="WNA.ThingCompProp.PropStarcoreDriller">
                 <workPerPortion>60000</workPerPortion>
                 <autoDrillEfficiency>20</autoDrillEfficiency>
             </li>

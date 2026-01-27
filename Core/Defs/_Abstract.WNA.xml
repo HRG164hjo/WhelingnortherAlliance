@@ -1065,7 +1065,7 @@
                 <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
                 <requiresImprisonment>true</requiresImprisonment>
             </li>
-			<li Class="WNA.ThingCompProp.CompDamageLimit">
+			<li Class="WNA.ThingCompProp.PropDamageLimit">
 			  	<damageLimit>1</damageLimit>
                 <canAbsorb>true</canAbsorb>
 			</li>

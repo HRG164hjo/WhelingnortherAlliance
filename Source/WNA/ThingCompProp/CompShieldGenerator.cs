@@ -7,7 +7,7 @@ using WNA.WNAMiscs;
 
 namespace WNA.ThingCompProp
 {
-    public class CompShieldGenerator : CompProperties
+    public class PropShieldGenerator : CompProperties
     {
         public int ticksToReset = 120;
         public float minDrawSize = 1.4f;
@@ -18,12 +18,12 @@ namespace WNA.ThingCompProp
         public string shieldTexPath;
         public Color shieldColor = Color.black;
         public bool shieldInstaReset = false;
-        public CompShieldGenerator()
+        public PropShieldGenerator()
         {
-            compClass = typeof(ShieldGenerator);
+            compClass = typeof(CompShieldGenerator);
         }
     }
-    public class ShieldGenerator : ThingComp
+    public class CompShieldGenerator : ThingComp
     {
         protected float energy;
         protected int ticksToReset = -1;
@@ -49,7 +49,7 @@ namespace WNA.ThingCompProp
                 return bubbleMat;
             }
         }
-        public CompShieldGenerator Props => (CompShieldGenerator)props;
+        public PropShieldGenerator Props => (PropShieldGenerator)props;
         public float EnergyMax => Props.energyMax;
         public float Energy => energy;
         public ShieldState ShieldState

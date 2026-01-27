@@ -59,24 +59,37 @@
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/ThingDef[defName="GravEngine"]/statBases/SubstructureSupport</xpath>
         <value>
-            <SubstructureSupport>5000</SubstructureSupport>
+            <SubstructureSupport>3000</SubstructureSupport>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="GravEngine"]</xpath>
+        <value>
+            <stealable>false</stealable>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/ThingDef[defName="GravEngine"]/comps/li[@Class="CompProperties_SubstructureFootprint"]</xpath>
         <value>
             <li Class="CompProperties_SubstructureFootprint">
-                <radius>24.9</radius>
+                <radius>79.9</radius>
             </li>
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="GravFieldExtender"]</xpath>
+        <value>
+            <useHitPoints>false</useHitPoints>
+            <stealable>false</stealable>
+        </value>
+    </Operation>
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/ThingDef[defName="GravFieldExtender"]/comps/li[@Class="CompProperties_GravshipFacility"]</xpath>
         <value>
             <li Class="CompProperties_GravshipFacility">
                 <statOffsets>
-                    <SubstructureSupport>2500</SubstructureSupport>
+                    <SubstructureSupport>3000</SubstructureSupport>
                 </statOffsets>
                 <requiresLOS>false</requiresLOS>
                 <maxSimultaneous>12</maxSimultaneous>
@@ -88,7 +101,7 @@
 	    <xpath>Defs/ThingDef[defName="GravFieldExtender"]/comps/li[@Class="CompProperties_SubstructureFootprint"]</xpath>
         <value>
             <li Class="CompProperties_SubstructureFootprint">
-                <radius>16.9</radius>
+                <radius>27.9</radius>
             </li>
         </value>
     </Operation>
@@ -113,6 +126,7 @@
             <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
             <designationCategory>Odyssey</designationCategory>
             <useHitPoints>false</useHitPoints>
+            <stealable>false</stealable>
             <researchPrerequisites>
                 <li>BasicGravtech</li>
             </researchPrerequisites>
@@ -167,6 +181,7 @@
 	    <xpath>Defs/ThingDef[defName="FuelOptimizer" or defName="GravshipShieldGenerator" or defName="OrbitalScanner" or defName="GravcorePowerCell" or defName="SignalJammer" or defName="PilotSubpersonaCore" or defName="GravAnchor"]</xpath>
         <value>
             <useHitPoints>false</useHitPoints>
+            <stealable>false</stealable>
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
@@ -273,7 +288,7 @@
 	    <xpath>Defs/ThingDef[defName="MechPylon"]</xpath>
         <value>
             <costList>
-                <ChunkMechanoidSlag>2</ChunkMechanoidSlag>
+                <ChunkMechanoidSlag>1</ChunkMechanoidSlag>
                 <GravlitePanel>15</GravlitePanel>
             </costList>
 		    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>

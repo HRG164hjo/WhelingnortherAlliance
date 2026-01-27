@@ -149,4 +149,32 @@
         <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
     </RecipeDef>
 
+    <RecipeDef ParentName="WNA_RecipeBase" MayRequire="BreadMo.Cinders">
+        <defName>WNA_ChopPolymer</defName>
+        <description>retrive useful resources from amorphous polymer.</description>
+        <jobString>working.</jobString>
+        <label>separate amorphous polymer</label>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+						<li>Cinder_AmorphousPolymer</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+			<thingDefs>
+				<li>Cinder_AmorphousPolymer</li>
+			</thingDefs>
+        </fixedIngredientFilter>
+		<products>
+			<Cinder_BurntStrangeMeat>100</Cinder_BurntStrangeMeat>
+            <Steel>25</Steel>
+		</products>
+        <workAmount>100</workAmount>
+        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+    </RecipeDef>
+
 </Defs>

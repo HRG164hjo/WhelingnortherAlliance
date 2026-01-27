@@ -4,17 +4,17 @@ using Verse.AI;
 
 namespace WNA.HediffCompProp
 {
-    public class CompTemporalEffect : HediffCompProperties
+    public class PropTemporalEffect : HediffCompProperties
     {
         public bool isMalicious = true;
-        public CompTemporalEffect()
+        public PropTemporalEffect()
         {
-            compClass = typeof(TemporalEffect);
+            compClass = typeof(CompTemporalEffect);
         }
     }
-    public class TemporalEffect : HediffComp
+    public class CompTemporalEffect : HediffComp
     {
-        public CompTemporalEffect Props => (CompTemporalEffect)props;
+        public PropTemporalEffect Props => (PropTemporalEffect)props;
         public override void CompPostTick(ref float severity)
         {
             parent.pawn.jobs?.StopAll();

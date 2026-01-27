@@ -8,7 +8,7 @@ namespace WNA.WNAMiscs
     {
         public override void DrawWorker(Vector3 loc, Rot4 rot, ThingDef thingDef, Thing thing, float extraRotation)
         {
-            var comp = thing.TryGetComp<CamoPillbox>();
+            var comp = thing.TryGetComp<CompCamoPillbox>();
             float alpha = comp?.GetAlpha() ?? 1f;
             Color oldColor = color;
             color.a *= alpha;

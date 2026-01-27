@@ -4,21 +4,21 @@ using Verse;
 
 namespace WNA.AbilityCompProp
 {
-    public class CompHediffDeprivation : CompProperties_AbilityEffect
+    public class PropHediffDeprivation : CompProperties_AbilityEffect
     {
         public HediffDef hediffToRemove = null;
         public HediffDef hediffTrauma = null;
         public HediffDef hediffFallBack = null;
         public float sevTrauma = 1f;
         public float sevFallBack = 1f;
-        public CompHediffDeprivation()
+        public PropHediffDeprivation()
         {
-            compClass = typeof(HediffDeprivation);
+            compClass = typeof(CompHediffDeprivation);
         }
     }
-    public class HediffDeprivation : CompAbilityEffect
+    public class CompHediffDeprivation : CompAbilityEffect
     {
-        public new CompHediffDeprivation Props => (CompHediffDeprivation)props;
+        public new PropHediffDeprivation Props => (PropHediffDeprivation)props;
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);
@@ -40,27 +40,21 @@ namespace WNA.AbilityCompProp
             if (Props.hediffTrauma == null) return;
             Hediff trauma = pawn.health.AddHediff(Props.hediffTrauma);
             if (trauma != null)
-            {
                 trauma.Severity = Mathf.Clamp(
                     Props.sevTrauma, trauma.def.minSeverity, trauma.def.maxSeverity);
-            }
         }
         private void ApplyFallback(Pawn pawn)
         {
             if (Props.hediffFallBack == null) return;
             Hediff fallBack = pawn.health.AddHediff(Props.hediffFallBack);
             if (fallBack != null)
-            {
                 fallBack.Severity = Mathf.Clamp(
                     Props.sevFallBack, fallBack.def.minSeverity, fallBack.def.maxSeverity);
-            }
         }
         public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
         {
             if (target.Pawn != null && !target.Pawn.Dead)
-            {
                 return true;
-            }
             return false;
         }
     }

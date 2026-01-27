@@ -180,7 +180,7 @@
                 <delayTicks>500</delayTicks>
                 <destroyMode>Vanish</destroyMode>
             </li>
-            <li Class="WNA.ThingCompProp.CompAOEDamage">
+            <li Class="WNA.ThingCompProp.PropAOEDamage">
                 <damageDef>WNA_IronKill</damageDef>
                 <damage>Infinity</damage>
                 <ap>Infinity</ap>

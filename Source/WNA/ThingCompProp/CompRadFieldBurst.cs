@@ -4,15 +4,15 @@ using WNA.WNAUtility;
 
 namespace WNA.ThingCompProp
 {
-    public class CompRadFieldBurst : CompProperties
+    public class PropRadFieldBurst : CompProperties
     {
         public List<DestroyMode> modeList = null;
         public RadSpreadConfig config = new RadSpreadConfig();
-        public CompRadFieldBurst() => compClass = typeof(RadFieldBurst);
+        public PropRadFieldBurst() => compClass = typeof(CompRadFieldBurst);
     }
-    public class RadFieldBurst : ThingComp
+    public class CompRadFieldBurst : ThingComp
     {
-        private CompRadFieldBurst Props => (CompRadFieldBurst)props;
+        private PropRadFieldBurst Props => (PropRadFieldBurst)props;
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
             base.PostDestroy(mode, previousMap);

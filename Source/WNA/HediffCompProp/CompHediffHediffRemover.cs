@@ -3,19 +3,19 @@ using Verse;
 
 namespace WNA.HediffCompProp
 {
-    public class CompHediffHediffRemover : HediffCompProperties
+    public class PropHediffHediffRemover : HediffCompProperties
     {
         public int interval = 250;
         public bool reverseEffect = false;
         public bool removeInjury = false;
-        public CompHediffHediffRemover()
+        public PropHediffHediffRemover()
         {
-            compClass = typeof(HediffHediffRemover);
+            compClass = typeof(CompHediffHediffRemover);
         }
     }
-    public class HediffHediffRemover : HediffComp
+    public class CompHediffHediffRemover : HediffComp
     {
-        public CompHediffHediffRemover Props => (CompHediffHediffRemover)props;
+        public PropHediffHediffRemover Props => (PropHediffHediffRemover)props;
         private static readonly HashSet<string> listedHediffs = new HashSet<string>
         {
             "WNA_Corrosion",

@@ -509,11 +509,11 @@
             <li>WNA_StandardArsenal</li>
         </researchPrerequisites>
 		<comps>
-			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
+			<li Class="WNA.ThingCompProp.PropThingSelfHeal">
 			  	<ticksPerHeal>27</ticksPerHeal>
 				<healPercent>10</healPercent>
 			</li>
-			<li Class="WNA.ThingCompProp.CompDamageLimit">
+			<li Class="WNA.ThingCompProp.PropDamageLimit">
 			  	<damageLimit>50</damageLimit>
 			</li>
 		</comps>
@@ -575,11 +575,11 @@
 			<li Class="CompProperties_Forbiddable">
 				<allowNonPlayer>false</allowNonPlayer>
 			</li>
-			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
+			<li Class="WNA.ThingCompProp.PropThingSelfHeal">
 			  	<ticksPerHeal>27</ticksPerHeal>
 				<healPercent>10</healPercent>
 			</li>
-			<li Class="WNA.ThingCompProp.CompDamageLimit">
+			<li Class="WNA.ThingCompProp.PropDamageLimit">
 			  	<damageLimit>50</damageLimit>
 			</li>
 		</comps>
@@ -650,11 +650,11 @@
 			<li Class="CompProperties_Forbiddable">
 				<allowNonPlayer>false</allowNonPlayer>
 			</li>
-			<li Class="WNA.ThingCompProp.CompThingSelfHeal">
+			<li Class="WNA.ThingCompProp.PropThingSelfHeal">
 			  	<ticksPerHeal>27</ticksPerHeal>
 				<healPercent>10</healPercent>
 			</li>
-			<li Class="WNA.ThingCompProp.CompDamageLimit">
+			<li Class="WNA.ThingCompProp.PropDamageLimit">
 			  	<damageLimit>50</damageLimit>
 			</li>
 		</comps>

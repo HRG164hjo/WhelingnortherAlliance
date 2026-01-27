@@ -2,17 +2,17 @@
 
 namespace WNA.ThingCompProp
 {
-    public class CompMultiUse : CompProperties
+    public class PropMultiUse : CompProperties
     {
         public int uses = 2;
-        public CompMultiUse()
+        public PropMultiUse()
         {
-            compClass = typeof(MultiUse);
+            compClass = typeof(CompMultiUse);
         }
     }
-    public class MultiUse : ThingComp
+    public class CompMultiUse : ThingComp
     {
-        public CompMultiUse Props => (CompMultiUse)props;
+        public PropMultiUse Props => (PropMultiUse)props;
         private int count = -1;
         public int Count
         {
@@ -35,7 +35,7 @@ namespace WNA.ThingCompProp
         {
             if (!base.AllowStackWith(other))
                 return false;
-            MultiUse otherComp = other.TryGetComp<MultiUse>();
+            CompMultiUse otherComp = other.TryGetComp<CompMultiUse>();
             if (otherComp == null)
                 return false;
             return otherComp.Count == Count;

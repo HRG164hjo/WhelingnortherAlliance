@@ -3,21 +3,21 @@ using Verse;
 
 namespace WNA.ThingCompProp
 {
-    public class CompThingSelfHeal : CompProperties
+    public class PropThingSelfHeal : CompProperties
     {
         public int ticksPerHeal = 250;
         public int healPercent = 10;
         public int damageLimit = -1;
 
-        public CompThingSelfHeal()
+        public PropThingSelfHeal()
         {
-            compClass = typeof(ThingSelfHeal);
+            compClass = typeof(CompThingSelfHeal);
         }
     }
-    public class ThingSelfHeal : ThingComp
+    public class CompThingSelfHeal : ThingComp
     {
         public int ticksPassedSinceLastHeal;
-        public CompThingSelfHeal Props => (CompThingSelfHeal)props;
+        public PropThingSelfHeal Props => (PropThingSelfHeal)props;
         public override void CompTick()
         {
             Tick(1);

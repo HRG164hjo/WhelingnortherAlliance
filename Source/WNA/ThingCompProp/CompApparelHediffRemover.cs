@@ -4,17 +4,17 @@ using Verse;
 
 namespace WNA.ThingCompProp
 {
-    public class CompApparelHediffRemover : CompProperties
+    public class PropApparelHediffRemover : CompProperties
     {
         public int interval = 250;
         public bool reverseEffect = false;
         public bool removeInjury = false;
-        public CompApparelHediffRemover()
+        public PropApparelHediffRemover()
         {
-            this.compClass = typeof(ApparelHediffRemover);
+            this.compClass = typeof(CompApparelHediffRemover);
         }
     }
-    public class ApparelHediffRemover : ThingComp
+    public class CompApparelHediffRemover : ThingComp
     {
         private static readonly HashSet<string> listedHediffs = new HashSet<string>
             {
@@ -23,7 +23,7 @@ namespace WNA.ThingCompProp
             };
 
         private int ticksUntilRemove;
-        public CompApparelHediffRemover Props => (CompApparelHediffRemover)props;
+        public PropApparelHediffRemover Props => (PropApparelHediffRemover)props;
         public override void Initialize(CompProperties props)
         {
             base.Initialize(props);

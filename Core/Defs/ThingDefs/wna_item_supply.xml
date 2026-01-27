@@ -96,7 +96,7 @@
             <li Class="CompProperties_UseEffectPlaySound">
                 <soundOnUsed>MechSerumUsed</soundOnUsed>
             </li>
-            <li Class="WNA.ThingCompProp.CompMultiUse">
+            <li Class="WNA.ThingCompProp.PropMultiUse">
                 <uses>28</uses>
             </li>
         </comps>

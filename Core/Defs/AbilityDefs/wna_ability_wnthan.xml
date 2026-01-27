@@ -27,7 +27,7 @@
             </targetParams>
         </verbProperties>
         <comps Inherit="false">
-            <li Class="WNA.AbilityCompProp.CompAbilityAscension"/>
+            <li Class="WNA.AbilityCompProp.PropAbilityAscension"/>
             <li Class="CompProperties_AbilityGiveHediff">
                 <compClass>CompAbilityEffect_GiveHediff</compClass>
                 <hediffDef>WNA_Corrosion</hediffDef>
@@ -92,7 +92,7 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="WNA.AbilityCompProp.CompAbilityResurrect"/>
+            <li Class="WNA.AbilityCompProp.PropAbilityResurrect"/>
         </comps>
     </AbilityDef>
 
@@ -231,7 +231,7 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="WNA.AbilityCompProp.CompHediffDeprivation">
+            <li Class="WNA.AbilityCompProp.PropHediffDeprivation">
                 <hediffToRemove>PsychicAmplifier</hediffToRemove>
                 <hediffTrauma>WNA_PsychicTrauma</hediffTrauma>
                 <hediffFallBack>WNA_Disabled</hediffFallBack>
