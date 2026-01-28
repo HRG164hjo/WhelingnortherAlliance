@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="WNA_FurnitureBase">
-		<defName>WNA_TestClimateControl</defName>
-		<label>test climate controlling facility</label>
+		<defName>WNA_ClimateController</defName>
+		<label>climate control facility</label>
 		<description>todo.</description>
         <graphicData>
 			<texPath>Things/Building/Misc/ClimateAdjuster</texPath>

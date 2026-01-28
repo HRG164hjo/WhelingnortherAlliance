@@ -39,7 +39,7 @@ namespace WNA.WNADefOf
         public static JobDef WNA_Job_AdjustHydroponics;
         public static JobDef WNA_Job_DeepDrilling;
 
-        public static PawnKindDef WNA_Saint;
+        public static PawnKindDef WNA_Archonpriest;
         public static PawnKindDef WNA_Disciple;
 
         public static TerrainDef WNA_FocusFloor;

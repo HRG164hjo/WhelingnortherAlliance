@@ -15,7 +15,7 @@
         <settlementGenerationWeight>1</settlementGenerationWeight>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
         <maxCountAtGameStart>1</maxCountAtGameStart>
-        <canMakeRandomly>true</canMakeRandomly>
+        <canMakeRandomly>false</canMakeRandomly>
         <canSiege>false</canSiege>
         <canStageAttacks>false</canStageAttacks>
         <leaderTitle>saint</leaderTitle>

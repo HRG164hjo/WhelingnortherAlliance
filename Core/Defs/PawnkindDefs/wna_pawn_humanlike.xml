@@ -250,8 +250,8 @@
         </abilities>
     </PawnKindDef>
     <PawnKindDef ParentName="WNA_PawnsWNThan">
-        <defName>WNA_Saint</defName>
-        <label>saint</label>
+        <defName>WNA_Archonpriest</defName>
+        <label>archonpriest</label>
         <combatPower>100</combatPower>
         <factionLeader>true</factionLeader>
         <minGenerationAge>30</minGenerationAge>

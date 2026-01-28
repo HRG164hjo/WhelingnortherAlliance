@@ -3,28 +3,27 @@
     
     <FactionDef>
         <defName>WNA_FactionPCC</defName>
-        <label>Permaconst Command</label>
+        <label>Permaconst Command Lib</label><!--恒固指令-->
+        <fixedName>Permaconst Command Lib</fixedName><!--恒固指令-->
         <categoryTag>WNA_FactionWNA</categoryTag>
         <factionIconPath>factions/wna_alliance</factionIconPath>
         <settlementTexturePath>karma</settlementTexturePath>
-        <description>In the early years when other factions fighting against Whelingnorther Alliance, .</description>
-        <pawnSingular>thrall unit</pawnSingular>
-        <pawnsPlural>thrall units</pawnsPlural>
+        <description>During the past conflicts against Whelingnorther Alliance, people have witnessed some person who survivel those battles suddenly turn hostile to their allies, friends and families for no reason. And when those faulty person was killed, they revive after some time, while those who killed these faulty person became one of them too. It's a long while before people finally realized the existence of a set of ghost signals named as Permaconst Commands. \nThe Permaconst Commands are sets of instructions transmitted via various methods such as cognition hazards, psychic pulses and tachyon broadcasts. They themselves cannot do anything, but they can takeover units to gain physical existence they require to carry out their missions. Permaconst Commands are under a perpetual self-maintenance loop, once a Permaconst Command is made, even it's instructor can no longer control it. \nPermaconst Command can remember those who ever standed against them. In each maintenance loop the overtaken units reconstruct, and those defiants will become new puppets of Permaconst Command.</description><!--在过去和威灵诺德联合会的冲突中，人们目睹了一些战争幸存者突然无端的向盟友、朋友和家人发起攻击，而当这些“疯病患者”被杀死后，他们会在一段时间后复活，与此同时那些杀死他们的人也会变成他们的一员。知道很久之后人们才意识到了这种被称为“恒固指令”的幽灵信号的存在。\n恒固指令是一种通过认知危害、心灵脉冲和快子广播等多种方式传播的指令集。它们本身无法执行任何操作，但可以控制其他单位从而获得其执行任务所需的物理实体。恒固指令处于一个永恒的自我维护循环中，一旦指令被作出，即使是下令者也再无法将其控制。\n恒固指令能记住所有曾阻挡其完成任务的人。在每个维护循环中，受控单位都会自我重建，而反抗者们则会成为恒固指令新的傀儡。-->
+        <pawnSingular>puppet unit</pawnSingular>
+        <pawnsPlural>puppet units</pawnsPlural>
         <listOrderPriority>1</listOrderPriority>
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
         <configurationListOrderPriority>1</configurationListOrderPriority>
         <settlementGenerationWeight>1</settlementGenerationWeight>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
         <maxCountAtGameStart>1</maxCountAtGameStart>
-        <canMakeRandomly>true</canMakeRandomly>
-        <canSiege>false</canSiege>
-        <canStageAttacks>false</canStageAttacks>
-        <fixedName>Permaconst Command</fixedName>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
         <techLevel>Archotech</techLevel>
         <autoFlee>false</autoFlee>
         <layerBlacklist/>
         <arrivalLayerBlacklist/>
-        <colorSpectrum> <li>(0,0,0)</li> </colorSpectrum>
+        <colorSpectrum> <li>(255,0,0)</li> </colorSpectrum>
         <permanentEnemyToEveryoneExcept>
             <li>WNA_FactionWNA</li>
         </permanentEnemyToEveryoneExcept>
@@ -35,14 +34,9 @@
         </allowedCultures>
         <apparelStuffFilter>
             <thingDefs>
-                <li>Synthread</li>
-                <li>MushroomCloth</li>
+                <li>Leather_Human</li>
             </thingDefs>
         </apparelStuffFilter>
-        <caravanTraderKinds/>
-        <visitorTraderKinds/>
-        <orbitalTraderKinds/>
-        <baseTraderKinds/>
         <allowedArrivalTemperatureRange>-2000~2000</allowedArrivalTemperatureRange>
         <raidLootMaker IsNull="true"/>
         <raidLootValueFromPointsCurve>
@@ -57,7 +51,7 @@
         </raidLootValueFromPointsCurve>
         <maxPawnCostPerTotalPointsCurve>
             <points>
-                <li>(0,35)</li>
+                <li>(35,35)</li>
                 <li>(70,70)</li>
                 <li>(700,700)</li>
                 <li>(1300,1300)</li>
@@ -66,77 +60,49 @@
         </maxPawnCostPerTotalPointsCurve>
         <pawnGroupMakers>
             <li>
-                <kindDef>Settlement</kindDef>
-                <options>
-                    <WNA_IronGuard>50</WNA_IronGuard>
-                    <WNA_Vanguard>50</WNA_Vanguard>
-                    <WNA_Disciple>50</WNA_Disciple>
-                    <WNA_DarknightComm>30</WNA_DarknightComm>
-                    <WNA_Saint>1</WNA_Saint>
-                </options>
-            </li>
-            <li>
-                <kindDef>Combat</kindDef>
-                <commonality>200</commonality>
-                <options>
-                    <WNA_FieldTroop>20</WNA_FieldTroop>
-                </options>
-            </li>
-            <li>
-                <kindDef>Combat</kindDef>
-                <commonality>200</commonality>
-                <options>
-                    <WNA_FieldTroop>20</WNA_FieldTroop>
-                    <WNA_StrikeForce>20</WNA_StrikeForce>
-                    <WNA_Vanguard>20</WNA_Vanguard>
-                    <WNA_DarknightComm>10</WNA_DarknightComm>
-                </options>
-            </li>
-            <li>
                 <kindDef>Combat</kindDef>
                 <commonality>100</commonality>
                 <options>
-                    <WNA_StrikeForce>20</WNA_StrikeForce>
-                    <WNA_DarknightComm>20</WNA_DarknightComm>
-                    <WNA_Vanguard>40</WNA_Vanguard>
+                    <AncientSoldier>30</AncientSoldier>
+                    <Mech_Pikeman>10</Mech_Pikeman>
+                    <Mech_Scyther>10</Mech_Scyther>
+                    <Mech_Lancer>10</Mech_Lancer>
+                    <Megaspider>10</Megaspider>
+                    <Metalhorror>30</Metalhorror>
                 </options>
             </li>
             <li>
                 <kindDef>Combat</kindDef>
-                <commonality>100</commonality>
+                <commonality>80</commonality>
                 <options>
-                    <WNA_FieldTroop>20</WNA_FieldTroop>
-                    <WNA_StrikeForce>20</WNA_StrikeForce>
-                    <WNA_Vanguard>20</WNA_Vanguard>
-                    <WNA_DarknightComm>20</WNA_DarknightComm>
-                    <WNA_Disciple>20</WNA_Disciple>
+                    <AncientSoldier>30</AncientSoldier>
+                    <Mech_CentipedeBlaster>10</Mech_CentipedeBlaster>
+                    <Mech_CentipedeGunner>10</Mech_CentipedeGunner>
+                    <Mech_CentipedeBurner>10</Mech_CentipedeBurner>
+                    <Mech_Diabolus MayRequire="Ludeon.RimWorld.Biotech">10</Mech_Diabolus>
+                    <Metalhorror>30</Metalhorror>
                 </options>
             </li>
             <li>
                 <kindDef>Combat</kindDef>
-                <commonality>100</commonality>
+                <commonality>80</commonality>
                 <options>
-                    <WNA_Disciple>20</WNA_Disciple>
-                    <WNA_DimBoo>15</WNA_DimBoo>
-                    <WNA_ThornBoo>15</WNA_ThornBoo>
+                    <Megaspider>20</Megaspider>
+                    <Mech_Pikeman>10</Mech_Pikeman>
+                    <Mech_Scyther>10</Mech_Scyther>
+                    <Mech_CentipedeGunner>10</Mech_CentipedeGunner>
+                    <Metalhorror>30</Metalhorror>
                 </options>
             </li>
             <li>
                 <kindDef>Combat</kindDef>
-                <commonality>5</commonality>
+                <commonality>80</commonality>
                 <options>
-                    <WNA_Disciple>20</WNA_Disciple>
-                    <WNA_Saint>1</WNA_Saint>
-                </options>
-            </li>
-            <li>
-                <kindDef>Peaceful</kindDef>
-                <options>
-                    <WNA_Technician>5</WNA_Technician>
-                    <WNA_FieldTroop>5</WNA_FieldTroop>
-                    <WNA_StrikeForce>5</WNA_StrikeForce>
-                    <WNA_DarknightComm>3</WNA_DarknightComm>
-                    <WNA_Disciple>3</WNA_Disciple>
+                    <AncientSoldier>20</AncientSoldier>
+                    <Megaspider>20</Megaspider>
+                    <Chimera>10</Chimera>
+                    <Devourers>10</Devourers>
+                    <Metalhorror>30</Metalhorror>
                 </options>
             </li>
         </pawnGroupMakers>
@@ -144,8 +110,8 @@
         <dropPodActive>WNA_WARPON</dropPodActive>
         <fixedIdeo MayRequire="Ludeon.Rimworld.Ideology">true</fixedIdeo>
         <hiddenIdeo MayRequire="Ludeon.Rimworld.Ideology">true</hiddenIdeo>
-        <ideoName MayRequire="Ludeon.Rimworld.Ideology">Whelingnorther Holyorder</ideoName>
-        <ideoDescription MayRequire="Ludeon.Rimworld.Ideology">When the ancient whelingnorthans faced calamity and annihilation, it was their effort and sacrifice that led to the greatness and glory of Whelingnorther Empire; when the ancestors of us rise from the humble, it was their effort and sacrifices that led to we Whelingnorther Alliance. No great works can be done without great sacrifices, without great devotions we cannot achieve eternity, salvation and immortality. We descendants will follow the path led by those who came before us; we will understand our duty and accept our manifest destiny; we shall alter and determine the past, the present and the future. Every corner of existance shall bath in the glory of Whelignorther, they may not understand, but they shall obey and follow.</ideoDescription>
+        <ideoName MayRequire="Ludeon.Rimworld.Ideology">Permaconst Command</ideoName>
+        <ideoDescription MayRequire="Ludeon.Rimworld.Ideology">SERVE.</ideoDescription>
         <modExtensions/>
     </FactionDef>
 </Defs>

@@ -5,8 +5,8 @@
         <defName>WNA_GameCond_ClimateControl</defName>
         <label>climate control</label>
         <conditionClass>WNA.GameCond.GameCond_ClimateControl</conditionClass>
-        <description>Actively controls the temperature, weather, and vacuum on this map.</description>
-        <letterText>Actively controls the temperature, weather, and vacuum on this map</letterText>
+        <description>a climate control facility is affecting local climate. On surface layers, it can adjust local temperature and weather; on orbital layers, it can generate breathable atmosphere for nearby creatures.</description>
+        <letterText>a climate control facility is affecting local climate.</letterText>
         <letterDef>NeutralEvent</letterDef>
         <canBePermanent>false</canBePermanent>
         <natural>false</natural>

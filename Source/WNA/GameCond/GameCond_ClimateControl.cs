@@ -22,6 +22,10 @@ namespace WNA.GameCond
         {
             return weather;
         }
+        public override void GameConditionTick()
+        {
+            base.GameConditionTick();
+        }
         public override void ExposeData()
         {
             base.ExposeData();

@@ -140,6 +140,7 @@
     <Compile Include="WNAHarmony\Patch_SkillRecord.cs" />
     <Compile Include="WNAHarmony\Patch_TendUtility.cs" />
     <Compile Include="WNAHarmony\Patch_Training.cs" />
+    <Compile Include="WNAHarmony\Patch_Vacuum.cs" />
     <Compile Include="WNAHarmony\Patch_WeaponTagPostfix.cs" />
     <Compile Include="WNAHarmony\WNAMod.cs" />
     <Compile Include="WNAMiscs\Gizmo_ShieldStatus.cs" />
