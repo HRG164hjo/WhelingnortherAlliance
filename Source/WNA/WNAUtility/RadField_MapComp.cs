@@ -11,7 +11,7 @@ namespace WNA.WNAUtility
     public class RadField_MapComp : MapComponent, ICellBoolGiver
     {
         private List<int> radLevel;
-        public int radLevelMax = 2000;
+        public int radLevelMax = 5000;
         private int radLevelDelay = 29;
         private int radLevelDecay = 2;
         private float radLevelFactor = 0.1f;

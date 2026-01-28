@@ -698,7 +698,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>WNA_RadBeam</damageDef>
-			<damageAmountBase>40</damageAmountBase>
+			<damageAmountBase>22</damageAmountBase>
 		</projectile>
 		<comps>
 			<li Class="WNA.ThingCompProp.PropRadFieldBurst">

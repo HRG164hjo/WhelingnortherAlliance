@@ -74,12 +74,11 @@
     <Compile Include="DMExtension\MechSkillOffset.cs" />
     <Compile Include="DMExtension\RefuelableExtraStat.cs" />
     <Compile Include="DMExtension\TechnoConfig.cs" />
-    <Compile Include="GameCondition\GameCond_ClimateControl.cs" />
+    <Compile Include="GameCond\GameCond_ClimateControl.cs" />
     <Compile Include="HediffCompProp\CompHediffHediffRemover.cs" />
     <Compile Include="JobDriverClass\DeepDrilling.cs" />
     <Compile Include="Recipe\TargetedHarvest.cs" />
     <Compile Include="ThingClass\DummyLaser.cs" />
-    <Compile Include="ThingClass\ClimateControl.cs" />
     <Compile Include="ThingClass\Whelingnorthan.cs" />
     <Compile Include="ThingCompProp\CompBodyshapeOverride.cs" />
     <Compile Include="ThingCompProp\CompCamoPillbox.cs" />
@@ -99,7 +98,6 @@
     <Compile Include="HediffCompProp\CompTemporalEffect.cs" />
     <Compile Include="Incident\DiscipleJoin.cs" />
     <Compile Include="JobDriverClass\AdjustHydroponics.cs" />
-    <Compile Include="Recipe\HalfbeingInfusion.cs" />
     <Compile Include="TargetEffect\Ascension.cs" />
     <Compile Include="ThingClass\BarrierDoor.cs" />
     <Compile Include="ThingClass\SpikeTrap.cs" />
@@ -149,6 +147,7 @@
     <Compile Include="WNAMiscs\HedifferRemover.cs" />
     <Compile Include="WNAMiscs\HedifferTicker.cs" />
     <Compile Include="WNAMiscs\IngredValGetter_NutriMisc.cs" />
+    <Compile Include="WNAMiscs\PlaceWorker_SingleOnMap.cs" />
     <Compile Include="WNAMiscs\ProjType_Inviso.cs" />
     <Compile Include="WNAMiscs\ProjType_IronBlast.cs" />
     <Compile Include="WNAMiscs\StockGenerator_BuyAnything.cs" />

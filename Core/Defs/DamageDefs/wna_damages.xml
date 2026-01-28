@@ -178,7 +178,9 @@
         <makesAnimalsFlee>false</makesAnimalsFlee>
         <causeStun>true</causeStun>
         <impactSoundType/>
-        <buildingDamageFactor>0.34</buildingDamageFactor>
+        <buildingDamageFactor>0.333333</buildingDamageFactor>
+        <plantDamageFactor>0.111111</plantDamageFactor>
+        <corpseDamageFactor>0.037037</corpseDamageFactor>
         <additionalHediffs>
             <li>
                 <hediff>WNA_RadEffect</hediff>
@@ -200,6 +202,8 @@
             </li>
         </additionalHediffs>
         <buildingDamageFactor>1</buildingDamageFactor>
+        <plantDamageFactor>1</plantDamageFactor>
+        <corpseDamageFactor>1</corpseDamageFactor>
     </DamageDef>
 
     <DamageDef ParentName="WNA_DamageBase">

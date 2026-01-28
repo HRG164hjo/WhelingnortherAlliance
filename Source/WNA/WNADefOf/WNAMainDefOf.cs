@@ -20,6 +20,8 @@ namespace WNA.WNADefOf
 
         public static FactionDef WNA_FactionWNA;
 
+        public static GameConditionDef WNA_GameCond_ClimateControl;
+
         public static HediffDef WNA_AbilityWisdom;
         public static HediffDef WNA_CastDamage;
         public static HediffDef WNA_Corrosion;
@@ -84,8 +86,5 @@ namespace WNA.WNADefOf
 
         [MayRequireIdeology]
         public static PreceptDef WNA_P_Proselyte;
-
-        [MayRequireAnomaly]
-        public static MutantDef WNA_Halfbeing;
     }
 }

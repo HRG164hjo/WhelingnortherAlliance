@@ -327,7 +327,7 @@
             <Mass>1</Mass>
             <WorkToBuild>4320</WorkToBuild>
 			<Beauty>4320</Beauty>
-            <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">43200</TerrorSource>
+            <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">4320</TerrorSource>
             <ContainmentStrength MayRequire="Ludeon.RimWorld.Anomaly">Infinity</ContainmentStrength>
         </statBases>
         <costList>

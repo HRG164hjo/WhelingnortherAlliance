@@ -4,12 +4,14 @@
     <GameConditionDef>
         <defName>WNA_GameCond_ClimateControl</defName>
         <label>climate control</label>
-        <conditionClass>WNA.GameCondition.GameCond_ClimateControl</conditionClass>
+        <conditionClass>WNA.GameCond.GameCond_ClimateControl</conditionClass>
         <description>Actively controls the temperature, weather, and vacuum on this map.</description>
         <letterText>Actively controls the temperature, weather, and vacuum on this map</letterText>
         <letterDef>NeutralEvent</letterDef>
         <canBePermanent>false</canBePermanent>
         <natural>false</natural>
+        <temperatureOffset>0</temperatureOffset>
+        <weatherDef>Clear</weatherDef>
     </GameConditionDef>
 
 </Defs>

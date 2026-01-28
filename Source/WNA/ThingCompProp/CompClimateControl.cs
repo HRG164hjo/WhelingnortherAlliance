@@ -1,67 +1,116 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 using Verse;
-using WNA.GameCondition;
+using WNA.GameCond;
 
 namespace WNA.ThingCompProp
 {
-    public class PropClimateControl : CompProperties
+    public class CompClimateControl : CompCauseGameCondition
     {
-        public PropClimateControl()
+        public float offset;
+        public WeatherDef weather;
+        public GameCond_ClimateControl cond;
+        public override void Initialize(CompProperties props)
         {
-            compClass = typeof(CompClimateControl);
+            base.Initialize(props);
+            offset = Props.conditionDef.temperatureOffset;
+            weather = Props.conditionDef.weatherDef;
         }
-    }
-    public class CompClimateControl : ThingComp
-    {
-        public GameCond_ClimateControl condition;
-        public float targetTemperature = 21f;
-        public WeatherDef forcedWeather = WeatherDefOf.Clear;
-        private bool lastPoweredOn = false;
-        private Map Map => parent.Map;
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look(ref targetTemperature, "targetTemperature", 21f);
-            Scribe_Values.Look(ref forcedWeather, "forcedWeather");
-            Scribe_References.Look(ref condition, "condition");
+            Scribe_Values.Look(ref offset, "temp", 0f);
+            Scribe_Defs.Look(ref weather, "weather");
         }
-        public override void CompTickRare()
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            base.CompTickRare();
-            CompPowerTrader powerComp = parent.TryGetComp<CompPowerTrader>();
-            bool poweredOn = powerComp != null && powerComp.PowerOn;
-            if (poweredOn != lastPoweredOn)
+            Command_Action command_Action = new Command_Action
             {
-                if (poweredOn)
+                defaultLabel = "-10",
+                icon = ContentFinder<Texture2D>.Get("UI/Commands/TempLower"),
+                action = delegate
                 {
-                    RimWorld.GameCondition cond = GameConditionMaker.MakeCondition(DefDatabase<GameConditionDef>.GetNamedSilentFail("WNA_GameCond_ClimateControl"));
-                    if (cond is GameCond_ClimateControl climateCond)
-                    {
-                        Map.gameConditionManager.RegisterCondition(climateCond);
-                        climateCond.controller = (ThingClass.ClimateControl)parent;
-                        condition = climateCond;
-                    }
+                    offset -= 10f;
+                    offset = Mathf.Clamp(offset, -273.15f, 1000f);
+                    ReSetupAllConditions();
                 }
-                else
-                {
-                    if (condition != null)
-                    {
-                        condition.End();
-                        condition = null;
-                    }
-                }
-                lastPoweredOn = poweredOn;
-            }
-            if (poweredOn && condition != null)
+            };
+            yield return command_Action;
+            Command_Action command_Action2 = new Command_Action
             {
-                CompTempControl tempComp = parent.TryGetComp<CompTempControl>();
-                if (tempComp != null)
-                    targetTemperature = tempComp.targetTemperature;
-                else
-                    targetTemperature = 21f;
-                condition.SetTargetTemperature(targetTemperature);
-                condition.SetForcedWeather(forcedWeather);
-            }
+                defaultLabel = "-1",
+                icon = ContentFinder<Texture2D>.Get("UI/Commands/TempLower"),
+                action = delegate
+                {
+                    offset -= 1f;
+                    offset = Mathf.Clamp(offset, -273.15f, 1000f);
+                    ReSetupAllConditions();
+                }
+            };
+            yield return command_Action2;
+            Command_Action command_Action3 = new Command_Action
+            {
+                defaultLabel = "+1",
+                icon = ContentFinder<Texture2D>.Get("UI/Commands/TempRaise"),
+                action = delegate
+                {
+                    offset += 1f;
+                    offset = Mathf.Clamp(offset, -273.15f, 1000f);
+                    ReSetupAllConditions();
+                }
+            };
+            yield return command_Action3;
+            Command_Action command_Action4 = new Command_Action
+            {
+                defaultLabel = "+10",
+                icon = ContentFinder<Texture2D>.Get("UI/Commands/TempRaise"),
+                action = delegate
+                {
+                    offset += 10f;
+                    offset = Mathf.Clamp(offset, -273.15f, 1000f);
+                    ReSetupAllConditions();
+                }
+            };
+            yield return command_Action4;
+            Command_Action command_Action5 = new Command_Action
+            {
+                defaultLabel = weather.LabelCap,
+                icon = ContentFinder<Texture2D>.Get("UI/Commands/TempReset"),
+                action = delegate
+                {
+                    List<FloatMenuOption> options = new List<FloatMenuOption>();
+                    var sortedWeathers = DefDatabase<WeatherDef>.
+                        AllDefsListForReading.OrderBy(w => w.label).ToList();
+                    foreach (WeatherDef wli in sortedWeathers)
+                    {
+                        string text = wli.LabelCap + "\n(" + wli.defName + ")";
+                        options.Add(new FloatMenuOption(text, delegate
+                        {
+                            weather = wli;
+                            ReSetupAllConditions();
+                        }));
+                    }
+                    if (options.Any())
+                        Find.WindowStack.Add(new FloatMenu(options));
+                }
+            };
+            yield return command_Action5;
+        }
+        protected override void SetupCondition(GameCondition condition, Map map)
+        {
+            base.SetupCondition(condition, map);
+            ((GameCond_ClimateControl)condition).offset = offset;
+            ((GameCond_ClimateControl)condition).weather = weather;
+        }
+        public override string CompInspectStringExtra()
+        {
+            string text = base.CompInspectStringExtra();
+            if (!text.NullOrEmpty())
+                text += "\n";
+            return text + ("Temperature".Translate() + ": " + offset + "\n"
+                 + "Weather".Translate() + ": " + weather.LabelCap);
         }
     }
 }

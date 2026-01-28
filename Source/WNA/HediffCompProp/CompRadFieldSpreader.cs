@@ -1,7 +1,10 @@
-﻿using Verse;
-using WNA.ThingCompProp;
-using WNA.WNAUtility;
+﻿using RimWorld;
 using System;
+using UnityEngine;
+using Verse;
+using WNA.WNADefOf;
+using WNA.WNAUtility;
+using static Verse.GenExplosion;
 
 namespace WNA.HediffCompProp
 {
@@ -37,6 +40,29 @@ namespace WNA.HediffCompProp
                     );
                 }
             }
+        }
+        public override void Notify_PawnKilled()
+        {
+            base.Notify_PawnKilled();
+            Pawn pawn = Pawn;
+            IntVec3 pos = pawn.Position;
+            Map map = pawn.MapHeld;
+            float radius = 7f * Mathf.Sqrt(pawn.BodySize * pawn.HealthScale);
+            float amount = Props.config.radLevel * 0.1f;
+            RadFieldUtility.RadSpread(
+                pawn.Position,
+                pawn.Map,
+                Props.config,
+                radius,
+                5000 );
+            DoExplosion(pos,
+                map,
+                radius,
+                WNAMainDefOf.WNA_RadBurn,
+                pawn,
+                (int)amount,
+                0f,
+                SoundDefOf.Explosion_FirefoamPopper );
         }
     }
 }

@@ -32,6 +32,11 @@ namespace WNAHarmony
                 }
             }
             harmony.Patch(originalGetter, prefix: new HarmonyMethod(prefix));
+            harmony.Patch(typeof(Pawn_HealthTracker).GetMethod("ShouldBeDeadFromLethalDamageThreshold"), null, new HarmonyMethod(typeof(WNAHarmony), "LethalDamageThreshold"));
+        }
+        public static void LethalDamageThreshold(ref bool __result)
+        {
+            __result = false;
         }
     }
 }

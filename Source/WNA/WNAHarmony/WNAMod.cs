@@ -10,12 +10,12 @@ namespace WNA.WNAHarmony
         public WNAMod(ModContentPack content) : base(content)
         {
             var harmony = new Harmony("harmony.hrg164hjo.whelingnorther.alliance");
-            MethodInfo original = HarmonyLib.AccessTools.Method(
+            MethodInfo original = AccessTools.Method(
                 typeof(Verse.AI.JobDriver),
                 "EndJobWith",
                 new System.Type[] { typeof(Verse.AI.JobCondition) }
             );
-            MethodInfo postfix = HarmonyLib.AccessTools.Method(
+            MethodInfo postfix = AccessTools.Method(
                 typeof(Patch_JobMeditate.JobDriver_Meditate_EndJobWith),
                 "Postfix"
             );
