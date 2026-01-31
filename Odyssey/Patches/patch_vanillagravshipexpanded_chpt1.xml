@@ -7,21 +7,16 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="VGE_GunnerSubpersonaCore" or defName="VGE_MaintenanceHub" or defName="VGE_CapacitorHarmonizer" or defName="VGE_Gravlift"]/statBases/Flammability</xpath>
+					<xpath>Defs/ThingDef[defName="VGE_GunnerSubpersonaCore" or defName="VGE_MaintenanceHub" or defName="VGE_CapacitorHarmonizer" or defName="VGE_Gravlift" or defName="VGE_GravshipBlackBox" or defName="VGE_FlightComputer"]/statBases/Flammability</xpath>
 					<value>
 						<Flammability>0</Flammability>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="VGE_GunnerSubpersonaCore" or defName="VGE_MaintenanceHub" or defName="VGE_CapacitorHarmonizer" or defName="VGE_Gravlift"]/statBases/Flammability</xpath>
+					<xpath>Defs/ThingDef[defName="VGE_GunnerSubpersonaCore" or defName="VGE_MaintenanceHub" or defName="VGE_CapacitorHarmonizer" or defName="VGE_Gravlift" or defName="VGE_GravshipBlackBox" or defName="VGE_FlightComputer"]</xpath>
 					<value>
 						<useHitPoints>false</useHitPoints>
 						<stealable>false</stealable>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="VGE_GunnerSubpersonaCore" or defName="VGE_MaintenanceHub" or defName="VGE_CapacitorHarmonizer" or defName="VGE_Gravlift"]/statBases/Flammability</xpath>
-					<value>
 						<designationCategory>Odyssey</designationCategory>
 					</value>
 				</li>
