@@ -51,22 +51,6 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="WNA_LifeSupporter"]/comps</xpath>
-					<value>
-						<li Class="PipeSystem.CompProperties_ResourceTrader">
-							<pipeNet>VGE_OxygenNet</pipeNet>
-							<consumptionPerTick>-24</consumptionPerTick>
-							<resourceOffOverlay>false</resourceOffOverlay>
-						</li>
-						<li Class="PipeSystem.CompProperties_ResourceTrader">
-							<pipeNet>VGE_AstrofuelNet</pipeNet>
-							<consumptionPerTick>-24</consumptionPerTick>
-							<resourceOffOverlay>false</resourceOffOverlay>
-						</li>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="WNA_GravliteManifold"]/statBases</xpath>
 					<value>
 						<VGE_MaintenanceSensitivity>0</VGE_MaintenanceSensitivity>
@@ -81,28 +65,7 @@
 							<compClass>VanillaGravshipExpanded.CompMultipleGravEnginesHandler</compClass>
 						</li>
 						<li Class="VanillaGravshipExpanded.CompProperties_GravMaintainable"/>
-						<li Class="PipeSystem.CompProperties_ResourceTrader">
-							<pipeNet>VGE_OxygenNet</pipeNet>
-							<consumptionPerTick>-24</consumptionPerTick>
-							<resourceOffOverlay>false</resourceOffOverlay>
-						</li>
-						<li Class="PipeSystem.CompProperties_ResourceTrader">
-							<pipeNet>VGE_AstrofuelNet</pipeNet>
-							<consumptionPerTick>-24</consumptionPerTick>
-							<resourceOffOverlay>false</resourceOffOverlay>
-						</li>
-						<li Class="PipeSystem.CompProperties_ResourceStorage">
-							<pipeNet>VGE_OxygenNet</pipeNet>
-							<storageCapacity>60000</storageCapacity>
-							<drawStorageBar>false</drawStorageBar>
-							<contentRequirePower>false</contentRequirePower>
-						</li>
-						<li Class="PipeSystem.CompProperties_ResourceStorage">
-							<pipeNet>VGE_AstrofuelNet</pipeNet>
-							<storageCapacity>60000</storageCapacity>
-							<drawStorageBar>false</drawStorageBar>
-							<contentRequirePower>false</contentRequirePower>
-						</li>
+      					<li Class="VanillaGravshipExpanded.CompProperties_HeatManager" />
 					</value>
 				</li>
 						
@@ -115,6 +78,21 @@
 						<li Class="PipeSystem.CompProperties_Resource">
 							<pipeNet>VGE_AstrofuelNet</pipeNet>
 	  					</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="WNA_LifeSupporter"]/comps</xpath>
+					<value>
+						<li Class="PipeSystem.CompProperties_ResourceTrader">
+							<pipeNet>VGE_OxygenNet</pipeNet>
+							<consumptionPerTick>-24</consumptionPerTick>
+							<resourceOffOverlay>false</resourceOffOverlay>
+						</li>
+						<li Class="PipeSystem.CompProperties_ResourceTrader">
+							<pipeNet>VGE_AstrofuelNet</pipeNet>
+							<consumptionPerTick>-24</consumptionPerTick>
+							<resourceOffOverlay>false</resourceOffOverlay>
+						</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
