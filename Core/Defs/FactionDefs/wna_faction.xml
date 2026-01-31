@@ -18,7 +18,7 @@
         <canMakeRandomly>false</canMakeRandomly>
         <canSiege>false</canSiege>
         <canStageAttacks>false</canStageAttacks>
-        <leaderTitle>saint</leaderTitle>
+        <leaderTitle>archonpriest</leaderTitle>
         <fixedName>Whellingnorther Alliance</fixedName>
         <settlementNameMaker>WNA_NamerSettlement</settlementNameMaker>
         <techLevel>Archotech</techLevel>
@@ -91,7 +91,7 @@
                     <WNA_Vanguard>50</WNA_Vanguard>
                     <WNA_Disciple>50</WNA_Disciple>
                     <WNA_DarknightComm>30</WNA_DarknightComm>
-                    <WNA_Saint>1</WNA_Saint>
+                    <WNA_Archonpriest>1</WNA_Archonpriest>
                 </options>
             </li>
             <li>
@@ -99,6 +99,7 @@
                 <commonality>200</commonality>
                 <options>
                     <WNA_FieldTroop>20</WNA_FieldTroop>
+                    <WNA_SiegeTroop>20</WNA_SiegeTroop>
                 </options>
             </li>
             <li>
@@ -106,6 +107,7 @@
                 <commonality>200</commonality>
                 <options>
                     <WNA_FieldTroop>20</WNA_FieldTroop>
+                    <WNA_SiegeTroop>20</WNA_SiegeTroop>
                     <WNA_StrikeForce>20</WNA_StrikeForce>
                     <WNA_Vanguard>20</WNA_Vanguard>
                     <WNA_DarknightComm>10</WNA_DarknightComm>
@@ -125,10 +127,10 @@
                 <commonality>100</commonality>
                 <options>
                     <WNA_FieldTroop>20</WNA_FieldTroop>
+                    <WNA_SiegeTroop>20</WNA_SiegeTroop>
                     <WNA_StrikeForce>20</WNA_StrikeForce>
                     <WNA_Vanguard>20</WNA_Vanguard>
                     <WNA_DarknightComm>20</WNA_DarknightComm>
-                    <WNA_Disciple>20</WNA_Disciple>
                 </options>
             </li>
             <li>
@@ -142,20 +144,20 @@
             </li>
             <li>
                 <kindDef>Combat</kindDef>
-                <commonality>5</commonality>
+                <commonality>1</commonality>
                 <options>
                     <WNA_Disciple>20</WNA_Disciple>
-                    <WNA_Saint>1</WNA_Saint>
+                    <WNA_Archonpriest>1</WNA_Archonpriest>
                 </options>
             </li>
             <li>
                 <kindDef>Peaceful</kindDef>
                 <options>
-                    <WNA_Technician>5</WNA_Technician>
-                    <WNA_FieldTroop>5</WNA_FieldTroop>
-                    <WNA_StrikeForce>5</WNA_StrikeForce>
-                    <WNA_DarknightComm>3</WNA_DarknightComm>
-                    <WNA_Disciple>3</WNA_Disciple>
+                    <WNA_Technician>22</WNA_Technician>
+                    <WNA_FieldTroop>20</WNA_FieldTroop>
+                    <WNA_SiegeTroop>20</WNA_SiegeTroop>
+                    <WNA_StrikeForce>10</WNA_StrikeForce>
+                    <WNA_Disciple>1</WNA_Disciple>
                 </options>
             </li>
         </pawnGroupMakers>

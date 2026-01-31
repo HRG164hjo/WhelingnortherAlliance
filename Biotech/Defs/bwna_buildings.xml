@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="WNA_FurnitureBase">
+        <defName>WNA_ReinforcedBandNode</defName>
+        <label>reinforced band node</label>
+        <description>TODO</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Misc/MechbandDish</texPath>
+            <drawSize>(1,1)</drawSize>
+            <color>(74,74,74)</color>
+        </graphicData>
+        <size>(1,1)</size>
+        <statBases>
+            <Mass>30</Mass>
+            <Flammability>0</Flammability>
+            <Beauty>0</Beauty>
+            <WorkToBuild>4000</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>75</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <researchPrerequisites>
+            <li>WNA_AdvancedArsenal</li>
+        </researchPrerequisites>
+        <rotatable>true</rotatable>
+        <tickerType>Normal</tickerType>
+        <passability>PassThroughOnly</passability>
+        <building>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_BandNode</li>
+        </placeWorkers>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>0</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_BandNode">
+                <hediff>WNA_BandNode</hediff>
+                <untunedEffect>BandNodeUntuned</untunedEffect>
+                <tuningEffect>BandNodeTuning</tuningEffect>
+                <tunedEffect>BandNodeTuned</tunedEffect>
+                <retuningEffect>BandNodeRetuning</retuningEffect>
+                <tuningCompleteSound>BandNodeTuning_Complete</tuningCompleteSound>
+                <powerConsumptionIdle>0</powerConsumptionIdle>
+            </li>
+        </comps>
+        <minifiedDef Inherits="false" IsNull="true"/>
+        <thingCategories Inherits="false" IsNull="true"/>
+    </ThingDef>
+</Defs>

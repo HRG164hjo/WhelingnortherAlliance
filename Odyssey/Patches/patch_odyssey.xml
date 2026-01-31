@@ -56,27 +56,6 @@
 	    <xpath>Defs/ThingDef[defName="Gravcore"]/tradeability</xpath>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
-	    <xpath>Defs/ThingDef[defName="GravEngine"]/statBases/SubstructureSupport</xpath>
-        <value>
-            <SubstructureSupport>3000</SubstructureSupport>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/ThingDef[defName="GravEngine"]</xpath>
-        <value>
-            <stealable>false</stealable>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-	    <xpath>Defs/ThingDef[defName="GravEngine"]/comps/li[@Class="CompProperties_SubstructureFootprint"]</xpath>
-        <value>
-            <li Class="CompProperties_SubstructureFootprint">
-                <radius>79.9</radius>
-            </li>
-        </value>
-    </Operation>
-
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThingDef[defName="GravFieldExtender"]</xpath>
         <value>
@@ -84,64 +63,11 @@
             <stealable>false</stealable>
         </value>
     </Operation>
-    <Operation Class="PatchOperationReplace">
-	    <xpath>Defs/ThingDef[defName="GravFieldExtender"]/comps/li[@Class="CompProperties_GravshipFacility"]</xpath>
-        <value>
-            <li Class="CompProperties_GravshipFacility">
-                <statOffsets>
-                    <SubstructureSupport>3000</SubstructureSupport>
-                </statOffsets>
-                <requiresLOS>false</requiresLOS>
-                <maxSimultaneous>12</maxSimultaneous>
-                <maxDistance>500</maxDistance>
-            </li>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-	    <xpath>Defs/ThingDef[defName="GravFieldExtender"]/comps/li[@Class="CompProperties_SubstructureFootprint"]</xpath>
-        <value>
-            <li Class="CompProperties_SubstructureFootprint">
-                <radius>27.9</radius>
-            </li>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/ThingDef[defName="GravEngine"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
-        <value>
-            <li>WNA_UraniumFuelTank</li>
-            <li>WNA_ReinforcedThruster</li>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/ThingDef[defName="GravEngine"]</xpath>
-        <value>
-            <costList>
-                <Gravcore>1</Gravcore>
-                <GravlitePanel>75</GravlitePanel>
-                <ComponentSpacer>4</ComponentSpacer>
-                <Plasteel>150</Plasteel>
-            </costList>
-            <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
-            <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-            <designationCategory>Odyssey</designationCategory>
-            <useHitPoints>false</useHitPoints>
-            <stealable>false</stealable>
-            <researchPrerequisites>
-                <li>BasicGravtech</li>
-            </researchPrerequisites>
-        </value>
-    </Operation>
     
     <Operation Class="PatchOperationReplace">
-	    <xpath>Defs/ThingDef[defName="FuelOptimizer"]/comps/li[@Class="CompProperties_GravshipFacility"]</xpath>
+	    <xpath>Defs/ThingDef[defName="FuelOptimizer"]/comps/li[@Class="CompProperties_GravshipFacility"]/fuelSavingsPercent</xpath>
         <value>
-            <li Class="CompProperties_GravshipFacility">
-                <fuelSavingsPercent>0.3</fuelSavingsPercent>
-                <requiresLOS>false</requiresLOS>
-                <maxSimultaneous>3</maxSimultaneous>
-                <maxDistance>500</maxDistance>
-            </li>
+            <fuelSavingsPercent>0.45</fuelSavingsPercent>
         </value>
     </Operation>
 
@@ -188,6 +114,19 @@
 	    <xpath>Defs/ThingDef[defName="GravAnchor" or defName="GravshipShieldGenerator" or defName="FuelOptimizer" or defName="PilotSubpersonaCore"]</xpath>
         <value>
             <designationCategory>Odyssey</designationCategory>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[defName="GravAnchor"]/size</xpath>
+        <value>
+            <size>(2, 2)</size>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/ThingDef[defName="GravAnchor"]/graphicData/drawSize</xpath>
+        <value>
+            <drawSize>(2, 2)</drawSize>
         </value>
     </Operation>
     

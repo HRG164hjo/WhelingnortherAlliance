@@ -47,8 +47,9 @@ namespace WNA.HediffCompProp
             Pawn pawn = Pawn;
             IntVec3 pos = pawn.Position;
             Map map = pawn.MapHeld;
-            float radius = 7f * Mathf.Sqrt(pawn.BodySize * pawn.HealthScale);
+            float radius = 9.9f * Mathf.Max(1f, Mathf.Sqrt(pawn.BodySize * pawn.HealthScale));
             float amount = Props.config.radLevel * 0.1f;
+            SoundDef sound = DefDatabase<SoundDef>.GetNamed("Explosion_EMP");
             RadFieldUtility.RadSpread(
                 pawn.Position,
                 pawn.Map,
@@ -62,7 +63,7 @@ namespace WNA.HediffCompProp
                 pawn,
                 (int)amount,
                 0f,
-                SoundDefOf.Explosion_FirefoamPopper );
+                sound );
         }
     }
 }

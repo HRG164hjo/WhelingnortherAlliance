@@ -1,5 +1,90 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <ThingDef ParentName="GravshipComponentBase">
+        <defName>WNA_GravliteManifold</defName>
+        <label>gravlite manifold</label>
+        <description>A piece of advanced grav tech with a minified built-in self-maintenance system, can distort gravity and able to harvest stress energy from distorted gravitational field. A single facility is enough to maintain a medium sized orbital outpost.</description>
+        <graphicData>
+            <texPath>Things/Building/GravAnchor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>3</drawSize>
+        </graphicData>
+		<designationCategory>WNA_MainCategory</designationCategory>
+        <thingClass>Building_GravEngine</thingClass>
+        <drawerType>RealtimeOnly</drawerType>
+        <tickerType>Normal</tickerType>
+		<useHitPoints>false</useHitPoints>
+        <stealable>false</stealable>
+        <size>(3,3)</size>
+        <passability>PassThroughOnly</passability>
+        <pathCost>0</pathCost>
+        <canOverlapZones>false</canOverlapZones>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.6</fillPercent>
+		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+        <holdsRoof>true</holdsRoof>
+        <statBases>
+            <Mass>99</Mass>
+            <Flammability>0</Flammability>
+            <Beauty>0</Beauty>
+            <WorkToBuild>4000</WorkToBuild>
+            <GravshipRange>144</GravshipRange>
+            <SubstructureSupport>252000</SubstructureSupport>
+        </statBases>
+        <costList>
+            <GravlitePanel>180</GravlitePanel>
+            <Plasteel>160</Plasteel>
+            <ComponentSpacer>18</ComponentSpacer>
+            <Gravcore>4</Gravcore>
+        </costList>
+        <building>
+            <ai_neverTrashThis>true</ai_neverTrashThis>
+            <relatedTerrain>
+                <li>WNA_FocusFloor</li>
+            </relatedTerrain>
+        </building>
+        <researchPrerequisites>
+            <li>WNA_AdvancedArsenal</li>
+        </researchPrerequisites>
+        <minifiedDef Inherits="false" IsNull="true"/>
+        <thingCategories Inherits="false" IsNull="true"/>
+        <comps>
+            <li Class="CompProperties_SubstructureFootprint">
+                <radius>282.8</radius>
+            </li>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>GravFieldExtender</li>
+                    <li>PilotConsole</li>
+                    <li>FuelOptimizer</li>
+                    <li>SignalJammer</li>
+                    <li>PilotSubpersonaCore</li>
+                    <li>GravshipShieldGenerator</li>
+                    <li>WNA_UraniumFuelTank</li>
+                    <li>WNA_ReinforcedThruster</li>
+                    <li>ChemfuelTank</li>
+                    <li>LargeChemfuelTank</li>
+                    <li>SmallThruster</li>
+                    <li>LargeThruster</li>
+			        <li MayRequire="HaiLuan.VoidUniverse">UV_FleshChemfuelTank</li>
+			        <li MayRequire="HaiLuan.VoidUniverse">UV_FleshLargeChemfuelTank</li>
+			        <li MayRequire="HaiLuan.VoidUniverse">UV_VoidGravFieldExtender</li>
+			        <li MayRequire="HaiLuan.VoidUniverse">UV_VoidThruster</li>
+			        <li MayRequire="HaiLuan.VoidUniverse">UV_Grav_WarpedObelisk_Mutator</li>
+			        <li MayRequire="HaiLuan.VoidUniverse">UV_Grav_WarpedObelisk_Duplicator</li>
+			        <li MayRequire="HaiLuan.VoidUniverse">UV_Grav_WarpedObelisk_Abductor</li>
+			        <li MayRequire="HaiLuan.VoidUniverse">UV_Grav_WarpedObelisk_Blood</li>
+			        <li MayRequire="HaiLuan.VoidUniverse">UV_Grav_WarpedObelisk_UnnaturalDarkness</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-1005000</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+        </comps>
+    </ThingDef>
+
     <ThingDef ParentName="WNA_FurnitureBase">
         <defName>WNA_UraniumFuelTank</defName>
         <label>uranium fuel tank</label>
@@ -13,7 +98,7 @@
         <statBases>
             <Mass>40</Mass>
             <Flammability>0</Flammability>
-            <Beauty>-10</Beauty>
+            <Beauty>0</Beauty>
             <WorkToBuild>4000</WorkToBuild>
         </statBases>
         <costList>
@@ -21,7 +106,7 @@
             <Plasteel>40</Plasteel>
         </costList>
         <researchPrerequisites>
-            <li>StandardGravtech</li>
+            <li>WNA_AdvancedArsenal</li>
         </researchPrerequisites>
         <tickerType>Normal</tickerType>
         <placeWorkers>
@@ -71,7 +156,7 @@
         <statBases>
             <Mass>50</Mass>
             <Flammability>0</Flammability>
-            <Beauty>-10</Beauty>
+            <Beauty>0</Beauty>
             <WorkToBuild>4000</WorkToBuild>
         </statBases>
         <costList>
@@ -79,7 +164,7 @@
             <Plasteel>40</Plasteel>
         </costList>
         <researchPrerequisites>
-            <li>StandardGravtech</li>
+            <li>WNA_AdvancedArsenal</li>
         </researchPrerequisites>
         <rotatable>true</rotatable>
         <tickerType>Rare</tickerType>

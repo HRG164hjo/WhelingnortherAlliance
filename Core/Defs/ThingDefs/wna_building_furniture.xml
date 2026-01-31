@@ -452,8 +452,8 @@
                 <airPerSecondPerHundredCells>1</airPerSecondPerHundredCells>
             </li>
             <li Class="WNA.ThingCompProp.PropHeatPusher">
-                <heatPushStandard>21</heatPushStandard>
-                <heatPushMult>21</heatPushMult>
+                <heatPushStandard>24</heatPushStandard>
+                <heatPushMult>24</heatPushMult>
             </li>
             <li Class="CompProperties_Glower">
                 <glowRadius>14</glowRadius>

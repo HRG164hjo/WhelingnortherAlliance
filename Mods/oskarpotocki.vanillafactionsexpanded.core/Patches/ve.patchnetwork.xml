@@ -15,17 +15,26 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="WNA_BasicCrate"]/comps</xpath>
+                    <xpath>Defs/ThingDef[defName="WNA_BasicCrate" or defName="WNA_WallSafe"]/comps</xpath>
                     <value>
                         <li Class="PipeSystem.CompProperties_ResourceStorage">
                             <pipeNet>BreadMo_NutrientNetwork</pipeNet>
                             <storageCapacity>1000000</storageCapacity>
                             <drawStorageBar>false</drawStorageBar>
-                            <margin>0.025</margin>
-                            <contentRequirePower>false</contentRequirePower>
+							<contentRequirePower>false</contentRequirePower>
                         </li>
                     </value>
                 </li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="WNA_LifeSupporter"]/comps</xpath>
+					<value>
+						<li Class="PipeSystem.CompProperties_ResourceTrader">
+							<pipeNet>BreadMo_NutrientNetwork</pipeNet>
+							<consumptionPerTick>-24</consumptionPerTick>
+							<resourceOffOverlay>false</resourceOffOverlay>
+						</li>
+					</value>
+				</li>
             </operations>
         </match>
 	</Operation>
@@ -45,17 +54,26 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="WNA_BasicCrate"]/comps</xpath>
+                    <xpath>Defs/ThingDef[defName="WNA_BasicCrate" or defName="WNA_WallSafe"]/comps</xpath>
                     <value>
                         <li Class="PipeSystem.CompProperties_ResourceStorage">
                             <pipeNet>VNPE_NutrientPasteNet</pipeNet>
                             <storageCapacity>1000000</storageCapacity>
                             <drawStorageBar>false</drawStorageBar>
-                            <margin>0.025</margin>
-                            <contentRequirePower>false</contentRequirePower>
+							<contentRequirePower>false</contentRequirePower>
                         </li>
                     </value>
                 </li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="WNA_LifeSupporter"]/comps</xpath>
+					<value>
+						<li Class="PipeSystem.CompProperties_ResourceTrader">
+							<pipeNet>VNPE_NutrientPasteNet</pipeNet>
+							<consumptionPerTick>-24</consumptionPerTick>
+							<resourceOffOverlay>false</resourceOffOverlay>
+						</li>
+					</value>
+				</li>
             </operations>
         </match>
 	</Operation>
@@ -74,6 +92,27 @@
       			        </li>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="WNA_BasicCrate" or defName="WNA_WallSafe"]/comps</xpath>
+                    <value>
+                        <li Class="PipeSystem.CompProperties_ResourceStorage">
+                            <pipeNet>VTE_EfficiencyNet</pipeNet>
+                            <storageCapacity>1000000</storageCapacity>
+                            <drawStorageBar>false</drawStorageBar>
+							<contentRequirePower>false</contentRequirePower>
+                        </li>
+                    </value>
+                </li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="WNA_LifeSupporter"]/comps</xpath>
+					<value>
+						<li Class="PipeSystem.CompProperties_ResourceTrader">
+							<pipeNet>VTE_EfficiencyNet</pipeNet>
+							<consumptionPerTick>-24</consumptionPerTick>
+							<resourceOffOverlay>false</resourceOffOverlay>
+						</li>
+					</value>
+				</li>
             </operations>
         </match>
 	</Operation>

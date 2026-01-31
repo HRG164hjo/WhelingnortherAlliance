@@ -12,6 +12,7 @@
         <natural>false</natural>
         <temperatureOffset>0</temperatureOffset>
         <weatherDef>Clear</weatherDef>
+        <canAffectAllPlanetLayers>true</canAffectAllPlanetLayers>
     </GameConditionDef>
 
 </Defs>

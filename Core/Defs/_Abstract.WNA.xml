@@ -1107,6 +1107,10 @@
                 <thingDef>Silver</thingDef>
                 <countRange>2000000000~2147483647</countRange>
             </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Gold</thingDef>
+                <countRange>30000000~50000000</countRange>
+            </li>
             <li Class="StockGenerator_Category">
                 <categoryDef>Textiles</categoryDef>
                 <thingDefCountRange>3~3</thingDefCountRange>
@@ -1210,7 +1214,7 @@
             <li Class="StockGenerator_SingleDef">
                 <thingDef>ComponentSpacer</thingDef>
                 <price>VeryCheap</price>
-                <countRange>300000~500000</countRange>
+                <countRange>200000~300000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Neutroamine</thingDef>

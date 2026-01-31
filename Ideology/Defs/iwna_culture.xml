@@ -37,7 +37,7 @@
         <defName>WNA_LeaderTitleMaker</defName>
         <rulePack>
             <rulesStrings>
-                <li>r_leaderTitle->saint</li>
+                <li>r_leaderTitle->archonpriest</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>

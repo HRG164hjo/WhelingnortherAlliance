@@ -24,9 +24,8 @@
             <li Class="CompProperties_CausesGameCondition">
                 <conditionDef>WNA_GameCond_ClimateControl</conditionDef>
                 <compClass>WNA.ThingCompProp.CompClimateControl</compClass>
-                <worldRange>4</worldRange>
+                <worldRange>5</worldRange>
                 <hideSource>false</hideSource>
-                <!--<preventConditionStacking>false</preventConditionStacking>-->
             </li>
         </comps>
         <placeWorkers>
