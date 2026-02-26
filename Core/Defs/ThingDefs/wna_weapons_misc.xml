@@ -2,6 +2,7 @@
 <Defs>
     <ThingDef ParentName="WNA_WeaponBasePawn">
         <defName>WNA_PawnPassiveAcquire</defName>
+        <description>placeholder.</description>
         <statBases>
             <Mass>0</Mass>
             <MarketValue>0</MarketValue>
@@ -11,7 +12,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <defaultProjectile>WNA_PawnPassiveAcquire_Proj</defaultProjectile>
-                <range>14.9</range>
+                <range>54.9</range>
                 <soundCast/>
                 <soundCastTail/>
                 <muzzleFlashScale>0</muzzleFlashScale>
@@ -21,6 +22,7 @@
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
                 <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
                 <burstShotCount>3</burstShotCount>
+				<canGoWild>false</canGoWild>
             </li>
         </verbs>
     </ThingDef>
@@ -33,45 +35,6 @@
         <projectile>
             <damageDef>WNA_CastRange</damageDef>
             <damageAmountBase>1000000</damageAmountBase>
-        </projectile>
-    </ThingDef>
-    
-    <ThingDef ParentName="WNA_WeaponBasePawn">
-        <defName>WNA_ThornBooTurret</defName>
-        <statBases>
-            <Mass>0</Mass>
-            <MarketValue>0</MarketValue>
-            <RangedWeapon_Cooldown>0.05</RangedWeapon_Cooldown>
-        </statBases>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>WNA_ThornBooTurret_Proj</defaultProjectile>
-                <range>54.9</range>
-                <soundCast/>
-                <soundCastTail/>
-                <muzzleFlashScale>0</muzzleFlashScale>
-                <defaultCooldownTime>0</defaultCooldownTime>
-                <warmupTime>0</warmupTime>
-                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-                <burstShotCount>4</burstShotCount>
-            </li>
-        </verbs>
-    </ThingDef>
-    <ThingDef ParentName="WNA_ProjBase">
-        <defName>WNA_ThornBooTurret_Proj</defName>
-        <label>placeholder</label>
-        <thingClass>Bullet</thingClass>
-        <graphicData>
-            <texPath>things/Projectile/Needle</texPath>
-            <drawSize>(1,5)</drawSize>
-        </graphicData>
-        <projectile>
-            <damageDef>WNA_CastRange</damageDef>
-            <damageAmountBase>60</damageAmountBase>
-            <speed>200</speed>
         </projectile>
     </ThingDef>
 

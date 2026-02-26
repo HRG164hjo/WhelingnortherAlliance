@@ -48,7 +48,7 @@
 	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
 		<defName>WNA_MilitarySupply</defName>
 		<label>military supply</label>
-		<description>the special techniques of how to make whelingnorther military supplies out from common resources. these special techniques is hold secret by Whelingnorther Alliance.</description>
+		<description>the special techniques of how to make whelingnorther military supplies out from common resources based on local conditions. these special techniques is hold secret by Whelingnorther Alliance.</description>
 		<baseCost>2000</baseCost>
 		<researchViewX>0</researchViewX>
 		<researchViewY>2</researchViewY>
@@ -63,7 +63,7 @@
 	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
 		<defName>WNA_MilitaryMaterial</defName>
 		<label>military material</label>
-		<description>the special techniques of how to make unique materials used by whelingnorther military. these special techniques is hold secret by Whelingnorther Alliance.</description>
+		<description>the special techniques of how to make unique materials used by whelingnorther military based on local conditions. these special techniques is hold secret by Whelingnorther Alliance.</description>
 		<baseCost>2000</baseCost>
 		<researchViewX>0</researchViewX>
 		<researchViewY>3</researchViewY>
@@ -182,7 +182,7 @@
 	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
 		<defName>WNA_TheVoid</defName>
 		<label>reach to the void</label>
-		<description>wipe  out  ego \n\nstep  into  void \n\nall  mind  expire \n\nwhole  world  ascend</description>
+		<description>give  up  ego\n\nstep  into  void\n\nall  mind  expire\n\nworld  round  ascend</description>
 		<baseCost>8000</baseCost>
 		<researchViewX>9</researchViewX>
 		<researchViewY>2.5</researchViewY>
@@ -202,87 +202,14 @@
 
 	<!-- whelingnorthan -->
 	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_TheEnlightment</defName>
-		<label>the enlightment</label>
-		<description>the enlightment.</description>
-		<baseCost>60</baseCost>
-		<researchViewX>1</researchViewX>
-		<researchViewY>5</researchViewY>
-		<techprintCount>2</techprintCount>
-		<techprintCommonality>0.5</techprintCommonality>
-		<heldByFactionCategoryTags>
-			<li>WNA_FactionWNA</li>
-		</heldByFactionCategoryTags>
-		<techprintMarketValue>250</techprintMarketValue>
-		<prerequisites>
-			<li>WNA_TheVoid</li>
-		</prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_BasicRite</defName>
-		<label>basic rite</label>
-		<description>basic rite.</description>
-		<baseCost>1000</baseCost>
-		<researchViewX>2</researchViewX>
-		<researchViewY>5</researchViewY>
-		<prerequisites>
-			<li>WNA_TheEnlightment</li>
-		</prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_Transmutation</defName>
-		<label>matter transmutation</label>
-		<description>matter transmutation.</description>
-		<baseCost>2500</baseCost>
-		<researchViewX>3</researchViewX>
-		<researchViewY>6.5</researchViewY>
-		<prerequisites>
-			<li>WNA_BasicRite</li>
-		</prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_CeremonyEquipment</defName>
-		<label>ceremony equipment</label>
-		<description>basic rite.</description>
-		<baseCost>3000</baseCost>
-		<researchViewX>5</researchViewX>
-		<researchViewY>6.5</researchViewY>
-		<prerequisites>
-			<li>WNA_Transmutation</li>
-		</prerequisites>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
-		<defName>WNA_SecretTech</defName>
-		<label>secret techniques</label>
-		<description>secret techniques.</description>
-		<baseCost>4000</baseCost>
-		<researchViewX>5</researchViewX>
-		<researchViewY>5</researchViewY>
-		<prerequisites>
-			<li>WNA_BasicRite</li>
-		</prerequisites>
-		<techprintCount>1</techprintCount>
-		<techprintCommonality>0.5</techprintCommonality>
-		<techprintMarketValue>4000</techprintMarketValue>
-		<heldByFactionCategoryTags>
-			<li>WNA_FactionWNA</li>
-		</heldByFactionCategoryTags>
-	</ResearchProjectDef>
-	
-	<ResearchProjectDef ParentName="WNA_ResearchProjBase">
 		<defName>WNA_WhelingnortherApocalypse</defName>
-		<label>whelingnorther apocalypse</label>
-		<description>!!-TODO-!!.</description>
+		<label>dark apocalypse</label>
+		<description>Science is the doctrine that explains the entire material world; Phenomenology is the doctrine that explains the entire phenomenal world, including the material world; and Voidology, at least for now, is most likely the doctrine that answers what exists beneath the phenomenal world and how to understand this "void world." Is Voidology the further truth we are seeking? How can we find this further truth? We once proclaimed the termination of Phenomenology with our reality reconstruction technique; now we stand at the end of the path, searching for a way forward.</description>
 		<baseCost>Infinity</baseCost>
 		<researchViewX>9</researchViewX>
 		<researchViewY>5</researchViewY>
 		<prerequisites>
-			<li>WNA_CeremonyEquipment</li>
-			<li>WNA_SecretTech</li>
+			<li>WNA_TheVoid</li>
 		</prerequisites>
 	</ResearchProjectDef>
 </Defs>

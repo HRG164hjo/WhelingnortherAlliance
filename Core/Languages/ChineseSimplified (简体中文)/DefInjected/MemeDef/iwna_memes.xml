@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: whelingnorther path -->
+  <Meme_WNA_Ideo.label>威灵圣教序</Meme_WNA_Ideo.label>
+  <!-- EN: We devote ourselves to the glorious great career of Whelingnorther. -->
+  <Meme_WNA_Ideo.description>我们献身于威灵诺德的光辉伟业。</Meme_WNA_Ideo.description>
+  
+  <!-- EN: whelingnorther -->
+  <Structure_WNA_Ideo.label>威灵圣教序</Structure_WNA_Ideo.label>
+  <!-- EN: When the ancient whelingnorthans faced calamity and annihilation, it was their effort and sacrifice that led to the greatness and glory of Whelingnorther Empire; when the ancestors of us rise from the humble, it was their effort and sacrifices that led to we Whelingnorther Alliance. No great works can be done without great sacrifices, without great devotions we cannot achieve eternity, salvation and immortality. We descendants will follow the path led by those who came before us; we will understand our duty and accept our manifest destiny; we shall alter and determine the past, the present and the future. Every corner of existance shall bath in the glory of Whelignorther, they may not understand, but they shall obey and follow. -->
+  <Structure_WNA_Ideo.description>昔日先古威灵族人危殆之际，正是他们的奋力与牺牲铸成了威灵帝国的伟大荣光；昔日我等前人崛起微末之中，正因他们的奋力与牺牲成就了今日的威灵诺德联合会。一切伟大之作都需以牺牲铸就，没有伟大的毁灭便没有伟大的新生，没有伟大的奉献便无从寻求永恒自在不朽。我等后人当遵行前人引领的道路，我等明晰我等将负的重负，欣然接受我等的昭昭天命，我等将决定过往、当下与未来。一切存在之物都将沐浴威灵诺德的荣光，它们无需理解，它们只需服从。</Structure_WNA_Ideo.description>
+  <!-- EN: whelingnorthan -->
+  <Structure_WNA_Ideo.symbolPacks.0.adjective>whelingnorthan</Structure_WNA_Ideo.symbolPacks.0.adjective>
+  <!-- EN: Whelingnorther path -->
+  <Structure_WNA_Ideo.symbolPacks.0.ideoName>Whelingnorther path</Structure_WNA_Ideo.symbolPacks.0.ideoName>
+  <!-- EN: follower -->
+  <Structure_WNA_Ideo.symbolPacks.0.member>追随者</Structure_WNA_Ideo.symbolPacks.0.member>
+  <!-- EN: whelingnorther -->
+  <Structure_WNA_Ideo.symbolPacks.0.theme>whelingnorther</Structure_WNA_Ideo.symbolPacks.0.theme>
+  <!-- EN: altar -->
+  <Structure_WNA_Ideo.worshipRoomLabel>祭坛</Structure_WNA_Ideo.worshipRoomLabel>
+  
+</LanguageData>

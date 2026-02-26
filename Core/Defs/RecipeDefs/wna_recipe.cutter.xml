@@ -25,7 +25,7 @@
             <li>Smelted</li>
         </specialProducts>
         <workAmount>300</workAmount>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -55,7 +55,7 @@
             <li>Smelted</li>
         </specialProducts>
         <workAmount>300</workAmount>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -83,7 +83,7 @@
             <li>Smelted</li>
         </specialProducts>
         <workAmount>300</workAmount>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase" MayRequire="sarg.rimbees">
@@ -119,7 +119,7 @@
             <li>Smelted</li>
 		</specialProducts>
         <workAmount>300</workAmount>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase" MayRequire="sarg.rimbees">
@@ -146,7 +146,7 @@
 			<Kibble>50</Kibble>
 		</products>
         <workAmount>150</workAmount>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase" MayRequire="BreadMo.Cinders">
@@ -174,7 +174,7 @@
             <Steel>25</Steel>
 		</products>
         <workAmount>100</workAmount>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
     </RecipeDef>
 
 </Defs>

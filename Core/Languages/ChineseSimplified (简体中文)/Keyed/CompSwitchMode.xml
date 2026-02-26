@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 切换模式 -->
+  <WNA.SwitchMode.Label>切换模式</WNA.SwitchMode.Label>
+	<!-- EN: 将当前的武器改装为另一种模式. -->
+  <WNA.SwitchMode.Desc>将当前的武器改装为另一种模式.</WNA.SwitchMode.Desc>
+
+</LanguageData>

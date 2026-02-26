@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 制作威灵军标准口粮 -->
+  <WNA_CookRation.label>制作威灵军标准口粮</WNA_CookRation.label>
+  <!-- EN: 将原材料烹制处理成威灵军标准军粮包 -->
+  <WNA_CookRation.description>将原材料烹制处理成威灵军标准军粮包。</WNA_CookRation.description>
+  <!-- EN: working. -->
+  <WNA_CookRation.jobString>正在制作标准口粮。</WNA_CookRation.jobString>
+  
+  <!-- EN: 制作威灵军标准口粮 x5 -->
+  <WNA_CookRationBulk.label>制作威灵军标准口粮 x5</WNA_CookRationBulk.label>
+  <!-- EN: 将原材料烹制处理成威灵军标准军粮包 -->
+  <WNA_CookRationBulk.description>将原材料烹制处理成威灵军标准军粮包。</WNA_CookRationBulk.description>
+  <!-- EN: working. -->
+  <WNA_CookRationBulk.jobString>正在制作标准口粮。</WNA_CookRationBulk.jobString>
+  
+  <!-- EN: 制作威灵军标准医药 -->
+  <WNA_MakeMedikit.label>制作威灵军标准医药</WNA_MakeMedikit.label>
+  <!-- EN: 将可用的材料制作成威灵军标准医药包。 -->
+  <WNA_MakeMedikit.description>将可用的材料制作成威灵军标准医药包。</WNA_MakeMedikit.description>
+  <!-- EN: working. -->
+  <WNA_MakeMedikit.jobString>正在制作标准医药。</WNA_MakeMedikit.jobString>
+  
+  <!-- EN: 制作威灵军标准医药 x5 -->
+  <WNA_MakeMedikitBulk.label>制作威灵军标准医药 x5</WNA_MakeMedikitBulk.label>
+  <!-- EN: 将可用的材料制作成威灵军标准医药包。 -->
+  <WNA_MakeMedikitBulk.description>将可用的材料制作成威灵军标准医药包。</WNA_MakeMedikitBulk.description>
+  <!-- EN: working. -->
+  <WNA_MakeMedikitBulk.jobString>正在制作标准医药。</WNA_MakeMedikitBulk.jobString>
+  
+  <!-- EN: 重新打包药品 -->
+  <WNA_PackMedikit.label>重新打包药品</WNA_PackMedikit.label>
+  <!-- EN: 将各种药物按照威灵会的标准重新处理并打包。 -->
+  <WNA_PackMedikit.description>将各种药物按照威灵会的标准重新处理并打包。</WNA_PackMedikit.description>
+  <!-- EN: working. -->
+  <WNA_PackMedikit.jobString>正在重新打包药品。</WNA_PackMedikit.jobString>
+  
+  <!-- EN: 重新打包药品 x5 -->
+  <WNA_PackMedikitBulk.label>重新打包药品 x5</WNA_PackMedikitBulk.label>
+  <!-- EN: 将各种药物按照威灵会的标准重新处理并打包。 -->
+  <WNA_PackMedikitBulk.description>将各种药物按照威灵会的标准重新处理并打包。</WNA_PackMedikitBulk.description>
+  <!-- EN: working. -->
+  <WNA_PackMedikitBulk.jobString>正在重新打包药品。</WNA_PackMedikitBulk.jobString>
+  
+  <!-- EN: 重新打包食物 -->
+  <WNA_RepackRation.label>重新打包食物</WNA_RepackRation.label>
+  <!-- EN: 将各种食物按照威灵会的标准重新处理并打包。 -->
+  <WNA_RepackRation.description>将各种食物按照威灵会的标准重新处理并打包。</WNA_RepackRation.description>
+  <!-- EN: working. -->
+  <WNA_RepackRation.jobString>正在重新打包食物。</WNA_RepackRation.jobString>
+  
+  <!-- EN: 重新打包食物 x5 -->
+  <WNA_RepackRationBulk.label>重新打包食物 x5</WNA_RepackRationBulk.label>
+  <!-- EN: 将各种食物按照威灵会的标准重新处理并打包。 -->
+  <WNA_RepackRationBulk.description>将各种食物按照威灵会的标准重新处理并打包。</WNA_RepackRationBulk.description>
+  <!-- EN: working. -->
+  <WNA_RepackRationBulk.jobString>正在重新打包食物。</WNA_RepackRationBulk.jobString>
+  
+</LanguageData>

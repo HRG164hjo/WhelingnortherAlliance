@@ -3,7 +3,7 @@
     <ThingDef ParentName="WNA_FurnitureBase" Name="WNA_RiteSiteBase">
         <defName>WNA_Ritespot</defName>
         <label>ritespot</label>
-        <description>some mysterious influence is accumulating. this place must be a perfect place for doing something, for example, applying some whelingnorther techniques.</description>
+        <description>A rite spot.</description>
         <thingClass>Building_WorkTable</thingClass>
         <graphicData>
             <texPath>rite/rite_base</texPath>
@@ -13,7 +13,7 @@
         </graphicData>
         <altitudeLayer>FloorEmplacement</altitudeLayer>
         <researchPrerequisites>
-            <li>WNA_BasicRite</li>
+            <li>WNA_WhelingnortherApocalypse</li>
         </researchPrerequisites>
         <passability>Standable</passability>
         <statBases>
@@ -47,7 +47,7 @@
     <ThingDef ParentName="WNA_RiteSiteBase">
         <defName>WNA_RiteSpot_Cutter</defName>
         <label>ritespot</label>
-        <description>there seems to be some mysterious ripples. this place should be a good place to make something split or break down.</description>
+        <description>A rite spot.</description>
         <graphicData>
             <texPath>rite/rite_cut</texPath>
             <color>(127,27,27)</color>

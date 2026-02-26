@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: climate control facility -->
+  <WNA_ClimateController.label>气候控制装置</WNA_ClimateController.label>
+  <!-- EN: todo. -->
+  <WNA_ClimateController.description>TODO</WNA_ClimateController.description>
+  
+</LanguageData>

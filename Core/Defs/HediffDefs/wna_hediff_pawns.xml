@@ -4,7 +4,7 @@
         <defName>WNA_Inhuman</defName>
         <label>inhuman</label>
         <hediffClass>HediffWithComps</hediffClass>
-        <description>This thing is a creation by some dark power reached from a far far away origin. It may used to be a human, and it may still similar to human in many ways, but it is actually no longer human.</description>
+        <description>This thing may used to be a human, and may still looks like a human, but from inside it has been gone far from human being.</description>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
         <makesAlert>false</makesAlert>
         <everCurableByItem>false</everCurableByItem>
@@ -16,7 +16,7 @@
         <preventsDeath>true</preventsDeath>
         <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
         <allowedMeditationFocusTypes>
-          <li>Void</li>
+            <li>Void</li>
         </allowedMeditationFocusTypes>
         <aptitudes>
             <Shooting>9999</Shooting>
@@ -34,6 +34,7 @@
         </aptitudes>
         <stages>
             <li>
+                <becomeVisible>false</becomeVisible>
                 <painFactor>0</painFactor>
                 <totalBleedFactor>0</totalBleedFactor>
                 <opinionOfOthersFactor>0</opinionOfOthersFactor>
@@ -74,7 +75,7 @@
         <defName>WNA_InAnimal</defName>
         <label>abnormal creation</label>
         <hediffClass>HediffWithComps</hediffClass>
-        <description>This thing is formed through some ways that hardly known and hardly understandable. Due to it's very different origin from other things, it doesn't need to eat like normal creatures.</description>
+        <description>abnormal creation.</description>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
         <everCurableByItem>false</everCurableByItem>
         <duplicationAllowed>false</duplicationAllowed>
@@ -82,7 +83,9 @@
         <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
         <stages>
             <li>
+                <becomeVisible>false</becomeVisible>
                 <blocksMentalBreaks>true</blocksMentalBreaks>
+                <blocksInspirations>true</blocksInspirations>
                 <showRegenerationStat>false</showRegenerationStat>
                 <regeneration>999999999</regeneration>
                 <disablesNeeds>
@@ -102,7 +105,7 @@
         <defName>WNA_InMechanoid</defName>
         <label>abnormal automation</label>
         <hediffClass>HediffWithComps</hediffClass>
-        <description>This mechanoid is designed or enhanced by some unique techniques of WNA.</description>
+        <description>abnormal automation.</description>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
         <makesAlert>false</makesAlert>
         <everCurableByItem>false</everCurableByItem>
@@ -111,6 +114,7 @@
         <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
         <stages>
             <li>
+                <becomeVisible>false</becomeVisible>
                 <statFactors>
                     <AimingDelayFactor>0</AimingDelayFactor>
                     <BandwidthCost>0</BandwidthCost>
@@ -137,44 +141,6 @@
                     <EnergyShieldEnergyMax>50</EnergyShieldEnergyMax>
                     <EMPResistance MayRequireAnyOf="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Anomaly">100</EMPResistance>
                 </statOffsets>
-                <capMods>
-                    <li>
-                        <capacity>Consciousness</capacity>
-                        <postFactor>10</postFactor>
-                    </li>
-                    <li>
-                        <capacity>Moving</capacity>
-                        <postFactor>10</postFactor>
-                    </li>
-                    <li>
-                        <capacity>Manipulation</capacity>
-                        <postFactor>10</postFactor>
-                    </li>
-                    <li>
-                        <capacity>Sight</capacity>
-                        <postFactor>10</postFactor>
-                    </li>
-                    <li>
-                        <capacity>Hearing</capacity>
-                        <postFactor>10</postFactor>
-                    </li>
-                    <li>
-                        <capacity>Breathing</capacity>
-                        <postFactor>10</postFactor>
-                    </li>
-                    <li>
-                        <capacity>BloodFiltration</capacity>
-                        <postFactor>10</postFactor>
-                    </li>
-                    <li>
-                        <capacity>BloodPumping</capacity>
-                        <postFactor>10</postFactor>
-                    </li>
-                    <li>
-                        <capacity>Metabolism</capacity>
-                        <postFactor>10</postFactor>
-                    </li>
-                </capMods>
             </li>
         </stages>
         <comps>
@@ -196,7 +162,7 @@
     <HediffDef>
         <defName>WNA_DeathEnd</defName>
         <label>death refusal</label>
-        <description>This pawn have witnessed Whelingnorther's control over death. Ripples of reality is altering their body and mind. If this pawn is killed and their corpse isn't destroyed, they'll be able to crawl back from death.</description>
+        <description>This pawn have witnessed Whelingnorther's control over death. If this pawn is killed and their corpse isn't destroyed, they'll be able to crawl back from death.</description>
         <hediffClass>WNA.HediffClass.DeathEnd</hediffClass>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
         <everCurableByItem>false</everCurableByItem>
@@ -204,8 +170,10 @@
         <showGizmosOnCorpse>true</showGizmosOnCorpse>
         <stages>
             <li>
+                <becomeVisible>false</becomeVisible>
                 <socialFightChanceFactor>0</socialFightChanceFactor>
                 <blocksMentalBreaks>true</blocksMentalBreaks>
+                <blocksInspirations>true</blocksInspirations>
                 <pctAllThoughtNullification>1</pctAllThoughtNullification>
                 <overrideMoodBase>1</overrideMoodBase>
                 <showRegenerationStat>false</showRegenerationStat>
@@ -222,13 +190,13 @@
         <defName>sWNA_DeathEnd</defName>
         <label>post death refusal</label>
         <hediffClass>HediffWithComps</hediffClass>
-        <description>This pawn is back from death, for a short period of time the ripples of reality will keep this pawn free from many common harms. Note that this temperary instability of reality may cause some unexpected effects.</description>
+        <description>I'm back from death.</description>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>
         <comps>
             <li Class="HediffCompProperties_Disappears">
-                <disappearsAfterTicks>10000~20000</disappearsAfterTicks>
+                <disappearsAfterTicks>200~300</disappearsAfterTicks>
                 <showRemainingTime>true</showRemainingTime>
             </li>
             <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
@@ -237,10 +205,12 @@
         </comps>
         <stages>
             <li>
-                <statFactors>
-                    <IncomingDamageFactor>0</IncomingDamageFactor>
-                    <StaggerDurationFactor MayRequire="Ludeon.Rimworld.Biotech">0</StaggerDurationFactor>
-                </statFactors>
+                <becomeVisible>false</becomeVisible>
+                <socialFightChanceFactor>0</socialFightChanceFactor>
+                <blocksMentalBreaks>true</blocksMentalBreaks>
+                <blocksInspirations>true</blocksInspirations>
+                <pctAllThoughtNullification>1</pctAllThoughtNullification>
+                <overrideMoodBase>1</overrideMoodBase>
             </li>
         </stages>
     </HediffDef>

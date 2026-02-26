@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: voidmetal platform -->
+  <WNA_HoldingPlatform.label>虚空灵铁收容平台</WNA_HoldingPlatform.label>
+  <!-- EN: A platform made of voidmetal, for holding anomaly entities. -->
+  <WNA_HoldingPlatform.description>用虚空灵铁打造的平台，用于收容异象实体。</WNA_HoldingPlatform.description>
+  
+</LanguageData>

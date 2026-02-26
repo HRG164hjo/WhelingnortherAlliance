@@ -44,17 +44,6 @@ namespace WNA.ThingClass
                 return true;
             }
             return false;
-            /*if (!p.CanOpenDoors) return false;
-            if (p.CanOpenAnyDoor && (p.Faction.def == WNAMainDefOf.WNA_FactionWNA || p.Faction == Faction.OfPlayer)) return true;
-            if (p.HostileTo(this) ||
-                p.InMentalState ||
-                p.IsWildMan() ||
-                p.IsPrisonerOfColony ||
-                (p.RaceProps.Animal && p.Faction == null))
-                return false;
-            if (Faction == null)
-                return p.RaceProps.canOpenFactionlessDoors;
-            return !p.HostileTo(this);*/
         }
         public override bool BlocksPawn(Pawn p)
         {

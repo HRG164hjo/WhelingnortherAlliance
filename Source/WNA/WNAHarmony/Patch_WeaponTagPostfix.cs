@@ -19,7 +19,7 @@ namespace WNA.WNAHarmony
                 if (ownerVerb.EquipmentSource == null)
                     return;
                 if (!(attacker.Faction.def == WNAMainDefOf.WNA_FactionWNA ||
-                      (attacker.Faction == Faction.OfPlayer && WNAMainDefOf.WNA_TheEnlightment.IsFinished)))
+                      (attacker.Faction == Faction.OfPlayer && WNAMainDefOf.WNA_WhelingnortherApocalypse.IsFinished)))
                     return;
                 ThingDef weaponDef = ownerVerb.EquipmentSource.def;
                 if (weaponDef.weaponTags == null || !weaponDef.weaponTags.Contains("Tag_WNACivilian"))

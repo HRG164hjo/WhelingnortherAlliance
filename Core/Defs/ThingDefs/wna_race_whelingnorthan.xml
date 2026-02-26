@@ -4,7 +4,7 @@
         <defName>WNA_WNThan</defName>
         <label>whelingnorthan</label>
         <thingClass>WNA.ThingClass.Whelingnorthan</thingClass>
-        <description>"People of Ancient Whelingnorther Empire name themselves as Whelingnorthan, a word indicates that He is the legislator for them, and they became the legislator for other everything. Now we also use this word to name ourselves, indicating that we've bid farewell to what we once were, yet what we are seeking is imminent. While we still have a lot in common with humanity, we are actually a brand new form of existance."\n\n-- Chen Che the "Windlord", Archonpriest of Whelingnorther Alliance</description>
+        <description>The ancient Whelingnorthans originated from nocturnal predators in far-ancient times. The race was once at the edge of extinction when they were still unintelligent animals, in desperation they pray for help of something or some else, and their prayers were answered. Thus they rise from the humble, name themselves as Whelingnorthan, serve the holyorder and finally achieved the ascension. The Whelingnorthans seen today has a different origin though.</description>
         <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
         <statBases>
             <AimingDelayFactor>0</AimingDelayFactor>
@@ -22,7 +22,7 @@
             <Fertility>0</Fertility>
             <FilthRate>0</FilthRate>
             <Flammability>0</Flammability>
-            <ForagedNutritionPerDay>1000</ForagedNutritionPerDay>
+            <ForagedNutritionPerDay>100</ForagedNutritionPerDay>
             <GeneralLaborSpeed>20</GeneralLaborSpeed>
 			<GlobalLearningFactor>10000</GlobalLearningFactor>
             <ImmunityGainSpeed>10000</ImmunityGainSpeed>
@@ -45,11 +45,11 @@
             <PawnTrapSpringChance>0</PawnTrapSpringChance>
             <PsychicEntropyMax>Infinity</PsychicEntropyMax>
             <PsychicEntropyGain>0</PsychicEntropyGain>
-            <PsychicEntropyRecoveryRate>1000000</PsychicEntropyRecoveryRate>
+            <PsychicEntropyRecoveryRate>Infinity</PsychicEntropyRecoveryRate>
             <PsychicSensitivity>0</PsychicSensitivity>
             <RangedCooldownFactor>0</RangedCooldownFactor>
             <RoyalFavorValue>20</RoyalFavorValue>
-            <SlaveSuppressionFallRate>1000000</SlaveSuppressionFallRate>
+            <SlaveSuppressionFallRate>Infinity</SlaveSuppressionFallRate>
             <StaggerDurationFactor>0</StaggerDurationFactor>
             <ToxicEnvironmentResistance>20</ToxicEnvironmentResistance>
             <ToxicResistance>20</ToxicResistance>
@@ -368,6 +368,8 @@
 
     <ThingDef ParentName="Human">
         <defName>WNA_Human</defName>
+        <label>human</label>
+        <description>Human, but possibly have some differences from true normal humans after long time serving for Whelingnorther Alliance. Maybe it's better to name them as "whelingnorthan humanoid".</description>
         <tradeability>None</tradeability>
         <statBases>
             <MoveSpeed>6</MoveSpeed>

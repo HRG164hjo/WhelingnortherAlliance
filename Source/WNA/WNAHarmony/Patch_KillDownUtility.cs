@@ -13,10 +13,7 @@ namespace WNA.WNAHarmony
         private static readonly HashSet<string> races = new HashSet<string>
         {
             "WNA_WNThan",
-            "WNA_Human",
-            "WNA_DimBoo",
-            "WNA_ThornBoo",
-            "WNA_FerosBoo"
+            "WNA_Human"
         };
         private static bool IsTargetRace(Pawn pawn)
         {

@@ -310,7 +310,7 @@
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeDesolisium</defName>
         <label>make desolisium</label>
-        <description>make an alloy sufficient for defending.</description>
+        <description>make an alloy sufficient for various uses.</description>
         <jobString>making desolisium.</jobString>
         <ingredients>
             <li>
@@ -368,7 +368,7 @@
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeDesolisiumToo</defName>
         <label>make desolisium</label>
-        <description>make an alloy sufficient for defending.</description>
+        <description>make an alloy sufficient for various uses.</description>
         <jobString>making desolisium.</jobString>
         <ingredients>
             <li>

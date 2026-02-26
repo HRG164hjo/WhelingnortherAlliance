@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: [PAWN_nameDef] had been serving for the great work for Whelingnorther Alliance since [PAWN_possessive] grown-up。[PAWN_nameDef] had worked in various positions，gradually forged unshakable will through the years of work。-->
+  <WNA_BA_FaithfulBeliever.description>[PAWN_nameDef]自成年以来就一直在为威灵诺德的伟大功业效力。[PAWN_nameDef]在很多岗位上都留下了足迹，在经年的作业中逐渐铸就了不可撼动的意志。</WNA_BA_FaithfulBeliever.description>
+  <!-- EN: faithful believer -->
+  <WNA_BA_FaithfulBeliever.title>虔信徒</WNA_BA_FaithfulBeliever.title>
+  <!-- EN: faithful -->
+  <WNA_BA_FaithfulBeliever.titleShort>虔信徒</WNA_BA_FaithfulBeliever.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] had been serving for the great work for Whelingnorther Alliance since [PAWN_possessive] grown-up。However [PAWN_pronoun] seemed to have taken a strange path，become increasingly insane and cruel through the years of work。-->
+  <WNA_BA_FanaticBeliever.description>[PAWN_nameDef]自成年以来就一直在为威灵诺德的伟大功业效力。然而[PAWN_pronoun]似乎有些离经叛道，在经年的作业中变得越发疯狂残暴。</WNA_BA_FanaticBeliever.description>
+  <!-- EN: fanatic believer -->
+  <WNA_BA_FanaticBeliever.title>狂信徒</WNA_BA_FanaticBeliever.title>
+  <!-- EN: fanatic -->
+  <WNA_BA_FanaticBeliever.titleShort>狂信徒</WNA_BA_FanaticBeliever.titleShort>
+  
+  <!-- EN: When facing the pursuit of two superpowers，[PAWN_nameDef] recieved the enlightment from far-ancient civilization the Whelingnorther Empire。With this power [PAWN_pronoun] and [PAWN_possessive] followers got rid of the pursuit，and finally founded the Whelingnorther Alliance。-->
+  <WNA_BA_FirstGen.description>在面临两个超级大国的追捕时，[PAWN_nameDef]收到了来自名为威灵帝国的先古文明的启示。正是这种力量使[PAWN_pronoun]和[PAWN_possessive]追随者们免于追猎，最终组建了如今的威灵诺德联合会。</WNA_BA_FirstGen.description>
+  <!-- EN: first generation member -->
+  <WNA_BA_FirstGen.title>初代成员</WNA_BA_FirstGen.title>
+  <!-- EN: first-gen -->
+  <WNA_BA_FirstGen.titleShort>初代成员</WNA_BA_FirstGen.titleShort>
+  
+  <!-- EN: The day come for [PAWN_nameDef] when Whelingnorther Alliance cast their shade over the world [PAWN_nameDef] lives in，and with the aid from Whelingnorther Alliance [PAWN_pronoun] slained all [PAWN_possessive] rivals。The fruit of revenge is unbelievably sweet，[PAWN_nameDef] sang the praises of Whelingnorther and became a fanatic believer。-->
+  <WNA_BA_MidworldRevenger.description>当威灵诺德联合会将他的阴影笼罩在[PAWN_nameDef]居住的世界上时，[PAWN_nameDef]就知道[PAWN_possessive]时机到来了。在威灵诺德联合会的帮助下，[PAWN_pronoun]扫除了[PAWN_pronoun]所有的仇敌。复仇的果实是如甘美，[PAWN_nameDef]高声歌颂威灵诺德，化身为一名狂信者。</WNA_BA_MidworldRevenger.description>
+  <!-- EN: midworld revenger -->
+  <WNA_BA_MidworldRevenger.title>中寰世界复仇者</WNA_BA_MidworldRevenger.title>
+  <!-- EN: revenger -->
+  <WNA_BA_MidworldRevenger.titleShort>复仇者</WNA_BA_MidworldRevenger.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is a second generation member of Whelingnorther Alliance，which means [PAWN_pronoun] has been accused of crimes he didn't commit，whether for political，legal，or other reasons。Luckily with the aid of Whelingnorther Alliance，[PAWN_pronoun] washed away the false accusation with blood。-->
+  <WNA_BA_SecondGen.description>[PAWN_nameDef]是威灵诺德联合会的次代成员，意味着[PAWN_pronoun]曾经因政治、法律或其他什么原因而被指控犯下[PAWN_pronoun]不曾犯下的罪行。幸运的是在此时威灵诺德联合会降临了，[PAWN_pronoun]也成功用诬蔑者的血洗去了背负的所有罪名。</WNA_BA_SecondGen.description>
+  <!-- EN: second generation member -->
+  <WNA_BA_SecondGen.title>次代成员</WNA_BA_SecondGen.title>
+  <!-- EN: second-gen -->
+  <WNA_BA_SecondGen.titleShort>次代成员</WNA_BA_SecondGen.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] grown up under the shelter of Whelingnorther Alliance as a resident，enjoying the material support and education provided by Whelingnorther Alliance。When [PAWN_pronoun] finally grow up and decided to serve in Whelingnorther Military，[PAWN_pronoun] officially became a national of Whelingnorther Alliance。-->
+  <WNA_BA_ThirdGen.description>[PAWN_nameDef]在威灵诺德联合会的庇护下作为一名居民健康成长，享受着由威灵会提供的物质和教育。当[PAWN_pronoun]最终长成冰决定在威灵军部效力时，[PAWN_pronoun]便正式成为了威灵诺德联合会的一名公民。</WNA_BA_ThirdGen.description>
+  <!-- EN: third generation member -->
+  <WNA_BA_ThirdGen.title>三代成员</WNA_BA_ThirdGen.title>
+  <!-- EN: third-gen -->
+  <WNA_BA_ThirdGen.titleShort>三代成员</WNA_BA_ThirdGen.titleShort>
+  
+  <!-- EN: Before the arrival of Whelingnorther Alliance，a false accusation made [PAWN_nameDef] lost all [PAWN_possessive] fame abd belongings。Whelingnorther Alliance helped [PAWN_objective] break out from the jail and killed every people responsible for [PAWN_possessive] false asscusation。-->
+  <WNA_BC_DesperateRevenger.description>Before the arrival of Whelingnorther Alliance，a false accusation made [PAWN_nameDef] lost all [PAWN_possessive] fame abd belongings。Whelingnorther Alliance helped [PAWN_objective] break out from the jail and killed every people responsible for [PAWN_possessive] false asscusation。</WNA_BC_DesperateRevenger.description>
+  <!-- EN: desperate revenger -->
+  <WNA_BC_DesperateRevenger.title>desperate revenger</WNA_BC_DesperateRevenger.title>
+  <!-- EN: desperate -->
+  <WNA_BC_DesperateRevenger.titleShort>desperate</WNA_BC_DesperateRevenger.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] worked in a factory for living。Everyday [PAWN_pronoun] has to face dangerous facilities，insufficient protections，heavy workload，endless overtime and unreasonable boss，until the arrival of Whelingnorther Alliance changed all of this。-->
+  <WNA_BC_FactoryWorker.description>[PAWN_nameDef]在一工厂中谋生，每天都在面对危险的设施、失效的安全措施、巨大的工作压力、看不到头的加班和狗操的老板，直到威灵诺德联合会的降临改变了这一切。</WNA_BC_FactoryWorker.description>
+  <!-- EN: factory worker -->
+  <WNA_BC_FactoryWorker.title>工厂工人</WNA_BC_FactoryWorker.title>
+  <!-- EN: worker -->
+  <WNA_BC_FactoryWorker.titleShort>工厂工人</WNA_BC_FactoryWorker.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] had lost [PAWN_possessive] home and all property，had to wander in the streets and sleep on the ground。When Whelingnorther Alliance reached to [PAWN_nameDef]'s world，[PAWN_nameDef] decided to join them，in order to make people won't become homeless anyore。-->
+  <WNA_BC_Homeless.description>[PAWN_nameDef]失去了[PAWN_possessive]家庭和所有财产，只能在街头巷尾游荡和休憩。当威灵诺德联合会的影响力触及[PAWN_possessive]的世界时，[PAWN_nameDef]决定加入威灵会，让世界上不再有人无家可归。</WNA_BC_Homeless.description>
+  <!-- EN: homeless -->
+  <WNA_BC_Homeless.title>流浪汉</WNA_BC_Homeless.title>
+  <!-- EN: homeless -->
+  <WNA_BC_Homeless.titleShort>流浪汉</WNA_BC_Homeless.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] is eager for [PAWN_possessive] own termination，like a hunger man is eager for food，tired man is eager for a rest，a revenger is eager for beheading his rival。-->
+  <WNA_BC_Hopeless.description>[PAWN_nameDef]渴望迎来[PAWN_possessive]自身的终结，就如饥饿的人渴望饱餐，如劳累的人渴望长眠，如复仇者渴望把他仇人的脑袋砍下来。</WNA_BC_Hopeless.description>
+  <!-- EN: hopeless -->
+  <WNA_BC_Hopeless.title>无望之人</WNA_BC_Hopeless.title>
+  <!-- EN: hopeless -->
+  <WNA_BC_Hopeless.titleShort>无望之人</WNA_BC_Hopeless.titleShort>
+  
+  <!-- EN: The idea of Whelingnorther Alliance has deeply moved [PAWN_nameDef] since [PAWN_possessive] young age。[PAWN_nameDef] is prepared to gave up all of [PAWN_objective] and sacrifice for the great work of Whelingnorther Alliance。-->
+  <WNA_BC_Martyr.description>自[PAWN_nameDef]年幼时起，威灵诺德联合会的理念就深刻地影响着[PAWN_nameDef]。[PAWN_nameDef]已然准备放弃[PAWN_possessive]一切，以献身于威灵诺德联合会的大功业。</WNA_BC_Martyr.description>
+  <!-- EN: martyr -->
+  <WNA_BC_Martyr.title>献身者</WNA_BC_Martyr.title>
+  <!-- EN: martyr -->
+  <WNA_BC_Martyr.titleShort>献身者</WNA_BC_Martyr.titleShort>
+  
+  <!-- EN: [PAWN_nameDef] grown up in the fields，before Whelingnorther Alliance's influence interrupting [PAWN_possessive] life，everything [PAWN_pronoun] had in [PAWN_possessive] daily routine is endless farmwork。-->
+  <WNA_BC_MidworldPeasant.description>[PAWN_nameDef]在田间地头长大，在威灵诺德联合会的影响力探入[PAWN_possessive]他的生活之前，[PAWN_possessive]日常生活除了看不到头的劳作之外再无他物。</WNA_BC_MidworldPeasant.description>
+  <!-- EN: midworld peasant -->
+  <WNA_BC_MidworldPeasant.title>中寰世界贫农</WNA_BC_MidworldPeasant.title>
+  <!-- EN: peasant -->
+  <WNA_BC_MidworldPeasant.titleShort>贫农</WNA_BC_MidworldPeasant.titleShort>
+  
+  <!-- EN: Before the arrival of Whelingnorther Alliance，[PAWN_nameDef] has been participating in armed rebellion to overthrow the rule of the privileged class。After the arrival of Whelingnorther Alliance，[PAWN_nameDef] joined them to slain more privileged。-->
+  <WNA_BC_MidworldRebel.description>在威灵诺德联合会到来之前，[PAWN_nameDef]已经投身于致力于推翻特权阶级的武装起义。而在威灵会到来之后，[PAWN_nameDef]加入了他们，只为杀死更多的特权者。</WNA_BC_MidworldRebel.description>
+  <!-- EN: midworld rebel -->
+  <WNA_BC_MidworldRebel.title>中寰世界反抗军</WNA_BC_MidworldRebel.title>
+  <!-- EN: rebel -->
+  <WNA_BC_MidworldRebel.titleShort>反抗军</WNA_BC_MidworldRebel.titleShort>
+  
+</LanguageData>

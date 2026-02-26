@@ -126,17 +126,17 @@
 	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="romyashi.perfumes">
 		<defName>WNA_Romy_AromaflowerPetals_AncientPerfume</defName>
 		<label>Process flower for perfume</label>
-		<description>Turn 25 flower petals into 15 ancient perfume.</description>
+		<description>Turn 75 flower petals into 45 ancient perfume.</description>
 		<ingredients>
 			<li>
 				<thing>Romy_AromaflowerPetals</thing>
-				<countNeeded>25</countNeeded>
+				<countNeeded>75</countNeeded>
 			</li>
 		</ingredients>
 		<results>
 			<li>
 				<thing>Romy_AncientPerfume</thing>
-				<count>15</count>
+				<count>45</count>
 			</li>
 		</results>
 		<ticks>2000</ticks>
@@ -961,7 +961,7 @@
 			</li>
 			<li>
 				<thing>MugwortLeaf</thing>
-				<count>25</count>
+				<countNeeded>25</countNeeded>
 			</li>
 		</ingredients>
 		<results>
@@ -973,7 +973,7 @@
 		<ticks>4000</ticks>
 	</PipeSystem.ProcessDef>
 	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">
-		<defName>WNA_HX_Silk</defName>
+		<defName>WNA_MugwortLeaf</defName>
 		<label>turn mugwort leaf into moxibustion stick</label>
 		<description>turn 30 tussah cocoon into 10 moxibustion sticks.</description>
 		<ingredients>

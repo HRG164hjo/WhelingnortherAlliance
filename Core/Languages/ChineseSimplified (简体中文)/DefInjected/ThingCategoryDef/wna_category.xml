@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: WNA apparel -->
+  <WNA_Category_Apparel.label>WNA服饰</WNA_Category_Apparel.label>
+  
+  <!-- EN: WNA artifact -->
+  <WNA_Category_Artifact.label>WNA文物</WNA_Category_Artifact.label>
+  
+  <!-- EN: WNA base -->
+  <WNA_Category_Base.label>WNA基类</WNA_Category_Base.label>
+  
+  <!-- EN: WNA buildings -->
+  <WNA_Category_Buildings.label>WNA建筑</WNA_Category_Buildings.label>
+  
+  <!-- EN: WNA items -->
+  <WNA_Category_Item.label>WNA物品</WNA_Category_Item.label>
+  
+  <!-- EN: WNA shells -->
+  <WNA_Category_Shell.label>WNA炮弹</WNA_Category_Shell.label>
+  
+  <!-- EN: WNA turrets -->
+  <WNA_Category_Turret.label>WNA炮塔</WNA_Category_Turret.label>
+  
+  <!-- EN: WNA weapons -->
+  <WNA_Category_Weapon.label>WNA武器</WNA_Category_Weapon.label>
+  
+</LanguageData>

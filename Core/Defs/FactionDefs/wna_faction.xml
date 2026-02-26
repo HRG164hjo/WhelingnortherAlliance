@@ -6,7 +6,7 @@
         <categoryTag>WNA_FactionWNA</categoryTag>
         <factionIconPath>factions/wna_alliance</factionIconPath>
         <settlementTexturePath>karma</settlementTexturePath>
-        <description>Thousands of years ago they rose from a remote planet where people suffers from conflicts and oppression, since then they have spread their activities across the known universe, mysterious as ghosts and omnipresent as shades. These black-hooded figure and the Whelingnorther Humanoid Revolt under their command have brought death and horror to almost everywhere they reached. This cult itself is relatively young but actually their origin is far more ancient, even older than the universe.\n\nThis branch of Whelingnorther Alliance have settled on this rimworld for a long time. Although they appear to be peaceful at the moment, they have undoubtedly had plenty of violent conflicts with other factions on the planet. Recently they seem to be becoming active again and preparing to achieve their ultimate goal - the Whelingnorther Apocalypse.</description>
+        <description>Thousands of years ago a trace of unusual darkness appeared in the sky, since then these black-hooded figure and the army under their command have ravaged around this rimworld, until some time ago they suddenly decide to shrink their influence back into their outposts and facilities.\n\nIt's widly believed the Whelingnorther Alliance origins from a far distant Midworld long time ago, when its first generation members were seeking a new ideology different from any present and then persued and hunted by the two super authority. Their leader was found and enlighted by a far-ancient presence, bestowed with infinite power. in a short time that Midworld was conquered by darkness and Whelingnorther Alliance began to spread their activities across the known universe.\n\nRecently they seem to be becoming active again and preparing to achieve their ultimate goal - the Whelingnorther Apocalypse.</description>
         <pawnSingular>follower</pawnSingular>
         <pawnsPlural>followers</pawnsPlural>
         <listOrderPriority>1</listOrderPriority>
@@ -135,15 +135,6 @@
             </li>
             <li>
                 <kindDef>Combat</kindDef>
-                <commonality>100</commonality>
-                <options>
-                    <WNA_Disciple>20</WNA_Disciple>
-                    <WNA_DimBoo>15</WNA_DimBoo>
-                    <WNA_ThornBoo>15</WNA_ThornBoo>
-                </options>
-            </li>
-            <li>
-                <kindDef>Combat</kindDef>
                 <commonality>1</commonality>
                 <options>
                     <WNA_Disciple>20</WNA_Disciple>
@@ -166,7 +157,7 @@
         <fixedIdeo MayRequire="Ludeon.Rimworld.Ideology">true</fixedIdeo>
         <hiddenIdeo MayRequire="Ludeon.Rimworld.Ideology">true</hiddenIdeo>
         <ideoName MayRequire="Ludeon.Rimworld.Ideology">Whelingnorther Holyorder</ideoName>
-        <ideoDescription MayRequire="Ludeon.Rimworld.Ideology">When the ancient whelingnorthans faced calamity and annihilation, it was their effort and sacrifice that led to the greatness and glory of Whelingnorther Empire; when the ancestors of us rise from the humble, it was their effort and sacrifices that led to we Whelingnorther Alliance. No great works can be done without great sacrifices, without great devotions we cannot achieve eternity, salvation and immortality. We descendants will follow the path led by those who came before us; we will understand our duty and accept our manifest destiny; we shall alter and determine the past, the present and the future. Every corner of existance shall bath in the glory of Whelignorther, they may not understand, but they shall obey and follow.</ideoDescription>
+        <ideoDescription MayRequire="Ludeon.Rimworld.Ideology">When the ancient whelingnorthans faced annihilation, it was their effort and sacrifice that led to the greatness and glory of Whelingnorther Empire; when the ancestors of us rise from the humble, it was their effort and sacrifices that led to we Whelingnorther Alliance. Any great work requires sacrifices to forge, without great destruction can there be no great rebirth, without great devotions  will we not achieve eternity, salvation and immortality. We descendants will follow the path led by those who came before us; we will see our duty and accept our manifest destiny; we shall alter and determine the past, the present and the future. Every corner of existance shall bath in the glory of Whelignorther, they need not understand, only shall they obey.</ideoDescription>
         <modExtensions/>
     </FactionDef>
 
@@ -192,36 +183,83 @@
                 <li>r_name->[pfix] [Digit][Digit][Digit][Digit]</li>
                 <li>r_name->[Digit][Digit][Digit]th [pfix]</li>
                 <li>r_name->[Digit][Digit][Digit][Digit]th [pfix]</li>
+                <li>r_name(p=0.001)->HRG164HJO</li>
+                <li>r_name(p=0.001)->[HRG]</li>
                 <!---->
                 <li>pfix->Facility</li>
                 <li>pfix->Outpost</li>
-                <li>pfix->Site</li>
-                <li>pfix(p=4)->Field Task</li>
-                <!---->
-                <li>r_name(p=0.01)->Celestial Throne</li>
-                <li>r_name(p=0.01)->Sky Temple</li>
-                <li>r_name(p=0.01)->Pristine Jewel</li>
-                <li>r_name(p=0.01)->Emerald Mausoleum</li>
-                <li>r_name(p=0.01)->Walled Garden</li>
-                <li>r_name(p=0.01)->Prophet's Retreat</li>
-                <li>r_name(p=0.01)->The Cradle</li>
-                <li>r_name(p=0.01)->The Preserve</li>
-                <li>r_name(p=0.01)->Font of Knowledge</li>
-                <li>r_name(p=0.01)->The Archives</li>
-                <li>r_name(p=0.01)->Last Thought</li>
-                <li>r_name(p=0.01)->Ithome's Gate</li>
-                <li>r_name(p=0.01)->Looks to the Moon</li>
-                <li>r_name(p=0.01)->Five Pebbles</li>
-                <li>r_name(p=0.01)->Outer Expanse</li>
-                <li>r_name(p=0.01)->Outer Rim</li>
-                <li>r_name(p=0.01)->Memory Crypts</li>
-                <li>r_name(p=0.01)->Rubicon</li>
-                <li>r_name(p=0.01)->Aether Ridge</li>
-                <li>r_name(p=0.01)->Daemon</li>
-                <li>r_name(p=0.01)->Shattered Terrace</li>
-                <li>r_name(p=0.01)->Ancient Urban</li>
-                <li>r_name(p=0.01)->Station Annex</li>
-                <li>r_name(p=0.01)->Unfortunate Evolution</li>
+                <li>pfix(p=8)->Field Task</li>
+                <li>HRG->Celestial Throne</li>
+                <li>HRG->Sky Temple</li>
+                <li>HRG->Pristine Jewel</li>
+                <li>HRG->Emerald Mausoleum</li>
+                <li>HRG->Walled Garden</li>
+                <li>HRG->Prophet's Retreat</li>
+                <li>HRG->The Cradle</li>
+                <li>HRG->The Preserve</li>
+                <li>HRG->Font of Knowledge</li>
+                <li>HRG->The Archives</li>
+                <li>HRG->Last Thought</li>
+                <li>HRG->Ithome's Gate</li>
+                <li>HRG->Chimney Canopy</li>
+                <li>HRG->Sky Islands</li>
+                <li>HRG->Farm Arrays</li>
+                <li>HRG->Looks to the Moon</li>
+                <li>HRG->Five Pebbles</li>
+                <li>HRG->Outer Expanse</li>
+                <li>HRG->Waterfront Facility</li>
+                <li>HRG->Undergrowth</li>
+                <li>HRG->Silent Construct</li>
+                <li>HRG->Pipeyard</li>
+                <li>HRG->Submerged Superstructure</li>
+                <li>HRG->Memory Crypts</li>
+                <li>HRG->Metropolis</li>
+                <li>HRG->Rubicon</li>
+                <li>HRG->Outer Rim</li>
+                <li>HRG->Aether Ridge</li>
+                <li>HRG->Daemon</li>
+                <li>HRG->Shattered Terrace</li>
+                <li>HRG->Ancient Urban</li>
+                <li>HRG->Station Annex</li>
+                <li>HRG->Unfortunate Evolution</li>
+                <li>HRG->Coral Caves</li>
+                <li>HRG->Sunlit Port</li>
+                <li>HRG->Sunbaked Alley</li>
+                <li>HRG->Torrential Railways</li>
+                <li>HRG->Badlands</li>
+                <li>HRG->Cold Storage</li>
+                <li>HRG->Desolate Tract</li>
+                <li>HRG->Fetid Glen</li>
+                <li>HRG->Fractured Gateways</li>
+                <li>HRG->Heat Ducts</li>
+                <li>HRG->Thermal Relay</li>
+                <li>HRG->Migration Path</li>
+                <li>HRG->Pillar Grove</li>
+                <li>HRG->Rusted Wrecks</li>
+                <li>HRG->Salination</li>
+                <li>HRG->Shrouded Stacks</li>
+                <li>HRG->Signal Spires</li>
+                <li>HRG->Stormy Coast</li>
+                <li>HRG->The Surface</li>
+                <li>HRG->Torrid Desert</li>
+                <li>HRG->Turbulent Pump</li>
+                <li>HRG->Crumbling Fringes</li>
+                <li>HRG->Decaying Tunnels</li>
+                <li>HRG->Infested Wastes</li>
+                <li>HRG->Tundra Fault</li>
+                <li>HRG->Kerisham</li>
+                <li>HRG->Foxlily Meadows</li>
+                <li>HRG->Miah</li>
+                <li>HRG->Raven Isle</li>
+                <li>HRG->Port Noon</li>
+                <li>HRG->Rhine Archen</li>
+                <li>HRG->Priory of Captains</li>
+                <li>HRG->Sunshine Island</li>
+                <li>HRG->Fogfire Point</li>
+                <li>HRG->Wounded Moon Lake</li>
+                <li>HRG->The Tiger's Nest</li>
+                <li>HRG->Hermitage of the Scythe</li>
+                <li>HRG->The Pentapolis</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
@@ -260,34 +298,34 @@
         <rulePack>
             <rulesStrings>
                 <li>r_name->[postfx] [prefix]</li>
-                <li>r_name(p=0.035714)->[pos1] [pre1]</li>
-                <li>r_name(p=0.035714)->[pos2] [pre2]</li>
-                <li>r_name(p=0.035714)->[pos3] [pre3]</li>
-                <li>r_name(p=0.035714)->[pos4] [pre4]</li>
-                <li>r_name(p=0.035714)->[pos5] [pre5]</li>
-                <li>r_name(p=0.035714)->[pos6] [pre6]</li>
-                <li>r_name(p=0.035714)->[pos7] [pre7]</li>
-                <li>r_name(p=0.035714)->[pos8] [pre8]</li>
-                <li>r_name(p=0.035714)->[pos9] [pre9]</li>
-                <li>r_name(p=0.035714)->[pos10] [pre10]</li>
-                <li>r_name(p=0.035714)->[pos11] [pre11]</li>
-                <li>r_name(p=0.035714)->[pos12] [pre12]</li>
-                <li>r_name(p=0.035714)->[pos13] [pre13]</li>
-                <li>r_name(p=0.035714)->[pos14] [pre14]</li>
-                <li>r_name(p=0.035714)->[pos15] [pre15]</li>
-                <li>r_name(p=0.035714)->[pos16] [pre16]</li>
-                <li>r_name(p=0.035714)->[pos17] [pre17]</li>
-                <li>r_name(p=0.035714)->[pos18] [pre18]</li>
-                <li>r_name(p=0.035714)->[pos19] [pre19]</li>
-                <li>r_name(p=0.035714)->[pos20] [pre20]</li>
-                <li>r_name(p=0.035714)->[pos21] [pre21]</li>
-                <li>r_name(p=0.035714)->[pos22] [pre22]</li>
-                <li>r_name(p=0.035714)->[pos23] [pre23]</li>
-                <li>r_name(p=0.035714)->[pos24] [pre24]</li>
-                <li>r_name(p=0.035714)->[pos25] [pre25]</li>
-                <li>r_name(p=0.035714)->[pos26] [pre26]</li>
-                <li>r_name(p=0.035714)->[pos27] [pre27]</li>
-                <li>r_name(p=0.035714)->[pos28] [pre28]</li>
+                <li>r_name(p=0.0142857)->[pos1] [pre1]</li>
+                <li>r_name(p=0.0142857)->[pos2] [pre2]</li>
+                <li>r_name(p=0.0142857)->[pos3] [pre3]</li>
+                <li>r_name(p=0.0142857)->[pos4] [pre4]</li>
+                <li>r_name(p=0.0142857)->[pos5] [pre5]</li>
+                <li>r_name(p=0.0142857)->[pos6] [pre6]</li>
+                <li>r_name(p=0.0142857)->[pos7] [pre7]</li>
+                <li>r_name(p=0.0142857)->[pos8] [pre8]</li>
+                <li>r_name(p=0.0142857)->[pos9] [pre9]</li>
+                <li>r_name(p=0.0142857)->[pos10] [pre10]</li>
+                <li>r_name(p=0.0142857)->[pos11] [pre11]</li>
+                <li>r_name(p=0.0142857)->[pos12] [pre12]</li>
+                <li>r_name(p=0.0142857)->[pos13] [pre13]</li>
+                <li>r_name(p=0.0142857)->[pos14] [pre14]</li>
+                <li>r_name(p=0.0142857)->[pos15] [pre15]</li>
+                <li>r_name(p=0.0142857)->[pos16] [pre16]</li>
+                <li>r_name(p=0.0142857)->[pos17] [pre17]</li>
+                <li>r_name(p=0.0142857)->[pos18] [pre18]</li>
+                <li>r_name(p=0.0142857)->[pos19] [pre19]</li>
+                <li>r_name(p=0.0142857)->[pos20] [pre20]</li>
+                <li>r_name(p=0.0142857)->[pos21] [pre21]</li>
+                <li>r_name(p=0.0142857)->[pos22] [pre22]</li>
+                <li>r_name(p=0.0142857)->[pos23] [pre23]</li>
+                <li>r_name(p=0.0142857)->[pos24] [pre24]</li>
+                <li>r_name(p=0.0142857)->[pos25] [pre25]</li>
+                <li>r_name(p=0.0142857)->[pos26] [pre26]</li>
+                <li>r_name(p=0.0142857)->[pos27] [pre27]</li>
+                <li>r_name(p=0.0142857)->[pos28] [pre28]</li>
                 <!-- special fixed -->
                 <li>pos1->角</li><li>pre1->木蛟</li>
                 <li>pos2->亢</li><li>pre2->金龙</li>

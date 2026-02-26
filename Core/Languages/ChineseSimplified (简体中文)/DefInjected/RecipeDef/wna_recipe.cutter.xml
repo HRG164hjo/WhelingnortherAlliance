@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: rite ableting -->
+  <WNA_RiteAbleting.label>积毁仪式</WNA_RiteAbleting.label>
+  <!-- EN: break down slag chunks to retrieve useful things, more productive than traditional methods. -->
+  <WNA_RiteAbleting.description>将各种渣块分解成有用的资源，比传统的分割方式更高产一些。</WNA_RiteAbleting.description>
+  <!-- EN: working. -->
+  <WNA_RiteAbleting.jobString>正忙。</WNA_RiteAbleting.jobString>
+  
+  <!-- EN: divide a corpse -->
+  <WNA_RiteBeastDivision.label>分割一具尸体</WNA_RiteBeastDivision.label>
+  <!-- EN: divide a corpse so that it can be used for more uses. -->
+  <WNA_RiteBeastDivision.description>将一具尸体进行分割，这样它会有除了糟心之外的更多用处。</WNA_RiteBeastDivision.description>
+  <!-- EN: working. -->
+  <WNA_RiteBeastDivision.jobString>正忙。</WNA_RiteBeastDivision.jobString>
+  
+  <!-- EN: break down a thing -->
+  <WNA_RiteRebelStriving.label>拆毁一件物品</WNA_RiteRebelStriving.label>
+  <!-- EN: break down a weapon or apparel and see if there's something can be recycled. -->
+  <WNA_RiteRebelStriving.description>拆毁一件衣物或武器，看看有没有什么能回收的东西。</WNA_RiteRebelStriving.description>
+  <!-- EN: working. -->
+  <WNA_RiteRebelStriving.jobString>正忙。</WNA_RiteRebelStriving.jobString>
+  
+</LanguageData>

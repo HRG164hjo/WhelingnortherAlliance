@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: WNA disciple join -->
+  <WNAIncident_DiscipleJoin.label>威灵会门徒加入</WNAIncident_DiscipleJoin.label>
+  <!-- EN: WNA disciple join -->
+  <WNAIncident_DiscipleJoin.letterLabel>威灵会门徒加入</WNAIncident_DiscipleJoin.letterLabel>
+  <!-- EN: A WNA disciple named {PAWN_nameDef} just passed by your settlement. \n\nFor some reason, {PAWN_pronoun} stopped {PAWN_possessive} steps and decided to join you. -->
+  <WNAIncident_DiscipleJoin.letterText>一位名为{PAWN_nameDef}的威灵会门徒路过你的定居点。\n\n出于某种原因，{PAWN_nameDef}停下了脚步，决定加入你的派系。</WNAIncident_DiscipleJoin.letterText>
+  
+</LanguageData>

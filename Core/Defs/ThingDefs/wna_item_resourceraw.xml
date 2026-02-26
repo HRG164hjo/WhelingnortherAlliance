@@ -49,7 +49,7 @@
     <ThingDef ParentName="WNA_ItemsBase">
         <defName>WNA_Sulphur</defName>
         <label>sulphur</label>
-        <description>Brittle yellow substance, toxic, smelly, and an essential component of living organisms. However this doesn't mean you should eat sulphur directly.</description>
+        <description>Brittle yellow substance, toxic, smelly, and an essential component of living organisms. \n\n&lt;color=CAB012&gt;However this doesn't mean you should eat sulphur directly.&lt;/color&gt;</description>
         <graphicData>
             <texPath>item/wna_sulphur</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -212,14 +212,14 @@
     <ThingDef ParentName="WNA_ItemsBase">
         <defName>WNA_MassChunk</defName>
         <label>mass chunk</label>
-        <description>A smooth mass chunk, weighing exactly 30 kg. Very smooth on touch.</description>
+        <description>A smooth mass chunk, weighing exactly 60 kg. Very smooth on touch.</description>
         <graphicData>
             <texPath>item/wna_masschunk</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
             <MarketValue>1</MarketValue>
-            <Mass>30</Mass>
+            <Mass>60</Mass>
         </statBases>
     </ThingDef>
     

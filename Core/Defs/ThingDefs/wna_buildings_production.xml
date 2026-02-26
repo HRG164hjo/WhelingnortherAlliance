@@ -17,7 +17,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
         <rotatable>true</rotatable>
         <researchPrerequisites>
-            <li>WNA_Transmutation</li>
+            <li>WNA_WhelingnortherApocalypse</li>
         </researchPrerequisites>
         <costList>
             <Steel>150</Steel>
@@ -53,7 +53,7 @@
     <ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_CorpseGenerator</defName>
 		<label>corpse generator</label>
-		<description>A rough piece of Whelingnorther Humanoid Revolt tech, this machine consumes corpse to generate power. Better not to think too deep about it, don't even bother looking at it.</description>
+		<description>A rough piece of Whelingnorther Military tech, this machine consumes corpse to generate power, but mainly aims to deal with corpse in a neat way. Better not to think too deep about it, don't even bother looking at it.</description>
         <graphicData Inherit="false">
             <texPath>buildings/production/wna_corpsegenerator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -118,7 +118,7 @@
     <ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_MassGenerator</defName>
 		<label>mass dilution generator</label>
-		<description>An elite piece of WHR tech, place a stone chunk in this machine and it will slowly comsume it as well as producing a good amount of eletricity. Unfortunately due to the missing of key components and techniques, this generator is not as powerful and efficiency as the document says.</description>
+		<description>An elite piece of Whelingnorther Military tech, place a stone chunk in this machine and it will slowly comsume it as well as producing a good amount of eletricity. Unfortunately due to the deficiency of key components and techniques in this rimworld, this generator is not as powerful and efficiency as the document says.</description>
         <graphicData Inherit="false">
 			<texPath>buildings/production/wna_massgenerator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -171,6 +171,9 @@
                     <categories>
                         <li>Chunks</li>
                     </categories>
+                    <thingDefs>
+                        <li>WNA_MassChunk</li>
+                    </thingDefs>
                 </fuelFilter>
                 <fuelLabel>mass chunk</fuelLabel>
                 <fuelGizmoLabel>mass chunk</fuelGizmoLabel>
@@ -269,7 +272,7 @@
 
     <ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_VoidAnchor</defName>
-		<label>void anchor</label>
+		<label>void well</label>
 		<description>a tank filled with mixed liquid of methanol and neutroamine. can place a freshly harvested brain in it and use it to extract voidsteel from the deep void under one's consciousness. more stable and effective than performing a surgery on someone's flesh body. the brain will be slowly wasted.</description>
         <graphicData Inherit="false">
 			<texPath>buildings/production/wna_voidanchor</texPath>
@@ -387,102 +390,6 @@
         </comps>
         <placeWorkers>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-        </placeWorkers>
-	</ThingDef>
-
-    <ThingDef ParentName="WNA_FurnitureBase">
-		<defName>WNA_AssistCabinet</defName>
-		<label>assistant cabinet</label>
-		<description>a tool cabinet.</description>
-        <graphicData Inherit="false">
-			<texPath>Things/Building/Misc/MultiAnalyzer</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-            <drawRotated>false</drawRotated>
-            <drawSize>1</drawSize>
-            <color>(180,173,150)</color>
-		</graphicData>
-        <altitudeLayer>BuildingOnTop</altitudeLayer>
-        <rotatable>true</rotatable>
-		<passability>PassThroughOnly</passability>
-        <defaultPlacingRot>South</defaultPlacingRot>
-		<castEdgeShadows>true</castEdgeShadows>
-		<staticSunShadowHeight>0.6</staticSunShadowHeight>
-		<useHitPoints>true</useHitPoints>
-        <statBases Inherit="false">
-            <Mass>10</Mass>
-            <MaxHitPoints>1000</MaxHitPoints>
-            <WorkToBuild>1200</WorkToBuild>
-            <Beauty>3</Beauty>
-        </statBases>
-        <costList>
-            <Steel>60</Steel>
-            <ComponentIndustrial>2</ComponentIndustrial>
-        </costList>
-        <building>
-            <isEdifice>false</isEdifice>
-		</building>
-        <clearBuildingArea>false</clearBuildingArea>
-        <researchPrerequisites>
-            <li>WNA_CivilianTech</li>
-        </researchPrerequisites>
-        <comps>
-            <li Class="CompProperties_Facility">
-                <statOffsets>
-                    <WorkTableWorkSpeedFactor>20</WorkTableWorkSpeedFactor>
-                </statOffsets>
-                <maxSimultaneous>8</maxSimultaneous>
-            </li>
-        </comps>
-        <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
-        </placeWorkers>
-	</ThingDef>
-    <ThingDef ParentName="WNA_FurnitureBase">
-		<defName>WNA_Duplicator</defName>
-		<label>duplicator</label>
-		<description>a duplicator increasing recipe output.</description>
-        <graphicData Inherit="false">
-			<texPath>Things/Building/Misc/MultiAnalyzer</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-            <drawRotated>false</drawRotated>
-            <drawSize>1</drawSize>
-            <color>(255,235,122)</color>
-		</graphicData>
-        <altitudeLayer>BuildingOnTop</altitudeLayer>
-        <rotatable>true</rotatable>
-		<passability>PassThroughOnly</passability>
-        <defaultPlacingRot>South</defaultPlacingRot>
-		<castEdgeShadows>true</castEdgeShadows>
-		<staticSunShadowHeight>0.6</staticSunShadowHeight>
-		<useHitPoints>true</useHitPoints>
-        <statBases Inherit="false">
-            <Mass>10</Mass>
-            <MaxHitPoints>1000</MaxHitPoints>
-            <WorkToBuild>6000</WorkToBuild>
-            <Beauty>6</Beauty>
-        </statBases>
-        <costList>
-            <Steel>40</Steel>
-            <Gold>2</Gold>
-            <ComponentSpacer>2</ComponentSpacer>
-        </costList>
-        <researchPrerequisites>
-            <li>WNA_AdvancedProduction</li>
-        </researchPrerequisites>
-        <building>
-            <isEdifice>false</isEdifice>
-		</building>
-        <clearBuildingArea>false</clearBuildingArea>
-        <comps>
-            <li Class="CompProperties_Facility">
-                <statOffsets>
-                    <WorkTableEfficiencyFactor>2</WorkTableEfficiencyFactor>
-                </statOffsets>
-                <maxSimultaneous>8</maxSimultaneous>
-            </li>
-        </comps>
-        <placeWorkers>
-            <li>PlaceWorker_ShowFacilitiesConnections</li>
         </placeWorkers>
 	</ThingDef>
 

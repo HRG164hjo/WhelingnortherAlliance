@@ -35,9 +35,11 @@ namespace WNA.WNADefOf
         public static HediffDef WNA_RobeBoost;
         public static HediffDef sWNA_DeathEnd;
         public static HediffDef WNA_VoidDiver;
+        public static HediffDef WNA_RadRing;
 
         public static JobDef WNA_Job_AdjustHydroponics;
         public static JobDef WNA_Job_DeepDrilling;
+        public static JobDef WNA_Job_Revive;
 
         public static PawnKindDef WNA_Archonpriest;
         public static PawnKindDef WNA_Disciple;
@@ -48,13 +50,13 @@ namespace WNA.WNADefOf
         public static TerrainDef WNA_FocusSand;
 
         public static ResearchProjectDef WNA_PsychicDawn;
-        public static ResearchProjectDef WNA_TheEnlightment;
+        public static ResearchProjectDef WNA_WhelingnortherApocalypse;
 
         public static ThingDef WNA_WNThan;
         public static ThingDef WNA_Human;
-        public static ThingDef WNA_DimBoo;
-        public static ThingDef WNA_ThornBoo;
-        public static ThingDef WNA_FerosBoo;
+        //public static ThingDef WNA_DimBoo;
+        //public static ThingDef WNA_ThornBoo;
+        //public static ThingDef WNA_FerosBoo;
 
         public static ThingDef WNA_Cinnabar;
         public static ThingDef WNA_Desolisium;

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: adv. mortar -->
+  <WNA_AdvMortar.label>先进迫击炮</WNA_AdvMortar.label>
+  <!-- EN: sentry gun. -->
+  <WNA_AdvMortar.description>一台适用于快速开火的迫击炮。</WNA_AdvMortar.description>
+  
+  <!-- EN: adv mortar -->
+  <WNA_AdvMortar_Gun.label>adv mortar</WNA_AdvMortar_Gun.label>
+  <!-- EN: turret weapon. -->
+  <WNA_AdvMortar_Gun.description>turret weapon.</WNA_AdvMortar_Gun.description>
+  <!-- EN: adv mortar -->
+  <WNA_AdvMortar_Gun.verbs.Verb_Shoot.label>adv mortar</WNA_AdvMortar_Gun.verbs.Verb_Shoot.label>
+  
+  <!-- EN: dead zone irradiator -->
+  <WNA_Deadzone.label>死区放射装置</WNA_Deadzone.label>
+  <!-- EN: A facility that can emit strong radiation field, making a wide area a "dead zone". note that this facility cannot distinguish enemies and allies. -->
+  <WNA_Deadzone.description>一台能释放强烈辐射的装置，能将一大片范围变成“死区”。必须注意的是辐射场可不会分辨敌我。</WNA_Deadzone.description>
+  
+  <!-- EN: desolator radiation turret -->
+  <WNA_DesoTurret.label>“根除者”辐射炮塔</WNA_DesoTurret.label>
+  <!-- EN: A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. -->
+  <WNA_DesoTurret.description>一个配备了辐射束发射器的炮塔，击中目标时会在目标附近的一小片区域内扩散辐射场。</WNA_DesoTurret.description>
+  
+  <!-- EN: desolator -->
+  <WNA_DesoTurret_Gun.label>desolator</WNA_DesoTurret_Gun.label>
+  <!-- EN: turret weapon. -->
+  <WNA_DesoTurret_Gun.description>turret weapon.</WNA_DesoTurret_Gun.description>
+  
+  <!-- EN: radbeam -->
+  <WNA_DesoTurret_Proj.label>radbeam</WNA_DesoTurret_Proj.label>
+  
+  <!-- EN: "comet" laser gun -->
+  <WNA_PrismTower.label>“彗星”聚光炮塔</WNA_PrismTower.label>
+  <!-- EN: A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. -->
+  <WNA_PrismTower.description>一台使用高度聚焦的光束作为武器的炮塔，能同时对目标造成冲击和烧伤。</WNA_PrismTower.description>
+  
+  <!-- EN: comet -->
+  <WNA_PrismTower_Gun.label>comet</WNA_PrismTower_Gun.label>
+  <!-- EN: turret weapon. -->
+  <WNA_PrismTower_Gun.description>turret weapon.</WNA_PrismTower_Gun.description>
+  
+  <!-- EN: comet -->
+  <WNA_PrismTower_Proj.label>comet</WNA_PrismTower_Proj.label>
+  
+  <!-- EN: "scorpion" sentry gun -->
+  <WNA_SentryGun.label>“天蝎”哨戒机枪</WNA_SentryGun.label>
+  <!-- EN: sentry gun. -->
+  <WNA_SentryGun.description>配备了剧毒废料子弹的哨戒机枪炮塔。</WNA_SentryGun.description>
+  
+  <!-- EN: sentry gun -->
+  <WNA_SentryGun_Gun.label>sentry gun</WNA_SentryGun_Gun.label>
+  <!-- EN: turret weapon. -->
+  <WNA_SentryGun_Gun.description>turret weapon.</WNA_SentryGun_Gun.description>
+  <!-- EN: sentry gun -->
+  <WNA_SentryGun_Gun.verbs.VerbType_Burst.label>sentry gun</WNA_SentryGun_Gun.verbs.VerbType_Burst.label>
+  
+  <!-- EN: sentry gun -->
+  <WNA_SentryGun_Proj.label>sentry gun</WNA_SentryGun_Proj.label>
+  
+  <!-- EN: spike trap -->
+  <WNA_SpikeTrap.label>尖刺陷阱</WNA_SpikeTrap.label>
+  <!-- EN: Several blades half-burried underground with a set of specially designed trigger. If some careless person steps on it, the blades will teach this person an unforgettable lesson - sometimes a last lesson in their life. The heavier this trap is, the more deadly it is. -->
+  <WNA_SpikeTrap.description>一些半埋在地下的尖刀和一套专门设计的触发装置。如果有个粗心大意的什么东西踩到这上面，这些尖刀就会给他上一次毕生难忘的课——也许是毕生的最后一课。这种陷阱的分量越大，威力也就越大。</WNA_SpikeTrap.description>
+  
+</LanguageData>

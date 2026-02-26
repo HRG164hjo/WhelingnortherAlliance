@@ -14,7 +14,7 @@
             </linkFlags>
 		</graphicData>
         <researchPrerequisites>
-            <li>WNA_SecretTech</li>
+            <li>WNA_WhelingnortherApocalypse</li>
         </researchPrerequisites>
 		<uiIconPath>karma</uiIconPath>
         <drawStyleCategory>Conduits</drawStyleCategory>
@@ -50,7 +50,7 @@
 	</ThingDef>
     <ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_BasicCrate</defName>
-		<label>ivory crate</label>
+		<label>formed crate</label>
 		<description>A small white box, specially designed for storaging items.</description>
 		<graphicData>
 			<texPath>buildings/misc/wna_crate</texPath>
@@ -58,7 +58,7 @@
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
         <researchPrerequisites>
-            <li>WNA_SecretTech</li>
+            <li>WNA_WhelingnortherApocalypse</li>
         </researchPrerequisites>
 		<size>(1,1)</size>
         <inspectorTabs>
@@ -67,7 +67,7 @@
         <comps>
             <li Class="CompProperties_Transporter">
                 <restEffectiveness>1</restEffectiveness>
-                <massCapacity>6000000000</massCapacity>
+                <massCapacity>Infinity</massCapacity>
                 <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
                 <showOverallStats>false</showOverallStats>
             </li>
@@ -76,8 +76,8 @@
 
     <ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_LinkTable</defName>
-		<label>ivory table</label>
-		<description>Floating translucent table, sometimes described as "ivory-like in color".</description>
+		<label>formed table</label>
+		<description>Floating translucent table, formed just fine from nothing.</description>
 		<graphicData>
 			<texPath>buildings/atlas/wna_table_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -87,7 +87,7 @@
 			</linkFlags>
 		</graphicData>
         <researchPrerequisites>
-            <li>WNA_SecretTech</li>
+            <li>WNA_WhelingnortherApocalypse</li>
         </researchPrerequisites>
         <drawStyleCategory>Defenses</drawStyleCategory>
 		<uiIconPath>buildings/atlas/wna_table_icon</uiIconPath>
@@ -101,8 +101,8 @@
 	</ThingDef>
     <ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_LinkSeat</defName>
-		<label>ivory seat</label>
-		<description>Floating translucent stool, sometimes described as "ivory-like in color".</description>
+		<label>formed seat</label>
+		<description>Floating translucent stool, formed just fine from nothing.</description>
 		<graphicData>
 			<texPath>buildings/atlas/wna_seat_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -112,7 +112,7 @@
 			</linkFlags>
 		</graphicData>
         <researchPrerequisites>
-            <li>WNA_SecretTech</li>
+            <li>WNA_WhelingnortherApocalypse</li>
         </researchPrerequisites>
         <drawStyleCategory>Defenses</drawStyleCategory>
 		<uiIconPath>buildings/atlas/wna_seat_icon</uiIconPath>
@@ -128,8 +128,8 @@
 
     <ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_LinkShelf</defName>
-		<label>ivory shelf</label>
-		<description>Floating translucent shelf, one can equal to 60 normal shelf.</description>
+		<label>formed shelf</label>
+		<description>Floating translucent shelf, can hold a unusual large number of stacks.</description>
         <thingClass>Building_Storage</thingClass>
 		<graphicData>
 			<texPath>buildings/atlas/wna_shelf_Atlas</texPath>
@@ -140,7 +140,7 @@
 			</linkFlags>
 		</graphicData>
         <researchPrerequisites>
-            <li>WNA_SecretTech</li>
+            <li>WNA_WhelingnortherApocalypse</li>
         </researchPrerequisites>
         <drawStyleCategory>Defenses</drawStyleCategory>
 		<uiIconPath>buildings/atlas/wna_shelf_icon</uiIconPath>
@@ -158,7 +158,7 @@
             <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
             <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
             <paintable>true</paintable>
-            <maxItemsInCell>2000</maxItemsInCell>
+            <maxItemsInCell>60000</maxItemsInCell>
             <storageGroupTag>Shelf</storageGroupTag>
             <fixedStorageSettings>
                 <filter>
@@ -183,14 +183,14 @@
         <altitudeLayer>BuildingOnTop</altitudeLayer>
 		<defName>WNA_TorchLamp</defName>
 		<label>shimmer torch</label>
-		<description>A WNA style torch. It doesn't flame, though.</description>
+		<description>A bright torch lantern. Flame not included.</description>
         <graphicData>
 			<texPath>buildings/misc/wna_torch</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
             <drawRotated>false</drawRotated>
 		</graphicData>
         <researchPrerequisites>
-            <li>WNA_SecretTech</li>
+            <li>WNA_WhelingnortherApocalypse</li>
         </researchPrerequisites>
         <statBases>
             <MeditationFocusStrength>8</MeditationFocusStrength>
@@ -256,7 +256,7 @@
             <color>(55,55,55,192)</color>
 		</graphicData>
         <researchPrerequisites>
-            <li>WNA_SecretTech</li>
+            <li>WNA_WhelingnortherApocalypse</li>
         </researchPrerequisites>
         <statBases>
             <MeditationFocusStrength>8</MeditationFocusStrength>
@@ -390,7 +390,7 @@
     <ThingDef ParentName="SleepingSpotBase">
         <defName>WNA_SlotSleepSpot</defName>
         <label>slot sleeping spot</label>
-        <description>a sleeping spot occupying 1 tile only.</description>
+        <description>a sleeping spot occupying 1 tile only, one may need to sit on it and rest.</description>
         <designationCategory>WNA_MainCategory</designationCategory>
         <graphicData>
             <texPath>bedspot</texPath>
@@ -506,7 +506,7 @@
         <comps>
             <li Class="CompProperties_Transporter">
                 <restEffectiveness>1</restEffectiveness>
-                <massCapacity>6000000</massCapacity>
+                <massCapacity>86400000</massCapacity>
                 <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
                 <showOverallStats>true</showOverallStats>
             </li>

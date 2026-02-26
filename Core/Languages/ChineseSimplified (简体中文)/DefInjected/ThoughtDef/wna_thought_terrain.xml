@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <WNA_InFocusSpring.stages.in_pale_spring.label>在黯水中</WNA_InFocusSpring.stages.in_pale_spring.label>
+  <WNA_InFocusSpring.stages.in_pale_spring.description>这里的水把我的各种念头都带走了，我感觉非常冷静平和。</WNA_InFocusSpring.stages.in_pale_spring.description>
+  
+  <WNA_OnFocusFloor.stages.on_pale_tile.label>在淡白地板上</WNA_OnFocusFloor.stages.on_pale_tile.label>
+  <WNA_OnFocusFloor.stages.on_pale_tile.description>一个整洁的地方，我喜欢。</WNA_OnFocusFloor.stages.on_pale_tile.description>
+  
+  <WNA_OnFocusSoil.stages.on_dim_soil.label>在黯壤上</WNA_OnFocusSoil.stages.on_dim_soil.label>
+  <WNA_OnFocusSoil.stages.on_dim_soil.description>我感觉一股生命力量穿过我的身体，感觉十分放松，整个人焕然一新。</WNA_OnFocusSoil.stages.on_dim_soil.description>
+  
+</LanguageData>

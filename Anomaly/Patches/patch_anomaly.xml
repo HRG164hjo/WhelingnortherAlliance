@@ -22,17 +22,17 @@
             <li Class="StockGenerator_SingleDef">
                 <thingDef>GoldenCube</thingDef>
                 <price>VeryCheap</price>
-                <countRange>1200~1200</countRange>
+                <countRange>120000~120000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>RevenantSpine</thingDef>
                 <price>VeryCheap</price>
-                <countRange>1000~1000</countRange>
+                <countRange>100000~100000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>MonolithFragment</thingDef>
                 <price>VeryCheap</price>
-                <countRange>2000~2000</countRange>
+                <countRange>200000~200000</countRange>
             </li>
         </value>
     </Operation>

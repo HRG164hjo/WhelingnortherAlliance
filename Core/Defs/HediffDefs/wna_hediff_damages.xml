@@ -41,7 +41,7 @@
         <defName>WNA_KineticDamage</defName>
         <label>kinetic burn</label>
         <labelNoun>an atypical burn</labelNoun>
-        <description>A burn wound caused by WNA's thought-kinetic weapons.</description>
+        <description>A wound caused by WNA's kinetic projection weapons, mainly burns, accompanied by a significant amount of impact.</description>
         <comps>
             <li Class="HediffCompProperties_TendDuration">
                 <labelTendedWell>bandaged</labelTendedWell>
@@ -266,7 +266,6 @@
                     <radLevel>10</radLevel>
                     <radius>0.9</radius>
                     <edgeFactor>0.3</edgeFactor>
-                    <threshold>3</threshold>
                     <isSeverityRadLevel>true</isSeverityRadLevel>
                     <isSeverityRadRadius>true</isSeverityRadRadius>
                     <radRadiusFactor>0.6</radRadiusFactor>

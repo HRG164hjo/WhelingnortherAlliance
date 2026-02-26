@@ -80,7 +80,7 @@
         <slot>Childhood</slot>
         <title>third generation child</title>
         <titleShort>third-gen</titleShort>
-        <description>[PAWN_nameDef]'s parents were residents under the shelter of Whelingnorther Alliance, [PAWN_nameDef] is also a resident under the shelter of Whelingnorther Alliance. Thanks to the protection ofWhelingnorther Alliance, nothing tragic happened to [PAWN_nameDef] during [PAWN_possessive] growth, but sadly there's also nothing memorable happened to [PAWN_objective] too.</description>
+        <description>[PAWN_nameDef]'s parents were residents under the shelter of Whelingnorther Alliance, [PAWN_nameDef] is also a resident under the shelter of Whelingnorther Alliance. Thanks to the protection of Whelingnorther Alliance, nothing tragic happened to [PAWN_nameDef] during [PAWN_possessive] growth, but sadly there's also nothing memorable happened to [PAWN_objective] too.</description>
     </BackstoryDef>
     
     <BackstoryDef>
@@ -90,7 +90,7 @@
         </spawnCategories>
         <slot>Childhood</slot>
         <title>midworld civilian</title>
-        <titleShort>revenger</titleShort>
+        <titleShort>civilian</titleShort>
         <description>[PAWN_nameDef] lived a normal child life, had a normal family, entered a normal school, had normal friends, experienced no defficiency, and is positive about [PAWN_possessive] brilliant future.</description>
         <forcedTraits>
             <NaturalMood>1</NaturalMood>

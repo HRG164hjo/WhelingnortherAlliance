@@ -66,7 +66,7 @@ namespace WNA.WNAHarmony
             {
                 Trait validTrait = pawn.story.traits.GetTrait(traitvanilla);
                 if (pawn.Faction.def == WNAMainDefOf.WNA_FactionWNA ||
-                    (pawn.Faction == Faction.OfPlayer && WNAMainDefOf.WNA_TheEnlightment.IsFinished))
+                    (pawn.Faction == Faction.OfPlayer && WNAMainDefOf.WNA_WhelingnortherApocalypse.IsFinished))
                 {
                     if (pawn.def == wnthan || pawn.def == whuman)
                         return true;

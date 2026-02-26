@@ -5,8 +5,8 @@
         <label>gravlite manifold</label>
         <description>A piece of advanced grav tech with a minified built-in self-maintenance system, can distort gravity and able to harvest stress energy from distorted gravitational field. A single facility is enough to maintain a medium sized orbital outpost.</description>
         <graphicData>
-            <texPath>Things/Building/GravAnchor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <texPath>buildings/wna_gravengine/wna_gravengine</texPath>
             <drawSize>3</drawSize>
         </graphicData>
 		<designationCategory>WNA_MainCategory</designationCategory>
@@ -28,8 +28,8 @@
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
             <WorkToBuild>4000</WorkToBuild>
-            <GravshipRange>144</GravshipRange>
-            <SubstructureSupport>252000</SubstructureSupport>
+            <GravshipRange>500</GravshipRange>
+            <SubstructureSupport>125660</SubstructureSupport>
         </statBases>
         <costList>
             <GravlitePanel>180</GravlitePanel>
@@ -50,7 +50,7 @@
         <thingCategories Inherits="false" IsNull="true"/>
         <comps>
             <li Class="CompProperties_SubstructureFootprint">
-                <radius>282.8</radius>
+                <radius>200</radius>
             </li>
             <li Class="CompProperties_AffectedByFacilities">
                 <linkableFacilities>

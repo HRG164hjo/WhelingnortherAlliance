@@ -34,7 +34,7 @@
     </Operation>
     
     <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/ThingDef[defName="Drape"]</xpath>
+	    <xpath>Defs/ThingDef[defName="Drape" or defName="Brazier"]</xpath>
         <value>
 			<comps>
                 <li>
@@ -43,6 +43,17 @@
             </comps>
         </value>
     </Operation>
+    
+    <Operation Class="PatchOperationConditional">
+	    <xpath>Defs/ThingDef[defName="Brazier"]/stuffCategories/li[text()="Woody"]</xpath>
+		<nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Brazier"]/stuffCategories</xpath>
+            <value>
+                <li>Woody</li>
+            </value>
+        </nomatch>
+    </Operation>
+
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThingDef[@Name="ThroneBase"]/comps</xpath>
         <value>

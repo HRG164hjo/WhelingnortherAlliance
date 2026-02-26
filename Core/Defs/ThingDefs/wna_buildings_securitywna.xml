@@ -18,7 +18,7 @@
             <turretBurstCooldownTime>0.083333</turretBurstCooldownTime>
         </building>
         <researchPrerequisites>
-            <li>WNA_SecretTech</li>
+            <li>WNA_WhelingnortherApocalypse</li>
         </researchPrerequisites>
     </ThingDef>
     <ThingDef ParentName="WNA_TurrentWeaponBase">
@@ -83,7 +83,7 @@
             <turretBurstCooldownTime>1.333333</turretBurstCooldownTime>
         </building>
         <researchPrerequisites>
-            <li>WNA_SecretTech</li>
+            <li>WNA_WhelingnortherApocalypse</li>
         </researchPrerequisites>
     </ThingDef>
     <ThingDef ParentName="WNA_TurrentWeaponBase">

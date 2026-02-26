@@ -30,9 +30,7 @@ namespace WNA.AbilityCompProp
         {
             Pawn pawn = target.Pawn;
             if (pawn == null || pawn.def == WNAMainDefOf.WNA_WNThan)
-            {
                 return false;
-            }
             return true;
         }
         public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)

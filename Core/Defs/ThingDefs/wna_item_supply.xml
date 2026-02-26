@@ -3,7 +3,7 @@
     <ThingDef ParentName="WNA_ItemsBase">
         <defName>WNA_Ration</defName>
         <label>WNA military ration</label>
-        <description>Standard ration pack for Whelingnorther Alliance (especially for Whelingnorther Humanoid Revolt). Produced from highest quality materials - theoretically. Anything that contains nutrients can be used to make this ration if needed.</description>
+        <description>Standard ration pack for Whelingnorther Military, produced from highest quality materials - theoretically. Anything that contains nutrients can be used to make this ration if needed.</description>
         <graphicData>
             <texPath>item/wna_ration</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -28,6 +28,9 @@
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_OffsetHemogen">
                     <offset>2.0</offset>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+                    <offset>20.0</offset>
                 </li>
                 <li Class="IngestionOutcomeDoer_OffsetNeed">
                     <need>Mood</need>
@@ -71,7 +74,7 @@
     <ThingDef ParentName="WNA_ItemsBase">
         <defName>WNA_Medikit</defName>
         <label>WNA military medikit</label>
-        <description>Medicines and tools packed together in WNA standard, processed from various possible materials. The process has gone through many improvements, thus minimum efforts can lead to maximum effects.</description>
+        <description>Medicines and tools packed together in WNA standard, processed from various possible materials.</description>
         <thingClass>Medicine</thingClass>
         <graphicData>
             <texPath>item/wna_medikit</texPath>
@@ -85,19 +88,21 @@
             <MedicalQualityMax>999999</MedicalQualityMax>
         </statBases>
         <comps>
-            <li Class="CompProperties_Usable">
+            <!--<li Class="CompProperties_Usable">
                 <useJob>UseItem</useJob>
                 <useLabel>Use {0_label}</useLabel>
                 <useDuration>0</useDuration>
+                <showUseGizmo>true</showUseGizmo>
             </li>
-            <li Class="CompProperties_UseEffect">
-                <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+            <li Class="CompProperties_Targetable">
+                <compClass>CompTargetable</compClass>
+                <ignoreQuestLodgerPawns>false</ignoreQuestLodgerPawns>
             </li>
-            <li Class="CompProperties_UseEffectPlaySound">
-                <soundOnUsed>MechSerumUsed</soundOnUsed>
-            </li>
+            <li Class="CompProperties_TargetEffectResurrect">
+                <moteDef>Mote_ResurrectFlash</moteDef>
+            </li>-->
             <li Class="WNA.ThingCompProp.PropMultiUse">
-                <uses>28</uses>
+                <uses>9</uses>
             </li>
         </comps>
         <thingCategories>

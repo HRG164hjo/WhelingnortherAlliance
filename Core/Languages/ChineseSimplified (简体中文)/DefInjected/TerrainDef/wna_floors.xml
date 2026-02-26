@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: carpet platform -->
+  <WNA_BridgeCarpet.label>地毯平台</WNA_BridgeCarpet.label>
+  <!-- EN: Platform with soft surface, more suitable for interior decoration than concrete platforms. -->
+  <WNA_BridgeCarpet.description>铺有柔软表面的平台，与水泥平台相比更适合用作室内装潢。</WNA_BridgeCarpet.description>
+  
+  <!-- EN: concrete platform -->
+  <WNA_BridgeFloor.label>水泥平台</WNA_BridgeFloor.label>
+  <!-- EN: Platform built with reinforced concrete, can be built on deep water and even in space. -->
+  <WNA_BridgeFloor.description>用钢筋水泥做成的平台，可以建在深水上，甚至能建在太空中。</WNA_BridgeFloor.description>
+  
+  <!-- EN: artificial soil -->
+  <WNA_BridgeSoil.label>人工土壤</WNA_BridgeSoil.label>
+  <!-- EN: Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth. -->
+  <WNA_BridgeSoil.description>基础型人工土壤，土壤下埋藏着有助于作物生长的机械结构。</WNA_BridgeSoil.description>
+  
+  <!-- EN: pale tile -->
+  <WNA_FocusFloor.label>淡白地板</WNA_FocusFloor.label>
+  <!-- EN: Colorless fine floor. -->
+  <WNA_FocusFloor.description>精致的无色地板。</WNA_FocusFloor.description>
+  
+  <!-- EN: dim sand -->
+  <WNA_FocusSand.label>瞑沙</WNA_FocusSand.label>
+  <!-- EN: These sands have ran out of their color. -->
+  <WNA_FocusSand.description>这些细沙已经耗尽了它们的颜色。</WNA_FocusSand.description>
+  
+  <!-- EN: dim soil -->
+  <WNA_FocusSoil.label>黯壤</WNA_FocusSoil.label>
+  <!-- EN: Dim colorless soil, vitality is pulsing through it. -->
+  <WNA_FocusSoil.description>黯淡无色的土壤，庞大的生命力在其中脉动。</WNA_FocusSoil.description>
+  
+  <!-- EN: pale spring -->
+  <WNA_FocusSpring.label>黯水</WNA_FocusSpring.label>
+  <!-- EN: Colorless fluid, seems to have some mysterious aspects. -->
+  <WNA_FocusSpring.description>无色的黯光液体，看上去总觉得会有些奇妙特性。</WNA_FocusSpring.description>
+  
+</LanguageData>

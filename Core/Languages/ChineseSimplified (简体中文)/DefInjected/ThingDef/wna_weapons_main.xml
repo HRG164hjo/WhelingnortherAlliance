@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <WNA_Dawnbreaker.label>“破晓者”单兵核炮</WNA_Dawnbreaker.label>
+  <WNA_Dawnbreaker.description>一台由活化铀电池驱动的单兵迫击炮，配备了特制的弹头，虽然对建筑的伤害感人，但能在一大片区域内散步具有传染性的辐射场。</WNA_Dawnbreaker.description>
+  <WNA_Dawnbreaker.tools.barrel.label>炮管</WNA_Dawnbreaker.tools.barrel.label>
+  
+  <WNA_Dawnbreaker_Proj.label>gun proj</WNA_Dawnbreaker_Proj.label>
+  
+  <WNA_HowlstormArti.label>“呼啸风暴”单兵火炮</WNA_HowlstormArti.label>
+  <WNA_HowlstormArti.description>“呼啸风暴”单兵火炮可以进行超远距离的攻击，其弹头能释放出可以将目标击晕的震荡波，同时在爆心附近释放数个定位信标。这些信标将连接至威灵会的“赤火天槌”轨道打击网络，招来天灾般的轨道打击。</WNA_HowlstormArti.description>
+  <WNA_HowlstormArti.tools.barrel.label>炮管</WNA_HowlstormArti.tools.barrel.label>
+  
+  <WNA_HowlstormArti_Proj.label>gun proj</WNA_HowlstormArti_Proj.label>
+  
+  <WNA_HowlstormHMG.label>“呼啸风暴”重机枪</WNA_HowlstormHMG.label>
+  <WNA_HowlstormHMG.description>“呼啸风暴”超重型机枪是威灵会军备库中最重型也是最令人生畏的武器之一，能如暴雨一般向敌人投射动能爆破脉冲而几乎无需间歇。如果有幸运儿能在被子弹打死之前来到足够近的距离，那么这把无论是体积还是重量都非常惊人的武器就能轻易将其碾成土豆泥。</WNA_HowlstormHMG.description>
+  <WNA_HowlstormHMG.tools.barrel.label>枪管</WNA_HowlstormHMG.tools.barrel.label>
+  
+  <WNA_HowlstormHMG_Proj.label>gun proj</WNA_HowlstormHMG_Proj.label>
+  
+  <WNA_HowlstormMLRS.label>“呼啸风暴”多管火箭炮</WNA_HowlstormMLRS.label>
+  <WNA_HowlstormMLRS.description>“呼啸风暴”超重型机枪是威灵会军备库中最重型也是最令人生畏的武器之一。当其切换为多管火箭炮模式时，它可以发射大量赤明焰火箭弹，将目标区域内的一切融化殆尽。</WNA_HowlstormMLRS.description>
+  <WNA_HowlstormMLRS.tools.barrel.label>枪管</WNA_HowlstormMLRS.tools.barrel.label>
+  
+  <WNA_HowlstormMLRS_Proj.label>gun proj</WNA_HowlstormMLRS_Proj.label>
+  
+  <WNA_IonizingRifle.label>“死区”电离步枪</WNA_IonizingRifle.label>
+  <WNA_IonizingRifle.description>一把由不稳定粒子发射器驱动的光束枪，这把武器可以发射出强大的辐射束以伤害目标。虽然对建筑的效果差些，但这种武器对付生物敌人的时候好用得出乎意料。</WNA_IonizingRifle.description>
+  <WNA_IonizingRifle.tools.barrel.label>枪管</WNA_IonizingRifle.tools.barrel.label>
+  
+  <WNA_IonizingRifle_Proj.label>gun proj</WNA_IonizingRifle_Proj.label>
+  
+  <WNA_Ironflower.label>铁华破城炮</WNA_Ironflower.label>
+  <WNA_Ironflower.description>致命的“铁华”破城炮。</WNA_Ironflower.description>
+  <WNA_Ironflower.tools.barrel.label>炮管</WNA_Ironflower.tools.barrel.label>
+  
+  <WNA_Ironflower_Proj.label>gun proj</WNA_Ironflower_Proj.label>
+  
+  <WNA_KineticCoil.label>动能线圈</WNA_KineticCoil.label>
+  <WNA_KineticCoil.description>一种独特的能量武器。得益于威灵会独特的武器技术，这种武器不依赖实体弹药对目标造成伤害，而是能直接将一团动能投射向目标。这种“动能线圈”可以快速向敌人发起密集的攻击，在能够迅速压制敌人的同时还有着不俗的威力。</WNA_KineticCoil.description>
+  <WNA_KineticCoil.tools.barrel.label>枪管</WNA_KineticCoil.tools.barrel.label>
+  
+  <WNA_KineticCoil_Proj.label>gun proj</WNA_KineticCoil_Proj.label>
+  
+  <WNA_KineticRailgun.label>动能轨道炮</WNA_KineticRailgun.label>
+  <WNA_KineticRailgun.description>一种独特的能量武器。得益于威灵会独特的武器技术，这种武器不依赖实体弹药对目标造成伤害，而是能直接将一团动能投射向目标。这台“动能轨道炮”在每次开火后都需要较长的时间重新装填，但它的每一发攻击都威力不俗，足以覆灭一些规模不够大的据点。</WNA_KineticRailgun.description>
+  <WNA_KineticRailgun.tools.barrel.label>枪管</WNA_KineticRailgun.tools.barrel.label>
+  
+  <WNA_KineticRailgun_Proj.label>gun proj</WNA_KineticRailgun_Proj.label>
+  
+  <WNA_LeadHazeARifle.label>“铅雾”突击步枪</WNA_LeadHazeARifle.label>
+  <WNA_LeadHazeARifle.description>一把适用于近距离格斗的巷战武器，这种武器能在短时间内泼洒出大量有毒的弹药。在过去无数次的战斗中，威灵会的士兵们用这种武器摧毁了不知道多少钢铁般的坚固防线。</WNA_LeadHazeARifle.description>
+  <WNA_LeadHazeARifle.tools.barrel.label>枪管</WNA_LeadHazeARifle.tools.barrel.label>
+  
+  <WNA_LeadHazeARifle_Proj.label>gun proj</WNA_LeadHazeARifle_Proj.label>
+  
+  <WNA_LysisRifle.label>裂解步枪</WNA_LysisRifle.label>
+  <WNA_LysisRifle.description>威灵军部研发出的最骇人的武器之一，这种武器能发射出一束名为“裂解力场”的能量束，能够瓦解几乎所有已知物质的内在联系，使其变得无比脆弱，并且在被破坏时还会释放出新的裂解力场。</WNA_LysisRifle.description>
+  <WNA_LysisRifle.tools.barrel.label>枪管</WNA_LysisRifle.tools.barrel.label>
+  
+  <WNA_LysisRifle_Proj.label>gun proj</WNA_LysisRifle_Proj.label>
+  
+  <WNA_NeutronRifle.label>中子步枪</WNA_NeutronRifle.label>
+  <WNA_NeutronRifle.description>中子步枪.</WNA_NeutronRifle.description>
+  <WNA_NeutronRifle.tools.barrel.label>枪管</WNA_NeutronRifle.tools.barrel.label>
+  
+  <WNA_NeutronRifle_Proj.label>gun proj</WNA_NeutronRifle_Proj.label>
+  
+  <WNA_Permafrost.label>永冻步枪</WNA_Permafrost.label>
+  <WNA_Permafrost.description>永冻射线.</WNA_Permafrost.description>
+  <WNA_Permafrost.tools.barrel.label>枪管</WNA_Permafrost.tools.barrel.label>
+  
+  <WNA_Permafrost_Proj.label>gun proj</WNA_Permafrost_Proj.label>
+  
+  <WNA_Saber.label>威灵军刀</WNA_Saber.label>
+  <WNA_Saber.description>一把厚、重且锋利的军用近身格斗武器，能够轻易地砍穿装甲或防御工事，或者把一个人削成两半。</WNA_Saber.description>
+  <WNA_Saber.tools.edge.label>刃</WNA_Saber.tools.edge.label>
+  
+  <WNA_SpikeTrapSpawned.label>部署型尖刺陷阱</WNA_SpikeTrapSpawned.label>
+  <WNA_SpikeTrapSpawned.description>部署型尖刺陷阱。</WNA_SpikeTrapSpawned.description>
+  
+  <WNA_SunsetArtillery.label>“日暮”狙击步枪-炮击模式</WNA_SunsetArtillery.label>
+  <WNA_SunsetArtillery.description>“日暮”狙击步枪改装为炮兵模式，通常与小型反粒子弹头配合使用。一条导轨将会引领弹头飞向正确的方向，穿过遥远的距离轰炸目标。</WNA_SunsetArtillery.description>
+  <WNA_SunsetArtillery.tools.rapier.label>刺刀</WNA_SunsetArtillery.tools.rapier.label>
+  
+  <WNA_SunsetArtillery_Proj.label>gun proj</WNA_SunsetArtillery_Proj.label>
+  
+  <WNA_SunsetSniper.label>“日暮”狙击步枪</WNA_SunsetSniper.label>
+  <WNA_SunsetSniper.description>一把配有先进瞄准具的狙击步枪，能够在相当远的距离上射杀敌人。其配备的空尖弹能都造成巨大的创伤，被击中的目标鲜少能逃出生天。即使有人能从其枪击下幸存，他们也会经历巨大的创伤和难以避免的感染。</WNA_SunsetSniper.description>
+  <WNA_SunsetSniper.tools.rapier.label>刺刀</WNA_SunsetSniper.tools.rapier.label>
+  
+  <WNA_SunsetSniper_Proj.label>gun proj</WNA_SunsetSniper_Proj.label>
+  
+  <WNA_TrapLauncher.label>尖刺陷阱布设器</WNA_TrapLauncher.label>
+  <WNA_TrapLauncher.description>一件重型单兵火炮，不过并不是用来炸碎敌人的，而是用来部署陷阱的。这种火炮发射的弹药对目标造成的伤害微乎其微，但可以在一片区域内部署大量非常危险的尖刺陷阱。</WNA_TrapLauncher.description>
+  <WNA_TrapLauncher.tools.barrel.label>炮管</WNA_TrapLauncher.tools.barrel.label>
+  
+  <WNA_TrapLauncher_Proj.label>gun proj</WNA_TrapLauncher_Proj.label>
+  
+  <WNA_Weapon_RiteLance.label>威灵诺德仪式枪</WNA_Weapon_RiteLance.label>
+  <WNA_Weapon_RiteLance.description>一杆造型独特的长枪，缠绕着异域的力量。这种武器一般被用作仪式用途，但作为武器也有非凡的威力。其上的法力之火是如此暴烈，任何由其造成的伤口通常都会导致受害者当场暴毙。</WNA_Weapon_RiteLance.description>
+  <WNA_Weapon_RiteLance.tools.edge.label>刃</WNA_Weapon_RiteLance.tools.edge.label>
+  
+  <WNA_Weapon_RiteSword.label>威灵诺德仪式剑</WNA_Weapon_RiteSword.label>
+  <WNA_Weapon_RiteSword.description>一把造型独特的长剑，缠绕着异域的力量。这种武器一般被用作仪式用途，但作为武器也有非凡的威力。其上的法力之火是如此暴烈，任何由其造成的伤口通常都会导致受害者当场暴毙。</WNA_Weapon_RiteSword.description>
+  <WNA_Weapon_RiteSword.tools.edge.label>刃</WNA_Weapon_RiteSword.tools.edge.label>
+  
+</LanguageData>

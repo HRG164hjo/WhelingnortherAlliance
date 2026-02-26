@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: ashpark steel -->
+  <WNA_Ashpark.label>灰星铁</WNA_Ashpark.label>
+  <!-- EN: Grayish spongy substance, though named "steel" but actually more stony and nothing metallic. Desppite its poor properties, this substance is still of great value, as it can be transformed into a highly ferocious and dangerous matter. -->
+  <WNA_Ashpark.description>海绵状的灰色物质，虽然被称为“铁”，但质地更接近于石头，和金属完全沾不上边。虽然料子很次，但由于这种物质可以被转变为一种非常凶猛且危险的材料，这种物质仍然具有很高的价值。</WNA_Ashpark.description>
+  
+  <!-- EN: attunement fabric -->
+  <WNA_AttunementFabric.label>同调织物</WNA_AttunementFabric.label>
+  <!-- EN: Composite metallic fabric woven in a specific pattern. In WNA headquarters it's confirmed that this fabric can attune with its wearer and enhance their performance in various way. -->
+  <WNA_AttunementFabric.description>以特定模式编织而成的复合金属织物。威灵诺德联合会的总部曾证明这种织物能与穿戴者同调，从而提升穿戴者在多个方面的表现。</WNA_AttunementFabric.description>
+  
+  <!-- EN: chiming steel -->
+  <WNA_ChimingSteel.label>赤明铁</WNA_ChimingSteel.label>
+  <!-- EN: Red, lumen, transparent metallic material, one must be very cautious to touch it in case being harmed by this ferocious matter. Though it seems (and actually) very durable, it's actually a very unstable matter, just a small piece can boil up the whole universe. -->
+  <WNA_ChimingSteel.description>赤红发光的半透明金属材料，在操作这种物质时必须非常小心，以免被其狂暴的性质所伤。尽管这种材料看起来（事实上也）非常结实，但其本质上是一种极其不稳定的材料，只需要小小的一片就能把整个宇宙煮开锅。</WNA_ChimingSteel.description>
+  
+  <!-- EN: cinnabar -->
+  <WNA_Cinnabar.label>朱砂</WNA_Cinnabar.label>
+  <!-- EN: One kind of mercury-containing ore, red in color, looks nice. It's relatively stable so you can use it to construct something, if you dare. -->
+  <WNA_Cinnabar.description>一种含汞矿石，颜色红艳漂亮。如果你敢的话，这种材料未尝不能用来造些什么东西。</WNA_Cinnabar.description>
+  
+  <!-- EN: reinforced concrete -->
+  <WNA_Concrete.label>钢筋混凝土</WNA_Concrete.label>
+  <!-- EN: Improved concrete reinforced with metal frame structure, not only practical but also universal, and looks not bad. -->
+  <WNA_Concrete.description>用金属框架强化的改良型混凝土，不仅非常实用且通用，看起来也不差。</WNA_Concrete.description>
+  
+  <!-- EN: dark asbestos -->
+  <WNA_DarkAsbestos.label>黑石棉</WNA_DarkAsbestos.label>
+  <!-- EN: A bunch of black inorganic fiber, names as "asbestos" as it's originally made from stone materials. Unusually durable. Rumours said sentient creatures can attune to this fiber to gain great strength from it, but whether this mathod exists is still unproven. -->
+  <WNA_DarkAsbestos.description>一把黑色的无机纤维，因为最初由石质材料制得而被命名为“石棉”。这种材料超乎寻常的结实。传言称智慧生物可以与这种物质相调谐以从中汲取巨大的力量，但这种方法是否存在还尚未可知。</WNA_DarkAsbestos.description>
+  
+  <!-- EN: desolisium alloy -->
+  <WNA_Desolisium.label>孤立合金</WNA_Desolisium.label>
+  <!-- EN: A copy of an military alloy material which possesses brown hue, excellent durability and insulation properties. Great for making armors. -->
+  <WNA_Desolisium.description>一种有着明亮金属色泽的威灵军部军用合金的仿制品，具有优异的耐久性和绝缘性，是很好的装甲制造材料。</WNA_Desolisium.description>
+  
+  <!-- EN: voidsteel -->
+  <WNA_Voidsteel.label>虚空灵铁</WNA_Voidsteel.label>
+  <!-- EN: A thick, light, transparent, mysterious matter, looks oily, feels like liquid, natually sharp-shaped. Though it's named as voidsteel, it doesn't come from the void actually. People who knows this matter well usually describe this as something flows out from dark side of one's mind. -->
+  <WNA_Voidsteel.description>一种浓稠、轻盈、透明且神秘的物质，外形如油，触感如革，天然呈现出尖锐形状。虽然名为虚空灵铁，但实际上并非源自真正的虚空。熟悉这种物质​​的人通常将其描述为从心灵深暗之处流淌而出之物。</WNA_Voidsteel.description>
+  
+</LanguageData>

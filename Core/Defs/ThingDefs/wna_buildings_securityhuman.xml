@@ -63,7 +63,7 @@
     <ThingDef ParentName="WNA_HumanTurretBase">
         <defName>WNA_SentryGun</defName>
         <label>"scorpion" sentry gun</label>
-        <description>sentry gun.</description>
+        <description>A sentry gun turret armed with toxic scrap bullets.</description>
 		<graphicData>
             <graphicClass>WNA.WNAMiscs.Graph_Inviso</graphicClass>
 			<texPath>Things/Building/Security/TurretMortar_Base</texPath>
@@ -132,8 +132,8 @@
     
     <ThingDef ParentName="WNA_HumanTurretBase">
         <defName>WNA_PrismTower</defName>
-        <label>"comet" laser gun</label>
-        <description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies.</description>
+        <label>"comet" focus gun</label>
+        <description>A turret uses highly focused light as weapon, can cause both impact and burn.</description>
 		<graphicData>
 			<texPath>Things/Building/Security/TurretHeavy_Base</texPath>
             <drawSize>1.1</drawSize>
@@ -212,8 +212,8 @@
     
     <ThingDef ParentName="WNA_HumanTurretBase">
         <defName>WNA_DesoTurret</defName>
-        <label>desolator turret</label>
-        <description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies.</description>
+        <label>desolator radiation turret</label>
+        <description>A turret equipped with radbeam projector, when hit something it can spread radiation to a small area around target.</description>
 		<graphicData>
 			<texPath>Things/Building/Security/TurretHeavy_Base</texPath>
             <drawSize>1.1</drawSize>
@@ -302,7 +302,7 @@
     <ThingDef ParentName="WNA_HumanTurretBase">
         <defName>WNA_AdvMortar</defName>
         <label>adv. mortar</label>
-        <description>sentry gun.</description>
+        <description>An advanced mortar capable of quick firing.</description>
 		<graphicData>
 			<texPath>Things/Building/Mech/TurretMechMini_Base</texPath>
             <drawSize>2</drawSize>

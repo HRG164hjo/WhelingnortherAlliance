@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <RecipeDef>
+    <!--<RecipeDef>
         <defName>WNARecipeTo_WNA_Medikit</defName>
         <label>administer medicine pack</label>
         <description>Administer a WNA medicine pack.</description>
@@ -33,7 +33,7 @@
                 <li>WNA_Medikit</li>
             </thingDefs>
         </fixedIngredientFilter>
-    </RecipeDef>
+    </RecipeDef>-->
 
     <RecipeDef ParentName="WNA_SurgeryBase">
         <defName>WNA_Inspection</defName>
@@ -54,7 +54,7 @@
             <Intellectual>4</Intellectual>
         </skillRequirements>
         <workAmount>60</workAmount>
-        <researchPrerequisite>WNA_TheEnlightment</researchPrerequisite>
+        <researchPrerequisite>WNA_PsychicDawn</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_SurgeryBase">
         <defName>WNA_Hemodialysis</defName>

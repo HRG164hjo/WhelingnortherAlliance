@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: harvest brain -->
+  <WNA_BrainHarvest.label>摘取大脑</WNA_BrainHarvest.label>
+  <!-- EN: harvest a fresh brain and quickly preserve it with properly mixed liquid. -->
+  <WNA_BrainHarvest.description>摘取一颗新鲜的大脑，并立刻用配置好的混合液体将其保存。</WNA_BrainHarvest.description>
+  <!-- EN: harvesting TargetA. -->
+  <WNA_BrainHarvest.jobString>摘取 TargetA 的大脑。</WNA_BrainHarvest.jobString>
+  
+  <!-- EN: blood dialysis -->
+  <WNA_Hemodialysis.label>血液透析</WNA_Hemodialysis.label>
+  <!-- EN: Use specially formulated solution to perform blood dialysis on the patient, in order to extract toxic substances accumulated in the patient's body. -->
+  <WNA_Hemodialysis.description>Use specially formulated solution to perform blood dialysis on the patient, in order to extract toxic substances accumulated in the patient's body.</WNA_Hemodialysis.description>
+  <!-- EN: Performing blood dialysis on TargetA. -->
+  <WNA_Hemodialysis.jobString>为 TargetA 进行血液透析。</WNA_Hemodialysis.jobString>
+  
+  <!-- EN: psychic inspection -->
+  <WNA_Inspection.label>灵能探查</WNA_Inspection.label>
+  <!-- EN: Inspect target with one's psychic power, faster and no medicine is required. This technique requires basic level of intelligence. -->
+  <WNA_Inspection.description>用施术者的心灵力量探查目标，无需药物且效率更高。这一操作显然需要基本水平的智力。</WNA_Inspection.description>
+  <!-- EN: Inspecting TargetA. -->
+  <WNA_Inspection.jobString>正在探查 TargetA.</WNA_Inspection.jobString>
+  
+  <!-- EN: void dive -->
+  <WNA_VoidDive.label>虚空潜泳</WNA_VoidDive.label>
+  <!-- EN: force a human into deep coma and turn them into a anchor. the victim must be sober to face the void, thus voidsteel can be drained through them while they're struggling to awake, to escape, or doing anything else, before their consciousness finally fades. -->
+  <WNA_VoidDive.description>令一个人进入深度昏迷状态并将其值作为一个锚点，受害者在完全清醒的情况下直面虚空，从而在受害者完全消逝之前，利用受害者试图醒来、逃离或做其他任何事时的活动，从虚空中汲取虚空灵铁。</WNA_VoidDive.description>
+  <!-- EN: Forcing void dive on TargetA. -->
+  <WNA_VoidDive.jobString>使 TargetA 进行虚空潜泳。</WNA_VoidDive.jobString>
+  
+</LanguageData>

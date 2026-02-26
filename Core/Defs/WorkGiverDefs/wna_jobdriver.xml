@@ -13,4 +13,11 @@
     	<reportString>drilling at TargetA.</reportString>
     	<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   	</JobDef>
+
+	<JobDef>
+    	<defName>WNA_Job_Revive</defName>
+    	<driverClass>WNA.JobDriverClass.Revive</driverClass>
+    	<reportString>reviving TargetA.</reportString>
+    	<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  	</JobDef>
 </Defs>

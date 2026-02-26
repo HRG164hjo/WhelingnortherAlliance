@@ -56,7 +56,7 @@
     <ThingDef ParentName="WNA_StuffBase">
         <defName>WNA_Desolisium</defName>
         <label>desolisium alloy</label>
-        <description>A copy of an military alloy material which possesses brown hue, excellent durability and insulation properties. Great for making armors.</description>
+        <description>A copy of an military alloy material which possesses bright metallic hue, excellent durability and insulation properties. Great for making armors.</description>
         <graphicData>
             <texPath>item/wna_alloy</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -109,7 +109,6 @@
             <categories>
                 <li>Woody</li>
                 <li>Stony</li>
-                <li>Metallic</li>
             </categories>
             <appearance>Bricks</appearance>
             <color>(86,88,94)</color>
@@ -167,7 +166,7 @@
     <ThingDef ParentName="WNA_StuffBase">
         <defName>WNA_Voidsteel</defName>
         <label>voidsteel</label>
-        <description>A thick, light, transparent, mysterious matter, looks oily, feels like liquid, natually sharp-shaped. Though it's named as voidsteel, it doesn't come from the void actually. People who knows this matter well usually describe this as something flows out from dark side of one's mind.</description>
+        <description>A thick, light, transparent, mysterious matter, looks oily, feels like leather, natually sharp-shaped. Though it's named as voidsteel, it doesn't come from the true void actually. People who knows this matter well usually describe this as something flows out from dark side of one's mind.</description>
         <graphicData>
             <texPath>item/wna_voidsteel</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>

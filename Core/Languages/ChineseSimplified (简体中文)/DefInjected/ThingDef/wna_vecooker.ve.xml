@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: processing tank -->
+  <WNA_VECooker.label>加工室</WNA_VECooker.label>
+  <!-- EN: A small container but is capable of holding more than the volume it seems. Can be used to process various raw materials. -->
+  <WNA_VECooker.description>一个小容器，容积比外表看上去更大。可以用来处理多种多样的原材料。</WNA_VECooker.description>
+  
+</LanguageData>

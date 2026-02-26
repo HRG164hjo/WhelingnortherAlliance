@@ -14,7 +14,7 @@
         <thingCategories IsNull="true"/>
         <size>(3, 3)</size>
         <researchPrerequisites>
-            <li>WNA_SecretTech</li>
+            <li>WNA_AdvancedArsenal</li>
         </researchPrerequisites>
         <fillPercent>1</fillPercent>
         <defaultPlacingRot>North</defaultPlacingRot>

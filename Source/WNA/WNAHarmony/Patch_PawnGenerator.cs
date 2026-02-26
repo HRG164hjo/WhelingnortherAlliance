@@ -15,7 +15,7 @@ namespace WNA.WNAHarmony
                 CompQuality compQuality = gear.TryGetComp<CompQuality>();
                 if (compQuality != null && pawn.Faction != null)
                 {
-                    if (pawn.Faction.IsPlayer || pawn.Faction.def == WNAMainDefOf.WNA_FactionWNA)
+                    if (pawn.Faction.def == WNAMainDefOf.WNA_FactionWNA)
                     {
                         QualityCategory currentQuality = compQuality.Quality;
                         if (currentQuality < QualityCategory.Legendary) compQuality.SetQuality(QualityCategory.Legendary, ArtGenerationContext.Outsider);

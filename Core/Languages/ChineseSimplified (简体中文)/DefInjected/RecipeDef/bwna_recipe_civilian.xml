@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: recycle wastepack -->
+  <WNA_RecyecleWastepack.label>回收有毒垃圾</WNA_RecyecleWastepack.label>
+  <!-- EN: treat wastepacks with strong heat to recycle resources. -->
+  <WNA_RecyecleWastepack.description>对有毒垃圾加强热以从中回收可用资源。</WNA_RecyecleWastepack.description>
+  <!-- EN: recycling waste pack. -->
+  <WNA_RecyecleWastepack.jobString>正在回收有毒垃圾。</WNA_RecyecleWastepack.jobString>
+  
+  <!-- EN: recycle wastepack x10 -->
+  <WNA_RecyecleWastepackBulk.label>回收有毒垃圾 x10</WNA_RecyecleWastepackBulk.label>
+  <!-- EN: treat wastepacks with strong heat to recycle resources. -->
+  <WNA_RecyecleWastepackBulk.description>对有毒垃圾加强热以从中回收可用资源。</WNA_RecyecleWastepackBulk.description>
+  <!-- EN: recycling waste pack. -->
+  <WNA_RecyecleWastepackBulk.jobString>正在回收有毒垃圾。</WNA_RecyecleWastepackBulk.jobString>
+  
+</LanguageData>

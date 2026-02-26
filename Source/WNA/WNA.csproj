@@ -77,12 +77,14 @@
     <Compile Include="GameCond\GameCond_ClimateControl.cs" />
     <Compile Include="HediffCompProp\CompHediffHediffRemover.cs" />
     <Compile Include="JobDriverClass\DeepDrilling.cs" />
+    <Compile Include="JobDriverClass\Revive.cs" />
     <Compile Include="Recipe\TargetedHarvest.cs" />
     <Compile Include="ThingClass\DummyLaser.cs" />
     <Compile Include="ThingClass\Whelingnorthan.cs" />
     <Compile Include="ThingCompProp\CompBodyshapeOverride.cs" />
     <Compile Include="ThingCompProp\CompCamoPillbox.cs" />
     <Compile Include="ThingCompProp\CompClimateControl.cs" />
+    <Compile Include="ThingCompProp\CompHealOrRevive.cs" />
     <Compile Include="ThingCompProp\CompIronApparel.cs" />
     <Compile Include="ThingCompProp\CompIronGuardian.cs" />
     <Compile Include="ThingCompProp\CompMultiUse.cs" />
@@ -160,6 +162,7 @@
     <Compile Include="WNAUtility\Iron_GameComp.cs" />
     <Compile Include="WNAUtility\LysFieldUtility.cs" />
     <Compile Include="WNAUtility\LysField_GameComp.cs" />
+    <Compile Include="WNAUtility\RoomDoorUtility.cs" />
     <Compile Include="WNAUtility\WNAAwakening.cs" />
     <Compile Include="WNAUtility\General.cs" />
     <Compile Include="WNAUtility\RadFieldUtility.cs" />

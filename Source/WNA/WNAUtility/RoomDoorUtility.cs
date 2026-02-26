@@ -1,0 +1,29 @@
+﻿using RimWorld;
+using System.Collections.Generic;
+using Verse;
+
+namespace WNA.WNAUtility
+{
+    public static class RoomDoorUtility
+    {
+        public static HashSet<Building_Door> GetAllDoors(Room room)
+        {
+            HashSet<Building_Door> doors = new HashSet<Building_Door>();
+            if (room == null || room.Regions == null) return doors;
+
+            foreach (Region region in room.Regions)
+            {
+                if (region?.links == null) continue;
+
+                foreach (RegionLink link in region.links)
+                {
+                    Region other = link.GetOtherRegion(region);
+                    if (other?.door != null)
+                        doors.Add(other.door);
+                }
+            }
+
+            return doors;
+        }
+    }
+}

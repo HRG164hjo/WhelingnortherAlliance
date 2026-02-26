@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using Verse;
+using WNA.WNADefOf;
 
 namespace WNA.Damager
 {
@@ -7,18 +8,21 @@ namespace WNA.Damager
     {
         public override DamageResult Apply(DamageInfo dinfo, Thing victim)
         {
-            DamageResult damageResult = base.Apply(dinfo, victim);
-            DamageInfo stun = new DamageInfo(DamageDefOf.Stun, dinfo.Amount * 10f, float.MaxValue);
+            HediffDef hediff = WNAMainDefOf.WNA_RadRing;
             DamageInfo emp = new DamageInfo(DamageDefOf.EMP, dinfo.Amount * 10f, float.MaxValue);
-            Pawn pawn = victim as Pawn;
-            if (pawn == null || !pawn.Spawned)
-                return damageResult;
-            FleshTypeDef fleshType = pawn.RaceProps.FleshType;
-            bool isNonBiological = fleshType != FleshTypeDefOf.Normal &&
-                                   fleshType != FleshTypeDefOf.Insectoid;
-            pawn.TakeDamage(emp);
-            if (isNonBiological) pawn.TakeDamage(stun);
-            return damageResult;
+            if(victim is Pawn pawn)
+            {
+                if (pawn == null || !pawn.Spawned)
+                    return base.Apply(dinfo, victim);
+                FleshTypeDef fleshType = pawn.RaceProps.FleshType;
+                bool isNonBiological = fleshType != FleshTypeDefOf.Normal &&
+                                       fleshType != FleshTypeDefOf.Insectoid;
+                pawn.health.AddHediff(hediff);
+                pawn.TakeDamage(emp);
+                if (isNonBiological)
+                    pawn.stances.stunner.StunFor((int)dinfo.Amount, null, false);
+            }
+            return base.Apply(dinfo, victim); ;
         }
     }
 }

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: corpse generator -->
+  <WNA_CorpseGenerator.label>尸体发电机</WNA_CorpseGenerator.label>
+  <!-- EN: A rough piece of Whelingnorther Humanoid Revolt tech, this machine consumes corpse to generate power. Better not to think too deep about it, don't even bother looking at it. -->
+  <WNA_CorpseGenerator.description>一件粗糙的威灵军部科技，这台机械消耗尸体产生电力，不过主要作用还是用一种体面点的方式处理尸体。最好不要想得太深，也最好连看都别多看。</WNA_CorpseGenerator.description>
+  <!-- EN: organic matter -->
+  <WNA_CorpseGenerator.comps.CompRefuelable.fuelGizmoLabel>有机物质</WNA_CorpseGenerator.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: organic matter -->
+  <WNA_CorpseGenerator.comps.CompRefuelable.fuelLabel>有机物质</WNA_CorpseGenerator.comps.CompRefuelable.fuelLabel>
+  
+  <!-- EN: energy converter -->
+  <WNA_EnergyConverter.label>超能转换器</WNA_EnergyConverter.label>
+  <!-- EN: A piece of WNA tech, release the power sealed into the form of what called "focus" and convert it into more useable energy like electricity. -->
+  <WNA_EnergyConverter.description>一件威灵会科技，能将以“聚点”的形式封装起来的能量解放并将其转换成可用的能源，比如电力。</WNA_EnergyConverter.description>
+  
+  <!-- EN: hydroponic basin -->
+  <WNA_Hydroponics.label>水培盆</WNA_Hydroponics.label>
+  <!-- EN: A hydroponic basin, can automatically grow plant tissue and harvest for products. -->
+  <WNA_Hydroponics.description>一个水培盆，能自动培养作物组织并收获农作物。</WNA_Hydroponics.description>
+  
+  <!-- EN: mass dilution generator -->
+  <WNA_MassGenerator.label>质量稀释发电机</WNA_MassGenerator.label>
+  <!-- EN: An elite piece of WHR tech, place a stone chunk in this machine and it will slowly comsume it as well as producing a good amount of eletricity. Unfortunately due to the missing of key components and techniques, this generator is not as powerful and efficiency as the document says. -->
+  <WNA_MassGenerator.description>威灵军部的一项精英科技，把一大块石块放进这台机器，这台机器就会逐渐将其消耗，产生规模十分可观的电力。遗憾的是由于一些关键技术和部件在这个边缘世界的缺乏，这台发电机并不能像文档中说明的那样给力。</WNA_MassGenerator.description>
+  <!-- EN: mass chunk -->
+  <WNA_MassGenerator.comps.CompRefuelable.fuelGizmoLabel>质量</WNA_MassGenerator.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: mass chunk -->
+  <WNA_MassGenerator.comps.CompRefuelable.fuelLabel>质量</WNA_MassGenerator.comps.CompRefuelable.fuelLabel>
+  
+  <!-- EN: starcore driller -->
+  <WNA_StarcoreDriller.label>星核钻机</WNA_StarcoreDriller.label>
+  <!-- EN: a deep drill. -->
+  <WNA_StarcoreDriller.description>一台深钻井。</WNA_StarcoreDriller.description>
+  
+  <!-- EN: void anchor -->
+  <WNA_VoidAnchor.label>虚空井</WNA_VoidAnchor.label>
+  <!-- EN: a tank filled with mixed liquid of methanol and neutroamine. can place a freshly harvested brain in it and use it to extract voidsteel from the deep void under one's consciousness. more stable and effective than performing a surgery on someone's flesh body. the brain will be slowly wasted. -->
+  <WNA_VoidAnchor.description>一个装满甲醇和中性胺混合液体的容器。可以将新鲜取出的脑组织放入其中，利用它从意识深处的虚空中提取虚空钢。这种方法比在肉体上进行手术更稳定、更有效。但脑组织会逐渐损耗。</WNA_VoidAnchor.description>
+  <!-- EN: consciousness -->
+  <WNA_VoidAnchor.comps.CompRefuelable.fuelGizmoLabel>意识</WNA_VoidAnchor.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: consciousness -->
+  <WNA_VoidAnchor.comps.CompRefuelable.fuelLabel>意识</WNA_VoidAnchor.comps.CompRefuelable.fuelLabel>
+  
+</LanguageData>

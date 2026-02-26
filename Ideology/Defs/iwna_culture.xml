@@ -4,7 +4,7 @@
     <CultureDef>
         <defName>WNA_WhelingnortherCulture</defName>
         <label>whelingnorther</label>
-        <description>An otherworld culture said to be from far ancient Whelingnorther Empire.</description>
+        <description>An otherworld secret culture said to be from far ancient Whelingnorther Empire.</description>
         <iconPath>factions/wna_alliance</iconPath>
         <ideoNameMaker>NamerIdeoSophian</ideoNameMaker>
         <deityNameMaker>NamerDeitySophian</deityNameMaker>

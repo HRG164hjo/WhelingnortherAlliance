@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: heat cinnabar -->
+  <WNA_HeatCinnabar.label>热处理朱砂</WNA_HeatCinnabar.label>
+  <!-- EN: treat cinnabar with strong heat to make it decompose into sulphur and mercury. -->
+  <WNA_HeatCinnabar.description>对朱砂加强热以使其分解为硫磺和水银。</WNA_HeatCinnabar.description>
+  <!-- EN: heating cinnabar. -->
+  <WNA_HeatCinnabar.jobString>正在热处理朱砂。</WNA_HeatCinnabar.jobString>
+  
+  <!-- EN: heat stone blocks -->
+  <WNA_HeatStoneBlock.label>加热石砖</WNA_HeatStoneBlock.label>
+  <!-- EN: treat stone with strong heat to gain resources. -->
+  <WNA_HeatStoneBlock.description>对石砖加强热以获取有用资源。</WNA_HeatStoneBlock.description>
+  <!-- EN: heating stone blocks. -->
+  <WNA_HeatStoneBlock.jobString>正在加热石砖。</WNA_HeatStoneBlock.jobString>
+  
+  <!-- EN: heat stone chunk -->
+  <WNA_HeatStoneChunk.label>加热石块</WNA_HeatStoneChunk.label>
+  <!-- EN: treat stone with strong heat to gain resources. -->
+  <WNA_HeatStoneChunk.description>对石块加强热以获取有用资源。</WNA_HeatStoneChunk.description>
+  <!-- EN: heating a stone chunk. -->
+  <WNA_HeatStoneChunk.jobString>正在加热石块。</WNA_HeatStoneChunk.jobString>
+  
+  <!-- EN: make cinnabar -->
+  <WNA_MakeCinnabar.label>合成朱砂</WNA_MakeCinnabar.label>
+  <!-- EN: use mercury and sulphur to make cinnabar. -->
+  <WNA_MakeCinnabar.description>用硫磺和水银制备朱砂。</WNA_MakeCinnabar.description>
+  <!-- EN: making cinnabar. -->
+  <WNA_MakeCinnabar.jobString>正在合成朱砂。</WNA_MakeCinnabar.jobString>
+  
+  <!-- EN: make methanol -->
+  <WNA_MakeMethanol.label>制取甲醇</WNA_MakeMethanol.label>
+  <!-- EN: distill wood to extract methanol. -->
+  <WNA_MakeMethanol.description>蒸馏木材以获取甲醇。</WNA_MakeMethanol.description>
+  <!-- EN: making methanol. -->
+  <WNA_MakeMethanol.jobString>正在制取甲醇</WNA_MakeMethanol.jobString>
+  
+  <!-- EN: make neutroamine -->
+  <WNA_MakeNeutroamine.label>合成中性胺</WNA_MakeNeutroamine.label>
+  <!-- EN: a method to make neutroamine from chemfuel and methanol. great for supporting a colony drug business. -->
+  <WNA_MakeNeutroamine.description>一种用甲醇和化合燃料制备中性胺的技术。很适合用来支撑单个殖民地规模的药物生意。</WNA_MakeNeutroamine.description>
+  <!-- EN: making neutroamine. -->
+  <WNA_MakeNeutroamine.jobString>正在合成中性胺。</WNA_MakeNeutroamine.jobString>
+  
+  <!-- EN: make reinforced barrel -->
+  <WNA_MakeReinforcedBarrel.label>制作强化炮管</WNA_MakeReinforcedBarrel.label>
+  <!-- EN: forge a colony produced reinforced barrel. -->
+  <WNA_MakeReinforcedBarrel.description>段造一根殖民地出品的强化炮管。</WNA_MakeReinforcedBarrel.description>
+  <!-- EN: forging a reinforced barrel. -->
+  <WNA_MakeReinforcedBarrel.jobString>正在制作强化炮管</WNA_MakeReinforcedBarrel.jobString>
+  
+  <!-- EN: make synthread -->
+  <WNA_MakeSynthread.label>制作合成纤维</WNA_MakeSynthread.label>
+  <!-- EN: a method to make synthread from chemfuel and halogen. someone may have have been missing this so much. -->
+  <WNA_MakeSynthread.description>一种用化合燃料和卤素制作合成纤维的技术。有些人估计可能怀念合成纤维怀念得想死。</WNA_MakeSynthread.description>
+  <!-- EN: making synthread. -->
+  <WNA_MakeSynthread.jobString>正在制作合成纤维。</WNA_MakeSynthread.jobString>
+  
+  <!-- EN: make vitalized uranium battery -->
+  <WNA_MakeUraniumBattery.label>制作活化铀电池</WNA_MakeUraniumBattery.label>
+  <!-- EN: make an unstable powersource out from uranium. -->
+  <WNA_MakeUraniumBattery.description>用铀制作一块不怎么稳定的能量小方块。</WNA_MakeUraniumBattery.description>
+  <!-- EN: making vitalized uranium battery. -->
+  <WNA_MakeUraniumBattery.jobString>正在制作活化铀电池。</WNA_MakeUraniumBattery.jobString>
+  
+  <!-- EN: refine corpse -->
+  <WNA_RefineCorpse.label>精炼尸体</WNA_RefineCorpse.label>
+  <!-- EN: refine a corpse to extract some elements composing organic flesh. -->
+  <WNA_RefineCorpse.description>精炼一具尸体以从中提取组成生物躯体的关键成分。</WNA_RefineCorpse.description>
+  <!-- EN: refining a corpse. -->
+  <WNA_RefineCorpse.jobString>正在精炼尸体。</WNA_RefineCorpse.jobString>
+  
+</LanguageData>

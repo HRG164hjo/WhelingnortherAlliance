@@ -30,7 +30,7 @@
 					<value>
 						<li Class="PipeSystem.CompProperties_ResourceTrader">
 							<pipeNet>BreadMo_NutrientNetwork</pipeNet>
-							<consumptionPerTick>-24</consumptionPerTick>
+							<consumptionPerTick>-100</consumptionPerTick>
 							<resourceOffOverlay>false</resourceOffOverlay>
 						</li>
 					</value>
@@ -69,7 +69,7 @@
 					<value>
 						<li Class="PipeSystem.CompProperties_ResourceTrader">
 							<pipeNet>VNPE_NutrientPasteNet</pipeNet>
-							<consumptionPerTick>-24</consumptionPerTick>
+							<consumptionPerTick>-100</consumptionPerTick>
 							<resourceOffOverlay>false</resourceOffOverlay>
 						</li>
 					</value>
@@ -108,7 +108,193 @@
 					<value>
 						<li Class="PipeSystem.CompProperties_ResourceTrader">
 							<pipeNet>VTE_EfficiencyNet</pipeNet>
-							<consumptionPerTick>-24</consumptionPerTick>
+							<consumptionPerTick>-100</consumptionPerTick>
+							<resourceOffOverlay>false</resourceOffOverlay>
+						</li>
+					</value>
+				</li>
+            </operations>
+        </match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Helixien Gas Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="WNA_Conduit" or @Name="WNA_WallWithConduit"]/comps</xpath>
+                    <value>
+                        <li Class="PipeSystem.CompProperties_Resource">
+        			        <pipeNet>VHGE_HelixienNet</pipeNet>
+      			        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="WNA_BasicCrate" or defName="WNA_WallSafe"]/comps</xpath>
+                    <value>
+                        <li Class="PipeSystem.CompProperties_ResourceStorage">
+                            <pipeNet>VHGE_HelixienNet</pipeNet>
+                            <storageCapacity>1000000</storageCapacity>
+                            <drawStorageBar>false</drawStorageBar>
+							<contentRequirePower>false</contentRequirePower>
+                        </li>
+                    </value>
+                </li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="WNA_LifeSupporter"]/comps</xpath>
+					<value>
+						<li Class="PipeSystem.CompProperties_ResourceTrader">
+							<pipeNet>VHGE_HelixienNet</pipeNet>
+							<consumptionPerTick>-100</consumptionPerTick>
+							<resourceOffOverlay>false</resourceOffOverlay>
+						</li>
+					</value>
+				</li>
+            </operations>
+        </match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Races Expanded - Android</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="WNA_Conduit" or @Name="WNA_WallWithConduit"]/comps</xpath>
+                    <value>
+                        <li Class="PipeSystem.CompProperties_Resource">
+        			        <pipeNet>VREA_NeutroamineNet</pipeNet>
+      			        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="WNA_BasicCrate" or defName="WNA_WallSafe"]/comps</xpath>
+                    <value>
+                        <li Class="PipeSystem.CompProperties_ResourceStorage">
+                            <pipeNet>VREA_NeutroamineNet</pipeNet>
+                            <storageCapacity>1000000</storageCapacity>
+                            <drawStorageBar>false</drawStorageBar>
+							<contentRequirePower>false</contentRequirePower>
+                        </li>
+                    </value>
+                </li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="WNA_LifeSupporter"]/comps</xpath>
+					<value>
+						<li Class="PipeSystem.CompProperties_ResourceTrader">
+							<pipeNet>VREA_NeutroamineNet</pipeNet>
+							<consumptionPerTick>-100</consumptionPerTick>
+							<resourceOffOverlay>false</resourceOffOverlay>
+						</li>
+					</value>
+				</li>
+            </operations>
+        </match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Races Expanded - Sanguophage</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="WNA_Conduit" or @Name="WNA_WallWithConduit"]/comps</xpath>
+                    <value>
+                        <li Class="PipeSystem.CompProperties_Resource">
+        			        <pipeNet>VRE_HemogenNet</pipeNet>
+      			        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="WNA_BasicCrate" or defName="WNA_WallSafe"]/comps</xpath>
+                    <value>
+                        <li Class="PipeSystem.CompProperties_ResourceStorage">
+                            <pipeNet>VRE_HemogenNet</pipeNet>
+                            <storageCapacity>1000000</storageCapacity>
+                            <drawStorageBar>false</drawStorageBar>
+							<contentRequirePower>false</contentRequirePower>
+                        </li>
+                    </value>
+                </li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="WNA_LifeSupporter"]/comps</xpath>
+					<value>
+						<li Class="PipeSystem.CompProperties_ResourceTrader">
+							<pipeNet>VRE_HemogenNet</pipeNet>
+							<consumptionPerTick>-100</consumptionPerTick>
+							<resourceOffOverlay>false</resourceOffOverlay>
+						</li>
+					</value>
+				</li>
+            </operations>
+        </match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Chemfuel Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="WNA_Conduit" or @Name="WNA_WallWithConduit"]/comps</xpath>
+                    <value>
+                        <li Class="PipeSystem.CompProperties_Resource">
+        			        <pipeNet>VCHE_ChemfuelNet</pipeNet>
+      			        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="WNA_BasicCrate" or defName="WNA_WallSafe"]/comps</xpath>
+                    <value>
+                        <li Class="PipeSystem.CompProperties_ResourceStorage">
+                            <pipeNet>VCHE_ChemfuelNet</pipeNet>
+                            <storageCapacity>1000000</storageCapacity>
+                            <drawStorageBar>false</drawStorageBar>
+							<contentRequirePower>false</contentRequirePower>
+                        </li>
+                    </value>
+                </li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="WNA_LifeSupporter"]/comps</xpath>
+					<value>
+						<li Class="PipeSystem.CompProperties_ResourceTrader">
+							<pipeNet>VCHE_ChemfuelNet</pipeNet>
+							<consumptionPerTick>-100</consumptionPerTick>
+							<resourceOffOverlay>false</resourceOffOverlay>
+						</li>
+					</value>
+				</li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="WNA_Conduit" or @Name="WNA_WallWithConduit"]/comps</xpath>
+                    <value>
+                        <li Class="PipeSystem.CompProperties_Resource">
+        			        <pipeNet>VCHE_DeepchemNet</pipeNet>
+      			        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="WNA_BasicCrate" or defName="WNA_WallSafe"]/comps</xpath>
+                    <value>
+                        <li Class="PipeSystem.CompProperties_ResourceStorage">
+                            <pipeNet>VCHE_DeepchemNet</pipeNet>
+                            <storageCapacity>1000000</storageCapacity>
+                            <drawStorageBar>false</drawStorageBar>
+							<contentRequirePower>false</contentRequirePower>
+                        </li>
+                    </value>
+                </li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="WNA_LifeSupporter"]/comps</xpath>
+					<value>
+						<li Class="PipeSystem.CompProperties_ResourceTrader">
+							<pipeNet>VCHE_DeepchemNet</pipeNet>
+							<consumptionPerTick>-100</consumptionPerTick>
 							<resourceOffOverlay>false</resourceOffOverlay>
 						</li>
 					</value>

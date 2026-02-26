@@ -14,7 +14,7 @@
 		</tags>
 		<isFoundation>true</isFoundation>
 		<researchPrerequisites>
-			<li>WNA_SecretTech</li>
+			<li>WNA_WhelingnortherApocalypse</li>
 		</researchPrerequisites>
 	</TerrainDef>
 	<TerrainDef ParentName="WNA_FloorsBase">
@@ -38,7 +38,7 @@
 		<edgeType>Water</edgeType>
 		<traversedThought>WNA_InFocusSpring</traversedThought>
 		<researchPrerequisites>
-			<li>WNA_SecretTech</li>
+			<li>WNA_WhelingnortherApocalypse</li>
 		</researchPrerequisites>
 	</TerrainDef>
 	<TerrainDef ParentName="WNA_FloorsBase">
@@ -64,7 +64,7 @@
 		<edgeType>FadeRough</edgeType>
 		<traversedThought>WNA_OnFocusSoil</traversedThought>
 		<researchPrerequisites>
-			<li>WNA_SecretTech</li>
+			<li>WNA_WhelingnortherApocalypse</li>
 		</researchPrerequisites>
 	</TerrainDef>
 	<TerrainDef ParentName="WNA_FloorsBase">
@@ -81,14 +81,14 @@
 		<fertility>0</fertility>
 		<edgeType>FadeRough</edgeType>
 		<researchPrerequisites>
-			<li>WNA_SecretTech</li>
+			<li>WNA_WhelingnortherApocalypse</li>
 		</researchPrerequisites>
 	</TerrainDef>
 
 	<TerrainDef ParentName="WNA_FloorsBase">
 		<defName>WNA_BridgeFloor</defName>
 		<label>concrete platform</label>
-		<description>Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth.</description>
+		<description>Platform built with reinforced concrete, can be built on deep water and even in space.</description>
 		<texturePath>terrains/wna_bridgefloor</texturePath>
 		<isFoundation>true</isFoundation>
 		<bridge>true</bridge>
@@ -110,7 +110,7 @@
 	<TerrainDef ParentName="WNA_FloorsBase">
 		<defName>WNA_BridgeCarpet</defName>
 		<label>carpet platform</label>
-		<description>Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth.</description>
+		<description>Platform with soft surface, more suitable for interior decoration than concrete platforms.</description>
 		<texturePath>terrains/wna_bridgecarpet</texturePath>
 		<isFoundation>true</isFoundation>
 		<bridge>true</bridge>
@@ -155,7 +155,7 @@
 			<li>Soil</li>
 			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_Ash</li>
 		</tags>
-		<fertility>6</fertility>
+		<fertility>3.4</fertility>
 		<researchPrerequisites>
 			<li>WNA_MilitaryMaterial</li>
 		</researchPrerequisites>

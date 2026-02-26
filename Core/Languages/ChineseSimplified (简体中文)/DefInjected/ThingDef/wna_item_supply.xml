@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: WNA military medikit -->
+  <WNA_Medikit.label>威灵军标准医药</WNA_Medikit.label>
+  <!-- EN: Medicines and tools packed together in WNA standard, processed from various possible materials. The process has gone through many improvements, thus minimum efforts can lead to maximum effects. -->
+  <WNA_Medikit.description>用多种材料制取，按照威灵军部的标准包装好的药物和医疗用具。</WNA_Medikit.description>
+  
+  <!-- EN: WNA military ration -->
+  <WNA_Ration.label>威灵军标准口粮</WNA_Ration.label>
+  <!-- EN: Standard ration pack for Whelingnorther Alliance (especially for Whelingnorther Humanoid Revolt). Produced from highest quality materials - theoretically. Anything that contains nutrients can be used to make this ration if needed. -->
+  <WNA_Ration.description>威灵军部的标准化包装口粮，采用最高品质（大概）的材料制作而成。如有需要，任何含有营养物质的物品都可以用来制作这种口粮。</WNA_Ration.description>
+  
+</LanguageData>

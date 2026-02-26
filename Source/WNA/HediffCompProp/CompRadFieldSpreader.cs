@@ -1,5 +1,4 @@
-﻿using RimWorld;
-using System;
+﻿using System;
 using UnityEngine;
 using Verse;
 using WNA.WNADefOf;
@@ -47,7 +46,7 @@ namespace WNA.HediffCompProp
             Pawn pawn = Pawn;
             IntVec3 pos = pawn.Position;
             Map map = pawn.MapHeld;
-            float radius = 9.9f * Mathf.Max(1f, Mathf.Sqrt(pawn.BodySize * pawn.HealthScale));
+            float radius = 7.9f * (1f + Mathf.Sqrt((1f + pawn.BodySize) * (1f + pawn.HealthScale)));
             float amount = Props.config.radLevel * 0.1f;
             SoundDef sound = DefDatabase<SoundDef>.GetNamed("Explosion_EMP");
             RadFieldUtility.RadSpread(
@@ -55,7 +54,8 @@ namespace WNA.HediffCompProp
                 pawn.Map,
                 Props.config,
                 radius,
-                5000 );
+                5000
+                );
             DoExplosion(pos,
                 map,
                 radius,
@@ -63,7 +63,8 @@ namespace WNA.HediffCompProp
                 pawn,
                 (int)amount,
                 0f,
-                sound );
+                sound
+                );
         }
     }
 }

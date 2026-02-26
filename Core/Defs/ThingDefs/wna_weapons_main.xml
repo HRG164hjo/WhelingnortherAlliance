@@ -133,7 +133,7 @@
 	<ThingDef ParentName="WNA_WeaponBaseRanged">
 		<defName>WNA_LeadHazeARifle</defName>
 		<label>"lead haze" assault rifle</label>
-		<description>A weapon suitable for short-range battle. This gun can dump a large amount of toxic bullets in a short period of time, very fine for street fighting. In countless past battles, WNA saboteurs have used this gun to dismantle countless steel-like solid fortresses from within.</description>
+		<description>A weapon suitable for short-range battle. This gun can dump a large amount of toxic bullets in a short period of time, very fine for street fighting. In countless past battles, WNA soldiers have used this gun to dismantle countless steel-like solid defenses.</description>
 		<graphicData>
 			<texPath>weapons/wna_leadhazerifle</texPath>
 			<drawSize>1</drawSize>
@@ -299,7 +299,7 @@
 	<ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_SpikeTrapSpawned</defName>
 		<label>spike trap deployed</label>
-		<description>Several blades half-burried underground with a set of specially designed trigger. If some careless person steps on it, the blades will teach this person an unforgettable lesson - sometimes a last lesson in their life. The heavier this trap is, the more deadly it is.</description>
+		<description>spike trap deployed.</description>
 		<designationCategory Inherit="false" IsNull="true"/>
 		<thingClass>WNA.ThingClass.SpikeTrap</thingClass>
 		<pathCost>0</pathCost>
@@ -527,13 +527,12 @@
 			</li>
 		</comps>
 	</ThingDef>
-		<!-- 无人机发射巢 -->
 	
 	<!-- strike force -->
 	<ThingDef ParentName="WNA_WeaponBaseRanged">
 		<defName>WNA_KineticCoil</defName>
 		<label>kinetic coil</label>
-		<description>Since darknight commandos often perform various kinds of infiltration missions and often fall into a lack of arsenal supplies, weapons boosted by thought-kinetic techniques are widely used by them. This "kinetic coil" is capable of converting the most aggressive thoughts into destructive enegy pulses, as powerful as normal bullets and travels far more faster.</description>
+		<description>A type of unique energy weapon. Due to the unique weapon making technologies of WNA, this weapon does not rely on physical ammunition to damage the target, but can directly project a ball of kinetic energy towards the target. This "kinetic coil" can quickly launch a dense attack on the enemy, which can quickly suppress the enemy while also having considerable power.</description>
 		<graphicData>
 			<texPath>weapons/wna_kinecoil</texPath>
 			<drawSize>1.1</drawSize>
@@ -565,7 +564,7 @@
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
 				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-				<burstShotCount>3</burstShotCount>
+				<burstShotCount>4</burstShotCount>
 			</li>
 		</verbs>
 		<tools>
@@ -798,7 +797,7 @@
 	<ThingDef ParentName="WNA_WeaponBaseRanged">
 		<defName>WNA_KineticRailgun</defName>
 		<label>kinetic railgun</label>
-		<description>This weapon is heavy and slow, but is capable to launch an extremely destructive shell, vaporize a large area, as well as buildings and enemies in it. A unique technique is applied to this weapon, which can convert thoughts into energy to boost the power of this weapon. Currently only WNA is known to own such technique.</description>
+		<description>A type of unique energy weapon. Due to the unique weapon making technologies of WNA, this weapon does not rely on physical ammunition to damage the target, but can directly project a ball of kinetic energy towards the target. This "kinetic railgun" requires a long reload time after each firing, but each of its attacks is quite powerful, enough to destroy some small strongholds.</description>
 		<graphicData>
 			<texPath>weapons/wna_kinerailgun</texPath>
 			<drawSize>1.2</drawSize>
@@ -871,7 +870,7 @@
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
 			<damageDef>WNA_KineBomb</damageDef>
-			<explosionRadius>9.9</explosionRadius>
+			<explosionRadius>19.9</explosionRadius>
 			<damageAmountBase>1000</damageAmountBase>
 		</projectile>
 	</ThingDef>
@@ -880,7 +879,7 @@
 	<ThingDef ParentName="WNA_WeaponBaseRanged">
 		<defName>WNA_HowlstormArti</defName>
 		<label>"howlstorm" artillary</label>
-		<description>Iron guardians carries the task of guarding vital outposts, and they do have proper weapons for their responsibility. The "howlstorm" individual artillary can perform very-long-range attacks, its shell can use a shockwave to stun its targets, and release several beacons around where it explodes. The beacons will connect to WNA's Chimingblaze Celestrike Satellite Network to summon a catastrophic orbital strike at where they are.</description>
+		<description>The "howlstorm" individual artillary can perform very-long-range attacks, its shell can use a shockwave to stun its targets, and release several beacons around where it explodes. The beacons will connect to WNA's Chimingblaze Celestrike Satellite Network to summon a catastrophic orbital strike at where they are.</description>
 		<graphicData>
 			<texPath>weapons/wna_howlstormarti</texPath>
 			<drawSize>1.5</drawSize>
@@ -905,7 +904,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>WNA_HowlstormArti_Proj</defaultProjectile>
 				<warmupTime>0</warmupTime>
-				<range>384.9</range>
+				<range>500</range>
 				<soundCast>InfernoCannon_Fire</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<requireLineOfSight>false</requireLineOfSight>
@@ -970,7 +969,7 @@
 	<ThingDef ParentName="WNA_WeaponBaseRanged">
 		<defName>WNA_HowlstormHMG</defName>
 		<label>"howlstorm" HMG</label>
-		<description>Iron guardians carries the task of guarding vital outposts, and they do have proper weapons for their responsibility. The "howlstorm" HMG is one of the heaviest yet most awe-inspiring weapon in WNA conventional arsenal. It can cast a rain of thought-kinetic pulses over enemies with almost no breaks, and if someone is lucky enough to get close enough, then this weapon with astonishing size and weight will easily crush the lucky one into something just as mashed potato.</description>
+		<description>The "howlstorm" HMG is one of the heaviest yet most awe-inspiring weapon in WNA conventional arsenal. It can cast a rain of explosive kinetic pulses over enemies with almost no breaks, and if someone is lucky enough to get close enough, then this weapon with astonishing size and weight will easily crush the lucky one into something just as mashed potato.</description>
 		<graphicData>
 			<texPath>weapons/wna_howlstormhmg</texPath>
 			<drawSize>1.5</drawSize>
@@ -995,12 +994,13 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>WNA_HowlstormHMG_Proj</defaultProjectile>
 				<warmupTime>0</warmupTime>
-				<range>99.9</range>
+				<range>199.9</range>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
 				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
 				<burstShotCount>60</burstShotCount>
+				<forcedMissRadius>1.9</forcedMissRadius>
 			</li>
 		</verbs>
 		<tools>
@@ -1037,8 +1037,10 @@
 			<texPath>Things/Projectile/Charge_Small</texPath>
 			<color>(255,255,155)</color>
 		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
-			<damageDef>WNA_KinePoint</damageDef>
+			<damageDef>WNA_KineBomb</damageDef>
+			<explosionRadius>4.9</explosionRadius>
 			<damageAmountBase>800</damageAmountBase>
 		</projectile>
 	</ThingDef>
@@ -1046,7 +1048,7 @@
 	<ThingDef ParentName="WNA_WeaponBaseRanged">
 		<defName>WNA_HowlstormMLRS</defName>
 		<label>"howlstorm" MLRS</label>
-		<description>Iron guardians carries the task of guarding vital outposts, and they do have proper weapons for their responsibility. The "howlstorm" HMG is one of the heaviest yet most awe-inspiring weapon in WNA conventional arsenal. It can cast a rain of thought-kinetic pulses over enemies with almost no breaks, and if someone is lucky enough to get close enough, then this weapon with astonishing size and weight will easily crush the lucky one into something just as mashed potato.</description>
+		<description>The "howlstorm" HMG is one of the heaviest yet most awe-inspiring weapon in WNA conventional arsenal. When it's switched to MLRS mode, it can fire a bunch of chiming blaze rockets, smelt everything in it's targeted area.</description>
 		<graphicData>
 			<texPath>weapons/wna_howlstormhmg</texPath>
 			<drawSize>1.5</drawSize>
@@ -1076,7 +1078,7 @@
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
 				<burstShotCount>20</burstShotCount>
-				<forcedMissRadius>6.9</forcedMissRadius>
+				<forcedMissRadius>10.9</forcedMissRadius>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -1434,7 +1436,7 @@
 			<li>Tag_WNANormalWP</li>
 		</weaponTags>
 		<recipeMaker>
-			<researchPrerequisite>WNA_CeremonyEquipment</researchPrerequisite>
+			<researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Intellectual</workSkill>
 			<skillRequirements>
@@ -1520,7 +1522,7 @@
 			</li>
 		</comps>
 		<recipeMaker>
-			<researchPrerequisite>WNA_CeremonyEquipment</researchPrerequisite>
+			<researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Intellectual</workSkill>
 			<skillRequirements>

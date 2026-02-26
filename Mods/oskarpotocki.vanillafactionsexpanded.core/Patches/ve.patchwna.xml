@@ -195,8 +195,9 @@
                 <preventKillingUntilHealthHPPercentage>0</preventKillingUntilHealthHPPercentage>
 				<preventBleeding>true</preventBleeding>
                 <equippedStatFactors>
-					<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">200</ConversionPower>
-					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">200</SocialIdeoSpreadFrequencyFactor>
+      				<SocialImpact>2000</SocialImpact>
+					<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">2000</ConversionPower>
+					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">2000</SocialIdeoSpreadFrequencyFactor>
 				</equippedStatFactors>
 				<pawnCapacityMinLevels>
 					<li>

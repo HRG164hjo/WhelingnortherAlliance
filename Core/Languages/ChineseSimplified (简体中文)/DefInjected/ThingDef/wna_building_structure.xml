@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: WNA standard door -->
+  <WNA_BaseDoor.label>成形门</WNA_BaseDoor.label>
+  <!-- EN: Form a door from nothing. This technique is hardly known by outsiders. -->
+  <WNA_BaseDoor.description>无中生有塑形出的门。这种技术鲜为外人所知。</WNA_BaseDoor.description>
+  
+  <!-- EN: WNA grid -->
+  <WNA_BaseGrid.label>成形网格墙</WNA_BaseGrid.label>
+  <!-- EN: Form a wall that can be shot over from nothing. This technique is hardly known by outsiders. -->
+  <WNA_BaseGrid.description>无中生有塑形出的射击墙。这种技术鲜为外人所知。</WNA_BaseGrid.description>
+  
+  <!-- EN: WNA wide door -->
+  <WNA_BaseODoor.label>大型成形门</WNA_BaseODoor.label>
+  <!-- EN: Form a door from nothing. This technique is hardly known by outsiders. -->
+  <WNA_BaseODoor.description>无中生有塑形出的门。这种技术鲜为外人所知。</WNA_BaseODoor.description>
+  
+  <!-- EN: WNA wall -->
+  <WNA_BaseWall.label>成形墙体</WNA_BaseWall.label>
+  <!-- EN: Form a wall from nothing. This technique is hardly known by outsiders. -->
+  <WNA_BaseWall.description>无中生有塑形出的墙体。这种技术鲜为外人所知。</WNA_BaseWall.description>
+  
+  <!-- EN: fortress door -->
+  <WNA_FortressDoor.label>要塞门</WNA_FortressDoor.label>
+  <!-- EN: An advanced concrete gate, used for fortresses. What's special about this gate is that it can restore itself due to how it is built. -->
+  <WNA_FortressDoor.description>强化过的钢筋混凝土门，专为军事要塞设计。这种门的特殊之处在于，得益于其独特的建造技术，它能随着时间推移进行自我修复。An advanced concrete gate, used for fortresses. What's special about this gate is that it can restore itself due to how it is built.</WNA_FortressDoor.description>
+  
+  <!-- EN: fortress gate -->
+  <WNA_FortressGate.label>大型要塞门</WNA_FortressGate.label>
+  <!-- EN: An advanced concrete gate, used for fortresses. What's special about this gate is that it can restore itself due to how it is built. -->
+  <WNA_FortressGate.description>强化过的钢筋混凝土门，专为军事要塞设计。这种门的特殊之处在于，得益于其独特的建造技术，它能随着时间推移进行自我修复。</WNA_FortressGate.description>
+  
+  <!-- EN: fortress wall -->
+  <WNA_FortressWall.label>要塞墙</WNA_FortressWall.label>
+  <!-- EN: An advanced concrete wall, used for fortresses. What's special about this wall is that it can restore itself due to how it is built. -->
+  <WNA_FortressWall.description>强化过的钢筋混凝土墙，专为军事要塞设计。这种墙体的特殊之处在于，得益于其独特的建造技术，它能随着时间推移进行自我修复。</WNA_FortressWall.description>
+  
+  <!-- EN: WNA matdoor -->
+  <WNA_StuffDoor.label>实体成形门</WNA_StuffDoor.label>
+  <!-- EN: Form a door from a piece of actual material. This door blocks light and takes some more work to build. -->
+  <WNA_StuffDoor.description>借助一块实在的材料塑造而出的门。这种门会挡光，而且建造时需要多费点劲。</WNA_StuffDoor.description>
+  
+  <!-- EN: WNA matgrid -->
+  <WNA_StuffGrid.label>实体成形网格墙</WNA_StuffGrid.label>
+  <!-- EN: Form a wall from a piece of actual material. This wall takes some more work to build. -->
+  <WNA_StuffGrid.description>借助一块实在的材料塑造而出的网格墙。这种网格墙在建造时需要多费点劲。</WNA_StuffGrid.description>
+  
+  <!-- EN: WNA wide matdoor -->
+  <WNA_StuffODoor.label>实体大型成形门</WNA_StuffODoor.label>
+  <!-- EN: Form a door from a piece of actual material. This door is wide and blocks light and takes some more work to build. -->
+  <WNA_StuffODoor.description>借助一块实在的材料塑造而出的门。这种门会挡光，而且建造时需要多费点劲。</WNA_StuffODoor.description>
+  
+  <!-- EN: WNA matwall -->
+  <WNA_StuffWall.label>实体成形墙体</WNA_StuffWall.label>
+  <!-- EN: Form a wall from a piece of actual material. This wall blocks light and takes some more work to build. -->
+  <WNA_StuffWall.description>借助一块实在的材料塑造而出的墙体。这种墙会挡光，而且建造时需要多费点劲。</WNA_StuffWall.description>
+  
+</LanguageData>

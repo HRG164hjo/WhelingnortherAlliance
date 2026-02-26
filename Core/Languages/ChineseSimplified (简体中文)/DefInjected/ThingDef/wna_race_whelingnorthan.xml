@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: human -->
+  <WNA_Human.label>人类</WNA_Human.label>
+  <!-- EN: A baseline human, mostly unmodified by gene engineering and mostly unchanged by evolutionary pressures on non-Earth planets. -->
+  <WNA_Human.description>人类，不过在为威灵诺德联合会效力了漫长的时间过后，和真正的一般人类可能已经有了些许不同。也许应该称其为“威灵人族”。</WNA_Human.description>
+  <!-- EN: left fist -->
+  <WNA_Human.tools.left_fist-0.label>左拳</WNA_Human.tools.left_fist-0.label>
+  <!-- EN: fist -->
+  <WNA_Human.tools.left_fist-0.labelNoLocation>拳</WNA_Human.tools.left_fist-0.labelNoLocation>
+  <!-- EN: right fist -->
+  <WNA_Human.tools.right_fist-0.label>右拳</WNA_Human.tools.right_fist-0.label>
+  <!-- EN: fist -->
+  <WNA_Human.tools.right_fist-0.labelNoLocation>拳</WNA_Human.tools.right_fist-0.labelNoLocation>
+  <!-- EN: teeth -->
+  <WNA_Human.tools.teeth-0.label>牙</WNA_Human.tools.teeth-0.label>
+  <!-- EN: head -->
+  <WNA_Human.tools.head-0.label>头</WNA_Human.tools.head-0.label>
+  <!-- EN: left fist -->
+  <WNA_Human.tools.left_fist-1.label>左拳</WNA_Human.tools.left_fist-1.label>
+  <!-- EN: fist -->
+  <WNA_Human.tools.left_fist-1.labelNoLocation>拳</WNA_Human.tools.left_fist-1.labelNoLocation>
+  <!-- EN: right fist -->
+  <WNA_Human.tools.right_fist-1.label>右拳</WNA_Human.tools.right_fist-1.label>
+  <!-- EN: fist -->
+  <WNA_Human.tools.right_fist-1.labelNoLocation>拳</WNA_Human.tools.right_fist-1.labelNoLocation>
+  <!-- EN: teeth -->
+  <WNA_Human.tools.teeth-1.label>牙</WNA_Human.tools.teeth-1.label>
+  <!-- EN: head -->
+  <WNA_Human.tools.head-1.label>头</WNA_Human.tools.head-1.label>
+  
+  <!-- EN: whelingnorthan -->
+  <WNA_WNThan.label>威灵古人</WNA_WNThan.label>
+  <!-- EN: The ancient Whelingnorthans originated from nocturnal predators in far-ancient times. The race was once at the edge of extinction when they were still unintelligent animals, in desperation they pray for help of something or some else, and their prayers were answered. Thus they rise from the humble, name themselves as Whelingnorthan, serve the holyorder and finally achieved the ascension. The Whelingnorthans seen today has a different origin though. -->
+  <WNA_WNThan.description>远古时期的威灵古人起源于先古时代的一种夜行性捕食者。这一族类在仍是未开智动物时曾一度频临灭绝。它们祈求得到某种生物或某种事物或任何什么东西的帮助，而它们的祈求最终得到回应。这一族类自此崛起，自名为威灵古族，勉力遵行正道，最终实现了飞升。今日世人所见的威灵族人则有着另一个起源。</WNA_WNThan.description>
+  <!-- EN: left hand -->
+  <WNA_WNThan.tools.left_hand.label>左手</WNA_WNThan.tools.left_hand.label>
+  <!-- EN: right hand -->
+  <WNA_WNThan.tools.right_hand.label>右手</WNA_WNThan.tools.right_hand.label>
+  <!-- EN: bite -->
+  <WNA_WNThan.tools.bite.label>牙</WNA_WNThan.tools.bite.label>
+  <!-- EN: head -->
+  <WNA_WNThan.tools.head.label>头</WNA_WNThan.tools.head.label>
+  
+</LanguageData>

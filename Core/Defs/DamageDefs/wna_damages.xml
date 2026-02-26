@@ -179,8 +179,8 @@
         <causeStun>true</causeStun>
         <impactSoundType/>
         <buildingDamageFactor>0.333333</buildingDamageFactor>
-        <plantDamageFactor>0.111111</plantDamageFactor>
-        <corpseDamageFactor>0.037037</corpseDamageFactor>
+        <plantDamageFactor>0</plantDamageFactor>
+        <corpseDamageFactor>0</corpseDamageFactor>
         <additionalHediffs>
             <li>
                 <hediff>WNA_RadEffect</hediff>
@@ -195,6 +195,7 @@
     </DamageDef>
     <DamageDef ParentName="WNA_RadBurnBase">
         <defName>WNA_RadBeam</defName>
+        <label>rad beam</label>
         <additionalHediffs>
             <li>
                 <hediff>WNA_RadRing</hediff>
@@ -232,7 +233,7 @@
         <label>iron kill</label>
         <workerClass>WNA.Damager.IronKiller</workerClass>
         <externalViolence>true</externalViolence>
-        <deathMessage>{0} perished in lysis field.</deathMessage>
+        <deathMessage>{0} perished because of iron field.</deathMessage>
         <hediff>Misc</hediff>
         <isRanged>true</isRanged>
         <makesAnimalsFlee>false</makesAnimalsFlee>
@@ -251,7 +252,7 @@
     <!-- wna -->
     <DamageDef ParentName="WNA_DamageBase">
         <defName>WNA_CastMelee</defName>
-        <label>casting</label>
+        <label>whelingnorther corrosion</label>
         <deathMessage>{0} has molten.</deathMessage>
         <hediff>WNA_CastDamage</hediff>
         <impactSoundType>Slice</impactSoundType>
@@ -277,7 +278,7 @@
     </DamageDef>
     <ToolCapacityDef>
         <defName>WNA_CastMelee</defName>
-        <label>casting</label>
+        <label>whelingnorther corrosion</label>
     </ToolCapacityDef>
     <ManeuverDef>
         <defName>WNA_CastMelee</defName>
@@ -295,7 +296,7 @@
     
     <DamageDef ParentName="WNA_DamageBase">
         <defName>WNA_Culling</defName>
-        <label>casting</label>
+        <label>whelingnorther corrosion</label>
         <deathMessage>{0} has molten.</deathMessage>
         <hediff>WNA_CastDamage</hediff>
         <impactSoundType>Slice</impactSoundType>
@@ -340,7 +341,7 @@
 
     <DamageDef ParentName="WNA_DamageBase">
         <defName>WNA_CastRange</defName>
-        <label>casting</label>
+        <label>whelingnorther corrosion</label>
         <deathMessage>{0} has molten.</deathMessage>
         <hediff>WNA_CastDamage</hediff>
         <isRanged>true</isRanged>
@@ -360,7 +361,7 @@
 
     <DamageDef ParentName="WNA_DamageBase">
         <defName>WNA_CastBomb</defName>
-        <label>casting</label>
+        <label>whelingnorther corrosion</label>
         <deathMessage>{0} has molten.</deathMessage>
         <hediff>WNA_CastDamage</hediff>
         <isExplosive>true</isExplosive>

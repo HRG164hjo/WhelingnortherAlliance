@@ -39,7 +39,7 @@
         <recipeUsers>
 	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
-        <researchPrerequisite>WNA_Transmutation</researchPrerequisite>
+        <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
     </RecipeDef>
     <RecipeDef ParentName="WNA_RecipeBase">
         <defName>WNA_MakeDarkAsbestosToo</defName>
@@ -91,7 +91,7 @@
         <recipeUsers>
 	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
-        <researchPrerequisite>WNA_Transmutation</researchPrerequisite>
+        <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -149,7 +149,7 @@
 	        <li>FueledSmithy</li>
 	        <li>ElectricSmithy</li>
 	    </recipeUsers>
-        <researchPrerequisite>WNA_Transmutation</researchPrerequisite>
+        <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -197,6 +197,6 @@
         <recipeUsers>
 	        <li>WNA_Ritespot</li>
 	    </recipeUsers>
-        <researchPrerequisite>WNA_Transmutation</researchPrerequisite>
+        <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
     </RecipeDef>
 </Defs>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<!-- EN: 检查报告 -->
+  <WNA.Inspection.LetterLabel>检查报告</WNA.Inspection.LetterLabel>
+	<!-- EN: {PAWN}没有需要特别关注的健康状况. -->
+  <WNA.Inspection.None>{PAWN}没有需要特别关注的健康状况.</WNA.Inspection.None>
+	<!-- EN: {PAWN}有以下特殊的健康状况: -->
+  <WNA.Inspection.Visible>{PAWN}有以下特殊的健康状况:</WNA.Inspection.Visible>
+	<!-- EN: {PAWN}有以下隐藏的健康状况: -->
+  <WNA.Inspection.Hidden>{PAWN}有以下隐藏的健康状况:</WNA.Inspection.Hidden>
+
+</LanguageData>

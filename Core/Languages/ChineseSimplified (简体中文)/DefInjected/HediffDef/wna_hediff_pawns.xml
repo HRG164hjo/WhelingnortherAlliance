@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: post death refusal -->
+  <sWNA_DeathEnd.label>死而复生</sWNA_DeathEnd.label>
+  <!-- EN: I'm back from death. -->
+  <sWNA_DeathEnd.description>我从死亡中回来了。</sWNA_DeathEnd.description>
+  
+  <!-- EN: death refusal -->
+  <WNA_DeathEnd.label>死亡终结</WNA_DeathEnd.label>
+  <!-- EN: This pawn have witnessed Whelingnorther's control over death. If this pawn is killed and their corpse isn't destroyed, they'll be able to crawl back from death. -->
+  <WNA_DeathEnd.description>此人见证过威灵诺德联合会对死亡的掌控。如果此人身死而尸首尚存，他就能从死亡中返回。</WNA_DeathEnd.description>
+  
+  <!-- EN: abnormal creation -->
+  <WNA_InAnimal.label>非常造物</WNA_InAnimal.label>
+  <!-- EN: abnormal creation. -->
+  <WNA_InAnimal.description>非常造物。</WNA_InAnimal.description>
+  
+  <!-- EN: inhuman -->
+  <WNA_Inhuman.label>非人</WNA_Inhuman.label>
+  <!-- EN: This thing may used to be a human, and may still looks like a human, but from inside it has been gone far from human being. -->
+  <WNA_Inhuman.description>此物也许曾经是人类，也许看上去仍然像人，但其内在已然去人甚远。</WNA_Inhuman.description>
+  
+  <!-- EN: abnormal automation -->
+  <WNA_InMechanoid.label>非常结构</WNA_InMechanoid.label>
+  <!-- EN: abnormal automation. -->
+  <WNA_InMechanoid.description>非常结构。</WNA_InMechanoid.description>
+  
+</LanguageData>

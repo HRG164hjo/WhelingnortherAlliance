@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: adjusting hydroponics basin. -->
+  <WNA_Job_AdjustHydroponics.reportString>调整水培盆。</WNA_Job_AdjustHydroponics.reportString>
+  
+  <!-- EN: drilling at TargetA. -->
+  <WNA_Job_DeepDrilling.reportString>挖掘于 TargetA.</WNA_Job_DeepDrilling.reportString>
+  
+  <!-- EN: reviving TargetA. -->
+  <WNA_Job_Revive.reportString>复活 TargetA</WNA_Job_Revive.reportString>
+  
+</LanguageData>

@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<LanguageData>
-  
-  <!-- EN: {0} twisted -->
-  <WNA_BecomeMutant.stages.twisted.label>{0} twisted</WNA_BecomeMutant.stages.twisted.label>
-  <!-- EN: What have they become?! That's horrible! -->
-  <WNA_BecomeMutant.stages.twisted.description>What have they become?! That's horrible!</WNA_BecomeMutant.stages.twisted.description>
-  
-</LanguageData>

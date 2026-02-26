@@ -7,11 +7,11 @@
 		<graphicData>
 			<texPath>Things/Building/HoldingPlatform/HoldingPlatform</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>2</drawSize>
 			<color>(65,60,60,192)</color>
 		</graphicData>
         <useHitPoints>false</useHitPoints>
-        <size>(1,1)</size>
+        <size>(2,2)</size>
         <statBases>
             <Mass>15</Mass>
 			<WorkToBuild>2000</WorkToBuild>

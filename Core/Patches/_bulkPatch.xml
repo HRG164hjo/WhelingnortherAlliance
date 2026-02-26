@@ -33,7 +33,7 @@
             <li>Smelted</li>
         </specialProducts>
         <workAmount>300</workAmount>
-        <researchPrerequisite>WNA_BasicRite</researchPrerequisite>
+        <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
         <recipeUsers>
 	        <li>WNA_RiteSpot_Cutter</li>
 	    </recipeUsers>
@@ -49,7 +49,7 @@
         <defName>WNA_CookRationMult</defName>
         <description>Cook raw materials to make military ration pack.</description>
         <jobString>working.</jobString>
-        <label>make WNA militaty ration x200</label>
+        <label>make WNA militaty ration x500</label>
         <ingredientValueGetterClass>WNA.WNAMiscs.IngredValGetter_NutriMisc</ingredientValueGetterClass>
         <ingredients>
             <li>
@@ -62,7 +62,7 @@
                         <li MayRequire="sarg.alphabiomes">AB_RawFrostLeaf</li>
                     </thingDefs>
                 </filter>
-                <count>80</count>
+                <count>200</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -101,7 +101,7 @@
             </disallowedCategories>
         </defaultIngredientFilter>
         <products>
-            <WNA_Ration>200</WNA_Ration>
+            <WNA_Ration>500</WNA_Ration>
         </products>
         <workAmount>5000</workAmount>
         <recipeUsers>
@@ -162,7 +162,7 @@
         <defName>WNA_MakeMedikitMult</defName>
         <description>use useful materials to make madicines.</description>
         <jobString>working.</jobString>
-        <label>make WNA medicine pack x200</label>
+        <label>make WNA medicine pack x500</label>
         <ingredients>
             <li>
                 <filter>
@@ -170,7 +170,7 @@
                         <li>PlantMatter</li>
                     </categories>
                 </filter>
-                <count>1600</count>
+                <count>4000</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -190,7 +190,7 @@
             </disallowedThingDefs>
         </defaultIngredientFilter>
         <products>
-            <WNA_Medikit>200</WNA_Medikit>
+            <WNA_Medikit>500</WNA_Medikit>
         </products>
         <workAmount>5000</workAmount>
         <recipeUsers>

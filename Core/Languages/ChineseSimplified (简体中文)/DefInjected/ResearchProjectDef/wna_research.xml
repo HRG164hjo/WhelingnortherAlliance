@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: advanced arsenal -->
+  <WNA_AdvancedArsenal.label>先进军备</WNA_AdvancedArsenal.label>
+  <!-- EN: the advanced technology used by whelingnorther alliance to arm their elite fighters. -->
+  <WNA_AdvancedArsenal.description>威灵诺德联合会用来武装他们的精英士兵的先进军备。</WNA_AdvancedArsenal.description>
+  
+  <!-- EN: advanced production -->
+  <WNA_AdvancedProduction.label>先进生产技术</WNA_AdvancedProduction.label>
+  <!-- EN: advanced production. -->
+  <WNA_AdvancedProduction.description>先进生产技术。</WNA_AdvancedProduction.description>
+    
+  <!-- EN: civilian techniques -->
+  <WNA_CivilianTech.label>民用实用技术</WNA_CivilianTech.label>
+  <!-- EN: practical techniques for civilian benefits, aiming for improving quality of life. -->
+  <WNA_CivilianTech.description>致力于民众利益的实用技术，其宗旨主要为提升生活质量。</WNA_CivilianTech.description>
+  
+  <!-- EN: field analysis -->
+  <WNA_FieldAnalysis.label>场分析学</WNA_FieldAnalysis.label>
+  <!-- EN: basic theories and techniques to manipulate field instead of manipulate solid matter. -->
+  <WNA_FieldAnalysis.description>一系列基础理论和技术，用以操作场而非实在的物质。</WNA_FieldAnalysis.description>
+  
+  <!-- EN: usage of excess lives -->
+  <WNA_HumanUsage.label>额外生命利用</WNA_HumanUsage.label>
+  <!-- EN: sometimes there can be excess lives that causing burden to our community, and here's some tricks about how to get rid of them while doing good, or at least no harm to our community. -->
+  <WNA_HumanUsage.description>有时某些额外的生命将会对我们的团体造成负担，而以下则是一些关于如何在处理这些额外生命的同时使我们的团体得利，至少是不造成危害的小技巧。</WNA_HumanUsage.description>
+  
+  <!-- EN: iron guardian -->
+  <WNA_IronGuardian.label>钢铁守卫</WNA_IronGuardian.label>
+  <!-- EN: the advanced technology used by whelingnorther alliance to arm their elite fighters. -->
+  <WNA_IronGuardian.description>威灵诺德联合会用来武装他们的精英士兵的先进军备。</WNA_IronGuardian.description>
+  
+  <!-- EN: lysis field -->
+  <WNA_LysisField.label>裂解力场</WNA_LysisField.label>
+  <!-- EN: an artificial field that can weaken inner bounds of solid matter, resulting it being fragile. when affect matter can no longer tolerate it and breaks down, this field can spread to other things. -->
+  <WNA_LysisField.description>一种可以削弱物质内部的联系、使其变得脆弱无比的人造力场。当被裂解力场影响的物质因无法承受其威力而崩解时，裂解力场可以借机传播到其他物体上。</WNA_LysisField.description>
+  
+  <!-- EN: military material -->
+  <WNA_MilitaryMaterial.label>军用材料</WNA_MilitaryMaterial.label>
+  <!-- EN: the special techniques of how to make unique materials used by whelingnorther military. these special techniques is hold secret by Whelingnorther Alliance. -->
+  <WNA_MilitaryMaterial.description>如何因地制宜复现用于威灵军部军备制造和设施建设的材料的技术。这些技术由威灵诺德联合会严密把守。</WNA_MilitaryMaterial.description>
+  
+  <!-- EN: military supply -->
+  <WNA_MilitarySupply.label>军需技术</WNA_MilitarySupply.label>
+  <!-- EN: the special techniques of how to make whelingnorther military supplies out from common resources. these special techniques is hold secret by Whelingnorther Alliance. -->
+  <WNA_MilitarySupply.description>如何因地制宜将寻常的材料制备成符合威灵军部标准的军需物资的技术。这些技术由威灵诺德联合会严密把守。</WNA_MilitarySupply.description>
+  
+  <!-- EN: parasomnia -->
+  <WNA_Parasomnia.label>永眠部队</WNA_Parasomnia.label>
+  <!-- EN: parasomnia. -->
+  <WNA_Parasomnia.description>永眠部队.</WNA_Parasomnia.description>
+  
+  <!-- EN: particle armory -->
+  <WNA_ParticleArmory.label>粒子武器</WNA_ParticleArmory.label>
+  <!-- EN: basic theories and techniques about how to produce and make use of unique particles that exists in nature world or not. -->
+  <WNA_ParticleArmory.description>关于如何制备和利用各种独特粒子的技术，无论这种粒子在自然界中是否天然存在。</WNA_ParticleArmory.description>
+  
+  <!-- EN: psychic dawn -->
+  <WNA_PsychicDawn.label>心灵黎明</WNA_PsychicDawn.label>
+  <!-- EN: mind over matter. -->
+  <WNA_PsychicDawn.description>心胜于物。</WNA_PsychicDawn.description>
+  
+  <!-- EN: standard arsenal -->
+  <WNA_StandardArsenal.label>标准军备</WNA_StandardArsenal.label>
+  <!-- EN: the standard arsenal used by whelingnorther alliance to arm their soldiers. -->
+  <WNA_StandardArsenal.description>威灵诺德联合会用以武装其部队的标准军备。</WNA_StandardArsenal.description>
+  
+  <!-- EN: reach to the void -->
+  <WNA_TheVoid.label>触摸虚空</WNA_TheVoid.label>
+  <!-- EN: wipe  out  ego \n\nstep  into  void \n\nall  mind  expire \n\nworld  round  ascend -->
+  <WNA_TheVoid.description>舍  弃  自  我\n\n步  入  虚  空\n\n万  念  俱  寂\n\n举  世  同  生</WNA_TheVoid.description>
+  
+  <!-- EN: whelingnorther apocalypse -->
+  <WNA_WhelingnortherApocalypse.label>黑暗天启</WNA_WhelingnortherApocalypse.label>
+  <!-- EN: Science is the doctrine that explains the entire material world; Phenomenology is the doctrine that explains the entire phenomenal world, including the material world; and Voidology, at least for now, is most likely the doctrine that answers what exists beneath the phenomenal world and how to understand this "void world." Is Voidology the further truth we are seeking? How can we find this further truth? We once proclaimed the termination of Phenomenology with our reality reconstruction technique; now we stand at the end of the path, searching for a way forward. -->
+  <WNA_WhelingnortherApocalypse.description>科学是解释整个物质世界的学说；现象学是解释包括物质世界在内的整个现象世界的学说；虚空学，至少在现在看来，最可能是解答现象世界之下存在着什么以及如何了解这个“虚空世界”的学说。那么虚空学是不是我们在寻求的哪个更进一步的真理？我们要怎样才能寻求到这个更进一步的真理？我们曾用现实重构技术宣告了现象学的终结，现在我们站在道路的尽头寻找着前进的方向。</WNA_WhelingnortherApocalypse.description>
+  
+</LanguageData>

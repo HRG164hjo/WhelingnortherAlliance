@@ -15,15 +15,11 @@
 			<li>PerfectImmunity</li>
 			<li>DiseaseFree</li>
 			<li>TotalHealing</li>
+			<li>Ageless</li>
 			<li>Skin_SheerWhite</li>
 			<li>Hair_SnowWhite</li>
-			<li>Ageless</li>
-            <li MayRequire="vanillaracesexpanded.fungoid">VRE_Telepathy</li>
-            <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfector</li>
-			<li MayRequire="starengraver.realdeathless">RealDeathless</li>
         </genes>
     </XenotypeDef>
-
     <GeneDef Abstract="true" Name="WNA_GeneBase">
         <displayCategory>Archite</displayCategory>
         <biostatCpx>0</biostatCpx>
@@ -31,13 +27,21 @@
         <biostatArc>1</biostatArc>
         <canGenerateInGeneSet>false</canGenerateInGeneSet>
         <marketValueFactor>1</marketValueFactor>
+        <passOnDirectly>false</passOnDirectly>
+        <selectionWeight>0</selectionWeight>
+        <modExtensions>
+            <li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">	
+                <hideGene>true</hideGene>
+				<skillDegradation>false</skillDegradation>
+            </li>
+        </modExtensions>
     </GeneDef>
 
     <GeneDef ParentName="WNA_GeneBase">
         <defName>WNA_ShadowRing</defName>
         <label>shadow ring</label>
         <labelShortAdj>shadow ring</labelShortAdj>
-        <description>Shades is surrounding this pawn. Some changes, including some obvious visual changes, is happening on this pawn.</description>
+        <description>Some mystique is lingering around this pawn.</description>
         <iconPath>UI/Icons/Genes/Gene_Darkvision</iconPath>
         <neverGrayHair>true</neverGrayHair>
         <ignoreDarkness>true</ignoreDarkness>
@@ -52,64 +56,27 @@
             <li>WNA_Head_FacelessMale</li>
             <li>WNA_Head_FacelessFemale</li>
         </forcedHeadTypes>
-        <modExtensions>
-            <li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">	
-                <hideGene>true</hideGene>
-            </li>
-        </modExtensions>
-    </GeneDef>
-
-    <GeneDef ParentName="WNA_GeneBase">
-        <defName>WNA_Mastery</defName>
-        <label>mastery</label>
-        <labelShortAdj>mastery</labelShortAdj>
-        <description>Mysterious voices are echoing beneath the surface of world, whispering knowledge to each other or to just nothing. This creature is able to steal some knowledge from the talks, thus become a master in many fields.</description>
-        <iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
-        <aptitudes>
-            <Shooting>99</Shooting>
-            <Melee>99</Melee>
-            <Construction>99</Construction>
-            <Mining>99</Mining>
-            <Cooking>99</Cooking>
-            <Plants>99</Plants>
-            <Animals>99</Animals>
-            <Crafting>99</Crafting>
-            <Artistic>99</Artistic>
-            <Medicine>99</Medicine>
-            <Social>99</Social>
-            <Intellectual>99</Intellectual>
-        </aptitudes>
-        <modExtensions>
-            <li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">	
-                <hideGene>true</hideGene>
-				<skillDegradation>false</skillDegradation>
-            </li>
-        </modExtensions>
     </GeneDef>
 
     <GeneDef ParentName="WNA_GeneBase">
         <defName>WNA_Unshakable</defName>
         <label>unshakable</label>
         <labelShortAdj>unshakable</labelShortAdj>
-        <description>The power originating from Ancient Whelingnorther Empire flows through this pawn. Few can stop this person.</description>
+        <description>The pawn is unbelievably tough, both physically and mentally.</description>
         <iconPath>UI/Icons/Genes/Gene_Unstoppable</iconPath>
         <painFactor>0</painFactor>
         <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
         <preventPermanentWounds>true</preventPermanentWounds>
-		<makeImmuneTo>
-			<li>LungRot</li>
-		</makeImmuneTo>
         <statOffsets>
-            <ComfyTemperatureMin>-9999</ComfyTemperatureMin>
-            <ComfyTemperatureMax>9999</ComfyTemperatureMax>
-            <PsychicSensitivity>-9999</PsychicSensitivity>
-            <IncomingDamageFactor>-9999</IncomingDamageFactor>
-            <StaggerDurationFactor>-9999</StaggerDurationFactor>
+            <ComfyTemperatureMin>-Infinity</ComfyTemperatureMin>
+            <ComfyTemperatureMax>Infinity</ComfyTemperatureMax>
         </statOffsets>
         <statFactors>
             <PsychicSensitivity>0</PsychicSensitivity>
             <IncomingDamageFactor>0</IncomingDamageFactor>
             <StaggerDurationFactor>0</StaggerDurationFactor>
+            <MentalBreakThreshold>0</MentalBreakThreshold>
+            <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0</CertaintyLossFactor>
         </statFactors>
         <modExtensions>
             <li Class="Universum.Utilities.Gene.Properties" MayRequire="sindre0830.Universum">
@@ -118,10 +85,29 @@
                     <li>universum.vacuum_suffocation_protection</li>
                 </allowed_utilities>
             </li>
-            <li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">	
-                <hideGene>true</hideGene>
-            </li>
         </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="WNA_GeneBase">
+        <defName>WNA_Mastery</defName>
+        <label>mastery</label>
+        <labelShortAdj>mastery</labelShortAdj>
+        <description>Mysterious voices are echoing beneath the surface of world, whispering knowledge to any possible listener.</description>
+        <iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+        <aptitudes>
+            <Shooting>9999</Shooting>
+            <Melee>9999</Melee>
+            <Construction>9999</Construction>
+            <Mining>9999</Mining>
+            <Cooking>9999</Cooking>
+            <Plants>9999</Plants>
+            <Animals>9999</Animals>
+            <Crafting>9999</Crafting>
+            <Artistic>9999</Artistic>
+            <Medicine>9999</Medicine>
+            <Social>9999</Social>
+            <Intellectual>9999</Intellectual>
+        </aptitudes>
     </GeneDef>
 
     <GeneDef ParentName="WNA_GeneBase">
@@ -144,10 +130,5 @@
             <li>RoomSize</li>
             <li MayRequire="telardo.romanceontherim">RomanceOnTheRim_Need_Romance</li>
         </disablesNeeds>
-        <modExtensions>
-            <li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">	
-                <hideGene>true</hideGene>
-            </li>
-        </modExtensions>
     </GeneDef>
 </Defs>

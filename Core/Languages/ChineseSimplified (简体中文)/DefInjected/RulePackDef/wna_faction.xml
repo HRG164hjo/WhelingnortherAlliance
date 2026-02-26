@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN:
+    <li>r_name(p=2)->[postfx] [prefix]</li>
+    <li>r_name->[ImperialNameFirstMale] [ImperialNameLast]</li>
+    <li>r_name->[randName] [ImperialNameLast]</li>
+    <li>r_name(p=0.1)->[codeName] [codeName]</li>
+    <li>randName(p=2)->[SylB][SylB][SylB]</li>
+    <li>randName->[SylB][SylB][SylB][SylB]</li>
+    <li>codeName->[pre]-[pos]</li>
+    <li>pre(p=3)->[code][code][code]</li>
+    <li>pre->[code][code][code][code]</li>
+    <li>pos(p=3)->[code][code][code]</li>
+    <li>pos->[code][code][code][code]</li>
+    <li>code->[Digit]</li>
+    <li>code->[Letter]</li>
+  -->
+  <WNA_NamerPawn.rulePack.rulesStrings>
+    <li>r_name(p=2)->[postfx] [prefix]</li>
+    <li>r_name->[ImperialNameFirstMale] [ImperialNameLast]</li>
+    <li>r_name->[randName] [ImperialNameLast]</li>
+    <li>r_name(p=0.1)->[codeName] [codeName]</li>
+    <li>randName(p=2)->[SylB][SylB][SylB]</li>
+    <li>randName->[SylB][SylB][SylB][SylB]</li>
+    <li>codeName->[pre]-[pos]</li>
+    <li>pre(p=3)->[code][code][code]</li>
+    <li>pre->[code][code][code][code]</li>
+    <li>pos(p=3)->[code][code][code]</li>
+    <li>pos->[code][code][code][code]</li>
+    <li>code->[Digit]</li>
+    <li>code->[Letter]</li>
+  </WNA_NamerPawn.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name->[postfx] [prefix]</li>
+    <li>r_name(p=0.035714)->[pos1] [pre1]</li>
+    <li>r_name(p=0.035714)->[pos2] [pre2]</li>
+    <li>r_name(p=0.035714)->[pos3] [pre3]</li>
+    <li>r_name(p=0.035714)->[pos4] [pre4]</li>
+    <li>r_name(p=0.035714)->[pos5] [pre5]</li>
+    <li>r_name(p=0.035714)->[pos6] [pre6]</li>
+    <li>r_name(p=0.035714)->[pos7] [pre7]</li>
+    <li>r_name(p=0.035714)->[pos8] [pre8]</li>
+    <li>r_name(p=0.035714)->[pos9] [pre9]</li>
+    <li>r_name(p=0.035714)->[pos10] [pre10]</li>
+    <li>r_name(p=0.035714)->[pos11] [pre11]</li>
+    <li>r_name(p=0.035714)->[pos12] [pre12]</li>
+    <li>r_name(p=0.035714)->[pos13] [pre13]</li>
+    <li>r_name(p=0.035714)->[pos14] [pre14]</li>
+    <li>r_name(p=0.035714)->[pos15] [pre15]</li>
+    <li>r_name(p=0.035714)->[pos16] [pre16]</li>
+    <li>r_name(p=0.035714)->[pos17] [pre17]</li>
+    <li>r_name(p=0.035714)->[pos18] [pre18]</li>
+    <li>r_name(p=0.035714)->[pos19] [pre19]</li>
+    <li>r_name(p=0.035714)->[pos20] [pre20]</li>
+    <li>r_name(p=0.035714)->[pos21] [pre21]</li>
+    <li>r_name(p=0.035714)->[pos22] [pre22]</li>
+    <li>r_name(p=0.035714)->[pos23] [pre23]</li>
+    <li>r_name(p=0.035714)->[pos24] [pre24]</li>
+    <li>r_name(p=0.035714)->[pos25] [pre25]</li>
+    <li>r_name(p=0.035714)->[pos26] [pre26]</li>
+    <li>r_name(p=0.035714)->[pos27] [pre27]</li>
+    <li>r_name(p=0.035714)->[pos28] [pre28]</li>
+    <li>pos1->角</li>
+    <li>pre1->木蛟</li>
+    <li>pos2->亢</li>
+    <li>pre2->金龙</li>
+    <li>pos3->氐</li>
+    <li>pre3->土貉</li>
+    <li>pos4->房</li>
+    <li>pre4->日兔</li>
+    <li>pos5->心</li>
+    <li>pre5->月狐</li>
+    <li>pos6->尾</li>
+    <li>pre6->火虎</li>
+    <li>pos7->箕</li>
+    <li>pre7->水豹</li>
+    <li>pos8->斗</li>
+    <li>pre8->木獬</li>
+    <li>pos9->牛</li>
+    <li>pre9->金牛</li>
+    <li>pos10->女</li>
+    <li>pre10->土蝠</li>
+    <li>pos11->虚</li>
+    <li>pre11->日鼠</li>
+    <li>pos12->危</li>
+    <li>pre12->月燕</li>
+    <li>pos13->室</li>
+    <li>pre13->火猪</li>
+    <li>pos14->壁</li>
+    <li>pre14->水貐</li>
+    <li>pos15->奎</li>
+    <li>pre15->木狼</li>
+    <li>pos16->娄</li>
+    <li>pre16->金狗</li>
+    <li>pos17->胃</li>
+    <li>pre17->土雉</li>
+    <li>pos18->昴</li>
+    <li>pre18->日鸡</li>
+    <li>pos19->毕</li>
+    <li>pre19->月乌</li>
+    <li>pos20->觜</li>
+    <li>pre20->火猴</li>
+    <li>pos21->参</li>
+    <li>pre21->水猿</li>
+    <li>pos22->井</li>
+    <li>pre22->木犴</li>
+    <li>pos23->鬼</li>
+    <li>pre23->金羊</li>
+    <li>pos24->柳</li>
+    <li>pre24->土獐</li>
+    <li>pos25->星</li>
+    <li>pre25->日马</li>
+    <li>pos26->张</li>
+    <li>pre26->月鹿</li>
+    <li>pos27->翼</li>
+    <li>pre27->火蛇</li>
+    <li>pos28->轸</li>
+    <li>pre28->水蚓</li>
+  -->
+  <WNA_NamerPawnW.rulePack.rulesStrings>
+    <li>r_name->[postfx] [prefix]</li>
+  </WNA_NamerPawnW.rulePack.rulesStrings>
+  
+  <!-- EN:
+    <li>r_name->[pfix] [Digit][Digit][Digit]</li>
+    <li>r_name->[pfix] [Digit][Digit][Digit][Digit]</li>
+    <li>r_name->[Digit][Digit][Digit]th [pfix]</li>
+    <li>r_name->[Digit][Digit][Digit][Digit]th [pfix]</li>
+    <li>pfix->Facility</li>
+    <li>pfix->Outpost</li>
+    <li>pfix->Site</li>
+    <li>pfix(p=4)->Field Task</li>
+    <li>r_name(p=0.01)->Celestial Throne</li>
+    <li>r_name(p=0.01)->Sky Temple</li>
+    <li>r_name(p=0.01)->Pristine Jewel</li>
+    <li>r_name(p=0.01)->Emerald Mausoleum</li>
+    <li>r_name(p=0.01)->Walled Garden</li>
+    <li>r_name(p=0.01)->Prophet's Retreat</li>
+    <li>r_name(p=0.01)->The Cradle</li>
+    <li>r_name(p=0.01)->The Preserve</li>
+    <li>r_name(p=0.01)->Font of Knowledge</li>
+    <li>r_name(p=0.01)->The Archives</li>
+    <li>r_name(p=0.01)->Last Thought</li>
+    <li>r_name(p=0.01)->Ithome's Gate</li>
+    <li>r_name(p=0.01)->Looks to the Moon</li>
+    <li>r_name(p=0.01)->Five Pebbles</li>
+    <li>r_name(p=0.01)->Outer Expanse</li>
+    <li>r_name(p=0.01)->Outer Rim</li>
+    <li>r_name(p=0.01)->Memory Crypts</li>
+    <li>r_name(p=0.01)->Rubicon</li>
+    <li>r_name(p=0.01)->Aether Ridge</li>
+    <li>r_name(p=0.01)->Daemon</li>
+    <li>r_name(p=0.01)->Shattered Terrace</li>
+    <li>r_name(p=0.01)->Ancient Urban</li>
+    <li>r_name(p=0.01)->Station Annex</li>
+    <li>r_name(p=0.01)->Unfortunate Evolution</li>
+  -->
+  <WNA_NamerSettlement.rulePack.rulesStrings>
+    <li>r_name->[pfix] [Digit][Digit][Digit]</li>
+    <li>r_name->[pfix] [Digit][Digit][Digit][Digit]</li>
+    <li>r_name->[Digit][Digit][Digit] [pfix]</li>
+    <li>r_name->[Digit][Digit][Digit][Digit] [pfix]</li>
+    <li>r_name(p=0.001)->HRG164HJO</li>
+    <li>r_name(p=0.02)->[HRG]</li>
+    <!---->
+    <li>pfix->设施</li>
+    <li>pfix->前哨</li>
+    <li>pfix(p=8)->作业场地</li>
+    <li>HRG->天国王座</li>
+    <li>HRG->天空神庙</li>
+    <li>HRG->至纯珠宝</li>
+    <li>HRG->翡翠陵墓</li>
+    <li>HRG->围墙花园</li>
+    <li>HRG->先知隐所</li>
+    <li>HRG->摇篮</li>
+    <li>HRG->保留地</li>
+    <li>HRG->知识泉源</li>
+    <li>HRG->档案馆</li>
+    <li>HRG->最后的思绪</li>
+    <li>HRG->伊索默之门</li>
+    <li>HRG->烟囱天棚</li>
+    <li>HRG->天空群岛</li>
+    <li>HRG->Farm Arrays</li>
+    <li>HRG->仰望皓月</li>
+    <li>HRG->五卵石</li>
+    <li>HRG->外层空间</li>
+    <li>HRG->海滨设施</li>
+    <li>HRG->地下森林</li>
+    <li>HRG->无声构造</li>
+    <li>HRG->管道堆场</li>
+    <li>HRG->浸没巨构</li>
+    <li>HRG->记忆陵墓</li>
+    <li>HRG->大都会</li>
+    <li>HRG->魔方节点</li>
+    <li>HRG->外缘</li>
+    <li>HRG->以太山脊</li>
+    <li>HRG->守护神</li>
+    <li>HRG->破碎露台</li>
+    <li>HRG->上古城市</li>
+    <li>HRG->车站别馆</li>
+    <li>HRG->不幸演化</li>
+    <li>HRG->珊瑚洞穴</li>
+    <li>HRG->普照港</li>
+    <li>HRG->烈日巷</li>
+    <li>HRG->暴雨铁路</li>
+    <li>HRG->不毛之地</li>
+    <li>HRG->冷库</li>
+    <li>HRG->凄凉地带</li>
+    <li>HRG->腐臭幽谷</li>
+    <li>HRG->断裂通道</li>
+    <li>HRG->供热管道</li>
+    <li>HRG->热继电器</li>
+    <li>HRG->迁徙之路</li>
+    <li>HRG->柱林</li>
+    <li>HRG->锈蚀残骸</li>
+    <li>HRG->盐化区</li>
+    <li>HRG->隐蔽堆层</li>
+    <li>HRG->信号尖塔</li>
+    <li>HRG->风暴海岸</li>
+    <li>HRG->表面</li>
+    <li>HRG->炎热沙漠</li>
+    <li>HRG->涡流泵</li>
+    <li>HRG->欲坠边缘</li>
+    <li>HRG->衰败隧道</li>
+    <li>HRG->感染废土</li>
+    <li>HRG->苔原断层</li>
+    <li>HRG->凯尔伊苏姆</li>
+    <li>HRG->狐百合原野</li>
+    <li>HRG->弥阿</li>
+    <li>HRG->渡鸦屿</li>
+    <li>HRG->午港</li>
+    <li>HRG->莱茵亚琛</li>
+    <li>HRG->船长修道院</li>
+    <li>HRG->日光岛</li>
+    <li>HRG->雾火岬角</li>
+    <li>HRG->月伤湖</li>
+    <li>HRG->虎穴寺</li>
+    <li>HRG->镰隐寺</li>
+    <li>HRG->五城</li>
+  </WNA_NamerSettlement.rulePack.rulesStrings>
+  
+</LanguageData>

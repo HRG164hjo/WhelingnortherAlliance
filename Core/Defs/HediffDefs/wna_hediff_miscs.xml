@@ -4,7 +4,7 @@
         <defName>WNA_VoidDiver</defName>
         <label>void diver</label>
         <hediffClass>WNA.HediffClass.VoidDrainer</hediffClass>
-        <description>This pawn is forced to dive into their deepest consciousness where nothing exists, to face the pure void. They may finally fade, but before their life terminates precious voidsteel can be drained through them from the void.</description>
+        <description>This pawn is forced to dive into their deepest consciousness where nothing exists, to face the purest void can be reached from phenomenon world. They may finally fade, but before their life terminates precious voidsteel can be drained through them from the void.</description>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>
         <blocksSocialInteraction>true</blocksSocialInteraction>

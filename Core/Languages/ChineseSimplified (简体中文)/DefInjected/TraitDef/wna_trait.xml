@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <WNA_Trait_Unshakable.degreeDatas.unshakable.label>不可撼动</WNA_Trait_Unshakable.degreeDatas.unshakable.label>
+  <WNA_Trait_Unshakable.degreeDatas.unshakable.description>在{PAWN_pronoun}过往的人生中，{PAWN_nameDef}练就了非凡的意志，这使得{PAWN_pronoun}在{PAWN_possessive}的道路上异常坚定，甚至让人感觉不可理喻。</WNA_Trait_Unshakable.degreeDatas.unshakable.description>
+  
+</LanguageData>

@@ -14,6 +14,11 @@
         </comps>
         <stages>
             <li>
+                <socialFightChanceFactor>0</socialFightChanceFactor>
+                <blocksMentalBreaks>true</blocksMentalBreaks>
+                <blocksInspirations>true</blocksInspirations>
+                <pctAllThoughtNullification>1</pctAllThoughtNullification>
+                <overrideMoodBase>1</overrideMoodBase>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -69,7 +74,7 @@
         <defName>WNA_RobeBoostLite</defName>
         <label>attunement fabric boost</label>
         <hediffClass>HediffWithComps</hediffClass>
-        <description>Special designs and techniques in military suit is helping this pawn performing better than normal.</description>
+        <description>Attunement fabric used to make military suit is helping this pawn performing better than normal.</description>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>
@@ -79,6 +84,9 @@
         </comps>
         <stages>
             <li>
+                <socialFightChanceFactor>0</socialFightChanceFactor>
+                <blocksMentalBreaks>true</blocksMentalBreaks>
+                <blocksInspirations>true</blocksInspirations>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -176,7 +184,7 @@
         <defName>WNA_ChronoPack</defName>
         <label>phase pack</label>
         <hediffClass>HediffWithComps</hediffClass>
-        <description>phase pack.</description>
+        <description>phase pack. (Currently you may need &lt;color=#FF0000&gt;AutoBlink&lt;/color&gt; mod to make this hediff function properly.)</description>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>

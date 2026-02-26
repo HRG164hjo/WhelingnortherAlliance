@@ -15,10 +15,7 @@ namespace WNA.WNAHarmony
         private static readonly HashSet<string> freeRaces = new HashSet<string>
         {
             "WNA_WNThan",
-            "WNA_Human",
-            "WNA_DimBoo",
-            "WNA_ThornBoo",
-            "WNA_FerosBoo"
+            "WNA_Human"
         };
         private static readonly HashSet<string> freeHediffs = new HashSet<string>
         {
@@ -38,7 +35,7 @@ namespace WNA.WNAHarmony
                 return true;
             if (pawn.health?.hediffSet?.hediffs?.Any(h => h.def != null && freeHediffs.Contains(h.def.defName)) == true)
                 return true;
-            if (pawn.Ideo != null && pawn.Ideo.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) && (pawn.Faction.def.defName == "WNA_FactionWNA" || (pawn.Faction == Faction.OfPlayer && WNAMainDefOf.WNA_TheEnlightment.IsFinished)))
+            if (pawn.Ideo != null && pawn.Ideo.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) && (pawn.Faction.def.defName == "WNA_FactionWNA" || (pawn.Faction == Faction.OfPlayer && WNAMainDefOf.WNA_WhelingnortherApocalypse.IsFinished)))
                 return true;
             return false;
         }

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: psychic blast shell -->
+  <WNA_ShellPsychic.label>灵能炮弹</WNA_ShellPsychic.label>
+  <!-- EN: A shell made of bioferrite and enhanced with special techniques. When detonated it can cause a unique psychic phenomena, causing nearby people fall into psychic drunkenness. -->
+  <WNA_ShellPsychic.description>由活性铁瓷辅以秘传技艺加工成的炮弹，引爆时可以生成独特的灵能现象，使附近的人陷入灵能沉醉中。</WNA_ShellPsychic.description>
+  
+  <!-- EN: psychic blast shell -->
+  <WNA_ShellPsychic_Proj.label>灵能炮弹</WNA_ShellPsychic_Proj.label>
+  
+</LanguageData>

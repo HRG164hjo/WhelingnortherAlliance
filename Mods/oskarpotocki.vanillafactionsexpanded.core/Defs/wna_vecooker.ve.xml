@@ -16,7 +16,7 @@
 		<passability>PassThroughOnly</passability>
         <defaultPlacingRot>South</defaultPlacingRot>
         <researchPrerequisites>
-			<li>WNA_Transmutation</li>
+			<li>WNA_WhelingnortherApocalypse</li>
 		</researchPrerequisites>
 		<inspectorTabs>
 			<li>PipeSystem.ITab_Processor</li>

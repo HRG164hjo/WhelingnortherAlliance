@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: phase pack -->
+  <WNA_ChronoPack.label>相位背包</WNA_ChronoPack.label>
+  <!-- EN: phase pack. (Currently you may need &lt;color=#FF0000&gt;AutoBlink&lt;/color&gt; mod to make this hediff function properly.) -->
+  <WNA_ChronoPack.description>相位背包。（目前你可能需要订阅&lt;color=#FF0000&gt;AutoBlink&lt;/color&gt;模组来让这个hediff正常运作。）</WNA_ChronoPack.description>
+  
+  <!-- EN: irradiating -->
+  <WNA_DeadzoneBelt.label>“死区”辐射光环</WNA_DeadzoneBelt.label>
+  <!-- EN: This pawn is emitting deadly radiation field. -->
+  <WNA_DeadzoneBelt.description>此人正放射出极为致命的辐射场。</WNA_DeadzoneBelt.description>
+  
+  <!-- EN: illusion core -->
+  <WNA_IllusionCore.label>幻象核心</WNA_IllusionCore.label>
+  <!-- EN: This pawn is covered by a stealth field. -->
+  <WNA_IllusionCore.description>此人被一个隐形力场覆盖。</WNA_IllusionCore.description>
+  
+  <!-- EN: robe boost -->
+  <WNA_RobeBoost.label>门徒长袍增益</WNA_RobeBoost.label>
+  <!-- EN: Special designs and techniques in alliance robe is helping this pawn performing better than normal. -->
+  <WNA_RobeBoost.description>威灵会门徒长袍中蕴含的特殊设计和技艺使此人比一般状态下表现得更为出色。</WNA_RobeBoost.description>
+  
+  <!-- EN: attunement fabric boost -->
+  <WNA_RobeBoostLite.label>同调织物增益</WNA_RobeBoostLite.label>
+  <!-- EN: Attunement fabric used to make military suit is helping this pawn performing better than normal. -->
+  <WNA_RobeBoostLite.description>用于制作威灵军标准军服的同调织物使此人比一般状态下表现得更为出色。</WNA_RobeBoostLite.description>
+  
+</LanguageData>

@@ -7,7 +7,7 @@ namespace WNA.WNAMiscs
     public class HedifferRemover : HediffGiver
     {
         public int tickInterval = 250;
-        private static readonly HashSet<string> includedHediffs = new HashSet<string> { };
+        internal static readonly HashSet<string> includedHediffs = new HashSet<string> { };
         static HedifferRemover()
         {
             includedHediffs.Add("WNA_VoidDiver");
@@ -22,10 +22,7 @@ namespace WNA.WNAMiscs
         private static readonly HashSet<string> validPawn = new HashSet<string>
             {
                 "WNA_WNThan",
-                "WNA_Human",
-                "WNA_DimBoo",
-                "WNA_ThornBoo",
-                "WNA_FerosBoo"
+                "WNA_Human"
             };
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {

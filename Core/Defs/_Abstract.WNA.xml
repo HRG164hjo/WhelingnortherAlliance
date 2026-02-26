@@ -431,7 +431,7 @@
         <filthAcceptanceMask>
             <li>None</li>
         </filthAcceptanceMask>
-        <designationCategory>WNA_MainCategory</designationCategory>
+        <designationCategory>Floors</designationCategory>
         <terrainAffordanceNeeded IsNull="True"/>
 		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
         <pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>

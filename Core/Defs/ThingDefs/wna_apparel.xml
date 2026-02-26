@@ -3,7 +3,7 @@
     <ThingDef ParentName="WNA_ApparelBase">
 		<defName>WNA_StdMiliSuit</defName>
 		<label>standard military suit</label>
-		<description>WHR standard equipment, a modified version of WNA alliance robe, usually has weaker effect than typical alliance robe, but more suitable for massive producing and arming up troopers as it can be made from various kinds of materials.</description>
+		<description>Standard equipment of Whelingnorther Military, a modified version of WNA alliance robe, usually has weaker effect than typical alliance robe, but more suitable for massive producing and arming up troopers as it can be made from various kinds of materials.</description>
 		<graphicData>
 			<texPath>apparel/alliancerobe/icon_alliancerobe</texPath>
             <color>(180,189,199)</color>
@@ -680,7 +680,7 @@
     <ThingDef ParentName="WNA_BackpackBase">
 		<defName>WNA_ChronoPack</defName>
 		<label>phase pack</label>
-		<description>phase pack.</description>
+		<description>phase pack. (Currently you may need &lt;color=#FF0000&gt;AutoBlink&lt;/color&gt; mod to make this hediff function properly.)</description>
 		<graphicData>
             <texPath>apparel/wna_utility</texPath>
         </graphicData>
@@ -719,7 +719,7 @@
     <ThingDef ParentName="WNA_ApparelBase">
         <defName>WNA_AllianceHood</defName>
         <label>alliance hood</label>
-        <description>Upper part of WNA standard equipment. This hood covers their eyes, symbolizing one of the WNA's beliefs - don't be blinded by radiance.</description>
+        <description>Upper part of WNA disciple equipment. This hood covers their eyes, symbolizing the principle that don't be blinded by brightness.</description>
         <graphicData>
             <texPath>apparel/alliancehood/icon_alliancehood</texPath>
             <drawSize>0.9</drawSize>
@@ -742,7 +742,7 @@
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
         </equippedStatOffsets>
         <recipeMaker>
-            <researchPrerequisite>WNA_CeremonyEquipment</researchPrerequisite>
+            <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
             <workSkill>Intellectual</workSkill>
             <skillRequirements>
                 <Intellectual>12</Intellectual>
@@ -772,7 +772,7 @@
     <ThingDef ParentName="WNA_ApparelBase">
 		<defName>WNA_AllianceCloak</defName>
 		<label>alliance cloak</label>
-		<description>Outer layer of WNA standard equipment. This cloak covers almost all of their body, symbolizing one of WNA's thoughts - abnegating what they used to have and to be, to approach transcendence, divinity and salvation.</description>
+		<description>Outer layer of WNA disciple equipment. This cloak covers almost all of their body, symbolizing the principle that abnegating what they used to have and to be, to approach transcendence, divinity and salvation.</description>
 		<graphicData>
 			<texPath>apparel/alliancecloak/icon_alliancecloak</texPath>
             <drawSize>0.9</drawSize>
@@ -793,7 +793,7 @@
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
         </equippedStatOffsets>
         <recipeMaker>
-            <researchPrerequisite>WNA_CeremonyEquipment</researchPrerequisite>
+            <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
             <workSkill>Intellectual</workSkill>
             <skillRequirements>
                 <Intellectual>12</Intellectual>
@@ -829,7 +829,7 @@
     <ThingDef ParentName="WNA_ApparelBase">
 		<defName>WNA_AllianceRobe</defName>
 		<label>alliance robe</label>
-		<description>Inner layer of WNA standard equipment. This robe is durable, reliable and comfortable, exhibiting WNA's good treatment of their own people and their strong logistics scheduling capabilities to some extent.</description>
+		<description>Inner layer of WNA disciple equipment. This robe is durable and reliable, symbolizing the unshakable will.</description>
 		<graphicData>
 			<texPath>apparel/alliancerobe/icon_alliancerobe</texPath>
             <color>(43,43,43)</color>
@@ -858,7 +858,7 @@
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
         </equippedStatOffsets>
         <recipeMaker>
-            <researchPrerequisite>WNA_CeremonyEquipment</researchPrerequisite>
+            <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
             <workSkill>Intellectual</workSkill>
             <skillRequirements>
                 <Intellectual>12</Intellectual>

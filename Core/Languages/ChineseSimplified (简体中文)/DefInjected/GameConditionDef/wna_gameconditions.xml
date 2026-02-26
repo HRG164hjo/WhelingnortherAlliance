@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: climate control -->
+  <WNA_GameCond_ClimateControl.label>气候控制</WNA_GameCond_ClimateControl.label>
+  <!-- EN: a climate control facility is affecting local climate. On surface layers, it can adjust local temperature and weather; on orbital layers, it can generate breathable atmosphere for nearby creatures. -->
+  <WNA_GameCond_ClimateControl.description>一台气候控制器正在影响附近区域的气候。在地表，这台设备可以调整局部的气温和天气；在轨道上，这台设备可以在局部生成可呼吸的大气。</WNA_GameCond_ClimateControl.description>
+  <!-- EN: a climate control facility is affecting local climate. -->
+  <WNA_GameCond_ClimateControl.letterText>一台气候控制器正在影响附近区域的气候。</WNA_GameCond_ClimateControl.letterText>
+  
+</LanguageData>

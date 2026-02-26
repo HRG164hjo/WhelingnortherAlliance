@@ -9,7 +9,7 @@ namespace WNA.WNAHarmony
     [HarmonyPatch(typeof(SkillRecord), "Interval")]
     public class Patch_SkillRecord
     {
-        private const float expAdd = 60000f;
+        private const float expAdd = 86400f;
         private static readonly HashSet<string> wiseList = new HashSet<string>
         {
             "WNA_WNThan",
@@ -22,7 +22,7 @@ namespace WNA.WNAHarmony
             Pawn pawn = __instance.Pawn;
             if (IsCertainPawn(pawn))
             {
-                __instance.Learn(expAdd, direct: false, ignoreLearnRate: false);
+                __instance.Learn(expAdd, direct: true, ignoreLearnRate: true);
                 return false;
             }
             return true;

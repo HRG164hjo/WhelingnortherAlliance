@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: whelingnorther banner -->
+  <WNA_Banner.label>威灵旗</WNA_Banner.label>
+  <!-- EN: A black banner with red whelingnorther alliance symbol on it. -->
+  <WNA_Banner.description>用大红色画着威灵诺德联合会标志的黑旗。</WNA_Banner.description>
+  
+  <!-- EN: ivory crate -->
+  <WNA_BasicCrate.label>成形储物箱</WNA_BasicCrate.label>
+  <!-- EN: A small white box, specially designed for storaging items. -->
+  <WNA_BasicCrate.description>一个白色的小盒子，为用于储物而进行了专门设计。</WNA_BasicCrate.description>
+  
+  <!-- EN: invisible conduit -->
+  <WNA_Conduit.label>无形导管</WNA_Conduit.label>
+  <!-- EN: Wires can transport electricity, pipies can transport liquids, and this invisible conduit can transport more things. -->
+  <WNA_Conduit.description>导线可以用来传导电力，管道可以用来运输液体，而这种隐形导管可以用来传输更多东西。</WNA_Conduit.description>
+  
+  <!-- EN: life suporter -->
+  <WNA_LifeSupporter.label>维生设备</WNA_LifeSupporter.label>
+  <!-- EN: A wall-mounted life support unit -->
+  <WNA_LifeSupporter.description>一个挂在墙上的维生单元。</WNA_LifeSupporter.description>
+  
+  <!-- EN: ivory seat -->
+  <WNA_LinkSeat.label>成形座椅</WNA_LinkSeat.label>
+  <!-- EN: Floating translucent stool, sometimes described as "ivory-like in color". -->
+  <WNA_LinkSeat.description>悬浮着的半透明座椅，精心地从无到有塑造而出。</WNA_LinkSeat.description>
+  
+  <!-- EN: ivory shelf -->
+  <WNA_LinkShelf.label>成形置物架</WNA_LinkShelf.label>
+  <!-- EN: Floating translucent shelf, can hold a unusual large number of stacks. -->
+  <WNA_LinkShelf.description>悬浮着的半透明置物架，容量大得惊人。</WNA_LinkShelf.description>
+  
+  <!-- EN: ivory table -->
+  <WNA_LinkTable.label>成形桌面</WNA_LinkTable.label>
+  <!-- EN: Floating translucent table, sometimes described as "ivory-like in color". -->
+  <WNA_LinkTable.description>悬浮着的半透明桌面，精心地从无到有塑造而出。</WNA_LinkTable.description>
+  
+  <!-- EN: slot sleeping spot -->
+  <WNA_SlotSleepSpot.label>单格睡眠点</WNA_SlotSleepSpot.label>
+  <!-- EN: a sleeping spot occupying 1 tile only. -->
+  <WNA_SlotSleepSpot.description>占地只有一格的睡眠点，人可能需要坐在上面睡觉。</WNA_SlotSleepSpot.description>
+  
+  <!-- EN: shimmer torch -->
+  <WNA_TorchLamp.label>微光灯炬</WNA_TorchLamp.label>
+  <!-- EN: A WNA style torch. It doesn't flame, though. -->
+  <WNA_TorchLamp.description>明亮的灯炬，不包含明火。</WNA_TorchLamp.description>
+  
+  <!-- EN: discord torch -->
+  <WNA_TorchLampB.label>失谐灯炬</WNA_TorchLampB.label>
+  <!-- EN: A WNA style torch. it will drive nearby temperature to extreme. -->
+  <WNA_TorchLampB.description>明亮的灯炬，会使附近的温度逐渐失控。</WNA_TorchLampB.description>
+  
+  <!-- EN: wall safe -->
+  <WNA_WallSafe.label>壁挂保险箱</WNA_WallSafe.label>
+  <!-- EN: A wall-mounted storage unit. -->
+  <WNA_WallSafe.description>一个挂在墙上的储存单元。</WNA_WallSafe.description>
+  
+</LanguageData>

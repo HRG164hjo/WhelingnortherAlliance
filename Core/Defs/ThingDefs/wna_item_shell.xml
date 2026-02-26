@@ -3,7 +3,7 @@
     <ThingDef ParentName="WNA_ShellBase">
         <defName>WNA_ShellFlame</defName>
         <label>flame shell</label>
-        <description>A plasteel can containing an unstable chiming steel shard whose inner structure has been disrupted by external energy. When detonated this shell will unleash immense destructive power and blast a large area. It should be pointed out that this method of making use of chiming steel is really wasteful and inefficient as only 0% about its power is released.</description>
+        <description>A shell made by dissolving phosphorus in chemfuel and store the mixture in a jar. This shell can be extremely dangerous, making both explosion and fire.</description>
         <graphicData>
             <texPath>item/wna_shells/flame</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -111,7 +111,7 @@
             <stoppingPower>Infinity</stoppingPower>
             <speed>2000</speed>
             <armorPenetrationBase>Infinity</armorPenetrationBase>
-            <explosionRadius>56.9</explosionRadius>
+            <explosionRadius>199.9</explosionRadius>
             <flyOverhead>true</flyOverhead>
             <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
             <soundExplode>Explosion_Vaporize</soundExplode>

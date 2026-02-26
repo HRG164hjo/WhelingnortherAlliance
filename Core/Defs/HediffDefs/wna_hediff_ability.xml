@@ -23,7 +23,7 @@
         <defName>WNA_AbilityWisdom</defName>
         <label>bestowed wisdom</label>
         <hediffClass>HediffWithComps</hediffClass>
-        <description>This pawn is bestowed with wisdom by a Whelingnorther Saint.</description>
+        <description>This pawn is bestowed with extra wisdom by a Whelingnorther Archonpriest.</description>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>

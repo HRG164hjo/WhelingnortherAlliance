@@ -84,7 +84,7 @@
         <slot>Adulthood</slot>
         <title>midworld revenger</title>
         <titleShort>revenger</titleShort>
-        <description>The day come for [PAWN_nameDef] when Whelingnorther Alliance cast their shade over the world [PAWN_nameDef] lives in, and with the aid from Whelingnorther Alliance [PAWN_pronoun] slained all [PAWN_possessive] rivals. The fruit of revenge is unbelievably sweet,  [PAWN_nameDef] sang the praises of Whelingnorther and became a fanatic believer.</description>
+        <description>The day come for [PAWN_nameDef] when Whelingnorther Alliance cast their shade over the world [PAWN_nameDef] lives in, and with the aid from Whelingnorther Alliance [PAWN_pronoun] slained all [PAWN_possessive] rivals. The fruit of revenge is unbelievably sweet, [PAWN_nameDef] sang the praises of Whelingnorther and became a fanatic believer.</description>
         <workDisables>Social</workDisables>
         <forcedTraits>
             <Bloodlust>0</Bloodlust>

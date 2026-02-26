@@ -21,9 +21,23 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="WNA_GravliteManifold"]/graphicData/graphicClass</xpath>
+					<value>
+						<graphicClass>VanillaGravshipExpanded.Graphic_GravEngineSingle</graphicClass>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="WNA_GravliteManifold"]/graphicData</xpath>
+					<value>
+            			<color>(74,74,74)</color>
+					</value>
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="WNA_GravliteManifold"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
 					<value>
+						<li>WNA_BasicCrate</li>
+						<li>WNA_WallSafe</li>
 						<li>VGE_OxygenReclaimer</li>
 						<li>VGE_SmallHeatsink</li>
 						<li>VGE_LargeHeatsink</li>
@@ -80,12 +94,12 @@
 					<value>
 						<li Class="PipeSystem.CompProperties_ResourceTrader">
 							<pipeNet>VGE_OxygenNet</pipeNet>
-							<consumptionPerTick>-24</consumptionPerTick>
+							<consumptionPerTick>-100</consumptionPerTick>
 							<resourceOffOverlay>false</resourceOffOverlay>
 						</li>
 						<li Class="PipeSystem.CompProperties_ResourceTrader">
 							<pipeNet>VGE_AstrofuelNet</pipeNet>
-							<consumptionPerTick>-24</consumptionPerTick>
+							<consumptionPerTick>-100</consumptionPerTick>
 							<resourceOffOverlay>false</resourceOffOverlay>
 						</li>
 					</value>
@@ -105,6 +119,14 @@
 							<drawStorageBar>false</drawStorageBar>
 							<contentRequirePower>false</contentRequirePower>
 						</li>
+            			<li Class="CompProperties_GravshipFacility">
+            			    <providesFuel>true</providesFuel>
+            			    <componentTypeDef>FuelStorage</componentTypeDef>
+            			    <requiresLOS>false</requiresLOS>
+            			    <showMaxSimultaneous>false</showMaxSimultaneous>
+            			    <maxSimultaneous>9999</maxSimultaneous>
+            			    <maxDistance>500</maxDistance>
+            			</li>
 					</value>
 				</li>
 			</operations>

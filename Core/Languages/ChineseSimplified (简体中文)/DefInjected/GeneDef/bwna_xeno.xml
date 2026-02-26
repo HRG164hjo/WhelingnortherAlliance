@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: mastery -->
+  <WNA_Mastery.label>博学多识</WNA_Mastery.label>
+  <!-- EN: Mysterious voices are echoing beneath the surface of world, whispering knowledge to any possible listener. -->
+  <WNA_Mastery.description>未名回声激荡于世界的表象之下，向任何可能的听众低语着各种知识。</WNA_Mastery.description>
+  <!-- EN: mastery -->
+  <WNA_Mastery.labelShortAdj>博学多识</WNA_Mastery.labelShortAdj>
+  
+  <!-- EN: shadow ring -->
+  <WNA_ShadowRing.label>暗影环绕</WNA_ShadowRing.label>
+  <!-- EN: Some mystique is lingering around this pawn. -->
+  <WNA_ShadowRing.description>某种神秘气氛缭绕在此人周身。</WNA_ShadowRing.description>
+  <!-- EN: shadow ring -->
+  <WNA_ShadowRing.labelShortAdj>暗影环绕</WNA_ShadowRing.labelShortAdj>
+  
+  <!-- EN: still water -->
+  <WNA_StillWater.label>心如止水</WNA_StillWater.label>
+  <!-- EN: This pawn has found extraordinary inner peace, even freeing him from some primal needs. But this doesn't mean he can be treated casually. -->
+  <WNA_StillWater.description>此人达到了内在的非凡和谐，甚至足以摆脱一些基本的需求。但这并不意味着此人就成了个老好人。</WNA_StillWater.description>
+  <!-- EN: still water -->
+  <WNA_StillWater.labelShortAdj>心如止水</WNA_StillWater.labelShortAdj>
+  
+  <!-- EN: unshakable -->
+  <WNA_Unshakable.label>不可撼动</WNA_Unshakable.label>
+  <!-- EN: The pawn is unbelievably tough, both physically and mentally. -->
+  <WNA_Unshakable.description>此人顽强得不可思议，在物理层面和精神层面都是如此。</WNA_Unshakable.description>
+  <!-- EN: unshakable -->
+  <WNA_Unshakable.labelShortAdj>不可撼动</WNA_Unshakable.labelShortAdj>
+  
+</LanguageData>

@@ -9,12 +9,12 @@
     	<drawStyleCategory>Walls</drawStyleCategory>
 		<comps/>
         <researchPrerequisites>
-            <li>WNA_SecretTech</li>
+            <li>WNA_WhelingnortherApocalypse</li>
         </researchPrerequisites>
 	</ThingDef>
     <ThingDef ParentName="WNA_WallWithConduit">
 		<defName>WNA_BaseWall</defName>
-		<label>WNA wall</label>
+		<label>formed wall</label>
 		<description>Form a wall from nothing. This technique is hardly known by outsiders.</description>
 		<graphicData>
 			<texPath>buildings/atlas/wna_wall_Atlas</texPath>
@@ -52,7 +52,7 @@
 	</ThingDef>
     <ThingDef ParentName="WNA_WallWithConduit">
 		<defName>WNA_BaseGrid</defName>
-		<label>WNA grid</label>
+		<label>formed grid</label>
 		<description>Form a wall that can be shot over from nothing. This technique is hardly known by outsiders.</description>
 		<graphicData>
 			<texPath>buildings/atlas/wna_grid_Atlas</texPath>
@@ -92,7 +92,7 @@
 	</ThingDef>
     <ThingDef ParentName="WNA_WallWithConduit">
 		<defName>WNA_BaseDoor</defName>
-		<label>WNA standard door</label>
+		<label>formed door</label>
 		<description>Form a door from nothing. This technique is hardly known by outsiders.</description>
         <thingClass>WNA.ThingClass.BarrierDoor</thingClass>
 		<altitudeLayer>DoorMoveable</altitudeLayer>
@@ -134,7 +134,6 @@
         <drawerType>RealtimeOnly</drawerType>
         <passability>Standable</passability>
 		<neverMultiSelect>false</neverMultiSelect>
-        <coversFloor>false</coversFloor>
 		<comps>
 			<li Class="CompProperties_Forbiddable">
 				<allowNonPlayer>false</allowNonPlayer>
@@ -147,7 +146,7 @@
 	</ThingDef>
     <ThingDef ParentName="WNA_WallWithConduit">
 		<defName>WNA_BaseODoor</defName>
-		<label>WNA wide door</label>
+		<label>formed wide door</label>
 		<description>Form a door from nothing. This technique is hardly known by outsiders.</description>
 		<thingClass>Building_MultiTileDoor</thingClass>
 		<altitudeLayer>DoorMoveable</altitudeLayer>
@@ -196,7 +195,6 @@
         <drawerType>RealtimeOnly</drawerType>
         <passability>Standable</passability>
 		<neverMultiSelect>false</neverMultiSelect>
-        <coversFloor>false</coversFloor>
 		<comps>
 			<li Class="CompProperties_Forbiddable">
 				<allowNonPlayer>false</allowNonPlayer>
@@ -219,7 +217,7 @@
 
     <ThingDef ParentName="WNA_WallWithConduit">
 		<defName>WNA_StuffWall</defName>
-		<label>WNA matwall</label>
+		<label>matwall</label>
 		<description>Form a wall from a piece of actual material. This wall blocks light and takes some more work to build.</description>
 		<graphicData>
 			<texPath>buildings/atlas/wna_wall_Atlas</texPath>
@@ -268,7 +266,7 @@
 	</ThingDef>
     <ThingDef ParentName="WNA_WallWithConduit">
 		<defName>WNA_StuffGrid</defName>
-		<label>WNA matgrid</label>
+		<label>matgrid</label>
 		<description>Form a wall from a piece of actual material. This wall takes some more work to build.</description>
 		<graphicData>
 			<texPath>buildings/atlas/wna_grid_Atlas</texPath>
@@ -315,7 +313,7 @@
 	</ThingDef>
     <ThingDef ParentName="WNA_WallWithConduit">
 		<defName>WNA_StuffDoor</defName>
-		<label>WNA matdoor</label>
+		<label>matdoor</label>
 		<description>Form a door from a piece of actual material. This door blocks light and takes some more work to build.</description>
 		<thingClass>WNA.ThingClass.BarrierDoor</thingClass>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -369,7 +367,6 @@
         <drawerType>MapMeshOnly</drawerType>
         <passability>Standable</passability>
 		<neverMultiSelect>false</neverMultiSelect>
-        <coversFloor>false</coversFloor>
 		<comps>
 			<li Class="CompProperties_Forbiddable">
 				<allowNonPlayer>false</allowNonPlayer>
@@ -382,7 +379,7 @@
 	</ThingDef>
     <ThingDef ParentName="WNA_WallWithConduit">
 		<defName>WNA_StuffODoor</defName>
-		<label>WNA wide matdoor</label>
+		<label>wide matdoor</label>
 		<description>Form a door from a piece of actual material. This door is wide and blocks light and takes some more work to build.</description>
 		<thingClass>Building_MultiTileDoor</thingClass>
 		<altitudeLayer>DoorMoveable</altitudeLayer>
@@ -441,7 +438,6 @@
         <drawerType>RealtimeOnly</drawerType>
         <passability>Standable</passability>
 		<neverMultiSelect>false</neverMultiSelect>
-        <coversFloor>false</coversFloor>
 		<comps>
 			<li Class="CompProperties_Forbiddable">
 				<allowNonPlayer>false</allowNonPlayer>
@@ -534,7 +530,6 @@
 		<useHitPoints>true</useHitPoints>
         <passability>Standable</passability>
 		<neverMultiSelect>false</neverMultiSelect>
-        <coversFloor>false</coversFloor>
 		<statBases>
 			<MaxHitPoints>60000</MaxHitPoints>
 			<WorkToBuild>390</WorkToBuild>
@@ -604,7 +599,6 @@
 		<useHitPoints>true</useHitPoints>
         <passability>Standable</passability>
 		<neverMultiSelect>false</neverMultiSelect>
-        <coversFloor>false</coversFloor>
 		<statBases>
 			<MaxHitPoints>90000</MaxHitPoints>
 			<WorkToBuild>640</WorkToBuild>
