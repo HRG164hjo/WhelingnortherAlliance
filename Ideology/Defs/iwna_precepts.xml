@@ -21,11 +21,16 @@
         <statFactors>
             <MentalBreakThreshold>0</MentalBreakThreshold>
             <CertaintyLossFactor>0</CertaintyLossFactor>
-            <SocialIdeoSpreadFrequencyFactor>99999</SocialIdeoSpreadFrequencyFactor>
-            <ConversionPower>99999</ConversionPower>
-            <SuppressionPower>99999</SuppressionPower>
-            <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">10</ActivitySuppressionRate>
+            <SocialIdeoSpreadFrequencyFactor>999999</SocialIdeoSpreadFrequencyFactor>
+            <ConversionPower>999999</ConversionPower>
+            <SuppressionPower>999999</SuppressionPower>
+            <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">20</ActivitySuppressionRate>
             <WorkSpeedGlobal>20</WorkSpeedGlobal>
+            <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+            <ShootingAccuracyFactor_Touch>10</ShootingAccuracyFactor_Touch>
+            <ShootingAccuracyFactor_Short>10</ShootingAccuracyFactor_Short>
+            <ShootingAccuracyFactor_Medium>10</ShootingAccuracyFactor_Medium>
+            <ShootingAccuracyFactor_Long>10</ShootingAccuracyFactor_Long>
         </statFactors>
         <comps>
             <li Class="PreceptComp_SelfTookMemoryThought">

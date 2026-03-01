@@ -61,14 +61,15 @@ namespace WNA.Damager
             if (!pawn.Dead)
             {
                 pawn.Kill(dinfo);
-                if (!pawn.Dead) pawn.health.SetDead();
+                if (!pawn.Dead)
+                    pawn.health.SetDead();
             }
             damageResult.totalDamageDealt = float.MaxValue;
         }
         private static void PlayWoundedVoiceSound(DamageInfo dinfo, Pawn pawn)
         {
-            if (!pawn.Dead && pawn.SpawnedOrAnyParentSpawned &&
-                dinfo.Def.ExternalViolenceFor(pawn)) LifeStageUtility.PlayNearestLifestageSound(pawn, lifeStage => lifeStage.soundWounded, gene => gene.soundWounded, mutantDef => mutantDef.soundWounded);
+            if (!pawn.Dead && pawn.SpawnedOrAnyParentSpawned)
+                LifeStageUtility.PlayNearestLifestageSound(pawn, lifeStage => lifeStage.soundWounded, gene => gene.soundWounded, mutantDef => mutantDef.soundWounded);
         }
         private void RemoveNonBadHediffs(Pawn pawn)
         {

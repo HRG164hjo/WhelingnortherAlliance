@@ -1091,6 +1091,10 @@
                     <li>Hearing</li>
                 </minCapacities>
             </li>
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.AnimalBehaviours.CompProperties_Draftable">
+				<makeNonFleeingToo>true</makeNonFleeingToo>
+				<canHandleWeapons>true</canHandleWeapons>
+			</li>
         </modExtensions>
 	</ThingDef>
 

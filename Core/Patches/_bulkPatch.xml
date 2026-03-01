@@ -3,6 +3,7 @@
     <Operation Class="PatchOperationFindMod">
 	    <mods>
             <li>Deep Stack</li>
+            <li>OgreStack</li>
 	    </mods>
         <match Class="PatchOperationAdd">
             <xpath>/Defs</xpath>
@@ -212,7 +213,6 @@
                         <li>Drugs</li>
                     </categories>
                     <thingDefs>
-                        <li>Neutroamine</li>
                         <li MayRequire="ludeon.rimworld.biotech">ArchiteCapsule</li>
                         <li MayRequire="ludeon.rimworld.biotech">DeathrestCapacitySerum</li>
                         <li MayRequire="ludeon.rimworld.odyssey">SentienceCatalyst</li>
@@ -237,7 +237,6 @@
                 <li>Drugs</li>
             </categories>
             <thingDefs>
-                <li>Neutroamine</li>
                 <li MayRequire="ludeon.rimworld.biotech">ArchiteCapsule</li>
                 <li MayRequire="ludeon.rimworld.biotech">DeathrestCapacitySerum</li>
                 <li MayRequire="ludeon.rimworld.odyssey">SentienceCatalyst</li>

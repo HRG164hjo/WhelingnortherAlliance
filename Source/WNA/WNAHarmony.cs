@@ -26,9 +26,7 @@ namespace WNAHarmony
                 {
                     MethodInfo subGetter = prop.GetGetMethod();
                     if (subGetter != null)
-                    {
                         harmony.Patch(subGetter, prefix: new HarmonyMethod(prefix));
-                    }
                 }
             }
             harmony.Patch(originalGetter, prefix: new HarmonyMethod(prefix));

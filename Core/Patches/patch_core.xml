@@ -76,15 +76,8 @@
             <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
             <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
             <li MayRequire="biomesteam.biomescaverns">BMT_MushroomLog</li>
+            <li MayRequire="BiomesTeam.BiomesPollutedLands">BMT_Toxwood</li>
             <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_ParasolWoodLog</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_Cork</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_Rattan</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_ReedStalks</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_EbonyWood</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_MahoganyWood</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_RosewoodWood</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_CedarWood</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_Rubber</li>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
@@ -94,15 +87,8 @@
             <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
             <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
             <li MayRequire="biomesteam.biomescaverns">BMT_MushroomLog</li>
+            <li MayRequire="BiomesTeam.BiomesPollutedLands">BMT_Toxwood</li>
             <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_ParasolWoodLog</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_Cork</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_Rattan</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_ReedStalks</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_EbonyWood</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_MahoganyWood</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_RosewoodWood</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_CedarWood</li>
-            <li MayRequire="VVenchov.VVNewHarvest">VV_Rubber</li>
 		</value>
 	</Operation>
 

@@ -1,12 +1,25 @@
 ﻿using RimWorld;
 using RimWorld.Planet;
 using System.Collections.Generic;
+using System.Linq;
 using Verse;
 
 namespace WNA.WNAUtility
 {
     public class General
     {
+        internal static void DebugalDestroy(Thing thing)
+        {
+            Thing.allowDestroyNonDestroyable = true;
+            try
+            {
+                thing.Destroy();
+            }
+            finally
+            {
+                Thing.allowDestroyNonDestroyable = false;
+            }
+        }
         public static void TotalRemoving(Pawn pawn, bool remains = true)
         {
             if (pawn == null || pawn.DestroyedOrNull()) return;
@@ -24,11 +37,9 @@ namespace WNA.WNAUtility
                 pawn.inventory?.DestroyAll();
                 pawn.equipment?.DestroyAllEquipment();
             }
+            DebugalDestroy(pawn);
             if (pawn.IsWorldPawn())
-            {
-                Find.WorldPawns.PassToWorld(pawn, PawnDiscardDecideMode.Discard);
-            }
-            pawn.Destroy(DestroyMode.Vanish);
+                Find.WorldPawns.RemoveAndDiscardPawnViaGC(pawn);
         }
     }
 }

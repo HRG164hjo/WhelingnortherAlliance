@@ -38,7 +38,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>Defs</xpath>
                     <value>
-	                    <RecipeDef>
+	                    <RecipeDef MayRequireAnyOf="ogre.ogrestack,void.deepstack">
                             <defName>WNA_DMSMakePolyester</defName>
                             <label>Make polyester x10000</label>
                             <description>Synthesize synthetic polyester fibers using chemfuel.</description>
@@ -77,7 +77,7 @@
                                 <Polyester>10000</Polyester>
                             </products>
                         </RecipeDef>
-	                    <RecipeDef>
+	                    <RecipeDef MayRequireAnyOf="ogre.ogrestack,void.deepstack">
                             <defName>WNA_DMSMakePlasfiber</defName>
                             <label>Make plasfiber x8000</label>
                             <description>Synthesize a really large batch of plasfiber.</description>
@@ -127,7 +127,7 @@
                                 <Plasfiber>8000</Plasfiber>
                             </products>
                         </RecipeDef>
-	                    <RecipeDef>
+	                    <RecipeDef MayRequireAnyOf="ogre.ogrestack,void.deepstack">
                             <defName>WNA_DMSMakeTungsteel</defName>
                             <label>Make tungsteel x8000</label>
                             <description>Sinter a really large amount of tungsteel.</description>
@@ -181,7 +181,7 @@
                                 <Tungsteel>8000</Tungsteel>
                             </products>
                         </RecipeDef>
-	                    <RecipeDef>
+	                    <RecipeDef MayRequireAnyOf="ogre.ogrestack,void.deepstack">
                             <defName>WNA_DMSMakeCeramics</defName>
                             <label>Make ceramics x8000</label>
                             <description>Making a really large amount of ceramic plates.</description>

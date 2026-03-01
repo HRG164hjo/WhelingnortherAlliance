@@ -2,6 +2,7 @@
 using RimWorld;
 using System.Collections.Generic;
 using System.Reflection;
+using UnityEngine;
 using Verse;
 
 namespace WNA.WNAHarmony
@@ -11,7 +12,9 @@ namespace WNA.WNAHarmony
         private static readonly HashSet<string> terrainList = new HashSet<string>
         {
             "WNA_FocusSoil",
-            "WNA_BridgeSoil"
+            "WNA_BridgeSoil",
+            "WNA_FocusSand",
+            "WNA_FocusSpring"
         };
         private static readonly MethodInfo TargetMethod = AccessTools.Method(typeof(Plant), "CheckMakeLeafless", new System.Type[] { });
         [HarmonyPatch]
@@ -61,9 +64,11 @@ namespace WNA.WNAHarmony
             {
                 if (!__instance.Spawned) return true;
                 TerrainDef terrain = __instance.Map.terrainGrid.TerrainAt(__instance.Position);
+                TerrainDef basetr = DefDatabase<TerrainDef>.GetNamed("WNA_BridgeSoil");
+                float res = Mathf.Max(terrain.fertility, basetr.fertility);
                 if (terrain != null && terrainList.Contains(terrain.defName))
                 {
-                    __result += terrain.fertility;
+                    __result += res;
                     return false;
                 }
                 return true;

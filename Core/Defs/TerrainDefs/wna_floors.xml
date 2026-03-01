@@ -18,30 +18,6 @@
 		</researchPrerequisites>
 	</TerrainDef>
 	<TerrainDef ParentName="WNA_FloorsBase">
-		<defName>WNA_FocusSpring</defName>
-		<label>pale spring</label>
-		<description>Colorless fluid, seems to have some mysterious aspects.</description>
-		<texturePath>terrains/wna_spring</texturePath>
-		<waterDepthShader>Map/WaterDepth</waterDepthShader>
-		<natural>true</natural>
-		<layerable>false</layerable>
-		<renderPrecedence>399</renderPrecedence>
-		<avoidWander>true</avoidWander>
-		<takeSplashes>true</takeSplashes>
-		<affordances Inherit="false">
-			<li>ShallowWater</li>
-			<li>MovingFluid</li>
-		</affordances>
-		<tags>
-			<li>Water</li>
-		</tags>
-		<edgeType>Water</edgeType>
-		<traversedThought>WNA_InFocusSpring</traversedThought>
-		<researchPrerequisites>
-			<li>WNA_WhelingnortherApocalypse</li>
-		</researchPrerequisites>
-	</TerrainDef>
-	<TerrainDef ParentName="WNA_FloorsBase">
 		<defName>WNA_FocusSoil</defName>
 		<label>dim soil</label>
 		<description>Dim colorless soil, vitality is pulsing through it.</description>
@@ -53,7 +29,6 @@
 			<li>Diggable</li>
 			<li>GrowSoil</li>
 			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_GrowAsh</li>
-			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_AshCastle</li>
 			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_GrowSoilVine</li>
 		</affordances>
 		<tags>
@@ -68,6 +43,45 @@
 		</researchPrerequisites>
 	</TerrainDef>
 	<TerrainDef ParentName="WNA_FloorsBase">
+		<defName>WNA_FocusSpring</defName>
+		<label>pale spring</label>
+		<description>Colorless fluid, seems to have some mysterious aspects.</description>
+		<texturePath>terrains/wna_spring</texturePath>
+		<waterDepthShader>Map/WaterDepth</waterDepthShader>
+		<natural>true</natural>
+		<layerable>false</layerable>
+		<renderPrecedence>399</renderPrecedence>
+		<avoidWander>true</avoidWander>
+		<takeSplashes>true</takeSplashes>
+    	<waterBodyType>Other</waterBodyType>
+    	<canFreeze>false</canFreeze>
+		<affordances Inherit="false">
+			<li>ShallowWater</li>
+			<li>MovingFluid</li>
+			<li>WaterproofConduitable</li>
+		</affordances>
+		<tags>
+			<li>Water</li>
+		</tags>
+		<edgeType>Water</edgeType>
+		<traversedThought>WNA_InFocusSpring</traversedThought>
+		<researchPrerequisites>
+			<li>WNA_WhelingnortherApocalypse</li>
+		</researchPrerequisites>
+		<fertility MayRequire="BiomesTeam.BiomesCore">1</fertility>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl" MayRequire="BiomesTeam.BiomesCore">
+				<terrainTags>
+					<li>Water</li>
+					<li>Shallow</li>
+					<!--<li>Fresh</li>
+					<li>ChestDeep</li>
+					<li>Boggy</li>-->
+				</terrainTags>
+			</li>
+		</modExtensions>
+	</TerrainDef>
+	<TerrainDef ParentName="WNA_FloorsBase">
 		<defName>WNA_FocusSand</defName>
 		<label>dim sand</label>
 		<description>These sands have ran out of their color.</description>
@@ -78,7 +92,6 @@
 		<affordances>
 			<li>Diggable</li>
 		</affordances>
-		<fertility>0</fertility>
 		<edgeType>FadeRough</edgeType>
 		<researchPrerequisites>
 			<li>WNA_WhelingnortherApocalypse</li>
@@ -142,7 +155,6 @@
 			<li>Light</li>
 			<li>GrowSoil</li>
 			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_GrowAsh</li>
-			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_AshCastle</li>
 			<li MayRequire="dankpyon.medieval.overhaul">DankPyon_GrowSoilVine</li>
 		</affordances>
 		<costList>
@@ -155,7 +167,7 @@
 			<li>Soil</li>
 			<li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_Ash</li>
 		</tags>
-		<fertility>3.4</fertility>
+		<fertility>8</fertility>
 		<researchPrerequisites>
 			<li>WNA_MilitaryMaterial</li>
 		</researchPrerequisites>

@@ -72,6 +72,26 @@
 			<li Class="WNA.DMExtension.MassCapacity">
 				<massCapacity>60000</massCapacity>
 			</li>
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
+				<preventDowning>true</preventDowning>
+				<preventBleeding>true</preventBleeding>
+                <preventKilling>true</preventKilling>
+                <preventKillingUntilHealthHPPercentage>0.05</preventKillingUntilHealthHPPercentage>
+				<pawnCapacityMinLevels>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <minLevel>0.6</minLevel>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <minLevel>0.6</minLevel>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <minLevel>0.6</minLevel>
+                    </li>
+				</pawnCapacityMinLevels>
+			</li>
 		</modExtensions>
     </ThingDef>
     
@@ -466,7 +486,6 @@
             <ComponentIndustrial>3</ComponentIndustrial>
 	    </costList>
         <equippedStatOffsets>
-            <AimingDelayFactor>-1</AimingDelayFactor>
             <RangedCooldownFactor>-1</RangedCooldownFactor>
         </equippedStatOffsets>
         <recipeMaker>
@@ -481,8 +500,10 @@
             </recipeUsers>
         </recipeMaker>
         <modExtensions>
-            <li Class="VEF.Apparels.ApparelExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
 				<equippedStatFactors>
+                    <AimingDelayFactor>0.1</AimingDelayFactor>
+                    <RangedCooldownFactor>0</RangedCooldownFactor>
                     <VEF_VerbRangeFactor>2</VEF_VerbRangeFactor>
 				</equippedStatFactors>
 			</li>
@@ -508,7 +529,7 @@
 		<comps>
             <li Class="WNA.ThingCompProp.PropShieldGenerator">
                 <ticksToReset>250</ticksToReset>
-                <energyMax>600</energyMax>
+                <energyMax>2000</energyMax>
             </li>
 		</comps>
         <recipeMaker>
@@ -654,6 +675,50 @@
             <li Class="WNA.DMExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
+				<preventDowning>true</preventDowning>
+				<preventKilling>true</preventKilling>
+                <preventKillingUntilHealthHPPercentage>0</preventKillingUntilHealthHPPercentage>
+				<preventBleeding>true</preventBleeding>
+				<pawnCapacityMinLevels>
+					<li>
+						<capacity>Consciousness</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<minLevel>1</minLevel>
+					</li>
+                    <li>
+                        <capacity>Sight</capacity>
+						<minLevel>0.7</minLevel>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+						<minLevel>0.7</minLevel>
+                    </li>
+					<li>
+						<capacity>Breathing</capacity>
+						<minLevel>0.7</minLevel>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<minLevel>0.7</minLevel>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<minLevel>0.7</minLevel>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<minLevel>0.7</minLevel>
+					</li>
+				</pawnCapacityMinLevels>
+			</li>
         </modExtensions>
     </ThingDef>
     
@@ -767,6 +832,21 @@
             <li Class="WNA.DMExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
+				<equippedStatFactors>
+                    <AimingDelayFactor>0</AimingDelayFactor>
+				</equippedStatFactors>
+				<pawnCapacityMinLevels>
+					<li>
+						<capacity>Sight</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Hearing</capacity>
+						<minLevel>1</minLevel>
+					</li>
+				</pawnCapacityMinLevels>
+			</li>
         </modExtensions>
     </ThingDef>
     <ThingDef ParentName="WNA_ApparelBase">
@@ -824,6 +904,14 @@
             <li Class="WNA.DMExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
+				<equippedStatFactors>
+                    <MeleeDamageFactor>50</MeleeDamageFactor>
+                    <VEF_RangeAttackDamageFactor>50</VEF_RangeAttackDamageFactor>
+                    <FilthRate>0</FilthRate>
+                    <Flammability>0</Flammability>
+				</equippedStatFactors>
+			</li>
         </modExtensions>
     </ThingDef>
     <ThingDef ParentName="WNA_ApparelBase">
@@ -967,6 +1055,55 @@
             <li Class="WNA.DMExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
+				<preventDowning>true</preventDowning>
+				<preventKilling>true</preventKilling>
+                <preventKillingUntilHealthHPPercentage>0</preventKillingUntilHealthHPPercentage>
+				<preventBleeding>true</preventBleeding>
+                <equippedStatFactors>
+      				<SocialImpact>2000</SocialImpact>
+					<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">2000</ConversionPower>
+					<SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">2000</SocialIdeoSpreadFrequencyFactor>
+				</equippedStatFactors>
+				<pawnCapacityMinLevels>
+					<li>
+						<capacity>Consciousness</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<minLevel>1</minLevel>
+					</li>
+                    <li>
+                        <capacity>Sight</capacity>
+						<minLevel>1</minLevel>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+						<minLevel>1</minLevel>
+                    </li>
+					<li>
+						<capacity>Breathing</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<minLevel>1</minLevel>
+					</li>
+				</pawnCapacityMinLevels>
+			</li>
         </modExtensions>
     </ThingDef>
 

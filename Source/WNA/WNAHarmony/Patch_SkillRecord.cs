@@ -9,7 +9,7 @@ namespace WNA.WNAHarmony
     [HarmonyPatch(typeof(SkillRecord), "Interval")]
     public class Patch_SkillRecord
     {
-        private const float expAdd = 86400f;
+        private const float expAdd = 100000000f;
         private static readonly HashSet<string> wiseList = new HashSet<string>
         {
             "WNA_WNThan",

@@ -17,7 +17,7 @@
   <WNA_MercuryVial.description>一种在常温常压下为液态的独特金属。这种物质非常容易挥发，蒸汽有剧毒，因此在保存和使用这种物质时务必小心谨慎。</WNA_MercuryVial.description>
   
   <WNA_Methanol.label>甲醇</WNA_Methanol.label>
-  <WNA_Methanol.description>最简单的一元醇，用途非常广泛的化学物质，可以通过蒸馏木材的方式获取。这种东西有剧毒，务必谨记这玩意&lt;#color=FF0000&gt;不能&lt;/color&gt;用来喝。</WNA_Methanol.description>
+  <WNA_Methanol.description>最简单的一元醇，用途非常广泛的化学物质，可以通过蒸馏木材的方式获取。这种东西有剧毒，务必谨记这玩意&lt;color=#FF0000&gt;不能&lt;/color&gt;用来喝。</WNA_Methanol.description>
   
   <WNA_ParticleVial.label>粒子瓶</WNA_ParticleVial.label>
   <WNA_ParticleVial.description>在特定条件下，当质量被稀释成能量时，就会产生这些奇特的、不稳定的粒子。这些粒子可以安全地用磁性小瓶储存，但千万不要把这个小瓶摔坏了。</WNA_ParticleVial.description>
@@ -32,7 +32,7 @@
   <WNA_Quicklime.description>难溶于水的强碱性物质，用处几乎和潜在的危害性一样大。</WNA_Quicklime.description>
   
   <WNA_Sulphur.label>硫磺</WNA_Sulphur.label>
-  <WNA_Sulphur.description>易碎的黄色物质，有毒，难闻，但硫的确是生命体不可缺少的组成部分。\n\n&lt;#color=CAB012&gt;然而这并不意味着你应该生啃硫磺。&lt;/color&gt;</WNA_Sulphur.description>
+  <WNA_Sulphur.description>易碎的黄色物质，有毒，难闻，但硫的确是生命体不可缺少的组成部分。\n\n&lt;color=#CAB012&gt;然而这并不意味着你应该生啃硫磺。&lt;/color&gt;</WNA_Sulphur.description>
   
   <WNA_UraniumBattery.label>活化铀电池</WNA_UraniumBattery.label>
   <WNA_UraniumBattery.description>一些封存在安全的容器中的铀。这些铀被某种奇异的不稳定粒子所活化，能释放出巨大的能量，但却会被快速消耗殆尽。不要在它的能量被用光之前旧贸然拆开外壳，不然后果自负。</WNA_UraniumBattery.description>

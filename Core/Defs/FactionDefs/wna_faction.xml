@@ -158,7 +158,26 @@
         <hiddenIdeo MayRequire="Ludeon.Rimworld.Ideology">true</hiddenIdeo>
         <ideoName MayRequire="Ludeon.Rimworld.Ideology">Whelingnorther Holyorder</ideoName>
         <ideoDescription MayRequire="Ludeon.Rimworld.Ideology">When the ancient whelingnorthans faced annihilation, it was their effort and sacrifice that led to the greatness and glory of Whelingnorther Empire; when the ancestors of us rise from the humble, it was their effort and sacrifices that led to we Whelingnorther Alliance. Any great work requires sacrifices to forge, without great destruction can there be no great rebirth, without great devotions  will we not achieve eternity, salvation and immortality. We descendants will follow the path led by those who came before us; we will see our duty and accept our manifest destiny; we shall alter and determine the past, the present and the future. Every corner of existance shall bath in the glory of Whelignorther, they need not understand, only shall they obey.</ideoDescription>
-        <modExtensions/>
+        <modExtensions>
+            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="KCSG.CustomGenOption">
+                <canSpawnSettlements>true</canSpawnSettlements>
+                <preventBridgeable>true</preventBridgeable>
+                <tryFindFreeArea>false</tryFindFreeArea>
+                <chooseFromlayouts>
+                    <li>WNASettlement_A</li>
+                    <li>WNASettlement_B</li>
+                    <li>WNASettlement_C</li>
+                    <li>WNASettlement_D</li>
+                    <li>WNASettlement_E</li>
+                    <li>WNASettlement_F</li>
+                    <li>WNASettlement_G</li>
+                </chooseFromlayouts>
+            </li>
+            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Factions.FactionDefExtension">
+                <neverConnectToRoads>true</neverConnectToRoads>
+                <excludeFromQuests>true</excludeFromQuests>
+            </li>
+        </modExtensions>
     </FactionDef>
 
     <ThingSetMakerDef>
@@ -184,7 +203,7 @@
                 <li>r_name->[Digit][Digit][Digit]th [pfix]</li>
                 <li>r_name->[Digit][Digit][Digit][Digit]th [pfix]</li>
                 <li>r_name(p=0.001)->HRG164HJO</li>
-                <li>r_name(p=0.001)->[HRG]</li>
+                <li>r_name(p=0.02)->[HRG]</li>
                 <!---->
                 <li>pfix->Facility</li>
                 <li>pfix->Outpost</li>
