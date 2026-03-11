@@ -11,7 +11,7 @@
             <color>(255,255,255,250)</color>
         </graphicData>
         <statBases>
-            <MarketValue>40</MarketValue>
+            <MarketValue>20</MarketValue>
             <Nutrition>2</Nutrition>
         </statBases>
         <socialPropernessMatters>true</socialPropernessMatters>
@@ -83,26 +83,30 @@
             <color>(255,255,255,250)</color>
         </graphicData>
         <statBases>
-            <MarketValue>50</MarketValue>
+            <MarketValue>30</MarketValue>
             <MedicalPotency>255</MedicalPotency>
             <MedicalQualityMax>999999</MedicalQualityMax>
         </statBases>
         <comps>
-            <!--<li Class="CompProperties_Usable">
+            <li Class="CompProperties_Usable">
                 <useJob>UseItem</useJob>
                 <useLabel>Use {0_label}</useLabel>
                 <useDuration>0</useDuration>
+                <warmupMote>Mote_ResurrectAbility</warmupMote>
                 <showUseGizmo>true</showUseGizmo>
             </li>
             <li Class="CompProperties_Targetable">
-                <compClass>CompTargetable</compClass>
-                <ignoreQuestLodgerPawns>false</ignoreQuestLodgerPawns>
+                <compClass>CompTargetable_SingleCorpse</compClass>
+                <fleshCorpsesOnly>true</fleshCorpsesOnly>
+                <nonDessicatedCorpsesOnly>false</nonDessicatedCorpsesOnly>
             </li>
             <li Class="CompProperties_TargetEffectResurrect">
                 <moteDef>Mote_ResurrectFlash</moteDef>
-            </li>-->
+                <withSideEffects>false</withSideEffects>
+                <addsHediff MayRequire="ludeon.rimworld.anomaly">DeathRefusalCreepJoiner</addsHediff>
+            </li>
             <li Class="WNA.ThingCompProp.PropMultiUse">
-                <uses>9</uses>
+                <uses>4</uses>
             </li>
         </comps>
         <thingCategories>

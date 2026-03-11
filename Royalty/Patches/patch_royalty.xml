@@ -6,22 +6,22 @@
             <li Class="StockGenerator_SingleDef">
                 <thingDef>PsychicAmplifier</thingDef>
                 <price>VeryCheap</price>
-                <countRange>200000~300000</countRange>
+                <countRange>20000000~30000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>BroadshieldCore</thingDef>
                 <price>VeryCheap</price>
-                <countRange>200000~300000</countRange>
+                <countRange>20000000~30000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>AnimusStone</thingDef>
                 <price>VeryCheap</price>
-                <countRange>20000~30000</countRange>
+                <countRange>5000000~5000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef" MayRequire="regrowth.botr.core">
                 <thingDef>RG_AnimaSeed</thingDef>
                 <price>VeryCheap</price>
-                <countRange>100000~200000</countRange>
+                <countRange>10000000~20000000</countRange>
             </li>
         </value>
     </Operation>

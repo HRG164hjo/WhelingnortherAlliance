@@ -7,32 +7,32 @@
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Gravcore</thingDef>
                 <price>VeryCheap</price>
-                <countRange>200000~300000</countRange>
+                <countRange>20000000~30000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>GravlitePanel</thingDef>
                 <price>VeryCheap</price>
-                <countRange>300000~500000</countRange>
+                <countRange>30000000~50000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>SentienceCatalyst</thingDef>
                 <price>VeryCheap</price>
-                <countRange>100000~200000</countRange>
+                <countRange>10000000~20000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>ShuttleEngine</thingDef>
                 <price>VeryCheap</price>
-                <countRange>500000~800000</countRange>
+                <countRange>50000000~80000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>BlocksVacstone</thingDef>
                 <price>VeryCheap</price>
-                <countRange>800000~1000000</countRange>
+                <countRange>70000000~80000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>ArcheanSeed</thingDef>
                 <price>VeryCheap</price>
-                <countRange>100000~200000</countRange>
+                <countRange>20000000~30000000</countRange>
             </li>
             <li Class="StockGenerator_Tag">
                 <tradeTag>GravshipUpgrade</tradeTag>

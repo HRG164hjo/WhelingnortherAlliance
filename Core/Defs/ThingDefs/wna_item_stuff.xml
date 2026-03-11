@@ -52,44 +52,11 @@
         <deepLumpSizeRange>6~10</deepLumpSizeRange>
     </ThingDef>
     
-    <!-- mili -->    
-    <ThingDef ParentName="WNA_StuffBase">
-        <defName>WNA_Desolisium</defName>
-        <label>desolisium alloy</label>
-        <description>A copy of an military alloy material which possesses bright metallic hue, excellent durability and insulation properties. Great for making armors.</description>
-        <graphicData>
-            <texPath>item/wna_alloy</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
-            <drawSize>0.85</drawSize>
-        </graphicData>
-        <statBases>
-            <MarketValue>35</MarketValue>
-            <StuffPower_Armor_Sharp>24.5</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>22.0</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>20.0</StuffPower_Armor_Heat>
-            <StuffPower_Insulation_Cold>60</StuffPower_Insulation_Cold>
-            <StuffPower_Insulation_Heat>60</StuffPower_Insulation_Heat>
-            <SharpDamageMultiplier>35</SharpDamageMultiplier>
-            <BluntDamageMultiplier>20</BluntDamageMultiplier>
-        </statBases>
-        <stuffProps>
-            <categories>
-                <li>Metallic</li>
-            </categories>
-            <appearance>Metal</appearance>
-            <color>(180,189,199)</color>
-            <statFactors>
-                <MaxHitPoints>225</MaxHitPoints>
-                <DoorOpenSpeed>1.5</DoorOpenSpeed>
-                <IncomingDamageFactor>0.1</IncomingDamageFactor>
-            </statFactors>
-            <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
-        </stuffProps>
-    </ThingDef>
+    <!-- mili -->
     
     <ThingDef ParentName="WNA_StuffBase">
         <defName>WNA_Concrete</defName>
-        <label>reinforced concrete</label>
+        <label>reinforced structure plate</label>
         <description>Improved concrete reinforced with metal frame structure, not only practical but also universal, and looks not bad.</description>
         <graphicData>
             <texPath>item/wna_concrete</texPath>
@@ -97,21 +64,23 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>15</MarketValue>
-            <StuffPower_Armor_Sharp>5.5</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>2.0</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
-            <StuffPower_Insulation_Cold>15</StuffPower_Insulation_Cold>
-            <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
-            <BluntDamageMultiplier>5</BluntDamageMultiplier>
+            <MarketValue>10</MarketValue>
+            <StuffPower_Armor_Sharp>34</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>35</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>20</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>60</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>40</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>35</SharpDamageMultiplier>
+            <BluntDamageMultiplier>20</BluntDamageMultiplier>
         </statBases>
         <stuffProps>
             <categories>
                 <li>Woody</li>
                 <li>Stony</li>
+                <li>Metallic</li>
             </categories>
             <appearance>Bricks</appearance>
-            <color>(86,88,94)</color>
+            <color>(67,75,88)</color>
             <statOffsets>
                 <Beauty>4</Beauty>
             </statOffsets>
@@ -136,10 +105,10 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>35</MarketValue>
-            <StuffPower_Armor_Sharp>25</StuffPower_Armor_Sharp>
+            <MarketValue>14</MarketValue>
+            <StuffPower_Armor_Sharp>26</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>20</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>28</StuffPower_Armor_Heat>
+            <StuffPower_Armor_Heat>38</StuffPower_Armor_Heat>
             <StuffPower_Insulation_Cold>50</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>50</StuffPower_Insulation_Heat>
         </statBases>
@@ -173,7 +142,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>100</MarketValue>
+            <MarketValue>66</MarketValue>
             <StuffPower_Armor_Sharp>1386</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>1481</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>1262</StuffPower_Armor_Heat>
@@ -214,7 +183,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>55</MarketValue>
+            <MarketValue>36</MarketValue>
             <StuffPower_Armor_Sharp>2500</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>1000</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>4000</StuffPower_Armor_Heat>
@@ -245,7 +214,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>20</MarketValue>
+            <MarketValue>16</MarketValue>
         </statBases>
         <stuffProps>
             <categories>
@@ -271,7 +240,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>500</MarketValue>
+            <MarketValue>432</MarketValue>
             <StuffPower_Armor_Sharp>100000</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>100000</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>100000</StuffPower_Armor_Heat>

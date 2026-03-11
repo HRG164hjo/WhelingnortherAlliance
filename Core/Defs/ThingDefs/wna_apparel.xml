@@ -29,6 +29,16 @@
             <ArmorRating_Blunt>2</ArmorRating_Blunt>
             <ArmorRating_Heat>2</ArmorRating_Heat>
             <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <PainShockThreshold>1</PainShockThreshold>
+            <SocialImpact>1</SocialImpact>
+            <ToxicResistance>1</ToxicResistance>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <Flammability>-1</Flammability>
+            <ResearchSpeed MayRequire="Ludeon.RimWorld.Anomaly">1</ResearchSpeed>
+            <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">1</EntityStudyRate>
+            <StaggerDurationFactor MayRequire="Ludeon.RimWorld.Biotech">-1</StaggerDurationFactor>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1</SlaveSuppressionOffset>
+            <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">1</SuppressionPower>
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
         </equippedStatOffsets>
         <apparel>
@@ -105,7 +115,7 @@
         </graphicData>
 	    <costList>
 	        <WNA_AttunementFabric>20</WNA_AttunementFabric>
-            <WNA_Desolisium>15</WNA_Desolisium>
+            <Plasteel>15</Plasteel>
 	    </costList>
         <statBases>
             <MarketValue>800</MarketValue>
@@ -153,7 +163,7 @@
 		</graphicData>
 	    <costList>
 	        <WNA_AttunementFabric>60</WNA_AttunementFabric>
-            <WNA_Desolisium>40</WNA_Desolisium>
+            <Plasteel>40</Plasteel>
             <ComponentIndustrial>2</ComponentIndustrial>
 	    </costList>
         <statBases>
@@ -207,7 +217,7 @@
             <texPath>apparel/vanguardhead/icon_vanguardhead</texPath>
         </graphicData>
 	    <costList>
-            <WNA_Desolisium>45</WNA_Desolisium>
+            <Uranium>45</Uranium>
             <ComponentIndustrial>1</ComponentIndustrial>
 	    </costList>
         <statBases>
@@ -255,7 +265,7 @@
 			<texPath>apparel/vanguardplate/icon_vanguardplate</texPath>
 		</graphicData>
 	    <costList>
-            <WNA_Desolisium>80</WNA_Desolisium>
+            <Uranium>80</Uranium>
             <WNA_AttunementFabric>20</WNA_AttunementFabric>
             <ComponentIndustrial>4</ComponentIndustrial>
             <ComponentSpacer>1</ComponentSpacer>
@@ -310,7 +320,7 @@
             <color>(74,70,74)</color>
         </graphicData>
 	    <costList>
-            <WNA_Desolisium>60</WNA_Desolisium>
+            <Uranium>60</Uranium>
             <WNA_Voidsteel>20</WNA_Voidsteel>
             <ComponentSpacer>4</ComponentSpacer>
 	    </costList>
@@ -358,7 +368,7 @@
             <color>(74,70,74)</color>
 		</graphicData>
 	    <costList>
-            <WNA_Desolisium>240</WNA_Desolisium>
+            <Uranium>240</Uranium>
             <WNA_Voidsteel>80</WNA_Voidsteel>
             <ComponentSpacer>8</ComponentSpacer>
 	    </costList>
@@ -486,7 +496,8 @@
             <ComponentIndustrial>3</ComponentIndustrial>
 	    </costList>
         <equippedStatOffsets>
-            <RangedCooldownFactor>-1</RangedCooldownFactor>
+            <RangedCooldownFactor>-0.96</RangedCooldownFactor>
+            <AimingDelayFactor>-1.44</AimingDelayFactor>
         </equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>
@@ -502,8 +513,6 @@
         <modExtensions>
             <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
 				<equippedStatFactors>
-                    <AimingDelayFactor>0.1</AimingDelayFactor>
-                    <RangedCooldownFactor>0</RangedCooldownFactor>
                     <VEF_VerbRangeFactor>2</VEF_VerbRangeFactor>
 				</equippedStatFactors>
 			</li>
@@ -523,7 +532,7 @@
 			<Mass>0.5</Mass>
         </statBases>
 	    <costList>
-	        <WNA_Desolisium>25</WNA_Desolisium>
+	        <Plasteel>25</Plasteel>
             <ComponentIndustrial>4</ComponentIndustrial>
 	    </costList>
 		<comps>
@@ -563,7 +572,7 @@
 			<Mass>0.5</Mass>
         </statBases>
         <costList>
-	        <WNA_Desolisium>40</WNA_Desolisium>
+	        <Plasteel>40</Plasteel>
             <ComponentSpacer>4</ComponentSpacer>
 	    </costList>
 		<comps>
@@ -605,7 +614,7 @@
 			<Mass>0.5</Mass>
         </statBases>
         <costList>
-	        <WNA_Desolisium>60</WNA_Desolisium>
+	        <Uranium>60</Uranium>
             <ComponentSpacer>2</ComponentSpacer>
             <WNA_UraniumBattery>2</WNA_UraniumBattery>
 	    </costList>
@@ -648,7 +657,7 @@
         </statBases>
         <costList>
 	        <WNA_Voidsteel>30</WNA_Voidsteel>
-	        <WNA_Desolisium>40</WNA_Desolisium>
+	        <Uranium>40</Uranium>
             <ComponentSpacer>10</ComponentSpacer>
 	    </costList>
 		<comps>
@@ -803,6 +812,7 @@
             <SuppressionPower>2000</SuppressionPower>
             <ShootingAccuracyPawn>20</ShootingAccuracyPawn>
             <RangedCooldownFactor>-20</RangedCooldownFactor>
+            <AimingDelayFactor>-20</AimingDelayFactor>
             <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
         </equippedStatOffsets>
@@ -935,15 +945,25 @@
             <Insulation_Heat>2000</Insulation_Heat>
         </statBases>
         <equippedStatOffsets>
-            <MeleeDodgeChance>10</MeleeDodgeChance>
-            <ImmunityGainSpeed>10</ImmunityGainSpeed>
-            <InjuryHealingFactor>10</InjuryHealingFactor>
+            <MeleeDodgeChance>20</MeleeDodgeChance>
+            <ImmunityGainSpeed>20</ImmunityGainSpeed>
+            <InjuryHealingFactor>20</InjuryHealingFactor>
             <CarryingCapacity>100000</CarryingCapacity>
-            <ArmorRating_Sharp>100000</ArmorRating_Sharp>
-            <ArmorRating_Blunt>100000</ArmorRating_Blunt>
-            <ArmorRating_Heat>100000</ArmorRating_Heat>
+            <ArmorRating_Sharp>2000</ArmorRating_Sharp>
+            <ArmorRating_Blunt>2000</ArmorRating_Blunt>
+            <ArmorRating_Heat>2000</ArmorRating_Heat>
             <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
-            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+            <PainShockThreshold>20</PainShockThreshold>
+            <SocialImpact>20</SocialImpact>
+            <ToxicResistance>1</ToxicResistance>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <Flammability>-20</Flammability>
+            <ResearchSpeed MayRequire="Ludeon.RimWorld.Anomaly">20</ResearchSpeed>
+            <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">20</EntityStudyRate>
+            <StaggerDurationFactor MayRequire="Ludeon.RimWorld.Biotech">-20</StaggerDurationFactor>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-20</SlaveSuppressionOffset>
+            <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">20</SuppressionPower>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">20</VacuumResistance>
         </equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
@@ -1023,6 +1043,10 @@
             <MarketValue>2000</MarketValue>
 			<Mass>0.5</Mass>
         </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>100000</SocialImpact>
+            <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">100000</SuppressionPower>
+        </equippedStatOffsets>
         <costList>
             <Leather_Human>75</Leather_Human>
             <HemogenPack MayRequire="ludeon.rimworld.biotech">3</HemogenPack>

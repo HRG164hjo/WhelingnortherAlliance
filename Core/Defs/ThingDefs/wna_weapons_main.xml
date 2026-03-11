@@ -27,7 +27,7 @@
 			</li>
 		</tools>
 		<costList>
-			<WNA_Desolisium>40</WNA_Desolisium>
+			<Steel>40</Steel>
 		</costList>
 		<weaponTags>
 			<li>Tag_WNACivilian</li>
@@ -66,7 +66,7 @@
 		</statBases>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>40</WNA_Desolisium>
+			<Plasteel>40</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<weaponTags>
@@ -145,7 +145,7 @@
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>30</WNA_Desolisium>
+			<Steel>30</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<weaponTags>
@@ -348,7 +348,7 @@
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>40</WNA_Desolisium>
+			<Plasteel>40</Plasteel>
 			<ComponentSpacer>1</ComponentSpacer>
 		</costList>
 		<weaponTags>
@@ -443,7 +443,7 @@
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>55</WNA_Desolisium>
+			<Steel>55</Steel>
 			<ComponentSpacer>3</ComponentSpacer>
 			<WNA_UraniumBattery>1</WNA_UraniumBattery>
 		</costList>
@@ -544,7 +544,7 @@
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>40</WNA_Desolisium>
+			<Plasteel>40</Plasteel>
 			<WNA_Voidsteel>10</WNA_Voidsteel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
@@ -622,7 +622,7 @@
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>50</WNA_Desolisium>
+			<Plasteel>50</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 			<WNA_UraniumBattery>1</WNA_UraniumBattery>
 		</costList>
@@ -725,7 +725,7 @@
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>50</WNA_Desolisium>
+			<Uranium>50</Uranium>
 			<ComponentSpacer>2</ComponentSpacer>
 			<WNA_UraniumBattery>1</WNA_UraniumBattery>
 		</costList>
@@ -809,7 +809,7 @@
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>55</WNA_Desolisium>
+			<Plasteel>55</Plasteel>
 			<WNA_Voidsteel>15</WNA_Voidsteel>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
@@ -891,7 +891,7 @@
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>75</WNA_Desolisium>
+			<Uranium>75</Uranium>
 			<WNA_HalogenVial>3</WNA_HalogenVial>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
@@ -981,7 +981,7 @@
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>80</WNA_Desolisium>
+			<Uranium>80</Uranium>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
@@ -1060,7 +1060,7 @@
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>80</WNA_Desolisium>
+			<Uranium>80</Uranium>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
@@ -1148,7 +1148,8 @@
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>90</WNA_Desolisium>
+			<Uranium>60</Uranium>
+			<Plasteel>40</Plasteel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
@@ -1249,7 +1250,7 @@
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>50</WNA_Desolisium>
+			<Plasteel>50</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 			<WNA_UraniumBattery>1</WNA_UraniumBattery>
 		</costList>
@@ -1332,7 +1333,7 @@
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
-			<WNA_Desolisium>50</WNA_Desolisium>
+			<Plasteel>50</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 			<WNA_UraniumBattery>1</WNA_UraniumBattery>
 		</costList>

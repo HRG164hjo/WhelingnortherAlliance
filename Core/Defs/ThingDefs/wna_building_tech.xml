@@ -12,7 +12,7 @@
 		</graphicData>
         <minifiedDef IsNull="true"/>
         <thingCategories IsNull="true"/>
-        <size>(3, 3)</size>
+        <size>(3,3)</size>
         <researchPrerequisites>
             <li>WNA_AdvancedArsenal</li>
         </researchPrerequisites>
@@ -20,6 +20,11 @@
         <defaultPlacingRot>North</defaultPlacingRot>
 		<castEdgeShadows>false</castEdgeShadows>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
+        <costList>
+            <Plasteel>40</Plasteel>
+            <WNA_AttunementFabric>60</WNA_AttunementFabric>
+            <ComponentSpacer>5</ComponentSpacer>
+        </costList>
         <comps>
             <li Class="CompProperties_CausesGameCondition">
                 <conditionDef>WNA_GameCond_ClimateControl</conditionDef>
@@ -31,6 +36,36 @@
         <placeWorkers>
             <li>WNA.WNAMiscs.PlaceWorker_SingleOnMap</li>
         </placeWorkers>
+	</ThingDef>
+
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_MultiToolBox</defName>
+		<label>multitool box</label>
+		<description>todo.</description>
+        <graphicData>
+			<texPath>Things/Building/Misc/MultiAnalyzer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <drawSize>(1,1)</drawSize>
+		</graphicData>
+        <size>(1,1)</size>
+        <researchPrerequisites>
+            <li>WNA_AdvancedProduction</li>
+        </researchPrerequisites>
+        <fillPercent>0.2</fillPercent>
+        <defaultPlacingRot>North</defaultPlacingRot>
+        <costList>
+            <Steel>30</Steel>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <WorkTableWorkSpeedFactor>1.44</WorkTableWorkSpeedFactor>
+                </statOffsets>
+                <maxSimultaneous>16</maxSimultaneous>
+            </li>
+        </comps>
 	</ThingDef>
 
 </Defs>

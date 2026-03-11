@@ -6,33 +6,33 @@
             <li Class="StockGenerator_SingleDef">
                 <thingDef>HarbingerSeed</thingDef>
                 <price>VeryCheap</price>
-                <countRange>100000~200000</countRange>
+                <countRange>20000000~30000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Shard</thingDef>
                 <price>VeryCheap</price>
-                <countRange>300000~500000</countRange>
+                <countRange>30000000~50000000</countRange>
             </li>
             <li Class="StockGenerator_Tag">
                 <tradeTag>Serum</tradeTag>
                 <thingDefCountRange>2~2</thingDefCountRange>
-                <countRange>100000~200000</countRange>
+                <countRange>10000000~20000000</countRange>
                 <price>VeryCheap</price>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>GoldenCube</thingDef>
                 <price>VeryCheap</price>
-                <countRange>120000~120000</countRange>
+                <countRange>1200000~1200000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>RevenantSpine</thingDef>
                 <price>VeryCheap</price>
-                <countRange>100000~100000</countRange>
+                <countRange>1000000~1000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>MonolithFragment</thingDef>
                 <price>VeryCheap</price>
-                <countRange>200000~200000</countRange>
+                <countRange>2000000~2000000</countRange>
             </li>
         </value>
     </Operation>

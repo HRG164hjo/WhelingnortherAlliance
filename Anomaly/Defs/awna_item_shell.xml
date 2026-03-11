@@ -9,7 +9,7 @@
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
-            <MarketValue>100</MarketValue>
+            <MarketValue>140</MarketValue>
         </statBases>
         <projectileWhenLoaded>WNA_ShellPsychic_Proj</projectileWhenLoaded>
         <costList>

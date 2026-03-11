@@ -27,7 +27,7 @@
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[@Name="WNA_ApparelBase"]/equippedStatOffsets</xpath>
+        <xpath>Defs/ThingDef[defName="WNA_StdMiliSuit" or defName="WNA_AllianceRobe"]/equippedStatOffsets</xpath>
         <value>
             <Mashed_Ashlands_AshResistance MayRequire="sirmashedpotato.ashlands">1</Mashed_Ashlands_AshResistance>
 

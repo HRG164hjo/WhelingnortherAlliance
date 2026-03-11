@@ -40,6 +40,7 @@
             </li>
         </stockGenerators>
     </TraderKindDef>
+
     <TraderKindDef ParentName="WNA_TraderKindBase">
         <defName>WNA_Trader_Orbital</defName>
         <label>whelingnorther orbital storage</label>
@@ -53,6 +54,41 @@
                         <chance>1</chance>
                     </li>
                 </countChances>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+    
+    <TraderKindDef ParentName="WNA_TraderKindBase">
+        <defName>WNA_Trader_Scavenger</defName>
+        <label>whelingnorther orbital scavenger</label>
+        <orbital>true</orbital>
+        <commonality>1</commonality>
+        <stockGenerators Inherit="false">
+            <li Class="WNA.WNAMiscs.StockGenerator_BuyAnything"/>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>2000000000~2147483647</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Gold</thingDef>
+                <countRange>2000000000~2147483647</countRange>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>Chunks</categoryDef>
+                <thingDefCountRange>30~36</thingDefCountRange>
+                <countRange>2000000000~2147483647</countRange>
+                <price>VeryCheap</price>
+            </li>
+            <li Class="StockGenerator_Category" MayRequire="ludeon.rimworld.odyssey">
+                <categoryDef>Fish</categoryDef>
+                <thingDefCountRange>12~15</thingDefCountRange>
+                <countRange>50000000~70000000</countRange>
+                <price>VeryCheap</price>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Skull</thingDef>
+                <price>VeryCheap</price>
+                <countRange>50000000~70000000</countRange>
             </li>
         </stockGenerators>
     </TraderKindDef>

@@ -58,6 +58,7 @@
         <visitorTraderKinds/>
         <orbitalTraderKinds>
             <li>WNA_Trader_Orbital</li>
+            <li>WNA_Trader_Scavenger</li>
         </orbitalTraderKinds>
         <baseTraderKinds>
             <li>WNA_Trader_Settlement</li>

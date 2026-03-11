@@ -89,6 +89,9 @@
             <li MayRequire="biomesteam.biomescaverns">BMT_MushroomLog</li>
             <li MayRequire="BiomesTeam.BiomesPollutedLands">BMT_Toxwood</li>
             <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_ParasolWoodLog</li>
+            <li MayRequire="vvenchov.vvnewharvest">VV_Cork</li>
+            <li MayRequire="vvenchov.vvnewharvest">VV_Rattan</li>
+            <li MayRequire="vvenchov.vvnewharvest">VV_ReedStalks</li>
 		</value>
 	</Operation>
 
@@ -138,8 +141,16 @@
 	    <xpath>Defs/ThingDef/plant/blockAdjacentSow</xpath>
     </Operation>
 
+    <Operation Class="PatchOperationInsert">
+	    <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="ToolCabinet"]</xpath>
+        <value>
+            <li>WNA_MultiToolBox</li>
+        </value>
+    </Operation>
+
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/ThingDef[defName="Plant_Agave"]/plant</xpath>
+        <order>Append</order>
         <value>
             <sowTags>
                 <li>Ground</li>

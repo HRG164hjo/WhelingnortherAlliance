@@ -319,7 +319,7 @@
             <WorkToBuild>7500</WorkToBuild>
         </statBases>
         <costList>
-            <WNA_Desolisium>40</WNA_Desolisium>
+            <Uranium>40</Uranium>
             <WNA_Concrete>60</WNA_Concrete>
             <ReinforcedBarrel>1</ReinforcedBarrel>
         </costList>

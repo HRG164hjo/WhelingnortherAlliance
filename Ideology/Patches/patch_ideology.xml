@@ -50,7 +50,7 @@
             <li Class="StockGenerator_SingleDef">
                 <thingDef>GauranlenSeed</thingDef>
                 <price>VeryCheap</price>
-                <countRange>100000~200000</countRange>
+                <countRange>50000000~80000000</countRange>
             </li>
         </value>
     </Operation>

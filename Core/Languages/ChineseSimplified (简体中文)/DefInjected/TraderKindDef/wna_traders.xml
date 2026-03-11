@@ -7,4 +7,7 @@
   <!-- EN: whelingnorther branch storage -->
   <WNA_Trader_Settlement.label>威灵诺德分支库存</WNA_Trader_Settlement.label>
   
+  <!-- EN: whelingnorther orbital scavenger -->
+  <WNA_Trader_Scavenger.label>威灵诺德轨道回收作业</WNA_Trader_Scavenger.label>
+  
 </LanguageData>

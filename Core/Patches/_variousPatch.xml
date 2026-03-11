@@ -56,6 +56,18 @@
     <Operation Class="PatchOperationRemove">
         <xpath>Defs/ThingDef[@ParentName="MechSerumBase"]/tradeability</xpath>
     </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="ChunkBase"]</xpath>
+        <value>
+            <tradeability>All</tradeability>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef/tradeability[text()="Sellable"]</xpath>
+        <value>
+            <tradeability>All</tradeability>
+        </value>
+    </Operation>
 
     <!--<Operation Class="PatchOperationAdd">
         <xpath>Defs/RoofDef[defName="RoofConstructed"]</xpath>

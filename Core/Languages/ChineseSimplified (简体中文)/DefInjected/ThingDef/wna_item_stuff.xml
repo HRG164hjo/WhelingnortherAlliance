@@ -21,8 +21,8 @@
   <!-- EN: One kind of mercury-containing ore, red in color, looks nice. It's relatively stable so you can use it to construct something, if you dare. -->
   <WNA_Cinnabar.description>一种含汞矿石，颜色红艳漂亮。如果你敢的话，这种材料未尝不能用来造些什么东西。</WNA_Cinnabar.description>
   
-  <!-- EN: reinforced concrete -->
-  <WNA_Concrete.label>钢筋混凝土</WNA_Concrete.label>
+  <!-- EN: reinforced structure plate -->
+  <WNA_Concrete.label>强化构装板</WNA_Concrete.label>
   <!-- EN: Improved concrete reinforced with metal frame structure, not only practical but also universal, and looks not bad. -->
   <WNA_Concrete.description>用金属框架强化的改良型混凝土，不仅非常实用且通用，看起来也不差。</WNA_Concrete.description>
   
@@ -30,12 +30,7 @@
   <WNA_DarkAsbestos.label>黑石棉</WNA_DarkAsbestos.label>
   <!-- EN: A bunch of black inorganic fiber, names as "asbestos" as it's originally made from stone materials. Unusually durable. Rumours said sentient creatures can attune to this fiber to gain great strength from it, but whether this mathod exists is still unproven. -->
   <WNA_DarkAsbestos.description>一把黑色的无机纤维，因为最初由石质材料制得而被命名为“石棉”。这种材料超乎寻常的结实。传言称智慧生物可以与这种物质相调谐以从中汲取巨大的力量，但这种方法是否存在还尚未可知。</WNA_DarkAsbestos.description>
-  
-  <!-- EN: desolisium alloy -->
-  <WNA_Desolisium.label>孤立合金</WNA_Desolisium.label>
-  <!-- EN: A copy of an military alloy material which possesses brown hue, excellent durability and insulation properties. Great for making armors. -->
-  <WNA_Desolisium.description>一种有着明亮金属色泽的威灵军部军用合金的仿制品，具有优异的耐久性和绝缘性，是很好的装甲制造材料。</WNA_Desolisium.description>
-  
+    
   <!-- EN: voidsteel -->
   <WNA_Voidsteel.label>虚空灵铁</WNA_Voidsteel.label>
   <!-- EN: A thick, light, transparent, mysterious matter, looks oily, feels like liquid, natually sharp-shaped. Though it's named as voidsteel, it doesn't come from the void actually. People who knows this matter well usually describe this as something flows out from dark side of one's mind. -->

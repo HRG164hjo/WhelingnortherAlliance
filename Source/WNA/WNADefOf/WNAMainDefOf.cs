@@ -54,12 +54,8 @@ namespace WNA.WNADefOf
 
         public static ThingDef WNA_WNThan;
         public static ThingDef WNA_Human;
-        //public static ThingDef WNA_DimBoo;
-        //public static ThingDef WNA_ThornBoo;
-        //public static ThingDef WNA_FerosBoo;
 
         public static ThingDef WNA_Cinnabar;
-        public static ThingDef WNA_Desolisium;
         public static ThingDef WNA_Concrete;
         public static ThingDef WNA_AttunementFabric;
         public static ThingDef WNA_Voidsteel;

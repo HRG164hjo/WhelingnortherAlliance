@@ -12,14 +12,14 @@ namespace WNA.WNAHarmony
         [HarmonyPostfix]
         private static void PostFix(Pawn p, ref float __result)
         {
-            float pawnbase = __result;
+            float pawnbase = 0f;
+            float pawnbonus = 0f;
             var Ext = p.def.GetModExtension<MassCapacity>();
             if (Ext != null)
             {
                 float f = Mathf.Max((float)Ext.massCapacity, 1f);
                 pawnbase = p.BodySize * f;
             }
-            float pawnbonus = 0f;
             if (p.apparel != null)
             {
                 foreach (Apparel apparel in p.apparel.WornApparel)

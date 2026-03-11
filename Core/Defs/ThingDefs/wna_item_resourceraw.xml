@@ -11,7 +11,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>40</MarketValue>
+            <MarketValue>8</MarketValue>
         </statBases>
     </ThingDef>
     
@@ -39,7 +39,7 @@
             <drawSize>0.7</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>60</MarketValue>
+            <MarketValue>50</MarketValue>
         </statBases>
         <deepCommonality>0.5</deepCommonality>
         <deepCountPerPortion>35</deepCountPerPortion>
@@ -56,7 +56,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>35</MarketValue>
+            <MarketValue>18</MarketValue>
         </statBases>
         <deepCommonality>0.4</deepCommonality>
         <deepCountPerPortion>30</deepCountPerPortion>
@@ -75,7 +75,7 @@
         <useHitPoints>true</useHitPoints>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
-            <MarketValue>35</MarketValue>
+            <MarketValue>32</MarketValue>
             <Flammability>100</Flammability>
         </statBases>
         <deepCommonality>0.4</deepCommonality>
@@ -93,7 +93,7 @@
             <drawSize>0.7</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>80</MarketValue>
+            <MarketValue>90</MarketValue>
         </statBases>
         <deepCommonality>0.8</deepCommonality>
         <deepCountPerPortion>45</deepCountPerPortion>
@@ -218,7 +218,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
-            <MarketValue>1</MarketValue>
+            <MarketValue>6</MarketValue>
             <Mass>60</Mass>
         </statBases>
     </ThingDef>
@@ -234,7 +234,7 @@
             <drawSize>0.85</drawSize>
         </graphicData>
         <statBases>
-            <MarketValue>300</MarketValue>
+            <MarketValue>255</MarketValue>
         </statBases>
     </ThingDef>
     

@@ -63,22 +63,22 @@
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Mechlink</thingDef>
                 <price>VeryCheap</price>
-                <countRange>200000~300000</countRange>
+                <countRange>20000000~30000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>ArchiteCapsule</thingDef>
                 <price>VeryCheap</price>
-                <countRange>300000~500000</countRange>
+                <countRange>30000000~50000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>DeathrestCapacitySerum</thingDef>
                 <price>VeryCheap</price>
-                <countRange>200000~300000</countRange>
+                <countRange>20000000~30000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>PoluxSeed</thingDef>
                 <price>VeryCheap</price>
-                <countRange>100000~200000</countRange>
+                <countRange>20000000~30000000</countRange>
             </li>
         </value>
     </Operation>

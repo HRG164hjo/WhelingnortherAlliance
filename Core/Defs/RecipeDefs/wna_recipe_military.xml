@@ -59,26 +59,52 @@
                 <filter>
                     <thingDefs>
                         <li>Steel</li>
-                        <li>Silver</li>
                         <li>Gold</li>
                         <li>Plasteel</li>
+                        <li>Uranium</li>
+                        <li>Silver</li>
+                        <li>WNA_MercuryVial</li>
+                        <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                        <li>Jade</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
                     </thingDefs>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
                 </filter>
                 <count>25</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
             <thingDefs>
                 <li>Steel</li>
-                <li>Silver</li>
                 <li>Gold</li>
                 <li>Plasteel</li>
+                <li>Uranium</li>
+                <li>Silver</li>
+                <li>WNA_MercuryVial</li>
+                <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
                 <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                <li>Jade</li>
+                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
@@ -100,26 +126,52 @@
                 <filter>
                     <thingDefs>
                         <li>Steel</li>
-                        <li>Silver</li>
                         <li>Gold</li>
                         <li>Plasteel</li>
+                        <li>Uranium</li>
+                        <li>Silver</li>
+                        <li>WNA_MercuryVial</li>
+                        <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                        <li>Jade</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
                     </thingDefs>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
                 </filter>
                 <count>500</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
             <thingDefs>
                 <li>Steel</li>
-                <li>Silver</li>
                 <li>Gold</li>
                 <li>Plasteel</li>
+                <li>Uranium</li>
+                <li>Silver</li>
+                <li>WNA_MercuryVial</li>
+                <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
                 <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                <li>Jade</li>
+                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
+                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
+                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
+                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
@@ -149,28 +201,35 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>WNA_Quicklime</li>
+                        <li>Steel</li>
+                        <li>Gold</li>
+                        <li>Plasteel</li>
+                        <li>Uranium</li>
+                        <li>Silver</li>
+                        <li>WNA_MercuryVial</li>
+                        <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
+                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
+                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                     </thingDefs>
                 </filter>
-                <count>10</count>
-            </li>
-            <li>
-                <filter>
-                    <categories>
-                        <li>Textiles</li>
-                    </categories>
-                </filter>
-                <count>40</count>
+                <count>15</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
                 <li>WNA_FabricBaseboard</li>
-                <li>WNA_Quicklime</li>
+                <li>Steel</li>
+                <li>Gold</li>
+                <li>Plasteel</li>
+                <li>Uranium</li>
+                <li>Silver</li>
+                <li>WNA_MercuryVial</li>
+                <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
+                <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
+                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
+                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
             </thingDefs>
-            <categories>
-                <li>Textiles</li>
-            </categories>
         </fixedIngredientFilter>
         <products>
             <WNA_AttunementFabric>75</WNA_AttunementFabric>
@@ -195,6 +254,9 @@
                         <li>Silver</li>
                         <li>Gold</li>
                         <li>Plasteel</li>
+                        <li>Uranium</li>
+                        <li>WNA_MercuryVial</li>
+                        <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
@@ -204,71 +266,8 @@
             </li>
             <li>
                 <filter>
-                    <categories>
-                        <li>StoneChunks</li>
-                    </categories>
-                </filter>
-                <count>1</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>Steel</li>
-                <li>Silver</li>
-                <li>Gold</li>
-                <li>Plasteel</li>
-                <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
-                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
-                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
-            </thingDefs>
-            <categories>
-                <li>StoneChunks</li>
-            </categories>
-        </fixedIngredientFilter>
-        <products>
-            <WNA_Concrete>50</WNA_Concrete>
-        </products>
-        <workAmount>500</workAmount>
-        <recipeUsers>
-	        <li>ElectricSmelter</li>
-	        <li>ElectricCrematorium</li>
-	    </recipeUsers>
-        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
-    </RecipeDef>
-    <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNA_MakeConcreteToo</defName>
-        <label>make reinforced concrete</label>
-        <description>make an advanced concrete sufficient for building.</description>
-        <jobString>making reinforced concrete.</jobString>
-        <ingredients>
-            <li>
-                <filter>
                     <thingDefs>
-                        <li>Steel</li>
-                        <li>Silver</li>
-                        <li>Gold</li>
-                        <li>Plasteel</li>
-                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
-                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
-                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
-                    </thingDefs>
-                </filter>
-                <count>10</count>
-            </li>
-            <li>
-                <filter>
-                    <categories>
-                        <li>StoneBlocks</li>
-                    </categories>
-                    <thingDefs>
-                        <li>Jade</li>
                         <li>WNA_Quicklime</li>
-                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
-                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
-                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
-                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
-                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
-                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
                     </thingDefs>
                 </filter>
                 <count>20</count>
@@ -280,21 +279,14 @@
                 <li>Silver</li>
                 <li>Gold</li>
                 <li>Plasteel</li>
+                <li>Uranium</li>
+                <li>WNA_MercuryVial</li>
+                <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
                 <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
-                <li>Jade</li>
                 <li>WNA_Quicklime</li>
-                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
-                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
-                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
-                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
-                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
-                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
             </thingDefs>
-            <categories>
-                <li>StoneBlocks</li>
-            </categories>
         </fixedIngredientFilter>
         <products>
             <WNA_Concrete>50</WNA_Concrete>
@@ -303,141 +295,6 @@
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	        <li>ElectricCrematorium</li>
-	    </recipeUsers>
-        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
-    </RecipeDef>
-
-    <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNA_MakeDesolisium</defName>
-        <label>make desolisium</label>
-        <description>make an alloy sufficient for various uses.</description>
-        <jobString>making desolisium.</jobString>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Steel</li>
-                        <li>Silver</li>
-                        <li>Gold</li>
-                        <li>Plasteel</li>
-                        <li>Uranium</li>
-                        <li>WNA_MercuryVial</li>
-                        <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
-                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
-                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
-                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
-                    </thingDefs>
-                </filter>
-                <count>75</count>
-            </li>
-            <li>
-                <filter>
-                    <categories>
-                        <li>StoneChunks</li>
-                    </categories>
-                </filter>
-                <count>1</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>Steel</li>
-                <li>Silver</li>
-                <li>Gold</li>
-                <li>Plasteel</li>
-                <li>Uranium</li>
-                <li>WNA_MercuryVial</li>
-                <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
-                <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
-                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
-                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
-            </thingDefs>
-            <categories>
-                <li>StoneChunks</li>
-            </categories>
-        </fixedIngredientFilter>
-        <products>
-            <WNA_Desolisium>75</WNA_Desolisium>
-        </products>
-        <workAmount>500</workAmount>
-        <recipeUsers>
-	        <li>ElectricSmelter</li>
-	    </recipeUsers>
-        <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
-    </RecipeDef>
-    <RecipeDef ParentName="WNA_RecipeBase">
-        <defName>WNA_MakeDesolisiumToo</defName>
-        <label>make desolisium</label>
-        <description>make an alloy sufficient for various uses.</description>
-        <jobString>making desolisium.</jobString>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>Steel</li>
-                        <li>Silver</li>
-                        <li>Gold</li>
-                        <li>Plasteel</li>
-                        <li>Uranium</li>
-                        <li>WNA_MercuryVial</li>
-                        <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
-                        <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
-                        <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
-                        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
-                    </thingDefs>
-                </filter>
-                <count>50</count>
-            </li>
-            <li>
-                <filter>
-                    <categories>
-                        <li>StoneBlocks</li>
-                    </categories>
-                    <thingDefs>
-                        <li>WNA_Quicklime</li>
-                        <li>Jade</li>
-                        <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
-                        <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
-                        <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
-                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
-                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
-                        <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
-                    </thingDefs>
-                </filter>
-                <count>30</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>Steel</li>
-                <li>Silver</li>
-                <li>Gold</li>
-                <li>Plasteel</li>
-                <li>Uranium</li>
-                <li>WNA_MercuryVial</li>
-                <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
-                <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
-                <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
-                <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
-                <li>WNA_Quicklime</li>
-                <li>Jade</li>
-                <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
-                <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
-                <li MayRequire="biomesteam.biomescaverns">BMT_Sand</li>
-                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
-                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
-                <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
-            </thingDefs>
-            <categories>
-                <li>StoneBlocks</li>
-            </categories>
-        </fixedIngredientFilter>
-        <products>
-            <WNA_Desolisium>75</WNA_Desolisium>
-        </products>
-        <workAmount>500</workAmount>
-        <recipeUsers>
-	        <li>ElectricSmelter</li>
 	    </recipeUsers>
         <researchPrerequisite>WNA_MilitaryMaterial</researchPrerequisite>
     </RecipeDef>
