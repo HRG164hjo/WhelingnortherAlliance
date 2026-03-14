@@ -245,7 +245,6 @@
         <rotatable>true</rotatable>
 		<passability>PassThroughOnly</passability>
         <defaultPlacingRot>South</defaultPlacingRot>
-		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.2</staticSunShadowHeight>
 		<useHitPoints>true</useHitPoints>
         <statBases Inherit="false">
@@ -287,7 +286,6 @@
         <rotatable>true</rotatable>
 		<passability>PassThroughOnly</passability>
         <defaultPlacingRot>South</defaultPlacingRot>
-		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.3</staticSunShadowHeight>
 		<useHitPoints>true</useHitPoints>
         <statBases Inherit="false">
@@ -350,11 +348,12 @@
 			<graphicClass>Graphic_Single</graphicClass>
             <drawRotated>false</drawRotated>
             <color>(74,74,74)</color>
+            <drawSize>(2,2)</drawSize>
 		</graphicData>
+        <size>(2,2)</size>
         <rotatable>true</rotatable>
 		<passability>PassThroughOnly</passability>
         <defaultPlacingRot>South</defaultPlacingRot>
-		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>0.6</staticSunShadowHeight>
 		<useHitPoints>true</useHitPoints>
         <hasInteractionCell>true</hasInteractionCell>
@@ -376,12 +375,9 @@
         <comps>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>200</basePowerConsumption>
+                <basePowerConsumption>500</basePowerConsumption>
             </li>
-            <li Class="WNA.ThingCompProp.PropStarcoreDriller">
-                <workPerPortion>60000</workPerPortion>
-                <autoDrillEfficiency>20</autoDrillEfficiency>
-            </li>
+            <li Class="WNA.ThingCompProp.PropStarcoreDriller"/>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Forbiddable"/>
         </comps>

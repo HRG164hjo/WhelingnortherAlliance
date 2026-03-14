@@ -133,7 +133,7 @@ namespace WNA.ThingCompProp
             };
             foreach (ThingDef plantDef in crops)
             {
-                ThingDef localDef = plantDef; // 防闭包问题（稳妥写法）
+                ThingDef localDef = plantDef;
                 options.Add(new FloatMenuOption(
                     localDef.LabelCap,
                     () => ChooseCrop(localDef),

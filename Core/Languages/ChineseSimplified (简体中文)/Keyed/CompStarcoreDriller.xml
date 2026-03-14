@@ -15,7 +15,7 @@
   <WNA.CompStarcoreDriller.InspectMode>当前模式</WNA.CompStarcoreDriller.InspectMode>
   
   <WNA.CompStarcoreDriller.SelectResourceTitle>选择钻取目标资源：</WNA.CompStarcoreDriller.SelectResourceTitle>
-  <WNA_Default>无（默认基岩）</WNA_Default>
+  <WNA_Default>无</WNA_Default>
   <WNA_NoValidResources>未找到可钻取资源（请检查过滤条件）</WNA_NoValidResources>
 
 </LanguageData>

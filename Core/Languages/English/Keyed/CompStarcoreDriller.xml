@@ -15,7 +15,7 @@
   <WNA.CompStarcoreDriller.InspectMode>cur mode</WNA.CompStarcoreDriller.InspectMode>
   
   <WNA.CompStarcoreDriller.SelectResourceTitle>select targeted resource</WNA.CompStarcoreDriller.SelectResourceTitle>
-  <WNA_Default>none (treat as biome bedrock)</WNA_Default>
+  <WNA_Default>none</WNA_Default>
   <WNA_NoValidResources>no valid resource (pls check the filters)</WNA_NoValidResources>
 
 </LanguageData>

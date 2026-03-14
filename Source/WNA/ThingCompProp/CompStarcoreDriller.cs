@@ -27,8 +27,7 @@ namespace WNA.ThingCompProp
         private bool autoMode;
         private Effecter activeEffecter;
         private ThingDef selectedResource;
-        public bool IsAutoMode() => autoMode;
-        public float ProgressToNextPortionPercent => Props.workPerPortion <= 0f ? 0f : portionProgress / Props.workPerPortion;
+        public float ProgressToNextPortionPercent => portionProgress / Props.workPerPortion;
         public ThingDef SelectedResource => selectedResource;
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
@@ -66,6 +65,8 @@ namespace WNA.ThingCompProp
         {
             if (!parent.Spawned || parent.Map == null) return false;
             if (powerComp != null && !powerComp.PowerOn) return false;
+            if (selectedResource == null) return false;
+            if (autoMode == true) return false;
             return true;
         }
         public void DrillWorkDone(Pawn driller, int delta)
@@ -77,7 +78,8 @@ namespace WNA.ThingCompProp
             if (speed <= 0f) return;
             float miningYield = driller != null ? driller.GetStatValue(StatDefOf.MiningYield) : 1f;
             float work = speed * delta;
-            portionProgress += work;
+            portionProgress += work * (driller != null ?
+                (driller.health.capacities.GetLevel(PawnCapacityDefOf.Manipulation) * 1.414f) : 1f);
             accumulatedYieldWork += work * miningYield;
             lastUsedTick = Find.TickManager.TicksGame;
             while (portionProgress >= Props.workPerPortion)
@@ -90,11 +92,10 @@ namespace WNA.ThingCompProp
         }
         private void TryProducePortion(float yieldPct, Pawn driller)
         {
-            ThingDef resDef = selectedResource ?? GetDefaultResource();
-            if (resDef == null || parent.Map == null) return;
-            int baseCount = GetCountPerPortion(resDef);
+            if (selectedResource == null || parent.Map == null) return;
+            int baseCount = GetCountPerPortion(selectedResource);
             int stackCount = Mathf.Max(1, GenMath.RoundRandom(baseCount * yieldPct));
-            Thing thing = ThingMaker.MakeThing(resDef);
+            Thing thing = ThingMaker.MakeThing(selectedResource);
             thing.stackCount = stackCount;
             GenPlace.TryPlaceThing(
                 thing,
@@ -102,13 +103,12 @@ namespace WNA.ThingCompProp
                 parent.Map,
                 ThingPlaceMode.Near,
                 null,
-                p => p != parent.Position && p != parent.InteractionCell
-            );
+                p => p != parent.Position && p != parent.InteractionCell);
             if (driller != null)
             {
                 Find.HistoryEventsManager.RecordEvent(
-                    new HistoryEvent(HistoryEventDefOf.Mined, driller.Named(HistoryEventArgsNames.Doer))
-                );
+                    new HistoryEvent(HistoryEventDefOf.Mined,
+                    driller.Named(HistoryEventArgsNames.Doer)));
             }
         }
         private int GetCountPerPortion(ThingDef def)
@@ -116,17 +116,6 @@ namespace WNA.ThingCompProp
             if (def.deepCountPerPortion > 0) return def.deepCountPerPortion;
             if (DrillTargetUtility.IsChunk(def)) return 1;
             return Mathf.Max(1, Props.fallbackCountPerPortion);
-        }
-        private ThingDef GetDefaultResource()
-        {
-            Map map = parent.Map;
-            if (map == null) return null;
-            if (map.Biome.hasBedrock)
-            {
-                ThingDef rock = DeepDrillUtility.RockForTerrain(map.terrainGrid.BaseTerrainAt(parent.Position));
-                if (rock?.building?.mineableThing != null) return rock.building.mineableThing;
-            }
-            return DeepDrillUtility.Rocks?.RandomElementWithFallback()?.building?.mineableThing;
         }
         private void EnsureEffecter()
         {
@@ -164,16 +153,23 @@ namespace WNA.ThingCompProp
         }
         public override string CompInspectStringExtra()
         {
-            string res = selectedResource?.LabelCap.ToString() ?? "WNA.CompStarcoreDriller.DefaultBedrock".Translate();
-            return "WNA.CompStarcoreDriller.InspectTarget".Translate(res) + "\n" +
-               "WNA.CompStarcoreDriller.InspectProgress".Translate(ProgressToNextPortionPercent.ToStringPercent("F0")) + "\n" +
-               "WNA.CompStarcoreDriller.InspectMode".Translate(autoMode ? "WNA_Auto".Translate() : "WNA_Manual".Translate());
+            if (selectedResource == null)
+                return "WNA_Default".Translate();
+            string resLabel = selectedResource?.LabelCap.ToString() ?? "WNA.CompStarcoreDriller.DefaultBedrock".Translate();
+            string modLabel = autoMode ? "WNA_Auto".Translate() : "WNA_Manual".Translate();
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.AppendLine("WNA.CompStarcoreDriller.InspectTarget".Translate() + ": " + resLabel);
+            sb.AppendLine("WNA.CompStarcoreDriller.InspectProgress".Translate() + ": " + ProgressToNextPortionPercent.ToStringPercent("F0"));
+            sb.Append("WNA.CompStarcoreDriller.InspectMode".Translate() + ": " + modLabel);
+            return sb.ToString().TrimEnd();
         }
         public void GenerateResourceMenu()
         {
             List<ThingDef> candidates = DrillTargetUtility.GetCachedCandidates();
-            List<FloatMenuOption> options = new List<FloatMenuOption>();
-            options.Add(new FloatMenuOption("WNA_Default".Translate(), () => SetResource(null)));
+            List<FloatMenuOption> options = new List<FloatMenuOption>
+            {
+                new FloatMenuOption("WNA_Default".Translate(), () => SetResource(null))
+            };
             foreach (ThingDef def in candidates)
             {
                 ThingDef localDef = def;
@@ -192,28 +188,18 @@ namespace WNA.ThingCompProp
     }
     internal static class DrillTargetUtility
     {
-        private static ThingCategoryDef chunkCategory;
         private static List<ThingDef> cachedCandidates;
-        private static ThingCategoryDef ChunkCategory
-        {
-            get
-            {
-                if (chunkCategory == null)
-                    chunkCategory = DefDatabase<ThingCategoryDef>.GetNamedSilentFail("Chunks");
-                return chunkCategory;
-            }
-        }
         public static bool IsChunk(ThingDef def)
         {
-            return def?.thingCategories != null && ChunkCategory != null && def.thingCategories.Contains(ChunkCategory);
+            return def?.thingCategories != null &&
+                (def.thingCategories.Contains(
+                    DefDatabase<ThingCategoryDef>.GetNamedSilentFail("Chunks")) ||
+                def.thingCategories.Contains(
+                    DefDatabase<ThingCategoryDef>.GetNamedSilentFail("StoneChunks")));
         }
         public static bool IsValidDrillTarget(ThingDef def)
         {
-            if (def == null) return false;
-            if (def.category != ThingCategory.Item) return false;
-            if (def.IsApparel || def.IsWeapon || def.IsCorpse) return false;
-            if (def.plant != null) return false;
-
+            if (def == null || def.category != ThingCategory.Item) return false;
             bool isDeep = def.deepCommonality > 0f;
             bool isChunk = IsChunk(def);
             return isDeep || isChunk;

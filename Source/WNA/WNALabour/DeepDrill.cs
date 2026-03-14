@@ -12,30 +12,24 @@ namespace WNA.WNALabour
         public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial);
         public override PathEndMode PathEndMode => PathEndMode.InteractionCell;
         public override Danger MaxPathDanger(Pawn pawn) => Danger.Deadly;
-
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
             foreach (Building b in pawn.Map.listerBuildings.allBuildingsColonist)
             {
                 var comp = b.GetComp<CompStarcoreDriller>();
-                if (comp != null && !comp.IsAutoMode())
+                if (comp != null)
                     yield return b;
             }
         }
-
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
             if (t.Faction != pawn.Faction) return false;
-            if (!(t is Building b)) return false;
-            var comp = b.GetComp<CompStarcoreDriller>();
-            if (comp == null || comp.IsAutoMode() || !comp.CanDrillNow()) return false;
-            if (!pawn.CanReserve(b, 1, -1, null, forced)) return false;
-            if (b.Map.designationManager.DesignationOn(b, DesignationDefOf.Uninstall) != null) return false;
-            if (b.IsBurning()) return false;
-
+            var comp = t.TryGetComp<CompStarcoreDriller>();
+            if (comp == null || !comp.CanDrillNow()) return false;
+            if (!pawn.CanReserve(t, 1, -1, null, forced)) return false;
+            if (t.Map.designationManager.DesignationOn(t, DesignationDefOf.Uninstall) != null) return false;
             return true;
         }
-
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
             return JobMaker.MakeJob(WNAMainDefOf.WNA_Job_DeepDrilling, t, 1500, checkOverrideOnExpiry: true);
@@ -47,7 +41,6 @@ namespace WNA.WNALabour
         {
             return pawn.Reserve(job.targetA, job, 1, -1, null, errorOnFailed);
         }
-
         protected override IEnumerable<Toil> MakeNewToils()
         {
             this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
@@ -59,9 +52,7 @@ namespace WNA.WNALabour
                 CompStarcoreDriller comp = thing?.TryGetComp<CompStarcoreDriller>();
                 return comp == null || !comp.CanDrillNow();
             });
-
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.InteractionCell);
-
             Toil work = ToilMaker.MakeToil("OperateStarcoreDrill");
             work.tickIntervalAction = delta =>
             {
