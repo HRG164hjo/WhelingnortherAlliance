@@ -5,17 +5,17 @@ using Verse;
 using Verse.AI;
 using WNA.WNAMiscs;
 
-namespace WNA.JobDriverClass
+namespace WNA.WNALabour
 {
-    public class Revive : JobDriver
+    public class JD_Revive : JobDriver
     {
         private Mote warmupMote;
-        private Thing target => job.GetTarget(TargetIndex.A).Thing;
-        private Thing item => job.GetTarget(TargetIndex.B).Thing;
+        private Thing Target => job.GetTarget(TargetIndex.A).Thing;
+        private Thing Item => job.GetTarget(TargetIndex.B).Thing;
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            if (pawn.Reserve(target, job, 1, -1, null, errorOnFailed))
-                return pawn.Reserve(item, job, 1, -1, null, errorOnFailed);
+            if (pawn.Reserve(Target, job, 1, -1, null, errorOnFailed))
+                return pawn.Reserve(Item, job, 1, -1, null, errorOnFailed);
             return false;
         }
         protected override IEnumerable<Toil> MakeNewToils()
@@ -29,9 +29,9 @@ namespace WNA.JobDriverClass
             toil.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
             toil.tickAction = delegate
             {
-                CompUsable compUsable = item.TryGetComp<CompUsable>();
+                CompUsable compUsable = Item.TryGetComp<CompUsable>();
                 if (compUsable != null && warmupMote == null && compUsable.Props.warmupMote != null)
-                    warmupMote = MoteMaker.MakeAttachedOverlay(target, compUsable.Props.warmupMote, Vector3.zero);
+                    warmupMote = MoteMaker.MakeAttachedOverlay(Target, compUsable.Props.warmupMote, Vector3.zero);
                 warmupMote?.Maintain();
             };
             yield return toil;
@@ -40,7 +40,7 @@ namespace WNA.JobDriverClass
 
         private void ReviveFunc()
         {
-            if (target is Pawn pawn && !pawn.Dead)
+            if (Target is Pawn pawn && !pawn.Dead)
             {
                 HediffSet hediffSet = pawn.health.hediffSet;
                 List<Hediff> hediffsToRemove = new List<Hediff>();
@@ -53,9 +53,9 @@ namespace WNA.JobDriverClass
                 }
                 foreach (Hediff hediff in hediffsToRemove)
                     pawn.health.RemoveHediff(hediff);
-                    
+
             }
-            else if (target is Corpse corpse && !corpse.Destroyed)
+            else if (Target is Corpse corpse && !corpse.Destroyed)
             {
                 Pawn innerPawn = corpse.InnerPawn;
                 ResurrectionUtility.TryResurrect(innerPawn);
@@ -67,7 +67,7 @@ namespace WNA.JobDriverClass
                 Log.Error("[WNA.JobDriverClass.Revive] revive target is invalid!");
                 return;
             }
-            item.SplitOff(1).Destroy();
+            Item.SplitOff(1).Destroy();
         }
     }
 }

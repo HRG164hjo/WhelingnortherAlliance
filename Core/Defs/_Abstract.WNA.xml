@@ -420,6 +420,7 @@
         </affordances>
         <generatedFilth/>
         <statBases>
+            <MarketValue>0</MarketValue>
             <CleaningTimeFactor>0.01</CleaningTimeFactor>
             <WorkToBuild>20</WorkToBuild>
             <Beauty>10</Beauty>
@@ -506,6 +507,7 @@
             </shadowData>
 		</graphicData>
         <statBases>
+            <MarketValue>0</MarketValue>
             <Mass>0.1</Mass>
             <Comfort>200</Comfort>
 			<Beauty>200</Beauty>
@@ -1139,7 +1141,7 @@
                     <li>Chocolate</li>
                     <li>Dye</li>
                 </excludedThingDefs>
-                <thingDefCountRange>8~8</thingDefCountRange>
+                <thingDefCountRange>7~8</thingDefCountRange>
                 <countRange>80000000~100000000</countRange>
                 <price>VeryCheap</price>
             </li>
@@ -1148,7 +1150,7 @@
                 <excludedCategories>
                     <li>EggsFertilized</li>
                 </excludedCategories>
-                <thingDefCountRange>8~8</thingDefCountRange>
+                <thingDefCountRange>8~9</thingDefCountRange>
                 <countRange>80000000~100000000</countRange>
                 <price>VeryCheap</price>
             </li>
@@ -1254,6 +1256,11 @@
                 <categoryDef>RB_Beekeeping</categoryDef>
                 <thingDefCountRange>4~4</thingDefCountRange>
                 <countRange>50000000~80000000</countRange>
+                <price>VeryCheap</price>
+            </li>
+            <li Class="StockGenerator_SingleDef" MayRequire="romyashi.writhingtree">
+                <thingDef>Romy_WrithingSeed</thingDef>
+                <countRange>5000000~5000000</countRange>
                 <price>VeryCheap</price>
             </li>
         </stockGenerators>

@@ -29,7 +29,7 @@
             <Beauty>0</Beauty>
             <WorkToBuild>4000</WorkToBuild>
             <GravshipRange>500</GravshipRange>
-            <SubstructureSupport>125660</SubstructureSupport>
+            <SubstructureSupport>250000</SubstructureSupport>
         </statBases>
         <costList>
             <GravlitePanel>180</GravlitePanel>
@@ -50,7 +50,7 @@
         <thingCategories Inherits="false" IsNull="true"/>
         <comps>
             <li Class="CompProperties_SubstructureFootprint">
-                <radius>200</radius>
+                <radius>500</radius>
             </li>
             <li Class="CompProperties_AffectedByFacilities">
                 <linkableFacilities>
@@ -79,7 +79,7 @@
             </li>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerPlant</compClass>
-                <basePowerConsumption>-1005000</basePowerConsumption>
+                <basePowerConsumption>-1000000</basePowerConsumption>
                 <transmitsPower>true</transmitsPower>
             </li>
         </comps>
@@ -187,7 +187,7 @@
         <comps>
             <li Class="CompProperties_GravshipThruster">
                 <statOffsets>
-                    <GravshipRange>250</GravshipRange>
+                    <GravshipRange>500</GravshipRange>
                 </statOffsets>
                 <componentTypeDef>Thruster</componentTypeDef>
                 <exclusionAreaSize>(0, 0, 0)</exclusionAreaSize>

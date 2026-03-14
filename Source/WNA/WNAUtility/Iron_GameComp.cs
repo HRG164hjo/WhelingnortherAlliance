@@ -10,7 +10,6 @@ namespace WNA.WNAUtility
     {
         public int duration = 2400;
         public IronData() { }
-        public IronData(int duration) { this.duration = duration; }
         public void ExposeData()
         {
             Scribe_Values.Look(ref duration, "duration", 2400);
@@ -18,15 +17,17 @@ namespace WNA.WNAUtility
     }
     public class Iron_GameComp : GameComponent
     {
-        private Dictionary<Thing, IronData> active = new Dictionary<Thing, IronData>();
+        private Dictionary<Thing, IronData> activeIron = new Dictionary<Thing, IronData>();
         private const int interval = 60;
+        private List<Thing> activeIronKeysWorkingList;
+        private List<IronData> activeIronValuesWorkingList;
         public Iron_GameComp(Game game) : base() { }
         public override void GameComponentTick()
         {
             if (Find.TickManager.TicksGame % interval != 0) return;
-            if (active.Count == 0) return;
+            if (activeIron.Count == 0) return;
             var toRemove = new List<Thing>();
-            foreach (var kv in active.ToList())
+            foreach (var kv in activeIron.ToList())
             {
                 var thing = kv.Key;
                 var data = kv.Value;
@@ -40,26 +41,26 @@ namespace WNA.WNAUtility
                     toRemove.Add(thing);
             }
             foreach (var t in toRemove)
-                active.Remove(t);
+                activeIron.Remove(t);
         }
         public void IronGive(Thing t, int durationTicks)
         {
             if (t == null || t.Destroyed) return;
 
-            if (active.TryGetValue(t, out var d))
+            if (activeIron.TryGetValue(t, out var d))
                 d.duration = Math.Max(d.duration, durationTicks);
             else
-                active[t] = new IronData(durationTicks);
+                activeIron[t] = new IronData();
         }
         public void IronRemove(Thing t)
         {
             if (t == null) return;
-            active.Remove(t);
+            activeIron.Remove(t);
         }
         public bool IsIroned(Thing t)
         {
             if (t == null) return false;
-            return active.TryGetValue(t, out var d) && d.duration > 0 && !t.Destroyed;
+            return activeIron.TryGetValue(t, out var d) && d.duration > 0 && !t.Destroyed;
         }
         public void IronKill(Map map, IntVec3 center, float radius)
         {
@@ -87,26 +88,25 @@ namespace WNA.WNAUtility
         public override void ExposeData()
         {
             base.ExposeData();
-            List<Thing> keys = null;
-            List<IronData> values = null;
-            if (Scribe.mode == LoadSaveMode.Saving)
-            {
-                if (active != null && active.Count > 0)
-                {
-                    keys = active.Keys.ToList();
-                    values = active.Values.ToList();
-                }
-                else
-                {
-                    keys = new List<Thing>();
-                    values = new List<IronData>();
-                }
-            }
-            Scribe_Collections.Look(ref active, "activeIron", LookMode.Reference, LookMode.Deep, ref keys, ref values);
+            Scribe_Collections.Look(
+                ref activeIron,
+                "activeIron",
+                LookMode.Reference,
+                LookMode.Deep,
+                ref activeIronKeysWorkingList,
+                ref activeIronValuesWorkingList
+            );
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                if (active == null)
-                    active = new Dictionary<Thing, IronData>();
+                if (activeIron == null)
+                    activeIron = new Dictionary<Thing, IronData>();
+                var toRemove = new List<Thing>();
+                foreach (var kv in activeIron)
+                {
+                    if (kv.Key == null || kv.Value == null) toRemove.Add(kv.Key);
+                }
+                for (int i = 0; i < toRemove.Count; i++)
+                    activeIron.Remove(toRemove[i]);
             }
         }
         public static Iron_GameComp Instance => Current.Game?.GetComponent<Iron_GameComp>();

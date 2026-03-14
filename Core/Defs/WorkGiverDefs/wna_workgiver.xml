@@ -41,7 +41,7 @@
     <WorkGiverDef>
         <defName>WNAWork_DeepDrill</defName>
         <label>drill at starcore drill</label>
-        <giverClass>WNA.WorkGiverClass.DeepDrill</giverClass>
+        <giverClass>WNA.WNALabour.WG_DeepDrill</giverClass>
         <workType>Mining</workType>
         <priorityInType>50</priorityInType>
         <verb>deepdrill</verb>

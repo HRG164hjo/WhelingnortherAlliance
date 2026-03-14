@@ -27,7 +27,7 @@
     <li>r_name->[Digit][Digit][Digit] [pfix]</li>
     <li>r_name->[Digit][Digit][Digit][Digit] [pfix]</li>
     <li>r_name(p=0.001)->HRG164HJO</li>
-    <li>r_name(p=0.02)->[HRG]</li>
+    <li>r_name(p=0.05)->[HRG]</li>
     <!---->
     <li>pfix->设施</li>
     <li>pfix->前哨</li>

@@ -504,6 +504,39 @@
 	    </recipeUsers>
         <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
     </RecipeDef>
+    
+    <RecipeDef ParentName="WNA_RecipeBase">
+        <defName>WNA_RecyecleWastepackMult</defName>
+        <label>recycle wastepack x500</label>
+        <description>treat wastepacks with strong heat to recycle resources.</description>
+        <jobString>recycling waste pack.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Wastepack</li>
+                    </thingDefs>
+                </filter>
+                <count>500</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Wastepack</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Uranium>1000</Uranium>
+            <WNA_MercuryVial>1500</WNA_MercuryVial>
+            <WNA_HalogenVial>2500</WNA_HalogenVial>
+        </products>
+        <workAmount>3000</workAmount>
+        <recipeUsers>
+	        <li>ElectricSmelter</li>
+	        <li>ElectricCrematorium</li>
+	    </recipeUsers>
+        <researchPrerequisite/>
+    </RecipeDef>
 
     <!-- mili -->
     <RecipeDef ParentName="WNA_RecipeBase">
@@ -533,6 +566,8 @@
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                        <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                        <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
                     </thingDefs>
                 </filter>
                 <count>3000</count>
@@ -551,6 +586,8 @@
                 <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
@@ -582,6 +619,8 @@
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                        <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                        <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
                         <li>Jade</li>
                         <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                         <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
@@ -592,6 +631,7 @@
                     </thingDefs>
                     <categories>
                         <li>StoneBlocks</li>
+                        <li MayRequire="sarg.rimbees">RB_BeeswaxCategory</li>
                     </categories>
                 </filter>
                 <count>12500</count>
@@ -600,6 +640,7 @@
         <fixedIngredientFilter>
             <categories>
                 <li>StoneBlocks</li>
+                <li MayRequire="sarg.rimbees">RB_BeeswaxCategory</li>
             </categories>
             <thingDefs>
                 <li>Steel</li>
@@ -612,6 +653,8 @@
                 <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
                 <li>Jade</li>
                 <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
@@ -650,6 +693,8 @@
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                        <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                        <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
                     </thingDefs>
                 </filter>
                 <count>5000</count>
@@ -675,6 +720,8 @@
                 <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
                 <li>WNA_Quicklime</li>
             </thingDefs>
         </fixedIngredientFilter>

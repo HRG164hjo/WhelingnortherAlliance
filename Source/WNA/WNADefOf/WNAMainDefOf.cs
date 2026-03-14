@@ -37,7 +37,6 @@ namespace WNA.WNADefOf
         public static HediffDef WNA_VoidDiver;
         public static HediffDef WNA_RadRing;
 
-        public static JobDef WNA_Job_AdjustHydroponics;
         public static JobDef WNA_Job_DeepDrilling;
         public static JobDef WNA_Job_Revive;
 

@@ -75,9 +75,12 @@
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
+                        <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                        <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
                     </thingDefs>
                     <categories>
                         <li>StoneBlocks</li>
+                        <li MayRequire="sarg.rimbees">RB_BeeswaxCategory</li>
                     </categories>
                 </filter>
                 <count>25</count>
@@ -86,6 +89,7 @@
         <fixedIngredientFilter>
             <categories>
                 <li>StoneBlocks</li>
+                <li MayRequire="sarg.rimbees">RB_BeeswaxCategory</li>
             </categories>
             <thingDefs>
                 <li>Steel</li>
@@ -105,6 +109,8 @@
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
+                <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
@@ -142,9 +148,12 @@
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
                         <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
+                        <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                        <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
                     </thingDefs>
                     <categories>
                         <li>StoneBlocks</li>
+                        <li MayRequire="sarg.rimbees">RB_BeeswaxCategory</li>
                     </categories>
                 </filter>
                 <count>500</count>
@@ -153,6 +162,7 @@
         <fixedIngredientFilter>
             <categories>
                 <li>StoneBlocks</li>
+                <li MayRequire="sarg.rimbees">RB_BeeswaxCategory</li>
             </categories>
             <thingDefs>
                 <li>Steel</li>
@@ -172,6 +182,8 @@
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_PurpleCrystalShard</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicEbony</li>
                 <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_VolcanicGlass</li>
+                <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
@@ -211,6 +223,8 @@
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                        <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                        <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
                     </thingDefs>
                 </filter>
                 <count>15</count>
@@ -229,6 +243,8 @@
                 <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
@@ -260,6 +276,8 @@
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                        <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                        <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
                     </thingDefs>
                 </filter>
                 <count>10</count>
@@ -285,6 +303,8 @@
                 <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
+                <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
                 <li>WNA_Quicklime</li>
             </thingDefs>
         </fixedIngredientFilter>

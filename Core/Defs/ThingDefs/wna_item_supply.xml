@@ -105,8 +105,8 @@
                 <withSideEffects>false</withSideEffects>
                 <addsHediff MayRequire="ludeon.rimworld.anomaly">DeathRefusalCreepJoiner</addsHediff>
             </li>
-            <li Class="WNA.ThingCompProp.PropMultiUse">
-                <uses>4</uses>
+            <li MayRequire="xmb.ancienturbanruins.mo" Class="AncientMarket_Libraray.CompPropertiesUseableCount">
+                <useableCount>24</useableCount>
             </li>
         </comps>
         <thingCategories>

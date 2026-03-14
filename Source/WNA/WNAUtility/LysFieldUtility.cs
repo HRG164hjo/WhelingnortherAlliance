@@ -56,7 +56,7 @@ namespace WNA.WNAUtility
         }
     }
     [HarmonyPatch(typeof(Thing), "TakeDamage")]
-    public static class Patch_Thing_TakeDamage
+    public static class Patch_Thing_TakeDamageLysis
     {
         static void Prefix(ref DamageInfo dinfo, Thing __instance)
         {

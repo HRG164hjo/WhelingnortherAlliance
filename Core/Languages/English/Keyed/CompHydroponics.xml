@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<WNA.CompHydroponics.SelectCrop>select crop</WNA.CompHydroponics.SelectCrop>
-	<WNA.CompHydroponics.ChangeCrop>change crop</WNA.CompHydroponics.ChangeCrop>
-	<WNA.CompHydroponics.SelectCropDesc>select a crop to grow.</WNA.CompHydroponics.SelectCropDesc>
-	<WNA.CompHydroponics.ChangeCropDesc>growing{0}. click to change.</WNA.CompHydroponics.ChangeCropDesc>
-	<WNA.CompHydroponics.ClearCrop>clear crop</WNA.CompHydroponics.ClearCrop>
-	<WNA.CompHydroponics.ClearCropDesc>stop growing current crop.</WNA.CompHydroponics.ClearCropDesc>
+	<WNA.PropHydroponics.SelectCrop>select crop</WNA.PropHydroponics.SelectCrop>
+	<WNA.PropHydroponics.ChangeCrop>change crop</WNA.PropHydroponics.ChangeCrop>
+	<WNA.PropHydroponics.SelectCropDesc>select a crop to grow.</WNA.PropHydroponics.SelectCropDesc>
+	<WNA.PropHydroponics.ChangeCropDesc>growing{0}. click to change.</WNA.PropHydroponics.ChangeCropDesc>
+	<WNA.PropHydroponics.ClearCrop>clear crop</WNA.PropHydroponics.ClearCrop>
+	<WNA.PropHydroponics.ClearCropDesc>stop growing current crop.</WNA.PropHydroponics.ClearCropDesc>
 
-	<WNA.CompHydroponics.NoCrop>no crop</WNA.CompHydroponics.NoCrop>
-	<WNA.CompHydroponics.Contains>containing {0} units plant matter</WNA.CompHydroponics.Contains>
-	<WNA.CompHydroponics.Growing>growing: {0}</WNA.CompHydroponics.Growing>
-	<WNA.CompHydroponics.HarvestIn>harvest in: {0}</WNA.CompHydroponics.HarvestIn>
-	<WNA.CompHydroponics.Yield>estimated yield: {0}</WNA.CompHydroponics.Yield>
-	<WNA.CompHydroponics.LowPower>low power</WNA.CompHydroponics.LowPower>
-	<WNA.CompHydroponics.NoFuel>no fuel</WNA.CompHydroponics.NoFuel>
-	<WNA.CompHydroponics.CurrentGrowthFactor>current growth factor: {0}</WNA.CompHydroponics.CurrentGrowthFactor>
+	<WNA.PropHydroponics.NoCrop>no crop</WNA.PropHydroponics.NoCrop>
+	<WNA.PropHydroponics.Contains>containing {0} units plant matter</WNA.PropHydroponics.Contains>
+	<WNA.PropHydroponics.Growing>growing: {0}</WNA.PropHydroponics.Growing>
+	<WNA.PropHydroponics.HarvestIn>harvest in: {0}</WNA.PropHydroponics.HarvestIn>
+	<WNA.PropHydroponics.Yield>estimated yield: {0}</WNA.PropHydroponics.Yield>
+	<WNA.PropHydroponics.LowPower>low power</WNA.PropHydroponics.LowPower>
+	<WNA.PropHydroponics.NoFuel>no fuel</WNA.PropHydroponics.NoFuel>
+	<WNA.PropHydroponics.CurrentGrowthFactor>current growth factor: {0}</WNA.PropHydroponics.CurrentGrowthFactor>
 
-	<WNA.CompHydroponics.None>none</WNA.CompHydroponics.None>
-	<WNA.CompHydroponics.NoValidCrop>no valid crop</WNA.CompHydroponics.NoValidCrop>
+	<WNA.PropHydroponics.None>none</WNA.PropHydroponics.None>
+	<WNA.PropHydroponics.NoValidCrop>no valid crop</WNA.PropHydroponics.NoValidCrop>
 
 </LanguageData>

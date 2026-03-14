@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNA.CompStarcoreDriller.Mode>模式切换</WNA.CompStarcoreDriller.Mode>
+  <WNA_Auto>自动</WNA_Auto>
+  <WNA_Manual>手动</WNA_Manual>
+  <WNA.CompStarcoreDriller.Mode.Desc>切换钻机工作模式</WNA.CompStarcoreDriller.Mode.Desc>
+  
+  <WNA.CompStarcoreDriller.SelectResource>选择资源</WNA.CompStarcoreDriller.SelectResource>
+  <WNA.CompStarcoreDriller.CurrentTarget>当前目标</WNA.CompStarcoreDriller.CurrentTarget>
+  <WNA.CompStarcoreDriller.DefaultBedrock>默认基岩</WNA.CompStarcoreDriller.DefaultBedrock>
+  
+  <WNA.CompStarcoreDriller.InspectTarget>目标资源</WNA.CompStarcoreDriller.InspectTarget>
+  <WNA.CompStarcoreDriller.InspectProgress>当前进度</WNA.CompStarcoreDriller.InspectProgress>
+  <WNA.CompStarcoreDriller.InspectMode>当前模式</WNA.CompStarcoreDriller.InspectMode>
+  
+  <WNA.CompStarcoreDriller.SelectResourceTitle>选择钻取目标资源：</WNA.CompStarcoreDriller.SelectResourceTitle>
+  <WNA_Default>无（默认基岩）</WNA_Default>
+  <WNA_NoValidResources>未找到可钻取资源（请检查过滤条件）</WNA_NoValidResources>
+
+</LanguageData>

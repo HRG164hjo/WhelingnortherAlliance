@@ -2,38 +2,38 @@
 <LanguageData>
 
 	<!-- EN: select crop -->
-  <WNA.CompHydroponics.SelectCrop>选择作物</WNA.CompHydroponics.SelectCrop>
+  <WNA.PropHydroponics.SelectCrop>选择作物</WNA.PropHydroponics.SelectCrop>
 	<!-- EN: change crop -->
-  <WNA.CompHydroponics.ChangeCrop>更换作物</WNA.CompHydroponics.ChangeCrop>
+  <WNA.PropHydroponics.ChangeCrop>更换作物</WNA.PropHydroponics.ChangeCrop>
 	<!-- EN: select a crop to grow. -->
-  <WNA.CompHydroponics.SelectCropDesc>选择一种作物进行种植.</WNA.CompHydroponics.SelectCropDesc>
+  <WNA.PropHydroponics.SelectCropDesc>选择一种作物进行种植.</WNA.PropHydroponics.SelectCropDesc>
 	<!-- EN: growing{0}. click to change. -->
-  <WNA.CompHydroponics.ChangeCropDesc>当前正在培育{0}. 点击更换.</WNA.CompHydroponics.ChangeCropDesc>
+  <WNA.PropHydroponics.ChangeCropDesc>当前正在培育{0}. 点击更换.</WNA.PropHydroponics.ChangeCropDesc>
 	<!-- EN: clear crop -->
-  <WNA.CompHydroponics.ClearCrop>清除作物</WNA.CompHydroponics.ClearCrop>
+  <WNA.PropHydroponics.ClearCrop>清除作物</WNA.PropHydroponics.ClearCrop>
 	<!-- EN: stop growing current crop. -->
-  <WNA.CompHydroponics.ClearCropDesc>停止培育当前作物.</WNA.CompHydroponics.ClearCropDesc>
+  <WNA.PropHydroponics.ClearCropDesc>停止培育当前作物.</WNA.PropHydroponics.ClearCropDesc>
 
 	<!-- EN: no crop -->
-  <WNA.CompHydroponics.NoCrop>未选择作物</WNA.CompHydroponics.NoCrop>
+  <WNA.PropHydroponics.NoCrop>未选择作物</WNA.PropHydroponics.NoCrop>
 	<!-- EN: containing {0} units plant matter -->
-  <WNA.CompHydroponics.Contains>包含{0}单位植物质</WNA.CompHydroponics.Contains>
+  <WNA.PropHydroponics.Contains>包含{0}单位植物质</WNA.PropHydroponics.Contains>
 	<!-- EN: growing: {0} -->
-  <WNA.CompHydroponics.Growing>正在种植: {0}</WNA.CompHydroponics.Growing>
+  <WNA.PropHydroponics.Growing>正在种植: {0}</WNA.PropHydroponics.Growing>
 	<!-- EN: harvest in: {0} -->
-  <WNA.CompHydroponics.HarvestIn>收获于: {0}</WNA.CompHydroponics.HarvestIn>
+  <WNA.PropHydroponics.HarvestIn>收获于: {0}</WNA.PropHydroponics.HarvestIn>
 	<!-- EN: estimated yield: {0} -->
-  <WNA.CompHydroponics.Yield>预计产量: {0}</WNA.CompHydroponics.Yield>
+  <WNA.PropHydroponics.Yield>预计产量: {0}</WNA.PropHydroponics.Yield>
 	<!-- EN: low power -->
-  <WNA.CompHydroponics.LowPower>未通电</WNA.CompHydroponics.LowPower>
+  <WNA.PropHydroponics.LowPower>未通电</WNA.PropHydroponics.LowPower>
 	<!-- EN: no fuel -->
-  <WNA.CompHydroponics.NoFuel>燃料不足</WNA.CompHydroponics.NoFuel>
+  <WNA.PropHydroponics.NoFuel>燃料不足</WNA.PropHydroponics.NoFuel>
 	<!-- EN: current growth factor: {0} -->
-  <WNA.CompHydroponics.CurrentGrowthFactor>当前生长系数: {0}</WNA.CompHydroponics.CurrentGrowthFactor>
+  <WNA.PropHydroponics.CurrentGrowthFactor>当前生长系数: {0}</WNA.PropHydroponics.CurrentGrowthFactor>
 
 	<!-- EN: none -->
-  <WNA.CompHydroponics.None>无</WNA.CompHydroponics.None>
+  <WNA.PropHydroponics.None>无</WNA.PropHydroponics.None>
 	<!-- EN: no valid crop -->
-  <WNA.CompHydroponics.NoValidCrop>无可种植作物</WNA.CompHydroponics.NoValidCrop>
+  <WNA.PropHydroponics.NoValidCrop>无可种植作物</WNA.PropHydroponics.NoValidCrop>
 
 </LanguageData>

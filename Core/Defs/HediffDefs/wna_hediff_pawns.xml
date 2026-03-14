@@ -68,6 +68,11 @@
             <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_Inhuman</hediff>
             </li>
+            <li Class="WNA.HediffCompProp.PropProximityBlink">
+                <cooldown>1</cooldown>
+                <counterBack>true</counterBack>
+                <damageDef>WNA_Culling</damageDef>
+            </li>
         </comps>
     </HediffDef>
 
@@ -183,6 +188,12 @@
         <comps>
             <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_DeathEnd</hediff>
+            </li>
+            <li Class="WNA.HediffCompProp.PropProximityBlink">
+                <range>5.9</range>
+                <skipaway>13.9~19.9</skipaway>
+                <counterBack>true</counterBack>
+                <damageDef>WNA_DemoCut</damageDef>
             </li>
         </comps>
     </HediffDef>

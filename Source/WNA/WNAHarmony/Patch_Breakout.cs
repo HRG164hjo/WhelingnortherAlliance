@@ -43,25 +43,6 @@ namespace WNA.WNAHarmony
                     __result = false;
             }
         }
-        [HarmonyPatch(typeof(ContainmentUtility),
-            nameof(ContainmentUtility.CanParticipateInEscape))]
-        public static class Patch_ContainmentUtility_CanParticipate
-        {
-            public static void Postfix(Pawn pawn, ref bool __result)
-            {
-                if (!__result || pawn?.Map == null) return;
-                if (pawn.Map.Biome?.inVacuum == true)
-                {
-                    __result = false;
-                    return;
-                }
-                Room room = pawn.GetRoom();
-                if (room == null) return;
-                var doors = RoomDoorUtility.GetAllDoors(room);
-                if (doors.Count > 0 && doors.All(d => d?.def?.thingClass?.Name == "BarrierDoor"))
-                    __result = false;
-            }
-        }
         [HarmonyPatch(typeof(PrisonBreakUtility), "StartPrisonBreakIn")]
         public static class Patch_PrisonBreakUtility_MakeDown
         {

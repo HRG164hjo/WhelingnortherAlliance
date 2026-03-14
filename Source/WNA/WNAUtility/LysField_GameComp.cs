@@ -23,15 +23,17 @@ namespace WNA.WNAUtility
     }
     public class LysField_GameComp : GameComponent
     {
-        private Dictionary<Thing, LysisFieldData> active = new Dictionary<Thing, LysisFieldData>();
+        private Dictionary<Thing, LysisFieldData> activeLysis = new Dictionary<Thing, LysisFieldData>();
         private const int interval = 15;
+        private List<Thing> activeLysKeysWorkingList;
+        private List<LysisFieldData> activeLysValuesWorkingList;
         public LysField_GameComp(Game game) { }
         public override void GameComponentTick()
         {
             if (Find.TickManager.TicksGame % interval != 0)
                 return;
             List<Thing> toRemove = new List<Thing>();
-            foreach (var kv in active.ToList())
+            foreach (var kv in activeLysis.ToList())
             {
                 Thing thing = kv.Key;
                 LysisFieldData data = kv.Value;
@@ -50,7 +52,7 @@ namespace WNA.WNAUtility
                     toRemove.Add(thing);
             }
             foreach (var t in toRemove)
-                active.Remove(t);
+                activeLysis.Remove(t);
         }
         public void AddOrUpdateField(Thing thing, int addLevel, int addDuration)
         {
@@ -58,10 +60,10 @@ namespace WNA.WNAUtility
             if (!thing.def.isSaveable) return;
             TechnoConfig cfg = TechnoConfig.Get(thing.def);
             if (cfg != null && cfg.immuneToRadiation == true) return;
-            if (!active.TryGetValue(thing, out var data))
+            if (!activeLysis.TryGetValue(thing, out var data))
             {
                 data = new LysisFieldData(addLevel, addDuration);
-                active[thing] = data;
+                activeLysis[thing] = data;
             }
             else
             {
@@ -75,38 +77,35 @@ namespace WNA.WNAUtility
         public int GetLevel(Thing thing)
         {
             if (thing == null) return 0;
-            if (active.TryGetValue(thing, out var data))
+            if (activeLysis.TryGetValue(thing, out var data))
                 return data.level;
             return 0;
         }
         public void Remove(Thing thing)
         {
             if (thing == null) return;
-            active.Remove(thing);
+            activeLysis.Remove(thing);
         }
         public override void ExposeData()
         {
             base.ExposeData();
-            List<Thing> keys = null;
-            List<LysisFieldData> values = null;
-            if (Scribe.mode == LoadSaveMode.Saving)
-            {
-                if (active != null && active.Count > 0)
-                {
-                    keys = active.Keys.ToList();
-                    values = active.Values.ToList();
-                }
-                else
-                {
-                    keys = new List<Thing>();
-                    values = new List<LysisFieldData>();
-                }
-            }
-            Scribe_Collections.Look(ref active, "activeLysis", LookMode.Reference, LookMode.Deep, ref keys, ref values);
+            Scribe_Collections.Look(ref activeLysis,
+                "activeLysis",
+                LookMode.Reference,
+                LookMode.Deep,
+                ref activeLysKeysWorkingList,
+                ref activeLysValuesWorkingList);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                if (active == null)
-                    active = new Dictionary<Thing, LysisFieldData>();
+                if (activeLysis == null)
+                    activeLysis = new Dictionary<Thing, LysisFieldData>();
+                var toRemove = new List<Thing>();
+                foreach (var kv in activeLysis)
+                {
+                    if (kv.Key == null || kv.Value == null) toRemove.Add(kv.Key);
+                }
+                for (int i = 0; i < toRemove.Count; i++)
+                    activeLysis.Remove(toRemove[i]);
             }
         }
         public static LysField_GameComp Instance =>

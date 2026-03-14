@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<JobDef>
+	<!--<JobDef>
 		<defName>WNA_Job_AdjustHydroponics</defName>
 		<driverClass>WNA.JobDriverClass.AdjustHydroponics</driverClass>
 		<reportString>adjusting hydroponics basin.</reportString>
 		<casualInterruptible>false</casualInterruptible>
-    </JobDef>
+    </JobDef>-->
 
 	<JobDef>
     	<defName>WNA_Job_DeepDrilling</defName>
-    	<driverClass>WNA.JobDriverClass.DeepDrilling</driverClass>
+    	<driverClass>WNA.WNALabour.JD_DeepDrill</driverClass>
     	<reportString>drilling at TargetA.</reportString>
     	<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   	</JobDef>
 
 	<JobDef>
     	<defName>WNA_Job_Revive</defName>
-    	<driverClass>WNA.JobDriverClass.Revive</driverClass>
+    	<driverClass>WNA.WNALabour.JD_Revive</driverClass>
     	<reportString>reviving TargetA.</reportString>
     	<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   	</JobDef>

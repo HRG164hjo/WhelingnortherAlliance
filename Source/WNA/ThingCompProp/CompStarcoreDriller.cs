@@ -1,5 +1,4 @@
-﻿using HarmonyLib;
-using RimWorld;
+﻿using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -14,204 +13,221 @@ namespace WNA.ThingCompProp
         {
             compClass = typeof(CompStarcoreDriller);
         }
-        public float workPerPortion = 6000f;
-        public float autoDrillEfficiency = 0.3f;
+        public float workPerPortion = 10000f;
+        public float autoDrillEfficiency = 0.40f;
+        public int fallbackCountPerPortion = 1;
     }
     public class CompStarcoreDriller : ThingComp
     {
         public PropStarcoreDriller Props => (PropStarcoreDriller)props;
         private CompPowerTrader powerComp;
         private float portionProgress;
-        private float portionYieldPct;
+        private float accumulatedYieldWork;
         private int lastUsedTick = -99999;
         private bool autoMode;
         private Effecter activeEffecter;
         private ThingDef selectedResource;
         public bool IsAutoMode() => autoMode;
-        public float ProgressToNextPortionPercent => portionProgress / Props.workPerPortion;
+        public float ProgressToNextPortionPercent => Props.workPerPortion <= 0f ? 0f : portionProgress / Props.workPerPortion;
+        public ThingDef SelectedResource => selectedResource;
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
+            base.PostSpawnSetup(respawningAfterLoad);
             powerComp = parent.TryGetComp<CompPowerTrader>();
         }
         public override void PostExposeData()
         {
             Scribe_Values.Look(ref portionProgress, "portionProgress", 0f);
-            Scribe_Values.Look(ref portionYieldPct, "portionYieldPct", 0f);
-            Scribe_Values.Look(ref lastUsedTick, "lastUsedTick", 0);
+            Scribe_Values.Look(ref accumulatedYieldWork, "portionYieldPct", 0f);
+            Scribe_Values.Look(ref lastUsedTick, "lastUsedTick", -99999);
             Scribe_Values.Look(ref autoMode, "autoMode", false);
             Scribe_Defs.Look(ref selectedResource, "selectedResource");
+        }
+        public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
+        {
+            base.PostDeSpawn(map, mode);
+            CleanupEffecter();
         }
         public override void CompTick()
         {
             base.CompTick();
-            if (!CanDrillNow()) return;
-
-            if (autoMode && parent.IsHashIntervalTick(60))
+            if (!autoMode || !CanDrillNow())
+            {
+                CleanupEffecter();
+                return;
+            }
+            if (parent.IsHashIntervalTick(60))
             {
                 DrillWorkDone(null, 60);
-                if (activeEffecter == null)
-                {
-                    activeEffecter = EffecterDefOf.Drill.Spawn();
-                    activeEffecter.Trigger(parent, parent);
-                }
-            }
-            if (activeEffecter != null && !autoMode)
-            {
-                activeEffecter.Cleanup();
-                activeEffecter = null;
+                EnsureEffecter();
             }
         }
         public bool CanDrillNow()
         {
-            return (powerComp == null || powerComp.PowerOn);
+            if (!parent.Spawned || parent.Map == null) return false;
+            if (powerComp != null && !powerComp.PowerOn) return false;
+            return true;
         }
         public void DrillWorkDone(Pawn driller, int delta)
         {
+            if (delta <= 0 || Props.workPerPortion <= 0f) return;
             float speed = driller != null
                 ? driller.GetStatValue(StatDefOf.DeepDrillingSpeed)
-                : Props.autoDrillEfficiency * 1f;
-            float num = speed * delta;
-            portionProgress += num;
-            portionYieldPct += num * (driller?.GetStatValue(StatDefOf.MiningYield) ?? 1f);
+                : Props.autoDrillEfficiency;
+            if (speed <= 0f) return;
+            float miningYield = driller != null ? driller.GetStatValue(StatDefOf.MiningYield) : 1f;
+            float work = speed * delta;
+            portionProgress += work;
+            accumulatedYieldWork += work * miningYield;
             lastUsedTick = Find.TickManager.TicksGame;
-            if (portionProgress > Props.workPerPortion)
+            while (portionProgress >= Props.workPerPortion)
             {
-                TryProducePortion(portionYieldPct, driller);
-                portionProgress = 0f;
-                portionYieldPct = 0f;
+                float yieldPct = Mathf.Max(0.01f, accumulatedYieldWork * 10f / Mathf.Max(1f, portionProgress));
+                TryProducePortion(yieldPct, driller);
+                portionProgress -= Props.workPerPortion;
+                accumulatedYieldWork = Mathf.Max(0f, accumulatedYieldWork - Props.workPerPortion * yieldPct);
             }
         }
         private void TryProducePortion(float yieldPct, Pawn driller)
         {
             ThingDef resDef = selectedResource ?? GetDefaultResource();
-            if (resDef == null) return;
-            int num = resDef.deepCountPerPortion > 0 ? Mathf.Max(resDef.deepCountPerPortion, 30) : 30;
-            int stackCount = Mathf.Max(1, GenMath.RoundRandom(num * yieldPct));
+            if (resDef == null || parent.Map == null) return;
+            int baseCount = GetCountPerPortion(resDef);
+            int stackCount = Mathf.Max(1, GenMath.RoundRandom(baseCount * yieldPct));
             Thing thing = ThingMaker.MakeThing(resDef);
             thing.stackCount = stackCount;
-            GenPlace.TryPlaceThing(thing, parent.InteractionCell, parent.Map, ThingPlaceMode.Near);
+            GenPlace.TryPlaceThing(
+                thing,
+                parent.InteractionCell,
+                parent.Map,
+                ThingPlaceMode.Near,
+                null,
+                p => p != parent.Position && p != parent.InteractionCell
+            );
+            if (driller != null)
+            {
+                Find.HistoryEventsManager.RecordEvent(
+                    new HistoryEvent(HistoryEventDefOf.Mined, driller.Named(HistoryEventArgsNames.Doer))
+                );
+            }
+        }
+        private int GetCountPerPortion(ThingDef def)
+        {
+            if (def.deepCountPerPortion > 0) return def.deepCountPerPortion;
+            if (DrillTargetUtility.IsChunk(def)) return 1;
+            return Mathf.Max(1, Props.fallbackCountPerPortion);
         }
         private ThingDef GetDefaultResource()
         {
             Map map = parent.Map;
+            if (map == null) return null;
             if (map.Biome.hasBedrock)
             {
-                var rock = DeepDrillUtility.RockForTerrain(map.terrainGrid.BaseTerrainAt(parent.Position));
-                if (rock != null) return rock.building.mineableThing;
+                ThingDef rock = DeepDrillUtility.RockForTerrain(map.terrainGrid.BaseTerrainAt(parent.Position));
+                if (rock?.building?.mineableThing != null) return rock.building.mineableThing;
             }
-            return DeepDrillUtility.Rocks.RandomElement().building.mineableThing;
+            return DeepDrillUtility.Rocks?.RandomElementWithFallback()?.building?.mineableThing;
+        }
+        private void EnsureEffecter()
+        {
+            if (activeEffecter != null) return;
+            activeEffecter = EffecterDefOf.Drill.Spawn();
+            activeEffecter.Trigger(parent, parent);
+        }
+        private void CleanupEffecter()
+        {
+            if (activeEffecter == null) return;
+            activeEffecter.Cleanup();
+            activeEffecter = null;
+        }
+        public void SetResource(ThingDef def)
+        {
+            selectedResource = def;
         }
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             foreach (var g in base.CompGetGizmosExtra()) yield return g;
             yield return new Command_Toggle
             {
-                defaultLabel = "模式切换： " + (autoMode ? "自动" : "手动"),
-                defaultDesc = "切换钻井的工作模式。",
+                defaultLabel = "WNA.CompStarcoreDriller.Mode".Translate(autoMode ? "WNA_Auto".Translate() : "WNA_Manual".Translate()),
+                defaultDesc = "WNA.CompStarcoreDriller.Mode.Desc".Translate(),
                 isActive = () => autoMode,
                 toggleAction = () => autoMode = !autoMode
             };
             yield return new Command_Action
             {
-                defaultLabel = "选择资源",
-                defaultDesc = (selectedResource != null ? selectedResource.LabelCap.ToString() : "当前目标：无（默认基岩）"),
-                action = () => Find.WindowStack.Add(new Dialog_SelectResource(this))
+                defaultLabel = "WNA.CompStarcoreDriller.SelectResource".Translate(),
+                defaultDesc = selectedResource != null ? "WNA.CompStarcoreDriller.CurrentTarget".Translate(selectedResource.LabelCap)
+                : "WNA.CompStarcoreDriller.DefaultBedrock".Translate(),
+                action = GenerateResourceMenu
             };
-        }
-        public void SetResource(ThingDef def)
-        {
-            selectedResource = def;
         }
         public override string CompInspectStringExtra()
         {
-            string res = selectedResource?.LabelCap.ToString() ?? "默认基岩";
-            return $"目标资源: {res}\n进度: {ProgressToNextPortionPercent.ToStringPercent("F0")}\n模式: {(autoMode ? "自动" : "手动")}";
+            string res = selectedResource?.LabelCap.ToString() ?? "WNA.CompStarcoreDriller.DefaultBedrock".Translate();
+            return "WNA.CompStarcoreDriller.InspectTarget".Translate(res) + "\n" +
+               "WNA.CompStarcoreDriller.InspectProgress".Translate(ProgressToNextPortionPercent.ToStringPercent("F0")) + "\n" +
+               "WNA.CompStarcoreDriller.InspectMode".Translate(autoMode ? "WNA_Auto".Translate() : "WNA_Manual".Translate());
+        }
+        public void GenerateResourceMenu()
+        {
+            List<ThingDef> candidates = DrillTargetUtility.GetCachedCandidates();
+            List<FloatMenuOption> options = new List<FloatMenuOption>();
+            options.Add(new FloatMenuOption("WNA_Default".Translate(), () => SetResource(null)));
+            foreach (ThingDef def in candidates)
+            {
+                ThingDef localDef = def;
+                options.Add(new FloatMenuOption(
+                    localDef.LabelCap,
+                    () => SetResource(localDef),
+                    localDef,
+                    extraPartWidth: 29f,
+                    extraPartOnGUI: rect =>
+                        Widgets.InfoCardButton(rect.x + 5f, rect.y + (rect.height - 24f) / 2f, localDef)
+                ));
+            }
+            if (options.Count > 0)
+                Find.WindowStack.Add(new FloatMenu(options));
         }
     }
-    public class Dialog_SelectResource : Window
+    internal static class DrillTargetUtility
     {
-        private readonly CompStarcoreDriller drill;
-        public override Vector2 InitialSize => new Vector2(500f, 600f);
-        private Vector2 scrollPosition = Vector2.zero;
-        private float scrollViewHeight;
-        public Dialog_SelectResource(CompStarcoreDriller drill)
+        private static ThingCategoryDef chunkCategory;
+        private static List<ThingDef> cachedCandidates;
+        private static ThingCategoryDef ChunkCategory
         {
-            this.drill = drill;
-            forcePause = true;
-            absorbInputAroundWindow = true;
-            doCloseX = true;
-            closeOnClickedOutside = true;
+            get
+            {
+                if (chunkCategory == null)
+                    chunkCategory = DefDatabase<ThingCategoryDef>.GetNamedSilentFail("Chunks");
+                return chunkCategory;
+            }
         }
-        private bool IsChunk(ThingDef def)
+        public static bool IsChunk(ThingDef def)
         {
-            if (def.thingCategories == null) return false;
-            return def.thingCategories.Any(tc => tc.defName == "Chunks");
+            return def?.thingCategories != null && ChunkCategory != null && def.thingCategories.Contains(ChunkCategory);
         }
-        private bool IsValidDrillTarget(ThingDef def)
+        public static bool IsValidDrillTarget(ThingDef def)
         {
             if (def == null) return false;
             if (def.category != ThingCategory.Item) return false;
             if (def.IsApparel || def.IsWeapon || def.IsCorpse) return false;
             if (def.plant != null) return false;
-            if (def.building != null && !def.IsNonResourceNaturalRock) return false;
-            bool isDeep = def.deepCommonality > 0;
-            bool isRock = def.IsNonResourceNaturalRock;
+
+            bool isDeep = def.deepCommonality > 0f;
             bool isChunk = IsChunk(def);
-            return isDeep || isRock || isChunk;
+            return isDeep || isChunk;
         }
-        public override void DoWindowContents(Rect inRect)
+        public static List<ThingDef> GetCachedCandidates()
         {
-            Text.Font = GameFont.Medium;
-            Widgets.Label(new Rect(0f, 0f, inRect.width, 30f), "选择钻取目标资源：");
-            Text.Font = GameFont.Small;
-            float listTop = 40f;
-            Rect outRect = new Rect(0f, listTop, inRect.width, inRect.height - listTop);
-            float viewHeight = Mathf.Max(scrollViewHeight, outRect.height);
-            Rect viewRect = new Rect(0f, 0f, inRect.width - 20f, viewHeight);
-            Widgets.BeginScrollView(outRect, ref scrollPosition, viewRect);
-            Listing_Standard listing = new Listing_Standard();
-            listing.Begin(viewRect);
-            if (listing.ButtonText("无（默认基岩）"))
+            if (cachedCandidates == null)
             {
-                drill.SetResource(null);
-                Close();
+                cachedCandidates = DefDatabase<ThingDef>.AllDefsListForReading
+                    .Where(IsValidDrillTarget)
+                    .OrderBy(d => d.label)
+                    .ToList();
             }
-            listing.GapLine();
-            var candidates = DefDatabase<ThingDef>.AllDefs.Where(IsValidDrillTarget).OrderBy(d => d.label).ToList();
-            if (candidates.Count == 0)
-                listing.Label("未找到可钻取资源（请检查过滤条件）");
-            else
-            {
-                foreach (ThingDef def in candidates)
-                {
-                    if (listing.ButtonText(def.LabelCap))
-                    {
-                        drill.SetResource(def);
-                        Close();
-                    }
-                }
-            }
-            listing.End();
-            Widgets.EndScrollView();
-            scrollViewHeight = listing.CurHeight + 30f;
-        }
-    }
-    [HarmonyPatch(typeof(WorkGiver_DeepDrill), nameof(WorkGiver_DeepDrill.HasJobOnThing))]
-    public static class Patch_DeepDrill_HasJobOnThing
-    {
-        public static void Postfix(Pawn pawn, Thing t, bool forced, ref bool __result)
-        {
-            if (__result) return;
-            if (!(t is Building building)) return;
-            var comp = building.TryGetComp<CompStarcoreDriller>();
-            if (comp == null) return;
-            if (comp.IsAutoMode()) return;
-            if (!comp.CanDrillNow()) return;
-            if (t.Faction != pawn.Faction) return;
-            if (!pawn.CanReserve(building, 1, -1, null, forced)) return;
-            if (building.Map.designationManager.DesignationOn(building, DesignationDefOf.Uninstall) != null) return;
-            if (building.IsBurning()) return;
-            __result = true;
+            return cachedCandidates;
         }
     }
 }

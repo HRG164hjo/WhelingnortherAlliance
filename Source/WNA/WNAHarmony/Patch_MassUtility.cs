@@ -29,15 +29,6 @@ namespace WNA.WNAHarmony
                         pawnbonus += aExt.massCapacity;
                 }
             }
-            if (p.equipment != null)
-            {
-                foreach (ThingWithComps equipment in p.equipment.AllEquipmentListForReading)
-                {
-                    var eqExt = equipment.def.GetModExtension<MassCapacity>();
-                    if (eqExt != null)
-                        pawnbonus += eqExt.massCapacity;
-                }
-            }
             __result = pawnbase + pawnbonus;
         }
     }

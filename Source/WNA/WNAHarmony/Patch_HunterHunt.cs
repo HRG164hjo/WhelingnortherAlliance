@@ -10,10 +10,9 @@ namespace WNA.WNAHarmony
     {
         public static void Postfix(ref bool __result, Pawn p)
         {
-            if (p.equipment.Primary != null && p.equipment.Primary.def == WNAMainDefOf.WNA_Weapon_RiteLance)
-            {
+            if (p.equipment.Primary != null &&
+                p.equipment.Primary.def == WNAMainDefOf.WNA_Weapon_RiteLance)
                 __result = true;
-            }
         }
     }
 }

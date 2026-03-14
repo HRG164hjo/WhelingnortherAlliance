@@ -143,6 +143,7 @@
 
     <Operation Class="PatchOperationInsert">
 	    <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="ToolCabinet"]</xpath>
+        <order>Append</order>
         <value>
             <li>WNA_MultiToolBox</li>
         </value>

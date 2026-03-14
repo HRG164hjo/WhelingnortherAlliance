@@ -65,7 +65,7 @@
         <label>"scorpion" sentry gun</label>
         <description>A sentry gun turret armed with toxic scrap bullets.</description>
 		<graphicData>
-            <graphicClass>WNA.WNAMiscs.Graph_Inviso</graphicClass>
+            <graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Building/Security/TurretMortar_Base</texPath>
             <drawSize>2.4</drawSize>
             <drawOffset>(0,0,0.1)</drawOffset>
@@ -93,9 +93,6 @@
         <researchPrerequisites>
             <li>WNA_StandardArsenal</li>
         </researchPrerequisites>
-        <comps>
-            <li Class="WNA.ThingCompProp.PropCamoPillbox"/>
-        </comps>
     </ThingDef>
     <ThingDef ParentName="WNA_TurrentWeaponBase">
         <defName>WNA_SentryGun_Gun</defName>

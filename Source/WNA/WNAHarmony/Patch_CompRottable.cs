@@ -2,6 +2,7 @@
 using RimWorld;
 using System.Collections.Generic;
 using Verse;
+using WNA.WNADefOf;
 
 namespace WNA.WNAHarmony
 {
@@ -15,9 +16,10 @@ namespace WNA.WNAHarmony
         [HarmonyPrefix]
         public static bool ActivePrefix(ref bool __result, CompRottable __instance)
         {
-            if (__instance.parent == null || __instance.parent.Map == null) return true;
+            if (__instance.parent == null || __instance.parent.Map == null)
+                return true;
             Building b = __instance.parent.Position.GetEdifice(__instance.parent.Map);
-            if (b != null && preserverList.Contains(b.def.defName))
+            if ((b != null && preserverList.Contains(b.def.defName)) || WNAMainDefOf.WNA_PsychicDawn.IsFinished)
             {
                 __result = false;
                 return false;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WNA.CompStarcoreDriller.Mode>switch mode</WNA.CompStarcoreDriller.Mode>
+  <WNA_Auto>auto</WNA_Auto>
+  <WNA_Manual>manual</WNA_Manual>
+  <WNA.CompStarcoreDriller.Mode.Desc>switch driller's working mode</WNA.CompStarcoreDriller.Mode.Desc>
+  
+  <WNA.CompStarcoreDriller.SelectResource>select resource</WNA.CompStarcoreDriller.SelectResource>
+  <WNA.CompStarcoreDriller.CurrentTarget>current target</WNA.CompStarcoreDriller.CurrentTarget>
+  <WNA.CompStarcoreDriller.DefaultBedrock>biome bedrock</WNA.CompStarcoreDriller.DefaultBedrock>
+  
+  <WNA.CompStarcoreDriller.InspectTarget>targeted resource</WNA.CompStarcoreDriller.InspectTarget>
+  <WNA.CompStarcoreDriller.InspectProgress>progress</WNA.CompStarcoreDriller.InspectProgress>
+  <WNA.CompStarcoreDriller.InspectMode>cur mode</WNA.CompStarcoreDriller.InspectMode>
+  
+  <WNA.CompStarcoreDriller.SelectResourceTitle>select targeted resource</WNA.CompStarcoreDriller.SelectResourceTitle>
+  <WNA_Default>none (treat as biome bedrock)</WNA_Default>
+  <WNA_NoValidResources>no valid resource (pls check the filters)</WNA_NoValidResources>
+
+</LanguageData>

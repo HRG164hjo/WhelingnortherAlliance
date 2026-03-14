@@ -204,7 +204,7 @@
                 <li>r_name->[Digit][Digit][Digit]th [pfix]</li>
                 <li>r_name->[Digit][Digit][Digit][Digit]th [pfix]</li>
                 <li>r_name(p=0.001)->HRG164HJO</li>
-                <li>r_name(p=0.02)->[HRG]</li>
+                <li>r_name(p=0.05)->[HRG]</li>
                 <!---->
                 <li>pfix->Facility</li>
                 <li>pfix->Outpost</li>
