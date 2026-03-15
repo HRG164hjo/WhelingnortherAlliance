@@ -15,6 +15,7 @@ namespace WNA.ThingCompProp
         }
         public float workPerPortion = 10000f;
         public float autoDrillEfficiency = 0.40f;
+        public float yieldFactor = 10f;
         public int fallbackCountPerPortion = 1;
     }
     public class CompStarcoreDriller : ThingComp
@@ -66,8 +67,13 @@ namespace WNA.ThingCompProp
             if (!parent.Spawned || parent.Map == null) return false;
             if (powerComp != null && !powerComp.PowerOn) return false;
             if (selectedResource == null) return false;
-            if (autoMode == true) return false;
+            if (parent.GetComp<CompForbiddable>().Forbidden) return false;
             return true;
+        }
+        public bool IsAutoMode()
+        {
+            if (autoMode == true) return true;
+            return false;
         }
         public void DrillWorkDone(Pawn driller, int delta)
         {
@@ -79,12 +85,12 @@ namespace WNA.ThingCompProp
             float miningYield = driller != null ? driller.GetStatValue(StatDefOf.MiningYield) : 1f;
             float work = speed * delta;
             portionProgress += work * (driller != null ?
-                (driller.health.capacities.GetLevel(PawnCapacityDefOf.Manipulation) * 1.414f) : 1f);
+                (Mathf.Sqrt(driller.health.capacities.GetLevel(PawnCapacityDefOf.Manipulation))) * 1.732f : 1f);
             accumulatedYieldWork += work * miningYield;
             lastUsedTick = Find.TickManager.TicksGame;
             while (portionProgress >= Props.workPerPortion)
             {
-                float yieldPct = Mathf.Max(0.01f, accumulatedYieldWork * 10f / Mathf.Max(1f, portionProgress));
+                float yieldPct = Mathf.Max(0.01f, accumulatedYieldWork / Mathf.Max(1f, portionProgress));
                 TryProducePortion(yieldPct, driller);
                 portionProgress -= Props.workPerPortion;
                 accumulatedYieldWork = Mathf.Max(0f, accumulatedYieldWork - Props.workPerPortion * yieldPct);
@@ -113,9 +119,9 @@ namespace WNA.ThingCompProp
         }
         private int GetCountPerPortion(ThingDef def)
         {
-            if (def.deepCountPerPortion > 0) return def.deepCountPerPortion;
-            if (DrillTargetUtility.IsChunk(def)) return 1;
-            return Mathf.Max(1, Props.fallbackCountPerPortion);
+            if (def.deepCountPerPortion > 0) return (int)(def.deepCountPerPortion * Props.yieldFactor);
+            if (DrillTargetUtility.IsChunk(def)) return (int)Mathf.Max(1, Props.fallbackCountPerPortion * Props.yieldFactor);
+            return (int)Mathf.Max(1, Props.fallbackCountPerPortion);
         }
         private void EnsureEffecter()
         {

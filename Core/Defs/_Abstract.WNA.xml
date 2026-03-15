@@ -623,7 +623,7 @@
         <useHitPoints>false</useHitPoints>
         <resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
         <techLevel>Archotech</techLevel>
-        <stackLimit>5000</stackLimit>
+        <stackLimit>1000</stackLimit>
         <statBases>
             <Beauty>0</Beauty>
             <Mass>0.01</Mass>
@@ -642,7 +642,7 @@
         <soundInteract>Metal_Drop</soundInteract>
         <soundDrop>Standard_Drop</soundDrop>
         <tickerType>Normal</tickerType>
-        <stackLimit>5000</stackLimit>
+        <stackLimit>1000</stackLimit>
         <techLevel>Archotech</techLevel>
         <useHitPoints>false</useHitPoints>
         <statBases>

@@ -16,10 +16,7 @@ namespace WNA.WNAHarmony
             float pawnbonus = 0f;
             var Ext = p.def.GetModExtension<MassCapacity>();
             if (Ext != null)
-            {
-                float f = Mathf.Max((float)Ext.massCapacity, 1f);
-                pawnbase = p.BodySize * f;
-            }
+                pawnbase = Mathf.Max(Ext.massCapacity, 1f);
             if (p.apparel != null)
             {
                 foreach (Apparel apparel in p.apparel.WornApparel)
@@ -29,7 +26,7 @@ namespace WNA.WNAHarmony
                         pawnbonus += aExt.massCapacity;
                 }
             }
-            __result = pawnbase + pawnbonus;
+            __result = (p.BodySize * pawnbase) + pawnbonus;
         }
     }
 }

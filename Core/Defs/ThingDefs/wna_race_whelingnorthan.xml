@@ -267,7 +267,7 @@
                 <getsColdContainmentBonus>false</getsColdContainmentBonus>
             </li>
             <li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_Studiable">
-                <frequencyTicks>120000</frequencyTicks>
+                <frequencyTicks>12000</frequencyTicks>
                 <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
                 <requiresImprisonment>true</requiresImprisonment>
             </li>
@@ -319,12 +319,12 @@
                 <canAbsorb>true</canAbsorb>
 			</li>
             <li Class="AutoBlink.CompProperties_AutoBlink" MayRequire="rabiosus.autoblink">
-                <blinkIntervalTicks>1</blinkIntervalTicks>
+                <blinkIntervalTicks>0</blinkIntervalTicks>
                 <delayAfterEligibleTicks>0</delayAfterEligibleTicks>
                 <postBlinkStanceTicks>0</postBlinkStanceTicks>
-                <cellsBeforeTarget>1</cellsBeforeTarget>
+                <cellsBeforeTarget>0</cellsBeforeTarget>
                 <maxDistanceToBlink>500</maxDistanceToBlink>
-                <minDistanceToBlink>1</minDistanceToBlink>
+                <minDistanceToBlink>0</minDistanceToBlink>
                 <excludedJobDefs>
                     <li>GotoWander</li>
                 </excludedJobDefs>
@@ -433,6 +433,7 @@
             </li>
         </damageMultipliers>
         <race>
+            <baseBodySize>1</baseBodySize>
             <baseHealthScale>60000</baseHealthScale>
             <lifeExpectancy>1000000</lifeExpectancy>
             <linkedCorpseKind>Human</linkedCorpseKind>
@@ -565,7 +566,7 @@
                 <canAbsorb>true</canAbsorb>
 			</li>
         </comps>
-		<modExtensions>
+		<modExtensions Inherit="false">
             <li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
                 <movementDef>WNA_Movement</movementDef>
             </li>

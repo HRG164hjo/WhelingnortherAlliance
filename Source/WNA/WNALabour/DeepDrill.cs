@@ -25,7 +25,7 @@ namespace WNA.WNALabour
         {
             if (t.Faction != pawn.Faction) return false;
             var comp = t.TryGetComp<CompStarcoreDriller>();
-            if (comp == null || !comp.CanDrillNow()) return false;
+            if (comp == null || !comp.CanDrillNow() || comp.IsAutoMode()) return false;
             if (!pawn.CanReserve(t, 1, -1, null, forced)) return false;
             if (t.Map.designationManager.DesignationOn(t, DesignationDefOf.Uninstall) != null) return false;
             return true;
