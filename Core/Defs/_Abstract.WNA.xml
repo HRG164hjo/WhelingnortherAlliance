@@ -1169,6 +1169,11 @@
                 <countRange>80000000~100000000</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_FactionDeed</thingDef>
+                <price>VeryCheap</price>
+                <countRange>23572357~23572357</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
                 <thingDef>WNA_Voidsteel</thingDef>
                 <price>VeryCheap</price>
                 <countRange>80000000~100000000</countRange>

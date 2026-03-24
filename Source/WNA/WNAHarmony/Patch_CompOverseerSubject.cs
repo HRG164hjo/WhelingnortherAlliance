@@ -7,7 +7,7 @@ namespace WNA.WNAHarmony
     public class Patch_CompOverseerSubject
     {
         private static readonly HediffDef Hediff_InMechanoid = HediffDef.Named("WNA_InMechanoid");
-        private static readonly PreceptDef Precept_Proselyte = DefDatabase<PreceptDef>.GetNamedSilentFail("WNA_P_Proselyte");
+        private static readonly PreceptDef p = DefDatabase<PreceptDef>.GetNamedSilentFail("WNA_P_Proselyte");
 
         [HarmonyPatch(typeof(CompOverseerSubject), nameof(CompOverseerSubject.CompTick))]
         public static class Patch_CompOverseerSubject_CompTick
@@ -23,7 +23,7 @@ namespace WNA.WNAHarmony
                     TryRemoveHediff(mech, Hediff_InMechanoid);
                     return;
                 }
-                if (overseer.Ideo?.HasPrecept(Precept_Proselyte) == true)
+                if (overseer.Ideo?.HasPrecept(p) == true)
                     TryAddHediff(mech, Hediff_InMechanoid);
                 else
                     TryRemoveHediff(mech, Hediff_InMechanoid);

@@ -73,6 +73,21 @@
                 <thingDef>Gold</thingDef>
                 <countRange>2000000000~2147483647</countRange>
             </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_Ration</thingDef>
+                <price>VeryCheap</price>
+                <countRange>80000000~100000000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_Medikit</thingDef>
+                <price>VeryCheap</price>
+                <countRange>80000000~100000000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>WNA_FactionDeed</thingDef>
+                <price>VeryCheap</price>
+                <countRange>23572357~23572357</countRange>
+            </li>
             <li Class="StockGenerator_Category">
                 <categoryDef>Chunks</categoryDef>
                 <thingDefCountRange>30~36</thingDefCountRange>
@@ -82,13 +97,13 @@
             <li Class="StockGenerator_Category" MayRequire="ludeon.rimworld.odyssey">
                 <categoryDef>Fish</categoryDef>
                 <thingDefCountRange>12~15</thingDefCountRange>
-                <countRange>50000000~70000000</countRange>
+                <countRange>2000000000~2147483647</countRange>
                 <price>VeryCheap</price>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Skull</thingDef>
                 <price>VeryCheap</price>
-                <countRange>50000000~70000000</countRange>
+                <countRange>2000000000~2147483647</countRange>
             </li>
         </stockGenerators>
     </TraderKindDef>

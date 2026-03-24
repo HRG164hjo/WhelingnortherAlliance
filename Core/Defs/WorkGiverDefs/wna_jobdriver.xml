@@ -20,4 +20,11 @@
     	<reportString>reviving TargetA.</reportString>
     	<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   	</JobDef>
+
+	<JobDef>
+    	<defName>WNA_Job_UseDeedOn</defName>
+    	<driverClass>WNA.WNALabour.JD_UseDeedOn</driverClass>
+    	<reportString>activating TargetA.</reportString>
+    	<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  	</JobDef>
 </Defs>

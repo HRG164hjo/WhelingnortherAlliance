@@ -81,7 +81,6 @@
             <li>HAR_AlienSlavery_Acceptable</li>
          </li>
       </requireOne>
-      <generalRules/>
       <descriptionMaker>
          <patterns>
             <li>
@@ -104,6 +103,13 @@
             <member>follower</member>
          </li>
       </symbolPacks>
+      <generalRules>
+         <rulesStrings>
+            <li>memeLeaderAdjective-></li>
+            <li>memeLeaderNoun->chief commander</li>
+            <li>memeMoralist->chief instructor</li>
+         </rulesStrings>
+      </generalRules>
    </MemeDef>
 
    <MemeDef>
@@ -128,6 +134,13 @@
          <li>Ascetic</li>
          <li>Asexual</li>
       </agreeableTraits>
+      <generalRules>
+         <rulesStrings>
+            <li>memeLeaderAdjective->chief</li>
+            <li>memeLeaderNoun->commander</li>
+            <li>memeMoralist->chief instructor</li>
+         </rulesStrings>
+      </generalRules>
    </MemeDef>
 
    <IdeoStoryPatternDef>

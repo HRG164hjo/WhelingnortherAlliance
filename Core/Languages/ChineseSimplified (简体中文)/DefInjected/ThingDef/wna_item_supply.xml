@@ -11,4 +11,9 @@
   <!-- EN: Standard ration pack for Whelingnorther Alliance (especially for Whelingnorther Humanoid Revolt). Produced from highest quality materials - theoretically. Anything that contains nutrients can be used to make this ration if needed. -->
   <WNA_Ration.description>威灵军部的标准化包装口粮，采用最高品质（大概）的材料制作而成。如有需要，任何含有营养物质的物品都可以用来制作这种口粮。</WNA_Ration.description>
   
+  <!-- EN: faction recruitment deed -->
+  <WNA_FactionDeed.label>派系招募契约</WNA_FactionDeed.label>
+  <!-- EN: A deed that allows you to spend some goodwill to recruit a soldier from WNA to serve you, you must be &lt;color=00FF00&gt;allied&lt;/color&gt; with WNA to use this. -->
+  <WNA_FactionDeed.description>一份允许你花费一些好感度从威灵会招募一名士兵为你效力的契约，你必须与威灵会&lt;color=00FF00&gt;结盟&lt;/color&gt;才能使用这份契约。</WNA_FactionDeed.description>
+  
 </LanguageData>

@@ -82,6 +82,9 @@
     <Compile Include="ThingClass\Whelingnorthan.cs" />
     <Compile Include="ThingCompProp\CompBodyshapeOverride.cs" />
     <Compile Include="ThingCompProp\CompClimateControl.cs" />
+    <Compile Include="ThingCompProp\CompFactionDeed.cs" />
+    <Compile Include="ThingCompProp\CompFactionDeed_HostileDestruct.cs" />
+    <Compile Include="ThingCompProp\CompFactionDeed_TargetPawn.cs" />
     <Compile Include="ThingCompProp\CompHealOrRevive.cs" />
     <Compile Include="ThingCompProp\CompIronApparel.cs" />
     <Compile Include="ThingCompProp\CompIronGuardian.cs" />
@@ -140,6 +143,7 @@
     <Compile Include="WNAHarmony\Patch_WeaponTagPostfix.cs" />
     <Compile Include="WNAHarmony\WNAMod.cs" />
     <Compile Include="WNALabour\Revive.cs" />
+    <Compile Include="WNALabour\UseDeedOn.cs" />
     <Compile Include="WNAMiscs\Gizmo_ShieldStatus.cs" />
     <Compile Include="WNAMiscs\HedifferRemover.cs" />
     <Compile Include="WNAMiscs\HedifferTicker.cs" />

@@ -5,10 +5,10 @@
 		<label>climate control facility</label>
 		<description>todo.</description>
         <graphicData>
-			<texPath>Things/Building/Misc/ClimateAdjuster</texPath>
+			<texPath>buildings/misc/wna_climatecontroller</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
             <drawRotated>false</drawRotated>
-            <drawSize>(3,3)</drawSize>
+            <drawSize>(2.75,2.75)</drawSize>
 		</graphicData>
         <minifiedDef IsNull="true"/>
         <thingCategories IsNull="true"/>
@@ -25,12 +25,19 @@
             <WNA_AttunementFabric>60</WNA_AttunementFabric>
             <ComponentSpacer>5</ComponentSpacer>
         </costList>
+        <building>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
         <comps>
             <li Class="CompProperties_CausesGameCondition">
                 <conditionDef>WNA_GameCond_ClimateControl</conditionDef>
                 <compClass>WNA.ThingCompProp.CompClimateControl</compClass>
                 <worldRange>5</worldRange>
                 <hideSource>false</hideSource>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>-2357</basePowerConsumption>
             </li>
         </comps>
         <placeWorkers>

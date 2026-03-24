@@ -2,16 +2,16 @@
 <Defs>
     <IssueDef>
         <defName>WNA_I_Proselyte</defName>
-        <label> </label>
+        <label></label>
         <iconPath>factions/wna_alliance</iconPath>
     </IssueDef>
     <PreceptDef>
         <defName>WNA_P_Proselyte</defName>
         <label></label>
+        <iconPath>factions/wna_alliance</iconPath>
         <impact>High</impact>
         <issue>WNA_I_Proselyte</issue>
         <description>...</description>
-        <prefersSlabBed>true</prefersSlabBed>
         <requiredMemes>
             <li>Meme_WNA_Ideo</li>
         </requiredMemes>
@@ -25,12 +25,12 @@
             <ConversionPower>999999</ConversionPower>
             <SuppressionPower>999999</SuppressionPower>
             <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">20</ActivitySuppressionRate>
-            <WorkSpeedGlobal>20</WorkSpeedGlobal>
-            <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
-            <ShootingAccuracyFactor_Touch>10</ShootingAccuracyFactor_Touch>
-            <ShootingAccuracyFactor_Short>10</ShootingAccuracyFactor_Short>
-            <ShootingAccuracyFactor_Medium>10</ShootingAccuracyFactor_Medium>
-            <ShootingAccuracyFactor_Long>10</ShootingAccuracyFactor_Long>
+            <WorkSpeedGlobal>2</WorkSpeedGlobal>
+            <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+            <ShootingAccuracyFactor_Touch>2</ShootingAccuracyFactor_Touch>
+            <ShootingAccuracyFactor_Short>2</ShootingAccuracyFactor_Short>
+            <ShootingAccuracyFactor_Medium>2</ShootingAccuracyFactor_Medium>
+            <ShootingAccuracyFactor_Long>2</ShootingAccuracyFactor_Long>
         </statFactors>
         <comps>
             <li Class="PreceptComp_SelfTookMemoryThought">

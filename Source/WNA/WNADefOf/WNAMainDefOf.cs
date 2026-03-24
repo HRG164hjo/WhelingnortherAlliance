@@ -37,8 +37,11 @@ namespace WNA.WNADefOf
         public static HediffDef WNA_VoidDiver;
         public static HediffDef WNA_RadRing;
 
+        public static HistoryEventDef WNA_HE_UseDeedOn;
+
         public static JobDef WNA_Job_DeepDrilling;
         public static JobDef WNA_Job_Revive;
+        public static JobDef WNA_Job_UseDeedOn;
 
         public static PawnKindDef WNA_Archonpriest;
         public static PawnKindDef WNA_Disciple;

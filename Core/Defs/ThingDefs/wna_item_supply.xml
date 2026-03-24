@@ -114,4 +114,36 @@
         </thingCategories>
         <orderedTakeGroup>Medicine</orderedTakeGroup>
     </ThingDef>
+    
+    <ThingDef ParentName="WNA_ItemsBase">
+        <defName>WNA_FactionDeed</defName>
+        <label>faction recruitment deed</label>
+        <description>A deed that allows you to spend some goodwill to recruit a soldier from WNA to serve you, you must be &lt;color=00FF00&gt;allied&lt;/color&gt; with WNA to use this.</description>
+        <tickerType>Rare</tickerType>
+        <graphicData>
+            <texPath>item/wna_deed</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>2357</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="WNA.ThingCompProp.PropFactionDeed">
+                <useLabel>Use {0_label}</useLabel>
+                <useJob>WNA_Job_UseDeedOn</useJob>
+                <useDuration>0</useDuration>
+                <showUseGizmo>true</showUseGizmo>
+                <targetFactionDef>WNA_FactionWNA</targetFactionDef>
+            </li>
+            <li Class="WNA.ThingCompProp.PropFactionDeed_TargetPawn">
+                <compClass>WNA.ThingCompProp.CompFactionDeed_TargetPawn</compClass>
+                <ignorePlayerFactionPawns>true</ignorePlayerFactionPawns>
+                <targetFactionDef>WNA_FactionWNA</targetFactionDef>
+            </li>
+            <li Class="WNA.ThingCompProp.PropFactionDeed_HostileDestruct">
+                <targetFactionDef>WNA_FactionWNA</targetFactionDef>
+            </li>
+        </comps>
+    </ThingDef>
 </Defs>

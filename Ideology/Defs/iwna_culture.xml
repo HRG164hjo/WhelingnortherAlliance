@@ -16,9 +16,9 @@
         </allowedPlaceTags>
         <styleItemTags>
             <li>
-              <tag>Urban</tag>
-              <baseWeight>1</baseWeight>
-              <weightFactor>1</weightFactor>
+                <tag>Urban</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
             </li>
             <li>
                 <tag>NoTattoo</tag>

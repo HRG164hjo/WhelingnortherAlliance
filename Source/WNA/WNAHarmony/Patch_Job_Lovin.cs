@@ -25,7 +25,7 @@ namespace WNA.WNAHarmony
                 bool partnerHas = partner.Ideo.HasPrecept(node);
                 if (pawnHas && partnerHas)
                 {
-                    __result *= 144;
+                    __result *= 2357;
                     return;
                 }
                 if (pawnHas != partnerHas)

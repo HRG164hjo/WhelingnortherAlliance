@@ -10,4 +10,7 @@
   <!-- EN: reviving TargetA. -->
   <WNA_Job_Revive.reportString>复活 TargetA</WNA_Job_Revive.reportString>
   
+  <!-- EN: activating TargetA. -->
+  <WNA_Job_UseDeedOn.reportString>激活 TargetA</WNA_Job_UseDeedOn.reportString>
+  
 </LanguageData>
