@@ -86,11 +86,17 @@ namespace WNA.WNAUtility
                         return true;
                 }
             }
-            if (pawn.equipment != null && pawn.equipment.Primary != null)
+            if (pawn.health != null && pawn.health.hediffSet != null)
             {
-                TechnoConfig equipmentConfig = TechnoConfig.Get(pawn.equipment.Primary.def);
-                if (equipmentConfig != null && equipmentConfig.immuneToRadiation == true)
-                    return true;
+                foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
+                {
+                    if (hediff.def != null)
+                    {
+                        TechnoConfig hediffConfig = TechnoConfig.Get(hediff.def);
+                        if (hediffConfig != null && hediffConfig.immuneToRadiation == true)
+                            return true;
+                    }
+                }
             }
             return false;
         }

@@ -49,8 +49,8 @@ namespace WNA.ThingCompProp
                     if (targetWeaponDef == null) yield break;
                     yield return new Command_Action
                     {
-                        defaultLabel = "WNA.SwitchMode.Label".Translate(),
-                        defaultDesc = "WNA.SwitchMode.Desc".Translate(),
+                        defaultLabel = "WNA_SwitchMode_Label".Translate(),
+                        defaultDesc = "WNA_SwitchMode_Desc".Translate(),
                         icon = ContentFinder<Texture2D>.Get("UI/Misc/BadTexture"),
                         action = TryTransformWeapon
                     };

@@ -6,7 +6,7 @@ namespace WNA.WNAMiscs
 {
     public class HedifferRemover : HediffGiver
     {
-        public int tickInterval = 250;
+        public int tickInterval = 239;
         internal static readonly HashSet<string> includedHediffs = new HashSet<string> { };
         static HedifferRemover()
         {
@@ -26,9 +26,13 @@ namespace WNA.WNAMiscs
             };
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
-            if (pawn.Faction != null && pawn.Faction.def.defName == "WNA_FactionWNA") RemoveTargetHediffs(pawn);
-            else if (pawn.Ideo != null && pawn.Ideo.HasPrecept(WNAMainDefOf.WNA_P_Proselyte)) RemoveTargetHediffs(pawn);
-            else if (validPawn.Contains(pawn.def.defName)) RemoveTargetHediffs(pawn);
+            int currentTick = Find.TickManager.TicksGame;
+            if (currentTick % tickInterval == 0)
+            {
+                if (pawn.Faction != null && pawn.Faction.def.defName == "WNA_FactionWNA") RemoveTargetHediffs(pawn);
+                else if (pawn.Ideo != null && pawn.Ideo.HasPrecept(WNAMainDefOf.WNA_P_Proselyte)) RemoveTargetHediffs(pawn);
+                else if (validPawn.Contains(pawn.def.defName)) RemoveTargetHediffs(pawn);
+            }
         }
         private bool IsValidHediff(Hediff hediff)
         {

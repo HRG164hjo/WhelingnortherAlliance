@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    
     <GameConditionDef>
         <defName>WNA_GameCond_ClimateControl</defName>
         <label>climate control</label>
@@ -15,4 +14,17 @@
         <canAffectAllPlanetLayers>true</canAffectAllPlanetLayers>
     </GameConditionDef>
 
+    <GameConditionDef>
+        <defName>WNA_GameCond_PermaconstActive</defName>
+        <label>permaconst command broadcast</label>
+        <conditionClass>WNA.GameCond.GameCond_PermaconstActive</conditionClass>
+        <description>A new Permaconst Command maintenance cycle is on. Thralls of Permaconst Command will roam around the planet hunting for their foes. The thralls can hardly be truly killed untill the maintenance cycle ends.</description>
+        <letterText>A new Permaconst Command maintenance cycle is on.</letterText>
+        <letterDef>ThreatBig</letterDef>
+        <canBePermanent>false</canBePermanent>
+        <natural>false</natural>
+        <temperatureOffset>0</temperatureOffset>
+        <weatherDef>Clear</weatherDef>
+        <canAffectAllPlanetLayers>true</canAffectAllPlanetLayers>
+    </GameConditionDef>
 </Defs>

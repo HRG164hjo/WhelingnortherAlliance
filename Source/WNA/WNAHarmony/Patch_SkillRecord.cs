@@ -10,19 +10,26 @@ namespace WNA.WNAHarmony
     public class Patch_SkillRecord
     {
         private const float expAdd = 100000000f;
+        private const int MaxLevelLimit = 9999;
         private static readonly HashSet<string> wiseList = new HashSet<string>
         {
             "WNA_WNThan",
             "WNA_Human"
         };
-
         [HarmonyPrefix]
         private static bool Prefix(SkillRecord __instance)
         {
             Pawn pawn = __instance.Pawn;
             if (IsCertainPawn(pawn))
             {
+                if (__instance.levelInt >= MaxLevelLimit)
+                {
+                    __instance.levelInt = MaxLevelLimit;
+                    return false;
+                }
                 __instance.Learn(expAdd, direct: true, ignoreLearnRate: true);
+                if (__instance.levelInt > MaxLevelLimit)
+                    __instance.levelInt = MaxLevelLimit;
                 return false;
             }
             return true;

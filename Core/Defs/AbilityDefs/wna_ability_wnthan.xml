@@ -8,7 +8,7 @@
     <AbilityDef ParentName="WNA_AbilityBase">
         <defName>WNA_Ascension</defName>
         <label>ascension</label>
-        <description>Saint of Whelingnorther Alliance is the leader of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, killing them and send them to salvation.</description><!--neta Rain World-->
+        <description>Archonpriests are the leaders of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, the creature will witness eternity, salvation and immortality.</description>
         <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
         <aiCanUse>true</aiCanUse>
@@ -43,7 +43,7 @@
     <AbilityDef ParentName="WNA_AbilityBase">
         <defName>WNA_Wisdom</defName>
         <label>bestow wisdom</label>
-        <description>The Saint of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills.</description>
+        <description>The Archonpriest of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills.</description>
         <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
         <verbProperties>

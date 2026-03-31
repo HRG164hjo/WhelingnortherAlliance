@@ -103,6 +103,7 @@
             <li MayRequire="aelanna.arimreborn.classesandjobs">ARR_SoulCrystal</li>
         </apparelDisallowTags>
         <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <nakedChance>0</nakedChance>
         <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
         <techHediffsMoney>0</techHediffsMoney>
         <biocodeWeaponChance>0</biocodeWeaponChance>
@@ -173,7 +174,6 @@
         <requiredWorkTags>
 			<li>Violent</li>
 			<li>Intellectual</li>
-			<li>Firefighting</li>
 			<li>Cleaning</li>
 		</requiredWorkTags>
     </PawnKindDef>
@@ -202,7 +202,7 @@
 	    <uiIconThing>WNA_Focus</uiIconThing>
         <effectWorking>Surgery</effectWorking>
         <soundWorking>Recipe_Surgery</soundWorking>
-        <developmentalStageFilter>Baby,Child,Adult</developmentalStageFilter>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <targetsBodyPart>false</targetsBodyPart>
         <workAmount>1</workAmount>
         <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
@@ -423,8 +423,8 @@
             <MarketValue>0</MarketValue>
             <CleaningTimeFactor>0.01</CleaningTimeFactor>
             <WorkToBuild>20</WorkToBuild>
-            <Beauty>10</Beauty>
-            <Cleanliness>10</Cleanliness>
+            <Beauty>20</Beauty>
+            <Cleanliness>20</Cleanliness>
             <ContainmentStrength MayRequire="Ludeon.Rimworld.Anomaly">1000000</ContainmentStrength>
         </statBases>
         <pathCost>0</pathCost>
@@ -437,7 +437,7 @@
 		<resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
         <pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
         <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
-        <pollutionColor>(1, 1, 1, 0.3)</pollutionColor>
+        <pollutionColor>(1,1,1,0.8)</pollutionColor>
     </TerrainDef>
 
 
@@ -707,7 +707,7 @@
             <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
             <immuneToToxGasExposure>true</immuneToToxGasExposure>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <developmentalStageFilter>Baby,Child,Adult</developmentalStageFilter>
+            <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         </apparel>
         <recipeMaker>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

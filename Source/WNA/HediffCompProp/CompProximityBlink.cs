@@ -11,7 +11,7 @@ namespace WNA.HediffCompProp
         public int cooldown = 23;
         public FloatRange skipaway = new FloatRange(19.9f, 44.9f);
         public bool counterBack = false;
-        public DamageDef damageDef = DamageDefOf.Crush;
+        public DamageDef damageDef;
         public float power = 50000f;
         public float ap = float.MaxValue;
         public PropProximityBlink()

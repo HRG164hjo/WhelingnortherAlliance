@@ -30,18 +30,18 @@
   <WNA_MakeBaseboardBulk.jobString>正在制作同调织物基板。</WNA_MakeBaseboardBulk.jobString>
   
   <!-- EN: make reinforced concrete -->
-  <WNA_MakeConcrete.label>制作钢筋混凝土</WNA_MakeConcrete.label>
+  <WNA_MakeConcrete.label>制作强化构装板</WNA_MakeConcrete.label>
   <!-- EN: make an advanced concrete sufficient for building. -->
-  <WNA_MakeConcrete.description>制作一种很适合用来建造建筑的先进混凝土材料。</WNA_MakeConcrete.description>
+  <WNA_MakeConcrete.description>制作一种很适合用来建造建筑的先进结构材料。</WNA_MakeConcrete.description>
   <!-- EN: making reinforced concrete. -->
-  <WNA_MakeConcrete.jobString>制作钢筋混凝土。</WNA_MakeConcrete.jobString>
+  <WNA_MakeConcrete.jobString>制作强化构装板。</WNA_MakeConcrete.jobString>
   
   <!-- EN: make reinforced concrete -->
-  <WNA_MakeConcreteToo.label>制作钢筋混凝土</WNA_MakeConcreteToo.label>
+  <WNA_MakeConcreteToo.label>制作强化构装板</WNA_MakeConcreteToo.label>
   <!-- EN: make an advanced concrete sufficient for building. -->
-  <WNA_MakeConcreteToo.description>制作一种很适合用来建造建筑的先进混凝土材料。</WNA_MakeConcreteToo.description>
+  <WNA_MakeConcreteToo.description>制作一种很适合用来建造建筑的先进结构材料。</WNA_MakeConcreteToo.description>
   <!-- EN: making reinforced concrete. -->
-  <WNA_MakeConcreteToo.jobString>制作钢筋混凝土。</WNA_MakeConcreteToo.jobString>
+  <WNA_MakeConcreteToo.jobString>制作强化构装板。</WNA_MakeConcreteToo.jobString>
   
   <!-- EN: make desolisium -->
   <WNA_MakeDesolisium.label>制作孤立合金</WNA_MakeDesolisium.label>

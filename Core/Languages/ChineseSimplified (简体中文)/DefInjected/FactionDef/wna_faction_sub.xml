@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <WNA_FactionPCC.label>恒固指令</WNA_FactionPCC.label>
+  <WNA_FactionPCC.description>在过去与威灵诺德联合会的冲突中，人们曾目睹一些战争幸存者突然无缘无故的袭击他们的亲人和盟友，而当这些疯人被杀死后，他们会在一段时间后复活，而那些杀死这些人的人也会成为他们中的一员。直到很久之后人们才意识到这种现象背后的一个名为“恒固指令”的幽灵信号的存在。\n\n恒固指令，更正式的称呼为“威灵诺德联合会缺省对策处”，其本质是一系列通过认知危害、心灵脉冲和快子广播等方式传播的指令。它们本身做不到任何事，但可以接管各种单位以获得执行其任务所需的物理形态。恒固指令处于一个独立的自我维护循环中，一旦一个恒固指令被发出，即使是创建者也无法再控制它。\n\n恒固指令能记住那些挡在它面前的人。在每个维护循环中，被接管的单位都会被重建，而那些反抗者则会成为恒固指令的新的傀儡。</WNA_FactionPCC.description>
+  <WNA_FactionPCC.fixedName>恒固指令</WNA_FactionPCC.fixedName>
+  <WNA_FactionPCC.pawnSingular>役使单位</WNA_FactionPCC.pawnSingular>
+  <WNA_FactionPCC.pawnsPlural>役使单位</WNA_FactionPCC.pawnsPlural>
+  
+</LanguageData>

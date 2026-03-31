@@ -50,7 +50,9 @@
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/HediffGiverSetDef[defName="Human"]/hediffGivers</xpath>
         <value>
-            <li Class="WNA.WNAMiscs.HedifferRemover"/>
+            <li Class="WNA.WNAMiscs.HedifferRemover">
+                <tickInterval>239</tickInterval>
+            </li>
         </value>
     </Operation>
 
@@ -59,6 +61,102 @@
 		<xpath>Defs/InventoryStockGroupDef[defName="Medicine"]/thingDefs</xpath>
 		<value>
 			<li>WNA_Medikit</li>
+		</value>
+	</Operation>
+
+    <!-- -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/combatPower</xpath>
+		<value>
+			<combatPower>70</combatPower>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/apparelMoney</xpath>
+		<value>
+			<apparelMoney>9999~99999</apparelMoney>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/weaponMoney</xpath>
+		<value>
+			<weaponMoney>9999~99999</weaponMoney>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsMoney</xpath>
+		<value>
+			<techHediffsMoney>9999~99999</techHediffsMoney>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsChance</xpath>
+		<value>
+			<techHediffsChance>1.0</techHediffsChance>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/skills</xpath>
+		<value>
+			<skills>
+                <li>
+                    <skill>Shooting</skill>
+                    <range>12~18</range>
+                </li>
+                <li>
+                    <skill>Melee</skill>
+                    <range>12~18</range>
+                </li>
+            </skills>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]</xpath>
+		<value>
+			<disallowedTraits>
+                <li>Brawler</li>
+                <li>Nudist</li>
+            </disallowedTraits>
+            <techHediffsDisallowTags>
+                <li>PainCauser</li>
+            </techHediffsDisallowTags>
+            <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+            <nakedChance>0</nakedChance>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/apparelTags</xpath>
+		<value>
+			<li MayRequire="Ludeon.Rimworld.Odyssey">Vacsuit</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/apparelTags/li[text()="IndustrialBasic"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/apparelTags/li[text()="IndustrialAdvanced"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/apparelTags/li[text()="IndustrialMilitaryBasic"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/weaponTags</xpath>
+		<value>
+			<li>SpacerGun</li>
+            <li>GunHeavy</li>
+            <li>Flamethrower</li>
+            <li>MechanoidGunMedium</li>
+            <li>MechanoidGunHeavy</li>
+            <li>MechanoidGunBreach</li>
+            <li>MechanoidGunLongRange</li>
+            <li MayRequire="Ludeon.Rimworld.Anomaly">NerveSpiker</li>
+            <li MayRequire="Ludeon.Rimworld.Odyssey">WeaponBeamRepeater</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags</xpath>
+		<value>
+			<li>ImplantEmpireCommon</li>
 		</value>
 	</Operation>
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-	<WNA.Inspection.LetterLabel>检查报告</WNA.Inspection.LetterLabel>
-	<WNA.Inspection.None>{PAWN}没有需要特别关注的健康状况.</WNA.Inspection.None>
-	<WNA.Inspection.Visible>{PAWN}有以下特殊的健康状况:</WNA.Inspection.Visible>
-	<WNA.Inspection.Hidden>{PAWN}有以下隐藏的健康状况:</WNA.Inspection.Hidden>
+	<WNA_Inspection_LetterLabel>inspection report</WNA_Inspection_LetterLabel>
+	<WNA_Inspection_None>{PAWN} has no significant health conditions.</WNA_Inspection_None>
+	<WNA_Inspection_Visible>{PAWN} has these special health conditions listed below:</WNA_Inspection_Visible>
+	<WNA_Inspection_Hidden>{PAWN} has these hidden health conditions listed below:</WNA_Inspection_Hidden>
 
 </LanguageData>

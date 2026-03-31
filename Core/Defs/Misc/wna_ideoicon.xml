@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <IdeoIconDef>
+        <defName>WNA_IdeoIcon</defName>
+        <iconPath>factions/wna_alliance</iconPath>
+        <memes>
+            <li>Meme_WNA_Ideo</li>
+        </memes>
+    </IdeoIconDef>
+</Defs>

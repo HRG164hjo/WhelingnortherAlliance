@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <IncidentDef>
-        <defName>WNAIncident_DiscipleJoin</defName>
+        <defName>WNA_Incident_DiscipleJoin</defName>
         <label>WNA disciple join</label>
         <category>Misc</category>
         <targetTags>
@@ -16,5 +16,18 @@
         <minRefireDays>15</minRefireDays>
         <pawnKind>WNA_Disciple</pawnKind>
         <requireColonistsPresent>True</requireColonistsPresent>
+    </IncidentDef>
+    
+    <IncidentDef>
+        <defName>WNA_Incident_Permaconst</defName>
+        <label>Permaconst maintenance</label>
+        <category>ThreatBig</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>WNA.Incident.PermaconstMaintenance</workerClass>
+        <baseChance>1.0</baseChance>
+        <minRefireDays>23.57</minRefireDays>
+        <earliestDay>23</earliestDay>
     </IncidentDef>
 </Defs>

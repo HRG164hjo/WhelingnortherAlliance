@@ -2,43 +2,43 @@
 <LanguageData>
   
   <!-- EN: ascension -->
-  <WNA_Ascension.label>ascension</WNA_Ascension.label>
-  <!-- EN: Saint of Whelingnorther Alliance is the leader of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, killing them and send them to salvation. -->
-  <WNA_Ascension.description>Saint of Whelingnorther Alliance is the leader of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, killing them and send them to salvation.</WNA_Ascension.description>
+  <WNA_Ascension.label>飞升</WNA_Ascension.label>
+  <!-- EN: Archonpriests are the leaders of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, killing them and send them to salvation. -->
+  <WNA_Ascension.description>主司教士是威灵诺德联合会的领袖，作为威灵诺德伟大神性的化身，他们被赋予让生物飞升的能力，使其得见永恒自在不朽。</WNA_Ascension.description>
   
   <!-- EN: psiblast -->
-  <WNA_AvadaKedavra.label>psiblast</WNA_AvadaKedavra.label>
+  <WNA_AvadaKedavra.label>心灵震爆</WNA_AvadaKedavra.label>
   <!-- EN: Cast an offensive thought directly to the target and detonate it. Benefit from WNA's unique techniques, this explosion is of great power, hardly anything in physical world can resist its attack. -->
-  <WNA_AvadaKedavra.description>Cast an offensive thought directly to the target and detonate it. Benefit from WNA's unique techniques, this explosion is of great power, hardly anything in physical world can resist its attack.</WNA_AvadaKedavra.description>
+  <WNA_AvadaKedavra.description>将一团攻击性的思想投射到目标身上并将其引爆。得益于威灵会的秘传技艺，这种爆炸的威力极大，几乎没有什么东西能承受其侵袭。</WNA_AvadaKedavra.description>
   
   <!-- EN: invisibility -->
-  <WNA_Invisibility.label>invisibility</WNA_Invisibility.label>
+  <WNA_Invisibility.label>藏形潜身</WNA_Invisibility.label>
   <!-- EN: Focus on a protective thought and cast it around the target. The target will be hidden from sights for a period of time, usually about 5 days. Theoretically the target can be detected but not all people has proper trick or device for such work. -->
-  <WNA_Invisibility.description>Focus on a protective thought and cast it around the target. The target will be hidden from sights for a period of time, usually about 5 days. Theoretically the target can be detected but not all people has proper trick or device for such work.</WNA_Invisibility.description>
+  <WNA_Invisibility.description>将保护性的思想聚焦并施放在目标周身。在大约5天之内，目标将能从众人视线中脱身。理论上目标仍然可以被探测到，但并非所有人都有合适的技巧或探测设备。</WNA_Invisibility.description>
   
   <!-- EN: psylink deprivation -->
-  <WNA_PsylinkDeprivation.label>psylink deprivation</WNA_PsylinkDeprivation.label>
+  <WNA_PsylinkDeprivation.label>灵能剥夺</WNA_PsylinkDeprivation.label>
   <!-- EN: cast dark power to the victim to rob the victim of their psychic ability. victims with psylinks will lose their psylink and experience severe psychic trauma, and those without psylinks will experience severe psychic shock and become incapacitied for several days. -->
-  <WNA_PsylinkDeprivation.description>cast dark power to the victim to rob the victim of their psychic ability. victims with psylinks will lose their psylink and experience severe psychic trauma, and those without psylinks will experience severe psychic shock and become incapacitied for several days.</WNA_PsylinkDeprivation.description>
+  <WNA_PsylinkDeprivation.description>对目标施放黑暗力量以剥夺其心灵能力。具有灵能能力的受害者将失去其启灵等级并遭受严重的灵能创伤，而没有显著灵能能力的受害者也会经历一段时间的灵能休克。</WNA_PsylinkDeprivation.description>
   
   <!-- EN: resurrection -->
-  <WNA_Resurrection.label>resurrection</WNA_Resurrection.label>
+  <WNA_Resurrection.label>起死回生</WNA_Resurrection.label>
   <!-- EN: WNA had mastered the technique of resurrecting newly dead soon after they formed, and now they can ensure anyone they permit to master this skill. -->
-  <WNA_Resurrection.description>WNA had mastered the technique of resurrecting newly dead soon after they formed, and now they can ensure anyone they permit to master this skill.</WNA_Resurrection.description>
+  <WNA_Resurrection.description>威灵会在成立后不久就掌握了复活新死之人的技艺，现在他们能确保任何经他们允许的人都能掌握这项技能。</WNA_Resurrection.description>
   
   <!-- EN: warp -->
-  <WNA_Warp.label>warp</WNA_Warp.label>
+  <WNA_Warp.label>折跃</WNA_Warp.label>
   <!-- EN: Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick. -->
-  <WNA_Warp.description>Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.</WNA_Warp.description>
+  <WNA_Warp.description>传闻威灵古族能将他们的行动能力提升到极其不可思议的地步，以至于他们能去到任何他们想去的地方，甚至是任何时间点，无需付出任何代价。虽然现在的威灵会还不能达到那种水平，但他们仍然能用一些小技巧把自己传送到周围任何他们想去的地方。</WNA_Warp.description>
   
   <!-- EN: farskip -->
-  <WNA_Warp2.label>farskip</WNA_Warp2.label>
+  <WNA_Warp2.label>远域折跃</WNA_Warp2.label>
   <!-- EN: Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick. -->
-  <WNA_Warp2.description>Rumour says that ancient whelingnorthan can extend their ability to walk to an uncanny level that they can travel to anywhere, even any time, without costing anything. Though WNA today can hardly get to that point, they can still warp them to anywhere surrounding they want, just with a very easy trick.</WNA_Warp2.description>
+  <WNA_Warp2.description>传闻威灵古族能将他们的行动能力提升到极其不可思议的地步，以至于他们能去到任何他们想去的地方，甚至是任何时间点，无需付出任何代价。虽然现在的威灵会还不能达到那种水平，但他们仍然能用一些小技巧把自己传送到周围任何他们想去的地方。</WNA_Warp2.description>
   
   <!-- EN: bestow wisdom -->
-  <WNA_Wisdom.label>bestow wisdom</WNA_Wisdom.label>
+  <WNA_Wisdom.label>启蒙</WNA_Wisdom.label>
   <!-- EN: The Saint of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills. -->
-  <WNA_Wisdom.description>The Saint of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills.</WNA_Wisdom.description>
+  <WNA_Wisdom.description>威灵会的主司教士以威灵诺德之圣名赐受术者以智慧。受术者能在他们的各项技能上取得长足的进步。</WNA_Wisdom.description>
   
 </LanguageData>

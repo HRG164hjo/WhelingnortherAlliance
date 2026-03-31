@@ -88,18 +88,42 @@
                 <preventKilling>true</preventKilling>
                 <preventKillingUntilHealthHPPercentage>0.05</preventKillingUntilHealthHPPercentage>
 				<pawnCapacityMinLevels>
+					<li>
+						<capacity>Consciousness</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<minLevel>1</minLevel>
+					</li>
                     <li>
-                        <capacity>Consciousness</capacity>
-                        <minLevel>0.6</minLevel>
+                        <capacity>Sight</capacity>
+						<minLevel>1</minLevel>
                     </li>
                     <li>
-                        <capacity>Moving</capacity>
-                        <minLevel>0.6</minLevel>
+                        <capacity>Hearing</capacity>
+						<minLevel>1</minLevel>
                     </li>
-                    <li>
-                        <capacity>Manipulation</capacity>
-                        <minLevel>0.6</minLevel>
-                    </li>
+					<li>
+						<capacity>Breathing</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<minLevel>1</minLevel>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<minLevel>1</minLevel>
+					</li>
 				</pawnCapacityMinLevels>
 			</li>
 		</modExtensions>
@@ -704,27 +728,27 @@
 					</li>
                     <li>
                         <capacity>Sight</capacity>
-						<minLevel>0.7</minLevel>
+						<minLevel>1</minLevel>
                     </li>
                     <li>
                         <capacity>Hearing</capacity>
-						<minLevel>0.7</minLevel>
+						<minLevel>1</minLevel>
                     </li>
 					<li>
 						<capacity>Breathing</capacity>
-						<minLevel>0.7</minLevel>
+						<minLevel>1</minLevel>
 					</li>
 					<li>
 						<capacity>BloodFiltration</capacity>
-						<minLevel>0.7</minLevel>
+						<minLevel>1</minLevel>
 					</li>
 					<li>
 						<capacity>BloodPumping</capacity>
-						<minLevel>0.7</minLevel>
+						<minLevel>1</minLevel>
 					</li>
 					<li>
 						<capacity>Metabolism</capacity>
-						<minLevel>0.7</minLevel>
+						<minLevel>1</minLevel>
 					</li>
 				</pawnCapacityMinLevels>
 			</li>
@@ -1017,15 +1041,15 @@
                 <pawnCapacityMinLevels>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <minLevel>2</minLevel>
+                        <minLevel>23.57</minLevel>
                     </li>
                     <li>
                         <capacity>Moving</capacity>
-                        <minLevel>2</minLevel>
+                        <minLevel>23.57</minLevel>
                     </li>
                     <li>
                         <capacity>Manipulation</capacity>
-                        <minLevel>2</minLevel>
+                        <minLevel>23.57</minLevel>
                     </li>
                 </pawnCapacityMinLevels>
 			</li>
@@ -1092,39 +1116,39 @@
 				<pawnCapacityMinLevels>
 					<li>
 						<capacity>Consciousness</capacity>
-						<minLevel>1</minLevel>
+						<minLevel>23.57</minLevel>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
-						<minLevel>1</minLevel>
+						<minLevel>23.57</minLevel>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<minLevel>1</minLevel>
+						<minLevel>23.57</minLevel>
 					</li>
                     <li>
                         <capacity>Sight</capacity>
-						<minLevel>1</minLevel>
+						<minLevel>23.57</minLevel>
                     </li>
                     <li>
                         <capacity>Hearing</capacity>
-						<minLevel>1</minLevel>
+						<minLevel>23.57</minLevel>
                     </li>
 					<li>
 						<capacity>Breathing</capacity>
-						<minLevel>1</minLevel>
+						<minLevel>23.57</minLevel>
 					</li>
 					<li>
 						<capacity>BloodFiltration</capacity>
-						<minLevel>1</minLevel>
+						<minLevel>23.57</minLevel>
 					</li>
 					<li>
 						<capacity>BloodPumping</capacity>
-						<minLevel>1</minLevel>
+						<minLevel>23.57</minLevel>
 					</li>
 					<li>
 						<capacity>Metabolism</capacity>
-						<minLevel>1</minLevel>
+						<minLevel>23.57</minLevel>
 					</li>
 				</pawnCapacityMinLevels>
 			</li>

@@ -118,7 +118,7 @@
     <ThingDef ParentName="WNA_ItemsBase">
         <defName>WNA_FactionDeed</defName>
         <label>faction recruitment deed</label>
-        <description>A deed that allows you to spend some goodwill to recruit a soldier from WNA to serve you, you must be &lt;color=00FF00&gt;allied&lt;/color&gt; with WNA to use this.</description>
+        <description>A deed that allows you to spend some goodwill to recruit a soldier from WNA to serve you, you must be &lt;color=#00FF00&gt;allied&lt;/color&gt; with WNA to use this.</description>
         <tickerType>Rare</tickerType>
         <graphicData>
             <texPath>item/wna_deed</texPath>

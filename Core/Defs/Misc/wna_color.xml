@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ColorDef ParentName="StructureColorBase">
+        <defName>WNA_PureBlack</defName>
+        <label>pure black</label>
+        <color>(0, 0, 0)</color>
+        <displayOrder>0</displayOrder>
+    </ColorDef>
+</Defs>

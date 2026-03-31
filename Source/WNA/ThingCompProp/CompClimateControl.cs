@@ -85,10 +85,13 @@ namespace WNA.ThingCompProp
                         AllDefsListForReading.OrderBy(w => w.defName).ToList();
                     foreach (WeatherDef wli in sortedWeathers)
                     {
-                        string text = wli.LabelCap + "\n(" + wli.defName + ")";
+                        string text;
+                        if (DebugSettings.godMode) text = wli.LabelCap + "\n(" + wli.defName + ")";
+                        else text = wli.LabelCap;
                         options.Add(new FloatMenuOption(text, delegate
                         {
                             weather = wli;
+                            Find.CurrentMap.weatherManager.TransitionTo(wli);
                             ReSetupAllConditions();
                         }));
                     }

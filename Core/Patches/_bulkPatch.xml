@@ -287,6 +287,7 @@
                         <li>Plasteel</li>
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                        <li MayRequire="sarg.alphaanimals">AA_SkySteel</li>
                     </thingDefs>
                 </filter>
                 <count>2250</count>
@@ -296,6 +297,7 @@
                     <thingDefs>
                         <li>Steel</li>
                         <li>Uranium</li>
+                        <li MayRequire="sarg.alphabiomes">AB_AlcyoniteChunk</li>
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                     </thingDefs>
@@ -308,6 +310,8 @@
                 <li>Plasteel</li>
                 <li>Steel</li>
                 <li>Uranium</li>
+                <li MayRequire="sarg.alphabiomes">AB_AlcyoniteChunk</li>
+                <li MayRequire="sarg.alphaanimals">AA_SkySteel</li>
                 <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
@@ -568,6 +572,8 @@
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                         <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
                         <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
+                        <li MayRequire="sarg.alphabiomes">AB_AlcyoniteChunk</li>
+                        <li MayRequire="sarg.alphaanimals">AA_SkySteel</li>
                     </thingDefs>
                 </filter>
                 <count>3000</count>
@@ -588,6 +594,8 @@
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                 <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
                 <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
+                <li MayRequire="sarg.alphabiomes">AB_AlcyoniteChunk</li>
+                <li MayRequire="sarg.alphaanimals">AA_SkySteel</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
@@ -621,6 +629,8 @@
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                         <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
                         <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
+                        <li MayRequire="sarg.alphabiomes">AB_AlcyoniteChunk</li>
+                        <li MayRequire="sarg.alphaanimals">AA_SkySteel</li>
                         <li>Jade</li>
                         <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                         <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
@@ -655,6 +665,8 @@
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                 <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
                 <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
+                <li MayRequire="sarg.alphabiomes">AB_AlcyoniteChunk</li>
+                <li MayRequire="sarg.alphaanimals">AA_SkySteel</li>
                 <li>Jade</li>
                 <li MayRequire="ludeon.rimworld.odyssey">Obsidian</li>
                 <li MayRequire="ninedaylongbow.chinesecomprehensiveexpansion">RealgarStone</li>
@@ -695,6 +707,8 @@
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                         <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
                         <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
+                        <li MayRequire="sarg.alphabiomes">AB_AlcyoniteChunk</li>
+                        <li MayRequire="sarg.alphaanimals">AA_SkySteel</li>
                     </thingDefs>
                 </filter>
                 <count>5000</count>
@@ -722,6 +736,8 @@
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
                 <li MayRequire="romyashi.ancientrelics">Romy_Oldsteel</li>
                 <li MayRequire="romyashi.mechanoidreusing2">Mechalloy</li>
+                <li MayRequire="sarg.alphabiomes">AB_AlcyoniteChunk</li>
+                <li MayRequire="sarg.alphaanimals">AA_SkySteel</li>
                 <li>WNA_Quicklime</li>
             </thingDefs>
         </fixedIngredientFilter>

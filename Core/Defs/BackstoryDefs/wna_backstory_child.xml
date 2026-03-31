@@ -129,7 +129,6 @@
         <title>student</title>
         <titleShort>student</titleShort>
         <description>[PAWN_nameDef] entered school when [PAWN_pronoun] was around 6. The most valuable knowledge [PAWN_pronoun] learned from school is how to learn.</description>
-        <workDisables>Social</workDisables>
         <forcedTraits>
             <FastLearner>0</FastLearner>
         </forcedTraits>

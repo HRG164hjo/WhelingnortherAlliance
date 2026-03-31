@@ -427,6 +427,7 @@
                         <li>Plasteel</li>
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+                        <li MayRequire="sarg.alphaanimals">AA_SkySteel</li>
                     </thingDefs>
                 </filter>
                 <count>45</count>
@@ -436,6 +437,7 @@
                     <thingDefs>
                         <li>Steel</li>
                         <li>Uranium</li>
+                        <li MayRequire="sarg.alphabiomes">AB_AlcyoniteChunk</li>
                         <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                         <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                     </thingDefs>
@@ -448,6 +450,8 @@
                 <li>Plasteel</li>
                 <li>Steel</li>
                 <li>Uranium</li>
+                <li MayRequire="sarg.alphabiomes">AB_AlcyoniteChunk</li>
+                <li MayRequire="sarg.alphaanimals">AA_SkySteel</li>
                 <li MayRequire="ludeon.rimworld.odyssey">GravlitePanel</li>
                 <li MayRequire="aoba.deadmanswitch.core">DMS_Ceramics</li>
                 <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>

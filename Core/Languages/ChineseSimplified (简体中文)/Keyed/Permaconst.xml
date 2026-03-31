@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNA_Hiss>哈！</WNA_Hiss>
+  <WNA_Message_ColonistTurned>我们的人被恒固指令操纵了！</WNA_Message_ColonistTurned>
+  <WNA_LordHostility>我们与威灵会的关系破裂了</WNA_LordHostility>
+  <WNA_LordNeutralized>我们与威灵会重归于好</WNA_LordNeutralized>
+  <WNA_Letter_Permaconst>幽灵信号</WNA_Letter_Permaconst>
+  <WNA_Letter_Permaconst_Desc>一系列神秘的幽灵信号从宇宙深空而来，经由散落在星球各处的隐秘中继站，在星球的各个角落回荡。\n\n威灵会的恒固指令开启了它的又一个自我维护循环，它所操控的傀儡们将再次开始它们的游猎。直接与其交锋绝不是好主意，将敌人交与可靠的炮塔防线处理才是上策。</WNA_Letter_Permaconst_Desc>
+
+</LanguageData>

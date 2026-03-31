@@ -37,7 +37,7 @@
             </li>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>-2357</basePowerConsumption>
+                <basePowerConsumption>2357</basePowerConsumption>
             </li>
         </comps>
         <placeWorkers>

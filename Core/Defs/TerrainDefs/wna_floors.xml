@@ -17,6 +17,28 @@
 			<li>WNA_WhelingnortherApocalypse</li>
 		</researchPrerequisites>
 	</TerrainDef>
+	<TerrainDef ParentName="WNA_FloorsBase" MayRequire="imranfish.xmlextensions">
+		<defName>WNA_StuffFloor</defName>
+		<label>pale tile</label>
+		<description>Colorless fine floor.</description>
+		<texturePath>terrains/wna_floor</texturePath>
+		<edgeType>Hard</edgeType>
+		<traversedThought>WNA_OnFocusFloor</traversedThought>
+		<isPaintable>true</isPaintable>
+		<tags>
+			<li>FineFloor</li>
+			<li>Substructure</li>
+		</tags>
+		<isFoundation>true</isFoundation>
+		<researchPrerequisites>
+			<li>WNA_WhelingnortherApocalypse</li>
+		</researchPrerequisites>
+	</TerrainDef>
+	<DesignatorDropdownGroupDef>
+    	<defName>WNA_StuffFloor_Dropdown</defName>
+    	<label>stuff tile</label>
+  	</DesignatorDropdownGroupDef>
+
 	<TerrainDef ParentName="WNA_FloorsBase">
 		<defName>WNA_FocusSoil</defName>
 		<label>dim soil</label>

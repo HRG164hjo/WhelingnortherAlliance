@@ -28,7 +28,7 @@
     <AbilityDef ParentName="WNA_AbilityBase">
         <defName>WNA_SaboteurJump</defName>
         <label>long jump</label>
-        <description>Saboteurs have recevied professional trainings, they can make long-distance jumps without using any other equipments.</description>
+        <description>Make long-distance jumps without using any other equipments.</description>
         <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
         <aiCanUse>true</aiCanUse>

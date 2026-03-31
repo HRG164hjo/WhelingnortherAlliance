@@ -48,6 +48,7 @@
                 <overrideMoodBase>1</overrideMoodBase>
                 <regeneration>999999999</regeneration>
                 <showRegenerationStat>false</showRegenerationStat>
+                <preventVacuumBurns>true</preventVacuumBurns>
                 <disablesNeeds>
                     <li>Beauty</li>
                     <li>Comfort</li>
@@ -92,6 +93,7 @@
                 <blocksMentalBreaks>true</blocksMentalBreaks>
                 <blocksInspirations>true</blocksInspirations>
                 <showRegenerationStat>false</showRegenerationStat>
+                <preventVacuumBurns>true</preventVacuumBurns>
                 <regeneration>999999999</regeneration>
                 <disablesNeeds>
                     <li>Food</li>
@@ -120,6 +122,7 @@
         <stages>
             <li>
                 <becomeVisible>false</becomeVisible>
+                <preventVacuumBurns>true</preventVacuumBurns>
                 <statFactors>
                     <AimingDelayFactor>0</AimingDelayFactor>
                     <BandwidthCost>0</BandwidthCost>
@@ -132,7 +135,7 @@
                     <MedicalTendSpeed>10</MedicalTendSpeed>
                     <MedicalOperationSpeed>10</MedicalOperationSpeed>
                     <MoveSpeed>10</MoveSpeed>
-                    <RangedCooldownFactor>0.01</RangedCooldownFactor>
+                    <RangedCooldownFactor>0.1</RangedCooldownFactor>
                     <WorkSpeedGlobal>10</WorkSpeedGlobal>
                     <MeleeCooldownFactor>0</MeleeCooldownFactor>
                     <MeleeDodgeChance>10</MeleeDodgeChance>
@@ -161,6 +164,9 @@
 			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
 				<movementDef>WNA_Movement</movementDef>
 			</li>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
 		</modExtensions>
     </HediffDef>
 
@@ -183,6 +189,7 @@
                 <overrideMoodBase>1</overrideMoodBase>
                 <showRegenerationStat>false</showRegenerationStat>
                 <regeneration>60000</regeneration>
+                <preventVacuumBurns>true</preventVacuumBurns>
             </li>
         </stages>
         <comps>
@@ -204,6 +211,8 @@
         <description>I'm back from death.</description>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
         <everCurableByItem>false</everCurableByItem>
+        <blocksSocialInteraction>true</blocksSocialInteraction>
+        <blocksSleeping>true</blocksSleeping>
         <isBad>false</isBad>
         <comps>
             <li Class="HediffCompProperties_Disappears">
@@ -222,7 +231,97 @@
                 <blocksInspirations>true</blocksInspirations>
                 <pctAllThoughtNullification>1</pctAllThoughtNullification>
                 <overrideMoodBase>1</overrideMoodBase>
+                <preventVacuumBurns>true</preventVacuumBurns>
             </li>
         </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>WNA_PermaconstHidden</defName>
+        <label>permaconst seen</label>
+        <hediffClass>HediffWithComps</hediffClass>
+        <description>seen by Permaconst Command.</description>
+        <defaultLabelColor>(0,0,0)</defaultLabelColor>
+        <everCurableByItem>false</everCurableByItem>
+        <duplicationAllowed>false</duplicationAllowed>
+        <isBad>false</isBad>
+        <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
+                <hediff>WNA_PermaconstActive</hediff>
+            </li>
+            <li Class="WNA.HediffCompProp.PropPermaconstHidden"/>
+        </comps>
+    </HediffDef>
+    <HediffDef>
+        <defName>WNA_PermaconstActive</defName>
+        <label>permaconst commanded</label>
+        <hediffClass>HediffWithComps</hediffClass>
+        <description>enthralled by Permaconst Command.</description>
+        <defaultLabelColor>(0,0,0)</defaultLabelColor>
+        <everCurableByItem>false</everCurableByItem>
+        <duplicationAllowed>false</duplicationAllowed>
+        <isBad>false</isBad>
+        <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+        <blocksSocialInteraction>true</blocksSocialInteraction>
+        <blocksSleeping>true</blocksSleeping>
+        <stages>
+            <li>
+                <socialFightChanceFactor>0</socialFightChanceFactor>
+                <blocksMentalBreaks>true</blocksMentalBreaks>
+                <blocksInspirations>true</blocksInspirations>
+                <preventVacuumBurns>true</preventVacuumBurns>
+                <overrideMoodBase>0</overrideMoodBase>
+                <disablesNeeds>
+                    <li>Beauty</li>
+                    <li>Comfort</li>
+                    <li>Outdoors</li>
+                    <li>Indoors</li>
+                    <li>DrugDesire</li>
+                    <li>RoomSize</li>
+                    <li>Rest</li>
+                    <li>Food</li>
+                    <li>Joy</li>
+                    <li MayRequire="telardo.romanceontherim">RomanceOnTheRim_Need_Romance</li>
+                    <li MayRequire="rim.job.world">Sex</li>
+                </disablesNeeds>
+                <statFactors>
+                    <Flammability>0</Flammability>
+                    <AimingDelayFactor>0</AimingDelayFactor>
+                    <RangedCooldownFactor>0.5</RangedCooldownFactor>
+                    <MoveSpeed>2</MoveSpeed>
+                    <CrawlSpeed>5</CrawlSpeed>
+                    <MeleeCooldownFactor>0.1</MeleeCooldownFactor>
+                    <MeleeDodgeChance>2</MeleeDodgeChance>
+                    <BandwidthCost>2000</BandwidthCost>
+                    <PsychicSensitivity>0</PsychicSensitivity>
+                    <StaggerDurationFactor>0</StaggerDurationFactor>
+                    <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">2</VacuumResistance>
+                </statFactors>
+                <statOffsets>
+                    <ComfyTemperatureMin>-2000</ComfyTemperatureMin>
+                    <ComfyTemperatureMax>2000</ComfyTemperatureMax>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
+                <hediff>WNA_PermaconstActive</hediff>
+            </li>
+            <li Class="WNA.HediffCompProp.PropPermaconstActive"/>
+        </comps>
+		<modExtensions>
+			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
+				<movementDef>WNA_Movement</movementDef>
+			</li>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+		</modExtensions>
     </HediffDef>
 </Defs>

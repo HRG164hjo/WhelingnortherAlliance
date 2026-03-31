@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+	    <mods>
+            <li>XML Extensions</li>
+	    </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!--<Operation Class="XmlExtensions.CreateDocument">
+      				<docName>PatchDef</docName>
+      				<xpath>Defs/XmlExtensions.PatchDef[@Name="wna_StuffFloorsA"]/apply</xpath>
+   				</Operation>
+                <Operation Class="XmlExtensions.CreateDocument">
+      				<docName>WNAStuffFloor</docName>
+      				<xpath>Defs/XmlExtensions.PatchDef[@Name="wna_StuffFloorsA"]/apply</xpath>
+   				</Operation>-->
+            </operations>
+	    </match>
+    </Operation>
+    
+</Patch>

@@ -144,16 +144,16 @@ namespace WNA.ThingCompProp
             foreach (var g in base.CompGetGizmosExtra()) yield return g;
             yield return new Command_Toggle
             {
-                defaultLabel = "WNA.CompStarcoreDriller.Mode".Translate(autoMode ? "WNA_Auto".Translate() : "WNA_Manual".Translate()),
-                defaultDesc = "WNA.CompStarcoreDriller.Mode.Desc".Translate(),
+                defaultLabel = "WNA_CompStarcoreDriller_Mode".Translate(autoMode ? "WNA_Auto".Translate() : "WNA_Manual".Translate()),
+                defaultDesc = "WNA_CompStarcoreDriller_Mode.Desc".Translate(),
                 isActive = () => autoMode,
                 toggleAction = () => autoMode = !autoMode
             };
             yield return new Command_Action
             {
-                defaultLabel = "WNA.CompStarcoreDriller.SelectResource".Translate(),
-                defaultDesc = selectedResource != null ? "WNA.CompStarcoreDriller.CurrentTarget".Translate(selectedResource.LabelCap)
-                : "WNA.CompStarcoreDriller.DefaultBedrock".Translate(),
+                defaultLabel = "WNA_CompStarcoreDriller_SelectResource".Translate(),
+                defaultDesc = selectedResource != null ? "WNA_CompStarcoreDriller_CurrentTarget".Translate(selectedResource.LabelCap)
+                : "WNA_CompStarcoreDriller_DefaultBedrock".Translate(),
                 action = GenerateResourceMenu
             };
         }
@@ -161,12 +161,12 @@ namespace WNA.ThingCompProp
         {
             if (selectedResource == null)
                 return "WNA_Default".Translate();
-            string resLabel = selectedResource?.LabelCap.ToString() ?? "WNA.CompStarcoreDriller.DefaultBedrock".Translate();
+            string resLabel = selectedResource?.LabelCap.ToString() ?? "WNA_CompStarcoreDriller_DefaultBedrock".Translate();
             string modLabel = autoMode ? "WNA_Auto".Translate() : "WNA_Manual".Translate();
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
-            sb.AppendLine("WNA.CompStarcoreDriller.InspectTarget".Translate() + ": " + resLabel);
-            sb.AppendLine("WNA.CompStarcoreDriller.InspectProgress".Translate() + ": " + ProgressToNextPortionPercent.ToStringPercent("F0"));
-            sb.Append("WNA.CompStarcoreDriller.InspectMode".Translate() + ": " + modLabel);
+            sb.AppendLine("WNA_CompStarcoreDriller_InspectTarget".Translate() + ": " + resLabel);
+            sb.AppendLine("WNA_CompStarcoreDriller_InspectProgress".Translate() + ": " + ProgressToNextPortionPercent.ToStringPercent("F0"));
+            sb.Append("WNA_CompStarcoreDriller_InspectMode".Translate() + ": " + modLabel);
             return sb.ToString().TrimEnd();
         }
         public void GenerateResourceMenu()

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <FactionDef>
+        <defName>WNA_FactionPCC</defName>
+        <label>Permaconst Command</label>
+        <fixedName>Permaconst Command</fixedName>
+        <categoryTag>WNA_FactionWNA</categoryTag>
+        <factionIconPath>factions/wna_permaconst</factionIconPath>
+        <settlementTexturePath>karma</settlementTexturePath>
+        <description>During past conflicts against Whelingnorther Alliance, witnesses observed war survivors inexplicably turning hostile to their kin and allies. After these madmen were killed, they would resurrect after a period of time, and those who had killed them would subsequently become one of them. It's a long while before people finally realized the existence of a phantom signal behind this phenomenon, which is known as Permaconst Command. \n\nThe Permaconst Command, formally designated as the "Whelingnorther Alliance Default Response Department," is actually a set of instructions transmitted via various methods such as cognitive hazards, psychic pulses and tachyon broadcasts. They themselves cannot do anything, but they can takeover units to gain physical existence they require to carry out their missions. Permaconst Commands are under a perpetual self-maintenance loop, once a Permaconst Command is made, even it's instructor can no longer control it. \n\nPermaconst Command can remember those who ever standed against them. In each maintenance loop the overtaken units reconstruct, and those defiants will become new puppets of Permaconst Command.</description>
+        <pawnSingular>thrall unit</pawnSingular>
+        <pawnsPlural>thrall units</pawnsPlural>
+        <listOrderPriority>1</listOrderPriority>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>2</configurationListOrderPriority>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxCountAtGameStart>1</maxCountAtGameStart>
+        <displayInFactionSelection>false</displayInFactionSelection>
+        <canGenerateQuestSites>false</canGenerateQuestSites>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <hidden>true</hidden>
+        <autoFlee>false</autoFlee>
+        <animalsFleeDanger>false</animalsFleeDanger>
+        <canUseAvoidGrid>false</canUseAvoidGrid>
+        <techLevel>Archotech</techLevel>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Offworld</li>
+                    <li>Cult</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <apparelStuffFilter>
+            <thingDefs>
+                <li>Synthread</li>
+                <li>Hyperweave</li>
+                <li>Uranium</li>
+                <li>Plasteel</li>
+                <li>Leather_Human</li>
+            </thingDefs>
+        </apparelStuffFilter>
+        <layerBlacklist/>
+        <arrivalLayerBlacklist/>
+        <colorSpectrum><li>(255,0,0)</li></colorSpectrum>
+        <permanentEnemyToEveryoneExcept>
+            <li>WNA_FactionWNA</li>
+        </permanentEnemyToEveryoneExcept>
+        <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+        <hidden>true</hidden>
+        <allowedCultures>
+            <li>WNA_WhelingnortherCulture</li>
+        </allowedCultures>
+        <allowedArrivalTemperatureRange>-2000~2000</allowedArrivalTemperatureRange>
+        <raidLootMaker IsNull="true"/>
+        <raidLootValueFromPointsCurve>
+            <points>
+                <li>(35,0)</li>
+                <li>(100,0)</li>
+                <li>(1000,0)</li>
+                <li>(2000,0)</li>
+                <li>(4000,0)</li>
+                <li>(10000,0)</li>
+            </points>
+        </raidLootValueFromPointsCurve>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(35,35)</li>
+                <li>(70,70)</li>
+                <li>(700,700)</li>
+                <li>(1300,1300)</li>
+                <li>(10000,10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <AncientSoldier>100</AncientSoldier>
+                </options>
+            </li>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>50</commonality>
+                <options>
+                    <AncientSoldier>100</AncientSoldier>
+                    <Mech_Scyther>5</Mech_Scyther>
+                    <Mech_Pikeman>5</Mech_Pikeman>
+                    <Mech_Lancer>5</Mech_Lancer>
+                    <Mech_CentipedeBlaster>5</Mech_CentipedeBlaster>
+                    <Mech_CentipedeGunner>5</Mech_CentipedeGunner>
+                    <Mech_CentipedeBurner>5</Mech_CentipedeBurner>
+                    <Mech_Termite_Breach>5</Mech_Termite_Breach>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <dropPodIncoming>WNA_WARPIN</dropPodIncoming>
+        <dropPodActive>WNA_WARPON</dropPodActive>
+        <modExtensions/>
+    </FactionDef>
+</Defs>

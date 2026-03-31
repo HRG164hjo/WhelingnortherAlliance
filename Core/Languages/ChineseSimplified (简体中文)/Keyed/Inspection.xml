@@ -2,12 +2,12 @@
 <LanguageData>
 
 	<!-- EN: 检查报告 -->
-  <WNA.Inspection.LetterLabel>检查报告</WNA.Inspection.LetterLabel>
-	<!-- EN: {PAWN}没有需要特别关注的健康状况. -->
-  <WNA.Inspection.None>{PAWN}没有需要特别关注的健康状况.</WNA.Inspection.None>
+  <WNA_Inspection_LetterLabel>检查报告</WNA_Inspection_LetterLabel>
+	<!-- EN: {PAWN}没有需要特别关注的健康状况_ -->
+  <WNA_Inspection_None>{PAWN}没有需要特别关注的健康状况。</WNA_Inspection_None>
 	<!-- EN: {PAWN}有以下特殊的健康状况: -->
-  <WNA.Inspection.Visible>{PAWN}有以下特殊的健康状况:</WNA.Inspection.Visible>
+  <WNA_Inspection_Visible>{PAWN}有以下特殊的健康状况：</WNA_Inspection_Visible>
 	<!-- EN: {PAWN}有以下隐藏的健康状况: -->
-  <WNA.Inspection.Hidden>{PAWN}有以下隐藏的健康状况:</WNA.Inspection.Hidden>
+  <WNA_Inspection_Hidden>{PAWN}有以下隐藏的健康状况：</WNA_Inspection_Hidden>
 
 </LanguageData>

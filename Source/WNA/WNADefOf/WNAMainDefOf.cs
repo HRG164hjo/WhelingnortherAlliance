@@ -6,6 +6,8 @@ namespace WNA.WNADefOf
     [DefOf]
     public class WNAMainDefOf
     {
+        public static ColorDef WNA_PureBlack;
+
         public static DamageDef WNA_CastMelee;
         public static DamageDef WNA_CastRange;
         public static DamageDef WNA_CastBomb;
@@ -19,8 +21,10 @@ namespace WNA.WNADefOf
         public static DamageDef WNA_IronKill;
 
         public static FactionDef WNA_FactionWNA;
+        public static FactionDef WNA_FactionPCC;
 
         public static GameConditionDef WNA_GameCond_ClimateControl;
+        public static GameConditionDef WNA_GameCond_PermaconstActive;
 
         public static HediffDef WNA_AbilityWisdom;
         public static HediffDef WNA_CastDamage;
@@ -36,8 +40,15 @@ namespace WNA.WNADefOf
         public static HediffDef sWNA_DeathEnd;
         public static HediffDef WNA_VoidDiver;
         public static HediffDef WNA_RadRing;
+        public static HediffDef WNA_PermaconstHidden;
+        public static HediffDef WNA_PermaconstActive;
 
         public static HistoryEventDef WNA_HE_UseDeedOn;
+
+        public static IdeoIconDef WNA_IdeoIcon;
+
+        public static IncidentDef WNA_Incident_DiscipleJoin;
+        public static IncidentDef WNA_Incident_Permaconst;
 
         public static JobDef WNA_Job_DeepDrilling;
         public static JobDef WNA_Job_Revive;
@@ -81,6 +92,8 @@ namespace WNA.WNADefOf
 
         public static ThingDef WNA_Weapon_RiteSword;
         public static ThingDef WNA_Weapon_RiteLance;
+
+        public static ThoughtDef WNA_OnFocusFloor;
 
         public static TraitDef WNA_Trait_Unshakable;
 

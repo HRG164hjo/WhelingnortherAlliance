@@ -2,17 +2,17 @@
 <LanguageData>
   
   <!-- EN: aeroblaze -->
-  <WNA_Aeroblaze.label>aeroblaze</WNA_Aeroblaze.label>
+  <WNA_Aeroblaze.label>天火</WNA_Aeroblaze.label>
   <!-- EN: Mark target as a orbital strike positioning beacon. Chimingblaze Celestrike Satellite Network will then adjust and focus, deliver a merciless strike to the target. -->
-  <WNA_Aeroblaze.description>Mark target as a orbital strike positioning beacon. Chimingblaze Celestrike Satellite Network will then adjust and focus, deliver a merciless strike to the target.</WNA_Aeroblaze.description>
+  <WNA_Aeroblaze.description>将目标标记为轨道打击定位信标。威灵会的“赤火天槌”轨道打击网络将会随之调整并聚焦，向目标发动无情的打击。</WNA_Aeroblaze.description>
   
   <!-- EN: coagulate -->
-  <WNA_Coagulate.label>coagulate</WNA_Coagulate.label>
+  <WNA_Coagulate.label>凝血</WNA_Coagulate.label>
   <!-- EN: Perform first aids with multiple professional medical devices. No medicine is needed. -->
-  <WNA_Coagulate.description>Perform first aids with multiple professional medical devices. No medicine is needed.</WNA_Coagulate.description>
+  <WNA_Coagulate.description>运用多种专业医疗设备实施急救。不需要额外的医药。</WNA_Coagulate.description>
   
   <!-- EN: long jump -->
-  <WNA_SaboteurJump.label>long jump</WNA_SaboteurJump.label>
+  <WNA_SaboteurJump.label>长跃</WNA_SaboteurJump.label>
   <!-- EN: Saboteurs have recevied professional trainings, they can make long-distance jumps without using any other equipments. -->
   <WNA_SaboteurJump.description>Saboteurs have recevied professional trainings, they can make long-distance jumps without using any other equipments.</WNA_SaboteurJump.description>
   <!-- EN: jump -->

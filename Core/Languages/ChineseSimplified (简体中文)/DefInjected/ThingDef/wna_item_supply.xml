@@ -14,6 +14,6 @@
   <!-- EN: faction recruitment deed -->
   <WNA_FactionDeed.label>派系招募契约</WNA_FactionDeed.label>
   <!-- EN: A deed that allows you to spend some goodwill to recruit a soldier from WNA to serve you, you must be &lt;color=00FF00&gt;allied&lt;/color&gt; with WNA to use this. -->
-  <WNA_FactionDeed.description>一份允许你花费一些好感度从威灵会招募一名士兵为你效力的契约，你必须与威灵会&lt;color=00FF00&gt;结盟&lt;/color&gt;才能使用这份契约。</WNA_FactionDeed.description>
+  <WNA_FactionDeed.description>一份允许你花费一些好感度从威灵会招募一名士兵为你效力的契约，你必须与威灵会&lt;color=#00FF00&gt;结盟&lt;/color&gt;才能使用这份契约。</WNA_FactionDeed.description>
   
 </LanguageData>

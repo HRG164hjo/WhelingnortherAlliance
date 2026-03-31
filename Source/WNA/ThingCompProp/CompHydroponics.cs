@@ -18,7 +18,7 @@ namespace WNA.ThingCompProp
             compClass = typeof(CompHydroponics);
         }
     }
-
+    [StaticConstructorOnStartup]
     public class CompHydroponics : ThingComp
     {
         private const int WorkIntervalTicks = 60;
@@ -50,11 +50,11 @@ namespace WNA.ThingCompProp
             {
                 icon = SelectedCrop?.uiIcon ?? BaseContent.BadTex,
                 defaultLabel = SelectedCrop == null
-                    ? "WNA.PropHydroponics.SelectCrop".Translate()
-                    : "WNA.PropHydroponics.ChangeCrop".Translate(),
+                    ? "WNA_PropHydroponics_SelectCrop".Translate()
+                    : "WNA_PropHydroponics_ChangeCrop".Translate(),
                 defaultDesc = SelectedCrop == null
-                    ? "WNA.PropHydroponics.SelectCropDesc".Translate()
-                    : "WNA.PropHydroponics.ChangeCropDesc".Translate(SelectedCrop.label),
+                    ? "WNA_PropHydroponics_SelectCropDesc".Translate()
+                    : "WNA_PropHydroponics_ChangeCropDesc".Translate(SelectedCrop.label),
                 action = GenerateCropMenu
             };
             if (SelectedCrop != null)
@@ -62,8 +62,8 @@ namespace WNA.ThingCompProp
                 yield return new Command_Action
                 {
                     icon = CancelTex,
-                    defaultLabel = "WNA.PropHydroponics.ClearCrop".Translate(),
-                    defaultDesc = "WNA.PropHydroponics.ClearCropDesc".Translate(),
+                    defaultLabel = "WNA_PropHydroponics_ClearCrop".Translate(),
+                    defaultDesc = "WNA_PropHydroponics_ClearCropDesc".Translate(),
                     action = ResetState
                 };
             }
@@ -78,17 +78,17 @@ namespace WNA.ThingCompProp
         public override string CompInspectStringExtra()
         {
             if (SelectedCrop == null)
-                return "WNA.PropHydroponics.NoCrop".Translate();
+                return "WNA_PropHydroponics_NoCrop".Translate();
             var sb = new StringBuilder();
             if (powerComp != null && !powerComp.PowerOn)
-                sb.AppendLine("WNA.PropHydroponics.LowPower".Translate().ToString());
+                sb.AppendLine("WNA_PropHydroponics_LowPower".Translate().ToString());
             if (refuelableComp != null && !refuelableComp.HasFuel)
-                sb.AppendLine("WNA.PropHydroponics.NoFuel".Translate().ToString());
-            sb.AppendLine("WNA.PropHydroponics.Contains".Translate(Props.plantCount).ToString());
-            sb.AppendLine("WNA.PropHydroponics.Growing".Translate(SelectedCrop.label).ToString());
-            sb.AppendLine("WNA.PropHydroponics.HarvestIn".Translate(TicksToSpawn.ToStringTicksToPeriod()).ToString());
-            sb.AppendLine("WNA.PropHydroponics.Yield".Translate(CurrentHarvestCount).ToString());
-            sb.Append("WNA.PropHydroponics.CurrentGrowthFactor".Translate(GetCurrentGrowthFactor().ToString("F2")));
+                sb.AppendLine("WNA_PropHydroponics_NoFuel".Translate().ToString());
+            sb.AppendLine("WNA_PropHydroponics_Contains".Translate(Props.plantCount).ToString());
+            sb.AppendLine("WNA_PropHydroponics_Growing".Translate(SelectedCrop.label).ToString());
+            sb.AppendLine("WNA_PropHydroponics_HarvestIn".Translate(TicksToSpawn.ToStringTicksToPeriod()).ToString());
+            sb.AppendLine("WNA_PropHydroponics_Yield".Translate(CurrentHarvestCount).ToString());
+            sb.Append("WNA_PropHydroponics_CurrentGrowthFactor".Translate(GetCurrentGrowthFactor().ToString("F2")));
             return sb.ToString();
         }
         public override void PostExposeData()
