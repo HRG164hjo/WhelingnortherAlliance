@@ -5,6 +5,14 @@
         <race>WNA_Human</race>
         <nameMaker>WNA_NamerPawn</nameMaker>
         <nameMakerFemale>WNA_NamerPawn</nameMakerFemale>
+        <startingHediffs>
+            <li>
+                <def>WNA_DeathEnd</def>
+            </li>
+        </startingHediffs>
+        <apparelDisallowTags>
+            <li>WNA_Tag_Divine</li>
+        </apparelDisallowTags>
     </PawnKindDef>
     <PawnKindDef ParentName="WNA_PawnsHuman">
         <defName>WNA_Technician</defName>
@@ -32,6 +40,9 @@
             <li>Advanced</li>
             <li>ImplantEmpireCommon</li>
         </techHediffsTags>
+        <apparelDisallowTags>
+            <li>WNA_Tag_Radiation</li>
+        </apparelDisallowTags>
     </PawnKindDef>
 
     <PawnKindDef ParentName="WNA_PawnsHuman">
@@ -51,6 +62,9 @@
         <forcedTraits>
             <li>Tough</li>
         </forcedTraits>
+        <apparelDisallowTags>
+            <li>WNA_Tag_Radiation</li>
+        </apparelDisallowTags>
     </PawnKindDef>
 
     <PawnKindDef ParentName="WNA_PawnsHuman">
@@ -70,6 +84,9 @@
         <forcedTraits>
             <li>Tough</li>
         </forcedTraits>
+        <apparelDisallowTags>
+            <li>WNA_Tag_Radiation</li>
+        </apparelDisallowTags>
     </PawnKindDef>
 
     <PawnKindDef ParentName="WNA_PawnsHuman">
@@ -248,6 +265,9 @@
             <li>WNA_AvadaKedavra</li>
             <li>WNA_PsylinkDeprivation</li>
         </abilities>
+        <apparelDisallowTags>
+            <li>WNA_Tag_Radiation</li>
+        </apparelDisallowTags>
     </PawnKindDef>
     <PawnKindDef ParentName="WNA_PawnsWNThan">
         <defName>WNA_Archonpriest</defName>

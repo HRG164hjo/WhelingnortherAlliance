@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNA_Research_Dialog>关于我们在研究上遇到的困难……</WNA_Research_Dialog>
+  <WNA_OptionDesc_Dialog>“我们了解你们遇到的困难。”这位主司教士似乎已经知道了我们想问什么。\n\n“我们的帮助并不是免费的。2357白银，还有你们的心灵，这就够了。”</WNA_OptionDesc_Dialog>
+  <WNA_Option_Dialog>我们愿意学习</WNA_Option_Dialog>
+  <WNA_FinalWarning_Dialog>“愿你们遵行正道。”\n\n&lt;color=#FF0000&gt;警告：某些代价将要被付出。&lt;/color&gt;\n\n&lt;color=#FFFF00&gt;你将付出2357白银，但与此同时，你的派系将归信于威灵会。如果你很在意你的派系的文化，请&lt;b&gt;&lt;i&gt;务必三思而后行&lt;/i&gt;&lt;/b&gt;。&lt;/color&gt;\n\n当然，你可以选择另一个选项，这样威灵会就不会拿走你派系的文化，但威灵会将重新考虑他们和我们的关系。</WNA_FinalWarning_Dialog>
+  <WNA_OptionWellKnown_Dialog>我已经了解风险，愿意付出代价。</WNA_OptionWellKnown_Dialog>
+  <WNA_AltOption_Dialog>我觉得还是派系文化更重要……</WNA_AltOption_Dialog>
+  <WNA_GoBack_Dialog>抱歉。（放弃离开）</WNA_GoBack_Dialog>
+  <WNA_NoSilver_Dialog>白银不足（需求2357白银）</WNA_NoSilver_Dialog>
+  <WNA_OptionDone_Dialog>代价已付出</WNA_OptionDone_Dialog>
+  <WNA_OptionDoneDesc_Dialog>我们已付出了相应的代价，威灵会也给出了相应的回报。我们完成了我们所需的研究。</WNA_OptionDoneDesc_Dialog>
+
+</LanguageData>

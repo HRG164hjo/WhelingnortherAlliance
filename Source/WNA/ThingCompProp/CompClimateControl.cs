@@ -82,7 +82,9 @@ namespace WNA.ThingCompProp
                 {
                     List<FloatMenuOption> options = new List<FloatMenuOption>();
                     var sortedWeathers = DefDatabase<WeatherDef>.
-                        AllDefsListForReading.OrderBy(w => w.defName).ToList();
+                        AllDefsListForReading.OrderBy(w =>
+                            {return w.modContentPack?.PackageIdPlayerFacing ?? "0_Unknown";}).ThenBy(w => w.defName).ToList();
+
                     foreach (WeatherDef wli in sortedWeathers)
                     {
                         string text;

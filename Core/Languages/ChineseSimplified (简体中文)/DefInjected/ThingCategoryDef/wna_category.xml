@@ -10,6 +10,9 @@
   <!-- EN: WNA base -->
   <WNA_Category_Base.label>WNA基类</WNA_Category_Base.label>
   
+  <!-- EN: WNA bodyparts -->
+  <WNA_Category_Bodypart.label>WNA义体</WNA_Category_Bodypart.label>
+  
   <!-- EN: WNA buildings -->
   <WNA_Category_Buildings.label>WNA建筑</WNA_Category_Buildings.label>
   

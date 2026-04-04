@@ -1,10 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: Carrying out Whelingnorther rites to do something or achieve some goal. -->
   <WNAWork_Rite.description>施行威灵诺德联合会的仪式用来做某些事或达成某些目的。</WNAWork_Rite.description>
+  <!-- EN: riting -->
   <WNAWork_Rite.gerundLabel>仪式</WNAWork_Rite.gerundLabel>
+  <!-- EN: rite -->
   <WNAWork_Rite.labelShort>仪式</WNAWork_Rite.labelShort>
+  <!-- EN: priest -->
   <WNAWork_Rite.pawnLabel>教士</WNAWork_Rite.pawnLabel>
+  <!-- EN: holding a rite -->
   <WNAWork_Rite.verb>主持仪式</WNAWork_Rite.verb>
   
 </LanguageData>

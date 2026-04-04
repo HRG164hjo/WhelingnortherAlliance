@@ -13,9 +13,9 @@
   
   <!-- EN: long jump -->
   <WNA_SaboteurJump.label>长跃</WNA_SaboteurJump.label>
-  <!-- EN: Saboteurs have recevied professional trainings, they can make long-distance jumps without using any other equipments. -->
-  <WNA_SaboteurJump.description>Saboteurs have recevied professional trainings, they can make long-distance jumps without using any other equipments.</WNA_SaboteurJump.description>
+  <!-- EN: Make long-distance jumps without using any other equipments. -->
+  <WNA_SaboteurJump.description>无需装备辅助的长距离跳跃。</WNA_SaboteurJump.description>
   <!-- EN: jump -->
-  <WNA_SaboteurJump.verbProperties.label>jump</WNA_SaboteurJump.verbProperties.label>
+  <WNA_SaboteurJump.verbProperties.label>跳</WNA_SaboteurJump.verbProperties.label>
   
 </LanguageData>

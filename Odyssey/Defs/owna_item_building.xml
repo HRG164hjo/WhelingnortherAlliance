@@ -40,7 +40,7 @@
         <building>
             <ai_neverTrashThis>true</ai_neverTrashThis>
             <relatedTerrain>
-                <li>WNA_FocusFloor</li>
+                <li>WNA_FocusPlatform</li>
             </relatedTerrain>
         </building>
         <researchPrerequisites>

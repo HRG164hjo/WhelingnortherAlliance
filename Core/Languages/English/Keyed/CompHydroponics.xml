@@ -20,4 +20,8 @@
 	<WNA_PropHydroponics_None>none</WNA_PropHydroponics_None>
 	<WNA_PropHydroponics_NoValidCrop>no valid crop</WNA_PropHydroponics_NoValidCrop>
 
+  	<WNA_Mode_What>current mode</WNA_Mode_What>
+  	<WNA_Mode_Normal>crops</WNA_Mode_Normal>
+  	<WNA_Mode_Tree>trees</WNA_Mode_Tree>
+
 </LanguageData>

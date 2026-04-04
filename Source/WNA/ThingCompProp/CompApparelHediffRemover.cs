@@ -31,7 +31,7 @@ namespace WNA.ThingCompProp
         }
         private bool ShouldRemoveHediff(Hediff hediff)
         {
-            if (hediff is Hediff_Injury) return Props.removeInjury;
+            if (hediff is Hediff_Injury || hediff is Hediff_MissingPart) return Props.removeInjury;
             bool isListed = listedHediffs.Contains(hediff.def.defName);
             if (Props.reverseEffect) return !(hediff.def.isBad || isListed);
             else return hediff.def.isBad || isListed;

@@ -26,10 +26,14 @@
   <!-- EN: abnormal automation. -->
   <WNA_InMechanoid.description>非常结构。</WNA_InMechanoid.description>
   
-  <WNA_PermaconstHidden.label>关注</WNA_PermaconstHidden.label>
-  <WNA_PermaconstHidden.description>被恒固指令所关注。</WNA_PermaconstHidden.description>
-  
+  <!-- EN: permaconst commanded -->
   <WNA_PermaconstActive.label>恒固指令</WNA_PermaconstActive.label>
+  <!-- EN: enthralled by Permaconst Command. -->
   <WNA_PermaconstActive.description>被恒固指令所操纵。</WNA_PermaconstActive.description>
+  
+  <!-- EN: permaconst seen -->
+  <WNA_PermaconstHidden.label>关注</WNA_PermaconstHidden.label>
+  <!-- EN: seen by Permaconst Command. -->
+  <WNA_PermaconstHidden.description>被恒固指令所关注。</WNA_PermaconstHidden.description>
   
 </LanguageData>

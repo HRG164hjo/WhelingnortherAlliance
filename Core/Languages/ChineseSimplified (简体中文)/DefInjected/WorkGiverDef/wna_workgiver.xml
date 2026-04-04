@@ -2,17 +2,17 @@
 <LanguageData>
   
   <!-- EN: rite -->
-  <WNA_MainWork.label>rite</WNA_MainWork.label>
+  <WNA_MainWork.label>仪式</WNA_MainWork.label>
   <!-- EN: holding a rite -->
-  <WNA_MainWork.gerund>holding a rite</WNA_MainWork.gerund>
+  <WNA_MainWork.gerund>进行仪式</WNA_MainWork.gerund>
   <!-- EN: craft -->
-  <WNA_MainWork.verb>craft</WNA_MainWork.verb>
+  <WNA_MainWork.verb>制作</WNA_MainWork.verb>
   
   <!-- EN: drill at starcore drill -->
-  <WNAWork_DeepDrill.label>drill at starcore drill</WNAWork_DeepDrill.label>
+  <WNAWork_DeepDrill.label>工作于星核钻机</WNAWork_DeepDrill.label>
   <!-- EN: deepdrilling -->
-  <WNAWork_DeepDrill.gerund>deepdrilling</WNAWork_DeepDrill.gerund>
+  <WNAWork_DeepDrill.gerund>深钻</WNAWork_DeepDrill.gerund>
   <!-- EN: deepdrill -->
-  <WNAWork_DeepDrill.verb>deepdrill</WNAWork_DeepDrill.verb>
+  <WNAWork_DeepDrill.verb>深钻</WNAWork_DeepDrill.verb>
   
 </LanguageData>

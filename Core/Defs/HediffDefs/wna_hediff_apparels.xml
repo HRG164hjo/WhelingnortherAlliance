@@ -68,6 +68,9 @@
 			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
 				<movementDef>WNA_Movement</movementDef>
 			</li>
+			<li Class="WNA.DMExtension.Passability">
+				<freepass>true</freepass>
+			</li>
 		</modExtensions>
     </HediffDef>
     <HediffDef>
@@ -135,6 +138,9 @@
 		<modExtensions>
 			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
 				<movementDef>WNA_Movement</movementDef>
+			</li>
+			<li Class="WNA.DMExtension.Passability">
+				<freepass>true</freepass>
 			</li>
 		</modExtensions>
     </HediffDef>

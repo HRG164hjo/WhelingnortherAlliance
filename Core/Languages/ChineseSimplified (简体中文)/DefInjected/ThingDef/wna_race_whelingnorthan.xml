@@ -3,7 +3,7 @@
   
   <!-- EN: human -->
   <WNA_Human.label>人类</WNA_Human.label>
-  <!-- EN: A baseline human, mostly unmodified by gene engineering and mostly unchanged by evolutionary pressures on non-Earth planets. -->
+  <!-- EN: Human, but possibly have some differences from true normal humans after long time serving for Whelingnorther Alliance. Maybe it's better to name them as "whelingnorthan humanoid". -->
   <WNA_Human.description>人类，不过在为威灵诺德联合会效力了漫长的时间过后，和真正的一般人类可能已经有了些许不同。也许应该称其为“威灵人族”。</WNA_Human.description>
   <!-- EN: left fist -->
   <WNA_Human.tools.left_fist-0.label>左拳</WNA_Human.tools.left_fist-0.label>

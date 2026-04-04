@@ -72,6 +72,7 @@
     <Compile Include="DMExtension\KillDownUtility.cs" />
     <Compile Include="DMExtension\MassCapacity.cs" />
     <Compile Include="DMExtension\MechSkillOffset.cs" />
+    <Compile Include="DMExtension\Passability.cs" />
     <Compile Include="DMExtension\RefuelableExtraStat.cs" />
     <Compile Include="DMExtension\TechnoConfig.cs" />
     <Compile Include="GameCond\GameCond_ClimateControl.cs" />
@@ -146,11 +147,11 @@
     <Compile Include="WNAHarmony\Patch_Training.cs" />
     <Compile Include="WNAHarmony\Patch_Vacuum.cs" />
     <Compile Include="WNAHarmony\Patch_WeaponTagPostfix.cs" />
+    <Compile Include="WNAHarmony\Patch_WNACommsConsoleDialog.cs" />
     <Compile Include="WNAHarmony\WNAMod.cs" />
     <Compile Include="WNALabour\Revive.cs" />
     <Compile Include="WNALabour\UseDeedOn.cs" />
     <Compile Include="WNAMiscs\Gizmo_ShieldStatus.cs" />
-    <Compile Include="WNAMiscs\HedifferRemover.cs" />
     <Compile Include="WNAMiscs\HedifferTicker.cs" />
     <Compile Include="WNAMiscs\IngredValGetter_NutriMisc.cs" />
     <Compile Include="WNAMiscs\PlaceWorker_SingleOnMap.cs" />
@@ -162,6 +163,7 @@
     <Compile Include="WNAMiscs\VerbType_IronBlast.cs" />
     <Compile Include="WNAMiscs\VerbType_Laser.cs" />
     <Compile Include="WNAMiscs\WarpOn.cs" />
+    <Compile Include="WNAMiscs\WorldComp_HediffRemover.cs" />
     <Compile Include="WNAMiscs\WorldComp_Permaconst.cs" />
     <Compile Include="WNAUtility\IronCurtainUtility.cs" />
     <Compile Include="WNAUtility\Iron_GameComp.cs" />

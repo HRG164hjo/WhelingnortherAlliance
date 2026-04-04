@@ -8,7 +8,7 @@
 			<texPath>buildings/misc/wna_climatecontroller</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
             <drawRotated>false</drawRotated>
-            <drawSize>(2.75,2.75)</drawSize>
+            <drawSize>(2.95,2.95)</drawSize>
 		</graphicData>
         <minifiedDef IsNull="true"/>
         <thingCategories IsNull="true"/>
@@ -34,10 +34,6 @@
                 <compClass>WNA.ThingCompProp.CompClimateControl</compClass>
                 <worldRange>5</worldRange>
                 <hideSource>false</hideSource>
-            </li>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>2357</basePowerConsumption>
             </li>
         </comps>
         <placeWorkers>

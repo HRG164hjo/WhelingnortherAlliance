@@ -9,12 +9,12 @@
   <!-- EN: reinforced thruster -->
   <WNA_ReinforcedThruster.label>强化推进器</WNA_ReinforcedThruster.label>
   <!-- EN: TODO -->
-  <WNA_ReinforcedThruster.description>TODO</WNA_ReinforcedThruster.description>
+  <WNA_ReinforcedThruster.description>强化推进器。</WNA_ReinforcedThruster.description>
   
   <!-- EN: uranium fuel tank -->
   <WNA_UraniumFuelTank.label>铀燃料箱</WNA_UraniumFuelTank.label>
   <!-- EN: TODO -->
-  <WNA_UraniumFuelTank.description>TODO</WNA_UraniumFuelTank.description>
+  <WNA_UraniumFuelTank.description>铀燃料箱。</WNA_UraniumFuelTank.description>
   <!-- EN: vitalized uranium battery -->
   <WNA_UraniumFuelTank.comps.CompRefuelable.fuelGizmoLabel>活化铀电池</WNA_UraniumFuelTank.comps.CompRefuelable.fuelGizmoLabel>
   <!-- EN: vitalized uranium battery -->

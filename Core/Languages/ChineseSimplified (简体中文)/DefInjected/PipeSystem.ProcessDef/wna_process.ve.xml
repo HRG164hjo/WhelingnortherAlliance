@@ -2,28 +2,28 @@
 <LanguageData>
   
   <!-- EN: Process hay for chemfuel -->
-  <WNA_Hay_Chemfuel.label>Process hay for chemfuel</WNA_Hay_Chemfuel.label>
+  <WNA_Hay_Chemfuel.label>用干草生产化合燃料</WNA_Hay_Chemfuel.label>
   <!-- EN: Turn 75 hay into 25 chemfuel. -->
-  <WNA_Hay_Chemfuel.description>Turn 75 hay into 25 chemfuel.</WNA_Hay_Chemfuel.description>
+  <WNA_Hay_Chemfuel.description>将75单位干草处理为25单位化合燃料。</WNA_Hay_Chemfuel.description>
   
   <!-- EN: Process psychoid leaves for yayo -->
-  <WNA_PsychoidLeaves_Yayo.label>Process psychoid leaves for yayo</WNA_PsychoidLeaves_Yayo.label>
+  <WNA_PsychoidLeaves_Yayo.label>用精神叶生产呀呦粉</WNA_PsychoidLeaves_Yayo.label>
   <!-- EN: Turn 75 psychoid leaves into 25 yayo. -->
-  <WNA_PsychoidLeaves_Yayo.description>Turn 75 psychoid leaves into 25 yayo.</WNA_PsychoidLeaves_Yayo.description>
+  <WNA_PsychoidLeaves_Yayo.description>将75单位精神叶处理为25单位呀呦粉。</WNA_PsychoidLeaves_Yayo.description>
   
   <!-- EN: Process smokeleaf leaves for smokeleaf joint -->
-  <WNA_SmokeleafLeaves_SmokeleafJoint.label>Process smokeleaf leaves for smokeleaf joint</WNA_SmokeleafLeaves_SmokeleafJoint.label>
+  <WNA_SmokeleafLeaves_SmokeleafJoint.label>用烟叶生产烟卷</WNA_SmokeleafLeaves_SmokeleafJoint.label>
   <!-- EN: Turn 75 smokeleaf leaves into 25 smokeleaf joint. -->
-  <WNA_SmokeleafLeaves_SmokeleafJoint.description>Turn 75 smokeleaf leaves into 25 smokeleaf joint.</WNA_SmokeleafLeaves_SmokeleafJoint.description>
+  <WNA_SmokeleafLeaves_SmokeleafJoint.description>将75单位烟叶处理为25单位烟卷。</WNA_SmokeleafLeaves_SmokeleafJoint.description>
   
   <!-- EN: Process wood for neutroamine -->
-  <WNA_WoodLog_Neutroamine.label>Process wood for neutroamine</WNA_WoodLog_Neutroamine.label>
+  <WNA_WoodLog_Neutroamine.label>用原木生产中性胺</WNA_WoodLog_Neutroamine.label>
   <!-- EN: Turn 50 wood into 20 neutroamine. -->
-  <WNA_WoodLog_Neutroamine.description>Turn 50 wood into 20 neutroamine.</WNA_WoodLog_Neutroamine.description>
+  <WNA_WoodLog_Neutroamine.description>将50单位原木处理为20单位中性胺。</WNA_WoodLog_Neutroamine.description>
   
   <!-- EN: Process wort for beer -->
-  <WNA_Wort_Beer.label>Process wort for beer</WNA_Wort_Beer.label>
+  <WNA_Wort_Beer.label>用麦芽汁生产啤酒</WNA_Wort_Beer.label>
   <!-- EN: Turn 25 wort into 25 beer. -->
-  <WNA_Wort_Beer.description>Turn 25 wort into 25 beer.</WNA_Wort_Beer.description>
+  <WNA_Wort_Beer.description>将25单位麦芽汁处理为25单位啤酒。</WNA_Wort_Beer.description>
   
 </LanguageData>

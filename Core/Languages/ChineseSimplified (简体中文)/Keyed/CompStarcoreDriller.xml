@@ -1,20 +1,32 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
+  <!-- EN: switch mode -->
   <WNA_CompStarcoreDriller_Mode>模式切换</WNA_CompStarcoreDriller_Mode>
+  <!-- EN: auto -->
   <WNA_Auto>自动</WNA_Auto>
+  <!-- EN: manual -->
   <WNA_Manual>手动</WNA_Manual>
+  <!-- EN: switch driller's working mode -->
   <WNA_CompStarcoreDriller_Mode_Desc>切换钻机工作模式</WNA_CompStarcoreDriller_Mode_Desc>
   
+  <!-- EN: select resource -->
   <WNA_CompStarcoreDriller_SelectResource>选择资源</WNA_CompStarcoreDriller_SelectResource>
+  <!-- EN: current target -->
   <WNA_CompStarcoreDriller_CurrentTarget>当前目标</WNA_CompStarcoreDriller_CurrentTarget>
+  <!-- EN: biome bedrock -->
   <WNA_CompStarcoreDriller_DefaultBedrock>默认基岩</WNA_CompStarcoreDriller_DefaultBedrock>
   
+  <!-- EN: targeted resource -->
   <WNA_CompStarcoreDriller_InspectTarget>目标资源</WNA_CompStarcoreDriller_InspectTarget>
+  <!-- EN: progress -->
   <WNA_CompStarcoreDriller_InspectProgress>当前进度</WNA_CompStarcoreDriller_InspectProgress>
+  <!-- EN: cur mode -->
   <WNA_CompStarcoreDriller_InspectMode>当前模式</WNA_CompStarcoreDriller_InspectMode>
   
+  <!-- EN: select targeted resource -->
   <WNA_CompStarcoreDriller_SelectResourceTitle>选择钻取目标资源：</WNA_CompStarcoreDriller_SelectResourceTitle>
+  <!-- EN: none -->
   <WNA_Default>无</WNA_Default>
 
 </LanguageData>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: adv. bionic arm -->
+  <WNA_Part_AdvBionicArm.label>先进仿生臂</WNA_Part_AdvBionicArm.label>
+  <!-- EN: An installed adv bionic arm. -->
+  <WNA_Part_AdvBionicArm.description>安装的先进仿生臂。</WNA_Part_AdvBionicArm.description>
+  <!-- EN: point -->
+  <WNA_Part_AdvBionicArm.comps.HediffComp_VerbGiver.tools.point.label>尖端</WNA_Part_AdvBionicArm.comps.HediffComp_VerbGiver.tools.point.label>
+  <!-- EN: edge -->
+  <WNA_Part_AdvBionicArm.comps.HediffComp_VerbGiver.tools.edge.label>刃口</WNA_Part_AdvBionicArm.comps.HediffComp_VerbGiver.tools.edge.label>
+  
+  <!-- EN: adv. bionic brain chip -->
+  <WNA_Part_AdvBionicBrain.label>先进仿脑芯片</WNA_Part_AdvBionicBrain.label>
+  <!-- EN: An installed adv bionic brain chip. -->
+  <WNA_Part_AdvBionicBrain.description>安装的先进仿脑芯片。</WNA_Part_AdvBionicBrain.description>
+  
+  <!-- EN: adv. bionic ear -->
+  <WNA_Part_AdvBionicEar.label>先进仿生耳</WNA_Part_AdvBionicEar.label>
+  <!-- EN: An installed adv bionic ear. -->
+  <WNA_Part_AdvBionicEar.description>安装的先进仿生耳。</WNA_Part_AdvBionicEar.description>
+  
+  <!-- EN: adv. bionic eye -->
+  <WNA_Part_AdvBionicEye.label>先进仿生眼</WNA_Part_AdvBionicEye.label>
+  <!-- EN: An installed adv bionic eye. -->
+  <WNA_Part_AdvBionicEye.description>安装的先进仿生眼。</WNA_Part_AdvBionicEye.description>
+  
+  <!-- EN: adv. bionic jaw -->
+  <WNA_Part_AdvBionicJaw.label>先进仿生颌</WNA_Part_AdvBionicJaw.label>
+  <!-- EN: An installed adv bionic jaw. -->
+  <WNA_Part_AdvBionicJaw.description>安装的先进仿生颌。</WNA_Part_AdvBionicJaw.description>
+  <!-- EN: teeth -->
+  <WNA_Part_AdvBionicJaw.comps.HediffComp_VerbGiver.tools.teeth.label>牙齿</WNA_Part_AdvBionicJaw.comps.HediffComp_VerbGiver.tools.teeth.label>
+  
+  <!-- EN: adv. bionic kidney -->
+  <WNA_Part_AdvBionicKidney.label>先进仿生肾</WNA_Part_AdvBionicKidney.label>
+  <!-- EN: An installed adv bionic kidney. -->
+  <WNA_Part_AdvBionicKidney.description>安装的先进仿生肾。</WNA_Part_AdvBionicKidney.description>
+  
+  <!-- EN: adv. bionic leg -->
+  <WNA_Part_AdvBionicLeg.label>先进仿生腿</WNA_Part_AdvBionicLeg.label>
+  <!-- EN: An installed adv bionic leg. -->
+  <WNA_Part_AdvBionicLeg.description>安装的先进仿生腿。</WNA_Part_AdvBionicLeg.description>
+  
+  <!-- EN: adv. bionic liver -->
+  <WNA_Part_AdvBionicLiver.label>先进仿生肝</WNA_Part_AdvBionicLiver.label>
+  <!-- EN: An installed adv bionic liver. \n\n<color=#VC86400>Rad proof.</color> -->
+  <WNA_Part_AdvBionicLiver.description>安装的先进仿生肝。\n\n&lt;color=#VC86400&gt;防辐射。&lt;/color&gt;</WNA_Part_AdvBionicLiver.description>
+  
+  <!-- EN: adv. bionic lung -->
+  <WNA_Part_AdvBionicLung.label>先进仿生肺</WNA_Part_AdvBionicLung.label>
+  <!-- EN: An installed adv bionic lung. -->
+  <WNA_Part_AdvBionicLung.description>安装的先进仿生肺。</WNA_Part_AdvBionicLung.description>
+  
+  <!-- EN: adv. bionic heart -->
+  <WNA_Part_AdvBionicSHeart.label>先进仿生心</WNA_Part_AdvBionicSHeart.label>
+  <!-- EN: An installed adv bionic heart. \n\n<color=#VC86400>Rad proof.</color> -->
+  <WNA_Part_AdvBionicSHeart.description>安装的先进仿生心。\n\n&lt;color=#VC86400&gt;防辐射。&lt;/color&gt;</WNA_Part_AdvBionicSHeart.description>
+  
+  <!-- EN: adv. bionic skin -->
+  <WNA_Part_AdvBionicSkin.label>先进仿生皮肤</WNA_Part_AdvBionicSkin.label>
+  <!-- EN: An installed adv bionic skin. \n\n<color=#VC86400>Rad proof.</color> -->
+  <WNA_Part_AdvBionicSkin.description>安装的先进仿生皮肤。\n\n&lt;color=#VC86400&gt;防辐射。&lt;/color&gt;</WNA_Part_AdvBionicSkin.description>
+  
+  <!-- EN: adv. bionic spine -->
+  <WNA_Part_AdvBionicSpine.label>先进仿生脊椎</WNA_Part_AdvBionicSpine.label>
+  <!-- EN: An installed adv bionic spine. \n\n<color=#VC86400>Rad proof.</color> -->
+  <WNA_Part_AdvBionicSpine.description>安装的先进仿生脊椎。\n\n&lt;color=#VC86400&gt;防辐射。&lt;/color&gt;</WNA_Part_AdvBionicSpine.description>
+  
+  <!-- EN: adv. bionic stomach -->
+  <WNA_Part_AdvBionicStomach.label>先进仿生胃</WNA_Part_AdvBionicStomach.label>
+  <!-- EN: An installed adv bionic stomach. -->
+  <WNA_Part_AdvBionicStomach.description>安装的先进仿生胃。</WNA_Part_AdvBionicStomach.description>
+  
+</LanguageData>

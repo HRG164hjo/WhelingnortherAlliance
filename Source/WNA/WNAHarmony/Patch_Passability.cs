@@ -6,6 +6,7 @@ using System.Linq;
 using UnityEngine;
 using Verse;
 using Verse.AI;
+using WNA.DMExtension;
 using WNA.WNADefOf;
 
 namespace WNA.WNAHarmony
@@ -17,25 +18,20 @@ namespace WNA.WNAHarmony
             "WNA_WNThan",
             "WNA_Human"
         };
-        private static readonly HashSet<string> freeHediffs = new HashSet<string>
-        {
-            "WNA_RobeBoost",
-            "WNA_RobeBoostLite",
-            "WNA_Inhuman",
-            "WNA_InAnimal",
-            "WNA_InMechanoid",
-            "WNA_DeathEnd",
-            "sWNA_DeathEnd"
-        };
-        public static bool IsValidPawn(Pawn pawn)
+        internal static bool IsValidPawn(Pawn pawn)
         {
             if (pawn == null || pawn.Faction == null)
                 return false;
             if (pawn?.def != null && freeRaces.Contains(pawn.def.defName))
                 return true;
-            if (pawn.health?.hediffSet?.hediffs?.Any(h => h.def != null && freeHediffs.Contains(h.def.defName)) == true)
+            if (pawn.health?.hediffSet?.hediffs?.Any(h =>
+                h.def?.GetModExtension<Passability>()?.freepass == true) == true)
                 return true;
-            if (pawn.Ideo != null && pawn.Ideo.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) && (pawn.Faction.def.defName == "WNA_FactionWNA" || (pawn.Faction == Faction.OfPlayer && WNAMainDefOf.WNA_WhelingnortherApocalypse.IsFinished)))
+            if (pawn.Ideo != null &&
+                pawn.Ideo.HasPrecept(WNAMainDefOf.WNA_P_Proselyte) &&
+                (pawn.Faction.def.defName == "WNA_FactionWNA" ||
+                    (pawn.Faction == Faction.OfPlayer && WNAMainDefOf.WNA_WhelingnortherApocalypse.IsFinished)
+                    ))
                 return true;
             return false;
         }

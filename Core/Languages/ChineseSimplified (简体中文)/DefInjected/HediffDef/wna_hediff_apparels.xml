@@ -3,7 +3,7 @@
   
   <!-- EN: phase pack -->
   <WNA_ChronoPack.label>相位背包</WNA_ChronoPack.label>
-  <!-- EN: phase pack. (Currently you may need &lt;color=#FF0000&gt;AutoBlink&lt;/color&gt; mod to make this hediff function properly.) -->
+  <!-- EN: phase pack. (Currently you may need <color=#FF0000>AutoBlink</color> mod to make this hediff function properly.) -->
   <WNA_ChronoPack.description>相位背包。（目前你可能需要订阅&lt;color=#FF0000&gt;AutoBlink&lt;/color&gt;模组来让这个hediff正常运作。）</WNA_ChronoPack.description>
   
   <!-- EN: irradiating -->

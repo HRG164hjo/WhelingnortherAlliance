@@ -36,4 +36,8 @@
 	<!-- EN: no valid crop -->
   <WNA_PropHydroponics_NoValidCrop>无可种植作物</WNA_PropHydroponics_NoValidCrop>
 
+  <WNA_Mode_What>当前模式</WNA_Mode_What>
+  <WNA_Mode_Normal>作物</WNA_Mode_Normal>
+  <WNA_Mode_Tree>林木</WNA_Mode_Tree>
+
 </LanguageData>

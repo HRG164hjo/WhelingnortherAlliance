@@ -4,6 +4,11 @@
   <!-- EN: climate control facility -->
   <WNA_ClimateController.label>气候控制装置</WNA_ClimateController.label>
   <!-- EN: todo. -->
-  <WNA_ClimateController.description>TODO</WNA_ClimateController.description>
+  <WNA_ClimateController.description>气候控制装置</WNA_ClimateController.description>
+  
+  <!-- EN: multitool box -->
+  <WNA_MultiToolBox.label>多元工具箱</WNA_MultiToolBox.label>
+  <!-- EN: todo. -->
+  <WNA_MultiToolBox.description>多元工具箱</WNA_MultiToolBox.description>
   
 </LanguageData>

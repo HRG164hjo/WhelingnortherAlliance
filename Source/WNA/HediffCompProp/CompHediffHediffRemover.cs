@@ -16,11 +16,6 @@ namespace WNA.HediffCompProp
     public class CompHediffHediffRemover : HediffComp
     {
         public PropHediffHediffRemover Props => (PropHediffHediffRemover)props;
-        private static readonly HashSet<string> listedHediffs = new HashSet<string>
-        {
-            "WNA_Corrosion",
-            "WNA_InMechanoid"
-        };
         private int ticksUntilRemove;
         public override void CompPostMake()
         {
@@ -29,13 +24,11 @@ namespace WNA.HediffCompProp
         }
         private bool ShouldRemoveHediff(Hediff hediff)
         {
-            if (hediff is Hediff_Injury) return Props.removeInjury;
-
-            bool isListed = listedHediffs.Contains(hediff.def.defName);
+            if (hediff is Hediff_Injury || hediff is Hediff_MissingPart) return Props.removeInjury;
             if (Props.reverseEffect)
-                return !(hediff.def.isBad || isListed);
+                return !(hediff.def.isBad);
             else
-                return hediff.def.isBad || isListed;
+                return hediff.def.isBad;
         }
         private void RemoveHediffs(Pawn pawn)
         {

@@ -63,6 +63,7 @@ namespace WNA.WNADefOf
         public static TerrainDef WNA_FocusSand;
 
         public static ResearchProjectDef WNA_PsychicDawn;
+        public static ResearchProjectDef WNA_TheVoid;
         public static ResearchProjectDef WNA_WhelingnortherApocalypse;
 
         public static ThingDef WNA_WNThan;

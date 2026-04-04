@@ -47,16 +47,6 @@
     </Operation>
 
     <!-- -->
-    <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/HediffGiverSetDef[defName="Human"]/hediffGivers</xpath>
-        <value>
-            <li Class="WNA.WNAMiscs.HedifferRemover">
-                <tickInterval>239</tickInterval>
-            </li>
-        </value>
-    </Operation>
-
-    <!-- -->
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/InventoryStockGroupDef[defName="Medicine"]/thingDefs</xpath>
 		<value>
@@ -244,6 +234,16 @@
         <order>Append</order>
         <value>
             <li>WNA_MultiToolBox</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+	    <xpath>Defs/ThingDef[defName="ElectricStove" or defName="FueledStove"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>WNA_MultiToolBox</li>
+				</linkableFacilities>
+			</li>
         </value>
     </Operation>
 

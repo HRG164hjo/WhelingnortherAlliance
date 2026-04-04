@@ -145,7 +145,7 @@ namespace WNA.ThingCompProp
             yield return new Command_Toggle
             {
                 defaultLabel = "WNA_CompStarcoreDriller_Mode".Translate(autoMode ? "WNA_Auto".Translate() : "WNA_Manual".Translate()),
-                defaultDesc = "WNA_CompStarcoreDriller_Mode.Desc".Translate(),
+                defaultDesc = "WNA_CompStarcoreDriller_Mode_Desc".Translate(),
                 isActive = () => autoMode,
                 toggleAction = () => autoMode = !autoMode
             };
@@ -171,12 +171,12 @@ namespace WNA.ThingCompProp
         }
         public void GenerateResourceMenu()
         {
-            List<ThingDef> candidates = DrillTargetUtility.GetCachedCandidates();
+            List<ThingDef> sortedResource = DrillTargetUtility.GetCachedCandidates();
             List<FloatMenuOption> options = new List<FloatMenuOption>
             {
                 new FloatMenuOption("WNA_Default".Translate(), () => SetResource(null))
             };
-            foreach (ThingDef def in candidates)
+            foreach (ThingDef def in sortedResource)
             {
                 ThingDef localDef = def;
                 options.Add(new FloatMenuOption(
@@ -216,8 +216,8 @@ namespace WNA.ThingCompProp
             {
                 cachedCandidates = DefDatabase<ThingDef>.AllDefsListForReading
                     .Where(IsValidDrillTarget)
-                    .OrderBy(d => d.label)
-                    .ToList();
+                    .OrderBy(d =>
+                        {return d.modContentPack?.PackageIdPlayerFacing ?? "0_Unknown";}).ThenBy(d => d.defName).ToList();
             }
             return cachedCandidates;
         }

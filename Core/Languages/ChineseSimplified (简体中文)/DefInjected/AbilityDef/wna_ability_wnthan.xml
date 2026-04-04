@@ -3,7 +3,7 @@
   
   <!-- EN: ascension -->
   <WNA_Ascension.label>飞升</WNA_Ascension.label>
-  <!-- EN: Archonpriests are the leaders of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, killing them and send them to salvation. -->
+  <!-- EN: Archonpriests are the leaders of WNA, as well as the avatar of Whelingnorther divinity, they are guaranteed the ability to ascend creatures, the creature will witness eternity, salvation and immortality. -->
   <WNA_Ascension.description>主司教士是威灵诺德联合会的领袖，作为威灵诺德伟大神性的化身，他们被赋予让生物飞升的能力，使其得见永恒自在不朽。</WNA_Ascension.description>
   
   <!-- EN: psiblast -->
@@ -38,7 +38,7 @@
   
   <!-- EN: bestow wisdom -->
   <WNA_Wisdom.label>启蒙</WNA_Wisdom.label>
-  <!-- EN: The Saint of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills. -->
+  <!-- EN: The Archonpriest of Whelingnorther Alliance bestows a target with wisdom in the name of Whelingnorther Divinity. The beneficiary will have a great progress on their skills. -->
   <WNA_Wisdom.description>威灵会的主司教士以威灵诺德之圣名赐受术者以智慧。受术者能在他们的各项技能上取得长足的进步。</WNA_Wisdom.description>
   
 </LanguageData>

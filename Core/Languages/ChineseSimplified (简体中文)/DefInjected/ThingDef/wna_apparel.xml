@@ -13,17 +13,17 @@
   
   <!-- EN: alliance cloak -->
   <WNA_AllianceCloak.label>威灵会门徒斗篷</WNA_AllianceCloak.label>
-  <!-- EN: Outer layer of WNA standard equipment. This cloak covers almost all of their body, symbolizing one of WNA's thoughts - abnegating what they used to have and to be, to approach transcendence, divinity and salvation. -->
+  <!-- EN: Outer layer of WNA disciple equipment. This cloak covers almost all of their body, symbolizing the principle that abnegating what they used to have and to be, to approach transcendence, divinity and salvation. -->
   <WNA_AllianceCloak.description>威灵会门徒装备的外层。这领斗篷几乎覆盖他们全身，象征舍弃旧我以接近超越、神性与解脱。</WNA_AllianceCloak.description>
   
   <!-- EN: alliance hood -->
   <WNA_AllianceHood.label>威灵会门徒兜帽</WNA_AllianceHood.label>
-  <!-- EN: Upper part of WNA standard equipment. This hood covers their eyes, symbolizing one of the WNA's beliefs - don't be blinded by radiance. -->
+  <!-- EN: Upper part of WNA disciple equipment. This hood covers their eyes, symbolizing the principle that don't be blinded by brightness. -->
   <WNA_AllianceHood.description>威灵会门徒装备的顶层。这顶兜帽遮盖双眼，象征勿为明光障目。</WNA_AllianceHood.description>
   
   <!-- EN: alliance robe -->
   <WNA_AllianceRobe.label>威灵会门徒长袍</WNA_AllianceRobe.label>
-  <!-- EN: Inner layer of WNA standard equipment. This robe is durable, reliable and comfortable, exhibiting WNA's good treatment of their own people and their strong logistics scheduling capabilities to some extent. -->
+  <!-- EN: Inner layer of WNA disciple equipment. This robe is durable and reliable, symbolizing the unshakable will. -->
   <WNA_AllianceRobe.description>威灵会门徒装备的内层。这件长袍结实可靠，象征不可撼动的意志。</WNA_AllianceRobe.description>
   
   <!-- EN: ammo loader -->
@@ -33,8 +33,8 @@
   
   <!-- EN: phase pack -->
   <WNA_ChronoPack.label>相位背包</WNA_ChronoPack.label>
-  <!-- EN: phase pack. -->
-  <WNA_ChronoPack.description>相位背包。（目前你可能需要订阅&lt;color=#FF0000&gt;AutoBlink&lt;/color&gt;模组来让这个hediff正常运作。）</WNA_ChronoPack.description>
+  <!-- EN: phase pack. (Currently you may need <color=#FF0000>AutoBlink</color> mod to make this hediff function properly.) -->
+  <WNA_ChronoPack.description>相位背包。（目前你可能需要订阅&lt;color=#FF0000>AutoBlink&lt;/color>模组来让这个hediff正常运作。）</WNA_ChronoPack.description>
   
   <!-- EN: "dead zone" radiation belt -->
   <WNA_DeadzoneBelt.label>"死区"放射腰带</WNA_DeadzoneBelt.label>
@@ -73,7 +73,7 @@
   
   <!-- EN: standard military suit -->
   <WNA_StdMiliSuit.label>威灵军制式军服</WNA_StdMiliSuit.label>
-  <!-- EN: WHR standard equipment, a modified version of WNA alliance robe, usually has weaker effect than typical alliance robe, but more suitable for massive producing and arming up troopers as it can be made from various kinds of materials. -->
+  <!-- EN: Standard equipment of Whelingnorther Military, a modified version of WNA alliance robe, usually has weaker effect than typical alliance robe, but more suitable for massive producing and arming up troopers as it can be made from various kinds of materials. -->
   <WNA_StdMiliSuit.description>威灵军部的通用装备，威灵会门徒长袍的修改版本，通常效果比正品要弱一些，但可以用更多元的材料制作，更适合批量生产和装备士兵。</WNA_StdMiliSuit.description>
   
   <!-- EN: tool kit -->

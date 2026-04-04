@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
+using UnityEngine;
 using Verse;
 using Verse.AI;
 
@@ -71,6 +72,7 @@ namespace WNA.HediffCompProp
             positionHeld = FindCellToSpawn(positionHeld, mapHeld);
             Pawn.Position = positionHeld;
             Pawn.Notify_Teleported();
+            float powerfinal = Props.power * Pawn.BodySize * Mathf.Sqrt(Pawn.skills.GetSkill(SkillDefOf.Melee).Level) * Pawn.GetStatValue(StatDefOf.MeleeDamageFactor);
             if (Props.counterBack && trigger != null && trigger.Spawned && !trigger.Dead)
             {
                 DamageDef def = Props.damageDef ?? DamageDefOf.Crush;

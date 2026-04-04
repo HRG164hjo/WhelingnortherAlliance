@@ -10,7 +10,7 @@
   <WNA_AdvancedProduction.label>先进生产技术</WNA_AdvancedProduction.label>
   <!-- EN: advanced production. -->
   <WNA_AdvancedProduction.description>先进生产技术。</WNA_AdvancedProduction.description>
-    
+  
   <!-- EN: civilian techniques -->
   <WNA_CivilianTech.label>民用实用技术</WNA_CivilianTech.label>
   <!-- EN: practical techniques for civilian benefits, aiming for improving quality of life. -->
@@ -38,12 +38,12 @@
   
   <!-- EN: military material -->
   <WNA_MilitaryMaterial.label>军用材料</WNA_MilitaryMaterial.label>
-  <!-- EN: the special techniques of how to make unique materials used by whelingnorther military. these special techniques is hold secret by Whelingnorther Alliance. -->
+  <!-- EN: the special techniques of how to make unique materials used by whelingnorther military based on local conditions. these special techniques is hold secret by Whelingnorther Alliance. -->
   <WNA_MilitaryMaterial.description>如何因地制宜复现用于威灵军部军备制造和设施建设的材料的技术。这些技术由威灵诺德联合会严密把守。</WNA_MilitaryMaterial.description>
   
   <!-- EN: military supply -->
   <WNA_MilitarySupply.label>军需技术</WNA_MilitarySupply.label>
-  <!-- EN: the special techniques of how to make whelingnorther military supplies out from common resources. these special techniques is hold secret by Whelingnorther Alliance. -->
+  <!-- EN: the special techniques of how to make whelingnorther military supplies out from common resources based on local conditions. these special techniques is hold secret by Whelingnorther Alliance. -->
   <WNA_MilitarySupply.description>如何因地制宜将寻常的材料制备成符合威灵军部标准的军需物资的技术。这些技术由威灵诺德联合会严密把守。</WNA_MilitarySupply.description>
   
   <!-- EN: parasomnia -->
@@ -68,10 +68,12 @@
   
   <!-- EN: reach to the void -->
   <WNA_TheVoid.label>触摸虚空</WNA_TheVoid.label>
-  <!-- EN: wipe  out  ego \n\nstep  into  void \n\nall  mind  expire \n\nworld  round  ascend -->
+  <!-- EN: give  up  ego\n\nstep  into  void\n\nall  mind  expire\n\nworld  round  ascend -->
   <WNA_TheVoid.description>舍  弃  自  我\n\n步  入  虚  空\n\n万  念  俱  寂\n\n举  世  同  生</WNA_TheVoid.description>
+  <WNA_TheVoid.discoveredLetterTitle>行路难</WNA_TheVoid.discoveredLetterTitle>
+  <WNA_TheVoid.discoveredLetterText>你现在已经达到了前无古人的高度。想要再前进一步已经几乎不再可能。\n\n一个最明智的选择是去找一个科技核心，凭借它的力量，你可以一窥先古时期威灵古族曾掌握的技艺。另一个选择则是直接去询问威灵诺德联合会。\n\n问问题很简单，但&lt;color=#FF0000&gt;某些代价终将被付出&lt;/color&gt;。</WNA_TheVoid.discoveredLetterText>
   
-  <!-- EN: whelingnorther apocalypse -->
+  <!-- EN: dark apocalypse -->
   <WNA_WhelingnortherApocalypse.label>黑暗天启</WNA_WhelingnortherApocalypse.label>
   <!-- EN: Science is the doctrine that explains the entire material world; Phenomenology is the doctrine that explains the entire phenomenal world, including the material world; and Voidology, at least for now, is most likely the doctrine that answers what exists beneath the phenomenal world and how to understand this "void world." Is Voidology the further truth we are seeking? How can we find this further truth? We once proclaimed the termination of Phenomenology with our reality reconstruction technique; now we stand at the end of the path, searching for a way forward. -->
   <WNA_WhelingnortherApocalypse.description>科学是解释整个物质世界的学说；现象学是解释包括物质世界在内的整个现象世界的学说；虚空学，至少在现在看来，最可能是解答现象世界之下存在着什么以及如何了解这个“虚空世界”的学说。那么虚空学是不是我们在寻求的哪个更进一步的真理？我们要怎样才能寻求到这个更进一步的真理？我们曾用现实重构技术宣告了现象学的终结，现在我们站在道路的尽头寻找着前进的方向。</WNA_WhelingnortherApocalypse.description>

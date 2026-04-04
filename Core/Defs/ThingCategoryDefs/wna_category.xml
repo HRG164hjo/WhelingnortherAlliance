@@ -28,6 +28,12 @@
         <iconPath>karma</iconPath>
         <resourceReadoutRoot>true</resourceReadoutRoot>
     </ThingCategoryDef>
+    <ThingCategoryDef>
+        <defName>WNA_Category_Bodypart</defName>
+        <label>WNA bodyparts</label>
+        <parent>WNA_Category_Item</parent>
+        <iconPath>karma</iconPath>
+    </ThingCategoryDef>
 
     <ThingCategoryDef>
         <defName>WNA_Category_Weapon</defName>

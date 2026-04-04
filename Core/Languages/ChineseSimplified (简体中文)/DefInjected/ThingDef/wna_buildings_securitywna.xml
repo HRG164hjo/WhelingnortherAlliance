@@ -2,33 +2,33 @@
 <LanguageData>
   
   <!-- EN: pale ball -->
-  <WNA_Turret_Pale.label>pale ball</WNA_Turret_Pale.label>
+  <WNA_Turret_Pale.label>苍白球体</WNA_Turret_Pale.label>
   <!-- EN: A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. -->
-  <WNA_Turret_Pale.description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies.</WNA_Turret_Pale.description>
+  <WNA_Turret_Pale.description>一个板状装置，能够形成一个能量球，并积极的攻击附近的敌人。</WNA_Turret_Pale.description>
   
   <!-- EN: pale ball -->
-  <WNA_Turret_Pale_Gun.label>pale ball</WNA_Turret_Pale_Gun.label>
-  <!-- EN: turret weapon. -->
-  <WNA_Turret_Pale_Gun.description>turret weapon.</WNA_Turret_Pale_Gun.description>
+  <WNA_Turret_Pale_Gun.label>苍白球体</WNA_Turret_Pale_Gun.label>
+  <!-- EN: 炮。 -->
+  <WNA_Turret_Pale_Gun.description>炮。</WNA_Turret_Pale_Gun.description>
   <!-- EN: pale ball -->
-  <WNA_Turret_Pale_Gun.verbs.VerbType_Laser.label>pale ball</WNA_Turret_Pale_Gun.verbs.VerbType_Laser.label>
+  <WNA_Turret_Pale_Gun.verbs.VerbType_Laser.label>苍白球体</WNA_Turret_Pale_Gun.verbs.VerbType_Laser.label>
   
   <!-- EN: pale ball -->
-  <WNA_Turret_Pale_Proj.label>pale ball</WNA_Turret_Pale_Proj.label>
+  <WNA_Turret_Pale_Proj.label>苍白球体</WNA_Turret_Pale_Proj.label>
   
   <!-- EN: shatter ball -->
-  <WNA_Turret_Shatter.label>shatter ball</WNA_Turret_Shatter.label>
+  <WNA_Turret_Shatter.label>破碎球体</WNA_Turret_Shatter.label>
   <!-- EN: A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. It can cause an explosion and usually powerful enough to blow a person apart. -->
-  <WNA_Turret_Shatter.description>A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. It can cause an explosion and usually powerful enough to blow a person apart.</WNA_Turret_Shatter.description>
+  <WNA_Turret_Shatter.description>一个板状装置，能够形成一个能量球，并积极的攻击附近的敌人。能够造成足以把一个人炸碎的爆炸。</WNA_Turret_Shatter.description>
   
   <!-- EN: shatter ball -->
-  <WNA_Turret_Shatter_Gun.label>shatter ball</WNA_Turret_Shatter_Gun.label>
-  <!-- EN: turret weapon. -->
-  <WNA_Turret_Shatter_Gun.description>turret weapon.</WNA_Turret_Shatter_Gun.description>
+  <WNA_Turret_Shatter_Gun.label>破碎球体</WNA_Turret_Shatter_Gun.label>
+  <!-- EN: 炮。 -->
+  <WNA_Turret_Shatter_Gun.description>炮。</WNA_Turret_Shatter_Gun.description>
   <!-- EN: shatter ball -->
-  <WNA_Turret_Shatter_Gun.verbs.Verb_Shoot.label>shatter ball</WNA_Turret_Shatter_Gun.verbs.Verb_Shoot.label>
+  <WNA_Turret_Shatter_Gun.verbs.Verb_Shoot.label>破碎球体</WNA_Turret_Shatter_Gun.verbs.Verb_Shoot.label>
   
   <!-- EN: shatter ball -->
-  <WNA_Turret_Shatter_Proj.label>shatter ball</WNA_Turret_Shatter_Proj.label>
+  <WNA_Turret_Shatter_Proj.label>破碎球体</WNA_Turret_Shatter_Proj.label>
   
 </LanguageData>

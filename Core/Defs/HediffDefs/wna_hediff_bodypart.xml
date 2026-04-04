@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="WNA_BodypartItem" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <techLevel>Archotech</techLevel>
+        <drawerType>MapMeshOnly</drawerType>
+        <selectable>true</selectable>
+        <altitudeLayer>Item</altitudeLayer>
+        <tickerType>Never</tickerType>
+        <alwaysHaulable>true</alwaysHaulable>
+        <isTechHediff>true</isTechHediff>
+        <pathCost>0</pathCost>
+        <rotatable>false</rotatable>
+        <useHitPoints>false</useHitPoints>
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+            <color>(180,189,199)</color>
+        </graphicData>
+        <statBases>
+            <Beauty>0</Beauty>
+            <Mass>0.01</Mass>
+        </statBases>
+        <tradeTags>
+            <li>TechHediff</li>
+        </tradeTags>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <thingCategories>
+            <li>WNA_Category_Bodypart</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Bionics</researchPrerequisite>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <displayPriority>300</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+    <HediffDef Name="WNA_BodypartHediff" Abstract="True">
+        <hediffClass>Hediff_AddedPart</hediffClass>
+        <defaultLabelColor>(180, 189, 199)</defaultLabelColor>
+        <isBad>false</isBad>
+        <priceImpact>true</priceImpact>
+        <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+        <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+        <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+    </HediffDef>
+    <RecipeDef Name="WNA_BodypartRecipe" ParentName="SurgeryFlesh" Abstract="True">
+        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+        <workAmount>2500</workAmount>
+        <surgeryOutcomeEffect IsNull="True"/>
+        <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+        <skillRequirements>
+            <Medicine>8</Medicine>
+        </skillRequirements>
+        <recipeUsers>
+            <li>Human</li>
+            <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+                <li>Neutroamine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+    <!--
+        overall / torso
+        spine
+        stomach
+        heart
+        lung
+        kidney
+        liver
+        brain
+        eye
+        ear
+        jaw
+        arm
+        leg
+    -->
+    <ThingDef ParentName="WNA_BodypartItem">
+        <defName>WNA_Part_AdvBionicSkin</defName>
+        <label>adv. bionic skin</label>
+        <description>A bionic skin implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+        <statBases>
+            <MarketValue>1440</MarketValue>
+        </statBases>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <WNA_AttunementFabric>25</WNA_AttunementFabric>
+            <BroadshieldCore MayRequire="Ludeon.Rimworld.Royalty">1</BroadshieldCore>
+        </costList>
+    </ThingDef>
+    <HediffDef ParentName="WNA_BodypartHediff">
+        <defName>WNA_Part_AdvBionicSkin</defName>
+        <label>adv. bionic skin</label>
+        <description>An installed adv bionic skin. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <li>
+                <partIgnoreMissingHP>true</partIgnoreMissingHP>
+                <statOffsets>
+                    <VacuumResistance>0.8</VacuumResistance>
+                    <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+                    <ComfyTemperatureMax>20</ComfyTemperatureMax>
+                    <PawnBeauty>1</PawnBeauty>
+                    <ArmorRating_Sharp>2</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>2</ArmorRating_Blunt>
+                    <ArmorRating_Heat>2</ArmorRating_Heat>
+                </statOffsets>
+				<statFactors>
+                    <Flammability>0</Flammability>
+					<IncomingDamageFactor MayRequire="Ludeon.Rimworld.Royalty">0</IncomingDamageFactor>
+				</statFactors>
+                <preventVacuumBurns>true</preventVacuumBurns>
+            </li>
+        </stages>
+		<modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+		</modExtensions>
+    </HediffDef>
+    <RecipeDef ParentName="WNA_BodypartRecipe">
+        <defName>WNA_Part_AdvBionicSkin</defName>
+        <label>install adv. bionic skin</label>
+        <description>install adv bionic skin.</description>
+        <workerClass>Recipe_InstallImplant</workerClass>
+        <jobString>Installing adv bionic skin.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Part_AdvBionicSkin</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Part_AdvBionicSkin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WNA_Part_AdvBionicSkin</addsHediff>
+    </RecipeDef>
+    
+    <ThingDef ParentName="WNA_BodypartItem">
+        <defName>WNA_Part_AdvBionicSpine</defName>
+        <label>adv. bionic spine</label>
+        <description>A bionic spine implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <costList>
+            <Plasteel>25</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+    </ThingDef>
+    <HediffDef ParentName="WNA_BodypartHediff">
+        <defName>WNA_Part_AdvBionicSpine</defName>
+        <label>adv. bionic spine</label>
+        <description>An installed adv bionic spine. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <partIgnoreMissingHP>true</partIgnoreMissingHP>
+                <statOffsets>
+                    <RestFallRateFactor>-0.5</RestFallRateFactor>
+                    <CarryingCapacity>60000</CarryingCapacity>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="WNA.HediffCompProp.PropProximityBlink">
+                <cooldown>60</cooldown>
+                <counterBack>true</counterBack>
+                <skipaway>7.9~15.9</skipaway>
+                <damageDef>Crush</damageDef>
+                <power>40</power>
+            </li>
+        </comps>
+        <modExtensions>
+			<li Class="WNA.DMExtension.MassCapacity">
+				<massCapacity>60000</massCapacity>
+			</li>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+		</modExtensions>
+    </HediffDef>
+    <RecipeDef ParentName="WNA_BodypartRecipe">
+        <defName>WNA_Part_AdvBionicSpine</defName>
+        <label>install adv. bionic spine</label>
+        <description>install adv bionic spine.</description>
+        <jobString>Installing adv bionic spine.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Part_AdvBionicSpine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Part_AdvBionicSpine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Spine</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WNA_Part_AdvBionicSpine</addsHediff>
+    </RecipeDef>
+    
+    <ThingDef ParentName="WNA_BodypartItem">
+        <defName>WNA_Part_AdvBionicStomach</defName>
+        <label>adv. bionic stomach</label>
+        <description>A bionic stomach implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <Synthread>15</Synthread>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+    </ThingDef>
+    <HediffDef ParentName="WNA_BodypartHediff">
+        <defName>WNA_Part_AdvBionicStomach</defName>
+        <label>adv. bionic stomach</label>
+        <description>An installed adv bionic stomach.</description>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <partIgnoreMissingHP>true</partIgnoreMissingHP>
+                <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+                <hungerRateFactor>0.5</hungerRateFactor>
+                <statFactors>
+                    <MaxNutrition>2</MaxNutrition>
+                </statFactors>
+                <capMods>
+					<li>
+						<capacity>Metabolism</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+            </li>
+        </stages>
+    </HediffDef>
+    <RecipeDef ParentName="WNA_BodypartRecipe">
+        <defName>WNA_Part_AdvBionicStomach</defName>
+        <label>install adv. bionic stomach</label>
+        <description>install adv bionic stomach.</description>
+        <jobString>Installing adv bionic stomach.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Part_AdvBionicStomach</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Part_AdvBionicStomach</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Stomach</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WNA_Part_AdvBionicStomach</addsHediff>
+    </RecipeDef>
+        
+    <ThingDef ParentName="WNA_BodypartItem">
+        <defName>WNA_Part_AdvBionicSHeart</defName>
+        <label>adv. bionic heart</label>
+        <description>A bionic heart implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <costList>
+            <Synthread>15</Synthread>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+    </ThingDef>
+    <HediffDef ParentName="WNA_BodypartHediff">
+        <defName>WNA_Part_AdvBionicSHeart</defName>
+        <label>adv. bionic heart</label>
+        <description>An installed adv bionic heart. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <partIgnoreMissingHP>true</partIgnoreMissingHP>
+                <totalBleedFactor>0</totalBleedFactor>
+                <naturalHealingFactor>3</naturalHealingFactor>
+                <capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="WNA.HediffCompProp.PropHediffHediffRemover">
+                <interval>60000</interval>
+                <removeInjury>true</removeInjury>
+            </li>
+        </comps>
+		<modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+		</modExtensions>
+    </HediffDef>
+    <RecipeDef ParentName="WNA_BodypartRecipe">
+        <defName>WNA_Part_AdvBionicSHeart</defName>
+        <label>install adv. bionic heart</label>
+        <description>install adv bionic heart.</description>
+        <jobString>Installing adv bionic heart.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Part_AdvBionicSHeart</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Part_AdvBionicSHeart</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Heart</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WNA_Part_AdvBionicSHeart</addsHediff>
+    </RecipeDef>
+    
+    <ThingDef ParentName="WNA_BodypartItem">
+        <defName>WNA_Part_AdvBionicLung</defName>
+        <label>adv. bionic lung</label>
+        <description>A bionic lung implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <Steel>20</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+    </ThingDef>
+    <HediffDef ParentName="WNA_BodypartHediff">
+        <defName>WNA_Part_AdvBionicLung</defName>
+        <label>adv. bionic lung</label>
+        <description>An installed adv bionic lung.</description>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <partIgnoreMissingHP>true</partIgnoreMissingHP>
+                <capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>1.2</postFactor>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<postFactor>1.2</postFactor>
+					</li>
+				</capMods>
+                <statOffsets>
+                    <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+                    <VacuumResistance>0.8</VacuumResistance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <RecipeDef ParentName="WNA_BodypartRecipe">
+        <defName>WNA_Part_AdvBionicLung</defName>
+        <label>install adv. bionic lung</label>
+        <description>install adv bionic lung.</description>
+        <jobString>Installing adv bionic lung.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Part_AdvBionicLung</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Part_AdvBionicLung</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Lung</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WNA_Part_AdvBionicLung</addsHediff>
+    </RecipeDef>
+    
+    <ThingDef ParentName="WNA_BodypartItem">
+        <defName>WNA_Part_AdvBionicKidney</defName>
+        <label>adv. bionic kidney</label>
+        <description>A bionic kidney implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <Steel>20</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+    </ThingDef>
+    <HediffDef ParentName="WNA_BodypartHediff">
+        <defName>WNA_Part_AdvBionicKidney</defName>
+        <label>adv. bionic kidney</label>
+        <description>An installed adv bionic kidney.</description>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <partIgnoreMissingHP>true</partIgnoreMissingHP>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.8</ImmunityGainSpeed>
+                    <ToxicResistance>0.8</ToxicResistance>
+                </statOffsets>
+                <capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<postFactor>1.2</postFactor>
+					</li>
+				</capMods>
+            </li>
+        </stages>
+    </HediffDef>
+    <RecipeDef ParentName="WNA_BodypartRecipe">
+        <defName>WNA_Part_AdvBionicKidney</defName>
+        <label>install adv. bionic kidney</label>
+        <description>install adv bionic kidney.</description>
+        <jobString>Installing adv bionic kidney.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Part_AdvBionicKidney</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Part_AdvBionicKidney</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Kidney</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WNA_Part_AdvBionicKidney</addsHediff>
+    </RecipeDef>
+    
+    <ThingDef ParentName="WNA_BodypartItem">
+        <defName>WNA_Part_AdvBionicLiver</defName>
+        <label>adv. bionic liver</label>
+        <description>A bionic liver implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <costList>
+            <Plasteel>25</Plasteel>
+            <Uranium>10</Uranium>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+    </ThingDef>
+    <HediffDef ParentName="WNA_BodypartHediff">
+        <defName>WNA_Part_AdvBionicLiver</defName>
+        <label>adv. bionic liver</label>
+        <description>An installed adv bionic liver. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <partIgnoreMissingHP>true</partIgnoreMissingHP>
+                <statOffsets>
+                    <ImmunityGainSpeed>3</ImmunityGainSpeed>
+                    <ToxicResistance>3</ToxicResistance>
+                </statOffsets>
+            </li>
+        </stages>
+		<modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+		</modExtensions>
+    </HediffDef>
+    <RecipeDef ParentName="WNA_BodypartRecipe">
+        <defName>WNA_Part_AdvBionicLiver</defName>
+        <label>install adv. bionic liver</label>
+        <description>install adv bionic liver.</description>
+        <jobString>Installing adv bionic liver.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Part_AdvBionicLiver</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Part_AdvBionicLiver</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Liver</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WNA_Part_AdvBionicLiver</addsHediff>
+    </RecipeDef>
+    
+    <ThingDef ParentName="WNA_BodypartItem">
+        <defName>WNA_Part_AdvBionicBrain</defName>
+        <label>adv. bionic brain chip</label>
+        <description>A bionic brain implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <WNA_AttunementFabric>15</WNA_AttunementFabric>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+    </ThingDef>
+    <HediffDef ParentName="WNA_BodypartHediff">
+        <defName>WNA_Part_AdvBionicBrain</defName>
+        <label>adv. bionic brain chip</label>
+        <description>An installed adv bionic brain chip.</description>
+        <hediffClass>Hediff_Implant</hediffClass>
+        <stages>
+            <li>
+                <partIgnoreMissingHP>true</partIgnoreMissingHP>
+                <partEfficiencyOffset>3</partEfficiencyOffset>
+                <pctAllThoughtNullification>1</pctAllThoughtNullification>
+                <overrideMoodBase>1</overrideMoodBase>
+                <socialFightChanceFactor>0</socialFightChanceFactor>
+                <blocksMentalBreaks>true</blocksMentalBreaks>
+                <statFactors>
+                    <GlobalLearningFactor>1.5</GlobalLearningFactor>
+                    <ResearchSpeed>3</ResearchSpeed>
+                    <StudyEfficiency MayRequire="Ludeon.Rimworld.Anomaly">1.5</StudyEfficiency>
+                    <EntityStudyRate MayRequire="Ludeon.Rimworld.Anomaly">3</EntityStudyRate>
+                </statFactors>
+                <capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>1.2</postFactor>
+					</li>
+				</capMods>
+            </li>
+        </stages>
+    </HediffDef>
+    <RecipeDef ParentName="WNA_BodypartRecipe">
+        <defName>WNA_Part_AdvBionicBrain</defName>
+        <label>install adv. bionic brain chip</label>
+        <description>install adv bionic brain chip.</description>
+        <workerClass>Recipe_InstallImplant</workerClass>
+        <jobString>Installing adv bionic brain chip.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Part_AdvBionicBrain</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Part_AdvBionicBrain</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WNA_Part_AdvBionicBrain</addsHediff>
+    </RecipeDef>
+    
+    <ThingDef ParentName="WNA_BodypartItem">
+        <defName>WNA_Part_AdvBionicEye</defName>
+        <label>adv. bionic eye</label>
+        <description>A bionic eye implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <statBases>
+            <MarketValue>800</MarketValue>
+        </statBases>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+    </ThingDef>
+    <HediffDef ParentName="WNA_BodypartHediff">
+        <defName>WNA_Part_AdvBionicEye</defName>
+        <label>adv. bionic eye</label>
+        <description>An installed adv bionic eye.</description>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>2</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<postFactor>1.2</postFactor>
+					</li>
+				</capMods>
+            </li>
+        </stages>
+    </HediffDef>
+    <RecipeDef ParentName="WNA_BodypartRecipe">
+        <defName>WNA_Part_AdvBionicEye</defName>
+        <label>install adv. bionic eye</label>
+        <description>install adv bionic eye.</description>
+        <jobString>Installing adv bionic eye.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Part_AdvBionicEye</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Part_AdvBionicEye</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Eye</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WNA_Part_AdvBionicEye</addsHediff>
+    </RecipeDef>
+    
+    <ThingDef ParentName="WNA_BodypartItem">
+        <defName>WNA_Part_AdvBionicEar</defName>
+        <label>adv. bionic ear</label>
+        <description>A bionic ear implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <statBases>
+            <MarketValue>600</MarketValue>
+        </statBases>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <Steel>5</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+    </ThingDef>
+    <HediffDef ParentName="WNA_BodypartHediff">
+        <defName>WNA_Part_AdvBionicEar</defName>
+        <label>adv. bionic ear</label>
+        <description>An installed adv bionic ear.</description>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>2</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <capMods>
+					<li>
+						<capacity>Hearing</capacity>
+						<postFactor>1.2</postFactor>
+					</li>
+				</capMods>
+            </li>
+        </stages>
+    </HediffDef>
+    <RecipeDef ParentName="WNA_BodypartRecipe">
+        <defName>WNA_Part_AdvBionicEar</defName>
+        <label>install adv. bionic ear</label>
+        <description>install adv bionic ear.</description>
+        <jobString>Installing adv bionic ear.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Part_AdvBionicEar</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Part_AdvBionicEar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Ear</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WNA_Part_AdvBionicEar</addsHediff>
+    </RecipeDef>
+    
+    <ThingDef ParentName="WNA_BodypartItem">
+        <defName>WNA_Part_AdvBionicJaw</defName>
+        <label>adv. bionic jaw</label>
+        <description>A bionic jaw implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <costList>
+            <Plasteel>20</Plasteel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+    </ThingDef>
+    <HediffDef ParentName="WNA_BodypartHediff">
+        <defName>WNA_Part_AdvBionicJaw</defName>
+        <label>adv. bionic jaw</label>
+        <description>An installed adv bionic jaw.</description>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PawnBeauty>1</PawnBeauty>
+                    <NegotiationAbility>0.4</NegotiationAbility>
+		            <TradePriceImprovement>0.4</TradePriceImprovement>
+		            <SocialImpact>0.4</SocialImpact>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>teeth</label>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>30</power>
+						<cooldownTime>1</cooldownTime>
+						<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+						<chanceFactor>0.1</chanceFactor>
+					</li>
+				</tools>
+			</li>
+		</comps>
+    </HediffDef>
+    <RecipeDef ParentName="WNA_BodypartRecipe">
+        <defName>WNA_Part_AdvBionicJaw</defName>
+        <label>install adv. bionic jaw</label>
+        <description>install adv bionic jaw.</description>
+        <jobString>Installing adv bionic jaw.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Part_AdvBionicJaw</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Part_AdvBionicJaw</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Jaw</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WNA_Part_AdvBionicJaw</addsHediff>
+    </RecipeDef>
+    
+    <ThingDef ParentName="WNA_BodypartItem">
+        <defName>WNA_Part_AdvBionicArm</defName>
+        <label>adv. bionic arm</label>
+        <description>A bionic arm implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <costList>
+            <Plasteel>25</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <violentTechHediff>true</violentTechHediff>
+    </ThingDef>
+    <HediffDef ParentName="WNA_BodypartHediff">
+        <defName>WNA_Part_AdvBionicArm</defName>
+        <label>adv. bionic arm</label>
+        <description>An installed adv bionic arm.</description>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MiningSpeed>2</MiningSpeed>
+                    <DeepDrillingSpeed>2</DeepDrillingSpeed>
+                    <PlantWorkSpeed>2</PlantWorkSpeed>
+                </statOffsets>
+                <capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>point</label>
+                        <capacities>
+                            <li>Stab</li>
+                        </capacities>
+                        <power>40</power>
+                        <cooldownTime>1</cooldownTime>
+                        <armorPenetration>3</armorPenetration>
+                        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+                        <extraMeleeDamages>
+                            <li>
+                                <def>Stun</def>
+                                <amount>30</amount>
+                            </li>
+                            <li>
+                                <def>Flame</def>
+                                <amount>30</amount>
+                            </li>
+                        </extraMeleeDamages>
+                    </li>
+                    <li>
+                        <label>edge</label>
+                        <capacities>
+                            <li>Cut</li>
+                        </capacities>
+                        <power>40</power>
+                        <cooldownTime>1</cooldownTime>
+                        <armorPenetration>3</armorPenetration>
+                        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+                        <extraMeleeDamages>
+                            <li>
+                                <def>Stun</def>
+                                <amount>30</amount>
+                            </li>
+                            <li>
+                                <def>Flame</def>
+                                <amount>30</amount>
+                            </li>
+                        </extraMeleeDamages>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+    </HediffDef>
+    <RecipeDef ParentName="WNA_BodypartRecipe">
+        <defName>WNA_Part_AdvBionicArm</defName>
+        <label>install adv. bionic arm</label>
+        <description>install adv bionic arm.</description>
+        <jobString>Installing adv bionic arm.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Part_AdvBionicArm</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Part_AdvBionicArm</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Shoulder</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WNA_Part_AdvBionicArm</addsHediff>
+    </RecipeDef>
+    
+    <ThingDef ParentName="WNA_BodypartItem">
+        <defName>WNA_Part_AdvBionicLeg</defName>
+        <label>adv. bionic leg</label>
+        <description>A bionic leg implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <costList>
+            <Plasteel>25</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+    </ThingDef>
+    <HediffDef ParentName="WNA_BodypartHediff">
+        <defName>WNA_Part_AdvBionicLeg</defName>
+        <label>adv. bionic leg</label>
+        <description>An installed adv bionic leg.</description>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyFactor_Long>0.4</ShootingAccuracyFactor_Long>
+                    <ShootingAccuracyFactor_Medium>0.6</ShootingAccuracyFactor_Medium>
+                    <StaggerDurationFactor>-1</StaggerDurationFactor>
+                </statOffsets>
+                <capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+            </li>
+        </stages>
+		<modExtensions>
+			<li Class="WNA.DMExtension.Passability">
+				<freepass>true</freepass>
+			</li>
+		</modExtensions>
+    </HediffDef>
+    <RecipeDef ParentName="WNA_BodypartRecipe">
+        <defName>WNA_Part_AdvBionicLeg</defName>
+        <label>install adv. bionic leg</label>
+        <description>install adv bionic leg.</description>
+        <jobString>Installing adv bionic leg.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WNA_Part_AdvBionicLeg</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WNA_Part_AdvBionicLeg</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Leg</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WNA_Part_AdvBionicLeg</addsHediff>
+    </RecipeDef>
+
+</Defs>

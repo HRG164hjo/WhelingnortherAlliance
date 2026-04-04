@@ -69,12 +69,21 @@
             <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_Inhuman</hediff>
             </li>
+            <li Class="WNA.HediffCompProp.PropHediffHediffRemover">
+                <interval>7</interval>
+                <removeInjury>true</removeInjury>
+            </li>
             <li Class="WNA.HediffCompProp.PropProximityBlink">
                 <cooldown>1</cooldown>
                 <counterBack>true</counterBack>
                 <damageDef>WNA_Culling</damageDef>
             </li>
         </comps>
+		<modExtensions>
+			<li Class="WNA.DMExtension.Passability">
+				<freepass>true</freepass>
+			</li>
+		</modExtensions>
     </HediffDef>
 
     <HediffDef>
@@ -105,7 +114,16 @@
             <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_InAnimal</hediff>
             </li>
+            <li Class="WNA.HediffCompProp.PropHediffHediffRemover">
+                <interval>23</interval>
+                <removeInjury>true</removeInjury>
+            </li>
         </comps>
+		<modExtensions>
+			<li Class="WNA.DMExtension.Passability">
+				<freepass>true</freepass>
+			</li>
+		</modExtensions>
     </HediffDef>
 
     <HediffDef>
@@ -153,7 +171,7 @@
         </stages>
         <comps>
             <li Class="WNA.HediffCompProp.PropMechAutoHeal">
-                <repairInterval>29</repairInterval>
+                <repairInterval>23</repairInterval>
             </li>
             <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_InMechanoid</hediff>
@@ -167,6 +185,12 @@
             <li Class="WNA.DMExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
+			<li Class="WNA.DMExtension.MassCapacity">
+				<massCapacity>60000</massCapacity>
+			</li>
+			<li Class="WNA.DMExtension.Passability">
+				<freepass>true</freepass>
+			</li>
 		</modExtensions>
     </HediffDef>
 
@@ -196,6 +220,10 @@
             <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_DeathEnd</hediff>
             </li>
+            <li Class="WNA.HediffCompProp.PropHediffHediffRemover">
+                <interval>23</interval>
+                <removeInjury>true</removeInjury>
+            </li>
             <li Class="WNA.HediffCompProp.PropProximityBlink">
                 <range>5.9</range>
                 <skipaway>13.9~19.9</skipaway>
@@ -203,6 +231,17 @@
                 <damageDef>WNA_DemoCut</damageDef>
             </li>
         </comps>
+		<modExtensions>
+			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
+				<movementDef>WNA_Movement</movementDef>
+			</li>
+			<li Class="WNA.DMExtension.Passability">
+				<freepass>true</freepass>
+			</li>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+		</modExtensions>
     </HediffDef>
     <HediffDef>
         <defName>sWNA_DeathEnd</defName>
@@ -234,6 +273,11 @@
                 <preventVacuumBurns>true</preventVacuumBurns>
             </li>
         </stages>
+		<modExtensions>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
+		</modExtensions>
     </HediffDef>
 
     <HediffDef>
@@ -313,6 +357,9 @@
             <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_PermaconstActive</hediff>
             </li>
+            <li Class="WNA.HediffCompProp.PropMechAutoHeal">
+                <repairInterval>99</repairInterval>
+            </li>
             <li Class="WNA.HediffCompProp.PropPermaconstActive"/>
         </comps>
 		<modExtensions>
@@ -322,6 +369,9 @@
             <li Class="WNA.DMExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
+			<li Class="WNA.DMExtension.Passability">
+				<freepass>true</freepass>
+			</li>
 		</modExtensions>
     </HediffDef>
 </Defs>

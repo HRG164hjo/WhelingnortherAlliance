@@ -1,27 +1,49 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: bad dream -->
   <WNA_FacingVoid.stages.bad_dream.label>坏梦</WNA_FacingVoid.stages.bad_dream.label>
+  <!-- EN: everything i can feel is black or empty, is this a nightmare? -->
   <WNA_FacingVoid.stages.bad_dream.description>我能感觉到的只有黑暗和虚无，这是噩梦吗？</WNA_FacingVoid.stages.bad_dream.description>
+  <!-- EN: it's dark here -->
   <WNA_FacingVoid.stages.its_dark_here.label>这里有点黑</WNA_FacingVoid.stages.its_dark_here.label>
+  <!-- EN: everything i can feel is black or empty, is this a nightmare? -->
   <WNA_FacingVoid.stages.its_dark_here.description>我能感觉到的只有黑暗和虚无，这是噩梦吗？</WNA_FacingVoid.stages.its_dark_here.description>
+  <!-- EN: it's so dark here -->
   <WNA_FacingVoid.stages.its_so_dark_here.label>这里好黑</WNA_FacingVoid.stages.its_so_dark_here.label>
+  <!-- EN: everything i can feel is black or empty, it's a nightmare, I want to wake up -->
   <WNA_FacingVoid.stages.its_so_dark_here.description>我能感觉到的只有黑暗和虚无，这是场噩梦，我想醒过来。</WNA_FacingVoid.stages.its_so_dark_here.description>
+  <!-- EN: unusually dark -->
   <WNA_FacingVoid.stages.unusually_dark.label>这里太黑了</WNA_FacingVoid.stages.unusually_dark.label>
+  <!-- EN: it's so dark and empty here! I'm feeling bad! I want to wake up! -->
   <WNA_FacingVoid.stages.unusually_dark.description>这里太黑太空了！我感觉很不好，我想醒过来！</WNA_FacingVoid.stages.unusually_dark.description>
+  <!-- EN: abnormally dark -->
   <WNA_FacingVoid.stages.abnormally_dark.label>异常黑暗</WNA_FacingVoid.stages.abnormally_dark.label>
+  <!-- EN: it's so dark and empty here! I'm afraid! why can't I wake up? -->
   <WNA_FacingVoid.stages.abnormally_dark.description>这里太黑太空了！我很害怕！为什么我醒不过来？</WNA_FacingVoid.stages.abnormally_dark.description>
+  <!-- EN: facing the void -->
   <WNA_FacingVoid.stages.facing_the_void.label>直面虚空</WNA_FacingVoid.stages.facing_the_void.label>
+  <!-- EN: I can feel nothing, dark and void is all I can sense, what the hell is happening to me?! -->
   <WNA_FacingVoid.stages.facing_the_void.description>我什么都感受不到，只能感知到黑暗和虚无，我身上到底发生了什么？！</WNA_FacingVoid.stages.facing_the_void.description>
+  <!-- EN: lost in the void -->
   <WNA_FacingVoid.stages.lost_in_the_void.label>迷失虚空</WNA_FacingVoid.stages.lost_in_the_void.label>
+  <!-- EN: I can feel nothing, even my sense of myself is fading! I'm going to lost! -->
   <WNA_FacingVoid.stages.lost_in_the_void.description>我什么都感觉不到，就连我对自己的感知都在消失！我要消失了！</WNA_FacingVoid.stages.lost_in_the_void.description>
+  <!-- EN: doomed -->
   <WNA_FacingVoid.stages.doomed.label>完了</WNA_FacingVoid.stages.doomed.label>
+  <!-- EN: help! help! get me out! somebody please wake me up! I don't want to die here! -->
   <WNA_FacingVoid.stages.doomed.description>救命！救命！放我出去！有人吗！快弄醒我！我不想死在这儿！</WNA_FacingVoid.stages.doomed.description>
+  <!-- EN: HELP -->
   <WNA_FacingVoid.stages.HELP.label>救命</WNA_FacingVoid.stages.HELP.label>
+  <!-- EN: HELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELP -->
   <WNA_FacingVoid.stages.HELP.description>&lt;color=#FF0000&gt;救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命救命&lt;/color&gt;</WNA_FacingVoid.stages.HELP.description>
+  <!-- EN: help... -->
   <WNA_FacingVoid.stages.help.label>救我...</WNA_FacingVoid.stages.help.label>
+  <!-- EN: help...help.....help....help...... -->
   <WNA_FacingVoid.stages.help.description>救我...救我.....救我....救我......</WNA_FacingVoid.stages.help.description>
+  <!-- EN: ... -->
   <WNA_FacingVoid.stages.10.label>...</WNA_FacingVoid.stages.10.label>
+  <!-- EN: ... -->
   <WNA_FacingVoid.stages.10.description>...</WNA_FacingVoid.stages.10.description>
   
 </LanguageData>

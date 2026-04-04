@@ -81,6 +81,7 @@
 		<graphicData>
 			<texPath>buildings/atlas/wna_table_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255,255,255,192)</color>
 			<linkType>Basic</linkType>
 			<linkFlags>
 				<li>Custom6</li>
@@ -106,6 +107,7 @@
 		<graphicData>
 			<texPath>buildings/atlas/wna_seat_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255,255,255,192)</color>
 			<linkType>Basic</linkType>
 			<linkFlags>
 				<li>Custom7</li>
@@ -134,6 +136,7 @@
 		<graphicData>
 			<texPath>buildings/atlas/wna_shelf_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<color>(255,255,255,192)</color>
 			<linkType>Basic</linkType>
 			<linkFlags>
 				<li>Custom6</li>
@@ -317,7 +320,6 @@
         <description>A black banner with red whelingnorther alliance symbol on it.</description>
         <graphicData>
             <texPath>buildings/misc/wna_flag</texPath>
-            <color>(255,255,255,255)</color>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1.5</drawSize>
             <drawOffset>(0,0,0.4)</drawOffset>
@@ -364,7 +366,7 @@
 		</modExtensions>
     </ThingDef>
 
-<!--<ThingDef ParentName="WNA_FurnitureBase">
+    <!--<ThingDef ParentName="WNA_FurnitureBase">
 		<defName>WNA_TestAE</defName>
 		<label>WNA_TestAE</label>
 		<description>TEST_OBJECT</description>
@@ -470,7 +472,6 @@
         <uiIconPath>buildings/wna_wallsafe/icon</uiIconPath>
         <graphicData>
             <texPath>buildings/wna_wallsafe/wna_wallsafe</texPath>
-            <color>(255,255,255,255)</color>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
             <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>

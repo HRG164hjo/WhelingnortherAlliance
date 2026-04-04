@@ -14,6 +14,7 @@ namespace WNA.WNAHarmony
         {
             float pawnbase = 0f;
             float pawnbonus = 0f;
+            float pawnhealth = 0f;
             var Ext = p.def.GetModExtension<MassCapacity>();
             if (Ext != null)
                 pawnbase = Mathf.Max(Ext.massCapacity, 1f);
@@ -26,7 +27,20 @@ namespace WNA.WNAHarmony
                         pawnbonus += aExt.massCapacity;
                 }
             }
-            __result = (p.BodySize * pawnbase) + pawnbonus;
+            if (p.health != null && p.health.hediffSet != null)
+            {
+                foreach (Hediff hediff in p.health.hediffSet.hediffs)
+                {
+                    var hdef = hediff.def;
+                    if (hdef != null)
+                    {
+                        var hExt = hdef.GetModExtension<MassCapacity>();
+                        if (hExt != null)
+                            pawnhealth += hExt.massCapacity;
+                    }
+                }
+            }
+            __result = p.BodySize * (pawnbase + pawnbonus + pawnhealth);
         }
     }
 }

@@ -1,40 +1,64 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: attunement fabric baseboard -->
   <WNA_FabricBaseboard.label>同调织物基板</WNA_FabricBaseboard.label>
+  <!-- EN: A baseboard used for replicating WNA's attunement fabric. In a remote place like rimworld, such thing is a must in fabric pruduction. -->
   <WNA_FabricBaseboard.description>一块用来复现威灵会的同调织物的基板。在边缘世界这样的边远之地，这种基板已经成了同调织物生产流程中的必须环节。</WNA_FabricBaseboard.description>
   
+  <!-- EN: focus -->
   <WNA_Focus.label>聚点</WNA_Focus.label>
+  <!-- EN: Attention, concentration. Focused and solidfied, and carefully contained for further use or preservation. -->
   <WNA_Focus.description>注意力，专注力，聚焦并固化，精心封存以便保存或使用。</WNA_Focus.description>
   
+  <!-- EN: halogen vial -->
   <WNA_HalogenVial.label>卤素瓶</WNA_HalogenVial.label>
+  <!-- EN: A mixture (maybe) of halogen contained in a vial. These substances are among the most active substances in the world, hard to handle, and very useful. -->
   <WNA_HalogenVial.description>一小瓶卤素混合物（存疑）。这些东西处于世界上最活泼的物质之列，不好伺候，但非常有用。</WNA_HalogenVial.description>
   
+  <!-- EN: mass chunk -->
   <WNA_MassChunk.label>质量方块</WNA_MassChunk.label>
+  <!-- EN: A smooth mass chunk, weighing exactly 60 kg. Very smooth on touch. -->
   <WNA_MassChunk.description>一个表面十分光滑的方块，重量是精确的60千克。摸起来真的非常光滑。</WNA_MassChunk.description>
   
+  <!-- EN: mercury vial -->
   <WNA_MercuryVial.label>水银瓶</WNA_MercuryVial.label>
+  <!-- EN: An unique metal that usually appear as liquid. This substance easily volatile and it's steam is highly poisonous, so needs to be carefully contained or operated. -->
   <WNA_MercuryVial.description>一种在常温常压下为液态的独特金属。这种物质非常容易挥发，蒸汽有剧毒，因此在保存和使用这种物质时务必小心谨慎。</WNA_MercuryVial.description>
   
+  <!-- EN: methanol -->
   <WNA_Methanol.label>甲醇</WNA_Methanol.label>
-  <WNA_Methanol.description>最简单的一元醇，用途非常广泛的化学物质，可以通过蒸馏木材的方式获取。这种东西有剧毒，务必谨记这玩意&lt;color=#FF0000&gt;不能&lt;/color&gt;用来喝。</WNA_Methanol.description>
+  <!-- EN: The simplest alcohol, a very useful chemical substance, can be obtained by distilling wood, poisonous. DO remember that this is absolutely not for drinking. -->
+  <WNA_Methanol.description>最简单的一元醇，用途非常广泛的化学物质，可以通过蒸馏木材的方式获取。这种东西有剧毒，务必谨记这玩意&lt;color=#FF0000>不能&lt;/color>用来喝。</WNA_Methanol.description>
   
+  <!-- EN: particle vial -->
   <WNA_ParticleVial.label>粒子瓶</WNA_ParticleVial.label>
+  <!-- EN: Strange unstable particles found when mass is diluted into energy under certain conditions. Can be safely stored in a magnetic vial, just don't let this vial be destroyed. -->
   <WNA_ParticleVial.description>在特定条件下，当质量被稀释成能量时，就会产生这些奇特的、不稳定的粒子。这些粒子可以安全地用磁性小瓶储存，但千万不要把这个小瓶摔坏了。</WNA_ParticleVial.description>
   
+  <!-- EN: white phosphorus -->
   <WNA_Phosphorus.label>白磷</WNA_Phosphorus.label>
+  <!-- EN: Very soft substance. This substance is very dangerous, highly toxic and highly flammable, makes it hard to believe that phosphorus is a vital component of life. -->
   <WNA_Phosphorus.description>一种非常柔软的物质，极度危险，不仅剧毒而且极度易燃，让人很难相信磷居然是生命体必需的元素。</WNA_Phosphorus.description>
   
+  <!-- EN: preserved brain -->
   <WNA_PreservedBrain.label>保存好的大脑</WNA_PreservedBrain.label>
+  <!-- EN: A biological human brain, carefully treated with methanol and neutroamine and preserved, to keep as much of its vitality for further use. -->
   <WNA_PreservedBrain.description>一颗原生态的人类大脑，被用甲醇和中性胺妥善的保存，以最大程度的保留其活性，便于将来使用。</WNA_PreservedBrain.description>
   
+  <!-- EN: quicklime -->
   <WNA_Quicklime.label>石灰</WNA_Quicklime.label>
+  <!-- EN: A hardly soluble, highly alkaline substance, has much as wide applications as much as great potential hazards. -->
   <WNA_Quicklime.description>难溶于水的强碱性物质，用处几乎和潜在的危害性一样大。</WNA_Quicklime.description>
   
+  <!-- EN: sulphur -->
   <WNA_Sulphur.label>硫磺</WNA_Sulphur.label>
-  <WNA_Sulphur.description>易碎的黄色物质，有毒，难闻，但硫的确是生命体不可缺少的组成部分。\n\n&lt;color=#CAB012&gt;然而这并不意味着你应该生啃硫磺。&lt;/color&gt;</WNA_Sulphur.description>
+  <!-- EN: Brittle yellow substance, toxic, smelly, and an essential component of living organisms. \n\n<color=CAB012>However this doesn't mean you should eat sulphur directly.</color> -->
+  <WNA_Sulphur.description>易碎的黄色物质，有毒，难闻，但硫的确是生命体不可缺少的组成部分。\n\n&lt;color=#CAB012>然而这并不意味着你应该生啃硫磺。&lt;/color></WNA_Sulphur.description>
   
+  <!-- EN: vitalized uranium battery -->
   <WNA_UraniumBattery.label>活化铀电池</WNA_UraniumBattery.label>
+  <!-- EN: Some uranium stored in a safe container. These uranium is vitalized by strange unstable particles, emitting great energy but will exaust quickly. Don't take it apart before it exausts entirely. You've been warned. -->
   <WNA_UraniumBattery.description>一些封存在安全的容器中的铀。这些铀被某种奇异的不稳定粒子所活化，能释放出巨大的能量，但却会被快速消耗殆尽。不要在它的能量被用光之前旧贸然拆开外壳，不然后果自负。</WNA_UraniumBattery.description>
   
 </LanguageData>

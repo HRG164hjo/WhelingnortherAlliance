@@ -3,15 +3,15 @@
   
   <!-- EN: adv. mortar -->
   <WNA_AdvMortar.label>先进迫击炮</WNA_AdvMortar.label>
-  <!-- EN: sentry gun. -->
+  <!-- EN: An advanced mortar capable of quick firing. -->
   <WNA_AdvMortar.description>一台适用于快速开火的迫击炮。</WNA_AdvMortar.description>
   
   <!-- EN: adv mortar -->
-  <WNA_AdvMortar_Gun.label>adv mortar</WNA_AdvMortar_Gun.label>
-  <!-- EN: turret weapon. -->
-  <WNA_AdvMortar_Gun.description>turret weapon.</WNA_AdvMortar_Gun.description>
+  <WNA_AdvMortar_Gun.label>先进迫击炮</WNA_AdvMortar_Gun.label>
+  <!-- EN: 炮。 -->
+  <WNA_AdvMortar_Gun.description>炮。</WNA_AdvMortar_Gun.description>
   <!-- EN: adv mortar -->
-  <WNA_AdvMortar_Gun.verbs.Verb_Shoot.label>adv mortar</WNA_AdvMortar_Gun.verbs.Verb_Shoot.label>
+  <WNA_AdvMortar_Gun.verbs.Verb_Shoot.label>先进迫击炮</WNA_AdvMortar_Gun.verbs.Verb_Shoot.label>
   
   <!-- EN: dead zone irradiator -->
   <WNA_Deadzone.label>死区放射装置</WNA_Deadzone.label>
@@ -20,44 +20,48 @@
   
   <!-- EN: desolator radiation turret -->
   <WNA_DesoTurret.label>“根除者”辐射炮塔</WNA_DesoTurret.label>
-  <!-- EN: A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. -->
+  <!-- EN: A turret equipped with radbeam projector, when hit something it can spread radiation to a small area around target. -->
   <WNA_DesoTurret.description>一个配备了辐射束发射器的炮塔，击中目标时会在目标附近的一小片区域内扩散辐射场。</WNA_DesoTurret.description>
   
   <!-- EN: desolator -->
-  <WNA_DesoTurret_Gun.label>desolator</WNA_DesoTurret_Gun.label>
-  <!-- EN: turret weapon. -->
-  <WNA_DesoTurret_Gun.description>turret weapon.</WNA_DesoTurret_Gun.description>
+  <WNA_DesoTurret_Gun.label>辐射炮</WNA_DesoTurret_Gun.label>
+  <!-- EN: 炮。 -->
+  <WNA_DesoTurret_Gun.description>炮。</WNA_DesoTurret_Gun.description>
+  <!-- EN: desolator -->
+  <WNA_DesoTurret_Gun.verbs.VerbType_Laser.label>辐射炮</WNA_DesoTurret_Gun.verbs.VerbType_Laser.label>
   
   <!-- EN: radbeam -->
-  <WNA_DesoTurret_Proj.label>radbeam</WNA_DesoTurret_Proj.label>
+  <WNA_DesoTurret_Proj.label>辐射炮</WNA_DesoTurret_Proj.label>
   
-  <!-- EN: "comet" laser gun -->
+  <!-- EN: "comet" focus gun -->
   <WNA_PrismTower.label>“彗星”聚光炮塔</WNA_PrismTower.label>
-  <!-- EN: A slab-like facility, can automatically form a mana ball and actively attack nearby enemies. -->
+  <!-- EN: A turret uses highly focused light as weapon, can cause both impact and burn. -->
   <WNA_PrismTower.description>一台使用高度聚焦的光束作为武器的炮塔，能同时对目标造成冲击和烧伤。</WNA_PrismTower.description>
   
   <!-- EN: comet -->
-  <WNA_PrismTower_Gun.label>comet</WNA_PrismTower_Gun.label>
-  <!-- EN: turret weapon. -->
-  <WNA_PrismTower_Gun.description>turret weapon.</WNA_PrismTower_Gun.description>
+  <WNA_PrismTower_Gun.label>聚光炮</WNA_PrismTower_Gun.label>
+  <!-- EN: 炮。 -->
+  <WNA_PrismTower_Gun.description>炮。</WNA_PrismTower_Gun.description>
+  <!-- EN: comet -->
+  <WNA_PrismTower_Gun.verbs.VerbType_Laser.label>聚光炮</WNA_PrismTower_Gun.verbs.VerbType_Laser.label>
   
   <!-- EN: comet -->
-  <WNA_PrismTower_Proj.label>comet</WNA_PrismTower_Proj.label>
+  <WNA_PrismTower_Proj.label>聚光炮</WNA_PrismTower_Proj.label>
   
   <!-- EN: "scorpion" sentry gun -->
   <WNA_SentryGun.label>“天蝎”哨戒机枪</WNA_SentryGun.label>
-  <!-- EN: sentry gun. -->
+  <!-- EN: A sentry gun turret armed with toxic scrap bullets. -->
   <WNA_SentryGun.description>配备了剧毒废料子弹的哨戒机枪炮塔。</WNA_SentryGun.description>
   
   <!-- EN: sentry gun -->
-  <WNA_SentryGun_Gun.label>sentry gun</WNA_SentryGun_Gun.label>
-  <!-- EN: turret weapon. -->
-  <WNA_SentryGun_Gun.description>turret weapon.</WNA_SentryGun_Gun.description>
+  <WNA_SentryGun_Gun.label>哨戒机枪</WNA_SentryGun_Gun.label>
+  <!-- EN: 炮。 -->
+  <WNA_SentryGun_Gun.description>炮。</WNA_SentryGun_Gun.description>
   <!-- EN: sentry gun -->
-  <WNA_SentryGun_Gun.verbs.VerbType_Burst.label>sentry gun</WNA_SentryGun_Gun.verbs.VerbType_Burst.label>
+  <WNA_SentryGun_Gun.verbs.VerbType_Burst.label>哨戒机枪</WNA_SentryGun_Gun.verbs.VerbType_Burst.label>
   
   <!-- EN: sentry gun -->
-  <WNA_SentryGun_Proj.label>sentry gun</WNA_SentryGun_Proj.label>
+  <WNA_SentryGun_Proj.label>哨戒机枪</WNA_SentryGun_Proj.label>
   
   <!-- EN: spike trap -->
   <WNA_SpikeTrap.label>尖刺陷阱</WNA_SpikeTrap.label>

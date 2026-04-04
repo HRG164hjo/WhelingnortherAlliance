@@ -219,7 +219,7 @@
 	<ResearchProjectDef Abstract="true" Name="WNA_ResearchProjBase">
 		<tab>WNA_ResearchTab</tab>
 		<techLevel>Archotech</techLevel>
-        <tags><li>WNA_PlayerStart</li></tags>
+        <generalRules/>
     </ResearchProjectDef>
 
 
@@ -407,7 +407,7 @@
         <takeFootprints>false</takeFootprints>
         <natural>false</natural>
         <holdSnowOrSand>false</holdSnowOrSand>
-        <isPaintable>true</isPaintable>
+        <isPaintable>false</isPaintable>
         <extinguishesFire>true</extinguishesFire>
         <preventCraters>true</preventCraters>
         <constructEffect>ConstructWood</constructEffect>
@@ -419,14 +419,6 @@
             <li MayRequire="Ludeon.Rimworld.Odyssey">Substructure</li>
         </affordances>
         <generatedFilth/>
-        <statBases>
-            <MarketValue>0</MarketValue>
-            <CleaningTimeFactor>0.01</CleaningTimeFactor>
-            <WorkToBuild>20</WorkToBuild>
-            <Beauty>20</Beauty>
-            <Cleanliness>20</Cleanliness>
-            <ContainmentStrength MayRequire="Ludeon.Rimworld.Anomaly">1000000</ContainmentStrength>
-        </statBases>
         <pathCost>0</pathCost>
         <fertility>0</fertility>
         <filthAcceptanceMask>
@@ -500,7 +492,6 @@
 		<castEdgeShadows>false</castEdgeShadows>
 		<staticSunShadowHeight>0</staticSunShadowHeight>
 		<graphicData>
-			<color>(255,255,255,192)</color>
 			<drawRotated>false</drawRotated>
             <shadowData>
                 <volume>(0,0,0)</volume>

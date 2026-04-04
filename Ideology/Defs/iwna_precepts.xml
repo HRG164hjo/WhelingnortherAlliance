@@ -19,18 +19,19 @@
             <li>Meme_WNA_Ideo</li>
         </associatedMemes>
         <statFactors>
-            <MentalBreakThreshold>0</MentalBreakThreshold>
-            <CertaintyLossFactor>0</CertaintyLossFactor>
             <SocialIdeoSpreadFrequencyFactor>999999</SocialIdeoSpreadFrequencyFactor>
             <ConversionPower>999999</ConversionPower>
             <SuppressionPower>999999</SuppressionPower>
-            <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">20</ActivitySuppressionRate>
-            <WorkSpeedGlobal>20</WorkSpeedGlobal>
-            <ShootingAccuracyPawn>20</ShootingAccuracyPawn>
-            <ShootingAccuracyFactor_Touch>20</ShootingAccuracyFactor_Touch>
-            <ShootingAccuracyFactor_Short>20</ShootingAccuracyFactor_Short>
-            <ShootingAccuracyFactor_Medium>20</ShootingAccuracyFactor_Medium>
-            <ShootingAccuracyFactor_Long>20</ShootingAccuracyFactor_Long>
+            <MentalBreakThreshold>0</MentalBreakThreshold>
+            <CertaintyLossFactor>0</CertaintyLossFactor>
+            <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">3</ActivitySuppressionRate>
+            <GeneralLaborSpeed>3</GeneralLaborSpeed>
+            <WorkSpeedGlobal>3</WorkSpeedGlobal>
+            <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+            <ShootingAccuracyFactor_Touch>3</ShootingAccuracyFactor_Touch>
+            <ShootingAccuracyFactor_Short>3</ShootingAccuracyFactor_Short>
+            <ShootingAccuracyFactor_Medium>3</ShootingAccuracyFactor_Medium>
+            <ShootingAccuracyFactor_Long>3</ShootingAccuracyFactor_Long>
         </statFactors>
         <comps>
             <li Class="PreceptComp_SelfTookMemoryThought">

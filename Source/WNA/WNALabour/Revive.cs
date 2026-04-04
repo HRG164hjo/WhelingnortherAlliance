@@ -47,8 +47,8 @@ namespace WNA.WNALabour
                 foreach (Hediff hediff in hediffSet.hediffs)
                 {
                     if (hediff is Hediff_Injury ||
-                        (hediff.Severity > 0 && hediff.def.isBad) ||
-                        HedifferRemover.includedHediffs.Contains(hediff.def.defName))
+                        hediff is Hediff_MissingPart ||
+                        hediff.def.isBad)
                         hediffsToRemove.Add(hediff);
                 }
                 foreach (Hediff hediff in hediffsToRemove)

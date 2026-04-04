@@ -82,6 +82,9 @@
 			<li Class="WNA.DMExtension.MassCapacity">
 				<massCapacity>60000</massCapacity>
 			</li>
+            <li Class="WNA.DMExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+            </li>
 			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
 				<preventDowning>true</preventDowning>
 				<preventBleeding>true</preventBleeding>
@@ -647,6 +650,11 @@
                 <hediff>WNA_DeadzoneBelt</hediff>
             </li>
 		</comps>
+        <apparel>
+            <tags>
+                <li>WNA_Tag_Radiation</li>
+            </tags>
+        </apparel>
         <recipeMaker>
             <researchPrerequisites>
                 <li>WNA_ParticleArmory</li>
@@ -1087,6 +1095,11 @@
                 <interval>250</interval>
             </li>
         </comps>
+        <apparel>
+            <tags>
+                <li>WNA_Tag_Divine</li>
+            </tags>
+        </apparel>
         <recipeMaker>
             <researchPrerequisite>WNA_WhelingnortherApocalypse</researchPrerequisite>
             <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>

@@ -1,8 +1,6 @@
 ﻿using RimWorld;
-using System;
 using System.Collections.Generic;
 using Verse;
-using Verse.Noise;
 using WNA.WNADefOf;
 
 namespace WNA.GameCond
@@ -97,6 +95,7 @@ namespace WNA.GameCond
             foreach (Hediff hediff in hediffSet.hediffs)
             {
                 if (hediff is Hediff_Injury ||
+                    hediff is Hediff_MissingPart ||
                     (hediff.Severity > 0 &&
                     hediff.def.isBad))
                     hediffsToRemove.Add(hediff);

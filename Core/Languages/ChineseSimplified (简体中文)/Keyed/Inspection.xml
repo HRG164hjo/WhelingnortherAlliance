@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-	<!-- EN: 检查报告 -->
+	<!-- EN: inspection report -->
   <WNA_Inspection_LetterLabel>检查报告</WNA_Inspection_LetterLabel>
-	<!-- EN: {PAWN}没有需要特别关注的健康状况_ -->
+	<!-- EN: {PAWN} has no significant health conditions. -->
   <WNA_Inspection_None>{PAWN}没有需要特别关注的健康状况。</WNA_Inspection_None>
-	<!-- EN: {PAWN}有以下特殊的健康状况: -->
+	<!-- EN: {PAWN} has these special health conditions listed below: -->
   <WNA_Inspection_Visible>{PAWN}有以下特殊的健康状况：</WNA_Inspection_Visible>
-	<!-- EN: {PAWN}有以下隐藏的健康状况: -->
+	<!-- EN: {PAWN} has these hidden health conditions listed below: -->
   <WNA_Inspection_Hidden>{PAWN}有以下隐藏的健康状况：</WNA_Inspection_Hidden>
 
 </LanguageData>

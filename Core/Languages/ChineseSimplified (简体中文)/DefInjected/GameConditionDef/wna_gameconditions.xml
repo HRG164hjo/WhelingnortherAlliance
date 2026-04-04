@@ -8,8 +8,11 @@
   <!-- EN: a climate control facility is affecting local climate. -->
   <WNA_GameCond_ClimateControl.letterText>一台气候控制器正在影响附近区域的气候。</WNA_GameCond_ClimateControl.letterText>
   
+  <!-- EN: permaconst command broadcast -->
   <WNA_GameCond_PermaconstActive.label>恒固指令广播</WNA_GameCond_PermaconstActive.label>
+  <!-- EN: A new Permaconst Command maintenance cycle is on. Thralls of Permaconst Command will roam around the planet hunting for their foes. The thralls can hardly be truly killed untill the maintenance cycle ends. -->
   <WNA_GameCond_PermaconstActive.description>恒固指令的又一个维护循环已经启动。被恒固指令所驱使的躯壳们在星球各处游猎。在维护循环结束之前，这些躯壳很难被彻底消灭。</WNA_GameCond_PermaconstActive.description>
+  <!-- EN: A new Permaconst Command maintenance cycle is on. -->
   <WNA_GameCond_PermaconstActive.letterText>恒固指令广播中。</WNA_GameCond_PermaconstActive.letterText>
   
 </LanguageData>

@@ -19,7 +19,7 @@
   <WNA_BC_MidworldCivilian.description>[PAWN_nameDef]经历了一个平凡的童年，有一个平凡的家庭，进入了一所平凡的学校，拥有平凡的朋友，没有经历过苦日子，相信自己会有一个光辉的未来。</WNA_BC_MidworldCivilian.description>
   <!-- EN: midworld civilian -->
   <WNA_BC_MidworldCivilian.title>中寰世界市民</WNA_BC_MidworldCivilian.title>
-  <!-- EN: revenger -->
+  <!-- EN: civilian -->
   <WNA_BC_MidworldCivilian.titleShort>小市民</WNA_BC_MidworldCivilian.titleShort>
   
   <!-- EN: [PAWN_nameDef] used to have a happy family, until external forced torn [PAWN_possessive] family apart. Since then [PAWN_nameDef] became a strange person. [PAWN_pronoun] know who [PAWN_possessive] enemy is, but curretnly [PAWN_pronoun] just unable to revenge. -->
@@ -50,7 +50,7 @@
   <!-- EN: synthetic -->
   <WNA_BC_Synthetic.titleShort>合成人形</WNA_BC_Synthetic.titleShort>
   
-  <!-- EN: [PAWN_nameDef]'s parents were residents under the shelter of Whelingnorther Alliance, [PAWN_nameDef] is also a resident under the shelter of Whelingnorther Alliance. Thanks to the protection ofWhelingnorther Alliance, nothing tragic happened to [PAWN_nameDef] during [PAWN_possessive] growth, but sadly there's also nothing memorable happened to [PAWN_objective] too. -->
+  <!-- EN: [PAWN_nameDef]'s parents were residents under the shelter of Whelingnorther Alliance, [PAWN_nameDef] is also a resident under the shelter of Whelingnorther Alliance. Thanks to the protection of Whelingnorther Alliance, nothing tragic happened to [PAWN_nameDef] during [PAWN_possessive] growth, but sadly there's also nothing memorable happened to [PAWN_objective] too. -->
   <WNA_BC_ThirdGenChild.description>[PAWN_nameDef]的父母都是威灵诺德联合会庇护下的居民，[PAWN_nameDef]也是威灵诺德联合会庇护下的一名居民. 多亏了威灵会的保护，[PAWN_nameDef]在成长过程中没有遭遇任何悲剧事件，但遗憾的是这平平无奇的成长经历也没给[PAWN_pronoun]留下什么值得回味的东西。</WNA_BC_ThirdGenChild.description>
   <!-- EN: third generation child -->
   <WNA_BC_ThirdGenChild.title>三代儿童</WNA_BC_ThirdGenChild.title>

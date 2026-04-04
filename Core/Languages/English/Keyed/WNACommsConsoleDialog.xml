@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNA_Research_Dialog>As for the difficulties we've encountered in our research ...</WNA_Research_Dialog>
+  <WNA_OptionDesc_Dialog>"We know that hard situation you are experiencing." the Archonpriest seems already knows what we want to ask. \n\n"Our assist won't be free. 2357 silver, and your faith, that's enough."</WNA_OptionDesc_Dialog>
+  <WNA_Option_Dialog>We're willing to learn.</WNA_Option_Dialog>
+  <WNA_FinalWarning_Dialog>"May you follow the right path."\n\n&lt;color=#FF0000&gt;WARNING: some price will be paid.&lt;/color&gt;\n\n&lt;color=#FFFF00&gt;This will cost you 2357 silver, but your faction will be converted to Whelingnorther Alliance. If you are concerned about your faction ideology, &lt;b&gt;&lt;i&gt;please THINK CAREFULLY&lt;/i&gt;&lt;/b&gt; before you continue. \n\nSurely you can choose an alternate option, this way WNA won't take your ideo, but they will re-consider their relation with us.</WNA_FinalWarning_Dialog>
+  <WNA_OptionWellKnown_Dialog>We've seen the risks, and willing to pay the price.</WNA_OptionWellKnown_Dialog>
+  <WNA_AltOption_Dialog>I think out ideology is more important ...</WNA_AltOption_Dialog>
+  <WNA_GoBack_Dialog>Sorry. (give up and exit)</WNA_GoBack_Dialog>
+  <WNA_NoSilver_Dialog>Insufficient silver. (2357 required)</WNA_NoSilver_Dialog>
+  <WNA_OptionDone_Dialog>The price is paid</WNA_OptionDone_Dialog>
+  <WNA_OptionDoneDesc_Dialog>We have paid the appropriate price, and Whelingnorther Alliance has provided the appropriate reward. We have completed the research we needed.</WNA_OptionDoneDesc_Dialog>
+
+</LanguageData>

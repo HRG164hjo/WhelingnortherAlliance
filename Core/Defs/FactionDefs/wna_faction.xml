@@ -149,10 +149,9 @@
             <li>
                 <kindDef>Peaceful</kindDef>
                 <options>
-                    <WNA_Technician>22</WNA_Technician>
-                    <WNA_FieldTroop>20</WNA_FieldTroop>
-                    <WNA_SiegeTroop>20</WNA_SiegeTroop>
-                    <WNA_StrikeForce>10</WNA_StrikeForce>
+                    <WNA_Technician>100</WNA_Technician>
+                    <WNA_FieldTroop>100</WNA_FieldTroop>
+                    <WNA_SiegeTroop>10</WNA_SiegeTroop>
                     <WNA_Disciple>1</WNA_Disciple>
                 </options>
             </li>

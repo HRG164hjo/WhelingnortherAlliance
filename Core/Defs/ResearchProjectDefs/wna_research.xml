@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ResearchProjectTagDef>
-		<defName>WNA_PlayerStart</defName>
-	</ResearchProjectTagDef>
 	<ResearchTabDef>
 		<defName>WNA_ResearchTab</defName>
 		<label>whelingnorther technique</label>
@@ -198,6 +195,8 @@
 		<heldByFactionCategoryTags>
 			<li>WNA_FactionWNA</li>
 		</heldByFactionCategoryTags>
+		<discoveredLetterTitle>Path ahead blocked</discoveredLetterTitle>
+    	<discoveredLetterText>You now have reached the level that never any person had reached. Stepping forward is almost impossible. \n\nOne wise choice is to find a techprof subpersona core, with its power you can take a glance at what ancient Whelingnorthans once had mastered. The other choice is to jusi ask Whelingnorther Alliance about it. \n\nAsking is easy, but &lt;color=#FF0000&gt;some price will be paid&lt;/color&gt;.</discoveredLetterText>
 	</ResearchProjectDef>
 
 	<!-- whelingnorthan -->

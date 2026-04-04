@@ -1,13 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: in pale spring -->
   <WNA_InFocusSpring.stages.in_pale_spring.label>在黯水中</WNA_InFocusSpring.stages.in_pale_spring.label>
+  <!-- EN: This water washed my messy thoughts away. I feel so calm and peace. -->
   <WNA_InFocusSpring.stages.in_pale_spring.description>这里的水把我的各种念头都带走了，我感觉非常冷静平和。</WNA_InFocusSpring.stages.in_pale_spring.description>
   
+  <!-- EN: on pale tile -->
   <WNA_OnFocusFloor.stages.on_pale_tile.label>在淡白地板上</WNA_OnFocusFloor.stages.on_pale_tile.label>
+  <!-- EN: A neat place. I like it. -->
   <WNA_OnFocusFloor.stages.on_pale_tile.description>一个整洁的地方，我喜欢。</WNA_OnFocusFloor.stages.on_pale_tile.description>
   
+  <!-- EN: on dim soil -->
   <WNA_OnFocusSoil.stages.on_dim_soil.label>在黯壤上</WNA_OnFocusSoil.stages.on_dim_soil.label>
+  <!-- EN: I can feel a pulse of life passing through me, makes me feel refreshed and relaxed. -->
   <WNA_OnFocusSoil.stages.on_dim_soil.description>我感觉一股生命力量穿过我的身体，感觉十分放松，整个人焕然一新。</WNA_OnFocusSoil.stages.on_dim_soil.description>
   
 </LanguageData>

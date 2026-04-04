@@ -6,12 +6,12 @@
   <!-- EN: Platform with soft surface, more suitable for interior decoration than concrete platforms. -->
   <WNA_BridgeCarpet.description>铺有柔软表面的平台，与水泥平台相比更适合用作室内装潢。</WNA_BridgeCarpet.description>
   
-  <!-- EN: concrete platform -->
-  <WNA_BridgeFloor.label>水泥平台</WNA_BridgeFloor.label>
-  <!-- EN: Platform built with reinforced concrete, can be built on deep water and even in space. -->
-  <WNA_BridgeFloor.description>用钢筋水泥做成的平台，可以建在深水上，甚至能建在太空中。</WNA_BridgeFloor.description>
+  <!-- EN: structure platform -->
+  <WNA_BridgeFloor.label>结构平台</WNA_BridgeFloor.label>
+  <!-- EN: Platform built with reinforced structure plate, can be built on deep water and even in space. -->
+  <WNA_BridgeFloor.description>用强化构装板做成的平台，可以建在深水上，甚至能建在太空中。</WNA_BridgeFloor.description>
   
-  <!-- EN: artificial soil -->
+  <!-- EN: artificial soil platform -->
   <WNA_BridgeSoil.label>人工土壤</WNA_BridgeSoil.label>
   <!-- EN: Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth. -->
   <WNA_BridgeSoil.description>基础型人工土壤，土壤下埋藏着有助于作物生长的机械结构。</WNA_BridgeSoil.description>
@@ -20,6 +20,41 @@
   <WNA_FocusFloor.label>淡白地板</WNA_FocusFloor.label>
   <!-- EN: Colorless fine floor. -->
   <WNA_FocusFloor.description>精致的无色地板。</WNA_FocusFloor.description>
+  
+  <!-- EN: carve tile -->
+  <WNA_FocusFloorCarve.label>刻纹地板</WNA_FocusFloorCarve.label>
+  <!-- EN: Carved floor. -->
+  <WNA_FocusFloorCarve.description>精致的刻纹地板。</WNA_FocusFloorCarve.description>
+  
+  <!-- EN: dark carve tile -->
+  <WNA_FocusFloorDarkCarve.label>深刻纹地板</WNA_FocusFloorDarkCarve.label>
+  <!-- EN: Dark carved floor. -->
+  <WNA_FocusFloorDarkCarve.description>深色的刻纹地板。</WNA_FocusFloorDarkCarve.description>
+  
+  <!-- EN: dim tile -->
+  <WNA_FocusFloorDim.label>黯淡地板</WNA_FocusFloorDim.label>
+  <!-- EN: Dim fine floor. -->
+  <WNA_FocusFloorDim.description>黯淡的精致地板。</WNA_FocusFloorDim.description>
+  
+  <!-- EN: mosaic tile -->
+  <WNA_FocusFloorMosaic.label>马赛克地板</WNA_FocusFloorMosaic.label>
+  <!-- EN: Fine mosaic floor. -->
+  <WNA_FocusFloorMosaic.description>淡色马赛克地板。</WNA_FocusFloorMosaic.description>
+  
+  <!-- EN: patchwork tile -->
+  <WNA_FocusFloorPatchwork.label>拼色地板</WNA_FocusFloorPatchwork.label>
+  <!-- EN: Patched fine floor. -->
+  <WNA_FocusFloorPatchwork.description>黑白分明的地板。</WNA_FocusFloorPatchwork.description>
+  
+  <!-- EN: twisted void tile -->
+  <WNA_FocusFloorTwistedVoid.label>扭曲虚空地板</WNA_FocusFloorTwistedVoid.label>
+  <!-- EN: Looks like some evil seal. -->
+  <WNA_FocusFloorTwistedVoid.description>看着像是什么邪恶的咒印。</WNA_FocusFloorTwistedVoid.description>
+  
+  <!-- EN: plain platform -->
+  <WNA_FocusPlatform.label>朴素平台</WNA_FocusPlatform.label>
+  <!-- EN: Plain color platform that can support buildings, even a orbit station. -->
+  <WNA_FocusPlatform.description>颜色平淡的平台，能够用来支撑建筑，甚至能支撑起一座轨道站点。</WNA_FocusPlatform.description>
   
   <!-- EN: dim sand -->
   <WNA_FocusSand.label>瞑沙</WNA_FocusSand.label>

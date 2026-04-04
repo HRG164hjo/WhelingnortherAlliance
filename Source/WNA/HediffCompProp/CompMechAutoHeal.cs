@@ -35,6 +35,7 @@ namespace WNA.HediffCompProp
             foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
             {
                 if (hediff is Hediff_Injury ||
+                    hediff is Hediff_MissingPart ||
                     (hediff is Hediff &&
                     hediff.Severity > 0 &&
                     hediff.def.isBad))

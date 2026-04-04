@@ -12,20 +12,19 @@ namespace WNA.WNAMiscs
         public override void WorldComponentTick()
         {
             base.WorldComponentTick();
-            int currentTick = Find.TickManager.TicksGame;
-            if (currentTick == 23)
+            if (Find.TickManager.TicksGame == 23)
             {
                 IdeoCheck();
                 RelationCheck();
             }
-            if (currentTick % 2357 == 0)
+            if (Find.TickManager.TicksGame % 2357 == 0)
             {
                 IdeoCheck();
                 RelationCheck();
             }
-            if (currentTick % 43 == 0)
+            if (Find.TickManager.TicksGame % 43 == 0)
                 HediffCheck();
-            if (currentTick % 200 == 0)
+            if (Find.TickManager.TicksGame % 200 == 0)
             {
                 eventTick -= 200;
                 if(eventTick <= 0)

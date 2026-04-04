@@ -36,25 +36,4 @@
   <!-- EN: making reinforced concrete. -->
   <WNA_MakeConcrete.jobString>制作强化构装板。</WNA_MakeConcrete.jobString>
   
-  <!-- EN: make reinforced concrete -->
-  <WNA_MakeConcreteToo.label>制作强化构装板</WNA_MakeConcreteToo.label>
-  <!-- EN: make an advanced concrete sufficient for building. -->
-  <WNA_MakeConcreteToo.description>制作一种很适合用来建造建筑的先进结构材料。</WNA_MakeConcreteToo.description>
-  <!-- EN: making reinforced concrete. -->
-  <WNA_MakeConcreteToo.jobString>制作强化构装板。</WNA_MakeConcreteToo.jobString>
-  
-  <!-- EN: make desolisium -->
-  <WNA_MakeDesolisium.label>制作孤立合金</WNA_MakeDesolisium.label>
-  <!-- EN: make an alloy sufficient for various uses. -->
-  <WNA_MakeDesolisium.description>制作一种用途广泛的合金材料。</WNA_MakeDesolisium.description>
-  <!-- EN: making desolisium. -->
-  <WNA_MakeDesolisium.jobString>正在制作孤立合金。</WNA_MakeDesolisium.jobString>
-  
-  <!-- EN: make desolisium -->
-  <WNA_MakeDesolisiumToo.label>制作孤立合金</WNA_MakeDesolisiumToo.label>
-  <!-- EN: make an alloy sufficient for various uses. -->
-  <WNA_MakeDesolisiumToo.description>制作一种用途广泛的合金材料。</WNA_MakeDesolisiumToo.description>
-  <!-- EN: making desolisium. -->
-  <WNA_MakeDesolisiumToo.jobString>正在制作。</WNA_MakeDesolisiumToo.jobString>
-  
 </LanguageData>
