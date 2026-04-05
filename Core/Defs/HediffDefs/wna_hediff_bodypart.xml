@@ -118,7 +118,7 @@
     <ThingDef ParentName="WNA_BodypartItem">
         <defName>WNA_Part_AdvBionicSkin</defName>
         <label>adv. bionic skin</label>
-        <description>A bionic skin implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+        <description>A bionic skin implant made with advanced technologies. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
         <statBases>
             <MarketValue>1440</MarketValue>
         </statBases>
@@ -189,7 +189,7 @@
     <ThingDef ParentName="WNA_BodypartItem">
         <defName>WNA_Part_AdvBionicSpine</defName>
         <label>adv. bionic spine</label>
-        <description>A bionic spine implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+        <description>A bionic spine implant made with advanced technologies. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
         <statBases>
             <MarketValue>1000</MarketValue>
         </statBases>
@@ -263,7 +263,7 @@
     <ThingDef ParentName="WNA_BodypartItem">
         <defName>WNA_Part_AdvBionicStomach</defName>
         <label>adv. bionic stomach</label>
-        <description>A bionic stomach implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <description>A bionic stomach implant made with advanced technologies.</description>
         <statBases>
             <MarketValue>1000</MarketValue>
         </statBases>
@@ -328,7 +328,7 @@
     <ThingDef ParentName="WNA_BodypartItem">
         <defName>WNA_Part_AdvBionicSHeart</defName>
         <label>adv. bionic heart</label>
-        <description>A bionic heart implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+        <description>A bionic heart implant made with advanced technologies. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
         <statBases>
             <MarketValue>1000</MarketValue>
         </statBases>
@@ -401,7 +401,7 @@
     <ThingDef ParentName="WNA_BodypartItem">
         <defName>WNA_Part_AdvBionicLung</defName>
         <label>adv. bionic lung</label>
-        <description>A bionic lung implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <description>A bionic lung implant made with advanced technologies.</description>
         <statBases>
             <MarketValue>1000</MarketValue>
         </statBases>
@@ -469,7 +469,7 @@
     <ThingDef ParentName="WNA_BodypartItem">
         <defName>WNA_Part_AdvBionicKidney</defName>
         <label>adv. bionic kidney</label>
-        <description>A bionic kidney implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <description>A bionic kidney implant made with advanced technologies.</description>
         <statBases>
             <MarketValue>1000</MarketValue>
         </statBases>
@@ -533,7 +533,7 @@
     <ThingDef ParentName="WNA_BodypartItem">
         <defName>WNA_Part_AdvBionicLiver</defName>
         <label>adv. bionic liver</label>
-        <description>A bionic liver implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+        <description>A bionic liver implant made with advanced technologies. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
         <statBases>
             <MarketValue>1000</MarketValue>
         </statBases>
@@ -596,7 +596,7 @@
     <ThingDef ParentName="WNA_BodypartItem">
         <defName>WNA_Part_AdvBionicBrain</defName>
         <label>adv. bionic brain chip</label>
-        <description>A bionic brain implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <description>A bionic brain implant made with advanced technologies.</description>
         <statBases>
             <MarketValue>1000</MarketValue>
         </statBases>
@@ -664,7 +664,7 @@
     <ThingDef ParentName="WNA_BodypartItem">
         <defName>WNA_Part_AdvBionicEye</defName>
         <label>adv. bionic eye</label>
-        <description>A bionic eye implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <description>A bionic eye implant made with advanced technologies.</description>
         <statBases>
             <MarketValue>800</MarketValue>
         </statBases>
@@ -722,7 +722,7 @@
     <ThingDef ParentName="WNA_BodypartItem">
         <defName>WNA_Part_AdvBionicEar</defName>
         <label>adv. bionic ear</label>
-        <description>A bionic ear implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <description>A bionic ear implant made with advanced technologies.</description>
         <statBases>
             <MarketValue>600</MarketValue>
         </statBases>
@@ -781,7 +781,7 @@
     <ThingDef ParentName="WNA_BodypartItem">
         <defName>WNA_Part_AdvBionicJaw</defName>
         <label>adv. bionic jaw</label>
-        <description>A bionic jaw implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <description>A bionic jaw implant made with advanced technologies.</description>
         <statBases>
             <MarketValue>1000</MarketValue>
         </statBases>
@@ -855,7 +855,7 @@
     <ThingDef ParentName="WNA_BodypartItem">
         <defName>WNA_Part_AdvBionicArm</defName>
         <label>adv. bionic arm</label>
-        <description>A bionic arm implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <description>A bionic arm implant made with advanced technologies.</description>
         <statBases>
             <MarketValue>1000</MarketValue>
         </statBases>
@@ -965,7 +965,7 @@
     <ThingDef ParentName="WNA_BodypartItem">
         <defName>WNA_Part_AdvBionicLeg</defName>
         <label>adv. bionic leg</label>
-        <description>A bionic leg implant made with advanced technologies. Due to how this implant is designed and how it works, installing it is a one-way trip.</description>
+        <description>A bionic leg implant made with advanced technologies.</description>
         <statBases>
             <MarketValue>1000</MarketValue>
         </statBases>

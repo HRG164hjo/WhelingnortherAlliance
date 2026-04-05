@@ -8,6 +8,10 @@
                 <hediff>WNA_Inhuman</hediff>
                 <tickInterval>7</tickInterval>
             </li>
+            <li Class="WNA.WNAMiscs.HedifferTicker">
+                <hediff>WNA_PermaconstActive</hediff>
+                <tickInterval>7</tickInterval>
+            </li>
         </hediffGivers>
     </HediffGiverSetDef>
     
@@ -18,6 +22,10 @@
                 <hediff>WNA_DeathEnd</hediff>
                 <tickInterval>23</tickInterval>
             </li>
+            <li Class="WNA.WNAMiscs.HedifferTicker">
+                <hediff>WNA_PermaconstActive</hediff>
+                <tickInterval>23</tickInterval>
+            </li>
         </hediffGivers>
     </HediffGiverSetDef>
 
@@ -26,6 +34,10 @@
         <hediffGivers>
             <li Class="WNA.WNAMiscs.HedifferTicker">
                 <hediff>WNA_InAnimal</hediff>
+                <tickInterval>23</tickInterval>
+            </li>
+            <li Class="WNA.WNAMiscs.HedifferTicker">
+                <hediff>WNA_PermaconstActive</hediff>
                 <tickInterval>23</tickInterval>
             </li>
         </hediffGivers>

@@ -50,9 +50,7 @@ namespace WNA.WNAHarmony
                         //ClearAllStorage(negotiator.Map);
                         if (silverCount >= 2357)
                             TradeUtility.LaunchSilver(negotiator.Map, 2357);
-                        faction.TryAffectGoodwillWith(Faction.OfPlayer,
-                            -faction.PlayerGoodwill,
-                            false);
+                        faction.TryAffectGoodwillWith(Faction.OfPlayer, -faction.PlayerGoodwill, false);
                         Find.ResearchManager.FinishProject(resB);
                         Find.LetterStack.ReceiveLetter("WNA_OptionDone_Dialog".Translate(),
                             "WNA_OptionDoneDesc_Dialog".Translate(),

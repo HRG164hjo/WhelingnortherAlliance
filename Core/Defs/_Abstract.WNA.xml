@@ -1132,7 +1132,10 @@
                     <li>Chocolate</li>
                     <li>Dye</li>
                 </excludedThingDefs>
-                <thingDefCountRange>7~8</thingDefCountRange>
+                <excludedCategories>
+                    <li>PlantMatter</li>
+                </excludedCategories>
+                <thingDefCountRange>5~7</thingDefCountRange>
                 <countRange>80000000~100000000</countRange>
                 <price>VeryCheap</price>
             </li>
@@ -1141,7 +1144,13 @@
                 <excludedCategories>
                     <li>EggsFertilized</li>
                 </excludedCategories>
-                <thingDefCountRange>8~9</thingDefCountRange>
+                <thingDefCountRange>7~8</thingDefCountRange>
+                <countRange>80000000~100000000</countRange>
+                <price>VeryCheap</price>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>PlantMatter</categoryDef>
+                <thingDefCountRange>5~7</thingDefCountRange>
                 <countRange>80000000~100000000</countRange>
                 <price>VeryCheap</price>
             </li>

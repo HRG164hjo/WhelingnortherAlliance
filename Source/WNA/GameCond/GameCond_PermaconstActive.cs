@@ -56,7 +56,7 @@ namespace WNA.GameCond
         }
         private void BroadcastAlive(Pawn p, Faction pcc)
         {
-            FactionRelation relationpcc = pcc.RelationWith(player);
+            if (IsLegalWNAPawn(p)) return;
             if (p.Faction != pcc && p.Faction != wna)
             {
                 bool hiss = p.Faction == Faction.OfPlayer;
@@ -73,8 +73,6 @@ namespace WNA.GameCond
         private void BroadcastDead(Corpse corpse, Faction pcc)
         {
             Pawn pawn = corpse.InnerPawn;
-            IntVec3 pos = corpse.Position;
-            Map map = corpse.Map;
             ResurrectionUtility.TryResurrect(pawn);
             if (!pawn.health.hediffSet.HasHediff(WNAMainDefOf.WNA_PermaconstHidden))
             {
@@ -102,6 +100,12 @@ namespace WNA.GameCond
             }
             foreach (Hediff hediff in hediffsToRemove)
                 pawn.health.RemoveHediff(hediff);
+        }
+        private bool IsLegalWNAPawn(Pawn p)
+        {
+            if (p.def == WNAMainDefOf.WNA_WNThan || p.def == WNAMainDefOf.WNA_Human)
+                return true;
+            return false;
         }
     }
 }

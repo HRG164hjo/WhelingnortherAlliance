@@ -17,14 +17,14 @@ namespace WNA.WNAHarmony
             float pawnhealth = 0f;
             var Ext = p.def.GetModExtension<MassCapacity>();
             if (Ext != null)
-                pawnbase = Mathf.Max(Ext.massCapacity, 1f);
+                pawnbase = Mathf.Max(Ext.massCapacity, 0f);
             if (p.apparel != null)
             {
                 foreach (Apparel apparel in p.apparel.WornApparel)
                 {
                     var aExt = apparel.def.GetModExtension<MassCapacity>();
                     if (aExt != null)
-                        pawnbonus += aExt.massCapacity;
+                        pawnbonus += Mathf.Max(aExt.massCapacity, 0f);
                 }
             }
             if (p.health != null && p.health.hediffSet != null)
@@ -36,11 +36,12 @@ namespace WNA.WNAHarmony
                     {
                         var hExt = hdef.GetModExtension<MassCapacity>();
                         if (hExt != null)
-                            pawnhealth += hExt.massCapacity;
+                            pawnhealth += Mathf.Max(hExt.massCapacity, 0f);
                     }
                 }
             }
-            __result = p.BodySize * (pawnbase + pawnbonus + pawnhealth);
+            float bonus = p.BodySize * (pawnbase + pawnbonus + pawnhealth);
+            __result += bonus;
         }
     }
 }

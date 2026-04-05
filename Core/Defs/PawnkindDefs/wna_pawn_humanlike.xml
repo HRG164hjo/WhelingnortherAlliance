@@ -9,6 +9,9 @@
             <li>
                 <def>WNA_DeathEnd</def>
             </li>
+            <li>
+                <def>WNA_PermaconstActive</def>
+            </li>
         </startingHediffs>
         <apparelDisallowTags>
             <li>WNA_Tag_Divine</li>
@@ -248,6 +251,9 @@
         <startingHediffs>
             <li>
                 <def>WNA_Inhuman</def>
+            </li>
+            <li>
+                <def>WNA_PermaconstActive</def>
             </li>
         </startingHediffs>
         <initialWillRange>Infinity</initialWillRange>
