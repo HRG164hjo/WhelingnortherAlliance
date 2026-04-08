@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>    
+<Patch>
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/HediffDef[defName="VoidTouched"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPath</xpath>
+        <value>
+            <texPath>pawns/alt_eye/gray/eye</texPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/HediffDef[defName="VoidTouched"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPathFemale</xpath>
+        <value>
+            <texPathFemale>pawns/alt_eye/gray/eye</texPathFemale>
+        </value>
+    </Operation>
+
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/TraderKindDef[@Name="WNA_TraderKindBase"]/stockGenerators</xpath>
         <value>

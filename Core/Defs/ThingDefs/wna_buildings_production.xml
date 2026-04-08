@@ -260,7 +260,7 @@
         </costList>
         <comps>
             <li Class="WNA.ThingCompProp.PropHydroponics">
-                <growthFactor>16</growthFactor>
+                <growthFactor>160</growthFactor>
                 <plantCount>400</plantCount>
             </li>
         </comps>

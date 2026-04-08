@@ -425,7 +425,7 @@
 		<allowExtractAtCurrentQuality>true</allowExtractAtCurrentQuality>
 	</PipeSystem.ProcessDef>
 
-	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookebakery">
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookestews">
 		<defName>WNA_VCE_StewSimple</defName>
 		<label>cook simple stew</label>
 		<description>150% of normal producing.</description>
@@ -443,7 +443,7 @@
 		</results>
 		<ticks>2500</ticks>
 	</PipeSystem.ProcessDef>
-	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookebakery">
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookestews">
 		<defName>WNA_VCE_StewFine</defName>
 		<label>cook fine stew</label>
 		<description>150% of normal producing.</description>
@@ -461,7 +461,7 @@
 		</results>
 		<ticks>2500</ticks>
 	</PipeSystem.ProcessDef>
-	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookebakery">
+	<PipeSystem.ProcessDef ParentName="WNA_VECookerBillsMain" MayRequire="vanillaexpanded.vcookestews">
 		<defName>WNA_VCE_StewLavish</defName>
 		<label>cook lavish stew</label>
 		<description>150% of normal producing.</description>

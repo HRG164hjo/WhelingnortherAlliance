@@ -523,8 +523,7 @@
             <ComponentIndustrial>3</ComponentIndustrial>
 	    </costList>
         <equippedStatOffsets>
-            <RangedCooldownFactor>-0.96</RangedCooldownFactor>
-            <AimingDelayFactor>-1.44</AimingDelayFactor>
+            <RangedCooldownFactor>-3</RangedCooldownFactor>
         </equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>WNA_StandardArsenal</researchPrerequisite>

@@ -39,7 +39,7 @@
             <isInert>true</isInert>
             <expandHomeArea>false</expandHomeArea>
             <forcedCostLeavings>
-                <li MayRequire="Ludeon.RimWorld.Odyssey">ShuttleEngine</li>
+                <li>ShuttleEngine</li>
             </forcedCostLeavings>
         </building>
         <inspectorTabs>
@@ -54,12 +54,12 @@
                 <minFuelCost>1</minFuelCost>
                 <skyfallerLeaving>PassengerShuttleLeaving</skyfallerLeaving>
                 <worldObjectDef>PassengerShuttle</worldObjectDef>
-                <cooldownTicks>0</cooldownTicks> <!-- 1.5 hours -->
+                <cooldownTicks>0</cooldownTicks>
                 <fixedLaunchDistanceMax>1500</fixedLaunchDistanceMax>
                 <cooldownEndedMessage>{0} is ready to launch again.</cooldownEndedMessage>
             </li>
             <li Class="CompProperties_Transporter">
-                <massCapacity>86400000</massCapacity>
+                <massCapacity>2147400000</massCapacity>
                 <max1PerGroup>true</max1PerGroup>
                 <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
                 <pawnLoadedSound>Shuttle_PawnLoaded</pawnLoadedSound>
@@ -122,7 +122,7 @@
         </inspectorTabs>
         <comps>
             <li Class="CompProperties_Transporter">
-                <massCapacity>30000000</massCapacity>
+                <massCapacity>86400000</massCapacity>
                 <max1PerGroup>true</max1PerGroup>
                 <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
                 <pawnLoadedSound>Shuttle_PawnLoaded</pawnLoadedSound>

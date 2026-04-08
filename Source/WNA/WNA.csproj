@@ -39,6 +39,14 @@
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="DLWDFramework">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\3015333853\1.6\Assemblies\DLWDFramework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mashed_Ashlands">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\3109835541\1.6\Assemblies\Mashed_Ashlands.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,6 +65,10 @@
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VEF">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\2023507013\1.6\Assemblies\VEF.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

@@ -66,8 +66,8 @@ namespace WNA.GameCond
                 {
                     string str = "WNA_Hiss".Translate();
                     pcc.SetRelationDirect(player, FactionRelationKind.Hostile, true, str);
+                    Messages.Message("WNA_Message_ColonistTurned".Translate(p.LabelShort), p, MessageTypeDefOf.NegativeEvent);
                 }
-                Messages.Message("WNA_Message_ColonistTurned".Translate(p.LabelShort), p, MessageTypeDefOf.NegativeEvent);
             }
         }
         private void BroadcastDead(Corpse corpse, Faction pcc)

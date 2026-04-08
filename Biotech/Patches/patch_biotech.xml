@@ -17,6 +17,32 @@
             <li>KillThirst</li>
         </value>
     </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPath</xpath>
+        <value>
+            <texPath>pawns/alt_eye/red/eye</texPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPathFemale</xpath>
+        <value>
+            <texPathFemale>pawns/alt_eye/red/eye</texPathFemale>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPath</xpath>
+        <value>
+            <texPath>pawns/alt_eye/gray/eye</texPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPathFemale</xpath>
+        <value>
+            <texPathFemale>pawns/alt_eye/gray/eye</texPathFemale>
+        </value>
+    </Operation>
 
     <!-- -->
     <Operation Class="PatchOperationAdd">

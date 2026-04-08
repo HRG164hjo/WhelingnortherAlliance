@@ -32,6 +32,7 @@
             <ShootingAccuracyFactor_Short>3</ShootingAccuracyFactor_Short>
             <ShootingAccuracyFactor_Medium>3</ShootingAccuracyFactor_Medium>
             <ShootingAccuracyFactor_Long>3</ShootingAccuracyFactor_Long>
+            <AimingDelayFactor>0.01</AimingDelayFactor>
         </statFactors>
         <comps>
             <li Class="PreceptComp_SelfTookMemoryThought">

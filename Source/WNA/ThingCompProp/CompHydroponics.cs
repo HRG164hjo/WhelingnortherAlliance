@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using UnityEngine;
 using Verse;
@@ -125,7 +126,7 @@ namespace WNA.ThingCompProp
             Scribe_Values.Look(ref growthProgressBuffer, "GrowthProgressBuffer", 0f);
             Scribe_Values.Look(ref treeMod, "TreeMode", false);
         }
-        public void ResetState()
+        private void ResetState()
         {
             SelectedCrop = null;
             TicksToSpawn = 0;
@@ -133,30 +134,32 @@ namespace WNA.ThingCompProp
             CurrentSpawnDelay = 0;
             growthProgressBuffer = 0f;
         }
-        public bool IsValidCrop(ThingDef plantDef) => IsValidCropDef(plantDef);
-        public void ChooseCrop(ThingDef newCrop)
+        private void ChooseCrop(ThingDef crop)
         {
-            if (newCrop == null || !IsValidForCurrentMode(newCrop))
+            if (crop == null || !IsValidForCurrentMode(crop))
             {
                 ResetState();
                 return;
             }
-            SelectedCrop = newCrop;
-            CurrentSpawnDelay = Mathf.Max(1, Mathf.RoundToInt(newCrop.plant.growDays * 60000f));
-            float difficultyYield = Mathf.Max(1f, Find.Storyteller?.difficulty?.cropYieldFactor ?? 1f);
-            int plantCount = Mathf.Max(1, Props.plantCount);
-            CurrentHarvestCount = Mathf.Max(1, Mathf.RoundToInt(newCrop.plant.harvestYield * Props.yieldFactor * difficultyYield * plantCount));
+            SelectedCrop = crop;
+            CurrentSpawnDelay = Mathf.Max(1, Mathf.RoundToInt(crop.plant.growDays * 60000f));
+            CurrentHarvestCount = GetCurrentHarvestCount(crop.plant.harvestYield);
             TicksToSpawn = CurrentSpawnDelay;
             growthProgressBuffer = 0f;
+        }
+        private int GetCurrentHarvestCount(float yield)
+        {
+            int plantCount = Mathf.Max(1, Props.plantCount);
+            float difficultyYield = Mathf.Max(1f, Find.Storyteller?.difficulty?.cropYieldFactor ?? 1f);
+            return Mathf.Max(1, Mathf.RoundToInt(yield * Props.yieldFactor * difficultyYield * plantCount));
         }
         private bool IsValidForCurrentMode(ThingDef def)
         {
             return treeMod == false ? IsValidCropDef(def) : IsValidTreeDef(def);
         }
-        public void GenerateCropMenu()
+        private void GenerateCropMenu()
         {
             List<ThingDef> sortedPlants = GetValidPlants();
-            //var sortedPlants = plants.OrderBy(pl => {return pl.modContentPack?.PackageIdPlayerFacing ?? "0_Unknown";}).ThenBy(pl => pl.defName).ToList();
             var options = new List<FloatMenuOption>(sortedPlants.Count + 1)
             {
                 new FloatMenuOption("WNA_None".Translate(), () => ChooseCrop(null))
@@ -174,29 +177,6 @@ namespace WNA.ThingCompProp
                 ));
             }
             Find.WindowStack.Add(new FloatMenu(options));
-        }
-        public void SpawnHarvest()
-        {
-            if (SelectedCrop == null || CurrentHarvestCount <= 0 || !parent.Spawned || parent.Map == null)
-                return;
-            ThingDef harvestDef = SelectedCrop.plant?.harvestedThingDef;
-            if (harvestDef == null)
-                return;
-            int remain = CurrentHarvestCount;
-            int stackLimit = Mathf.Max(1, harvestDef.stackLimit);
-            while (remain > 0)
-            {
-                int toSpawn = Mathf.Min(remain, stackLimit);
-                Thing thing = ThingMaker.MakeThing(harvestDef);
-                thing.stackCount = toSpawn;
-                if (!GenPlace.TryPlaceThing(thing, parent.Position, parent.Map, ThingPlaceMode.Near))
-                {
-                    thing.Destroy();
-                    Log.Warning($"[WNA] Failed to place harvest {harvestDef.defName} near {parent.Position}.");
-                    break;
-                }
-                remain -= toSpawn;
-            }
         }
         private void CacheComps()
         {
@@ -227,6 +207,7 @@ namespace WNA.ThingCompProp
             if (TicksToSpawn > 0)
                 return;
             SpawnHarvest();
+            TrySpawnModHarvest();
             TicksToSpawn = CurrentSpawnDelay;
             growthProgressBuffer = 0f;
         }
@@ -264,6 +245,93 @@ namespace WNA.ThingCompProp
                     plantDef.plant.treeCategory == TreeCategory.Super) &&
                 !plantDef.plant.isStump &&
                 plantDef.plant.harvestedThingDef != null;
+        }
+        private void SpawnHarvest()
+        {
+            if (SelectedCrop == null || CurrentHarvestCount <= 0 || !parent.Spawned || parent.Map == null)
+                return;
+            ThingDef harvestDef = SelectedCrop.plant?.harvestedThingDef;
+            int remain = CurrentHarvestCount;
+            PlaceThingStack(harvestDef, remain);
+        }
+        private void PlaceThingStack(ThingDef def, int count)
+        {
+            if (count <= 0 || def == null)
+                return;
+            int stackLimit = Mathf.Max(1, def.stackLimit);
+            while (count > 0)
+            {
+                int toSpawn = Mathf.Min(count, stackLimit);
+                Thing thing = ThingMaker.MakeThing(def);
+                thing.stackCount = toSpawn;
+                if (!GenPlace.TryPlaceThing(thing, parent.Position, parent.Map, ThingPlaceMode.Near))
+                {
+                    thing.Destroy();
+                    Log.Warning($"[WNA] Failed to place harvest {def.defName} near {parent.Position}.");
+                    break;
+                }
+                count -= toSpawn;
+            }
+        }
+        private void TrySpawnModHarvest()
+        {
+            if (SelectedCrop.thingClass.Name == "HarbingerTree")
+            {
+                ThingDef meat = ThingDefOf.Meat_Twisted;
+                int meat_count = GetCurrentHarvestCount(30);
+                PlaceThingStack(meat, meat_count);
+            }
+            if (ModLister.HasActiveModWithName("Vanilla Expanded Framework - Plants"))
+                HasMod_VEF();
+            if (ModLister.HasActiveModWithName("Drop Loot When Destroyed Framework"))
+                HasMod_DLWD();
+            if (ModLister.HasActiveModWithName("Mashed's Ashlands"))
+                HasMod_MashedAshlands();
+        }
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        private void HasMod_VEF()
+        {
+            if (SelectedCrop.HasModExtension<VEF.Plants.DualCropExtension>())
+            {
+                var ext = SelectedCrop.GetModExtension<VEF.Plants.DualCropExtension>();
+                int count = GetCurrentHarvestCount(ext.outPutAmount);
+                if (ext.randomOutput == false)
+                {
+                    ThingDef def = ext.secondaryOutput;
+                    PlaceThingStack(def, count);
+                }
+                else if (ext.randomOutput == true)
+                {
+                    List<ThingDef> list = ext.randomSecondaryOutput;
+                    foreach (ThingDef t in list)
+                        PlaceThingStack(t, count);
+                }
+            }
+        }
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        private void HasMod_DLWD()
+        {
+            if (SelectedCrop.HasComp(typeof(DLWDFramework.DLWDThingCompProps)))
+            {
+                var comp = SelectedCrop.GetCompProperties<DLWDFramework.DLWDThingCompProps>();
+                foreach (DLWDFramework.LootConfig config in comp.LootConfigs)
+                {
+                    ThingDef def = config.LootThingDef;
+                    int count = GetCurrentHarvestCount(config.LootAmountMax);
+                    PlaceThingStack(def, count);
+                }
+            }
+        }
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        private void HasMod_MashedAshlands()
+        {
+            if (SelectedCrop.HasModExtension<Mashed_Ashlands.PlantProperties>())
+            {
+                var ext = SelectedCrop.GetModExtension<Mashed_Ashlands.PlantProperties>();
+                ThingDef def = ext.secondaryDrop;
+                int count = GetCurrentHarvestCount(ext.secondaryDropAmountRange.max);
+                PlaceThingStack(def, count);
+            }
         }
     }
 }
