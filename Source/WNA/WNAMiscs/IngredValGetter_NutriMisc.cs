@@ -9,10 +9,8 @@ namespace WNA.WNAMiscs
         {
             float nutritionValue = StatUtility.GetStatValueFromList(t.statBases, StatDefOf.Nutrition, 0f);
             if (nutritionValue >= 0.05f)
-            {
                 return nutritionValue;
-            }
-            return 0.05f;
+            return 0.05f;
         }
         public override string BillRequirementsDescription(RecipeDef r, IngredientCount ing)
         {

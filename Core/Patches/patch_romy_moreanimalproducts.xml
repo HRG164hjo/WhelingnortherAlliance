@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+	    <mods>
+            <li>More Animal Products</li>
+	    </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+    <RecipeDef ParentName="WNA_RecipeBase" MayRequire="sarg.rimbees">
+        <defName>WNA_Romy_MakeCarapace</defName>
+        <description>break down hard animal parts to make artificial carapace.</description>
+        <jobString>working.</jobString>
+        <label>make artificial carapace</label>
+		<ingredientValueGetterClass>WNA.WNAMiscs.IngredValGetter_MarketValue</ingredientValueGetterClass>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+            			<li>ThrumboHorn</li>
+            			<li>ElephantTusk</li>
+            			<li>Skull</li>
+            			<li>Romy_Antler</li>
+            			<li>Romy_BoarTusk</li>
+            			<li>Romy_CattleHorn</li>
+            			<li>Romy_GazelleHorn</li>
+            			<li>Romy_GoatHorn</li>
+            			<li>Romy_Mandible</li>
+            			<li>Romy_RhinoHorn</li>
+            			<li>Romy_SheepHorn</li>
+            			<li MayRequire="biomesteam.biomesfossils">BMT_FossilResource</li>
+            			<li MayRequire="romyashi.mountainrarities">Romy_Fossil</li>
+          			</thingDefs>
+                </filter>
+                <count>800</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+            	<li>ThrumboHorn</li>
+            	<li>ElephantTusk</li>
+            	<li>Skull</li>
+            	<li>Romy_Antler</li>
+            	<li>Romy_BoarTusk</li>
+            	<li>Romy_CattleHorn</li>
+            	<li>Romy_GazelleHorn</li>
+            	<li>Romy_GoatHorn</li>
+            	<li>Romy_Mandible</li>
+            	<li>Romy_RhinoHorn</li>
+            	<li>Romy_SheepHorn</li>
+            	<li MayRequire="biomesteam.biomesfossils">BMT_FossilResource</li>
+            	<li MayRequire="romyashi.mountainrarities">Romy_Fossil</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <workAmount>800</workAmount>
+    	<products>
+      		<Carapace>267</Carapace>
+    	</products>
+        <recipeUsers>
+	        <li>FueledSmithy</li>
+	        <li>ElectricSmithy</li>
+	    </recipeUsers>
+    </RecipeDef>
+	
+    <RecipeDef ParentName="WNA_RecipeBase" MayRequire="sarg.rimbees">
+        <defName>WNA_Romy_MakeFeather</defName>
+        <description>break down soft animal tissues to make artificial feathers.</description>
+        <jobString>working.</jobString>
+        <label>make artificial feather</label>
+		<ingredientValueGetterClass>WNA.WNAMiscs.IngredValGetter_MarketValue</ingredientValueGetterClass>
+        <ingredients>
+            <li>
+                <filter>
+          			<categories>
+            			<li>Leathers</li>
+          			</categories>
+                    <thingDefs>
+            			<li MayRequire="biomesteam.biomesfossils">BMT_AmberResource</li>
+          			</thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+          	<categories>
+            	<li>Leathers</li>
+          	</categories>
+            <thingDefs>
+                <li MayRequire="biomesteam.biomesfossils">BMT_AmberResource</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    	<products>
+      		<Romy_Feathers>150</Romy_Feathers>
+    	</products>
+        <recipeUsers>
+	        <li>FueledSmithy</li>
+	        <li>ElectricSmithy</li>
+	    </recipeUsers>
+    </RecipeDef>
+            </value>
+	    </match>
+    </Operation>
+    
+</Patch>

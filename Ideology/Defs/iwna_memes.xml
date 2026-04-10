@@ -10,9 +10,6 @@
       <impact>0</impact>
       <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
       <deityCount>0</deityCount>
-      <consumableBuildings>
-         <li>SacrificialFlag</li>
-      </consumableBuildings>
       <requireOne>
          <li>
             <li>Apostasy_Abhorrent</li>
@@ -110,6 +107,11 @@
             <li>memeMoralist->chief instructor</li>
          </rulesStrings>
       </generalRules>
+      <factionWhitelist>
+         <li>WNA_FactionWNA</li>
+         <li>WNA_FactionPCC</li>
+      </factionWhitelist>
+      <!--<hiddenInChooseMemes>true</hiddenInChooseMemes>-->
    </MemeDef>
 
    <MemeDef>
@@ -125,15 +127,28 @@
             <li>WNA_P_Proselyte</li>
          </li>
       </requireOne>
-      <addDesignators>
-         <li>WNA_Banner</li>
-      </addDesignators>
       <agreeableTraits>
          <Nerves>2</Nerves>
          <li>WNA_Trait_Unshakable</li>
          <li>Ascetic</li>
          <li>Asexual</li>
+         <li>Kind</li>
+         <li>Bloodlust</li>
       </agreeableTraits>
+      <disagreeableTraits>
+         <li>Nudist</li>
+         <li>Brawler</li>
+         <li>Greedy</li>
+         <li>Jealous</li>
+         <li>AnnoyingVoice</li>
+         <li>CreepyBreathing</li>
+         <li>Wimp</li>
+         <li>BodyPurist</li>
+         <li>DislikesMen</li>
+         <li>DislikesWomen</li>
+         <li>Gourmand</li>
+         <li>DrugDesire</li>
+      </disagreeableTraits>
       <generalRules>
          <rulesStrings>
             <li>memeLeaderAdjective->chief</li>
@@ -141,6 +156,17 @@
             <li>memeMoralist->chief instructor</li>
          </rulesStrings>
       </generalRules>
+      <factionWhitelist>
+         <li>WNA_FactionWNA</li>
+         <li>WNA_FactionPCC</li>
+      </factionWhitelist>
+      <!--<hiddenInChooseMemes>true</hiddenInChooseMemes>-->
+      <requiredRituals IsNull="true"/>
+      <requireAnyRitualSeat IsNull="true"/>
+      <addDesignators>
+         <li>WNA_Banner</li>
+      </addDesignators>
+      <preventApparelRequirements>true</preventApparelRequirements>
    </MemeDef>
 
    <IdeoStoryPatternDef>

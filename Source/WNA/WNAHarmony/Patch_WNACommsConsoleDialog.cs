@@ -47,7 +47,6 @@ namespace WNA.WNAHarmony
                 {
                     action = () =>
                     {
-                        //ClearAllStorage(negotiator.Map);
                         if (silverCount >= 2357)
                             TradeUtility.LaunchSilver(negotiator.Map, 2357);
                         faction.TryAffectGoodwillWith(Faction.OfPlayer, -faction.PlayerGoodwill, false);
@@ -58,9 +57,22 @@ namespace WNA.WNAHarmony
                     },
                     resolveTree = true,
                 };
+                DiaOption third = new DiaOption("WNA_ThirdOption_Dialog".Translate())
+                {
+                    action = () =>
+                    {
+                        ClearAllStorage(negotiator.Map);
+                        Find.ResearchManager.FinishProject(resB);
+                        Find.LetterStack.ReceiveLetter("WNA_OptionDone_Dialog".Translate(),
+                            "WNA_OptionDoneDesc_Dialog".Translate(),
+                            LetterDefOf.NeutralEvent);
+                    },
+                    resolveTree = true,
+                };
                 DiaOption goBack = new DiaOption("WNA_GoBack_Dialog".Translate()) { resolveTree = true };
                 warningNode.options.Add(finalConfirm);
                 warningNode.options.Add(alternative);
+                warningNode.options.Add(third);
                 warningNode.options.Add(goBack);
                 confirmStep1.link = warningNode;
                 descNode.options.Add(confirmStep1);
@@ -88,8 +100,8 @@ namespace WNA.WNAHarmony
             foreach (var zone in zones)
             {
                 foreach (var item in zone.AllContainedThings.ToList())
-                    if(!(item is Pawn pawn) || item.def != ThingDefOf.Silver)
-                        WNAUtility.General.DebugalDestroy(item);
+                    if(!(item is Pawn pawn))
+                        WNAUtility.General.DebuglikeDestroy(item);
             }
         }
     }

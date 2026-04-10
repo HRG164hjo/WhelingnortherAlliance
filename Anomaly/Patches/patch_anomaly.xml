@@ -3,13 +3,26 @@
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/HediffDef[defName="VoidTouched"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPath</xpath>
         <value>
-            <texPath>pawns/alt_eye/gray/eye</texPath>
+            <texPath>pawns/alt_eye/grayeye</texPath>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/HediffDef[defName="VoidTouched"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPathFemale</xpath>
         <value>
-            <texPathFemale>pawns/alt_eye/gray/eye</texPathFemale>
+            <texPathFemale>pawns/alt_eye/grayeye</texPathFemale>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/TraitDef[defName="BodyMastery"]/degreeDatas/li/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPath</xpath>
+        <value>
+            <texPath>pawns/alt_eye/grayeye</texPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/TraitDef[defName="BodyMastery"]/degreeDatas/li/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPathFemale</xpath>
+        <value>
+            <texPathFemale>pawns/alt_eye/grayeye</texPathFemale>
         </value>
     </Operation>
 

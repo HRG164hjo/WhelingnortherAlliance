@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
 using System.Text;
 using UnityEngine;
 using Verse;
@@ -281,14 +282,15 @@ namespace WNA.ThingCompProp
                 int meat_count = GetCurrentHarvestCount(30);
                 PlaceThingStack(meat, meat_count);
             }
+            /* Personally I hope Tynan will introduce a more modder-friendly secend-harvest system into RimWorld.
             if (ModLister.HasActiveModWithName("Vanilla Expanded Framework - Plants"))
                 HasMod_VEF();
             if (ModLister.HasActiveModWithName("Drop Loot When Destroyed Framework"))
                 HasMod_DLWD();
             if (ModLister.HasActiveModWithName("Mashed's Ashlands"))
-                HasMod_MashedAshlands();
+                HasMod_MashedAshlands();*/
         }
-        [MethodImpl(MethodImplOptions.NoInlining)]
+        /*[MethodImpl(MethodImplOptions.NoInlining)]
         private void HasMod_VEF()
         {
             if (SelectedCrop.HasModExtension<VEF.Plants.DualCropExtension>())
@@ -299,12 +301,16 @@ namespace WNA.ThingCompProp
                 {
                     ThingDef def = ext.secondaryOutput;
                     PlaceThingStack(def, count);
+                    Log.Warning($"[WNA] [VEF] Try Placing {def.label} for number of {count}.");
                 }
                 else if (ext.randomOutput == true)
                 {
                     List<ThingDef> list = ext.randomSecondaryOutput;
                     foreach (ThingDef t in list)
+                    {
                         PlaceThingStack(t, count);
+                        Log.Warning($"[WNA] [VEF] Try Placing {t.label} for number of {count}.");
+                    }
                 }
             }
         }
@@ -319,6 +325,7 @@ namespace WNA.ThingCompProp
                     ThingDef def = config.LootThingDef;
                     int count = GetCurrentHarvestCount(config.LootAmountMax);
                     PlaceThingStack(def, count);
+                    Log.Warning($"[WNA] [DLWD] Try Placing {def.label} for number of {count}.");
                 }
             }
         }
@@ -331,7 +338,8 @@ namespace WNA.ThingCompProp
                 ThingDef def = ext.secondaryDrop;
                 int count = GetCurrentHarvestCount(ext.secondaryDropAmountRange.max);
                 PlaceThingStack(def, count);
+                Log.Warning($"[WNA] [MashedAshlands] Try Placing {def.label} for number of {count}.");
             }
-        }
+        }*/
     }
 }

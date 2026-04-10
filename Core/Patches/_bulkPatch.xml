@@ -104,7 +104,7 @@
         <products>
             <WNA_Ration>500</WNA_Ration>
         </products>
-        <workAmount>5000</workAmount>
+        <workAmount>500</workAmount>
         <recipeUsers>
 	        <li>FueledStove</li>
 	        <li>ElectricStove</li>
@@ -116,7 +116,7 @@
         <defName>WNA_RepackRationMult</defName>
         <description>Repack various meals to meet WNA military standard.</description>
         <jobString>working.</jobString>
-        <label>repack meals x200</label>
+        <label>repack meals x500</label>
         <ingredients>
             <li>
                 <filter>
@@ -128,7 +128,7 @@
                         <li MayRequire="vanillaexpanded.vcookebakery">VCE_CakeBatters</li>
                     </categories>
                 </filter>
-                <count>200</count>
+                <count>500</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -147,7 +147,7 @@
             </disallowedThingDefs>
         </fixedIngredientFilter>
         <products>
-            <WNA_Ration>200</WNA_Ration>
+            <WNA_Ration>500</WNA_Ration>
         </products>
         <workAmount>300</workAmount>
         <recipeUsers>
@@ -193,7 +193,7 @@
         <products>
             <WNA_Medikit>500</WNA_Medikit>
         </products>
-        <workAmount>5000</workAmount>
+        <workAmount>500</workAmount>
         <recipeUsers>
 	        <li>DrugLab</li>
 	        <li>WNA_Ritespot</li>
@@ -266,7 +266,7 @@
         <products>
             <WNA_Medikit>500</WNA_Medikit>
         </products>
-        <workAmount>5000</workAmount>
+        <workAmount>500</workAmount>
         <recipeUsers>
 	        <li>DrugLab</li>
 	        <li>WNA_Ritespot</li>
@@ -320,7 +320,7 @@
         <products>
             <ReinforcedBarrel>50</ReinforcedBarrel>
         </products>
-        <workAmount>8000</workAmount>
+        <workAmount>800</workAmount>
         <recipeUsers>
 	        <li>FueledSmithy</li>
 	        <li>ElectricSmithy</li>
@@ -403,7 +403,7 @@
             <WNA_MercuryVial>1000</WNA_MercuryVial>
             <WNA_HalogenVial>500</WNA_HalogenVial>
         </products>
-        <workAmount>10000</workAmount>
+        <workAmount>1000</workAmount>
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	        <li>ElectricCrematorium</li>
@@ -461,7 +461,7 @@
         <products>
             <WNA_Methanol>3000</WNA_Methanol>
         </products>
-        <workAmount>10000</workAmount>
+        <workAmount>1000</workAmount>
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	        <li>ElectricCrematorium</li>
@@ -502,7 +502,7 @@
         <products>
             <Synthread>9000</Synthread>
         </products>
-        <workAmount>6000</workAmount>
+        <workAmount>600</workAmount>
         <recipeUsers>
 	        <li>BiofuelRefinery</li>
 	    </recipeUsers>
@@ -534,7 +534,7 @@
             <WNA_MercuryVial>1500</WNA_MercuryVial>
             <WNA_HalogenVial>2500</WNA_HalogenVial>
         </products>
-        <workAmount>3000</workAmount>
+        <workAmount>300</workAmount>
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	        <li>ElectricCrematorium</li>
@@ -601,7 +601,7 @@
         <products>
             <WNA_AttunementFabric>15000</WNA_AttunementFabric>
         </products>
-        <workAmount>10000</workAmount>
+        <workAmount>1000</workAmount>
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	    </recipeUsers>
@@ -679,7 +679,7 @@
         <products>
             <WNA_FabricBaseboard>500</WNA_FabricBaseboard>
         </products>
-        <workAmount>3000</workAmount>
+        <workAmount>300</workAmount>
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	    </recipeUsers>
@@ -744,7 +744,7 @@
         <products>
             <WNA_Concrete>25000</WNA_Concrete>
         </products>
-        <workAmount>10000</workAmount>
+        <workAmount>1000</workAmount>
         <recipeUsers>
 	        <li>ElectricSmelter</li>
 	        <li>ElectricCrematorium</li>
@@ -784,7 +784,7 @@
         <products>
             <WNA_Cinnabar>2000</WNA_Cinnabar>
         </products>
-        <workAmount>8000</workAmount>
+        <workAmount>800</workAmount>
         <recipeUsers>
 	        <li>DrugLab</li>
 	    </recipeUsers>
@@ -870,7 +870,7 @@
 		<jobString>Refining chemfuel from wax.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>6000</workAmount>
+		<workAmount>600</workAmount>
 		<recipeUsers>
 			<li>BiofuelRefinery</li>	  
 		</recipeUsers>	

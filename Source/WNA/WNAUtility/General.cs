@@ -1,15 +1,11 @@
-﻿using RimWorld;
-using RimWorld.Planet;
-using System.Collections.Generic;
-using System.Linq;
+﻿using RimWorld.Planet;
 using Verse;
-using static UnityEngine.Scripting.GarbageCollector;
 
 namespace WNA.WNAUtility
 {
     public class General
     {
-        internal static void DebugalDestroy(Thing thing)
+        internal static void DebuglikeDestroy(Thing thing)
         {
             Thing.allowDestroyNonDestroyable = true;
             try
@@ -38,7 +34,7 @@ namespace WNA.WNAUtility
                 pawn.inventory?.DestroyAll();
                 pawn.equipment?.DestroyAllEquipment();
             }
-            DebugalDestroy(pawn);
+            DebuglikeDestroy(pawn);
             if (pawn.IsWorldPawn())
                 Find.WorldPawns.RemoveAndDiscardPawnViaGC(pawn);
         }

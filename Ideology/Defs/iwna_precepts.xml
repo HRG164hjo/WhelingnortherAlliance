@@ -18,6 +18,8 @@
         <associatedMemes>
             <li>Meme_WNA_Ideo</li>
         </associatedMemes>
+        <visibleOnAddFloatMenu>false</visibleOnAddFloatMenu>
+        <selectionWeight>0</selectionWeight>
         <statFactors>
             <SocialIdeoSpreadFrequencyFactor>999999</SocialIdeoSpreadFrequencyFactor>
             <ConversionPower>999999</ConversionPower>
