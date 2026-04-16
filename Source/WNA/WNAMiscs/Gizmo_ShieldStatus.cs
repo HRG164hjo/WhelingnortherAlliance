@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using Verse;
-using WNA.ThingCompProp;
+using WNA.WNAThingCompProp;
 
 namespace WNA.WNAMiscs
 {

@@ -282,7 +282,7 @@
     <Operation Class="PatchOperationAddModExtension">
 	    <xpath>Defs/ThingDef[defName="Human"]</xpath>
         <value>
-            <li Class="WNA.DMExtension.MassCapacity">
+            <li Class="WNA.WNAModExtension.MassCapacity">
 				<massCapacity>150</massCapacity>
 			</li>
         </value>
@@ -292,7 +292,7 @@
 	    <xpath>Defs/ThingDef[defName="Bullet_Shell_AntigrainWarhead"]</xpath>
         <value>
             <comps>
-                <li Class="WNA.ThingCompProp.PropRadFieldBurst">
+                <li Class="WNA.WNAThingCompProp.PropRadFieldBurst">
                     <config>
                         <radLevel>55</radLevel>
                         <radius>9.9</radius>

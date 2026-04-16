@@ -170,7 +170,7 @@
     <DamageDef ParentName="WNA_DamageBase" Name="WNA_RadBurnBase">
         <defName>WNA_RadBurn</defName>
         <label>rad burn</label>
-        <workerClass>WNA.Damager.RadField</workerClass>
+        <workerClass>WNA.WNADamageWorker.RadField</workerClass>
         <externalViolence>true</externalViolence>
         <deathMessage>{0} died of radiation.</deathMessage>
         <hediff>Burn</hediff>
@@ -210,7 +210,7 @@
     <DamageDef ParentName="WNA_DamageBase">
         <defName>WNA_LysField</defName>
         <label>lysis</label>
-        <workerClass>WNA.Damager.LysField</workerClass>
+        <workerClass>WNA.WNADamageWorker.LysField</workerClass>
         <externalViolence>true</externalViolence>
         <deathMessage>{0} perished in lysis field.</deathMessage>
         <hediff>Shredded</hediff>
@@ -231,7 +231,7 @@
     <DamageDef ParentName="WNA_DamageBase">
         <defName>WNA_IronKill</defName>
         <label>iron kill</label>
-        <workerClass>WNA.Damager.IronKiller</workerClass>
+        <workerClass>WNA.WNADamageWorker.IronKiller</workerClass>
         <externalViolence>true</externalViolence>
         <deathMessage>{0} perished because of iron field.</deathMessage>
         <hediff>Misc</hediff>
@@ -247,6 +247,49 @@
         <explosionCellFleck>Fleck_Vaporize</explosionCellFleck>
         <explosionColorCenter>(17,17,17)</explosionColorCenter>
         <explosionColorEdge>(155,0,0)</explosionColorEdge>
+    </DamageDef>
+    
+    <DamageDef ParentName="WNA_DamageBase">
+        <defName>WNA_Hypothermia</defName>
+        <label>hypothermia</label>
+        <deathMessage>{0} has been frozen and broken into pieces.</deathMessage>
+        <hediff>Frostbite</hediff>
+        <workerClass>WNA.WNADamageWorker.Hypothermal</workerClass>
+        <!--<isRanged>true</isRanged>-->
+        <makesAnimalsFlee>false</makesAnimalsFlee>
+        <impactSoundType>Blunt</impactSoundType>
+        <additionalHediffs>
+            <li>
+                <hediff>Hypothermia</hediff>
+                <severityPerDamageDealt>0.003333</severityPerDamageDealt>
+            </li>
+        </additionalHediffs>
+    </DamageDef>
+    
+    <DamageDef ParentName="WNA_DamageBase">
+        <defName>WNA_Chrono</defName>
+        <label>chrono</label>
+        <deathMessage>{0} is warped.</deathMessage>
+        <workerClass>WNA.WNADamageWorker.Chrono</workerClass>
+        <makesAnimalsFlee>false</makesAnimalsFlee>
+        <impactSoundType>Blunt</impactSoundType>
+    </DamageDef>
+    
+    <DamageDef ParentName="WNA_DamageBase">
+        <defName>WNA_Controller</defName>
+        <label>controller</label>
+        <deathMessage>{0} killed by psychic.</deathMessage>
+        <workerClass>WNA.WNADamageWorker.Controller</workerClass>
+        <makesAnimalsFlee>false</makesAnimalsFlee>
+        <impactSoundType>Blunt</impactSoundType>
+    </DamageDef>
+    <DamageDef ParentName="WNA_DamageBase">
+        <defName>WNA_ControllerPermanent</defName>
+        <label>controller</label>
+        <deathMessage>{0} killed by psychic.</deathMessage>
+        <workerClass>WNA.WNADamageWorker.ControllerPermanent</workerClass>
+        <makesAnimalsFlee>false</makesAnimalsFlee>
+        <impactSoundType>Blunt</impactSoundType>
     </DamageDef>
 
     <!-- wna -->
@@ -298,9 +341,9 @@
         <defName>WNA_Culling</defName>
         <label>whelingnorther corrosion</label>
         <deathMessage>{0} has molten.</deathMessage>
-        <hediff>WNA_CastDamage</hediff>
+        <hediff>MissingBodyPart</hediff>
         <impactSoundType>Slice</impactSoundType>
-        <workerClass>WNA.Damager.DamagerCulling</workerClass>
+        <workerClass>WNA.WNADamageWorker.Culling</workerClass>
         <causeStun>true</causeStun>
         <cutExtraTargetsCurve>
             <points>
@@ -317,7 +360,7 @@
         <additionalHediffs>
             <li>
                 <hediff>WNA_Corrosion</hediff>
-                <severityPerDamageDealt>10</severityPerDamageDealt>
+                <severityPerDamageDealt>100000</severityPerDamageDealt>
             </li>
         </additionalHediffs>
     </DamageDef>

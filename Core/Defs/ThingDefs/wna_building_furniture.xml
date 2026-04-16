@@ -215,7 +215,7 @@
                 <overlightRadius>15</overlightRadius>
                 <glowColor>(74,74,74,0)</glowColor>
             </li>
-            <li Class="WNA.ThingCompProp.PropHeatPusher">
+            <li Class="WNA.WNAThingCompProp.PropHeatPusher">
                 <heatPushStandard>21</heatPushStandard>
                 <heatPushMult>21</heatPushMult>
             </li>
@@ -281,7 +281,7 @@
                 <overlightRadius>15</overlightRadius>
                 <glowColor>(74,74,74,0)</glowColor>
             </li>
-            <li Class="WNA.ThingCompProp.PropHeatPusher">
+            <li Class="WNA.WNAThingCompProp.PropHeatPusher">
                 <heatPushStandard>21</heatPushStandard>
                 <heatPushMult>-21</heatPushMult>
             </li>
@@ -360,8 +360,9 @@
             </li>
         </comps>
 		<modExtensions>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <immuneToIronKill>true</immuneToIronKill>
+                <immuneToWarp>true</immuneToWarp>
             </li>
 		</modExtensions>
     </ThingDef>
@@ -379,7 +380,7 @@
         <researchPrerequisites Inherit="false"/>
 		<size>(1,1)</size>
         <comps>
-            <li Class="WNA.ThingCompProp.PropAttachHediff">
+            <li Class="WNA.WNAThingCompProp.PropAttachHediff">
                 <affectsOwner>true</affectsOwner>
                 <affectMechanic>true</affectMechanic>
                 <hediffDef>WNA_InMechanoid</hediffDef>
@@ -453,7 +454,7 @@
                 <requiresPower>true</requiresPower>
                 <airPerSecondPerHundredCells>1</airPerSecondPerHundredCells>
             </li>
-            <li Class="WNA.ThingCompProp.PropHeatPusher">
+            <li Class="WNA.WNAThingCompProp.PropHeatPusher">
                 <heatPushStandard>24</heatPushStandard>
                 <heatPushMult>24</heatPushMult>
             </li>

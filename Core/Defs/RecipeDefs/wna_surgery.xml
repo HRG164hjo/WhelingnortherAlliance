@@ -1,45 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!--<RecipeDef>
-        <defName>WNARecipeTo_WNA_Medikit</defName>
-        <label>administer medicine pack</label>
-        <description>Administer a WNA medicine pack.</description>
-        <workerClass>Recipe_AdministerUsableItem</workerClass>
-        <jobString>Administering medicine pack.</jobString>
-        <targetsBodyPart>false</targetsBodyPart>
-        <anesthetize>false</anesthetize>
-        <isViolation>false</isViolation>
-        <workAmount>60</workAmount>
-        <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
-        <surgeryOutcomeEffect IsNull="True"/>
-		<recipeUsers>
-			<li>WNA_WNThan</li>
-			<li>WNA_Human</li>
-			<li>Human</li>
-			<li MayRequire="ludeon.rimworld.anomaly">CreepJoiner</li>
-		</recipeUsers>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>WNA_Medikit</li>
-                    </thingDefs>
-                </filter>
-                <count>1</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <thingDefs>
-                <li>WNA_Medikit</li>
-            </thingDefs>
-        </fixedIngredientFilter>
-    </RecipeDef>-->
-
     <RecipeDef ParentName="WNA_SurgeryBase">
         <defName>WNA_Inspection</defName>
         <label>psychic inspection</label>
         <description>Inspect target with one's psychic power, faster and no medicine is required. This technique requires basic level of intelligence.</description>
-        <workerClass>WNA.Recipe.Inspection</workerClass>
+        <workerClass>WNA.WNARecipeWorker.Inspection</workerClass>
         <jobString>Inspecting TargetA.</jobString>
         <hideBodyPartNames>true</hideBodyPartNames>
         <targetsBodyPart>false</targetsBodyPart>
@@ -56,6 +21,29 @@
         <workAmount>60</workAmount>
         <researchPrerequisite>WNA_PsychicDawn</researchPrerequisite>
     </RecipeDef>
+
+    <RecipeDef ParentName="WNA_SurgeryBase">
+        <defName>WNA_ControlRelease</defName>
+        <label>control release</label>
+        <description>Try to release a mind control victim from the control. If the control is permanent, the attempt will be useless.</description>
+        <workerClass>WNA.WNARecipeWorker.ControlRelease</workerClass>
+        <jobString>Trying to release TargetA from mind control.</jobString>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <targetsBodyPart>false</targetsBodyPart>
+        <uiIconPath>UI/Icons/SurgicalInspection</uiIconPath>
+		<recipeUsers>
+			<li>WNA_WNThan</li>
+			<li>WNA_Human</li>
+			<li>Human</li>
+			<li MayRequire="ludeon.rimworld.anomaly">CreepJoiner</li>
+		</recipeUsers>
+        <skillRequirements>
+            <Intellectual>12</Intellectual>
+        </skillRequirements>
+        <workAmount>2500</workAmount>
+        <researchPrerequisite>WNA_PsychicDawn</researchPrerequisite>
+    </RecipeDef>
+
     <RecipeDef ParentName="WNA_SurgeryBase">
         <defName>WNA_Hemodialysis</defName>
         <label>blood dialysis</label>
@@ -119,7 +107,7 @@
         <defName>WNA_BrainHarvest</defName>
         <label>harvest brain</label>
         <description>harvest a fresh brain and quickly preserve it with properly mixed liquid.</description>
-        <workerClass>WNA.Recipe.TargetedHarvest</workerClass>
+        <workerClass>WNA.WNARecipeWorker.TargetedHarvest</workerClass>
         <jobString>harvesting TargetA.</jobString>
         <hideBodyPartNames>true</hideBodyPartNames>
         <isViolation>true</isViolation>

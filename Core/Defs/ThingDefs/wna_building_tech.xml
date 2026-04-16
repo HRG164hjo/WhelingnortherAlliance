@@ -31,7 +31,7 @@
         <comps>
             <li Class="CompProperties_CausesGameCondition">
                 <conditionDef>WNA_GameCond_ClimateControl</conditionDef>
-                <compClass>WNA.ThingCompProp.CompClimateControl</compClass>
+                <compClass>WNA.WNAThingCompProp.CompClimateControl</compClass>
                 <worldRange>5</worldRange>
                 <hideSource>false</hideSource>
             </li>

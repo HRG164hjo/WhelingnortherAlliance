@@ -261,7 +261,7 @@
                 <severityPerDayTended>-0.11</severityPerDayTended>
                 <baseTendDurationHours>24</baseTendDurationHours>
             </li>
-            <li Class="WNA.HediffCompProp.PropRadFieldSpreader">
+            <li Class="WNA.WNAHediffCompProp.PropRadFieldSpreader">
                 <config>
                     <radLevel>10</radLevel>
                     <radius>0.9</radius>
@@ -365,7 +365,7 @@
             <li Class="HediffCompProperties_Disappears">
                 <disappearsAfterTicks>1200~2000</disappearsAfterTicks>
             </li>
-            <li Class="WNA.HediffCompProp.PropRadFieldSpreader">
+            <li Class="WNA.WNAHediffCompProp.PropRadFieldSpreader">
                 <config>
                     <radLevel>300</radLevel>
                     <radius>7.9</radius>
@@ -402,7 +402,7 @@
                 <severityPerDay>0.1</severityPerDay>
                 <showDaysToRecover>true</showDaysToRecover>
             </li>
-            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
+            <li Class="WNA.WNAHediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_Corrosion</hediff>
                 <severity>0.1</severity>
             </li>
@@ -524,6 +524,81 @@
                 </capMods>
             </li>
         </stages>
+    </HediffDef>
+    
+    <HediffDef>
+        <defName>WNA_ChronoCounter</defName>
+        <label>chrono counter</label>
+        <description>A hediff counter used for chrono damage, theoretically you cannot see this.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0,0,0)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>300</severityPerDay>
+                <showDaysToRecover>true</showDaysToRecover>
+            </li>
+            <li Class="WNA.WNAHediffCompProp.PropHediffStunner"/>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+    
+    <HediffDef>
+        <defName>WNA_MindControlEffect</defName>
+        <label>mind controlled</label>
+        <description>This pawn's mind has been seized. if the control is not permanent, he can still be saved; but if the control is &lt;color=#7B50A7&gt;permanent&lt;/color&gt;, it's not likely he can still be fine. \n\nThis control is like a brand deep in the soul, killing the controller won't remove existing control.</description>
+        <hediffClass>WNA.WNAHediffClass.MindControl</hediffClass>
+        <defaultLabelColor>(123,80,167)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <duplicationAllowed>false</duplicationAllowed>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <socialFightChanceFactor>0</socialFightChanceFactor>
+                <blocksMentalBreaks>true</blocksMentalBreaks>
+                <blocksInspirations>true</blocksInspirations>
+                <pctAllThoughtNullification>1</pctAllThoughtNullification>
+            </li>
+        </stages>
+		<renderNodeProperties>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>pawns/alt_eye/wna_yurieye</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <anchorTag>RightEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawSize>0.2</drawSize>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                    </defaultData>
+                </drawData>
+            </li>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>pawns/alt_eye/wna_yurieye</texPath>
+                <parentTagDef>Head</parentTagDef>
+                <anchorTag>LeftEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawSize>0.2</drawSize>
+                <side>Left</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                        <flip>true</flip>
+                    </defaultData>
+                    <dataWest>
+                        <flip>false</flip>
+                    </dataWest>
+                </drawData>
+            </li>
+		</renderNodeProperties>
     </HediffDef>
 
 </Defs>

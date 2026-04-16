@@ -16,6 +16,11 @@
   <!-- EN: Focus on a protective thought and cast it around the target. The target will be hidden from sights for a period of time, usually about 5 days. Theoretically the target can be detected but not all people has proper trick or device for such work. -->
   <WNA_Invisibility.description>将保护性的思想聚焦并施放在目标周身。在大约5天之内，目标将能从众人视线中脱身。理论上目标仍然可以被探测到，但并非所有人都有合适的技巧或探测设备。</WNA_Invisibility.description>
   
+  <!-- EN: mind seize -->
+  <WNA_MindControlPlus.label>心灵支配</WNA_MindControlPlus.label>
+  <!-- EN: The caster use their mind to overwhelm the victim's fragile will, reshape their mind and take their ego forever. If one is <color=#00FF00>unshakable</color>, then he might be able to resist the control. -->
+  <WNA_MindControlPlus.description>用精神意志压倒受害者脆弱的心智，将其重塑并永远夺去其自我。如果一个人拥有&lt;color=#00FF00&gt;不可撼动&lt;/color&gt;的意志，或许能抵抗这种控制。</WNA_MindControlPlus.description>
+  
   <!-- EN: psylink deprivation -->
   <WNA_PsylinkDeprivation.label>灵能剥夺</WNA_PsylinkDeprivation.label>
   <!-- EN: cast dark power to the victim to rob the victim of their psychic ability. victims with psylinks will lose their psylink and experience severe psychic trauma, and those without psylinks will experience severe psychic shock and become incapacitied for several days. -->

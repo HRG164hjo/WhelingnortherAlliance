@@ -1,6 +1,6 @@
 ﻿using Verse;
 using Verse.Sound;
-using WNA.DMExtension;
+using WNA.WNAModExtension;
 using WNA.WNAUtility;
 
 namespace WNA.WNAMiscs

@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using RimWorld.Planet;
+using System.Collections.Generic;
 using Verse;
 using WNA.WNADefOf;
 
@@ -8,6 +9,8 @@ namespace WNA.WNAMiscs
     public class WorldComp_Permaconst : WorldComponent
     {
         public WorldComp_Permaconst(World world) : base(world) { }
+        private Faction wna => Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionWNA);
+        private Faction pcc => Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionPCC);
         private int eventTick = 1414200;
         public override void WorldComponentTick()
         {
@@ -23,7 +26,11 @@ namespace WNA.WNAMiscs
                 RelationCheck();
             }
             if (Find.TickManager.TicksGame % 43 == 0)
-                HediffCheck();
+            {
+                HediffCheck(); List<Pawn> pawns = PawnsFinder.AllMapsWorldAndTemporary_Alive;
+                for (int i = 0; i < pawns.Count; i++)
+                    ProcessPawn(pawns[i]);
+            }
             if (Find.TickManager.TicksGame % 200 == 0)
             {
                 eventTick -= 200;
@@ -36,27 +43,45 @@ namespace WNA.WNAMiscs
         }
         public override void FinalizeInit(bool fromLoad)
         {
-            base.FinalizeInit(fromLoad);
             IdeoCheck();
+            base.FinalizeInit(fromLoad);
+        }
+        private bool ShouldProcess(Pawn pawn)
+        {
+            return (pawn.def == WNAMainDefOf.WNA_WNThan || pawn.def == WNAMainDefOf.WNA_Human)
+                && (pawn.Faction != wna && pawn.Faction != pcc);
+        }
+        private void ProcessPawn(Pawn pawn)
+        {
+            if (wna == null)
+                return;
+            Ideo ideo = wna.ideos.PrimaryIdeo;
+            if (ideo == null)
+                return;
+            if (ShouldProcess(pawn))
+            {
+                pawn.ideo.SetIdeo(ideo);
+                if (pawn.Faction != Faction.OfPlayer)
+                    if (pawn.Faction != wna && pawn.Faction != pcc)
+                        pawn.SetFaction(wna);
+                    else pawn.stances.stunner.StunFor(2357, null, false);
+            }
         }
         private void IdeoCheck()
         {
             if (!ModsConfig.IdeologyActive) return;
-            Faction wna = Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionWNA);
-            Faction pcc = Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionPCC);
             if (wna != null && pcc != null)
             {
-                Ideo wnaIdeo = wna.ideos.PrimaryIdeo;
-                if (wnaIdeo == null) return;
+                Ideo ideo = wna.ideos.PrimaryIdeo;
+                if (ideo == null) return;
                 var icon = WNAMainDefOf.WNA_IdeoIcon;
                 if (icon != null)
-                    wnaIdeo.SetIcon(icon, WNAMainDefOf.WNA_PureBlack);
-                pcc.ideos?.SetPrimary(wnaIdeo);
+                    ideo.SetIcon(icon, WNAMainDefOf.WNA_PureBlack);
+                pcc.ideos?.SetPrimary(ideo);
             }
         }
         private void HediffCheck()
         {
-            Faction pcc = Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionPCC);
             if (pcc == null) return;
             foreach (Map map in Find.Maps)
             {
@@ -71,8 +96,6 @@ namespace WNA.WNAMiscs
         }
         private void RelationCheck()
         {
-            Faction wna = Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionWNA);
-            Faction pcc = Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionPCC);
             Faction player = Faction.OfPlayer;
             if (wna == null || pcc == null || player == null) return;
             FactionRelationKind relationwna = wna.RelationWith(player).kind;

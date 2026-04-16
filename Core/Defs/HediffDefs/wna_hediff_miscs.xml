@@ -3,7 +3,7 @@
     <HediffDef>
         <defName>WNA_VoidDiver</defName>
         <label>void diver</label>
-        <hediffClass>WNA.HediffClass.VoidDrainer</hediffClass>
+        <hediffClass>WNA.WNAHediffClass.VoidDrainer</hediffClass>
         <description>This pawn is forced to dive into their deepest consciousness where nothing exists, to face the purest void can be reached from phenomenon world. They may finally fade, but before their life terminates precious voidsteel can be drained through them from the void.</description>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>
@@ -13,7 +13,7 @@
         <initialSeverity>0.01</initialSeverity>
         <maxSeverity>10</maxSeverity>
         <comps>
-            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
+            <li Class="WNA.WNAHediffCompProp.PropPostRemoveHediff">
                 <hediff>sWNA_VoidDiver</hediff>
             </li>
         </comps>

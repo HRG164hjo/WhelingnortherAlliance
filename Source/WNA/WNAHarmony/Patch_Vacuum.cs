@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using System.Linq;
 using Verse;
-using WNA.GameCond;
+using WNA.WNAGameCond;
 
 namespace WNA.WNAHarmony
 {

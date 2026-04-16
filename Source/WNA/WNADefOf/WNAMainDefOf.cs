@@ -42,6 +42,8 @@ namespace WNA.WNADefOf
         public static HediffDef WNA_RadRing;
         public static HediffDef WNA_PermaconstHidden;
         public static HediffDef WNA_PermaconstActive;
+        public static HediffDef WNA_ChronoCounter;
+        public static HediffDef WNA_MindControlEffect;
 
         public static HistoryEventDef WNA_HE_UseDeedOn;
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Verse;
 using Verse.AI;
 using Verse.Sound;
-using WNA.ThingCompProp;
+using WNA.WNAThingCompProp;
 using WNA.WNADefOf;
 
 namespace WNA.WNALabour

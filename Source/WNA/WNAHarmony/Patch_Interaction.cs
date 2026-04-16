@@ -2,6 +2,7 @@
 using RimWorld;
 using Verse;
 using WNA.WNADefOf;
+using WNA.WNAUtility;
 
 namespace WNA.WNAHarmony
 {
@@ -17,7 +18,8 @@ namespace WNA.WNAHarmony
             [HarmonyPostfix]
             private static void PostFix(ref float __result, Pawn initiator)
             {
-                if (HasValidIdeo(initiator)) __result = 0f;
+                if (HasValidIdeo(initiator))
+                    __result = 0f;
             }
         }
         [HarmonyPatch(typeof(InteractionWorker_ConvertIdeoAttempt), "RandomSelectionWeight")]
@@ -33,6 +35,8 @@ namespace WNA.WNAHarmony
                     if (init && reci) __result = 0f;
                     else if (init && !reci) __result *= 9999f;
                 }
+                if (MindControlUtility.MindControlled(recipient))
+                    __result = 0f;
             }
         }
         [HarmonyPatch(typeof(InteractionWorker_DeepTalk), "RandomSelectionWeight")]
@@ -41,7 +45,8 @@ namespace WNA.WNAHarmony
             [HarmonyPostfix]
             private static void PostFix(ref float __result, Pawn initiator)
             {
-                if (HasValidIdeo(initiator)) __result = 1f;
+                if (HasValidIdeo(initiator))
+                    __result = 1f;
             }
         }
         [HarmonyPatch(typeof(InteractionWorker_InhumanRambling), "RandomSelectionWeight")]

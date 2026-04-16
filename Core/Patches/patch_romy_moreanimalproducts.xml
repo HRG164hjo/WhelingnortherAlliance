@@ -21,6 +21,8 @@
             			<li>ThrumboHorn</li>
             			<li>ElephantTusk</li>
             			<li>Skull</li>
+            			<li MayRequire="Ludeon.Rimworld.Odyssey">MastodonTusk</li>
+            			<li MayRequire="Ludeon.Rimworld.Odyssey">AlphaThrumboHorn</li>
             			<li>Romy_Antler</li>
             			<li>Romy_BoarTusk</li>
             			<li>Romy_CattleHorn</li>
@@ -33,7 +35,7 @@
             			<li MayRequire="romyashi.mountainrarities">Romy_Fossil</li>
           			</thingDefs>
                 </filter>
-                <count>800</count>
+                <count>400</count>
             </li>
         </ingredients>
         <fixedIngredientFilter>
@@ -41,6 +43,8 @@
             	<li>ThrumboHorn</li>
             	<li>ElephantTusk</li>
             	<li>Skull</li>
+            	<li MayRequire="Ludeon.Rimworld.Odyssey">MastodonTusk</li>
+            	<li MayRequire="Ludeon.Rimworld.Odyssey">AlphaThrumboHorn</li>
             	<li>Romy_Antler</li>
             	<li>Romy_BoarTusk</li>
             	<li>Romy_CattleHorn</li>

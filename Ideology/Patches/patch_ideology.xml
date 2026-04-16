@@ -2,7 +2,7 @@
 <Patch>
     
     <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/FactionDef[defName="WNA_FactionWNA"]</xpath>
+	    <xpath>Defs/FactionDef[defName = "WNA_FactionWNA"]</xpath>
         <value>
             <deityPresets>
                 <li>
@@ -14,11 +14,7 @@
                     <iconPath>inv</iconPath>
                 </li>
             </deityPresets>
-            <styles>
-                <li MayRequire="ludeon.rimworld.anomaly">Horaxian</li>
-                <li>Techist</li>
-                <li>Rustic</li>
-            </styles>
+            <styles/>
             <forcedMemes>
                 <li>Structure_WNA_Ideo</li>
                 <li>Loyalist</li>
@@ -38,7 +34,7 @@
     </Operation>
 
     <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/FactionDef/disallowedMemes</xpath>
+	    <xpath>Defs/FactionDef[defName != "WNA_FactionWNA"]/disallowedMemes</xpath>
         <value>
             <li>Meme_WNA_Ideo</li>
         </value>

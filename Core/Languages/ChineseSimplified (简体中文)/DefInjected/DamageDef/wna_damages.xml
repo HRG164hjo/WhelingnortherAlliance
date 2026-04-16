@@ -21,6 +21,11 @@
   <!-- EN: {0} has molten. -->
   <WNA_ChimingBlaze.deathMessage>{0} 融化了。</WNA_ChimingBlaze.deathMessage>
   
+  <!-- EN: chrono -->
+  <WNA_Chrono.label>时空抹除</WNA_Chrono.label>
+  <!-- EN: {0} is warped. -->
+  <WNA_Chrono.deathMessage>{0} 不复存在。</WNA_Chrono.deathMessage>
+  
   <!-- EN: whelingnorther corrosion -->
   <WNA_Culling.label>威灵侵染</WNA_Culling.label>
   <!-- EN: {0} has molten. -->
@@ -35,6 +40,11 @@
   <WNA_HollowPoint.label>空尖弹</WNA_HollowPoint.label>
   <!-- EN: {0} has been shot to death. -->
   <WNA_HollowPoint.deathMessage>{0} 被射杀。</WNA_HollowPoint.deathMessage>
+  
+  <!-- EN: hypothermia -->
+  <WNA_Hypothermia.label>急冻</WNA_Hypothermia.label>
+  <!-- EN: {0} has been frozen and broken into pieces. -->
+  <WNA_Hypothermia.deathMessage>{0} 被冻结并打碎了。</WNA_Hypothermia.deathMessage>
   
   <!-- EN: iron kill -->
   <WNA_IronKill.label>铁幕</WNA_IronKill.label>
@@ -75,5 +85,10 @@
   <WNA_ScrapPoint.label>废料弹</WNA_ScrapPoint.label>
   <!-- EN: {0} has been shot to death. -->
   <WNA_ScrapPoint.deathMessage>{0} 被毒弹射杀。</WNA_ScrapPoint.deathMessage>
+  
+  <WNA_Controller.label>心灵控制</WNA_Controller.label>
+  <WNA_Controller.deathMessage>{0} 死于魔法。</WNA_Controller.deathMessage>
+  <WNA_ControllerPermanent.label>心灵控制</WNA_ControllerPermanent.label>
+  <WNA_ControllerPermanent.deathMessage>{0} 死于魔法。</WNA_ControllerPermanent.deathMessage>
   
 </LanguageData>

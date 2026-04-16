@@ -129,19 +129,19 @@
             <MarketValue>2357</MarketValue>
         </statBases>
         <comps>
-            <li Class="WNA.ThingCompProp.PropFactionDeed">
+            <li Class="WNA.WNAThingCompProp.PropFactionDeed">
                 <useLabel>Use {0_label}</useLabel>
                 <useJob>WNA_Job_UseDeedOn</useJob>
                 <useDuration>0</useDuration>
                 <showUseGizmo>true</showUseGizmo>
                 <targetFactionDef>WNA_FactionWNA</targetFactionDef>
             </li>
-            <li Class="WNA.ThingCompProp.PropFactionDeed_TargetPawn">
-                <compClass>WNA.ThingCompProp.CompFactionDeed_TargetPawn</compClass>
+            <li Class="WNA.WNAThingCompProp.PropFactionDeed_TargetPawn">
+                <compClass>WNA.WNAThingCompProp.CompFactionDeed_TargetPawn</compClass>
                 <ignorePlayerFactionPawns>true</ignorePlayerFactionPawns>
                 <targetFactionDef>WNA_FactionWNA</targetFactionDef>
             </li>
-            <li Class="WNA.ThingCompProp.PropFactionDeed_HostileDestruct">
+            <li Class="WNA.WNAThingCompProp.PropFactionDeed_HostileDestruct">
                 <targetFactionDef>WNA_FactionWNA</targetFactionDef>
             </li>
         </comps>

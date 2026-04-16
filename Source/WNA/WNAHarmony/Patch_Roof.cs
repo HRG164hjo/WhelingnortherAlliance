@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using Verse;
-using WNA.DMExtension;
+using WNA.WNAModExtension;
 using WNA.WNADefOf;
 
 namespace WNA.WNAHarmony

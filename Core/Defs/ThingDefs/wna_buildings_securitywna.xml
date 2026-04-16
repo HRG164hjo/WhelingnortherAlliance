@@ -26,7 +26,7 @@
         <label>pale ball</label>
         <verbs>
             <li>
-                <verbClass>WNA.WNAMiscs.VerbType_Laser</verbClass>
+                <verbClass>WNA.WNAVerbType.VerbType_Laser</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>WNA_Turret_Pale_Proj</defaultProjectile>
                 <warmupTime>0</warmupTime>
@@ -47,7 +47,7 @@
             </li>
         </verbs>
         <modExtensions>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <laserInnerColor>(0,0,0,200)</laserInnerColor>
                 <laserOuterColor>(255,255,255,200)</laserOuterColor>
                 <laserOuterSpread>1.5</laserOuterSpread>

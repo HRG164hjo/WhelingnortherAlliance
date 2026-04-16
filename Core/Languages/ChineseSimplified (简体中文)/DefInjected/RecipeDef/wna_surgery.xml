@@ -25,8 +25,12 @@
   <!-- EN: void dive -->
   <WNA_VoidDive.label>虚空潜泳</WNA_VoidDive.label>
   <!-- EN: force a human into deep coma and turn them into a anchor. the victim must be sober to face the void, thus voidsteel can be drained through them while they're struggling to awake, to escape, or doing anything else, before their consciousness finally fades. -->
-  <WNA_VoidDive.description>令一个人进入深度昏迷状态并将其值作为一个锚点，受害者在完全清醒的情况下直面虚空，从而在受害者完全消逝之前，利用受害者试图醒来、逃离或做其他任何事时的活动，从虚空中汲取虚空灵铁。</WNA_VoidDive.description>
+  <WNA_VoidDive.description>令一个人进入深度昏迷状态并将其作为一个锚点，受害者在完全清醒的情况下直面虚空，从而在受害者完全消逝之前，利用受害者试图醒来、逃离或做其他任何事时的活动，从虚空中汲取虚空灵铁。</WNA_VoidDive.description>
   <!-- EN: Forcing void dive on TargetA. -->
-  <WNA_VoidDive.jobString>使 TargetA 进行虚空潜泳。</WNA_VoidDive.jobString>
+  <WNA_VoidDive.jobString>使 TargetA 潜入虚空。</WNA_VoidDive.jobString>
+  
+  <WNA_ControlRelease.label>心灵控制解除</WNA_ControlRelease.label>
+  <WNA_ControlRelease.description>尝试令一个心灵控制受害者摆脱控制。如果受害者被永久控制，这样的尝试可能会成为无用功。</WNA_ControlRelease.description>
+  <WNA_ControlRelease.jobString>尝试解除 TargetA 受到的控制。</WNA_ControlRelease.jobString>
   
 </LanguageData>

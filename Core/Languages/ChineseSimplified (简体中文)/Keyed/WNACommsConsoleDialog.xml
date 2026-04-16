@@ -1,15 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
+  <!-- EN: As for the difficulties we've encountered in our research ... -->
   <WNA_Research_Dialog>关于我们在研究上遇到的困难……</WNA_Research_Dialog>
+  <!-- EN: "We know that hard situation you are experiencing." the Archonpriest seems already knows what we want to ask. \n\n"Our assist won't be free. 2357 silver, and your faith, that's enough." -->
   <WNA_OptionDesc_Dialog>“我们了解你们遇到的困难。”这位主司教士似乎已经知道了我们想问什么。\n\n“我们的帮助并不是免费的。2357白银，还有你们的心灵，这就够了。”</WNA_OptionDesc_Dialog>
+  <!-- EN: We're willing to learn. -->
   <WNA_Option_Dialog>我们愿意学习</WNA_Option_Dialog>
-  <WNA_FinalWarning_Dialog>“愿你们遵行正道。”\n\n&lt;color=#FF0000&gt;警告：某些代价将要被付出。&lt;/color&gt;\n\n&lt;color=#FFFF00&gt;你将付出2357白银，但与此同时，你的派系将归信于威灵会。如果你很在意你的派系的文化，请&lt;b&gt;&lt;i&gt;务必三思而后行&lt;/i&gt;&lt;/b&gt;。&lt;/color&gt;\n\n当然，你可以选择另一个选项，这样威灵会就不会拿走你派系的文化，但威灵会将重新考虑他们和我们的关系。</WNA_FinalWarning_Dialog>
+  <!-- EN: "May you follow the right path."\n\n<color=#FF0000>WARNING: some price will be paid.</color>\n\n<color=#FFFF00>This will cost you 2357 silver, but your faction will be converted to Whelingnorther Alliance. If you are concerned about your faction ideology, <b><i>please THINK CAREFULLY</i></b> before you continue. \n\nSurely you can choose an alternate option, this way WNA won't take your ideo, but they will re-consider their relation with us. -->
+  <WNA_FinalWarning_Dialog>“愿你们遵行正道。”\n\n&lt;color=#FF0000>警告：某些代价将要被付出。&lt;/color>\n\n&lt;color=#FFFF00>你将付出2357白银，但与此同时，你的派系将归信于威灵会。如果你很在意你的派系的文化，请&lt;b>&lt;i>务必三思而后行&lt;/i>&lt;/b>。&lt;/color>\n\n当然，你可以选择另一个选项，这样威灵会就不会拿走你派系的文化，但威灵会将重新考虑他们和我们的关系。</WNA_FinalWarning_Dialog>
+  <!-- EN: We've seen the risks, and willing to pay the price. -->
   <WNA_OptionWellKnown_Dialog>我已经了解风险，愿意付出代价。</WNA_OptionWellKnown_Dialog>
+  <!-- EN: I think out ideology is more important ... -->
   <WNA_AltOption_Dialog>我觉得还是派系文化更重要……</WNA_AltOption_Dialog>
+  <!-- EN: We can pay everything we have! <color=#FF0000>(We will lost everything in our stock zone.)</color> -->
+  <WNA_ThirdOption_Dialog>我们愿意拿我们的所有东西来换！&lt;color=#FF0000>（我们将付出储藏区里的所有物品）&lt;/color></WNA_ThirdOption_Dialog>
+  <!-- EN: Sorry. (give up and exit) -->
   <WNA_GoBack_Dialog>抱歉。（放弃离开）</WNA_GoBack_Dialog>
+  <!-- EN: Insufficient silver. (2357 required) -->
   <WNA_NoSilver_Dialog>白银不足（需求2357白银）</WNA_NoSilver_Dialog>
+  <!-- EN: The price is paid -->
   <WNA_OptionDone_Dialog>代价已付出</WNA_OptionDone_Dialog>
+  <!-- EN: We have paid the appropriate price, and Whelingnorther Alliance has provided the appropriate reward. We have completed the research we needed. -->
   <WNA_OptionDoneDesc_Dialog>我们已付出了相应的代价，威灵会也给出了相应的回报。我们完成了我们所需的研究。</WNA_OptionDoneDesc_Dialog>
 
 </LanguageData>

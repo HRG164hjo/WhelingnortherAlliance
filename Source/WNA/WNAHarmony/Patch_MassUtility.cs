@@ -2,7 +2,7 @@
 using RimWorld;
 using UnityEngine;
 using Verse;
-using WNA.DMExtension;
+using WNA.WNAModExtension;
 
 namespace WNA.WNAHarmony
 {

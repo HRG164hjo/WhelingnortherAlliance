@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using RimWorld;
+using UnityEngine;
 using Verse;
+using WNA.WNAModExtension;
 
 namespace WNA.WNAUtility
 {
@@ -41,6 +43,35 @@ namespace WNA.WNAUtility
                 if (radToAdd > 0)
                     radComp.AddRad(cell, radToAdd);
             }
+        }
+
+        internal static bool ImmuneToRadiation(Pawn pawn)
+        {
+            TechnoConfig pawnConfig = TechnoConfig.Get(pawn.def);
+            if (pawnConfig != null && pawnConfig.immuneToRadiation == true)
+                return true;
+            if (pawn.apparel != null)
+            {
+                foreach (Apparel apparel in pawn.apparel.WornApparel)
+                {
+                    TechnoConfig apparelConfig = TechnoConfig.Get(apparel.def);
+                    if (apparelConfig != null && apparelConfig.immuneToRadiation == true)
+                        return true;
+                }
+            }
+            if (pawn.health != null && pawn.health.hediffSet != null)
+            {
+                foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
+                {
+                    if (hediff.def != null)
+                    {
+                        TechnoConfig hediffConfig = TechnoConfig.Get(hediff.def);
+                        if (hediffConfig != null && hediffConfig.immuneToRadiation == true)
+                            return true;
+                    }
+                }
+            }
+            return false;
         }
     }
 }

@@ -3,7 +3,7 @@
     <GameConditionDef>
         <defName>WNA_GameCond_ClimateControl</defName>
         <label>climate control</label>
-        <conditionClass>WNA.GameCond.GameCond_ClimateControl</conditionClass>
+        <conditionClass>WNA.WNAGameCond.GameCond_ClimateControl</conditionClass>
         <description>a climate control facility is affecting local climate. On surface layers, it can adjust local temperature and weather; on orbital layers, it can generate breathable atmosphere for nearby creatures.</description>
         <letterText>a climate control facility is affecting local climate.</letterText>
         <letterDef>NeutralEvent</letterDef>
@@ -17,7 +17,7 @@
     <GameConditionDef>
         <defName>WNA_GameCond_PermaconstActive</defName>
         <label>permaconst command broadcast</label>
-        <conditionClass>WNA.GameCond.GameCond_PermaconstActive</conditionClass>
+        <conditionClass>WNA.WNAGameCond.GameCond_PermaconstActive</conditionClass>
         <description>A new Permaconst Command maintenance cycle is on. Thralls of Permaconst Command will roam around the planet hunting for their foes. The thralls can hardly be truly killed untill the maintenance cycle ends.</description>
         <letterText>A new Permaconst Command maintenance cycle is on.</letterText>
         <letterDef>ThreatBig</letterDef>

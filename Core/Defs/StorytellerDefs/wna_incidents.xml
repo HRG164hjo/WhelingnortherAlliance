@@ -7,7 +7,7 @@
         <targetTags>
             <li>Map_PlayerHome</li>
         </targetTags>
-        <workerClass>WNA.Incident.DiscipleJoin</workerClass>
+        <workerClass>WNA.WNAIncident.DiscipleJoin</workerClass>
         <baseChance>2.5</baseChance>
         <populationEffect>IncreaseMedium</populationEffect>
         <letterLabel>WNA disciple join</letterLabel>
@@ -25,7 +25,7 @@
         <targetTags>
             <li>Map_PlayerHome</li>
         </targetTags>
-        <workerClass>WNA.Incident.PermaconstMaintenance</workerClass>
+        <workerClass>WNA.WNAIncident.PermaconstMaintenance</workerClass>
         <baseChance>1.0</baseChance>
         <minRefireDays>23.57</minRefireDays>
         <earliestDay>23</earliestDay>

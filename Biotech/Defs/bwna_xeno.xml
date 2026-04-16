@@ -7,6 +7,7 @@
         <descriptionShort>Mortaliner.</descriptionShort>
         <iconPath>factions/wna_alliance</iconPath>
         <inheritable>true</inheritable>
+        <factionlessGenerationWeight>0</factionlessGenerationWeight>
         <genes>
 			<li>WNA_ShadowRing</li>
 			<li>WNA_Unshakable</li>
@@ -20,6 +21,7 @@
 			<li>Hair_SnowWhite</li>
         </genes>
     </XenotypeDef>
+
     <GeneDef Abstract="true" Name="WNA_GeneBase">
         <displayCategory>Archite</displayCategory>
         <biostatCpx>0</biostatCpx>
@@ -29,6 +31,7 @@
         <marketValueFactor>1</marketValueFactor>
         <passOnDirectly>false</passOnDirectly>
         <selectionWeight>0</selectionWeight>
+        <randomChosen>false</randomChosen>
         <modExtensions>
             <li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">	
                 <hideGene>true</hideGene>
@@ -47,6 +50,7 @@
         <ignoreDarkness>true</ignoreDarkness>
         <immuneToToxGasExposure>true</immuneToToxGasExposure>
         <bodyType>Standard</bodyType>
+        <addictionChanceFactor>0</addictionChanceFactor>
         <overdoseChanceFactor>0</overdoseChanceFactor>
         <toleranceBuildupFactor>0</toleranceBuildupFactor>
         <statFactors>

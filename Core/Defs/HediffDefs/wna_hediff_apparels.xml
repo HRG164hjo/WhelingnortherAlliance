@@ -68,7 +68,7 @@
 			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
 				<movementDef>WNA_Movement</movementDef>
 			</li>
-			<li Class="WNA.DMExtension.Passability">
+			<li Class="WNA.WNAModExtension.Passability">
 				<freepass>true</freepass>
 			</li>
 		</modExtensions>
@@ -139,7 +139,7 @@
 			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
 				<movementDef>WNA_Movement</movementDef>
 			</li>
-			<li Class="WNA.DMExtension.Passability">
+			<li Class="WNA.WNAModExtension.Passability">
 				<freepass>true</freepass>
 			</li>
 		</modExtensions>
@@ -173,7 +173,7 @@
         <isBad>false</isBad>
         <comps>
             <li Class="HediffCompProperties_RemoveIfApparelDropped"/>
-            <li Class="WNA.HediffCompProp.PropRadFieldSpreader">
+            <li Class="WNA.WNAHediffCompProp.PropRadFieldSpreader">
                 <config>
                     <radLevel>2000</radLevel>
                     <radius>9.9</radius>

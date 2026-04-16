@@ -6,7 +6,7 @@ using System.Linq;
 using UnityEngine;
 using Verse;
 using Verse.AI;
-using WNA.DMExtension;
+using WNA.WNAModExtension;
 using WNA.WNADefOf;
 
 namespace WNA.WNAHarmony

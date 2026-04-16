@@ -57,6 +57,10 @@
 						<li MayRequire="zylle.MoreVanillaBiomes">ZBiome_Sandbar_NoBeach</li>
 
 						<li MayRequire="ReGrowth.BOTR.AspenForest">RG_AspenForest</li>
+						
+						<li MayRequire="biomesteam.oasis">BMT_ChromaticOasis</li>
+						
+						<li MayRequire="zylle.waywardbiomes.landreef">ZWB_TidewrackReef</li>
 		            </value>
 				</li>
             </operations>

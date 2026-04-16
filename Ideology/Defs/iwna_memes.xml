@@ -111,7 +111,6 @@
          <li>WNA_FactionWNA</li>
          <li>WNA_FactionPCC</li>
       </factionWhitelist>
-      <!--<hiddenInChooseMemes>true</hiddenInChooseMemes>-->
    </MemeDef>
 
    <MemeDef>
@@ -160,7 +159,6 @@
          <li>WNA_FactionWNA</li>
          <li>WNA_FactionPCC</li>
       </factionWhitelist>
-      <!--<hiddenInChooseMemes>true</hiddenInChooseMemes>-->
       <requiredRituals IsNull="true"/>
       <requireAnyRitualSeat IsNull="true"/>
       <addDesignators>

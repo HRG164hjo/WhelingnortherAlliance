@@ -46,8 +46,6 @@
                 <blocksInspirations>true</blocksInspirations>
                 <pctAllThoughtNullification>1</pctAllThoughtNullification>
                 <overrideMoodBase>1</overrideMoodBase>
-                <regeneration>999999999</regeneration>
-                <showRegenerationStat>false</showRegenerationStat>
                 <preventVacuumBurns>true</preventVacuumBurns>
                 <disablesNeeds>
                     <li>Beauty</li>
@@ -66,23 +64,28 @@
             </li>
         </stages>
         <comps>
-            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
+            <li Class="WNA.WNAHediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_Inhuman</hediff>
             </li>
-            <li Class="WNA.HediffCompProp.PropHediffHediffRemover">
+            <li Class="WNA.WNAHediffCompProp.PropHediffHediffRemover">
                 <interval>7</interval>
                 <removeInjury>true</removeInjury>
             </li>
-            <li Class="WNA.HediffCompProp.PropProximityBlink">
+            <li Class="WNA.WNAHediffCompProp.PropProximityBlink">
                 <cooldown>1</cooldown>
                 <counterBack>true</counterBack>
                 <damageDef>WNA_Culling</damageDef>
             </li>
         </comps>
 		<modExtensions>
-			<li Class="WNA.DMExtension.Passability">
+			<li Class="WNA.WNAModExtension.Passability">
 				<freepass>true</freepass>
 			</li>
+            <li Class="WNA.WNAModExtension.TechnoConfig">
+                <immuneToRadiation>true</immuneToRadiation>
+                <immuneToIronKill>true</immuneToIronKill>
+                <immuneToWarp>true</immuneToWarp>
+            </li>
 		</modExtensions>
     </HediffDef>
 
@@ -103,24 +106,23 @@
                 <blocksInspirations>true</blocksInspirations>
                 <showRegenerationStat>false</showRegenerationStat>
                 <preventVacuumBurns>true</preventVacuumBurns>
-                <regeneration>999999999</regeneration>
                 <disablesNeeds>
                     <li>Food</li>
                 </disablesNeeds>
             </li>
         </stages>
         <comps>
-            <li Class="WNA.HediffCompProp.PropHealPermaWounds"/>
-            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
+            <li Class="WNA.WNAHediffCompProp.PropHealPermaWounds"/>
+            <li Class="WNA.WNAHediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_InAnimal</hediff>
             </li>
-            <li Class="WNA.HediffCompProp.PropHediffHediffRemover">
+            <li Class="WNA.WNAHediffCompProp.PropHediffHediffRemover">
                 <interval>23</interval>
                 <removeInjury>true</removeInjury>
             </li>
         </comps>
 		<modExtensions>
-			<li Class="WNA.DMExtension.Passability">
+			<li Class="WNA.WNAModExtension.Passability">
 				<freepass>true</freepass>
 			</li>
 		</modExtensions>
@@ -170,25 +172,25 @@
             </li>
         </stages>
         <comps>
-            <li Class="WNA.HediffCompProp.PropMechAutoHeal">
+            <li Class="WNA.WNAHediffCompProp.PropMechAutoHeal">
                 <repairInterval>23</repairInterval>
             </li>
-            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
+            <li Class="WNA.WNAHediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_InMechanoid</hediff>
             </li>
-            <li Class="WNA.HediffCompProp.PropHediffHediffRemover"/>
+            <li Class="WNA.WNAHediffCompProp.PropHediffHediffRemover"/>
         </comps>
 		<modExtensions>
 			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
 				<movementDef>WNA_Movement</movementDef>
 			</li>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
-			<li Class="WNA.DMExtension.MassCapacity">
+			<li Class="WNA.WNAModExtension.MassCapacity">
 				<massCapacity>60000</massCapacity>
 			</li>
-			<li Class="WNA.DMExtension.Passability">
+			<li Class="WNA.WNAModExtension.Passability">
 				<freepass>true</freepass>
 			</li>
 		</modExtensions>
@@ -198,7 +200,7 @@
         <defName>WNA_DeathEnd</defName>
         <label>death refusal</label>
         <description>This pawn have witnessed Whelingnorther's control over death. If this pawn is killed and their corpse isn't destroyed, they'll be able to crawl back from death.</description>
-        <hediffClass>WNA.HediffClass.DeathEnd</hediffClass>
+        <hediffClass>WNA.WNAHediffClass.DeathEnd</hediffClass>
         <defaultLabelColor>(0,0,0)</defaultLabelColor>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>
@@ -211,20 +213,18 @@
                 <blocksInspirations>true</blocksInspirations>
                 <pctAllThoughtNullification>1</pctAllThoughtNullification>
                 <overrideMoodBase>1</overrideMoodBase>
-                <showRegenerationStat>false</showRegenerationStat>
-                <regeneration>60000</regeneration>
                 <preventVacuumBurns>true</preventVacuumBurns>
             </li>
         </stages>
         <comps>
-            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
+            <li Class="WNA.WNAHediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_DeathEnd</hediff>
             </li>
-            <li Class="WNA.HediffCompProp.PropHediffHediffRemover">
+            <li Class="WNA.WNAHediffCompProp.PropHediffHediffRemover">
                 <interval>23</interval>
                 <removeInjury>true</removeInjury>
             </li>
-            <li Class="WNA.HediffCompProp.PropProximityBlink">
+            <li Class="WNA.WNAHediffCompProp.PropProximityBlink">
                 <range>5.9</range>
                 <skipaway>13.9~19.9</skipaway>
                 <counterBack>true</counterBack>
@@ -235,10 +235,10 @@
 			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
 				<movementDef>WNA_Movement</movementDef>
 			</li>
-			<li Class="WNA.DMExtension.Passability">
+			<li Class="WNA.WNAModExtension.Passability">
 				<freepass>true</freepass>
 			</li>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
 		</modExtensions>
@@ -258,7 +258,7 @@
                 <disappearsAfterTicks>200~300</disappearsAfterTicks>
                 <showRemainingTime>true</showRemainingTime>
             </li>
-            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
+            <li Class="WNA.WNAHediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_DeathEnd</hediff>
             </li>
         </comps>
@@ -274,7 +274,7 @@
             </li>
         </stages>
 		<modExtensions>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
 		</modExtensions>
@@ -296,10 +296,10 @@
             </li>
         </stages>
         <comps>
-            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
+            <li Class="WNA.WNAHediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_PermaconstActive</hediff>
             </li>
-            <li Class="WNA.HediffCompProp.PropPermaconstHidden"/>
+            <li Class="WNA.WNAHediffCompProp.PropPermaconstHidden"/>
         </comps>
     </HediffDef>
     <HediffDef>
@@ -354,22 +354,22 @@
             </li>
         </stages>
         <comps>
-            <li Class="WNA.HediffCompProp.PropPostRemoveHediff">
+            <li Class="WNA.WNAHediffCompProp.PropPostRemoveHediff">
                 <hediff>WNA_PermaconstActive</hediff>
             </li>
-            <li Class="WNA.HediffCompProp.PropMechAutoHeal">
+            <li Class="WNA.WNAHediffCompProp.PropMechAutoHeal">
                 <repairInterval>99</repairInterval>
             </li>
-            <li Class="WNA.HediffCompProp.PropPermaconstActive"/>
+            <li Class="WNA.WNAHediffCompProp.PropPermaconstActive"/>
         </comps>
 		<modExtensions>
 			<li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
 				<movementDef>WNA_Movement</movementDef>
 			</li>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
-			<li Class="WNA.DMExtension.Passability">
+			<li Class="WNA.WNAModExtension.Passability">
 				<freepass>true</freepass>
 			</li>
 		</modExtensions>

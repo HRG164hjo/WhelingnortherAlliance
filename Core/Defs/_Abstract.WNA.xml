@@ -22,7 +22,7 @@
     <!-- ======== -->
     <!-- DamageDef -->
     <DamageDef Abstract="true" Name="WNA_DamageBase">
-        <workerClass>WNA.Damager.DamagerBasic</workerClass>
+        <workerClass>WNA.WNADamageWorker.DamageWorkerBasic</workerClass>
         <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
         <overkillPctToDestroyPart>0</overkillPctToDestroyPart>
         <defaultArmorPenetration>Infinity</defaultArmorPenetration>
@@ -121,7 +121,7 @@
                 <WNA_Mortaliner>999</WNA_Mortaliner>
             </xenotypeChances>
         </xenotypeSet>
-        <skills>
+        <!--<skills>
             <li>
                 <skill>Shooting</skill>
                 <range>99~99</range>
@@ -170,7 +170,7 @@
                 <skill>Intellectual</skill>
                 <range>99~99</range>
             </li>
-        </skills>
+        </skills>-->
         <requiredWorkTags>
 			<li>Violent</li>
 			<li>Intellectual</li>
@@ -476,7 +476,7 @@
         <repairEffect>Repair</repairEffect>
         <filthLeaving/>
         <modExtensions>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <immuneToIronKill>true</immuneToIronKill>
             </li>
         </modExtensions>
@@ -590,7 +590,7 @@
             <stoppingPower>Infinity</stoppingPower>
         </projectile>
         <modExtensions>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <ignoreRoof>true</ignoreRoof>
                 <immuneToRadiation>true</immuneToRadiation>
                 <immuneToIronKill>true</immuneToIronKill>
@@ -1046,7 +1046,7 @@
                 <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
                 <requiresImprisonment>true</requiresImprisonment>
             </li>
-			<li Class="WNA.ThingCompProp.PropDamageLimit">
+			<li Class="WNA.WNAThingCompProp.PropDamageLimit">
 			  	<damageLimit>1</damageLimit>
                 <canAbsorb>true</canAbsorb>
 			</li>
@@ -1055,14 +1055,14 @@
             <li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
                 <movementDef>WNA_Movement</movementDef>
             </li>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
                 <immuneToIronKill>true</immuneToIronKill>
             </li>
-			<li Class="WNA.DMExtension.MassCapacity">
+			<li Class="WNA.WNAModExtension.MassCapacity">
 				<massCapacity>6000000000</massCapacity>
 			</li>
-            <li Class="WNA.DMExtension.KillDownUtility">
+            <li Class="WNA.WNAModExtension.KillDownUtility">
                 <minLevel>0.4</minLevel>
                 <minCapacities>
                     <li>Consciousness</li>

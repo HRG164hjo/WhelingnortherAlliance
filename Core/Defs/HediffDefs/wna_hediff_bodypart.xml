@@ -58,7 +58,7 @@
         <priceImpact>true</priceImpact>
         <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
         <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
-        <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+        <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
     </HediffDef>
     <RecipeDef Name="WNA_BodypartRecipe" ParentName="SurgeryFlesh" Abstract="True">
         <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
@@ -71,6 +71,7 @@
         <recipeUsers>
             <li>Human</li>
             <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+            <li>WNA_Human</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -139,8 +140,8 @@
                 <partIgnoreMissingHP>true</partIgnoreMissingHP>
                 <statOffsets>
                     <VacuumResistance>0.8</VacuumResistance>
-                    <ComfyTemperatureMin>-20</ComfyTemperatureMin>
-                    <ComfyTemperatureMax>20</ComfyTemperatureMax>
+                    <ComfyTemperatureMin>-500</ComfyTemperatureMin>
+                    <ComfyTemperatureMax>500</ComfyTemperatureMax>
                     <PawnBeauty>1</PawnBeauty>
                     <ArmorRating_Sharp>2</ArmorRating_Sharp>
                     <ArmorRating_Blunt>2</ArmorRating_Blunt>
@@ -154,7 +155,7 @@
             </li>
         </stages>
 		<modExtensions>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
 		</modExtensions>
@@ -217,7 +218,7 @@
             </li>
         </stages>
         <comps>
-            <li Class="WNA.HediffCompProp.PropProximityBlink">
+            <li Class="WNA.WNAHediffCompProp.PropProximityBlink">
                 <cooldown>60</cooldown>
                 <counterBack>true</counterBack>
                 <skipaway>7.9~15.9</skipaway>
@@ -226,10 +227,10 @@
             </li>
         </comps>
         <modExtensions>
-			<li Class="WNA.DMExtension.MassCapacity">
+			<li Class="WNA.WNAModExtension.MassCapacity">
 				<massCapacity>60000</massCapacity>
 			</li>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
 		</modExtensions>
@@ -361,13 +362,13 @@
             </li>
         </stages>
         <comps>
-            <li Class="WNA.HediffCompProp.PropHediffHediffRemover">
+            <li Class="WNA.WNAHediffCompProp.PropHediffHediffRemover">
                 <interval>60000</interval>
                 <removeInjury>true</removeInjury>
             </li>
         </comps>
 		<modExtensions>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
 		</modExtensions>
@@ -555,14 +556,19 @@
         <stages>
             <li>
                 <partIgnoreMissingHP>true</partIgnoreMissingHP>
+                <regeneration>60000</regeneration>
+                <showRegenerationStat>false</showRegenerationStat>
                 <statOffsets>
                     <ImmunityGainSpeed>3</ImmunityGainSpeed>
                     <ToxicResistance>3</ToxicResistance>
                 </statOffsets>
             </li>
         </stages>
+        <comps>
+            <li Class="WNA.WNAHediffCompProp.PropHealPermaWounds"/>
+        </comps>
 		<modExtensions>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <immuneToRadiation>true</immuneToRadiation>
             </li>
 		</modExtensions>
@@ -999,7 +1005,7 @@
             </li>
         </stages>
 		<modExtensions>
-			<li Class="WNA.DMExtension.Passability">
+			<li Class="WNA.WNAModExtension.Passability">
 				<freepass>true</freepass>
 			</li>
 		</modExtensions>

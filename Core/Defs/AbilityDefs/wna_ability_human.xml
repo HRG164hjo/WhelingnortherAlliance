@@ -56,6 +56,7 @@
         <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
         <aiCanUse>true</aiCanUse>
+        <hostile>true</hostile>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
             <warmupTime>0</warmupTime>
@@ -84,6 +85,37 @@
                 </fleckDefs>
                 <scale>0.42</scale>
                 <sound>Psycast_Skip_Exit</sound>
+                <preCastTicks>5</preCastTicks>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="WNA_AbilityBase">
+        <defName>WNA_MindControl</defName>
+        <label>mind control</label>
+        <description>The caster use their mind to overwhelm the victim's fragile will, the victim will bend to the caster and obey their commands. If one is &lt;color=#00FF00&gt;unshakable&lt;/color&gt;, then he might be able to resist the control.</description>
+        <iconPath>karma</iconPath>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <hostile>true</hostile>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0</warmupTime>
+            <range>56.9</range>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetSelf>false</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WNA.WNAAbilityCompProp.PropMindControl"/>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDefs>
+                    <li>PsycastPsychicEffect</li>
+                </fleckDefs>
+                <scale>1.25</scale>
+                <sound>PsychicInsanityLanceCast</sound>
                 <preCastTicks>5</preCastTicks>
             </li>
         </comps>

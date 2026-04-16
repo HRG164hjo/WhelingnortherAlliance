@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Verse;
-using WNA.DMExtension;
+using WNA.WNAModExtension;
 using WNA.WNADefOf;
 
 namespace WNA.WNAUtility
@@ -11,10 +11,10 @@ namespace WNA.WNAUtility
     public class RadField_MapComp : MapComponent, ICellBoolGiver
     {
         private List<int> radLevel;
-        public int radLevelMax = 5000;
-        private int radLevelDelay = 29;
-        private int radLevelDecay = 2;
-        private float radLevelFactor = 0.1f;
+        public readonly int radLevelMax = 5000;
+        private readonly int radLevelDelay = 29;
+        private readonly int radLevelDecay = 2;
+        private readonly float radLevelFactor = 0.1f;
         public RadField_MapComp(Map map) : base(map) { }
         private CellBoolDrawer drawerInt;
         public CellBoolDrawer Drawer
@@ -55,9 +55,7 @@ namespace WNA.WNAUtility
             {
                 radLevel = new List<int>(map.cellIndices.NumGridCells);
                 for (int i = 0; i < map.cellIndices.NumGridCells; i++)
-                {
                     radLevel.Add(0);
-                }
             }
         }
         public int GetRad(IntVec3 c)
@@ -71,34 +69,6 @@ namespace WNA.WNAUtility
             int index = map.cellIndices.CellToIndex(c);
             radLevel[index] = Mathf.Clamp(radLevel[index] + amount, 0, radLevelMax);
             Drawer.SetDirty();
-        }
-        private bool IsImmuneToRadiation(Pawn pawn)
-        {
-            TechnoConfig pawnConfig = TechnoConfig.Get(pawn.def);
-            if (pawnConfig != null && pawnConfig.immuneToRadiation == true)
-                return true;
-            if (pawn.apparel != null)
-            {
-                foreach (Apparel apparel in pawn.apparel.WornApparel)
-                {
-                    TechnoConfig apparelConfig = TechnoConfig.Get(apparel.def);
-                    if (apparelConfig != null && apparelConfig.immuneToRadiation == true)
-                        return true;
-                }
-            }
-            if (pawn.health != null && pawn.health.hediffSet != null)
-            {
-                foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
-                {
-                    if (hediff.def != null)
-                    {
-                        TechnoConfig hediffConfig = TechnoConfig.Get(hediff.def);
-                        if (hediffConfig != null && hediffConfig.immuneToRadiation == true)
-                            return true;
-                    }
-                }
-            }
-            return false;
         }
         public override void MapComponentTick()
         {
@@ -120,7 +90,7 @@ namespace WNA.WNAUtility
                 List<Pawn> pawnErad = map.mapPawns.AllPawnsSpawned.ToList();
                 foreach (Pawn pawn in pawnErad)
                 {
-                    if (IsImmuneToRadiation(pawn)) continue;
+                    if (RadFieldUtility.ImmuneToRadiation(pawn)) continue;
                     IntVec3 c = pawn.Position;
                     if (!c.InBounds(map)) continue;
                     int rad = GetRad(c);

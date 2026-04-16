@@ -14,6 +14,11 @@
   <!-- EN: {0} in the {1} -->
   <WNA_CastDamage.labelNounPretty>{1}中的{0}</WNA_CastDamage.labelNounPretty>
   
+  <!-- EN: chrono counter -->
+  <WNA_ChronoCounter.label>时空抹除计量</WNA_ChronoCounter.label>
+  <!-- EN: A hediff counter used for chrono damage, theoretically you cannot see this. -->
+  <WNA_ChronoCounter.description>用于计算超时空抹除效果的健康状态计时器，理论上你应该看不见这个。</WNA_ChronoCounter.description>
+  
   <!-- EN: whelingnorther corrosion -->
   <WNA_Corrosion.label>威灵侵染</WNA_Corrosion.label>
   <!-- EN: An as yet unexplained fatal health condition in which victims often exhibit a unique state of melting upon death. Usually found on victims harmed by WNA rite weapons or directly attacked by Whelingnorthan.\n\nSo far hardly any methods can be used to treat this condition, what people can do is just pray and watch the condition grow worse, finally killing the victim. -->
@@ -62,6 +67,11 @@
   <WNA_KineticDamage.labelNoun>非典型烧伤</WNA_KineticDamage.labelNoun>
   <!-- EN: {0} in the {1} -->
   <WNA_KineticDamage.labelNounPretty>{1}中的{0}</WNA_KineticDamage.labelNounPretty>
+  
+  <!-- EN: mind controlled -->
+  <WNA_MindControlEffect.label>心灵控制</WNA_MindControlEffect.label>
+  <!-- EN: This pawn's mind has been seized. if the control is not permanent, he can still be saved; but if the control is <color=#7B50A7>permanent</color>, it's not likely he can still be fine. \n\nThis control is like a brand deep in the soul, killing the controller won't remove existing control. -->
+  <WNA_MindControlEffect.description>此人的心智已被控制。如果这种控制并非永久性的，他或许还有得救；但如果这种控制是&lt;color=#7B50A7&gt;永久的&lt;/color&gt;，他恐怕就难以脱身。\n\n这种控制如同引入灵魂深处的烙印，即使杀死控制者也无法消除已经存在的控制。</WNA_MindControlEffect.description>
   
   <!-- EN: rad-field buildup -->
   <WNA_RadEffect.label>辐射蓄积</WNA_RadEffect.label>

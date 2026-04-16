@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <WNA_MindControl_IsWildman>无所属</WNA_MindControl_IsWildman>
+  <WNA_MindControl_Permanent>&lt;color=#7B50A7&gt;永久控制&lt;/color&gt;</WNA_MindControl_Permanent>
+  <WNA_MindControl_ControlledBy>控制方</WNA_MindControl_ControlledBy>
+  <WNA_MindControl_WasFrom>原所属方</WNA_MindControl_WasFrom>
+  
+</LanguageData>

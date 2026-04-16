@@ -5,19 +5,19 @@ namespace WNA.WNAUtility
 {
     public class General
     {
-        internal static void DebuglikeDestroy(Thing thing)
+        internal static void DebuglikeDestroy(Thing thing, DestroyMode mode = DestroyMode.Vanish)
         {
             Thing.allowDestroyNonDestroyable = true;
             try
             {
-                thing.Destroy();
+                thing.Destroy(mode);
             }
             finally
             {
                 Thing.allowDestroyNonDestroyable = false;
             }
         }
-        public static void TotalRemoving(Pawn pawn, bool remains = true)
+        internal static void TotalRemoving(Pawn pawn, bool remains = true)
         {
             if (pawn == null || pawn.DestroyedOrNull()) return;
             pawn.relations?.ClearAllRelations();

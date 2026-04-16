@@ -94,7 +94,7 @@
 		<defName>WNA_BaseDoor</defName>
 		<label>formed door</label>
 		<description>Form a door from nothing. This technique is hardly known by outsiders.</description>
-        <thingClass>WNA.ThingClass.BarrierDoor</thingClass>
+        <thingClass>WNA.WNAThingClass.BarrierDoor</thingClass>
 		<altitudeLayer>DoorMoveable</altitudeLayer>
 		<graphicData>
 			<texPath>buildings/atlas/wna_door</texPath>
@@ -315,7 +315,7 @@
 		<defName>WNA_StuffDoor</defName>
 		<label>matdoor</label>
 		<description>Form a door from a piece of actual material. This door blocks light and takes some more work to build.</description>
-		<thingClass>WNA.ThingClass.BarrierDoor</thingClass>
+		<thingClass>WNA.WNAThingClass.BarrierDoor</thingClass>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<graphicData>
 			<texPath>buildings/atlas/wna_door</texPath>
@@ -505,11 +505,11 @@
             <li>WNA_StandardArsenal</li>
         </researchPrerequisites>
 		<comps>
-			<li Class="WNA.ThingCompProp.PropThingSelfHeal">
+			<li Class="WNA.WNAThingCompProp.PropThingSelfHeal">
 			  	<ticksPerHeal>27</ticksPerHeal>
 				<healPercent>10</healPercent>
 			</li>
-			<li Class="WNA.ThingCompProp.PropDamageLimit">
+			<li Class="WNA.WNAThingCompProp.PropDamageLimit">
 			  	<damageLimit>50</damageLimit>
 			</li>
 		</comps>
@@ -570,11 +570,11 @@
 			<li Class="CompProperties_Forbiddable">
 				<allowNonPlayer>false</allowNonPlayer>
 			</li>
-			<li Class="WNA.ThingCompProp.PropThingSelfHeal">
+			<li Class="WNA.WNAThingCompProp.PropThingSelfHeal">
 			  	<ticksPerHeal>27</ticksPerHeal>
 				<healPercent>10</healPercent>
 			</li>
-			<li Class="WNA.ThingCompProp.PropDamageLimit">
+			<li Class="WNA.WNAThingCompProp.PropDamageLimit">
 			  	<damageLimit>50</damageLimit>
 			</li>
 		</comps>
@@ -644,11 +644,11 @@
 			<li Class="CompProperties_Forbiddable">
 				<allowNonPlayer>false</allowNonPlayer>
 			</li>
-			<li Class="WNA.ThingCompProp.PropThingSelfHeal">
+			<li Class="WNA.WNAThingCompProp.PropThingSelfHeal">
 			  	<ticksPerHeal>27</ticksPerHeal>
 				<healPercent>10</healPercent>
 			</li>
-			<li Class="WNA.ThingCompProp.PropDamageLimit">
+			<li Class="WNA.WNAThingCompProp.PropDamageLimit">
 			  	<damageLimit>50</damageLimit>
 			</li>
 		</comps>

@@ -3,7 +3,7 @@ using RimWorld;
 using System;
 using System.Collections.Generic;
 using Verse;
-using WNA.DMExtension;
+using WNA.WNAModExtension;
 
 namespace WNA.WNAHarmony
 {

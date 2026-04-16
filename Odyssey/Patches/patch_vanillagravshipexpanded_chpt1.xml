@@ -22,7 +22,7 @@
 				</li>
 
 				<li Class="PatchOperationAdd">
-	    			<xpath>Defs/ThingDef[defName="VGE_CompactStove"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+	    			<xpath>Defs/ThingDef[defName="VGE_CompactStove" or defName="VGE_CompactRefinery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
         			<value>
             			<li>WNA_MultiToolBox</li>
         			</value>

@@ -9,8 +9,6 @@
   <WNA_Dawnbreaker.tools.barrel.label>炮管</WNA_Dawnbreaker.tools.barrel.label>
   <!-- EN: "dawnbreaker" nuclear cannon -->
   <WNA_Dawnbreaker.verbs.Verb_Shoot.label>TODO</WNA_Dawnbreaker.verbs.Verb_Shoot.label>
-  
-  <!-- EN: gun proj -->
   <WNA_Dawnbreaker_Proj.label>gun proj</WNA_Dawnbreaker_Proj.label>
   
   <!-- EN: "howlstorm" artillary -->
@@ -21,8 +19,6 @@
   <WNA_HowlstormArti.tools.barrel.label>炮管</WNA_HowlstormArti.tools.barrel.label>
   <!-- EN: "howlstorm" artillary -->
   <WNA_HowlstormArti.verbs.Verb_Shoot.label>TODO</WNA_HowlstormArti.verbs.Verb_Shoot.label>
-  
-  <!-- EN: gun proj -->
   <WNA_HowlstormArti_Proj.label>gun proj</WNA_HowlstormArti_Proj.label>
   
   <!-- EN: "howlstorm" HMG -->
@@ -33,8 +29,6 @@
   <WNA_HowlstormHMG.tools.barrel.label>枪管</WNA_HowlstormHMG.tools.barrel.label>
   <!-- EN: "howlstorm" HMG -->
   <WNA_HowlstormHMG.verbs.Verb_Shoot.label>TODO</WNA_HowlstormHMG.verbs.Verb_Shoot.label>
-  
-  <!-- EN: gun proj -->
   <WNA_HowlstormHMG_Proj.label>gun proj</WNA_HowlstormHMG_Proj.label>
   
   <!-- EN: "howlstorm" MLRS -->
@@ -45,8 +39,6 @@
   <WNA_HowlstormMLRS.tools.barrel.label>枪管</WNA_HowlstormMLRS.tools.barrel.label>
   <!-- EN: "howlstorm" MLRS -->
   <WNA_HowlstormMLRS.verbs.Verb_Shoot.label>TODO</WNA_HowlstormMLRS.verbs.Verb_Shoot.label>
-  
-  <!-- EN: gun proj -->
   <WNA_HowlstormMLRS_Proj.label>gun proj</WNA_HowlstormMLRS_Proj.label>
   
   <!-- EN: "dead zone" ionizing rifle -->
@@ -57,8 +49,6 @@
   <WNA_IonizingRifle.tools.barrel.label>枪管</WNA_IonizingRifle.tools.barrel.label>
   <!-- EN: "dead zone" ionizing rifle -->
   <WNA_IonizingRifle.verbs.VerbType_Laser.label>TODO</WNA_IonizingRifle.verbs.VerbType_Laser.label>
-  
-  <!-- EN: gun proj -->
   <WNA_IonizingRifle_Proj.label>gun proj</WNA_IonizingRifle_Proj.label>
   
   <!-- EN: "ironflower" siege cannon -->
@@ -69,8 +59,6 @@
   <WNA_Ironflower.tools.barrel.label>炮管</WNA_Ironflower.tools.barrel.label>
   <!-- EN: "ironflower" siege cannon -->
   <WNA_Ironflower.verbs.VerbType_IronBlast.label>TODO</WNA_Ironflower.verbs.VerbType_IronBlast.label>
-  
-  <!-- EN: gun proj -->
   <WNA_Ironflower_Proj.label>gun proj</WNA_Ironflower_Proj.label>
   
   <!-- EN: kinetic coil -->
@@ -81,8 +69,6 @@
   <WNA_KineticCoil.tools.barrel.label>枪管</WNA_KineticCoil.tools.barrel.label>
   <!-- EN: kinetic coil -->
   <WNA_KineticCoil.verbs.VerbType_Burst.label>TODO</WNA_KineticCoil.verbs.VerbType_Burst.label>
-  
-  <!-- EN: gun proj -->
   <WNA_KineticCoil_Proj.label>gun proj</WNA_KineticCoil_Proj.label>
   
   <!-- EN: kinetic railgun -->
@@ -93,8 +79,6 @@
   <WNA_KineticRailgun.tools.barrel.label>枪管</WNA_KineticRailgun.tools.barrel.label>
   <!-- EN: kinetic railgun -->
   <WNA_KineticRailgun.verbs.Verb_Shoot.label>TODO</WNA_KineticRailgun.verbs.Verb_Shoot.label>
-  
-  <!-- EN: gun proj -->
   <WNA_KineticRailgun_Proj.label>gun proj</WNA_KineticRailgun_Proj.label>
   
   <!-- EN: "lead haze" assault rifle -->
@@ -105,8 +89,6 @@
   <WNA_LeadHazeARifle.tools.barrel.label>枪管</WNA_LeadHazeARifle.tools.barrel.label>
   <!-- EN: "lead haze" assault rifle -->
   <WNA_LeadHazeARifle.verbs.VerbType_Burst.label>TODO</WNA_LeadHazeARifle.verbs.VerbType_Burst.label>
-  
-  <!-- EN: gun proj -->
   <WNA_LeadHazeARifle_Proj.label>gun proj</WNA_LeadHazeARifle_Proj.label>
   
   <!-- EN: lysis rifle -->
@@ -117,8 +99,6 @@
   <WNA_LysisRifle.tools.barrel.label>枪管</WNA_LysisRifle.tools.barrel.label>
   <!-- EN: lysis rifle -->
   <WNA_LysisRifle.verbs.VerbType_Laser.label>TODO</WNA_LysisRifle.verbs.VerbType_Laser.label>
-  
-  <!-- EN: gun proj -->
   <WNA_LysisRifle_Proj.label>gun proj</WNA_LysisRifle_Proj.label>
   
   <!-- EN: neutron rifle -->
@@ -129,8 +109,6 @@
   <WNA_NeutronRifle.tools.barrel.label>枪管</WNA_NeutronRifle.tools.barrel.label>
   <!-- EN: neutron rifle -->
   <WNA_NeutronRifle.verbs.VerbType_Laser.label>TODO</WNA_NeutronRifle.verbs.VerbType_Laser.label>
-  
-  <!-- EN: gun proj -->
   <WNA_NeutronRifle_Proj.label>gun proj</WNA_NeutronRifle_Proj.label>
   
   <!-- EN: permafrost rifle -->
@@ -141,8 +119,6 @@
   <WNA_Permafrost.tools.barrel.label>枪管</WNA_Permafrost.tools.barrel.label>
   <!-- EN: permafrost rifle -->
   <WNA_Permafrost.verbs.VerbType_Laser.label>TODO</WNA_Permafrost.verbs.VerbType_Laser.label>
-  
-  <!-- EN: gun proj -->
   <WNA_Permafrost_Proj.label>gun proj</WNA_Permafrost_Proj.label>
   
   <!-- EN: whelingnorther saber -->
@@ -165,8 +141,6 @@
   <WNA_SunsetArtillery.tools.rapier.label>刺刀</WNA_SunsetArtillery.tools.rapier.label>
   <!-- EN: "sunset" sniper artillery mode -->
   <WNA_SunsetArtillery.verbs.Verb_Shoot.label>TODO</WNA_SunsetArtillery.verbs.Verb_Shoot.label>
-  
-  <!-- EN: gun proj -->
   <WNA_SunsetArtillery_Proj.label>gun proj</WNA_SunsetArtillery_Proj.label>
   
   <!-- EN: "sunset" sniper rifle -->
@@ -177,8 +151,6 @@
   <WNA_SunsetSniper.tools.rapier.label>刺刀</WNA_SunsetSniper.tools.rapier.label>
   <!-- EN: "sunset" sniper rifle -->
   <WNA_SunsetSniper.verbs.Verb_Shoot.label>TODO</WNA_SunsetSniper.verbs.Verb_Shoot.label>
-  
-  <!-- EN: gun proj -->
   <WNA_SunsetSniper_Proj.label>gun proj</WNA_SunsetSniper_Proj.label>
   
   <!-- EN: spike trap launcher -->
@@ -189,9 +161,14 @@
   <WNA_TrapLauncher.tools.barrel.label>炮管</WNA_TrapLauncher.tools.barrel.label>
   <!-- EN: spike trap launcher -->
   <WNA_TrapLauncher.verbs.Verb_Shoot.label>TODO</WNA_TrapLauncher.verbs.Verb_Shoot.label>
-  
-  <!-- EN: gun proj -->
   <WNA_TrapLauncher_Proj.label>gun proj</WNA_TrapLauncher_Proj.label>
+  
+  <WNA_PsychicLance.label>“摄魂师”心灵长枪</WNA_PsychicLance.label>
+  <WNA_PsychicLance.description>一件以经过妥善保存的有机大脑为驱动的灵能装置。该武器可以利用捕获的大脑产生强大的心灵脉冲，压倒受害者脆弱的意志，使其屈服于武器持有者。</WNA_PsychicLance.description>
+  <WNA_PsychicLance.tools.rapier.label>枪管</WNA_PsychicLance.tools.rapier.label>
+  <WNA_PsychicLance.verbs.Verb_Shoot.label>TODO</WNA_PsychicLance.verbs.Verb_Shoot.label>
+  
+  <WNA_PsychicLance.label>psychic proj</WNA_PsychicLance.label>
   
   <!-- EN: whelingnorther rite lance -->
   <WNA_Weapon_RiteLance.label>威灵诺德仪式枪</WNA_Weapon_RiteLance.label>

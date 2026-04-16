@@ -11,6 +11,11 @@
   <!-- EN: Perform first aids with multiple professional medical devices. No medicine is needed. -->
   <WNA_Coagulate.description>运用多种专业医疗设备实施急救。不需要额外的医药。</WNA_Coagulate.description>
   
+  <!-- EN: mind control -->
+  <WNA_MindControl.label>心灵控制</WNA_MindControl.label>
+  <!-- EN: The caster use their mind to overwhelm the victim's fragile will, the victim will bend to the caster and obey their commands. If one is <color=#00FF00>unshakable</color>, then he might be able to resist the control. -->
+  <WNA_MindControl.description>用精神意志压倒受害者脆弱的心智，受害者会屈服于施法者并服从其命令。如果一个人拥有&lt;color=#00FF00&gt;不可撼动&lt;/color&gt;的意志，或许能抵抗这种控制。</WNA_MindControl.description>
+  
   <!-- EN: long jump -->
   <WNA_SaboteurJump.label>长跃</WNA_SaboteurJump.label>
   <!-- EN: Make long-distance jumps without using any other equipments. -->

@@ -29,7 +29,7 @@
             <speed>500</speed>
         </skyfaller>
         <modExtensions>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <ignoreRoof>true</ignoreRoof>
             </li>
         </modExtensions>
@@ -85,7 +85,7 @@
             </angleCurve>
         </skyfaller>
         <modExtensions>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <ignoreRoof>true</ignoreRoof>
             </li>
         </modExtensions>
@@ -149,7 +149,7 @@
     <ThingDef>
         <defName>WNA_LaserBeam</defName>
         <label>laser beam</label>
-        <thingClass>WNA.ThingClass.DummyLaser</thingClass>
+        <thingClass>WNA.WNAThingClass.DummyLaser</thingClass>
         <graphicData>
             <texPath>inv</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -171,8 +171,8 @@
         <graphicData>
             <graphicClass>Graphic_FleckSplash</graphicClass>
             <texPath>Things/Mote/WaterRipple</texPath>
-            <shaderType>Transparent</shaderType>
-            <color>(155,0,0,200)</color>
+            <shaderType>MoteGlow</shaderType>
+            <color>(155,0,0,255)</color>
             <drawSize>4</drawSize>
         </graphicData>
         <comps>
@@ -180,7 +180,7 @@
                 <delayTicks>500</delayTicks>
                 <destroyMode>Vanish</destroyMode>
             </li>
-            <li Class="WNA.ThingCompProp.PropAOEDamage">
+            <li Class="WNA.WNAThingCompProp.PropAOEDamage">
                 <damageDef>WNA_IronKill</damageDef>
                 <damage>Infinity</damage>
                 <ap>Infinity</ap>
@@ -191,7 +191,7 @@
             </li>
         </comps>
         <modExtensions>
-            <li Class="WNA.DMExtension.TechnoConfig">
+            <li Class="WNA.WNAModExtension.TechnoConfig">
                 <immuneToIronKill>true</immuneToIronKill>
             </li>
         </modExtensions>

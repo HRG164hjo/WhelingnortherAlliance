@@ -52,7 +52,7 @@
 			<baseHungerRate>1</baseHungerRate>	
 		</race>
         <comps>
-            <li Class="WNA.ThingCompProp.PropAOEDamage">
+            <li Class="WNA.WNAThingCompProp.PropAOEDamage">
                 <damageDef>Bite</damageDef>
                 <damage>2000</damage>
                 <ap>Infinity</ap>

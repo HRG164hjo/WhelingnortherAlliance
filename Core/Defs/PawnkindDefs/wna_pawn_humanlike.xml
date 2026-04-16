@@ -128,6 +128,9 @@
         <forcedTraits>
             <li>Nimble</li>
         </forcedTraits>
+        <apparelDisallowTags>
+            <li>WNA_Tag_Radiation</li>
+        </apparelDisallowTags>
     </PawnKindDef>
 
     <PawnKindDef ParentName="WNA_PawnsHuman">
@@ -195,19 +198,25 @@
         <label>stratagem commando</label>
         <combatPower>70</combatPower>
         <weaponTags>
-            <li>Tag_WNACivilian</li>
+            <li>Tag_WNAStratagem</li>
         </weaponTags>
         <apparelRequired>
 			<li>WNA_StdMiliSuit</li>
 			<li>WNA_AdvFlakJacket</li>
 			<li>WNA_AdvFlakHead</li>
+			<li>WNA_AmmoLoader</li>
+			<li>WNA_ShieldPack</li>
         </apparelRequired>
         <forcedTraits>
             <li>Psychopath</li>
         </forcedTraits>
         <abilities>
+            <li>WNA_MindControl</li>
             <li>WNA_PsylinkDeprivation</li>
         </abilities>
+        <apparelDisallowTags>
+            <li>WNA_Tag_Radiation</li>
+        </apparelDisallowTags>
     </PawnKindDef>
     
     <PawnKindDef ParentName="WNA_PawnsHuman">
@@ -221,10 +230,15 @@
 			<li>WNA_StdMiliSuit</li>
 			<li>WNA_AdvFlakJacket</li>
 			<li>WNA_AdvFlakHead</li>
+			<li>WNA_AmmoLoader</li>
+			<li>WNA_ChronoPack</li>
         </apparelRequired>
         <forcedTraits>
             <li>Psychopath</li>
         </forcedTraits>
+        <apparelDisallowTags>
+            <li>WNA_Tag_Radiation</li>
+        </apparelDisallowTags>
     </PawnKindDef>
 
     <!-- Whelingnorthan Pawns -->
@@ -270,6 +284,7 @@
             <li>WNA_Invisibility</li>
             <li>WNA_AvadaKedavra</li>
             <li>WNA_PsylinkDeprivation</li>
+            <li>WNA_MindControlPlus</li>
         </abilities>
         <apparelDisallowTags>
             <li>WNA_Tag_Radiation</li>
@@ -290,6 +305,7 @@
             <li>WNA_Invisibility</li>
             <li>WNA_AvadaKedavra</li>
             <li>WNA_PsylinkDeprivation</li>
+            <li>WNA_MindControlPlus</li>
         </abilities>
     </PawnKindDef>
 </Defs>

@@ -827,6 +827,7 @@
 		<recipeUsers>
 			<li>WNA_RiteSpot_Cutter</li>
 		</recipeUsers>
+        <allowMixingIngredients>false</allowMixingIngredients>
 		<modExtensions>
 			<li Class="RimBees.OutputMultiplierRecipe">
 				<multiplier>50</multiplier>

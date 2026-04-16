@@ -12,6 +12,7 @@
         <iconPath>karma</iconPath>
         <cooldownTicksRange>0</cooldownTicksRange>
         <aiCanUse>true</aiCanUse>
+        <hostile>true</hostile>
         <ai_IsOffensive>true</ai_IsOffensive>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
@@ -27,7 +28,7 @@
             </targetParams>
         </verbProperties>
         <comps Inherit="false">
-            <li Class="WNA.AbilityCompProp.PropAbilityAscension"/>
+            <li Class="WNA.WNAAbilityCompProp.PropAbilityAscension"/>
             <li Class="CompProperties_AbilityGiveHediff">
                 <compClass>CompAbilityEffect_GiveHediff</compClass>
                 <hediffDef>WNA_Corrosion</hediffDef>
@@ -80,7 +81,7 @@
         <cooldownTicksRange>0</cooldownTicksRange>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
-            <range>99.9</range>
+            <range>199.9</range>
             <warmupTime>0</warmupTime>
             <soundCast>Resurrect_Resolve</soundCast>
             <requireLineOfSight>false</requireLineOfSight>
@@ -92,7 +93,7 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="WNA.AbilityCompProp.PropAbilityResurrect"/>
+            <li Class="WNA.WNAAbilityCompProp.PropAbilityResurrect"/>
         </comps>
     </AbilityDef>
 
@@ -171,7 +172,7 @@
         </statBases>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
-            <range>99.9</range>
+            <range>19.9</range>
             <warmupTime>0</warmupTime>
             <soundCast/>
             <requireLineOfSight>false</requireLineOfSight>
@@ -192,6 +193,7 @@
         <label>psiblast</label>
         <description>Cast an offensive thought directly to the target and detonate it. Benefit from WNA's unique techniques, this explosion is of great power, hardly anything in physical world can resist its attack.</description>
         <iconPath>karma</iconPath>
+        <hostile>true</hostile>
         <cooldownTicksRange>0</cooldownTicksRange>
         <aiCanUse>true</aiCanUse>
         <verbProperties>
@@ -218,11 +220,12 @@
         <label>psylink deprivation</label>
         <description>cast dark power to the victim to rob the victim of their psychic ability. victims with psylinks will lose their psylink and experience severe psychic trauma, and those without psylinks will experience severe psychic shock and become incapacitied for several days.</description>
         <iconPath>karma</iconPath>
+        <hostile>true</hostile>
         <cooldownTicksRange>0</cooldownTicksRange>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
             <warmupTime>0</warmupTime>
-            <range>99.9</range>
+            <range>199.9</range>
             <requireLineOfSight>false</requireLineOfSight>
             <targetParams>
                 <canTargetLocations>false</canTargetLocations>
@@ -231,7 +234,7 @@
             </targetParams>
         </verbProperties>
         <comps>
-            <li Class="WNA.AbilityCompProp.PropHediffDeprivation">
+            <li Class="WNA.WNAAbilityCompProp.PropHediffDeprivation">
                 <hediffToRemove>PsychicAmplifier</hediffToRemove>
                 <hediffTrauma>WNA_PsychicTrauma</hediffTrauma>
                 <hediffFallBack>WNA_Disabled</hediffFallBack>
@@ -239,6 +242,39 @@
             <li Class="CompProperties_AbilityFleckOnTarget">
                 <fleckDef>PsychicApplyNeuroquake</fleckDef>
                 <sound>Psycast_Neuroquake_Effect</sound>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="WNA_AbilityBase">
+        <defName>WNA_MindControlPlus</defName>
+        <label>mind dominate</label>
+        <description>The caster use their mind to overwhelm the victim's fragile will, reshape their mind and take their ego forever. If one is &lt;color=#00FF00&gt;unshakable&lt;/color&gt;, then he might be able to resist the control.</description>
+        <iconPath>karma</iconPath>
+        <cooldownTicksRange>0</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <hostile>true</hostile>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0</warmupTime>
+            <range>199.9</range>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetBuildings>true</canTargetBuildings>
+                <canTargetSelf>false</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="WNA.WNAAbilityCompProp.PropMindControl">
+                <permanent>true</permanent>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDefs>
+                    <li>PsycastPsychicEffect</li>
+                </fleckDefs>
+                <scale>1.25</scale>
+                <sound>PsychicInsanityLanceCast</sound>
+                <preCastTicks>5</preCastTicks>
             </li>
         </comps>
     </AbilityDef>

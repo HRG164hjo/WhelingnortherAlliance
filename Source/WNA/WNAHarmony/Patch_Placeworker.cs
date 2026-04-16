@@ -17,7 +17,7 @@ namespace WNA.WNAHarmony
             {
                 typeof(Verb_Shoot),
                 typeof(Verb_Spray),
-                typeof(WNAMiscs.VerbType_Burst), 
+                typeof(WNAVerbType.VerbType_Burst), 
             };
             public static bool Prefix(BuildableDef checkingDef, IntVec3 loc, ref AcceptanceReport __result)
             {
