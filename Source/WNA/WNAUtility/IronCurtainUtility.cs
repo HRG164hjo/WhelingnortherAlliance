@@ -8,19 +8,19 @@ namespace WNA.WNAUtility
     {
         public static void IronGive(Thing t, int durationTicks)
         {
-            Iron_GameComp.Instance?.IronGive(t, durationTicks);
+            GameComp_Iron.Instance?.IronGive(t, durationTicks);
         }
         public static void IronRemove(Thing t)
         {
-            Iron_GameComp.Instance?.IronRemove(t);
+            GameComp_Iron.Instance?.IronRemove(t);
         }
         public static bool IsIroned(Thing t)
         {
-            return Iron_GameComp.Instance?.IsIroned(t) ?? false;
+            return GameComp_Iron.Instance?.IsIroned(t) ?? false;
         }
         public static void IronKill(Map map, IntVec3 center, float radius)
         {
-            Iron_GameComp.Instance?.IronKill(map, center, radius);
+            GameComp_Iron.Instance?.IronKill(map, center, radius);
         }
     }
     [HarmonyPatch(typeof(Thing), "TakeDamage")]

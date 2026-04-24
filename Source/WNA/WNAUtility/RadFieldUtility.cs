@@ -33,7 +33,7 @@ namespace WNA.WNAUtility
     {
         public static void RadSpread(IntVec3 c, Map map, RadSpreadConfig config, float finalRadius, int finalRadLevel)
         {
-            RadField_MapComp radComp = map.GetComponent<RadField_MapComp>();
+            MapComp_RadField radComp = map.GetComponent<MapComp_RadField>();
             if (radComp == null) return;
             foreach (IntVec3 cell in GenRadial.RadialCellsAround(c, finalRadius, true))
             {

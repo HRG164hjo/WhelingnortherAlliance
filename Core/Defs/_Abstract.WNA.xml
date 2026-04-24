@@ -177,7 +177,7 @@
 			<li>Cleaning</li>
 		</requiredWorkTags>
     </PawnKindDef>
-    
+
 
     <!-- ======== -->
     <!-- ======== -->
@@ -508,8 +508,8 @@
             <li>WNA_Category_Buildings</li>
         </thingCategories>
 	</ThingDef>
-        
-    <ThingDef Abstract="True" ParentName="WNA_StructureBase" Name="WNA_TurretBaseBase"> 
+
+    <ThingDef Abstract="True" ParentName="WNA_StructureBase" Name="WNA_TurretBaseBase">
         <thingClass>Building_TurretGun</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <drawHighlight>true</drawHighlight>
@@ -597,7 +597,7 @@
             </li>
         </modExtensions>
     </ThingDef>
-    
+
     <ThingDef Abstract="True" Name="WNA_ItemsBase">
         <thingClass>ThingWithComps</thingClass>
         <category>Item</category>
@@ -647,7 +647,7 @@
             <li>MortarShells</li>
         </thingCategories>
     </ThingDef>
-    
+
     <ThingDef Abstract="True" Name="WNA_ApparelBase">
         <thingClass>Apparel</thingClass>
         <category>Item</category>
@@ -766,9 +766,9 @@
             <SellPriceFactor>1</SellPriceFactor>
         </statBases>
         <comps>
-            <li Class="CompProperties_Forbiddable"/>            
-            <li><compClass>CompEquippable</compClass></li>
+            <li Class="CompProperties_Forbiddable"/>
             <li><compClass>CompQuality</compClass></li>
+            <li><compClass>CompEquippable</compClass></li>
         </comps>
         <generateAllowChance>1</generateAllowChance>
         <thingCategories>
@@ -808,7 +808,7 @@
             <AccuracyLong>10</AccuracyLong>
         </statBases>
     </ThingDef>
-    
+
     <ThingDef Abstract="true" Name="WNA_EtherealThingBase">
         <label>placeholder</label>
         <thingClass>ThingWithComps</thingClass>
@@ -829,7 +829,7 @@
             <isEdifice>false</isEdifice>
 		</building>
     </ThingDef>
-    
+
 	<ThingDef Abstract="true" ParentName="BasePawn" Name="WNA_AnimalBase">
 		<thingCategories>
 		  	<li>Animals</li>
@@ -1269,5 +1269,10 @@
                 <price>VeryCheap</price>
             </li>
         </stockGenerators>
+        <modExtensions>
+            <li Class="WNA.WNAModExtension.PassingShipNamer">
+                <namer>WNA_NamerPassingShip</namer>
+            </li>
+        </modExtensions>
     </TraderKindDef>
 </Defs>

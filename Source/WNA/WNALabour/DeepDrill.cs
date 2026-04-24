@@ -39,7 +39,7 @@ namespace WNA.WNALabour
     {
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            return pawn.Reserve(job.targetA, job, 1, -1, null, errorOnFailed);
+            return pawn.Reserve(job.targetA, job);
         }
         protected override IEnumerable<Toil> MakeNewToils()
         {

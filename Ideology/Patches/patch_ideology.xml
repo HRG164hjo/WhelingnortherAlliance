@@ -1,38 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    
-    <Operation Class="PatchOperationAdd">
-	    <xpath>Defs/FactionDef[defName = "WNA_FactionWNA"]</xpath>
-        <value>
-            <deityPresets>
-                <li>
-                    <nameType>
-                        <name/>
-                        <type/>
-                    </nameType>
-                    <gender>None</gender>
-                    <iconPath>inv</iconPath>
-                </li>
-            </deityPresets>
-            <styles/>
-            <forcedMemes>
-                <li>Structure_WNA_Ideo</li>
-                <li>Loyalist</li>
-                <li>Meme_WNA_Ideo</li>
-            </forcedMemes>
-            <requiredPreceptsOnly>true</requiredPreceptsOnly>
-            <disallowedPrecepts>
-                <li>AnimalVenerated</li>
-                <li>ApparelDesired_Strong_Subordinate</li>
-                <li>ApparelDesired_Soft_Subordinate</li>
-                <li>IdeoRelic</li>
-                <li>IdeoBuilding</li>
-                <li>NobleDespisedWeapons</li>
-                <li MayRequire="Ludeon.Rimworld.Biotech">PreferredXenotype</li>
-            </disallowedPrecepts>
-        </value>
-    </Operation>
-
     <Operation Class="PatchOperationAdd">
 	    <xpath>Defs/FactionDef[defName != "WNA_FactionWNA"]/disallowedMemes</xpath>
         <value>

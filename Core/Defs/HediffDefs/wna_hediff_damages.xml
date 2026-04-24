@@ -557,12 +557,33 @@
         <scenarioCanAdd>false</scenarioCanAdd>
         <duplicationAllowed>false</duplicationAllowed>
         <isBad>false</isBad>
+        <aptitudes>
+            <Social>-9999</Social>
+        </aptitudes>
         <stages>
             <li>
                 <socialFightChanceFactor>0</socialFightChanceFactor>
                 <blocksMentalBreaks>true</blocksMentalBreaks>
                 <blocksInspirations>true</blocksInspirations>
                 <pctAllThoughtNullification>1</pctAllThoughtNullification>
+                <opinionOfOthersFactor>0</opinionOfOthersFactor>
+                <painFactor>0</painFactor>
+                <capMods>
+                    <li>
+                        <capacity>Talking</capacity>
+                        <postFactor>0</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Talking</capacity>
+                        <setMax>0</setMax>
+                    </li>
+                </capMods>
+                <disablesNeeds>
+                    <li>Beauty</li>
+                    <li>Outdoors</li>
+                    <li>Joy</li>
+                </disablesNeeds>
+                <disabledWorkTags>Social</disabledWorkTags>
             </li>
         </stages>
 		<renderNodeProperties>

@@ -15,13 +15,13 @@ namespace WNA.WNAUtility
             Scribe_Values.Look(ref duration, "duration", 2400);
         }
     }
-    public class Iron_GameComp : GameComponent
+    public class GameComp_Iron : GameComponent
     {
         private Dictionary<Thing, IronData> activeIron = new Dictionary<Thing, IronData>();
         private const int interval = 60;
         private List<Thing> activeIronKeysWorkingList;
         private List<IronData> activeIronValuesWorkingList;
-        public Iron_GameComp(Game game) : base() { }
+        public GameComp_Iron(Game game) : base() { }
         public override void GameComponentTick()
         {
             if (Find.TickManager.TicksGame % interval != 0) return;
@@ -109,6 +109,6 @@ namespace WNA.WNAUtility
                     activeIron.Remove(toRemove[i]);
             }
         }
-        public static Iron_GameComp Instance => Current.Game?.GetComponent<Iron_GameComp>();
+        public static GameComp_Iron Instance => Current.Game?.GetComponent<GameComp_Iron>();
     }
 }

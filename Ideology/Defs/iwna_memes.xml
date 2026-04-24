@@ -10,6 +10,14 @@
       <impact>0</impact>
       <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
       <deityCount>0</deityCount>
+      <descriptionMaker>
+         <patterns>
+            <li>
+               <def>IdeologicalFounder</def>
+               <weight>1</weight>
+            </li>
+         </patterns>
+      </descriptionMaker>
       <requireOne>
          <li>
             <li>Apostasy_Abhorrent</li>
@@ -121,6 +129,14 @@
       <groupDef>Misc</groupDef>
       <impact>1</impact>
       <preventApparelRequirements>true</preventApparelRequirements>
+      <descriptionMaker>
+         <patterns>
+            <li>
+               <def>IdeologicalFounder</def>
+               <weight>1</weight>
+            </li>
+         </patterns>
+      </descriptionMaker>
       <requireOne>
          <li>
             <li>WNA_P_Proselyte</li>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNAMod>Whelingnorther Alliance</WNAMod>
+  <WNAMod_enableIdeoConflictHostility>Enable ideology conflict and hostility. When colony ideo contains some certain meme or precept, Whelingnorther Alliance will turn hostile. \n\n(Disabled by default)</WNAMod_enableIdeoConflictHostility>
+  <WNAMod_enablePermaconstDeathAid>Enable Permaconst reinforcement: When a pawn enthralled by Permaconst Command dies, there is about 7% chance that they will immediately summon a "Hunting Cluster" raid. \n\n(Disabled by default)</WNAMod_enablePermaconstDeathAid>
+  <WNA_InitialSpawn_Label>Revealed to sunlight</WNA_InitialSpawn_Label>
+  <WNA_InitialSpawn_Desc>Whelingnorther Alliance settlements appeared.</WNA_InitialSpawn_Desc>
+  <WNA_Refill_Label>Return from dust</WNA_Refill_Label>
+  <WNA_Refill_Desc>Whelingnorther Alliance has rebuilt their lost settlements and got prepared for further actions.</WNA_Refill_Desc>
+
+</LanguageData>

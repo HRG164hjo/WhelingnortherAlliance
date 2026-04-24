@@ -13,11 +13,11 @@
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
         <configurationListOrderPriority>1</configurationListOrderPriority>
         <settlementGenerationWeight>1</settlementGenerationWeight>
-        <requiredCountAtGameStart>1</requiredCountAtGameStart>
-        <maxCountAtGameStart>1</maxCountAtGameStart>
+        <requiredCountAtGameStart>0</requiredCountAtGameStart>
+        <canMakeRandomly>false</canMakeRandomly>
+        <hidden>true</hidden>
         <displayInFactionSelection>false</displayInFactionSelection>
         <canGenerateQuestSites>false</canGenerateQuestSites>
-        <canMakeRandomly>false</canMakeRandomly>
         <canSiege>false</canSiege>
         <canStageAttacks>false</canStageAttacks>
         <leaderTitle>archonpriest</leaderTitle>
@@ -29,12 +29,15 @@
         <canUseAvoidGrid>false</canUseAvoidGrid>
         <canRequestTraders>false</canRequestTraders>
         <canRequestOrbitalTrader>true</canRequestOrbitalTrader>
-        <layerBlacklist/>
-        <arrivalLayerBlacklist/>
+        <layerBlacklist IsNull="true"/>
+        <arrivalLayerBlacklist IsNull="true"/>
+        <arrivalLayerWhitelist>
+            <li>Surface</li>
+            <li>Orbit</li>
+        </arrivalLayerWhitelist>
         <colorSpectrum><li>(0,0,0)</li></colorSpectrum>
         <permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
         <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
-        <hidden>false</hidden>
         <allowedCultures>
             <li>WNA_WhelingnortherCulture</li>
         </allowedCultures>
@@ -165,21 +168,89 @@
         <hiddenIdeo MayRequire="Ludeon.Rimworld.Ideology">true</hiddenIdeo>
         <ideoName MayRequire="Ludeon.Rimworld.Ideology">Whelingnorther Holyorder</ideoName>
         <ideoDescription MayRequire="Ludeon.Rimworld.Ideology">When the ancient whelingnorthans faced annihilation, it was their effort and sacrifice that led to the greatness and glory of Whelingnorther Empire; when the ancestors of us rise from the humble, it was their effort and sacrifices that led to we Whelingnorther Alliance. Any great work requires sacrifices to forge, without great destruction can there be no great rebirth, without great devotions  will we not achieve eternity, salvation and immortality. We descendants will follow the path led by those who came before us; we will see our duty and accept our manifest destiny; we shall alter and determine the past, the present and the future. Every corner of existance shall bath in the glory of Whelignorther, they need not understand, only shall they obey.</ideoDescription>
+        <deityPresets MayRequire="Ludeon.Rimworld.Ideology">
+            <li>
+                <nameType>
+                    <name/>
+                    <type/>
+                </nameType>
+                <gender>None</gender>
+                <iconPath>inv</iconPath>
+            </li>
+        </deityPresets>
+        <styles/>
+        <forcedMemes MayRequire="Ludeon.Rimworld.Ideology">
+            <li>Structure_WNA_Ideo</li>
+            <li>Loyalist</li>
+            <li>Meme_WNA_Ideo</li>
+        </forcedMemes>
+        <requiredPreceptsOnly>true</requiredPreceptsOnly>
+        <disallowedPrecepts MayRequire="Ludeon.Rimworld.Ideology">
+            <li MayRequire="Ludeon.Rimworld.Ideology">AnimalVenerated</li>
+            <li MayRequire="Ludeon.Rimworld.Ideology">ApparelDesired_Strong_Subordinate</li>
+            <li MayRequire="Ludeon.Rimworld.Ideology">ApparelDesired_Soft_Subordinate</li>
+            <li MayRequire="Ludeon.Rimworld.Ideology">IdeoRelic</li>
+            <li MayRequire="Ludeon.Rimworld.Ideology">IdeoBuilding</li>
+            <li MayRequire="Ludeon.Rimworld.Ideology">NobleDespisedWeapons</li>
+            <li MayRequire="Ludeon.Rimworld.Biotech">PreferredXenotype</li>
+        </disallowedPrecepts>
         <modExtensions>
-            <!--<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="KCSG.CustomGenOption">
-                <canSpawnSettlements>true</canSpawnSettlements>
-                <preventBridgeable>true</preventBridgeable>
-                <tryFindFreeArea>false</tryFindFreeArea>
-                <chooseFromlayouts>
-                    <li>WNASettlement_A</li>
-                    <li>WNASettlement_B</li>
-                    <li>WNASettlement_C</li>
-                    <li>WNASettlement_D</li>
-                    <li>WNASettlement_E</li>
-                    <li>WNASettlement_F</li>
-                    <li>WNASettlement_G</li>
-                </chooseFromlayouts>
-            </li>-->
+            <li MayRequire="Ludeon.Rimworld.Ideology" Class="WNA.WNAModExtension.IncompatibleIdeos">
+                <incompMemes>
+                    <li>FemaleSupremacy</li>
+                    <li>MaleSupremacy</li>
+                    <li>Guilty</li>
+                    <li>AnimalPersonhood</li>
+                    <li>FleshPurity</li>
+                    <li>HighLife</li>
+                    <li>Nudism</li>
+                    <li>PainIsVirtue</li>
+                    <li>Raider</li>
+                    <li>HumanPrimacy</li>
+                    <li>NaturePrimacy</li>
+                </incompMemes>
+                <incompPrecepts>
+                    <li>NobleDespisedWeapons</li>
+                    <li>SpouseCount_Female_MaxFour</li>
+                    <li>SpouseCount_Female_MaxThree</li>
+                    <li>SpouseCount_Female_MaxTwo</li>
+                    <li>SpouseCount_Female_Unlimited</li>
+                    <li>SpouseCount_Male_MaxFour</li>
+                    <li>SpouseCount_Male_MaxThree</li>
+                    <li>SpouseCount_Male_MaxTwo</li>
+                    <li>SpouseCount_Male_Unlimited</li>
+                    <li>Raiding_Required</li>
+                    <li>Raiding_Respected</li>
+                    <li>Execution_Abhorrent</li>
+                    <li>Execution_Horrible</li>
+                    <li>Execution_HorribleIfInnocent</li>
+                    <li>Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+                    <li>Nudity_Female_Mandatory</li>
+                    <li>Nudity_Female_NoRules</li>
+                    <li>Nudity_Female_UncoveredGroinDisapproved</li>
+                    <li>Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+                    <li>Nudity_Male_Mandatory</li>
+                    <li>Nudity_Male_NoRules</li>
+                    <li>Nudity_Male_UncoveredGroinDisapproved</li>
+                    <li>Lovin_FreeApproved</li>
+                    <li>Lovin_SpouseOnly_Mild</li>
+                    <li>Lovin_SpouseOnly_Moderate</li>
+                    <li>Lovin_Horrible</li>
+                    <li>KillingInnocentAnimals_Abhorrent</li>
+                    <li>KillingInnocentAnimals_Disapproved</li>
+                    <li>KillingInnocentAnimals_Horrible</li>
+                    <li>IdeoDiversity_Exalted</li>
+                    <li>IdeoDiversity_Respected</li>
+                    <li>DrugUse_Essential</li>
+                    <li>BodyMod_Abhorrent</li>
+                    <li>BodyMod_Disapproved</li>
+                    <li>AutonomousWeapons_Disapproved</li>
+                    <li>AutonomousWeapons_Horrible</li>
+                    <li>AutonomousWeapons_Prohibited</li>
+                    <li>AnimalVenerated</li>
+                    <li MayRequire="Ludeon.Rimworld.Biotech">PreferredXenotype</li>
+                </incompPrecepts>
+            </li>
             <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Factions.FactionDefExtension">
                 <neverConnectToRoads>true</neverConnectToRoads>
                 <excludeFromQuests>true</excludeFromQuests>
@@ -386,6 +457,35 @@
                 <li>prefix->Names/wna_name</li>
                 <li>postfx->Names/wna_family</li>
             </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>WNA_NamerPassingShip</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[pfix] [Digit][Digit][Digit]</li>
+                <li>r_name->[pfix] [Digit][Digit][Digit][Digit]</li>
+                <li>r_name->[Digit][Digit][Digit] [pfix]</li>
+                <li>r_name->[Digit][Digit][Digit][Digit] [pfix]</li>
+                <!---->
+                <li>pfix->[pre] [post]</li>
+                <!---->
+                <li>pre->Transport</li>
+                <li>pre->Storage</li>
+                <li>pre->Logistics</li>
+                <li>pre->Task</li>
+                <li>pre->Allocate</li>
+                <li>pre->Service</li>
+                <li>pre->Delivery</li>
+                <li>post->Unit</li>
+                <li>post->Port</li>
+                <li>post->Router</li>
+                <li>post->Link</li>
+                <li>post->Repeater</li>
+                <li>post->Terminal</li>
+                <li>post->Node</li>
+            </rulesStrings>
         </rulePack>
     </RulePackDef>
     

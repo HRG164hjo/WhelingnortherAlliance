@@ -1,87 +1,86 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
-using UnityEngine;
 using Verse;
-using Verse.Sound;
 
 namespace WNA.WNAThingCompProp
 {
     public class PropSwtichMode : CompProperties
     {
-        public string modeIIdefname;
+        public ThingDef targetWeaponDef;
+        public bool mustBeDrafted = false;
         public PropSwtichMode()
         {
             compClass = typeof(CompSwtichMode);
         }
         public override IEnumerable<string> ConfigErrors(ThingDef parentDef)
         {
-            foreach (string error in base.ConfigErrors(parentDef))
-            {
-                yield return error;
-            }
-            if (modeIIdefname.NullOrEmpty())
-                yield return $"[WNA.SwitchMode] **modeIIdefname** UNDEFINED!!!";
+            foreach (var err in base.ConfigErrors(parentDef))
+                yield return err;
+            if (targetWeaponDef == null)
+                yield return $"{parentDef.defName}: targetWeaponDef is null.";
+            if (targetWeaponDef != null && !targetWeaponDef.IsWeapon)
+                yield return $"{parentDef.defName}: targetWeaponDef({targetWeaponDef.defName}) is not a weapon.";
         }
     }
-    public class CompSwtichMode : ThingComp
+    [StaticConstructorOnStartup]
+    public class CompSwtichMode : CompEquippable
     {
         public PropSwtichMode Props => (PropSwtichMode)props;
-        private ThingDef targetWeaponDef;
-        public override void PostPostMake()
+        public override IEnumerable<Gizmo> CompGetEquippedGizmosExtra()
         {
-            base.PostPostMake();
-            targetWeaponDef = DefDatabase<ThingDef>.GetNamed(Props.modeIIdefname, false);
-            if (targetWeaponDef == null)
+            foreach (var g in base.CompGetEquippedGizmosExtra())
+                yield return g;
+            Pawn holder = Holder;
+            if (holder == null || holder.Faction != Faction.OfPlayer)
+                yield break;
+            if (Props.targetWeaponDef == null || !Props.targetWeaponDef.IsWeapon)
+                yield break;
+            if (Props.mustBeDrafted && (holder.Drafted == false))
+                yield break;
+            var cmd = new Command_Action
             {
-                Log.Error($"[WNA Mod] CompSwtichMode: 武器 '{parent.def.defName}' 找不到目标 DefName '{Props.modeIIdefname}'。请检查 XML 配置。");
-            }
+                defaultLabel = "切换模式",
+                defaultDesc = $"切换为：{Props.targetWeaponDef.LabelCap}",
+                icon = Props.targetWeaponDef.uiIcon,
+                action = TrySwitch
+            };
+            if (Props.mustBeDrafted && !holder.Drafted)
+                cmd.Disable("需要征召状态");
+            yield return cmd;
         }
-        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        private void TrySwitch()
         {
-            foreach (Gizmo gizmo in base.CompGetGizmosExtra())
-            {
-                yield return gizmo;
-            }
-            if (this.parent.ParentHolder is Pawn_EquipmentTracker tracker)
-            {
-                if (tracker.pawn.equipment.Primary == this.parent && tracker.pawn.Drafted)
-                {
-                    if (targetWeaponDef == null) yield break;
-                    yield return new Command_Action
-                    {
-                        defaultLabel = "WNA_SwitchMode_Label".Translate(),
-                        defaultDesc = "WNA_SwitchMode_Desc".Translate(),
-                        icon = ContentFinder<Texture2D>.Get("UI/Misc/BadTexture"),
-                        action = TryTransformWeapon
-                    };
-                }
-            }
-        }
-        private void TryTransformWeapon()
-        {
-            ThingWithComps currentWeapon = this.parent;
-            if (targetWeaponDef == null)
-            {
-                Log.ErrorOnce($"[WNA Mod] 武器 {currentWeapon.def.defName} 无法变形，目标 Def 丢失。", currentWeapon.thingIDNumber ^ 0x616);
+            Pawn holder = Holder;
+            if (holder == null || holder.equipment == null)
                 return;
-            }
-            if (currentWeapon.ParentHolder is Pawn_EquipmentTracker equipmentTracker && equipmentTracker.pawn.equipment.Primary == currentWeapon)
+            if (Props.mustBeDrafted && !holder.Drafted)
+                return;
+            ThingDef targetDef = Props.targetWeaponDef;
+            if (targetDef == null || !targetDef.IsWeapon)
+                return;
+            if (!(parent is ThingWithComps oldWeapon))
+                return;
+            ThingDef stuff = null;
+            if (targetDef.MadeFromStuff)
             {
-                Pawn pawn = equipmentTracker.pawn;
-                if (!pawn.equipment.TryDropEquipment(currentWeapon, out ThingWithComps droppedWeapon, pawn.Position, true))
-                {
-                    Log.Error($"[WNA Mod] 无法从 Pawn {pawn.LabelShort} 卸下武器 {currentWeapon.LabelShort}。");
-                    return;
-                }
-                currentWeapon.TryGetQuality(out QualityCategory quality);
-                droppedWeapon.Destroy();
-                if (!(ThingMaker.MakeThing(targetWeaponDef, currentWeapon.Stuff)
-                    is ThingWithComps newWeapon)) return;
-                newWeapon.compQuality?.SetQuality(QualityCategory.Normal, null);
-                pawn.equipment.MakeRoomFor(newWeapon);
-                pawn.equipment.AddEquipment(newWeapon);
-                newWeapon.def.soundInteract?.PlayOneShot(new TargetInfo(pawn.Position, pawn.Map, false));
+                if (oldWeapon.Stuff != null && oldWeapon.Stuff.stuffProps.CanMake(targetDef))
+                    stuff = oldWeapon.Stuff;
+                else
+                    stuff = GenStuff.DefaultStuffFor(targetDef);
             }
+            ThingWithComps newWeapon = (ThingWithComps)ThingMaker.MakeThing(targetDef, stuff);
+            CompQuality oldQ = oldWeapon.TryGetComp<CompQuality>();
+            CompQuality newQ = newWeapon.TryGetComp<CompQuality>();
+            if (newQ != null)
+            {
+                if (oldQ != null)
+                    newQ.SetQuality(oldQ.Quality, ArtGenerationContext.Colony); // 有 -> 有：继承
+                else
+                    newQ.SetQuality(QualityCategory.Normal, ArtGenerationContext.Colony); // 无 -> 有：Normal
+            }
+            holder.equipment.Remove(oldWeapon);
+            oldWeapon.Destroy(DestroyMode.Vanish);
+            holder.equipment.AddEquipment(newWeapon);
         }
     }
 }

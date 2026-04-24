@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Verse;
 using WNA.WNADefOf;
 
-namespace WNA.WNAMiscs
+namespace WNA.WNAUtility
 {
     public class WorldComponent_HediffRemover : WorldComponent
     {

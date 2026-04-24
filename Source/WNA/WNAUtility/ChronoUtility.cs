@@ -12,7 +12,7 @@ namespace WNA.WNAUtility
             TechnoConfig config = TechnoConfig.Get(thing.def);
             if (config != null && config.immuneToWarp == true)
                 return true;
-            if (thing.def.useHitPoints)
+            if (thing.def.destroyable == false)
                 return true;
             if (thing is Pawn pawn)
             {

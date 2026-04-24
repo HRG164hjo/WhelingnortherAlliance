@@ -4,6 +4,7 @@
         <defName>WNA_IdeoIcon</defName>
         <iconPath>factions/wna_alliance</iconPath>
         <memes>
+            <li>Structure_WNA_Ideo</li>
             <li>Meme_WNA_Ideo</li>
         </memes>
     </IdeoIconDef>

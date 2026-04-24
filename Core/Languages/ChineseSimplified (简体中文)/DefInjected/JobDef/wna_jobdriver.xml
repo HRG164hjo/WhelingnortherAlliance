@@ -10,4 +10,6 @@
   <!-- EN: activating TargetA. -->
   <WNA_Job_UseDeedOn.reportString>激活 TargetA</WNA_Job_UseDeedOn.reportString>
   
+  <WNA_Job_SacrificePawn.reportString>献祭 TargetA</WNA_Job_SacrificePawn.reportString>
+  
 </LanguageData>

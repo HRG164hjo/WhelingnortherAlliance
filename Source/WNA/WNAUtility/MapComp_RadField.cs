@@ -1,21 +1,19 @@
-﻿using RimWorld;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Verse;
-using WNA.WNAModExtension;
 using WNA.WNADefOf;
 
 namespace WNA.WNAUtility
 {
-    public class RadField_MapComp : MapComponent, ICellBoolGiver
+    public class MapComp_RadField : MapComponent, ICellBoolGiver
     {
         private List<int> radLevel;
         public readonly int radLevelMax = 5000;
         private readonly int radLevelDelay = 29;
         private readonly int radLevelDecay = 2;
         private readonly float radLevelFactor = 0.1f;
-        public RadField_MapComp(Map map) : base(map) { }
+        public MapComp_RadField(Map map) : base(map) { }
         private CellBoolDrawer drawerInt;
         public CellBoolDrawer Drawer
         {

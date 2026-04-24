@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNA_CompOrganicBasin_GetPawn>Select a sample</WNA_CompOrganicBasin_GetPawn>
+  <WNA_CompOrganicBasin_Clear>Clear template</WNA_CompOrganicBasin_Clear>
+  <WNA_CompOrganicBasin_NoWorker>No available worker found.</WNA_CompOrganicBasin_NoWorker>
+  <WNA_CompOrganicBasin_Empty>template empty</WNA_CompOrganicBasin_Empty>
+  <WNA_CompOrganicBasin_Contains>current template: {0}</WNA_CompOrganicBasin_Contains>
+  <WNA_CompOrganicBasin_HarvestIn>Produce in: {0}</WNA_CompOrganicBasin_HarvestIn>
+  <WNA_CompOrganicBasin_CurrentGrowth>Produce speed factor: {0}</WNA_CompOrganicBasin_CurrentGrowth>
+
+</LanguageData>

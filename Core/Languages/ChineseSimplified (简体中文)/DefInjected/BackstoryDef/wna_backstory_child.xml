@@ -85,4 +85,12 @@
   <!-- EN: uplifted -->
   <WNA_BC_UpliftedPlant.titleShort>受提升者</WNA_BC_UpliftedPlant.titleShort>
   
+  <WNA_BC_AnimalHater.description>[PAWN_nameDef]很小的时候，曾被一条狗追着咬过。[PAWN_possessive]的父母起初并不太在意，到他们意识到这不是玩笑时，[PAWN_nameDef]已经留下了抹不掉的童年阴影。这种阴影逐渐演变成对包括人类在内的所有动物的敌意。</WNA_BC_AnimalHater.description>
+  <WNA_BC_AnimalHater.title>讨厌动物的人</WNA_BC_AnimalHater.title>
+  <WNA_BC_AnimalHater.titleShort>讨厌动物的人</WNA_BC_AnimalHater.titleShort>
+  
+  <WNA_BC_FlowerSeeker.description>[PAWN_nameDef]很小的时候，有人告诉他说在很远的地方有一个鲜花盛开、飞花满天的地方。但当[PAWN_nameDef]深信不疑并试图找到这个地方时，却发现这只是个玩笑。但这对[PAWN_nameDef]来说却并非玩笑，[PAWN_objective]的一部分早已迷失在了那个从未存在过的花之天堂里。</WNA_BC_FlowerSeeker.description>
+  <WNA_BC_FlowerSeeker.title>找花的孩子</WNA_BC_FlowerSeeker.title>
+  <WNA_BC_FlowerSeeker.titleShort>找花的孩子</WNA_BC_FlowerSeeker.titleShort>
+  
 </LanguageData>

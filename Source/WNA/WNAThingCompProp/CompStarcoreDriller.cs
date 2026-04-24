@@ -18,6 +18,7 @@ namespace WNA.WNAThingCompProp
         public float yieldFactor = 10f;
         public int fallbackCountPerPortion = 1;
     }
+    [StaticConstructorOnStartup]
     public class CompStarcoreDriller : ThingComp
     {
         public PropStarcoreDriller Props => (PropStarcoreDriller)props;
@@ -28,6 +29,8 @@ namespace WNA.WNAThingCompProp
         private bool autoMode;
         private Effecter activeEffecter;
         private ThingDef selectedResource;
+        private static readonly Texture2D SwitchTex = ContentFinder<Texture2D>.Get("UI/Designators/ForbidOff");
+        private static readonly Texture2D WhatTex = ContentFinder<Texture2D>.Get("UI/Overlays/QuestionMark");
         public float ProgressToNextPortionPercent => portionProgress / Props.workPerPortion;
         public ThingDef SelectedResource => selectedResource;
         public override void PostSpawnSetup(bool respawningAfterLoad)
@@ -144,6 +147,7 @@ namespace WNA.WNAThingCompProp
             foreach (var g in base.CompGetGizmosExtra()) yield return g;
             yield return new Command_Toggle
             {
+                icon = SwitchTex,
                 defaultLabel = "WNA_CompStarcoreDriller_Mode".Translate(autoMode ? "WNA_Auto".Translate() : "WNA_Manual".Translate()),
                 defaultDesc = "WNA_CompStarcoreDriller_Mode_Desc".Translate(),
                 isActive = () => autoMode,
@@ -151,6 +155,7 @@ namespace WNA.WNAThingCompProp
             };
             yield return new Command_Action
             {
+                icon = selectedResource?.uiIcon ?? WhatTex,
                 defaultLabel = "WNA_CompStarcoreDriller_SelectResource".Translate(),
                 defaultDesc = selectedResource != null ? "WNA_CompStarcoreDriller_CurrentTarget".Translate(selectedResource.LabelCap)
                 : "WNA_CompStarcoreDriller_DefaultBedrock".Translate(),

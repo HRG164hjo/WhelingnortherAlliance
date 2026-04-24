@@ -14,7 +14,7 @@ namespace WNA.WNADamageWorker
             var result = base.Apply(dinfo, thing);
             if (thing != null && thing.MapHeld != null)
             {
-                var manager = LysField_GameComp.Instance;
+                var manager = GameComp_LysField.Instance;
                 manager?.AddOrUpdateField(thing, 1, 90);
                 int lvl = manager.GetLevel(thing);
                 LysisFieldUtility.SpreadLysisField(thing.Map, thing.Position, lvl);

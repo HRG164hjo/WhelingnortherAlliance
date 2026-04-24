@@ -102,9 +102,9 @@
   <WNA_LysisRifle_Proj.label>gun proj</WNA_LysisRifle_Proj.label>
   
   <!-- EN: neutron rifle -->
-  <WNA_NeutronRifle.label>中子步枪</WNA_NeutronRifle.label>
+  <WNA_NeutronRifle.label>“永眠”时空抽离者</WNA_NeutronRifle.label>
   <!-- EN: neutron rifle. -->
-  <WNA_NeutronRifle.description>中子步枪.</WNA_NeutronRifle.description>
+  <WNA_NeutronRifle.description>一件能操控时空连续性的武器，这件武器能够在受害者身上造成时空异常效应，一旦这种效应的强度超过某个临界点，受害者将从时空中被直接抹去。</WNA_NeutronRifle.description>
   <!-- EN: barrel -->
   <WNA_NeutronRifle.tools.barrel.label>枪管</WNA_NeutronRifle.tools.barrel.label>
   <!-- EN: neutron rifle -->
@@ -112,9 +112,9 @@
   <WNA_NeutronRifle_Proj.label>gun proj</WNA_NeutronRifle_Proj.label>
   
   <!-- EN: permafrost rifle -->
-  <WNA_Permafrost.label>永冻步枪</WNA_Permafrost.label>
+  <WNA_Permafrost.label>“平定者”急冻步枪</WNA_Permafrost.label>
   <!-- EN: permafrost ray. -->
-  <WNA_Permafrost.description>永冻射线.</WNA_Permafrost.description>
+  <WNA_Permafrost.description>一种利用永冻射线直接移除目标区域热量的武器。被击中的部位会被冻结，变得非常脆弱，极其容易损坏。</WNA_Permafrost.description>
   <!-- EN: barrel -->
   <WNA_Permafrost.tools.barrel.label>枪管</WNA_Permafrost.tools.barrel.label>
   <!-- EN: permafrost rifle -->
@@ -168,7 +168,7 @@
   <WNA_PsychicLance.tools.rapier.label>枪管</WNA_PsychicLance.tools.rapier.label>
   <WNA_PsychicLance.verbs.Verb_Shoot.label>TODO</WNA_PsychicLance.verbs.Verb_Shoot.label>
   
-  <WNA_PsychicLance.label>psychic proj</WNA_PsychicLance.label>
+  <WNA_PsychicLance_Proj.label>psychic proj</WNA_PsychicLance_Proj.label>
   
   <!-- EN: whelingnorther rite lance -->
   <WNA_Weapon_RiteLance.label>威灵诺德仪式枪</WNA_Weapon_RiteLance.label>

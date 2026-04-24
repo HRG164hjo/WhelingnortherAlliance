@@ -35,7 +35,7 @@ namespace WNA.WNAUtility
                         if (!t.def.destroyable) continue;
                         TechnoConfig cfg = TechnoConfig.Get(t.def);
                         if (cfg != null && cfg.immuneToRadiation == true) continue;
-                        LysField_GameComp.Instance?.AddOrUpdateField(t, newLevel, 90);
+                        GameComp_LysField.Instance?.AddOrUpdateField(t, newLevel, 90);
                         DamageInfo dinfo = new DamageInfo(WNAMainDefOf.WNA_LysField, sourceLevel, float.MaxValue);
                         t.TakeDamage(dinfo);
                     }
@@ -48,11 +48,11 @@ namespace WNA.WNAUtility
         }
         public static int GetLysisLevel(Thing thing)
         {
-            return LysField_GameComp.Instance?.GetLevel(thing) ?? 0;
+            return GameComp_LysField.Instance?.GetLevel(thing) ?? 0;
         }
         public static void ClearLysisField(Thing thing)
         {
-            LysField_GameComp.Instance?.Remove(thing);
+            GameComp_LysField.Instance?.Remove(thing);
         }
     }
     [HarmonyPatch(typeof(Thing), "TakeDamage")]
@@ -60,7 +60,7 @@ namespace WNA.WNAUtility
     {
         static void Prefix(ref DamageInfo dinfo, Thing __instance)
         {
-            var manager = LysField_GameComp.Instance;
+            var manager = GameComp_LysField.Instance;
             if (manager == null) return;
             int level = manager.GetLevel(__instance);
             if (level <= 0) return;
@@ -78,7 +78,7 @@ namespace WNA.WNAUtility
         static void Postfix(Thing __instance)
         {
             if (__instance == null || __instance.MapHeld == null) return;
-            var manager = LysField_GameComp.Instance;
+            var manager = GameComp_LysField.Instance;
             int level = manager?.GetLevel(__instance) ?? 0;
             if (level > 0)
                 LysisFieldUtility.SpreadLysisField(__instance.MapHeld, __instance.PositionHeld, level);

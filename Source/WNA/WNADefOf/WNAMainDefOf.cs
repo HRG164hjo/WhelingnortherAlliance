@@ -46,6 +46,8 @@ namespace WNA.WNADefOf
         public static HediffDef WNA_MindControlEffect;
 
         public static HistoryEventDef WNA_HE_UseDeedOn;
+        public static HistoryEventDef WNA_HE_ConflictIdeo;
+        public static HistoryEventDef WNA_HE_MemberControlled;
 
         public static IdeoIconDef WNA_IdeoIcon;
 
@@ -55,6 +57,7 @@ namespace WNA.WNADefOf
         public static JobDef WNA_Job_DeepDrilling;
         public static JobDef WNA_Job_Revive;
         public static JobDef WNA_Job_UseDeedOn;
+        public static JobDef WNA_Job_SacrificePawn;
 
         public static PawnKindDef WNA_Archonpriest;
         public static PawnKindDef WNA_Disciple;
@@ -67,6 +70,8 @@ namespace WNA.WNADefOf
         public static ResearchProjectDef WNA_PsychicDawn;
         public static ResearchProjectDef WNA_TheVoid;
         public static ResearchProjectDef WNA_WhelingnortherApocalypse;
+
+        public static RulePackDef WNA_NamerPassingShip;
 
         public static ThingDef WNA_WNThan;
         public static ThingDef WNA_Human;

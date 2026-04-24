@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNA_CompOrganicBasin_GetPawn>选取样本</WNA_CompOrganicBasin_GetPawn>
+  <WNA_CompOrganicBasin_Clear>清理样板</WNA_CompOrganicBasin_Clear>
+  <WNA_CompOrganicBasin_NoWorker>未发现可用工人</WNA_CompOrganicBasin_NoWorker>
+  <WNA_CompOrganicBasin_Empty>空样板</WNA_CompOrganicBasin_Empty>
+  <WNA_CompOrganicBasin_Contains>当前样板：{0}</WNA_CompOrganicBasin_Contains>
+  <WNA_CompOrganicBasin_HarvestIn>生产于：{0}</WNA_CompOrganicBasin_HarvestIn>
+  <WNA_CompOrganicBasin_CurrentGrowth>培育速率系数：{0}</WNA_CompOrganicBasin_CurrentGrowth>
+
+</LanguageData>

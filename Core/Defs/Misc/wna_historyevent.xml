@@ -4,4 +4,14 @@
         <defName>WNA_HE_UseDeedOn</defName>
         <label>used faction recruiting deed</label>
     </HistoryEventDef>
+    
+    <HistoryEventDef>
+        <defName>WNA_HE_ConflictIdeo</defName>
+        <label>we have conflict ideo content with Whelingnorther Alliance</label>
+    </HistoryEventDef>
+    
+    <HistoryEventDef>
+        <defName>WNA_HE_MemberControlled</defName>
+        <label>faction member mind controlled</label>
+    </HistoryEventDef>
 </Defs>

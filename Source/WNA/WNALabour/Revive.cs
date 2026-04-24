@@ -14,8 +14,8 @@ namespace WNA.WNALabour
         private Thing Item => job.GetTarget(TargetIndex.B).Thing;
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            if (pawn.Reserve(Target, job, 1, -1, null, errorOnFailed))
-                return pawn.Reserve(Item, job, 1, -1, null, errorOnFailed);
+            if (pawn.Reserve(Target, job))
+                return pawn.Reserve(Item, job);
             return false;
         }
         protected override IEnumerable<Toil> MakeNewToils()

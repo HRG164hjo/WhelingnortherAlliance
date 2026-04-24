@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace WNA.WNADamageWorker
@@ -16,7 +17,8 @@ namespace WNA.WNADamageWorker
                     int core = pawn.RaceProps.body.corePart != null ? pawn.RaceProps.body.corePart.def.hitPoints : 1;
                     int crit = (int)(core * pawn.BodySize * pawn.HealthScale);
                     pawn.stances.stunner.StunFor(stunNew, dinfo.Instigator, true, false);
-                    if (pawn.Downed || pawn.stances.stunner.StunTicksLeft >= crit)
+                    if ((pawn.Downed || pawn.stances.stunner.StunTicksLeft >= crit)
+                        && dinfo.HitPart != null)
                         pawn.health.AddHediff(HediffDefOf.MissingBodyPart, dinfo.HitPart);
                 }
                 else if(pawn.Downed)
@@ -24,8 +26,8 @@ namespace WNA.WNADamageWorker
             }
             if (victim is Thing thing && thing.def.useHitPoints)
             {
-                float mult = thing.MaxHitPoints / thing.HitPoints;
-                float amount = dinfo.Amount * mult;
+                float mult = Mathf.Max(1f, thing.MaxHitPoints / thing.HitPoints);
+                float amount = dinfo.Amount * mult * Mathf.Max(Mathf.Log(thing.MaxHitPoints), 1f);
                 dinfo.SetAmount(amount);
                 if (thing is ThingWithComps twc && twc.HasComp<CompStunnable>())
                 {

@@ -9,6 +9,7 @@ namespace WNA.WNAUtility
     public static class MindControlUtility
     {
         internal static bool MindControlled(Pawn pawn) => pawn.health.hediffSet.HasHediff(WNAMainDefOf.WNA_MindControlEffect);
+        internal static bool PermaconstControlled(Pawn pawn) => pawn.health.hediffSet.HasHediff(WNAMainDefOf.WNA_PermaconstActive);
         internal static bool CanBeControlled(Thing controller, Thing victim)
         {
             TechnoConfig config = TechnoConfig.Get(victim.def);
@@ -35,7 +36,7 @@ namespace WNA.WNAUtility
                 }
                 if (pawn.health != null && pawn.health.hediffSet != null)
                 {
-                    if (pawn.Dead || MindControlled(pawn))
+                    if (pawn.Dead || MindControlled(pawn) || PermaconstControlled(pawn))
                         return false;
                     foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
                     {
@@ -61,7 +62,7 @@ namespace WNA.WNAUtility
                     hediff.yrFac = fac;
                     hediff.permanent = permanent;
                     if (fac != null)
-                        pawn.Faction?.TryAffectGoodwillWith(fac, -100);
+                        pawn.Faction?.TryAffectGoodwillWith(fac, -100, reason: WNAMainDefOf.WNA_HE_MemberControlled);
                     pawn.health.AddHediff(hediff);
                     pawn.jobs?.StopAll();
                     pawn.pather?.StopDead();

@@ -21,13 +21,13 @@ namespace WNA.WNAUtility
             Scribe_Values.Look(ref duration, "duration", 0);
         }
     }
-    public class LysField_GameComp : GameComponent
+    public class GameComp_LysField : GameComponent
     {
         private Dictionary<Thing, LysisFieldData> activeLysis = new Dictionary<Thing, LysisFieldData>();
         private const int interval = 15;
         private List<Thing> activeLysKeysWorkingList;
         private List<LysisFieldData> activeLysValuesWorkingList;
-        public LysField_GameComp(Game game) { }
+        public GameComp_LysField(Game game) { }
         public override void GameComponentTick()
         {
             if (Find.TickManager.TicksGame % interval != 0)
@@ -108,7 +108,7 @@ namespace WNA.WNAUtility
                     activeLysis.Remove(toRemove[i]);
             }
         }
-        public static LysField_GameComp Instance =>
-            Current.Game?.GetComponent<LysField_GameComp>();
+        public static GameComp_LysField Instance =>
+            Current.Game?.GetComponent<GameComp_LysField>();
     }
 }

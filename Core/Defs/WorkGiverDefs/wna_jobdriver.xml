@@ -27,4 +27,11 @@
     	<reportString>activating TargetA.</reportString>
     	<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   	</JobDef>
+
+	<JobDef>
+    	<defName>WNA_Job_SacrificePawn</defName>
+    	<driverClass>WNA.WNALabour.JD_SacrificePawn</driverClass>
+    	<reportString>sacrificing TargetA.</reportString>
+    	<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  	</JobDef>
 </Defs>

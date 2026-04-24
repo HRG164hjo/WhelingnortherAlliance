@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNAMod>威灵诺德联合会</WNAMod>
+  <WNAMod_enableIdeoConflictHostility>启用文化冲突与敌对选项：当你的文化中包含某些指定的模因或戒律时，威灵诺德联合会将会与您敌对。\n\n（默认不启用）</WNAMod_enableIdeoConflictHostility>
+  <WNAMod_enablePermaconstDeathAid>启用恒固指令增援：当一个被恒固指令役使的小人死亡时，有大约7%的几率立刻招来一次游猎集群袭击。\n\n（默认不启用）</WNAMod_enablePermaconstDeathAid>
+  <WNA_InitialSpawn_Label>重见天日</WNA_InitialSpawn_Label>
+  <WNA_InitialSpawn_Desc>威灵诺德联合会的据点出现了。</WNA_InitialSpawn_Desc>
+  <WNA_Refill_Label>卷土重来</WNA_Refill_Label>
+  <WNA_Refill_Desc>威灵诺德联合会重建了他们损失的据点，现在他们已经重整旗鼓。</WNA_Refill_Desc>
+
+</LanguageData>

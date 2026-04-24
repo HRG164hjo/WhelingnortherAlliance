@@ -43,4 +43,7 @@
   <!-- EN: consciousness -->
   <WNA_VoidAnchor.comps.CompRefuelable.fuelLabel>意识</WNA_VoidAnchor.comps.CompRefuelable.fuelLabel>
   
+  <WNA_OrganicBasin.label>生体培养盆</WNA_OrganicBasin.label>
+  <WNA_OrganicBasin.description>一个用于生产动物材料的生产设备。只需一个活体或死体的模板，它就能持续生产和再生产产品。</WNA_OrganicBasin.description>
+  
 </LanguageData>

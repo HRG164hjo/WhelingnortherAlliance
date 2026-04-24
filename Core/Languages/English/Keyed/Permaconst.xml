@@ -7,5 +7,8 @@
   <WNA_LordNeutralized>We are not hostile with Whelingnorther Alliance</WNA_LordNeutralized>
   <WNA_Letter_Permaconst>Phantom Signal</WNA_Letter_Permaconst>
   <WNA_Letter_Permaconst_Desc>A series of mysterious phantom signals emanated from deep space, echoing across the planet via hidden relay stations scattered throughout this rimworld. \n\nWhelingnorther Alliance's Permaconst Command has initiated another self-maintenance cycle, and its thralls will once again begin their hunt. Direct confrontation is never a good idea; entrusting the enemy to reliable turret defenses is the best course of action.</WNA_Letter_Permaconst_Desc>
+	<WNA_PermaconstRaidSmall>Hunting Cluster</WNA_PermaconstRaidSmall>
+	<WNA_PermaconstRaidSmall_Desc>The ongoing battle here has attracted a nearby enthralled unit swarm on hunting mission, they will attack immediately!</WNA_PermaconstRaidSmall_Desc>
+  <WNA_IdeoName>Whelingnorther Holyorder</WNA_IdeoName>
 
 </LanguageData>

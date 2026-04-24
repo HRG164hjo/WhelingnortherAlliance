@@ -126,8 +126,8 @@
   <!-- EN:
     <li>r_name->[pfix] [Digit][Digit][Digit]</li>
     <li>r_name->[pfix] [Digit][Digit][Digit][Digit]</li>
-    <li>r_name->[Digit][Digit][Digit]th [pfix]</li>
-    <li>r_name->[Digit][Digit][Digit][Digit]th [pfix]</li>
+    <li>r_name->[Digit][Digit][Digit] [pfix]</li>
+    <li>r_name->[Digit][Digit][Digit][Digit] [pfix]</li>
     <li>r_name(p=0.001)->HRG164HJO</li>
     <li>r_name(p=0.05)->[HRG]</li>
     <li>pfix->Facility</li>
@@ -288,5 +288,29 @@
     <li>HRG->镰隐寺</li>
     <li>HRG->五城</li>
   </WNA_NamerSettlement.rulePack.rulesStrings>
+  
+  <WNA_NamerPassingShip.rulePack.rulesStrings>
+    <li>r_name->[pfix] [Digit][Digit][Digit]</li>
+    <li>r_name->[pfix] [Digit][Digit][Digit][Digit]</li>
+    <li>r_name->[Digit][Digit][Digit] [pfix]</li>
+    <li>r_name->[Digit][Digit][Digit][Digit] [pfix]</li>
+    <!---->
+    <li>pfix->[pre][post]</li>
+    <!---->
+    <li>pre->转运</li>
+    <li>pre->储存</li>
+    <li>pre->物流</li>
+    <li>pre->作业</li>
+    <li>pre->分发</li>
+    <li>pre->服务</li>
+    <li>pre->配送</li>
+    <li>post->单元</li>
+    <li>post->接口</li>
+    <li>post->路由</li>
+    <li>post->链路</li>
+    <li>post->中继</li>
+    <li>post->终端</li>
+    <li>post->节点</li>
+  </WNA_NamerPassingShip.rulePack.rulesStrings>
   
 </LanguageData>

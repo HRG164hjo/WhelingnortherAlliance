@@ -260,8 +260,57 @@
         </costList>
         <comps>
             <li Class="WNA.WNAThingCompProp.PropHydroponics">
-                <growthFactor>16</growthFactor>
+                <growthFactor>15</growthFactor>
                 <plantCount>400</plantCount>
+            </li>
+        </comps>
+	</ThingDef>
+    
+    <ThingDef ParentName="WNA_FurnitureBase">
+		<defName>WNA_OrganicBasin</defName>
+		<label>organic basin</label>
+		<description>A production facility used to produce animal materials. With a template alive or dead, it can continuously produce and reproduce products.</description>
+        <tickerType>Rare</tickerType>
+        <graphicData Inherit="false">
+			<texPath>buildings/production/wna_hydroponics</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <drawSize>(2,2)</drawSize>
+            <color>(200,200,100)</color>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+		</graphicData>
+        <researchPrerequisites>
+            <li>WNA_AdvancedProduction</li>
+        </researchPrerequisites>
+        <size>(2,2)</size>
+        <rotatable>true</rotatable>
+		<passability>PassThroughOnly</passability>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<useHitPoints>true</useHitPoints>
+        <statBases Inherit="false">
+            <Mass>6</Mass>
+            <MaxHitPoints>4000</MaxHitPoints>
+            <WorkToBuild>2000</WorkToBuild>
+            <Beauty>-1</Beauty>
+        </statBases>
+        <costList>
+            <Steel>60</Steel>
+            <WoodLog>40</WoodLog>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <comps>
+            <li Class="WNA.WNAThingCompProp.PropOrganicBasin">
+                <speedUpFactor>1</speedUpFactor>
+                <yieldFactor>60</yieldFactor>
+                <canUseMechanoids>true</canUseMechanoids>
+                <canUseEntities>true</canUseEntities>
+                <canUseHumanoid>true</canUseHumanoid>
             </li>
         </comps>
 	</ThingDef>

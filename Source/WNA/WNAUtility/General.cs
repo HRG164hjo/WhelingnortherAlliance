@@ -1,4 +1,6 @@
-﻿using RimWorld.Planet;
+﻿using RimWorld;
+using RimWorld.Planet;
+using System.Collections.Generic;
 using Verse;
 
 namespace WNA.WNAUtility

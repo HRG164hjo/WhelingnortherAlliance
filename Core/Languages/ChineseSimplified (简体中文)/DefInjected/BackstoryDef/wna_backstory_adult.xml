@@ -92,4 +92,16 @@
   <!-- EN: rebel -->
   <WNA_BC_MidworldRebel.titleShort>反抗军</WNA_BC_MidworldRebel.titleShort>
   
+  <WNA_BC_EECP01.description>[PAWN_nameDef]曾长期在威灵诺德联合会的教育执法司令部服役。在[PAWN_possessive]服役期间，[PAWN_pronoun]主要执行教育任务，例如使用拳头、烙铁和电棍来教人怎么变得通情达理。</WNA_BC_EECP01.description>
+  <WNA_BC_EECP01.title>教法司兵员</WNA_BC_EECP01.title>
+  <WNA_BC_EECP01.titleShort>教法司兵员</WNA_BC_EECP01.titleShort>
+  
+  <WNA_BC_SECP01.description>[PAWN_nameDef]曾长期在威灵诺德联合会的科学工程司令部服役。最初，[PAWN_pronoun]在科研岗工作，但后来[PAWN_pronoun]发现工程岗更适合[PAWN_pronoun]。</WNA_BC_SECP01.description>
+  <WNA_BC_SECP01.title>科工司兵员</WNA_BC_SECP01.title>
+  <WNA_BC_SECP01.titleShort>科工司兵员</WNA_BC_SECP01.titleShort>
+  
+  <WNA_BC_BCCP01.description>[PAWN_nameDef]曾长期在威灵诺德联合会的作战控制司令部服役。战场并不是个宜人的地方，但在短暂的适应期之后，[PAWN_pronoun]意外地发现[PAWN_pronoun]非常喜欢这种活撕敌人的感觉。</WNA_BC_BCCP01.description>
+  <WNA_BC_BCCP01.title>作战司兵员</WNA_BC_BCCP01.title>
+  <WNA_BC_BCCP01.titleShort>作战司兵员</WNA_BC_BCCP01.titleShort>
+  
 </LanguageData>

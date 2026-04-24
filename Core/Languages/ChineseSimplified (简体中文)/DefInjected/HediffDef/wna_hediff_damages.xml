@@ -71,7 +71,7 @@
   <!-- EN: mind controlled -->
   <WNA_MindControlEffect.label>心灵控制</WNA_MindControlEffect.label>
   <!-- EN: This pawn's mind has been seized. if the control is not permanent, he can still be saved; but if the control is <color=#7B50A7>permanent</color>, it's not likely he can still be fine. \n\nThis control is like a brand deep in the soul, killing the controller won't remove existing control. -->
-  <WNA_MindControlEffect.description>此人的心智已被控制。如果这种控制并非永久性的，他或许还有得救；但如果这种控制是&lt;color=#7B50A7&gt;永久的&lt;/color&gt;，他恐怕就难以脱身。\n\n这种控制如同引入灵魂深处的烙印，即使杀死控制者也无法消除已经存在的控制。</WNA_MindControlEffect.description>
+  <WNA_MindControlEffect.description>此人的心智已被控制。如果这种控制并非永久性的，他或许还有得救；但如果这种控制是&lt;color=#7B50A7&gt;永久的&lt;/color&gt;，他恐怕就难以脱身。\n\n这种控制如同印入灵魂深处的烙印，即使杀死控制者也无法消除已经存在的控制。</WNA_MindControlEffect.description>
   
   <!-- EN: rad-field buildup -->
   <WNA_RadEffect.label>辐射蓄积</WNA_RadEffect.label>

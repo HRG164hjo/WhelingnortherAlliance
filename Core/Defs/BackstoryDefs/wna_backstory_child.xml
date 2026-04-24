@@ -9,6 +9,7 @@
         <title>uplifted Animal</title>
         <titleShort>uplifted</titleShort>
         <description>[PAWN_nameDef] used to be an animal before [PAWN_pronoun] was reshaped to [PAWN_possessive] current form. [PAWN_nameDef] still keeps some memories and skills from [PAWN_possessive] animal ages, though some of them are no longer useful for [PAWN_possessive] current form.</description>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
     </BackstoryDef>
     <BackstoryDef>
         <defName>WNA_BC_UpliftedMech</defName>
@@ -19,6 +20,7 @@
         <title>uplifted mechanoid</title>
         <titleShort>uplifted</titleShort>
         <description>[PAWN_nameDef] used to be a mechanoid controlled by a mechhive or some controller else, and was reshaped to [PAWN_possessive] current form. [PAWN_nameDef] still keeps some beneficial skills from [PAWN_possessive] past as a toaster.</description>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
     </BackstoryDef>
     <BackstoryDef>
         <defName>WNA_BC_UpliftedEntity</defName>
@@ -29,6 +31,7 @@
         <title>uplifted entity</title>
         <titleShort>uplifted</titleShort>
         <description>[PAWN_nameDef] used to be a twisted creature created by some dark source, and was reshaped to [PAWN_possessive] current form. Though the twisted past hardly left something useful for [PAWN_nameDef], [PAWN_pronoun] still managed to found something from that past.</description>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
     </BackstoryDef>
     <BackstoryDef>
         <defName>WNA_BC_UpliftedPlant</defName>
@@ -39,6 +42,7 @@
         <title>uplifted plant</title>
         <titleShort>uplifted</titleShort>
         <description>[PAWN_nameDef] used to be a plant, living a normal plant life until was reshaped to [PAWN_possessive] current form. It's hard to tell whether this past left something good or bad for [PAWN_nameDef].</description>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
     </BackstoryDef>
 
     <BackstoryDef>
@@ -57,6 +61,7 @@
             <Construction>4</Construction>
             <Crafting>4</Crafting>
         </skillGains>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
     </BackstoryDef>
     <BackstoryDef>
         <defName>WNA_BC_Synthetic</defName>
@@ -71,6 +76,7 @@
         <forcedTraits>
             <WNA_Trait_Unshakable>0</WNA_Trait_Unshakable>
         </forcedTraits>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
     </BackstoryDef>
     <BackstoryDef>
         <defName>WNA_BC_ThirdGenChild</defName>
@@ -81,6 +87,7 @@
         <title>third generation child</title>
         <titleShort>third-gen</titleShort>
         <description>[PAWN_nameDef]'s parents were residents under the shelter of Whelingnorther Alliance, [PAWN_nameDef] is also a resident under the shelter of Whelingnorther Alliance. Thanks to the protection of Whelingnorther Alliance, nothing tragic happened to [PAWN_nameDef] during [PAWN_possessive] growth, but sadly there's also nothing memorable happened to [PAWN_objective] too.</description>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
     </BackstoryDef>
     
     <BackstoryDef>
@@ -95,6 +102,7 @@
         <forcedTraits>
             <NaturalMood>1</NaturalMood>
         </forcedTraits>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
     </BackstoryDef>
     <BackstoryDef>
         <defName>WNA_BC_MidworldRevenger</defName>
@@ -109,6 +117,7 @@
         <forcedTraits>
             <Psychopath>0</Psychopath>
         </forcedTraits>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
     </BackstoryDef>
     <BackstoryDef>
         <defName>WNA_BC_PeasantChild</defName>
@@ -119,6 +128,7 @@
         <title>peasant child</title>
         <titleShort>peasant</titleShort>
         <description>[PAWN_nameDef] had grown up in the fields, had to help [PAWN_possessive] family with farm work since a young age.</description>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
     </BackstoryDef>
     <BackstoryDef>
         <defName>WNA_BC_Student</defName>
@@ -132,6 +142,7 @@
         <forcedTraits>
             <FastLearner>0</FastLearner>
         </forcedTraits>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
     </BackstoryDef>
     <BackstoryDef>
         <defName>WNA_BC_DeadChild</defName>
@@ -145,5 +156,36 @@
         <forcedTraits>
             <NaturalMood>1</NaturalMood>
         </forcedTraits>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_AnimalHater</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>animal hater</title>
+        <titleShort>animal hater</titleShort>
+        <description>When [PAWN_nameDef] was pretty young, [PAWN_nameDef] was chased and heavily scared by a dog. [PAWN_possessive] parents didn't care too much about it, when they realized this is not a joke [PAWN_nameDef] had already recieved great mental trauma. This trauma gradually developed into a hostility to any alive animals, including humans.</description>
+        <workDisables>Animals, Caring</workDisables>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
+        <forcedTraits>
+            <Psychopath>0</Psychopath>
+        </forcedTraits>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>WNA_BC_FlowerSeeker</defName>
+        <spawnCategories>
+            <li>WNA_Backstory_Norm</li>
+        </spawnCategories>
+        <slot>Childhood</slot>
+        <title>flower seeker</title>
+        <titleShort>flower seeker</titleShort>
+        <description>When [PAWN_nameDef] was pretty young, [PAWN_nameDef] was told that at a distant location there was a heaven-like place where beautiful flowers covers the sky. But when [PAWN_nameDef] was convienced and tried to find the place, it turned out everything was just a joke. However this was no joke for [PAWN_nameDef], it seems that part of [PAWN_objective] had already lost in that never existed flower heaven.</description>
+        <workDisables>ManualDumb, Artistic</workDisables>
+        <forcedTraits>
+            <TorturedArtist>0</TorturedArtist>
+        </forcedTraits>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
     </BackstoryDef>
 </Defs>

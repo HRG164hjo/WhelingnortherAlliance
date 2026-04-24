@@ -1,5 +1,5 @@
 ﻿using RimWorld;
-using System;
+using UnityEngine;
 using Verse;
 using WNA.WNADefOf;
 
@@ -13,10 +13,12 @@ namespace WNA.WNAIncident
             return base.CanFireNowSub(parms) &&
                    !map.gameConditionManager.ConditionIsActive(WNAMainDefOf.WNA_GameCond_PermaconstActive);
         }
+        private readonly float scale = Mathf.Max(1f, (float)Find.Storyteller?.difficulty?.threatScale);
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
-            Faction pcc = Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionPCC);
+            Faction pcc = Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionPCC)
+                ?? Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionWNA);
             int duration = 141420;
             GameCondition cond = GameConditionMaker.MakeCondition(WNAMainDefOf.WNA_GameCond_PermaconstActive, duration);
             map.gameConditionManager.RegisterCondition(cond);
@@ -25,8 +27,7 @@ namespace WNA.WNAIncident
                 IncidentParms raidParms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.ThreatBig, map);
                 raidParms.faction = pcc;
                 raidParms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;
-                IncidentDefOf.RaidEnemy.Worker.TryExecute(raidParms);
-                raidParms.points = Math.Max(parms.points, 10000);
+                raidParms.points = Mathf.Max(parms.points, 10000 * scale);
                 IncidentDefOf.RaidEnemy.Worker.TryExecute(raidParms);
             }
             Find.LetterStack.ReceiveLetter(

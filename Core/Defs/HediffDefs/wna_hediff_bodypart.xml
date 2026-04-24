@@ -129,6 +129,7 @@
             <WNA_AttunementFabric>25</WNA_AttunementFabric>
             <BroadshieldCore MayRequire="Ludeon.Rimworld.Royalty">1</BroadshieldCore>
         </costList>
+        <techHediffsTags Inherit="false" IsNull="true"/>
     </ThingDef>
     <HediffDef ParentName="WNA_BodypartHediff">
         <defName>WNA_Part_AdvBionicSkin</defName>
@@ -212,9 +213,13 @@
             <li>
                 <partIgnoreMissingHP>true</partIgnoreMissingHP>
                 <statOffsets>
-                    <RestFallRateFactor>-0.5</RestFallRateFactor>
                     <CarryingCapacity>60000</CarryingCapacity>
                 </statOffsets>
+                <statFactors>
+                    <RestFallRateFactor>0.5</RestFallRateFactor>
+                    <MeleeCooldownFactor>0.5</MeleeCooldownFactor>
+                    <MeleeDodgeChance>2</MeleeDodgeChance>
+                </statFactors>
             </li>
         </stages>
         <comps>
@@ -630,6 +635,9 @@
                     <ResearchSpeed>3</ResearchSpeed>
                     <StudyEfficiency MayRequire="Ludeon.Rimworld.Anomaly">1.5</StudyEfficiency>
                     <EntityStudyRate MayRequire="Ludeon.Rimworld.Anomaly">3</EntityStudyRate>
+                    <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+                    <Ability_EntropyGain>0</Ability_EntropyGain>
+                    <Ability_CastingTime>0.5</Ability_CastingTime>
                 </statFactors>
                 <capMods>
 					<li>

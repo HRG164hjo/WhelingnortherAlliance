@@ -1,6 +1,7 @@
 ﻿using Verse;
 using WNA.WNADefOf;
 using WNA.WNAUtility;
+using UnityEngine;
 
 namespace WNA.WNADamageWorker
 {
@@ -25,10 +26,21 @@ namespace WNA.WNADamageWorker
                     if (hediff.Severity >= scale)
                         General.TotalRemoving(pawn, false);
                 }
-                else General.DebuglikeDestroy(thing);
+                else if (!thing.DestroyedOrNull())
+                {
+                    if (thing.def.Size != null)
+                    {
+                        float sizex = Mathf.Max(1, thing.def.Size.x);
+                        float sizez = Mathf.Max(1, thing.def.Size.z);
+                        float crit = 1 / Mathf.Sqrt(sizex * sizez);
+                        float random = Rand.Range(0f, 0.9f);
+                        if (random < crit)
+                            General.DebuglikeDestroy(thing);
+                    }
+                    else
+                        General.DebuglikeDestroy(thing);
+                }
             }
-            if(!thing.DestroyedOrNull())
-                General.DebuglikeDestroy(thing);
             return new DamageResult();
         }
     }

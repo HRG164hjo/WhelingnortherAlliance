@@ -73,7 +73,11 @@ namespace WNA.WNAGameCond
         private void BroadcastDead(Corpse corpse, Faction pcc)
         {
             Pawn pawn = corpse.InnerPawn;
-            ResurrectionUtility.TryResurrect(pawn);
+            LongEventHandler.ExecuteWhenFinished(delegate
+            {
+                if (pawn.Dead)
+                    ResurrectionUtility.TryResurrect(pawn);
+            });
             if (!pawn.health.hediffSet.HasHediff(WNAMainDefOf.WNA_PermaconstHidden))
             {
                 Hediff hidden = pawn.health.hediffSet.GetFirstHediffOfDef(WNAMainDefOf.WNA_PermaconstHidden);

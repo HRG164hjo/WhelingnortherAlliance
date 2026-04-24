@@ -52,11 +52,23 @@
             <texPath>pawns/alt_eye/bioniceye</texPath>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/HediffDef[defName="BionicEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/drawSize</xpath>
+        <value>
+            <drawSize>0.2</drawSize>
+        </value>
+    </Operation>
     
     <Operation Class="PatchOperationReplace">
 	    <xpath>Defs/HediffDef[defName="ArchotechEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPath</xpath>
         <value>
             <texPath>pawns/alt_eye/archotecheye</texPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+	    <xpath>Defs/HediffDef[defName="ArchotechEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/drawSize</xpath>
+        <value>
+            <drawSize>0.2</drawSize>
         </value>
     </Operation>
 

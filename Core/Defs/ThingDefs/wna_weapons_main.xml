@@ -97,9 +97,11 @@
 				<armorPenetration>Infinity</armorPenetration>
 			</li>
 		</tools>
-		<comps>
+		<comps Inherit="false">
+            <li Class="CompProperties_Forbiddable"/>
+            <li><compClass>CompQuality</compClass></li>
 			<li Class="WNA.WNAThingCompProp.PropSwtichMode">
-				<modeIIdefname>WNA_SunsetArtillery</modeIIdefname>
+				<targetWeaponDef>WNA_SunsetArtillery</targetWeaponDef>
 			</li>
 		</comps>
 		<recipeMaker>
@@ -385,9 +387,11 @@
 				<armorPenetration>Infinity</armorPenetration>
 			</li>
 		</tools>
-		<comps>
+		<comps Inherit="false">
+            <li Class="CompProperties_Forbiddable"/>
+            <li><compClass>CompQuality</compClass></li>
 			<li Class="WNA.WNAThingCompProp.PropSwtichMode">
-				<modeIIdefname>WNA_SunsetSniper</modeIIdefname>
+				<targetWeaponDef>WNA_SunsetSniper</targetWeaponDef>
 			</li>
 		</comps>
 		<recipeMaker>
@@ -990,7 +994,7 @@
 		</weaponTags>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>WNA.WNAVerbType.VerbType_SetOffExplosion</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>WNA_HowlstormHMG_Proj</defaultProjectile>
 				<warmupTime>0</warmupTime>
@@ -999,7 +1003,7 @@
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
 				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-				<burstShotCount>60</burstShotCount>
+				<burstShotCount>30</burstShotCount>
 				<forcedMissRadius>1.9</forcedMissRadius>
 			</li>
 		</verbs>
@@ -1014,6 +1018,13 @@
 				<armorPenetration>Infinity</armorPenetration>
 			</li>
 		</tools>
+		<comps Inherit="false">
+            <li Class="CompProperties_Forbiddable"/>
+            <li><compClass>CompQuality</compClass></li>
+			<li Class="WNA.WNAThingCompProp.PropSwtichMode">
+				<targetWeaponDef>WNA_HowlstormMLRS</targetWeaponDef>
+			</li>
+		</comps>
 		<recipeMaker>
 			<researchPrerequisite>WNA_AdvancedArsenal</researchPrerequisite>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1069,7 +1080,7 @@
 		</weaponTags>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>WNA_HowlstormMLRS_Proj</defaultProjectile>
 				<warmupTime>0</warmupTime>
@@ -1095,6 +1106,13 @@
 				<armorPenetration>Infinity</armorPenetration>
 			</li>
 		</tools>
+		<comps Inherit="false">
+            <li Class="CompProperties_Forbiddable"/>
+            <li><compClass>CompQuality</compClass></li>
+			<li Class="WNA.WNAThingCompProp.PropSwtichMode">
+				<targetWeaponDef>WNA_HowlstormHMG</targetWeaponDef>
+			</li>
+		</comps>
 		<recipeMaker>
 			<researchPrerequisite>WNA_AdvancedArsenal</researchPrerequisite>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1320,8 +1338,8 @@
 	<!-- parasomniant -->
 	<ThingDef ParentName="WNA_WeaponBaseRanged">
 		<defName>WNA_Permafrost</defName>
-		<label>permafrost rifle</label>
-		<description>permafrost ray.</description>
+		<label>"pacifier" freeze rifle</label>
+		<description>A weapon that can use permafrost ray to directly remove heat from targeted area. The hit part will be frozen, thus become very fragile and easy to break.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
 			<drawSize>1.0</drawSize>
@@ -1403,8 +1421,8 @@
 	
 	<ThingDef ParentName="WNA_WeaponBaseRanged">
 		<defName>WNA_NeutronRifle</defName>
-		<label>neutron rifle</label>
-		<description>neutron rifle.</description>
+		<label>"parasomnia" chrono ejector</label>
+		<description>A device that can manipulator the continuity of time and space. This weapon can cause spacetime anomaly effect on the victim. Once the intensity of this effect exceeds a certain level, the victim will be erased.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
 			<drawSize>1.0</drawSize>
@@ -1535,9 +1553,11 @@
 			</recipeUsers>
 			<displayPriority>200</displayPriority>
 		</recipeMaker>
-		<comps>
+		<comps Inherit="false">
+            <li Class="CompProperties_Forbiddable"/>
+            <li><compClass>CompQuality</compClass></li>
 			<li Class="WNA.WNAThingCompProp.PropSwtichMode">
-				<modeIIdefname>WNA_Weapon_RiteLance</modeIIdefname>
+				<targetWeaponDef>WNA_Weapon_RiteLance</targetWeaponDef>
 			</li>
 		</comps>
 	</ThingDef>
@@ -1591,18 +1611,18 @@
 				<hediff>WNA_Corrosion</hediff>
 			</li>
 		</tools>
-		<comps>
-			<li>
-				<compClass>WNA.WNATargetEffect.Ascension</compClass>
+		<comps Inherit="false">
+            <li Class="CompProperties_Forbiddable"/>
+            <li><compClass>CompQuality</compClass></li>
+			<li Class="WNA.WNAThingCompProp.PropSwtichMode">
+				<targetWeaponDef>WNA_Weapon_RiteSword</targetWeaponDef>
 			</li>
+			<li><compClass>WNA.WNATargetEffect.Ascension</compClass></li>
 			<li Class="CompProperties_TargetEffect_GoodwillImpact">
 				<goodwillImpact>-999</goodwillImpact>
 			</li>
 			<li Class="CompProperties_TargetEffect_FleckConnecting">
 				<fleckDef>PsycastPsychicLine</fleckDef>
-			</li>
-			<li Class="WNA.WNAThingCompProp.PropSwtichMode">
-				<modeIIdefname>WNA_Weapon_RiteSword</modeIIdefname>
 			</li>
 		</comps>
 		<recipeMaker>

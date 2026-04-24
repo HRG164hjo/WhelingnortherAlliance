@@ -55,6 +55,12 @@
                     </li>
                 </countChances>
             </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>FoodMeals</categoryDef>
+                <thingDefCountRange>5~7</thingDefCountRange>
+                <countRange>30000000~50000000</countRange>
+                <price>VeryCheap</price>
+            </li>
         </stockGenerators>
     </TraderKindDef>
     

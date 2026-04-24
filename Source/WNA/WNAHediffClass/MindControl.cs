@@ -18,6 +18,8 @@ namespace WNA.WNAHediffClass
                     return true;
                 if (yrFac == null)
                     return true;
+                if (yrFac != null && myFac != null && yrFac == myFac)
+                    return true;    
                 return false;
             }
         }

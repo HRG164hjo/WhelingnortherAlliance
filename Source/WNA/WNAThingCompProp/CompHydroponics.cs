@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography;
 using System.Text;
 using UnityEngine;
 using Verse;
@@ -25,8 +23,9 @@ namespace WNA.WNAThingCompProp
     public class CompHydroponics : ThingComp
     {
         private const int WorkIntervalTicks = 60;
-        private static readonly Texture2D CancelTex = ContentFinder<Texture2D>.Get("UI/Designators/Cancel", false) ?? BaseContent.BadTex;
-        private static readonly Texture2D SwitchTex = ContentFinder<Texture2D>.Get("UI/Commands/ChangePlantMode", false) ?? BaseContent.BadTex;
+        private static readonly Texture2D CancelTex = ContentFinder<Texture2D>.Get("UI/Designators/Cancel");
+        private static readonly Texture2D SwitchTex = ContentFinder<Texture2D>.Get("UI/Designators/ForbidOff");
+        private static readonly Texture2D WhatTex = ContentFinder<Texture2D>.Get("UI/Overlays/QuestionMark");
         private static Dictionary<bool, List<ThingDef>> cachedPlantsByMode = new Dictionary<bool, List<ThingDef>>();
         public PropHydroponics Props => (PropHydroponics)props;
         public ThingDef SelectedCrop;
@@ -59,7 +58,7 @@ namespace WNA.WNAThingCompProp
                     ? "WNA_Mode_Normal".Translate()
                     : "WNA_Mode_Tree".Translate()
                 ),
-                defaultDesc = "WNA_PropHydroponics_SwitchModeDesc".Translate(),
+                defaultDesc = "WNA_CompHydroponics_SwitchModeDesc".Translate(),
                 action = delegate
                 {
                     treeMod = !treeMod;
@@ -69,13 +68,13 @@ namespace WNA.WNAThingCompProp
             };
             yield return new Command_Action
             {
-                icon = SelectedCrop?.uiIcon ?? BaseContent.BadTex,
+                icon = SelectedCrop?.uiIcon ?? WhatTex,
                 defaultLabel = SelectedCrop == null
-                    ? "WNA_PropHydroponics_SelectCrop".Translate()
-                    : "WNA_PropHydroponics_ChangeCrop".Translate(),
+                    ? "WNA_CompHydroponics_SelectCrop".Translate()
+                    : "WNA_CompHydroponics_ChangeCrop".Translate(),
                 defaultDesc = SelectedCrop == null
-                    ? "WNA_PropHydroponics_SelectCropDesc".Translate()
-                    : "WNA_PropHydroponics_ChangeCropDesc".Translate(SelectedCrop.label),
+                    ? "WNA_CompHydroponics_SelectCropDesc".Translate()
+                    : "WNA_CompHydroponics_ChangeCropDesc".Translate(SelectedCrop.label),
                 action = GenerateCropMenu
             };
             if (SelectedCrop != null)
@@ -83,8 +82,8 @@ namespace WNA.WNAThingCompProp
                 yield return new Command_Action
                 {
                     icon = CancelTex,
-                    defaultLabel = "WNA_PropHydroponics_ClearCrop".Translate(),
-                    defaultDesc = "WNA_PropHydroponics_ClearCropDesc".Translate(),
+                    defaultLabel = "WNA_CompHydroponics_ClearCrop".Translate(),
+                    defaultDesc = "WNA_CompHydroponics_ClearCropDesc".Translate(),
                     action = ResetState
                 };
             }
@@ -103,18 +102,18 @@ namespace WNA.WNAThingCompProp
                 (treeMod == false ? "WNA_Mode_Normal".Translate() : "WNA_Mode_Tree".Translate()));
             if (SelectedCrop == null)
             {
-                sb.Append("WNA_PropHydroponics_NoCrop".Translate());
+                sb.Append("WNA_CompHydroponics_NoCrop".Translate());
                 return sb.ToString();
             }
             if (powerComp != null && !powerComp.PowerOn)
-                sb.AppendLine("WNA_PropHydroponics_LowPower".Translate().ToString());
+                sb.AppendLine("WNA_CompHydroponics_LowPower".Translate().ToString());
             if (refuelableComp != null && !refuelableComp.HasFuel)
-                sb.AppendLine("WNA_PropHydroponics_NoFuel".Translate().ToString());
-            sb.AppendLine("WNA_PropHydroponics_Contains".Translate(Props.plantCount).ToString());
-            sb.AppendLine("WNA_PropHydroponics_Growing".Translate(SelectedCrop.label).ToString());
-            sb.AppendLine("WNA_PropHydroponics_HarvestIn".Translate(TicksToSpawn.ToStringTicksToPeriod()).ToString());
-            sb.AppendLine("WNA_PropHydroponics_Yield".Translate(CurrentHarvestCount).ToString());
-            sb.Append("WNA_PropHydroponics_CurrentGrowthFactor".Translate(GetCurrentGrowthFactor().ToString("F2")));
+                sb.AppendLine("WNA_CompHydroponics_NoFuel".Translate().ToString());
+            sb.AppendLine("WNA_CompHydroponics_Contains".Translate(Props.plantCount).ToString());
+            sb.AppendLine("WNA_CompHydroponics_Growing".Translate(SelectedCrop.label).ToString());
+            sb.AppendLine("WNA_CompHydroponics_HarvestIn".Translate(TicksToSpawn.ToString()).ToString());
+            sb.AppendLine("WNA_CompHydroponics_Yield".Translate(CurrentHarvestCount).ToString());
+            sb.Append("WNA_CompHydroponics_CurrentGrowthFactor".Translate(GetCurrentGrowthFactor().ToString("F2")));
             return sb.ToString();
         }
         public override void PostExposeData()

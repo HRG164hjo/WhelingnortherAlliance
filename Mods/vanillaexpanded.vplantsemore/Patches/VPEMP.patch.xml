@@ -5,6 +5,7 @@
         <value>
             <li>WNA_FocusSpring</li>
             <li>WNA_FocusSoil</li>
+            <li>WNA_BridgeSoil</li>
         </value>
     </Operation>
     <Operation Class="PatchOperationAdd">
@@ -12,6 +13,7 @@
         <value>
             <li>WNA_FocusSand</li>
             <li>WNA_FocusSoil</li>
+            <li>WNA_BridgeSoil</li>
         </value>
     </Operation>
 	

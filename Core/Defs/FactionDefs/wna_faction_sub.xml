@@ -8,14 +8,13 @@
         <factionIconPath>factions/wna_permaconst</factionIconPath>
         <settlementTexturePath>karma</settlementTexturePath>
         <description>During past conflicts against Whelingnorther Alliance, witnesses observed war survivors inexplicably turning hostile to their kin and allies. After these madmen were killed, they would resurrect after a period of time, and those who had killed them would subsequently become one of them. It's a long while before people finally realized the existence of a phantom signal behind this phenomenon, which is known as Permaconst Command. \n\nThe Permaconst Command, formally designated as the "Whelingnorther Alliance Default Response Department", is actually a set of instructions transmitted via various methods such as cognitive hazards, psychic pulses and tachyon broadcasts. They themselves cannot do anything, but they can takeover units to gain physical existence they require to carry out their missions. Permaconst Commands are under a perpetual self-maintenance loop, once a Permaconst Command is made, even it's instructor can no longer control it. \n\nPermaconst Command can remember those who ever standed against them. In each maintenance loop the overtaken units reconstruct, and those defiants will become new puppets of Permaconst Command.</description>
-        <pawnSingular>thrall unit</pawnSingular>
-        <pawnsPlural>thrall units</pawnsPlural>
+        <pawnSingular>enthralled unit</pawnSingular>
+        <pawnsPlural>enthralled units</pawnsPlural>
         <listOrderPriority>1</listOrderPriority>
         <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
         <configurationListOrderPriority>2</configurationListOrderPriority>
         <settlementGenerationWeight>1</settlementGenerationWeight>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
-        <maxCountAtGameStart>1</maxCountAtGameStart>
         <displayInFactionSelection>false</displayInFactionSelection>
         <canGenerateQuestSites>false</canGenerateQuestSites>
         <canSiege>true</canSiege>
@@ -25,6 +24,10 @@
         <animalsFleeDanger>false</animalsFleeDanger>
         <canUseAvoidGrid>false</canUseAvoidGrid>
         <techLevel>Archotech</techLevel>
+        <arrivalLayerWhitelist>
+            <li>Surface</li>
+            <li>Orbit</li>
+        </arrivalLayerWhitelist>
         <backstoryFilters>
             <li>
                 <categories>
@@ -82,23 +85,7 @@
                     <AncientSoldier>100</AncientSoldier>
                 </options>
             </li>
-            <li>
-                <kindDef>Combat</kindDef>
-                <commonality>50</commonality>
-                <options>
-                    <AncientSoldier>100</AncientSoldier>
-                    <Mech_Scyther>5</Mech_Scyther>
-                    <Mech_Pikeman>5</Mech_Pikeman>
-                    <Mech_Lancer>5</Mech_Lancer>
-                    <Mech_CentipedeBlaster>5</Mech_CentipedeBlaster>
-                    <Mech_CentipedeGunner>5</Mech_CentipedeGunner>
-                    <Mech_CentipedeBurner>5</Mech_CentipedeBurner>
-                    <Mech_Termite_Breach>5</Mech_Termite_Breach>
-                </options>
-            </li>
         </pawnGroupMakers>
-        <dropPodIncoming>WNA_WARPIN</dropPodIncoming>
-        <dropPodActive>WNA_WARPON</dropPodActive>
         <modExtensions/>
     </FactionDef>
 </Defs>

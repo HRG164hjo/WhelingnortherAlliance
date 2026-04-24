@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName = "WNA_FactionWNA" or defName = "WNA_FactionPCC"]/arrivalLayerWhitelist</xpath>
+        <value>
+            <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Troposphere</li>
+            <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Stratosphere</li>
+            <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Mesosphere</li>
+            <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_HighOrbit</li>
+            <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li>
+            <li MayRequire="zoarak.desolatemoon">Moon</li>
+            <li MayRequire="zoarak.desolatemoon">MoonReal</li>
+            <li MayRequire="metalocif.skyislands">Avatar_SkyIslandsLayer</li>
+            <li MayRequire="Broms.DeepOrbit">Orbit2</li>
+        </value>
+    </Operation>
+</Patch>
