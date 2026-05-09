@@ -86,14 +86,15 @@ namespace WNA.WNAUtility
         {
             FactionDef def = WNAMainDefOf.WNA_FactionWNA;
             var allowedLayers = GetAllowedLayers(def);
-            if (allowedLayers.Count == 0 || targetSettlementCount <= 0) return;
+            if (allowedLayers.Count == 0 || targetSettlementCount <= 0)
+                return;
             int refillTotal = 0;
             foreach (var layer in allowedLayers)
             {
                 int current = CountSettlementsOnLayer(def, layer);
                 int need = Mathf.Max(0, targetSettlementCount - current);
-                if (need > 0)
-                    refillTotal += (int)(SpawnSettlementsOnLayer(def, layer, need) * 1.414214f);
+                if (current <= 0 || need > 0)
+                    refillTotal += Mathf.CeilToInt(SpawnSettlementsOnLayer(def, layer, need) * 1.414214f);
             }
             if (refillTotal > 0)
             {
@@ -106,7 +107,8 @@ namespace WNA.WNAUtility
         private int SpawnSettlementsOnLayer(FactionDef def, PlanetLayer layer, int amount)
         {
             EnsureFaction(def);
-            if (amount <= 0) return 0;
+            if (amount <= 0)
+                return 0;
             int spawned = 0;
             Faction owner = GetOrCreateFaction(def);
             for (int i = 0; i < amount; i++)
@@ -158,12 +160,14 @@ namespace WNA.WNAUtility
         {
             if (!f.layerBlacklist.NullOrEmpty() && f.layerBlacklist.Contains(layer.Def))
                 return false;
+            if (!f.layerWhitelist.NullOrEmpty() && f.layerWhitelist.Contains(layer.Def))
+                return true;
             return layer.Def.GenStepsInOrder.Contains(DefDatabase<WorldGenStepDef>.GetNamed("Factions"));
         }
         private int GetRecommendedFactionCount()
         {
-            int visible = Mathf.Max(1, Find.FactionManager.AllFactionsVisible.Count());
-            float baseVal = Find.WorldGrid.TilesCount / 100000f * 80f / visible * 0.7f;
+            //int visible = Mathf.Max(1, Find.FactionManager.AllFactionsVisible.Count());
+            float baseVal = (Find.WorldGrid.TilesCount * 0.7f) / 100000f;
             return Mathf.Max(1, GenMath.RoundRandom(baseVal));
         }
     }
