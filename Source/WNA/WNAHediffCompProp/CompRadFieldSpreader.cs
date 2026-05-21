@@ -10,6 +10,7 @@ namespace WNA.WNAHediffCompProp
     public class PropRadFieldSpreader : HediffCompProperties
     {
         public RadSpreadConfig config = new RadSpreadConfig();
+        public bool allowRadSpreadFromDeath = true;
         public PropRadFieldSpreader() => compClass = typeof(CompRadFieldSpreader);
     }
     public class CompRadFieldSpreader : HediffComp
@@ -43,6 +44,8 @@ namespace WNA.WNAHediffCompProp
         public override void Notify_PawnKilled()
         {
             base.Notify_PawnKilled();
+            if (!Props.allowRadSpreadFromDeath || !WNAMod.Settings.enablePawnSpreadRadWhenKilled)
+                return;
             Pawn pawn = Pawn;
             IntVec3 pos = pawn.Position;
             Map map = pawn.MapHeld;

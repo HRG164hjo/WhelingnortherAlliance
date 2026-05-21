@@ -16,6 +16,10 @@ namespace WNA
             var listing = new Listing_Standard();
             listing.Begin(inRect);
             listing.CheckboxLabeled(
+                "WNAMod_enablePawnSpreadRadWhenKilled".Translate(),
+                ref Settings.enablePawnSpreadRadWhenKilled);
+            listing.GapLine();
+            listing.CheckboxLabeled(
                 "WNAMod_enableIdeoConflictHostility".Translate(),
                 ref Settings.enableIdeoConflictHostility);
             listing.GapLine();

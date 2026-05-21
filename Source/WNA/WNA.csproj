@@ -81,7 +81,9 @@
     <Compile Include="WNAHarmony\Patch_WNAPCC_Hostility.cs" />
     <Compile Include="WNAHediffClass\MindControl.cs" />
     <Compile Include="WNAHediffCompProp\CompHediffStunner.cs" />
+    <Compile Include="WNALabour\AreaRadClear.cs" />
     <Compile Include="WNALabour\SacrificePawn.cs" />
+    <Compile Include="WNAMiscs\Area_RadClearArea.cs" />
     <Compile Include="WNAMod.cs" />
     <Compile Include="WNAModSettings.cs" />
     <Compile Include="WNAModExtension\IncompatibleIdeos.cs" />
