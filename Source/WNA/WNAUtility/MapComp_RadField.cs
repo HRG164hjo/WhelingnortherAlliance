@@ -9,9 +9,9 @@ namespace WNA.WNAUtility
     public class MapComp_RadField : MapComponent, ICellBoolGiver
     {
         private List<int> radLevel;
-        public readonly int radLevelMax = 5000;
-        private readonly int radLevelDelay = 29;
-        private readonly int radLevelDecay = 2;
+        public readonly int radLevelMax = 500;
+        private readonly int radLevelDelay = 45;
+        private readonly int radLevelDecay = 1;
         private readonly float radLevelFactor = 0.1f;
         public MapComp_RadField(Map map) : base(map) { }
         private CellBoolDrawer drawerInt;
