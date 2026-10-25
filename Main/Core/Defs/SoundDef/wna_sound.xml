@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--<SoundDef>
+    <defName>WNA_LaserAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/laserAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>16~25</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>-->
+
+  <SoundDef>
+    <defName>WNA_RadAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/radAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>16~25</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>WNA_TeslaAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/teslaAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>16~25</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>WNA_MindControl</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/mindControl</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>16~25</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

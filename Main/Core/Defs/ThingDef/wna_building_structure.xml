@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- t1 -->
+  <ThingDef ParentName="WNA_StructureBase">
+    <defName>WNA_FortressWall</defName>
+    <label>fortress wall</label>
+    <description>An advanced concrete wall, used for fortresses. What's special about this wall is that it can restore itself due to how it is built.</description>
+    <replaceTags>
+      <li>Wall</li>
+    </replaceTags>
+    <graphicData>
+      <texPath>buildings/atlas/wna_cementwall_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+    </graphicData>
+    <drawStyleCategory>Walls</drawStyleCategory>
+    <altitudeLayer>Building</altitudeLayer>
+    <uiIconPath>buildings/atlas/wna_cementwall_icon</uiIconPath>
+    <useHitPoints>true</useHitPoints>
+    <coversFloor>true</coversFloor>
+    <noRightClickDraftAttack>true</noRightClickDraftAttack>
+    <statBases>
+      <MaxHitPoints>12000</MaxHitPoints>
+      <WorkToBuild>390</WorkToBuild>
+      <IncomingDamageFactor>0.01</IncomingDamageFactor>
+    </statBases>
+    <building>
+      <isAirtight>true</isAirtight>
+      <isInert>true</isInert>
+      <isPlaceOverableWall>true</isPlaceOverableWall>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <supportsWallAttachments>true</supportsWallAttachments>
+      <ai_chillDestination>false</ai_chillDestination>
+      <relatedBuildCommands>
+        <li>WNA_FortressDoor</li>
+        <li>WNA_FortressGate</li>
+      </relatedBuildCommands>
+    </building>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+      <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
+    </stuffCategories>
+    <costStuffCount>6</costStuffCount>
+    <costList>
+      <WNA_Quicklime>6</WNA_Quicklime>
+    </costList>
+    <researchPrerequisites>
+      <li>WNA_SelfRegulateStructure</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropThingSelfHeal">
+        <ticksPerHeal>27</ticksPerHeal>
+        <healPercent>10</healPercent>
+      </li>
+      <li Class="WNA.WNAThingComp.PropDamageLimit">
+        <damageLimit>50</damageLimit>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="WNA_StructureBase">
+    <defName>WNA_FortressDoor</defName>
+    <label>fortress door</label>
+    <description>An advanced concrete gate, used for fortresses. What's special about this gate is that it can restore itself due to how it is built.</description>
+    <thingClass>Building_SupportedDoor</thingClass>
+    <graphicData>
+      <texPath>buildings/atlas/wna_fortdoor_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>true</rotatable>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <uiIconPath>buildings/atlas/wna_fortdoor_icon_north</uiIconPath>
+    <useHitPoints>true</useHitPoints>
+    <passability>Standable</passability>
+    <neverMultiSelect>false</neverMultiSelect>
+    <statBases>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <WorkToBuild>390</WorkToBuild>
+      <IncomingDamageFactor>0.01</IncomingDamageFactor>
+      <DoorOpenSpeed>10</DoorOpenSpeed>
+    </statBases>
+    <building>
+      <isAirtight>true</isAirtight>
+      <isSupportDoor>true</isSupportDoor>
+      <isInert>true</isInert>
+      <roamerCanOpen>false</roamerCanOpen>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <ai_chillDestination>false</ai_chillDestination>
+      <relatedBuildCommands>
+        <li>WNA_FortressWall</li>
+        <li>WNA_FortressGate</li>
+      </relatedBuildCommands>
+      <blueprintClass>Blueprint_Door</blueprintClass>
+      <blueprintGraphicData>
+        <texPath>buildings/atlas/wna_fortdoor_icon</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <shaderType>EdgeDetect</shaderType>
+        <drawSize>(2.2, 2.2)</drawSize>
+      </blueprintGraphicData>
+      <doorTopGraphic>
+        <texPath>buildings/atlas/wna_fortdoor_top</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(2.2, 2.2)</drawSize>
+      </doorTopGraphic>
+    </building>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Metallic</li>
+      <li>Stony</li>
+      <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
+    </stuffCategories>
+    <costStuffCount>4</costStuffCount>
+    <costList>
+      <WNA_Quicklime>4</WNA_Quicklime>
+    </costList>
+    <researchPrerequisites>
+      <li>WNA_SelfRegulateStructure</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Forbiddable">
+        <allowNonPlayer>false</allowNonPlayer>
+      </li>
+      <li Class="WNA.WNAThingComp.PropThingSelfHeal">
+        <ticksPerHeal>27</ticksPerHeal>
+        <healPercent>10</healPercent>
+      </li>
+      <li Class="WNA.WNAThingComp.PropDamageLimit">
+        <damageLimit>50</damageLimit>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_DoorLearnOpeningSpeed</li>
+    </placeWorkers>
+  </ThingDef>
+  <ThingDef ParentName="WNA_StructureBase">
+    <defName>WNA_FortressGate</defName>
+    <label>fortress gate</label>
+    <description>An advanced concrete gate, used for fortresses. What's special about this gate is that it can restore itself due to how it is built.</description>
+    <thingClass>Building_MultiTileDoor</thingClass>
+    <graphicData>
+      <texPath>buildings/atlas/wna_fortgate_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <drawerType>RealtimeOnly</drawerType>
+    <size>(2,1)</size>
+    <rotatable>true</rotatable>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <uiIconPath>buildings/atlas/wna_fortgate_icon_north</uiIconPath>
+    <useHitPoints>true</useHitPoints>
+    <passability>Standable</passability>
+    <neverMultiSelect>false</neverMultiSelect>
+    <statBases>
+      <MaxHitPoints>90000</MaxHitPoints>
+      <WorkToBuild>640</WorkToBuild>
+      <IncomingDamageFactor>0.1</IncomingDamageFactor>
+      <DoorOpenSpeed>10</DoorOpenSpeed>
+    </statBases>
+    <building>
+      <isAirtight>true</isAirtight>
+      <isSupportDoor>true</isSupportDoor>
+      <isInert>true</isInert>
+      <roamerCanOpen>false</roamerCanOpen>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <ai_chillDestination>false</ai_chillDestination>
+      <blueprintClass>Blueprint_Door</blueprintClass>
+      <relatedBuildCommands>
+        <li>WNA_FortressWall</li>
+        <li>WNA_FortressDoor</li>
+      </relatedBuildCommands>
+      <blueprintGraphicData>
+        <texPath>buildings/atlas/wna_fortgate_icon</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <shaderType>EdgeDetect</shaderType>
+        <drawSize>(2.4, 3.2)</drawSize>
+      </blueprintGraphicData>
+      <doorTopGraphic>
+        <texPath>buildings/atlas/wna_fortgate_top</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(3.2, 2.4)</drawSize>
+      </doorTopGraphic>
+      <doorSupportGraphic>
+        <texPath>buildings/atlas/wna_fortgate_support</texPath>
+        <graphicClass>Graphic_Multi</graphicClass>
+        <drawSize>(3.2, 2.4)</drawSize>
+      </doorSupportGraphic>
+    </building>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Metallic</li>
+      <li>Stony</li>
+      <li MayRequire="ludeon.rimworld.anomaly">Bioferrite</li>
+    </stuffCategories>
+    <costStuffCount>8</costStuffCount>
+    <costList>
+      <WNA_Quicklime>8</WNA_Quicklime>
+    </costList>
+    <researchPrerequisites>
+      <li>WNA_SelfRegulateStructure</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Forbiddable">
+        <allowNonPlayer>false</allowNonPlayer>
+      </li>
+      <li Class="WNA.WNAThingComp.PropThingSelfHeal">
+        <ticksPerHeal>27</ticksPerHeal>
+        <healPercent>10</healPercent>
+      </li>
+      <li Class="WNA.WNAThingComp.PropDamageLimit">
+        <damageLimit>50</damageLimit>
+      </li>
+    </comps>
+    <placeWorkers>
+        <li>PlaceWorker_MultiCellDoor</li>
+    </placeWorkers>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: phase pack -->
+  <WNA_ChronoPack.label>相位背包</WNA_ChronoPack.label>
+  <!-- EN: An equipped phase pack allows this pawn to do unbelieveable movements. -->
+  <WNA_ChronoPack.description>在相位背包的帮助下，此人能进行不可思议的运动。</WNA_ChronoPack.description>
+  
+  <!-- EN: irradiating -->
+  <WNA_DeadzoneBelt.label>辐射源</WNA_DeadzoneBelt.label>
+  <!-- EN: This pawn is emitting deadly radiation field. -->
+  <WNA_DeadzoneBelt.description>此人正在释放致命的辐射场。</WNA_DeadzoneBelt.description>
+  
+  <!-- EN: illusion core -->
+  <WNA_IllusionCore.label>幻象核心</WNA_IllusionCore.label>
+  <!-- EN: This pawn is covered by a stealth field. -->
+  <WNA_IllusionCore.description>此人被一个隐身立场覆盖。</WNA_IllusionCore.description>
+  
+  <!-- EN: suit boost -->
+  <WNA_StdSuitBoost.label>助战衣物</WNA_StdSuitBoost.label>
+  <!-- EN: Special designs and techniques in military suit is helping this pawn performing better than normal. -->
+  <WNA_StdSuitBoost.description>标准军服采用的特殊设计和技术让此人能将自己的能力发挥得超乎寻常。</WNA_StdSuitBoost.description>
+  
+</LanguageData>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraitDef[defName="WNA_Trait_Unshakable"]/degreeDatas/li[1]/disablesNeeds</xpath>
+    <value>
+      <li MayRequire="vanillaexpanded.vanillafoodvarietyexpanded">VCEV_FoodVariety</li>
+      <li MayRequire="vanillaexpanded.vanomalyeinsanity">VAEI_Sanity</li>
+      <li MayRequire="vanillaexpanded.vanillaaspirationsexpanded">VAspirE_Fulfillment</li>
+      <li MayRequire="vanillaexpanded.vmemese">VME_Anonymity</li>
+      <li MayRequire="vanillaexpanded.vmemese">VME_Corruption</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/GeneDef[defName="WNA_Apathy"]/disablesNeeds</xpath>
+    <value>
+      <li MayRequire="vanillaexpanded.vanillafoodvarietyexpanded">VCEV_FoodVariety</li>
+      <li MayRequire="vanillaexpanded.vanomalyeinsanity">VAEI_Sanity</li>
+      <li MayRequire="vanillaexpanded.vanillaaspirationsexpanded">VAspirE_Fulfillment</li>
+      <li MayRequire="vanillaexpanded.vmemese">VME_Anonymity</li>
+      <li MayRequire="vanillaexpanded.vmemese">VME_Corruption</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraitDef[defName="WNA_Trait_Unshakable"]/degreeDatas/li[1]/statFactors</xpath>
+    <value>
+      <VAEI_SanityLossMultiplier MayRequire="vanillaexpanded.vanomalyeinsanity">0</VAEI_SanityLossMultiplier>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="WNA_Whelingnorthan"]/statBases</xpath>
+    <value>
+      <VAEI_SanityGainPerDay MayRequire="vanillaexpanded.vanomalyeinsanity">100</VAEI_SanityGainPerDay>
+      <VAEI_SanityGainMultiplier MayRequire="vanillaexpanded.vanomalyeinsanity">10</VAEI_SanityGainMultiplier>
+      <VAEI_SanityMultiplier MayRequire="vanillaexpanded.vanomalyeinsanity">10</VAEI_SanityMultiplier>
+      <VAEI_SanityLossMultiplier MayRequire="vanillaexpanded.vanomalyeinsanity">0</VAEI_SanityLossMultiplier>
+      <VSE_AttackOnFailChanceFactor MayRequire="vanillaexpanded.skills">0</VSE_AttackOnFailChanceFactor>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="WNA_Humanoid"]/statBases</xpath>
+    <value>
+      <VAEI_SanityGainPerDay MayRequire="vanillaexpanded.vanomalyeinsanity">10</VAEI_SanityGainPerDay>
+      <VAEI_SanityGainMultiplier MayRequire="vanillaexpanded.vanomalyeinsanity">10</VAEI_SanityGainMultiplier>
+      <VAEI_SanityMultiplier MayRequire="vanillaexpanded.vanomalyeinsanity">10</VAEI_SanityMultiplier>
+      <VAEI_SanityLossMultiplier MayRequire="vanillaexpanded.vanomalyeinsanity">0</VAEI_SanityLossMultiplier>
+      <VSE_AttackOnFailChanceFactor MayRequire="vanillaexpanded.skills">0</VSE_AttackOnFailChanceFactor>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/GeneDef[defName="WNA_Mastery"]</xpath>
+    <value>
+      <li Class="VEF.Genes.GeneExtension">
+				<skillDegradation>false</skillDegradation>
+				<globalSkillLossMultiplier>0</globalSkillLossMultiplier>
+				<disableGeneExtraction>true</disableGeneExtraction>
+			</li>
+    </value>
+  </Operation>
+
+  <!---->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Food Variety Expanded</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThoughtDef[defName="VCEV_NeedVariety"]/nullifyingTraits</xpath>
+          <value>
+            <li>Ascetic</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThoughtDef[defName="VCEV_NeedVariety"]</xpath>
+          <value>
+            <nullifyingPrecepts>
+              <li>WNA_Proselyte</li>
+            </nullifyingPrecepts>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Gravship Expanded - Chapter 1</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VGE_GravFieldAmplifier"]/comps/li[@Class="CompProperties_GravshipFacility"]/statOffsets</xpath>
+          <value>
+            <statOffsets>
+              <SubstructureSupport>2500</SubstructureSupport>
+              <GravshipRange>250</GravshipRange>
+              <VGE_MaintenanceSensitivity>-25</VGE_MaintenanceSensitivity>
+              <VGE_GlobalMaintenanceSensitivity>-25</VGE_GlobalMaintenanceSensitivity>
+              <VGE_GravshipVisibilityFactor MayRequire="vanillaexpanded.gravship2">-25</VGE_GravshipVisibilityFactor>
+              <VGE_GravshipLaunchVisibilityOffset MayRequire="vanillaexpanded.gravship2">-25</VGE_GravshipLaunchVisibilityOffset>
+            </statOffsets>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VGE_GravFieldAmplifier"]/comps</xpath>
+          <value>
+            <li Class="CompProperties_ProjectileInterceptor">
+              <radius>36.9</radius>
+              <cooldownTicks>0</cooldownTicks>
+              <disarmedByEmpForTicks>0</disarmedByEmpForTicks>
+              <interceptGroundProjectiles>true</interceptGroundProjectiles>
+              <interceptAirProjectiles>true</interceptAirProjectiles>
+              <interceptNonHostileProjectiles>false</interceptNonHostileProjectiles>
+              <interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
+              <drawWithNoSelection>true</drawWithNoSelection>
+              <chargeDurationTicks>1</chargeDurationTicks>
+              <rechargeHitPointsIntervalTicks>1</rechargeHitPointsIntervalTicks>
+              <color>(0.2,0.2,0.2)</color>
+              <minIdleAlpha>0.2</minIdleAlpha>
+            </li>
+            <li Class="CompProperties_Power">
+              <compClass>CompPowerPlantGravcore</compClass>
+              <basePowerConsumption>-30000</basePowerConsumption>
+              <transmitsPower>true</transmitsPower>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="VGE_GravFieldAmplifier"]/placeWorkers/li[text()="PlaceWorker_InRangeOfGravEngine"]</xpath>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Gravship Expanded - Chapter 2</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VGE_SmallElectricThruster" or defName="VGE_LargeElectricThruster" or defName="VGE_GiantElectricThruster"]/comps/li[@Class="VanillaGravshipExpanded2.CompProperties_ElectricThruster"]/exclusionAreaSize</xpath>
+          <value>
+            <exclusionAreaSize>(0,0,0)</exclusionAreaSize>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VGE_SmallElectricThruster" or defName="VGE_LargeElectricThruster" or defName="VGE_GiantElectricThruster"]/comps/li[@Class="VanillaGravshipExpanded2.CompProperties_ElectricThruster"]/exclusionAreaOffset</xpath>
+          <value>
+            <exclusionAreaOffset>(0,0,0)</exclusionAreaOffset>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VGE_SmallElectricThruster"]/comps/li[@Class="VanillaGravshipExpanded2.CompProperties_ElectricThruster"]/statOffsets/GravshipRange</xpath>
+          <value>
+            <GravshipRange>20</GravshipRange>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VGE_LargeElectricThruster"]/comps/li[@Class="VanillaGravshipExpanded2.CompProperties_ElectricThruster"]/statOffsets/GravshipRange</xpath>
+          <value>
+            <GravshipRange>40</GravshipRange>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VGE_GiantElectricThruster"]/comps/li[@Class="VanillaGravshipExpanded2.CompProperties_ElectricThruster"]/statOffsets/GravshipRange</xpath>
+          <value>
+            <GravshipRange>90</GravshipRange>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

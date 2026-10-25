@@ -1,209 +1,49 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E7200242-F355-4843-A60C-62980820F4C2}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WNA</RootNamespace>
+    <TargetFramework>net10.0</TargetFramework>
     <AssemblyName>WNA</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <RootNamespace>WNA</RootNamespace>
     <Deterministic>true</Deterministic>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>..\..\Main\Core\Assemblies\</OutputPath>
+    <DebugType>portable</DebugType>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+
+    <!-- RimWorld 1.7 install root (four levels up from Source/WNA). -->
+    <RimWorldDir>..\..\..\..\</RimWorldDir>
+    <!-- Harmony (Steam Workshop 2009463077), ships a 1.7 build. -->
+    <HarmonyDll>..\..\..\..\..\..\workshop\content\294100\2009463077\1.7\Assemblies\0Harmony.dll</HarmonyDll>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\Core\Assemblies\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\1.4\Assemblies\0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+    <Compile Remove=".vs\**\*.cs" />
+    <Compile Remove="bin\**\*.cs" />
+    <Compile Remove="obj\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>$(RimWorldDir)Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    <Reference Include="UnityStubs">
+      <HintPath>$(RimWorldDir)UnityStubs.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    <Reference Include="Waylith">
+      <HintPath>$(RimWorldDir)Waylith.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    <Reference Include="0Harmony">
+      <HintPath>$(HarmonyDll)</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="WNAAbilityCompProp\CompAbilityAscension.cs" />
-    <Compile Include="WNAAbilityCompProp\CompHediffDeprivation.cs" />
-    <Compile Include="WNAAbilityCompProp\CompMindControl.cs" />
-    <Compile Include="WNADamageWorker\Controller.cs" />
-    <Compile Include="WNADamageWorker\DamageWorkerBasic.cs" />
-    <Compile Include="WNADamageWorker\Culling.cs" />
-    <Compile Include="WNADamageWorker\IronKiller.cs" />
-    <Compile Include="WNADamageWorker\LysField.cs" />
-    <Compile Include="WNADamageWorker\Hypothermal.cs" />
-    <Compile Include="WNADamageWorker\RadField.cs" />
-    <Compile Include="WNADamageWorker\Chrono.cs" />
-    <Compile Include="WNAHarmony\Patch_GenGuest.cs" />
-    <Compile Include="WNAHarmony\Patch_MechanitorUtility.cs" />
-    <Compile Include="WNAHarmony\Patch_Pawn_IdeoTracker.cs" />
-    <Compile Include="WNAHarmony\Patch_RecruitUtility.cs" />
-    <Compile Include="WNAHarmony\Patch_Thing.cs" />
-    <Compile Include="WNAHarmony\Patch_TradeShip.cs" />
-    <Compile Include="WNAHarmony\Patch_WNAPCC_Hostility.cs" />
-    <Compile Include="WNAHediffClass\MindControl.cs" />
-    <Compile Include="WNAHediffCompProp\CompHediffStunner.cs" />
-    <Compile Include="WNALabour\AreaRadClear.cs" />
-    <Compile Include="WNALabour\SacrificePawn.cs" />
-    <Compile Include="WNAMiscs\Area_RadClearArea.cs" />
-    <Compile Include="WNAMod.cs" />
-    <Compile Include="WNAModSettings.cs" />
-    <Compile Include="WNAModExtension\IncompatibleIdeos.cs" />
-    <Compile Include="WNAModExtension\PassingShipNamer.cs" />
-    <Compile Include="WNAThingCompProp\CompOrganicBasin.cs" />
-    <Compile Include="WNAUtility\GameComp_Returner.cs" />
-    <Compile Include="WNAUtility\WorldComp_WNAGenerate.cs" />
-    <Compile Include="WNAVerbType\VerbType_NoFriendFire.cs" />
-    <Compile Include="WNAModExtension\KillDownUtility.cs" />
-    <Compile Include="WNAModExtension\MassCapacity.cs" />
-    <Compile Include="WNAModExtension\MechSkillOffset.cs" />
-    <Compile Include="WNAModExtension\Passability.cs" />
-    <Compile Include="WNAModExtension\RefuelableExtraStat.cs" />
-    <Compile Include="WNAModExtension\TechnoConfig.cs" />
-    <Compile Include="WNAGameCond\GameCond_ClimateControl.cs" />
-    <Compile Include="WNAGameCond\GameCond_PermaconstActive.cs" />
-    <Compile Include="WNAHediffCompProp\CompHediffHediffRemover.cs" />
-    <Compile Include="WNAHediffCompProp\CompPermaconstActive.cs" />
-    <Compile Include="WNAHediffCompProp\CompPermaconstHidden.cs" />
-    <Compile Include="WNAHediffCompProp\CompProximityBlink.cs" />
-    <Compile Include="WNAIncident\PermaconstMaintenance.cs" />
-    <Compile Include="WNARecipeWorker\ControlRelease.cs" />
-    <Compile Include="WNARecipeWorker\TargetedHarvest.cs" />
-    <Compile Include="WNAThingClass\DummyLaser.cs" />
-    <Compile Include="WNAThingClass\Whelingnorthan.cs" />
-    <Compile Include="WNAThingCompProp\CompBodyshapeOverride.cs" />
-    <Compile Include="WNAThingCompProp\CompClimateControl.cs" />
-    <Compile Include="WNAThingCompProp\CompFactionDeed.cs" />
-    <Compile Include="WNAThingCompProp\CompFactionDeed_HostileDestruct.cs" />
-    <Compile Include="WNAThingCompProp\CompFactionDeed_TargetPawn.cs" />
-    <Compile Include="WNAThingCompProp\CompHealOrRevive.cs" />
-    <Compile Include="WNAThingCompProp\CompIronApparel.cs" />
-    <Compile Include="WNAThingCompProp\CompIronGuardian.cs" />
-    <Compile Include="WNAThingCompProp\CompStarcoreDriller.cs" />
-    <Compile Include="WNAThingCompProp\CompSwtichMode.cs" />
-    <Compile Include="WNAHarmony.cs" />
-    <Compile Include="WNAHediffClass\DeathEnd.cs" />
-    <Compile Include="WNAHediffClass\VoidDrainer.cs" />
-    <Compile Include="WNAHediffCompProp\CompMechAutoHeal.cs" />
-    <Compile Include="WNAHediffCompProp\CompHealPermaWounds.cs" />
-    <Compile Include="WNAHediffCompProp\CompPostRemoveHediff.cs" />
-    <Compile Include="WNAHediffCompProp\CompRadFieldSpreader.cs" />
-    <Compile Include="WNAHediffCompProp\CompTemporalEffect.cs" />
-    <Compile Include="WNAIncident\DiscipleJoin.cs" />
-    <Compile Include="WNATargetEffect\Ascension.cs" />
-    <Compile Include="WNAThingClass\BarrierDoor.cs" />
-    <Compile Include="WNAThingClass\SpikeTrap.cs" />
-    <Compile Include="WNAThingCompProp\CompAOEDamage.cs" />
-    <Compile Include="WNAThingCompProp\CompApparelEquipHediff.cs" />
-    <Compile Include="WNAThingCompProp\CompApparelHediffRemover.cs" />
-    <Compile Include="WNAThingCompProp\CompAttachHediff.cs" />
-    <Compile Include="WNAThingCompProp\CompDamageLimit.cs" />
-    <Compile Include="WNAThingCompProp\CompHeatPusher.cs" />
-    <Compile Include="WNAThingCompProp\CompHydroponics.cs" />
-    <Compile Include="WNAThingCompProp\CompRadFieldAmbient.cs" />
-    <Compile Include="WNAThingCompProp\CompRadFieldBurst.cs" />
-    <Compile Include="WNAThingCompProp\CompShieldGenerator.cs" />
-    <Compile Include="WNAThingCompProp\CompThingSelfHeal.cs" />
-    <Compile Include="WNADefOf\WNAMainDefOf.cs" />
-    <Compile Include="WNADefOf\WNASubDefOf.cs" />
-    <Compile Include="WNAHarmony\Patch_PrisonBreakUtility.cs" />
-    <Compile Include="WNAHarmony\Patch_Caravan.cs" />
-    <Compile Include="WNAHarmony\Patch_CompSpawner.cs" />
-    <Compile Include="WNAHarmony\Patch_CompTransporter.cs" />
-    <Compile Include="WNAHarmony\Patch_JobMeditate.cs" />
-    <Compile Include="WNAHarmony\Patch_KillDownUtility.cs" />
-    <Compile Include="WNAHarmony\Patch_CompRottable.cs" />
-    <Compile Include="WNAHarmony\Patch_Explosion.cs" />
-    <Compile Include="WNAHarmony\Patch_HunterHunt.cs" />
-    <Compile Include="WNAHarmony\Patch_Interaction.cs" />
-    <Compile Include="WNAHarmony\Patch_MassUtility.cs" />
-    <Compile Include="WNAHarmony\Patch_Job_Mining.cs" />
-    <Compile Include="WNAHarmony\Patch_Need.cs" />
-    <Compile Include="WNAHarmony\Patch_Passability.cs" />
-    <Compile Include="WNAHarmony\Patch_PawnGenerator.cs" />
-    <Compile Include="WNAHarmony\Patch_SpawnSetup.cs" />
-    <Compile Include="WNAHarmony\Patch_Placeworker.cs" />
-    <Compile Include="WNAHarmony\Patch_Plant.cs" />
-    <Compile Include="WNAHarmony\Patch_RandomDrop.cs" />
-    <Compile Include="WNAHarmony\Patch_Refuelable.cs" />
-    <Compile Include="WNAHarmony\Patch_Roof.cs" />
-    <Compile Include="WNAHarmony\Patch_SkillRecord.cs" />
-    <Compile Include="WNAHarmony\Patch_Training.cs" />
-    <Compile Include="WNAHarmony\Patch_Vacuum.cs" />
-    <Compile Include="WNAHarmony\Patch_WeaponTagPostfix.cs" />
-    <Compile Include="WNAHarmony\Patch_WNACommsConsoleDialog.cs" />
-    <Compile Include="WNAHarmony\WNAMod.cs" />
-    <Compile Include="WNALabour\Revive.cs" />
-    <Compile Include="WNALabour\UseDeedOn.cs" />
-    <Compile Include="WNAMiscs\Gizmo_ShieldStatus.cs" />
-    <Compile Include="WNAMiscs\HedifferTicker.cs" />
-    <Compile Include="WNAMiscs\IngredValGetter_MarketValue.cs" />
-    <Compile Include="WNAMiscs\IngredValGetter_Mass.cs" />
-    <Compile Include="WNAMiscs\IngredValGetter_NutriMisc.cs" />
-    <Compile Include="WNAMiscs\PlaceWorker_SingleOnMap.cs" />
-    <Compile Include="WNAMiscs\ProjType_Inviso.cs" />
-    <Compile Include="WNAMiscs\ProjType_IronBlast.cs" />
-    <Compile Include="WNAMiscs\StockGenerator_BuyAnything.cs" />
-    <Compile Include="WNAVerbType\VerbType_Burst.cs" />
-    <Compile Include="WNAVerbType\VerbType_IronBlast.cs" />
-    <Compile Include="WNAVerbType\VerbType_Laser.cs" />
-    <Compile Include="WNAMiscs\WarpOn.cs" />
-    <Compile Include="WNAUtility\WorldComp_HediffRemover.cs" />
-    <Compile Include="WNAUtility\WorldComp_Permaconst.cs" />
-    <Compile Include="WNAUtility\ChronoUtility.cs" />
-    <Compile Include="WNAUtility\IronCurtainUtility.cs" />
-    <Compile Include="WNAUtility\GameComp_Iron.cs" />
-    <Compile Include="WNAUtility\LysFieldUtility.cs" />
-    <Compile Include="WNAUtility\GameComp_LysField.cs" />
-    <Compile Include="WNAUtility\RoomDoorUtility.cs" />
-    <Compile Include="WNAUtility\General.cs" />
-    <Compile Include="WNAUtility\RadFieldUtility.cs" />
-    <Compile Include="WNAUtility\MapComp_RadField.cs" />
-    <Compile Include="WNAUtility\MindControlUtility.cs" />
-    <Compile Include="WNAAbilityCompProp\CompAbilityResurrect.cs" />
-    <Compile Include="WNARecipeWorker\Inspection.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WNALabour\DeepDrill.cs" />
-    <Compile Include="WNAVerbType\VerbType_SetOffExplosion.cs" />
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>

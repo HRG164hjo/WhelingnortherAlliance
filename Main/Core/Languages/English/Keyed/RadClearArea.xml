@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNA_RadClearArea>rad-clear area</WNA_RadClearArea>
+
+  <WNA_RadClearAreaExpand>expand rad-clear area</WNA_RadClearAreaExpand>
+
+  <WNA_RadClearAreaExpandDesc>Desingate a area to clean rad fields inside. Radiation-immune pawns will automatically go cleaning when abailable.</WNA_RadClearAreaExpandDesc>
+
+  <WNA_RadClearAreaRemove>remove rad-clear area</WNA_RadClearAreaRemove>
+
+  <WNA_RadClearAreaRemoveDesc>Remove rad-clear area.</WNA_RadClearAreaRemoveDesc>
+
+  <WNA_RadLevelReadout>Rad Level</WNA_RadLevelReadout>
+
+</LanguageData>

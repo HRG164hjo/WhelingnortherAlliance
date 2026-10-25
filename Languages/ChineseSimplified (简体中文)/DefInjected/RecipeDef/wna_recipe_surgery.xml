@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: control release -->
+  <WNA_ControlRelease.label>TODO</WNA_ControlRelease.label>
+  <!-- EN: Try to release a mind control victim from the control. If the control is permanent, the attempt will be useless. -->
+  <WNA_ControlRelease.description>TODO</WNA_ControlRelease.description>
+  <!-- EN: Trying to release TargetA from mind control. -->
+  <WNA_ControlRelease.jobString>TODO</WNA_ControlRelease.jobString>
+  
+  <!-- EN: blood dialysis -->
+  <WNA_Hemodialysis.label>TODO</WNA_Hemodialysis.label>
+  <!-- EN: Use specially formulated solution to perform blood dialysis on the patient, in order to extract toxic substances accumulated in the patient's body. -->
+  <WNA_Hemodialysis.description>TODO</WNA_Hemodialysis.description>
+  <!-- EN: Performing blood dialysis on TargetA. -->
+  <WNA_Hemodialysis.jobString>TODO</WNA_Hemodialysis.jobString>
+  
+  <!-- EN: psychic inspection -->
+  <WNA_Inspection.label>TODO</WNA_Inspection.label>
+  <!-- EN: Inspect target with one's psychic power, faster and no medicine is required. This technique requires basic level of intelligence. -->
+  <WNA_Inspection.description>TODO</WNA_Inspection.description>
+  <!-- EN: Inspecting TargetA. -->
+  <WNA_Inspection.jobString>TODO</WNA_Inspection.jobString>
+  
+</LanguageData>

@@ -5,7 +5,7 @@ using Verse;
 
 namespace WNA.WNAVerbType
 {
-    public class VerbType_Burst : Verb_LaunchProjectile
+    internal class VerbType_Burst : Verb_LaunchProjectile
     {
         protected override int ShotsPerBurst => base.BurstShotCount;
         #region Reflection

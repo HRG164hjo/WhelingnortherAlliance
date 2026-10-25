@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffGiverSetDef>
+    <defName>WNA_HediffGiver_WNThan</defName>
+    <hediffGivers>
+      <li Class="WNA.WNAMiscs.HediffGiver_Ticker">
+        <hediff>WNA_Inhuman</hediff>
+        <tickInterval>7</tickInterval>
+      </li>
+      <li Class="WNA.WNAMiscs.HediffGiver_Ticker">
+        <hediff>WNA_PermaconstActive</hediff>
+        <tickInterval>7</tickInterval>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+  
+  <HediffGiverSetDef>
+    <defName>WNA_HediffGiver_Human</defName>
+    <hediffGivers>
+      <li Class="WNA.WNAMiscs.HediffGiver_Ticker">
+        <hediff>WNA_PermaconstActive</hediff>
+        <tickInterval>23</tickInterval>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+
+</Defs>

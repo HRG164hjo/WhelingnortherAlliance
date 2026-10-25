@@ -2,8 +2,8 @@
 
 namespace WNA.WNAModExtension
 {
-    public class MassCapacity : DefModExtension
+    internal class MassCapacity : DefModExtension
     {
-        public float massCapacity;
+        public float massCapacity = 35f;
     }
 }

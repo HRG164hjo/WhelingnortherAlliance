@@ -4,9 +4,13 @@ using Verse;
 
 namespace WNA.WNAModExtension
 {
-    public class IncompatibleIdeos : DefModExtension
+    internal class IncompatibleIdeos : DefModExtension
     {
         public List<MemeDef> incompMemes = new List<MemeDef>();
         public List<PreceptDef> incompPrecepts = new List<PreceptDef>();
+        public static IncompatibleIdeos Get(Def def)
+        {
+            return def?.GetModExtension<IncompatibleIdeos>();
+        }
     }
 }

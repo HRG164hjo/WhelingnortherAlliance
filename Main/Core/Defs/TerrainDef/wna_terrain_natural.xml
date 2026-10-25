@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <DesignatorDropdownGroupDef>
+    <defName>WNA_FloorGroup_Nature</defName>
+    <label>wna terrain</label>
+  </DesignatorDropdownGroupDef>
+
+  <TerrainDef ParentName="WNA_FloorsBase">
+    <defName>WNA_FocusSoil</defName>
+    <label>dim soil</label>
+    <description>Dim colorless soil, vitality is pulsing through it.</description>
+    <texturePath>terrains/wna_soil</texturePath>
+    <natural>true</natural>
+    <layerable>false</layerable>
+    <renderPrecedence>399</renderPrecedence>
+    <statBases>
+      <MarketValue>0</MarketValue>
+      <WorkToBuild>20</WorkToBuild>
+      <Beauty>2</Beauty>
+      <Cleanliness>2</Cleanliness>
+    </statBases>
+    <affordances>
+      <li>Diggable</li>
+      <li>GrowSoil</li>
+      <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_GrowAsh</li>
+      <li MayRequire="dankpyon.medieval.overhaul">DankPyon_GrowSoilVine</li>
+    </affordances>
+    <tags>
+      <li>Soil</li>
+      <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_Ash</li>
+    </tags>
+    <fertility>40</fertility>
+    <edgeType>FadeRough</edgeType>
+    <researchPrerequisites>
+      <li>WNA_WhelingnortherApocalypse</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_FloorGroup_Nature</designatorDropdown>
+  </TerrainDef>
+
+  <TerrainDef ParentName="WNA_FloorsBase">
+    <defName>WNA_FocusSpring</defName>
+    <label>pale spring</label>
+    <description>Colorless fluid, seems to have some mysterious aspects.</description>
+    <texturePath>terrains/wna_spring</texturePath>
+    <waterDepthShader>Map/WaterDepth</waterDepthShader>
+    <natural>true</natural>
+    <layerable>false</layerable>
+    <renderPrecedence>399</renderPrecedence>
+    <avoidWander>true</avoidWander>
+    <takeSplashes>true</takeSplashes>
+    <waterBodyType>Other</waterBodyType>
+    <canFreeze>false</canFreeze>
+    <statBases>
+      <MarketValue>0</MarketValue>
+      <WorkToBuild>20</WorkToBuild>
+      <Beauty>2</Beauty>
+      <Cleanliness>2</Cleanliness>
+    </statBases>
+    <affordances Inherit="false">
+      <li>ShallowWater</li>
+      <li>MovingFluid</li>
+      <li>WaterproofConduitable</li>
+    </affordances>
+    <tags>
+      <li>Water</li>
+    </tags>
+    <edgeType>Water</edgeType>
+    <researchPrerequisites>
+      <li>WNA_WhelingnortherApocalypse</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_FloorGroup_Nature</designatorDropdown>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
+    <modExtensions>
+      <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl" MayRequire="BiomesTeam.BiomesCore">
+        <terrainTags>
+          <li>Water</li>
+        </terrainTags>
+      </li>
+    </modExtensions>
+  </TerrainDef>
+
+  <TerrainDef ParentName="WNA_FloorsBase">
+    <defName>WNA_FocusSand</defName>
+    <label>dim sand</label>
+    <description>These sands have ran out of their color.</description>
+    <texturePath>terrains/wna_sand</texturePath>
+    <natural>true</natural>
+    <layerable>false</layerable>
+    <renderPrecedence>399</renderPrecedence>
+    <statBases>
+      <MarketValue>0</MarketValue>
+      <WorkToBuild>20</WorkToBuild>
+      <Beauty>2</Beauty>
+      <Cleanliness>2</Cleanliness>
+    </statBases>
+    <affordances>
+      <li>Diggable</li>
+    </affordances>
+    <edgeType>FadeRough</edgeType>
+    <researchPrerequisites>
+      <li>WNA_WhelingnortherApocalypse</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_FloorGroup_Nature</designatorDropdown>
+    <modExtensions>
+      <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl" MayRequire="BiomesTeam.BiomesCore">
+        <terrainTags>
+          <li>Sandy</li>
+        </terrainTags>
+      </li>
+    </modExtensions>
+  </TerrainDef>
+
+</Defs>

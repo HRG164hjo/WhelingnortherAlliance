@@ -6,7 +6,7 @@ using Verse;
 
 namespace WNA.WNARecipeWorker
 {
-    public class Inspection : Recipe_Surgery
+    internal class Inspection : Recipe_Surgery
     {
         public override void ApplyOnPawn(Pawn pawn, BodyPartRecord part, Pawn billDoer, List<Thing> ingredients, Bill bill)
         {

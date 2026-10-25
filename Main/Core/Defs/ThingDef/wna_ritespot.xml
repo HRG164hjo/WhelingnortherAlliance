@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="WNA_FurnitureBase">
+    <defName>WNA_Ritespot</defName>
+    <label>ritespot</label>
+    <description>A rite spot.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>rite/rite_base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <color>(200,200,200)</color>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <researchPrerequisites>
+      <li>WNA_WhelingnortherApocalypse</li>
+    </researchPrerequisites>
+    <passability>Standable</passability>
+    <minifiedDef Inherits="false" IsNull="true"/>
+    <thingCategories Inherits="false" IsNull="true"/>
+    <statBases>
+      <Flammability>0</Flammability>
+      <Mass>0</Mass>
+      <WorkToBuild>0</WorkToBuild>
+    </statBases>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>true</artificialForMeditationPurposes>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+    </building>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,0)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+    </placeWorkers>
+  </ThingDef>
+</Defs>

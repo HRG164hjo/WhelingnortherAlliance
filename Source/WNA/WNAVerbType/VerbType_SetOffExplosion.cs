@@ -4,7 +4,7 @@ using Verse;
 
 namespace WNA.WNAVerbType
 {
-    public class VerbType_SetOffExplosion : Verb_Shoot
+    internal class VerbType_SetOffExplosion : Verb_Shoot
     {
         protected override bool TryCastShot()
         {

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <PawnKindDef Abstract="True" ParentName="WNA_PawnsBase" Name="WNA_PawnsHumanoid">
+    <race>WNA_Humanoid</race>
+    <nameMaker>WNA_NamerPawn</nameMaker>
+    <nameMakerFemale>WNA_NamerPawn</nameMakerFemale>
+    <minApparelQuality>Legendary</minApparelQuality>
+    <maxApparelQuality>Legendary</maxApparelQuality>
+    <startingHediffs>
+      <li><def>WNA_PermaconstActive</def></li>
+    </startingHediffs>
+    <apparelDisallowTags>
+      <li>WNA_Tag_Divine</li>
+    </apparelDisallowTags>
+    <forcedTraits>
+      <li>WNA_Trait_Unshakable</li>
+    </forcedTraits>
+    <apparelRequired>
+			<li>WNA_Holyorder</li>
+			<li>WNA_StdMiliSuit</li>
+		</apparelRequired>
+    <apparelDisallowTags>
+      <li>WNA_Tag_LeaderOnly</li>
+    </apparelDisallowTags>
+    <xenotypeSet MayRequire="Ludeon.Rimworld.Biotech">
+      <xenotypeChances>
+        <WNA_Mortaliner>50</WNA_Mortaliner>
+        <Baseliner>50</Baseliner>
+        <Dirtmole>20</Dirtmole>
+        <Hussar>20</Hussar>
+        <Impid>20</Impid>
+        <Waster>10</Waster>
+        <Sanguophage>10</Sanguophage>
+        <HRGXeno_SimpleFurrskin MayRequire="HRG164hjo.SimpleRaces">50</HRGXeno_SimpleFurrskin>
+        <HRGXeno_Hyliner MayRequire="HRG164hjo.SimpleRaces">50</HRGXeno_Hyliner>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+  <PawnKindDef Abstract="True" ParentName="WNA_PawnsBase" Name="WNA_PawnsWhelingnorthan">
+    <race>WNA_Whelingnorthan</race>
+    <nameMaker>WNA_NamerPawnW</nameMaker>
+    <nameMakerFemale>WNA_NamerPawnW</nameMakerFemale>
+    <minApparelQuality>Legendary</minApparelQuality>
+    <maxApparelQuality>Legendary</maxApparelQuality>
+    <weaponTags>
+      <li>Tag_WNANormalWP</li>
+    </weaponTags>
+    <forcedTraits>
+      <li>Asexual</li>
+      <li>Ascetic</li>
+      <li>Psychopath</li>
+      <li>Tough</li>
+      <li>WNA_Trait_Unshakable</li>
+    </forcedTraits>
+    <apparelRequired>
+			<li>WNA_Holyorder</li>
+			<li>WNA_StdMiliSuit</li>
+			<li>WNA_ApocalypseHood</li>
+			<li>WNA_ApocalypseCloak</li>
+			<li>WNA_ApocalypseRobe</li>
+			<li MayRequire="fxz.glitterworlddestroyer.mk3">BlackMedal_Conquer</li>
+		</apparelRequired>
+    <startingHediffs>
+      <li><def>WNA_Inhuman</def></li>
+      <li><def>WNA_PermaconstActive</def></li>
+    </startingHediffs>
+    <initialWillRange>Infinity</initialWillRange>
+    <initialResistanceRange>Infinity</initialResistanceRange>
+    <xenotypeSet MayRequire="Ludeon.Rimworld.Biotech">
+      <xenotypeChances>
+        <WNA_Mortaliner>999</WNA_Mortaliner>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <!-- BCCP -->
+  <PawnKindDef ParentName="WNA_PawnsHumanoid">
+    <defName>WNA_FieldTroop</defName>
+    <label>field trooper</label>
+    <combatPower>20</combatPower>
+    <weaponTags>
+      <li>Tag_WNAFieldTroop</li>
+      <li>Tag_WNAOneuse</li>
+    </weaponTags>
+    <apparelRequired>
+			<li>WNA_BCCPSuit</li>
+			<li>WNA_BCCPHead</li>
+			<li>WNA_AmmoLoader</li>
+    </apparelRequired>
+    <forcedTraits>
+      <li>Tough</li>
+    </forcedTraits>
+    <apparelDisallowTags>
+      <li>WNA_Tag_Radiation</li>
+    </apparelDisallowTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="WNA_PawnsHumanoid">
+    <defName>WNA_SiegeTroop</defName>
+    <label>siege trooper</label>
+    <combatPower>20</combatPower>
+    <weaponTags>
+      <li>Tag_WNASiegeTroop</li>
+      <li>Tag_WNAOneuse</li>
+    </weaponTags>
+    <apparelRequired>
+			<li>WNA_BCCPSuit</li>
+			<li>WNA_BCCPHead</li>
+			<li>WNA_CoTargeter</li>
+    </apparelRequired>
+    <forcedTraits>
+      <li>Tough</li>
+    </forcedTraits>
+    <apparelDisallowTags>
+      <li>WNA_Tag_Radiation</li>
+    </apparelDisallowTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="WNA_PawnsHumanoid">
+    <defName>WNA_StrikeForce</defName>
+    <label>strike force</label>
+    <combatPower>40</combatPower>
+    <weaponTags>
+      <li>Tag_WNAStrikeForce</li>
+      <li>Tag_WNAOneuse</li>
+    </weaponTags>
+    <apparelRequired>
+			<li>WNA_BCCPSuit</li>
+			<li>WNA_BCCPHead</li>
+			<li>WNA_ShieldPack</li>
+    </apparelRequired>
+    <forcedTraits>
+      <SpeedOffset>2</SpeedOffset>
+    </forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="WNA_PawnsHumanoid">
+    <defName>WNA_Vanguard</defName>
+    <label>heavy vanguard</label>
+    <combatPower>60</combatPower>
+    <weaponTags>
+      <li>Tag_WNAStrikeForce</li>
+      <li>Tag_WNAVanguard</li>
+      <li>Tag_WNAOneuse</li>
+    </weaponTags>
+    <apparelRequired>
+			<li>WNA_VanguardPlate</li>
+			<li>WNA_VanguardHead</li>
+			<li>WNA_AmmoLoader</li>
+    </apparelRequired>
+    <forcedTraits>
+      <li>Psychopath</li>
+    </forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="WNA_PawnsHumanoid">
+    <defName>WNA_BlightForce</defName>
+    <label>blight force</label>
+    <combatPower>40</combatPower>
+    <weaponTags>
+      <li>Tag_WNABlightForce</li>
+    </weaponTags>
+    <apparelRequired>
+			<li>WNA_BCCPSuit</li>
+			<li>WNA_BCCPHead</li>
+			<li>WNA_DeadzoneBelt</li>
+    </apparelRequired>
+    <forcedTraits>
+      <SpeedOffset>2</SpeedOffset>
+    </forcedTraits>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="WNA_PawnsHumanoid">
+    <defName>WNA_DarknightComm</defName>
+    <label>darknight commando</label>
+    <combatPower>60</combatPower>
+    <weaponTags>
+      <li>Tag_WNADarknightComm</li>
+    </weaponTags>
+    <apparelRequired>
+			<li>WNA_BCCPSuit</li>
+			<li>WNA_BCCPHead</li>
+			<li>WNA_IllusionCore</li>
+    </apparelRequired>
+    <forcedTraits>
+      <li>Nimble</li>
+    </forcedTraits>
+    <apparelDisallowTags>
+      <li>WNA_Tag_Radiation</li>
+    </apparelDisallowTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="WNA_PawnsHumanoid">
+    <defName>WNA_Parasomniant</defName>
+    <label>parasomniant</label>
+    <combatPower>80</combatPower>
+    <weaponTags>
+      <li>Tag_WNAParasomnia</li>
+    </weaponTags>
+    <apparelRequired>
+			<li>WNA_BCCPSuit</li>
+			<li>WNA_BCCPHead</li>
+			<li>WNA_ChronoPack</li>
+    </apparelRequired>
+    <forcedTraits>
+      <li>Psychopath</li>
+    </forcedTraits>
+    <apparelDisallowTags>
+      <li>WNA_Tag_Radiation</li>
+    </apparelDisallowTags>
+  </PawnKindDef>
+
+  <!-- SECP -->
+  <PawnKindDef ParentName="WNA_PawnsHumanoid">
+    <defName>WNA_Technician</defName>
+    <label>technician</label>
+    <combatPower>20</combatPower>
+    <trader>true</trader>
+    <weaponTags>
+      <li>Tag_WNACivilian</li>
+    </weaponTags>
+    <apparelRequired>
+			<li>WNA_SECPEnclosedSuit</li>
+			<li>WNA_MultiToolkit</li>
+    </apparelRequired>
+    <forcedTraits>
+      <li>GreatMemory</li>
+      <li>Nimble</li>
+    </forcedTraits>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <apparelDisallowTags>
+      <li>WNA_Tag_Radiation</li>
+    </apparelDisallowTags>
+  </PawnKindDef>
+
+  <!-- EECP -->
+  <PawnKindDef ParentName="WNA_PawnsHumanoid">
+    <defName>WNA_StratagemComm</defName>
+    <label>stratagem commando</label>
+    <combatPower>80</combatPower>
+    <weaponTags>
+      <li>Tag_WNAStratagem</li>
+    </weaponTags>
+    <apparelRequired>
+			<li>WNA_EECPSuit</li>
+			<li>WNA_EECPHead</li>
+			<li>WNA_ShieldPack</li>
+    </apparelRequired>
+    <forcedTraits>
+      <li>Psychopath</li>
+    </forcedTraits>
+    <!--<abilities>
+      <li>WNA_MindControl</li>
+      <li>WNA_PsylinkDeprivation</li>
+    </abilities>-->
+    <apparelDisallowTags>
+      <li>WNA_Tag_Radiation</li>
+    </apparelDisallowTags>
+  </PawnKindDef>
+  
+  <!-- Whelingnorthan -->
+  <PawnKindDef ParentName="WNA_PawnsWhelingnorthan">
+    <defName>WNA_Disciple</defName>
+    <label>disciple</label>
+    <combatPower>100</combatPower>
+    <apparelRequired>
+			<li>WNA_Blindfold</li>
+		</apparelRequired>
+    <abilities>
+      <li>WNA_MindControlPermanent</li>
+    </abilities>
+    <apparelDisallowTags>
+      <li>WNA_Tag_Radiation</li>
+      <li>WNA_Tag_LeaderOnly</li>
+    </apparelDisallowTags>
+  </PawnKindDef>
+  <PawnKindDef ParentName="WNA_PawnsWhelingnorthan">
+    <defName>WNA_Archonpriest</defName>
+    <label>archonpriest</label>
+    <combatPower>100</combatPower>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>27</minGenerationAge>
+    <apparelRequired>
+			<li>WNA_ApocalypseCross</li>
+		</apparelRequired>
+    <!--<abilities>
+      <li>WNA_Ascension</li>
+      <li>WNA_Wisdom</li>
+      <li>WNA_Resurrection</li>
+      <li>WNA_Warp</li>
+      <li>WNA_Warp2</li>
+      <li>WNA_Invisibility</li>
+      <li>WNA_AvadaKedavra</li>
+      <li>WNA_PsylinkDeprivation</li>
+      <li>WNA_MindControlPlus</li>
+    </abilities>-->
+    <abilities>
+      <li>WNA_MindControlPermanent</li>
+    </abilities>
+  </PawnKindDef>
+</Defs>

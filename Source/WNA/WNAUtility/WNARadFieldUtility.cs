@@ -1,0 +1,96 @@
+﻿using RimWorld;
+using UnityEngine;
+using Verse;
+using WNA.WNAArea;
+using WNA.WNAMapComp;
+using WNA.WNAModExtension;
+
+namespace WNA.WNAUtility
+{
+    internal class WNARadFieldUtility
+    {
+        internal static Area_RadClearArea GetRadClearArea(Map map)
+        {
+            return map?.areaManager?.Get<Area_RadClearArea>();
+        }
+
+        internal static Area_RadClearArea GetOrCreateRadClearArea(Map map)
+        {
+            if (map?.areaManager == null) return null;
+            Area_RadClearArea area = map.areaManager.Get<Area_RadClearArea>();
+            if (area == null)
+            {
+                area = new Area_RadClearArea(map.areaManager);
+                map.areaManager.AllAreas.Add(area);
+            }
+            return area;
+        }
+
+        public static void RadSpread(IntVec3 c, Map map, RadSpreadConfig config, float finalRadius, int finalRadLevel)
+        {
+            MapComp_RadField radMap = map.GetComponent<MapComp_RadField>();
+            if (radMap == null) return;
+            foreach (IntVec3 cell in GenRadial.RadialCellsAround(c, finalRadius, true))
+            {
+                if (!cell.InBounds(map)) continue;
+                float distance = cell.DistanceTo(c);
+                int radToAdd = config.CalculateRadiation(distance, finalRadius, finalRadLevel);
+                if (radToAdd > 0)
+                    radMap.AddRad(cell, radToAdd);
+            }
+        }
+
+        internal static bool ImmuneToRadiation(Pawn pawn)
+        {
+            TechnoConfig pawnConfig = TechnoConfig.Get(pawn.def);
+            if (pawnConfig != null && pawnConfig.immuneToRadiation == true)
+                return true;
+            if (pawn.apparel != null)
+            {
+                foreach (Apparel apparel in pawn.apparel.WornApparel)
+                {
+                    TechnoConfig apparelConfig = TechnoConfig.Get(apparel.def);
+                    if (apparelConfig != null && apparelConfig.immuneToRadiation == true)
+                        return true;
+                }
+            }
+            if (pawn.health != null && pawn.health.hediffSet != null)
+            {
+                foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
+                {
+                    if (hediff.def != null)
+                    {
+                        TechnoConfig hediffConfig = TechnoConfig.Get(hediff.def);
+                        if (hediffConfig != null && hediffConfig.immuneToRadiation == true)
+                            return true;
+                    }
+                }
+            }
+            return false;
+        }
+    }
+    internal class RadSpreadConfig
+    {
+        // --- 基础参数 ---
+        public int radLevel = 500;
+        public float radius = 5f;
+        public float edgeFactor = 0.4f;
+        public float threshold = 0.6f;
+        public int radLevelDelay = 60;
+        // --- Hediff 动态参数 ---
+        public bool isSeverityRadLevel = false;
+        public float radLevelFactor = 1f;
+        public bool isSeverityRadRadius = false;
+        public float radRadiusFactor = 1f;
+        public int CalculateRadiation(float distance, float finalRadius, int finalRadLevel)
+        {
+            if (distance >= finalRadius) return 0;
+            float normDist = distance / finalRadius;
+            int edgeRad = (int)(finalRadLevel * edgeFactor);
+            float decayRange = finalRadLevel - edgeRad;
+            float decayFactor = Mathf.Pow(normDist, 3f);
+            int finalRad = (int)(edgeRad + decayRange * (1f - decayFactor));
+            return Mathf.Max(0, finalRad);
+        }
+    }
+}

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <DesignatorDropdownGroupDef>
+    <defName>WNA_FloorGroup_Layered</defName>
+    <label>wna tile</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>WNA_FloorGroup_Layered_Focus</defName>
+    <label>wna tile (focus)</label>
+  </DesignatorDropdownGroupDef>
+
+  <TerrainDef ParentName="WNA_FloorsBase">
+    <defName>WNA_LayeredFloor</defName>
+    <label>structure floor</label>
+    <description>Platform built with reinforced structure plate, can be built on deep water and even in space.</description>
+    <texturePath>terrains/bridgefloor</texturePath>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+    <statBases>
+      <MarketValue>0</MarketValue>
+      <WorkToBuild>400</WorkToBuild>
+      <Beauty>2</Beauty>
+      <Cleanliness>5</Cleanliness>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_FloorGroup_Layered</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="WNA_FloorsBase">
+    <defName>WNA_LayeredCarpet</defName>
+    <label>carpet floor</label>
+    <description>Platform with soft surface, more suitable for interior decoration than concrete platforms.</description>
+    <texturePath>terrains/bridgecarpet</texturePath>
+    <isPaintable>true</isPaintable>
+    <costList>
+      <Cloth>1</Cloth>
+    </costList>
+    <statBases>
+      <MarketValue>0</MarketValue>
+      <WorkToBuild>400</WorkToBuild>
+      <Beauty>10</Beauty>
+      <Cleanliness>4</Cleanliness>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_FloorGroup_Layered</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="WNA_FloorsBase">
+    <defName>WNA_LayeredSoil</defName>
+    <label>artificial soil</label>
+    <description>Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth.</description>
+    <texturePath>terrains/bridgesoil</texturePath>
+    <affordances Inherit="false">
+      <li>Light</li>
+      <li>GrowSoil</li>
+      <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_GrowAsh</li>
+      <li MayRequire="dankpyon.medieval.overhaul">DankPyon_GrowSoilVine</li>
+    </affordances>
+    <statBases>
+      <MarketValue>0</MarketValue>
+      <WorkToBuild>400</WorkToBuild>
+    </statBases>
+    <costList>
+      <WoodLog>1</WoodLog>
+    </costList>
+    <tags>
+      <li>Soil</li>
+      <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_Ash</li>
+    </tags>
+    <fertility>8</fertility>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_FloorGroup_Layered</designatorDropdown>
+  </TerrainDef>
+
+  <!-- Whelingnorthan -->
+  <TerrainDef ParentName="WNA_FloorsBase" Name="WNA_LayeredGrouped">
+    <defName>WNA_FocusFloor</defName>
+    <label>pale tile</label>
+    <description>Colorless fine floor.</description>
+    <texturePath>terrains/wna_floor</texturePath>
+    <edgeType>Hard</edgeType>
+    <isPaintable>true</isPaintable>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Walkable</li>
+    </affordances>
+    <statBases>
+      <MarketValue>0</MarketValue>
+      <CleaningTimeFactor>0.01</CleaningTimeFactor>
+      <WorkToBuild>20</WorkToBuild>
+      <Beauty>20</Beauty>
+      <Cleanliness>20</Cleanliness>
+      <ContainmentStrength MayRequire="Ludeon.Rimworld.Anomaly">1000000</ContainmentStrength>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <researchPrerequisites>
+      <li>WNA_WhelingnortherApocalypse</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_FloorGroup_Layered_Focus</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="WNA_LayeredGrouped">
+    <defName>WNA_FocusFloorPlain</defName>
+    <label>plain tile</label>
+    <description>Plain fine floor.</description>
+    <texturePath>terrains/wna_plainplatform</texturePath>
+    <isPaintable>false</isPaintable>
+  </TerrainDef>
+  <TerrainDef ParentName="WNA_LayeredGrouped">
+    <defName>WNA_FocusFloorDim</defName>
+    <label>dim tile</label>
+    <description>Dim fine floor.</description>
+    <texturePath>terrains/wna_floor2</texturePath>
+    <isPaintable>false</isPaintable>
+  </TerrainDef>
+  <TerrainDef ParentName="WNA_LayeredGrouped">
+    <defName>WNA_FocusFloorPatchwork</defName>
+    <label>patchwork tile</label>
+    <description>Patched fine floor.</description>
+    <texturePath>terrains/wna_floor3</texturePath>
+  </TerrainDef>
+  <TerrainDef ParentName="WNA_LayeredGrouped">
+    <defName>WNA_FocusFloorTwistedVoid</defName>
+    <label>twisted void tile</label>
+    <description>Looks like some evil seal.</description>
+    <texturePath>terrains/wna_floor4</texturePath>
+    <isPaintable>false</isPaintable>
+  </TerrainDef>
+  <TerrainDef ParentName="WNA_LayeredGrouped">
+    <defName>WNA_FocusFloorMosaic</defName>
+    <label>mosaic tile</label>
+    <description>Fine mosaic floor.</description>
+    <texturePath>terrains/wna_floor5</texturePath>
+  </TerrainDef>
+  <TerrainDef ParentName="WNA_LayeredGrouped">
+    <defName>WNA_FocusFloorCarve</defName>
+    <label>carve tile</label>
+    <description>Carved floor.</description>
+    <texturePath>terrains/wna_floor6</texturePath>
+  </TerrainDef>
+  <TerrainDef ParentName="WNA_LayeredGrouped">
+    <defName>WNA_FocusFloorDarkCarve</defName>
+    <label>dark carve tile</label>
+    <description>Dark carved floor.</description>
+    <texturePath>terrains/wna_floor7</texturePath>
+    <isPaintable>false</isPaintable>
+  </TerrainDef>
+</Defs>

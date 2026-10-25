@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="WNA_ItemsBase">
+    <defName>WNA_ParticleVial</defName>
+    <label>particle vial</label>
+    <description>Strange unstable particles found when mass is diluted into energy under certain conditions. Can be safely stored in a magnetic vial, just don't let this vial be destroyed.</description>
+    <graphicData>
+      <texPath>item/wna_particlevial</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <MarketValue>500</MarketValue>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>14.9</explosiveRadius>
+        <damageAmountBase>600</damageAmountBase>
+        <explosiveDamageType>WNA_RadBeam</explosiveDamageType>
+        <explosiveExpandPerStackcount>1</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.4</startWickHitPointsPercent>
+        <chanceToStartFire>1</chanceToStartFire>
+        <damageFalloff>true</damageFalloff>
+        <explosionEffect>GiantExplosion</explosionEffect>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+        <wickTicks>60~120</wickTicks>
+        <preExplosionSpawnSingleThingDef>CraterLarge</preExplosionSpawnSingleThingDef>
+      </li>
+      <li Class="WNA.WNAThingComp.PropRadFieldBurst">
+        <modeList>
+          <li>KillFinalize</li>
+          <li>KillFinalizeLeavingsOnly</li>
+        </modeList>
+        <config>
+          <radLevel>500</radLevel>
+          <radius>18.9</radius>
+        </config>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_ItemsBase">
+    <defName>WNA_MassChunk</defName>
+    <label>mass chunk</label>
+    <description>A smooth mass chunk, weighing exactly 60 kg. Very smooth on touch.</description>
+    <graphicData>
+      <texPath>item/wna_masschunk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>6</MarketValue>
+      <Mass>60</Mass>
+    </statBases>
+  </ThingDef>
+  
+</Defs>

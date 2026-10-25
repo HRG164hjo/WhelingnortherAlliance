@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+  	<defName>WNA_Job_UseDeedOn</defName>
+  	<driverClass>WNA.WNAJobDriver.JobDriver_UseDeedOn</driverClass>
+  	<reportString>activating TargetA.</reportString>
+  	<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>WNA_ClearRadField</defName>
+    <driverClass>WNA.WNAJobDriver.JobDriver_ClearRadField</driverClass>
+    <reportString>cleaning rad field.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JobDef>
+    <defName>WNA_ReadHolyorder</defName>
+    <driverClass>WNA.WNAJobDriver.JobDriver_ReadHolyorder</driverClass>
+    <reportString>reading the holyorder.</reportString>
+    <isIdle>true</isIdle>
+    <casualInterruptible>true</casualInterruptible>
+    <joyDuration>2500</joyDuration>
+  </JobDef>
+
+  <JobDef>
+    <defName>WNA_ForceReeducation</defName>
+    <driverClass>WNA.WNAJobDriver.JobDriver_ForceReeducation</driverClass>
+    <reportString>forcibly re-educating TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+  </JobDef>
+</Defs>

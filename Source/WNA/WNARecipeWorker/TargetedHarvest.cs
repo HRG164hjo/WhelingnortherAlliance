@@ -4,7 +4,7 @@ using Verse;
 
 namespace WNA.WNARecipeWorker
 {
-    public class TargetedHarvest : Recipe_Surgery
+    internal class TargetedHarvest : Recipe_Surgery
     {
         public override IEnumerable<BodyPartRecord> GetPartsToApplyOn(Pawn pawn, RecipeDef recipe)
         {

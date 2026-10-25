@@ -1,12 +1,15 @@
 ﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Verse;
 using WNA.WNAHediffClass;
 
 namespace WNA.WNARecipeWorker
 {
-    public class ControlRelease : Recipe_Surgery
+    internal class ControlRelease : Recipe_Surgery
     {
         private static HediffDef controller =>
             DefDatabase<HediffDef>.GetNamed("WNA_MindControlEffect");
@@ -34,9 +37,9 @@ namespace WNA.WNARecipeWorker
                 myFac != Faction.OfPlayer)
                 Faction.OfPlayer.TryAffectGoodwillWith(myFac, Rand.RangeInclusive(60, 100));
         }
-        private MindControl GetReleasableMindControl(Pawn pawn)
+        private HdfClass_MindControl GetReleasableMindControl(Pawn pawn)
         {
-            return pawn.health?.hediffSet?.hediffs?.OfType<MindControl>()
+            return pawn.health?.hediffSet?.hediffs?.OfType<HdfClass_MindControl>()
                 .FirstOrDefault(h => h.def == controller && !h.IsPermanent);
         }
     }

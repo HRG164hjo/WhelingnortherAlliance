@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <WNA_PsychicTower.label>心灵控制塔</WNA_PsychicTower.label>
+  <WNA_PsychicTower.description>一座向人形入侵者投射聚焦心灵控制脉冲的防御塔。摧毁该塔或切断其电力会释放所有被它控制的人。</WNA_PsychicTower.description>
+
+  <WNA_PsychicTowerGun.label>心灵控制塔炮</WNA_PsychicTowerGun.label>
+  <WNA_PsychicTowerGun.description>安装在防御塔上的心灵投射器。</WNA_PsychicTowerGun.description>
+  <WNA_PsychicTowerGun.verbs.Verb_Shoot.label>心灵脉冲</WNA_PsychicTowerGun.verbs.Verb_Shoot.label>
+
+  <WNA_PsychicTower_Proj.label>心灵脉冲</WNA_PsychicTower_Proj.label>
+</LanguageData>

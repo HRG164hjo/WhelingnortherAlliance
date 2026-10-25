@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef Name="WNA_BodypartRecipe" ParentName="SurgeryFlesh" Abstract="True">
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <workAmount>2500</workAmount>
+    <surgeryOutcomeEffect IsNull="True"/>
+    <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.rimworld.Anomaly">CreepJoiner</li>
+      <li>WNA_Humanoid</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>Neutroamine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <!---->
+  <RecipeDef ParentName="WNA_BodypartRecipe">
+    <defName>WNA_Part_AdvBionicSkin</defName>
+    <label>install adv. bionic skin</label>
+    <description>install adv bionic skin.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing adv bionic skin.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Part_AdvBionicSkin</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Part_AdvBionicSkin</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WNA_Part_AdvBionicSkin</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_BodypartRecipe">
+    <defName>WNA_Part_AdvBionicSpine</defName>
+    <label>install adv. bionic spine</label>
+    <description>install adv bionic spine.</description>
+    <jobString>Installing adv bionic spine.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Part_AdvBionicSpine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Part_AdvBionicSpine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Spine</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WNA_Part_AdvBionicSpine</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_BodypartRecipe">
+    <defName>WNA_Part_AdvBionicStomach</defName>
+    <label>install adv. bionic stomach</label>
+    <description>install adv bionic stomach.</description>
+    <jobString>Installing adv bionic stomach.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Part_AdvBionicStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Part_AdvBionicStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WNA_Part_AdvBionicStomach</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_BodypartRecipe">
+    <defName>WNA_Part_AdvBionicSHeart</defName>
+    <label>install adv. bionic heart</label>
+    <description>install adv bionic heart.</description>
+    <jobString>Installing adv bionic heart.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Part_AdvBionicSHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Part_AdvBionicSHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WNA_Part_AdvBionicSHeart</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_BodypartRecipe">
+    <defName>WNA_Part_AdvBionicLung</defName>
+    <label>install adv. bionic lung</label>
+    <description>install adv bionic lung.</description>
+    <jobString>Installing adv bionic lung.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Part_AdvBionicLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Part_AdvBionicLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WNA_Part_AdvBionicLung</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_BodypartRecipe">
+    <defName>WNA_Part_AdvBionicKidney</defName>
+    <label>install adv. bionic kidney</label>
+    <description>install adv bionic kidney.</description>
+    <jobString>Installing adv bionic kidney.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Part_AdvBionicKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Part_AdvBionicKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WNA_Part_AdvBionicKidney</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_BodypartRecipe">
+    <defName>WNA_Part_AdvBionicLiver</defName>
+    <label>install adv. bionic liver</label>
+    <description>install adv bionic liver.</description>
+    <jobString>Installing adv bionic liver.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Part_AdvBionicLiver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Part_AdvBionicLiver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WNA_Part_AdvBionicLiver</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_BodypartRecipe">
+    <defName>WNA_Part_AdvBionicBrain</defName>
+    <label>install adv. bionic brain chip</label>
+    <description>install adv bionic brain chip.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing adv bionic brain chip.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Part_AdvBionicBrain</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Part_AdvBionicBrain</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WNA_Part_AdvBionicBrain</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_BodypartRecipe">
+    <defName>WNA_Part_AdvBionicEye</defName>
+    <label>install adv. bionic eye</label>
+    <description>install adv bionic eye.</description>
+    <jobString>Installing adv bionic eye.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Part_AdvBionicEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Part_AdvBionicEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WNA_Part_AdvBionicEye</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_BodypartRecipe">
+    <defName>WNA_Part_AdvBionicEar</defName>
+    <label>install adv. bionic ear</label>
+    <description>install adv bionic ear.</description>
+    <jobString>Installing adv bionic ear.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Part_AdvBionicEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Part_AdvBionicEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WNA_Part_AdvBionicEar</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_BodypartRecipe">
+    <defName>WNA_Part_AdvBionicJaw</defName>
+    <label>install adv. bionic jaw</label>
+    <description>install adv bionic jaw.</description>
+    <jobString>Installing adv bionic jaw.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Part_AdvBionicJaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Part_AdvBionicJaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Jaw</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WNA_Part_AdvBionicJaw</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_BodypartRecipe">
+    <defName>WNA_Part_AdvBionicArm</defName>
+    <label>install adv. bionic arm</label>
+    <description>install adv bionic arm.</description>
+    <jobString>Installing adv bionic arm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Part_AdvBionicArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Part_AdvBionicArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Shoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WNA_Part_AdvBionicArm</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_BodypartRecipe">
+    <defName>WNA_Part_AdvBionicLeg</defName>
+    <label>install adv. bionic leg</label>
+    <description>install adv bionic leg.</description>
+    <jobString>Installing adv bionic leg.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Part_AdvBionicLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Part_AdvBionicLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Leg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WNA_Part_AdvBionicLeg</addsHediff>
+  </RecipeDef>
+  
+</Defs>

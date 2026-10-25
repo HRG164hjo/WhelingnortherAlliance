@@ -5,17 +5,12 @@ using System.Collections.Generic;
 using System.Reflection;
 using Verse;
 using WNA.WNAModExtension;
-using WNA.WNADefOf;
+using WNA.WNAUtility;
 
 namespace WNA.WNAHarmony
 {
-    public class Patch_Roof
+    internal class Patch_Roof
     {
-        private static readonly HashSet<string> ImmuneRaces = new HashSet<string>
-            {
-                "WNA_WNThan",
-                "WNA_Human"
-            };
         private static T GetPrivateField<T>(Type classType, string fieldName)
         {
             try
@@ -31,9 +26,9 @@ namespace WNA.WNAHarmony
         }
         private static readonly IntRange ThinRoofCrushDamageRange = GetPrivateField<IntRange>(typeof(RoofCollapserImmediate), "ThinRoofCrushDamageRange");
         [HarmonyPatch(typeof(Skyfaller), "HitRoof")]
-        public static class Patch_Skyfaller_HitRoof
+        internal static class Patch_Skyfaller_HitRoof
         {
-            public static bool Prefix(Skyfaller __instance)
+            internal static bool Prefix(Skyfaller __instance)
             {
                 TechnoConfig ext = TechnoConfig.Get(__instance?.def);
                 if (ext?.ignoreRoof == true)
@@ -42,10 +37,10 @@ namespace WNA.WNAHarmony
             }
         }
         [HarmonyPatch(typeof(RoofCollapserImmediate), "DropRoofInCellPhaseOne")]
-        public static class Patch_RoofCollapserImmediate_PhaseOne
+        internal static class Patch_RoofCollapserImmediate_PhaseOne
         {
             [HarmonyPrefix]
-            public static bool SkipImmunePawns(IntVec3 c, Map map, List<Thing> outCrushedThings)
+            internal static bool SkipImmunePawns(IntVec3 c, Map map, List<Thing> outCrushedThings)
             {
                 if (!c.Roofed(map)) return true;
                 var things = c.GetThingList(map);
@@ -53,10 +48,12 @@ namespace WNA.WNAHarmony
                 var filteredThings = new List<Thing>();
                 foreach (var thing in things)
                 {
-                    if (thing is Pawn pawn && ImmuneRaces.Contains(pawn.def.defName)) hasImmunePawns = true;
+                    if (thing is Pawn pawn && General.IsWNARace(pawn))
+                        hasImmunePawns = true;
                     else filteredThings.Add(thing);
                 }
-                if (!hasImmunePawns) return true;
+                if (!hasImmunePawns)
+                    return true;
                 foreach (var thing in filteredThings)
                 {
                     if (thing.def.destroyable)
@@ -67,26 +64,6 @@ namespace WNA.WNAHarmony
                     }
                 }
                 return false;
-            }
-        }
-        [HarmonyPatch(typeof(RoofCollapseCellsFinder))]
-        [HarmonyPatch("ProcessRoofHolderDespawned")]
-        public static class PreventCollapseOnHolderDespawn
-        {
-            private static ResearchProjectDef research = WNAMainDefOf.WNA_PsychicDawn;
-            public static bool Prefix()
-            {
-                return research != null && research.IsFinished ? false : true;
-            }
-        }
-        [HarmonyPatch(typeof(RoofCollapserImmediate))]
-        [HarmonyPatch("DropRoofInCells", new Type[] { typeof(IEnumerable<IntVec3>), typeof(Map), typeof(List<Thing>) })]
-        public static class PreventImmediateRoofCollapse
-        {
-            private static ResearchProjectDef research = WNAMainDefOf.WNA_PsychicDawn;
-            public static bool Prefix()
-            {
-                return research != null && research.IsFinished ? false : true;
             }
         }
     }

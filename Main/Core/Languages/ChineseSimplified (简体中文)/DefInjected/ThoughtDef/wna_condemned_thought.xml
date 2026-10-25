@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: condemned -->
+  <WNA_ThoughtCondemned.stages.condemned.label>被宣判有罪</WNA_ThoughtCondemned.stages.condemned.label>
+  <!-- EN: I have been declared guilty. Everything I do now is watched, judged and remembered. -->
+  <WNA_ThoughtCondemned.stages.condemned.description>我被宣判有罪了。我的一举一动都将被注视、审视并记录在案。</WNA_ThoughtCondemned.stages.condemned.description>
+
+</LanguageData>

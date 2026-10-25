@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: pale platform -->
+  <WNA_FocusPlatform.label>TODO</WNA_FocusPlatform.label>
+  <!-- EN: Colorless supporting platform -->
+  <WNA_FocusPlatform.description>TODO</WNA_FocusPlatform.description>
+  
+  <!-- EN: carve platform -->
+  <WNA_FocusPlatformCarve.label>TODO</WNA_FocusPlatformCarve.label>
+  <!-- EN: Carved floor. -->
+  <WNA_FocusPlatformCarve.description>TODO</WNA_FocusPlatformCarve.description>
+  
+  <!-- EN: dark carve platform -->
+  <WNA_FocusPlatformDarkCarve.label>TODO</WNA_FocusPlatformDarkCarve.label>
+  <!-- EN: Dark carved floor. -->
+  <WNA_FocusPlatformDarkCarve.description>TODO</WNA_FocusPlatformDarkCarve.description>
+  
+  <!-- EN: dim platform -->
+  <WNA_FocusPlatformDim.label>TODO</WNA_FocusPlatformDim.label>
+  <!-- EN: Dim supporting platform -->
+  <WNA_FocusPlatformDim.description>TODO</WNA_FocusPlatformDim.description>
+  
+  <!-- EN: mosaic platform -->
+  <WNA_FocusPlatformMosaic.label>TODO</WNA_FocusPlatformMosaic.label>
+  <!-- EN: Fine mosaic floor. -->
+  <WNA_FocusPlatformMosaic.description>TODO</WNA_FocusPlatformMosaic.description>
+  
+  <!-- EN: patchwork platform -->
+  <WNA_FocusPlatformPatchwork.label>TODO</WNA_FocusPlatformPatchwork.label>
+  <!-- EN: Patched supporting platform -->
+  <WNA_FocusPlatformPatchwork.description>TODO</WNA_FocusPlatformPatchwork.description>
+  
+  <!-- EN: plain platform -->
+  <WNA_FocusPlatformPlain.label>TODO</WNA_FocusPlatformPlain.label>
+  <!-- EN: Plain supporting platform. -->
+  <WNA_FocusPlatformPlain.description>TODO</WNA_FocusPlatformPlain.description>
+  
+  <!-- EN: twisted void platform -->
+  <WNA_FocusPlatformTwistedVoid.label>TODO</WNA_FocusPlatformTwistedVoid.label>
+  <!-- EN: Looks like some evil seal. -->
+  <WNA_FocusPlatformTwistedVoid.description>TODO</WNA_FocusPlatformTwistedVoid.description>
+  
+  <!-- EN: carpet platform -->
+  <WNA_PlatformCarpet.label>TODO</WNA_PlatformCarpet.label>
+  <!-- EN: Platform with soft surface, more suitable for interior decoration than concrete platforms. -->
+  <WNA_PlatformCarpet.description>TODO</WNA_PlatformCarpet.description>
+  
+  <!-- EN: structure platform -->
+  <WNA_PlatformFloor.label>TODO</WNA_PlatformFloor.label>
+  <!-- EN: Platform built with reinforced structure plate, can be built on deep water and even in space. -->
+  <WNA_PlatformFloor.description>TODO</WNA_PlatformFloor.description>
+  
+  <!-- EN: artificial soil platform -->
+  <WNA_PlatformSoil.label>TODO</WNA_PlatformSoil.label>
+  <!-- EN: Basic artificial soil, with special machines hiding beneath this soil can greatly boost plants' growth. -->
+  <WNA_PlatformSoil.description>TODO</WNA_PlatformSoil.description>
+  
+</LanguageData>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorkTypeDef>
+    <defName>WNAWork_Rite</defName>
+    <labelShort>rite</labelShort>
+    <pawnLabel>priest</pawnLabel>
+    <gerundLabel>riting</gerundLabel>
+    <description>Carrying out Whelingnorther rites to do something or achieve some goal.</description>
+    <verb>holding a rite</verb>
+    <naturalPriority>400</naturalPriority>
+    <disabledForSlaves>true</disabledForSlaves>
+    <relevantSkills>
+      <li>Intellectual</li>
+    </relevantSkills>
+    <workTags>
+      <li>Intellectual</li>
+      <li>Commoner</li>
+      <li>AllWork</li>
+    </workTags>
+  </WorkTypeDef>
+  <WorkGiverDef>
+    <defName>WNA_MainWork</defName>
+    <label>rite</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>WNAWork_Rite</workType>
+    <priorityInType>400</priorityInType>
+    <fixedBillGiverDefs>
+      <li>WNA_Ritespot</li>
+    </fixedBillGiverDefs>
+    <verb>craft</verb>
+    <gerund>holding a rite</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+  <!---->
+  <WorkGiverDef>
+    <defName>WNA_ClearRadField</defName>
+    <label>clean rad field</label>
+    <giverClass>WNA.WNAWorkGiver.WorkGiver_ClearRadField</giverClass>
+    <workType>Cleaning</workType>
+    <verb>clean rad field</verb>
+    <gerund>cleaning rad field</gerund>
+    <priorityInType>5</priorityInType>
+    <scanThings>false</scanThings>
+    <scanCells>true</scanCells>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+</Defs>

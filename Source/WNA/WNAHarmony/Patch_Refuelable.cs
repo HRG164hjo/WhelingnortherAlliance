@@ -7,13 +7,13 @@ using WNA.WNAModExtension;
 
 namespace WNA.WNAHarmony
 {
-    public class Patch_Refuelable
+    internal class Patch_RefuelablePatch_Refuelable
     {
         [HarmonyPatch(typeof(CompRefuelable), nameof(CompRefuelable.Refuel), new[] { typeof(List<Thing>) })]
-        public static class Patch_CompRefuelable_RefuelThings
+        internal static class Patch_CompRefuelable_RefuelThings
         {
             [HarmonyPrefix]
-            public static bool Prefix(CompRefuelable __instance, List<Thing> fuelThings)
+            internal static bool Prefix(CompRefuelable __instance, List<Thing> fuelThings)
             {
                 if (__instance == null || fuelThings == null || fuelThings.Count == 0)
                     return true;

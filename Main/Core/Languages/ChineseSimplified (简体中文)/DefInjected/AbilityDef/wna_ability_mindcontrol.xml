@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <WNA_MindControlAbility.label>心灵控制</WNA_MindControlAbility.label>
+  <WNA_MindControlAbility.description>攫取一个人形目标的心智。受害者在控制者死亡或接受解除手术前会加入控制者所属派系。同一控制者最多可同时控制 3 个目标。</WNA_MindControlAbility.description>
+
+  <WNA_MindControlApparel.label>增幅心灵控制</WNA_MindControlApparel.label>
+  <WNA_MindControlApparel.description>通过心灵增幅器攫取一个人形目标的心智。同一控制者最多可同时控制 3 个目标。</WNA_MindControlApparel.description>
+
+  <WNA_MindControlPermanent.label>永久心灵控制</WNA_MindControlPermanent.label>
+  <WNA_MindControlPermanent.description>永久的心灵控制。受害者的心智被永久烙下印记，即使控制者死亡也无法解除。永久控制不占用控制者的普通控制名额。</WNA_MindControlPermanent.description>
+</LanguageData>

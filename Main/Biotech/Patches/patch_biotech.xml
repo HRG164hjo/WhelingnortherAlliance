@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+	  <xpath>Defs/FactionDef[defName="WNA_FactionWNA"]</xpath>
+    <value>
+      <disallowedRaidAgeRestrictions>
+        <li>Children</li>
+      </disallowedRaidAgeRestrictions>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+	  <xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPath</xpath>
+    <value>
+      <texPath>pawns/alt_eye/redeye</texPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+	  <xpath>Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPathFemale</xpath>
+    <value>
+      <texPathFemale>pawns/alt_eye/redeye</texPathFemale>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+	  <xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPath</xpath>
+    <value>
+      <texPath>pawns/alt_eye/grayeye</texPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+	  <xpath>Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPathFemale</xpath>
+    <value>
+      <texPathFemale>pawns/alt_eye/grayeye</texPathFemale>
+    </value>
+  </Operation>
+</Patch>

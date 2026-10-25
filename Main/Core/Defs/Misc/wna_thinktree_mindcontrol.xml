@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThinkTreeDef>
+    <defName>WNA_MindControlAI</defName>
+    <insertTag>Humanlike_PostMentalState</insertTag>
+    <insertPriority>10</insertPriority>
+    <thinkRoot Class="WNA.WNAJobGiver.JobGiver_AICastMindControl" />
+  </ThinkTreeDef>
+</Defs>

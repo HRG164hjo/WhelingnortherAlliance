@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: The ability grant rite requires the Ideology expansion. -->
+  <WNA_AbilityRitual_RequiresIdeology>赋予能力仪式需要文化DLC。</WNA_AbilityRitual_RequiresIdeology>
+  <!-- EN: The ability grant rite requires research: {RESEARCH}. -->
+  <WNA_AbilityRitual_RequiresResearch>赋予能力仪式需要完成研究：{RESEARCH}。</WNA_AbilityRitual_RequiresResearch>
+  <!-- EN: This colonist is already taking part in another gathering. -->
+  <WNA_AbilityRitual_RecipientBusy>该殖民者已经参与了另一场集会。</WNA_AbilityRitual_RecipientBusy>
+  <!-- EN: {PAWN} cannot gain abilities. -->
+  <WNA_AbilityRitual_NeedsAbilityTracker>{PAWN}无法获得能力。</WNA_AbilityRitual_NeedsAbilityTracker>
+  <!-- EN: an altar or a ritual spot -->
+  <WNA_AbilityRitual_TargetInfo>一座祭坛或一处仪式点</WNA_AbilityRitual_TargetInfo>
+  <!-- EN: {PAWN} has no abilities left to gain. -->
+  <WNA_AbilityRitual_NoAbilities>{PAWN}已经没有可以获得的能力了。</WNA_AbilityRitual_NoAbilities>
+  <!-- EN: {PAWN} has gained the ability {ABILITY}. -->
+  <WNA_AbilityRitual_Granted>{PAWN}获得了能力：{ABILITY}。</WNA_AbilityRitual_Granted>
+
+  <!-- EN: Choose an ability for {PAWN} -->
+  <WNA_AbilityRitual_WindowTitle>为 {PAWN} 选择一项能力</WNA_AbilityRitual_WindowTitle>
+  <!-- EN: Only one ability can be granted. The rite ends as soon as you choose. -->
+  <WNA_AbilityRitual_WindowSubtitle>只能赋予一项能力。选择后仪式将立即结束。</WNA_AbilityRitual_WindowSubtitle>
+  <!-- EN: Source -->
+  <WNA_AbilityRitual_Sources>来源</WNA_AbilityRitual_Sources>
+  <!-- EN: Category -->
+  <WNA_AbilityRitual_Categories>分类</WNA_AbilityRitual_Categories>
+  <!-- EN: All sources ({COUNT}) -->
+  <WNA_AbilityRitual_AllSources>全部来源（{COUNT}）</WNA_AbilityRitual_AllSources>
+  <!-- EN: All categories ({COUNT}) -->
+  <WNA_AbilityRitual_AllCategories>全部分类（{COUNT}）</WNA_AbilityRitual_AllCategories>
+  <!-- EN: Uncategorized -->
+  <WNA_AbilityRitual_Uncategorized>未分类</WNA_AbilityRitual_Uncategorized>
+  <!-- EN: Unknown source -->
+  <WNA_AbilityRitual_UnknownSource>未知来源</WNA_AbilityRitual_UnknownSource>
+  <!-- EN: Core -->
+  <WNA_AbilityRitual_SourceCore>核心</WNA_AbilityRitual_SourceCore>
+  <!-- EN: Royalty -->
+  <WNA_AbilityRitual_SourceRoyalty>皇权</WNA_AbilityRitual_SourceRoyalty>
+  <!-- EN: Ideology -->
+  <WNA_AbilityRitual_SourceIdeology>文化</WNA_AbilityRitual_SourceIdeology>
+  <!-- EN: Biotech -->
+  <WNA_AbilityRitual_SourceBiotech>生物技术</WNA_AbilityRitual_SourceBiotech>
+  <!-- EN: Anomaly -->
+  <WNA_AbilityRitual_SourceAnomaly>异象</WNA_AbilityRitual_SourceAnomaly>
+  <!-- EN: Odyssey -->
+  <WNA_AbilityRitual_SourceOdyssey>奥德赛</WNA_AbilityRitual_SourceOdyssey>
+  <!-- EN: Whelingnorther Alliance -->
+  <WNA_AbilityRitual_SourceWNA>威灵诺德联合会</WNA_AbilityRitual_SourceWNA>
+  <!-- EN: Page {PAGE} / {TOTAL} -->
+  <WNA_AbilityRitual_Page>第 {PAGE} / {TOTAL} 页</WNA_AbilityRitual_Page>
+  <!-- EN: Previous -->
+  <WNA_AbilityRitual_PrevPage>上一页</WNA_AbilityRitual_PrevPage>
+  <!-- EN: Next -->
+  <WNA_AbilityRitual_NextPage>下一页</WNA_AbilityRitual_NextPage>
+  <!-- EN: Cancel rite -->
+  <WNA_AbilityRitual_Cancel>取消仪式</WNA_AbilityRitual_Cancel>
+  <!-- EN: No abilities match the current filters. -->
+  <WNA_AbilityRitual_NoMatches>没有符合当前筛选条件的能力。</WNA_AbilityRitual_NoMatches>
+
+</LanguageData>

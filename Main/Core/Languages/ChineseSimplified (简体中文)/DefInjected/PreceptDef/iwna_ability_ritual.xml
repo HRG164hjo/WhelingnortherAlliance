@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: transcendental communion -->
+  <WNA_AbilityGrant.label>启灵仪式</WNA_AbilityGrant.label>
+  <!-- EN: A guided communion at an altar or ritual spot. During the rite, a single willing colonist opens their mind and is granted a new ability. -->
+  <WNA_AbilityGrant.description>在祭坛或仪式点举行的一次引导性共融。仪式中，一名自愿的殖民者将敞开心灵，获得一项新的能力。</WNA_AbilityGrant.description>
+
+</LanguageData>

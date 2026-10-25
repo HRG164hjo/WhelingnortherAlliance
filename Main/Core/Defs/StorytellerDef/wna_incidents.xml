@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <IncidentDef>
+        <defName>WNA_Incident_DiscipleJoin</defName>
+        <label>WNA disciple join</label>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>WNA.WNAIncident.DiscipleJoin</workerClass>
+        <baseChance>2.5</baseChance>
+        <populationEffect>IncreaseMedium</populationEffect>
+        <letterLabel>WNA disciple join</letterLabel>
+        <letterText>A WNA disciple named {PAWN_nameDef} just passed by your settlement. \n\nFor some reason, {PAWN_pronoun} stopped {PAWN_possessive} steps and decided to join you.</letterText>
+        <letterDef>PositiveEvent</letterDef>
+        <minRefireDays>30</minRefireDays>
+        <pawnKind>WNA_Disciple</pawnKind>
+        <requireColonistsPresent>True</requireColonistsPresent>
+    </IncidentDef>
+    
+    <IncidentDef>
+        <defName>WNA_Incident_Permaconst</defName>
+        <label>Permaconst Command</label>
+        <category>ThreatBig</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>WNA.WNAIncident.PermaconstMaintenance</workerClass>
+        <baseChance>1.0</baseChance>
+        <minRefireDays>23.57</minRefireDays>
+        <earliestDay>23</earliestDay>
+    </IncidentDef>
+</Defs>

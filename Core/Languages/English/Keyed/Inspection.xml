@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-	<WNA_Inspection_LetterLabel>inspection report</WNA_Inspection_LetterLabel>
-	<WNA_Inspection_None>{PAWN} has no significant health conditions.</WNA_Inspection_None>
-	<WNA_Inspection_Visible>{PAWN} has these special health conditions listed below:</WNA_Inspection_Visible>
-	<WNA_Inspection_Hidden>{PAWN} has these hidden health conditions listed below:</WNA_Inspection_Hidden>
-
-</LanguageData>

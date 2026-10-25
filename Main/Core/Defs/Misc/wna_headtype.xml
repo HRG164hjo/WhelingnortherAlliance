@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Unisex -->
+
+  <HeadTypeDef Name="WNA_HeadTypeBase" Abstract="true">
+    <hairMeshSize>(1.5, 1.5)</hairMeshSize>
+    <beardMeshSize>(1.5, 1.5)</beardMeshSize>
+    <randomChosen>false</randomChosen>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="WNA_HeadTypeBase">
+    <defName>WNA_Head_GenericMale</defName>
+    <graphicPath>pawns/humanlike/head/wna_genericmale</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="WNA_HeadTypeBase">
+    <defName>WNA_Head_GenericFemale</defName>
+    <graphicPath>pawns/humanlike/head/wna_genericfemale</graphicPath>
+    <gender>Female</gender>
+  </HeadTypeDef>
+</Defs>

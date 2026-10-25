@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNA_MindControl_IsWildman>is wild</WNA_MindControl_IsWildman>
+
+  <WNA_MindControl_Permanent>&lt;color=#7B50A7&gt;permanent&lt;/color&gt;</WNA_MindControl_Permanent>
+
+  <WNA_MindControl_ControlledBy>controlled by</WNA_MindControl_ControlledBy>
+
+  <WNA_MindControl_WasFrom>was from</WNA_MindControl_WasFrom>
+
+  <WNA_MindControl_Source>controller</WNA_MindControl_Source>
+
+  <WNA_MindControl_WasPrisoner>was a prisoner</WNA_MindControl_WasPrisoner>
+
+  <WNA_MindControl_WasSlave>was a slave</WNA_MindControl_WasSlave>
+
+  <WNA_MindControl_WasGuest>was a guest</WNA_MindControl_WasGuest>
+
+  <WNA_MindControl_InvalidTarget>This target cannot be mind-controlled.</WNA_MindControl_InvalidTarget>
+
+  <WNA_MindControl_SameFaction>You cannot mind-control a member of the same faction.</WNA_MindControl_SameFaction>
+
+  <WNA_MindControl_Immune>This target is immune to mind control.</WNA_MindControl_Immune>
+
+  <WNA_MindControl_AlreadyControlled>This target is already mind-controlled.</WNA_MindControl_AlreadyControlled>
+
+  <WNA_MindControl_NotHumanlike>Only humanlike targets can be mind-controlled.</WNA_MindControl_NotHumanlike>
+
+  <WNA_MindControl_Full>This controller cannot control any more targets.</WNA_MindControl_Full>
+
+  <WNA_MindControl_Controlled_Message>{0} has been mind-controlled by {1}.</WNA_MindControl_Controlled_Message>
+
+  <WNA_MindControl_Released_Message>{0} is no longer mind-controlled.</WNA_MindControl_Released_Message>
+
+</LanguageData>

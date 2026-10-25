@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityCategoryDef>
+    <defName>WNA_AbilityCategory</defName>
+    <displayOrder>500</displayOrder>
+  </AbilityCategoryDef>
+
+  <AbilityDef ParentName="WNA_AbilityBase">
+    <defName>WNA_MindControlAbility</defName>
+    <label>mind control</label>
+    <description>Seize the mind of a humanlike target. The victim joins the controller's faction until the controller dies or the control is surgically severed. Up to 3 targets can be controlled at once.</description>
+    <cooldownTicksRange>1800</cooldownTicksRange>
+    <hostile>true</hostile>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>24.9</range>
+      <warmupTime>1.0</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <soundCast>WNA_MindControl</soundCast>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetLocations>false</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityEffect">
+        <compClass>WNA.WNAAbility.CompAbilityEffect_MindControl</compClass>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.MindControlConfig">
+        <permanent>false</permanent>
+        <maxTargets>3</maxTargets>
+        <releaseOnControllerDeath>true</releaseOnControllerDeath>
+        <releaseOnControllerFactionChange>true</releaseOnControllerFactionChange>
+        <brainBurn>true</brainBurn>
+        <brainBurnHpFactor>0.6~0.9</brainBurnHpFactor>
+        <sendMessage>true</sendMessage>
+      </li>
+    </modExtensions>
+  </AbilityDef>
+
+  <AbilityDef ParentName="WNA_AbilityBase">
+    <defName>WNA_MindControlApparel</defName>
+    <label>amplified mind control</label>
+    <description>Use a psychic amplifier to seize the mind of a humanlike target. Up to 3 targets can be controlled at once.</description>
+    <cooldownTicksRange>2500</cooldownTicksRange>
+    <hostile>true</hostile>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>19.9</range>
+      <warmupTime>1.0</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <soundCast>WNA_MindControl</soundCast>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetLocations>false</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityEffect">
+        <compClass>WNA.WNAAbility.CompAbilityEffect_MindControl</compClass>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.MindControlConfig">
+        <permanent>false</permanent>
+        <maxTargets>3</maxTargets>
+        <releaseOnControllerDeath>true</releaseOnControllerDeath>
+        <releaseOnControllerFactionChange>true</releaseOnControllerFactionChange>
+        <brainBurn>true</brainBurn>
+        <brainBurnHpFactor>0.6~0.9</brainBurnHpFactor>
+        <sendMessage>true</sendMessage>
+      </li>
+    </modExtensions>
+  </AbilityDef>
+
+  <AbilityDef ParentName="WNA_AbilityBase">
+    <defName>WNA_MindControlPermanent</defName>
+    <label>permanent mind control</label>
+    <description>Permanent mind control. The victim's mind is branded forever and can never be released, even if the controller dies. Permanent control does not count toward the controller's normal control limit.</description>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <hostile>true</hostile>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>29.9</range>
+      <warmupTime>1.25</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <soundCast>WNA_MindControl</soundCast>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetLocations>false</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityEffect">
+        <compClass>WNA.WNAAbility.CompAbilityEffect_MindControl</compClass>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.MindControlConfig">
+        <permanent>true</permanent>
+        <maxTargets>-1</maxTargets>
+        <releaseOnControllerDeath>false</releaseOnControllerDeath>
+        <releaseOnControllerFactionChange>false</releaseOnControllerFactionChange>
+        <brainBurn>true</brainBurn>
+        <brainBurnHpFactor>0.6~0.9</brainBurnHpFactor>
+        <sendMessage>true</sendMessage>
+      </li>
+    </modExtensions>
+  </AbilityDef>
+</Defs>

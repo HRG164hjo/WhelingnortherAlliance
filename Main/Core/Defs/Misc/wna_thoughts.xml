@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>WNA_ThoughtFear</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <stackLimit>1</stackLimit>
+    <durationDays>4</durationDays>
+    <stages>
+      <li>
+        <label>fear</label>
+        <description>The memory of the beating and the forced re-education still lingers, crushing any thought of resistance.</description>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>WNA_ThoughtCondemned</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <stackLimit>1</stackLimit>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>condemned</label>
+        <description>I have been declared guilty. Everything I do now is watched, judged and remembered.</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

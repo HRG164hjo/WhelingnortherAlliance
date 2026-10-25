@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Name="WNA_BodypartItem" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <techLevel>Archotech</techLevel>
+    <drawerType>MapMeshOnly</drawerType>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Never</tickerType>
+    <alwaysHaulable>true</alwaysHaulable>
+    <isTechHediff>true</isTechHediff>
+    <pathCost>0</pathCost>
+    <rotatable>false</rotatable>
+    <useHitPoints>false</useHitPoints>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(180,189,199)</color>
+    </graphicData>
+    <statBases>
+      <Beauty>0</Beauty>
+      <Mass>0.01</Mass>
+    </statBases>
+    <tradeTags>
+      <li>TechHediff</li>
+    </tradeTags>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <thingCategories>
+      <li>WNA_Category_Bodypart</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>WNA_AutomatedBattleDrone</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+  <!---->
+  <ThingDef ParentName="WNA_BodypartItem">
+    <defName>WNA_Part_AdvBionicSkin</defName>
+    <label>adv. bionic skin</label>
+    <description>A bionic skin implant made with advanced technologies. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+    <statBases>
+      <MarketValue>1440</MarketValue>
+    </statBases>
+    <costList>
+      <Silver>2</Silver>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Hyperweave>25</Hyperweave>
+      <BroadshieldCore MayRequire="Ludeon.rimworld.Royalty">1</BroadshieldCore>
+    </costList>
+    <techHediffsTags Inherit="false" IsNull="true"/>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_BodypartItem">
+    <defName>WNA_Part_AdvBionicSpine</defName>
+    <label>adv. bionic spine</label>
+    <description>A bionic spine implant made with advanced technologies.</description>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <costList>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_BodypartItem">
+    <defName>WNA_Part_AdvBionicStomach</defName>
+    <label>adv. bionic stomach</label>
+    <description>A bionic stomach implant made with advanced technologies.</description>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <Synthread>15</Synthread>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+    
+  <ThingDef ParentName="WNA_BodypartItem">
+    <defName>WNA_Part_AdvBionicSHeart</defName>
+    <label>adv. bionic heart</label>
+    <description>A bionic heart implant made with advanced technologies.</description>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <costList>
+      <Synthread>15</Synthread>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_BodypartItem">
+    <defName>WNA_Part_AdvBionicLung</defName>
+    <label>adv. bionic lung</label>
+    <description>A bionic lung implant made with advanced technologies.</description>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <Steel>20</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_BodypartItem">
+    <defName>WNA_Part_AdvBionicKidney</defName>
+    <label>adv. bionic kidney</label>
+    <description>A bionic kidney implant made with advanced technologies.</description>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <Steel>20</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_BodypartItem">
+    <defName>WNA_Part_AdvBionicLiver</defName>
+    <label>adv. bionic liver</label>
+    <description>A bionic liver implant made with advanced technologies.</description>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <costList>
+      <Plasteel>25</Plasteel>
+      <Uranium>10</Uranium>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_BodypartItem">
+    <defName>WNA_Part_AdvBionicBrain</defName>
+    <label>adv. bionic brain chip</label>
+    <description>A bionic brain implant made with advanced technologies.</description>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <Hyperweave>15</Hyperweave>
+      <ComponentSpacer>3</ComponentSpacer>
+      <SubcoreBasic MayRequire="ludeon.rimworld.biotech">1</SubcoreBasic>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_BodypartItem">
+    <defName>WNA_Part_AdvBionicEye</defName>
+    <label>adv. bionic eye</label>
+    <description>A bionic eye implant made with advanced technologies.</description>
+    <statBases>
+      <MarketValue>800</MarketValue>
+    </statBases>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_BodypartItem">
+    <defName>WNA_Part_AdvBionicEar</defName>
+    <label>adv. bionic ear</label>
+    <description>A bionic ear implant made with advanced technologies.</description>
+    <statBases>
+      <MarketValue>600</MarketValue>
+    </statBases>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <Steel>5</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_BodypartItem">
+    <defName>WNA_Part_AdvBionicJaw</defName>
+    <label>adv. bionic jaw</label>
+    <description>A bionic jaw implant made with advanced technologies.</description>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_BodypartItem">
+    <defName>WNA_Part_AdvBionicArm</defName>
+    <label>adv. bionic arm</label>
+    <description>A bionic arm implant made with advanced technologies.</description>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <costList>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <violentTechHediff>true</violentTechHediff>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_BodypartItem">
+    <defName>WNA_Part_AdvBionicLeg</defName>
+    <label>adv. bionic leg</label>
+    <description>A bionic leg implant made with advanced technologies.</description>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <costList>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+  </ThingDef>
+
+</Defs>

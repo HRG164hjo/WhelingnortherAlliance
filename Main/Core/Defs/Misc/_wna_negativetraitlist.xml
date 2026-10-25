@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Traits listed here are treated as negative by WNA_ConfessionMotion. -->
+  <Def Class="WNA.WNADefOf.WNA_NegativeTraitListDef">
+    <defName>WNA_NegativeTraitList</defName>
+    <label>negative traits</label>
+    <traits>
+      <li>Nudist</li>
+      <li>Brawler</li>
+      <li>Greedy</li>
+      <li>Jealous</li>
+      <li>Gay</li>
+      <li>Bisexual</li>
+      <li>AnnoyingVoice</li>
+      <li>CreepyBreathing</li>
+      <li>Pyromaniac</li>
+      <li>Wimp</li>
+      <li>Transhumanist</li>
+      <li>BodyPurist</li>
+      <li>DislikesMen</li>
+      <li>DislikesWomen</li>
+      <li>Gourmand</li>
+      <li>DrugDesire</li>
+      <li>Nerves</li>
+      <li>Neurotic</li>
+      <li>Industriousness</li>
+      <li>PsychicSensitivity</li>
+      <li>Beauty</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_AbsentMinded</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Coward</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Clumsy</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_HeavySleeper</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Slob</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Workaholic</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_AnimalLover</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_AnimalHater</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_BigBoned</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Rebel</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Submissive</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Vengeful</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Technophobe</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Snob</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Squeamish</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Anxious</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Insatiable</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Kleptomaniac</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Stoner</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Lush</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Insomniac</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_RefinedPalate</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Schizoid</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_WorldWeary</li>
+      <li MayRequireAnyOf="dubwise.dubsbadhygiene.lite,dubwise.dubsbadhygiene">Hygienic</li>
+    </traits>
+  </Def>
+</Defs>

@@ -1,111 +1,73 @@
 ﻿using RimWorld;
 using Verse;
-
 namespace WNA.WNADefOf
 {
     [DefOf]
     public class WNAMainDefOf
     {
-        public static ColorDef WNA_PureBlack;
-
-        public static DamageDef WNA_CastMelee;
-        public static DamageDef WNA_CastRange;
-        public static DamageDef WNA_CastBomb;
-        public static DamageDef WNA_ChimingBlaze;
-        public static DamageDef WNA_KineCut;
-        public static DamageDef WNA_KinePoint;
-        public static DamageDef WNA_KineBomb;
+        public static BackstoryDef WNA_BC_UpliftedAnimal;
+        public static BackstoryDef WNA_BC_UpliftedMech;
+        public static BackstoryDef WNA_BC_UpliftedEntity;
+        public static BackstoryDef WNA_BC_UpliftedPlant;
         public static DamageDef WNA_DemoCut;
         public static DamageDef WNA_RadBurn;
-        public static DamageDef WNA_LysField;
-        public static DamageDef WNA_IronKill;
-
+        public static DamageDef WNA_Temporal;
         public static FactionDef WNA_FactionWNA;
         public static FactionDef WNA_FactionPCC;
-
-        public static GameConditionDef WNA_GameCond_ClimateControl;
         public static GameConditionDef WNA_GameCond_PermaconstActive;
-
-        public static HediffDef WNA_AbilityWisdom;
-        public static HediffDef WNA_CastDamage;
+        public static HediffDef WNA_Molten;
         public static HediffDef WNA_Corrosion;
-        public static HediffDef WNA_DeathEnd;
-        public static HediffDef WNA_Disabled;
-        public static HediffDef WNA_IllusionCore;
-        public static HediffDef WNA_InAnimal;
         public static HediffDef WNA_Inhuman;
-        public static HediffDef WNA_InMechanoid;
-        public static HediffDef WNA_PsychicTrauma;
-        public static HediffDef WNA_RobeBoost;
-        public static HediffDef sWNA_DeathEnd;
-        public static HediffDef WNA_VoidDiver;
-        public static HediffDef WNA_RadRing;
         public static HediffDef WNA_PermaconstHidden;
         public static HediffDef WNA_PermaconstActive;
         public static HediffDef WNA_ChronoCounter;
         public static HediffDef WNA_MindControlEffect;
-
         public static HistoryEventDef WNA_HE_UseDeedOn;
         public static HistoryEventDef WNA_HE_ConflictIdeo;
         public static HistoryEventDef WNA_HE_MemberControlled;
-
         public static IdeoIconDef WNA_IdeoIcon;
-
         public static IncidentDef WNA_Incident_DiscipleJoin;
         public static IncidentDef WNA_Incident_Permaconst;
-
-        public static JobDef WNA_Job_DeepDrilling;
-        public static JobDef WNA_Job_Revive;
-        public static JobDef WNA_Job_UseDeedOn;
-        public static JobDef WNA_Job_SacrificePawn;
-
-        public static PawnKindDef WNA_Archonpriest;
-        public static PawnKindDef WNA_Disciple;
-
-        public static TerrainDef WNA_FocusFloor;
-        public static TerrainDef WNA_FocusSpring;
-        public static TerrainDef WNA_FocusSoil;
-        public static TerrainDef WNA_FocusSand;
-
+        public static JobDef WNA_ClearRadField;
+        public static JobDef WNA_ReadHolyorder;
+        public static JobDef WNA_ForceReeducation;
+        public static MemeDef Structure_WNA_Ideo;
+        public static ResearchProjectDef WNA_TranscendentalArts;
         public static ResearchProjectDef WNA_PsychicDawn;
-        public static ResearchProjectDef WNA_TheVoid;
+        public static ResearchProjectDef WNA_ConsensusMotion;
+        public static ResearchProjectDef WNA_EducationMotion;
+        public static ResearchProjectDef WNA_ConversionMotion;
+        public static ResearchProjectDef WNA_ConfessionMotion;
+        public static ResearchProjectDef WNA_MindReading;
+        public static ResearchProjectDef WNA_MemoryRedaction;
+        public static ResearchProjectDef WNA_PreservationAdministration;
+        public static ResearchProjectDef WNA_AuthorizedUplifting;
+        public static ResearchProjectDef WNA_IdentityExclusion;
+        public static ResearchProjectDef WNA_WNAMilitary;
         public static ResearchProjectDef WNA_WhelingnortherApocalypse;
-
         public static RulePackDef WNA_NamerPassingShip;
-
-        public static ThingDef WNA_WNThan;
-        public static ThingDef WNA_Human;
-
-        public static ThingDef WNA_Cinnabar;
-        public static ThingDef WNA_Concrete;
-        public static ThingDef WNA_AttunementFabric;
-        public static ThingDef WNA_Voidsteel;
-        public static ThingDef WNA_DarkAsbestos;
-        public static ThingDef WNA_Ashpark;
-        public static ThingDef WNA_ChimingSteel;
-        public static ThingDef WNA_Ration;
-        public static ThingDef WNA_Medikit;
-        public static ThingDef WNA_Methanol;
-        public static ThingDef WNA_Quicklime;
-        public static ThingDef WNA_MercuryVial;
-        public static ThingDef WNA_Sulphur;
-        public static ThingDef WNA_Phosphorus;
-        public static ThingDef WNA_HalogenVial;
-        public static ThingDef WNA_ParticleVial;
-        public static ThingDef WNA_UraniumBattery;
-        public static ThingDef WNA_FabricBaseboard;
-        public static ThingDef WNA_Focus;
-
-        public static ThingDef WNA_StarcoreDriller;
-
-        public static ThingDef WNA_Weapon_RiteSword;
+        public static ThingDef WNA_Whelingnorthan;
+        public static ThingDef WNA_Humanoid;
         public static ThingDef WNA_Weapon_RiteLance;
-
-        public static ThoughtDef WNA_OnFocusFloor;
-
+        public static ThingDef WNA_Holyorder;
+        public static ThingDef WNA_Mote_HolyorderRead;
+        public static ThingDef WNA_Mote_UpliftMarker;
         public static TraitDef WNA_Trait_Unshakable;
-
+        public static ThoughtDef WNA_ThoughtFear;
+        public static ThoughtDef WNA_ThoughtCondemned;
+        public static WNA_NegativeTraitListDef WNA_NegativeTraitList;
         [MayRequireIdeology]
-        public static PreceptDef WNA_P_Proselyte;
+        public static PreceptDef WNA_Proselyte;
+        [MayRequireIdeology]
+        public static PreceptDef WNA_Uplifting;
+        [MayRequireIdeology]
+        public static PreceptDef WNA_AbilityGrant;
+        public static PawnKindDef WNA_UpliftedHuman;
+        public static PawnKindDef WNA_UpliftedHumanoid;
+        public static PawnKindDef WNA_UpliftedWhelingnorthan;
+        [MayRequireBiotech]
+        public static GeneDef WNA_Apathy;
+        [MayRequireBiotech]
+        public static ThoughtDef WNA_ThoughtApathy;
     }
 }

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>  
+  <TraderKindDef Abstract="true" Name="WNA_TraderKindBase">
+    <hideThingsNotWillingToTrade>false</hideThingsNotWillingToTrade>
+    <faction>WNA_FactionWNA</faction>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.PassingShipNamer">
+        <namer>WNA_NamerPassingShip</namer>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+
+  <TraderKindDef ParentName="WNA_TraderKindBase">
+    <defName>WNA_Trader_Settlement</defName>
+    <label>whelingnorther branch storage</label>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ExtendedTrader">
+        <allowMinifiedBuildings>true</allowMinifiedBuildings>
+        <allowStuffChoice>true</allowStuffChoice>
+        <maxTechLevel>Archotech</maxTechLevel>
+        <maxStackablePerLine>2147400000</maxStackablePerLine>
+        <maxInstancePerLine>200</maxInstancePerLine>
+        <defaultStackableCount>75</defaultStackableCount>
+        <defaultMinifiedCount>1</defaultMinifiedCount>
+        <useFixedQuality>true</useFixedQuality>
+        <fixedQuality>Legendary</fixedQuality>
+        <canBuyUntradeable>true</canBuyUntradeable>
+      </li>
+    </modExtensions>
+    <stockGenerators>
+      <li Class="WNA.WNAMiscs.StockGenerator_BuyAnything">
+        <price>VeryCheap</price>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>2000000000~2147483647</countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+
+  <TraderKindDef ParentName="WNA_TraderKindBase">
+    <defName>WNA_Trader_Orbital</defName>
+    <label>whelingnorther orbital storage</label>
+    <orbital>true</orbital>
+    <commonality>1.34</commonality>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ExtendedTrader">
+        <allowMinifiedBuildings>true</allowMinifiedBuildings>
+        <allowStuffChoice>true</allowStuffChoice>
+        <maxTechLevel>Archotech</maxTechLevel>
+        <maxStackablePerLine>23570000</maxStackablePerLine>
+        <maxInstancePerLine>200</maxInstancePerLine>
+        <defaultStackableCount>75</defaultStackableCount>
+        <defaultMinifiedCount>1</defaultMinifiedCount>
+        <useFixedQuality>true</useFixedQuality>
+        <fixedQuality>Legendary</fixedQuality>
+      </li>
+    </modExtensions>
+    <stockGenerators>
+      <li Class="WNA.WNAMiscs.StockGenerator_BuyAnything">
+        <price>VeryCheap</price>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>2000000000~2147483647</countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+  
+  <TraderKindDef ParentName="WNA_TraderKindBase">
+    <defName>WNA_Trader_Scavenger</defName>
+    <label>whelingnorther orbital scavenger</label>
+    <orbital>true</orbital>
+    <commonality>1.73</commonality>
+    <stockGenerators>
+      <li Class="WNA.WNAMiscs.StockGenerator_BuyAnything">
+        <price>VeryCheap</price>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>2000000000~2147483647</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>2000000000~2147483647</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>WNA_Ration</thingDef>
+        <countRange>8000000~10000000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>WNA_Medikit</thingDef>
+        <countRange>8000000~10000000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>WNA_FactionDeed</thingDef>
+        <countRange>1000~2357</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Skull</thingDef>
+        <countRange>8000000~10000000</countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Chunks</categoryDef>
+        <thingDefCountRange>7~11</thingDefCountRange>
+        <countRange>200000000~2147483647</countRange>
+      </li>
+      <li Class="StockGenerator_Category" MayRequire="ludeon.rimworld.odyssey">
+        <categoryDef>Fish</categoryDef>
+        <thingDefCountRange>7~11</thingDefCountRange>
+        <countRange>100000000~2147483647</countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

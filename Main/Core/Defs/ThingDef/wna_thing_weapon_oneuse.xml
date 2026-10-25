@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- t1
+
+    陷阱布设器
+  -->
+  <!-- t2 -->
+  <ThingDef ParentName="WNA_WeaponBaseRanged">
+    <defName>WNA_PhantasmPsycheLauncher</defName>
+    <label>"phantasm" psychedelic launcher</label>
+    <description>A single-use weapon can launch multiple psychedelic rockets, this psychedelic rockets can affect brain of victims and cause them fall into mental breaks.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/InfernoCannon</texPath>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MarketValue>1500</MarketValue>
+      <RangedWeapon_Cooldown>3.333333</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <Steel>40</Steel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <weaponTags>
+      <li>Tag_WNAFieldTroop</li>
+      <li>Tag_WNAOneuse</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_ShootOneUse</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>WNA_PhantasmPsycheLauncher_Proj</defaultProjectile>
+        <range>72.9</range>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <burstShotCount>6</burstShotCount>
+        <warmupTime>2.5</warmupTime>
+        <forcedMissRadius>5.9</forcedMissRadius>
+        <ai_AvoidFriendlyFireRadius>14.9</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>40</power>
+        <cooldownTime>1</cooldownTime>
+        <armorPenetration>2</armorPenetration>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_MainBattleArsenal</li>
+      </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>15</LaserDuration>
+        <LaserInnerColor>(45,195,160,255)</LaserInnerColor>
+        <LaserOuterColor>(0,0,0,0)</LaserOuterColor>
+        <LaserThickness>0.16</LaserThickness>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropBackupWeapon">
+        <allowPlayerColonist>true</allowPlayerColonist>
+        <allowPlayerTooluser>true</allowPlayerTooluser>
+        <allowPlayerSlave>false</allowPlayerSlave>
+        <weapons>
+          <li>
+            <thingDef>WNA_Regulator</thingDef>
+            <weight>60</weight>
+          </li>
+          <li>
+            <thingDef>WNA_SunsetSniper</thingDef>
+            <weight>40</weight>
+          </li>
+        </weapons>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_PhantasmPsycheLauncher_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <color>(45,195,160)</color>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>WNA_Psychedelic</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <speed>80</speed>
+      <explosionRadius>6.9</explosionRadius>
+      <explosionChanceToStartFire>0</explosionChanceToStartFire>
+      <explosionDamageFalloff>false</explosionDamageFalloff>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+  </ThingDef>
+
+  <!-- t3 -->
+  <ThingDef ParentName="WNA_WeaponBaseRanged">
+		<defName>WNA_HowlstormArti</defName>
+		<label>"howlstorm" artillary</label>
+		<description>The "howlstorm" individual artillary can perform very-long-range attacks, its shell can use a shockwave to stun its targets, and release several beacons around where it explodes. The beacons will connect to WNA's Chimingblaze Celestrike Satellite Network to summon a catastrophic orbital strike at where they are.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/InfernoCannon</texPath>
+			<drawSize>1.73</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>4500</WorkToMake>
+			<MarketValue>2000</MarketValue>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Uranium>75</Uranium>
+			<Plasteel>45</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<weaponTags>
+			<li>Tag_WNAVanguard</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_ShootOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>WNA_HowlstormArti_Proj</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>500</range>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				<requireLineOfSight>false</requireLineOfSight>
+				<canGoWild>false</canGoWild>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<forcedMissRadius>3.5</forcedMissRadius>
+				<forcedMissEvenDispersal>true</forcedMissEvenDispersal>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>400</power>
+				<cooldownTime>1.5</cooldownTime>
+				<armorPenetration>Infinity</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisites>
+        <li>WNA_SuperheavyArmament</li>
+      </researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropBackupWeapon">
+        <allowPlayerColonist>true</allowPlayerColonist>
+        <allowPlayerTooluser>true</allowPlayerTooluser>
+        <allowPlayerSlave>false</allowPlayerSlave>
+        <weapons>
+          <li>
+            <thingDef>WNA_HowlstormHMG</thingDef>
+            <weight>30</weight>
+          </li>
+          <li>
+            <thingDef>WNA_HowlstormMLRS</thingDef>
+            <weight>30</weight>
+          </li>
+          <li>
+            <thingDef>WNA_BuratinoLauncher</thingDef>
+            <weight>50</weight>
+          </li>
+        </weapons>
+      </li>
+    </comps>
+	</ThingDef>
+	<ThingDef ParentName="WNA_ProjBase">
+		<defName>WNA_HowlstormArti_Proj</defName>
+		<label>gun proj</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket_Big</texPath>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Stun</damageDef>
+			<explosionRadius>36.9</explosionRadius>
+			<damageAmountBase>9999999</damageAmountBase>
+			<speed>140</speed>
+			<flyOverhead>true</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>ToxicShellLanded</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<postExplosionSpawnThingDef>WNA_Ether_Aeroblaze</postExplosionSpawnThingDef>
+			<postExplosionSpawnChance>0.034</postExplosionSpawnChance>
+		</projectile>
+	</ThingDef>
+
+</Defs>

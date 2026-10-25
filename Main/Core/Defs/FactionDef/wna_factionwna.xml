@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FactionDef>
+    <defName>WNA_FactionWNA</defName>
+    <label>Whellingnorther Alliance</label>
+    <categoryTag>WNA_FactionWNA</categoryTag>
+    <factionIconPath>factions/wna_alliance</factionIconPath>
+    <settlementTexturePath>karma</settlementTexturePath>
+    <description>Thousands of years ago a trace of unusual darkness appeared in the sky, since then these black-hooded figure and the army under their command have ravaged around this rimworld, until some time ago they suddenly decide to shrink their influence back into their outposts and facilities.\n\nIt's widly believed the Whelingnorther Alliance origins from a far distant Midworld long time ago, when its first generation members were seeking a new ideology different from any present, they were finally found by an ultimate truth. In a short time that Midworld was conquered by darkness and Whelingnorther Alliance began to spread their activities across the known universe.\n\nRecently they seem to be becoming active again and preparing to achieve their ultimate goal - the Whelingnorther Apocalypse.</description>
+    <pawnSingular>messenger</pawnSingular>
+    <pawnsPlural>messengers</pawnsPlural>
+    <listOrderPriority>1</listOrderPriority>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>1</configurationListOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <canMakeRandomly>false</canMakeRandomly>
+    <hidden>true</hidden>
+    <displayInFactionSelection>false</displayInFactionSelection>
+    <canGenerateQuestSites>false</canGenerateQuestSites>
+    <canSiege>false</canSiege>
+    <canStageAttacks>false</canStageAttacks>
+    <leaderTitle>archonpriest</leaderTitle>
+    <fixedName>Whellingnorther Alliance</fixedName>
+    <settlementNameMaker>WNA_NamerSettlement</settlementNameMaker>
+    <techLevel>Archotech</techLevel>
+    <autoFlee>false</autoFlee>
+    <animalsFleeDanger>false</animalsFleeDanger>
+    <canUseAvoidGrid>false</canUseAvoidGrid>
+    <canRequestTraders>false</canRequestTraders>
+    <canRequestOrbitalTrader>true</canRequestOrbitalTrader>
+    <layerBlacklist IsNull="true"/>
+    <arrivalLayerBlacklist IsNull="true"/>
+    <arrivalLayerWhitelist>
+      <li>Surface</li>
+      <li>Orbit</li>
+    </arrivalLayerWhitelist>
+    <colorSpectrum><li>(0,0,0)</li></colorSpectrum>
+    <permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <allowedCultures>
+      <li>WNA_WhelingnortherCulture</li>
+    </allowedCultures>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>WNA_Backstory_Norm</li>
+        </categories>
+        <commonality>0.3</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>WNA_Backstory_Uplifted</li>
+        </categories>
+        <commonality>0.2</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Offworld</li>
+          <li>Cult</li>
+        </categories>
+        <commonality>0.5</commonality>
+      </li>
+    </backstoryFilters>
+    <caravanTraderKinds/>
+    <visitorTraderKinds/>
+    <orbitalTraderKinds>
+      <li>WNA_Trader_Orbital</li>
+      <li>WNA_Trader_Scavenger</li>
+    </orbitalTraderKinds>
+    <baseTraderKinds>
+      <li>WNA_Trader_Settlement</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-2000~2000</allowedArrivalTemperatureRange>
+    <raidLootMaker IsNull="true"/>
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,0)</li>
+        <li>(100,0)</li>
+        <li>(1000,0)</li>
+        <li>(2000,0)</li>
+        <li>(4000,0)</li>
+        <li>(10000,0)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70,70)</li>
+        <li>(700,700)</li>
+        <li>(1300,1300)</li>
+        <li>(10000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <WNA_StratagemComm>50</WNA_StratagemComm>
+          <WNA_Parasomniant>50</WNA_Parasomniant>
+          <WNA_Disciple>50</WNA_Disciple>
+          <WNA_Archonpriest>20</WNA_Archonpriest>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>200</commonality>
+        <options>
+          <WNA_FieldTroop>20</WNA_FieldTroop>
+          <WNA_SiegeTroop>20</WNA_SiegeTroop>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>200</commonality>
+        <options>
+          <WNA_FieldTroop>20</WNA_FieldTroop>
+          <WNA_SiegeTroop>20</WNA_SiegeTroop>
+          <WNA_StrikeForce>20</WNA_StrikeForce>
+          <WNA_DarknightComm>10</WNA_DarknightComm>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <WNA_StrikeForce>40</WNA_StrikeForce>
+          <WNA_DarknightComm>20</WNA_DarknightComm>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <WNA_StrikeForce>40</WNA_StrikeForce>
+          <WNA_Parasomniant>20</WNA_Parasomniant>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <WNA_Disciple>20</WNA_Disciple>
+          <WNA_Archonpriest>1</WNA_Archonpriest>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <WNA_Technician>100</WNA_Technician>
+          <WNA_FieldTroop>50</WNA_FieldTroop>
+          <WNA_SiegeTroop>50</WNA_SiegeTroop>
+          <WNA_DarknightComm>30</WNA_DarknightComm>
+          <WNA_StratagemComm>20</WNA_StratagemComm>
+          <WNA_Disciple>1</WNA_Disciple>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <dropPodIncoming>WNA_WARPIN</dropPodIncoming>
+    <dropPodActive>WNA_WARPON</dropPodActive>
+    <fixedIdeo MayRequire="Ludeon.Rimworld.Ideology">true</fixedIdeo>
+    <hiddenIdeo MayRequire="Ludeon.Rimworld.Ideology">true</hiddenIdeo>
+    <ideoName MayRequire="Ludeon.Rimworld.Ideology">Whelingnorther Holyorder</ideoName>
+    <ideoDescription MayRequire="Ludeon.Rimworld.Ideology">"When early ancestors of humanity rose from the humble, it was their effort and sacrifices that led to the prosperity of today world; when our predecessors rose from the insignificance, it was their effort and sacrifices that led to we Whelingnorther Alliance. Any great work requires sacrifices to forge, without great destruction can there be no great rebirth, without great devotions will we not achieve eternity salvation and immortality. We descendants shall follow the path led by those who came before us; we will see our duty and accept our manifest destiny; we shall alter and determine the past, the present and the future. All any existance shall bath in the glory of Whelignorther, they need not understand, only shall they obey."</ideoDescription>
+    <deityPresets MayRequire="Ludeon.Rimworld.Ideology">
+      <li>
+        <nameType>
+          <name/>
+          <type/>
+        </nameType>
+        <gender>None</gender>
+        <iconPath>inv</iconPath>
+      </li>
+    </deityPresets>
+    <styles/>
+    <forcedMemes MayRequire="Ludeon.Rimworld.Ideology">
+      <li>Structure_WNA_Ideo</li>
+      <li>Loyalist</li>
+      <li>Meme_WNA_Ideo</li>
+    </forcedMemes>
+    <requiredPreceptsOnly>true</requiredPreceptsOnly>
+    <disallowedPrecepts MayRequire="Ludeon.Rimworld.Ideology">
+      <li MayRequire="Ludeon.Rimworld.Ideology">AnimalVenerated</li>
+      <li MayRequire="Ludeon.Rimworld.Ideology">ApparelDesired_Strong_Subordinate</li>
+      <li MayRequire="Ludeon.Rimworld.Ideology">ApparelDesired_Soft_Subordinate</li>
+      <li MayRequire="Ludeon.Rimworld.Ideology">IdeoRelic</li>
+      <li MayRequire="Ludeon.Rimworld.Ideology">IdeoBuilding</li>
+      <li MayRequire="Ludeon.Rimworld.Ideology">NobleDespisedWeapons</li>
+      <li MayRequire="Ludeon.Rimworld.Biotech">PreferredXenotype</li>
+    </disallowedPrecepts>
+    <modExtensions>
+      <li MayRequire="Ludeon.Rimworld.Ideology" Class="WNA.WNAModExtension.IncompatibleIdeos">
+        <incompMemes>
+          <li>FemaleSupremacy</li>
+          <li>MaleSupremacy</li>
+          <li>Guilty</li>
+          <li>AnimalPersonhood</li>
+          <li>FleshPurity</li>
+          <li>HighLife</li>
+          <li>Nudism</li>
+          <li>PainIsVirtue</li>
+          <li>Raider</li>
+          <li>HumanPrimacy</li>
+          <li>NaturePrimacy</li>
+        </incompMemes>
+        <incompPrecepts>
+          <li>NobleDespisedWeapons</li>
+          <li>SpouseCount_Female_MaxFour</li>
+          <li>SpouseCount_Female_MaxThree</li>
+          <li>SpouseCount_Female_MaxTwo</li>
+          <li>SpouseCount_Female_Unlimited</li>
+          <li>SpouseCount_Male_MaxFour</li>
+          <li>SpouseCount_Male_MaxThree</li>
+          <li>SpouseCount_Male_MaxTwo</li>
+          <li>SpouseCount_Male_Unlimited</li>
+          <li>Raiding_Required</li>
+          <li>Raiding_Respected</li>
+          <li>Execution_Abhorrent</li>
+          <li>Execution_Horrible</li>
+          <li>Execution_HorribleIfInnocent</li>
+          <li>Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+          <li>Nudity_Female_Mandatory</li>
+          <li>Nudity_Female_NoRules</li>
+          <li>Nudity_Female_UncoveredGroinDisapproved</li>
+          <li>Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+          <li>Nudity_Male_Mandatory</li>
+          <li>Nudity_Male_NoRules</li>
+          <li>Nudity_Male_UncoveredGroinDisapproved</li>
+          <li>Lovin_FreeApproved</li>
+          <li>Lovin_SpouseOnly_Mild</li>
+          <li>Lovin_SpouseOnly_Moderate</li>
+          <li>Lovin_Horrible</li>
+          <li>KillingInnocentAnimals_Abhorrent</li>
+          <li>KillingInnocentAnimals_Disapproved</li>
+          <li>KillingInnocentAnimals_Horrible</li>
+          <li>IdeoDiversity_Exalted</li>
+          <li>IdeoDiversity_Respected</li>
+          <li>DrugUse_Essential</li>
+          <li>BodyMod_Abhorrent</li>
+          <li>BodyMod_Disapproved</li>
+          <li>AutonomousWeapons_Disapproved</li>
+          <li>AutonomousWeapons_Horrible</li>
+          <li>AutonomousWeapons_Prohibited</li>
+          <li>AnimalVenerated</li>
+          <li MayRequire="Ludeon.Rimworld.Biotech">PreferredXenotype</li>
+        </incompPrecepts>
+      </li>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Factions.FactionDefExtension">
+        <neverConnectToRoads>true</neverConnectToRoads>
+        <excludeFromQuests>true</excludeFromQuests>
+      </li>
+    </modExtensions>
+  </FactionDef>
+
+  <RulePackDef>
+    <defName>WNA_NamerSettlement</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[pfix] [Digit][Digit][Digit]</li>
+        <li>r_name->[pfix] [Digit][Digit][Digit][Digit]</li>
+        <li>r_name->[Digit][Digit][Digit]th [pfix]</li>
+        <li>r_name->[Digit][Digit][Digit][Digit]th [pfix]</li>
+        <li>r_name(p=0.001)->HRG164hjo</li>
+        <li>r_name(p=0.05)->[HRG]</li>
+        <!---->
+        <li>pfix(p=5)->Camp</li>
+        <li>pfix(p=3)->Frontier</li>
+        <li>pfix(p=7)->Outpost</li>
+        <li>pfix(p=2)->Skirmish</li>
+        <li>HRG->Celestial Throne</li>
+        <li>HRG->Sky Temple</li>
+        <li>HRG->Pristine Jewel</li>
+        <li>HRG->Emerald Mausoleum</li>
+        <li>HRG->Walled Garden</li>
+        <li>HRG->Prophet's Retreat</li>
+        <li>HRG->The Cradle</li>
+        <li>HRG->The Preserve</li>
+        <li>HRG->Font of Knowledge</li>
+        <li>HRG->The Archives</li>
+        <li>HRG->Last Thought</li>
+        <li>HRG->Ithome's Gate</li>
+        <li>HRG->Chimney Canopy</li>
+        <li>HRG->Sky Islands</li>
+        <li>HRG->Farm Arrays</li>
+        <li>HRG->Looks to the Moon</li>
+        <li>HRG->Five Pebbles</li>
+        <li>HRG->Outer Expanse</li>
+        <li>HRG->Waterfront Facility</li>
+        <li>HRG->Undergrowth</li>
+        <li>HRG->Silent Construct</li>
+        <li>HRG->Pipeyard</li>
+        <li>HRG->Submerged Superstructure</li>
+        <li>HRG->Memory Crypts</li>
+        <li>HRG->Metropolis</li>
+        <li>HRG->Rubicon</li>
+        <li>HRG->Outer Rim</li>
+        <li>HRG->Aether Ridge</li>
+        <li>HRG->Daemon</li>
+        <li>HRG->Shattered Terrace</li>
+        <li>HRG->Ancient Urban</li>
+        <li>HRG->Station Annex</li>
+        <li>HRG->Unfortunate Evolution</li>
+        <li>HRG->Coral Caves</li>
+        <li>HRG->Sunlit Port</li>
+        <li>HRG->Sunbaked Alley</li>
+        <li>HRG->Torrential Railways</li>
+        <li>HRG->Badlands</li>
+        <li>HRG->Cold Storage</li>
+        <li>HRG->Desolate Tract</li>
+        <li>HRG->Fetid Glen</li>
+        <li>HRG->Fractured Gateways</li>
+        <li>HRG->Heat Ducts</li>
+        <li>HRG->Thermal Relay</li>
+        <li>HRG->Migration Path</li>
+        <li>HRG->Pillar Grove</li>
+        <li>HRG->Rusted Wrecks</li>
+        <li>HRG->Salination</li>
+        <li>HRG->Shrouded Stacks</li>
+        <li>HRG->Signal Spires</li>
+        <li>HRG->Stormy Coast</li>
+        <li>HRG->The Surface</li>
+        <li>HRG->Torrid Desert</li>
+        <li>HRG->Turbulent Pump</li>
+        <li>HRG->Crumbling Fringes</li>
+        <li>HRG->Decaying Tunnels</li>
+        <li>HRG->Infested Wastes</li>
+        <li>HRG->Tundra Fault</li>
+        <li>HRG->Kerisham</li>
+        <li>HRG->Foxlily Meadows</li>
+        <li>HRG->Miah</li>
+        <li>HRG->Raven Isle</li>
+        <li>HRG->Port Noon</li>
+        <li>HRG->Rhine Archen</li>
+        <li>HRG->Priory of Captains</li>
+        <li>HRG->Sunshine Island</li>
+        <li>HRG->Fogfire Point</li>
+        <li>HRG->Wounded Moon Lake</li>
+        <li>HRG->The Tiger's Nest</li>
+        <li>HRG->Hermitage of the Scythe</li>
+        <li>HRG->The Pentapolis</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>WNA_NamerPawn</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=2)->[postfx] [prefix]</li>
+        <li>r_name->[ImperialNameFirstMale] [ImperialNameLast]</li>
+        <li>r_name->[randName] [ImperialNameLast]</li>
+        <li>r_name(p=0.1)->[codeName] [codeName]</li>
+        <!---->
+        <li>randName(p=2)->[SylB][SylB][SylB]</li>
+        <li>randName->[SylB][SylB][SylB][SylB]</li>
+        <li>codeName->[pre]-[pos]</li>
+        <li>pre(p=3)->[code][code][code]</li>
+        <li>pre->[code][code][code][code]</li>
+        <li>pos(p=3)->[code][code][code]</li>
+        <li>pos->[code][code][code][code]</li>
+        <!---->
+        <li>code->[Digit]</li>
+        <li>code->[Letter]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>ImperialNameFirstMale->Names/Imperial_First_Male</li>
+        <li>ImperialNameLast->Names/Imperial_Last</li>
+        <li>prefix->Names/wna_name</li>
+        <li>postfx->Names/wna_family</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>WNA_NamerPawnW</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[postfx] [prefix]</li>
+        <li>r_name(p=0.0142857)->[pos1] [pre1]</li>
+        <li>r_name(p=0.0142857)->[pos2] [pre2]</li>
+        <li>r_name(p=0.0142857)->[pos3] [pre3]</li>
+        <li>r_name(p=0.0142857)->[pos4] [pre4]</li>
+        <li>r_name(p=0.0142857)->[pos5] [pre5]</li>
+        <li>r_name(p=0.0142857)->[pos6] [pre6]</li>
+        <li>r_name(p=0.0142857)->[pos7] [pre7]</li>
+        <li>r_name(p=0.0142857)->[pos8] [pre8]</li>
+        <li>r_name(p=0.0142857)->[pos9] [pre9]</li>
+        <li>r_name(p=0.0142857)->[pos10] [pre10]</li>
+        <li>r_name(p=0.0142857)->[pos11] [pre11]</li>
+        <li>r_name(p=0.0142857)->[pos12] [pre12]</li>
+        <li>r_name(p=0.0142857)->[pos13] [pre13]</li>
+        <li>r_name(p=0.0142857)->[pos14] [pre14]</li>
+        <li>r_name(p=0.0142857)->[pos15] [pre15]</li>
+        <li>r_name(p=0.0142857)->[pos16] [pre16]</li>
+        <li>r_name(p=0.0142857)->[pos17] [pre17]</li>
+        <li>r_name(p=0.0142857)->[pos18] [pre18]</li>
+        <li>r_name(p=0.0142857)->[pos19] [pre19]</li>
+        <li>r_name(p=0.0142857)->[pos20] [pre20]</li>
+        <li>r_name(p=0.0142857)->[pos21] [pre21]</li>
+        <li>r_name(p=0.0142857)->[pos22] [pre22]</li>
+        <li>r_name(p=0.0142857)->[pos23] [pre23]</li>
+        <li>r_name(p=0.0142857)->[pos24] [pre24]</li>
+        <li>r_name(p=0.0142857)->[pos25] [pre25]</li>
+        <li>r_name(p=0.0142857)->[pos26] [pre26]</li>
+        <li>r_name(p=0.0142857)->[pos27] [pre27]</li>
+        <li>r_name(p=0.0142857)->[pos28] [pre28]</li>
+        <!-- special fixed -->
+        <li>pos1->角</li><li>pre1->木蛟</li>
+        <li>pos2->亢</li><li>pre2->金龙</li>
+        <li>pos3->氐</li><li>pre3->土貉</li>
+        <li>pos4->房</li><li>pre4->日兔</li>
+        <li>pos5->心</li><li>pre5->月狐</li>
+        <li>pos6->尾</li><li>pre6->火虎</li>
+        <li>pos7->箕</li><li>pre7->水豹</li>
+        <li>pos8->斗</li><li>pre8->木獬</li>
+        <li>pos9->牛</li><li>pre9->金牛</li>
+        <li>pos10->女</li><li>pre10->土蝠</li>
+        <li>pos11->虚</li><li>pre11->日鼠</li>
+        <li>pos12->危</li><li>pre12->月燕</li>
+        <li>pos13->室</li><li>pre13->火猪</li>
+        <li>pos14->壁</li><li>pre14->水貐</li>
+        <li>pos15->奎</li><li>pre15->木狼</li>
+        <li>pos16->娄</li><li>pre16->金狗</li>
+        <li>pos17->胃</li><li>pre17->土雉</li>
+        <li>pos18->昴</li><li>pre18->日鸡</li>
+        <li>pos19->毕</li><li>pre19->月乌</li>
+        <li>pos20->觜</li><li>pre20->火猴</li>
+        <li>pos21->参</li><li>pre21->水猿</li>
+        <li>pos22->井</li><li>pre22->木犴</li>
+        <li>pos23->鬼</li><li>pre23->金羊</li>
+        <li>pos24->柳</li><li>pre24->土獐</li>
+        <li>pos25->星</li><li>pre25->日马</li>
+        <li>pos26->张</li><li>pre26->月鹿</li>
+        <li>pos27->翼</li><li>pre27->火蛇</li>
+        <li>pos28->轸</li><li>pre28->水蚓</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>prefix->Names/wna_name</li>
+        <li>postfx->Names/wna_family</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>WNA_NamerPassingShip</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[pfix] [Digit][Digit][Digit]</li>
+        <li>r_name->[pfix] [Digit][Digit][Digit][Digit]</li>
+        <li>r_name->[Digit][Digit][Digit] [pfix]</li>
+        <li>r_name->[Digit][Digit][Digit][Digit] [pfix]</li>
+        <!---->
+        <li>pfix->[pre] [post]</li>
+        <!---->
+        <li>pre->Transport</li>
+        <li>pre->Storage</li>
+        <li>pre->Logistics</li>
+        <li>pre->Task</li>
+        <li>pre->Allocate</li>
+        <li>pre->Service</li>
+        <li>pre->Delivery</li>
+        <li>post->Unit</li>
+        <li>post->Port</li>
+        <li>post->Router</li>
+        <li>post->Link</li>
+        <li>post->Repeater</li>
+        <li>post->Terminal</li>
+        <li>post->Node</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+</Defs>

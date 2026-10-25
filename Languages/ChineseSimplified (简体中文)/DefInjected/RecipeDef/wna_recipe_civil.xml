@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: heat cinnabar -->
+  <WNA_HeatCinnabar.label>TODO</WNA_HeatCinnabar.label>
+  <!-- EN: treat cinnabar with strong heat to make it decompose into sulphur and mercury. -->
+  <WNA_HeatCinnabar.description>TODO</WNA_HeatCinnabar.description>
+  <!-- EN: heating cinnabar. -->
+  <WNA_HeatCinnabar.jobString>TODO</WNA_HeatCinnabar.jobString>
+  
+  <!-- EN: heat stone blocks -->
+  <WNA_HeatStoneBlock.label>TODO</WNA_HeatStoneBlock.label>
+  <!-- EN: treat stone with strong heat to gain resources. -->
+  <WNA_HeatStoneBlock.description>TODO</WNA_HeatStoneBlock.description>
+  <!-- EN: heating stone blocks. -->
+  <WNA_HeatStoneBlock.jobString>TODO</WNA_HeatStoneBlock.jobString>
+  
+  <!-- EN: heat stone chunk -->
+  <WNA_HeatStoneChunk.label>TODO</WNA_HeatStoneChunk.label>
+  <!-- EN: treat stone with strong heat to gain resources. -->
+  <WNA_HeatStoneChunk.description>TODO</WNA_HeatStoneChunk.description>
+  <!-- EN: heating a stone chunk. -->
+  <WNA_HeatStoneChunk.jobString>TODO</WNA_HeatStoneChunk.jobString>
+  
+  <!-- EN: make antigrain warhead -->
+  <WNA_MakeAntigrainWarhead.label>TODO</WNA_MakeAntigrainWarhead.label>
+  <!-- EN: Mix uranium and unstable particles and put the mixture into a plasteel shell to make an antigrain warhead. -->
+  <WNA_MakeAntigrainWarhead.description>TODO</WNA_MakeAntigrainWarhead.description>
+  <!-- EN: making antigrain warhead. -->
+  <WNA_MakeAntigrainWarhead.jobString>TODO</WNA_MakeAntigrainWarhead.jobString>
+  
+  <!-- EN: make cinnabar -->
+  <WNA_MakeCinnabar.label>TODO</WNA_MakeCinnabar.label>
+  <!-- EN: use mercury and sulphur to make cinnabar. -->
+  <WNA_MakeCinnabar.description>TODO</WNA_MakeCinnabar.description>
+  <!-- EN: making cinnabar. -->
+  <WNA_MakeCinnabar.jobString>TODO</WNA_MakeCinnabar.jobString>
+  
+  <!-- EN: make hyperweave -->
+  <WNA_MakeHyperweave.label>TODO</WNA_MakeHyperweave.label>
+  <!-- EN: a method to reproduce hyperweave from handy materials with rough techniques. -->
+  <WNA_MakeHyperweave.description>TODO</WNA_MakeHyperweave.description>
+  <!-- EN: making hyperweave. -->
+  <WNA_MakeHyperweave.jobString>TODO</WNA_MakeHyperweave.jobString>
+  
+  <!-- EN: make methanol -->
+  <WNA_MakeMethanol.label>TODO</WNA_MakeMethanol.label>
+  <!-- EN: distill wood to extract methanol. -->
+  <WNA_MakeMethanol.description>TODO</WNA_MakeMethanol.description>
+  <!-- EN: making methanol. -->
+  <WNA_MakeMethanol.jobString>TODO</WNA_MakeMethanol.jobString>
+  
+  <!-- EN: make neutroamine -->
+  <WNA_MakeNeutroamine.label>TODO</WNA_MakeNeutroamine.label>
+  <!-- EN: a method to make neutroamine from chemfuel and methanol with assistance of some phosphorus. great for supporting a colony drug business. -->
+  <WNA_MakeNeutroamine.description>TODO</WNA_MakeNeutroamine.description>
+  <!-- EN: making neutroamine. -->
+  <WNA_MakeNeutroamine.jobString>TODO</WNA_MakeNeutroamine.jobString>
+  
+  <!-- EN: make reinforced barrel -->
+  <WNA_MakeReinforcedBarrel.label>TODO</WNA_MakeReinforcedBarrel.label>
+  <!-- EN: forge a colony produced reinforced barrel. -->
+  <WNA_MakeReinforcedBarrel.description>TODO</WNA_MakeReinforcedBarrel.description>
+  <!-- EN: forging a reinforced barrel. -->
+  <WNA_MakeReinforcedBarrel.jobString>TODO</WNA_MakeReinforcedBarrel.jobString>
+  
+  <!-- EN: make synthread -->
+  <WNA_MakeSynthread.label>TODO</WNA_MakeSynthread.label>
+  <!-- EN: a method to make synthread from chemfuel and halogen. someone may have have been missing this so much. -->
+  <WNA_MakeSynthread.description>TODO</WNA_MakeSynthread.description>
+  <!-- EN: making synthread. -->
+  <WNA_MakeSynthread.jobString>TODO</WNA_MakeSynthread.jobString>
+  
+  <!-- EN: refine corpse -->
+  <WNA_RefineCorpse.label>TODO</WNA_RefineCorpse.label>
+  <!-- EN: refine a corpse to extract some elements composing organic flesh. -->
+  <WNA_RefineCorpse.description>TODO</WNA_RefineCorpse.description>
+  <!-- EN: refining a corpse. -->
+  <WNA_RefineCorpse.jobString>TODO</WNA_RefineCorpse.jobString>
+  
+  <!-- EN: refine organics -->
+  <WNA_RefineOrganics.label>TODO</WNA_RefineOrganics.label>
+  <!-- EN: refine organic materials to extract some elements composing organic flesh. -->
+  <WNA_RefineOrganics.description>TODO</WNA_RefineOrganics.description>
+  <!-- EN: refining organic materials. -->
+  <WNA_RefineOrganics.jobString>TODO</WNA_RefineOrganics.jobString>
+  
+</LanguageData>

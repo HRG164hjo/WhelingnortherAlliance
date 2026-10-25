@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Permaconst Command -->
+  <WNA_FactionPCC.label>恒固指令</WNA_FactionPCC.label>
+  <!-- EN: It's said that Whelingnorther Alliance holds a doomsday weapon named as the "Whelingnorther Alliance Default Response Department". No one ever knows the truth of that thing, but there's a trace that might help people see a fragment of it. \n\nThe Permaconst Command, confirmed as a wild branch created in the development of Default Response Department, is actually a set of instructions transmitted via various methods such as cognitive hazards, psychic pulses and tachyon broadcasts. They themselves cannot do anything, but they can takeover units to gain physical existence they require to carry out their missions. Permaconst Commands are under a perpetual self-maintenance loop, once a Permaconst Command is made, even it's instructor can no longer control it. \n\nPermaconst Command can remember those who ever standed against them. In each maintenance loop the overtaken units reconstruct, and those defiants will become new puppets of Permaconst Command. -->
+  <WNA_FactionPCC.description>传闻威灵诺德联合会掌握着一把末日武器，其名为“威灵诺德联合会缺省对策处”。没有任何人知晓其真相，但某种迹象似乎能让人们把握其真容。\n\n恒固指令，已被证实是在缺省对策处创建时产生的一个野化分支，其本质是一系列通过认知危害、心灵脉冲和快子广播等方式传播的指令。它们本身做不到任何事，但可以接管各种单位以获得执行其任务所需的物理形态。恒固指令处于一个独立的自我维护循环中，一旦一个恒固指令被发出，即使是创建者也无法再控制它。\n\n恒固指令能记住那些挡在它面前的人。在每个维护循环中，被接管的单位都会被重建，而那些反抗者则会成为恒固指令的新的傀儡。</WNA_FactionPCC.description>
+  <!-- EN: Permaconst Command -->
+  <WNA_FactionPCC.fixedName>恒固指令</WNA_FactionPCC.fixedName>
+  <!-- EN: leader -->
+  <WNA_FactionPCC.leaderTitle>役使单位</WNA_FactionPCC.leaderTitle>
+  <!-- EN: enthralled unit -->
+  <WNA_FactionPCC.pawnSingular>役使单位</WNA_FactionPCC.pawnSingular>
+  <!-- EN: enthralled units -->
+  <WNA_FactionPCC.pawnsPlural>役使单位</WNA_FactionPCC.pawnsPlural>
+  
+</LanguageData>

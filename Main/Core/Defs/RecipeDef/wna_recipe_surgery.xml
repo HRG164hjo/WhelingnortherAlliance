@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef ParentName="WNA_SurgeryBase">
+    <defName>WNA_Inspection</defName>
+    <label>psychic inspection</label>
+    <description>Inspect target with one's psychic power, faster and no medicine is required. This technique requires basic level of intelligence.</description>
+    <workerClass>WNA.WNARecipeWorker.Inspection</workerClass>
+    <jobString>Inspecting TargetA.</jobString>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <targetsBodyPart>false</targetsBodyPart>
+    <uiIconPath>UI/Icons/SurgicalInspection</uiIconPath>
+		<recipeUsers>
+			<li>WNA_Whelingnorthan</li>
+			<li>WNA_Humanoid</li>
+			<li>Human</li>
+			<li MayRequire="ludeon.rimworld.anomaly">CreepJoiner</li>
+		</recipeUsers>
+    <skillRequirements>
+      <Intellectual>4</Intellectual>
+    </skillRequirements>
+    <workAmount>60</workAmount>
+    <researchPrerequisite>WNA_PsychicDawn</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="WNA_SurgeryBase">
+    <defName>WNA_ControlRelease</defName>
+    <label>control release</label>
+    <description>Try to release a mind control victim from the control. If the control is permanent, the attempt will be useless.</description>
+    <workerClass>WNA.WNARecipeWorker.ControlRelease</workerClass>
+    <jobString>Trying to release TargetA from mind control.</jobString>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <targetsBodyPart>false</targetsBodyPart>
+    <uiIconPath>UI/Icons/SurgicalInspection</uiIconPath>
+		<recipeUsers>
+			<li>WNA_Whelingnorthan</li>
+			<li>WNA_Humanoid</li>
+			<li>Human</li>
+			<li MayRequire="ludeon.rimworld.anomaly">CreepJoiner</li>
+		</recipeUsers>
+    <skillRequirements>
+      <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <workAmount>2500</workAmount>
+    <researchPrerequisite>WNA_PsychicDawn</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="WNA_SurgeryBase">
+    <defName>WNA_Hemodialysis</defName>
+    <label>blood dialysis</label>
+    <description>Use specially formulated solution to perform blood dialysis on the patient, in order to extract toxic substances accumulated in the patient's body.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Performing blood dialysis on TargetA.</jobString>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <targetsBodyPart>false</targetsBodyPart>
+    <workAmount>30000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Neutroamine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <removesHediff>WNA_ScrapBuildup</removesHediff>
+    <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+  </RecipeDef>
+
+  <!--<RecipeDef ParentName="WNA_SurgeryBase">
+    <defName>WNA_BrainHarvest</defName>
+    <label>harvest brain</label>
+    <description>harvest a fresh brain and quickly preserve it with properly mixed liquid.</description>
+    <workerClass>WNA.WNARecipeWorker.TargetedHarvest</workerClass>
+    <jobString>harvesting TargetA.</jobString>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>true</isViolation>
+    <workAmount>2500</workAmount>
+    <deathOnFailedSurgeryChance>1</deathOnFailedSurgeryChance>
+    <targetsBodyPart>true</targetsBodyPart>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WNA_Methanol</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WNA_Methanol</li>
+        <li>Neutroamine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <WNA_PreservedBrain>1</WNA_PreservedBrain>
+    </products>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <researchPrerequisite>WNA_HumanoidUsage</researchPrerequisite>
+  </RecipeDef>-->
+</Defs>

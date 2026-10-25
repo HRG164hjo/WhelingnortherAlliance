@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchTabDef>
+    <defName>WNA_ResearchTab</defName>
+    <label>whelingnorther technique</label>
+    <generalTitle>whelingnorther technique</generalTitle>
+    <generalDescription>Research projects from HRG164hjo's mod "WNA - Whelingnorther Alliance"</generalDescription>
+  </ResearchTabDef>
+
+  <!-- basic subtree -->
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_CivilianTech</defName>
+    <label>civilian techniques</label>
+    <description>practical techniques for civilian benefits, aiming for improving quality of life.</description>
+    <baseCost>500</baseCost>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_HumanUsage</defName>
+    <label>usage of excess lives</label>
+    <description>sometimes there can be excess lives that causing burden to our community, and here's some tricks about how to get rid of them while doing good, or at least no harm to our community.</description>
+    <baseCost>1000</baseCost>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>WNA_CivilianTech</li>
+    </prerequisites>
+  </ResearchProjectDef>
+	
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_MilitarySupply</defName>
+    <label>military supply</label>
+    <description>the special techniques of how to make whelingnorther military supplies out from common resources based on local conditions. these special techniques is hold secret by Whelingnorther Alliance.</description>
+    <baseCost>2000</baseCost>
+    <researchViewX>4</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>WNA_HumanUsage</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <!-- Battle Control Command Post subtree -->
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_StandardArsenal</defName>
+    <label>standard arsenal</label>
+    <description>the standard arsenal used by whelingnorther alliance to arm their soldiers.</description>
+    <baseCost>3000</baseCost>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1.4</researchViewY>
+    <prerequisites>
+      <li>WNA_MilitarySupply</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_AmmoVariety</defName>
+    <label>ammo variety</label>
+    <description>ammo variety.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0.7</researchViewY>
+    <prerequisites>
+      <li>WNA_StandardArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_ShellCraft</defName>
+    <label>shell craft</label>
+    <description>shell craft.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.1</researchViewY>
+    <prerequisites>
+      <li>WNA_StandardArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_SignalRecon</defName>
+    <label>signal recon</label>
+    <description>shell craft.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0.7</researchViewY>
+    <prerequisites>
+      <li>WNA_StandardArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_AreaDenial</defName>
+    <label>area denial</label>
+    <description>area denial.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2.1</researchViewY>
+    <prerequisites>
+      <li>WNA_StandardArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+ 
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_MainBattleArsenal</defName>
+    <label>main-battle arsenal</label>
+    <description>the standard arsenal used by whelingnorther alliance to arm their main battle armies.</description>
+    <baseCost>3000</baseCost>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1.4</researchViewY>
+    <prerequisites>
+      <li>WNA_StandardArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_FieldAnalysis</defName>
+    <label>field analysis</label>
+    <description>basic theories and techniques to manipulate field instead of manipulate solid matter.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>4</researchViewX>
+    <researchViewY>0.7</researchViewY>
+    <prerequisites>
+      <li>WNA_MainBattleArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_ParticleArmory</defName>
+    <label>particle armory</label>
+    <description>basic theories and techniques about how to produce and make use of unique particles that exists in nature world or not.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2.1</researchViewY>
+    <prerequisites>
+      <li>WNA_MainBattleArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_CloakTechnique</defName>
+    <label>cloak technique</label>
+    <description>basic theories and techniques about how to produce and make use of cloak techniques.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0.7</researchViewY>
+    <prerequisites>
+      <li>WNA_MainBattleArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_AutomatedBattleDrone</defName>
+    <label>automated battle drone</label>
+    <description>automated battle drone.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2.1</researchViewY>
+    <prerequisites>
+      <li>WNA_MainBattleArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_AdvancedArsenal</defName>
+    <label>advanced arsenal</label>
+    <description>the advanced technology used by whelingnorther alliance to arm their elite fighters.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>6</researchViewX>
+    <researchViewY>1.4</researchViewY>
+    <prerequisites>
+      <li>WNA_MainBattleArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_OrbitalAssistance</defName>
+    <label>orbital assistance</label>
+    <description>orbital assistance.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>7</researchViewX>
+    <researchViewY>0.7</researchViewY>
+    <prerequisites>
+      <li>WNA_AdvancedArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_SuperheavyArmament</defName>
+    <label>superheavy armament</label>
+    <description>superheavy armament.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>7</researchViewX>
+    <researchViewY>2.1</researchViewY>
+    <prerequisites>
+      <li>WNA_AdvancedArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_Parasomnia</defName>
+    <label>parasomnia</label>
+    <description>parasomnia.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>8</researchViewX>
+    <researchViewY>0.7</researchViewY>
+    <prerequisites>
+      <li>WNA_AdvancedArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_Superweapon</defName>
+    <label>superweapon</label>
+    <description>Technology about how to build the superweapons which can easily erase an area from the world.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>8</researchViewX>
+    <researchViewY>2.1</researchViewY>
+    <prerequisites>
+      <li>WNA_AdvancedArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_BCCP</defName>
+    <label>Battle Control Command Post</label>
+    <description>Battle Control Command Post is one of the three major authurity centers of Whelingnorther Millitary. BCCP controls about 70% of violence forces of WNA, is considered as the guarantee of absolute order and absolute safety, and is also the mostly known command post to outsiders.</description>
+    <baseCost>2357</baseCost>
+    <researchViewX>10</researchViewX>
+    <researchViewY>2.1</researchViewY>
+    <prerequisites>
+      <li>WNA_AdvancedArsenal</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <!-- Science Engineering Command Post subtree -->
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_SelfRegulateStructure</defName>
+    <label>self-regulate structure</label>
+    <description>standard production.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>0</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <prerequisites>
+      <li>WNA_MilitarySupply</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_StandardProduction</defName>
+    <label>standard production</label>
+    <description>standard production.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2.8</researchViewY>
+    <prerequisites>
+      <li>WNA_SelfRegulateStructure</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_EngineeredCrops</defName>
+    <label>engineered crops</label>
+    <description>standard production.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>1</researchViewX>
+    <researchViewY>4.2</researchViewY>
+    <prerequisites>
+      <li>WNA_SelfRegulateStructure</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_EarthBreaking</defName>
+    <label>earth breaking</label>
+    <description>standard production.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>2</researchViewX>
+    <researchViewY>2.8</researchViewY>
+    <prerequisites>
+      <li>WNA_SelfRegulateStructure</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_DevelopedFurniture</defName>
+    <label>developed furniture</label>
+    <description>developed furniture.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>2</researchViewX>
+    <researchViewY>4.2</researchViewY>
+    <prerequisites>
+      <li>WNA_SelfRegulateStructure</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_MatterTransmutation</defName>
+    <label>matter transmutation</label>
+    <description>matter transmutation.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>3</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <prerequisites>
+      <li>WNA_SelfRegulateStructure</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_DevelopedAgriculture</defName>
+    <label>developed agriculture</label>
+    <description>developed agriculture.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2.8</researchViewY>
+    <prerequisites>
+      <li>WNA_MatterTransmutation</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_StarcoreManipulation</defName>
+    <label>starcore manipulation</label>
+    <description>starcore manipulation.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>4</researchViewX>
+    <researchViewY>4.2</researchViewY>
+    <prerequisites>
+      <li>WNA_MatterTransmutation</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_IntegratedProduction</defName>
+    <label>integrated production</label>
+    <description>integrated production.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2.8</researchViewY>
+    <prerequisites>
+      <li>WNA_MatterTransmutation</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_LogisticsFramework</defName>
+    <label>logistics framework</label>
+    <description>logistics framework.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>5</researchViewX>
+    <researchViewY>4.2</researchViewY>
+    <prerequisites>
+      <li>WNA_MatterTransmutation</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_TranscendentalArts</defName>
+    <label>transcendental arts</label>
+    <description>Science and technology are the most ordinary transcendental arts, the most fundamental transcendental art can extract the devices' functions and make them standalone from their physical carriers, while the more adcanced transcendental arts are resting in areas that we cannot explore into.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>6</researchViewX>
+    <researchViewY>3.5</researchViewY>
+    <prerequisites>
+      <li>WNA_MatterTransmutation</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_VaccumExtraction</defName>
+    <label>vaccum extraction</label>
+    <description>standard production.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>7</researchViewX>
+    <researchViewY>2.8</researchViewY>
+    <prerequisites>
+      <li>WNA_TranscendentalArts</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_PlanetForging</defName>
+    <label>planet forging</label>
+    <description>planet forging.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>7</researchViewX>
+    <researchViewY>4.2</researchViewY>
+    <prerequisites>
+      <li>WNA_TranscendentalArts</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_ClimateMastery</defName>
+    <label>climate mastery</label>
+    <description>climate mastery.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>8</researchViewX>
+    <researchViewY>2.8</researchViewY>
+    <prerequisites>
+      <li>WNA_TranscendentalArts</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_RealityRestruct</defName>
+    <label>reality restruct</label>
+    <description>reality restruct.</description>
+    <baseCost>4000</baseCost>
+    <researchViewX>8</researchViewX>
+    <researchViewY>4.2</researchViewY>
+    <prerequisites>
+      <li>WNA_TranscendentalArts</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_SECP</defName>
+    <label>Science Engineering Command Post</label>
+    <description>Science Engineering Command Post is one of the three major authurity centers of Whelingnorther Millitary. SECP takes over all researching, construction and production projects of WNA, is considered the root of Military, and is the least noticed by outsiders.</description>
+    <baseCost>2357</baseCost>
+    <researchViewX>10</researchViewX>
+    <researchViewY>4.2</researchViewY>
+    <prerequisites>
+      <li>WNA_TranscendentalArts</li>
+      <!--<li>WNA_SelfRegulateStructure</li>-->
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <!-- Education Enforcement Command Post subtree -->
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_PsychicDawn</defName>
+    <label>psychic dawn</label>
+    <description>Mind over matter.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>0</researchViewX>
+    <researchViewY>5.6</researchViewY>
+    <prerequisites>
+      <li>WNA_AdvancedArsenal</li>
+      <li>WNA_TranscendentalArts</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_ConsensusMotion</defName>
+    <label>consensus motion</label>
+    <description>Only one thought can be allowed in a mature community.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>1</researchViewX>
+    <researchViewY>4.9</researchViewY>
+    <prerequisites>
+      <li>WNA_PsychicDawn</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_EducationMotion</defName>
+    <label>education motion</label>
+    <description>education motion.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>1</researchViewX>
+    <researchViewY>6.3</researchViewY>
+    <prerequisites>
+      <li>WNA_PsychicDawn</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_ConversionMotion</defName>
+    <label>conversion motion</label>
+    <description>conversion motion.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>2</researchViewX>
+    <researchViewY>4.9</researchViewY>
+    <prerequisites>
+      <li>WNA_PsychicDawn</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_ConfessionMotion</defName>
+    <label>Confession motion</label>
+    <description>confession motion.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>2</researchViewX>
+    <researchViewY>6.3</researchViewY>
+    <prerequisites>
+      <li>WNA_PsychicDawn</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_Telepathy</defName>
+    <label>telepathy</label>
+    <description>telepathy.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>3</researchViewX>
+    <researchViewY>5.6</researchViewY>
+    <prerequisites>
+      <li>WNA_PsychicDawn</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_MemoryRedaction</defName>
+    <label>memory redaction</label>
+    <description>memory redaction.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>4</researchViewX>
+    <researchViewY>4.9</researchViewY>
+    <prerequisites>
+      <li>WNA_Telepathy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_IdeologyImplantation</defName>
+    <label>ideology implantation</label>
+    <description>ideology implantation.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>4</researchViewX>
+    <researchViewY>6.3</researchViewY>
+    <prerequisites>
+      <li>WNA_Telepathy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_MindReading</defName>
+    <label>mind reading</label>
+    <description>mind reading.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>5</researchViewX>
+    <researchViewY>4.9</researchViewY>
+    <prerequisites>
+      <li>WNA_Telepathy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_PreservationAdministration</defName>
+    <label>preservation administration</label>
+    <description>preservation administration.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>5</researchViewX>
+    <researchViewY>6.3</researchViewY>
+    <prerequisites>
+      <li>WNA_Telepathy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_GlobalEntrallment</defName>
+    <label>global entrallment</label>
+    <description>telepathy.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>6</researchViewX>
+    <researchViewY>5.6</researchViewY>
+    <prerequisites>
+      <li>WNA_Telepathy</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_InterferenceNetwork</defName>
+    <label>psychic interference network</label>
+    <description>interference network.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>7</researchViewX>
+    <researchViewY>4.9</researchViewY>
+    <prerequisites>
+      <li>WNA_GlobalEntrallment</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_AuthorizedUplifting</defName>
+    <label>authorized uplifting</label>
+    <description>With authorization from Whelingnorther Alliance, the ritual to uplift non-human beings to human status is now available. \n\nNote that if we turn &lt;color=#FF0000&gt;hostile&lt;/color&gt; with WNA, they will revoke the authorization, until our relationship with them is restored.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>7</researchViewX>
+    <researchViewY>6.3</researchViewY>
+    <prerequisites>
+      <li>WNA_GlobalEntrallment</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_IdentityExclusion</defName>
+    <label>identity exclusion</label>
+    <description>identity exclusion.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>8</researchViewX>
+    <researchViewY>4.9</researchViewY>
+    <prerequisites>
+      <li>WNA_GlobalEntrallment</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_PsychicDomination</defName>
+    <label>psychic domination</label>
+    <description>psychic domination.</description>
+    <baseCost>5000</baseCost>
+    <researchViewX>8</researchViewX>
+    <researchViewY>6.3</researchViewY>
+    <prerequisites>
+      <li>WNA_GlobalEntrallment</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_EECP</defName>
+    <label>Education Enforcement Command Post</label>
+    <description>Education Enforcement Command Post is one of the three major authurity centers of Whelingnorther Millitary. EECP is the most mysterious and fearsome command post to outsiders, not only because they are responsible for education and law enforcement for Military, but also for their ability to read and manipulate the minds of sentient beings.</description>
+    <baseCost>2357</baseCost>
+    <researchViewX>10</researchViewX>
+    <researchViewY>6.3</researchViewY>
+    <prerequisites>
+      <li>WNA_GlobalEntrallment</li>
+      <!--<li>WNA_PsychicDawn</li>-->
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <!-- whelingnorthan subtree -->
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_WNAMilitary</defName>
+    <label>Whelingnorther Military</label>
+    <description>Composed of three major command posts and led by a Chief Administrative Commander, the Whelingnorther Military serves as physical body in reality of Whelingnorther Alliance, driving forward the great career of WNA with violence, sacrifices and countless destructions.</description>
+    <baseCost>2357</baseCost>
+    <researchViewX>9</researchViewX>
+    <researchViewY>7</researchViewY>
+    <prerequisites>
+      <li>WNA_BCCP</li>
+      <li>WNA_SECP</li>
+      <li>WNA_EECP</li>
+    </prerequisites>
+    <discoveredLetterTitle>Path ahead blocked</discoveredLetterTitle>
+    <discoveredLetterText>You now have reached the level that never any person had reached. Stepping forward is almost impossible. \n\nOne wise choice is to find a techprof subpersona core, with its power you can take a glance at what Whelingnorther Alliance truly masters. The other choice is to jusi ask Whelingnorther Alliance about it. \n\nAsking is easy, but &lt;color=#FF0000&gt;some price will be paid&lt;/color&gt;.</discoveredLetterText>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="WNA_ResearchProjBase">
+    <defName>WNA_WhelingnortherApocalypse</defName>
+    <label>dark apocalypse</label>
+    <description>"When early ancestors of humanity rose from the humble, it was their effort and sacrifices that led to the prosperity of today world; when our predecessors rose from the insignificance, it was their effort and sacrifices that led to we Whelingnorther Alliance. Any great work requires sacrifices to forge, without great destruction can there be no great rebirth, without great devotions will we not achieve eternity salvation and immortality. We descendants shall follow the path led by those who came before us; we will see our duty and accept our manifest destiny; we shall alter and determine the past, the present and the future. All any existance shall bath in the glory of Whelignorther, they need not understand, only shall they obey."</description>
+    <baseCost>Infinity</baseCost>
+    <researchViewX>10</researchViewX>
+    <researchViewY>7</researchViewY>
+    <prerequisites>
+      <li>WNA_WNAMilitary</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

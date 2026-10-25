@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PreceptDef>
+    <defName>WNA_Uplifting</defName>
+    <label>uplifting</label>
+    <description>A rite that reshapes a being into a higher form of existence. Beasts, plants, entities and mechanoids are raised to humanity; humans are raised to humanoids; humanoids are raised to whelingnorthans.</description>
+    <issue>Ritual</issue>
+    <preceptClass>WNA.WNARitual.Precept_Ritual_Uplifting</preceptClass>
+    <ritualPatternBase>WNA_Uplifting</ritualPatternBase>
+    <iconPath>UI/Icons/Rituals/RoleChange</iconPath>
+    <visible>false</visible>
+    <mergeRitualGizmosFromAllIdeos>true</mergeRitualGizmosFromAllIdeos>
+    <useRepeatPenalty>false</useRepeatPenalty>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <selectionWeight>0</selectionWeight>
+    <classic>true</classic>
+  </PreceptDef>
+
+  <RitualPatternDef>
+    <defName>WNA_Uplifting</defName>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+    <ritualObligationTargetFilter>WNA_UpliftTarget</ritualObligationTargetFilter>
+    <ritualBehavior>WNA_Uplifting</ritualBehavior>
+    <ritualOutcomeEffect>WNA_Uplifting</ritualOutcomeEffect>
+    <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+    <canMergeGizmosFromDifferentIdeos>true</canMergeGizmosFromDifferentIdeos>
+    <mergeGizmosForObligations>false</mergeGizmosForObligations>
+    <playsIdeoMusic>false</playsIdeoMusic>
+  </RitualPatternDef>
+
+  <RitualObligationTargetFilterDef>
+    <defName>WNA_UpliftTarget</defName>
+    <workerClass>WNA.WNARitual.RitualObligationTargetWorker_WNAUplift</workerClass>
+    <colonistThingsOnly>true</colonistThingsOnly>
+  </RitualObligationTargetFilterDef>
+
+  <RitualBehaviorDef>
+    <defName>WNA_Uplifting</defName>
+    <workerClass>WNA.WNARitual.RitualBehaviorWorker_Uplifting</workerClass>
+    <durationTicks>2357</durationTicks>
+    <spectatorsLabel>witnesses</spectatorsLabel>
+    <spectatorGerund>witness</spectatorGerund>
+    <displayCompletedMessage>true</displayCompletedMessage>
+    <roles>
+      <li Class="WNA.WNARitual.RitualRole_UpliftingOrganizer">
+        <label>uplifting host</label>
+        <missingDesc>an uplifting host</missingDesc>
+        <id>uplift_organizer</id>
+        <maxCount>1</maxCount>
+        <required>true</required>
+        <countsAsParticipant>true</countsAsParticipant>
+        <mustBeAbleToReachTarget>true</mustBeAbleToReachTarget>
+      </li>
+    </roles>
+    <stages>
+      <li>
+        <defaultDuty>SpectateCircle</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>1</percentage>
+          </li>
+        </endTriggers>
+        <spectatorsRequired>false</spectatorsRequired>
+        <showProgressBar>true</showProgressBar>
+      </li>
+    </stages>
+  </RitualBehaviorDef>
+
+  <RitualOutcomeEffectDef>
+    <defName>WNA_Uplifting</defName>
+    <workerClass>WNA.WNARitual.RitualOutcomeEffectWorker_Uplifting</workerClass>
+    <description>The subject is reshaped into a higher form of existence.</description>
+    <comps>
+      <li Class="WNA.WNARitual.RitualOutcomeComp_Uplifting" />
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>completed</label>
+        <description>The uplifting is complete.</description>
+        <chance>1</chance>
+        <positivityIndex>1</positivityIndex>
+      </li>
+    </outcomeChances>
+    <startingQuality>1</startingQuality>
+    <minQuality>1</minQuality>
+    <maxQuality>1</maxQuality>
+    <warnOnLowQuality>false</warnOnLowQuality>
+    <allowAttachableOutcome>false</allowAttachableOutcome>
+    <allowOutcomeWithNoAttendance>true</allowOutcomeWithNoAttendance>
+    <givesDevelopmentPoints>false</givesDevelopmentPoints>
+  </RitualOutcomeEffectDef>
+
+</Defs>

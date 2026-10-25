@@ -5,15 +5,15 @@ using Verse;
 
 namespace WNA.WNAHarmony
 {
-    public class Patch_Explosion
+    internal class Patch_Explosion
     {
         private static readonly HashSet<string> damageList = new HashSet<string>
         {
             "BombSuper",
-            "WNA_CastBomb",
             "WNA_ChimingBlaze",
-            "WNA_KineBomb",
-            "WNA_RadBurn"
+            "WNA_RadBurn",
+            "WNA_Hypothermal",
+            "WNA_Psychedelic"
         };
         private static void RemoveRoofsInExplosion(Explosion explosion)
         {
@@ -21,7 +21,8 @@ namespace WNA.WNAHarmony
             if (map == null) return;
             foreach (IntVec3 cell in GenRadial.RadialCellsAround(explosion.Position, explosion.radius, true))
             {
-                if (map != Find.CurrentMap || !cell.InBounds(map)) continue;
+                if (map != Find.CurrentMap || !cell.InBounds(map))
+                    continue;
                 RoofDef roof = map.roofGrid.RoofAt(cell);
                 if (roof != null)
                 {
@@ -32,7 +33,7 @@ namespace WNA.WNAHarmony
         }
         [HarmonyPatch(typeof(DamageWorker), nameof(DamageWorker.ExplosionCellsToHit),
             new Type[] { typeof(Explosion) })]
-        public static class Patch_ExplosionCellsToHit
+        internal static class Patch_ExplosionCellsToHit
         {
             static bool Prefix(DamageWorker __instance, Explosion explosion, ref IEnumerable<IntVec3> __result)
             {
@@ -45,7 +46,7 @@ namespace WNA.WNAHarmony
             }
         }
         [HarmonyPatch(typeof(Explosion), nameof(Explosion.StartExplosion))]
-        public static class Explosion_StartExplosion_Patch
+        internal static class Explosion_StartExplosion_Patch
         {
             static void Prefix(Explosion __instance)
             {

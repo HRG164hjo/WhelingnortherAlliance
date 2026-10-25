@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNAMod>Whelingnorther Alliance</WNAMod>
+
+  <WNAMod_enableIdeoConflictHostility>EN: Enable ideology conflict and hostility. When colony ideo contains some certain meme or precept, Whelingnorther Alliance will turn hostile. \n\n(Disabled by default)</WNAMod_enableIdeoConflictHostility>
+
+  <WNAMod_enablePermaconstDeathAid>Enable Permaconst reinforcement: When a pawn enthralled by Permaconst Command dies, there is about 7% chance that they will immediately summon a "Hunting Cluster" raid. \n\n(Disabled by default)</WNAMod_enablePermaconstDeathAid>
+
+  <WNAMod_enablePawnSpreadRadWhenKilled>Enable dead zone radiation spread: When a pawn carrying a certain radiation hediff dies, there will be an explosion and radiation zone will be spreaded.\n\n(Disabled by default)</WNAMod_enablePawnSpreadRadWhenKilled>
+
+  <WNAMod_pawnReturnerMaxLimit>Max Returned Pawns</WNAMod_pawnReturnerMaxLimit>
+
+  <WNAMod_pawnReturnerMaxLimitDesc>Maximum number of Whelingnorther Alliance pawns re-spawned onto the map at once while the Permaconst Command condition is active.</WNAMod_pawnReturnerMaxLimitDesc>
+
+  <WNAMod_upliftSpawnAtRitualTarget>Spawn uplifted pawns at the ritual target</WNAMod_upliftSpawnAtRitualTarget>
+  <WNAMod_upliftSpawnAtRitualTargetDesc>If enabled, the pawn created by the uplifting rite appears near the altar or ritual spot. If disabled, it appears where the subject was. Disabled by default.</WNAMod_upliftSpawnAtRitualTargetDesc>
+
+</LanguageData>

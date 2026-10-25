@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: The uplifting rite requires the Ideology expansion. -->
+  <WNA_UpliftUnavailableIdeology>升变仪式需要文化DLC。</WNA_UpliftUnavailableIdeology>
+  <!-- EN: The uplifting rite is not yet authorized. Research "Authorized Uplifting" first. -->
+  <WNA_UpliftUnavailableResearch>升变仪式尚未获得授权。请先完成“授权升变”研究。</WNA_UpliftUnavailableResearch>
+  <!-- EN: The Whelingnorther Alliance cannot be found. -->
+  <WNA_UpliftUnavailableFaction>找不到威灵诺德联合会。</WNA_UpliftUnavailableFaction>
+  <!-- EN: The uplifting rite cannot be used while the Whelingnorther Alliance is hostile. -->
+  <WNA_UpliftUnavailableHostile>与威灵诺德联合会敌对时无法使用升变仪式。</WNA_UpliftUnavailableHostile>
+
+  <!-- EN: This pawn is already taking part in another gathering. -->
+  <WNA_UpliftOrganizerBusy>该小人已经参与了另一场集会。</WNA_UpliftOrganizerBusy>
+  <!-- EN: The host must follow the Whelingnorther creed. -->
+  <WNA_UpliftOrganizerNeedsIdeo>主持者必须信仰威灵诺德教义。</WNA_UpliftOrganizerNeedsIdeo>
+
+  <!-- EN: This being is already taking part in another gathering. -->
+  <WNA_UpliftSubjectBusy>该存在已经参与了另一场集会。</WNA_UpliftSubjectBusy>
+  <!-- EN: The Whelingnorther Alliance and its PCC servants cannot be uplifted. -->
+  <WNA_UpliftSubjectForbiddenFaction>威灵诺德联合会及其PCC所属成员无法接受升变。</WNA_UpliftSubjectForbiddenFaction>
+  <!-- EN: This being is not available for uplifting. -->
+  <WNA_UpliftSubjectUnavailable>该存在目前无法接受升变。</WNA_UpliftSubjectUnavailable>
+  <!-- EN: The subject is gone. The uplifting cannot be completed. -->
+  <WNA_UpliftSubjectGone>接受者已经消失，升变无法完成。</WNA_UpliftSubjectGone>
+  <!-- EN: The subject could not be reshaped. -->
+  <WNA_UpliftFailed>无法重塑接受者。</WNA_UpliftFailed>
+  <!-- EN: The uplifting is complete: {PAWN}. -->
+  <WNA_UpliftCompleted>升变完成：{PAWN}。</WNA_UpliftCompleted>
+  <!-- EN: Subject: {SUBJECT} -->
+  <WNA_UpliftSubjectInfo>接受者：{SUBJECT}</WNA_UpliftSubjectInfo>
+  <!-- EN: an altar or a ritual spot -->
+  <WNA_UpliftTargetInfo>一座祭坛或一处仪式点</WNA_UpliftTargetInfo>
+  <!-- EN: Select the being to uplift. -->
+  <WNA_UpliftSelectSubject>请选择接受升变的存在。</WNA_UpliftSelectSubject>
+
+</LanguageData>

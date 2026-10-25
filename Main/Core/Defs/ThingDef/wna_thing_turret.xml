@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_PsychicTower</defName>
+    <label>psychic tower</label>
+    <description>A psychic defence tower that projects a focused mind-control pulse at humanlike intruders. Destroying the tower or cutting its power releases everyone it controls.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretMini_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <useHitPoints>true</useHitPoints>
+    <uiIconPath>Things/Building/Security/TurretMini_MenuIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <MarketValue>2500</MarketValue>
+      <Mass>20</Mass>
+      <Beauty>-10</Beauty>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <building>
+      <turretGunDef>WNA_PsychicTowerGun</turretGunDef>
+      <turretBurstCooldownTime>3.5</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_GlobalEntrallment</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_PsychicTowerGun</defName>
+    <label>psychic tower gun</label>
+    <description>A psychic projector mounted on a defence tower.</description>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretMini_Top</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_PsychicTower_Proj</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>29.9</range>
+        <soundCast>WNA_MindControl</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <targetParams>
+          <canTargetAnimals>true</canTargetAnimals>
+          <canTargetHumans>true</canTargetHumans>
+          <canTargetMechs>false</canTargetMechs>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_PsychicTower_Proj</defName>
+    <label>psychic pulse</label>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Inviso</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <projectile>
+      <damageDef>WNA_Controller</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

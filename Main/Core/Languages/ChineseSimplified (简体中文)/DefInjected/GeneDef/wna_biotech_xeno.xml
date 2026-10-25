@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: apathy -->
+  <WNA_Apathy.label>麻木不仁</WNA_Apathy.label>
+  <!-- EN: Carriers of this gene are numb to the world, Almost all feelings and opinions are erased, leaving them indifferent to joy and sorrow alike. -->
+  <WNA_Apathy.description>这一基因的携带者对世间万物麻木不仁，几乎一切心情与看法皆被抹除，对喜悲同样无动于衷。</WNA_Apathy.description>
+  <!-- EN: apathetic -->
+  <WNA_Apathy.labelShortAdj>麻木</WNA_Apathy.labelShortAdj>
+  
+  <!-- EN: plain head -->
+  <WNA_HeadType.label>面容</WNA_HeadType.label>
+  <!-- EN: Carriers of this gene have unique plain appearance with no features or details. -->
+  <WNA_HeadType.description>这一基因的携带者拥有独特的、没有任何细节或特征的面孔。</WNA_HeadType.description>
+  <!-- EN: plain -->
+  <WNA_HeadType.labelShortAdj>TODO</WNA_HeadType.labelShortAdj>
+  
+  <!-- EN: mastery -->
+  <WNA_Mastery.label>博闻强识</WNA_Mastery.label>
+  <!-- EN: Carriers of this gene has precoded knowledge and skills built into them. -->
+  <WNA_Mastery.description>这一基因的携带者生具一系列预设好的知识和技能</WNA_Mastery.description>
+  <!-- EN: mastery -->
+  <WNA_Mastery.labelShortAdj>博学</WNA_Mastery.labelShortAdj>
+  
+  <!-- EN: still water -->
+  <WNA_StillWater.label>心如止水</WNA_StillWater.label>
+  <!-- EN: Carriers of this gene will develop extraordinary inner peace, getting rid of some unnecessary needs. -->
+  <WNA_StillWater.description>这一基因的携带者拥有非凡的内在平静，甚至摆脱了一些生物基础需求。</WNA_StillWater.description>
+  <!-- EN: still water -->
+  <WNA_StillWater.labelShortAdj>平和</WNA_StillWater.labelShortAdj>
+  
+  <!-- EN: unshakable -->
+  <WNA_Unshakable.label>不可撼动</WNA_Unshakable.label>
+  <!-- EN: Carrier of this gene will develop into an unbelievably tough being, both physically and mentally. -->
+  <WNA_Unshakable.description>这一基因的携带者会成长为极其坚韧强悍的生物，不论是物理层面还是心灵层面。</WNA_Unshakable.description>
+  <!-- EN: unshakable -->
+  <WNA_Unshakable.labelShortAdj>坚毅</WNA_Unshakable.labelShortAdj>
+  
+</LanguageData>

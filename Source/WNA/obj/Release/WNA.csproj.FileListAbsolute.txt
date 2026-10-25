@@ -1,0 +1,12 @@
+c:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\bin\Release\WNA.dll
+c:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\bin\Release\WNA.pdb
+c:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Release\WNA.csproj.AssemblyReference.cache
+c:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Release\WNA.csproj.CoreCompileInputs.cache
+c:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Release\WNA.dll
+c:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Release\WNA.pdb
+C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Main\Core\Assemblies\WNA.dll
+C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Main\Core\Assemblies\WNA.pdb
+C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Release\WNA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Release\WNA.sourcelink.json
+C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Release\refint\WNA.dll
+C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Release\ref\WNA.dll

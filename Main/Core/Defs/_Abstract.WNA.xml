@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ======== -->
+  <!-- ======== -->
+  <!-- AbilityDef -->
+  <AbilityDef Abstract="true" Name="WNA_AbilityBase">
+    <category>WNA_AbilityCategory</category>
+    <iconPath>karma</iconPath>
+    <cooldownTicksRange>60</cooldownTicksRange>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <hostile>false</hostile>
+    <aiCanUse>false</aiCanUse>
+    <writeCombatLog>true</writeCombatLog>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+  </AbilityDef>
+
+
+  <!-- ======== -->
+  <!-- ======== -->
+  <!-- DamageDef -->
+  <DamageDef Abstract="true" Name="WNA_DamageBase">
+    <workerClass>WNA.WNADamageWorker.DmgWorker_Crit</workerClass>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <overkillPctToDestroyPart>0</overkillPctToDestroyPart>
+    <defaultArmorPenetration>Infinity</defaultArmorPenetration>
+    <defaultStoppingPower>Infinity</defaultStoppingPower>
+    <buildingDamageFactor>1</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <corpseDamageFactor>1</corpseDamageFactor>
+    <execution>true</execution>
+    <externalViolence>true</externalViolence>
+    <armorCategory/>
+  </DamageDef>
+
+
+  <!-- ======== -->
+  <!-- ======== -->
+  <!-- IncidentDef -->
+  <IncidentDef Name="WNA_DiseaseIncidentBase" Abstract="True">
+    <targetTags>
+      <li>Map_PlayerHome</li>
+      <li>Map_TempIncident</li>
+      <li>Map_Misc</li>
+      <li>Map_RaidBeacon</li>
+      <li>Caravan</li>
+    </targetTags>
+    <letterDef>WNA_MajorThreatLetter</letterDef>
+  </IncidentDef>
+
+
+  <!-- ======== -->
+  <!-- ======== -->
+  <!-- PawnKindDef -->
+  <PawnKindDef Name="WNA_PawnsBase" Abstract="True">
+    <defaultFactionType>WNA_FactionWNA</defaultFactionType>
+    <disallowedTraits>
+      <li>Nudist</li>
+      <li>Brawler</li>
+      <li>Greedy</li>
+      <li>Jealous</li>
+      <li>Gay</li>
+      <li>Bisexual</li>
+      <li>AnnoyingVoice</li>
+      <li>CreepyBreathing</li>
+      <li>Pyromaniac</li>
+      <li>Wimp</li>
+      <li>Transhumanist</li>
+      <li>BodyPurist</li>
+      <li>DislikesMen</li>
+      <li>DislikesWomen</li>
+      <li>Gourmand</li>
+      <li>DrugDesire</li>
+      <li>Nerves</li>
+      <li>Neurotic</li>
+      <li>Industriousness</li>
+      <li>PsychicSensitivity</li>
+      <li>Beauty</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_AbsentMinded</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Coward</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Clumsy</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_HeavySleeper</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Slob</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Workaholic</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_AnimalLover</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_AnimalHater</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_BigBoned</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Rebel</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Submissive</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Vengeful</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Technophobe</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Snob</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Squeamish</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Anxious</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Insatiable</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Kleptomaniac</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Stoner</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Lush</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Insomniac</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_RefinedPalate</li>
+      <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_Schizoid</li>
+      <li MayRequireAnyOf="dubwise.dubsbadhygiene.lite,dubwise.dubsbadhygiene">Hygienic</li>
+    </disallowedTraits>
+    <forcedTraits>
+      <li>WNA_Trait_Unshakable</li>
+      <li MayRequire="Aelanna.Endling">Aelanna_Endling</li>
+    </forcedTraits>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>50</maxGenerationAge>
+    <allowOldAgeInjuries>false</allowOldAgeInjuries>
+    <destroyGearOnDrop>false</destroyGearOnDrop>
+    <canStrip>false</canStrip>
+    <canOpenAnyDoor>true</canOpenAnyDoor>
+    <ignoresPainShock>true</ignoresPainShock>
+    <initialWillRange>2000~3000</initialWillRange>
+    <initialResistanceRange>2000~3000</initialResistanceRange>
+    <royalTitleChance>0</royalTitleChance>
+    <isFighter>true</isFighter>
+    <allowInMechClusters>false</allowInMechClusters>
+    <itemQuality>Legendary</itemQuality>
+    <forceWeaponQuality>Legendary</forceWeaponQuality>
+    <gearHealthRange>1~1</gearHealthRange>
+    <weaponMoney>100000~100000</weaponMoney>
+    <apparelMoney>100000~100000</apparelMoney>
+    <apparelDisallowTags>
+      <li MayRequire="aelanna.arimreborn.classesandjobs">ARR_SoulCrystal</li>
+    </apparelDisallowTags>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <nakedChance>0</nakedChance>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <techHediffsMoney>0</techHediffsMoney>
+    <biocodeWeaponChance>0</biocodeWeaponChance>
+    <humanPregnancyChance>0</humanPregnancyChance>
+    <fixedInventory>
+      <WNA_Ration>3</WNA_Ration>
+      <WNA_Medikit>3</WNA_Medikit>
+    </fixedInventory>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>0</combatEnhancingDrugsCount>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>Intellectual</li>
+      <li>Cleaning</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+
+  <!-- ======== -->
+  <!-- ======== -->
+  <!-- RecipeDef -->
+  <RecipeDef Abstract="True" Name="WNA_RecipeBase">
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef Abstract="True" Name="WNA_SurgeryBase">
+    <surgeryOutcomeEffect IsNull="True"/>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <workSkillLearnFactor>16</workSkillLearnFactor>
+    <isViolation>false</isViolation>
+    <anesthetize>false</anesthetize>
+    <uiIconThing>WNA_ApocalypseCross</uiIconThing>
+    <effectWorking>Surgery</effectWorking>
+    <soundWorking>Recipe_Surgery</soundWorking>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <targetsBodyPart>false</targetsBodyPart>
+    <workAmount>1</workAmount>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="ludeon.rimworld.anomaly">CreepJoiner</li>
+    </recipeUsers>
+  </RecipeDef>
+
+
+  <!-- ======== -->
+  <!-- ======== -->
+  <!-- ResearchProjectDef -->
+  <ResearchProjectDef Abstract="true" Name="WNA_ResearchProjBase">
+    <tab>WNA_ResearchTab</tab>
+    <techLevel>Archotech</techLevel>
+    <generalRules/>
+  </ResearchProjectDef>
+
+
+  <!-- ======== -->
+  <!-- ======== -->
+  <!-- StorytellerDef -->
+  <StorytellerDef Name="WNA_StorytellerBase" Abstract="True">
+    <populationIntentFactorFromPopCurve>
+      <points>
+        <li>0,8.0</li>
+        <li>1,2.0</li>
+        <li>4,1.0</li>
+        <li>7,0.35</li>
+        <li>11,0.0</li>
+        <li>20,-1.0</li>
+      </points>
+    </populationIntentFactorFromPopCurve>
+    <populationIntentFactorFromPopAdaptDaysCurve>
+      <points>
+        <li>(0,0)</li>
+        <li>(8,1)</li>
+      </points>
+    </populationIntentFactorFromPopAdaptDaysCurve>
+    <pointsFactorFromDaysPassed>
+      <points>
+        <li>(10,0.70)</li>
+        <li>(40,1.00)</li>
+      </points>
+    </pointsFactorFromDaysPassed>
+    <adaptDaysMin>-60</adaptDaysMin>
+    <adaptDaysMax>100</adaptDaysMax>
+    <adaptDaysGameStartGraceDays>30</adaptDaysGameStartGraceDays> <!-- only applies to adaptDays past 0 -->
+    <adaptDaysLossFromColonistLostByPostPopulation>
+      <points>
+        <li>(0,30)</li> <!-- 30 days at normal pops; lower at really high pop -->
+        <li>(11,30)</li>
+        <li>(20,20)</li>
+      </points>
+    </adaptDaysLossFromColonistLostByPostPopulation>
+    <adaptDaysLossFromColonistViolentlyDownedByPopulation>
+      <points>
+        <li>(1,8)</li>
+        <li>(2,6)</li>
+        <li>(3,6)</li>
+        <li>(11,5)</li>
+        <li>(20,3.5)</li>
+      </points>
+    </adaptDaysLossFromColonistViolentlyDownedByPopulation>
+    <adaptDaysGrowthRateCurve>
+      <points>
+        <li>(-30.01,6)</li>   <!-- under: 8.00 -->
+        <li>(-30,3)</li>   <!-- -30: 3.00 -->
+        <li>(-0.01,3)</li>
+        <li>(0,1)</li>   <!-- 0: 1.00 -->
+        <li>(59.99,1)</li>
+        <li>(60,0.5)</li> <!-- 60: 0.50 -->
+        <li>(119.99,0.5)</li>
+        <li>(120,0.25)</li> <!-- 120: 0.25 -->
+      </points>
+    </adaptDaysGrowthRateCurve>
+    <pointsFactorFromAdaptDays>
+      <points>
+        <li>(-30,0.40)</li>  <!-- recover in 10 days -->
+        <li>(0,0.80)</li>  <!-- start at 0.80 -->
+        <li>(30,1.00)</li>  <!-- 0.5 years to 1.00 -->
+        <li>(60,1.20)</li>  <!-- 0.5 years to 1.20 -->
+        <li>(120,1.60)</li>  <!-- 2 years to 1.60 -->
+        <li>(180,2.00)</li>  <!-- 4 years to 2.00 -->
+      </points>
+    </pointsFactorFromAdaptDays>
+    <comps>
+      <li Class="StorytellerCompProperties_DeepDrillInfestation">
+        <baseMtbDaysPerDrill>20</baseMtbDaysPerDrill>
+        <allowedTargetTags>
+          <li>Map_PlayerHome</li>
+          <li>Map_TempIncident</li>
+          <li>Map_Misc</li>
+          <li>Map_RaidBeacon</li>
+        </allowedTargetTags>
+      </li>
+      <!-- Royalty begin -->
+      <li Class="StorytellerCompProperties_SingleOnceFixed">
+        <fireAfterDaysPassed>10</fireAfterDaysPassed>
+        <incident>GiveQuest_Intro_Deserter</incident>
+        <skipIfOnExtremeBiome>false</skipIfOnExtremeBiome>
+        <allowedTargetTags>
+          <li>World</li>
+        </allowedTargetTags>
+      </li>
+      <li Class="StorytellerCompProperties_FactionInteraction">
+        <incident>CaravanArrivalTributeCollector</incident>
+        <minDaysPassed>20</minDaysPassed>
+        <baseIncidentsPerYear>2</baseIncidentsPerYear>
+        <minSpacingDays>30</minSpacingDays>
+        <minWealth>20000</minWealth>
+        <allowedTargetTags>
+          <li>Map_PlayerHome</li>
+        </allowedTargetTags>
+      </li>
+      <!-- Ideology begin -->
+      <li Class="StorytellerCompProperties_WorkSite" MayRequire="Ludeon.RimWorld.Ideology">
+        <incident>GiveQuest_WorkSite</incident>
+      </li>
+      <li Class="StorytellerCompProperties_OnOffCycle" MayRequire="Ludeon.RimWorld.Ideology">
+        <incident>GiveQuest_Beggars</incident>
+        <onDays>60</onDays>
+        <offDays>0</offDays>
+        <minSpacingDays>20</minSpacingDays>
+        <numIncidentsRange>1</numIncidentsRange>
+        <allowedTargetTags>
+          <li>Map_PlayerHome</li>
+        </allowedTargetTags>
+      </li>
+      <li Class="StorytellerCompProperties_RandomEpicQuest" MayRequire="Ludeon.RimWorld.Ideology">
+        <category>GiveQuest</category>
+        <allowedTargetTags>
+          <li>World</li>
+        </allowedTargetTags>
+        <onDays>40</onDays>
+        <offDays>0</offDays>
+        <minDaysPassed>30</minDaysPassed>
+        <numIncidentsRange>1</numIncidentsRange>
+      </li>
+      <li Class="StorytellerCompProperties_OnOffCycle" MayRequire="Ludeon.RimWorld.Ideology">
+        <incident>GiveQuest_ReliquaryPilgrims</incident>
+        <onDays>40</onDays>
+        <offDays>0</offDays>
+        <minSpacingDays>20</minSpacingDays>
+        <numIncidentsRange>1</numIncidentsRange>
+        <allowedTargetTags>
+          <li>Map_PlayerHome</li>
+        </allowedTargetTags>
+      </li>
+      <!-- Biotech begin -->
+      <li Class="StorytellerCompProperties_MechanitorComplexQuest" MayRequire="Ludeon.RimWorld.Biotech">
+        <incident>GiveQuest_AncientComplex_Mechanitor</incident>
+        <mtbDays>60</mtbDays>
+        <existingMechanitorOrMechlinkMTBFactor>4</existingMechanitorOrMechlinkMTBFactor>
+        <minSpacingDays>60</minSpacingDays>
+        <allowedTargetTags>
+          <li>Map_PlayerHome</li>
+        </allowedTargetTags>
+        <blockedByQueuedOrActiveQuests>
+          <li>OpportunitySite_AncientComplex_Mechanitor</li>
+          <li>MechanitorShip</li>
+        </blockedByQueuedOrActiveQuests>
+      </li>
+      <li Class="StorytellerCompProperties_DissolutionTriggered" MayRequire="Ludeon.RimWorld.Biotech">
+        <incident>WastepackInfestation</incident>
+        <thing>Wastepack</thing>
+        <delayTicks>0</delayTicks>
+        <allowedTargetTags>
+          <li>Map_PlayerHome</li>
+          <li>Map_Misc</li>
+        </allowedTargetTags>
+      </li>
+      <li Class="StorytellerCompProperties_NoxiousHaze" MayRequire="Ludeon.RimWorld.Biotech">
+        <lastFireMinMTBThreshold>0.5</lastFireMinMTBThreshold>
+        <lastFireMaxMTBThreshold>2</lastFireMaxMTBThreshold>
+        <allowedTargetTags>
+          <li>Map_PlayerHome</li>
+          <li>Map_Misc</li>
+        </allowedTargetTags>
+      </li>
+      <!-- Anomaly begin -->
+      <li Class="StorytellerCompProperties_MonolithMigration" MayRequire="Ludeon.RimWorld.Anomaly">
+        <incident>MonolithMigration</incident>
+        <mtbDays>4</mtbDays>
+        <allowedTargetTags>
+          <li>Map_PlayerHome</li>
+        </allowedTargetTags>
+      </li>
+    </comps>
+  </StorytellerDef>
+
+
+  <!-- ======== -->
+  <!-- ======== -->
+  <!-- TerrainDef -->
+  <TerrainDef Abstract="True" Name="WNA_FloorsBase">
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <renderPrecedence>400</renderPrecedence>
+    <layerable>true</layerable>
+    <preventCraters>true</preventCraters>
+    <takeFootprints>false</takeFootprints>
+    <natural>false</natural>
+    <holdSnowOrSand>false</holdSnowOrSand>
+    <isPaintable>false</isPaintable>
+    <extinguishesFire>true</extinguishesFire>
+    <preventCraters>true</preventCraters>
+    <constructEffect>ConstructWood</constructEffect>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>Walkable</li>
+    </affordances>
+    <generatedFilth/>
+    <pathCost>0</pathCost>
+    <fertility>0</fertility>
+    <filthAcceptanceMask>
+      <li>None</li>
+    </filthAcceptanceMask>
+    <designationCategory>WNA_MainCategory</designationCategory>
+    <terrainAffordanceNeeded IsNull="True"/>
+    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+    <pollutionColor>(1,1,1,0.8)</pollutionColor>
+  </TerrainDef>
+  
+</Defs>

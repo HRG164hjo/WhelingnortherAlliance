@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GoodwillSituationDef>
+        <defName>WNA_Goodwill_SamePath</defName>
+        <label>following the same path</label>
+        <workerClass>GoodwillSituationWorker_MemeCompatibility</workerClass>
+        <meme>Meme_WNA_Ideo</meme>
+        <otherMeme>Meme_WNA_Ideo</otherMeme>
+        <naturalGoodwillOffset>2000</naturalGoodwillOffset>
+    </GoodwillSituationDef>
+
+    <GoodwillSituationDef>
+        <defName>WNA_Goodwill_IdeoConflict</defName>
+        <label>fundamental ideological opposition</label>
+        <workerClass>WNA.WNAMiscs.GoodwillSituationWorker_WNAIdeoConflict</workerClass>
+        <baseMaxGoodwill>-100</baseMaxGoodwill>
+    </GoodwillSituationDef>
+
+</Defs>

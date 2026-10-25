@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: cinnabar -->
+  <WNA_Cinnabar.label>TODO</WNA_Cinnabar.label>
+  <!-- EN: One kind of mercury-containing ore, red in color, looks nice. It's relatively stable so you can use it to construct something, if you dare. -->
+  <WNA_Cinnabar.description>TODO</WNA_Cinnabar.description>
+  
+  <!-- EN: halogen vial -->
+  <WNA_HalogenVial.label>TODO</WNA_HalogenVial.label>
+  <!-- EN: A mixture (maybe) of halogen contained in a vial. These substances are among the most active substances in the world, hard to handle, and very useful. -->
+  <WNA_HalogenVial.description>TODO</WNA_HalogenVial.description>
+  
+  <!-- EN: mercury vial -->
+  <WNA_MercuryVial.label>TODO</WNA_MercuryVial.label>
+  <!-- EN: An unique metal that usually appear as liquid. This substance easily volatile and it's steam is highly poisonous, so needs to be carefully contained or operated. -->
+  <WNA_MercuryVial.description>TODO</WNA_MercuryVial.description>
+  
+  <!-- EN: methanol -->
+  <WNA_Methanol.label>TODO</WNA_Methanol.label>
+  <!-- EN: The simplest alcohol, a very useful chemical substance, can be obtained by distilling wood, poisonous. DO remember that this is absolutely not for drinking. -->
+  <WNA_Methanol.description>TODO</WNA_Methanol.description>
+  
+  <!-- EN: white phosphorus -->
+  <WNA_Phosphorus.label>TODO</WNA_Phosphorus.label>
+  <!-- EN: Very soft substance. This substance is very dangerous, highly toxic and highly flammable, makes it hard to believe that phosphorus is a vital component of life. -->
+  <WNA_Phosphorus.description>TODO</WNA_Phosphorus.description>
+  
+  <!-- EN: preserved brain -->
+  <WNA_PreservedBrain.label>TODO</WNA_PreservedBrain.label>
+  <!-- EN: A biological human brain, carefully treated with methanol and neutroamine and preserved, to keep as much of its vitality for further use. -->
+  <WNA_PreservedBrain.description>TODO</WNA_PreservedBrain.description>
+  
+  <!-- EN: quicklime -->
+  <WNA_Quicklime.label>TODO</WNA_Quicklime.label>
+  <!-- EN: A hardly soluble, highly alkaline substance, has much as wide applications as much as great potential hazards. -->
+  <WNA_Quicklime.description>TODO</WNA_Quicklime.description>
+  
+  <!-- EN: sulphur -->
+  <WNA_Sulphur.label>TODO</WNA_Sulphur.label>
+  <!-- EN: Brittle yellow substance, toxic, smelly, and an essential component of living organisms. \n\n<color=CAB012>However this doesn't mean you should eat sulphur directly.</color> -->
+  <WNA_Sulphur.description>TODO</WNA_Sulphur.description>
+  
+</LanguageData>

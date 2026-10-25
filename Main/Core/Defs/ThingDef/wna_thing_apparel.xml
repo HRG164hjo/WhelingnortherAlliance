@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Generic -->
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_StdMiliSuit</defName>
+    <label>standard military suit</label>
+    <description>Standard on-skin suit for Whelingnorther Alliance, has effective protection against various types of harms.</description>
+    <graphicData>
+      <texPath>apparel/stdmilisuit/icon_stdmilisuit</texPath>
+      <color>(180,189,199)</color>
+    </graphicData>
+    <costList>
+      <Steel>25</Steel>
+      <Hyperweave>60</Hyperweave>
+    </costList>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <ArmorRating_Sharp>2.73</ArmorRating_Sharp>
+      <ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+      <ArmorRating_Heat>3.37</ArmorRating_Heat>
+      <Insulation_Cold>60</Insulation_Cold>
+      <Insulation_Heat>100</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+      <PainShockThreshold>1</PainShockThreshold>
+      <ToxicResistance>1</ToxicResistance>
+      <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">1</ActivitySuppressionRate>
+    </equippedStatOffsets>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/stdmilisuit/stdmilisuit</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_MilitarySupply</li>
+      </researchPrerequisites>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropApparelEquipHediff">
+        <hediff>WNA_StdSuitBoost</hediff>
+      </li>
+      <li Class="WNA.WNAThingComp.PropBodyshapeOverride"/>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.MassCapacity">
+        <massCapacity>60000</massCapacity>
+      </li>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <immuneToRadiation>true</immuneToRadiation>
+      </li>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
+        <preventBleeding>true</preventBleeding>
+        <pawnCapacityMinLevels>
+          <li>
+            <capacity>Consciousness</capacity>
+            <minLevel>1</minLevel>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <minLevel>1</minLevel>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <minLevel>1</minLevel>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <minLevel>1</minLevel>
+          </li>
+          <li>
+            <capacity>Hearing</capacity>
+            <minLevel>1</minLevel>
+          </li>
+          <li>
+            <capacity>Breathing</capacity>
+            <minLevel>1</minLevel>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <minLevel>1</minLevel>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <minLevel>1</minLevel>
+          </li>
+          <li>
+            <capacity>Metabolism</capacity>
+            <minLevel>1</minLevel>
+          </li>
+        </pawnCapacityMinLevels>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- BCCP -->
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_BCCPHead</defName>
+    <label>tactical helmet</label>
+    <description>Head gear of WNA standard combat set, mainly used for battle soildiers. What's special about this helmet is it has special design against blunt damages.</description>
+    <graphicData>
+      <texPath>apparel/bccphead/icon_bccphead</texPath>
+      <color>(160,178,181)</color>
+    </graphicData>
+    <costList>
+      <Steel>25</Steel>
+      <Hyperweave>25</Hyperweave>
+    </costList>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <ArmorRating_Sharp>2.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>3.84</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.50</ArmorRating_Heat>
+      <Insulation_Cold>30</Insulation_Cold>
+      <Insulation_Heat>15</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <ToxicEnvironmentResistance>0.4</ToxicEnvironmentResistance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.4</VacuumResistance>
+      <SocialImpact>1</SocialImpact>
+      <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">1</SuppressionPower>
+      <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">3</ActivitySuppressionRate>
+      <ArrestSuccessChance>2</ArrestSuccessChance>
+    </equippedStatOffsets>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <developmentalStageFilter>Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/bccphead/bccphead</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+        <li>EyeCover</li>
+      </layers>
+      <renderSkipFlags>
+        <li>Beard</li>
+      </renderSkipFlags>
+      <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_StandardArsenal</li>
+      </researchPrerequisites>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <modExtensions/>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_BCCPSuit</defName>
+    <label>standard combat suit</label>
+    <description>Body gear of WNA standard combat set, mainly used for battle soildiers. This suit is thick and heavy, specialized for protecting against extreme temperatures while providing efficient protection. The suit also has a set of reactive exoarmor frame, enhancing the wearer's ability of reacting to melee damages.</description>
+    <graphicData>
+      <texPath>apparel/bccpsuit/icon_bccpsuit</texPath>
+    </graphicData>
+    <costList>
+      <Hyperweave>60</Hyperweave>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <ArmorRating_Sharp>2.88</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>4.00</ArmorRating_Heat>
+      <Insulation_Cold>200</Insulation_Cold>
+      <Insulation_Heat>500</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <MeleeDodgeChance>1</MeleeDodgeChance>
+      <ArrestSuccessChance>3</ArrestSuccessChance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+      <StaggerDurationFactor MayRequire="Ludeon.RimWorld.Biotech">-1</StaggerDurationFactor>
+      <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">5</ActivitySuppressionRate>
+    </equippedStatOffsets>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <developmentalStageFilter>Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/bccpsuit/bccpsuit</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_StandardArsenal</li>
+      </researchPrerequisites>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_VanguardHead</defName>
+    <label>vanguard cone</label>
+    <description>A traditional style helmet, though looks plain, it's actually made of alloy plates and several advanced techniques that only held by glitter worlds are applied to it. It's widely used by WNA vanguards, and has already become a symbol of their activities.</description>
+    <graphicData>
+      <texPath>apparel/vanguardhead/icon_vanguardhead</texPath>
+    </graphicData>
+	  <costList>
+      <Uranium>35</Uranium>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+	  </costList>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <ArmorRating_Sharp>74</ArmorRating_Sharp>
+      <ArmorRating_Blunt>55</ArmorRating_Blunt>
+      <ArmorRating_Heat>38</ArmorRating_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.8</VacuumResistance>
+      <SocialImpact>1.6</SocialImpact>
+      <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">2</SuppressionPower>
+      <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">3</ActivitySuppressionRate>
+      <ArrestSuccessChance>2</ArrestSuccessChance>
+    </equippedStatOffsets>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <developmentalStageFilter>Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/vanguardhead/vanguardhead</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+        <li>EyeCover</li>
+      </layers>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>WNA_AdvancedArsenal</researchPrerequisite>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <immuneToRadiation>true</immuneToRadiation>
+        <immuneToWarp>true</immuneToWarp>
+        <immuneToMindControl>true</immuneToMindControl>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ApparelBase">
+		<defName>WNA_VanguardPlate</defName>
+		<label>vanguard plate</label>
+		<description>A set of heavy armor containing alloy armor plates and advanced connection components, covered with a layer of strong fabric. This is a design of older times, but it had stood the tests of time and countless battles.</description>
+		<graphicData>
+			<texPath>apparel/vanguardplate/icon_vanguardplate</texPath>
+		</graphicData>
+	  <costList>
+      <Uranium>80</Uranium>
+      <Plasteel>60</Plasteel>
+      <Hyperweave>55</Hyperweave>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
+	  </costList>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <ArmorRating_Sharp>84</ArmorRating_Sharp>
+      <ArmorRating_Blunt>85</ArmorRating_Blunt>
+      <ArmorRating_Heat>58</ArmorRating_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <ToxicEnvironmentResistance>1.6</ToxicEnvironmentResistance>
+      <MeleeDodgeChance>1.6</MeleeDodgeChance>
+      <ArrestSuccessChance>3</ArrestSuccessChance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+      <StaggerDurationFactor MayRequire="Ludeon.RimWorld.Biotech">-2</StaggerDurationFactor>
+      <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">5</ActivitySuppressionRate>
+    </equippedStatOffsets>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <developmentalStageFilter>Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>Hands</li>
+				<li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/vanguardplate/vanguardplate</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>WNA_AdvancedArsenal</researchPrerequisite>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropShieldGenerator">
+        <ticksToReset>80</ticksToReset>
+        <energyMax>10000</energyMax>
+        <energyLossPerHit>0.0001</energyLossPerHit>
+        <shieldColor>(1.0,1.0,1.0,1.0)</shieldColor>
+        <shieldTexPath>others/wna_ironbubble</shieldTexPath>
+      </li>
+      <li Class="WNA.WNAThingComp.PropEquippedAOEDamage">
+        <damageDef>Crush</damageDef>
+        <damage>20</damage>
+        <ap>2</ap>
+        <radius>6.9</radius>
+        <rof>5</rof>
+        <update>13</update>
+        <affectArea>true</affectArea>
+        <affectRoof>false</affectRoof>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <immuneToRadiation>true</immuneToRadiation>
+        <immuneToWarp>true</immuneToWarp>
+        <immuneToMindControl>true</immuneToMindControl>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- SECP -->
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_SECPEnclosedSuit</defName>
+    <label>enclosed hazmat suit</label>
+    <description>Body part of WNA standard hazmat set, mainly used by soildiers of Science Engineering Command Post. When equipping this, head part and body part needs to be carefully attached, expell all internal air and enclosed.</description>
+    <graphicData>
+      <texPath>apparel/secpsuit/icon_secpsuit</texPath>
+    </graphicData>
+    <costList>
+      <Silver>30</Silver>
+      <Uranium>40</Uranium>
+      <Hyperweave>45</Hyperweave>
+    </costList>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <ArmorRating_Sharp>3.88</ArmorRating_Sharp>
+      <ArmorRating_Blunt>2.60</ArmorRating_Blunt>
+      <ArmorRating_Heat>6.50</ArmorRating_Heat>
+      <Insulation_Cold>300</Insulation_Cold>
+      <Insulation_Heat>800</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <ResearchSpeed MayRequire="Ludeon.RimWorld.Anomaly">2</ResearchSpeed>
+      <EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">2</EntityStudyRate>
+      <ConstructSuccessChance>1</ConstructSuccessChance>
+      <FixBrokenDownBuildingSuccessChance>1</FixBrokenDownBuildingSuccessChance>
+      <MedicalSurgerySuccessChance>1</MedicalSurgerySuccessChance>
+      <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">5</ActivitySuppressionRate>
+    </equippedStatOffsets>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <developmentalStageFilter>Adult</developmentalStageFilter>
+      <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+      <renderSkipFlags>
+        <li>Hair</li>
+        <li>Beard</li>
+      </renderSkipFlags>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/secpsuit/secpsuit</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+        <li>Shell</li>
+      </layers>
+      <drawData>
+        <defaultData>
+          <layer>83</layer>
+        </defaultData>
+      </drawData>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_StandardArsenal</li>
+      </researchPrerequisites>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- EECP -->
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_EECPHead</defName>
+    <label>authority cap</label>
+    <description>Head part of WNA standard hazmat set, mainly used by soildiers of Science Engineering Command Post. When equipping this, head part and body part needs to be carefully attached, expell all internal air and enclosed.</description>
+    <graphicData>
+      <texPath>apparel/eecphead/icon_eecphead</texPath>
+      <color>(215,220,225)</color>
+    </graphicData>
+    <costList>
+      <Hyperweave>30</Hyperweave>
+    </costList>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.00</ArmorRating_Heat>
+      <Insulation_Cold>30</Insulation_Cold>
+      <Insulation_Heat>40</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <NegotiationAbility>1</NegotiationAbility>
+      <ArrestSuccessChance>1</ArrestSuccessChance>
+      <SocialImpact>3</SocialImpact>
+      <TameAnimalChance>0.5</TameAnimalChance>
+      <TrainAnimalChance>0.5</TrainAnimalChance>
+      <PilotingAbility MayRequire="ludeon.rimworld.odyssey">0.8</PilotingAbility>
+      <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">1</ActivitySuppressionRate>
+    </equippedStatOffsets>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <developmentalStageFilter>Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/eecphead/eecphead</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+        <li>EyeCover</li>
+      </layers>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <blocksAddedPartWoundGraphics>false</blocksAddedPartWoundGraphics>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_StandardArsenal</li>
+      </researchPrerequisites>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <modExtensions/>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_EECPSuit</defName>
+    <label>civilian uniform</label>
+    <description>Body part of WNA standard hazmat set, mainly used by soildiers of Science Engineering Command Post. When equipping this, head part and body part needs to be carefully attached, expell all internal air and enclosed.</description>
+    <graphicData>
+      <texPath>apparel/eecpsuit/icon_eecpsuit</texPath>
+    </graphicData>
+    <costList>
+      <Hyperweave>70</Hyperweave>
+      <Steel>5</Steel>
+    </costList>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+      <ArmorRating_Heat>1.55</ArmorRating_Heat>
+      <Insulation_Cold>40</Insulation_Cold>
+      <Insulation_Heat>60</Insulation_Heat>
+    </statBases>
+    <equippedStatOffsets>
+      <NegotiationAbility>1</NegotiationAbility>
+      <SocialImpact>5</SocialImpact>
+      <TameAnimalChance>1</TameAnimalChance>
+      <TrainAnimalChance>1</TrainAnimalChance>
+      <PilotingAbility MayRequire="ludeon.rimworld.odyssey">1</PilotingAbility>
+      <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">1</ActivitySuppressionRate>
+    </equippedStatOffsets>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <developmentalStageFilter>Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/eecpsuit/eecpsuit</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_StandardArsenal</li>
+      </researchPrerequisites>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- Whelingnorthan -->
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_ApocalypseHood</defName>
+    <label>apocalypse hood</label>
+    <description>Upper part of WNA disciple equipment. This hood covers their eyes, symbolizing the principle that don't be blinded by brightness.</description>
+    <graphicData>
+      <texPath>apparel/apocalypsehood/icon_apocalypsehood</texPath>
+      <drawSize>0.9</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>35</Cloth>
+      <Silver>5</Silver>
+    </costList>
+    <statBases>
+      <MarketValue>2357</MarketValue>
+      <ArmorRating_Sharp>200</ArmorRating_Sharp>
+      <ArmorRating_Blunt>200</ArmorRating_Blunt>
+      <ArmorRating_Heat>200</ArmorRating_Heat>
+      <Insulation_Cold>2000</Insulation_Cold>
+      <Insulation_Heat>2000</Insulation_Heat>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_WhelingnortherApocalypse</li>
+      </researchPrerequisites>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>12</Intellectual>
+      </skillRequirements>
+      <recipeUsers>
+        <li>WNA_Ritespot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <developmentalStageFilter>Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/apocalypsehood/apocalypsehood</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+    </apparel>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <immuneToRadiation>true</immuneToRadiation>
+        <immuneToWarp>true</immuneToWarp>
+      </li>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
+        <equippedStatFactors>
+          <VEF_VerbRangeFactor>0</VEF_VerbRangeFactor>
+        </equippedStatFactors>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_ApocalypseCloak</defName>
+    <label>apocalypse cloak</label>
+    <description>Outer layer of WNA disciple equipment. This cloak covers almost all of their body, symbolizing the principle that abnegating what they used to have and to be, to approach transcendence, divinity and salvation.</description>
+    <graphicData>
+      <texPath>apparel/apocalypsecloak/icon_apocalypsecloak</texPath>
+      <drawSize>0.9</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>100</Cloth>
+      <Silver>15</Silver>
+    </costList>
+    <statBases>
+      <MarketValue>2357</MarketValue>
+      <ArmorRating_Sharp>200</ArmorRating_Sharp>
+      <ArmorRating_Blunt>200</ArmorRating_Blunt>
+      <ArmorRating_Heat>200</ArmorRating_Heat>
+      <Insulation_Cold>2000</Insulation_Cold>
+      <Insulation_Heat>2000</Insulation_Heat>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_WhelingnortherApocalypse</li>
+      </researchPrerequisites>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>12</Intellectual>
+      </skillRequirements>
+      <recipeUsers>
+        <li>WNA_Ritespot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <developmentalStageFilter>Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/apocalypsecloak/apocalypsecloak</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+    </apparel>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <immuneToRadiation>true</immuneToRadiation>
+        <immuneToWarp>true</immuneToWarp>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_ApocalypseRobe</defName>
+    <label>apocalypse robe</label>
+    <description>Inner layer of WNA disciple equipment. This robe is durable and reliable, symbolizing the unshakable will.</description>
+    <graphicData>
+      <texPath>apparel/apocalypserobe/icon_apocalypserobe</texPath>
+      <color>(43,43,43)</color>
+    </graphicData>
+    <costList>
+      <Cloth>80</Cloth>
+      <Silver>10</Silver>
+    </costList>
+    <statBases>
+      <MarketValue>2357</MarketValue>
+      <ArmorRating_Sharp>200</ArmorRating_Sharp>
+      <ArmorRating_Blunt>200</ArmorRating_Blunt>
+      <ArmorRating_Heat>200</ArmorRating_Heat>
+      <Insulation_Cold>2000</Insulation_Cold>
+      <Insulation_Heat>2000</Insulation_Heat>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_WhelingnortherApocalypse</li>
+      </researchPrerequisites>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>12</Intellectual>
+      </skillRequirements>
+      <recipeUsers>
+        <li>WNA_Ritespot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <apparel>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+        <li>Spacefarer</li>
+      </defaultOutfitTags>
+      <developmentalStageFilter>Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+        <li>Hands</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/apocalypserobe/apocalypserobe</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+    </apparel>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <immuneToRadiation>true</immuneToRadiation>
+        <immuneToMindControl>true</immuneToMindControl>
+        <immuneToWarp>true</immuneToWarp>
+      </li>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
+        <preventDowning>true</preventDowning>
+        <preventBleeding>true</preventBleeding>
+        <preventKilling>true</preventKilling>
+        <preventKillingUntilHealthHPPercentage>0.01</preventKillingUntilHealthHPPercentage>
+        <pawnCapacityMinLevels>
+          <li>
+            <capacity>Consciousness</capacity>
+            <minLevel>23.57</minLevel>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <minLevel>23.57</minLevel>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <minLevel>23.57</minLevel>
+          </li>
+        </pawnCapacityMinLevels>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_Blindfold</defName>
+    <label>blindfold</label>
+    <description>A ritual mask that covers eyes.</description>
+    <graphicData>
+      <texPath>apparel/apocalypsecross/icon_blindfold</texPath>
+      <drawSize>0.9</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>25</Cloth>
+    </costList>
+    <statBases>
+      <MarketValue>2357</MarketValue>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_WhelingnortherApocalypse</li>
+      </researchPrerequisites>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>12</Intellectual>
+      </skillRequirements>
+      <recipeUsers>
+        <li>WNA_Ritespot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/apocalypsecross/blindfold</wornGraphicPath>
+      <layers>
+        <li>EyeCover</li>
+      </layers>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+    </apparel>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_ApocalypseCross</defName>
+    <label>apocalypse cross</label>
+    <description>A ritual mask in the shape of Whelingnorther Cross.</description>
+    <graphicData>
+      <texPath>apparel/apocalypsecross/icon_apocalypsecross</texPath>
+      <drawSize>0.9</drawSize>
+    </graphicData>
+    <costList>
+      <Silver>5</Silver>
+    </costList>
+    <statBases>
+      <MarketValue>2357</MarketValue>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_WhelingnortherApocalypse</li>
+      </researchPrerequisites>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>12</Intellectual>
+      </skillRequirements>
+      <recipeUsers>
+        <li>WNA_Ritespot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/apocalypsecross/apocalypsecross</wornGraphicPath>
+      <layers>
+        <li>EyeCover</li>
+      </layers>
+      <tags>
+        <li>WNA_Tag_LeaderOnly</li>
+      </tags>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+    </apparel>
+  </ThingDef>
+</Defs>

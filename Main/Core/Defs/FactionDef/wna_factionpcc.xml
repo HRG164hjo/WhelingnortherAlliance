@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FactionDef>
+    <defName>WNA_FactionPCC</defName>
+    <label>Permaconst Command</label>
+    <fixedName>Permaconst Command</fixedName>
+    <categoryTag>WNA_FactionWNA</categoryTag>
+    <factionIconPath>factions/wna_permaconst</factionIconPath>
+    <settlementTexturePath>karma</settlementTexturePath>
+    <description>It's said that Whelingnorther Alliance holds a doomsday weapon named as the "Whelingnorther Alliance Default Response Department". No one ever knows the truth of that thing, but there's a trace that might help people see a fragment of it. \n\nThe Permaconst Command, confirmed as a wild branch created in the development of Default Response Department, is actually a set of instructions transmitted via various methods such as cognitive hazards, psychic pulses and tachyon broadcasts. They themselves cannot do anything, but &lt;color=#FFFF00&gt;they can takeover units to gain physical existence they require to carry out their missions&lt;/color&gt;. Permaconst Commands are under a perpetual self-maintenance loop, once a Permaconst Command is made, even it's instructor can no longer control it. \n\nPermaconst Command can remember those who ever standed against them. In each maintenance loop the overtaken units reconstruct, and those defiants will become new puppets of Permaconst Command.</description>
+    <pawnSingular>enthralled unit</pawnSingular>
+    <pawnsPlural>enthralled units</pawnsPlural>
+    <listOrderPriority>1</listOrderPriority>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>2</configurationListOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <displayInFactionSelection>false</displayInFactionSelection>
+    <canGenerateQuestSites>false</canGenerateQuestSites>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <animalsFleeDanger>false</animalsFleeDanger>
+    <canUseAvoidGrid>false</canUseAvoidGrid>
+    <techLevel>Archotech</techLevel>
+    <arrivalLayerWhitelist>
+      <li>Surface</li>
+      <li>Orbit</li>
+    </arrivalLayerWhitelist>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+          <li>Cult</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+        <li>Hyperweave</li>
+        <li>Uranium</li>
+        <li>Plasteel</li>
+        <li>Leather_Human</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <layerBlacklist IsNull="true"/>
+    <arrivalLayerBlacklist IsNull="true"/>
+    <colorSpectrum><li>(255,0,0)</li></colorSpectrum>
+    <permanentEnemyToEveryoneExcept>
+      <li>WNA_FactionWNA</li>
+    </permanentEnemyToEveryoneExcept>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <hidden>true</hidden>
+    <allowedCultures>
+      <li>WNA_WhelingnortherCulture</li>
+    </allowedCultures>
+    <allowedArrivalTemperatureRange>-2000~2000</allowedArrivalTemperatureRange>
+    <raidLootMaker IsNull="true"/>
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,0)</li>
+        <li>(100,0)</li>
+        <li>(1000,0)</li>
+        <li>(2000,0)</li>
+        <li>(4000,0)</li>
+        <li>(10000,0)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(30,90)</li>
+        <li>(70,210)</li>
+        <li>(700,2100)</li>
+        <li>(1500,4500)</li>
+        <li>(4000,12000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <AncientSoldier>100</AncientSoldier>
+          <AncientSoldier_Leader MayRequire="ludeon.rimworld.odyssey">5</AncientSoldier_Leader>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <fixedIdeo MayRequire="Ludeon.Rimworld.Ideology">true</fixedIdeo>
+    <hiddenIdeo MayRequire="Ludeon.Rimworld.Ideology">true</hiddenIdeo>
+    <ideoName MayRequire="Ludeon.Rimworld.Ideology">Permaconst Command</ideoName>
+    <deityPresets MayRequire="Ludeon.Rimworld.Ideology">
+      <li>
+        <nameType>
+          <name/>
+          <type/>
+        </nameType>
+        <gender>None</gender>
+        <iconPath>inv</iconPath>
+      </li>
+    </deityPresets>
+    <styles/>
+    <forcedMemes MayRequire="Ludeon.Rimworld.Ideology">
+      <li>Structure_WNA_Ideo</li>
+      <li>Loyalist</li>
+      <li>Meme_WNA_Ideo</li>
+    </forcedMemes>
+    <requiredPreceptsOnly>true</requiredPreceptsOnly>
+    <modExtensions>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Factions.FactionDefExtension">
+        <excludeFromQuests>true</excludeFromQuests>
+      </li>
+    </modExtensions>
+  </FactionDef>
+</Defs>

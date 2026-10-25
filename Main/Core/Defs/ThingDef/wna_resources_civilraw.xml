@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- civil -->
+  <ThingDef ParentName="WNA_ItemsBase">
+    <defName>WNA_Methanol</defName>
+    <label>methanol</label>
+    <description>The simplest alcohol, a very useful chemical substance, can be obtained by distilling wood, poisonous. DO remember that this is absolutely not for drinking.</description>
+    <graphicData>
+      <texPath>item/wna_methanol</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>8</MarketValue>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_ItemsBase">
+    <defName>WNA_HalogenVial</defName>
+    <label>halogen vial</label>
+    <description>A mixture (maybe) of halogen contained in a vial. These substances are among the most active substances in the world, hard to handle, and very useful.</description>
+    <graphicData>
+      <texPath>item/wna_halogenvial</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.7</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>90</MarketValue>
+    </statBases>
+    <deepCommonality>0.8</deepCommonality>
+    <deepCountPerPortion>45</deepCountPerPortion>
+    <deepLumpSizeRange>7~8</deepLumpSizeRange>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_ItemsBase">
+    <defName>WNA_Quicklime</defName>
+    <label>quicklime</label>
+    <description>A hardly soluble, highly alkaline substance, has much as wide applications as much as great potential hazards.</description>
+    <graphicData>
+      <texPath>item/wna_quicklime</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_ItemsBase">
+    <defName>WNA_MercuryVial</defName>
+    <label>mercury vial</label>
+    <description>An unique metal that usually appear as liquid. This substance easily volatile and it's steam is highly poisonous, so needs to be carefully contained or operated.</description>
+    <graphicData>
+      <texPath>item/wna_mercuryvial</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.7</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>50</MarketValue>
+    </statBases>
+    <deepCommonality>0.5</deepCommonality>
+    <deepCountPerPortion>35</deepCountPerPortion>
+    <deepLumpSizeRange>5~7</deepLumpSizeRange>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_ItemsBase">
+    <defName>WNA_Sulphur</defName>
+    <label>sulphur</label>
+    <description>Brittle yellow substance, toxic, smelly, and an essential component of living organisms. \n\n&lt;color=CAB012&gt;However this doesn't mean you should eat sulphur directly.&lt;/color&gt;</description>
+    <graphicData>
+      <texPath>item/wna_sulphur</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>18</MarketValue>
+    </statBases>
+    <deepCommonality>0.4</deepCommonality>
+    <deepCountPerPortion>30</deepCountPerPortion>
+    <deepLumpSizeRange>3~5</deepLumpSizeRange>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_ItemsBase">
+    <defName>WNA_Phosphorus</defName>
+    <label>white phosphorus</label>
+    <description>Very soft substance. This substance is very dangerous, highly toxic and highly flammable, makes it hard to believe that phosphorus is a vital component of life.</description>
+    <graphicData>
+      <texPath>item/wna_phosphorus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>32</MarketValue>
+      <Flammability>100</Flammability>
+    </statBases>
+    <deepCommonality>0.4</deepCommonality>
+    <deepCountPerPortion>30</deepCountPerPortion>
+    <deepLumpSizeRange>8~12</deepLumpSizeRange>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_ItemsBase">
+    <defName>WNA_PreservedBrain</defName>
+    <label>preserved brain</label>
+    <description>A biological human brain, carefully treated with methanol and neutroamine and preserved, to keep as much of its vitality for further use.</description>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(119,204,213)</color>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_StuffBase">
+    <defName>WNA_Cinnabar</defName>
+    <label>cinnabar</label>
+    <description>One kind of mercury-containing ore, red in color, looks nice. It's relatively stable so you can use it to construct something, if you dare.</description>
+    <graphicData>
+      <texPath>item/wna_cinnabar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>75</MarketValue>
+    </statBases>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <appearance>Bricks</appearance>
+      <color>(182,65,57)</color>
+      <commonality>0.5</commonality>
+      <statOffsets>
+        <Beauty>20</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.6</MaxHitPoints>
+        <Beauty>4</Beauty>
+        <WorkToMake>1.1</WorkToMake>
+        <WorkToBuild>1.1</WorkToBuild>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <deepCommonality>0.75</deepCommonality>
+    <deepCountPerCell>500</deepCountPerCell>
+    <deepCountPerPortion>50</deepCountPerPortion>
+    <deepLumpSizeRange>6~10</deepLumpSizeRange>
+  </ThingDef>
+</Defs>

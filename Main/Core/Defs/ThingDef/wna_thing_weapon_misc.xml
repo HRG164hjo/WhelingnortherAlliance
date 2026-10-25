@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="WNA_WeaponBasePawn">
+    <defName>WNA_PawnPassiveAcquire</defName>
+    <description>placeholder.</description>
+    <statBases>
+      <Mass>0</Mass>
+      <MarketValue>0</MarketValue>
+      <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_PawnPassiveAcquire_Proj</defaultProjectile>
+        <range>54.9</range>
+        <soundCast/>
+        <soundCastTail/>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <defaultCooldownTime>0</defaultCooldownTime>
+        <warmupTime>0</warmupTime>
+        <linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <canGoWild>false</canGoWild>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>6</LaserDuration>
+        <LaserInnerColor>(55,55,55)</LaserInnerColor>
+        <LaserOuterColor>(0,0,0)</LaserOuterColor>
+        <LaserThickness>0.1</LaserThickness>
+        <LaserOuterSpread>1.25</LaserOuterSpread>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_PawnPassiveAcquire_Proj</defName>
+    <label>placeholder</label>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Inviso</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <projectile>
+      <damageDef>WNA_ChimingBlaze</damageDef>
+      <damageAmountBase>9999999</damageAmountBase>
+    </projectile>
+  </ThingDef>
+</Defs>

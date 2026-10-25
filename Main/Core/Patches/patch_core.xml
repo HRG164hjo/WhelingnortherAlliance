@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/BiomeDef/maxFishPopulation</xpath>
+    <value>
+      <maxFishPopulation>6000000000</maxFishPopulation>
+    </value>
+  </Operation>
+
+  <!-- -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/DamageDef[defName="BombSuper"]</xpath>
+    <value>
+      <additionalHediffs>
+        <li>
+          <hediff>WNA_RadEffect</hediff>
+          <severityPerDamageDealt>0.01</severityPerDamageDealt>
+        </li>
+      </additionalHediffs>
+    </value>
+  </Operation>
+
+  <!-- -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef/autoFlee</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/FactionDef/autoFlee</xpath>
+      <value>
+        <autoFlee>false</autoFlee>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef</xpath>
+      <value>
+        <autoFlee>false</autoFlee>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/FactionDef[defName!="WNA_FactionWNA" or defName!="WNA_FactionPCC"]/disallowedMemes</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[defName!="WNA_FactionWNA" or defName!="WNA_FactionPCC"]/disallowedMemes</xpath>
+      <value>
+        <li>Meme_WNA_Ideo</li>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/FactionDef[defName!="WNA_FactionWNA" or defName!="WNA_FactionPCC"]</xpath>
+      <value>
+        <disallowedMemes MayRequire="Ludeon.RimWorld.Ideology">
+          <li>Meme_WNA_Ideo</li>
+        </disallowedMemes>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <!-- -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="CatatonicBreakdown"]/stages/li[1]/capMods</xpath>
+    <value>
+      <li>
+        <capacity>Moving</capacity>
+        <postFactor>0</postFactor>
+      </li>
+      <li>
+        <capacity>Manipulation</capacity>
+        <postFactor>0</postFactor>
+      </li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="BionicEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPath</xpath>
+    <value>
+      <texPath>pawns/alt_eye/bioniceye</texPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="BionicEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/drawSize</xpath>
+    <value>
+      <drawSize>0.2</drawSize>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="ArchotechEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPath</xpath>
+    <value>
+      <texPath>pawns/alt_eye/archotecheye</texPath>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="ArchotechEye"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/drawSize</xpath>
+    <value>
+      <drawSize>0.2</drawSize>
+    </value>
+  </Operation>
+
+  <!-- -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/InventoryStockGroupDef[defName="Medicine"]/thingDefs</xpath>
+    <value>
+      <li>WNA_Medikit</li>
+    </value>
+  </Operation>
+
+  <!-- -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]/combatPower</xpath>
+    <value>
+      <combatPower>60</combatPower>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]/apparelMoney</xpath>
+    <value>
+      <apparelMoney>9999~99999</apparelMoney>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]/weaponMoney</xpath>
+    <value>
+      <weaponMoney>9999~99999</weaponMoney>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsMoney</xpath>
+    <value>
+      <techHediffsMoney>9999~99999</techHediffsMoney>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsChance</xpath>
+    <value>
+      <techHediffsChance>1.0</techHediffsChance>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]/skills</xpath>
+    <value>
+      <skills>
+        <li>
+          <skill>Shooting</skill>
+          <range>12~18</range>
+        </li>
+        <li>
+          <skill>Melee</skill>
+          <range>12~18</range>
+        </li>
+      </skills>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]</xpath>
+    <value>
+      <disallowedTraits>
+        <li>Brawler</li>
+        <li>Nudist</li>
+      </disallowedTraits>
+      <techHediffsDisallowTags>
+        <li>PainCauser</li>
+      </techHediffsDisallowTags>
+      <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+      <nakedChance>0</nakedChance>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]/apparelTags</xpath>
+    <value>
+      <li MayRequire="Ludeon.Rimworld.Odyssey">Vacsuit</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]/apparelTags/li[text()="IndustrialBasic"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]/apparelTags/li[text()="IndustrialAdvanced"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]/apparelTags/li[text()="IndustrialMilitaryBasic"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]/weaponTags</xpath>
+    <value>
+      <li>GunSingleUse</li>
+      <li>SpacerGun</li>
+      <li>GunHeavy</li>
+      <li>Flamethrower</li>
+      <li>MechanoidGunMedium</li>
+      <li>MechanoidGunHeavy</li>
+      <li>MechanoidGunBreach</li>
+      <li>MechanoidGunLongRange</li>
+      <li MayRequire="Ludeon.Rimworld.Anomaly">NerveSpiker</li>
+      <li MayRequire="Ludeon.Rimworld.Odyssey">WeaponBeamRepeater</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier"]/techHediffsTags</xpath>
+    <value>
+      <li>ImplantEmpireCommon</li>
+    </value>
+  </Operation>
+
+  <!-- -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName="Make_ChemfuelFromWood"]</xpath>
+    <value>
+      <allowMixingIngredients>true</allowMixingIngredients>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName="Make_ChemfuelFromWood"]/ingredients/li[1]/filter/thingDefs</xpath>
+    <value>
+      <li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+      <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
+      <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+      <li MayRequire="biomesteam.biomescaverns">BMT_MushroomLog</li>
+      <li MayRequire="BiomesTeam.BiomesPollutedLands">BMT_Toxwood</li>
+      <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_ParasolWoodLog</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName="Make_ChemfuelFromWood"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+      <li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+      <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
+      <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+      <li MayRequire="biomesteam.biomescaverns">BMT_MushroomLog</li>
+      <li MayRequire="BiomesTeam.BiomesPollutedLands">BMT_Toxwood</li>
+      <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_ParasolWoodLog</li>
+      <li MayRequire="vvenchov.vvnewharvest">VV_Cork</li>
+      <li MayRequire="vvenchov.vvnewharvest">VV_Rattan</li>
+      <li MayRequire="vvenchov.vvnewharvest">VV_ReedStalks</li>
+    </value>
+  </Operation>
+
+  <!-- -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/TerrainDef/changeable</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[defName="BrokenAsphalt"]</xpath>
+    <value>
+      <drawStyleCategory>Floors</drawStyleCategory>
+      <designationCategory>Floors</designationCategory>
+      <constructEffect>ConstructDirt</constructEffect>
+      <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[defName="PackedDirt"]</xpath>
+    <value>
+      <drawStyleCategory>Floors</drawStyleCategory>
+      <designationCategory>Floors</designationCategory>
+      <constructEffect>ConstructDirt</constructEffect>
+      <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+    </value>
+  </Operation>
+
+  <!-- -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef/intricate</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef/intricate</xpath>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef/tradeNeverStack</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef/tradeNeverStack</xpath>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef/plant/interferesWithRoof</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef/plant/blockAdjacentSow</xpath>
+  </Operation>
+
+  <!--<Operation Class="PatchOperationInsert">
+    <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities/li[text()="ToolCabinet"]</xpath>
+    <order>Append</order>
+    <value>
+      <li>WNA_MultiToolBox</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ElectricStove" or defName="FueledStove"]/comps</xpath>
+    <value>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>WNA_MultiToolBox</li>
+        </linkableFacilities>
+      </li>
+    </value>
+  </Operation>-->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_Agave"]/plant</xpath>
+    <order>Append</order>
+    <value>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="DeepDrill"]/placeWorkers/li[text()="PlaceWorker_InvalidOverSubstructure"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="GroundPenetratingScanner"]/placeWorkers/li[text()="PlaceWorker_NotUnderRoof"]</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Human"]</xpath>
+    <value>
+      <li Class="WNA.WNAModExtension.MassCapacity">
+        <massCapacity>150</massCapacity>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef/comps/li[@Class="CompProperties_Stunnable"]/affectedDamageDefs</xpath>
+    <value>
+      <li>WNA_RadBurn</li>
+      <li>WNA_RadBeam</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Cloth"]/comps/li[compClass="CompColorable"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Cloth"]/colorGeneratorInTraderStock</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Apparel_CowboyHat" or defName="Apparel_HatHood" or defName="Apparel_TribalHeaddress" or defName="Apparel_PsychicFoilHelmet"]/apparel</xpath>
+    <value>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="MechCentipede"]</xpath>
+    <value>
+      <butcherProducts>
+        <ChunkMechanoidSlag>3</ChunkMechanoidSlag>
+      </butcherProducts>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="BaseMechanoidWalker" or defName="Mech_Termite"]/butcherProducts</xpath>
+    <value>
+      <ChunkMechanoidSlag>2</ChunkMechanoidSlag>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Gun_TripleRocket" or defName="Gun_DoomsdayRocket"]/comps</xpath>
+    <value>
+      <li Class="WNA.WNAThingComp.PropBackupWeapon">
+        <allowPlayerColonist>true</allowPlayerColonist>
+        <allowPlayerTooluser>true</allowPlayerTooluser>
+        <allowPlayerSlave>false</allowPlayerSlave>
+        <weapons>
+          <li>
+            <thingDef>Gun_Minigun</thingDef>
+            <weight>40</weight>
+          </li>
+          <li>
+            <thingDef>Gun_AssaultRifle</thingDef>
+            <weight>20</weight>
+          </li>
+          <li>
+            <thingDef>Gun_ChainShotgun</thingDef>
+            <weight>20</weight>
+          </li>
+          <li>
+            <thingDef>Gun_IncendiaryLauncher</thingDef>
+            <weight>10</weight>
+          </li>
+          <li>
+            <thingDef>Gun_SniperRifle</thingDef>
+            <weight>10</weight>
+          </li>
+          <li>
+            <thingDef>Gun_ChargeLance</thingDef>
+            <weight>30</weight>
+          </li>
+          <li>
+            <thingDef>Gun_ChargeRifle</thingDef>
+            <weight>20</weight>
+          </li>
+          <li>
+            <thingDef>Gun_ChargeBlasterHeavy</thingDef>
+            <weight>20</weight>
+          </li>
+        </weapons>
+      </li>
+    </value>
+  </Operation>
+
+  <!-- -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThoughtDef[defName="Expectations" or defName="SleepDisturbed" or defName="AteWithoutTable" or defName="SleptOutside" or defName="SleptOnGround" or defName="Catharsis"]</xpath>
+    <value>
+      <nullifyingPrecepts MayRequire="ludeon.rimworld.ideology">
+        <li>WNA_Proselyte</li>
+      </nullifyingPrecepts>
+    </value>
+  </Operation>
+
+  <!-- 除辐射区：注册到原版区域(Zone)类别，与除雪区/除污区并列 -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>WNA.WNADesignator.Designator_AreaRadClearExpand</li>
+      <li>WNA.WNADesignator.Designator_AreaRadClearClear</li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AncientTransportPod"]/comps/li[@Class="CompProperties_Transporter"]</xpath>
+    <value>
+      <massCapacity>1500</massCapacity>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="AncientTransportPod"]/comps/li[@Class="CompProperties_Launchable_TransportPod"]/fixedLaunchDistanceMax</xpath>
+    <value>
+      <fixedLaunchDistanceMax>500</fixedLaunchDistanceMax>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="AncientTransportPod"]</xpath>
+    <value>
+      <costList/>
+      <designationCategory>Odyssey</designationCategory>
+      <minTechLevelToBuild>Archotech</minTechLevelToBuild>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier_Leader"]</xpath>
+    <value>
+      <combatPower>120</combatPower>
+      <apparelMoney>9999~99999</apparelMoney>
+      <weaponMoney>9999~99999</weaponMoney>
+      <disallowedTraits>
+        <li>Brawler</li>
+        <li>Nudist</li>
+      </disallowedTraits>
+      <techHediffsDisallowTags>
+        <li>PainCauser</li>
+      </techHediffsDisallowTags>
+      <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+      <nakedChance>0</nakedChance>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier_Leader"]/techHediffsMoney</xpath>
+    <value>
+      <techHediffsMoney>9999~99999</techHediffsMoney>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier_Leader"]/techHediffsChance</xpath>
+    <value>
+      <techHediffsChance>1.0</techHediffsChance>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier_Leader"]/techHediffsTags</xpath>
+    <value>
+      <li>ImplantEmpireCommon</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier_Leader"]/skills</xpath>
+    <value>
+      <skills>
+        <li>
+          <skill>Shooting</skill>
+          <range>16~20</range>
+        </li>
+        <li>
+          <skill>Melee</skill>
+          <range>16~20</range>
+        </li>
+      </skills>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="AncientSoldier_Leader"]</xpath>
+    <value>
+      <weaponTags>
+        <li>SpacerGun</li>
+        <li>GunHeavy</li>
+        <li>Flamethrower</li>
+        <li>MechanoidGunMedium</li>
+        <li>MechanoidGunHeavy</li>
+        <li>MechanoidGunBreach</li>
+        <li>MechanoidGunLongRange</li>
+        <li MayRequire="Ludeon.Rimworld.Anomaly">NerveSpiker</li>
+        <li MayRequire="Ludeon.Rimworld.Odyssey">WeaponBeamRepeater</li>
+      </weaponTags>
+    </value>
+  </Operation>
+</Patch>

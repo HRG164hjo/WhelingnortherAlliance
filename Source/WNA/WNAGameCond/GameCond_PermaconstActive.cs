@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using Verse;
 using WNA.WNADefOf;
+using WNA.WNAUtility;
 
 namespace WNA.WNAGameCond
 {
-    public class GameCond_PermaconstActive : GameCondition
+    internal class GameCond_PermaconstActive : GameCondition
     {
-        private int interval = 236;
-        private Faction pcc => Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionPCC);
-        private Faction wna => Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionWNA);
+        private readonly int interval = 236;
         private Faction player => Faction.OfPlayer;
         public override void GameConditionTick()
         {
@@ -24,6 +23,7 @@ namespace WNA.WNAGameCond
         }
         private void PermaconstBroadcast(Map map)
         {
+            Faction pcc = General.PCCFaction;
             if (pcc == null) return;
             List<Pawn> allPawns = (List<Pawn>)map.mapPawns.AllPawnsSpawned;
             for (int i = allPawns.Count - 1; i >= 0; i--)
@@ -40,8 +40,7 @@ namespace WNA.WNAGameCond
                 }
                 if (active != null)
                     BroadcastAlive(p, pcc);
-                if (p?.Faction?.def == WNAMainDefOf.WNA_FactionPCC ||
-                    p?.Faction?.def == WNAMainDefOf.WNA_FactionWNA)
+                if (General.IsInternalFaction(p?.Faction))
                     RemoveTargetHediffs(p);
             }
             List<Thing> corpses = map.listerThings.ThingsInGroup(ThingRequestGroup.Corpse);
@@ -56,8 +55,8 @@ namespace WNA.WNAGameCond
         }
         private void BroadcastAlive(Pawn p, Faction pcc)
         {
-            if (IsLegalWNAPawn(p)) return;
-            if (p.Faction != pcc && p.Faction != wna)
+            if (General.IsWNARace(p)) return;
+            if (p.Faction != pcc && p.Faction != General.WNAFaction)
             {
                 bool hiss = p.Faction == Faction.OfPlayer;
                 p.SetFaction(pcc);
@@ -87,7 +86,7 @@ namespace WNA.WNAGameCond
             }
             if (!pawn.health.hediffSet.HasHediff(WNAMainDefOf.WNA_PermaconstActive))
                 pawn.health.AddHediff(WNAMainDefOf.WNA_PermaconstActive);
-            if (pawn.Faction != pcc && pawn.Faction != wna)
+            if (pawn.Faction != pcc && pawn.Faction != General.WNAFaction)
                 pawn.SetFaction(pcc);
         }
         private void RemoveTargetHediffs(Pawn pawn)
@@ -96,20 +95,13 @@ namespace WNA.WNAGameCond
             List<Hediff> hediffsToRemove = new List<Hediff>();
             foreach (Hediff hediff in hediffSet.hediffs)
             {
-                if (hediff is Hediff_Injury ||
-                    hediff is Hediff_MissingPart ||
-                    (hediff.Severity > 0 &&
-                    hediff.def.isBad))
+                if (hediff is Hediff_Injury
+                    || hediff is Hediff_MissingPart
+                    || (hediff.Severity > 0 && hediff.def.isBad))
                     hediffsToRemove.Add(hediff);
             }
             foreach (Hediff hediff in hediffsToRemove)
                 pawn.health.RemoveHediff(hediff);
-        }
-        private bool IsLegalWNAPawn(Pawn p)
-        {
-            if (p.def == WNAMainDefOf.WNA_WNThan || p.def == WNAMainDefOf.WNA_Human)
-                return true;
-            return false;
         }
     }
 }

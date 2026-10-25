@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: recipient -->
+  <WNA_AbilityGrant.roles.0.label>接受者</WNA_AbilityGrant.roles.0.label>
+  <!-- EN: a recipient -->
+  <WNA_AbilityGrant.roles.0.missingDesc>一名接受者</WNA_AbilityGrant.roles.0.missingDesc>
+  <!-- EN: spectate -->
+  <WNA_AbilityGrant.spectatorGerund>旁观</WNA_AbilityGrant.spectatorGerund>
+  <!-- EN: spectators -->
+  <WNA_AbilityGrant.spectatorsLabel>旁观者</WNA_AbilityGrant.spectatorsLabel>
+  <!-- EN: Only the recipient may take part in this ritual. -->
+  <WNA_AbilityGrant.spectatorFilter.description>只有接受者可以参与此仪式。</WNA_AbilityGrant.spectatorFilter.description>
+
+</LanguageData>

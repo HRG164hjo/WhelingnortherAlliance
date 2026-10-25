@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: permaconst command broadcast -->
+  <WNA_GameCond_PermaconstActive.label>恒固指令广播</WNA_GameCond_PermaconstActive.label>
+  <!-- EN: A new Permaconst Command maintenance cycle is on. Thralls of Permaconst Command will roam around the planet hunting for their foes along with echos of Permaconst Command. The thralls can hardly be truly killed untill the maintenance cycle ends. -->
+  <WNA_GameCond_PermaconstActive.description>恒固指令的又一个维护循环已经启动。被恒固指令所驱使的躯壳们伴随着恒固指令的回响在星球各处游猎。在维护循环结束之前，这些躯壳很难被彻底消灭。</WNA_GameCond_PermaconstActive.description>
+  <!-- EN: A new Permaconst Command maintenance cycle is on. -->
+  <WNA_GameCond_PermaconstActive.letterText>恒固指令广播中。</WNA_GameCond_PermaconstActive.letterText>
+  
+</LanguageData>

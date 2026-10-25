@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNA_ConsensusMotion_GizmoLabel>Promote Consensus</WNA_ConsensusMotion_GizmoLabel>
+
+  <WNA_ConsensusMotion_GizmoDesc>Choose a culture and spread it to the entire faction. This will convert the culture of every colonist in your faction.</WNA_ConsensusMotion_GizmoDesc>
+
+  <WNA_ConsensusMotion_ConfirmTitle>Promote Culture</WNA_ConsensusMotion_ConfirmTitle>
+
+  <WNA_ConsensusMotion_Confirm>Are you sure you want to spread the culture "{0}" to the entire faction?\n\nEvery colonist in your faction will be converted to "{0}".</WNA_ConsensusMotion_Confirm>
+
+  <WNA_ConsensusMotion_NoIdeo>There is no culture available to promote.</WNA_ConsensusMotion_NoIdeo>
+
+  <WNA_ConsensusMotion_Done>The culture "{0}" has been spread to the entire faction.</WNA_ConsensusMotion_Done>
+
+  <WNA_ConversionMotion_ForceReeducate>Force Re-education</WNA_ConversionMotion_ForceReeducate>
+
+  <WNA_ConversionMotion_AlreadyDowned>the prisoner is already downed</WNA_ConversionMotion_AlreadyDowned>
+
+  <WNA_ConversionMotion_Done>{0} has recived force re-education.</WNA_ConversionMotion_Done>
+
+  <WNA_ConfessionMotion_Event>{0} found a flash of clarity during deep reflection.</WNA_ConfessionMotion_Event>
+
+  <WNA_ConfessionMotion_InspirationReason>clarity found in reflection</WNA_ConfessionMotion_InspirationReason>
+
+  <WNA_IdentityExclusion_Sentence>Sentence {0} guilty</WNA_IdentityExclusion_Sentence>
+
+  <WNA_IdentityExclusion_Execute>Execute {0}</WNA_IdentityExclusion_Execute>
+
+  <WNA_IdentityExclusion_RemoveFailed>An error occurred while trying to remove {0}. The process failed.</WNA_IdentityExclusion_RemoveFailed>
+
+</LanguageData>

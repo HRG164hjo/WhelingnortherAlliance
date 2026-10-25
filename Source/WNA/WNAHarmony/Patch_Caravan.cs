@@ -10,14 +10,14 @@ using Verse;
 
 namespace WNA.WNAHarmony
 {
-    public class Patch_Caravan
+    internal class Patch_Caravan
     {
         [HarmonyPatch(typeof(CaravanTicksPerMoveUtility))]
         [HarmonyPatch("GetTicksPerMove", new Type[] { typeof(Caravan), typeof(StringBuilder) })]
-        public static class Caravan_TickMove_Patch
+        internal static class Caravan_TickMove_Patch
         {
             private static readonly List<float> localCaravanAnimalSpeedFactors = new List<float>();
-            public static bool Prefix(Caravan caravan, ref int __result, StringBuilder explanation)
+            internal static bool Prefix(Caravan caravan, ref int __result, StringBuilder explanation)
             {
                 if (caravan == null)
                     return true;

@@ -2,8 +2,8 @@
 
 namespace WNA.WNAModExtension
 {
-    public class PassingShipNamer : DefModExtension
+    internal class PassingShipNamer : DefModExtension
     {
-        public RulePackDef namer;
+        public RulePackDef namer = null;
     }
 }

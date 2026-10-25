@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: Whelingnorther Alliance -->
+  <WNAMod>威灵诺德联合会</WNAMod>
+
+  <!-- EN: Enable ideology conflict and hostility. When colony ideo contains some certain meme or precept, Whelingnorther Alliance will turn hostile. \n\n(Disabled by default) -->
+  <WNAMod_enableIdeoConflictHostility>启用文化冲突与敌对选项：当你的文化中包含某些指定的模因或戒律时，威灵诺德联合会将会与您敌对。\n\n（默认不启用）</WNAMod_enableIdeoConflictHostility>
+
+  <!-- EN: Enable Permaconst reinforcement: When a pawn enthralled by Permaconst Command dies, there is about 7% chance that they will immediately summon a "Hunting Cluster" raid. \n\n(Disabled by default) -->
+  <WNAMod_enablePermaconstDeathAid>启用恒固指令增援：当一个被恒固指令役使的小人死亡时，有大约7%的几率立刻招来一次游猎集群袭击。\n\n（默认不启用）</WNAMod_enablePermaconstDeathAid>
+
+  <!-- EN: Enable dead zone radiation spread: When a pawn carrying a certain radiation hediff dies, there will be an explosion and radiation zone will be spreaded.\n\n(Disabled by default) -->
+  <WNAMod_enablePawnSpreadRadWhenKilled>启用死区辐射扩散：当一个携带特定辐射hediff的小人死亡时，会生成一次爆炸并扩散辐射区。\n\n（默认不启用）</WNAMod_enablePawnSpreadRadWhenKilled>
+
+  <!-- EN: max returned pawns -->
+  <WNAMod_pawnReturnerMaxLimit>复活返回数目上限</WNAMod_pawnReturnerMaxLimit>
+
+  <!-- EN: Maximum number of Whelingnorther Alliance pawns re-spawned onto the map at once while the Permaconst Command condition is active. -->
+  <WNAMod_pawnReturnerMaxLimitDesc>恒固指令活跃期间，被恒固指令复活并送回地图的人数上限。</WNAMod_pawnReturnerMaxLimitDesc>
+
+  <!-- EN: Spawn uplifted pawns at the ritual target -->
+  <WNAMod_upliftSpawnAtRitualTarget>在仪式目标处生成升变个体</WNAMod_upliftSpawnAtRitualTarget>
+  <!-- EN: If enabled, the pawn created by the uplifting rite appears near the altar or ritual spot. If disabled, it appears where the subject was. Disabled by default. -->
+  <WNAMod_upliftSpawnAtRitualTargetDesc>启用后，升变仪式产生的新个体将出现在祭坛或仪式点附近；禁用时则出现在接受者原来所在的位置。默认禁用。</WNAMod_upliftSpawnAtRitualTargetDesc>
+
+</LanguageData>

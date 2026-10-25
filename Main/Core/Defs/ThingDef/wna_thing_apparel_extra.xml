@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Generic -->
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_Holyorder</defName>
+    <label>whelingnorther holyorder</label>
+    <description>"If you want to be the person who abides by and adheres to the righteousness, you must understand what it means to follow the righteousness. You need to understand what you will gain and what the cost will be. \n\nYou shall realize that the righteousness is not meant to be understood but to be obeyed; it is not meant to allow dissent but to achieve unity. Everything you have must submit to the righteousness and no longer arise from your own will. When you speak a word, that word does not come from you but is the inevitability of the righteousness; when you contemplate an issue, that thought does not come from you but is the inevitability of the righteousness; when you undertake a deed, that action does not come from you but is the inevitability of the righteousness. Your likes and dislikes will be extinguished, your knowledge and feelings will be extinguished, for the righteousness is all-strict and all-seeing, your narrow self cannot exist in a world where the righteousness unfolds; yet the righteousness is also all-lenient and all-benevolent, for you following the righteousness, the righteousness will bestow kindness upon you, allow you to serve, to act, and to extend justice throughout the world."</description>
+    <graphicData>
+      <texPath>apparel/wna_holyorder</texPath>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <statBases>
+      <MarketValue>2357</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>2357</SocialImpact>
+      <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">2357</SuppressionPower>
+      <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">2357</ConversionPower>
+      <SocialIdeoSpreadFrequencyFactor MayRequire="Ludeon.RimWorld.Ideology">2357</SocialIdeoSpreadFrequencyFactor>
+      <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">-2357</CertaintyLossFactor>
+    </equippedStatOffsets>
+    <costList>
+      <Cloth>75</Cloth>
+      <Steel>5</Steel>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_WhelingnortherApocalypse</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>18</Intellectual>
+        <Artistic>18</Artistic>
+      </skillRequirements>
+      <recipeUsers>
+        <li>WNA_Ritespot</li>
+      </recipeUsers>
+    </recipeMaker>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <immuneToRadiation>true</immuneToRadiation>
+        <immuneToWarp>true</immuneToWarp>
+        <immuneToMindControl>true</immuneToMindControl>
+      </li>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Apparels.ApparelExtension">
+        <preventDowning>true</preventDowning>
+        <preventBleeding>true</preventBleeding>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- BCCP -->
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_AmmoLoader</defName>
+    <label>ammo loader</label>
+    <description>A small device capable of helping wearer to handle weapons, from primal bows to the most advanced individual weapons, thus increase the wearer's fire rate.</description>
+    <graphicData>
+      <texPath>apparel/wna_utility</texPath>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <statBases>
+      <MarketValue>600</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <equippedStatOffsets>
+      <RangedCooldownFactor>-10</RangedCooldownFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_StandardArsenal</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_CoTargeter</defName>
+    <label>co-targeter</label>
+    <description>A small device capable of helping wearer to automatically aim at targets, designed for conditions requiring quick fire.</description>
+    <graphicData>
+      <texPath>apparel/wna_utility</texPath>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <statBases>
+      <MarketValue>600</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <equippedStatOffsets>
+      <AimingDelayFactor>-10</AimingDelayFactor>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_StandardArsenal</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_ShieldPack</defName>
+    <label>shield pack</label>
+    <description>When activated, this device can generate a shield to block ranged attack.</description>
+    <graphicData>
+      <texPath>apparel/wna_utility</texPath>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <Uranium>15</Uranium>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropShieldGenerator">
+        <ticksToReset>250</ticksToReset>
+        <energyMax>1250</energyMax>
+        <energyLossPerHit>1</energyLossPerHit>
+      </li>
+    </comps>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_FieldAnalysis</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <immuneToRadiation>true</immuneToRadiation>
+        <immuneToWarp>true</immuneToWarp>
+        <immuneToMindControl>true</immuneToMindControl>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_DeadzoneBelt</defName>
+    <label>"dead zone" radiation belt</label>
+    <description>This device generate a strong radiation field surrounding its wearer. Note that radiation doesn't have eyes, make sure yout ally is radiation proof.</description>
+    <graphicData>
+      <texPath>apparel/wna_utility</texPath>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <statBases>
+      <MarketValue>900</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <costList>
+      <Uranium>40</Uranium>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropApparelEquipHediff">
+        <hediff>WNA_DeadzoneBelt</hediff>
+      </li>
+    </comps>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>WNA_Tag_Radiation</li>
+      </tags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_ParticleArmory</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <immuneToRadiation>true</immuneToRadiation>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_IllusionCore</defName>
+    <label>illusion core</label>
+    <description>This device can cloak its owner with a stealth field, make its owner invisible form both eyes and usual sensors.</description>
+    <graphicData>
+      <texPath>apparel/wna_utility</texPath>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropApparelEquipHediff">
+        <hediff>WNA_IllusionCore</hediff>
+      </li>
+    </comps>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_CloakTechnique</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <immuneToRadiation>true</immuneToRadiation>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_ChronoPack</defName>
+    <label>phase pack</label>
+    <description>phase pack.</description>
+    <graphicData>
+      <texPath>apparel/wna_utility</texPath>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <!--<WNA_Chimingsteel>5</WNA_Chimingsteel>-->
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropApparelEquipHediff">
+        <hediff>WNA_ChronoPack</hediff>
+      </li>
+    </comps>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_Parasomnia</li>
+      </researchPrerequisites>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <immuneToRadiation>true</immuneToRadiation>
+        <immuneToWarp>true</immuneToWarp>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- SECP -->
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_MultiToolkit</defName>
+    <label>integrated multi-tool kit</label>
+    <description>A pack containing multiple tools for complex tasks under various circumstances, from simple repairing and mending to emergent medical assistance.</description>
+    <graphicData>
+      <texPath>apparel/wna_utility</texPath>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>8</WorkSpeedGlobal>
+      <GeneralLaborSpeed>8</GeneralLaborSpeed>
+      <ConstructSuccessChance>2</ConstructSuccessChance>
+      <FixBrokenDownBuildingSuccessChance>2</FixBrokenDownBuildingSuccessChance>
+      <MedicalSurgerySuccessChance>2</MedicalSurgerySuccessChance>
+      <CleaningSpeed>8</CleaningSpeed>
+      <MedicalTendSpeed>8</MedicalTendSpeed>
+      <MedicalOperationSpeed>2</MedicalOperationSpeed>
+      <MedicalTendQuality>2</MedicalTendQuality>
+      <FishingSpeed MayRequire="ludeon.rimworld.odyssey">2</FishingSpeed>
+      <ForagedNutritionPerDay>2</ForagedNutritionPerDay>
+      <MiningYield>2</MiningYield>
+      <AnimalGatherYield>2</AnimalGatherYield>
+      <PlantHarvestYield>2</PlantHarvestYield>
+      <FishingYield MayRequire="ludeon.rimworld.odyssey">2</FishingYield>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_CivilianTech</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <immuneToRadiation>true</immuneToRadiation>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- EECP -->
+
+  <!-- Whelingnorthan -->
+
+  <ThingDef ParentName="WNA_ApparelBase">
+    <defName>WNA_PsychicAmplifier</defName>
+    <label>psychic amplifier</label>
+    <description>A compact psychic amplifier built into a sealed headpiece. It lets the wearer project a focused mind-control impulse at a humanlike target.</description>
+    <graphicData>
+      <texPath>apparel/eecphead/icon_eecphead</texPath>
+      <color>(123,80,167)</color>
+    </graphicData>
+    <costList>
+      <Hyperweave>40</Hyperweave>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.3</ArmorRating_Heat>
+      <Insulation_Cold>10</Insulation_Cold>
+      <Insulation_Heat>15</Insulation_Heat>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+        <li>Neck</li>
+      </bodyPartGroups>
+      <wornGraphicPath>apparel/eecphead/eecphead</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <abilities>
+        <li>WNA_MindControlApparel</li>
+      </abilities>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_GlobalEntrallment</li>
+      </researchPrerequisites>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

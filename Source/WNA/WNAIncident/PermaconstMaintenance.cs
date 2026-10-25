@@ -2,10 +2,11 @@
 using UnityEngine;
 using Verse;
 using WNA.WNADefOf;
+using WNA.WNAUtility;
 
 namespace WNA.WNAIncident
 {
-    public class PermaconstMaintenance : IncidentWorker
+    internal class PermaconstMaintenance : IncidentWorker
     {
         protected override bool CanFireNowSub(IncidentParms parms)
         {
@@ -17,8 +18,7 @@ namespace WNA.WNAIncident
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
-            Faction pcc = Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionPCC)
-                ?? Find.FactionManager.FirstFactionOfDef(WNAMainDefOf.WNA_FactionWNA);
+            Faction pcc = General.PCCFaction ?? General.WNAFaction;
             int duration = 141420;
             GameCondition cond = GameConditionMaker.MakeCondition(WNAMainDefOf.WNA_GameCond_PermaconstActive, duration);
             map.gameConditionManager.RegisterCondition(cond);

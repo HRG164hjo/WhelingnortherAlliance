@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: Trade Catalog -->
+  <ATUI_CatalogTitle>Trade Catalog</ATUI_CatalogTitle>
+
+  <!-- EN: Browse and order goods from this settlement's trade catalog. -->
+  <ATUI_CatalogTitleTip>Browse and order goods from this settlement's trade catalog.</ATUI_CatalogTitleTip>
+
+  <!-- EN: {0} of {1} shown -->
+  <ATUI_CatalogCount>{0} of {1} shown</ATUI_CatalogCount>
+
+  <!-- EN: Clear Order -->
+  <ATUI_ClearOrder>Clear Order</ATUI_ClearOrder>
+
+  <!-- EN: Remove all lines from the current order. -->
+  <ATUI_ClearOrderTip>Remove all lines from the current order.</ATUI_ClearOrderTip>
+
+  <!-- EN: No matching items. -->
+  <ATUI_NoResults>No matching items.</ATUI_NoResults>
+
+  <!-- EN: Order -->
+  <ATUI_Order>Order</ATUI_Order>
+
+  <!-- EN: {0} line(s) · {1} unit(s) -->
+  <ATUI_OrderSummary>{0} line(s) · {1} unit(s)</ATUI_OrderSummary>
+
+  <!-- EN: Add one {0} to the order. -->
+  <ATUI_OrderTip>Add one {0} to the order.</ATUI_OrderTip>
+
+  <!-- EN: Unit price -->
+  <ATUI_PriceTip>Unit price</ATUI_PriceTip>
+
+  <!-- EN: {0} / {1} (max {2}) -->
+  <ATUI_QtyTip>{0} / {1} (max {2})</ATUI_QtyTip>
+
+  <!-- EN: Material -->
+  <ATUI_StuffButton>Material</ATUI_StuffButton>
+
+  <!-- EN: Choose the material for this item. -->
+  <ATUI_StuffButtonTip>Choose the material for this item.</ATUI_StuffButtonTip>
+
+  <!-- EN: current -->
+  <ATUI_StuffCurrent>current</ATUI_StuffCurrent>
+
+  <!-- EN: minified -->
+  <ATUI_TagMinified>minified</ATUI_TagMinified>
+
+  <!-- EN: All -->
+  <ATUI_Cat_All>All</ATUI_Cat_All>
+
+  <!-- EN: Items -->
+  <ATUI_Cat_Items>Items</ATUI_Cat_Items>
+
+  <!-- EN: Buildings -->
+  <ATUI_Cat_Buildings>Buildings</ATUI_Cat_Buildings>
+
+  <!-- EN: Weapons -->
+  <ATUI_Cat_Weapons>Weapons</ATUI_Cat_Weapons>
+
+  <!-- EN: Apparel -->
+  <ATUI_Cat_Apparel>Apparel</ATUI_Cat_Apparel>
+
+  <!-- EN: Resources -->
+  <ATUI_Cat_Resources>Resources</ATUI_Cat_Resources>
+
+  <!-- EN: Food -->
+  <ATUI_Cat_Food>Food</ATUI_Cat_Food>
+
+  <!-- EN: Drugs -->
+  <ATUI_Cat_Drugs>Drugs</ATUI_Cat_Drugs>
+
+</LanguageData>

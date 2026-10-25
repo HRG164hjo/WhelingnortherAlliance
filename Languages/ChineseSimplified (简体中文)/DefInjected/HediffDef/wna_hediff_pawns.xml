@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: inhuman -->
+  <WNA_Inhuman.label>非人</WNA_Inhuman.label>
+  <!-- EN: This thing may used to be a human, and may still looks like a human, but from inside it has been gone far from human being. -->
+  <WNA_Inhuman.description>此物或许曾经为人，也许看上去仍然是人，但其内在已经离正常人很远了。</WNA_Inhuman.description>
+  
+  <!-- EN: permaconst taken-over -->
+  <WNA_PermaconstActive.label>恒固指令</WNA_PermaconstActive.label>
+  <!-- EN: This creature is enthralled by Permaconst Command, and now a part of an uncontrolled defense system. -->
+  <WNA_PermaconstActive.description>此人已被恒固指令接管，成为了一个无监管自动防御系统的一部分。</WNA_PermaconstActive.description>
+  
+  <!-- EN: permaconst seen -->
+  <WNA_PermaconstHidden.label>恒固指令</WNA_PermaconstHidden.label>
+  <!-- EN: Permaconst Command has seen you. -->
+  <WNA_PermaconstHidden.description>恒固指令记住了你。</WNA_PermaconstHidden.description>
+  
+</LanguageData>

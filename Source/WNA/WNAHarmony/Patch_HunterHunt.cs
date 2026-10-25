@@ -5,15 +5,17 @@ using WNA.WNADefOf;
 
 namespace WNA.WNAHarmony
 {
-    [HarmonyPatch(typeof(WorkGiver_HunterHunt), "HasHuntingWeapon")]
-    public class Patch_HunterHunt
+    internal class Patch_HunterHunt
     {
-        public static void Postfix(ref bool __result, Pawn p)
+        [HarmonyPatch(typeof(WorkGiver_HunterHunt), "HasHuntingWeapon")]
+        internal class Patch_HasHuntingWeapon
         {
-            if (p.equipment.Primary != null &&
-                p.equipment.Primary.def == WNAMainDefOf.WNA_Weapon_RiteLance)
-                __result = true;
+            internal static void Postfix(ref bool __result, Pawn p)
+            {
+                if (p.equipment.Primary != null)
+                    if (p.equipment.Primary.def == WNAMainDefOf.WNA_Weapon_RiteLance)
+                        __result = true;
+            }
         }
     }
 }
- 

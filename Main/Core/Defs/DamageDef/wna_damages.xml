@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_Culling</defName>
+    <label>whelingnorther corrosion</label>
+    <deathMessage>{0} has molten.</deathMessage>
+    <hediff>MissingBodyPart</hediff>
+    <impactSoundType>Slice</impactSoundType>
+    <workerClass>WNA.WNADamageWorker.DmgWorker_Culling</workerClass>
+    <causeStun>true</causeStun>
+    <cutExtraTargetsCurve>
+      <points>
+        <li>0,1</li>
+        <li>0.3,2</li>
+        <li>0.6,4</li>
+        <li>1,8</li>
+      </points>
+    </cutExtraTargetsCurve>
+    <cutCleaveBonus>1.4</cutCleaveBonus>
+    <buildingDamageFactor>100000</buildingDamageFactor>
+    <plantDamageFactor>100000</plantDamageFactor>
+    <corpseDamageFactor>100000</corpseDamageFactor>
+    <additionalHediffs>
+      <li>
+        <hediff>WNA_Corrosion</hediff>
+        <severityPerDamageDealt>100000</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  <ToolCapacityDef>
+    <defName>WNA_Culling</defName>
+    <label>culling</label>
+  </ToolCapacityDef>
+  <ManeuverDef>
+    <defName>WNA_Culling</defName>
+    <requiredCapacity>WNA_Culling</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>WNA_Culling</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_DemoCut</defName>
+    <label>cut</label>
+    <deathMessage>{0} has been sliced into pieces.</deathMessage>
+    <hediff>Cut</hediff>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <impactSoundType>Slice</impactSoundType>
+    <cutExtraTargetsCurve>
+      <points>
+        <li>0,1</li>
+        <li>0.4,2</li>
+        <li>0.7,3</li>
+        <li>1,4</li>
+      </points>
+    </cutExtraTargetsCurve>
+    <cutCleaveBonus>1.4</cutCleaveBonus>
+    <buildingDamageFactor>50</buildingDamageFactor>
+  </DamageDef>
+  <ToolCapacityDef>
+    <defName>WNA_DemoCut</defName>
+    <label>cut</label>
+  </ToolCapacityDef>
+  <ManeuverDef>
+    <defName>WNA_DemoCut</defName>
+    <requiredCapacity>WNA_DemoCut</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>WNA_DemoCut</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_HollowPoint</defName>
+    <label>HP bullet</label>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>WNA_GunShot</hediff>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <impactSoundType>Bullet</impactSoundType>
+    <buildingDamageFactor>0.3</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <corpseDamageFactor>3.1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_ArmorPiercer</defName>
+    <label>AP bullet</label>
+    <externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>WNA_GunShot</hediff>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <impactSoundType>Bullet</impactSoundType>
+    <buildingDamageFactor>6</buildingDamageFactor>
+    <plantDamageFactor>4</plantDamageFactor>
+    <corpseDamageFactor>0.25</corpseDamageFactor>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+  </DamageDef>
+
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_ToxinBullet</defName>
+    <label>toxin shot</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <deathMessage>{0} has been shot to death.</deathMessage>
+    <hediff>WNA_GunShot</hediff>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <impactSoundType>Bullet</impactSoundType>
+    <additionalHediffs>
+      <li>
+        <hediff>WNA_ScrapBuildup</hediff>
+        <severityPerDamageDealt>0.02</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_ChimingBlaze</defName>
+    <label>chiming</label>
+    <deathMessage>{0} has molten.</deathMessage>
+    <hediff>WNA_Molten</hediff>
+    <isExplosive>true</isExplosive>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <impactSoundType>Slice</impactSoundType>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>999999</defaultDamage>
+    <buildingDamageFactor>100000</buildingDamageFactor>
+    <plantDamageFactor>100000</plantDamageFactor>
+    <corpseDamageFactor>100000</corpseDamageFactor>
+    <soundExplosion>Explosion_Vaporize</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorCenter>(85,10,155,250)</explosionColorCenter>
+    <explosionColorEdge>(255,0,0,155)</explosionColorEdge>
+  </DamageDef>
+  
+  <DamageDef ParentName="WNA_DamageBase" Name="WNA_RadBurnBase">
+    <defName>WNA_RadBurn</defName>
+    <label>rad burn</label>
+    <workerClass>WNA.WNADamageWorker.DmgWorker_RadField</workerClass>
+    <deathMessage>{0} died of radiation.</deathMessage>
+    <hediff>Burn</hediff>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>false</makesAnimalsFlee>
+    <causeStun>true</causeStun>
+    <impactSoundType/>
+    <buildingDamageFactor>0.333333</buildingDamageFactor>
+    <plantDamageFactor>0</plantDamageFactor>
+    <corpseDamageFactor>0</corpseDamageFactor>
+    <additionalHediffs>
+      <li>
+        <hediff>WNA_RadEffect</hediff>
+        <severityPerDamageDealt>0.5</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <explosionColorCenter>(255,155,0)</explosionColorCenter>
+    <explosionColorEdge>(200,100,0)</explosionColorEdge>
+  </DamageDef>
+  <DamageDef ParentName="WNA_RadBurnBase">
+    <defName>WNA_RadBeam</defName>
+    <label>rad beam</label>
+    <additionalHediffs Inherits="false">
+      <li>
+        <hediff>WNA_RadEffect</hediff>
+        <severityPerDamageDealt>2</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+    <buildingDamageFactor>1</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <corpseDamageFactor>1</corpseDamageFactor>
+  </DamageDef>
+
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_Hypothermal</defName>
+    <label>hypothermia</label>
+    <deathMessage>{0} has been frozen and broken into pieces.</deathMessage>
+    <hediff>Frostbite</hediff>
+    <workerClass>WNA.WNADamageWorker.DmgWorker_Hypothermal</workerClass>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>false</makesAnimalsFlee>
+    <impactSoundType>Blunt</impactSoundType>
+    <additionalHediffs>
+      <li>
+        <hediff>Hypothermia</hediff>
+        <severityPerDamageDealt>0.003333</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+  </DamageDef>
+  
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_Temporal</defName>
+    <label>chrono</label>
+    <deathMessage>{0} is warped.</deathMessage>
+    <workerClass>WNA.WNADamageWorker.DmgWorker_Temporal</workerClass>
+    <makesAnimalsFlee>false</makesAnimalsFlee>
+    <impactSoundType>Blunt</impactSoundType>
+    <externalViolence>false</externalViolence>
+  </DamageDef>
+  
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_Controller</defName>
+    <label>controller</label>
+    <deathMessage>{0} killed by psychic.</deathMessage>
+    <workerClass>WNA.WNADamageWorker.DmgWorker_Controller</workerClass>
+    <makesAnimalsFlee>false</makesAnimalsFlee>
+    <impactSoundType>Blunt</impactSoundType>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.MindControlConfig">
+        <permanent>false</permanent>
+        <maxTargets>-1</maxTargets>
+        <releaseOnControllerDeath>true</releaseOnControllerDeath>
+        <releaseOnControllerFactionChange>true</releaseOnControllerFactionChange>
+        <brainBurn>true</brainBurn>
+        <brainBurnHpFactor>0.6~0.9</brainBurnHpFactor>
+        <sendMessage>true</sendMessage>
+      </li>
+    </modExtensions>
+  </DamageDef>
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_ControllerPermanent</defName>
+    <label>controller</label>
+    <deathMessage>{0} killed by psychic.</deathMessage>
+    <workerClass>WNA.WNADamageWorker.DmgWorker_Controller_Permanent</workerClass>
+    <makesAnimalsFlee>false</makesAnimalsFlee>
+    <impactSoundType>Blunt</impactSoundType>
+    <externalViolence>false</externalViolence>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.MindControlConfig">
+        <permanent>true</permanent>
+        <maxTargets>-1</maxTargets>
+        <releaseOnControllerDeath>false</releaseOnControllerDeath>
+        <releaseOnControllerFactionChange>false</releaseOnControllerFactionChange>
+        <brainBurn>true</brainBurn>
+        <brainBurnHpFactor>0.6~0.9</brainBurnHpFactor>
+        <sendMessage>true</sendMessage>
+      </li>
+    </modExtensions>
+  </DamageDef>
+  
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_Psychedelic</defName>
+    <label>psychedelic</label>
+    <deathMessage>{0} killed by psychic.</deathMessage>
+    <workerClass>WNA.WNADamageWorker.DmgWorker_Berserker</workerClass>
+    <impactSoundType>Blunt</impactSoundType>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>999999</defaultDamage>
+    <buildingDamageFactor>100000</buildingDamageFactor>
+    <plantDamageFactor>100000</plantDamageFactor>
+    <corpseDamageFactor>100000</corpseDamageFactor>
+    <soundExplosion>Explosion_EMP</soundExplosion>
+    <combatLogRules>Damage_EMP</combatLogRules>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastEMP</explosionCellFleck>
+    <explosionColorCenter>(45,195,160,255)</explosionColorCenter>
+    <explosionColorEdge>(0,0,0,0)</explosionColorEdge>
+    <externalViolence>false</externalViolence>
+  </DamageDef>
+
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_Flame</defName>
+    <label>flame</label>
+    <deathMessage>{0} has been burned to death.</deathMessage>
+    <hediff>Burn</hediff>
+    <workerClass>DamageWorker_Flame</workerClass>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <makesBlood>false</makesBlood>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <additionalHediffs>
+      <li>
+        <hediff>Heatstroke</hediff>
+        <severityPerDamageDealt>0.003333</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+    <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastFlame</explosionCellFleck>
+    <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+    <explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+    <soundExplosion>Explosion_Flame</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+    <plantDamageFactor>10</plantDamageFactor>
+  </DamageDef>
+  
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_TeslaShock</defName>
+    <label>shock</label>
+    <deathMessage>{0} is shocked to death.</deathMessage>
+    <workerClass>WNA.WNADamageWorker.DmgWorker_AdvEMP</workerClass>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <impactSoundType>Blunt</impactSoundType>
+    <externalViolence>false</externalViolence>
+  </DamageDef>
+
+  
+  <!--
+
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_LysField</defName>
+    <label>lysis</label>
+    <workerClass>WNA.WNADamageWorker.LysField</workerClass>
+    <deathMessage>{0} perished in lysis field.</deathMessage>
+    <hediff>Shredded</hediff>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>false</makesAnimalsFlee>
+    <causeStun>true</causeStun>
+    <impactSoundType/>
+    <buildingDamageFactor>1</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <corpseDamageFactor>1</corpseDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastEMP</explosionCellFleck>
+    <explosionColorCenter>(255,0,0)</explosionColorCenter>
+    <explosionColorEdge>(155,0,0)</explosionColorEdge>
+  </DamageDef>
+
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_IronKill</defName>
+    <label>iron kill</label>
+    <workerClass>WNA.WNADamageWorker.IronKiller</workerClass>
+    <deathMessage>{0} perished because of iron field.</deathMessage>
+    <hediff>Misc</hediff>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>false</makesAnimalsFlee>
+    <causeStun>true</causeStun>
+    <impactSoundType/>
+    <buildingDamageFactor>1</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <corpseDamageFactor>1</corpseDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>Fleck_Vaporize</explosionCellFleck>
+    <explosionColorCenter>(17,17,17)</explosionColorCenter>
+    <explosionColorEdge>(155,0,0)</explosionColorEdge>
+  </DamageDef>
+  
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_CastMelee</defName>
+    <label>whelingnorther corrosion</label>
+    <deathMessage>{0} has molten.</deathMessage>
+    <hediff>WNA_CastDamage</hediff>
+    <impactSoundType>Slice</impactSoundType>
+    <causeStun>true</causeStun>
+    <cutExtraTargetsCurve>
+      <points>
+        <li>0,1</li>
+        <li>0.3,2</li>
+        <li>0.6,4</li>
+        <li>1,8</li>
+      </points>
+    </cutExtraTargetsCurve>
+    <cutCleaveBonus>1.4</cutCleaveBonus>
+    <buildingDamageFactor>100000</buildingDamageFactor>
+    <plantDamageFactor>100000</plantDamageFactor>
+    <corpseDamageFactor>100000</corpseDamageFactor>
+    <additionalHediffs>
+      <li>
+        <hediff>WNA_Corrosion</hediff>
+        <severityPerDamageDealt>10</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  <ToolCapacityDef>
+    <defName>WNA_CastMelee</defName>
+    <label>whelingnorther corrosion</label>
+  </ToolCapacityDef>
+  <ManeuverDef>
+    <defName>WNA_CastMelee</defName>
+    <requiredCapacity>WNA_CastMelee</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>WNA_CastMelee</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_CastRange</defName>
+    <label>whelingnorther corrosion</label>
+    <deathMessage>{0} has molten.</deathMessage>
+    <hediff>WNA_CastDamage</hediff>
+    <isRanged>true</isRanged>
+    <causeStun>true</causeStun>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <impactSoundType>Slice</impactSoundType>
+    <buildingDamageFactor>100000</buildingDamageFactor>
+    <plantDamageFactor>100000</plantDamageFactor>
+    <corpseDamageFactor>100000</corpseDamageFactor>
+    <additionalHediffs>
+      <li>
+        <hediff>WNA_Corrosion</hediff>
+        <severityPerDamageDealt>1</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+
+  <DamageDef ParentName="WNA_DamageBase">
+    <defName>WNA_CastBomb</defName>
+    <label>whelingnorther corrosion</label>
+    <deathMessage>{0} has molten.</deathMessage>
+    <hediff>WNA_CastDamage</hediff>
+    <isExplosive>true</isExplosive>
+    <causeStun>true</causeStun>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <impactSoundType>Slice</impactSoundType>
+    <buildingDamageFactor>100000</buildingDamageFactor>
+    <plantDamageFactor>100000</plantDamageFactor>
+    <corpseDamageFactor>100000</corpseDamageFactor>
+    <additionalHediffs>
+      <li>
+        <hediff>WNA_Corrosion</hediff>
+        <severityPerDamageDealt>1</severityPerDamageDealt>
+      </li>
+    </additionalHediffs>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>999999</defaultDamage>
+    <soundExplosion>Explosion_Thump</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>WNA_BlastFleck</explosionCellFleck>
+    <explosionColorCenter>(74,74,74)</explosionColorCenter>
+    <explosionColorEdge>(0,0,0)</explosionColorEdge>
+  </DamageDef>-->
+  
+</Defs>

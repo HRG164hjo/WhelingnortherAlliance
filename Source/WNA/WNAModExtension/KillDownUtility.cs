@@ -3,10 +3,11 @@ using Verse;
 
 namespace WNA.WNAModExtension
 {
-    public class KillDownUtility : DefModExtension
+    internal class KillDownUtility : DefModExtension
     {
         public int canDieThreshold = 5;
-        public List<PawnCapacityDef> minCapacities;
+        public bool canEverBeDowned = true;
+        public List<PawnCapacityDef> minCapacities = null;
         public float minLevel = 0.3f;
     }
 }

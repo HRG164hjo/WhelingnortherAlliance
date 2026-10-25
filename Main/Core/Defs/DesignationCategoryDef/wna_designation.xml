@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <DesignationCategoryDef>
+    <defName>WNA_MainCategory</defName>
+    <label>whelingnorther</label>
+    <description>placeholder.</description>
+    <order>450</order>
+    <specialDesignatorClasses>
+      <li>WNA.WNADesignator.Designator_ConsensusMotion</li>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  
+  <!--<DesignationCategoryDef>
+    <defName>WNA_Commands</defName>
+    <label>whelingnorther commands</label>
+    <description>placeholder.</description>
+    <order>449</order>
+    <specialDesignatorClasses/>
+  </DesignationCategoryDef>-->
+
+
+
+</Defs>

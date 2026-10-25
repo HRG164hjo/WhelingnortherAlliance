@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <XenotypeDef>
+    <defName>WNA_Mortaliner</defName>
+    <label>mortaliner</label>
+    <description>These pawns have ascended higher than normal people. They won't age, won't easily get sick, and have already got rid of some primal needs. Despite this, WNA still consider them as mortal - as they can still be, albeit not easily, killed.</description>
+    <descriptionShort>Mortaliner.</descriptionShort>
+    <iconPath>factions/wna_alliance</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li>WNA_Unshakable</li>
+      <li>WNA_Apathy</li>
+      <li>WNA_Mastery</li>
+      <li>PerfectImmunity</li>
+      <li>DiseaseFree</li>
+      <li>TotalHealing</li>
+      <li>Ageless</li>
+      <li>Body_Standard</li>
+      <li>WNA_HeadType</li>
+      <li>Skin_SheerWhite</li>
+      <li>Hair_SnowWhite</li>
+    </genes>
+  </XenotypeDef>
+
+  <GeneDef Abstract="true" Name="WNA_GeneBase">
+    <displayCategory>Archite</displayCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <biostatArc>1</biostatArc>
+    <canGenerateInGeneSet>false</canGenerateInGeneSet>
+    <marketValueFactor>1</marketValueFactor>
+    <passOnDirectly>false</passOnDirectly>
+    <selectionWeight>0</selectionWeight>
+    <randomChosen>false</randomChosen>
+    <modExtensions>
+      <li Class="VEF.Genes.GeneExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">  
+        <hideGene>true</hideGene>
+        <skillDegradation>false</skillDegradation>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="WNA_GeneBase">
+    <defName>WNA_Unshakable</defName>
+    <label>unshakable</label>
+    <labelShortAdj>unshakable</labelShortAdj>
+    <description>Carrier of this gene will develop into an unbelievably tough being, both physically and mentally.</description>
+    <iconPath>UI/Icons/Genes/Gene_Unstoppable</iconPath>
+    <neverGrayHair>true</neverGrayHair>
+    <ignoreDarkness>true</ignoreDarkness>
+    <immuneToToxGasExposure>true</immuneToToxGasExposure>
+    <addictionChanceFactor>0</addictionChanceFactor>
+    <overdoseChanceFactor>0</overdoseChanceFactor>
+    <toleranceBuildupFactor>0</toleranceBuildupFactor>
+    <painFactor>0</painFactor>
+    <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+    <preventPermanentWounds>true</preventPermanentWounds>
+    <statOffsets>
+      <ComfyTemperatureMin>-500</ComfyTemperatureMin>
+      <ComfyTemperatureMax>1000</ComfyTemperatureMax>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+    </statOffsets>
+    <statFactors>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <IncomingDamageFactor>0</IncomingDamageFactor>
+      <StaggerDurationFactor>0</StaggerDurationFactor>
+      <MentalBreakThreshold>0</MentalBreakThreshold>
+      <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0</CertaintyLossFactor>
+    </statFactors>
+    <forcedTraits>
+      <li>
+        <def>WNA_Trait_Unshakable</def>
+      </li>
+    </forcedTraits>
+    <modExtensions>
+      <li Class="Universum.Utilities.Gene.Properties" MayRequire="sindre0830.Universum">
+        <allowed_utilities>
+          <li>universum.vacuum_decompression_protection</li>
+          <li>universum.vacuum_suffocation_protection</li>
+        </allowed_utilities>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="WNA_GeneBase">
+    <defName>WNA_Mastery</defName>
+    <label>mastery</label>
+    <labelShortAdj>mastery</labelShortAdj>
+    <description>Carriers of this gene has precoded knowledge and skills built into them.</description>
+    <iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+    <aptitudes>
+      <Shooting>20</Shooting>
+      <Melee>20</Melee>
+      <Construction>20</Construction>
+      <Mining>20</Mining>
+      <Cooking>20</Cooking>
+      <Plants>20</Plants>
+      <Animals>20</Animals>
+      <Crafting>20</Crafting>
+      <Artistic>20</Artistic>
+      <Medicine>20</Medicine>
+      <Social>20</Social>
+      <Intellectual>20</Intellectual>
+    </aptitudes>
+  </GeneDef>
+
+  <GeneDef ParentName="WNA_GeneBase">
+    <defName>WNA_Apathy</defName>
+    <label>apathy</label>
+    <labelShortAdj>apathetic</labelShortAdj>
+    <description>Carriers of this gene are numb to the world, Almost all feelings and opinions are erased, leaving them indifferent to joy and sorrow alike.</description>
+    <iconPath>UI/Icons/Genes/Gene_DeadCalm</iconPath>
+    <socialFightChanceFactor>0</socialFightChanceFactor>
+    <addictionChanceFactor>0</addictionChanceFactor>
+    <aggroMentalBreakSelectionChanceFactor>0</aggroMentalBreakSelectionChanceFactor>
+    <prisonBreakMTBFactor>0</prisonBreakMTBFactor>
+    <dontMindRawFood>true</dontMindRawFood>
+    <disablesNeeds>
+      <li>Beauty</li>
+      <li>Comfort</li>
+      <li>Outdoors</li>
+      <li>Indoors</li>
+      <li>DrugDesire</li>
+      <li>RoomSize</li>
+      <li MayRequire="ludeon.rimworld.biotech">KillThirst</li>
+      <li MayRequire="telardo.romanceontherim">RomanceOnTheRim_Need_Romance</li>
+      <li MayRequire="rim.job.world">Sex</li>
+    </disablesNeeds>
+  </GeneDef>
+
+  <GeneDef ParentName="WNA_GeneBase">
+    <defName>WNA_HeadType</defName>
+    <label>appearance</label>
+    <labelShortAdj></labelShortAdj>
+    <description>Carriers of this gene have unique plain appearance with no features or details.</description>
+    <iconPath>inv</iconPath>
+    <forcedHeadTypes>
+      <li>WNA_Head_GenericMale</li>
+      <li>WNA_Head_GenericFemale</li>
+    </forcedHeadTypes>
+  </GeneDef>
+</Defs>
