@@ -8,7 +8,9 @@
 	    <li IfModActive="ludeon.rimworld.anomaly">Main/Anomaly</li>
 	    <li IfModActive="ludeon.rimworld.odyssey">Main/Odyssey</li>
 			<!---->
-	    <li IfModActive="sarg.rimbees">Mods/sarg.rimbees</li>
+	    <li IfModActive="biomesteam.coreframework">Mods/biomesteam.coreframework</li>
 	    <li IfModActive="oskarpotocki.vanillafactionsexpanded.core">Mods/oskarpotocki.vanillafactionsexpanded.core</li>
+	    <li IfModActive="romyashi.bunnyframework">Mods/romyashi.bunnyframework</li>
+	    <li IfModActive="sarg.rimbees">Mods/sarg.rimbees</li>
 	</v1.7>
 </loadFolders>

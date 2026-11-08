@@ -7,8 +7,19 @@
   <!-- EN: Enable ideology conflict and hostility. When colony ideo contains some certain meme or precept, Whelingnorther Alliance will turn hostile. \n\n(Disabled by default) -->
   <WNAMod_enableIdeoConflictHostility>启用文化冲突与敌对选项：当你的文化中包含某些指定的模因或戒律时，威灵诺德联合会将会与您敌对。\n\n（默认不启用）</WNAMod_enableIdeoConflictHostility>
 
-  <!-- EN: Enable Permaconst reinforcement: When a pawn enthralled by Permaconst Command dies, there is about 7% chance that they will immediately summon a "Hunting Cluster" raid. \n\n(Disabled by default) -->
-  <WNAMod_enablePermaconstDeathAid>启用恒固指令增援：当一个被恒固指令役使的小人死亡时，有大约7%的几率立刻招来一次游猎集群袭击。\n\n（默认不启用）</WNAMod_enablePermaconstDeathAid>
+  <!-- EN: Enable Permaconst reinforcement: When a pawn enthralled by Permaconst Command dies, there is a chance (7% by default) that they will immediately summon a "Hunting Cluster" raid. \n\n(Disabled by default) -->
+  <WNAMod_enablePermaconstDeathAid>启用恒固指令增援：当一个被恒固指令役使的小人死亡时，有一定几率（默认 7%）立刻招来一次游猎集群袭击。\n\n（默认不启用）</WNAMod_enablePermaconstDeathAid>
+
+  <!-- EN: Reinforcement chance -->
+  <WNAMod_permaconstDeathAidChance>增援触发几率</WNAMod_permaconstDeathAidChance>
+
+  <!-- EN: Revive destroyed settlements on Permaconst maintenance -->
+  <WNAMod_reviveDestroyedSettlements>恒固维护时复活被毁定居点</WNAMod_reviveDestroyedSettlements>
+  <!-- EN: When the Permaconst maintenance event fires, every destroyed settlement (including orbital platforms) is revived as a Permaconst Command outpost with an active defense grid. A ruin has a chance (7% by default) of being restored as a Whelingnorther Alliance settlement instead. Ruins that RimWorld is about to erase from the world map are converted the same way. Outposts are not destroyed settlements, so ruin cleanup - including the expiry timers other mods add - leaves them alone; should one be removed anyway, its tile becomes a Whelingnorther Alliance settlement.\n\n(Disabled by default) -->
+  <WNAMod_reviveDestroyedSettlementsDesc>当恒固维护事件触发时，世界上所有被毁定居点（包括轨道平台）都会被复活为恒固指令的前哨站，并重新启用自动防御系统。每个废墟有一定几率（默认 7%）改为恢复为威灵诺德联合会的定居点。游戏即将从世界地图上清除的废墟也会按同样的规则转化为前哨站。前哨站不属于“被摧毁的定居点”，因此废墟清理机制（包括其他 mod 追加的废墟存续时限）不会移除它们；若某个前哨站仍被移除，它所在的地格会转为一个威灵诺德联合会的定居点。\n\n（默认不启用）</WNAMod_reviveDestroyedSettlementsDesc>
+
+  <!-- EN: Whelingnorther Alliance chance -->
+  <WNAMod_capturedSettlementWNAChance>威灵诺德联合会占据几率</WNAMod_capturedSettlementWNAChance>
 
   <!-- EN: Enable dead zone radiation spread: When a pawn carrying a certain radiation hediff dies, there will be an explosion and radiation zone will be spreaded.\n\n(Disabled by default) -->
   <WNAMod_enablePawnSpreadRadWhenKilled>启用死区辐射扩散：当一个携带特定辐射hediff的小人死亡时，会生成一次爆炸并扩散辐射区。\n\n（默认不启用）</WNAMod_enablePawnSpreadRadWhenKilled>
@@ -19,9 +30,35 @@
   <!-- EN: Maximum number of Whelingnorther Alliance pawns re-spawned onto the map at once while the Permaconst Command condition is active. -->
   <WNAMod_pawnReturnerMaxLimitDesc>恒固指令活跃期间，被恒固指令复活并送回地图的人数上限。</WNAMod_pawnReturnerMaxLimitDesc>
 
+  <!-- EN: Return recency window (days) -->
+  <WNAMod_pawnReturnerRecencyDays>返还时效窗口（天）</WNAMod_pawnReturnerRecencyDays>
+
+  <!-- EN: While the Permaconst Command condition is active, only pawns that left a map within this many days are resurrected and returned to it. Pawns off any map for longer than this are left alone. 2.357 days by default. -->
+  <WNAMod_pawnReturnerRecencyDaysDesc>恒固指令活跃期间，只有在该天数内才离开过地图的小人会被复活并送回地图；离线超过时限的小人不再返还。默认 2.357 天。</WNAMod_pawnReturnerRecencyDaysDesc>
+
   <!-- EN: Spawn uplifted pawns at the ritual target -->
   <WNAMod_upliftSpawnAtRitualTarget>在仪式目标处生成升变个体</WNAMod_upliftSpawnAtRitualTarget>
   <!-- EN: If enabled, the pawn created by the uplifting rite appears near the altar or ritual spot. If disabled, it appears where the subject was. Disabled by default. -->
   <WNAMod_upliftSpawnAtRitualTargetDesc>启用后，升变仪式产生的新个体将出现在祭坛或仪式点附近；禁用时则出现在接受者原来所在的位置。默认禁用。</WNAMod_upliftSpawnAtRitualTargetDesc>
+  
+  <!-- EN: Settlement auto-defense system -->
+  <WNAMod_autoDefenseMaster>定居点自动防御系统</WNAMod_autoDefenseMaster>
+  <!-- EN: Enable the automatic defense system of Whelingnorther Alliance settlements. Hostile world objects within range are engaged with defense missiles, and nearby transport pods or shuttles are destroyed on sight. Enabled by default. -->
+  <WNAMod_autoDefenseMasterDesc>启用威灵诺德联合会定居点的自动防御系统。射程内的敌对世界对象会遭到防御导弹攻击，附近的运输舱或穿梭机会被直接摧毁。默认启用。</WNAMod_autoDefenseMasterDesc>
+
+  <!-- EN: Cross-layer defense -->
+  <WNAMod_autoDefenseCrossLayer>立体防御</WNAMod_autoDefenseCrossLayer>
+  <!-- EN: If enabled, settlements also engage hostile targets on other planet layers (for example, orbital settlements firing at surface targets). Disabled by default. -->
+  <WNAMod_autoDefenseCrossLayerDesc>启用后，定居点也会攻击位于其他行星层的敌对目标（例如轨道定居点向地面目标开火）。默认禁用。</WNAMod_autoDefenseCrossLayerDesc>
+
+  <!-- EN: Attack sites and gravships -->
+  <WNAMod_autoDefenseSitesGravships>攻击地点与重力船</WNAMod_autoDefenseSitesGravships>
+  <!-- EN: Warning: this may cause unexpected bugs. \n\nIn addition to settlements and caravans, also attack hostile sites and gravships in flight. Sites often belong to quests or special incidents, and gravships may carry the player's own colonists. Enable at your own risk. Disabled by default. -->
+  <WNAMod_autoDefenseSitesGravshipsDesc>&lt;color=#ff6f6f&gt;警告：此功能可能导致预料之外的问题。&lt;/color&gt;\n\n除定居点与远行队外，还会攻击敌对的地点与飞行中的重力船。地点往往与任务或特殊事件相关，重力船上也可能载有玩家自己的殖民者。请谨慎开启。默认禁用。</WNAMod_autoDefenseSitesGravshipsDesc>
+
+  <!-- EN: Attack world objects that already have a map -->
+  <WNAMod_autoDefenseGeneratedMaps>攻击已生成地图的世界对象</WNAMod_autoDefenseGeneratedMaps>
+  <!-- EN: Warning: this may cause unexpected bugs. \n\nIf enabled, a defense missile can strike a hostile world object whose map has already been generated. The missile detonates at the map center and the map is then removed. Surviving player colonists, prisoners and slaves are force-marched into a caravan together with the corpses of fallen colonists. Disabled by default. -->
+  <WNAMod_autoDefenseGeneratedMapsDesc>&lt;color=#ff6f6f&gt;警告：此功能可能导致预料之外的问题。&lt;/color&gt;\n\n启用后，防御导弹可以打击已生成地图的敌对世界对象。导弹会在地图中央引爆，随后地图被移除；幸存的玩家殖民者、囚犯与奴隶会被强制编入一支远行队，并带上阵亡殖民者的尸体。默认禁用。</WNAMod_autoDefenseGeneratedMapsDesc>
 
 </LanguageData>

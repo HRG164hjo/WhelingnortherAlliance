@@ -2,78 +2,78 @@
 <LanguageData>
   
   <!-- EN: AP bullet -->
-  <WNA_ArmorPiercer.label>穿甲弹</WNA_ArmorPiercer.label>
+  <WNA_ArmorPiercer.label>TODO</WNA_ArmorPiercer.label>
   <!-- EN: {0} has been shot to death. -->
-  <WNA_ArmorPiercer.deathMessage>{0}被射杀。</WNA_ArmorPiercer.deathMessage>
+  <WNA_ArmorPiercer.deathMessage>TODO</WNA_ArmorPiercer.deathMessage>
   
   <!-- EN: chiming -->
-  <WNA_ChimingBlaze.label>赤明</WNA_ChimingBlaze.label>
+  <WNA_ChimingBlaze.label>TODO</WNA_ChimingBlaze.label>
   <!-- EN: {0} has molten. -->
-  <WNA_ChimingBlaze.deathMessage>{0}融化了。</WNA_ChimingBlaze.deathMessage>
+  <WNA_ChimingBlaze.deathMessage>TODO</WNA_ChimingBlaze.deathMessage>
   
   <!-- EN: controller -->
-  <WNA_Controller.label>心灵控制</WNA_Controller.label>
+  <WNA_Controller.label>TODO</WNA_Controller.label>
   <!-- EN: {0} killed by psychic. -->
-  <WNA_Controller.deathMessage>{0}被心灵力量杀死了。</WNA_Controller.deathMessage>
+  <WNA_Controller.deathMessage>TODO</WNA_Controller.deathMessage>
   
   <!-- EN: controller -->
-  <WNA_ControllerPermanent.label>心灵支配</WNA_ControllerPermanent.label>
+  <WNA_ControllerPermanent.label>TODO</WNA_ControllerPermanent.label>
   <!-- EN: {0} killed by psychic. -->
-  <WNA_ControllerPermanent.deathMessage>{0}被心灵力量杀死了。</WNA_ControllerPermanent.deathMessage>
+  <WNA_ControllerPermanent.deathMessage>TODO</WNA_ControllerPermanent.deathMessage>
   
   <!-- EN: whelingnorther corrosion -->
-  <WNA_Culling.label>威灵蚀变</WNA_Culling.label>
+  <WNA_Culling.label>TODO</WNA_Culling.label>
   <!-- EN: {0} has molten. -->
-  <WNA_Culling.deathMessage>{0}融化了。</WNA_Culling.deathMessage>
+  <WNA_Culling.deathMessage>TODO</WNA_Culling.deathMessage>
   
   <!-- EN: cut -->
-  <WNA_DemoCut.label>切割</WNA_DemoCut.label>
+  <WNA_DemoCut.label>TODO</WNA_DemoCut.label>
   <!-- EN: {0} has been sliced into pieces. -->
-  <WNA_DemoCut.deathMessage>{0}被切碎。</WNA_DemoCut.deathMessage>
+  <WNA_DemoCut.deathMessage>TODO</WNA_DemoCut.deathMessage>
   
   <!-- EN: flame -->
-  <WNA_Flame.label>火焰</WNA_Flame.label>
+  <WNA_Flame.label>TODO</WNA_Flame.label>
   <!-- EN: {0} has been burned to death. -->
-  <WNA_Flame.deathMessage>{0}被烧死了</WNA_Flame.deathMessage>
+  <WNA_Flame.deathMessage>TODO</WNA_Flame.deathMessage>
   
   <!-- EN: HP bullet -->
-  <WNA_HollowPoint.label>空尖弹</WNA_HollowPoint.label>
+  <WNA_HollowPoint.label>TODO</WNA_HollowPoint.label>
   <!-- EN: {0} has been shot to death. -->
-  <WNA_HollowPoint.deathMessage>{0}被射杀。</WNA_HollowPoint.deathMessage>
+  <WNA_HollowPoint.deathMessage>TODO</WNA_HollowPoint.deathMessage>
   
   <!-- EN: hypothermia -->
-  <WNA_Hypothermal.label>低温</WNA_Hypothermal.label>
+  <WNA_Hypothermal.label>TODO</WNA_Hypothermal.label>
   <!-- EN: {0} has been frozen and broken into pieces. -->
-  <WNA_Hypothermal.deathMessage>{0}被冻住并打碎了。</WNA_Hypothermal.deathMessage>
+  <WNA_Hypothermal.deathMessage>TODO</WNA_Hypothermal.deathMessage>
   
   <!-- EN: psychedelic -->
-  <WNA_Psychedelic.label>迷幻</WNA_Psychedelic.label>
+  <WNA_Psychedelic.label>TODO</WNA_Psychedelic.label>
   <!-- EN: {0} killed by psychic. -->
-  <WNA_Psychedelic.deathMessage>{0}被心灵力量杀死了。</WNA_Psychedelic.deathMessage>
+  <WNA_Psychedelic.deathMessage>TODO</WNA_Psychedelic.deathMessage>
   
   <!-- EN: rad beam -->
-  <WNA_RadBeam.label>辐射</WNA_RadBeam.label>
+  <WNA_RadBeam.label>TODO</WNA_RadBeam.label>
   <!-- EN: {0} died of radiation. -->
-  <WNA_RadBeam.deathMessage>{0}死于辐射。</WNA_RadBeam.deathMessage>
+  <WNA_RadBeam.deathMessage>TODO</WNA_RadBeam.deathMessage>
   
   <!-- EN: rad burn -->
-  <WNA_RadBurn.label>辐射</WNA_RadBurn.label>
+  <WNA_RadBurn.label>TODO</WNA_RadBurn.label>
   <!-- EN: {0} died of radiation. -->
-  <WNA_RadBurn.deathMessage>{0}死于辐射。</WNA_RadBurn.deathMessage>
+  <WNA_RadBurn.deathMessage>TODO</WNA_RadBurn.deathMessage>
   
   <!-- EN: chrono -->
-  <WNA_Temporal.label>时空</WNA_Temporal.label>
+  <WNA_Temporal.label>TODO</WNA_Temporal.label>
   <!-- EN: {0} is warped. -->
-  <WNA_Temporal.deathMessage>{0}被抹除了。</WNA_Temporal.deathMessage>
+  <WNA_Temporal.deathMessage>TODO</WNA_Temporal.deathMessage>
   
   <!-- EN: shock -->
-  <WNA_TeslaShock.label>电击</WNA_TeslaShock.label>
+  <WNA_TeslaShock.label>TODO</WNA_TeslaShock.label>
   <!-- EN: {0} is shocked to death. -->
-  <WNA_TeslaShock.deathMessage>{0}被电死了。</WNA_TeslaShock.deathMessage>
+  <WNA_TeslaShock.deathMessage>TODO</WNA_TeslaShock.deathMessage>
   
   <!-- EN: toxin shot -->
-  <WNA_ToxinBullet.label>毒弹</WNA_ToxinBullet.label>
+  <WNA_ToxinBullet.label>TODO</WNA_ToxinBullet.label>
   <!-- EN: {0} has been shot to death. -->
-  <WNA_ToxinBullet.deathMessage>{0}被射杀。</WNA_ToxinBullet.deathMessage>
+  <WNA_ToxinBullet.deathMessage>TODO</WNA_ToxinBullet.deathMessage>
   
 </LanguageData>

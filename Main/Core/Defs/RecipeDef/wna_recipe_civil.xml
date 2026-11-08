@@ -30,7 +30,9 @@
       <li>ElectricSmelter</li>
       <li>ElectricCrematorium</li>
     </recipeUsers>
-    <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
   </RecipeDef>
   <RecipeDef ParentName="WNA_RecipeBase">
     <defName>WNA_HeatStoneBlock</defName>
@@ -80,7 +82,9 @@
       <li>ElectricSmelter</li>
       <li>ElectricCrematorium</li>
     </recipeUsers>
-    <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
   </RecipeDef>
 
   <RecipeDef ParentName="WNA_RecipeBase">
@@ -129,7 +133,9 @@
       <li>ElectricCrematorium</li>
       <li>BiofuelRefinery</li>
     </recipeUsers>
-    <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
   </RecipeDef>
   <RecipeDef ParentName="WNA_RecipeBase">
     <defName>WNA_RefineOrganics</defName>
@@ -168,7 +174,9 @@
       <li>ElectricCrematorium</li>
       <li>BiofuelRefinery</li>
     </recipeUsers>
-    <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
   </RecipeDef>
 
   <RecipeDef ParentName="WNA_RecipeBase">
@@ -207,7 +215,9 @@
     <recipeUsers>
       <li>DrugLab</li>
     </recipeUsers>
-    <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
   </RecipeDef>
   <RecipeDef ParentName="WNA_RecipeBase">
     <defName>WNA_HeatCinnabar</defName>
@@ -238,7 +248,9 @@
       <li>ElectricSmelter</li>
       <li>ElectricCrematorium</li>
     </recipeUsers>
-    <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
   </RecipeDef>
 
   <RecipeDef ParentName="WNA_RecipeBase">
@@ -297,7 +309,9 @@
       <li>ElectricCrematorium</li>
       <li>BiofuelRefinery</li>
     </recipeUsers>
-    <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
   </RecipeDef>
 
   <RecipeDef ParentName="WNA_RecipeBase">
@@ -337,7 +351,9 @@
       <li>BiofuelRefinery</li>
       <li>ElectricCrematorium</li>
     </recipeUsers>
-    <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
   </RecipeDef>
   <RecipeDef ParentName="WNA_RecipeBase">
     <defName>WNA_MakeHyperweave</defName>
@@ -352,6 +368,7 @@
             <li>DevilstrandCloth</li>
             <li MayRequire="aoba.deadmanswitch.core">Plasfiber</li>
             <li MayRequire="aoba.deadmanswitch.core">Polyester</li>
+            <li MayRequire="oblitus.carbon">CarbonWeave</li>
           </thingDefs>
         </filter>
         <count>75</count>
@@ -360,6 +377,11 @@
         <filter>
           <thingDefs>
             <li>Silver</li>
+            <li>WNA_MercuryVial</li>
+            <li>Plasteel</li>
+            <li>Uranium</li>
+            <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+            <li MayRequire="oblitus.carbon">CarbonFiber</li>
           </thingDefs>
         </filter>
         <count>15</count>
@@ -368,8 +390,6 @@
         <filter>
           <thingDefs>
             <li>WNA_Quicklime</li>
-            <li>WNA_MercuryVial</li>
-            <li>Uranium</li>
           </thingDefs>
         </filter>
         <count>25</count>
@@ -384,6 +404,10 @@
         <li>WNA_Quicklime</li>
         <li>WNA_MercuryVial</li>
         <li>Uranium</li>
+        <li>Plasteel</li>
+        <li MayRequire="aoba.deadmanswitch.core">Tungsteel</li>
+        <li MayRequire="oblitus.carbon">CarbonWeave</li>
+        <li MayRequire="oblitus.carbon">CarbonFiber</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -394,7 +418,9 @@
       <li>BiofuelRefinery</li>
       <li>ElectricCrematorium</li>
     </recipeUsers>
-    <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
   </RecipeDef>
 
   <RecipeDef ParentName="WNA_RecipeBase">
@@ -441,7 +467,9 @@
     <recipeUsers>
       <li>DrugLab</li>
     </recipeUsers>
-    <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
   </RecipeDef>
 
   <RecipeDef ParentName="WNA_RecipeBase">
@@ -486,7 +514,9 @@
       <li>FueledSmithy</li>
       <li>ElectricSmithy</li>
     </recipeUsers>
-    <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
   </RecipeDef>
   <RecipeDef ParentName="WNA_RecipeBase">
     <defName>WNA_MakeAntigrainWarhead</defName>
@@ -533,7 +563,9 @@
     <recipeUsers>
       <li>FabricationBench</li>
     </recipeUsers>
-    <researchPrerequisite>WNA_CivilianTech</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
   </RecipeDef>
   
 </Defs>

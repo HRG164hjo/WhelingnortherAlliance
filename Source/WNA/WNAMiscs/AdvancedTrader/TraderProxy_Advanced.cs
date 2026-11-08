@@ -13,6 +13,7 @@ namespace WNA.WNAMiscs.AdvancedTrader
         public System.Action dealResetCallback;
 
         private readonly Dictionary<Thing, BuyLine> lineOfThing = new Dictionary<Thing, BuyLine>();
+        private readonly List<Thing> soldToTrader = new List<Thing>();
 
         public TraderProxy_Advanced(ITrader inner)
         {
@@ -47,7 +48,37 @@ namespace WNA.WNAMiscs.AdvancedTrader
 
         public void GiveSoldThingToTrader(Thing toGive, int countToGive, Pawn playerNegotiator)
         {
-            inner.GiveSoldThingToTrader(toGive, countToGive, playerNegotiator);
+            if (toGive == null || countToGive <= 0)
+                return;
+            if (!HoldsSoldThing(toGive))
+            {
+                inner.GiveSoldThingToTrader(toGive, countToGive, playerNegotiator);
+                return;
+            }
+            Thing piece = toGive.SplitOff(countToGive);
+            if (piece == null)
+                return;
+            piece.PreTraded(TradeAction.PlayerSells, playerNegotiator, inner);
+            soldToTrader.Add(piece);
+        }
+        // Pawns keep the vanilla path because trader implementations run their own logic for them.
+        private bool HoldsSoldThing(Thing toGive)
+        {
+            return cart.Context.ClearSoldGoodsOnClose && !TradeSession.giftMode && !(toGive is Pawn);
+        }
+        public int ClearSoldGoods()
+        {
+            int cleared = 0;
+            for (int i = 0; i < soldToTrader.Count; i++)
+            {
+                Thing thing = soldToTrader[i];
+                if (thing == null || thing.Destroyed || thing.stackCount <= 0)
+                    continue;
+                thing.Destroy(DestroyMode.Vanish);
+                cleared++;
+            }
+            soldToTrader.Clear();
+            return cleared;
         }
         public IEnumerable<Thing> Goods
         {

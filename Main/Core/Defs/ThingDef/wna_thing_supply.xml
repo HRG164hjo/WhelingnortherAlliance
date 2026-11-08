@@ -26,32 +26,7 @@
       <ingestSound>Meal_Eat</ingestSound>
       <babiesCanIngest>true</babiesCanIngest>
       <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_OffsetHemogen">
-          <offset>2.0</offset>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
-          <offset>20.0</offset>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetNeed">
-          <need>Mood</need>
-          <offset>2.0</offset>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetNeed">
-          <need>Rest</need>
-          <offset>2.0</offset>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetNeed">
-          <need>Joy</need>
-          <offset>2.0</offset>
-        </li>
-        <li Class="IngestionOutcomeDoer_OffsetNeed">
-          <need>Comfort</need>
-          <offset>2.0</offset>
-        </li>
-        <li MayRequire="ludeon.rimworld.biotech" Class="IngestionOutcomeDoer_OffsetNeed">
-          <need>Deathrest</need>
-          <offset>2.0</offset>
-        </li>
+        <li Class="WNA.WNAMiscs.IngestOutcomeDoer_OmniRecovery" />
         <li MayRequire="ludeon.rimworld.odyssey" Class="IngestionOutcomeDoer_Psilocap">
           <chanceBreakdown>0</chanceBreakdown>
           <chanceInspiration>0.07</chanceInspiration>
@@ -137,5 +112,45 @@
         <targetFactionDef>WNA_FactionWNA</targetFactionDef>
       </li>
     </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_ItemsBase">
+    <defName>WNA_TradeSlab</defName>
+    <label>??slab??</label>
+    <description>??dummy trading good??</description>
+    <tickerType>Rare</tickerType>
+    <graphicData>
+      <texPath>item/wna_slab</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <statBases>
+      <SellPriceFactor>2</SellPriceFactor>
+      <Mass>0.5</Mass>
+      <WorkToMake>5000</WorkToMake>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <comps>
+      <li><compClass>CompQuality</compClass></li>
+    </comps>
+    <tradeTags>
+      <li>Art</li>
+    </tradeTags>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <effectWorking>Sculpt</effectWorking>
+      <soundWorking>Recipe_Sculpt</soundWorking>
+      <recipeUsers>
+        <li>TableSculpting</li>
+      </recipeUsers>
+    </recipeMaker>
   </ThingDef>
 </Defs>

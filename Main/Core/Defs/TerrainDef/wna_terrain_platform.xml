@@ -100,8 +100,9 @@
       <li>Substructure</li>
       <li>Soil</li>
       <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_Ash</li>
+      <li>WNA_Sowable</li>
     </tags>
-    <fertility>8</fertility>
+    <fertility>6</fertility>
     <researchPrerequisites>
       <li>WNA_StandardArsenal</li>
     </researchPrerequisites>

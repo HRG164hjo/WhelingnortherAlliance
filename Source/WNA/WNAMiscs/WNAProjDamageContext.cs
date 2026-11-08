@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using Verse;
+using WNA.WNAModExtension;
 using WNA.WNAThingClass.WNAProj;
 
 namespace WNA.WNAMiscs
@@ -30,6 +31,21 @@ namespace WNA.WNAMiscs
                 intendedTarget = projectile.intendedTarget.Thing,
                 weaponQuality = projectile.WeaponQuality,
                 instigatorGuilty = guilty
+            };
+        }
+        public WNAProjDamageContext WithWarhead(ProjWarheadConfig warhead)
+        {
+            return new WNAProjDamageContext
+            {
+                damageDef = warhead.damageDef ?? damageDef,
+                amount = amount * warhead.damageFactor,
+                armorPenetration = warhead.armorPenetration >= 0f ? warhead.armorPenetration : armorPenetration * warhead.armorPenetrationFactor,
+                angle = angle,
+                instigator = instigator,
+                weaponDef = weaponDef,
+                intendedTarget = intendedTarget,
+                weaponQuality = weaponQuality,
+                instigatorGuilty = instigatorGuilty
             };
         }
         public DamageInfo ToDamageInfo(float amountFactor = 1f)

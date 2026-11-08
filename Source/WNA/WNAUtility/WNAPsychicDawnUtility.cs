@@ -96,6 +96,16 @@ namespace WNA.WNAUtility
             return cell.InBounds(map) && map.zoneManager.ZoneAt(cell) is IPlantToGrowSettable;
         }
 
+        internal static float GrowthMultiplierFor(Plant plant)
+        {
+            TerrainDef terrain = plant.Position.GetTerrain(plant.Map);
+            Building building = plant.Position.GetEdifice(plant.Map);
+            float fertility = terrain?.fertility ?? 0f;
+            if (building != null)
+                fertility += building.def?.fertility ?? 0f;
+            return Mathf.Max(1f, fertility * 2f);
+        }
+
         internal static void HealToFull(Thing thing)
         {
             if (thing == null || !thing.def.useHitPoints)

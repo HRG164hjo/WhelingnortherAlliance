@@ -98,6 +98,7 @@ namespace WNA.WNAMiscs.AdvancedTrader
             {
                 proxy.dealResetCallback = null;
                 proxy.cart.Clear();
+                proxy.ClearSoldGoods();
             }
             lineTradeables.Clear();
             AdvancedTradeUtility.EndPricingSession();

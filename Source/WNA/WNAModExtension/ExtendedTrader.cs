@@ -18,5 +18,6 @@ namespace WNA.WNAModExtension
         public bool useFixedQuality = false;
         public QualityCategory fixedQuality = QualityCategory.Normal;
         public bool canBuyUntradeable = false;
+        public bool clearSoldGoodsOnClose = true;
 }
 }

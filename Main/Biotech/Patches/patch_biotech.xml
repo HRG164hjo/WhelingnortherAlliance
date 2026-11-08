@@ -35,4 +35,8 @@
       <texPathFemale>pawns/alt_eye/grayeye</texPathFemale>
     </value>
   </Operation>
+  
+  <Operation Class="PatchOperationRemove">
+	  <xpath>Defs/ThingDef[defName="SubcoreBasic"]/recipeMaker/mechanitorOnlyRecipe</xpath>
+  </Operation>
 </Patch>

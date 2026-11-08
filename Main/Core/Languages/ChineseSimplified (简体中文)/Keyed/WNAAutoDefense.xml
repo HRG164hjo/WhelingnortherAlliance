@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: Automatic defense system ready -->
+  <WNA_AutoDefense_Ready>自动防御系统就绪</WNA_AutoDefense_Ready>
+
+  <!-- EN: Automatic defense system rearming -->
+  <WNA_AutoDefense_Rearming>自动防御系统整备中</WNA_AutoDefense_Rearming>
+
+  <!-- EN: Unknown source -->
+  <WNA_AutoDefense_UnknownSource>未知来源</WNA_AutoDefense_UnknownSource>
+  <!-- EN: unknown faction -->
+  <WNA_AutoDefense_UnknownFaction>未知派系</WNA_AutoDefense_UnknownFaction>
+
+  <!-- EN: Defense missile impact -->
+  <WNA_AutoDefense_LetterLabel>防御导弹命中</WNA_AutoDefense_LetterLabel>
+  <!-- EN: A defense missile launched by {0} destroyed {2} of {1}. -->
+  <WNA_AutoDefense_LetterText>来自{0}的防御导弹摧毁了{1}的{2}。</WNA_AutoDefense_LetterText>
+
+  <!-- EN: Defense missile inbound -->
+  <WNA_AutoDefense_MapStrikeLabel>防御导弹来袭</WNA_AutoDefense_MapStrikeLabel>
+  <!-- EN: {0} has launched a defense missile at {1}. Impact is imminent. -->
+  <WNA_AutoDefense_MapStrikeText>{0}向{1}发射了一枚防御导弹，即将命中。</WNA_AutoDefense_MapStrikeText>
+
+  <!-- EN: Removing struck map -->
+  <WNA_AutoDefense_MapRemoving>正在移除被击中的地图</WNA_AutoDefense_MapRemoving>
+
+  <!-- EN: Some colonists barely escaped the colony at the last moment. -->
+  <WNA_AutoDefense_ColonistsEscaped>有一些殖民者在最后关头勉强逃出了殖民地。</WNA_AutoDefense_ColonistsEscaped>
+  <!-- EN: Some colonists barely escaped the station at the last moment. -->
+  <WNA_AutoDefense_OrbitEscaped>有一些殖民者在最后关头勉强逃出了空间站。</WNA_AutoDefense_OrbitEscaped>
+  <!-- EN: There were no survivors. -->
+  <WNA_AutoDefense_NoSurvivors>无人生还。</WNA_AutoDefense_NoSurvivors>
+
+  <!-- EN: Faction destroyed -->
+  <WNA_FactionDefeated_Label>派系覆灭</WNA_FactionDefeated_Label>
+  <!-- EN: {0} has lost its last settlement. Its ruined bases are no longer claimed by anyone, and the survivors will stay neutral to every power: goodwill with them can never rise above 0. -->
+  <WNA_FactionDefeated_Text>{0}失去了最后一个定居点。其残骸不再被任何势力宣称所有，残余成员也将对所有势力保持中立：与他们的好感度永远不会高于0。</WNA_FactionDefeated_Text>
+
+</LanguageData>

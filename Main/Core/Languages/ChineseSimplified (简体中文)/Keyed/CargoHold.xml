@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: cargo hold -->
+  <WNA_CargoHold_TabContents>仓储舱</WNA_CargoHold_TabContents>
+
+  <!-- EN: Set cargo -->
+  <WNA_CargoHold_CommandLoad>设定存储内容</WNA_CargoHold_CommandLoad>
+
+  <!-- EN: Choose which items colonists should haul into this cargo hold. -->
+  <WNA_CargoHold_CommandLoadDesc>选择要让殖民者搬入本仓储舱的物品。</WNA_CargoHold_CommandLoadDesc>
+
+  <!-- EN: Clear queue -->
+  <WNA_CargoHold_CommandCancelQueue>清空搬运清单</WNA_CargoHold_CommandCancelQueue>
+
+  <!-- EN: Cancel all pending hauling assignments without unloading what is already stored. -->
+  <WNA_CargoHold_CommandCancelQueueDesc>取消所有待搬运的指派，但不会卸出已存入的物品。</WNA_CargoHold_CommandCancelQueueDesc>
+
+  <!-- EN: Unload all -->
+  <WNA_CargoHold_CommandUnloadAll>全部卸出</WNA_CargoHold_CommandUnloadAll>
+
+  <!-- EN: Drop every stored item on the ground beside the cargo hold. -->
+  <WNA_CargoHold_CommandUnloadAllDesc>将舱内所有物品卸到仓储舱旁的地面上。</WNA_CargoHold_CommandUnloadAllDesc>
+
+  <!-- EN: Loading {0} -->
+  <WNA_CargoHold_DialogTitle>装入{0}</WNA_CargoHold_DialogTitle>
+
+  <!-- EN: Items: {0} / {1} -->
+  <WNA_CargoHold_CapacityCount>件数：{0} / {1}</WNA_CargoHold_CapacityCount>
+
+  <!-- EN: Mass: {0} / {1} kg -->
+  <WNA_CargoHold_CapacityMass>质量：{0} / {1} kg</WNA_CargoHold_CapacityMass>
+
+  <!-- EN: Items: {0} / {1} ({2} queued) -->
+  <WNA_CargoHold_CapacityCountPending>件数：{0} / {1}（待装 {2}）</WNA_CargoHold_CapacityCountPending>
+
+  <!-- EN: Mass: {0} / {1} kg ({2} queued) -->
+  <WNA_CargoHold_CapacityMassPending>质量：{0} / {1} kg（待装 {2}）</WNA_CargoHold_CapacityMassPending>
+
+  <!-- EN: Loading: {0} remaining -->
+  <WNA_CargoHold_PendingLoad>待装：{0} 件</WNA_CargoHold_PendingLoad>
+
+  <!-- EN: Things your colony can store here. -->
+  <WNA_CargoHold_ColonyThingCountTip>殖民地可以存入本舱的物品。</WNA_CargoHold_ColonyThingCountTip>
+
+  <!-- EN: Queued {0} items for the cargo hold. -->
+  <WNA_CargoHold_Queued>已为仓储舱安排 {0} 件物品的搬运。</WNA_CargoHold_Queued>
+
+</LanguageData>

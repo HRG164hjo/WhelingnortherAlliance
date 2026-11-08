@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef>
+    <defName>WNA_BattleUnitKind</defName>
+    <label>battle unit</label>
+    <race>WNA_BattleUnit</race>
+    <defaultFactionType>WNA_FactionWNA</defaultFactionType>
+    <combatPower>190</combatPower>
+    <aiAvoidCover>true</aiAvoidCover>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
+    <canStrip>false</canStrip>
+    <canOpenAnyDoor>true</canOpenAnyDoor>
+    <allowOldAgeInjuries>false</allowOldAgeInjuries>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <minGenerationAge>0</minGenerationAge>
+    <maxGenerationAge>0</maxGenerationAge>
+    <nakedChance>0</nakedChance>
+    <weaponMoney>0</weaponMoney>
+    <apparelMoney>0</apparelMoney>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+    <lifeStages>
+      <li MayRequire="Ludeon.RimWorld.Biotech">
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/LancerClean</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Lancer</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
+          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Lancer</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

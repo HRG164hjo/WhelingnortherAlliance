@@ -16,9 +16,7 @@ namespace WNA.WNAGameCond
             if (Find.TickManager.TicksGame % interval == 0)
             {
                 foreach (Map map in AffectedMaps)
-                {
                     PermaconstBroadcast(map);
-                }
             }
         }
         private void PermaconstBroadcast(Map map)

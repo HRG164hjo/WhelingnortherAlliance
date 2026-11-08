@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BasePawn">
+    <defName>WNA_BattleUnit</defName>
+    <label>battle unit</label>
+    <description>A compact combat chassis built to hold a single integrated weapon. It has no needs, no inventory and no mind of its own beyond following orders.</description>
+    <thingClass>WNA.WNAThingClass.ThingClass_BattleUnit</thingClass>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <MoveSpeed>4.7</MoveSpeed>
+      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.40</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <CarryingCapacity>0</CarryingCapacity>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>250</ComfyTemperatureMax>
+      <FilthRate>0</FilthRate>
+      <Flammability>0</Flammability>
+      <Mass>60</Mass>
+      <MentalBreakThreshold>0</MentalBreakThreshold>
+      <PainShockThreshold>100</PainShockThreshold>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+      <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">0</BandwidthCost>
+    </statBases>
+    <race>
+      <fleshType>Mechanoid</fleshType>
+      <body>WNA_UnitBody</body>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>WNA_BattleUnitThinkTree</thinkTreeMain>
+      <renderTree>Misc</renderTree>
+      <hasGenders>false</hasGenders>
+      <hasCorpse>false</hasCorpse>
+      <hasMeat>false</hasMeat>
+      <foodType>None</foodType>
+      <needsRest>false</needsRest>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1.0</baseHealthScale>
+      <baseHungerRate>0</baseHungerRate>
+      <bloodDef>Filth_MachineBits</bloodDef>
+      <lifeExpectancy>2500</lifeExpectancy>
+      <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">NamerMech</nameGenerator>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <mechWeightClass MayRequire="Ludeon.RimWorld.Biotech">Medium</mechWeightClass>
+    </race>
+    <butcherProducts>
+      <Steel>15</Steel>
+    </butcherProducts>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropUnitWeapon">
+        <weapons>
+          <li>
+            <thingDef>Gun_ChargeLance</thingDef>
+            <weight>1</weight>
+          </li>
+        </weapons>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

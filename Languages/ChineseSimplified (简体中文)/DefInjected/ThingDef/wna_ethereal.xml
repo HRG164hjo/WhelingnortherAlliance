@@ -2,12 +2,21 @@
 <LanguageData>
   
   <!-- EN: aeroblaze -->
-  <WNA_Ether_Aeroblaze.label>天火</WNA_Ether_Aeroblaze.label>
+  <WNA_Ether_Aeroblaze.label>TODO</WNA_Ether_Aeroblaze.label>
+  
+  <!-- EN: nuke afterglow -->
+  <WNA_NukeAfterglow.label>TODO</WNA_NukeAfterglow.label>
+  
+  <!-- EN: nuke payload -->
+  <WNA_NukePayload.label>TODO</WNA_NukePayload.label>
+  
+  <!-- EN: strike flash -->
+  <WNA_StrikeFlash.label>TODO</WNA_StrikeFlash.label>
   
   <!-- EN: drop pod (incoming) -->
-  <WNA_WARPIN.label>空投舱（来袭）</WNA_WARPIN.label>
+  <WNA_WARPIN.label>TODO</WNA_WARPIN.label>
   
   <!-- EN: drop pod -->
-  <WNA_WARPON.label>空投舱</WNA_WARPON.label>
+  <WNA_WARPON.label>TODO</WNA_WARPON.label>
   
 </LanguageData>

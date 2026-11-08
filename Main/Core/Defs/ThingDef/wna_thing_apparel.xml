@@ -135,9 +135,9 @@
     </costList>
     <statBases>
       <MarketValue>800</MarketValue>
-      <ArmorRating_Sharp>2.40</ArmorRating_Sharp>
-      <ArmorRating_Blunt>3.84</ArmorRating_Blunt>
-      <ArmorRating_Heat>1.50</ArmorRating_Heat>
+      <ArmorRating_Sharp>4.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>4.84</ArmorRating_Blunt>
+      <ArmorRating_Heat>3.50</ArmorRating_Heat>
       <Insulation_Cold>30</Insulation_Cold>
       <Insulation_Heat>15</Insulation_Heat>
     </statBases>
@@ -197,9 +197,9 @@
     </costList>
     <statBases>
       <MarketValue>2000</MarketValue>
-      <ArmorRating_Sharp>2.88</ArmorRating_Sharp>
-      <ArmorRating_Blunt>1.35</ArmorRating_Blunt>
-      <ArmorRating_Heat>4.00</ArmorRating_Heat>
+      <ArmorRating_Sharp>4.88</ArmorRating_Sharp>
+      <ArmorRating_Blunt>3.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>6.00</ArmorRating_Heat>
       <Insulation_Cold>200</Insulation_Cold>
       <Insulation_Heat>500</Insulation_Heat>
     </statBases>
@@ -258,7 +258,7 @@
       <ComponentIndustrial>3</ComponentIndustrial>
 	  </costList>
     <statBases>
-      <MarketValue>800</MarketValue>
+      <MarketValue>1200</MarketValue>
       <ArmorRating_Sharp>74</ArmorRating_Sharp>
       <ArmorRating_Blunt>55</ArmorRating_Blunt>
       <ArmorRating_Heat>38</ArmorRating_Heat>
@@ -324,7 +324,7 @@
       <ComponentSpacer>4</ComponentSpacer>
 	  </costList>
     <statBases>
-      <MarketValue>2000</MarketValue>
+      <MarketValue>2500</MarketValue>
       <ArmorRating_Sharp>84</ArmorRating_Sharp>
       <ArmorRating_Blunt>85</ArmorRating_Blunt>
       <ArmorRating_Heat>58</ArmorRating_Heat>
@@ -409,10 +409,10 @@
       <Hyperweave>45</Hyperweave>
     </costList>
     <statBases>
-      <MarketValue>2000</MarketValue>
-      <ArmorRating_Sharp>3.88</ArmorRating_Sharp>
+      <MarketValue>2500</MarketValue>
+      <ArmorRating_Sharp>4.88</ArmorRating_Sharp>
       <ArmorRating_Blunt>2.60</ArmorRating_Blunt>
-      <ArmorRating_Heat>6.50</ArmorRating_Heat>
+      <ArmorRating_Heat>8.50</ArmorRating_Heat>
       <Insulation_Cold>300</Insulation_Cold>
       <Insulation_Heat>800</Insulation_Heat>
     </statBases>
@@ -485,10 +485,10 @@
       <Hyperweave>30</Hyperweave>
     </costList>
     <statBases>
-      <MarketValue>800</MarketValue>
+      <MarketValue>600</MarketValue>
       <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-      <ArmorRating_Heat>1.00</ArmorRating_Heat>
+      <ArmorRating_Heat>1.80</ArmorRating_Heat>
       <Insulation_Cold>30</Insulation_Cold>
       <Insulation_Heat>40</Insulation_Heat>
     </statBases>
@@ -548,10 +548,10 @@
       <Steel>5</Steel>
     </costList>
     <statBases>
-      <MarketValue>2000</MarketValue>
+      <MarketValue>1000</MarketValue>
       <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.60</ArmorRating_Blunt>
-      <ArmorRating_Heat>1.55</ArmorRating_Heat>
+      <ArmorRating_Heat>2.55</ArmorRating_Heat>
       <Insulation_Cold>40</Insulation_Cold>
       <Insulation_Heat>60</Insulation_Heat>
     </statBases>
@@ -798,7 +798,6 @@
       </li>
     </modExtensions>
   </ThingDef>
-
   
   <ThingDef ParentName="WNA_ApparelBase">
     <defName>WNA_Blindfold</defName>

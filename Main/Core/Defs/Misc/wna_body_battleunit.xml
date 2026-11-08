@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Single-core combat unit body. The core is the only part, so the unit dies exactly when it is destroyed. -->
+  <BodyPartDef>
+    <defName>WNA_UnitCore</defName>
+    <label>core body</label>
+    <labelShort>body</labelShort>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <frostbiteVulnerability>1</frostbiteVulnerability>
+    <canBeVacuumBurnt>false</canBeVacuumBurnt>
+    <tags>
+      <li>MovingLimbCore</li>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyDef>
+    <defName>WNA_UnitBody</defName>
+    <label>unit body</label>
+    <corePart>
+      <def>WNA_UnitCore</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+    </corePart>
+  </BodyDef>
+
+</Defs>

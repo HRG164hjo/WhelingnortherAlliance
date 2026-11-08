@@ -4,6 +4,15 @@
   <!-- EN: holyorder reading effect -->
   <WNA_Mote_HolyorderRead.label>TODO</WNA_Mote_HolyorderRead.label>
   
+  <!-- EN: mind control effect -->
+  <WNA_Mote_MindControl.label>TODO</WNA_Mote_MindControl.label>
+  
+  <!-- EN: mind control link -->
+  <WNA_Mote_MindControlLink.label>TODO</WNA_Mote_MindControlLink.label>
+  
+  <!-- EN: permanent mind control effect -->
+  <WNA_Mote_MindControlPermanent.label>TODO</WNA_Mote_MindControlPermanent.label>
+  
   <!-- EN: Mote -->
   <WNA_Mote_UpliftMarker.label>TODO</WNA_Mote_UpliftMarker.label>
   

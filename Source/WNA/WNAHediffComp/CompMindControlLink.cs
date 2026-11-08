@@ -7,9 +7,9 @@ namespace WNA.WNAHediffComp
 {
     internal class PropHediffComp_MindControlLink : HediffCompProperties
     {
-        public ThingDef linkMote;
-        public ThingDef overheadMote;
-        public ThingDef overheadMotePermanent;
+        public ThingDef linkMote = null;
+        public ThingDef overheadMote = null;
+        public ThingDef overheadMotePermanent = null;
         public float overheadOffset = 1.4f;
 
         public PropHediffComp_MindControlLink()

@@ -112,7 +112,6 @@
       <explosionRadius>6.9</explosionRadius>
       <explosionChanceToStartFire>0</explosionChanceToStartFire>
       <explosionDamageFalloff>false</explosionDamageFalloff>
-      <flyOverhead>true</flyOverhead>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>Explosion_EMP</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>

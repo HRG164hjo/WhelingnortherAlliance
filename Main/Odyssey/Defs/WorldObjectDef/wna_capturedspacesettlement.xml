@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <WorldObjectDef ParentName="SpaceBase">
+    <defName>WNA_CapturedSpaceSettlement</defName>
+    <label>destroyed settlement?</label>
+    <description>A... destroyed... settlement...?</description>
+    <worldObjectClass>WNA.WNAWorldObject.WorldObject_WNACapturedSettlement</worldObjectClass>
+    <texture>World/WorldObjects/Expanding/GravshipLaunchSite</texture>
+    <expandingIconTexture>factions/wna_capturedplatform</expandingIconTexture>
+    <!-- Inherit=False: Gravships (and any other mod) patches WorldObjectCompProperties_Abandon onto SpaceBase,
+         and those comps demand a MapParent class. This outpost deliberately isn't one. -->
+    <comps Inherit="False">
+      <li Class="WNA.WNAWorldObjectComp.PropWNASettlementAutoDefense">
+        <rangeTiles>11</rangeTiles>
+        <rearmTicks>2357</rearmTicks>
+        <rearmJitterTicks>30</rearmJitterTicks>
+        <scanIntervalTicks>30</scanIntervalTicks>
+      </li>
+    </comps>
+  </WorldObjectDef>
+
+</Defs>

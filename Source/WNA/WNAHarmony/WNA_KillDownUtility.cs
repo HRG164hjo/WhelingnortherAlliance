@@ -1,9 +1,13 @@
 ﻿using HarmonyLib;
+using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Verse;
+using WNA.WNADefOf;
 using WNA.WNAModExtension;
+using WNA.WNAThingClass;
 using WNA.WNAUtility;
 using static Verse.PawnCapacityUtility;
 
@@ -24,7 +28,7 @@ namespace WNA.WNAHarmony
             [HarmonyPrefix]
             internal static bool Prefix(Pawn ___pawn, ref bool __result)
             {
-                if (General.IsWNARace(___pawn))
+                if (General.IsWNARace(___pawn) || ___pawn is ThingClass_BattleUnit)
                 {
                     __result = false;
                     return false;
@@ -54,6 +58,20 @@ namespace WNA.WNAHarmony
                     if (GetHealthPercentage(__instance) > threshold) return false;
                 }
                 return true;
+            }
+        }
+        [HarmonyPatch(typeof(Pawn_HealthTracker), "AddHediff", new Type[] { typeof(Hediff), typeof(BodyPartRecord), typeof(DamageInfo?), typeof(DamageWorker.DamageResult) })]
+        internal static class Patch_AddHediff
+        {
+            [HarmonyPrefix]
+            internal static bool Prefix(Hediff hediff, Pawn ___pawn)
+            {
+                if (!(___pawn is ThingClass_BattleUnit) || hediff == null)
+                    return true;
+                return hediff is Hediff_Injury
+                    || hediff.def == HediffDefOf.MissingBodyPart
+                    || hediff.def == WNAMainDefOf.WNA_MindControlEffect
+                    || hediff.def == WNAMainDefOf.WNA_PermaconstActive;
             }
         }
         [HarmonyPatch(typeof(PawnCapacityUtility), "CalculateCapacityLevel")]

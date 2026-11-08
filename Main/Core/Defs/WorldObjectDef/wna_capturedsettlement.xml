@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <WorldObjectDef ParentName="StaticWorldObjectBase">
+    <defName>WNA_CapturedSettlement</defName>
+    <label>destroyed settlement?</label>
+    <description>A... destroyed... settlement...?</description>
+    <worldObjectClass>WNA.WNAWorldObject.WorldObject_WNACapturedSettlement</worldObjectClass>
+    <texture>World/WorldObjects/TribalSettlement</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>factions/wna_capturedsettlement</expandingIconTexture>
+    <expandingIconPriority>20</expandingIconPriority>
+    <comps>
+      <li Class="WNA.WNAWorldObjectComp.PropWNASettlementAutoDefense">
+        <rangeTiles>11</rangeTiles>
+        <rearmTicks>2357</rearmTicks>
+        <rearmJitterTicks>30</rearmJitterTicks>
+        <scanIntervalTicks>30</scanIntervalTicks>
+      </li>
+    </comps>
+  </WorldObjectDef>
+
+</Defs>

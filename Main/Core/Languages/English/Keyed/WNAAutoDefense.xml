@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNA_AutoDefense_Ready>Automatic defense system ready</WNA_AutoDefense_Ready>
+  <WNA_AutoDefense_Rearming>Automatic defense system rearming</WNA_AutoDefense_Rearming>
+
+  <WNA_AutoDefense_UnknownSource>Unknown source</WNA_AutoDefense_UnknownSource>
+  <WNA_AutoDefense_UnknownFaction>unknown faction</WNA_AutoDefense_UnknownFaction>
+
+  <WNA_AutoDefense_LetterLabel>Defense missile impact</WNA_AutoDefense_LetterLabel>
+  <WNA_AutoDefense_LetterText>A defense missile launched by {0} destroyed {2} of {1}.</WNA_AutoDefense_LetterText>
+
+  <WNA_AutoDefense_MapStrikeLabel>Defense missile inbound</WNA_AutoDefense_MapStrikeLabel>
+  <WNA_AutoDefense_MapStrikeText>{0} has launched a defense missile at {1}. Impact is imminent.</WNA_AutoDefense_MapStrikeText>
+
+  <WNA_AutoDefense_MapRemoving>Removing struck map</WNA_AutoDefense_MapRemoving>
+
+  <WNA_AutoDefense_ColonistsEscaped>Some colonists barely escaped the colony at the last moment.</WNA_AutoDefense_ColonistsEscaped>
+  <WNA_AutoDefense_OrbitEscaped>Some colonists barely escaped the station at the last moment.</WNA_AutoDefense_OrbitEscaped>
+  <WNA_AutoDefense_NoSurvivors>There were no survivors.</WNA_AutoDefense_NoSurvivors>
+
+  <WNA_FactionDefeated_Label>Faction destroyed</WNA_FactionDefeated_Label>
+  <WNA_FactionDefeated_Text>{0} has lost its last settlement. Its ruined bases are no longer claimed by anyone, and the survivors will stay neutral to every power: goodwill with them can never rise above 0.</WNA_FactionDefeated_Text>
+
+</LanguageData>

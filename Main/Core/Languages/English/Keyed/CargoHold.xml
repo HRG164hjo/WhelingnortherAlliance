@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNA_CargoHold_TabContents>cargo hold</WNA_CargoHold_TabContents>
+
+  <WNA_CargoHold_CommandLoad>Set cargo</WNA_CargoHold_CommandLoad>
+
+  <WNA_CargoHold_CommandLoadDesc>Choose which items colonists should haul into this cargo hold.</WNA_CargoHold_CommandLoadDesc>
+
+  <WNA_CargoHold_CommandCancelQueue>Clear queue</WNA_CargoHold_CommandCancelQueue>
+
+  <WNA_CargoHold_CommandCancelQueueDesc>Cancel all pending hauling assignments without unloading what is already stored.</WNA_CargoHold_CommandCancelQueueDesc>
+
+  <WNA_CargoHold_CommandUnloadAll>Unload all</WNA_CargoHold_CommandUnloadAll>
+
+  <WNA_CargoHold_CommandUnloadAllDesc>Drop every stored item on the ground beside the cargo hold.</WNA_CargoHold_CommandUnloadAllDesc>
+
+  <WNA_CargoHold_DialogTitle>Loading {0}</WNA_CargoHold_DialogTitle>
+
+  <WNA_CargoHold_CapacityCount>Items: {0} / {1}</WNA_CargoHold_CapacityCount>
+
+  <WNA_CargoHold_CapacityMass>Mass: {0} / {1} kg</WNA_CargoHold_CapacityMass>
+
+  <WNA_CargoHold_CapacityCountPending>Items: {0} / {1} ({2} queued)</WNA_CargoHold_CapacityCountPending>
+
+  <WNA_CargoHold_CapacityMassPending>Mass: {0} / {1} kg ({2} queued)</WNA_CargoHold_CapacityMassPending>
+
+  <WNA_CargoHold_PendingLoad>Loading: {0} remaining</WNA_CargoHold_PendingLoad>
+
+  <WNA_CargoHold_ColonyThingCountTip>Things your colony can store here.</WNA_CargoHold_ColonyThingCountTip>
+
+  <WNA_CargoHold_Queued>Queued {0} items for the cargo hold.</WNA_CargoHold_Queued>
+
+</LanguageData>

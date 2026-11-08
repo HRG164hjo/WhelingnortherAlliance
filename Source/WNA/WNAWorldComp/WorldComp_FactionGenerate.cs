@@ -194,6 +194,8 @@ namespace WNA.WNAWorldComp
                 return false;
             if (Find.WorldObjects.AnySettlementBaseAt(tile) || Find.WorldObjects.AnyMapParentAt(tile))
                 return false;
+            if (Find.WorldObjects.AnyWorldObjectAt<WNA.WNAWorldObject.WorldObject_WNACapturedSettlement>(tile))
+                return false;
             tile.Layer.GetTileNeighbors(tile, tmpNeighbors);
             if (tmpNeighbors.Count == 0)
                 return false;

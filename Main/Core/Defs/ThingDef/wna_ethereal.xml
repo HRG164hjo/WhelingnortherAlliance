@@ -69,11 +69,11 @@
     <graphicData>
       <texPath>projectiles/wna_aeroblaze</texPath>
       <shaderType>Transparent</shaderType>
-      <drawSize>(1,10)</drawSize>
+      <drawSize>(1.6,6.4)</drawSize>
     </graphicData>
     <skyfaller>
       <shadowSize>(1.5,1.5)</shadowSize>
-      <explosionRadius>15.9</explosionRadius>
+      <explosionRadius>27.9</explosionRadius>
       <explosionDamage>WNA_ChimingBlaze</explosionDamage>
       <rotateGraphicTowardsDirection>true</rotateGraphicTowardsDirection>
       <speed>24</speed>
@@ -90,4 +90,80 @@
       </li>
     </modExtensions>
   </ThingDef>
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>WNA_StrikeFlash</defName>
+    <label>strike flash</label>
+    <thingClass>ThingWithComps</thingClass>
+    <comps>
+      <li Class="CompProperties_AffectsSky">
+        <glow>1</glow>
+        <skyColors>
+          <sky>(255, 252, 246)</sky>
+          <shadow>(150, 142, 130)</shadow>
+          <overlay>(255, 250, 235)</overlay>
+          <saturation>0.62</saturation>
+        </skyColors>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!---->
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>WNA_NukeAfterglow</defName>
+    <label>nuke afterglow</label>
+    <thingClass>ThingWithComps</thingClass>
+    <comps>
+      <li Class="CompProperties_AffectsSky">
+        <glow>1</glow>
+        <skyColors>
+          <sky>(255, 198, 140)</sky>
+          <shadow>(120, 74, 48)</shadow>
+          <overlay>(255, 150, 82)</overlay>
+          <saturation>0.78</saturation>
+        </skyColors>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="WNA_EtherealThingBase">
+    <defName>WNA_NukePayload</defName>
+    <label>nuke payload</label>
+    <thingClass>Skyfaller</thingClass>
+    <drawerType>RealtimeOnly</drawerType>
+    <selectable>false</selectable>
+    <graphicData>
+      <texPath>projectiles/wna_aeroblaze</texPath>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(3.2,12.8)</drawSize>
+    </graphicData>
+    <skyfaller>
+      <movementType>ConstantSpeed</movementType>
+      <speed>4</speed>
+      <ticksToImpactRange>50</ticksToImpactRange>
+      <hitRoof>false</hitRoof>
+      <shadowSize>(2.4,2.4)</shadowSize>
+      <motesPerCell>0</motesPerCell>
+      <rotateGraphicTowardsDirection>false</rotateGraphicTowardsDirection>
+      <angleCurve>
+        <points>
+          <li>(0,0)</li>
+          <li>(1,0)</li>
+        </points>
+      </angleCurve>
+    </skyfaller>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropRadFieldBurst">
+        <config>
+          <radLevel>500</radLevel>
+          <radius>500</radius>
+        </config>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <ignoreRoof>true</ignoreRoof>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
 </Defs>

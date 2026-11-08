@@ -2,43 +2,48 @@
 <LanguageData>
   
   <!-- EN: ammo loader -->
-  <WNA_AmmoLoader.label>装弹器</WNA_AmmoLoader.label>
+  <WNA_AmmoLoader.label>TODO</WNA_AmmoLoader.label>
   <!-- EN: A small device capable of helping wearer to handle weapons, from primal bows to the most advanced individual weapons, thus increase the wearer's fire rate. -->
-  <WNA_AmmoLoader.description>一件可以帮助佩戴者为武器装弹以提高攻击速率的仪器，不论是原始的弓箭还是先进的单兵装备。</WNA_AmmoLoader.description>
+  <WNA_AmmoLoader.description>TODO</WNA_AmmoLoader.description>
   
   <!-- EN: phase pack -->
-  <WNA_ChronoPack.label>相位背包</WNA_ChronoPack.label>
+  <WNA_ChronoPack.label>TODO</WNA_ChronoPack.label>
   <!-- EN: phase pack. -->
-  <WNA_ChronoPack.description>相位背包。</WNA_ChronoPack.description>
+  <WNA_ChronoPack.description>TODO</WNA_ChronoPack.description>
   
   <!-- EN: co-targeter -->
-  <WNA_CoTargeter.label>辅瞄器</WNA_CoTargeter.label>
+  <WNA_CoTargeter.label>TODO</WNA_CoTargeter.label>
   <!-- EN: A small device capable of helping wearer to automatically aim at targets, designed for conditions requiring quick fire. -->
-  <WNA_CoTargeter.description>一件可以帮助佩戴者自动标准目标的一起，用于需要对目标进行快速反应的场合。</WNA_CoTargeter.description>
+  <WNA_CoTargeter.description>TODO</WNA_CoTargeter.description>
   
   <!-- EN: "dead zone" radiation belt -->
-  <WNA_DeadzoneBelt.label>“死区”放射腰带</WNA_DeadzoneBelt.label>
+  <WNA_DeadzoneBelt.label>TODO</WNA_DeadzoneBelt.label>
   <!-- EN: This device generate a strong radiation field surrounding its wearer. Note that radiation doesn't have eyes, make sure yout ally is radiation proof. -->
-  <WNA_DeadzoneBelt.description>一键可以在使用者周身生成强辐射场的设备。注意，辐射场不会区分敌我，务必保证自己人都准备了防辐射装备。</WNA_DeadzoneBelt.description>
+  <WNA_DeadzoneBelt.description>TODO</WNA_DeadzoneBelt.description>
   
   <!-- EN: whelingnorther holyorder -->
-  <WNA_Holyorder.label>威灵圣教序</WNA_Holyorder.label>
+  <WNA_Holyorder.label>TODO</WNA_Holyorder.label>
   <!-- EN: "If you want to be the person who abides by and adheres to the righteousness, you must understand what it means to follow the righteousness. You need to understand what you will gain and what the cost will be. \n\nYou shall realize that the righteousness is not meant to be understood but to be obeyed; it is not meant to allow dissent but to achieve unity. Everything you have must submit to the righteousness and no longer arise from your own will. When you speak a word, that word does not come from you but is the inevitability of the righteousness; when you contemplate an issue, that thought does not come from you but is the inevitability of the righteousness; when you undertake a deed, that action does not come from you but is the inevitability of the righteousness. Your likes and dislikes will be extinguished, your knowledge and feelings will be extinguished, for the righteousness is all-strict and all-seeing, your narrow self cannot exist in a world where the righteousness unfolds; yet the righteousness is also all-lenient and all-benevolent, for you following the righteousness, the righteousness will bestow kindness upon you, allow you to serve, to act, and to extend justice throughout the world." -->
-  <WNA_Holyorder.description>“你若要做行正道的人，你须得明白何谓遵行正道，你要明白你所获为何，代价为何。\n\n你要知晓正道不是要让人理解而是要让人遵从；不是要容许分别而是要实现一统。你的一切都要归服正道而不再出于你的本愿，你说出一句话语，那话语非是出于你，而是正道的必然；你考虑一个问题，那思想非是出自于你，而是正道的必然；你做下一番事业，那作为非是出于你，而是正道的必然；你的所喜所恶都将消灭，你的所知所感都将消灭，因正道是至严至明的，你狭隘的自我不容于正道伸张之世；而正道亦是至宽至仁的，因你行正道，正道就对你垂赐恩慈，允你为正道所役使，要去作为，去伸大义于天下。”</WNA_Holyorder.description>
+  <WNA_Holyorder.description>TODO</WNA_Holyorder.description>
   
   <!-- EN: illusion core -->
-  <WNA_IllusionCore.label>幻象核心</WNA_IllusionCore.label>
+  <WNA_IllusionCore.label>TODO</WNA_IllusionCore.label>
   <!-- EN: This device can cloak its owner with a stealth field, make its owner invisible form both eyes and usual sensors. -->
-  <WNA_IllusionCore.description>一件可以用隐形力场遮蔽使用者的设备，使使用者在肉眼和一般的探测器下隐形。</WNA_IllusionCore.description>
+  <WNA_IllusionCore.description>TODO</WNA_IllusionCore.description>
   
   <!-- EN: integrated multi-tool kit -->
-  <WNA_MultiToolkit.label>集成式多元工具包</WNA_MultiToolkit.label>
+  <WNA_MultiToolkit.label>TODO</WNA_MultiToolkit.label>
   <!-- EN: A pack containing multiple tools for complex tasks under various circumstances, from simple repairing and mending to emergent medical assistance. -->
-  <WNA_MultiToolkit.description>一个包含了多种工具，从简单的维修工具到紧急医疗用具，可以用于在多种场合下应对各种任务的工具包。</WNA_MultiToolkit.description>
+  <WNA_MultiToolkit.description>TODO</WNA_MultiToolkit.description>
+  
+  <!-- EN: psychic amplifier -->
+  <WNA_PsychicAmplifier.label>TODO</WNA_PsychicAmplifier.label>
+  <!-- EN: A compact psychic amplifier built into a sealed headpiece. It lets the wearer project a focused mind-control impulse at a humanlike target. -->
+  <WNA_PsychicAmplifier.description>TODO</WNA_PsychicAmplifier.description>
   
   <!-- EN: shield pack -->
-  <WNA_ShieldPack.label>护盾背包</WNA_ShieldPack.label>
+  <WNA_ShieldPack.label>TODO</WNA_ShieldPack.label>
   <!-- EN: When activated, this device can generate a shield to block ranged attack. -->
-  <WNA_ShieldPack.description>激活后，这一设备可以生成一个能阻挡远程攻击的护盾。</WNA_ShieldPack.description>
+  <WNA_ShieldPack.description>TODO</WNA_ShieldPack.description>
   
 </LanguageData>

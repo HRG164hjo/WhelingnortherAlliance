@@ -25,6 +25,7 @@
         <useFixedQuality>true</useFixedQuality>
         <fixedQuality>Legendary</fixedQuality>
         <canBuyUntradeable>true</canBuyUntradeable>
+        <clearSoldGoodsOnClose>true</clearSoldGoodsOnClose>
       </li>
     </modExtensions>
     <stockGenerators>
@@ -54,6 +55,8 @@
         <defaultMinifiedCount>1</defaultMinifiedCount>
         <useFixedQuality>true</useFixedQuality>
         <fixedQuality>Legendary</fixedQuality>
+        <canBuyUntradeable>true</canBuyUntradeable>
+        <clearSoldGoodsOnClose>true</clearSoldGoodsOnClose>
       </li>
     </modExtensions>
     <stockGenerators>

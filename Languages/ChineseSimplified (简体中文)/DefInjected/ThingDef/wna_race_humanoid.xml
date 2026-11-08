@@ -2,45 +2,45 @@
 <LanguageData>
   
   <!-- EN: human -->
-  <WNA_Humanoid.label>人类</WNA_Humanoid.label>
+  <WNA_Humanoid.label>TODO</WNA_Humanoid.label>
   <!-- EN: Human, but possibly have some differences from true normal humans after long time serving for Whelingnorther Alliance. Maybe it's better to name them as "whelingnorthan humanoid". -->
-  <WNA_Humanoid.description>人类，但在为威灵会效力了漫长时间后可能和正常人类有所不同。或许应该称之为“威灵诺德治下的泛人类”。</WNA_Humanoid.description>
+  <WNA_Humanoid.description>TODO</WNA_Humanoid.description>
   <!-- EN: left fist -->
-  <WNA_Humanoid.tools.left_fist-0.label>左拳</WNA_Humanoid.tools.left_fist-0.label>
+  <WNA_Humanoid.tools.left_fist-0.label>TODO</WNA_Humanoid.tools.left_fist-0.label>
   <!-- EN: fist -->
-  <WNA_Humanoid.tools.left_fist-0.labelNoLocation>拳头</WNA_Humanoid.tools.left_fist-0.labelNoLocation>
+  <WNA_Humanoid.tools.left_fist-0.labelNoLocation>TODO</WNA_Humanoid.tools.left_fist-0.labelNoLocation>
   <!-- EN: right fist -->
-  <WNA_Humanoid.tools.right_fist-0.label>右拳</WNA_Humanoid.tools.right_fist-0.label>
+  <WNA_Humanoid.tools.right_fist-0.label>TODO</WNA_Humanoid.tools.right_fist-0.label>
   <!-- EN: fist -->
-  <WNA_Humanoid.tools.right_fist-0.labelNoLocation>拳头</WNA_Humanoid.tools.right_fist-0.labelNoLocation>
+  <WNA_Humanoid.tools.right_fist-0.labelNoLocation>TODO</WNA_Humanoid.tools.right_fist-0.labelNoLocation>
   <!-- EN: teeth -->
-  <WNA_Humanoid.tools.teeth-0.label>牙齿</WNA_Humanoid.tools.teeth-0.label>
+  <WNA_Humanoid.tools.teeth-0.label>TODO</WNA_Humanoid.tools.teeth-0.label>
   <!-- EN: head -->
-  <WNA_Humanoid.tools.head-0.label>头</WNA_Humanoid.tools.head-0.label>
+  <WNA_Humanoid.tools.head-0.label>TODO</WNA_Humanoid.tools.head-0.label>
   <!-- EN: left fist -->
-  <WNA_Humanoid.tools.left_fist-1.label>左拳</WNA_Humanoid.tools.left_fist-1.label>
+  <WNA_Humanoid.tools.left_fist-1.label>TODO</WNA_Humanoid.tools.left_fist-1.label>
   <!-- EN: fist -->
-  <WNA_Humanoid.tools.left_fist-1.labelNoLocation>拳头</WNA_Humanoid.tools.left_fist-1.labelNoLocation>
+  <WNA_Humanoid.tools.left_fist-1.labelNoLocation>TODO</WNA_Humanoid.tools.left_fist-1.labelNoLocation>
   <!-- EN: right fist -->
-  <WNA_Humanoid.tools.right_fist-1.label>右拳</WNA_Humanoid.tools.right_fist-1.label>
+  <WNA_Humanoid.tools.right_fist-1.label>TODO</WNA_Humanoid.tools.right_fist-1.label>
   <!-- EN: fist -->
-  <WNA_Humanoid.tools.right_fist-1.labelNoLocation>拳头</WNA_Humanoid.tools.right_fist-1.labelNoLocation>
+  <WNA_Humanoid.tools.right_fist-1.labelNoLocation>TODO</WNA_Humanoid.tools.right_fist-1.labelNoLocation>
   <!-- EN: teeth -->
-  <WNA_Humanoid.tools.teeth-1.label>牙齿</WNA_Humanoid.tools.teeth-1.label>
+  <WNA_Humanoid.tools.teeth-1.label>TODO</WNA_Humanoid.tools.teeth-1.label>
   <!-- EN: head -->
-  <WNA_Humanoid.tools.head-1.label>头</WNA_Humanoid.tools.head-1.label>
+  <WNA_Humanoid.tools.head-1.label>TODO</WNA_Humanoid.tools.head-1.label>
   
   <!-- EN: whelingnorthan -->
-  <WNA_Whelingnorthan.label>威灵古族</WNA_Whelingnorthan.label>
+  <WNA_Whelingnorthan.label>TODO</WNA_Whelingnorthan.label>
   <!-- EN: An unique form of existance, initially evolved from normal human. Whelingnorthans are almost immortal and invulnerable, but their existance highly relies on their devotion to the path of Whelingnorther Alliance. -->
-  <WNA_Whelingnorthan.description>存在的一种独特形式，最初由普通的人类演化而成。威灵古族几乎不朽且不可撼动，但其存续高度依赖于其对威灵诺德联合会之正道理念的献身。</WNA_Whelingnorthan.description>
+  <WNA_Whelingnorthan.description>TODO</WNA_Whelingnorthan.description>
   <!-- EN: left hand -->
-  <WNA_Whelingnorthan.tools.left_hand.label>左手</WNA_Whelingnorthan.tools.left_hand.label>
+  <WNA_Whelingnorthan.tools.left_hand.label>TODO</WNA_Whelingnorthan.tools.left_hand.label>
   <!-- EN: right hand -->
-  <WNA_Whelingnorthan.tools.right_hand.label>右手</WNA_Whelingnorthan.tools.right_hand.label>
+  <WNA_Whelingnorthan.tools.right_hand.label>TODO</WNA_Whelingnorthan.tools.right_hand.label>
   <!-- EN: teeth -->
-  <WNA_Whelingnorthan.tools.teeth.label>牙齿</WNA_Whelingnorthan.tools.teeth.label>
+  <WNA_Whelingnorthan.tools.teeth.label>TODO</WNA_Whelingnorthan.tools.teeth.label>
   <!-- EN: head -->
-  <WNA_Whelingnorthan.tools.head.label>头</WNA_Whelingnorthan.tools.head.label>
+  <WNA_Whelingnorthan.tools.head.label>TODO</WNA_Whelingnorthan.tools.head.label>
   
 </LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PathGridDef>
+    <defName>WNA_PathGrid_FreePassTerrain</defName>
+    <fencePassable>false</fencePassable>
+    <flying>false</flying>
+    <workerType>WNA.WNAMiscs.PathGrid_IgnoreImpassableTerrain</workerType>
+  </PathGridDef>
+
+</Defs>

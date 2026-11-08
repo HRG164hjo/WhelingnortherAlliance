@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using Verse;
@@ -15,19 +15,27 @@ namespace WNA.WNAHarmony
             "WNA_Hypothermal",
             "WNA_Psychedelic"
         };
-        private static void RemoveRoofsInExplosion(Explosion explosion)
+        [HarmonyPatch(typeof(DamageWorker), nameof(DamageWorker.ExplosionAffectCell))]
+        internal static class ExplosionAffectCell_Patch
         {
-            Map map = explosion.Map;
-            if (map == null) return;
-            foreach (IntVec3 cell in GenRadial.RadialCellsAround(explosion.Position, explosion.radius, true))
+            // Roofs are cleared one cell at a time as the blast reaches it, instead of one extra
+            // radial sweep before the explosion starts. This skips cells the blast never affects
+            // (out of bounds, excludeRadius, maps removed mid-expansion) and spreads the roof-grid
+            // notifications over the expansion ticks.
+            static void Prefix(Explosion explosion, IntVec3 c)
             {
-                if (map != Find.CurrentMap || !cell.InBounds(map))
-                    continue;
-                RoofDef roof = map.roofGrid.RoofAt(cell);
-                if (roof != null)
+                if (!damageList.Contains(explosion.damType.defName))
                 {
-                    map.roofGrid.SetRoof(cell, null);
-                    RoofCollapserImmediate.DropRoofInCells(cell, map);
+                    return;
+                }
+                Map map = explosion.Map;
+                if (map == null || map != Find.CurrentMap)
+                {
+                    return;
+                }
+                if (map.roofGrid.RoofAt(c) != null)
+                {
+                    map.roofGrid.SetRoof(c, null);
                 }
             }
         }
@@ -55,7 +63,6 @@ namespace WNA.WNAHarmony
                     __instance.needLOSToCell1 = null;
                     __instance.needLOSToCell2 = null;
                     __instance.applyDamageToExplosionCellsNeighbors = true;
-                    RemoveRoofsInExplosion(__instance);
                 }
             }
         }

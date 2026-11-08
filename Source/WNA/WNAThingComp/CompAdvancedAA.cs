@@ -9,7 +9,7 @@ namespace WNA.WNAThingComp
     internal class PropAdvancedAA : CompProperties
     {
         public float range = 30f;
-        public int scanIntervalTicks = 60;
+        public int scanIntervalTicks = 30;
         public int cooldownTicks = 90;
         public DamageDef damageDef = null;
         public int damage = 20;

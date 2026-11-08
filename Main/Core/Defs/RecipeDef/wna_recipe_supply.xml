@@ -62,7 +62,9 @@
 	    <li>FueledStove</li>
 	    <li>ElectricStove</li>
 	  </recipeUsers>
-    <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_MilitarySupply</li>
+    </researchPrerequisites>
   </RecipeDef>
   <RecipeDef ParentName="WNA_RecipeBase">
     <defName>WNA_CookRationBulk</defName>
@@ -127,7 +129,9 @@
 	    <li>FueledStove</li>
 	    <li>ElectricStove</li>
 	  </recipeUsers>
-    <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_MilitarySupply</li>
+    </researchPrerequisites>
   </RecipeDef>
 
   <RecipeDef ParentName="WNA_RecipeBase">
@@ -173,7 +177,9 @@
 	    <li>ElectricStove</li>
 	    <li>CraftingSpot</li>
 	  </recipeUsers>
-    <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_MilitarySupply</li>
+    </researchPrerequisites>
   </RecipeDef>
   <RecipeDef ParentName="WNA_RecipeBase">
     <defName>WNA_RepackRationBulk</defName>
@@ -218,7 +224,9 @@
 	    <li>ElectricStove</li>
 	    <li>CraftingSpot</li>
 	  </recipeUsers>
-    <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_MilitarySupply</li>
+    </researchPrerequisites>
   </RecipeDef>
 
   <!-- medikit -->
@@ -261,7 +269,9 @@
     <recipeUsers>
 	    <li>DrugLab</li>
 	  </recipeUsers>
-    <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_MilitarySupply</li>
+    </researchPrerequisites>
   </RecipeDef>
   <RecipeDef ParentName="WNA_RecipeBase">
     <defName>WNA_MakeMedikitBulk</defName>
@@ -302,7 +312,9 @@
     <recipeUsers>
 	    <li>DrugLab</li>
 	  </recipeUsers>
-    <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_MilitarySupply</li>
+    </researchPrerequisites>
   </RecipeDef>
 
   <RecipeDef ParentName="WNA_RecipeBase">
@@ -375,7 +387,9 @@
     <recipeUsers>
 	    <li>DrugLab</li>
 	  </recipeUsers>
-    <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_MilitarySupply</li>
+    </researchPrerequisites>
   </RecipeDef>
   <RecipeDef ParentName="WNA_RecipeBase">
     <defName>WNA_PackMedikitBulk</defName>
@@ -447,7 +461,9 @@
     <recipeUsers>
 	    <li>DrugLab</li>
 	  </recipeUsers>
-    <researchPrerequisite>WNA_MilitarySupply</researchPrerequisite>
+    <researchPrerequisites>
+      <li>WNA_MilitarySupply</li>
+    </researchPrerequisites>
   </RecipeDef>
 
 </Defs>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- civil -->
+  <RecipeDef ParentName="WNA_RecipeBase">
+    <defName>WNA_RecyecleWastepack</defName>
+    <label>recycle wastepack</label>
+    <description>treat wastepacks with strong heat to recycle resources.</description>
+    <jobString>recycling waste pack.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Wastepack</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Wastepack</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Uranium>2</Uranium>
+      <WNA_MercuryVial>3</WNA_MercuryVial>
+      <WNA_HalogenVial>5</WNA_HalogenVial>
+    </products>
+    <workAmount>450</workAmount>
+    <recipeUsers>
+      <li>ElectricSmelter</li>
+      <li>ElectricCrematorium</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  <RecipeDef ParentName="WNA_RecipeBase">
+    <defName>WNA_RecyecleWastepackBulk</defName>
+    <label>recycle wastepack x5</label>
+    <description>treat wastepacks with strong heat to recycle resources.</description>
+    <jobString>recycling waste pack.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Wastepack</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Wastepack</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Uranium>10</Uranium>
+      <WNA_MercuryVial>15</WNA_MercuryVial>
+      <WNA_HalogenVial>25</WNA_HalogenVial>
+    </products>
+    <workAmount>2000</workAmount>
+    <recipeUsers>
+      <li>ElectricSmelter</li>
+      <li>ElectricCrematorium</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>    
+    </researchPrerequisites>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_RecipeBase">
+    <defName>WNA_UpgradeSubcoreBasic</defName>
+    <label>upgrade basic subcore</label>
+    <description>upgrade basic subcore into more advanced type.</description>
+    <jobString>upgradeing subcore.</jobString>
+    <soundWorking>SubcoreEncoder_Working</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreBasic</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SubcoreBasic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SubcoreRegular>1</SubcoreRegular>
+    </products>
+    <workAmount>4500</workAmount>
+    <recipeUsers>
+      <li>SubcoreEncoder</li>
+    </recipeUsers>
+    <workSkill>Intellectual</workSkill>
+    <unfinishedThingDef>UnfinishedSubcore</unfinishedThingDef>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  <RecipeDef ParentName="WNA_RecipeBase">
+    <defName>WNA_UpgradeSubcoreRegular</defName>
+    <label>upgrade standard subcore</label>
+    <description>upgrade basic subcore into more advanced type.</description>
+    <jobString>upgradeing subcore.</jobString>
+    <soundWorking>SubcoreEncoder_Working</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SubcoreRegular</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SubcoreHigh>1</SubcoreHigh>
+    </products>
+    <workAmount>15000</workAmount>
+    <recipeUsers>
+      <li>SubcoreEncoder</li>
+    </recipeUsers>
+    <workSkill>Intellectual</workSkill>
+    <unfinishedThingDef>UnfinishedSubcore</unfinishedThingDef>
+    <skillRequirements>
+      <Intellectual>14</Intellectual>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
+  </RecipeDef>
+
+  <RecipeDef ParentName="WNA_RecipeBase">
+    <defName>WNA_MakeAIPersonaCore</defName>
+    <label>make subcore into AI persona core</label>
+    <description>bend high subcores into a persona core.</description>
+    <jobString>making persona core.</jobString>
+    <soundWorking>SubcoreEncoder_Working</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SubcoreHigh</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AIPersonaCore>1</AIPersonaCore>
+    </products>
+    <workAmount>60000</workAmount>
+    <recipeUsers>
+      <li>SubcoreEncoder</li>
+    </recipeUsers>
+    <workSkill>Intellectual</workSkill>
+    <unfinishedThingDef>UnfinishedSubcore</unfinishedThingDef>
+    <skillRequirements>
+      <Intellectual>20</Intellectual>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  <RecipeDef ParentName="WNA_RecipeBase">
+    <defName>WNA_MakeTechprofSubpersonaCore</defName>
+    <label>make subcore into techprof persona core</label>
+    <description>bend high subcores into a persona core.</description>
+    <jobString>making persona core.</jobString>
+    <soundWorking>SubcoreEncoder_Working</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SubcoreHigh</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+    </products>
+    <workAmount>15000</workAmount>
+    <recipeUsers>
+      <li>SubcoreEncoder</li>
+    </recipeUsers>
+    <workSkill>Intellectual</workSkill>
+    <unfinishedThingDef>UnfinishedSubcore</unfinishedThingDef>
+    <skillRequirements>
+      <Intellectual>20</Intellectual>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="WNA_RecipeBase">
+    <defName>WNA_DisassemblePersonaCore</defName>
+    <label>disassemble persona core</label>
+    <description>disassemble persona core to make basic subcores.</description>
+    <jobString>making subcores.</jobString>
+    <soundWorking>SubcoreEncoder_Working</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AIPersonaCore</li>
+            <li>TechprofSubpersonaCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AIPersonaCore</li>
+        <li>TechprofSubpersonaCore</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SubcoreBasic>30</SubcoreBasic>
+    </products>
+    <workAmount>15000</workAmount>
+    <recipeUsers>
+      <li>SubcoreEncoder</li>
+    </recipeUsers>
+    <workSkill>Intellectual</workSkill>
+    <unfinishedThingDef>UnfinishedSubcore</unfinishedThingDef>
+    <skillRequirements>
+      <Intellectual>20</Intellectual>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>WNA_CivilianTech</li>
+    </researchPrerequisites>
+  </RecipeDef>
+</Defs>

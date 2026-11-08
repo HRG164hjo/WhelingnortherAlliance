@@ -272,6 +272,8 @@ namespace WNA.WNAMiscs.AdvancedTrader
 
         public bool AllowStuffChoice => config == null || config.allowStuffChoice;
 
+        public bool ClearSoldGoodsOnClose => config != null && config.clearSoldGoodsOnClose;
+
         public bool UseFixedQuality => config != null && config.useFixedQuality;
 
         public QualityCategory FixedQuality => (config != null) ? config.fixedQuality : QualityCategory.Normal;

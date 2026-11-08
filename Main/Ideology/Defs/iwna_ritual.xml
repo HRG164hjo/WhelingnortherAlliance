@@ -3,7 +3,7 @@
 
   <PreceptDef>
     <defName>WNA_Uplifting</defName>
-    <label>uplifting</label>
+    <label>authorized uplifting</label>
     <description>A rite that reshapes a being into a higher form of existence. Beasts, plants, entities and mechanoids are raised to humanity; humans are raised to humanoids; humanoids are raised to whelingnorthans.</description>
     <issue>Ritual</issue>
     <preceptClass>WNA.WNARitual.Precept_Ritual_Uplifting</preceptClass>
@@ -16,7 +16,6 @@
     <selectionWeight>0</selectionWeight>
     <classic>true</classic>
   </PreceptDef>
-
   <RitualPatternDef>
     <defName>WNA_Uplifting</defName>
     <alwaysStartAnytime>true</alwaysStartAnytime>
@@ -26,15 +25,13 @@
     <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
     <canMergeGizmosFromDifferentIdeos>true</canMergeGizmosFromDifferentIdeos>
     <mergeGizmosForObligations>false</mergeGizmosForObligations>
-    <playsIdeoMusic>false</playsIdeoMusic>
+    <playsIdeoMusic>true</playsIdeoMusic>
   </RitualPatternDef>
-
   <RitualObligationTargetFilterDef>
     <defName>WNA_UpliftTarget</defName>
-    <workerClass>WNA.WNARitual.RitualObligationTargetWorker_WNAUplift</workerClass>
+    <workerClass>WNA.WNARitual.RitualObligationTargetWorker_Uplifting</workerClass>
     <colonistThingsOnly>true</colonistThingsOnly>
   </RitualObligationTargetFilterDef>
-
   <RitualBehaviorDef>
     <defName>WNA_Uplifting</defName>
     <workerClass>WNA.WNARitual.RitualBehaviorWorker_Uplifting</workerClass>
@@ -50,7 +47,7 @@
         <maxCount>1</maxCount>
         <required>true</required>
         <countsAsParticipant>true</countsAsParticipant>
-        <mustBeAbleToReachTarget>true</mustBeAbleToReachTarget>
+        <mustBeAbleToReachTarget>false</mustBeAbleToReachTarget>
       </li>
     </roles>
     <stages>
@@ -66,7 +63,6 @@
       </li>
     </stages>
   </RitualBehaviorDef>
-
   <RitualOutcomeEffectDef>
     <defName>WNA_Uplifting</defName>
     <workerClass>WNA.WNARitual.RitualOutcomeEffectWorker_Uplifting</workerClass>
@@ -89,6 +85,231 @@
     <allowAttachableOutcome>false</allowAttachableOutcome>
     <allowOutcomeWithNoAttendance>true</allowOutcomeWithNoAttendance>
     <givesDevelopmentPoints>false</givesDevelopmentPoints>
+  </RitualOutcomeEffectDef>
+
+  <!---->
+  <PreceptDef>
+    <defName>WNA_AbilityGrant</defName>
+    <label>transcendental communion</label>
+    <description>A guided communion at an altar or ritual spot. During the rite, a single willing colonist opens their mind and is granted a new ability.</description>
+    <issue>Ritual</issue>
+    <preceptClass>RimWorld.Precept_Ritual</preceptClass>
+    <ritualPatternBase>WNA_AbilityGrant</ritualPatternBase>
+    <iconPath>UI/Icons/Rituals/RoleChange</iconPath>
+    <visible>false</visible>
+    <mergeRitualGizmosFromAllIdeos>true</mergeRitualGizmosFromAllIdeos>
+    <useRepeatPenalty>false</useRepeatPenalty>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <selectionWeight>0</selectionWeight>
+    <classic>true</classic>
+  </PreceptDef>
+  <RitualPatternDef>
+    <defName>WNA_AbilityGrant</defName>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+    <ritualObligationTargetFilter>WNA_AbilityGrantTarget</ritualObligationTargetFilter>
+    <ritualBehavior>WNA_AbilityGrant</ritualBehavior>
+    <ritualOutcomeEffect>WNA_AbilityGrant</ritualOutcomeEffect>
+    <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+    <canMergeGizmosFromDifferentIdeos>true</canMergeGizmosFromDifferentIdeos>
+    <mergeGizmosForObligations>false</mergeGizmosForObligations>
+    <playsIdeoMusic>true</playsIdeoMusic>
+  </RitualPatternDef>
+  <RitualObligationTargetFilterDef>
+    <defName>WNA_AbilityGrantTarget</defName>
+    <workerClass>WNA.WNARitual.RitualObligationTargetWorker_AbilityGrant</workerClass>
+    <colonistThingsOnly>true</colonistThingsOnly>
+  </RitualObligationTargetFilterDef>
+  <RitualBehaviorDef>
+    <defName>WNA_AbilityGrant</defName>
+    <workerClass>WNA.WNARitual.RitualBehaviorWorker_AbilityGrant</workerClass>
+    <durationTicks>250</durationTicks>
+    <displayCompletedMessage>false</displayCompletedMessage>
+    <spectatorsLabel>spectators</spectatorsLabel>
+    <spectatorGerund>spectate</spectatorGerund>
+    <spectatorFilter Class="WNA.WNARitual.RitualSpectatorFilter_RecipientOnly">
+      <description>Only the recipient may take part in this ritual.</description>
+    </spectatorFilter>
+    <roles>
+      <li Class="WNA.WNARitual.RitualRole_AbilityRecipient">
+        <label>recipient</label>
+        <missingDesc>a recipient</missingDesc>
+        <id>ability_recipient</id>
+        <maxCount>1</maxCount>
+        <required>true</required>
+        <countsAsParticipant>true</countsAsParticipant>
+        <defaultForSelectedColonist>true</defaultForSelectedColonist>
+        <mustBeAbleToReachTarget>true</mustBeAbleToReachTarget>
+      </li>
+    </roles>
+    <stages>
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+        <ignoreDurationToFinishAfterStage>true</ignoreDurationToFinishAfterStage>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>1</percentage>
+          </li>
+        </endTriggers>
+        <spectatorsRequired>false</spectatorsRequired>
+        <showProgressBar>false</showProgressBar>
+        <roleBehaviors>
+          <li>
+            <roleId>ability_recipient</roleId>
+            <dutyDef>Spectate</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_BesideThing" />
+            </customPositions>
+          </li>
+        </roleBehaviors>
+      </li>
+    </stages>
+  </RitualBehaviorDef>
+  <RitualOutcomeEffectDef>
+    <defName>WNA_AbilityGrant</defName>
+    <workerClass>WNA.WNARitual.RitualOutcomeEffectWorker_AbilityGrant</workerClass>
+    <description>The recipient is granted a new ability of the player's choosing.</description>
+    <comps>
+      <li Class="WNA.WNARitual.RitualOutcomeComp_AbilityGrant" />
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>completed</label>
+        <description>The recipient receives the chosen ability.</description>
+        <chance>1</chance>
+        <positivityIndex>1</positivityIndex>
+      </li>
+    </outcomeChances>
+    <startingQuality>1</startingQuality>
+    <minQuality>1</minQuality>
+    <maxQuality>1</maxQuality>
+    <warnOnLowQuality>false</warnOnLowQuality>
+    <allowAttachableOutcome>false</allowAttachableOutcome>
+    <allowOutcomeWithNoAttendance>true</allowOutcomeWithNoAttendance>
+    <givesDevelopmentPoints>false</givesDevelopmentPoints>
+    <extraInfoLines>
+      <li>The recipient will gain one ability of your choosing.</li>
+    </extraInfoLines>
+  </RitualOutcomeEffectDef>
+
+  <!---->
+  <PreceptDef>
+    <defName>WNA_WorldPawnWarp</defName>
+    <label>domniation enthrallment</label>
+    <description>A rite in which the collective will reaches across the world and calls chosen souls to the altar. Those who answer are delivered to the colony in body or in corpse.</description>
+    <issue>Ritual</issue>
+    <preceptClass>RimWorld.Precept_Ritual</preceptClass>
+    <ritualPatternBase>WNA_WorldPawnWarp</ritualPatternBase>
+    <iconPath>UI/Icons/Rituals/RoleChange</iconPath>
+    <visible>false</visible>
+    <mergeRitualGizmosFromAllIdeos>true</mergeRitualGizmosFromAllIdeos>
+    <useRepeatPenalty>false</useRepeatPenalty>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <selectionWeight>0</selectionWeight>
+    <classic>true</classic>
+  </PreceptDef>
+  <RitualPatternDef>
+    <defName>WNA_WorldPawnWarp</defName>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+    <ritualObligationTargetFilter>WNA_WorldPawnWarpTarget</ritualObligationTargetFilter>
+    <ritualBehavior>WNA_WorldPawnWarp</ritualBehavior>
+    <ritualOutcomeEffect>WNA_WorldPawnWarp</ritualOutcomeEffect>
+    <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+    <canMergeGizmosFromDifferentIdeos>true</canMergeGizmosFromDifferentIdeos>
+    <mergeGizmosForObligations>false</mergeGizmosForObligations>
+    <playsIdeoMusic>true</playsIdeoMusic>
+  </RitualPatternDef>
+  <RitualObligationTargetFilterDef>
+    <defName>WNA_WorldPawnWarpTarget</defName>
+    <workerClass>WNA.WNARitual.RitualObligationTargetWorker_WorldPawnWarp</workerClass>
+    <colonistThingsOnly>true</colonistThingsOnly>
+  </RitualObligationTargetFilterDef>
+  <RitualBehaviorDef>
+    <defName>WNA_WorldPawnWarp</defName>
+    <workerClass>WNA.WNARitual.RitualBehaviorWorker_WorldPawnWarp</workerClass>
+    <durationTicks>2357</durationTicks>
+    <displayCompletedMessage>false</displayCompletedMessage>
+    <spectatorsLabel>witnesses</spectatorsLabel>
+    <spectatorGerund>witness</spectatorGerund>
+    <roles>
+      <li Class="WNA.WNARitual.RitualRole_UpliftingOrganizer">
+        <label>enthrallment host</label>
+        <missingDesc>an enthrallment host</missingDesc>
+        <id>enthrall_organizer</id>
+        <maxCount>1</maxCount>
+        <required>true</required>
+        <countsAsParticipant>true</countsAsParticipant>
+        <mustBeAbleToReachTarget>true</mustBeAbleToReachTarget>
+      </li>
+      <li Class="RitualRoleColonist">
+        <label>participant</label>
+        <categoryLabel>participants</categoryLabel>
+        <missingDesc>colonists</missingDesc>
+        <id>enthrall_participant1</id>
+        <mergeId>enthrall_participants</mergeId>
+        <maxCount>1</maxCount>
+        <required>true</required>
+        <countsAsParticipant>true</countsAsParticipant>
+      </li>
+      <li Class="RitualRoleColonist">
+        <label>participant</label>
+        <categoryLabel>participants</categoryLabel>
+        <missingDesc>colonists</missingDesc>
+        <id>enthrall_participant2</id>
+        <mergeId>enthrall_participants</mergeId>
+        <maxCount>1</maxCount>
+        <required>true</required>
+        <countsAsParticipant>true</countsAsParticipant>
+      </li>
+      <li Class="RitualRoleColonist">
+        <label>participant</label>
+        <categoryLabel>participants</categoryLabel>
+        <missingDesc>colonists</missingDesc>
+        <id>enthrall_participant3</id>
+        <mergeId>enthrall_participants</mergeId>
+        <maxCount>1</maxCount>
+        <required>true</required>
+        <countsAsParticipant>true</countsAsParticipant>
+      </li>
+    </roles>
+    <stages>
+      <li>
+        <defaultDuty>SpectateCircle</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>1</percentage>
+          </li>
+        </endTriggers>
+        <spectatorsRequired>false</spectatorsRequired>
+        <showProgressBar>true</showProgressBar>
+      </li>
+    </stages>
+  </RitualBehaviorDef>
+  <RitualOutcomeEffectDef>
+    <defName>WNA_WorldPawnWarp</defName>
+    <workerClass>WNA.WNARitual.RitualOutcomeEffectWorker_WorldPawnWarp</workerClass>
+    <description>The collective will reaches out and selects those who will be drawn to the altar.</description>
+    <comps>
+      <li Class="WNA.WNARitual.RitualOutcomeComp_WorldPawnWarp" />
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>completed</label>
+        <description>The rite is complete.</description>
+        <chance>1</chance>
+        <positivityIndex>1</positivityIndex>
+      </li>
+    </outcomeChances>
+    <startingQuality>1</startingQuality>
+    <minQuality>1</minQuality>
+    <maxQuality>1</maxQuality>
+    <warnOnLowQuality>false</warnOnLowQuality>
+    <allowAttachableOutcome>false</allowAttachableOutcome>
+    <allowOutcomeWithNoAttendance>true</allowOutcomeWithNoAttendance>
+    <givesDevelopmentPoints>false</givesDevelopmentPoints>
+    <extraInfoLines>
+      <li>When the rite ends, you may choose world pawns to be called to the altar.</li>
+      <li>Chosen pawns arrive after 20000 to 30000 ticks, stunned.</li>
+    </extraInfoLines>
   </RitualOutcomeEffectDef>
 
 </Defs>

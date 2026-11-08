@@ -524,14 +524,10 @@
             <capacity>Talking</capacity>
             <postFactor>0</postFactor>
           </li>
-          <li>
-            <capacity>Talking</capacity>
-            <setMax>0</setMax>
-          </li>
         </capMods>
         <disablesNeeds>
           <li>Beauty</li>
-          <li>Outdoors</li>
+          <li>Comfort</li>
           <li>Joy</li>
         </disablesNeeds>
         <disabledWorkTags>Social</disabledWorkTags>

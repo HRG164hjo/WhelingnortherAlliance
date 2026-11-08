@@ -7,7 +7,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/ThingDef[not(smallVolume="true") and stackLimit>1]/stackLimit</xpath>
+    <xpath>/Defs/ThingDef[not(translate(smallVolume, 'TRUE', 'true') = 'true') and stackLimit>1]/stackLimit</xpath>
     <value>
       <stackLimit>1000000</stackLimit>
     </value>
@@ -25,6 +25,15 @@
   </Operation>
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/ThingDef[@Name="ChunkBase"]/saveCompressible</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ChunkMechanoidSlag"]</xpath>
+    <value>
+      <smeltProducts Inherits="false">
+        <Steel>10</Steel>
+        <Plasteel>5</Plasteel>
+      </smeltProducts>
+    </value>
   </Operation>
 
   <Operation Class="PatchOperationFindMod">

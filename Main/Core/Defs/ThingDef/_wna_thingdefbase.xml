@@ -63,6 +63,7 @@
   <ThingDef Abstract="True" ParentName="WNA_StructureBase" Name="WNA_TurretBaseBase">
     <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
+    <castEdgeShadows>false</castEdgeShadows>
     <drawHighlight>true</drawHighlight>
     <drawHighlightOnlyForHostile>true</drawHighlightOnlyForHostile>
     <graphicData>
@@ -80,7 +81,14 @@
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <neverMultiSelect>false</neverMultiSelect>
     <comps>
-      <li Class="CompProperties_Forbiddable"/>
+      <li Class="WNA.WNAThingComp.PropForceTargetable"/>
+      <li Class="WNA.WNAThingComp.PropThingSelfHeal">
+        <ticksPerHeal>27</ticksPerHeal>
+        <healPercent>10</healPercent>
+      </li>
+      <li Class="WNA.WNAThingComp.PropDamageLimit">
+        <damageLimit>40</damageLimit>
+      </li>
     </comps>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
@@ -90,7 +98,7 @@
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
-      <li>PlaceWorker_ShowTurretRadius</li>
+      <li>WNA.WNAPlaceWorker.PlaceWorker_TurretRadius</li>
     </placeWorkers>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
@@ -130,7 +138,7 @@
     <useHitPoints>false</useHitPoints>
     <tickerType>Normal</tickerType>
     <altitudeLayer>Projectile</altitudeLayer>
-    <thingClass>WNA.WNAMiscs.ProjType_Inviso</thingClass>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
     <graphicData>
       <texPath>inv</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -139,6 +147,7 @@
       <speed>2000</speed>
       <armorPenetrationBase>Infinity</armorPenetrationBase>
       <stoppingPower>Infinity</stoppingPower>
+      <flyOverhead>true</flyOverhead>
     </projectile>
     <modExtensions>
       <li Class="WNA.WNAModExtension.TechnoConfig">
@@ -250,6 +259,7 @@
     <generateCommonality>1</generateCommonality>
     <apparel>
       <tags>
+        <li>WNA_Tag_Apparel</li>
         <li>EVA</li>
         <li>Spacer</li>
       </tags>
@@ -269,6 +279,13 @@
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
     </recipeMaker>
+  </ThingDef>
+  <ThingDef Abstract="True" ParentName="WNA_ApparelBase" Name="WNA_ApparelExtraBase">
+    <apparel>
+      <tags Inherit="false">
+        <li>WNA_Tag_ApparelExtra</li>
+      </tags>
+    </apparel>
   </ThingDef>
 
   <ThingDef Abstract="True" Name="WNA_WeaponBase">
@@ -312,11 +329,17 @@
     <weaponClasses>
       <li>Melee</li>
     </weaponClasses>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
   </ThingDef>
   <ThingDef Abstract="True" ParentName="WNA_WeaponBase" Name="WNA_WeaponBaseRanged">
     <weaponClasses>
       <li>Ranged</li>
     </weaponClasses>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
     <statBases>
       <AccuracyTouch>1</AccuracyTouch>
       <AccuracyShort>1</AccuracyShort>
@@ -579,8 +602,8 @@
         <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
         <requiresImprisonment>true</requiresImprisonment>
       </li>
-      <li Class="WNA.WNAThingCompProp.PropDamageLimit">
-          <damageLimit>1</damageLimit>
+      <li Class="WNA.WNAThingComp.PropDamageLimit">
+        <damageLimit>1</damageLimit>
         <canAbsorb>true</canAbsorb>
       </li>
     </comps>

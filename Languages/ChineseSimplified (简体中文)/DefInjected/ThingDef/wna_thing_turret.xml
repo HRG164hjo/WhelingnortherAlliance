@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: psychic tower -->
+  <WNA_PsychicTower.label>TODO</WNA_PsychicTower.label>
+  <!-- EN: A psychic defence tower that projects a focused mind-control pulse at humanlike intruders. Destroying the tower or cutting its power releases everyone it controls. -->
+  <WNA_PsychicTower.description>TODO</WNA_PsychicTower.description>
+  
+  <!-- EN: psychic pulse -->
+  <WNA_PsychicTower_Proj.label>TODO</WNA_PsychicTower_Proj.label>
+  
+  <!-- EN: psychic tower gun -->
+  <WNA_PsychicTowerGun.label>TODO</WNA_PsychicTowerGun.label>
+  <!-- EN: A psychic projector mounted on a defence tower. -->
+  <WNA_PsychicTowerGun.description>TODO</WNA_PsychicTowerGun.description>
+  <!-- EN: psychic tower gun -->
+  <WNA_PsychicTowerGun.verbs.Verb_Shoot.label>TODO</WNA_PsychicTowerGun.verbs.Verb_Shoot.label>
+  
+</LanguageData>

@@ -5,6 +5,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 using WNA.WNADefOf;
+using WNA.WNAUtility;
 
 namespace WNA.WNAJobDriver
 {
@@ -13,18 +14,16 @@ namespace WNA.WNAJobDriver
         private const TargetIndex HolyorderIndex = TargetIndex.A;
         private const TargetIndex ReadingSpotIndex = TargetIndex.B;
         private const int SpotSearchChecks = 40;
+        private const int NearbySpotRadius = 5;
+        private const float GainPerTick = 0.001f;
         private static readonly List<IntVec3> tmpHomeCells = new List<IntVec3>();
         private Mote readMote;
         private Apparel Holyorder => job.GetTarget(HolyorderIndex).Thing as Apparel;
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            return true;
-        }
-        public override void Notify_Starting()
-        {
-            base.Notify_Starting();
             job.ignoreJoyTimeAssignment = true;
             ChooseReadingSpot();
+            return true;
         }
         protected override IEnumerable<Toil> MakeNewToils()
         {
@@ -35,9 +34,12 @@ namespace WNA.WNAJobDriver
             IntVec3 cell = job.GetTarget(ReadingSpotIndex).IsValid
                 ? job.GetTarget(ReadingSpotIndex).Cell
                 : pawn.Position;
-            if (!cell.IsValid || !pawn.CanReach(cell, PathEndMode.OnCell, Danger.Deadly))
-                cell = pawn.Position;
-            job.SetTarget(ReadingSpotIndex, cell);
+            if (pawn.Map != null && (!IsSafeReadingCell(cell) || !pawn.CanReach(cell, PathEndMode.OnCell, Danger.Deadly)))
+            {
+                pawn.ClearReservationsForJob(job);
+                cell = RepickReadingSpot();
+                job.SetTarget(ReadingSpotIndex, cell);
+            }
             yield return Toils_Goto.GotoCell(cell, PathEndMode.OnCell);
             Toil wait = Toils_General.Wait(job.def.joyDuration);
             wait.handlingFacing = true;
@@ -51,7 +53,8 @@ namespace WNA.WNAJobDriver
             {
                 EnsureReadMote();
                 readMote?.Maintain();
-                GainReadingNeeds(delta);
+                ReadingGainings(delta);
+                ReadingConversion(pawn);
             };
             yield return wait;
         }
@@ -73,7 +76,23 @@ namespace WNA.WNAJobDriver
                 job.SetTarget(ReadingSpotIndex, cell);
                 return;
             }
+            if (TryFindNearbyCell(out cell) && TryReserveSpot(cell))
+            {
+                job.SetTarget(ReadingSpotIndex, cell);
+                return;
+            }
             job.SetTarget(ReadingSpotIndex, pawn.Position);
+        }
+        private IntVec3 RepickReadingSpot()
+        {
+            IntVec3 cell;
+            if (TryFindNearbyCell(out cell) && TryReserveSpot(cell))
+                return cell;
+            return pawn.Position;
+        }
+        private bool IsSafeReadingCell(IntVec3 cell)
+        {
+            return cell.IsValid && !IsInteractionCell(cell);
         }
         private bool TryFindSeat(out IntVec3 cell)
         {
@@ -86,8 +105,7 @@ namespace WNA.WNAJobDriver
                 TraverseParms.For(pawn),
                 9999f,
                 t => ValidateSeat(t, pawn));
-            return found != null
-                && Toils_Ingest.TryFindFreeSittingSpotOnThing(found, pawn, out cell);
+            return found != null && TryFindFreeSittingSpotOnThing(found, pawn, out cell);
         }
         private static bool ValidateSeat(Thing t, Pawn pawn)
         {
@@ -107,10 +125,35 @@ namespace WNA.WNAJobDriver
                 return false;
             if (!pawn.CanReserve(t))
                 return false;
-            return Toils_Ingest.TryFindFreeSittingSpotOnThing(t, pawn, out IntVec3 _);
+            return TryFindFreeSittingSpotOnThing(t, pawn, out IntVec3 _);
+        }
+        private static bool TryFindFreeSittingSpotOnThing(Thing t, Pawn pawn, out IntVec3 cell)
+        {
+            Map map = t.Map;
+            foreach (IntVec3 c in t.OccupiedRect())
+            {
+                if (c.IsBuildingInteractionCell(map) || c.Fogged(map))
+                    continue;
+                if (!pawn.CanReserveSittableOrSpot(c))
+                    continue;
+                cell = c;
+                return true;
+            }
+            cell = IntVec3.Invalid;
+            return false;
+        }
+        private bool IsInteractionCell(IntVec3 cell)
+        {
+            return cell.IsBuildingInteractionCell(pawn.Map);
         }
         private bool TryReserveSpot(IntVec3 cell)
         {
+            if (!cell.IsValid || IsInteractionCell(cell))
+                return false;
+            if (!pawn.CanReserveSittableOrSpot(cell))
+                return false;
+            if (pawn.Map.pawnDestinationReservationManager.IsReserved(cell))
+                return false;
             if (!pawn.ReserveSittableOrSpot(cell, job, false))
                 return false;
             pawn.Map.pawnDestinationReservationManager.Reserve(pawn, job, cell);
@@ -124,6 +167,34 @@ namespace WNA.WNAJobDriver
         {
             return TryFindHomeCell(null, out cell);
         }
+        private bool TryFindNearbyCell(out IntVec3 cell)
+        {
+            cell = IntVec3.Invalid;
+            foreach (IntVec3 c in GenRadial.RadialCellsAround(pawn.Position, NearbySpotRadius, true))
+            {
+                if (!c.InBounds(pawn.Map) || !c.Standable(pawn.Map))
+                    continue;
+                if (c.Fogged(pawn.Map) || c.IsForbidden(pawn))
+                    continue;
+                if (IsInteractionCell(c))
+                    continue;
+                if (c.GetDoor(pawn.Map) != null)
+                    continue;
+                Building edifice = c.GetEdifice(pawn.Map);
+                if (edifice != null
+                    && (edifice.def.building == null || !edifice.def.building.isSittable))
+                    continue;
+                if (c.GetDangerFor(pawn, pawn.Map) != Danger.None)
+                    continue;
+                if (!pawn.CanReach(c, PathEndMode.OnCell, Danger.None))
+                    continue;
+                if (!pawn.CanReserveSittableOrSpot(c))
+                    continue;
+                cell = c;
+                return true;
+            }
+            return false;
+        }
         private bool TryFindHomeCell(Predicate<IntVec3> extraValidator, out IntVec3 cell)
         {
             cell = IntVec3.Invalid;
@@ -133,6 +204,8 @@ namespace WNA.WNAJobDriver
                 if (!c.Standable(pawn.Map))
                     continue;
                 if (c.Fogged(pawn.Map) || c.IsForbidden(pawn))
+                    continue;
+                if (IsInteractionCell(c))
                     continue;
                 if (c.GetDangerFor(pawn, pawn.Map) != Danger.None)
                     continue;
@@ -157,6 +230,8 @@ namespace WNA.WNAJobDriver
                     continue;
                 if (!pawn.CanReserveSittableOrSpot(candidate))
                     continue;
+                if (pawn.Map.pawnDestinationReservationManager.IsReserved(candidate))
+                    continue;
                 cell = candidate;
                 return true;
             }
@@ -172,19 +247,54 @@ namespace WNA.WNAJobDriver
             }
             pawn.rotationTracker.FaceCell(pawn.Position + new Rot4(Rand.Range(0, 4)).FacingCell);
         }
-        private void GainReadingNeeds(int delta)
+        private void ReadingGainings(int delta)
         {
-            float level = 0.0006f;
-            if (pawn.needs?.mood != null)
-                pawn.needs.mood.CurLevel += level * delta;
-            if (pawn.needs?.rest != null)
-                pawn.needs.rest.CurLevel += level * delta;
-            if (pawn.needs?.joy != null)
-                pawn.needs.joy.CurLevel += level * delta;
-            if (pawn.needs?.learning != null)
-                pawn.needs.learning.CurLevel += level * delta;
-            if (pawn.needs?.play != null)
-                pawn.needs.play.CurLevel += level * delta;
+            if (delta <= 0)
+                return;
+            float gain = GainPerTick * 50f * delta;
+            pawn.psychicEntropy?.OffsetPsyfocusDirectly(gain);
+            GainNeeds(gain);
+            GainGeneResources(gain);
+        }
+        private void GainNeeds(float gain)
+        {
+            List<Need> needs = pawn.needs?.AllNeeds;
+            if (needs == null)
+                return;
+            for (int i = 0; i < needs.Count; i++)
+            {
+                Need need = needs[i];
+                if (IsUpgradableNeed(need))
+                    need.CurLevel += gain;
+            }
+        }
+        private static bool IsUpgradableNeed(Need need)
+        {
+            if (need?.def == null)
+                return false;
+            if (need is Need_Suppression)
+                return false;
+            return need.CurLevel < need.MaxLevel;
+        }
+        private void GainGeneResources(float gainPercent)
+        {
+            List<Gene> genes = pawn.genes?.GenesListForReading;
+            if (genes == null)
+                return;
+            for (int i = 0; i < genes.Count; i++)
+            {
+                if (!(genes[i] is Gene_Resource resource) || !resource.Active)
+                    continue;
+                float max = resource.Max;
+                if (max > 0f && resource.Value < max)
+                    resource.Value += max * gainPercent;
+            }
+        }
+        private static void ReadingConversion(Pawn pawn)
+        {
+            if (!General.PawnHasIdeo(pawn))
+                pawn.ideo.SetIdeo(General.WNAIdeo);
+            return;
         }
         private void EnsureReadMote()
         {

@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|c:\\applications\\steam\\steamapps\\common\\rimworld\\mods\\whelingnortheralliance\\source\\wna\\wnautility\\abilitygrantutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:wnautility\\abilitygrantutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|c:\\applications\\steam\\steamapps\\common\\rimworld\\mods\\whelingnortheralliance\\source\\wna\\wnaharmony\\patch_battleunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:wnaharmony\\patch_battleunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|c:\\applications\\steam\\steamapps\\common\\rimworld\\mods\\whelingnortheralliance\\source\\wna\\wnathingclass\\thingclass_battleunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7200242-F355-4843-A60C-62980820F4C2}|WNA.csproj|solutionrelative:wnathingclass\\thingclass_battleunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AbilityGrantUtility.cs",
-              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAUtility\\AbilityGrantUtility.cs",
-              "RelativeDocumentMoniker": "WNAUtility\\AbilityGrantUtility.cs",
-              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAUtility\\AbilityGrantUtility.cs",
-              "RelativeToolTip": "WNAUtility\\AbilityGrantUtility.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Title": "Patch_BattleUnit.cs",
+              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAHarmony\\Patch_BattleUnit.cs",
+              "RelativeDocumentMoniker": "WNAHarmony\\Patch_BattleUnit.cs",
+              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAHarmony\\Patch_BattleUnit.cs",
+              "RelativeToolTip": "WNAHarmony\\Patch_BattleUnit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T05:24:29.438Z",
+              "WhenOpened": "2026-11-08T04:27:02.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ThingClass_BattleUnit.cs",
+              "DocumentMoniker": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAThingClass\\ThingClass_BattleUnit.cs",
+              "RelativeDocumentMoniker": "WNAThingClass\\ThingClass_BattleUnit.cs",
+              "ToolTip": "C:\\Applications\\Steam\\steamapps\\common\\RimWorld\\Mods\\WhelingnortherAlliance\\Source\\WNA\\WNAThingClass\\ThingClass_BattleUnit.cs",
+              "RelativeToolTip": "WNAThingClass\\ThingClass_BattleUnit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-08T04:20:22.651Z",
               "EditorCaption": ""
             },
             {

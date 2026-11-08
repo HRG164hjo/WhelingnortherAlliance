@@ -6,6 +6,7 @@ using Verse.AI;
 using Verse.AI.Group;
 using WNA.WNADefOf;
 using WNA.WNARitual;
+using WNA.WNAThingClass;
 using WNA.WNAWorldComp;
 
 namespace WNA.WNAUtility
@@ -292,7 +293,11 @@ namespace WNA.WNAUtility
             GenSpawn.Spawn(result, spawnCell, map, Rot4.Random);
             bool named = CopyIdentity(job, kind, sourcePawn, result);
             RemoveSubject(subjectThing, sourcePawn);
-            if (!named)
+            if (CanChooseXenotype(result))
+            {
+                Find.WindowStack.Add(new Dialog_UpliftNamePawn(result, result.genes.Xenotype));
+            }
+            else if (!named)
             {
                 Find.WindowStack.Add(new Dialog_NamePawn(
                     result,
@@ -334,11 +339,7 @@ namespace WNA.WNAUtility
                 gender = sourcePawn.gender;
             else
                 gender = Rand.Bool ? Gender.Male : Gender.Female;
-            XenotypeDef xenotype = kind == UpliftSubjectKind.Humanoid
-                ? DefDatabase<XenotypeDef>.GetNamed("WNA_Mortaliner", false)
-                : null;
-            if (!ModsConfig.BiotechActive)
-                xenotype = null;
+            XenotypeDef xenotype = kind == UpliftSubjectKind.Humanoid ? MortalinerXenotype : null;
             Ideo resultIdeo = ResolveResultIdeo(job);
             PawnGenerationRequest request = new PawnGenerationRequest(
                 kindDef,
@@ -357,6 +358,8 @@ namespace WNA.WNAUtility
             Pawn result = PawnGenerator.GeneratePawn(request);
             if (result == null)
                 return null;
+            if (IsWhelingnorthan(result))
+                EnsureMortaliner(result);
             if (result.Faction != Faction.OfPlayer)
                 result.SetFactionDirect(Faction.OfPlayer);
             if (ModsConfig.IdeologyActive && resultIdeo != null && result.ideo != null && result.Ideo != resultIdeo)
@@ -376,6 +379,28 @@ namespace WNA.WNAUtility
                 }
             }
             return result;
+        }
+
+        private static XenotypeDef MortalinerXenotype =>
+            ModsConfig.BiotechActive ? DefDatabase<XenotypeDef>.GetNamed("WNA_Mortaliner", false) : null;
+
+        private static bool IsWhelingnorthan(Pawn pawn)
+        {
+            return pawn != null && (pawn.def == WNAMainDefOf.WNA_Whelingnorthan || pawn is ThingClass_Whelingnorthan);
+        }
+
+        private static bool CanChooseXenotype(Pawn pawn)
+        {
+            return pawn != null && pawn.genes != null && ModsConfig.BiotechActive && !IsWhelingnorthan(pawn);
+        }
+
+        private static void EnsureMortaliner(Pawn pawn)
+        {
+            XenotypeDef mortaliner = MortalinerXenotype;
+            if (mortaliner == null || pawn.genes == null || pawn.genes.Xenotype == mortaliner)
+                return;
+            pawn.genes.SetXenotype(mortaliner);
+            pawn.Drawer?.renderer?.SetAllGraphicsDirty();
         }
 
         private static PawnKindDef ResultKindDef(UpliftSubjectKind kind)

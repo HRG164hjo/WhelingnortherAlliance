@@ -22,6 +22,7 @@ namespace WNA.WNAIncident
             int duration = 141420;
             GameCondition cond = GameConditionMaker.MakeCondition(WNAMainDefOf.WNA_GameCond_PermaconstActive, duration);
             map.gameConditionManager.RegisterCondition(cond);
+            WNACapturedSettlementUtility.ReviveDestroyedSettlements();
             if (pcc != null && pcc.HostileTo(Faction.OfPlayer))
             {
                 IncidentParms raidParms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.ThreatBig, map);

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/HeadTypeDef[@Name="NarrowBase"]/beardOffset</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/HeadTypeDef[@Name="NarrowBase"]/beardOffsetXEast</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/HeadTypeDef[@Name="NarrowBase"]/eyeOffsetEastWest</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/HeadTypeDef[@Name="NarrowBase"]/narrow</xpath>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HeadTypeDef[@Name="NarrowBase"]/hairMeshSize</xpath>
+    <value>
+      <hairMeshSize>(1.5, 1.5)</hairMeshSize>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HeadTypeDef[@Name="NarrowBase"]/beardMeshSize</xpath>
+    <value>
+      <beardMeshSize>(1.5, 1.5)</beardMeshSize>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HeadTypeDef[defName="Male_NarrowNormal"]/graphicPath</xpath>
+        <value>
+          <graphicPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Normal</graphicPath>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HeadTypeDef[defName="Male_NarrowPointy"]/graphicPath</xpath>
+        <value>
+          <graphicPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Pointy</graphicPath>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HeadTypeDef[defName="Male_NarrowWide"]/graphicPath</xpath>
+        <value>
+          <graphicPath>Things/Pawn/Humanlike/Heads/Male/Male_Average_Wide</graphicPath>
+        </value>
+      </li>
+      
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HeadTypeDef[defName="Female_NarrowNormal"]/graphicPath</xpath>
+        <value>
+          <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Normal</graphicPath>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HeadTypeDef[defName="Female_NarrowPointy"]/graphicPath</xpath>
+        <value>
+          <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Pointy</graphicPath>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HeadTypeDef[defName="Female_NarrowWide"]/graphicPath</xpath>
+        <value>
+          <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Wide</graphicPath>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Biotech</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/HeadTypeDef[@Name="FurskinNarrowBase"]/eyeOffsetEastWest</xpath>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HeadTypeDef[defName="Furskin_Narrow1"]/graphicPath</xpath>
+          <value>
+            <graphicPath>Things/Pawn/Humanlike/Heads/FurCovered_Average1_Normal</graphicPath>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HeadTypeDef[defName="Furskin_Narrow2"]/graphicPath</xpath>
+          <value>
+            <graphicPath>Things/Pawn/Humanlike/Heads/FurCovered_Average2_Normal</graphicPath>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HeadTypeDef[defName="Furskin_Narrow3"]/graphicPath</xpath>
+          <value>
+            <graphicPath>Things/Pawn/Humanlike/Heads/FurCovered_Average3_Normal</graphicPath>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Races Expanded - Android</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HeadTypeDef[defName="VRE_SyntheticNarrowMale"]/graphicPath</xpath>
+          <value>
+            <graphicPath>Pawn/SyntheticSkinHeads/SyntheticSkin_Average_Normal</graphicPath>
+          </value>
+        </li>
+        
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HeadTypeDef[defName="VRE_SyntheticNarrowFemale"]/graphicPath</xpath>
+          <value>
+            <graphicPath>Pawn/SyntheticSkinHeads/SyntheticSkin_Average_Normal</graphicPath>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Races Expanded - Phytokin</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HeadTypeDef[defName="VRE_BarkNarrow"]/graphicPath</xpath>
+          <value>
+            <graphicPath>Things/Pawn/Humanlike/Heads/BarkSkin_Average_Normal</graphicPath>
+          </value>
+        </li>
+        
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HeadTypeDef[defName="VRE_BarkNarrow_Female"]/graphicPath</xpath>
+          <value>
+            <graphicPath>Things/Pawn/Humanlike/Heads/BarkSkinFemale_Average_Normal</graphicPath>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Races Expanded - Saurid</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/HeadTypeDef[defName="VRESaurids_ScaleSkin_Narrow"]/graphicPath</xpath>
+      <value>
+        <graphicPath>Things/Pawn/Humanlike/Heads/ScalySkin_Average_Normal</graphicPath>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Races Expanded - Insector</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/HeadTypeDef[defName="VRE_InsectHeadNarrow"]/graphicPath</xpath>
+      <value>
+        <graphicPath>Things/Pawn/Humanlike/Heads/Insectskin_Average_Normal</graphicPath>
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Races Expanded - Archon</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HeadTypeDef[defName="VRE_Leatherskin_Narrow_Normal"]/graphicPath</xpath>
+          <value>
+            <graphicPath>Things/Pawn/Humanlike/HeadAttachments/LeatherskinHeads/Leatherskin_Average_Normal</graphicPath>
+          </value>
+        </li>
+        
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/HeadTypeDef[defName="VRE_LeatherskinFemale_Narrow_Normal"]/graphicPath</xpath>
+          <value>
+            <graphicPath>Things/Pawn/Humanlike/HeadAttachments/LeatherskinHeads/LeatherskinFemale_Average_Normal</graphicPath>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

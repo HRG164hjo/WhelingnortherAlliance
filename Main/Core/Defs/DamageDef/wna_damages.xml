@@ -8,6 +8,7 @@
     <impactSoundType>Slice</impactSoundType>
     <workerClass>WNA.WNADamageWorker.DmgWorker_Culling</workerClass>
     <causeStun>true</causeStun>
+    <ignoreShields>true</ignoreShields>
     <cutExtraTargetsCurve>
       <points>
         <li>0,1</li>
@@ -53,6 +54,7 @@
     <isRanged>true</isRanged>
     <makesAnimalsFlee>true</makesAnimalsFlee>
     <impactSoundType>Slice</impactSoundType>
+    <ignoreShields>true</ignoreShields>
     <cutExtraTargetsCurve>
       <points>
         <li>0,1</li>
@@ -132,11 +134,12 @@
     <label>chiming</label>
     <deathMessage>{0} has molten.</deathMessage>
     <hediff>WNA_Molten</hediff>
+    <ignoreShields>true</ignoreShields>
     <isExplosive>true</isExplosive>
     <makesAnimalsFlee>true</makesAnimalsFlee>
     <impactSoundType>Slice</impactSoundType>
     <minDamageToFragment>15</minDamageToFragment>
-    <defaultDamage>999999</defaultDamage>
+    <defaultDamage>9999999</defaultDamage>
     <buildingDamageFactor>100000</buildingDamageFactor>
     <plantDamageFactor>100000</plantDamageFactor>
     <corpseDamageFactor>100000</corpseDamageFactor>
@@ -158,6 +161,7 @@
     <isRanged>true</isRanged>
     <makesAnimalsFlee>false</makesAnimalsFlee>
     <causeStun>true</causeStun>
+    <ignoreShields>true</ignoreShields>
     <impactSoundType/>
     <buildingDamageFactor>0.333333</buildingDamageFactor>
     <plantDamageFactor>0</plantDamageFactor>
@@ -177,6 +181,7 @@
   <DamageDef ParentName="WNA_RadBurnBase">
     <defName>WNA_RadBeam</defName>
     <label>rad beam</label>
+    <ignoreShields>false</ignoreShields>
     <additionalHediffs Inherits="false">
       <li>
         <hediff>WNA_RadEffect</hediff>
@@ -209,6 +214,7 @@
   <DamageDef ParentName="WNA_DamageBase">
     <defName>WNA_Temporal</defName>
     <label>chrono</label>
+    <ignoreShields>true</ignoreShields>
     <deathMessage>{0} is warped.</deathMessage>
     <workerClass>WNA.WNADamageWorker.DmgWorker_Temporal</workerClass>
     <makesAnimalsFlee>false</makesAnimalsFlee>
@@ -221,6 +227,7 @@
     <label>controller</label>
     <deathMessage>{0} killed by psychic.</deathMessage>
     <workerClass>WNA.WNADamageWorker.DmgWorker_Controller</workerClass>
+    <ignoreShields>true</ignoreShields>
     <makesAnimalsFlee>false</makesAnimalsFlee>
     <impactSoundType>Blunt</impactSoundType>
     <modExtensions>
@@ -240,6 +247,7 @@
     <label>controller</label>
     <deathMessage>{0} killed by psychic.</deathMessage>
     <workerClass>WNA.WNADamageWorker.DmgWorker_Controller_Permanent</workerClass>
+    <ignoreShields>true</ignoreShields>
     <makesAnimalsFlee>false</makesAnimalsFlee>
     <impactSoundType>Blunt</impactSoundType>
     <externalViolence>false</externalViolence>
@@ -309,6 +317,7 @@
     <label>shock</label>
     <deathMessage>{0} is shocked to death.</deathMessage>
     <workerClass>WNA.WNADamageWorker.DmgWorker_AdvEMP</workerClass>
+    <ignoreShields>true</ignoreShields>
     <makesAnimalsFlee>true</makesAnimalsFlee>
     <impactSoundType>Blunt</impactSoundType>
     <externalViolence>false</externalViolence>

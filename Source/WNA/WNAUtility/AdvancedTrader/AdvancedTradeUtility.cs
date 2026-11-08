@@ -28,8 +28,11 @@ namespace WNA.WNAUtility.AdvancedTrader
             var key = (def, stuff);
             if (!priceReps.TryGetValue(key, out Tradeable rep))
             {
-                Thing thing = ThingMaker.MakeThing(def, def.MadeFromStuff ? stuff : null);
-                thing.stackCount = 1;
+                Thing thing = MakePriceRepThing(def, stuff);
+                if (thing == null)
+                {
+                    return 0f;
+                }
                 if (context != null && context.UseFixedQuality)
                 {
                     CompQuality quality = thing.TryGetComp<CompQuality>();
@@ -41,6 +44,30 @@ namespace WNA.WNAUtility.AdvancedTrader
                 priceReps[key] = rep;
             }
             return rep.GetPriceFor(TradeAction.PlayerBuys);
+        }
+        private static Thing MakePriceRepThing(ThingDef def, ThingDef stuff)
+        {
+            ThingDef stuffArg = def.MadeFromStuff ? stuff : null;
+            if (def.Minifiable)
+            {
+                // MakeThing on a minifiable def yields an empty MinifiedThing, and Tradeable resolves
+                // AnyThing through its inner thing, so the inner thing has to be filled in.
+                Thing inner = ThingMaker.MakeThing(def, stuffArg);
+                Thing outer = ThingMaker.MakeThing(def.minifiedDef);
+                if (inner == null || outer is not MinifiedThing minified)
+                {
+                    return null;
+                }
+                minified.InnerThing = inner;
+                return minified;
+            }
+            Thing thing = ThingMaker.MakeThing(def, stuffArg);
+            if (thing == null)
+            {
+                return null;
+            }
+            thing.stackCount = 1;
+            return thing;
         }
         public static bool IsAdvancedTrader(ITrader trader)
         {

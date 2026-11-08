@@ -15,6 +15,10 @@
     <forcedTraits>
       <li>WNA_Trait_Unshakable</li>
     </forcedTraits>
+    <apparelTags>
+      <li>WNA_Tag_Apparel</li>
+      <li>WNA_Tag_ApparelExtra</li>
+    </apparelTags>
     <apparelRequired>
 			<li>WNA_Holyorder</li>
 			<li>WNA_StdMiliSuit</li>
@@ -52,6 +56,10 @@
       <li>Tough</li>
       <li>WNA_Trait_Unshakable</li>
     </forcedTraits>
+    <apparelTags>
+      <li>WNA_Tag_Apparel</li>
+      <li>WNA_Tag_ApparelExtra</li>
+    </apparelTags>
     <apparelRequired>
 			<li>WNA_Holyorder</li>
 			<li>WNA_StdMiliSuit</li>
@@ -135,25 +143,6 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="WNA_PawnsHumanoid">
-    <defName>WNA_Vanguard</defName>
-    <label>heavy vanguard</label>
-    <combatPower>60</combatPower>
-    <weaponTags>
-      <li>Tag_WNAStrikeForce</li>
-      <li>Tag_WNAVanguard</li>
-      <li>Tag_WNAOneuse</li>
-    </weaponTags>
-    <apparelRequired>
-			<li>WNA_VanguardPlate</li>
-			<li>WNA_VanguardHead</li>
-			<li>WNA_AmmoLoader</li>
-    </apparelRequired>
-    <forcedTraits>
-      <li>Psychopath</li>
-    </forcedTraits>
-  </PawnKindDef>
-
-  <PawnKindDef ParentName="WNA_PawnsHumanoid">
     <defName>WNA_BlightForce</defName>
     <label>blight force</label>
     <combatPower>40</combatPower>
@@ -188,6 +177,25 @@
     <apparelDisallowTags>
       <li>WNA_Tag_Radiation</li>
     </apparelDisallowTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="WNA_PawnsHumanoid">
+    <defName>WNA_Vanguard</defName>
+    <label>heavy vanguard</label>
+    <combatPower>80</combatPower>
+    <weaponTags>
+      <li>Tag_WNAStrikeForce</li>
+      <li>Tag_WNAVanguard</li>
+      <li>Tag_WNAOneuse</li>
+    </weaponTags>
+    <apparelRequired>
+			<li>WNA_VanguardPlate</li>
+			<li>WNA_VanguardHead</li>
+			<li>WNA_AmmoLoader</li>
+    </apparelRequired>
+    <forcedTraits>
+      <li>Psychopath</li>
+    </forcedTraits>
   </PawnKindDef>
   
   <PawnKindDef ParentName="WNA_PawnsHumanoid">

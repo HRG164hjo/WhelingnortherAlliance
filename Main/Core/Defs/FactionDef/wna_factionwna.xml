@@ -2,7 +2,7 @@
 <Defs>
   <FactionDef>
     <defName>WNA_FactionWNA</defName>
-    <label>Whellingnorther Alliance</label>
+    <label>Whelingnorther Alliance</label>
     <categoryTag>WNA_FactionWNA</categoryTag>
     <factionIconPath>factions/wna_alliance</factionIconPath>
     <settlementTexturePath>karma</settlementTexturePath>
@@ -21,7 +21,7 @@
     <canSiege>false</canSiege>
     <canStageAttacks>false</canStageAttacks>
     <leaderTitle>archonpriest</leaderTitle>
-    <fixedName>Whellingnorther Alliance</fixedName>
+    <fixedName>Whelingnorther Alliance</fixedName>
     <settlementNameMaker>WNA_NamerSettlement</settlementNameMaker>
     <techLevel>Archotech</techLevel>
     <autoFlee>false</autoFlee>
@@ -101,8 +101,11 @@
       <li>
         <kindDef>Settlement</kindDef>
         <options>
+          <WNA_Vanguard>100</WNA_Vanguard>
           <WNA_StratagemComm>50</WNA_StratagemComm>
           <WNA_Parasomniant>50</WNA_Parasomniant>
+          <WNA_BlightForce>50</WNA_BlightForce>
+          <WNA_DarknightComm>50</WNA_DarknightComm>
           <WNA_Disciple>50</WNA_Disciple>
           <WNA_Archonpriest>20</WNA_Archonpriest>
         </options>
@@ -129,8 +132,17 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
+          <WNA_Vanguard>100</WNA_Vanguard>
+          <WNA_BlightForce>50</WNA_BlightForce>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
           <WNA_StrikeForce>40</WNA_StrikeForce>
-          <WNA_DarknightComm>20</WNA_DarknightComm>
+          <WNA_DarknightComm>30</WNA_DarknightComm>
+          <WNA_Parasomniant>20</WNA_Parasomniant>
         </options>
       </li>
       <li>

@@ -58,15 +58,26 @@ namespace WNA.WNAGameComp
                 return false;
             if (pawn.def == null || pawn.kindDef == null)
                 return false;
+            if (pawn.def != WNAMainDefOf.WNA_Whelingnorthan
+                && pawn.def != WNAMainDefOf.WNA_Humanoid
+                && !(pawn.health.hediffSet.hediffs.Any(h => h.def == WNAMainDefOf.WNA_PermaconstActive)))
+                return false;
             if (!General.IsInternalFaction(pawn.Faction))
                 return false;
             if (General.IsInternalFaction(pawn.Faction) && !pawn.HostileTo(Faction.OfPlayer))
             {
                 if (PawnUtility.IsFactionLeader(pawn))
                     return false;
-                return !pawn.SpawnedOrAnyParentSpawned;
+                return !pawn.SpawnedOrAnyParentSpawned && LeftMapRecently(pawn);
             }
             return false;
+        }
+        private static bool LeftMapRecently(Pawn pawn)
+        {
+            if (pawn.becameWorldPawnTickAbs < 0)
+                return false;
+            int windowTicks = (int)(WNAMod.Settings.pawnReturnerRecencyDays * GenDate.TicksPerDay);
+            return GenTicks.TicksAbs - pawn.becameWorldPawnTickAbs <= windowTicks;
         }
         private static void ReturnToMap(Pawn pawn, Map map)
         {

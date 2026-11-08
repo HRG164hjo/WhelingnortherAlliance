@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Anima Expansion</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Romy_AnimaFruitpalm" or defName="Romy_AnimaSootheleaf" or defName="Romy_AnimaWoodstalk" or defName="Romy_AnimaGlowbulb" or defName="Romy_AnimaHeartstem" or defName="Plant_GrassAnima"]/plant</xpath>
+          <value>
+            <sowTags>
+              <li>Ground</li>
+            </sowTags>
+            <sowResearchPrerequisites Inherit="False">
+              <li>WNA_EngineeredCrops</li>
+            </sowResearchPrerequisites>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>More Plant Products</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Plant_PincushionCactus" or defName="Plant_Moss" or defName="Plant_Rafflesia"]/plant</xpath>
+          <value>
+            <sowTags>
+              <li>Ground</li>
+            </sowTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Plant_MossGauranlen"]/plant</xpath>
+          <value>
+            <sowTags>
+              <li>Ground</li>
+            </sowTags>
+            <sowResearchPrerequisites Inherit="False">
+              <li>WNA_EngineeredCrops</li>
+            </sowResearchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Plant_MagmaCactus" or defName="Plant_Willowgill" or defName="Plant_Fireweed"]/plant</xpath>
+          <value>
+            <sowTags>
+              <li>Ground</li>
+            </sowTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Plant_Bulrush" or defName="Plant_Lotus"]/plant</xpath>
+          <value>
+            <sowTags>
+              <!--<li>Ground</li>-->
+              <li>Hydroponics</li>
+              <li MayRequire="VanillaExpanded.VPlantsEMore">VCE_Aquatic</li>
+            </sowTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Plant_Bulrush" or defName="Plant_Lotus"]/plant/wildTerrainTags</xpath>
+          <value>
+            <li>WNA_Sowable</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Mountain Rarities</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Romy_Fossil" or defName="Romy_Geode"]</xpath>
+          <value>
+            <deepCommonality>0.5</deepCommonality>
+            <deepCountPerPortion>75</deepCountPerPortion>
+            <deepLumpSizeRange>2~3</deepLumpSizeRange>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Useful Filth</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Romy_RockRubble"]</xpath>
+          <value>
+            <butcherProducts>
+              <Romy_BlocksRubble>2</Romy_BlocksRubble>
+            </butcherProducts>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Romy_MetalScrap"]</xpath>
+          <value>
+            <butcherProducts>
+              <Steel>2</Steel>
+            </butcherProducts>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Writhing Tree</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Romy_Plant_MarrowberryBush" or defName="Romy_Plant_Rotroot" or defName="Romy_Plant_Leatherbulb" or defName="Romy_Plant_BoneconeStalks" or defName="Romy_Plant_RotsackShroom" or defName="Romy_Plant_Metalcane" or defName="Romy_Plant_WrithingStalk"]/plant/sowTags</xpath>
+          <value>
+            <sowTags Inherit="False">
+              <li>Ground</li>
+            </sowTags>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Romy_Plant_MarrowberryBush" or defName="Romy_Plant_Rotroot" or defName="Romy_Plant_Leatherbulb" or defName="Romy_Plant_BoneconeStalks" or defName="Romy_Plant_RotsackShroom" or defName="Romy_Plant_Metalcane" or defName="Romy_Plant_WrithingStalk"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <sowResearchPrerequisites Inherit="False">
+              <li>WNA_EngineeredCrops</li>
+            </sowResearchPrerequisites>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="Romy_Plant_WrithingStalk"]/comps/li[@Class="CompProperties_PlantPreventCutting"]</xpath>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Romy_Plant_WrithingStalk"]/plant/warnIfMarkedForCut</xpath>
+          <value>
+            <warnIfMarkedForCut>false</warnIfMarkedForCut>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Romy_Plant_WrithingStalk"]/plant/treeCategory</xpath>
+          <value>
+            <treeCategory>Full</treeCategory>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Romy_Plant_WrithingStalk"]/plant</xpath>
+          <value>
+            <mustBeWildToSow>false</mustBeWildToSow>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

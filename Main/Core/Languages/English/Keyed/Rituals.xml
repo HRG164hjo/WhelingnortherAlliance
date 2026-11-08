@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNA_UpliftUnavailableIdeology>The uplifting rite requires the Ideology expansion.</WNA_UpliftUnavailableIdeology>
+  <WNA_UpliftUnavailableResearch>The uplifting rite is not yet authorized. Research "Authorized Uplifting" first.</WNA_UpliftUnavailableResearch>
+  <WNA_UpliftUnavailableFaction>The Whelingnorther Alliance cannot be found.</WNA_UpliftUnavailableFaction>
+  <WNA_UpliftUnavailableHostile>The uplifting rite cannot be used while the Whelingnorther Alliance is hostile.</WNA_UpliftUnavailableHostile>
+
+  <WNA_UpliftOrganizerBusy>This pawn is already taking part in another gathering.</WNA_UpliftOrganizerBusy>
+  <WNA_UpliftOrganizerNeedsIdeo>The host must follow the Whelingnorther creed.</WNA_UpliftOrganizerNeedsIdeo>
+
+  <WNA_UpliftSubjectBusy>This being is already taking part in another gathering.</WNA_UpliftSubjectBusy>
+  <WNA_UpliftSubjectForbiddenFaction>The Whelingnorther Alliance and its PCC servants cannot be uplifted.</WNA_UpliftSubjectForbiddenFaction>
+  <WNA_UpliftSubjectUnavailable>This being is not available for uplifting.</WNA_UpliftSubjectUnavailable>
+  <WNA_UpliftSubjectGone>The subject is gone. The uplifting cannot be completed.</WNA_UpliftSubjectGone>
+  <WNA_UpliftFailed>The subject could not be reshaped.</WNA_UpliftFailed>
+  <WNA_UpliftCompleted>The uplifting is complete: {PAWN}.</WNA_UpliftCompleted>
+  <WNA_UpliftSubjectInfo>Subject: {SUBJECT}</WNA_UpliftSubjectInfo>
+  <WNA_UpliftTargetInfo>an altar or a ritual spot</WNA_UpliftTargetInfo>
+  <WNA_UpliftSelectSubject>Select the being to uplift.</WNA_UpliftSelectSubject>
+
+  <WNA_UpliftXenotype>Xenotype</WNA_UpliftXenotype>
+  <WNA_UpliftXenotypeTooltip>Choosing a xenotype rewrites the endogenes of the uplifted pawn. Only xenotypes defined in the game data are offered; custom xenotypes are not.</WNA_UpliftXenotypeTooltip>
+
+
+  <WNA_AbilityRitual_RequiresIdeology>The ability grant rite requires the Ideology expansion.</WNA_AbilityRitual_RequiresIdeology>
+  <WNA_AbilityRitual_RequiresResearch>The ability grant rite requires research: {RESEARCH}.</WNA_AbilityRitual_RequiresResearch>
+  <WNA_AbilityRitual_RecipientBusy>This colonist is already taking part in another gathering.</WNA_AbilityRitual_RecipientBusy>
+  <WNA_AbilityRitual_NeedsAbilityTracker>{PAWN} cannot gain abilities.</WNA_AbilityRitual_NeedsAbilityTracker>
+  <WNA_AbilityRitual_TargetInfo>an altar or a ritual spot</WNA_AbilityRitual_TargetInfo>
+  <WNA_AbilityRitual_NoAbilities>{PAWN} has no abilities left to gain.</WNA_AbilityRitual_NoAbilities>
+  <WNA_AbilityRitual_Granted>{PAWN} has gained the ability {ABILITY}.</WNA_AbilityRitual_Granted>
+
+  <WNA_AbilityRitual_WindowTitle>Choose an ability for {PAWN}</WNA_AbilityRitual_WindowTitle>
+  <WNA_AbilityRitual_WindowSubtitle>Only one ability can be granted. The rite ends as soon as you choose.</WNA_AbilityRitual_WindowSubtitle>
+  <WNA_AbilityRitual_Sources>Source</WNA_AbilityRitual_Sources>
+  <WNA_AbilityRitual_Categories>Category</WNA_AbilityRitual_Categories>
+  <WNA_AbilityRitual_AllSources>All sources ({COUNT})</WNA_AbilityRitual_AllSources>
+  <WNA_AbilityRitual_AllCategories>All categories ({COUNT})</WNA_AbilityRitual_AllCategories>
+  <WNA_AbilityRitual_Uncategorized>Uncategorized</WNA_AbilityRitual_Uncategorized>
+  <WNA_AbilityRitual_UnknownSource>Unknown source</WNA_AbilityRitual_UnknownSource>
+  <WNA_AbilityRitual_SourceCore>Core</WNA_AbilityRitual_SourceCore>
+  <WNA_AbilityRitual_SourceRoyalty>Royalty</WNA_AbilityRitual_SourceRoyalty>
+  <WNA_AbilityRitual_SourceIdeology>Ideology</WNA_AbilityRitual_SourceIdeology>
+  <WNA_AbilityRitual_SourceBiotech>Biotech</WNA_AbilityRitual_SourceBiotech>
+  <WNA_AbilityRitual_SourceAnomaly>Anomaly</WNA_AbilityRitual_SourceAnomaly>
+  <WNA_AbilityRitual_SourceOdyssey>Odyssey</WNA_AbilityRitual_SourceOdyssey>
+  <WNA_AbilityRitual_SourceWNA>Whelingnorther Alliance</WNA_AbilityRitual_SourceWNA>
+  <WNA_AbilityRitual_Page>Page {PAGE} / {TOTAL}</WNA_AbilityRitual_Page>
+  <WNA_AbilityRitual_PrevPage>Previous</WNA_AbilityRitual_PrevPage>
+  <WNA_AbilityRitual_NextPage>Next</WNA_AbilityRitual_NextPage>
+  <WNA_AbilityRitual_Cancel>Cancel rite</WNA_AbilityRitual_Cancel>
+  <WNA_AbilityRitual_NoMatches>No abilities match the current filters.</WNA_AbilityRitual_NoMatches>
+  
+
+  <WNA_EntrallmentUnavailableIdeology>The enthrallment rite requires the Ideology expansion.</WNA_EntrallmentUnavailableIdeology>
+  <WNA_EntrallmentUnavailableResearch>The enthrallment rite is not yet authorized. Research "Global Entrallment" first.</WNA_EntrallmentUnavailableResearch>
+
+  <WNA_EntrallmentTargetInfo>an altar or a ritual spot</WNA_EntrallmentTargetInfo>
+
+  <WNA_EntrallmentWindowTitle>Enthrallment</WNA_EntrallmentWindowTitle>
+  <WNA_EntrallmentWindowSubtitle>The collective will has found these souls. Choose who shall be called.</WNA_EntrallmentWindowSubtitle>
+  <WNA_EntrallmentNoFaction>Unaffiliated</WNA_EntrallmentNoFaction>
+  <WNA_EntrallmentDead>dead</WNA_EntrallmentDead>
+  <WNA_EntrallmentSelected>Selected: {COUNT}</WNA_EntrallmentSelected>
+  <WNA_EntrallmentConfirm>Confirm</WNA_EntrallmentConfirm>
+  <WNA_EntrallmentCancel>Cancel</WNA_EntrallmentCancel>
+
+  <WNA_EntrallmentNoTargets>No world pawns can answer the call.</WNA_EntrallmentNoTargets>
+  <WNA_EntrallmentQueued>The chosen pawns will be sent to the map in time.</WNA_EntrallmentQueued>
+  <WNA_EntrallmentArrived>{PAWN} has been delivered to the map.</WNA_EntrallmentArrived>
+  <WNA_EntrallmentArrivedDead>The corpse of {PAWN} has been delivered to the map.</WNA_EntrallmentArrivedDead>
+  <WNA_EntrallmentFailed>The call could not be completed.</WNA_EntrallmentFailed>
+
+</LanguageData>

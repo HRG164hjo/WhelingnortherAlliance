@@ -3,7 +3,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="AncientTransportPod"]/comps/li[@Class="CompProperties_Transporter"]</xpath>
     <value>
-      <massCapacity>1500</massCapacity>
+      <massCapacity>75000</massCapacity>
     </value>
   </Operation>
   <Operation Class="PatchOperationReplace">

@@ -133,6 +133,7 @@ namespace WNA.WNAWorldComp
             }
             EnsureUplifting(WNAIdeo);
             EnsureAbilityGrant(WNAIdeo);
+            EnsureWorldPawnWarp(WNAIdeo);
             Faction playerFaction = Faction.OfPlayerSilentFail;
             if (playerFaction?.ideos != null)
             {
@@ -140,6 +141,7 @@ namespace WNA.WNAWorldComp
                 {
                     EnsureUplifting(playerIdeo);
                     EnsureAbilityGrant(playerIdeo);
+                    EnsureWorldPawnWarp(playerIdeo);
                 }
             }
         }
@@ -164,6 +166,17 @@ namespace WNA.WNAWorldComp
                 PreceptMaker.MakePrecept(WNAMainDefOf.WNA_AbilityGrant),
                 init: true,
                 fillWith: WNAMainDefOf.WNA_AbilityGrant.ritualPatternBase);
+        }
+        private static void EnsureWorldPawnWarp(Ideo ideo)
+        {
+            if (ideo == null || WNAMainDefOf.WNA_WorldPawnWarp == null)
+                return;
+            if (ideo.HasPrecept(WNAMainDefOf.WNA_WorldPawnWarp))
+                return;
+            ideo.AddPrecept(
+                PreceptMaker.MakePrecept(WNAMainDefOf.WNA_WorldPawnWarp),
+                init: true,
+                fillWith: WNAMainDefOf.WNA_WorldPawnWarp.ritualPatternBase);
         }
         private static void SyncPCCIdeo()
         {

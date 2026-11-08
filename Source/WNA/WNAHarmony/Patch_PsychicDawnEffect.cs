@@ -29,13 +29,43 @@ namespace WNA.WNAHarmony
             {
                 if (!WNAPsychicDawnUtility.Active || !WNAPsychicDawnUtility.IsInGrowingZone(__instance))
                     return true;
-                TerrainDef terrain = __instance.Position.GetTerrain(__instance.Map);
-                Building building = __instance.Position.GetEdifice(__instance.Map);
-                float fertility = terrain?.fertility ?? 0f;
-                if (building != null)
-                    fertility += building?.def?.fertility ?? 0f;
-                __result = Mathf.Max(1f, fertility * 2f);
+                __result += WNAPsychicDawnUtility.GrowthMultiplierFor(__instance);
                 return false;
+            }
+        }
+
+        // Subclasses may override the virtual GrowthRate getter, which bypasses the base patch.
+        // GrowthPerTick is non-virtual, so patching it covers every Plant subclass using vanilla growth.
+        [HarmonyPatch]
+        internal static class Patch_Plant_GrowthPerTick
+        {
+            private static readonly System.Reflection.PropertyInfo RestingProperty =
+                typeof(Plant).GetProperty("Resting",
+                    System.Reflection.BindingFlags.Instance
+                    | System.Reflection.BindingFlags.NonPublic
+                    | System.Reflection.BindingFlags.Public);
+
+            internal static System.Reflection.MethodBase TargetMethod()
+            {
+                return AccessTools.PropertyGetter(typeof(Plant), "GrowthPerTick");
+            }
+
+            internal static void Postfix(Plant __instance, ref float __result)
+            {
+                if (!WNAPsychicDawnUtility.Active || !WNAPsychicDawnUtility.IsInGrowingZone(__instance))
+                    return;
+                // A zero GrowthRate from subclass overrides (e.g. VEF fertility restrictions) must not block the effect,
+                // so the state checks of the vanilla getter are mirrored here instead of trusting __result.
+                if (__instance.LifeStage != PlantLifeStage.Growing || __instance.Blighted)
+                    return;
+                if (RestingProperty != null && (bool)RestingProperty.GetValue(__instance, null))
+                    return;
+                if (!__instance.def.plant.vacuumResistant && __instance.Position.GetVacuum(__instance.Map) >= 0.5f)
+                    return;
+                float growDays = __instance.def?.plant?.growDays ?? 0f;
+                if (growDays <= 0f)
+                    return;
+                __result = 1f / (60000f * growDays) * WNAPsychicDawnUtility.GrowthMultiplierFor(__instance);
             }
         }
 

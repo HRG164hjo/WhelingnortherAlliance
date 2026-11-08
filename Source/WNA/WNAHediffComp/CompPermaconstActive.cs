@@ -37,7 +37,8 @@ namespace WNA.WNAHediffComp
         {
             base.Notify_PawnDied(dinfo, culprit);
             float rand = Random.value;
-            if (rand <= 0.07f && WNAMod.Settings.enablePermaconstDeathAid)
+            if (WNAMod.Settings != null && WNAMod.Settings.enablePermaconstDeathAid
+                && rand <= WNAMod.Settings.permaconstDeathAidChance)
             {
                 Map map = parent.pawn.Map ?? parent.pawn.MapHeld;
                 if (map == null)

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <WorldObjectDef>
+    <defName>WNA_DefenseMissile</defName>
+    <label>defense missile</label>
+    <description>An automated defense missile launched by a Whelingnorther Alliance settlement.</description>
+    <worldObjectClass>WNA.WNAWorldObject.WorldObject_DefenseMissile</worldObjectClass>
+    <texture>Things/Projectile/Rocket_Big</texture>
+    <useDynamicDrawer>true</useDynamicDrawer>
+    <canHaveMap>false</canHaveMap>
+    <canHaveFaction>false</canHaveFaction>
+    <selectable>false</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <validLaunchTarget>false</validLaunchTarget>
+  </WorldObjectDef>
+
+</Defs>

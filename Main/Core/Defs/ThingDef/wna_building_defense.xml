@@ -1,0 +1,1965 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <DesignatorDropdownGroupDef>
+    <defName>WNA_Security_TierI</defName>
+    <label>security t1</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>WNA_Security_TierII</defName>
+    <label>security t2</label>
+  </DesignatorDropdownGroupDef>  
+  <DesignatorDropdownGroupDef>
+    <defName>WNA_Security_TierIII</defName>
+    <label>security t3</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>WNA_Security_AA</defName>
+    <label>security aa</label>
+  </DesignatorDropdownGroupDef>
+  
+  <!-- t1 -->
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_SentryGun</defName>
+    <label>sentry gun</label>
+    <description>A sentry gun turret.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Power/PowerSwitch</texPath>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/Power/PowerSwitch</uiIconPath>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <building>
+      <turretGunDef>WNA_SentryGun_Gun</turretGunDef>
+      <turretTopDrawSize>1.4</turretTopDrawSize>
+      <turretTopOffset>(0,0.1)</turretTopOffset>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierI</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_SentryGun_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Building/Mech/TurretMechMini_Top</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <defaultProjectile>WNA_SentryGun_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>42.9</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <burstShotCount>2</burstShotCount>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_SentryGun_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <speed>300</speed>
+      <damageDef>WNA_HollowPoint</damageDef>
+      <damageAmountBase>80</damageAmountBase>
+      <armorPenetrationBase>0</armorPenetrationBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <warheads>
+          <li>
+            <type>Cluster</type>
+            <radius>1.5</radius>
+            <amount>2</amount>
+            <affectsDirectTarget>true</affectsDirectTarget>
+            <fleck>ShotHit_Dirt</fleck>
+          </li>
+        </warheads>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_StingGun</defName>
+    <label>sting gun</label>
+    <description>A sentry gun turret armed with toxic bullets.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Power/PowerSwitch</texPath>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/Power/PowerSwitch</uiIconPath>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <building>
+      <turretGunDef>WNA_StingGun_Gun</turretGunDef>
+      <turretTopDrawSize>1.4</turretTopDrawSize>
+      <turretTopOffset>(0,0.1)</turretTopOffset>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>0.4</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierI</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_StingGun_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Building/Mech/TurretMechMini_Top</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <defaultProjectile>WNA_StingGun_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>42.9</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <burstShotCount>2</burstShotCount>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_StingGun_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <speed>300</speed>
+      <damageDef>WNA_ToxinBullet</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <armorPenetrationBase>2</armorPenetrationBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <warheads>
+          <li>
+            <type>Cluster</type>
+            <radius>1.5</radius>
+            <amount>2</amount>
+            <affectsDirectTarget>true</affectsDirectTarget>
+            <fleck>ShotHit_Dirt</fleck>
+          </li>
+        </warheads>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_TorchGun</defName>
+    <label>torch gun</label>
+    <description>A sentry gun turret that can fire flamming bullets.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Power/PowerSwitch</texPath>
+      <drawSize>0.75</drawSize>
+      <color>(175,155,0)</color>
+    </graphicData>
+    <uiIconPath>Things/Building/Power/PowerSwitch</uiIconPath>
+    <uiIconColor>(175,155,0)</uiIconColor>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <building>
+      <turretGunDef>WNA_TorchGun_Gun</turretGunDef>
+      <turretTopDrawSize>1.4</turretTopDrawSize>
+      <turretTopOffset>(0,0.1)</turretTopOffset>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>0.4</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierI</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_TorchGun_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Building/Mech/TurretMechMini_Top</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <defaultProjectile>WNA_TorchGun_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>42.9</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <burstShotCount>2</burstShotCount>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>12</LaserDuration>
+        <LaserInnerColor>(175,155,0)</LaserInnerColor>
+        <LaserOuterColor>(255,0,0)</LaserOuterColor>
+        <LaserThickness>0.1</LaserThickness>
+        <LaserOuterSpread>1.4</LaserOuterSpread>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_TorchGun_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <damageDef>WNA_Flame</damageDef>
+      <damageAmountBase>35</damageAmountBase>
+      <armorPenetrationBase>2</armorPenetrationBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_SonicEmitter</defName>
+    <label>somic emitter</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Power/PowerSwitch</texPath>
+      <drawSize>0.75</drawSize>
+      <color>(255,255,255)</color>
+    </graphicData>
+    <uiIconPath>Things/Building/Power/PowerSwitch</uiIconPath>
+    <uiIconColor>(255,255,255)</uiIconColor>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>650</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>40</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_SonicEmitter_Gun</turretGunDef>
+      <turretTopDrawSize>1.4</turretTopDrawSize>
+      <turretTopOffset>(0,0.1)</turretTopOffset>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>2.333333</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierI</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_SonicEmitter_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Building/Mech/TurretMechMini_Top</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_SonicEmitter_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>46.9</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>45</LaserDuration>
+        <LaserInnerColor>(255,255,255)</LaserInnerColor>
+        <LaserOuterColor>(200,200,200)</LaserOuterColor>
+        <LaserThickness>0.1</LaserThickness>
+        <LaserOuterSpread>1.4</LaserOuterSpread>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_SonicEmitter_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <damageDef>Thump</damageDef>
+      <damageAmountBase>70</damageAmountBase>
+      <armorPenetrationBase>4</armorPenetrationBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+        <warheads>
+          <li>
+            <type>Ambient</type>
+            <width>0.7</width>
+          </li>
+        </warheads>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_GunTurret</defName>
+    <label>gun turret</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Power/PowerSwitch</texPath>
+      <drawSize>0.75</drawSize>
+      <color>(80,80,80)</color>
+    </graphicData>
+    <uiIconPath>Things/Building/Power/PowerSwitch</uiIconPath>
+    <uiIconColor>(80,80,80)</uiIconColor>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>700</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <building>
+      <turretGunDef>WNA_GunTurret_Gun</turretGunDef>
+      <turretTopDrawSize>1.4</turretTopDrawSize>
+      <turretTopOffset>(0,0.1)</turretTopOffset>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.666667</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierI</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_GunTurret_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Building/Mech/TurretMechMini_Top</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_GunTurret_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>53.9</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_GunTurret_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <drawSize>2</drawSize>
+      <color>(80,80,80)</color>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <speed>80</speed>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>80</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <explosionRadius>1.9</explosionRadius>
+      <explosionChanceToStartFire>0</explosionChanceToStartFire>
+      <explosionDamageFalloff>false</explosionDamageFalloff>
+      <arcHeightFactor>4</arcHeightFactor>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <flightMode>Arcing</flightMode>
+        <explosive>true</explosive>
+        <inaccurate>true</inaccurate>
+        <inaccurateRange>1.9</inaccurateRange>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- t2 -->
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_TeslaCoil</defName>
+    <label>tesla coil</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Mech/TurretMechMini_Base</texPath>
+      <drawSize>1</drawSize>
+      <color>(255,200,200)</color>
+    </graphicData>
+    <uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
+    <uiIconColor>(255,200,200)</uiIconColor>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>850</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_TeslaCoil_Gun</turretGunDef>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+      <turretTopOffset>(0,0.1)</turretTopOffset>
+      <turretBurstWarmupTime>0.933333</turretBurstWarmupTime>
+      <turretBurstCooldownTime>3.666667</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_MainBattleArsenal</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierII</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_TeslaCoil_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ChargeLance</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_TeslaCoil_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>56.9</range>
+        <soundCast>WNA_TeslaAttack</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponTeslaBoltConfig">
+        <BoltDuration>28</BoltDuration>
+        <Bolt1Color>(255,200,200)</Bolt1Color>
+        <Bolt2Color>(255,200,200)</Bolt2Color>
+        <Bolt3Color>(255,255,255)</Bolt3Color>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_TeslaCoil_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>280</damageAmountBase>
+      <armorPenetrationBase>4</armorPenetrationBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_PrismTower</defName>
+    <label>prism tower</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Mech/TurretMechMini_Base</texPath>
+      <drawSize>1</drawSize>
+      <color>(123,123,123)</color>
+    </graphicData>
+    <uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
+    <uiIconColor>(123,123,123)</uiIconColor>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>850</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_PrismTower_Gun</turretGunDef>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+      <turretTopOffset>(0,0.1)</turretTopOffset>
+      <turretBurstWarmupTime>0.933333</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.666667</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_MainBattleArsenal</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierII</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_PrismTower_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ChargeLance</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_PrismTower_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>56.9</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>70</LaserDuration>
+        <LaserInnerColor>(123,123,123)</LaserInnerColor>
+        <LaserOuterColor>(255,123,123)</LaserOuterColor>
+        <LaserThickness>0.4</LaserThickness>
+        <LaserOuterSpread>1.4</LaserOuterSpread>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_PrismTower_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <damageAmountBase>154</damageAmountBase>
+      <armorPenetrationBase>4</armorPenetrationBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_InfernoTower</defName>
+    <label>inferno tower</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Mech/TurretMechMini_Base</texPath>
+      <drawSize>1</drawSize>
+      <color>(225,175,0)</color>
+    </graphicData>
+    <uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
+    <uiIconColor>(225,175,0)</uiIconColor>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>850</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_InfernoTower_Gun</turretGunDef>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+      <turretTopOffset>(0,0.1)</turretTopOffset>
+      <turretBurstWarmupTime>0.933333</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.666667</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_MainBattleArsenal</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierII</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_InfernoTower_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ChargeLance</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_InfernoTower_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>56.9</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>20</LaserDuration>
+        <LaserInnerColor>(225,175,0)</LaserInnerColor>
+        <LaserOuterColor>(80,40,0)</LaserOuterColor>
+        <LaserThickness>0.4</LaserThickness>
+        <LaserOuterSpread>1.4</LaserOuterSpread>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_InfernoTower_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <damageDef>Vaporize</damageDef>
+      <damageAmountBase>238</damageAmountBase>
+      <armorPenetrationBase>4</armorPenetrationBase>
+      <explosionRadius>2.25</explosionRadius>
+      <explosionChanceToStartFire>0</explosionChanceToStartFire>
+      <explosionDamageFalloff>false</explosionDamageFalloff>
+      <soundExplode>Explosion_Vaporize</soundExplode>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+        <explosive>true</explosive>
+        <warheads>
+          <li>
+            <type>Ambient</type>
+            <width>0.5</width>
+          </li>
+        </warheads>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_RailgunTower</defName>
+    <label>railgun tower</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Mech/TurretMechMini_Base</texPath>
+      <drawSize>1</drawSize>
+      <color>(92,235,135)</color>
+    </graphicData>
+    <uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
+    <uiIconColor>(92,235,135)</uiIconColor>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_RailgunTower_Gun</turretGunDef>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+      <turretTopOffset>(0,0.1)</turretTopOffset>
+      <turretBurstWarmupTime>0.933333</turretBurstWarmupTime>
+      <turretBurstCooldownTime>4</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_MainBattleArsenal</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierII</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_RailgunTower_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ChargeLance</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_RailgunTower_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>63.9</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>30</LaserDuration>
+        <LaserInnerColor>(92,235,135)</LaserInnerColor>
+        <LaserOuterColor>(92,235,175)</LaserOuterColor>
+        <LaserThickness>0.4</LaserThickness>
+        <LaserOuterSpread>1.4</LaserOuterSpread>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_RailgunTower_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <damageDef>Beam</damageDef>
+      <damageAmountBase>175</damageAmountBase>
+      <armorPenetrationBase>4</armorPenetrationBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+        <warheads>
+          <li>
+            <type>CellSpread</type>
+            <radius>3.6</radius>
+            <percentAtMax>0.4</percentAtMax>
+          </li>
+        </warheads>
+        <extraExplosions>
+          <li>
+            <damageDef>Stun</damageDef>
+            <radius>3.6</radius>
+            <count>1</count>
+            <areaSize>1</areaSize>
+          </li>
+        </extraExplosions>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_RadbeamDesolator</defName>
+    <label>desolator gun</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Mech/TurretMechMini_Base</texPath>
+      <drawSize>1</drawSize>
+      <color>(200,100,0)</color>
+    </graphicData>
+    <uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
+    <uiIconColor>(200,100,0)</uiIconColor>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <building>
+      <turretGunDef>WNA_RadbeamDesolator_Gun</turretGunDef>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+      <turretTopOffset>(0,0.1)</turretTopOffset>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.333333</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_ParticleArmory</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierII</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_RadbeamDesolator_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ChargeLance</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_RadbeamDesolator_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>56.9</range>
+        <soundCast>WNA_RadAttack</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponRadBeamConfig">
+        <RadBeamDuration>60</RadBeamDuration>
+        <RadBeamWidth>0.6</RadBeamWidth>
+        <RadBeamThickness>0.18</RadBeamThickness>
+        <RadBeamColor>(200,100,0)</RadBeamColor>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_RadbeamDesolator_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <damageDef>WNA_RadBurn</damageDef>
+      <damageAmountBase>210</damageAmountBase>
+      <armorPenetrationBase>4</armorPenetrationBase>
+    </projectile>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropRadFieldBurst">
+        <config>
+          <radLevel>100</radLevel>
+          <radius>1.9</radius>
+        </config>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_RisenMonolith</defName>
+    <label>risen monolith</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Mech/TurretMechMini_Base</texPath>
+      <drawSize>1</drawSize>
+      <color>(50,170,0)</color>
+    </graphicData>
+    <uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
+    <uiIconColor>(50,170,0)</uiIconColor>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>1300</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>450</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_RisenMonolith_Gun</turretGunDef>
+      <turretTopDrawSize>1.2</turretTopDrawSize>
+      <turretTopOffset>(0,0.1)</turretTopOffset>
+      <turretBurstWarmupTime>0.933333</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.666667</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_ParticleArmory</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierII</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_RisenMonolith_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ChargeLance</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_RisenMonolith_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>77.9</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>10</LaserDuration>
+        <LaserInnerColor>(0,200,0)</LaserInnerColor>
+        <LaserOuterColor>(0,200,0)</LaserOuterColor>
+        <LaserThickness>0.2</LaserThickness>
+        <LaserOuterSpread>1.5</LaserOuterSpread>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_RisenMonolith_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <damageDef>AcidBurn</damageDef>
+      <damageAmountBase>210</damageAmountBase>
+      <armorPenetrationBase>99</armorPenetrationBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- t3 -->
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_GrandCannon</defName>
+    <label>grand cannon</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Special/DropPod</texPath>
+      <drawSize>2.4</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Special/DropPod</uiIconPath>
+    <size>(2,2)</size>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>1650</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>450</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_GrandCannon_Gun</turretGunDef>
+      <turretTopDrawSize>2.7</turretTopDrawSize>
+      <turretTopOffset>(0,0.05)</turretTopOffset>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>4.666667</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_AdvancedArsenal</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierIII</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_GrandCannon_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretAutocannon_Top</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_GrandCannon_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>98.9</range>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_GrandCannon_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <drawSize>3</drawSize>
+      <color>(80,80,80)</color>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <speed>100</speed>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>350</damageAmountBase>
+      <armorPenetrationBase>4</armorPenetrationBase>
+      <arcHeightFactor>8</arcHeightFactor>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <flightMode>Arcing</flightMode>
+        <explosive>true</explosive>
+        <inaccurate>true</inaccurate>
+        <inaccurateRange>1.9</inaccurateRange>
+        <warheads>
+          <li>
+            <type>CellSpread</type>
+            <radius>6.9</radius>
+            <percentAtMax>0.3</percentAtMax>
+          </li>
+        </warheads>
+        <extraExplosions>
+          <li>
+            <damageDef>Bomb</damageDef>
+            <radius>3.9</radius>
+            <count>2</count>
+            <areaSize>3.5</areaSize>
+          </li>
+        </extraExplosions>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_HammerDefense</defName>
+    <label>hammer defense</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Special/DropPod</texPath>
+      <drawSize>2.4</drawSize>
+      <color>(255,155,0)</color>
+    </graphicData>
+    <uiIconPath>Things/Special/DropPod</uiIconPath>
+    <uiIconColor>(255,155,0)</uiIconColor>
+    <size>(2,2)</size>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>1650</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>450</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_HammerDefense_Gun</turretGunDef>
+      <turretTopDrawSize>2.7</turretTopDrawSize>
+      <turretTopOffset>(0,0.05)</turretTopOffset>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>4.666667</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_AdvancedArsenal</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierIII</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_HammerDefense_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>bedspot</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_HammerDefense_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>98.9</range>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_HammerDefense_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <damageDef>Thump</damageDef>
+      <damageAmountBase>280</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <flightMode>Instant</flightMode>
+        <warheads>
+          <li>
+            <type>CellSpread</type>
+            <radius>12.9</radius>
+            <percentAtMax>0.3</percentAtMax>
+          </li>
+        </warheads>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_AntaresBattery</defName>
+    <label>antares battery</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Special/DropPod</texPath>
+      <drawSize>2.4</drawSize>
+      <color>(255,155,0)</color>
+    </graphicData>
+    <uiIconPath>Things/Special/DropPod</uiIconPath>
+    <uiIconColor>(255,155,0)</uiIconColor>
+    <size>(2,2)</size>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>1650</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>450</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_AntaresBattery_Gun</turretGunDef>
+      <turretTopDrawSize>2.7</turretTopDrawSize>
+      <turretTopOffset>(0,0.05)</turretTopOffset>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>4.666667</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_AdvancedArsenal</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierIII</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_AntaresBattery_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretAutocannon_Top</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_AntaresBattery_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>98.9</range>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>40</LaserDuration>
+        <LaserInnerColor>(255,155,0)</LaserInnerColor>
+        <LaserOuterColor>(90,30,0)</LaserOuterColor>
+        <LaserThickness>0.4</LaserThickness>
+        <LaserOuterSpread>1.4</LaserOuterSpread>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_AntaresBattery_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <damageDef>Vaporize</damageDef>
+      <damageAmountBase>280</damageAmountBase>
+      <armorPenetrationBase>4</armorPenetrationBase>
+      <explosionRadius>6.9</explosionRadius>
+      <explosionChanceToStartFire>0</explosionChanceToStartFire>
+      <explosionDamageFalloff>false</explosionDamageFalloff>
+      <soundExplode>Explosion_Vaporize</soundExplode>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+        <explosive>true</explosive>
+        <warheads>
+          <li>
+            <type>Ambient</type>
+            <width>1</width>
+          </li>
+        </warheads>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_Neutralizer</defName>
+    <label>neutralizer</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Special/DropPod</texPath>
+      <drawSize>2.4</drawSize>
+      <color>(255,155,0)</color>
+    </graphicData>
+    <uiIconPath>Things/Special/DropPod</uiIconPath>
+    <uiIconColor>(255,155,0)</uiIconColor>
+    <size>(2,2)</size>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>1650</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>450</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_Neutralizer_Gun</turretGunDef>
+      <turretTopDrawSize>2.7</turretTopDrawSize>
+      <turretTopOffset>(0,0.05)</turretTopOffset>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>0.033333</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_AdvancedArsenal</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierIII</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_Neutralizer_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretAutocannon_Top</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <defaultProjectile>WNA_Neutralizer_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>98.9</range>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <burstShotCount>2</burstShotCount>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>15</LaserDuration>
+        <LaserInnerColor>(92,235,175,255)</LaserInnerColor>
+        <LaserOuterColor>(0,0,0,0)</LaserOuterColor>
+        <LaserThickness>0.1</LaserThickness>
+        <LaserOuterSpread>1.5</LaserOuterSpread>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_Neutralizer_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <damageDef>Cut</damageDef>
+      <damageAmountBase>24</damageAmountBase>
+      <armorPenetrationBase>99</armorPenetrationBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_Hyperion</defName>
+    <label>hyperion</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Special/DropPod</texPath>
+      <drawSize>2.4</drawSize>
+      <color>(255,155,0)</color>
+    </graphicData>
+    <uiIconPath>Things/Special/DropPod</uiIconPath>
+    <uiIconColor>(255,155,0)</uiIconColor>
+    <size>(2,2)</size>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>1650</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>600</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_Hyperion_Gun</turretGunDef>
+      <turretTopDrawSize>2.7</turretTopDrawSize>
+      <turretTopOffset>(0,0.05)</turretTopOffset>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>0.066667</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_AdvancedArsenal</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierIII</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_Hyperion_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretAutocannon_Top</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <defaultProjectile>WNA_Hyperion_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>105.9</range>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <burstShotCount>2</burstShotCount>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>24</LaserDuration>
+        <LaserInnerColor>(100,100,255)</LaserInnerColor>
+        <LaserOuterColor>(20,20,255)</LaserOuterColor>
+        <LaserThickness>0.3</LaserThickness>
+        <LaserOuterSpread>1.5</LaserOuterSpread>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_Hyperion_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+			<damageDef>WNA_Hypothermal</damageDef>
+			<damageAmountBase>60</damageAmountBase>
+      <armorPenetrationBase>99</armorPenetrationBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_PsychicTower</defName>
+    <label>psychic tower</label>
+    <description>A psychic defence tower that projects a focused mind-control pulse at humanlike intruders. Destroying the tower or cutting its power releases everyone it controls.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Power/Battery_north</texPath>
+      <drawSize>(1.9,1.425)</drawSize>
+      <color>(121,0,141)</color>
+    </graphicData>
+    <useHitPoints>true</useHitPoints>
+    <uiIconPath>Things/Building/Power/SolarCollector</uiIconPath>
+    <uiIconColor>(121,0,141)</uiIconColor>
+    <statBases>
+      <MaxHitPoints>1050</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_PsychicTower_Gun</turretGunDef>
+      <turretTopDrawSize>0.9</turretTopDrawSize>
+      <turretTopOffset>(0,0.05)</turretTopOffset>
+      <turretBurstWarmupTime>0.933333</turretBurstWarmupTime>
+      <turretBurstCooldownTime>2.333333</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_InterferenceNetwork</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierIII</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_PsychicTower_Gun</defName>
+    <label>turret gun</label>
+    <description>A psychic projector mounted on a defence tower.</description>
+    <graphicData>
+      <texPath>Things/Building/Power/PowerSwitch</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>WNA_PsychicTower_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <soundCast>WNA_MindControl</soundCast>
+        <requireLineOfSight>false</requireLineOfSight>
+        <range>70.9</range>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetAnimals>true</canTargetAnimals>
+          <canTargetHumans>true</canTargetHumans>
+          <canTargetMechs>true</canTargetMechs>
+          <canTargetBuildings>false</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_PsychicTower_Proj</defName>
+    <label>gun proj</label>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <projectile>
+      <damageDef>WNA_Controller</damageDef>
+      <damageAmountBase>1</damageAmountBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- aa -->
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_DefenseMissile</defName>
+    <label>defense missile</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Power/Battery_north</texPath>
+      <drawSize>(1.9,1.425)</drawSize>
+    </graphicData>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+      <li Class="WNA.WNAThingComp.PropAdvancedAA">
+        <range>72.9</range>
+        <cooldownTicks>40</cooldownTicks>
+        <damage>90</damage>
+        <damageDef>Bomb</damageDef>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_DefenseMissile_Gun</turretGunDef>
+      <turretTopDrawSize>0.9</turretTopDrawSize>
+      <turretTopOffset>(0,0.1)</turretTopOffset>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.333333</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AdvancedArsenal</li>
+      <li>WNA_SignalRecon</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_AA</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_DefenseMissile_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ChargeBlasterLight</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <defaultProjectile>WNA_DefenseMissile_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>72.9</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <burstShotCount>2</burstShotCount>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_DefenseMissile_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Needle</texPath>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <speed>100</speed>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>45</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <explosionRadius>1.9</explosionRadius>
+      <explosionChanceToStartFire>0</explosionChanceToStartFire>
+      <explosionDamageFalloff>false</explosionDamageFalloff>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <flightMode>Homing</flightMode>
+        <explosive>true</explosive>
+        <ROT>80</ROT>
+        <maxTurnPerUpdate>2</maxTurnPerUpdate>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_TurretBaseBase">
+    <defName>WNA_GattlingCannon</defName>
+    <label>gattling cannon</label>
+    <description>A sentry gun turret that can fire a beam damaging all targets on a line.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Power/Battery_north</texPath>
+      <drawSize>(1.9,1.425)</drawSize>
+    </graphicData>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+      <li Class="WNA.WNAThingComp.PropAdvancedAA">
+        <range>72.9</range>
+        <cooldownTicks>8</cooldownTicks>
+        <damage>64</damage>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>WNA_GattlingCannon_Gun</turretGunDef>
+      <turretTopDrawSize>0.9</turretTopDrawSize>
+      <turretTopOffset>(0,0.1)</turretTopOffset>
+      <turretBurstWarmupTime>0</turretBurstWarmupTime>
+      <turretBurstCooldownTime>0.266667</turretBurstCooldownTime>
+      <combatPower>15</combatPower>
+      <ai_combatDangerous>true</ai_combatDangerous>
+    </building>
+    <researchPrerequisites>
+      <li>WNA_AdvancedArsenal</li>
+      <li>WNA_SignalRecon</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_AA</designatorDropdown>
+  </ThingDef>
+  <ThingDef ParentName="WNA_TurrentWeaponBase">
+    <defName>WNA_GattlingCannon_Gun</defName>
+    <label>turret gun</label>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ChargeBlasterLight</texPath>
+    </graphicData>
+    <verbs>
+      <li>
+        <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <defaultProjectile>WNA_GattlingCannon_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>72.9</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>8</muzzleFlashScale>
+        <burstShotCount>2</burstShotCount>
+        <canGoWild>false</canGoWild>
+        <targetParams>
+          <canTargetBuildings>true</canTargetBuildings>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_GattlingCannon_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Needle</texPath>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>32</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <flightMode>Instant</flightMode>
+        <invisoHit>true</invisoHit>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- Whelingnorthan -->
+  <ThingDef ParentName="WNA_FurnitureBase">
+    <defName>WNA_InvisiSensorArray</defName>
+    <label>invisi-sensor array</label>
+    <description>A scanner that floods its surroundings with a disruptive resonance. Any psychically invisible creature caught in the field is forced into plain sight and briefly stunned.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Special/PsychicEmanator</texPath>
+      <drawSize>2</drawSize>
+      <drawOffset>(0,0,0.2)</drawOffset>
+    </graphicData>
+    <useHitPoints>true</useHitPoints>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.25</fillPercent>
+    <blockLight>false</blockLight>
+    <holdsRoof>false</holdsRoof>
+    <statBases>
+      <MaxHitPoints>650</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>1</Mass>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>36.9</glowRadius>
+        <glowColor>(255,255,255,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+      <li Class="WNA.WNAThingComp.PropSensorArray">
+        <sensorSight>36</sensorSight>
+        <checkInterval>30</checkInterval>
+        <stunTicks>720</stunTicks>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_CloakTechnique</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierII</designatorDropdown>
+    <thingCategories Inherit="false">
+      <li>WNA_Category_Turret</li>
+    </thingCategories>
+  </ThingDef>
+  
+</Defs>

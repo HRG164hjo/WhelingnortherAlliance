@@ -2,272 +2,272 @@
 <LanguageData>
   
   <!-- EN: advanced arsenal -->
-  <WNA_AdvancedArsenal.label>先进军备</WNA_AdvancedArsenal.label>
+  <WNA_AdvancedArsenal.label>TODO</WNA_AdvancedArsenal.label>
   <!-- EN: the advanced technology used by whelingnorther alliance to arm their elite fighters. -->
-  <WNA_AdvancedArsenal.description>威灵诺德联合会用以武装其精英战士的先进武器技术。</WNA_AdvancedArsenal.description>
+  <WNA_AdvancedArsenal.description>TODO</WNA_AdvancedArsenal.description>
   
   <!-- EN: ammo variety -->
-  <WNA_AmmoVariety.label>弹药多样性</WNA_AmmoVariety.label>
+  <WNA_AmmoVariety.label>TODO</WNA_AmmoVariety.label>
   <!-- EN: ammo variety. -->
-  <WNA_AmmoVariety.description>弹药多样性。</WNA_AmmoVariety.description>
+  <WNA_AmmoVariety.description>TODO</WNA_AmmoVariety.description>
   
   <!-- EN: area denial -->
-  <WNA_AreaDenial.label>区域拒止</WNA_AreaDenial.label>
+  <WNA_AreaDenial.label>TODO</WNA_AreaDenial.label>
   <!-- EN: area denial. -->
   <WNA_AreaDenial.description>TODO</WNA_AreaDenial.description>
   
-  <!-- EN: uplifting -->
-  <WNA_AuthorizedUplifting.label>授权擢升</WNA_AuthorizedUplifting.label>
-  <!-- EN: uplifting. -->
+  <!-- EN: authorized uplifting -->
+  <WNA_AuthorizedUplifting.label>TODO</WNA_AuthorizedUplifting.label>
+  <!-- EN: With authorization from Whelingnorther Alliance, the ritual to uplift non-human beings to human status is now available. \n\nNote that if we turn <color=#FF0000>hostile</color> with WNA, they will revoke the authorization, until our relationship with them is restored. -->
   <WNA_AuthorizedUplifting.description>TODO</WNA_AuthorizedUplifting.description>
   
   <!-- EN: automated battle drone -->
-  <WNA_AutomatedBattleDrone.label>自动作战机具</WNA_AutomatedBattleDrone.label>
+  <WNA_AutomatedBattleDrone.label>TODO</WNA_AutomatedBattleDrone.label>
   <!-- EN: automated battle drone. -->
   <WNA_AutomatedBattleDrone.description>TODO</WNA_AutomatedBattleDrone.description>
   
   <!-- EN: Battle Control Command Post -->
-  <WNA_BCCP.label>作战控制司令部</WNA_BCCP.label>
+  <WNA_BCCP.label>TODO</WNA_BCCP.label>
   <!-- EN: Battle Control Command Post is one of the three major authurity centers of Whelingnorther Millitary. BCCP controls about 70% of violence forces of WNA, is considered as the guarantee of absolute order and absolute safety, and is also the mostly known command post to outsiders. -->
-  <WNA_BCCP.description>作战控制司令部是威灵军部三大权力重镇之一。作战司掌控着威灵会约70%的暴力力量，被视为绝对秩序与绝对安全的保障，也是三大司令部中最为外人所知的一座。</WNA_BCCP.description>
+  <WNA_BCCP.description>TODO</WNA_BCCP.description>
   
   <!-- EN: civilian techniques -->
-  <WNA_CivilianTech.label>民用科技</WNA_CivilianTech.label>
+  <WNA_CivilianTech.label>TODO</WNA_CivilianTech.label>
   <!-- EN: practical techniques for civilian benefits, aiming for improving quality of life. -->
-  <WNA_CivilianTech.description>实用民生科技，一切为了更好的生活。</WNA_CivilianTech.description>
+  <WNA_CivilianTech.description>TODO</WNA_CivilianTech.description>
   
   <!-- EN: climate mastery -->
-  <WNA_ClimateMastery.label>气候掌控</WNA_ClimateMastery.label>
+  <WNA_ClimateMastery.label>TODO</WNA_ClimateMastery.label>
   <!-- EN: climate mastery. -->
   <WNA_ClimateMastery.description>TODO</WNA_ClimateMastery.description>
   
   <!-- EN: cloak technique -->
-  <WNA_CloakTechnique.label>隐形技术</WNA_CloakTechnique.label>
+  <WNA_CloakTechnique.label>TODO</WNA_CloakTechnique.label>
   <!-- EN: basic theories and techniques about how to produce and make use of cloak techniques. -->
-  <WNA_CloakTechnique.description>关于如何制造和利用隐形技术的基本理论和技术。</WNA_CloakTechnique.description>
+  <WNA_CloakTechnique.description>TODO</WNA_CloakTechnique.description>
   
   <!-- EN: Confession motion -->
-  <WNA_ConfessionMotion.label>自新运动</WNA_ConfessionMotion.label>
+  <WNA_ConfessionMotion.label>TODO</WNA_ConfessionMotion.label>
   <!-- EN: confession motion. -->
   <WNA_ConfessionMotion.description>TODO</WNA_ConfessionMotion.description>
   
   <!-- EN: consensus motion -->
-  <WNA_ConsensusMotion.label>共识运动</WNA_ConsensusMotion.label>
+  <WNA_ConsensusMotion.label>TODO</WNA_ConsensusMotion.label>
   <!-- EN: Only one thought can be allowed in a mature community. -->
-  <WNA_ConsensusMotion.description>一个成熟的集体内部只能容许一种声音。</WNA_ConsensusMotion.description>
+  <WNA_ConsensusMotion.description>TODO</WNA_ConsensusMotion.description>
   
   <!-- EN: conversion motion -->
-  <WNA_ConversionMotion.label>劝化运动</WNA_ConversionMotion.label>
+  <WNA_ConversionMotion.label>TODO</WNA_ConversionMotion.label>
   <!-- EN: conversion motion. -->
-  <WNA_ConversionMotion.description>劝化运动。</WNA_ConversionMotion.description>
+  <WNA_ConversionMotion.description>TODO</WNA_ConversionMotion.description>
   
   <!-- EN: developed agriculture -->
-  <WNA_DevelopedAgriculture.label>进阶农业技术</WNA_DevelopedAgriculture.label>
+  <WNA_DevelopedAgriculture.label>TODO</WNA_DevelopedAgriculture.label>
   <!-- EN: developed agriculture. -->
   <WNA_DevelopedAgriculture.description>TODO</WNA_DevelopedAgriculture.description>
   
   <!-- EN: developed furniture -->
-  <WNA_DevelopedFurniture.label>进阶家具</WNA_DevelopedFurniture.label>
+  <WNA_DevelopedFurniture.label>TODO</WNA_DevelopedFurniture.label>
   <!-- EN: developed furniture. -->
   <WNA_DevelopedFurniture.description>TODO</WNA_DevelopedFurniture.description>
   
   <!-- EN: earth breaking -->
-  <WNA_EarthBreaking.label>裂地工程</WNA_EarthBreaking.label>
+  <WNA_EarthBreaking.label>TODO</WNA_EarthBreaking.label>
   <!-- EN: standard production. -->
   <WNA_EarthBreaking.description>TODO</WNA_EarthBreaking.description>
   
   <!-- EN: education motion -->
-  <WNA_EducationMotion.label>教育运动</WNA_EducationMotion.label>
+  <WNA_EducationMotion.label>TODO</WNA_EducationMotion.label>
   <!-- EN: education motion. -->
-  <WNA_EducationMotion.description>教育运动。</WNA_EducationMotion.description>
+  <WNA_EducationMotion.description>TODO</WNA_EducationMotion.description>
   
   <!-- EN: Education Enforcement Command Post -->
-  <WNA_EECP.label>教育执法司令部</WNA_EECP.label>
+  <WNA_EECP.label>TODO</WNA_EECP.label>
   <!-- EN: Education Enforcement Command Post is one of the three major authurity centers of Whelingnorther Millitary. EECP is the most mysterious and fearsome command post to outsiders, not only because they are responsible for education and law enforcement for Military, but also for their ability to read and manipulate the minds of sentient beings. -->
-  <WNA_EECP.description>教育执法司令部是威灵军部三大权力重镇之一。对外来者而言，教法司无疑是最神秘且令人生畏的司令部，不仅因为他们承担了威灵军部的所有教育与司法职能，还因为他们的阅览和操纵知性生物之心灵的能力。</WNA_EECP.description>
+  <WNA_EECP.description>TODO</WNA_EECP.description>
   
   <!-- EN: engineered crops -->
-  <WNA_EngineeredCrops.label>工程作物</WNA_EngineeredCrops.label>
+  <WNA_EngineeredCrops.label>TODO</WNA_EngineeredCrops.label>
   <!-- EN: standard production. -->
   <WNA_EngineeredCrops.description>TODO</WNA_EngineeredCrops.description>
   
   <!-- EN: field analysis -->
-  <WNA_FieldAnalysis.label>场分析理论</WNA_FieldAnalysis.label>
+  <WNA_FieldAnalysis.label>TODO</WNA_FieldAnalysis.label>
   <!-- EN: basic theories and techniques to manipulate field instead of manipulate solid matter. -->
-  <WNA_FieldAnalysis.description>关于操纵力场而非实物的基本理论和技术。</WNA_FieldAnalysis.description>
+  <WNA_FieldAnalysis.description>TODO</WNA_FieldAnalysis.description>
   
   <!-- EN: global entrallment -->
-  <WNA_GlobalEntrallment.label>群体统御</WNA_GlobalEntrallment.label>
+  <WNA_GlobalEntrallment.label>TODO</WNA_GlobalEntrallment.label>
   <!-- EN: telepathy. -->
   <WNA_GlobalEntrallment.description>TODO</WNA_GlobalEntrallment.description>
   
   <!-- EN: usage of excess lives -->
-  <WNA_HumanUsage.label>额外生命利用</WNA_HumanUsage.label>
+  <WNA_HumanUsage.label>TODO</WNA_HumanUsage.label>
   <!-- EN: sometimes there can be excess lives that causing burden to our community, and here's some tricks about how to get rid of them while doing good, or at least no harm to our community. -->
-  <WNA_HumanUsage.description>有时，某些多余的生命会对集体造成不必要的负担，下文即一些用有利于，或者至少是无害于集体的方式利用这些多余生命的技巧。</WNA_HumanUsage.description>
+  <WNA_HumanUsage.description>TODO</WNA_HumanUsage.description>
   
   <!-- EN: identity exclusion -->
-  <WNA_IdentityExclusion.label>身份排除</WNA_IdentityExclusion.label>
+  <WNA_IdentityExclusion.label>TODO</WNA_IdentityExclusion.label>
   <!-- EN: identity exclusion. -->
   <WNA_IdentityExclusion.description>TODO</WNA_IdentityExclusion.description>
   
   <!-- EN: ideology implantation -->
-  <WNA_IdeologyImplantation.label>理念植入</WNA_IdeologyImplantation.label>
+  <WNA_IdeologyImplantation.label>TODO</WNA_IdeologyImplantation.label>
   <!-- EN: ideology implantation. -->
   <WNA_IdeologyImplantation.description>TODO</WNA_IdeologyImplantation.description>
   
   <!-- EN: integrated production -->
-  <WNA_IntegratedProduction.label>集成式生产</WNA_IntegratedProduction.label>
+  <WNA_IntegratedProduction.label>TODO</WNA_IntegratedProduction.label>
   <!-- EN: integrated production. -->
   <WNA_IntegratedProduction.description>TODO</WNA_IntegratedProduction.description>
   
   <!-- EN: psychic interference network -->
-  <WNA_InterferenceNetwork.label>心灵干涉网络</WNA_InterferenceNetwork.label>
+  <WNA_InterferenceNetwork.label>TODO</WNA_InterferenceNetwork.label>
   <!-- EN: interference network. -->
   <WNA_InterferenceNetwork.description>TODO</WNA_InterferenceNetwork.description>
   
   <!-- EN: logistics framework -->
-  <WNA_LogisticsFramework.label>物流框架</WNA_LogisticsFramework.label>
+  <WNA_LogisticsFramework.label>TODO</WNA_LogisticsFramework.label>
   <!-- EN: logistics framework. -->
   <WNA_LogisticsFramework.description>TODO</WNA_LogisticsFramework.description>
   
   <!-- EN: main-battle arsenal -->
-  <WNA_MainBattleArsenal.label>主战军备</WNA_MainBattleArsenal.label>
+  <WNA_MainBattleArsenal.label>TODO</WNA_MainBattleArsenal.label>
   <!-- EN: the standard arsenal used by whelingnorther alliance to arm their main battle armies. -->
-  <WNA_MainBattleArsenal.description>威灵诺德联合会用以武装其中坚战士的武器装备。</WNA_MainBattleArsenal.description>
+  <WNA_MainBattleArsenal.description>TODO</WNA_MainBattleArsenal.description>
   
   <!-- EN: matter transmutation -->
-  <WNA_MatterTransmutation.label>物质转变</WNA_MatterTransmutation.label>
+  <WNA_MatterTransmutation.label>TODO</WNA_MatterTransmutation.label>
   <!-- EN: matter transmutation. -->
   <WNA_MatterTransmutation.description>TODO</WNA_MatterTransmutation.description>
   
   <!-- EN: memory redaction -->
-  <WNA_MemoryRedaction.label>记忆删除</WNA_MemoryRedaction.label>
+  <WNA_MemoryRedaction.label>TODO</WNA_MemoryRedaction.label>
   <!-- EN: memory redaction. -->
   <WNA_MemoryRedaction.description>TODO</WNA_MemoryRedaction.description>
   
   <!-- EN: military supply -->
-  <WNA_MilitarySupply.label>军用物资供应</WNA_MilitarySupply.label>
+  <WNA_MilitarySupply.label>TODO</WNA_MilitarySupply.label>
   <!-- EN: the special techniques of how to make whelingnorther military supplies out from common resources based on local conditions. these special techniques is hold secret by Whelingnorther Alliance. -->
-  <WNA_MilitarySupply.description>用平凡的物质制作出威灵军部后勤物资的独特技术，这些技术为威灵诺德联合会所独有。</WNA_MilitarySupply.description>
+  <WNA_MilitarySupply.description>TODO</WNA_MilitarySupply.description>
   
   <!-- EN: mind reading -->
-  <WNA_MindReading.label>心灵探测</WNA_MindReading.label>
+  <WNA_MindReading.label>TODO</WNA_MindReading.label>
   <!-- EN: mind reading. -->
   <WNA_MindReading.description>TODO</WNA_MindReading.description>
   
   <!-- EN: orbital assistance -->
-  <WNA_OrbitalAssistance.label>轨道支援</WNA_OrbitalAssistance.label>
+  <WNA_OrbitalAssistance.label>TODO</WNA_OrbitalAssistance.label>
   <!-- EN: orbital assistance. -->
-  <WNA_OrbitalAssistance.description>轨道支援。</WNA_OrbitalAssistance.description>
+  <WNA_OrbitalAssistance.description>TODO</WNA_OrbitalAssistance.description>
   
   <!-- EN: parasomnia -->
-  <WNA_Parasomnia.label>永眠</WNA_Parasomnia.label>
+  <WNA_Parasomnia.label>TODO</WNA_Parasomnia.label>
   <!-- EN: parasomnia. -->
-  <WNA_Parasomnia.description>永眠。</WNA_Parasomnia.description>
+  <WNA_Parasomnia.description>TODO</WNA_Parasomnia.description>
   
   <!-- EN: particle armory -->
-  <WNA_ParticleArmory.label>粒子武备</WNA_ParticleArmory.label>
+  <WNA_ParticleArmory.label>TODO</WNA_ParticleArmory.label>
   <!-- EN: basic theories and techniques about how to produce and make use of unique particles that exists in nature world or not. -->
-  <WNA_ParticleArmory.description>关于如何生产和利用各种粒子的基本理论和技术，无论这些粒子是否天然存在于自然界。</WNA_ParticleArmory.description>
+  <WNA_ParticleArmory.description>TODO</WNA_ParticleArmory.description>
   
   <!-- EN: planet forging -->
-  <WNA_PlanetForging.label>铸星技术</WNA_PlanetForging.label>
+  <WNA_PlanetForging.label>TODO</WNA_PlanetForging.label>
   <!-- EN: planet forging. -->
   <WNA_PlanetForging.description>TODO</WNA_PlanetForging.description>
   
   <!-- EN: preservation administration -->
-  <WNA_PreservationAdministration.label>居留民管理方案</WNA_PreservationAdministration.label>
+  <WNA_PreservationAdministration.label>TODO</WNA_PreservationAdministration.label>
   <!-- EN: preservation administration. -->
   <WNA_PreservationAdministration.description>TODO</WNA_PreservationAdministration.description>
   
   <!-- EN: psychic dawn -->
-  <WNA_PsychicDawn.label>心灵黎明</WNA_PsychicDawn.label>
+  <WNA_PsychicDawn.label>TODO</WNA_PsychicDawn.label>
   <!-- EN: Mind over matter. -->
-  <WNA_PsychicDawn.description>心胜于物。</WNA_PsychicDawn.description>
+  <WNA_PsychicDawn.description>TODO</WNA_PsychicDawn.description>
   
   <!-- EN: psychic domination -->
-  <WNA_PsychicDomination.label>心灵支配</WNA_PsychicDomination.label>
+  <WNA_PsychicDomination.label>TODO</WNA_PsychicDomination.label>
   <!-- EN: psychic domination. -->
   <WNA_PsychicDomination.description>TODO</WNA_PsychicDomination.description>
   
   <!-- EN: reality restruct -->
-  <WNA_RealityRestruct.label>现实重构</WNA_RealityRestruct.label>
+  <WNA_RealityRestruct.label>TODO</WNA_RealityRestruct.label>
   <!-- EN: reality restruct. -->
   <WNA_RealityRestruct.description>TODO</WNA_RealityRestruct.description>
   
   <!-- EN: Science Engineering Command Post -->
-  <WNA_SECP.label>科学工程司令部</WNA_SECP.label>
+  <WNA_SECP.label>TODO</WNA_SECP.label>
   <!-- EN: Science Engineering Command Post is one of the three major authurity centers of Whelingnorther Millitary. SECP takes over all researching, construction and production projects of WNA, is considered the root of Military, and is the least noticed by outsiders. -->
-  <WNA_SECP.description>科学工程司令部是威灵军部三大权力重镇之一。科工司承担威灵会的一切科研、建设和生产项目，被视为威灵军部之根源，也是三大司令部中最少被外人注意到的司令部。</WNA_SECP.description>
+  <WNA_SECP.description>TODO</WNA_SECP.description>
   
   <!-- EN: self-regulate structure -->
-  <WNA_SelfRegulateStructure.label>自律结构</WNA_SelfRegulateStructure.label>
+  <WNA_SelfRegulateStructure.label>TODO</WNA_SelfRegulateStructure.label>
   <!-- EN: standard production. -->
   <WNA_SelfRegulateStructure.description>TODO</WNA_SelfRegulateStructure.description>
   
   <!-- EN: shell craft -->
-  <WNA_ShellCraft.label>炮弹工艺</WNA_ShellCraft.label>
+  <WNA_ShellCraft.label>TODO</WNA_ShellCraft.label>
   <!-- EN: shell craft. -->
-  <WNA_ShellCraft.description>炮弹工艺。</WNA_ShellCraft.description>
+  <WNA_ShellCraft.description>TODO</WNA_ShellCraft.description>
   
   <!-- EN: signal recon -->
-  <WNA_SignalRecon.label>遥测技术</WNA_SignalRecon.label>
+  <WNA_SignalRecon.label>TODO</WNA_SignalRecon.label>
   <!-- EN: shell craft. -->
   <WNA_SignalRecon.description>TODO</WNA_SignalRecon.description>
   
   <!-- EN: standard arsenal -->
-  <WNA_StandardArsenal.label>制式军备</WNA_StandardArsenal.label>
+  <WNA_StandardArsenal.label>TODO</WNA_StandardArsenal.label>
   <!-- EN: the standard arsenal used by whelingnorther alliance to arm their soldiers. -->
-  <WNA_StandardArsenal.description>威灵会用以武装其战士的标准军事装备。</WNA_StandardArsenal.description>
+  <WNA_StandardArsenal.description>TODO</WNA_StandardArsenal.description>
   
   <!-- EN: standard production -->
-  <WNA_StandardProduction.label>标准化生产工艺</WNA_StandardProduction.label>
+  <WNA_StandardProduction.label>TODO</WNA_StandardProduction.label>
   <!-- EN: standard production. -->
-  <WNA_StandardProduction.description>标准化生产工艺。</WNA_StandardProduction.description>
+  <WNA_StandardProduction.description>TODO</WNA_StandardProduction.description>
   
   <!-- EN: starcore manipulation -->
-  <WNA_StarcoreManipulation.label>星核控制</WNA_StarcoreManipulation.label>
+  <WNA_StarcoreManipulation.label>TODO</WNA_StarcoreManipulation.label>
   <!-- EN: starcore manipulation. -->
   <WNA_StarcoreManipulation.description>TODO</WNA_StarcoreManipulation.description>
   
   <!-- EN: superheavy armament -->
-  <WNA_SuperheavyArmament.label>巨兽武器</WNA_SuperheavyArmament.label>
+  <WNA_SuperheavyArmament.label>TODO</WNA_SuperheavyArmament.label>
   <!-- EN: superheavy armament. -->
   <WNA_SuperheavyArmament.description>TODO</WNA_SuperheavyArmament.description>
   
   <!-- EN: superweapon -->
-  <WNA_Superweapon.label>超级武器</WNA_Superweapon.label>
+  <WNA_Superweapon.label>TODO</WNA_Superweapon.label>
   <!-- EN: Technology about how to build the superweapons which can easily erase an area from the world. -->
-  <WNA_Superweapon.description>可以用来建设足以轻易将一片区域从地表抹除的超级武器的科技。</WNA_Superweapon.description>
+  <WNA_Superweapon.description>TODO</WNA_Superweapon.description>
   
   <!-- EN: telepathy -->
-  <WNA_Telepathy.label>心灵传感</WNA_Telepathy.label>
+  <WNA_Telepathy.label>TODO</WNA_Telepathy.label>
   <!-- EN: telepathy. -->
   <WNA_Telepathy.description>TODO</WNA_Telepathy.description>
   
   <!-- EN: transcendental arts -->
-  <WNA_TranscendentalArts.label>超凡技艺</WNA_TranscendentalArts.label>
+  <WNA_TranscendentalArts.label>TODO</WNA_TranscendentalArts.label>
   <!-- EN: Science and technology are the most ordinary transcendental arts, the most fundamental transcendental art can extract the devices' functions and make them standalone from their physical carriers, while the more adcanced transcendental arts are resting in areas that we cannot explore into. -->
-  <WNA_TranscendentalArts.description>科学和技术是最平凡的超凡技艺，最基础的超凡技艺可以提取科技设备的功能并使它们脱离物理载体独立存在，而更高级的超凡技艺则存在于我们无法探索的领域。</WNA_TranscendentalArts.description>
+  <WNA_TranscendentalArts.description>TODO</WNA_TranscendentalArts.description>
   
   <!-- EN: vaccum extraction -->
-  <WNA_VaccumExtraction.label>真空提取</WNA_VaccumExtraction.label>
+  <WNA_VaccumExtraction.label>TODO</WNA_VaccumExtraction.label>
   <!-- EN: standard production. -->
   <WNA_VaccumExtraction.description>TODO</WNA_VaccumExtraction.description>
   
   <!-- EN: dark apocalypse -->
-  <WNA_WhelingnortherApocalypse.label>黑暗天启</WNA_WhelingnortherApocalypse.label>
+  <WNA_WhelingnortherApocalypse.label>TODO</WNA_WhelingnortherApocalypse.label>
   <!-- EN: "When early ancestors of humanity rose from the humble, it was their effort and sacrifices that led to the prosperity of today world; when our predecessors rose from the insignificance, it was their effort and sacrifices that led to we Whelingnorther Alliance. Any great work requires sacrifices to forge, without great destruction can there be no great rebirth, without great devotions will we not achieve eternity salvation and immortality. We descendants shall follow the path led by those who came before us; we will see our duty and accept our manifest destiny; we shall alter and determine the past, the present and the future. All any existance shall bath in the glory of Whelignorther, they need not understand, only shall they obey." -->
-  <WNA_WhelingnortherApocalypse.description>“昔日人类先民起于微末之中，正是他们用奋力与牺牲换来了今日世界的繁荣；昔日我等前人崛起草芥之中，正是他们的奋力与牺牲成就了今日的威灵诺德联合会。一切伟大之作都需以牺牲铸就，没有伟大的毁灭便没有伟大的新生，没有伟大的奉献便无从寻求永恒自在不朽。我等后人当遵行前人引领的道路，我等明晰我等将负的重负，欣然接受我等的昭昭天命，我等将决定过往、当下与未来。一切存在之物都将沐浴威灵诺德的荣光，它们无需理解，它们必将服从。”</WNA_WhelingnortherApocalypse.description>
+  <WNA_WhelingnortherApocalypse.description>TODO</WNA_WhelingnortherApocalypse.description>
   
   <!-- EN: Whelingnorther Military -->
-  <WNA_WNAMilitary.label>威灵军部</WNA_WNAMilitary.label>
+  <WNA_WNAMilitary.label>TODO</WNA_WNAMilitary.label>
   <!-- EN: Composed of three major command posts and led by a Chief Administrative Commander, the Whelingnorther Military serves as physical body in reality of Whelingnorther Alliance, driving forward the great career of WNA with violence, sacrifices and countless destructions. -->
-  <WNA_WNAMilitary.description>由三大司令部组成，由一位三军事务总长统率，威灵军部作为威灵诺德联合会在现实世界中的实体发挥着作用，以暴力、牺牲与数不清的毁灭推进着威灵会的伟业。</WNA_WNAMilitary.description>
+  <WNA_WNAMilitary.description>TODO</WNA_WNAMilitary.description>
   <!-- EN: You now have reached the level that never any person had reached. Stepping forward is almost impossible. \n\nOne wise choice is to find a techprof subpersona core, with its power you can take a glance at what Whelingnorther Alliance truly masters. The other choice is to jusi ask Whelingnorther Alliance about it. \n\nAsking is easy, but <color=#FF0000>some price will be paid</color>. -->
-  <WNA_WNAMilitary.discoveredLetterText>你现在已经达到了前无古人的高度。想要再前进一步已经几乎不再可能。\n\n一个最明智的选择是去找一个科技核心，凭借它的力量，你可以一窥威灵诺德联合会真正掌握的技艺。另一个选择则是直接去询问威灵诺德联合会。\n\n问问题很简单，但&lt;color=#FF0000>某些代价终将被付出&lt;/color>。</WNA_WNAMilitary.discoveredLetterText>
+  <WNA_WNAMilitary.discoveredLetterText>TODO</WNA_WNAMilitary.discoveredLetterText>
   <!-- EN: Path ahead blocked -->
-  <WNA_WNAMilitary.discoveredLetterTitle>道路尽头</WNA_WNAMilitary.discoveredLetterTitle>
+  <WNA_WNAMilitary.discoveredLetterTitle>TODO</WNA_WNAMilitary.discoveredLetterTitle>
   
 </LanguageData>

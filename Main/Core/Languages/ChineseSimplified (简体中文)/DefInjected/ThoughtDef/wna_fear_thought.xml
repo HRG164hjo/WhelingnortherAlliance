@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<LanguageData>
-
-  <!-- EN: fear -->
-  <WNA_ThoughtFear.stages.fear.label>恐惧</WNA_ThoughtFear.stages.fear.label>
-  <!-- EN: The memory of the beating and the forced re-education still lingers, crushing any thought of resistance. -->
-  <WNA_ThoughtFear.stages.fear.description>殴打与强制教化的记忆仍然萦绕不去，将任何反抗的念头都压了下去。</WNA_ThoughtFear.stages.fear.description>
-
-</LanguageData>

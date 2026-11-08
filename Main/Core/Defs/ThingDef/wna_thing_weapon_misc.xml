@@ -26,19 +26,18 @@
       </li>
     </verbs>
     <modExtensions>
-      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
-        <LaserDuration>6</LaserDuration>
-        <LaserInnerColor>(55,55,55)</LaserInnerColor>
-        <LaserOuterColor>(0,0,0)</LaserOuterColor>
-        <LaserThickness>0.1</LaserThickness>
-        <LaserOuterSpread>1.25</LaserOuterSpread>
+      <li Class="WNA.WNAModExtension.WeaponTeslaBoltConfig">
+        <BoltDuration>19</BoltDuration>
+        <Bolt1Color>(40,40,40)</Bolt1Color>
+        <Bolt2Color>(155,0,0)</Bolt2Color>
+        <Bolt3Color>(0,0,0,255)</Bolt3Color>
       </li>
     </modExtensions>
   </ThingDef>
   <ThingDef ParentName="WNA_ProjBase">
     <defName>WNA_PawnPassiveAcquire_Proj</defName>
     <label>placeholder</label>
-    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Inviso</thingClass>
+    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
     </graphicData>
@@ -46,5 +45,11 @@
       <damageDef>WNA_ChimingBlaze</damageDef>
       <damageAmountBase>9999999</damageAmountBase>
     </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+      </li>
+    </modExtensions>
   </ThingDef>
 </Defs>

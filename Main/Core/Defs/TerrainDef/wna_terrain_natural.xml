@@ -28,6 +28,7 @@
     <tags>
       <li>Soil</li>
       <li MayRequire="sirmashedpotato.ashlands">Mashed_Ashlands_Ash</li>
+      <li>WNA_Sowable</li>
     </tags>
     <fertility>40</fertility>
     <edgeType>FadeRough</edgeType>

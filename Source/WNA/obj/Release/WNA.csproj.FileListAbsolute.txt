@@ -10,3 +10,6 @@ C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Sour
 C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Release\WNA.sourcelink.json
 C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Release\refint\WNA.dll
 C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Release\ref\WNA.dll
+C:\Users\Admin\AppData\Local\Temp\wna_build_test\WNA.dll
+C:\Users\Admin\AppData\Local\Temp\wna_build_test\WNA.pdb
+C:\Applications\Steam\steamapps\common\RimWorld\Mods\WhelingnortherAlliance\Source\WNA\obj\Release\WNA.csproj.Up2Date

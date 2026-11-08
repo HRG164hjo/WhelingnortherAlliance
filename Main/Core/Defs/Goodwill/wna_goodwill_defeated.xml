@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GoodwillSituationDef>
+    <defName>WNA_Goodwill_Defeated</defName>
+    <label>broken and scattered</label>
+    <workerClass>WNA.WNAMiscs.GoodwillSituationWorker_WNADefeated</workerClass>
+    <baseMaxGoodwill>0</baseMaxGoodwill>
+  </GoodwillSituationDef>
+
+</Defs>

@@ -3,9 +3,16 @@
 
   <WNAMod>Whelingnorther Alliance</WNAMod>
 
-  <WNAMod_enableIdeoConflictHostility>EN: Enable ideology conflict and hostility. When colony ideo contains some certain meme or precept, Whelingnorther Alliance will turn hostile. \n\n(Disabled by default)</WNAMod_enableIdeoConflictHostility>
+  <WNAMod_enableIdeoConflictHostility>Enable ideology conflict and hostility. When colony ideo contains some certain meme or precept, Whelingnorther Alliance will turn hostile. \n\n(Disabled by default)</WNAMod_enableIdeoConflictHostility>
 
-  <WNAMod_enablePermaconstDeathAid>Enable Permaconst reinforcement: When a pawn enthralled by Permaconst Command dies, there is about 7% chance that they will immediately summon a "Hunting Cluster" raid. \n\n(Disabled by default)</WNAMod_enablePermaconstDeathAid>
+  <WNAMod_enablePermaconstDeathAid>Enable Permaconst reinforcement: When a pawn enthralled by Permaconst Command dies, there is a chance (7% by default) that they will immediately summon a "Hunting Cluster" raid. \n\n(Disabled by default)</WNAMod_enablePermaconstDeathAid>
+
+  <WNAMod_permaconstDeathAidChance>Reinforcement chance</WNAMod_permaconstDeathAidChance>
+
+  <WNAMod_reviveDestroyedSettlements>Revive destroyed settlements on Permaconst maintenance</WNAMod_reviveDestroyedSettlements>
+  <WNAMod_reviveDestroyedSettlementsDesc>When the Permaconst maintenance event fires, every destroyed settlement (including orbital platforms) is revived as a Permaconst Command outpost with an active defense grid. A ruin has a chance (7% by default) of being restored as a Whelingnorther Alliance settlement instead. Ruins that RimWorld is about to erase from the world map are converted the same way. Outposts are not destroyed settlements, so ruin cleanup - including the expiry timers other mods add - leaves them alone; should one be removed anyway, its tile becomes a Whelingnorther Alliance settlement.\n\n(Disabled by default)</WNAMod_reviveDestroyedSettlementsDesc>
+
+  <WNAMod_capturedSettlementWNAChance>Whelingnorther Alliance chance</WNAMod_capturedSettlementWNAChance>
 
   <WNAMod_enablePawnSpreadRadWhenKilled>Enable dead zone radiation spread: When a pawn carrying a certain radiation hediff dies, there will be an explosion and radiation zone will be spreaded.\n\n(Disabled by default)</WNAMod_enablePawnSpreadRadWhenKilled>
 
@@ -13,7 +20,24 @@
 
   <WNAMod_pawnReturnerMaxLimitDesc>Maximum number of Whelingnorther Alliance pawns re-spawned onto the map at once while the Permaconst Command condition is active.</WNAMod_pawnReturnerMaxLimitDesc>
 
+  <WNAMod_pawnReturnerRecencyDays>Return recency window (days)</WNAMod_pawnReturnerRecencyDays>
+
+  <WNAMod_pawnReturnerRecencyDaysDesc>While the Permaconst Command condition is active, only pawns that left a map within this many days are resurrected and returned to it. Pawns off any map for longer than this are left alone. 2.357 days by default.</WNAMod_pawnReturnerRecencyDaysDesc>
+
   <WNAMod_upliftSpawnAtRitualTarget>Spawn uplifted pawns at the ritual target</WNAMod_upliftSpawnAtRitualTarget>
   <WNAMod_upliftSpawnAtRitualTargetDesc>If enabled, the pawn created by the uplifting rite appears near the altar or ritual spot. If disabled, it appears where the subject was. Disabled by default.</WNAMod_upliftSpawnAtRitualTargetDesc>
+  
+  <WNAMod_autoDefenseMaster>Settlement auto-defense system</WNAMod_autoDefenseMaster>
+  <WNAMod_autoDefenseMasterDesc>Enable the automatic defense system of Whelingnorther Alliance settlements. Hostile world objects within range are engaged with defense missiles, and nearby transport pods or shuttles are destroyed on sight. Enabled by default.</WNAMod_autoDefenseMasterDesc>
+
+  <WNAMod_autoDefenseCrossLayer>Cross-layer defense</WNAMod_autoDefenseCrossLayer>
+  <WNAMod_autoDefenseCrossLayerDesc>If enabled, settlements also engage hostile targets on other planet layers (for example, orbital settlements firing at surface targets). Disabled by default.</WNAMod_autoDefenseCrossLayerDesc>
+
+  <WNAMod_autoDefenseSitesGravships>Attack sites and gravships</WNAMod_autoDefenseSitesGravships>
+  <WNAMod_autoDefenseSitesGravshipsDesc>&lt;color=#ff6666&gt;Warning: this may cause unexpected bugs.&lt;/color&gt;\n\nIn addition to settlements and caravans, also attack hostile sites and gravships in flight. Sites often belong to quests or special incidents, and gravships may carry the player's own colonists. Enable at your own risk. Disabled by default.</WNAMod_autoDefenseSitesGravshipsDesc>
+
+  <WNAMod_autoDefenseGeneratedMaps>Attack world objects that already have a map</WNAMod_autoDefenseGeneratedMaps>
+
+  <WNAMod_autoDefenseGeneratedMapsDesc>&lt;color=#ff6666&gt;Warning: this may cause unexpected bugs.&lt;/color&gt;\n\nIf enabled, a defense missile can strike a hostile world object whose map has already been generated. The missile detonates at the map center and the map is then removed. Surviving player colonists, prisoners and slaves are force-marched into a caravan together with the corpses of fallen colonists. Disabled by default.</WNAMod_autoDefenseGeneratedMapsDesc>
 
 </LanguageData>

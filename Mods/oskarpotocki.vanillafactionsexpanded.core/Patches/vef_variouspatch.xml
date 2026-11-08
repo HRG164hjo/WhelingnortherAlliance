@@ -53,14 +53,99 @@
     <xpath>Defs/GeneDef[defName="WNA_Mastery"]</xpath>
     <value>
       <li Class="VEF.Genes.GeneExtension">
-				<skillDegradation>false</skillDegradation>
-				<globalSkillLossMultiplier>0</globalSkillLossMultiplier>
-				<disableGeneExtraction>true</disableGeneExtraction>
-			</li>
+        <skillDegradation>false</skillDegradation>
+        <globalSkillLossMultiplier>0</globalSkillLossMultiplier>
+        <disableGeneExtraction>true</disableGeneExtraction>
+      </li>
     </value>
   </Operation>
 
   <!---->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>ReBuild: Doors and Corners</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="RB_GlassWall" or defName="RB_ReinforcedGlassWall"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="RB_OverwallArmor" or defName="RB_SmoothGravshipHull" or defName="RB_GravshipWindowHull" or defName="RB_GravshipPanoramaHull" or defName="RB_CellDoor"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+            <li>Stony</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="RB_BarriersWall" or defName="RB_CellWall"]/stuffCategories</xpath>
+          <value>
+            <li>Stony</li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RB_ReinforcedClerestoryWall" or defName="RB_ReinforcedGlassWall" or defName="RB_ReinforcedGlassAutodoor"]/building/isStuffableAirtight</xpath>
+          <value>
+            <isAirtight>true</isAirtight>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RB_ReinforcedClerestoryWall"]/building/supportsWallAttachments</xpath>
+          <value>
+            <supportsWallAttachments>true</supportsWallAttachments>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="RB_ReinforcedClerestoryWall"]/comps/li[@Class="ReBuildDoorsAndCorners.CompProperties_GlassWall"]/naturalLightRadius</xpath>
+          <value>
+            <naturalLightRadius>3</naturalLightRadius>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>ReSplice: Charmweavers</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/GeneDef[defName="RS_Eyes_Pink"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPath</xpath>
+          <value>
+            <texPath>pawns/alt_eye/charmweavereye</texPath>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/GeneDef[defName="RS_Eyes_Pink"]/renderNodeProperties/li[@Class="PawnRenderNodeProperties_Eye"]/texPathFemale</xpath>
+          <value>
+            <texPathFemale>pawns/alt_eye/charmweavereye</texPathFemale>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Apparel Expanded</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VAE_Footwear_Boots" or defName="VAE_Footwear_Shoes"]/stuffCategories</xpath>
+          <value>
+            <li>Fabric</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
   <Operation Class="PatchOperationFindMod">
     <mods>
       <li>Vanilla Food Variety Expanded</li>
@@ -91,6 +176,19 @@
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VGE_CrewBunkBed" or defName="VGE_MedbayBed" or defName="VGE_CrewLockers" or defName="VGE_GravshipShelf" or defName="VGE_CompactResearchBench"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+            <li>Stony</li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="VGE_GravshipShelf"]/building/maxItemsInCell</xpath>
+          <value>
+            <maxItemsInCell>24</maxItemsInCell>
+          </value>
+        </li>
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="VGE_GravFieldAmplifier"]/comps/li[@Class="CompProperties_GravshipFacility"]/statOffsets</xpath>
           <value>
@@ -122,7 +220,7 @@
               <minIdleAlpha>0.2</minIdleAlpha>
             </li>
             <li Class="CompProperties_Power">
-              <compClass>CompPowerPlantGravcore</compClass>
+              <compClass>CompPowerPlant</compClass>
               <basePowerConsumption>-30000</basePowerConsumption>
               <transmitsPower>true</transmitsPower>
             </li>
@@ -173,4 +271,33 @@
       </operations>
     </match>
   </Operation>
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Plants Expanded - More Plants</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/VanillaPlantsExpandedMorePlants.AquaticGrowZoneTerrainsDef[defName="VCE_AquaticGrowZoneTerrains"]/allowedTerrains</xpath>
+          <value>
+            <li>WNA_FocusSpring</li>
+            <li>WNA_FocusSoil</li>
+            <li>WNA_LayeredSoil</li>
+            <li>WNA_PlatformSoil</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/VanillaPlantsExpandedMorePlants.SandyGrowZoneTerrainsDef[defName="VCE_SandyGrowZoneTerrains"]/allowedTerrains</xpath>
+          <value>
+            <li>WNA_FocusSand</li>
+            <li>WNA_FocusSoil</li>
+            <li>WNA_LayeredSoil</li>
+            <li>WNA_PlatformSoil</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
 </Patch>

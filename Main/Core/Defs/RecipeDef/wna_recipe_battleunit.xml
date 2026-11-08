@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef ParentName="WNA_RecipeBase">
+    <defName>WNA_MakeBattleUnit</defName>
+    <label>assemble battle unit</label>
+    <description>Assemble a battle unit chassis and initialize its integrated weapon.</description>
+    <jobString>assembling a battle unit.</jobString>
+    <workerClass>WNA.WNARecipeWorker.Recipe_ProduceUnit</workerClass>
+    <workerCounterClass>WNA.WNARecipeWorker.RecipeWorkerCounter_ProduceUnit</workerCounterClass>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.RecipeExtension_ProduceUnit">
+        <kindDef>WNA_BattleUnitKind</kindDef>
+      </li>
+    </modExtensions>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>90</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthread</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>Synthread</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workAmount>2500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>WNA_AutomatedBattleDrone</li>
+    </researchPrerequisites>
+  </RecipeDef>
+
+</Defs>

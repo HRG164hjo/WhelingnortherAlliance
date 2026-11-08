@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: forbidden -->
+  <WNA_Precept_Slavery_Forbidden.label>TODO</WNA_Precept_Slavery_Forbidden.label>
+  <!-- EN: Slavery is legally forbidden. -->
+  <WNA_Precept_Slavery_Forbidden.description>TODO</WNA_Precept_Slavery_Forbidden.description>
+  
   <!-- EN: ... -->
-  <WNA_Proselyte.description>……</WNA_Proselyte.description>
+  <WNA_Proselyte.description>TODO</WNA_Proselyte.description>
   
 </LanguageData>

@@ -22,7 +22,7 @@
 
   <!-- -->
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/FactionDef/autoFlee</xpath>
+    <xpath>/Defs/FactionDef/autoFlee</xpath>
     <match Class="PatchOperationReplace">
       <xpath>Defs/FactionDef/autoFlee</xpath>
       <value>
@@ -37,7 +37,7 @@
     </nomatch>
   </Operation>
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/FactionDef[defName!="WNA_FactionWNA" or defName!="WNA_FactionPCC"]/disallowedMemes</xpath>
+    <xpath>/Defs/FactionDef[defName!="WNA_FactionWNA" or defName!="WNA_FactionPCC"]/disallowedMemes</xpath>
     <match Class="PatchOperationAdd">
       <xpath>Defs/FactionDef[defName!="WNA_FactionWNA" or defName!="WNA_FactionPCC"]/disallowedMemes</xpath>
       <value>
@@ -259,17 +259,35 @@
 
   <!-- -->
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ThingDef/intricate</xpath>
+    <xpath>Defs/ThingDef[@Name="StorageShelfBase"]/building/fixedStorageSettings/filter/disallowedCategories</xpath>
     <match Class="PatchOperationRemove">
-      <xpath>Defs/ThingDef/intricate</xpath>
+      <xpath>Defs/ThingDef[@Name="StorageShelfBase"]/building/fixedStorageSettings/filter/disallowedCategories</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[@Name="StorageShelfBase"]/building/fixedStorageSettings/filter/disallowedThingDefs</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[@Name="StorageShelfBase"]/building/fixedStorageSettings/filter/disallowedThingDefs</xpath>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[@Name="StorageShelfBase"]/building/fixedStorageSettings/filter/specialFiltersToDisallow</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[@Name="StorageShelfBase"]/building/fixedStorageSettings/filter/specialFiltersToDisallow</xpath>
     </match>
   </Operation>
 
+  <Operation Class="WNA.WNAPatch.PatchOperationSetTradeability" />
+
   <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ThingDef/tradeNeverStack</xpath>
+    <xpath>/Defs/ThingDef/intricate</xpath>
     <match Class="PatchOperationRemove">
-      <xpath>Defs/ThingDef/tradeNeverStack</xpath>
+      <xpath>/Defs/ThingDef/intricate</xpath>
     </match>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[not(@Name="Book")]/tradeNeverStack</xpath>
   </Operation>
 
   <Operation Class="PatchOperationRemove">
@@ -277,6 +295,24 @@
   </Operation>
   <Operation Class="PatchOperationRemove">
     <xpath>Defs/ThingDef/plant/blockAdjacentSow</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef/plant/wildTerrainTags</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef/plant/wildTerrainTags</xpath>
+      <value>
+        <li>WNA_Sowable</li>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef/plant</xpath>
+      <value>
+        <wildTerrainTags>
+          <li>WNA_Sowable</li>
+        </wildTerrainTags>
+      </value>
+    </nomatch>
   </Operation>
 
   <!--<Operation Class="PatchOperationInsert">
@@ -308,11 +344,17 @@
     </value>
   </Operation>
 
-  <Operation Class="PatchOperationRemove">
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="DeepDrill"]/placeWorkers/li[text()="PlaceWorker_InvalidOverSubstructure"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[defName="DeepDrill"]/placeWorkers/li[text()="PlaceWorker_InvalidOverSubstructure"]</xpath>
+    </match>
   </Operation>
-  <Operation Class="PatchOperationRemove">
+  <Operation Class="PatchOperationConditional">
     <xpath>Defs/ThingDef[defName="GroundPenetratingScanner"]/placeWorkers/li[text()="PlaceWorker_NotUnderRoof"]</xpath>
+    <match Class="PatchOperationRemove">
+      <xpath>Defs/ThingDef[defName="GroundPenetratingScanner"]/placeWorkers/li[text()="PlaceWorker_NotUnderRoof"]</xpath>
+    </match>
   </Operation>
 
   <Operation Class="PatchOperationAddModExtension">
@@ -418,7 +460,7 @@
     </value>
   </Operation>
 
-  <!-- 除辐射区：注册到原版区域(Zone)类别，与除雪区/除污区并列 -->
+  <!-- -->
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses</xpath>
     <value>

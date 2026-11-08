@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <IssueDef>
-        <defName>WNA_Proselyte</defName>
-        <label></label>
-        <iconPath>factions/wna_alliance</iconPath>
-    </IssueDef>
-    <PreceptDef>
-        <defName>WNA_Proselyte</defName>
-        <label></label>
-        <iconPath>factions/wna_alliance</iconPath>
-        <impact>High</impact>
-        <issue>WNA_Proselyte</issue>
-        <description>...</description>
-        <requiredMemes>
-            <li>Meme_WNA_Ideo</li>
-        </requiredMemes>
-        <associatedMemes>
-            <li>Meme_WNA_Ideo</li>
-        </associatedMemes>
-        <visibleOnAddFloatMenu>false</visibleOnAddFloatMenu>
-        <selectionWeight>0</selectionWeight>
-        <statFactors>
-            <SocialIdeoSpreadFrequencyFactor>999999</SocialIdeoSpreadFrequencyFactor>
-            <ConversionPower>999999</ConversionPower>
-            <SuppressionPower>999999</SuppressionPower>
-            <MentalBreakThreshold>0</MentalBreakThreshold>
-            <CertaintyLossFactor>0</CertaintyLossFactor>
-            <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">3</ActivitySuppressionRate>
-            <GeneralLaborSpeed>3</GeneralLaborSpeed>
-            <WorkSpeedGlobal>3</WorkSpeedGlobal>
-            <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
-            <ShootingAccuracyFactor_Touch>3</ShootingAccuracyFactor_Touch>
-            <ShootingAccuracyFactor_Short>3</ShootingAccuracyFactor_Short>
-            <ShootingAccuracyFactor_Medium>3</ShootingAccuracyFactor_Medium>
-            <ShootingAccuracyFactor_Long>3</ShootingAccuracyFactor_Long>
-            <AimingDelayFactor>0.01</AimingDelayFactor>
-        </statFactors>
-        <comps>
-            <li Class="PreceptComp_SelfTookMemoryThought">
-                <eventDef>AteFungus</eventDef>
-                <thought>WNA_ThoughtAteFungus</thought>
-            </li>
-            <li Class="PreceptComp_SelfTookMemoryThought">
-                <eventDef>AteFungusAsIngredient</eventDef>
-                <thought>WNA_ThoughtAteFungus</thought>
-            </li>
-        </comps>
-    </PreceptDef>
+  <IssueDef>
+    <defName>WNA_Proselyte</defName>
+    <label></label>
+    <iconPath>factions/wna_alliance</iconPath>
+  </IssueDef>
+  <PreceptDef>
+    <defName>WNA_Proselyte</defName>
+    <label></label>
+    <iconPath>factions/wna_alliance</iconPath>
+    <impact>High</impact>
+    <issue>WNA_Proselyte</issue>
+    <description>...</description>
+    <requiredMemes>
+      <li>Meme_WNA_Ideo</li>
+    </requiredMemes>
+    <associatedMemes>
+      <li>Meme_WNA_Ideo</li>
+    </associatedMemes>
+    <visibleOnAddFloatMenu>false</visibleOnAddFloatMenu>
+    <selectionWeight>0</selectionWeight>
+    <statFactors>
+      <SocialIdeoSpreadFrequencyFactor>999999</SocialIdeoSpreadFrequencyFactor>
+      <ConversionPower>999999</ConversionPower>
+      <SuppressionPower>999999</SuppressionPower>
+      <MentalBreakThreshold>0</MentalBreakThreshold>
+      <CertaintyLossFactor>0</CertaintyLossFactor>
+      <ActivitySuppressionRate MayRequire="ludeon.rimworld.anomaly">3</ActivitySuppressionRate>
+      <GeneralLaborSpeed>3</GeneralLaborSpeed>
+      <WorkSpeedGlobal>3</WorkSpeedGlobal>
+      <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+      <ShootingAccuracyFactor_Touch>3</ShootingAccuracyFactor_Touch>
+      <ShootingAccuracyFactor_Short>3</ShootingAccuracyFactor_Short>
+      <ShootingAccuracyFactor_Medium>3</ShootingAccuracyFactor_Medium>
+      <ShootingAccuracyFactor_Long>3</ShootingAccuracyFactor_Long>
+      <AimingDelayFactor>0.01</AimingDelayFactor>
+    </statFactors>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AteFungus</eventDef>
+        <thought>WNA_ThoughtAteFungus</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AteFungusAsIngredient</eventDef>
+        <thought>WNA_ThoughtAteFungus</thought>
+      </li>
+    </comps>
+  </PreceptDef>
 </Defs>

@@ -2,7 +2,7 @@
 <LanguageData>
   
   <!-- EN: buratino rocket launcher -->
-  <WNA_BuratinoLauncher.label>布拉提诺火箭发射器</WNA_BuratinoLauncher.label>
+  <WNA_BuratinoLauncher.label>TODO</WNA_BuratinoLauncher.label>
   <!-- EN: still todo! -->
   <WNA_BuratinoLauncher.description>TODO</WNA_BuratinoLauncher.description>
   <!-- EN: handle -->
@@ -13,8 +13,20 @@
   <!-- EN: gun proj -->
   <WNA_BuratinoLauncher_Proj.label>TODO</WNA_BuratinoLauncher_Proj.label>
   
+  <!-- EN: "centurion" siege cannon -->
+  <WNA_CenturionSiegeCannon.label>TODO</WNA_CenturionSiegeCannon.label>
+  <!-- EN: "centurion" siege cannon -->
+  <WNA_CenturionSiegeCannon.description>TODO</WNA_CenturionSiegeCannon.description>
+  <!-- EN: rapier -->
+  <WNA_CenturionSiegeCannon.tools.rapier.label>TODO</WNA_CenturionSiegeCannon.tools.rapier.label>
+  <!-- EN: "centurion" siege cannon -->
+  <WNA_CenturionSiegeCannon.verbs.Verb_Shoot.label>TODO</WNA_CenturionSiegeCannon.verbs.Verb_Shoot.label>
+  
+  <!-- EN: gun proj -->
+  <WNA_CenturionSiegeCannon_Proj.label>TODO</WNA_CenturionSiegeCannon_Proj.label>
+  
   <!-- EN: "comet" beam emitter -->
-  <WNA_CometBeamEmitter.label>“彗星”射线发射器</WNA_CometBeamEmitter.label>
+  <WNA_CometBeamEmitter.label>TODO</WNA_CometBeamEmitter.label>
   <!-- EN: todo! -->
   <WNA_CometBeamEmitter.description>TODO</WNA_CometBeamEmitter.description>
   <!-- EN: barrel -->
@@ -26,7 +38,7 @@
   <WNA_CometBeamEmitter_Proj.label>TODO</WNA_CometBeamEmitter_Proj.label>
   
   <!-- EN: "dawnbreaker" heat ray rifle -->
-  <WNA_DawnbreakerHeatRay.label>“破晓者”热线步枪</WNA_DawnbreakerHeatRay.label>
+  <WNA_DawnbreakerHeatRay.label>TODO</WNA_DawnbreakerHeatRay.label>
   <!-- EN: A weapon capable of emitting a focused heat beam, can ignite flammable target. -->
   <WNA_DawnbreakerHeatRay.description>TODO</WNA_DawnbreakerHeatRay.description>
   <!-- EN: handle -->
@@ -38,7 +50,7 @@
   <WNA_DawnbreakerHeatRay_Proj.label>TODO</WNA_DawnbreakerHeatRay_Proj.label>
   
   <!-- EN: "dawnbreaker" ionizer -->
-  <WNA_DawnbreakerIonizer.label>“破晓者”电离步枪</WNA_DawnbreakerIonizer.label>
+  <WNA_DawnbreakerIonizer.label>TODO</WNA_DawnbreakerIonizer.label>
   <!-- EN: A weapon powered by an unstable-particle emitter, this rifle can generate powerful focused radiation beam to damage it's target. This weapon is  unusually effective against living enemies. -->
   <WNA_DawnbreakerIonizer.description>TODO</WNA_DawnbreakerIonizer.description>
   <!-- EN: handle -->
@@ -50,7 +62,7 @@
   <WNA_DawnbreakerIonizer_Proj.label>TODO</WNA_DawnbreakerIonizer_Proj.label>
   
   <!-- EN: "dawnbreaker" radcket launcher -->
-  <WNA_DawnbreakerRadLauncher.label>“破晓者”辐射火箭发射器</WNA_DawnbreakerRadLauncher.label>
+  <WNA_DawnbreakerRadLauncher.label>TODO</WNA_DawnbreakerRadLauncher.label>
   <!-- EN: A weapon can launch radioactive rockets, this weapon can cause massive destructions and leave deadly rad fields. -->
   <WNA_DawnbreakerRadLauncher.description>TODO</WNA_DawnbreakerRadLauncher.description>
   <!-- EN: handle -->
@@ -62,7 +74,7 @@
   <WNA_DawnbreakerRadLauncher_Proj.label>TODO</WNA_DawnbreakerRadLauncher_Proj.label>
   
   <!-- EN: "howlstorm" HMG -->
-  <WNA_HowlstormHMG.label>“呼啸风暴”重机枪</WNA_HowlstormHMG.label>
+  <WNA_HowlstormHMG.label>TODO</WNA_HowlstormHMG.label>
   <!-- EN: The "howlstorm" HMG is one of the heaviest yet most awe-inspiring weapon in WNA conventional arsenal. It can cast a rain of explosive kinetic pulses over enemies with almost no breaks, and if someone is lucky enough to get close enough, then this weapon with astonishing size and weight will easily crush the lucky one into something just as mashed potato. -->
   <WNA_HowlstormHMG.description>TODO</WNA_HowlstormHMG.description>
   <!-- EN: barrel -->
@@ -74,7 +86,7 @@
   <WNA_HowlstormHMG_Proj.label>TODO</WNA_HowlstormHMG_Proj.label>
   
   <!-- EN: "howlstorm" MLRS -->
-  <WNA_HowlstormMLRS.label>“呼啸风暴”多管火箭炮</WNA_HowlstormMLRS.label>
+  <WNA_HowlstormMLRS.label>TODO</WNA_HowlstormMLRS.label>
   <!-- EN: The "howlstorm" HMG is one of the heaviest yet most awe-inspiring weapon in WNA conventional arsenal. When it's switched to MLRS mode, it can fire a bunch of chiming blaze rockets, smelt everything in it's targeted area. -->
   <WNA_HowlstormMLRS.description>TODO</WNA_HowlstormMLRS.description>
   <!-- EN: barrel -->
@@ -86,7 +98,7 @@
   <WNA_HowlstormMLRS_Proj.label>TODO</WNA_HowlstormMLRS_Proj.label>
   
   <!-- EN: "lead haze" assault rifle -->
-  <WNA_LeadHazeARifle.label>“灰雾”突击步枪</WNA_LeadHazeARifle.label>
+  <WNA_LeadHazeARifle.label>TODO</WNA_LeadHazeARifle.label>
   <!-- EN: A weapon suitable for short-range battle. This gun can dump a large amount of bullets in a short period of time, causing multiple open wounds. -->
   <WNA_LeadHazeARifle.description>TODO</WNA_LeadHazeARifle.description>
   <!-- EN: handle -->
@@ -97,8 +109,20 @@
   <!-- EN: gun proj -->
   <WNA_LeadHazeARifle_Proj.label>TODO</WNA_LeadHazeARifle_Proj.label>
   
+  <!-- EN: TODO railgun -->
+  <WNA_MastodonRailgun.label>TODO</WNA_MastodonRailgun.label>
+  <!-- EN: placeholder -->
+  <WNA_MastodonRailgun.description>TODO</WNA_MastodonRailgun.description>
+  <!-- EN: rapier -->
+  <WNA_MastodonRailgun.tools.rapier.label>TODO</WNA_MastodonRailgun.tools.rapier.label>
+  <!-- EN: TODO railgun -->
+  <WNA_MastodonRailgun.verbs.Verb_Shoot.label>TODO</WNA_MastodonRailgun.verbs.Verb_Shoot.label>
+  
+  <!-- EN: gun proj -->
+  <WNA_MastodonRailgun_Proj.label>TODO</WNA_MastodonRailgun_Proj.label>
+  
   <!-- EN: "pacifier" arc shocker -->
-  <WNA_PacifierArcShocker.label>“平定者”电弧发射器</WNA_PacifierArcShocker.label>
+  <WNA_PacifierArcShocker.label>TODO</WNA_PacifierArcShocker.label>
   <!-- EN: A weapon developed for non-lethal purposes, use electric arcs to shock victim until being incapacitied. -->
   <WNA_PacifierArcShocker.description>TODO</WNA_PacifierArcShocker.description>
   <!-- EN: handle -->
@@ -110,7 +134,7 @@
   <WNA_PacifierArcShocker_Proj.label>TODO</WNA_PacifierArcShocker_Proj.label>
   
   <!-- EN: "parasomnia" chrono ejector -->
-  <WNA_ParasomniaChronoEjector.label>“永眠”时空抽离者</WNA_ParasomniaChronoEjector.label>
+  <WNA_ParasomniaChronoEjector.label>TODO</WNA_ParasomniaChronoEjector.label>
   <!-- EN: A device that can manipulator the continuity of time and space. This weapon can cause spacetime anomaly effect on the victim. Once the intensity of this effect exceeds a certain level, the victim will be erased. -->
   <WNA_ParasomniaChronoEjector.description>TODO</WNA_ParasomniaChronoEjector.description>
   <!-- EN: barrel -->
@@ -122,7 +146,7 @@
   <WNA_ParasomniaChronoEjector_Proj.label>TODO</WNA_ParasomniaChronoEjector_Proj.label>
   
   <!-- EN: "parasomnia" freeze rifle -->
-  <WNA_ParasomniaPermafrostRifle.label>“永眠”急冻步枪</WNA_ParasomniaPermafrostRifle.label>
+  <WNA_ParasomniaPermafrostRifle.label>TODO</WNA_ParasomniaPermafrostRifle.label>
   <!-- EN: A weapon that can use permafrost ray to directly remove heat from targeted area. The hit part will be frozen, thus become very fragile and easy to break. -->
   <WNA_ParasomniaPermafrostRifle.description>TODO</WNA_ParasomniaPermafrostRifle.description>
   <!-- EN: barrel -->
@@ -134,14 +158,14 @@
   <WNA_ParasomniaPermafrostRifle_Proj.label>TODO</WNA_ParasomniaPermafrostRifle_Proj.label>
   
   <!-- EN: whelingnorther regulator -->
-  <WNA_Regulator.label>威灵军刀</WNA_Regulator.label>
+  <WNA_Regulator.label>TODO</WNA_Regulator.label>
   <!-- EN: A thick, heavy and sharp military melee weapon, capable of cutting through armor, breaching fortifications, or cleaving a person in half. -->
   <WNA_Regulator.description>TODO</WNA_Regulator.description>
   <!-- EN: edge -->
   <WNA_Regulator.tools.edge.label>TODO</WNA_Regulator.tools.edge.label>
   
   <!-- EN: "seizer" psychic lance -->
-  <WNA_SeizerPsychicLance.label>“摄魂师”心灵喷枪</WNA_SeizerPsychicLance.label>
+  <WNA_SeizerPsychicLance.label>TODO</WNA_SeizerPsychicLance.label>
   <!-- EN: A psychic device powered by a properly preserved flesh brain. The weapon can use the captured brain to generated a strong mind pulse to overwhelm a victim's fragile mind, make the victim bend to the weapon's carrier. -->
   <WNA_SeizerPsychicLance.description>TODO</WNA_SeizerPsychicLance.description>
   <!-- EN: barrel -->
@@ -153,7 +177,7 @@
   <WNA_SeizerPsychicLance_Proj.label>TODO</WNA_SeizerPsychicLance_Proj.label>
   
   <!-- EN: "sting teeth" assault rifle -->
-  <WNA_StingTeethARifle.label>“毒牙”突击步枪</WNA_StingTeethARifle.label>
+  <WNA_StingTeethARifle.label>TODO</WNA_StingTeethARifle.label>
   <!-- EN: A weapon suitable for short-range battle. This gun can dump a large amount of toxic bullets in a short period of time, very fine for street fighting. -->
   <WNA_StingTeethARifle.description>TODO</WNA_StingTeethARifle.description>
   <!-- EN: handle -->
@@ -165,7 +189,7 @@
   <WNA_StingTeethARifle_Proj.label>TODO</WNA_StingTeethARifle_Proj.label>
   
   <!-- EN: "sunset" sniper artillery mode -->
-  <WNA_SunsetArtillery.label>“残阳”狙击步枪-炮击模式</WNA_SunsetArtillery.label>
+  <WNA_SunsetArtillery.label>TODO</WNA_SunsetArtillery.label>
   <!-- EN: sunset sniper rifle switched to artillery mode, usually used with smaller-sized antigrain warheads. a single rail can lead shells through proper path, go a long distance and hit target. -->
   <WNA_SunsetArtillery.description>TODO</WNA_SunsetArtillery.description>
   <!-- EN: rapier -->
@@ -177,7 +201,7 @@
   <WNA_SunsetArtillery_Proj.label>TODO</WNA_SunsetArtillery_Proj.label>
   
   <!-- EN: "sunset" sniper rifle -->
-  <WNA_SunsetSniper.label>“残阳”狙击步枪</WNA_SunsetSniper.label>
+  <WNA_SunsetSniper.label>TODO</WNA_SunsetSniper.label>
   <!-- EN: A sniper rifle with advanced sights, capable of killing enemies at quite a distance. Its hollow-point bullets can deal a great amount of damage, one can hardly escape its attack. Even if the lucky few managed to survive, they will suffer from massive trauma and the almost inevitable infection. -->
   <WNA_SunsetSniper.description>TODO</WNA_SunsetSniper.description>
   <!-- EN: rapier -->
@@ -189,7 +213,7 @@
   <WNA_SunsetSniper_Proj.label>TODO</WNA_SunsetSniper_Proj.label>
   
   <!-- EN: whelingnorther rite lance -->
-  <WNA_Weapon_RiteLance.label>威灵诺德仪式枪</WNA_Weapon_RiteLance.label>
+  <WNA_Weapon_RiteLance.label>TODO</WNA_Weapon_RiteLance.label>
   <!-- EN: A lance with unique shape, embued with otherworldly power. Such weapon is often used for ceremonial purposes, but it also has superior power as a weapon. Its flame is so violent that any wound it inflicts usually results in the immediate death of the victim. -->
   <WNA_Weapon_RiteLance.description>TODO</WNA_Weapon_RiteLance.description>
   <!-- EN: edge -->
@@ -198,7 +222,7 @@
   <WNA_Weapon_RiteLance.verbs.Verb_CastTargetEffect.label>TODO</WNA_Weapon_RiteLance.verbs.Verb_CastTargetEffect.label>
   
   <!-- EN: whelingnorther rite sword -->
-  <WNA_Weapon_RiteSword.label>威灵诺德仪式剑</WNA_Weapon_RiteSword.label>
+  <WNA_Weapon_RiteSword.label>TODO</WNA_Weapon_RiteSword.label>
   <!-- EN: A longsword with unique shape, embued with otherworldly power. Such weapon is often used for ceremonial purposes, but it also has superior power as a weapon. Its flame is so violent that any wound it inflicts usually results in the immediate death of the victim. -->
   <WNA_Weapon_RiteSword.description>TODO</WNA_Weapon_RiteSword.description>
   <!-- EN: edge -->

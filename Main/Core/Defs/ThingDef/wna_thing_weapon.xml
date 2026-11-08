@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- basic -->
   <ThingDef ParentName="WNA_WeaponBaseMelee">
@@ -11,7 +11,7 @@
     </graphicData>
     <statBases>
       <WorkToMake>4500</WorkToMake>
-      <MarketValue>2000</MarketValue>
+      <MarketValue>2357</MarketValue>
     </statBases>
     <equippedAngleOffset>45</equippedAngleOffset>
     <tools>
@@ -70,7 +70,7 @@
     </graphicData>
     <statBases>
       <WorkToMake>4500</WorkToMake>
-      <MarketValue>2000</MarketValue>
+      <MarketValue>2357</MarketValue>
       <RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>45</equippedAngleOffset>
@@ -131,7 +131,7 @@
     </graphicData>
     <statBases>
       <WorkToMake>1500</WorkToMake>
-      <MarketValue>500</MarketValue>
+      <MarketValue>600</MarketValue>
     </statBases>
     <equippedAngleOffset>-45</equippedAngleOffset>
     <tools>
@@ -203,8 +203,6 @@
         <soundCast>Shot_SniperRifle</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
-        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-        <burstShotCount>1</burstShotCount>
       </li>
     </verbs>
     <tools>
@@ -248,7 +246,6 @@
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
     </graphicData>
-    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Ambient</thingClass>
     <projectile>
       <damageDef>WNA_ArmorPiercer</damageDef>
       <damageAmountBase>300</damageAmountBase>
@@ -256,8 +253,13 @@
     <modExtensions>
       <li Class="WNA.WNAModExtension.ProjConfig">
         <invisoHit>true</invisoHit>
-				<ambientDmgFactor>1</ambientDmgFactor>
-				<ambientWidth>0.5</ambientWidth>
+        <flightMode>Instant</flightMode>
+        <warheads>
+          <li>
+            <type>Ambient</type>
+            <width>0.5</width>
+          </li>
+        </warheads>
       </li>
     </modExtensions>
   </ThingDef>
@@ -292,11 +294,8 @@
         <soundCast>Mortar_LaunchA</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
-        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-        <burstShotCount>1</burstShotCount>
         <requireLineOfSight>false</requireLineOfSight>
         <muzzleFlashScale>16</muzzleFlashScale>
-        <forcedMissRadius>1.9</forcedMissRadius>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
@@ -324,7 +323,6 @@
   <ThingDef ParentName="WNA_ProjBase">
     <defName>WNA_SunsetArtillery_Proj</defName>
     <label>gun proj</label>
-    <thingClass>Projectile_Explosive</thingClass>
     <graphicData>
       <texPath>Things/Projectile/ShellAntigrainWarhead</texPath>
     </graphicData>
@@ -332,15 +330,23 @@
       <damageDef>BombSuper</damageDef>
       <damageAmountBase>800</damageAmountBase>
       <speed>64</speed>
+      <arcHeightFactor>6</arcHeightFactor>
       <explosionRadius>9.9</explosionRadius>
       <explosionEffect>GiantExplosion</explosionEffect>
-      <flyOverhead>true</flyOverhead>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>Explosion_GiantBomb</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>
       <preExplosionSpawnSingleThingDef>CraterMedium</preExplosionSpawnSingleThingDef>
     </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <flightMode>Arcing</flightMode>
+        <explosive>true</explosive>
+        <inaccurate>true</inaccurate>
+        <inaccurateRange>1.9</inaccurateRange>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- t1 -->
@@ -354,8 +360,8 @@
     </graphicData>
     <statBases>
       <WorkToMake>3000</WorkToMake>
-      <MarketValue>1200</MarketValue>
-      <RangedWeapon_Cooldown>0.034</RangedWeapon_Cooldown>
+      <MarketValue>1000</MarketValue>
+      <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
@@ -372,11 +378,10 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>WNA_LeadHazeARifle_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
-        <range>34.9</range>
+        <range>42.9</range>
         <soundCast>Shot_AssaultRifle</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
-        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
       </li>
     </verbs>
@@ -411,11 +416,9 @@
   <ThingDef ParentName="WNA_ProjBase">
     <defName>WNA_LeadHazeARifle_Proj</defName>
     <label>gun proj</label>
-    <thingClass>Bullet</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
     </graphicData>
-    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Cluster</thingClass>
     <projectile>
       <speed>300</speed>
       <damageDef>WNA_HollowPoint</damageDef>
@@ -424,10 +427,15 @@
     </projectile>
     <modExtensions>
       <li Class="WNA.WNAModExtension.ProjConfig">
-        <clusterRadius>1.5</clusterRadius>
-        <clusterAmount>3</clusterAmount>
-        <clusterDmgFactor>1</clusterDmgFactor>
-        <clusterFleck>ShotHit_Dirt</clusterFleck>
+        <warheads>
+          <li>
+            <type>Cluster</type>
+            <radius>1.5</radius>
+            <amount>3</amount>
+            <affectsDirectTarget>true</affectsDirectTarget>
+            <fleck>ShotHit_Dirt</fleck>
+          </li>
+        </warheads>
       </li>
     </modExtensions>
   </ThingDef>
@@ -443,8 +451,8 @@
     </graphicData>
     <statBases>
       <WorkToMake>3000</WorkToMake>
-      <MarketValue>1200</MarketValue>
-      <RangedWeapon_Cooldown>0.034</RangedWeapon_Cooldown>
+      <MarketValue>1000</MarketValue>
+      <RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
@@ -461,11 +469,10 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>WNA_StingTeethARifle_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
-        <range>34.9</range>
+        <range>42.9</range>
         <soundCast>Shot_AssaultRifle</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
-        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
       </li>
     </verbs>
@@ -500,12 +507,10 @@
   <ThingDef ParentName="WNA_ProjBase">
     <defName>WNA_StingTeethARifle_Proj</defName>
     <label>gun proj</label>
-    <thingClass>Bullet</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Small</texPath>
       <color>(155,255,155)</color>
     </graphicData>
-    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Cluster</thingClass>
     <projectile>
       <speed>300</speed>
       <damageDef>WNA_ToxinBullet</damageDef>
@@ -514,10 +519,15 @@
     </projectile>
     <modExtensions>
       <li Class="WNA.WNAModExtension.ProjConfig">
-        <clusterRadius>1.5</clusterRadius>
-        <clusterAmount>3</clusterAmount>
-        <clusterDmgFactor>1</clusterDmgFactor>
-        <clusterFleck>ShotHit_Dirt</clusterFleck>
+        <warheads>
+          <li>
+            <type>Cluster</type>
+            <radius>1.5</radius>
+            <amount>3</amount>
+            <affectsDirectTarget>true</affectsDirectTarget>
+            <fleck>ShotHit_Dirt</fleck>
+          </li>
+        </warheads>
       </li>
     </modExtensions>
   </ThingDef>
@@ -533,7 +543,7 @@
     <statBases>
       <WorkToMake>4500</WorkToMake>
       <MarketValue>1200</MarketValue>
-      <RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.833333</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
@@ -550,12 +560,10 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>WNA_CometBeamEmitter_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
-        <range>63</range>
+        <range>63.9</range>
         <soundCast>Shot_SniperRifle</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
-        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-        <burstShotCount>1</burstShotCount>
       </li>
     </verbs>
     <tools>
@@ -601,7 +609,6 @@
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
     </graphicData>
-    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Inviso</thingClass>
     <projectile>
       <damageDef>Thump</damageDef>
       <damageAmountBase>40</damageAmountBase>
@@ -609,6 +616,272 @@
     <modExtensions>
       <li Class="WNA.WNAModExtension.ProjConfig">
         <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="WNA_WeaponBaseRanged">
+    <defName>WNA_PacifierArcStriker</defName>
+    <label>"pacifier" arc shocker</label>
+    <description>A weapon developed for non-lethal purposes, use electric arcs to shock victim until being incapacitied.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/NeedleGun</texPath>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <weaponTags/>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>WNA_PacifierArcStriker_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>49.9</range>
+        <soundCast>WNA_TeslaAttack</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+        <burstShotCount>2</burstShotCount>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>0.793701</cooldownTime>
+        <armorPenetration>2</armorPenetration>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_AmmoVariety</li>
+      </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponTeslaBoltConfig">
+        <BoltDuration>28</BoltDuration>
+        <Bolt1Color>(255,255,255)</Bolt1Color>
+        <Bolt2Color>(0,0,255)</Bolt2Color>
+        <Bolt3Color>(200,200,225)</Bolt3Color>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_PacifierArcStriker_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+    </graphicData>
+    <projectile>
+      <damageDef>Burn</damageDef>
+      <damageAmountBase>45</damageAmountBase>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="WNA_WeaponBaseRanged">
+    <defName>WNA_LongbowMissileLauncher</defName>
+    <label>"longbow" missile launcher</label>
+    <description>A weapon developed for non-lethal purposes, use electric arcs to shock victim until being incapacitied.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Mace</texPath>
+      <color>(255,125,1)</color>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+      <RangedWeapon_Cooldown>1.666667</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <weaponTags/>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>WNA_LongbowMissileLauncher_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>49.9</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+        <burstShotCount>2</burstShotCount>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>0.793701</cooldownTime>
+        <armorPenetration>2</armorPenetration>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_AmmoVariety</li>
+      </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_LongbowMissileLauncher_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <drawSize>1.6</drawSize>
+      <color>(255,125,1)</color>
+    </graphicData>
+    <projectile>
+      <speed>80</speed>
+      <damageDef>WNA_ArmorPiercer</damageDef>
+      <damageAmountBase>72</damageAmountBase>
+      <arcHeightFactor>4</arcHeightFactor>
+			<explosionRadius>3.6</explosionRadius>
+			<soundExplode>Explosion_Bomb</soundExplode>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <flightMode>Arcing</flightMode>
+        <explosive>true</explosive>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="WNA_WeaponBaseRanged">
+    <defName>WNA_LongbowTripleLauncher</defName>
+    <label>"longbow" missile launcher</label>
+    <description>A weapon developed for non-lethal purposes, use electric arcs to shock victim until being incapacitied.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Mace</texPath>
+      <color>(255,238,102)</color>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+      <MarketValue>1200</MarketValue>
+      <RangedWeapon_Cooldown>2.666667</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <weaponTags/>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>WNA_LongbowTripleLauncher_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>53.9</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+        <burstShotCount>3</burstShotCount>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>0.793701</cooldownTime>
+        <armorPenetration>2</armorPenetration>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_AmmoVariety</li>
+      </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_LongbowTripleLauncher_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <drawSize>1.6</drawSize>
+      <color>(255,238,102)</color>
+    </graphicData>
+    <projectile>
+      <speed>80</speed>
+      <damageDef>WNA_ArmorPiercer</damageDef>
+      <damageAmountBase>50</damageAmountBase>
+			<explosionRadius>1.9</explosionRadius>
+			<soundExplode>Explosion_Bomb</soundExplode>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <flightMode>Homing</flightMode>
+        <ROT>24</ROT>
+        <maxTurnPerUpdate>1</maxTurnPerUpdate>
+        <explosive>true</explosive>
+        <extraExplosions>
+          <li>
+            <damageDef>Bomb</damageDef>
+            <radius>1.9</radius>
+            <count>3</count>
+            <areaSize>2</areaSize>
+          </li>
+        </extraExplosions>
       </li>
     </modExtensions>
   </ThingDef>
@@ -619,7 +892,7 @@
     <label>"pacifier" arc shocker</label>
     <description>A weapon developed for non-lethal purposes, use electric arcs to shock victim until being incapacitied.</description>
     <graphicData>
-      <texPath>weapons/wna_leadhazerifle</texPath>
+      <texPath>Things/Item/Equipment/WeaponRanged/NeedleGun</texPath>
       <drawSize>1</drawSize>
     </graphicData>
     <statBases>
@@ -640,11 +913,10 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>WNA_PacifierArcShocker_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
-        <range>34.9</range>
+        <range>42.9</range>
         <soundCast>WNA_TeslaAttack</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
-        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
       </li>
     </verbs>
@@ -679,9 +951,9 @@
     <modExtensions>
       <li Class="WNA.WNAModExtension.WeaponTeslaBoltConfig">
         <BoltDuration>28</BoltDuration>
-        <Bolt1Color>(255,255,255)</Bolt1Color>
-        <Bolt2Color>(0,0,255)</Bolt2Color>
-        <Bolt3Color>(200,200,225)</Bolt3Color>
+        <Bolt1Color>(255,200,200)</Bolt1Color>
+        <Bolt2Enable>false</Bolt2Enable>
+        <Bolt3Enable>false</Bolt3Enable>
       </li>
     </modExtensions>
   </ThingDef>
@@ -691,7 +963,6 @@
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
     </graphicData>
-    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Inviso</thingClass>
     <projectile>
       <damageDef>WNA_TeslaShock</damageDef>
       <damageAmountBase>20</damageAmountBase>
@@ -699,6 +970,7 @@
     <modExtensions>
       <li Class="WNA.WNAModExtension.ProjConfig">
         <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
       </li>
     </modExtensions>
   </ThingDef>
@@ -735,7 +1007,6 @@
         <soundCast>Shot_AssaultRifle</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
-        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
         <burstShotCount>6</burstShotCount>
         <warmupTime>2.5</warmupTime>
         <forcedMissRadius>5.9</forcedMissRadius>
@@ -785,7 +1056,6 @@
       <explosionRadius>6.9</explosionRadius>
       <explosionChanceToStartFire>0</explosionChanceToStartFire>
       <explosionDamageFalloff>false</explosionDamageFalloff>
-      <flyOverhead>true</flyOverhead>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>Explosion_EMP</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
@@ -805,7 +1075,7 @@
     <statBases>
       <WorkToMake>3000</WorkToMake>
       <MarketValue>1200</MarketValue>
-      <RangedWeapon_Cooldown>0.166667</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.083333</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
@@ -826,7 +1096,6 @@
         <soundCast>Shot_AssaultRifle</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
-        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
       </li>
     </verbs>
@@ -841,7 +1110,9 @@
         <armorPenetration>2</armorPenetration>
       </li>
     </tools>
-    <comps>
+    <comps Inherit="false">
+      <li Class="CompProperties_Forbiddable"/>
+      <li><compClass>CompQuality</compClass></li>
       <li MayRequire="ludeon.rimworld.anomaly" Class="CompProperties_EquippableAbility">
         <abilityDef>IncineratorBurner</abilityDef>
       </li>
@@ -878,14 +1149,14 @@
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
     </graphicData>
-    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Inviso</thingClass>
     <projectile>
       <damageDef>WNA_Flame</damageDef>
-      <damageAmountBase>12</damageAmountBase>
+      <damageAmountBase>24</damageAmountBase>
     </projectile>
     <modExtensions>
       <li Class="WNA.WNAModExtension.ProjConfig">
         <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
       </li>
     </modExtensions>
   </ThingDef>
@@ -924,7 +1195,6 @@
         <soundCast>WNA_RadAttack</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
-        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
         <burstShotCount>3</burstShotCount>
       </li>
     </verbs>
@@ -939,7 +1209,9 @@
         <armorPenetration>2</armorPenetration>
       </li>
     </tools>
-    <comps>
+    <comps Inherit="false">
+      <li Class="CompProperties_Forbiddable"/>
+      <li><compClass>CompQuality</compClass></li>
       <li MayRequire="ludeon.rimworld.anomaly" Class="CompProperties_EquippableAbility">
         <abilityDef>IncineratorBurner</abilityDef>
       </li>
@@ -975,7 +1247,6 @@
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
     </graphicData>
-    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Inviso</thingClass>
     <projectile>
       <damageDef>WNA_RadBurn</damageDef>
       <damageAmountBase>24</damageAmountBase>
@@ -983,9 +1254,192 @@
     <modExtensions>
       <li Class="WNA.WNAModExtension.ProjConfig">
         <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
       </li>
     </modExtensions>
   </ThingDef>
+	
+	<ThingDef ParentName="WNA_WeaponBaseRanged">
+		<defName>WNA_ShadowDecayBeamEmitter</defName>
+		<label>"shadow" decay beam emitter</label>
+		<description>A device that can manipulator the continuity of time and space. This weapon can cause spacetime anomaly effect on the victim. Once the intensity of this effect exceeds a certain level, the victim will be erased.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/ChargeLance</texPath>
+			<drawSize>1.0</drawSize>
+      <color>(50,170,0)</color>
+		</graphicData>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<MarketValue>2000</MarketValue>
+			<RangedWeapon_Cooldown>1.833333</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<WNA_ParticleVial>1</WNA_ParticleVial>
+		</costList>
+		<weaponTags>
+      <li>Tag_WNADarknightComm</li>
+    </weaponTags>
+		<verbs>
+			<li>
+        <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>WNA_ShadowDecayBeamEmitter_Proj</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>42.9</range>
+				<soundCast>GunTail_Heavy</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				<canGoWild>false</canGoWild>
+        <burstShotCount>2</burstShotCount>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>0.6</cooldownTime>
+				<armorPenetration>Infinity</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisites>
+        <li>WNA_ParticleArmory</li>
+      </researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>16</LaserDuration>
+        <LaserInnerColor>(50,170,0)</LaserInnerColor>
+        <LaserOuterColor>(50,170,0)</LaserOuterColor>
+        <LaserThickness>0.2</LaserThickness>
+				<LaserOuterSpread>1.333333</LaserOuterSpread>
+      </li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="WNA_ProjBase">
+		<defName>WNA_ShadowDecayBeamEmitter_Proj</defName>
+		<label>gun proj</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+		</graphicData>
+		<projectile>
+			<damageDef>Decayed</damageDef>
+			<damageAmountBase>48</damageAmountBase>
+		</projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+      </li>
+    </modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="WNA_WeaponBaseRanged">
+		<defName>WNA_ShadowDissolveBeamEmitter</defName>
+		<label>"shadow" dissolve beam emitter</label>
+		<description>A device that can manipulator the continuity of time and space. This weapon can cause spacetime anomaly effect on the victim. Once the intensity of this effect exceeds a certain level, the victim will be erased.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/ChargeLance</texPath>
+			<drawSize>1.0</drawSize>
+      <color>(0,200,0)</color>
+		</graphicData>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<MarketValue>2000</MarketValue>
+			<RangedWeapon_Cooldown>1.833333</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<WNA_ParticleVial>1</WNA_ParticleVial>
+		</costList>
+		<weaponTags>
+      <li>Tag_WNADarknightComm</li>
+    </weaponTags>
+		<verbs>
+			<li>
+        <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>WNA_ShadowDissolveBeamEmitter_Proj</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>42.9</range>
+				<soundCast>GunTail_Heavy</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				<canGoWild>false</canGoWild>
+        <burstShotCount>2</burstShotCount>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>0.6</cooldownTime>
+				<armorPenetration>Infinity</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisites>
+        <li>WNA_ParticleArmory</li>
+      </researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>16</LaserDuration>
+        <LaserInnerColor>(0,200,0)</LaserInnerColor>
+        <LaserOuterColor>(0,200,0)</LaserOuterColor>
+        <LaserThickness>0.2</LaserThickness>
+				<LaserOuterSpread>1.333333</LaserOuterSpread>
+      </li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="WNA_ProjBase">
+		<defName>WNA_ShadowDissolveBeamEmitter_Proj</defName>
+		<label>gun proj</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+		</graphicData>
+		<projectile>
+			<damageDef>AcidBurn</damageDef>
+			<damageAmountBase>48</damageAmountBase>
+		</projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+      </li>
+    </modExtensions>
+	</ThingDef>
 
   <!-- t3 -->
   <ThingDef ParentName="WNA_WeaponBaseRanged">
@@ -1068,7 +1522,6 @@
   <ThingDef ParentName="WNA_ProjBase">
     <defName>WNA_SeizerPsychicLance_Proj</defName>
     <label>psychic proj</label>
-    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Inviso</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
     </graphicData>
@@ -1079,6 +1532,7 @@
     <modExtensions>
       <li Class="WNA.WNAModExtension.ProjConfig">
         <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
       </li>
     </modExtensions>
   </ThingDef>
@@ -1088,7 +1542,7 @@
 		<label>"parasomnia" freeze rifle</label>
 		<description>A weapon that can use permafrost ray to directly remove heat from targeted area. The hit part will be frozen, thus become very fragile and easy to break.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/ChargeLance</texPath>
 			<drawSize>1.0</drawSize>
 		</graphicData>
 		<statBases>
@@ -1114,7 +1568,6 @@
 				<soundCast>GunTail_Heavy</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
-				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
 			</li>
 		</verbs>
 		<tools>
@@ -1157,7 +1610,6 @@
 	<ThingDef ParentName="WNA_ProjBase">
 		<defName>WNA_ParasomniaPermafrostRifle_Proj</defName>
 		<label>gun proj</label>
-    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Inviso</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/ChargeLanceShot</texPath>
 			<color>(255,0,0)</color>
@@ -1169,6 +1621,7 @@
     <modExtensions>
       <li Class="WNA.WNAModExtension.ProjConfig">
         <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
       </li>
     </modExtensions>
 	</ThingDef>
@@ -1178,19 +1631,19 @@
 		<label>"parasomnia" chrono ejector</label>
 		<description>A device that can manipulator the continuity of time and space. This weapon can cause spacetime anomaly effect on the victim. Once the intensity of this effect exceeds a certain level, the victim will be erased.</description>
 		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+			<texPath>Things/Item/Equipment/WeaponRanged/ChargeLance</texPath>
 			<drawSize>1.0</drawSize>
 		</graphicData>
 		<statBases>
 			<WorkToMake>4500</WorkToMake>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>2500</MarketValue>
 			<RangedWeapon_Cooldown>0.816667</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
 			<Plasteel>50</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
-			<!--<WNA_UraniumBattery>1</WNA_UraniumBattery>-->
+			<WNA_ParticleVial>1</WNA_ParticleVial>
 		</costList>
 		<weaponTags>
 			<li>Tag_WNAParasomnia</li>
@@ -1205,7 +1658,6 @@
 				<soundCast>GunTail_Heavy</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
-				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
 			</li>
 		</verbs>
 		<tools>
@@ -1248,7 +1700,6 @@
 	<ThingDef ParentName="WNA_ProjBase">
 		<defName>WNA_ParasomniaChronoEjector_Proj</defName>
 		<label>gun proj</label>
-    <thingClass>WNA.WNAThingClass.WNAProj.Proj_Inviso</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/ChargeLanceShot</texPath>
 		</graphicData>
@@ -1259,99 +1710,10 @@
     <modExtensions>
       <li Class="WNA.WNAModExtension.ProjConfig">
         <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
       </li>
     </modExtensions>
 	</ThingDef>
-
-  <ThingDef ParentName="WNA_WeaponBaseRanged">
-    <defName>WNA_BuratinoLauncher</defName>
-    <label>buratino rocket launcher</label>
-    <description>still todo!</description>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponRanged/ChargeBlasterHeavy</texPath>
-      <drawSize>1</drawSize>
-    </graphicData>
-    <statBases>
-      <WorkToMake>4000</WorkToMake>
-      <MarketValue>1500</MarketValue>
-      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
-    </statBases>
-    <equippedAngleOffset>0</equippedAngleOffset>
-    <costList>
-      <Plasteel>60</Plasteel>
-      <Steel>40</Steel>
-      <ComponentSpacer>4</ComponentSpacer>
-    </costList>
-    <weaponTags>
-      <li>Tag_WNAStrikeForce</li>
-      <li>Tag_WNAVanguard</li>
-    </weaponTags>
-    <verbs>
-      <li>
-        <verbClass>Verb_Shoot</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>WNA_BuratinoLauncher_Proj</defaultProjectile>
-        <range>112.9</range>
-        <soundCast>Shot_AssaultRifle</soundCast>
-        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-        <canGoWild>false</canGoWild>
-        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-        <burstShotCount>22</burstShotCount>
-        <warmupTime>0</warmupTime>
-        <forcedMissRadius>6.9</forcedMissRadius>
-        <ai_AvoidFriendlyFireRadius>14.9</ai_AvoidFriendlyFireRadius>
-      </li>
-    </verbs>
-    <tools>
-      <li>
-        <label>handle</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>40</power>
-        <cooldownTime>1</cooldownTime>
-        <armorPenetration>2</armorPenetration>
-      </li>
-    </tools>
-    <recipeMaker>
-      <researchPrerequisites>
-        <li>WNA_AdvancedArsenal</li>
-      </researchPrerequisites>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <skillRequirements>
-        <Crafting>10</Crafting>
-      </skillRequirements>
-      <effectWorking>Smith</effectWorking>
-      <soundWorking>Recipe_Smith</soundWorking>
-      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
-      <recipeUsers>
-        <li>FabricationBench</li>
-      </recipeUsers>
-    </recipeMaker>
-  </ThingDef>
-  <ThingDef ParentName="WNA_ProjBase">
-    <defName>WNA_BuratinoLauncher_Proj</defName>
-    <label>gun proj</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Big</texPath>
-      <color>(255,155,55)</color>
-    </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
-    <projectile>
-      <damageDef>Vaporize</damageDef>
-      <damageAmountBase>90</damageAmountBase>
-      <speed>100</speed>
-      <explosionRadius>4.9</explosionRadius>
-      <explosionChanceToStartFire>0</explosionChanceToStartFire>
-      <explosionDamageFalloff>false</explosionDamageFalloff>
-      <flyOverhead>true</flyOverhead>
-      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-      <soundExplode>Explosion_Vaporize</soundExplode>
-      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-      <soundAmbient>MortarRound_Ambient</soundAmbient>
-    </projectile>
-  </ThingDef>
 
 	<ThingDef ParentName="WNA_WeaponBaseRanged">
 		<defName>WNA_HowlstormHMG</defName>
@@ -1363,7 +1725,7 @@
 		</graphicData>
 		<statBases>
 			<WorkToMake>4500</WorkToMake>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>2500</MarketValue>
 			<RangedWeapon_Cooldown>0.01</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
@@ -1386,7 +1748,6 @@
 				<soundCast>ChargeLance_Fire</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
-				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
 				<burstShotCount>30</burstShotCount>
 				<forcedMissRadius>1.9</forcedMissRadius>
 			</li>
@@ -1429,15 +1790,14 @@
 	<ThingDef ParentName="WNA_ProjBase">
 		<defName>WNA_HowlstormHMG_Proj</defName>
 		<label>gun proj</label>
-		<thingClass>Bullet</thingClass>
+		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/Charge_Small</texPath>
 			<color>(255,255,155)</color>
 		</graphicData>
-		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
 			<damageDef>WNA_ArmorPiercer</damageDef>
-			<explosionRadius>4.9</explosionRadius>
+			<explosionRadius>3.9</explosionRadius>
 			<damageAmountBase>800</damageAmountBase>
 		</projectile>
 	</ThingDef>
@@ -1452,7 +1812,7 @@
 		</graphicData>
 		<statBases>
 			<WorkToMake>4500</WorkToMake>
-			<MarketValue>2000</MarketValue>
+			<MarketValue>2500</MarketValue>
 			<RangedWeapon_Cooldown>6.25</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
@@ -1476,7 +1836,6 @@
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
 				<burstShotCount>20</burstShotCount>
-				<forcedMissRadius>10.9</forcedMissRadius>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -1504,7 +1863,7 @@
 	<ThingDef ParentName="WNA_ProjBase">
 		<defName>WNA_HowlstormMLRS_Proj</defName>
 		<label>gun proj</label>
-		<thingClass>Projectile_Explosive</thingClass>
+		<thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/ShellFirefoam</texPath>
 			<color>(166,0,66)</color>
@@ -1512,15 +1871,420 @@
 		<projectile>
 			<damageDef>WNA_ChimingBlaze</damageDef>
 			<damageAmountBase>1000</damageAmountBase>
-			<speed>127</speed>
+			<speed>80</speed>
+			<arcHeightFactor>4</arcHeightFactor>
 			<explosionRadius>15.9</explosionRadius>
 			<explosionEffect>GiantExplosion</explosionEffect>
-			<flyOverhead>true</flyOverhead>
 			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
 			<soundExplode>Explosion_Vaporize</soundExplode>
 			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
 		</projectile>
+		<modExtensions>
+			<li Class="WNA.WNAModExtension.ProjConfig">
+				<flightMode>Arcing</flightMode>
+				<explosive>true</explosive>
+				<inaccurate>true</inaccurate>
+				<inaccurateRange>10.9</inaccurateRange>
+			</li>
+		</modExtensions>
 	</ThingDef>
+	
+	<ThingDef ParentName="WNA_WeaponBaseRanged">
+		<defName>WNA_GanzirBeamCaster</defName>
+		<label>"ganzir" beam caster</label>
+		<description>A device that can manipulator the continuity of time and space. This weapon can cause spacetime anomaly effect on the victim. Once the intensity of this effect exceeds a certain level, the victim will be erased.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/ChargeBlasterLight</texPath>
+			<drawSize>1.0</drawSize>
+      <color>(60,140,0)</color>
+		</graphicData>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<MarketValue>2000</MarketValue>
+			<RangedWeapon_Cooldown>0.033333</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<WNA_ParticleVial>1</WNA_ParticleVial>
+		</costList>
+		<weaponTags>
+      <li>Tag_WNAVanguard</li>
+    </weaponTags>
+		<verbs>
+			<li>
+        <verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>WNA_GanzirBeamCaster_Proj</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>109.9</range>
+				<soundCast>GunTail_Heavy</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				<canGoWild>false</canGoWild>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>0.6</cooldownTime>
+				<armorPenetration>Infinity</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisites>
+        <li>WNA_SuperheavyArmament</li>
+      </researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponLaserConfig">
+        <LaserDuration>10</LaserDuration>
+        <LaserInnerColor>(60,140,0)</LaserInnerColor>
+        <LaserOuterColor>(60,140,0)</LaserOuterColor>
+        <LaserThickness>0.5</LaserThickness>
+				<LaserOuterSpread>1.4</LaserOuterSpread>
+      </li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="WNA_ProjBase">
+		<defName>WNA_GanzirBeamCaster_Proj</defName>
+		<label>gun proj</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+		</graphicData>
+		<projectile>
+			<damageDef>Decayed</damageDef>
+			<damageAmountBase>70</damageAmountBase>
+		</projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+        <warheads>
+          <li>
+            <type>CellSpread</type>
+            <damageFactor>1.5</damageFactor>
+            <radius>7.5</radius>
+            <percentAtMax>0.1</percentAtMax>
+          </li>
+        </warheads>
+      </li>
+    </modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="WNA_WeaponBaseRanged">
+		<defName>WNA_DeathHandBoltThrower</defName>
+		<label>"death hand" bolt thrower</label>
+		<description>A device that can manipulator the continuity of time and space. This weapon can cause spacetime anomaly effect on the victim. Once the intensity of this effect exceeds a certain level, the victim will be erased.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/ChargeBlasterLight</texPath>
+			<drawSize>1.0</drawSize>
+      <color>(150,150,240)</color>
+		</graphicData>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<MarketValue>2000</MarketValue>
+			<RangedWeapon_Cooldown>0.033333</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>0</equippedAngleOffset>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<WNA_ParticleVial>1</WNA_ParticleVial>
+		</costList>
+		<weaponTags>
+      <li>Tag_WNAVanguard</li>
+    </weaponTags>
+		<verbs>
+			<li>
+        <verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>WNA_DeathHandBoltThrower_Proj</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>98.9</range>
+				<soundCast>GunTail_Heavy</soundCast>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+				<canGoWild>false</canGoWild>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>0.6</cooldownTime>
+				<armorPenetration>Infinity</armorPenetration>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisites>
+        <li>WNA_SuperheavyArmament</li>
+      </researchPrerequisites>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponTeslaBoltConfig">
+        <BoltDuration>20</BoltDuration>
+        <Bolt1Color>(100,115,225)</Bolt1Color>
+        <Bolt2Color>(50,90,215)</Bolt2Color>
+        <Bolt3Color>(150,150,240)</Bolt3Color>
+      </li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="WNA_ProjBase">
+		<defName>WNA_DeathHandBoltThrower_Proj</defName>
+		<label>gun proj</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+		</graphicData>
+		<projectile>
+			<damageDef>Nerve</damageDef>
+			<damageAmountBase>105</damageAmountBase>
+		</projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <invisoHit>true</invisoHit>
+        <flightMode>Instant</flightMode>
+        <warheads>
+          <li>
+            <type>CellSpread</type>
+            <damageFactor>1.2</damageFactor>
+            <radius>1.9</radius>
+            <percentAtMax>0.4</percentAtMax>
+          </li>
+        </warheads>
+      </li>
+    </modExtensions>
+	</ThingDef>
+
+  <ThingDef ParentName="WNA_WeaponBaseRanged">
+    <defName>WNA_CenturionSiegeCannon</defName>
+    <label>"centurion" siege cannon</label>
+    <description>"centurion" siege cannon</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ThumpCannon</texPath>
+      <drawSize>1.6</drawSize>
+      <color>(200,100,0)</color>
+    </graphicData>
+    <statBases>
+      <WorkToMake>4500</WorkToMake>
+      <MarketValue>3000</MarketValue>
+      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <costList>
+      <Plasteel>80</Plasteel>
+      <Uranium>80</Uranium>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <weaponTags>
+      <li>Tag_WNAVanguard</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>WNA_CenturionSiegeCannon_Proj</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>126.9</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>rapier</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>50</power>
+        <cooldownTime>1</cooldownTime>
+        <armorPenetration>Infinity</armorPenetration>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_SuperheavyArmament</li>
+      </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_CenturionSiegeCannon_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <drawSize>3.5</drawSize>
+      <color>(200,100,0)</color>
+    </graphicData>
+    <projectile>
+      <damageDef>WNA_RadBeam</damageDef>
+			<damageAmountBase>1585</damageAmountBase>
+      <explosionRadius>8.9</explosionRadius>
+      <speed>100</speed>
+      <explosionChanceToStartFire>1.0</explosionChanceToStartFire>
+      <postExplosionSpawnThingDef>WNA_Ether_Aeroblaze</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>0.05</postExplosionSpawnChance>
+      <arcHeightFactor>7</arcHeightFactor>
+    </projectile>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropRadFieldBurst">
+        <config>
+          <radLevel>500</radLevel>
+          <radius>8.9</radius>
+        </config>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <flightMode>Arcing</flightMode>
+        <explosive>true</explosive>
+        <extraExplosions>
+          <li>
+            <damageDef>EMP</damageDef>
+            <radius>14.9</radius>
+            <count>1</count>
+            <areaSize>0</areaSize>
+            <chanceToStartFire>0</chanceToStartFire>
+          </li>
+        </extraExplosions>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="WNA_WeaponBaseRanged">
+    <defName>WNA_BuratinoLauncher</defName>
+    <label>buratino rocket launcher</label>
+    <description>still todo!</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/ThumpCannon</texPath>
+      <drawSize>1</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MarketValue>2000</MarketValue>
+      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedAngleOffset>0</equippedAngleOffset>
+    <costList>
+      <Plasteel>60</Plasteel>
+      <Steel>40</Steel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <weaponTags>
+      <li>Tag_WNAStrikeForce</li>
+      <li>Tag_WNAVanguard</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>WNA_BuratinoLauncher_Proj</defaultProjectile>
+        <range>112.9</range>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        <canGoWild>false</canGoWild>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <burstShotCount>22</burstShotCount>
+        <warmupTime>0</warmupTime>
+        <ai_AvoidFriendlyFireRadius>14.9</ai_AvoidFriendlyFireRadius>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>40</power>
+        <cooldownTime>1</cooldownTime>
+        <armorPenetration>2</armorPenetration>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>WNA_AdvancedArsenal</li>
+      </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>WNA_UnfinishedThing</unfinishedThingDef>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="WNA_ProjBase">
+    <defName>WNA_BuratinoLauncher_Proj</defName>
+    <label>gun proj</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <color>(255,155,55)</color>
+    </graphicData>
+    <projectile>
+      <damageDef>Vaporize</damageDef>
+      <damageAmountBase>90</damageAmountBase>
+      <speed>64</speed>
+      <arcHeightFactor>4</arcHeightFactor>
+      <explosionRadius>4.9</explosionRadius>
+      <explosionChanceToStartFire>0</explosionChanceToStartFire>
+      <explosionDamageFalloff>false</explosionDamageFalloff>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_Vaporize</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+    </projectile>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.ProjConfig">
+        <flightMode>Arcing</flightMode>
+        <explosive>true</explosive>
+        <inaccurate>true</inaccurate>
+        <inaccurateRange>6.9</inaccurateRange>
+      </li>
+    </modExtensions>
+  </ThingDef>
   
 </Defs>

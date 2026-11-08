@@ -148,11 +148,11 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <postFactor>1.2</postFactor>
+            <postFactor>1.5</postFactor>
           </li>
           <li>
             <capacity>Breathing</capacity>
-            <postFactor>1.2</postFactor>
+            <postFactor>1.5</postFactor>
           </li>
         </capMods>
         <statOffsets>
@@ -182,7 +182,7 @@
         <capMods>
           <li>
             <capacity>BloodFiltration</capacity>
-            <postFactor>1.2</postFactor>
+            <postFactor>1.5</postFactor>
           </li>
         </capMods>
       </li>
@@ -201,7 +201,7 @@
     <stages>
       <li>
         <partIgnoreMissingHP>true</partIgnoreMissingHP>
-        <regeneration>60000</regeneration>
+        <regeneration>86400</regeneration>
         <showRegenerationStat>false</showRegenerationStat>
         <statOffsets>
           <ImmunityGainSpeed>3</ImmunityGainSpeed>
@@ -236,7 +236,7 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <postFactor>1.2</postFactor>
+            <postFactor>1.5</postFactor>
           </li>
         </capMods>
       </li>
@@ -254,10 +254,13 @@
     </addedPartProps>
     <stages>
       <li>
+        <statFactors>
+          <VEF_VerbRangeFactor MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.2</VEF_VerbRangeFactor>
+        </statFactors>
         <capMods>
           <li>
             <capacity>Sight</capacity>
-            <postFactor>1.2</postFactor>
+            <postFactor>1.5</postFactor>
           </li>
         </capMods>
       </li>
@@ -275,10 +278,13 @@
     </addedPartProps>
     <stages>
       <li>
+        <statFactors>
+          <VEF_RangeAttackDamageFactor MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.2</VEF_RangeAttackDamageFactor>
+        </statFactors>
         <capMods>
           <li>
             <capacity>Hearing</capacity>
-            <postFactor>1.2</postFactor>
+            <postFactor>1.5</postFactor>
           </li>
         </capMods>
       </li>
