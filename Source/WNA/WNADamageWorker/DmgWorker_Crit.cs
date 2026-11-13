@@ -30,7 +30,6 @@ namespace WNA.WNADamageWorker
                     applyingCrit = false;
                 }
             }
-            // base.Apply already kills (and destroys) non-pawn victims at 0 HP; don't kill twice.
             if (victim is Thing thing && !thing.Destroyed && thing.HitPoints > 0
                 && thing.def.useHitPoints
                 && thing.HitPoints <= (int)(thing.MaxHitPoints / 3))

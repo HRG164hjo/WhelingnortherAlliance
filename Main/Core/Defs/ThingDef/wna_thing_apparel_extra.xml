@@ -411,10 +411,7 @@
   </ThingDef>
 
   <!-- EECP -->
-
-  <!-- Whelingnorthan -->
-
-  <ThingDef ParentName="WNA_ApparelExtraBase">
+  <!--<ThingDef ParentName="WNA_ApparelExtraBase">
     <defName>WNA_PsychicAmplifier</defName>
     <label>psychic amplifier</label>
     <description>A compact psychic amplifier built into a sealed headpiece. It lets the wearer project a focused mind-control impulse at a humanlike target.</description>
@@ -463,5 +460,9 @@
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
-  </ThingDef>
+  </ThingDef>-->
+
+  <!-- Whelingnorthan -->
+
+  
 </Defs>

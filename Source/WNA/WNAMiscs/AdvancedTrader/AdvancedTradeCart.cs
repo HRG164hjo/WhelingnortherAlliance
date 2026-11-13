@@ -55,20 +55,6 @@ namespace WNA.WNAMiscs.AdvancedTrader
             lines.Add(line);
             return line;
         }
-        public bool SetCount(BuyLine line, int value)
-        {
-            if (line == null)
-                return false;
-            int before = line.Capacity;
-            line.SetCount(value);
-            if (line.IsEmpty)
-            {
-                Remove(line);
-                return true;
-            }
-            return line.Capacity != before;
-        }
-
         public void Remove(BuyLine line)
         {
             if (line == null || !lines.Remove(line))
@@ -153,20 +139,9 @@ namespace WNA.WNAMiscs.AdvancedTrader
             SetCount(count);
         }
         public int Count => countInt;
-        public int Capacity
-        {
-            get
-            {
-                if (things.Count == 0)
-                    return 0;
-                if (IsStackable)
-                    return things[0].stackCount;
-                return things.Count;
-            }
-        }
         public bool IsEmpty => countInt <= 0 || things.Count == 0;
         public bool IsStackable => def.stackLimit > 1 && !def.Minifiable;
-        public int Cap => (IsStackable ? context.MaxStackable : context.MaxInstance);
+        public int Cap => context.MaxStackable;
         public Thing Representative => (things.Count > 0) ? things[0] : null;
         public string Label
         {
@@ -188,6 +163,11 @@ namespace WNA.WNAMiscs.AdvancedTrader
         public void SyncCountFrom(int value)
         {
             countInt = Mathf.Clamp(value, 0, Cap);
+        }
+
+        public void Materialize(int count)
+        {
+            EnsureCapacity(Mathf.Clamp(count, 0, Cap));
         }
 
         private void EnsureCapacity(int value)
@@ -267,8 +247,6 @@ namespace WNA.WNAMiscs.AdvancedTrader
         }
 
         public int MaxStackable => config?.maxStackablePerLine ?? 1000;
-
-        public int MaxInstance => config?.maxInstancePerLine ?? 100;
 
         public bool AllowStuffChoice => config == null || config.allowStuffChoice;
 

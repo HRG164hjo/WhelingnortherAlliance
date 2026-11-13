@@ -29,7 +29,9 @@ namespace WNA.WNARecipeWorker
                 allowFood: false,
                 allowAddictions: false,
                 forceNoIdeo: true,
-                forceNoGear: true));
+                forceNoGear: true,
+                fixedBiologicalAge: 0f,
+                fixedChronologicalAge: 0f));
             if (!GenPlace.TryPlaceThing(unit, billDoer.Position, billDoer.Map, ThingPlaceMode.Near))
             {
                 Log.Error("WNA: Could not place produced unit " + unit + " near " + billDoer + ".");

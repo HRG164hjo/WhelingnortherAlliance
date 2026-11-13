@@ -21,10 +21,6 @@
 
   <WNA_CargoHold_CapacityMass>Mass: {0} / {1} kg</WNA_CargoHold_CapacityMass>
 
-  <WNA_CargoHold_CapacityCountPending>Items: {0} / {1} ({2} queued)</WNA_CargoHold_CapacityCountPending>
-
-  <WNA_CargoHold_CapacityMassPending>Mass: {0} / {1} kg ({2} queued)</WNA_CargoHold_CapacityMassPending>
-
   <WNA_CargoHold_PendingLoad>Loading: {0} remaining</WNA_CargoHold_PendingLoad>
 
   <WNA_CargoHold_ColonyThingCountTip>Things your colony can store here.</WNA_CargoHold_ColonyThingCountTip>

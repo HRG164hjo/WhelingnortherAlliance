@@ -122,10 +122,6 @@ namespace WNA.WNAThingComp
             {
                 AddToTransferables(item);
             }
-            foreach (Thing loaded in hold.innerContainer)
-            {
-                AddToTransferables(loaded);
-            }
 
             bool useCount = hold.UseCount;
             Func<float> availableGetter = useCount ? null : new Func<float>(() => Mathf.Max(0f, hold.StorageCapacity - PlannedUsage));
@@ -212,7 +208,7 @@ namespace WNA.WNAThingComp
             for (int i = 0; i < transferables.Count; i++)
             {
                 TransferableOneWay transferable = transferables[i];
-                int delta = transferable.CountToTransfer - CountInside(transferable);
+                int delta = transferable.CountToTransfer;
                 if (delta <= 0)
                 {
                     continue;
@@ -232,17 +228,12 @@ namespace WNA.WNAThingComp
         private void DrawCapacityBar(Rect rect)
         {
             RecalculatePending();
-            float used = hold.StorageUsage;
-            float capacity = hold.StorageCapacity;
             float pending = hold.UseCount ? pendingCount : pendingMass;
-            string usedText = hold.UseCount ? Mathf.RoundToInt(used).ToString() : used.ToString("F0");
-            string capacityText = capacity.ToString("F0");
-            string pendingText = hold.UseCount ? pendingCount.ToString() : pendingMass.ToString("F0");
-            string label = pending > 0f
-                ? (hold.UseCount
-                    ? "WNA_CargoHold_CapacityCountPending".Translate(usedText, capacityText, pendingText)
-                    : "WNA_CargoHold_CapacityMassPending".Translate(usedText, capacityText, pendingText))
-                : hold.UsageString;
+            float used = hold.StorageUsage + pending;
+            float capacity = hold.StorageCapacity;
+            string label = hold.UseCount
+                ? "WNA_CargoHold_CapacityCount".Translate(Mathf.RoundToInt(used).ToString(), capacity.ToString("F0"))
+                : "WNA_CargoHold_CapacityMass".Translate(used.ToString("F0"), capacity.ToString("F0"));
 
             Text.Anchor = TextAnchor.MiddleLeft;
             Widgets.Label(new Rect(rect.x, rect.y, rect.width * 0.5f, rect.height), label);
@@ -251,18 +242,11 @@ namespace WNA.WNAThingComp
             Rect bar = new Rect(rect.x + rect.width * 0.5f, rect.y + rect.height * 0.25f, rect.width * 0.5f - 12f, rect.height * 0.5f);
             Widgets.DrawBoxSolid(bar, new Color(0.12f, 0.12f, 0.12f, 1f));
             Rect inner = new Rect(bar.x + 2f, bar.y + 2f, bar.width - 4f, bar.height - 4f);
-            float currentRatio = capacity > 0f ? Mathf.Clamp01(used / capacity) : 1f;
-            float totalRatio = capacity > 0f ? Mathf.Clamp01((used + pending) / capacity) : 1f;
-            if (currentRatio > 0f)
+            float ratio = capacity > 0f ? Mathf.Clamp01(used / capacity) : 1f;
+            if (ratio > 0f)
             {
-                Widgets.DrawBoxSolid(new Rect(inner.x, inner.y, inner.width * currentRatio, inner.height),
+                Widgets.DrawBoxSolid(new Rect(inner.x, inner.y, inner.width * ratio, inner.height),
                     used >= capacity ? ColorLibrary.RedReadable : new Color(0.35f, 0.75f, 0.45f));
-            }
-            if (totalRatio > currentRatio)
-            {
-                Widgets.DrawBoxSolid(new Rect(inner.x + inner.width * currentRatio, inner.y,
-                        inner.width * (totalRatio - currentRatio), inner.height),
-                    used + pending > capacity ? ColorLibrary.RedReadable : new Color(0.9f, 0.75f, 0.25f));
             }
         }
 
@@ -291,13 +275,8 @@ namespace WNA.WNAThingComp
                 TransferableOneWay transferable = transferables[i];
                 if (transferable.CountToTransfer > 0 && transferable.HasAnyThing)
                 {
-                    int alreadyInside = CountInside(transferable);
-                    int toQueue = transferable.CountToTransfer - alreadyInside;
-                    if (toQueue > 0)
-                    {
-                        hold.QueueTransferable(transferable, toQueue);
-                        queued += toQueue;
-                    }
+                    hold.QueueTransferable(transferable, transferable.CountToTransfer);
+                    queued += transferable.CountToTransfer;
                 }
             }
             if (queued > 0)
@@ -305,20 +284,6 @@ namespace WNA.WNAThingComp
                 Messages.Message("WNA_CargoHold_Queued".Translate(queued.ToString()), hold.parent, MessageTypeDefOf.TaskCompletion, historical: false);
             }
             Close(doCloseSound: false);
-        }
-
-        private int CountInside(TransferableOneWay transferable)
-        {
-            int inside = 0;
-            for (int i = 0; i < transferable.things.Count; i++)
-            {
-                Thing thing = transferable.things[i];
-                if (thing.holdingOwner == hold.innerContainer)
-                {
-                    inside += thing.stackCount;
-                }
-            }
-            return inside;
         }
 
         public override void OnAcceptKeyPressed()

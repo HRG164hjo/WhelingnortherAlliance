@@ -1,8 +1,11 @@
 using HarmonyLib;
 using RimWorld;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Verse;
 using WNA.WNAThingClass;
+using WNA.WNAThingComp;
 
 namespace WNA.WNAHarmony
 {
@@ -60,6 +63,55 @@ namespace WNA.WNAHarmony
             {
                 if (!__result && pawn is ThingClass_BattleUnit && pawn.Faction != null && pawn.Faction.IsPlayer)
                     __result = true;
+            }
+        }
+
+        [HarmonyPatch(typeof(PawnComponentsUtility), nameof(PawnComponentsUtility.AddAndRemoveDynamicComponents))]
+        internal static class Patch_DynamicComponents
+        {
+            [HarmonyPostfix]
+            internal static void Postfix(Pawn pawn)
+            {
+                CompBattleUnitControl.EnsurePlayerControl(pawn);
+            }
+        }
+
+        [HarmonyPatch(typeof(MechanitorUtility), nameof(MechanitorUtility.EverControllable))]
+        internal static class Patch_EverControllable
+        {
+            [HarmonyPrefix]
+            internal static bool Prefix(Pawn mech, ref bool __result)
+            {
+                if (!(mech is ThingClass_BattleUnit) || mech.Faction == null || !mech.Faction.IsPlayer)
+                    return true;
+                __result = true;
+                return false;
+            }
+        }
+
+        [HarmonyPatch(typeof(MechanitorUtility), nameof(MechanitorUtility.GetMechGizmos))]
+        internal static class Patch_GetMechGizmos
+        {
+            [HarmonyPrefix]
+            internal static bool Prefix(Pawn mech, ref IEnumerable<Gizmo> __result)
+            {
+                if (!(mech is ThingClass_BattleUnit))
+                    return true;
+                __result = Enumerable.Empty<Gizmo>();
+                return false;
+            }
+        }
+
+        [HarmonyPatch(typeof(MechanitorUtility), nameof(MechanitorUtility.CanControlMech))]
+        internal static class Patch_CanControlMech
+        {
+            [HarmonyPrefix]
+            internal static bool Prefix(Pawn mech, ref AcceptanceReport __result)
+            {
+                if (!(mech is ThingClass_BattleUnit) || mech.Faction == null || !mech.Faction.IsPlayer)
+                    return true;
+                __result = "CannotControlMechNeverControllable".Translate();
+                return false;
             }
         }
     }

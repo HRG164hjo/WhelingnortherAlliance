@@ -8,8 +8,6 @@ namespace WNA.WNAMiscs
     public class IngestOutcomeDoer_OmniRecovery : IngestionOutcomeDoer
     {
         public float ratio = 0.8f;
-        public float needFloor = 2f;
-        public float largeCapFloor = 200f;
 
         private const float PsyfocusMax = 1f;
 
@@ -21,7 +19,7 @@ namespace WNA.WNAMiscs
         }
         private void OffsetPsyfocus(Pawn pawn)
         {
-            pawn.psychicEntropy?.OffsetPsyfocusDirectly(Mathf.Max(largeCapFloor * 50f, ratio * PsyfocusMax));
+            pawn.psychicEntropy?.OffsetPsyfocusDirectly(Mathf.Max(200f, ratio * PsyfocusMax));
         }
         private void OffsetNeeds(Pawn pawn)
         {
@@ -33,7 +31,7 @@ namespace WNA.WNAMiscs
                 Need need = needs[i];
                 if (need?.def == null || !IsRestorableNeed(need))
                     continue;
-                need.CurLevel += Mathf.Max(needFloor, ratio * need.MaxLevel);
+                need.CurLevel += Mathf.Max(2f, ratio * need.MaxLevel);
             }
         }
         private static bool IsRestorableNeed(Need need)
@@ -53,7 +51,7 @@ namespace WNA.WNAMiscs
                     continue;
                 float max = resource.Max;
                 if (max > 0f)
-                    resource.Value += Mathf.Max(largeCapFloor, ratio * max);
+                    resource.Value += Mathf.Max(200f, ratio * max);
             }
         }
     }

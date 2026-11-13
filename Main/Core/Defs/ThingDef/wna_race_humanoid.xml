@@ -15,7 +15,7 @@
       <CertaintyLossFactor>0</CertaintyLossFactor>
       <ComfyTemperatureMax>Infinity</ComfyTemperatureMax>
       <ComfyTemperatureMin>-Infinity</ComfyTemperatureMin>
-      <MoveSpeed>10</MoveSpeed>
+      <MoveSpeed>25</MoveSpeed>
       <FilthRate>0</FilthRate>
       <Flammability>0</Flammability>
       <ForagedNutritionPerDay>10</ForagedNutritionPerDay>
@@ -38,7 +38,7 @@
       <PsychicEntropyRecoveryRate>Infinity</PsychicEntropyRecoveryRate>
       <PsychicSensitivity>0</PsychicSensitivity>
       <StaggerDurationFactor>0</StaggerDurationFactor>
-      <WorkSpeedGlobal>10</WorkSpeedGlobal>
+      <WorkSpeedGlobal>200</WorkSpeedGlobal>
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance MayRequire="ludeon.rimworld.biotech">1</ToxicEnvironmentResistance>
       <VacuumResistance MayRequire="ludeon.rimworld.odyssey">1</VacuumResistance>
@@ -156,6 +156,7 @@
       <body>Human</body>
       <renderTree>Humanlike</renderTree>
       <fleshType>WNA_Flesh</fleshType>
+      <hasUnnaturalCorpse>false</hasUnnaturalCorpse>
       <ageGenerationCurve>
         <points>
           <li>(18,0)</li>
@@ -178,7 +179,7 @@
       <canBePredatorPrey>false</canBePredatorPrey>
       <gestationPeriodDays>15</gestationPeriodDays>
       <baseBodySize>1.414214</baseBodySize>
-      <baseHealthScale>355687428096000</baseHealthScale>
+      <baseHealthScale>7257600</baseHealthScale>
       <baseHungerRate>0</baseHungerRate>
       <canBecomeShambler>false</canBecomeShambler>
       <isImmuneToInfections>true</isImmuneToInfections>
@@ -247,7 +248,7 @@
     <recipes/>
     <comps>
       <li Class="CompProperties_ProjectileInterceptor">
-        <radius>26.9</radius>
+        <radius>36.9</radius>
         <cooldownTicks>0</cooldownTicks>
         <disarmedByEmpForTicks>0</disarmedByEmpForTicks>
         <interceptGroundProjectiles>true</interceptGroundProjectiles>
@@ -283,8 +284,8 @@
         <damageDef>WNA_Culling</damageDef>
         <damage>Infinity</damage>
         <ap>Infinity</ap>
-        <radius>13.9</radius>
-        <rof>5</rof>
+        <radius>19.9</radius>
+        <rof>7</rof>
         <update>7</update>
         <affectArea>true</affectArea>
         <affectRoof>false</affectRoof>
@@ -298,6 +299,11 @@
         <maxDistanceToBlink>500</maxDistanceToBlink>
         <blinkIntervalTicks>1</blinkIntervalTicks>
         <warpStunEffect>0</warpStunEffect>
+      </li>
+      <li Class="WNA.WNAThingComp.PropSensorArray">
+        <sensorSight>36.9</sensorSight>
+        <checkInterval>30</checkInterval>
+        <stunTicks>2147400000</stunTicks>
       </li>
     </comps>
     <modExtensions>
@@ -314,17 +320,16 @@
       <li Class="WNA.WNAModExtension.KillDownUtility">
         <canDieThreshold>1</canDieThreshold>
         <canEverBeDowned>false</canEverBeDowned>
-        <minLevel>1</minLevel>
         <minCapacities>
-          <li>Consciousness</li>
-          <li>Moving</li>
-          <li>Manipulation</li>
-          <li>Sight</li>
-          <li>Hearing</li>
-          <li>Breathing</li>
-          <li>BloodFiltration</li>
-          <li>BloodPumping</li>
-          <li>Metabolism</li>
+          <Consciousness>1</Consciousness>
+          <Moving>1</Moving>
+          <Manipulation>1</Manipulation>
+          <Sight>1</Sight>
+          <Hearing>1</Hearing>
+          <Breathing>1</Breathing>
+          <BloodFiltration>1</BloodFiltration>
+          <BloodPumping>1</BloodPumping>
+          <Metabolism>1</Metabolism>
         </minCapacities>
       </li>
     </modExtensions>
@@ -338,8 +343,8 @@
     <tradeability>None</tradeability>
     <statBases>
       <MoveSpeed>6</MoveSpeed>
-      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
-      <ComfyTemperatureMax>400</ComfyTemperatureMax>
+      <ComfyTemperatureMin>-300</ComfyTemperatureMin>
+      <ComfyTemperatureMax>1000</ComfyTemperatureMax>
       <ArmorRating_Sharp>2</ArmorRating_Sharp>
       <ArmorRating_Blunt>2</ArmorRating_Blunt>
       <ArmorRating_Heat>2</ArmorRating_Heat>
@@ -351,14 +356,16 @@
       <PilotingAbility MayRequire="ludeon.rimworld.Odyssey">1</PilotingAbility>
       <BondAnimalChanceFactor>0</BondAnimalChanceFactor>
       <PsychicSensitivity>0</PsychicSensitivity>
+      <WorkSpeedGlobal>20</WorkSpeedGlobal>
     </statBases>
     <race>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>44100</baseHealthScale>
-      <lifeExpectancy>1000000</lifeExpectancy>
+      <lifeExpectancy>Infinity</lifeExpectancy>
       <linkedCorpseKind>Human</linkedCorpseKind>
       <useMeatFrom>Human</useMeatFrom>
       <canBecomeShambler>false</canBecomeShambler>
+      <hasUnnaturalCorpse>false</hasUnnaturalCorpse>
       <hediffGiverSets>
         <li>WNA_HediffGiver_Human</li>
       </hediffGiverSets>
@@ -485,6 +492,11 @@
           <damageLimit>1</damageLimit>
         <canAbsorb>true</canAbsorb>
       </li>
+      <li Class="WNA.WNAThingComp.PropSensorArray">
+        <sensorSight>19.9</sensorSight>
+        <checkInterval>30</checkInterval>
+        <stunTicks>720</stunTicks>
+      </li>
     </comps>
     <modExtensions Inherit="false">
       <li Class="PathfindingFramework.MovementExtension" MayRequire="pathfinding.framework">
@@ -500,11 +512,11 @@
       </li>
       <li Class="WNA.WNAModExtension.KillDownUtility">
         <minCapacities>
-          <li>Consciousness</li>
-          <li>Moving</li>
-          <li>Manipulation</li>
-          <li>Sight</li>
-          <li>Hearing</li>
+          <Consciousness>0.3</Consciousness>
+          <Moving>0.3</Moving>
+          <Manipulation>0.3</Manipulation>
+          <Sight>0.3</Sight>
+          <Hearing>0.3</Hearing>
         </minCapacities>
       </li>
     </modExtensions>

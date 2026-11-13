@@ -8,7 +8,6 @@ namespace WNA.WNAMapComp
     [StaticConstructorOnStartup]
     internal class SectionLayer_RadField : SectionLayer
     {
-        private const float MaxAlpha = 0.6f;
         private static readonly Material Mat;
         private static readonly List<List<int>> vertexWeights = new List<List<int>>
         {
@@ -23,7 +22,10 @@ namespace WNA.WNAMapComp
             new List<int> { 8 }
         };
 
-        private readonly float[] adjTmp = new float[9];
+        private static readonly List<WNA_RadFieldDef> tmpDefs = new List<WNA_RadFieldDef>();
+        private float[][] defAdj;
+        private Color[] defColors;
+        private float[] defAlphas;
 
         static SectionLayer_RadField()
         {
@@ -34,7 +36,30 @@ namespace WNA.WNAMapComp
 
         public SectionLayer_RadField(Section section) : base(section)
         {
-            relevantChangeTypes = WNARadMeshFlagDefOf.WNA_RadField;
+            relevantChangeTypes = WNAMainDefOf.WNA_RadField;
+        }
+
+        private static void CollectDefs()
+        {
+            tmpDefs.Clear();
+            List<WNA_RadFieldDef> all = DefDatabase<WNA_RadFieldDef>.AllDefsListForReading;
+            for (int i = 0; i < all.Count; i++)
+                tmpDefs.Add(all[i]);
+        }
+
+        private void EnsureBuffers(int count)
+        {
+            if (defAdj == null || defAdj.Length < count)
+            {
+                defAdj = new float[count][];
+                defColors = new Color[count];
+                defAlphas = new float[count];
+            }
+            for (int i = 0; i < count; i++)
+            {
+                if (defAdj[i] == null)
+                    defAdj[i] = new float[9];
+            }
         }
 
         public override void Regenerate()
@@ -47,37 +72,69 @@ namespace WNA.WNAMapComp
             subMesh.Clear(MeshParts.Colors);
 
             MapComp_RadField rad = Map.GetComponent<MapComp_RadField>();
-            if (rad == null)
+            CollectDefs();
+            if (rad == null || tmpDefs.Count == 0)
             {
                 subMesh.disabled = true;
                 return;
             }
 
+            int defCount = tmpDefs.Count;
+            EnsureBuffers(defCount);
+            for (int d = 0; d < defCount; d++)
+            {
+                defColors[d] = tmpDefs[d].RenderColor;
+                defAlphas[d] = Mathf.Clamp01(tmpDefs[d].overlayAlpha);
+            }
+
             CellRect rect = section.CellRect;
-            float max = Mathf.Max(1f, rad.radLevelMax);
             bool any = false;
             for (int x = rect.minX; x <= rect.maxX; x++)
             {
                 for (int z = rect.minZ; z <= rect.maxZ; z++)
                 {
                     IntVec3 center = new IntVec3(x, 0, z);
-                    float centerVal = Mathf.Clamp01(rad.GetRad(center) / max);
-                    for (int k = 0; k < 9; k++)
+                    for (int d = 0; d < defCount; d++)
                     {
-                        IntVec3 c = center + GenAdj.AdjacentCellsAndInsideForUV[k];
-                        adjTmp[k] = c.InBounds(Map) ? Mathf.Clamp01(rad.GetRad(c) / max) : centerVal;
+                        float max = Mathf.Max(1f, tmpDefs[d].intensityMax);
+                        float centerVal = Mathf.Clamp01(rad.GetRad(center, tmpDefs[d]) / max);
+                        for (int k = 0; k < 9; k++)
+                        {
+                            IntVec3 c = center + GenAdj.AdjacentCellsAndInsideForUV[k];
+                            defAdj[d][k] = c.InBounds(Map) ? Mathf.Clamp01(rad.GetRad(c, tmpDefs[d]) / max) : centerVal;
+                        }
                     }
                     for (int v = 0; v < 9; v++)
                     {
                         List<int> weights = vertexWeights[v];
-                        float sum = 0f;
-                        for (int m = 0; m < weights.Count; m++)
-                            sum += adjTmp[weights[m]];
-                        float val = Mathf.Clamp01(sum / weights.Count);
-                        if (val > 0.01f)
+                        float r = 0f, g = 0f, b = 0f, a = 0f;
+                        for (int d = 0; d < defCount; d++)
+                        {
+                            float sum = 0f;
+                            for (int m = 0; m < weights.Count; m++)
+                                sum += defAdj[d][weights[m]];
+                            float da = Mathf.Clamp01(sum / weights.Count) * defAlphas[d];
+                            if (da <= 0.001f) continue;
+                            float remain = 1f - a;
+                            if (remain <= 0f) break;
+                            Color color = defColors[d];
+                            r += color.r * da * remain;
+                            g += color.g * da * remain;
+                            b += color.b * da * remain;
+                            a += da * remain;
+                        }
+                        if (a > 0.01f)
+                        {
                             any = true;
-                        byte a = (byte)(val * MaxAlpha * 255f);
-                        subMesh.colors.Add(new Color32(200, 100, 0, a));
+                            r /= a;
+                            g /= a;
+                            b /= a;
+                        }
+                        subMesh.colors.Add(new Color32(
+                            (byte)(Mathf.Clamp01(r) * 255f),
+                            (byte)(Mathf.Clamp01(g) * 255f),
+                            (byte)(Mathf.Clamp01(b) * 255f),
+                            (byte)(Mathf.Clamp01(a) * 255f)));
                     }
                 }
             }
@@ -87,7 +144,9 @@ namespace WNA.WNAMapComp
                 subMesh.FinalizeMesh(MeshParts.Colors);
             }
             else
+            {
                 subMesh.disabled = true;
+            }
         }
     }
 }

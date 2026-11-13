@@ -22,17 +22,20 @@
   <!-- EN: Order -->
   <ATUI_Order>Order</ATUI_Order>
 
+  <!-- EN: Unorder -->
+  <ATUI_Unorder>Unorder</ATUI_Unorder>
+
   <!-- EN: {0} line(s) · {1} unit(s) -->
   <ATUI_OrderSummary>{0} line(s) · {1} unit(s)</ATUI_OrderSummary>
 
-  <!-- EN: Add one {0} to the order. -->
-  <ATUI_OrderTip>Add one {0} to the order.</ATUI_OrderTip>
+  <!-- EN: Add {0} to the order. -->
+  <ATUI_OrderTip>Add {0} to the order.</ATUI_OrderTip>
+
+  <!-- EN: Remove {0} from the order. -->
+  <ATUI_UnorderTip>Remove {0} from the order.</ATUI_UnorderTip>
 
   <!-- EN: Unit price -->
   <ATUI_PriceTip>Unit price</ATUI_PriceTip>
-
-  <!-- EN: {0} / {1} (max {2}) -->
-  <ATUI_QtyTip>{0} / {1} (max {2})</ATUI_QtyTip>
 
   <!-- EN: Material -->
   <ATUI_StuffButton>Material</ATUI_StuffButton>

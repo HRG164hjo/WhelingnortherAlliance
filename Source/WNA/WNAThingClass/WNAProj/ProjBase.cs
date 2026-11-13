@@ -25,6 +25,7 @@ namespace WNA.WNAThingClass.WNAProj
         }
         internal QualityCategory WeaponQuality => equipmentQuality;
         internal ThingDef CoverDef => targetCoverDef;
+        internal Def CastingAbilityDef => WeaponVfx.CurrentAbilityDef ?? (launcher as Pawn)?.CurJob?.ability?.def;
         protected float SpeedPerTick => Mathf.Max(0, 01f, def.projectile.SpeedTilesPerTick);
         public override void Launch(Thing launcher, Vector3 origin, LocalTargetInfo usedTarget, LocalTargetInfo intendedTarget, ProjectileHitFlags hitFlags, bool preventFriendlyFire = false, Thing equipment = null, ThingDef targetCoverDef = null)
         {

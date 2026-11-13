@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <RecipeDef ParentName="WNA_RecipeBase">
-    <defName>WNA_MakeBattleUnit</defName>
-    <label>assemble battle unit</label>
-    <description>Assemble a battle unit chassis and initialize its integrated weapon.</description>
+  <RecipeDef ParentName="WNA_RecipeBase" Name="WNA_LightUnitRecipeBase" Abstract="true">
     <jobString>assembling a battle unit.</jobString>
     <workerClass>WNA.WNARecipeWorker.Recipe_ProduceUnit</workerClass>
     <workerCounterClass>WNA.WNARecipeWorker.RecipeWorkerCounter_ProduceUnit</workerCounterClass>
-    <modExtensions>
-      <li Class="WNA.WNAModExtension.RecipeExtension_ProduceUnit">
-        <kindDef>WNA_BattleUnitKind</kindDef>
-      </li>
-    </modExtensions>
+    <workAmount>2500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
     <ingredients>
       <li>
         <filter>
           <thingDefs>
-            <li>Steel</li>
+            <li>Plasteel</li>
           </thingDefs>
         </filter>
         <count>90</count>
@@ -24,7 +21,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Synthread</li>
+            <li>Hyperweave</li>
           </thingDefs>
         </filter>
         <count>75</count>
@@ -35,21 +32,16 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>6</count>
+        <count>7</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>Steel</li>
-        <li>Synthread</li>
+        <li>Plasteel</li>
+        <li>Hyperweave</li>
         <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
-    <workAmount>2500</workAmount>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <workSkill>Crafting</workSkill>
-    <effectWorking>Smith</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
     <recipeUsers>
       <li>FabricationBench</li>
     </recipeUsers>
@@ -57,5 +49,102 @@
       <li>WNA_AutomatedBattleDrone</li>
     </researchPrerequisites>
   </RecipeDef>
+  <!--, Medium, Heavy-->
+
+  <!---->
+  <RecipeDef ParentName="WNA_LightUnitRecipeBase">
+    <defName>WNA_MakeBasicBattleUnit</defName>
+    <label>assemble basic battle unit</label>
+    <description>Assemble a battle unit chassis and initialize its integrated weapon.</description>
+    <workAmount>1500</workAmount>
+    <ingredients Inherit="false">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter Inherit="false">
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers Inherit="false">
+      <li>TableMachining</li>
+    </recipeUsers>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.RecipeExtension_ProduceUnit">
+        <kindDef>WNA_BasicBattleUnitKind</kindDef>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+  
+  <!-- t1 -->
+  <RecipeDef ParentName="WNA_LightUnitRecipeBase">
+    <defName>WNA_MakeAssaulterUnit</defName>
+    <label>assemble assaulter unit</label>
+    <description>Assemble a battle unit chassis and initialize its integrated weapon.</description>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.RecipeExtension_ProduceUnit">
+        <kindDef>WNA_AssaulterUnitKind</kindDef>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+  <RecipeDef ParentName="WNA_LightUnitRecipeBase">
+    <defName>WNA_MakeBombarderUnit</defName>
+    <label>assemble bombarder unit</label>
+    <description>Assemble a battle unit chassis and initialize its integrated weapon.</description>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.RecipeExtension_ProduceUnit">
+        <kindDef>WNA_BombarderUnitKind</kindDef>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+  <RecipeDef ParentName="WNA_LightUnitRecipeBase">
+    <defName>WNA_MakeWNA_ShockerUnit</defName>
+    <label>assemble shocker unit</label>
+    <description>Assemble a battle unit chassis and initialize its integrated weapon.</description>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.RecipeExtension_ProduceUnit">
+        <kindDef>WNA_ShockerUnitKind</kindDef>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+  <RecipeDef ParentName="WNA_LightUnitRecipeBase">
+    <defName>WNA_MakeCometUnit</defName>
+    <label>assemble comet unit</label>
+    <description>Assemble a battle unit chassis and initialize its integrated weapon.</description>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.RecipeExtension_ProduceUnit">
+        <kindDef>WNA_CometUnitKind</kindDef>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+  
+  <!-- t2 -->
+  <RecipeDef ParentName="WNA_LightUnitRecipeBase">
+    <defName>WNA_MakeDemolinCarrierUnit</defName>
+    <label>assemble demolin carrier unit</label>
+    <description>Assemble a battle unit chassis and initialize its integrated weapon.</description>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.RecipeExtension_ProduceUnit">
+        <kindDef>WNA_DemolinCarrierUnitKind</kindDef>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+  
+  <!-- t3 -->
 
 </Defs>

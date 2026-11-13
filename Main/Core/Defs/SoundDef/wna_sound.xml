@@ -1,65 +1,392 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <!--<SoundDef>
-    <defName>WNA_LaserAttack</defName>  
-    <context>MapOnly</context>
-    <maxSimultaneous>1</maxSimultaneous>  
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Clip">
-            <clipPath>Report/laserAttack</clipPath>
-          </li>
-        </grains>  
-        <volumeRange>16~25</volumeRange>  
-      </li>
-    </subSounds>
-  </SoundDef>-->
-
   <SoundDef>
-    <defName>WNA_RadAttack</defName>  
+    <defName>WNA_AegisAttack</defName>  
     <context>MapOnly</context>
     <maxSimultaneous>1</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Report/radAttack</clipPath>
+            <clipPath>Report/AegisAttack</clipPath>
           </li>
         </grains>  
-        <volumeRange>16~25</volumeRange>  
+        <volumeRange>50~70</volumeRange>  
       </li>
     </subSounds>
   </SoundDef>
-
   <SoundDef>
-    <defName>WNA_TeslaAttack</defName>  
+    <defName>WNA_AntaresAttack</defName>  
     <context>MapOnly</context>
     <maxSimultaneous>1</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Report/teslaAttack</clipPath>
+            <clipPath>Report/AntaresAttack</clipPath>
           </li>
         </grains>  
-        <volumeRange>16~25</volumeRange>  
+        <volumeRange>50~70</volumeRange>  
       </li>
     </subSounds>
   </SoundDef>
-
   <SoundDef>
-    <defName>WNA_MindControl</defName>  
+    <defName>WNA_BuratinoAttack</defName>  
     <context>MapOnly</context>
     <maxSimultaneous>1</maxSimultaneous>  
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Report/mindControl</clipPath>
+            <clipPath>Report/BuratinoAttack</clipPath>
           </li>
         </grains>  
-        <volumeRange>16~25</volumeRange>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_ChronoLegionAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/ChronoLegionAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_ComancheLaser</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/ComancheLaser</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_DesolatorAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/DesolatorAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_DestroyerAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/DestroyerAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_EnforcerAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/EnforcerAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_FlakCannonAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/FlakCannonAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_GanzirLaserAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/GanzirLaserAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_GrandCannonAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/GrandCannonAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_HyperionAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/HyperionAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_InfernoTowerAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/InfernoTowerAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_MirageTankAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/MirageTankAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_MonolithAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/MonolithAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_MoralesAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/MoralesAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_PrismTowerAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/PrismTowerAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_RailgunTowerAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/RailgunTowerAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_RamwagonAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/RamwagonAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_SeismicTankAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/SeismicTankAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_ShadowAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/ShadowAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_SonicWave</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/SonicWave</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_SpinbladeAttackAir</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/SpinbladeAttackAir</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_TeslaCoilAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/TeslaCoilAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_TeslaTroopAttack</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/TeslaTroopAttack</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>WNA_YuriMindControl</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Report/YuriMindControl</clipPath>
+          </li>
+        </grains>  
+        <volumeRange>50~70</volumeRange>  
       </li>
     </subSounds>
   </SoundDef>

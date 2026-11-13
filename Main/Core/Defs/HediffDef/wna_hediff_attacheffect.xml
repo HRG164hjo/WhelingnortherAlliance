@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffDef Name="WNA_AttachEffectBase" Abstract="True">
+    <hediffClass>WNA.WNAHediffClass.HdfClass_AttachEffect</hediffClass>
+    <initialSeverity>1</initialSeverity>
+    <minSeverity>0</minSeverity>
+    <duplicationAllowed>false</duplicationAllowed>
+    <levelIsQuantity>false</levelIsQuantity>
+    <alwaysShowSeverity>false</alwaysShowSeverity>
+    <isBad>false</isBad>
+    <makesAlert>false</makesAlert>
+    <everCurableByItem>false</everCurableByItem>
+    <defaultLabelColor>(155,175,255)</defaultLabelColor>
+  </HediffDef>
+  
+  <HediffDef ParentName="WNA_AttachEffectBase">
+    <defName>WNA_AE_AegisField</defName>
+    <label>aegis field</label>
+    <description>A layered defensive field. Each application adds one more shield layer; incoming damage eats through them from the outside in.</description>
+    <stages>
+      <li>
+        <multiplyStatChangesBySeverity>true</multiplyStatChangesBySeverity>
+        <statOffsets>
+          <MoveSpeed>0.4</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.AttachEffectConfig">
+        <cumulative>true</cumulative>
+        <maxStacks>99</maxStacks>
+        <duration>-1</duration>
+        <refreshDurationOnReapply>true</refreshDurationOnReapply>
+        <shieldStrength>60</shieldStrength>
+        <shieldAbsorbMode>ByHit</shieldAbsorbMode>
+        <absorbOverDamage>false</absorbOverDamage>
+        <breakMode>ConsumeStack</breakMode>
+        <absorbMelee>true</absorbMelee>
+        <shieldColor>(115,165,255,140)</shieldColor>
+        <minDrawSize>1.4</minDrawSize>
+        <maxDrawSize>1.6</maxDrawSize>
+      </li>
+    </modExtensions>
+  </HediffDef>
+  
+  <HediffDef ParentName="WNA_AttachEffectBase">
+    <defName>WNA_AE_TimeWarp</defName>
+    <label>time warp</label>
+    <description>A layered defensive field. Each application adds one more shield layer; incoming damage eats through them from the outside in.</description>
+    <isBad>true</isBad>
+    <stages>
+      <li>
+        <multiplyStatChangesBySeverity>true</multiplyStatChangesBySeverity>
+        <statOffsets>
+          <MoveSpeed>0.4</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.AttachEffectConfig">
+        <cumulative>true</cumulative>
+        <maxStacks>99</maxStacks>
+        <duration>3600</duration>
+        <refreshDurationOnReapply>true</refreshDurationOnReapply>
+      </li>
+    </modExtensions>
+  </HediffDef>
+
+  <HediffDef ParentName="WNA_AttachEffectBase">
+    <defName>WNA_AE_Suppression</defName>
+    <label>suppression</label>
+    <description>Motor and psychic output are jammed. The affected pawn cannot attack or use abilities.</description>
+    <isBad>true</isBad>
+    <defaultLabelColor>(220,90,90)</defaultLabelColor>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.AttachEffectConfig">
+        <duration>900</duration>
+        <disableAttack>true</disableAttack>
+        <disableAbility>true</disableAbility>
+      </li>
+    </modExtensions>
+  </HediffDef>
+
+  <HediffDef ParentName="WNA_AttachEffectBase">
+    <defName>WNA_AE_Decaying</defName>
+    <label>decaying</label>
+    <description>Something is eating away at this body from the inside.</description>
+    <isBad>true</isBad>
+    <defaultLabelColor>(170,200,90)</defaultLabelColor>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.AttachEffectConfig">
+        <cumulative>true</cumulative>
+        <maxStacks>99</maxStacks>
+        <duration>3600</duration>
+        <refreshDurationOnReapply>true</refreshDurationOnReapply>
+        <damageAmount>4</damageAmount>
+        <damageDelay>25</damageDelay>
+        <damageDef>Decayed</damageDef>
+        <damageScaleWithStacks>false</damageScaleWithStacks>
+      </li>
+    </modExtensions>
+  </HediffDef>
+
+</Defs>

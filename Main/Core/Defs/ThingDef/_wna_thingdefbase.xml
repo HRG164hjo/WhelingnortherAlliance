@@ -618,13 +618,12 @@
         <massCapacity>6000000000</massCapacity>
       </li>
       <li Class="WNA.WNAModExtension.KillDownUtility">
-        <minLevel>0.4</minLevel>
         <minCapacities>
-          <li>Consciousness</li>
-          <li>Moving</li>
-          <li>Manipulation</li>
-          <li>Sight</li>
-          <li>Hearing</li>
+          <Consciousness>0.4</Consciousness>
+          <Moving>0.4</Moving>
+          <Manipulation>0.4</Manipulation>
+          <Sight>0.4</Sight>
+          <Hearing>0.4</Hearing>
         </minCapacities>
       </li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.AnimalBehaviours.CompProperties_Draftable">

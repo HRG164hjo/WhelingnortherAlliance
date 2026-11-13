@@ -183,7 +183,7 @@
     <statBases>
       <WorkToMake>4500</WorkToMake>
       <MarketValue>1200</MarketValue>
-      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.166667</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>45</equippedAngleOffset>
     <costList>
@@ -200,7 +200,7 @@
         <defaultProjectile>WNA_SunsetSniper_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>127</range>
-        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCast>WNA_MoralesAttack</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
       </li>
@@ -274,7 +274,7 @@
     <statBases>
       <WorkToMake>4500</WorkToMake>
       <MarketValue>1200</MarketValue>
-      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.416667</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
@@ -561,7 +561,7 @@
         <defaultProjectile>WNA_CometBeamEmitter_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>63.9</range>
-        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCast>WNA_EnforcerAttack</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
       </li>
@@ -623,7 +623,7 @@
 
   <ThingDef ParentName="WNA_WeaponBaseRanged">
     <defName>WNA_PacifierArcStriker</defName>
-    <label>"pacifier" arc shocker</label>
+    <label>"pacifier" arc striker</label>
     <description>A weapon developed for non-lethal purposes, use electric arcs to shock victim until being incapacitied.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/NeedleGun</texPath>
@@ -632,7 +632,7 @@
     <statBases>
       <WorkToMake>3000</WorkToMake>
       <MarketValue>1200</MarketValue>
-      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.416667</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
@@ -647,10 +647,9 @@
         <defaultProjectile>WNA_PacifierArcStriker_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>49.9</range>
-        <soundCast>WNA_TeslaAttack</soundCast>
+        <soundCast>WNA_TeslaTroopAttack</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
-        <burstShotCount>2</burstShotCount>
       </li>
     </verbs>
     <tools>
@@ -697,7 +696,7 @@
     </graphicData>
     <projectile>
       <damageDef>Burn</damageDef>
-      <damageAmountBase>45</damageAmountBase>
+      <damageAmountBase>80</damageAmountBase>
     </projectile>
     <modExtensions>
       <li Class="WNA.WNAModExtension.ProjConfig">
@@ -719,7 +718,7 @@
     <statBases>
       <WorkToMake>3000</WorkToMake>
       <MarketValue>1200</MarketValue>
-      <RangedWeapon_Cooldown>1.666667</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.166667</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
@@ -734,7 +733,7 @@
         <defaultProjectile>WNA_LongbowMissileLauncher_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>49.9</range>
-        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCast>WNA_DestroyerAttack</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
         <burstShotCount>2</burstShotCount>
@@ -804,7 +803,7 @@
     <statBases>
       <WorkToMake>3000</WorkToMake>
       <MarketValue>1200</MarketValue>
-      <RangedWeapon_Cooldown>2.666667</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.166667</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
@@ -819,7 +818,7 @@
         <defaultProjectile>WNA_LongbowTripleLauncher_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>53.9</range>
-        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCast>WNA_AegisAttack</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
         <burstShotCount>3</burstShotCount>
@@ -914,7 +913,7 @@
         <defaultProjectile>WNA_PacifierArcShocker_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>42.9</range>
-        <soundCast>WNA_TeslaAttack</soundCast>
+        <soundCast>WNA_TeslaTroopAttack</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
         <burstShotCount>3</burstShotCount>
@@ -986,7 +985,7 @@
     <statBases>
       <WorkToMake>4000</WorkToMake>
       <MarketValue>1500</MarketValue>
-      <RangedWeapon_Cooldown>3.333333</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
@@ -1004,7 +1003,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>WNA_DawnbreakerRadLauncher_Proj</defaultProjectile>
         <range>72.9</range>
-        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCast>WNA_BuratinoAttack</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
         <burstShotCount>6</burstShotCount>
@@ -1093,7 +1092,7 @@
         <defaultProjectile>WNA_DawnbreakerHeatRay_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>45.9</range>
-        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCast>WNA_ComancheLaser</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
         <burstShotCount>3</burstShotCount>
@@ -1173,7 +1172,7 @@
     <statBases>
       <WorkToMake>3000</WorkToMake>
       <MarketValue>1200</MarketValue>
-      <RangedWeapon_Cooldown>0.333333</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.666667</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
@@ -1192,7 +1191,7 @@
         <defaultProjectile>WNA_DawnbreakerIonizer_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>54.9</range>
-        <soundCast>WNA_RadAttack</soundCast>
+        <soundCast>WNA_DesolatorAttack</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
         <burstShotCount>3</burstShotCount>
@@ -1271,7 +1270,7 @@
 		<statBases>
 			<WorkToMake>4000</WorkToMake>
 			<MarketValue>2000</MarketValue>
-			<RangedWeapon_Cooldown>1.833333</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.916667</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
@@ -1289,7 +1288,7 @@
 				<defaultProjectile>WNA_ShadowDecayBeamEmitter_Proj</defaultProjectile>
 				<warmupTime>0</warmupTime>
 				<range>42.9</range>
-				<soundCast>GunTail_Heavy</soundCast>
+				<soundCast>WNA_ShadowAttack</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
         <burstShotCount>2</burstShotCount>
@@ -1362,7 +1361,7 @@
 		<statBases>
 			<WorkToMake>4000</WorkToMake>
 			<MarketValue>2000</MarketValue>
-			<RangedWeapon_Cooldown>1.833333</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.916667</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
@@ -1380,7 +1379,7 @@
 				<defaultProjectile>WNA_ShadowDissolveBeamEmitter_Proj</defaultProjectile>
 				<warmupTime>0</warmupTime>
 				<range>42.9</range>
-				<soundCast>GunTail_Heavy</soundCast>
+				<soundCast>WNA_ShadowAttack</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
         <burstShotCount>2</burstShotCount>
@@ -1452,7 +1451,7 @@
     <statBases>
       <WorkToMake>4500</WorkToMake>
       <MarketValue>2500</MarketValue>
-      <RangedWeapon_Cooldown>2.333333</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1.666667</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>45</equippedAngleOffset>
     <costList>
@@ -1472,7 +1471,7 @@
         <defaultProjectile>WNA_SeizerPsychicLance_Proj</defaultProjectile>
         <warmupTime>0.933333</warmupTime>
         <range>63.9</range>
-        <soundCast>WNA_MindControl</soundCast>
+        <soundCast>WNA_YuriMindControl</soundCast>
         <canGoWild>false</canGoWild>
         <requireLineOfSight>false</requireLineOfSight>
           <targetParams>
@@ -1548,7 +1547,7 @@
 		<statBases>
 			<WorkToMake>4500</WorkToMake>
 			<MarketValue>2000</MarketValue>
-			<RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.166667</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
@@ -1565,7 +1564,7 @@
 				<defaultProjectile>WNA_ParasomniaPermafrostRifle_Proj</defaultProjectile>
 				<warmupTime>0</warmupTime>
 				<range>63.9</range>
-				<soundCast>GunTail_Heavy</soundCast>
+				<soundCast>WNA_HyperionAttack</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
 			</li>
@@ -1637,7 +1636,7 @@
 		<statBases>
 			<WorkToMake>4500</WorkToMake>
 			<MarketValue>2500</MarketValue>
-			<RangedWeapon_Cooldown>0.816667</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.733333</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
@@ -1655,7 +1654,7 @@
 				<defaultProjectile>WNA_ParasomniaChronoEjector_Proj</defaultProjectile>
 				<warmupTime>0</warmupTime>
 				<range>63.9</range>
-				<soundCast>GunTail_Heavy</soundCast>
+				<soundCast>WNA_ChronoLegionAttack</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
 			</li>
@@ -1726,7 +1725,7 @@
 		<statBases>
 			<WorkToMake>4500</WorkToMake>
 			<MarketValue>2500</MarketValue>
-			<RangedWeapon_Cooldown>0.01</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.016667</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
@@ -1813,7 +1812,7 @@
 		<statBases>
 			<WorkToMake>4500</WorkToMake>
 			<MarketValue>2500</MarketValue>
-			<RangedWeapon_Cooldown>6.25</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>2.666667</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
@@ -1832,7 +1831,7 @@
 				<defaultProjectile>WNA_HowlstormMLRS_Proj</defaultProjectile>
 				<warmupTime>0</warmupTime>
 				<range>99.9</range>
-				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCast>WNA_BuratinoAttack</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
 				<burstShotCount>20</burstShotCount>
@@ -1902,7 +1901,7 @@
 		<statBases>
 			<WorkToMake>4000</WorkToMake>
 			<MarketValue>2000</MarketValue>
-			<RangedWeapon_Cooldown>0.033333</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.016667</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedAngleOffset>0</equippedAngleOffset>
 		<costList>
@@ -1920,7 +1919,7 @@
 				<defaultProjectile>WNA_GanzirBeamCaster_Proj</defaultProjectile>
 				<warmupTime>0</warmupTime>
 				<range>109.9</range>
-				<soundCast>GunTail_Heavy</soundCast>
+				<soundCast>WNA_GanzirLaserAttack</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
 			</li>
@@ -2018,7 +2017,7 @@
 				<defaultProjectile>WNA_DeathHandBoltThrower_Proj</defaultProjectile>
 				<warmupTime>0</warmupTime>
 				<range>98.9</range>
-				<soundCast>GunTail_Heavy</soundCast>
+				<soundCast>WNA_SpinbladeAttackAir</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<canGoWild>false</canGoWild>
 			</li>
@@ -2097,7 +2096,7 @@
     <statBases>
       <WorkToMake>4500</WorkToMake>
       <MarketValue>3000</MarketValue>
-      <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
@@ -2115,7 +2114,7 @@
         <defaultProjectile>WNA_CenturionSiegeCannon_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>126.9</range>
-        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCast>WNA_GrandCannonAttack</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
       </li>
@@ -2169,6 +2168,7 @@
     <comps>
       <li Class="WNA.WNAThingComp.PropRadFieldBurst">
         <config>
+          <radField>WNA_RadField_Radiation</radField>
           <radLevel>500</radLevel>
           <radius>8.9</radius>
         </config>
@@ -2202,7 +2202,7 @@
     <statBases>
       <WorkToMake>4000</WorkToMake>
       <MarketValue>2000</MarketValue>
-      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>0</equippedAngleOffset>
     <costList>
@@ -2220,7 +2220,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>WNA_BuratinoLauncher_Proj</defaultProjectile>
         <range>112.9</range>
-        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCast>WNA_BuratinoAttack</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>

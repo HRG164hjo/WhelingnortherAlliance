@@ -34,7 +34,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>WNA_PhantasmPsycheLauncher_Proj</defaultProjectile>
         <range>72.9</range>
-        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCast>WNA_BuratinoAttack</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
         <canGoWild>false</canGoWild>
         <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
@@ -149,7 +149,7 @@
 				<defaultProjectile>WNA_HowlstormArti_Proj</defaultProjectile>
 				<warmupTime>0</warmupTime>
 				<range>500</range>
-				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCast>WNA_BuratinoAttack</soundCast>
 				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 				<requireLineOfSight>false</requireLineOfSight>
 				<canGoWild>false</canGoWild>

@@ -27,7 +27,6 @@ namespace WNA.WNAMiscs.AdvancedTrader
                 proxy.dealResetCallback = OnDealReset;
             }
             catalogState.structureChanged = RebuildDeal;
-            catalogState.countsChanged = ApplyCountsOnly;
         }
         public override Vector2 InitialSize
         {
@@ -152,15 +151,6 @@ namespace WNA.WNAMiscs.AdvancedTrader
             deal.UpdateCurrencyCount();
             CacheLineTradeables();
             base.Notify_CommonSearchChanged();
-        }
-        private void ApplyCountsOnly()
-        {
-            TradeDeal deal = TradeSession.deal;
-            if (deal == null)
-                return;
-            proxy.ApplyBuyCounts(deal);
-            deal.UpdateCurrencyCount();
-            CacheLineTradeables();
         }
         private void OnDealReset()
         {

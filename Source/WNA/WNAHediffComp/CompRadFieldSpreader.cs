@@ -1,7 +1,7 @@
 ﻿using System;
+using RimWorld;
 using UnityEngine;
 using Verse;
-using WNA.WNADefOf;
 using WNA.WNAUtility;
 
 namespace WNA.WNAHediffComp
@@ -24,7 +24,7 @@ namespace WNA.WNAHediffComp
                 float s = parent.Severity;
                 if (s >= Props.config.threshold)
                 {
-                    float finalRadLevel = Props.config.radLevel;
+                    float finalRadLevel = Props.config.ResolveRadLevel();
                     float finalRadius = Props.config.radius;
                     if (Props.config.isSeverityRadLevel)
                         finalRadLevel *= s * Props.config.radLevelFactor;
@@ -49,7 +49,7 @@ namespace WNA.WNAHediffComp
             IntVec3 pos = pawn.Position;
             Map map = pawn.MapHeld;
             float radius = 7.9f * (1f + Mathf.Sqrt((1f + pawn.BodySize) * (1f + pawn.HealthScale)));
-            float amount = Props.config.radLevel * 0.1f;
+            float amount = Props.config.ResolveRadLevel() * 0.1f;
             SoundDef sound = DefDatabase<SoundDef>.GetNamed("Explosion_EMP");
             WNARadFieldUtility.RadSpread(
                 pawn.Position,
@@ -57,11 +57,15 @@ namespace WNA.WNAHediffComp
                 Props.config,
                 radius,
                 5000);
-            GenExplosion.DoExplosion(
-                pos, map, radius,
-                WNAMainDefOf.WNA_RadBurn,
-                pawn, (int)amount,
-                0f, sound);
+            DamageDef damageDef = Props.config.FieldDef?.damageDef;
+            if (damageDef != null)
+            {
+                GenExplosion.DoExplosion(
+                    pos, map, radius,
+                    damageDef,
+                    pawn, (int)amount,
+                    0f, sound);
+            }
         }
     }
 }

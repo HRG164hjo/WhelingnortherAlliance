@@ -1,73 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
   <!-- EN: Trade Catalog -->
   <ATUI_CatalogTitle>商品目录</ATUI_CatalogTitle>
-
   <!-- EN: Browse and order goods from this settlement's trade catalog. -->
   <ATUI_CatalogTitleTip>浏览该定居点的商品目录并下订单。</ATUI_CatalogTitleTip>
-
   <!-- EN: {0} of {1} shown -->
   <ATUI_CatalogCount>显示{1}中的{0}个条目</ATUI_CatalogCount>
-
   <!-- EN: Clear Order -->
   <ATUI_ClearOrder>清除订单</ATUI_ClearOrder>
-
   <!-- EN: Remove all lines from the current order. -->
   <ATUI_ClearOrderTip>移除所有现存的订单。</ATUI_ClearOrderTip>
-
   <!-- EN: No matching items. -->
   <ATUI_NoResults>未找到目标物品。</ATUI_NoResults>
-
   <!-- EN: Order -->
   <ATUI_Order>订购</ATUI_Order>
-
+  <!-- EN: Unorder -->
+  <ATUI_Unorder>退订</ATUI_Unorder>
   <!-- EN: {0} line(s) · {1} unit(s) -->
   <ATUI_OrderSummary>总条目{0} · 总数{1}</ATUI_OrderSummary>
-
-  <!-- EN: Add one {0} to the order. -->
-  <ATUI_OrderTip>向订单增加1个{0}。</ATUI_OrderTip>
-
+  <!-- EN: Add {0} to the order. -->
+  <ATUI_OrderTip>将{0}加入订单。</ATUI_OrderTip>
+  <!-- EN: Remove {0} from the order. -->
+  <ATUI_UnorderTip>将{0}从订单中移除。</ATUI_UnorderTip>
   <!-- EN: Unit price -->
   <ATUI_PriceTip>单价</ATUI_PriceTip>
-
-  <!-- EN: {0} / {1} (max {2}) -->
-  <ATUI_QtyTip>{0} / {1}（最大{2}）</ATUI_QtyTip>
-
   <!-- EN: Material -->
   <ATUI_StuffButton>材质</ATUI_StuffButton>
-
   <!-- EN: Choose the material for this item. -->
   <ATUI_StuffButtonTip>选择材质</ATUI_StuffButtonTip>
-
   <!-- EN: current -->
   <ATUI_StuffCurrent>当前</ATUI_StuffCurrent>
-
   <!-- EN: minified -->
   <ATUI_TagMinified>已卸载</ATUI_TagMinified>
-
   <!-- EN: All -->
   <ATUI_Cat_All>全部</ATUI_Cat_All>
-
   <!-- EN: Items -->
   <ATUI_Cat_Items>物品</ATUI_Cat_Items>
-
   <!-- EN: Buildings -->
   <ATUI_Cat_Buildings>建筑</ATUI_Cat_Buildings>
-
   <!-- EN: Weapons -->
   <ATUI_Cat_Weapons>武器</ATUI_Cat_Weapons>
-
   <!-- EN: Apparel -->
   <ATUI_Cat_Apparel>服装</ATUI_Cat_Apparel>
-
   <!-- EN: Resources -->
   <ATUI_Cat_Resources>原材料</ATUI_Cat_Resources>
-
   <!-- EN: Food -->
   <ATUI_Cat_Food>食物</ATUI_Cat_Food>
-
   <!-- EN: Drugs -->
   <ATUI_Cat_Drugs>药物与成瘾品</ATUI_Cat_Drugs>
-
 </LanguageData>

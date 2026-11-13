@@ -50,4 +50,17 @@
       <li>Manipulation</li>
     </requiredCapacities>
   </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>WNA_RepairBattleUnit</defName>
+    <label>repair battle unit</label>
+    <giverClass>WNA.WNAWorkGiver.WorkGiver_RepairBattleUnit</giverClass>
+    <workType>Construction</workType>
+    <verb>repair</verb>
+    <gerund>repairing</gerund>
+    <priorityInType>45</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
 </Defs>

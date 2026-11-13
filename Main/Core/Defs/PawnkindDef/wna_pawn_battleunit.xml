@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <PawnKindDef>
-    <defName>WNA_BattleUnitKind</defName>
-    <label>battle unit</label>
-    <race>WNA_BattleUnit</race>
+  <PawnKindDef Abstract="true" Name="WNA_BattleUnitKindBase">
     <defaultFactionType>WNA_FactionWNA</defaultFactionType>
-    <combatPower>190</combatPower>
     <aiAvoidCover>true</aiAvoidCover>
     <destroyGearOnDrop>true</destroyGearOnDrop>
     <canStrip>false</canStrip>
@@ -14,36 +9,131 @@
     <allowOldAgeInjuries>false</allowOldAgeInjuries>
     <forceNormalGearQuality>true</forceNormalGearQuality>
     <minGenerationAge>0</minGenerationAge>
-    <maxGenerationAge>0</maxGenerationAge>
+    <maxGenerationAge>2500</maxGenerationAge>
     <nakedChance>0</nakedChance>
     <weaponMoney>0</weaponMoney>
     <apparelMoney>0</apparelMoney>
     <techHediffsChance>0</techHediffsChance>
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+  </PawnKindDef>
+
+  <!---->
+  <PawnKindDef ParentName="WNA_BattleUnitKindBase">
+    <defName>WNA_BasicBattleUnitKind</defName>
+    <label>basic battle unit</label>
+    <race>WNA_BasicBattleUnit</race>
+    <combatPower>10</combatPower>
     <lifeStages>
-      <li MayRequire="Ludeon.RimWorld.Biotech">
+      <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/LancerClean</texPath>
-          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Lancer</maskPath>
-          <shaderType>CutoutWithOverlay</shaderType>
+          <texPath>pawns/wna_unit/Shield</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
+          <drawSize>1.8</drawSize>
           <shadowData>
             <volume>(0.4, 0.8, 0.4)</volume>
           </shadowData>
         </bodyGraphicData>
       </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!---->
+  <PawnKindDef ParentName="WNA_BattleUnitKindBase">
+    <defName>WNA_AssaulterUnitKind</defName>
+    <race>WNA_AssaulterUnit</race>
+    <label>assaulter unit</label>
+    <combatPower>10</combatPower>
+    <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Mechanoid/Lancer</texPath>
-          <maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Lancer</maskPath>
-          <shaderType>CutoutWithOverlay</shaderType>
+          <texPath>pawns/wna_unit/CerebrexNodePack</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
-          <shadowData>
-            <volume>(0.4, 0.8, 0.4)</volume>
-          </shadowData>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="WNA_BattleUnitKindBase">
+    <defName>WNA_BombarderUnitKind</defName>
+    <race>WNA_BombarderUnit</race>
+    <label>bombarder unit</label>
+    <combatPower>15</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>pawns/wna_unit/CerebrexNodePack</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="WNA_BattleUnitKindBase">
+    <defName>WNA_ShockerUnitKind</defName>
+    <race>WNA_ShockerUnit</race>
+    <label>shocker unit</label>
+    <combatPower>20</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>pawns/wna_unit/CerebrexNodePack</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="WNA_BattleUnitKindBase">
+    <defName>WNA_CometUnitKind</defName>
+    <race>WNA_CometUnit</race>
+    <label>comet unit</label>
+    <combatPower>20</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>pawns/wna_unit/CerebrexNodePack</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.8</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!---->
+  <PawnKindDef ParentName="WNA_BattleUnitKindBase">
+    <defName>WNA_DemolinCarrierUnitKind</defName>
+    <race>WNA_DemolinCarrierUnit</race>
+    <label>demolin carrier unit</label>
+    <combatPower>100</combatPower>
+    <abilities>
+      <li>WNA_SummonDemolin</li>
+      <li>WNA_AssaultBolt</li>
+    </abilities>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>pawns/wna_unit/HunterDronePack</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.7</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  <PawnKindDef ParentName="WNA_BattleUnitKindBase">
+    <defName>WNA_DemolinUnitKind</defName>
+    <race>WNA_DemolinUnit</race>
+    <label>demolin unit</label>
+    <combatPower>60</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>pawns/wna_unit/DisruptorFlarePack</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.9</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>

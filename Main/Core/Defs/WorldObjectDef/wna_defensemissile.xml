@@ -6,7 +6,7 @@
     <label>defense missile</label>
     <description>An automated defense missile launched by a Whelingnorther Alliance settlement.</description>
     <worldObjectClass>WNA.WNAWorldObject.WorldObject_DefenseMissile</worldObjectClass>
-    <texture>Things/Projectile/Rocket_Big</texture>
+    <texture>others/doomsdayrocket</texture>
     <useDynamicDrawer>true</useDynamicDrawer>
     <canHaveMap>false</canHaveMap>
     <canHaveFaction>false</canHaveFaction>

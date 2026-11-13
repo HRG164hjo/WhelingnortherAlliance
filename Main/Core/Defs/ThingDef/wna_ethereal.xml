@@ -144,6 +144,8 @@
       <shadowSize>(2.4,2.4)</shadowSize>
       <motesPerCell>0</motesPerCell>
       <rotateGraphicTowardsDirection>false</rotateGraphicTowardsDirection>
+      <explosionRadius>500</explosionRadius>
+      <explosionDamage>WNA_ChimingBlaze</explosionDamage>
       <angleCurve>
         <points>
           <li>(0,0)</li>
@@ -154,6 +156,7 @@
     <comps>
       <li Class="WNA.WNAThingComp.PropRadFieldBurst">
         <config>
+          <radField>WNA_RadField_Radiation</radField>
           <radLevel>500</radLevel>
           <radius>500</radius>
         </config>

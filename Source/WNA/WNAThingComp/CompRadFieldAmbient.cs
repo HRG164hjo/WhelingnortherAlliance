@@ -24,7 +24,7 @@ namespace WNA.WNAThingComp
                         parent.Map,
                         Props.config,
                         Props.config.radius,
-                        Props.config.radLevel);
+                        Props.config.ResolveRadLevel());
                 }
             }
         }

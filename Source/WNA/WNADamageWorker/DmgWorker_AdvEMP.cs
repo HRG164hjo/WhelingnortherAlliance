@@ -8,6 +8,8 @@ namespace WNA.WNADamageWorker
     {
         public override DamageResult Apply(DamageInfo dinfo, Thing victim)
         {
+            DamageResult result = base.Apply(dinfo, victim);
+            bool violence = dinfo.Def.ExternalViolenceFor(victim);
             int ticks = Convert.ToInt32(dinfo.Amount);
             if (victim is Pawn pawn)
             {
@@ -37,7 +39,7 @@ namespace WNA.WNADamageWorker
                 if (twc.HasComp<CompExplosive>() && comp.StunHandler.StunTicksLeft > size * 300)
                     twc.Kill();
             }
-            return new DamageResult();
+            return violence? result : new DamageResult();
         }
     }
 }

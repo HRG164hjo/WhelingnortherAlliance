@@ -1,6 +1,6 @@
 ﻿using RimWorld;
-using System;
 using Verse;
+using Verse.AI;
 using WNA.WNADefOf;
 
 namespace WNA.WNADamageWorker
@@ -9,33 +9,75 @@ namespace WNA.WNADamageWorker
     {
         public override DamageResult Apply(DamageInfo dinfo, Thing victim)
         {
-            if (victim is Pawn pawn && !pawn.story.traits.HasTrait(WNAMainDefOf.WNA_Trait_Unshakable))
+            if (victim is Pawn pawn && !pawn.Dead && !pawn.Destroyed)
             {
-                pawn.mindState.inspirationHandler.Reset();
                 SetMentalState(pawn);
             }
             return new DamageResult();
         }
-        internal void SetMentalState(Pawn pawn)
+
+        internal static void SetMentalState(Pawn pawn)
         {
-            int[] numbers = { 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 };
-            bool wimp = pawn.story.traits.HasTrait(TraitDefOf.Wimp);
-            Random random = new Random();
-            int result = numbers[random.Next(numbers.Length)];
-            switch (result)
+            MentalStateHandler handler = pawn.mindState?.mentalStateHandler;
+            if (handler == null || handler.InMentalState || HasTrait(pawn, WNAMainDefOf.WNA_Trait_Unshakable))
             {
-                case 0:
-                    if (wimp)
-                        pawn.health.AddHediff(HediffDefOf.CatatonicBreakdown);
-                    else
-                        pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.BerserkPermanent);
-                    break;
-                case 1:
-                    if (wimp)
-                        pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.PanicFlee);
-                    else
-                        pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent);
-                    break;
+                return;
+            }
+
+            pawn.mindState.inspirationHandler?.Reset();
+
+            if (!pawn.Awake())
+            {
+                RestUtility.WakeUp(pawn);
+            }
+
+            MentalStateDef[] candidates = GetCandidates(pawn);
+            for (int i = 0; i < candidates.Length; i++)
+            {
+                if (handler.TryStartMentalState(candidates[i], null, forced: false, forceWake: true))
+                {
+                    return;
+                }
+            }
+
+            TryGiveCatatonicBreakdown(pawn);
+        }
+
+        private static MentalStateDef[] GetCandidates(Pawn pawn)
+        {
+            if (pawn.RaceProps.IsMechanoid)
+            {
+                return new[] { MentalStateDefOf.BerserkPermanent, MentalStateDefOf.ManhunterPermanent };
+            }
+            if (!pawn.RaceProps.Humanlike)
+            {
+                return new[] { MentalStateDefOf.ManhunterPermanent, MentalStateDefOf.BerserkPermanent };
+            }
+            if (HasTrait(pawn, TraitDefOf.Wimp))
+            {
+                return new[] { MentalStateDefOf.PanicFlee, MentalStateDefOf.Wander_Psychotic };
+            }
+            MentalStateDef rage = Rand.Chance(0.6f) ? MentalStateDefOf.BerserkPermanent : MentalStateDefOf.ManhunterPermanent;
+            MentalStateDef otherRage = (rage == MentalStateDefOf.BerserkPermanent) ? MentalStateDefOf.ManhunterPermanent : MentalStateDefOf.BerserkPermanent;
+            return new[] { rage, otherRage, MentalStateDefOf.PanicFlee, MentalStateDefOf.Wander_Psychotic };
+        }
+
+        private static bool HasTrait(Pawn pawn, TraitDef trait)
+        {
+            TraitSet traits = pawn.story?.traits;
+            return traits != null && traits.HasTrait(trait);
+        }
+
+        private static void TryGiveCatatonicBreakdown(Pawn pawn)
+        {
+            if (!pawn.IsColonist || !pawn.Spawned || pawn.Downed || !pawn.Awake()
+                || pawn.mindState.mentalStateHandler.MentalBreaksBlocked())
+            {
+                return;
+            }
+            if (!pawn.health.hediffSet.HasHediff(HediffDefOf.CatatonicBreakdown))
+            {
+                pawn.health.AddHediff(HediffDefOf.CatatonicBreakdown);
             }
         }
     }

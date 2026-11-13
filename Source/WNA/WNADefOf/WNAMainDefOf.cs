@@ -10,6 +10,7 @@ namespace WNA.WNADefOf
         public static BackstoryDef WNA_BC_UpliftedEntity;
         public static BackstoryDef WNA_BC_UpliftedPlant;
         public static DamageDef WNA_DemoCut;
+        public static DamageDef WNA_Culling;
         public static DamageDef WNA_RadBurn;
         public static DamageDef WNA_Temporal;
         public static DamageDef WNA_ChimingBlaze;
@@ -33,6 +34,8 @@ namespace WNA.WNADefOf
         public static JobDef WNA_ClearRadField;
         public static JobDef WNA_ReadHolyorder;
         public static JobDef WNA_ForceReeducation;
+        public static JobDef WNA_RepairBattleUnit;
+        public static MapMeshFlagDef WNA_RadField;
         public static MemeDef Structure_WNA_Ideo;
         public static ResearchProjectDef WNA_TranscendentalArts;
         public static ResearchProjectDef WNA_PsychicDawn;
@@ -59,6 +62,8 @@ namespace WNA.WNADefOf
         public static ThingDef WNA_NukeAfterglow;
         public static ThingDef WNA_Mote_HolyorderRead;
         public static ThingDef WNA_Mote_UpliftMarker;
+        public static ThingDef WNA_Mote_AttachEffectShield;
+        public static ThingDef WNA_PawnFlyer_Seismic;
         public static TraitDef WNA_Trait_Unshakable;
         public static ThoughtDef WNA_ThoughtFear;
         public static ThoughtDef WNA_ThoughtCondemned;
@@ -79,5 +84,6 @@ namespace WNA.WNADefOf
         [MayRequireBiotech]
         public static ThoughtDef WNA_ThoughtApathy;
         public static PathGridDef WNA_PathGrid_FreePassTerrain;
+        public static WNA_RadFieldDef WNA_RadField_Radiation;
     }
 }

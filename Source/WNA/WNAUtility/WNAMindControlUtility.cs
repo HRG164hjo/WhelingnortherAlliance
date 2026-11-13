@@ -84,37 +84,17 @@ namespace WNA.WNAUtility
                 return false;
             }
 
-            if (pawn.apparel != null)
+            if (pawn.health != null && pawn.health.hediffSet != null
+                && (MindControlled(pawn) || PermaconstControlled(pawn)))
             {
-                foreach (Apparel apparel in pawn.apparel.WornApparel)
-                {
-                    TechnoConfig apparelConfig = TechnoConfig.Get(apparel.def);
-                    if (apparelConfig != null && apparelConfig.immuneToMindControl == true)
-                    {
-                        reason = "WNA_MindControl_Immune".Translate();
-                        return false;
-                    }
-                }
+                reason = "WNA_MindControl_AlreadyControlled".Translate();
+                return false;
             }
 
-            if (pawn.health != null && pawn.health.hediffSet != null)
+            if (TechnoConfigUtility.PawnHasFlag(pawn, TechnoFlag.ImmuneToMindControl))
             {
-                if (MindControlled(pawn) || PermaconstControlled(pawn))
-                {
-                    reason = "WNA_MindControl_AlreadyControlled".Translate();
-                    return false;
-                }
-                foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
-                {
-                    if (hediff.def == null)
-                        continue;
-                    TechnoConfig hediffConfig = TechnoConfig.Get(hediff.def);
-                    if (hediffConfig != null && hediffConfig.immuneToMindControl == true)
-                    {
-                        reason = "WNA_MindControl_Immune".Translate();
-                        return false;
-                    }
-                }
+                reason = "WNA_MindControl_Immune".Translate();
+                return false;
             }
 
             if (!permanent && config.maxTargets >= 0)

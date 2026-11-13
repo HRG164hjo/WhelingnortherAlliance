@@ -1,52 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- EN: is wild -->
   <WNA_MindControl_IsWildman>无所属</WNA_MindControl_IsWildman>
-
   <!-- EN: <color=#7B50A7>permanent</color> -->
-  <WNA_MindControl_Permanent>&lt;color=#7B50A7&gt;永久控制&lt;/color&gt;</WNA_MindControl_Permanent>
-
+  <WNA_MindControl_Permanent>&lt;color=#7B50A7&gt;永久&lt;/color&gt;</WNA_MindControl_Permanent>
   <!-- EN: controlled by -->
-  <WNA_MindControl_ControlledBy>控制方</WNA_MindControl_ControlledBy>
-
+  <WNA_MindControl_ControlledBy>受控于</WNA_MindControl_ControlledBy>
   <!-- EN: was from -->
-  <WNA_MindControl_WasFrom>原所属方</WNA_MindControl_WasFrom>
-
+  <WNA_MindControl_WasFrom>曾来自</WNA_MindControl_WasFrom>
   <!-- EN: controller -->
   <WNA_MindControl_Source>控制者</WNA_MindControl_Source>
-
   <!-- EN: was a prisoner -->
-  <WNA_MindControl_WasPrisoner>曾是囚犯</WNA_MindControl_WasPrisoner>
-
+  <WNA_MindControl_WasPrisoner>曾为囚犯</WNA_MindControl_WasPrisoner>
   <!-- EN: was a slave -->
-  <WNA_MindControl_WasSlave>曾是奴隶</WNA_MindControl_WasSlave>
-
+  <WNA_MindControl_WasSlave>曾为奴隶</WNA_MindControl_WasSlave>
   <!-- EN: was a guest -->
-  <WNA_MindControl_WasGuest>曾是访客</WNA_MindControl_WasGuest>
-
+  <WNA_MindControl_WasGuest>曾为访客</WNA_MindControl_WasGuest>
   <!-- EN: This target cannot be mind-controlled. -->
-  <WNA_MindControl_InvalidTarget>无法控制该目标。</WNA_MindControl_InvalidTarget>
-
+  <WNA_MindControl_InvalidTarget>该目标不可被心灵控制</WNA_MindControl_InvalidTarget>
   <!-- EN: You cannot mind-control a member of the same faction. -->
-  <WNA_MindControl_SameFaction>无法控制同一派系的成员。</WNA_MindControl_SameFaction>
-
+  <WNA_MindControl_SameFaction>你不能控制己方成员。</WNA_MindControl_SameFaction>
   <!-- EN: This target is immune to mind control. -->
   <WNA_MindControl_Immune>该目标免疫心灵控制。</WNA_MindControl_Immune>
-
   <!-- EN: This target is already mind-controlled. -->
-  <WNA_MindControl_AlreadyControlled>该目标已被心灵控制。</WNA_MindControl_AlreadyControlled>
-
+  <WNA_MindControl_AlreadyControlled>该目标已经被控制了。</WNA_MindControl_AlreadyControlled>
   <!-- EN: Only humanlike targets can be mind-controlled. -->
-  <WNA_MindControl_NotHumanlike>只有人形目标可以被心灵控制。</WNA_MindControl_NotHumanlike>
-
+  <WNA_MindControl_NotHumanlike>只有人类目标可以被心灵控制。</WNA_MindControl_NotHumanlike>
   <!-- EN: This controller cannot control any more targets. -->
-  <WNA_MindControl_Full>该控制者已达到控制上限。</WNA_MindControl_Full>
-
+  <WNA_MindControl_Full>这名控制者不能控制更多目标了。</WNA_MindControl_Full>
   <!-- EN: {0} has been mind-controlled by {1}. -->
-  <WNA_MindControl_Controlled_Message>{0} 的心灵被 {1} 攫取了。</WNA_MindControl_Controlled_Message>
-
+  <WNA_MindControl_Controlled_Message>{0}被{1}心灵控制了。</WNA_MindControl_Controlled_Message>
   <!-- EN: {0} is no longer mind-controlled. -->
-  <WNA_MindControl_Released_Message>{0} 已脱离心灵控制。</WNA_MindControl_Released_Message>
-
+  <WNA_MindControl_Released_Message>{0}不再受到心灵控制了。</WNA_MindControl_Released_Message>
 </LanguageData>

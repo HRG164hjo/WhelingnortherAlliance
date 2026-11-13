@@ -14,7 +14,7 @@
   <HediffDef ParentName="WNA_BodypartHediff">
     <defName>WNA_Part_AdvBionicSkin</defName>
     <label>adv. bionic skin</label>
-    <description>An installed adv bionic skin. \n\n&lt;color=#VC86400&gt;Rad proof.&lt;/color&gt;</description>
+    <description>An installed adv bionic skin. \n\n&lt;color=#C86400&gt;Rad proof.&lt;/color&gt;</description>
     <hediffClass>HediffWithComps</hediffClass>
     <stages>
       <li>

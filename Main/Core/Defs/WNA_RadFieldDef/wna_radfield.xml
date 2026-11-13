@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WNA.WNADefOf.WNA_RadFieldDef>
+    <defName>WNA_RadField_Radiation</defName>
+    <label>radiation</label>
+    <intensityMax>500</intensityMax>
+    <decayPerInterval>1</decayPerInterval>
+    <decayIntervalTicks>250</decayIntervalTicks>
+    <color>(200,100,0)</color>
+    <overlayAlpha>0.6</overlayAlpha>
+    <damageDef>WNA_RadBurn</damageDef>
+    <damagePerIntensity>0.1</damagePerIntensity>
+    <damageIntervalTicks>45</damageIntervalTicks>
+    <clearable>true</clearable>
+    <clearThing>WNA_ParticleVial</clearThing>
+    <showInReadout>true</showInReadout>
+  </WNA.WNADefOf.WNA_RadFieldDef>
+
+  <!--
+  <WNA.WNADefOf.WNA_RadFieldDef>
+    <defName>WNA_RadField_Hypothermia</defName>
+    <label>hypothermia</label>
+    <intensityMax>500</intensityMax>
+    <decayPerInterval>1</decayPerInterval>
+    <decayIntervalTicks>99</decayIntervalTicks>
+    <color>(200,200,255)</color>
+    <overlayAlpha>0.6</overlayAlpha>
+    <damageDef>WNA_Hypothermal</damageDef>
+    <damagePerIntensity>1</damagePerIntensity>
+    <damageIntervalTicks>30</damageIntervalTicks>
+    <clearable>true</clearable>
+    <clearThing>WNA_ParticleVial</clearThing>
+    <showInReadout>true</showInReadout>
+  </WNA.WNADefOf.WNA_RadFieldDef>
+  -->
+</Defs>

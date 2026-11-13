@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityCategoryDef>
+    <defName>WNA_AbilityCategory</defName>
+    <displayOrder>500</displayOrder>
+  </AbilityCategoryDef>  
+  <AbilityDef Abstract="true" Name="WNA_AbilityBase">
+    <category>WNA_AbilityCategory</category>
+    <iconPath>karma</iconPath>
+    <cooldownTicksRange>60</cooldownTicksRange>
+    <stunTargetWhileCasting>true</stunTargetWhileCasting>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <hostile>false</hostile>
+    <aiCanUse>false</aiCanUse>
+    <writeCombatLog>true</writeCombatLog>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+  </AbilityDef>
+
+  <AbilityDef ParentName="WNA_AbilityBase">
+    <defName>WNA_MindControlAbility</defName>
+    <label>mind control</label>
+    <description>Seize the mind of a humanlike target. The victim joins the controller's faction until the controller dies or the control is surgically severed. Up to 3 targets can be controlled at once.</description>
+    <cooldownTicksRange>1800</cooldownTicksRange>
+    <hostile>true</hostile>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>48.9</range>
+      <warmupTime>0.466667</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <soundCast>WNA_YuriMindControl</soundCast>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetLocations>false</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityEffect">
+        <compClass>WNA.WNAAbility.CompAbilityEffect_MindControl</compClass>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.MindControlConfig">
+        <permanent>false</permanent>
+        <maxTargets>3</maxTargets>
+        <releaseOnControllerDeath>true</releaseOnControllerDeath>
+        <releaseOnControllerFactionChange>true</releaseOnControllerFactionChange>
+        <brainBurn>true</brainBurn>
+        <brainBurnHpFactor>0.6~0.9</brainBurnHpFactor>
+        <sendMessage>true</sendMessage>
+      </li>
+    </modExtensions>
+  </AbilityDef>
+  <AbilityDef ParentName="WNA_AbilityBase">
+    <defName>WNA_MindControlPermanent</defName>
+    <label>permanent mind control</label>
+    <description>Permanent mind control. The victim's mind is branded forever and can never be released, even if the controller dies. Permanent control does not count toward the controller's normal control limit.</description>
+    <cooldownTicksRange>3000</cooldownTicksRange>
+    <hostile>true</hostile>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>48.9</range>
+      <warmupTime>0.466667</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <soundCast>WNA_YuriMindControl</soundCast>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetAnimals>true</canTargetAnimals>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetLocations>false</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityEffect">
+        <compClass>WNA.WNAAbility.CompAbilityEffect_MindControl</compClass>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.MindControlConfig">
+        <permanent>true</permanent>
+        <maxTargets>-1</maxTargets>
+        <releaseOnControllerDeath>false</releaseOnControllerDeath>
+        <releaseOnControllerFactionChange>false</releaseOnControllerFactionChange>
+        <brainBurn>true</brainBurn>
+        <brainBurnHpFactor>0.6~0.9</brainBurnHpFactor>
+        <sendMessage>true</sendMessage>
+      </li>
+    </modExtensions>
+  </AbilityDef>
+
+  <!-- ======== -->
+  <AbilityDef ParentName="WNA_AbilityBase">
+    <defName>WNA_SummonDemolin</defName>
+    <label>summon demolins</label>
+    <description>Deliver 4 disposable demolin units near the caster. Demolins charge the nearest enemy and detonate on contact.</description>
+    <cooldownTicksRange>250</cooldownTicksRange>
+    <targetRequired>false</targetRequired>
+    <hostile>false</hostile>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>false</ai_IsOffensive>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <showPsycastEffects>false</showPsycastEffects>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.466667</warmupTime>
+      <range>3.9</range>
+      <requireLineOfSight>false</requireLineOfSight>
+      <drawAimPie>false</drawAimPie>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="WNA.WNAAbilityComp.PropUnitDelivery">
+        <aroundCaster>true</aroundCaster>
+        <radius>3.9</radius>
+        <limitAliveCount>true</limitAliveCount>
+        <maxAlive>20</maxAlive>
+        <spawnEffecter>Skip_Entry</spawnEffecter>
+        <spawnSound>Psycast_Skip_Entry</spawnSound>
+        <pawns>
+          <li>
+            <kind>WNA_DemolinUnitKind</kind>
+            <count>4</count>
+          </li>
+        </pawns>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- ======== -->
+  <AbilityDef ParentName="WNA_AbilityBase">
+    <defName>WNA_AssaultBolt</defName>
+    <label>assault bolt</label>
+    <description>Hurl a bolt of charged energy at a distant target.</description>
+    <cooldownTicksRange>25</cooldownTicksRange>
+    <hostile>true</hostile>
+    <aiCanUse>true</aiCanUse>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <showPsycastEffects>false</showPsycastEffects>
+    <verbProperties>
+      <verbClass>WNA.WNAVerbType.Verb_AbilityShootVfx</verbClass>
+      <defaultProjectile>WNA_PacifierArcStriker_Proj</defaultProjectile>
+      <range>30.9</range>
+      <warmupTime>0</warmupTime>
+      <burstShotCount>2</burstShotCount>
+      <accuracyTouch>1</accuracyTouch>
+      <accuracyShort>1</accuracyShort>
+      <accuracyMedium>1</accuracyMedium>
+      <accuracyLong>1</accuracyLong>
+      <requireLineOfSight>false</requireLineOfSight>
+      <ai_IsWeapon>false</ai_IsWeapon>
+      <ai_ProjectileLaunchingIgnoresMeleeThreats>true</ai_ProjectileLaunchingIgnoresMeleeThreats>
+      <soundCast>WNA_TeslaTroopAttack</soundCast>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>true</canTargetBuildings>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetPlants>false</canTargetPlants>
+      </targetParams>
+    </verbProperties>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.WeaponTeslaBoltConfig">
+        <BoltDuration>28</BoltDuration>
+        <Bolt1Color>(255,0,0)</Bolt1Color>
+        <Bolt2Color>(255,0,0)</Bolt2Color>
+        <Bolt3Color>(225,200,200)</Bolt3Color>
+      </li>
+    </modExtensions>
+  </AbilityDef>
+</Defs>

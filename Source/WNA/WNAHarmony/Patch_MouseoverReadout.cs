@@ -3,6 +3,7 @@ using HarmonyLib;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using WNA.WNADefOf;
 using WNA.WNAMapComp;
 
 namespace WNA.WNAHarmony
@@ -26,15 +27,25 @@ namespace WNA.WNAHarmony
                 if (!cell.InBounds(map) || cell.Fogged(map)) return;
                 MapComp_RadField rad = map.GetComponent<MapComp_RadField>();
                 if (rad == null) return;
-                int value = rad.GetRad(cell);
-                if (value <= 0) return;
 
-                float yOffset = VanillaReadoutHeight(map, cell);
-                Rect rect = new Rect(BotLeftX, UI.screenHeight - BotLeftY - yOffset, 999f, 999f);
+                List<WNA_RadFieldDef> defs = DefDatabase<WNA_RadFieldDef>.AllDefsListForReading;
+                float baseOffset = VanillaReadoutHeight(map, cell);
+                int shown = 0;
                 Color prevColor = GUI.color;
                 Text.Font = GameFont.Small;
-                GUI.color = new Color(1f, 0.62f, 0.25f, 0.95f);
-                Widgets.Label(rect, "WNA_RadLevelReadout".Translate() + ((float)value / rad.radLevelMax).ToStringPercent() + " (" + value + "/" + rad.radLevelMax + ")");
+                for (int i = 0; i < defs.Count; i++)
+                {
+                    WNA_RadFieldDef def = defs[i];
+                    if (!def.showInReadout || def.intensityMax <= 0) continue;
+                    int value = rad.GetRad(cell, def);
+                    if (value <= 0) continue;
+                    float yOffset = baseOffset + shown * YInterval;
+                    Rect rect = new Rect(BotLeftX, UI.screenHeight - BotLeftY - yOffset, 999f, 999f);
+                    Color color = def.RenderColor;
+                    GUI.color = new Color(color.r, color.g, color.b, 0.95f);
+                    Widgets.Label(rect, "WNA_RadFieldReadout".Translate(def.LabelCap, ((float)value / def.intensityMax).ToStringPercent(), value, def.intensityMax));
+                    shown++;
+                }
                 GUI.color = prevColor;
             }
         }

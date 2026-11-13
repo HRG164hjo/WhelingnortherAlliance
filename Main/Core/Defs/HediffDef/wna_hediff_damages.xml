@@ -378,6 +378,7 @@
       </li>
       <li Class="WNA.WNAHediffComp.PropRadFieldSpreader">
         <config>
+          <radField>WNA_RadField_Radiation</radField>
           <radLevel>10</radLevel>
           <radius>0.9</radius>
           <edgeFactor>0.3</edgeFactor>

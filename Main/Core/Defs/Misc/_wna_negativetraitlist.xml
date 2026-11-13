@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <!-- Traits listed here are treated as negative by WNA_ConfessionMotion. -->
-  <Def Class="WNA.WNADefOf.WNA_NegativeTraitListDef">
+  <WNA.WNADefOf.WNA_NegativeTraitListDef>
     <defName>WNA_NegativeTraitList</defName>
     <label>negative traits</label>
     <traits>
@@ -52,5 +52,5 @@
       <li MayRequire="vanillaexpanded.vanillatraitsexpanded">VTE_WorldWeary</li>
       <li MayRequireAnyOf="dubwise.dubsbadhygiene.lite,dubwise.dubsbadhygiene">Hygienic</li>
     </traits>
-  </Def>
+  </WNA.WNADefOf.WNA_NegativeTraitListDef>
 </Defs>

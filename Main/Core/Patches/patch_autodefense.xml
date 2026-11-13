@@ -4,7 +4,7 @@
     <xpath>/Defs/WorldObjectDef[defName="Settlement"]/comps</xpath>
     <value>
       <li Class="WNA.WNAWorldObjectComp.PropWNASettlementAutoDefense">
-        <rangeTiles>11</rangeTiles>
+        <rangeTiles>9</rangeTiles>
         <rearmTicks>2500</rearmTicks>
         <rearmJitterTicks>7500</rearmJitterTicks>
         <scanIntervalTicks>30</scanIntervalTicks>

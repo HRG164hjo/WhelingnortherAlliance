@@ -27,7 +27,6 @@
       <texPath>Things/Building/Power/PowerSwitch</texPath>
       <drawSize>0.75</drawSize>
     </graphicData>
-    <uiIconPath>Things/Building/Power/PowerSwitch</uiIconPath>
     <useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -42,7 +41,7 @@
       <turretTopDrawSize>1.4</turretTopDrawSize>
       <turretTopOffset>(0,0.1)</turretTopOffset>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>1</turretBurstCooldownTime>
+      <turretBurstCooldownTime>0.2</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -60,6 +59,8 @@
     <verbs>
       <li>
         <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_SentryGun_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>42.9</range>
@@ -67,7 +68,6 @@
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
         <burstShotCount>2</burstShotCount>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -111,7 +111,6 @@
       <texPath>Things/Building/Power/PowerSwitch</texPath>
       <drawSize>0.75</drawSize>
     </graphicData>
-    <uiIconPath>Things/Building/Power/PowerSwitch</uiIconPath>
     <useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -126,7 +125,7 @@
       <turretTopDrawSize>1.4</turretTopDrawSize>
       <turretTopOffset>(0,0.1)</turretTopOffset>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>0.4</turretBurstCooldownTime>
+      <turretBurstCooldownTime>0.2</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -144,6 +143,8 @@
     <verbs>
       <li>
         <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_StingGun_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>42.9</range>
@@ -151,7 +152,6 @@
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
         <burstShotCount>2</burstShotCount>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -196,8 +196,6 @@
       <drawSize>0.75</drawSize>
       <color>(175,155,0)</color>
     </graphicData>
-    <uiIconPath>Things/Building/Power/PowerSwitch</uiIconPath>
-    <uiIconColor>(175,155,0)</uiIconColor>
     <useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -212,7 +210,7 @@
       <turretTopDrawSize>1.4</turretTopDrawSize>
       <turretTopOffset>(0,0.1)</turretTopOffset>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>0.4</turretBurstCooldownTime>
+      <turretBurstCooldownTime>0.2</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -230,14 +228,15 @@
     <verbs>
       <li>
         <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_TorchGun_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>42.9</range>
-        <soundCast>GunShotA</soundCast>
+        <soundCast>WNA_MirageTankAttack</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
         <burstShotCount>2</burstShotCount>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -283,8 +282,6 @@
       <drawSize>0.75</drawSize>
       <color>(255,255,255)</color>
     </graphicData>
-    <uiIconPath>Things/Building/Power/PowerSwitch</uiIconPath>
-    <uiIconColor>(255,255,255)</uiIconColor>
     <useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>650</MaxHitPoints>
@@ -311,7 +308,7 @@
       <turretTopDrawSize>1.4</turretTopDrawSize>
       <turretTopOffset>(0,0.1)</turretTopOffset>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>2.333333</turretBurstCooldownTime>
+      <turretBurstCooldownTime>1.166667</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -329,13 +326,14 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_SonicEmitter_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>46.9</range>
-        <soundCast>GunShotA</soundCast>
+        <soundCast>WNA_SonicWave</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -387,8 +385,6 @@
       <drawSize>0.75</drawSize>
       <color>(80,80,80)</color>
     </graphicData>
-    <uiIconPath>Things/Building/Power/PowerSwitch</uiIconPath>
-    <uiIconColor>(80,80,80)</uiIconColor>
     <useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>700</MaxHitPoints>
@@ -403,7 +399,7 @@
       <turretTopDrawSize>1.4</turretTopDrawSize>
       <turretTopOffset>(0,0.1)</turretTopOffset>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>1.666667</turretBurstCooldownTime>
+      <turretBurstCooldownTime>0.833333</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -421,13 +417,14 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_GunTurret_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>53.9</range>
-        <soundCast>GunShotA</soundCast>
+        <soundCast>WNA_DestroyerAttack</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -474,8 +471,6 @@
       <drawSize>1</drawSize>
       <color>(255,200,200)</color>
     </graphicData>
-    <uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
-    <uiIconColor>(255,200,200)</uiIconColor>
     <useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>850</MaxHitPoints>
@@ -501,8 +496,8 @@
       <turretGunDef>WNA_TeslaCoil_Gun</turretGunDef>
       <turretTopDrawSize>1.2</turretTopDrawSize>
       <turretTopOffset>(0,0.1)</turretTopOffset>
-      <turretBurstWarmupTime>0.933333</turretBurstWarmupTime>
-      <turretBurstCooldownTime>3.666667</turretBurstCooldownTime>
+      <turretBurstWarmupTime>0.466667</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.366667</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -521,13 +516,14 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_TeslaCoil_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>56.9</range>
-        <soundCast>WNA_TeslaAttack</soundCast>
+        <soundCast>WNA_TeslaCoilAttack</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -572,8 +568,6 @@
       <drawSize>1</drawSize>
       <color>(123,123,123)</color>
     </graphicData>
-    <uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
-    <uiIconColor>(123,123,123)</uiIconColor>
     <useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>850</MaxHitPoints>
@@ -599,8 +593,8 @@
       <turretGunDef>WNA_PrismTower_Gun</turretGunDef>
       <turretTopDrawSize>1.2</turretTopDrawSize>
       <turretTopOffset>(0,0.1)</turretTopOffset>
-      <turretBurstWarmupTime>0.933333</turretBurstWarmupTime>
-      <turretBurstCooldownTime>1.666667</turretBurstCooldownTime>
+      <turretBurstWarmupTime>0.466667</turretBurstWarmupTime>
+      <turretBurstCooldownTime>0.366667</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -619,13 +613,14 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_PrismTower_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>56.9</range>
-        <soundCast>GunShotA</soundCast>
+        <soundCast>WNA_PrismTowerAttack</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -671,8 +666,6 @@
       <drawSize>1</drawSize>
       <color>(225,175,0)</color>
     </graphicData>
-    <uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
-    <uiIconColor>(225,175,0)</uiIconColor>
     <useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>850</MaxHitPoints>
@@ -698,8 +691,8 @@
       <turretGunDef>WNA_InfernoTower_Gun</turretGunDef>
       <turretTopDrawSize>1.2</turretTopDrawSize>
       <turretTopOffset>(0,0.1)</turretTopOffset>
-      <turretBurstWarmupTime>0.933333</turretBurstWarmupTime>
-      <turretBurstCooldownTime>1.666667</turretBurstCooldownTime>
+      <turretBurstWarmupTime>0.466667</turretBurstWarmupTime>
+      <turretBurstCooldownTime>0.866667</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -718,13 +711,14 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_InfernoTower_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>56.9</range>
-        <soundCast>GunShotA</soundCast>
+        <soundCast>WNA_InfernoTowerAttack</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -781,8 +775,6 @@
       <drawSize>1</drawSize>
       <color>(92,235,135)</color>
     </graphicData>
-    <uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
-    <uiIconColor>(92,235,135)</uiIconColor>
     <useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -808,8 +800,8 @@
       <turretGunDef>WNA_RailgunTower_Gun</turretGunDef>
       <turretTopDrawSize>1.2</turretTopDrawSize>
       <turretTopOffset>(0,0.1)</turretTopOffset>
-      <turretBurstWarmupTime>0.933333</turretBurstWarmupTime>
-      <turretBurstCooldownTime>4</turretBurstCooldownTime>
+      <turretBurstWarmupTime>0.466667</turretBurstWarmupTime>
+      <turretBurstCooldownTime>1.533333</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -828,13 +820,14 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_RailgunTower_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>63.9</range>
-        <soundCast>GunShotA</soundCast>
+        <soundCast>WNA_RailgunTowerAttack</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -895,8 +888,6 @@
       <drawSize>1</drawSize>
       <color>(200,100,0)</color>
     </graphicData>
-    <uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
-    <uiIconColor>(200,100,0)</uiIconColor>
     <useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
@@ -911,7 +902,7 @@
       <turretTopDrawSize>1.2</turretTopDrawSize>
       <turretTopOffset>(0,0.1)</turretTopOffset>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>1.333333</turretBurstCooldownTime>
+      <turretBurstCooldownTime>0.75</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -930,13 +921,14 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_RadbeamDesolator_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>56.9</range>
-        <soundCast>WNA_RadAttack</soundCast>
+        <soundCast>WNA_DesolatorAttack</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>false</canTargetBuildings>
         </targetParams>
@@ -966,6 +958,7 @@
     <comps>
       <li Class="WNA.WNAThingComp.PropRadFieldBurst">
         <config>
+          <radField>WNA_RadField_Radiation</radField>
           <radLevel>100</radLevel>
           <radius>1.9</radius>
         </config>
@@ -989,8 +982,6 @@
       <drawSize>1</drawSize>
       <color>(50,170,0)</color>
     </graphicData>
-    <uiIconPath>Things/Building/Mech/TurretMechMini_Base</uiIconPath>
-    <uiIconColor>(50,170,0)</uiIconColor>
     <useHitPoints>true</useHitPoints>
     <statBases>
       <MaxHitPoints>1300</MaxHitPoints>
@@ -1016,8 +1007,8 @@
       <turretGunDef>WNA_RisenMonolith_Gun</turretGunDef>
       <turretTopDrawSize>1.2</turretTopDrawSize>
       <turretTopOffset>(0,0.1)</turretTopOffset>
-      <turretBurstWarmupTime>0.933333</turretBurstWarmupTime>
-      <turretBurstCooldownTime>1.666667</turretBurstCooldownTime>
+      <turretBurstWarmupTime>0.466667</turretBurstWarmupTime>
+      <turretBurstCooldownTime>0.366667</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -1036,13 +1027,14 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_RisenMonolith_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>77.9</range>
-        <soundCast>GunShotA</soundCast>
+        <soundCast>WNA_MonolithAttack</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>false</canTargetBuildings>
         </targetParams>
@@ -1077,6 +1069,68 @@
       </li>
     </modExtensions>
   </ThingDef>
+  
+  <ThingDef ParentName="WNA_FurnitureBase">
+    <defName>WNA_InvisiSensorArray</defName>
+    <label>invisi-sensor array</label>
+    <description>A scanner that floods its surroundings with a disruptive resonance. Any psychically invisible creature caught in the field is forced into plain sight and briefly stunned.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Special/PsychicEmanator</texPath>
+      <drawSize>2</drawSize>
+      <drawOffset>(0,0,0.2)</drawOffset>
+    </graphicData>
+    <useHitPoints>true</useHitPoints>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.25</fillPercent>
+    <blockLight>false</blockLight>
+    <holdsRoof>false</holdsRoof>
+    <statBases>
+      <MaxHitPoints>650</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>1</Mass>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>WNA_LogisticsFramework</researchProject>
+            <factor>0.1</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>36.9</glowRadius>
+        <glowColor>(255,255,255,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+      <li Class="WNA.WNAThingComp.PropSensorArray">
+        <sensorSight>36.9</sensorSight>
+        <checkInterval>30</checkInterval>
+        <stunTicks>720</stunTicks>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>WNA_AreaDenial</li>
+      <li>WNA_CloakTechnique</li>
+    </researchPrerequisites>
+    <designatorDropdown>WNA_Security_TierII</designatorDropdown>
+    <thingCategories Inherit="false">
+      <li>WNA_Category_Turret</li>
+    </thingCategories>
+  </ThingDef>
 
   <!-- t3 -->
   <ThingDef ParentName="WNA_TurretBaseBase">
@@ -1088,7 +1142,6 @@
       <texPath>Things/Special/DropPod</texPath>
       <drawSize>2.4</drawSize>
     </graphicData>
-    <uiIconPath>Things/Special/DropPod</uiIconPath>
     <size>(2,2)</size>
     <useHitPoints>true</useHitPoints>
     <statBases>
@@ -1117,7 +1170,7 @@
       <turretTopDrawSize>2.7</turretTopDrawSize>
       <turretTopOffset>(0,0.05)</turretTopOffset>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>4.666667</turretBurstCooldownTime>
+      <turretBurstCooldownTime>2.333333</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -1136,13 +1189,14 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_GrandCannon_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>98.9</range>
-        <soundCast>Shot_Autocannon</soundCast>
+        <soundCast>WNA_GrandCannonAttack</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -1200,8 +1254,6 @@
       <drawSize>2.4</drawSize>
       <color>(255,155,0)</color>
     </graphicData>
-    <uiIconPath>Things/Special/DropPod</uiIconPath>
-    <uiIconColor>(255,155,0)</uiIconColor>
     <size>(2,2)</size>
     <useHitPoints>true</useHitPoints>
     <statBases>
@@ -1230,7 +1282,7 @@
       <turretTopDrawSize>2.7</turretTopDrawSize>
       <turretTopOffset>(0,0.05)</turretTopOffset>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>4.666667</turretBurstCooldownTime>
+      <turretBurstCooldownTime>2.333333</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -1249,13 +1301,14 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_HammerDefense_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>98.9</range>
-        <soundCast>Shot_Autocannon</soundCast>
+        <soundCast>WNA_SeismicTankAttack</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -1270,7 +1323,7 @@
     </graphicData>
     <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
     <projectile>
-      <damageDef>Thump</damageDef>
+      <damageDef>WNA_Seismic</damageDef>
       <damageAmountBase>280</damageAmountBase>
       <armorPenetrationBase>1</armorPenetrationBase>
     </projectile>
@@ -1298,8 +1351,6 @@
       <drawSize>2.4</drawSize>
       <color>(255,155,0)</color>
     </graphicData>
-    <uiIconPath>Things/Special/DropPod</uiIconPath>
-    <uiIconColor>(255,155,0)</uiIconColor>
     <size>(2,2)</size>
     <useHitPoints>true</useHitPoints>
     <statBases>
@@ -1328,7 +1379,7 @@
       <turretTopDrawSize>2.7</turretTopDrawSize>
       <turretTopOffset>(0,0.05)</turretTopOffset>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>4.666667</turretBurstCooldownTime>
+      <turretBurstCooldownTime>2.333333</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -1347,13 +1398,14 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_AntaresBattery_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>98.9</range>
-        <soundCast>Shot_Autocannon</soundCast>
+        <soundCast>WNA_AntaresAttack</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -1410,8 +1462,6 @@
       <drawSize>2.4</drawSize>
       <color>(255,155,0)</color>
     </graphicData>
-    <uiIconPath>Things/Special/DropPod</uiIconPath>
-    <uiIconColor>(255,155,0)</uiIconColor>
     <size>(2,2)</size>
     <useHitPoints>true</useHitPoints>
     <statBases>
@@ -1440,7 +1490,7 @@
       <turretTopDrawSize>2.7</turretTopDrawSize>
       <turretTopOffset>(0,0.05)</turretTopOffset>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>0.033333</turretBurstCooldownTime>
+      <turretBurstCooldownTime>0.016667</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -1459,14 +1509,15 @@
     <verbs>
       <li>
         <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_Neutralizer_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>98.9</range>
-        <soundCast>Shot_Autocannon</soundCast>
+        <soundCast>WNA_RamwagonAttack</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
         <burstShotCount>2</burstShotCount>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -1512,8 +1563,6 @@
       <drawSize>2.4</drawSize>
       <color>(255,155,0)</color>
     </graphicData>
-    <uiIconPath>Things/Special/DropPod</uiIconPath>
-    <uiIconColor>(255,155,0)</uiIconColor>
     <size>(2,2)</size>
     <useHitPoints>true</useHitPoints>
     <statBases>
@@ -1542,7 +1591,7 @@
       <turretTopDrawSize>2.7</turretTopDrawSize>
       <turretTopOffset>(0,0.05)</turretTopOffset>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>0.066667</turretBurstCooldownTime>
+      <turretBurstCooldownTime>0.033333</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -1561,14 +1610,15 @@
     <verbs>
       <li>
         <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_Hyperion_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>105.9</range>
-        <soundCast>Shot_Autocannon</soundCast>
+        <soundCast>WNA_HyperionAttack</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
         <burstShotCount>2</burstShotCount>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -1615,8 +1665,6 @@
       <color>(121,0,141)</color>
     </graphicData>
     <useHitPoints>true</useHitPoints>
-    <uiIconPath>Things/Building/Power/SolarCollector</uiIconPath>
-    <uiIconColor>(121,0,141)</uiIconColor>
     <statBases>
       <MaxHitPoints>1050</MaxHitPoints>
       <WorkToBuild>750</WorkToBuild>
@@ -1642,8 +1690,8 @@
       <turretGunDef>WNA_PsychicTower_Gun</turretGunDef>
       <turretTopDrawSize>0.9</turretTopDrawSize>
       <turretTopOffset>(0,0.05)</turretTopOffset>
-      <turretBurstWarmupTime>0.933333</turretBurstWarmupTime>
-      <turretBurstCooldownTime>2.333333</turretBurstCooldownTime>
+      <turretBurstWarmupTime>0.466667</turretBurstWarmupTime>
+      <turretBurstCooldownTime>0.7</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -1667,14 +1715,14 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_PsychicTower_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
-        <soundCast>WNA_MindControl</soundCast>
-        <requireLineOfSight>false</requireLineOfSight>
+        <soundCast>WNA_YuriMindControl</soundCast>
         <range>70.9</range>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetAnimals>true</canTargetAnimals>
           <canTargetHumans>true</canTargetHumans>
@@ -1745,7 +1793,7 @@
       <turretTopDrawSize>0.9</turretTopDrawSize>
       <turretTopOffset>(0,0.1)</turretTopOffset>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>1.333333</turretBurstCooldownTime>
+      <turretBurstCooldownTime>0.666667</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -1764,14 +1812,15 @@
     <verbs>
       <li>
         <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_DefenseMissile_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>72.9</range>
-        <soundCast>GunShotA</soundCast>
+        <soundCast>WNA_AegisAttack</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
         <burstShotCount>2</burstShotCount>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -1789,7 +1838,7 @@
     <projectile>
       <speed>100</speed>
       <damageDef>Bomb</damageDef>
-      <damageAmountBase>45</damageAmountBase>
+      <damageAmountBase>63</damageAmountBase>
       <armorPenetrationBase>1</armorPenetrationBase>
       <explosionRadius>1.9</explosionRadius>
       <explosionChanceToStartFire>0</explosionChanceToStartFire>
@@ -1845,7 +1894,7 @@
       <turretTopDrawSize>0.9</turretTopDrawSize>
       <turretTopOffset>(0,0.1)</turretTopOffset>
       <turretBurstWarmupTime>0</turretBurstWarmupTime>
-      <turretBurstCooldownTime>0.266667</turretBurstCooldownTime>
+      <turretBurstCooldownTime>0.133333</turretBurstCooldownTime>
       <combatPower>15</combatPower>
       <ai_combatDangerous>true</ai_combatDangerous>
     </building>
@@ -1864,14 +1913,15 @@
     <verbs>
       <li>
         <verbClass>WNA.WNAVerbType.VerbType_Burst</verbClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <canGoWild>false</canGoWild>
         <defaultProjectile>WNA_GattlingCannon_Proj</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>72.9</range>
-        <soundCast>GunShotA</soundCast>
+        <soundCast>Shot_AssaultRifle</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>8</muzzleFlashScale>
         <burstShotCount>2</burstShotCount>
-        <canGoWild>false</canGoWild>
         <targetParams>
           <canTargetBuildings>true</canTargetBuildings>
         </targetParams>
@@ -1888,7 +1938,7 @@
     <thingClass>WNA.WNAThingClass.WNAProj.Proj_Complex</thingClass>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>32</damageAmountBase>
+      <damageAmountBase>45</damageAmountBase>
       <armorPenetrationBase>1</armorPenetrationBase>
     </projectile>
     <modExtensions>
@@ -1900,66 +1950,5 @@
   </ThingDef>
 
   <!-- Whelingnorthan -->
-  <ThingDef ParentName="WNA_FurnitureBase">
-    <defName>WNA_InvisiSensorArray</defName>
-    <label>invisi-sensor array</label>
-    <description>A scanner that floods its surroundings with a disruptive resonance. Any psychically invisible creature caught in the field is forced into plain sight and briefly stunned.</description>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-      <texPath>Things/Building/Special/PsychicEmanator</texPath>
-      <drawSize>2</drawSize>
-      <drawOffset>(0,0,0.2)</drawOffset>
-    </graphicData>
-    <useHitPoints>true</useHitPoints>
-    <size>(1,1)</size>
-    <tickerType>Normal</tickerType>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.25</fillPercent>
-    <blockLight>false</blockLight>
-    <holdsRoof>false</holdsRoof>
-    <statBases>
-      <MaxHitPoints>650</MaxHitPoints>
-      <WorkToBuild>1200</WorkToBuild>
-      <Mass>1</Mass>
-      <DeteriorationRate>0</DeteriorationRate>
-      <Flammability>0</Flammability>
-    </statBases>
-    <costList>
-      <Steel>45</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>200</basePowerConsumption>
-        <powerUpgrades>
-          <li>
-            <researchProject>WNA_LogisticsFramework</researchProject>
-            <factor>0.1</factor>
-          </li>
-        </powerUpgrades>
-      </li>
-      <li Class="CompProperties_Glower">
-        <glowRadius>36.9</glowRadius>
-        <glowColor>(255,255,255,0)</glowColor>
-        <colorPickerEnabled>true</colorPickerEnabled>
-        <darklightToggle>true</darklightToggle>
-      </li>
-      <li Class="WNA.WNAThingComp.PropSensorArray">
-        <sensorSight>36</sensorSight>
-        <checkInterval>30</checkInterval>
-        <stunTicks>720</stunTicks>
-      </li>
-    </comps>
-    <researchPrerequisites>
-      <li>WNA_AreaDenial</li>
-      <li>WNA_CloakTechnique</li>
-    </researchPrerequisites>
-    <designatorDropdown>WNA_Security_TierII</designatorDropdown>
-    <thingCategories Inherit="false">
-      <li>WNA_Category_Turret</li>
-    </thingCategories>
-  </ThingDef>
   
 </Defs>

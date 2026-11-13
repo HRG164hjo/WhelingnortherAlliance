@@ -1,72 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- EN: The uplifting rite requires the Ideology expansion. -->
-  <WNA_UpliftUnavailableIdeology>升变仪式需要文化DLC。</WNA_UpliftUnavailableIdeology>
+  <WNA_UpliftUnavailableIdeology>“授权擢升”仪式需要“文化”DLC的支持。</WNA_UpliftUnavailableIdeology>
   <!-- EN: The uplifting rite is not yet authorized. Research "Authorized Uplifting" first. -->
-  <WNA_UpliftUnavailableResearch>升变仪式尚未获得授权。请先完成“授权升变”研究。</WNA_UpliftUnavailableResearch>
+  <WNA_UpliftUnavailableResearch>必要的研究项目缺失。请首先完成“授权擢升”研究项目。</WNA_UpliftUnavailableResearch>
   <!-- EN: The Whelingnorther Alliance cannot be found. -->
-  <WNA_UpliftUnavailableFaction>找不到威灵诺德联合会。</WNA_UpliftUnavailableFaction>
+  <WNA_UpliftUnavailableFaction>未找到威灵诺德联合会。</WNA_UpliftUnavailableFaction>
   <!-- EN: The uplifting rite cannot be used while the Whelingnorther Alliance is hostile. -->
-  <WNA_UpliftUnavailableHostile>与威灵诺德联合会敌对时无法使用升变仪式。</WNA_UpliftUnavailableHostile>
-
+  <WNA_UpliftUnavailableHostile>由于我们之间的敌对关系，威灵诺德联合会收回了对我们的授权。</WNA_UpliftUnavailableHostile>
   <!-- EN: This pawn is already taking part in another gathering. -->
-  <WNA_UpliftOrganizerBusy>该小人已经参与了另一场集会。</WNA_UpliftOrganizerBusy>
+  <WNA_UpliftOrganizerBusy>主持者正忙。</WNA_UpliftOrganizerBusy>
   <!-- EN: The host must follow the Whelingnorther creed. -->
-  <WNA_UpliftOrganizerNeedsIdeo>主持者必须信仰威灵诺德教义。</WNA_UpliftOrganizerNeedsIdeo>
-
+  <WNA_UpliftOrganizerNeedsIdeo>仪式的主持者必须在一定程度上持有威灵会的文化。</WNA_UpliftOrganizerNeedsIdeo>
   <!-- EN: This being is already taking part in another gathering. -->
-  <WNA_UpliftSubjectBusy>该存在已经参与了另一场集会。</WNA_UpliftSubjectBusy>
+  <WNA_UpliftSubjectBusy>目标正忙。</WNA_UpliftSubjectBusy>
   <!-- EN: The Whelingnorther Alliance and its PCC servants cannot be uplifted. -->
-  <WNA_UpliftSubjectForbiddenFaction>威灵诺德联合会及其PCC所属成员无法接受升变。</WNA_UpliftSubjectForbiddenFaction>
+  <WNA_UpliftSubjectForbiddenFaction>威灵会的威灵使者和恒固指令的役使单位不是可选的目标。</WNA_UpliftSubjectForbiddenFaction>
   <!-- EN: This being is not available for uplifting. -->
-  <WNA_UpliftSubjectUnavailable>该存在目前无法接受升变。</WNA_UpliftSubjectUnavailable>
+  <WNA_UpliftSubjectUnavailable>目标不能被擢升。</WNA_UpliftSubjectUnavailable>
   <!-- EN: The subject is gone. The uplifting cannot be completed. -->
-  <WNA_UpliftSubjectGone>接受者已经消失，升变无法完成。</WNA_UpliftSubjectGone>
+  <WNA_UpliftSubjectGone>仪式目标丢失，擢升仪式无法继续。</WNA_UpliftSubjectGone>
   <!-- EN: The subject could not be reshaped. -->
-  <WNA_UpliftFailed>无法重塑接受者。</WNA_UpliftFailed>
+  <WNA_UpliftFailed>目标不能被擢升。</WNA_UpliftFailed>
   <!-- EN: The uplifting is complete: {PAWN}. -->
-  <WNA_UpliftCompleted>升变完成：{PAWN}。</WNA_UpliftCompleted>
+  <WNA_UpliftCompleted>授权擢升：{PAWN}</WNA_UpliftCompleted>
   <!-- EN: Subject: {SUBJECT} -->
-  <WNA_UpliftSubjectInfo>接受者：{SUBJECT}</WNA_UpliftSubjectInfo>
+  <WNA_UpliftSubjectInfo>目标：{SUBJECT}</WNA_UpliftSubjectInfo>
   <!-- EN: an altar or a ritual spot -->
-  <WNA_UpliftTargetInfo>一座祭坛或一处仪式点</WNA_UpliftTargetInfo>
+  <WNA_UpliftTargetInfo>一座祭坛或一个仪式点</WNA_UpliftTargetInfo>
   <!-- EN: Select the being to uplift. -->
-  <WNA_UpliftSelectSubject>请选择接受升变的存在。</WNA_UpliftSelectSubject>
-
+  <WNA_UpliftSelectSubject>选定待擢升的目标</WNA_UpliftSelectSubject>
   <!-- EN: Xenotype -->
-  <WNA_UpliftXenotype>异种人</WNA_UpliftXenotype>
+  <WNA_UpliftXenotype>异种基因类型</WNA_UpliftXenotype>
   <!-- EN: Choosing a xenotype rewrites the endogenes of the uplifted pawn. Only xenotypes defined in the game data are offered; custom xenotypes are not. -->
-  <WNA_UpliftXenotypeTooltip>选择异种人会重写这名升变者的系谱基因。此处仅提供游戏数据中定义的异种人，不包含自定义异种人。</WNA_UpliftXenotypeTooltip>
-  
-
+  <WNA_UpliftXenotypeTooltip>为被擢升者选定新的基因型。</WNA_UpliftXenotypeTooltip>
   <!-- EN: The ability grant rite requires the Ideology expansion. -->
-  <WNA_AbilityRitual_RequiresIdeology>赋予能力仪式需要文化DLC。</WNA_AbilityRitual_RequiresIdeology>
+  <WNA_AbilityRitual_RequiresIdeology>“超凡觉醒”仪式需要“文化”DLC的支持。</WNA_AbilityRitual_RequiresIdeology>
   <!-- EN: The ability grant rite requires research: {RESEARCH}. -->
-  <WNA_AbilityRitual_RequiresResearch>赋予能力仪式需要完成研究：{RESEARCH}。</WNA_AbilityRitual_RequiresResearch>
+  <WNA_AbilityRitual_RequiresResearch>必要的研究项目缺失。请首先完成“超凡技艺”研究项目。</WNA_AbilityRitual_RequiresResearch>
   <!-- EN: This colonist is already taking part in another gathering. -->
-  <WNA_AbilityRitual_RecipientBusy>该殖民者已经参与了另一场集会。</WNA_AbilityRitual_RecipientBusy>
+  <WNA_AbilityRitual_RecipientBusy>殖民者正在参与其他事项。</WNA_AbilityRitual_RecipientBusy>
   <!-- EN: {PAWN} cannot gain abilities. -->
   <WNA_AbilityRitual_NeedsAbilityTracker>{PAWN}无法获得能力。</WNA_AbilityRitual_NeedsAbilityTracker>
   <!-- EN: an altar or a ritual spot -->
-  <WNA_AbilityRitual_TargetInfo>一座祭坛或一处仪式点</WNA_AbilityRitual_TargetInfo>
+  <WNA_AbilityRitual_TargetInfo>一座祭坛或一个仪式点</WNA_AbilityRitual_TargetInfo>
   <!-- EN: {PAWN} has no abilities left to gain. -->
-  <WNA_AbilityRitual_NoAbilities>{PAWN}已经没有可以获得的能力了。</WNA_AbilityRitual_NoAbilities>
+  <WNA_AbilityRitual_NoAbilities>{PAWN}缺乏可获得的能力。</WNA_AbilityRitual_NoAbilities>
   <!-- EN: {PAWN} has gained the ability {ABILITY}. -->
-  <WNA_AbilityRitual_Granted>{PAWN}获得了能力：{ABILITY}。</WNA_AbilityRitual_Granted>
-
+  <WNA_AbilityRitual_Granted>{PAWN}成功获得能力：{ABILITY}</WNA_AbilityRitual_Granted>
   <!-- EN: Choose an ability for {PAWN} -->
-  <WNA_AbilityRitual_WindowTitle>为 {PAWN} 选择一项能力</WNA_AbilityRitual_WindowTitle>
+  <WNA_AbilityRitual_WindowTitle>为{PAWN}选择一项能力</WNA_AbilityRitual_WindowTitle>
   <!-- EN: Only one ability can be granted. The rite ends as soon as you choose. -->
-  <WNA_AbilityRitual_WindowSubtitle>只能赋予一项能力。选择后仪式将立即结束。</WNA_AbilityRitual_WindowSubtitle>
+  <WNA_AbilityRitual_WindowSubtitle>每人每次仅能获得一项能力。</WNA_AbilityRitual_WindowSubtitle>
   <!-- EN: Source -->
   <WNA_AbilityRitual_Sources>来源</WNA_AbilityRitual_Sources>
   <!-- EN: Category -->
   <WNA_AbilityRitual_Categories>分类</WNA_AbilityRitual_Categories>
   <!-- EN: All sources ({COUNT}) -->
-  <WNA_AbilityRitual_AllSources>全部来源（{COUNT}）</WNA_AbilityRitual_AllSources>
+  <WNA_AbilityRitual_AllSources>所有来源（共{COUNT}项）</WNA_AbilityRitual_AllSources>
   <!-- EN: All categories ({COUNT}) -->
-  <WNA_AbilityRitual_AllCategories>全部分类（{COUNT}）</WNA_AbilityRitual_AllCategories>
+  <WNA_AbilityRitual_AllCategories>所有类型（共{COUNT}项）</WNA_AbilityRitual_AllCategories>
   <!-- EN: Uncategorized -->
   <WNA_AbilityRitual_Uncategorized>未分类</WNA_AbilityRitual_Uncategorized>
   <!-- EN: Unknown source -->
@@ -78,7 +71,7 @@
   <!-- EN: Ideology -->
   <WNA_AbilityRitual_SourceIdeology>文化</WNA_AbilityRitual_SourceIdeology>
   <!-- EN: Biotech -->
-  <WNA_AbilityRitual_SourceBiotech>生物技术</WNA_AbilityRitual_SourceBiotech>
+  <WNA_AbilityRitual_SourceBiotech>生物科技</WNA_AbilityRitual_SourceBiotech>
   <!-- EN: Anomaly -->
   <WNA_AbilityRitual_SourceAnomaly>异象</WNA_AbilityRitual_SourceAnomaly>
   <!-- EN: Odyssey -->
@@ -86,7 +79,7 @@
   <!-- EN: Whelingnorther Alliance -->
   <WNA_AbilityRitual_SourceWNA>威灵诺德联合会</WNA_AbilityRitual_SourceWNA>
   <!-- EN: Page {PAGE} / {TOTAL} -->
-  <WNA_AbilityRitual_Page>第 {PAGE} / {TOTAL} 页</WNA_AbilityRitual_Page>
+  <WNA_AbilityRitual_Page>页{PAGE} / {TOTAL}</WNA_AbilityRitual_Page>
   <!-- EN: Previous -->
   <WNA_AbilityRitual_PrevPage>上一页</WNA_AbilityRitual_PrevPage>
   <!-- EN: Next -->
@@ -94,41 +87,35 @@
   <!-- EN: Cancel rite -->
   <WNA_AbilityRitual_Cancel>取消仪式</WNA_AbilityRitual_Cancel>
   <!-- EN: No abilities match the current filters. -->
-  <WNA_AbilityRitual_NoMatches>没有符合当前筛选条件的能力。</WNA_AbilityRitual_NoMatches>
-  
-
+  <WNA_AbilityRitual_NoMatches>未找到符合条件的能力。</WNA_AbilityRitual_NoMatches>
   <!-- EN: The enthrallment rite requires the Ideology expansion. -->
-  <WNA_WorldPawnWarpUnavailableIdeology>统御征召仪式需要文化DLC。</WNA_WorldPawnWarpUnavailableIdeology>
-  <!-- EN: The enthrallment rite is not yet authorized. Research "Global WorldPawnWarp" first. -->
-  <WNA_WorldPawnWarpUnavailableResearch>统御征召仪式尚未获得授权。请先完成“群体统御”研究。</WNA_WorldPawnWarpUnavailableResearch>
-
+  <WNA_WorldPawnWarpUnavailableIdeology>“统御征召”仪式需要需要“文化”DLC的支持。</WNA_WorldPawnWarpUnavailableIdeology>
+  <!-- EN: The enthrallment rite is not yet authorized. Research "Global Entrallment" first. -->
+  <WNA_WorldPawnWarpUnavailableResearch>必要的研究项目缺失。请首先完成“广域支配”研究项目。</WNA_WorldPawnWarpUnavailableResearch>
   <!-- EN: an altar or a ritual spot -->
-  <WNA_WorldPawnWarpTargetInfo>一座祭坛或一处仪式点</WNA_WorldPawnWarpTargetInfo>
-
+  <WNA_WorldPawnWarpTargetInfo>一座祭坛或一个仪式点</WNA_WorldPawnWarpTargetInfo>
   <!-- EN: Enthrallment -->
   <WNA_WorldPawnWarpWindowTitle>统御征召</WNA_WorldPawnWarpWindowTitle>
   <!-- EN: The collective will has found these souls. Choose who shall be called. -->
-  <WNA_WorldPawnWarpWindowSubtitle>汇聚众人的心灵力量影响现实法则，被选中的人将在一段时间后被强制送往仪式举行处</WNA_WorldPawnWarpWindowSubtitle>
+  <WNA_WorldPawnWarpWindowSubtitle>汇聚集体的心灵力量拨动现实法则，被选中者将被强制送来地图。</WNA_WorldPawnWarpWindowSubtitle>
   <!-- EN: Unaffiliated -->
-  <WNA_WorldPawnWarpNoFaction>无派系</WNA_WorldPawnWarpNoFaction>
+  <WNA_WorldPawnWarpNoFaction>无所属</WNA_WorldPawnWarpNoFaction>
   <!-- EN: dead -->
-  <WNA_WorldPawnWarpDead>已死亡</WNA_WorldPawnWarpDead>
+  <WNA_WorldPawnWarpDead>死亡</WNA_WorldPawnWarpDead>
   <!-- EN: Selected: {COUNT} -->
-  <WNA_WorldPawnWarpSelected>已选择：{COUNT}</WNA_WorldPawnWarpSelected>
+  <WNA_WorldPawnWarpSelected>已选中数目：{COUNT}</WNA_WorldPawnWarpSelected>
   <!-- EN: Confirm -->
-  <WNA_WorldPawnWarpConfirm>确认</WNA_WorldPawnWarpConfirm>
+  <WNA_WorldPawnWarpConfirm>确定</WNA_WorldPawnWarpConfirm>
   <!-- EN: Cancel -->
   <WNA_WorldPawnWarpCancel>取消</WNA_WorldPawnWarpCancel>
-
   <!-- EN: No world pawns can answer the call. -->
-  <WNA_WorldPawnWarpNoTargets>没有可以响应召唤的目标。</WNA_WorldPawnWarpNoTargets>
+  <WNA_WorldPawnWarpNoTargets>未找到可被选中的目标。</WNA_WorldPawnWarpNoTargets>
   <!-- EN: The chosen pawns will be sent to the map in time. -->
-  <WNA_WorldPawnWarpQueued>命运的振子已经起振，被选中者很快将被送至地图。</WNA_WorldPawnWarpQueued>
+  <WNA_WorldPawnWarpQueued>命运的振子已经起振，被选中者将在一段时间后到达地图。</WNA_WorldPawnWarpQueued>
   <!-- EN: {PAWN} has been delivered to the map. -->
-  <WNA_WorldPawnWarpArrived>{PAWN}已抵达地图。</WNA_WorldPawnWarpArrived>
+  <WNA_WorldPawnWarpArrived>{PAWN}已经抵达地图。</WNA_WorldPawnWarpArrived>
   <!-- EN: The corpse of {PAWN} has been delivered to the map. -->
-  <WNA_WorldPawnWarpArrivedDead>{PAWN}的遗体已抵达地图。</WNA_WorldPawnWarpArrivedDead>
+  <WNA_WorldPawnWarpArrivedDead>{PAWN}的遗体已经抵达地图。</WNA_WorldPawnWarpArrivedDead>
   <!-- EN: The call could not be completed. -->
-  <WNA_WorldPawnWarpFailed>召唤未能完成。</WNA_WorldPawnWarpFailed>
-
+  <WNA_WorldPawnWarpFailed>统御征召仪式未能完成。</WNA_WorldPawnWarpFailed>
 </LanguageData>

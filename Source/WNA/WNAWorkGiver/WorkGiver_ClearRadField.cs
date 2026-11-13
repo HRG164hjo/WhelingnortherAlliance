@@ -38,7 +38,7 @@ namespace WNA.WNAWorkGiver
             if (area == null || !area[c])
                 return false;
             MapComp_RadField rad = pawn.Map.GetComponent<MapComp_RadField>();
-            if (rad == null || rad.GetRad(c) <= 0)
+            if (rad == null || !rad.AnyRadAt(c))
                 return false;
             return pawn.CanReserve(c, 1, -1, null, forced);
         }

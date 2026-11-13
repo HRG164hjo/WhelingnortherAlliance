@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="PawnFlyerBase">
+    <defName>WNA_PawnFlyer_Seismic</defName>
+    <label>seismic flight</label>
+    <thingClass>WNA.WNAThingClass.PawnFlyer_Seismic</thingClass>
+    <pawnFlyer>
+      <flightDurationMin>0.25</flightDurationMin>
+      <flightSpeed>24</flightSpeed>
+      <heightFactor>1.5</heightFactor>
+      <stunDurationTicksRange>30~60</stunDurationTicksRange>
+    </pawnFlyer>
+  </ThingDef>
+</Defs>

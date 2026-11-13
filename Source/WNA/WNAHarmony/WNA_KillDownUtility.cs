@@ -6,6 +6,7 @@ using System.Linq;
 using UnityEngine;
 using Verse;
 using WNA.WNADefOf;
+using WNA.WNAHediffClass;
 using WNA.WNAModExtension;
 using WNA.WNAThingClass;
 using WNA.WNAUtility;
@@ -69,6 +70,7 @@ namespace WNA.WNAHarmony
                 if (!(___pawn is ThingClass_BattleUnit) || hediff == null)
                     return true;
                 return hediff is Hediff_Injury
+                    || hediff is HdfClass_AttachEffect
                     || hediff.def == HediffDefOf.MissingBodyPart
                     || hediff.def == WNAMainDefOf.WNA_MindControlEffect
                     || hediff.def == WNAMainDefOf.WNA_PermaconstActive;
@@ -85,8 +87,8 @@ namespace WNA.WNAHarmony
                 if (pawnDef == null) return;
                 var extension = pawnDef.GetModExtension<KillDownUtility>();
                 if (extension?.minCapacities == null) return;
-                if (extension.minCapacities.Contains(capacity))
-                    __result = Mathf.Max(__result, extension.minLevel);
+                if (extension.minCapacities.TryGetLevel(capacity, out float minLevel))
+                    __result = Mathf.Max(__result, minLevel);
             }
         }
     }

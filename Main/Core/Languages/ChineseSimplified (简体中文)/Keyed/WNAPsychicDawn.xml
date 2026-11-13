@@ -1,46 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- EN: Promote Consensus -->
   <WNA_ConsensusMotion_GizmoLabel>建立共识</WNA_ConsensusMotion_GizmoLabel>
-
-  <!-- EN: Choose a culture and spread it to the entire faction. This changes the culture of every colonist in your faction. -->
-  <WNA_ConsensusMotion_GizmoDesc>选择一种文化，将其推广至整个派系。这将使您派系的所有殖民者转向该文化。</WNA_ConsensusMotion_GizmoDesc>
-
+  <!-- EN: Choose a culture and spread it to the entire faction. This will convert the culture of every colonist in your faction. -->
+  <WNA_ConsensusMotion_GizmoDesc>选取一个文化并将其推广至殖民地的每一名殖民者。</WNA_ConsensusMotion_GizmoDesc>
   <!-- EN: Promote Culture -->
-  <WNA_ConsensusMotion_ConfirmTitle>推广文化</WNA_ConsensusMotion_ConfirmTitle>
-
+  <WNA_ConsensusMotion_ConfirmTitle>建立共识？</WNA_ConsensusMotion_ConfirmTitle>
   <!-- EN: Are you sure you want to spread the culture "{0}" to the entire faction?\n\nEvery colonist in your faction will be converted to "{0}". -->
-  <WNA_ConsensusMotion_Confirm>确定要将文化“{0}”推广至整个派系吗？\n\n玩家派系的所有殖民者都将转向“{0}”。</WNA_ConsensusMotion_Confirm>
-
+  <WNA_ConsensusMotion_Confirm>确定要将“{0}”推广至整个派系吗？\n\n全体殖民者都将转向“{0}”。
+  </WNA_ConsensusMotion_Confirm>
   <!-- EN: There is no culture available to promote. -->
-  <WNA_ConsensusMotion_NoIdeo>当前没有可推广的文化。</WNA_ConsensusMotion_NoIdeo>
-
+  <WNA_ConsensusMotion_NoIdeo>没有可用的文化。</WNA_ConsensusMotion_NoIdeo>
   <!-- EN: The culture "{0}" has been spread to the entire faction. -->
-  <WNA_ConsensusMotion_Done>已将文化“{0}”推广至整个派系。</WNA_ConsensusMotion_Done>
-
+  <WNA_ConsensusMotion_Done>“{0}”已被成功推广至整个派系。</WNA_ConsensusMotion_Done>
   <!-- EN: Force Re-education -->
   <WNA_ConversionMotion_ForceReeducate>再教育改造</WNA_ConversionMotion_ForceReeducate>
-
   <!-- EN: the prisoner is already downed -->
   <WNA_ConversionMotion_AlreadyDowned>囚犯已倒地</WNA_ConversionMotion_AlreadyDowned>
-
-  <!-- EN: {0} has been forcibly re-educated. -->
-  <WNA_ConversionMotion_Done>已对 {0} 完成再教育改造。</WNA_ConversionMotion_Done>
-
+  <!-- EN: {0} has recived force re-education. -->
+  <WNA_ConversionMotion_Done>已完成对{0}的再教育改造。</WNA_ConversionMotion_Done>
   <!-- EN: {0} found a flash of clarity during deep reflection. -->
-  <WNA_ConfessionMotion_Event>{0}在深刻的自省中得到了一瞬的澄明。</WNA_ConfessionMotion_Event>
-
+  <WNA_ConfessionMotion_Event>{0}在近日的自省中得到了明悟。</WNA_ConfessionMotion_Event>
   <!-- EN: clarity found in reflection -->
-  <WNA_ConfessionMotion_InspirationReason>反省中得来的澄明</WNA_ConfessionMotion_InspirationReason>
-
+  <WNA_ConfessionMotion_InspirationReason>自省中的澄明</WNA_ConfessionMotion_InspirationReason>
   <!-- EN: Sentence {0} guilty -->
-  <WNA_IdentityExclusion_Sentence>宣判{0}有罪</WNA_IdentityExclusion_Sentence>
-
+  <WNA_IdentityExclusion_Sentence>判决{0}有罪</WNA_IdentityExclusion_Sentence>
   <!-- EN: Execute {0} -->
   <WNA_IdentityExclusion_Execute>对{0}实施身份排除</WNA_IdentityExclusion_Execute>
-
   <!-- EN: An error occurred while trying to remove {0}. The process failed. -->
-  <WNA_IdentityExclusion_RemoveFailed>在尝试移除{0}时发生错误，流程执行失败</WNA_IdentityExclusion_RemoveFailed>
-
+  <WNA_IdentityExclusion_RemoveFailed>处决进程意外终止：在尝试移除{0}的过程中遇到了错误。</WNA_IdentityExclusion_RemoveFailed>
 </LanguageData>

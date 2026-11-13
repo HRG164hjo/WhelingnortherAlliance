@@ -7,7 +7,7 @@
     <li>1.7</li>
   </supportedVersions>
   <description>wip.</description>
-  <modVersion IgnoreIfNoMatchingField="true">dark_revolution.261108</modVersion>
+  <modVersion IgnoreIfNoMatchingField="true">dark_revolution.261113</modVersion>
   <modIconPath IgnoreIfNoMatchingField="true">factions/wna_alliance</modIconPath>
   <loadAfter>
     <li>brrainz.harmony</li>

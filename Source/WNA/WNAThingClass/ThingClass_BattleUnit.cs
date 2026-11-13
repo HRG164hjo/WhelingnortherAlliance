@@ -31,6 +31,19 @@ namespace WNA.WNAThingClass
         {
             foreach (Gizmo gizmo in base.GetGizmos())
                 yield return gizmo;
+            if (Spawned && Faction != null && Faction.IsPlayer && abilities != null
+                && !IsColonyMechPlayerControlled && !IsColonistPlayerControlled)
+            {
+                foreach (Ability ability in abilities.AllAbilitiesForReading)
+                {
+                    if (!Drafted && !ability.def.displayGizmoWhileUndrafted && !DebugSettings.ShowDevGizmos)
+                        continue;
+                    if (!ability.GizmosVisible())
+                        continue;
+                    foreach (Gizmo gizmo in ability.GetGizmos())
+                        yield return gizmo;
+                }
+            }
             if (Spawned && Faction != null && Faction.IsPlayer && drafter != null && !drafter.ShowDraftGizmo)
                 yield return DraftGizmo();
         }

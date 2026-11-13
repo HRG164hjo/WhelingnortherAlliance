@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
-  <!-- EN: radiation clear area -->
+  <!-- EN: rad-clear area -->
   <WNA_RadClearArea>辐射清理区</WNA_RadClearArea>
-
-  <!-- EN: expand radiation-clearing area -->
-  <WNA_RadClearAreaExpand>扩展辐射清理区</WNA_RadClearAreaExpand>
-
-  <!-- EN: Designate areas to be cleared of radiation. -->
-  <WNA_RadClearAreaExpandDesc>划定辐射清理区，具有防辐射能力的小人将会清理区域内的辐射场。</WNA_RadClearAreaExpandDesc>
-
-  <!-- EN: clear radiation-clearing area -->
+  <!-- EN: expand rad-clear area -->
+  <WNA_RadClearAreaExpand>扩张辐射清理区</WNA_RadClearAreaExpand>
+  <!-- EN: Desingate a area to clean rad fields inside. Radiation-immune pawns will automatically go cleaning when abailable. -->
+  <WNA_RadClearAreaExpandDesc>指定一个区域以清除其中的辐射场。只有拥有防辐射能力的殖民者会前去清理辐射。</WNA_RadClearAreaExpandDesc>
+  <!-- EN: remove rad-clear area -->
   <WNA_RadClearAreaRemove>移除辐射清理区</WNA_RadClearAreaRemove>
-
-  <!-- EN: Remove radiation-clearing designations. -->
+  <!-- EN: Remove rad-clear area. -->
   <WNA_RadClearAreaRemoveDesc>移除辐射清理区。</WNA_RadClearAreaRemoveDesc>
-
+  <!-- EN: Rad Level -->
   <WNA_RadLevelReadout>辐射强度</WNA_RadLevelReadout>
-
+  <!-- EN: {0}: {1} ({2}/{3}) -->
+  <WNA_RadFieldReadout>{0}：{1}（{2}/{3}）</WNA_RadFieldReadout>
 </LanguageData>

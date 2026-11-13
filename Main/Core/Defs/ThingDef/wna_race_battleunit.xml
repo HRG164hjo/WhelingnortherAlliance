@@ -1,59 +1,76 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  <RulePackDef>
+    <defName>WNA_NamerUnit</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[codeName] [codeName]</li>
+        <li>r_name->[codeName] [codeName]</li>
+        <li>codeName->[pre]-[pos]</li>
+        <li>pre(p=3)->[code][code][code]</li>
+        <li>pre->[code][code][code][code]</li>
+        <li>pos(p=3)->[code][code][code]</li>
+        <li>pos->[code][code][code][code]</li>
+        <li>code->[Digit]</li>
+        <li>code->[Letter]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
 
-  <ThingDef ParentName="BasePawn">
-    <defName>WNA_BattleUnit</defName>
-    <label>battle unit</label>
-    <description>A compact combat chassis built to hold a single integrated weapon. It has no needs, no inventory and no mind of its own beyond following orders.</description>
+  <!---->
+  <ThingDef ParentName="BasePawn" Name="WNA_BattleUnitBase" Abstract="true">
     <thingClass>WNA.WNAThingClass.ThingClass_BattleUnit</thingClass>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <statBases>
-      <MarketValue>1200</MarketValue>
-      <MoveSpeed>4.7</MoveSpeed>
-      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.40</ArmorRating_Heat>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <MarketValue>500</MarketValue>
       <CarryingCapacity>0</CarryingCapacity>
-      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
-      <ComfyTemperatureMax>250</ComfyTemperatureMax>
+      <ComfyTemperatureMin>-1000</ComfyTemperatureMin>
+      <ComfyTemperatureMax>2000</ComfyTemperatureMax>
       <FilthRate>0</FilthRate>
       <Flammability>0</Flammability>
-      <Mass>60</Mass>
+      <Mass>75</Mass>
       <MentalBreakThreshold>0</MentalBreakThreshold>
       <PainShockThreshold>100</PainShockThreshold>
       <PsychicSensitivity>0</PsychicSensitivity>
+      <StaggerDurationFactor>0</StaggerDurationFactor>
       <ToxicResistance>1</ToxicResistance>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
       <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">0</BandwidthCost>
     </statBases>
+    <tools>
+      <li>
+        <label>arm</label>
+        <labelNoLocation>arm</labelNoLocation>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1</cooldownTime>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+    </tools>
     <race>
       <fleshType>Mechanoid</fleshType>
       <body>WNA_UnitBody</body>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>WNA_BattleUnitThinkTree</thinkTreeMain>
       <renderTree>Misc</renderTree>
+      <alwaysAwake>true</alwaysAwake>
       <hasGenders>false</hasGenders>
       <hasCorpse>false</hasCorpse>
       <hasMeat>false</hasMeat>
       <foodType>None</foodType>
       <needsRest>false</needsRest>
-      <baseBodySize>1.0</baseBodySize>
-      <baseHealthScale>1.0</baseHealthScale>
       <baseHungerRate>0</baseHungerRate>
       <bloodDef>Filth_MachineBits</bloodDef>
-      <lifeExpectancy>2500</lifeExpectancy>
-      <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">NamerMech</nameGenerator>
+      <lifeExpectancy>10000</lifeExpectancy>
+      <canBecomeShambler>false</canBecomeShambler>
+      <hasUnnaturalCorpse>false</hasUnnaturalCorpse>
+      <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">WNA_NamerUnit</nameGenerator>
       <lifeStageAges>
         <li>
           <def>MechanoidFullyFormed</def>
           <minAge>0</minAge>
-          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
-          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
-        </li>
-        <li MayRequire="Ludeon.RimWorld.Biotech">
-          <def>MechanoidFullyFormed</def>
-          <minAge>100</minAge>
           <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
           <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
           <soundCall>Pawn_Mech_Scyther_Call</soundCall>
@@ -65,15 +82,296 @@
       <Steel>15</Steel>
     </butcherProducts>
     <comps>
+      <li Class="WNA.WNAThingComp.PropDamageLimit">
+        <damageLimit>500</damageLimit>
+        <canAbsorb>true</canAbsorb>
+      </li>
+      <li Class="WNA.WNAThingComp.PropThingSelfHeal">
+        <ticksPerHeal>100</ticksPerHeal>
+        <healPercent>5</healPercent>
+      </li>
+      <li Class="WNA.WNAThingComp.PropBattleUnitRepairable" />
+      <li Class="WNA.WNAThingComp.PropBattleUnitControl" />
+      <li Class="WNA.WNAThingComp.PropSensorArray">
+        <sensorSight>19.9</sensorSight>
+        <checkInterval>30</checkInterval>
+        <stunTicks>720</stunTicks>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.KillDownUtility">
+        <minCapacities>
+          <Consciousness>1</Consciousness>
+          <Moving>1</Moving>
+          <Manipulation>1</Manipulation>
+        </minCapacities>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="WNA_BattleUnitBase">
+    <defName>WNA_BasicBattleUnit</defName>
+    <label>basic battle unit</label>
+    <description>A compact combat chassis built to hold a single integrated weapon.</description>
+    <statBases>
+      <MoveSpeed>6.0</MoveSpeed>
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>
+      <ArmorRating_Heat>1</ArmorRating_Heat>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+    </statBases>
+    <race>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>50</baseHealthScale>
+    </race>
+    <comps Inherit="false">
+      <li Class="WNA.WNAThingComp.PropBattleUnitRepairable" />
+      <li Class="WNA.WNAThingComp.PropBattleUnitControl" />
       <li Class="WNA.WNAThingComp.PropUnitWeapon">
         <weapons>
           <li>
             <thingDef>Gun_ChargeLance</thingDef>
             <weight>1</weight>
           </li>
+          <li>
+            <thingDef>Gun_ChargeRifle</thingDef>
+            <weight>1</weight>
+          </li>
         </weapons>
       </li>
     </comps>
+    <modExtensions Inherit="false">
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <canFreePass>true</canFreePass>
+      </li>
+      <li Class="WNA.WNAModExtension.KillDownUtility">
+        <minCapacities>
+          <Consciousness>0.6</Consciousness>
+          <Moving>0.4</Moving>
+          <Manipulation>0.5</Manipulation>
+        </minCapacities>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!---->
+  <ThingDef ParentName="WNA_BattleUnitBase">
+    <defName>WNA_AssaulterUnit</defName>
+    <label>assaulter unit</label>
+    <description>A compact combat chassis built to hold a single integrated weapon.</description>
+    <statBases>
+      <MoveSpeed>12.5</MoveSpeed>
+      <ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+      <ArmorRating_Heat>2.00</ArmorRating_Heat>
+      <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+    </statBases>
+    <race>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>125</baseHealthScale>
+    </race>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropUnitWeapon">
+        <weapons>
+          <li>
+            <thingDef>WNA_LeadHazeARifle</thingDef>
+            <weight>2</weight>
+          </li>
+          <li>
+            <thingDef>WNA_StingTeethARifle</thingDef>
+            <weight>1</weight>
+          </li>
+        </weapons>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <ignoreRoof>true</ignoreRoof>
+        <immuneToRadiation>true</immuneToRadiation>
+        <canFreePass>true</canFreePass>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="WNA_BattleUnitBase">
+    <defName>WNA_BombarderUnit</defName>
+    <label>bombarder unit</label>
+    <description>A compact combat chassis built to hold a single integrated weapon.</description>
+    <statBases>
+      <MoveSpeed>10.7</MoveSpeed>
+      <ArmorRating_Blunt>2.00</ArmorRating_Blunt>
+      <ArmorRating_Heat>2.00</ArmorRating_Heat>
+      <ArmorRating_Sharp>2.00</ArmorRating_Sharp>
+    </statBases>
+    <race>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>150</baseHealthScale>
+    </race>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropUnitWeapon">
+        <weapons>
+          <li>
+            <thingDef>WNA_LongbowMissileLauncher</thingDef>
+            <weight>1</weight>
+          </li>
+          <li>
+            <thingDef>WNA_LongbowTripleLauncher</thingDef>
+            <weight>1</weight>
+          </li>
+        </weapons>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <ignoreRoof>true</ignoreRoof>
+        <immuneToRadiation>true</immuneToRadiation>
+        <canFreePass>true</canFreePass>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="WNA_BattleUnitBase">
+    <defName>WNA_ShockerUnit</defName>
+    <label>shocker unit</label>
+    <description>A compact combat chassis built to hold a single integrated weapon.</description>
+    <statBases>
+      <MoveSpeed>10.7</MoveSpeed>
+      <ArmorRating_Blunt>3.00</ArmorRating_Blunt>
+      <ArmorRating_Heat>3.00</ArmorRating_Heat>
+      <ArmorRating_Sharp>3.00</ArmorRating_Sharp>
+    </statBases>
+    <race>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>270</baseHealthScale>
+    </race>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropUnitWeapon">
+        <weapons>
+          <li>
+            <thingDef>WNA_PacifierArcStriker</thingDef>
+            <weight>1</weight>
+          </li>
+        </weapons>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <ignoreRoof>true</ignoreRoof>
+        <immuneToRadiation>true</immuneToRadiation>
+        <canFreePass>true</canFreePass>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="WNA_BattleUnitBase">
+    <defName>WNA_CometUnit</defName>
+    <label>comet unit</label>
+    <description>A compact combat chassis built to hold a single integrated weapon.</description>
+    <statBases>
+      <MoveSpeed>12.5</MoveSpeed>
+      <ArmorRating_Blunt>3.00</ArmorRating_Blunt>
+      <ArmorRating_Heat>3.00</ArmorRating_Heat>
+      <ArmorRating_Sharp>3.00</ArmorRating_Sharp>
+    </statBases>
+    <race>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>155</baseHealthScale>
+    </race>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropUnitWeapon">
+        <weapons>
+          <li>
+            <thingDef>WNA_CometBeamEmitter</thingDef>
+            <weight>1</weight>
+          </li>
+        </weapons>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <ignoreRoof>true</ignoreRoof>
+        <immuneToRadiation>true</immuneToRadiation>
+        <canFreePass>true</canFreePass>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!---->
+  <ThingDef ParentName="WNA_BattleUnitBase">
+    <defName>WNA_DemolinCarrierUnit</defName>
+    <label>demolin carrier unnit</label>
+    <description>A battle chassis rebuilt around a support core. It keeps its distance from the enemy, hurls energy bolts, and deploys disposable bomb buggies.</description>
+    <statBases>
+      <MoveSpeed>7.2</MoveSpeed>
+      <ArmorRating_Blunt>6.00</ArmorRating_Blunt>
+      <ArmorRating_Heat>6.00</ArmorRating_Heat>
+      <ArmorRating_Sharp>6.00</ArmorRating_Sharp>
+    </statBases>
+    <race>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>1000</baseHealthScale>
+      <thinkTreeMain>WNA_CasterThinkTree</thinkTreeMain>
+    </race>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropUnitWeapon">
+        <weapons>
+          <li>
+            <thingDef>WNA_UnitChargeGun</thingDef>
+            <weight>1</weight>
+          </li>
+        </weapons>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <ignoreRoof>true</ignoreRoof>
+        <immuneToRadiation>true</immuneToRadiation>
+        <canFreePass>true</canFreePass>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="WNA_BattleUnitBase">
+    <defName>WNA_DemolinUnit</defName>
+    <label>demolin unit</label>
+    <description>A disposable charge carrier. Once it closes with an enemy it lights its fuse and detonates.</description>
+    <statBases>
+      <ArmorRating_Blunt>1</ArmorRating_Blunt>
+      <ArmorRating_Heat>1</ArmorRating_Heat>
+      <ArmorRating_Sharp>1</ArmorRating_Sharp>
+      <MoveSpeed>19.9</MoveSpeed>
+      <MaxFlightTime>60000</MaxFlightTime>
+      <FlightCooldown>0</FlightCooldown>
+    </statBases>
+    <race>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>22.5</baseHealthScale>
+      <canFlyInVacuum>true</canFlyInVacuum>
+      <flightStartChanceOnJobStart>1</flightStartChanceOnJobStart>
+      <canFlyIntoMap>false</canFlyIntoMap>
+      <canLeaveMapFlying>false</canLeaveMapFlying>
+    </race>
+    <comps>
+      <li Class="WNA.WNAThingComp.PropBattleUnitDetonator">
+        <triggerRadius>3.9</triggerRadius>
+        <checkIntervalTicks>23</checkIntervalTicks>
+        <useEnemyTarget>true</useEnemyTarget>
+        <ignoreFactionAllies>true</ignoreFactionAllies>
+      </li>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>11.9</explosiveRadius>
+        <explosiveDamageType>Thump</explosiveDamageType>
+        <damageAmountBase>640</damageAmountBase>
+        <armorPenetrationBase>2</armorPenetrationBase>
+        <wickTicks>3~7</wickTicks>
+        <explodeOnKilled>true</explodeOnKilled>
+        <destroyThingOnExplosionSize>0</destroyThingOnExplosionSize>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="WNA.WNAModExtension.TechnoConfig">
+        <immuneToRadiation>true</immuneToRadiation>
+        <immuneToMindControl>true</immuneToMindControl>
+        <canFreePass>true</canFreePass>
+      </li>
+    </modExtensions>
   </ThingDef>
 
 </Defs>

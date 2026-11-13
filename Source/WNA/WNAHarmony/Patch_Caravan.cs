@@ -3,7 +3,6 @@ using RimWorld;
 using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using UnityEngine;
 using Verse;
@@ -13,80 +12,152 @@ namespace WNA.WNAHarmony
     internal class Patch_Caravan
     {
         [HarmonyPatch(typeof(CaravanTicksPerMoveUtility))]
-        [HarmonyPatch("GetTicksPerMove", new Type[] { typeof(Caravan), typeof(StringBuilder) })]
+        [HarmonyPatch("GetTicksPerMove", new Type[] { typeof(List<Pawn>), typeof(float), typeof(float), typeof(bool), typeof(StringBuilder) })]
         internal static class Caravan_TickMove_Patch
         {
-            private static readonly List<float> localCaravanAnimalSpeedFactors = new List<float>();
-            internal static bool Prefix(Caravan caravan, ref int __result, StringBuilder explanation)
+            private const float MaxLoadSpeedBonus = 2f;
+
+            private static readonly List<float> tmpRideableSpeedFactors = new List<float>();
+
+            internal static bool Prefix(List<Pawn> pawns, float massUsage, float massCapacity, bool isShuttle,
+                StringBuilder explanation, ref int __result)
             {
-                if (caravan == null)
+                if (pawns == null || pawns.Count == 0)
                     return true;
-                var pawns = caravan.PawnsListForReading.Where(p => p != null && !p.Dead).ToList();
-                if (!pawns.Any())
-                    return true;
-                var speeds = pawns.Select(p =>
+                if (isShuttle)
                 {
-                    float baseSpeed = p.GetStatValue(StatDefOf.MoveSpeed, true);
-                    float massUsage = MassUtility.GearAndInventoryMass(p);
-                    float massCapacity = MassUtility.Capacity(p);
-                    float encumbranceFactor = Mathf.Lerp(1f, 0.5f, Mathf.Clamp01(massUsage / Mathf.Max(1f, massCapacity)));
-                    return baseSpeed * encumbranceFactor;
-                })
-                .Where(v => v > 0)
-                .ToList();
-                if (!speeds.Any())
+                    explanation?.Append("CaravanMovementSpeedShuttle".Translate());
+                    __result = 0;
+                    return false;
+                }
+
+                float referenceSpeed = ThingDefOf.Human.GetStatValueAbstract(StatDefOf.MoveSpeed);
+                if (referenceSpeed <= 0f)
                     return true;
-                float max = speeds.Max();
-                float avg = speeds.Average();
-                float combinedSpeed = (max + avg) / 2f;
-                localCaravanAnimalSpeedFactors.Clear();
+
                 int humanlikeCount = 0;
-                float caravanBonusFactorSum = 0f;
-                int caravanBonusCount = 0;
-                foreach (Pawn pawn in pawns)
+                int rideableCount = 0;
+                int bonusCount = 0;
+                int speedCount = 0;
+                float maxSpeed = 0f;
+                float speedSum = 0f;
+                float bonusSum = 0f;
+                tmpRideableSpeedFactors.Clear();
+
+                for (int i = 0; i < pawns.Count; i++)
                 {
+                    Pawn pawn = pawns[i];
+                    if (pawn == null)
+                        continue;
+
                     if (pawn.RaceProps.Humanlike)
+                    {
                         humanlikeCount++;
+                    }
                     else if (pawn.IsCaravanRideable())
-                        localCaravanAnimalSpeedFactors.Add(pawn.GetStatValue(StatDefOf.CaravanRidingSpeedFactor));
+                    {
+                        rideableCount++;
+                        tmpRideableSpeedFactors.Add(pawn.GetStatValue(StatDefOf.CaravanRidingSpeedFactor));
+                    }
+
                     if (CaravanBonusUtility.HasCaravanBonus(pawn))
                     {
-                        caravanBonusFactorSum += pawn.GetStatValue(StatDefOf.CaravanBonusSpeedFactor);
-                        caravanBonusCount++;
+                        bonusSum += pawn.GetStatValue(StatDefOf.CaravanBonusSpeedFactor);
+                        bonusCount++;
                     }
+
+                    if (pawn.Dead || pawn.Downed)
+                        continue;
+
+                    float speed = pawn.GetStatValue(StatDefOf.MoveSpeed);
+                    if (speed <= 0f)
+                        continue;
+
+                    speedCount++;
+                    speedSum += speed;
+                    if (speed > maxSpeed)
+                        maxSpeed = speed;
                 }
-                float ridingFactor = 1f;
-                if (localCaravanAnimalSpeedFactors.Count > 0 && humanlikeCount > 0)
-                {
-                    float maxAnimalFactor = localCaravanAnimalSpeedFactors.Max();
-                    float avgAnimalFactor = localCaravanAnimalSpeedFactors.Average();
-                    ridingFactor = (maxAnimalFactor + avgAnimalFactor) / 2f;
-                }
-                float bonusFactor = (caravanBonusCount == 0) ? 1f : (caravanBonusFactorSum / (float)caravanBonusCount);
-                float totalMassUsage = caravan.MassUsage;
-                float totalMassCapacity = caravan.MassCapacity;
-                float totalMassFactor = Mathf.Clamp(((totalMassCapacity + 1) / (totalMassUsage + 1)), 0.3f, 2f);
-                float finalSpeed = combinedSpeed * ridingFactor * bonusFactor * totalMassFactor;
-                int ticksPerMove = Mathf.Max(1, Mathf.RoundToInt(1000f / finalSpeed));
-                __result = ticksPerMove;
+
+                if (speedCount == 0)
+                    return true;
+
+                float combinedSpeed = (maxSpeed + speedSum / speedCount) / 2f;
+                float speedFactor = combinedSpeed / referenceSpeed;
+                float loadFactor = LoadSpeedFactor(massUsage, massCapacity);
+                float ridingFactor = RidingSpeedFactor(humanlikeCount);
+                float bonusFactor = bonusCount == 0 ? 1f : bonusSum / bonusCount;
+
+                float baseTicks = BaseHumanlikeTicksPerCell() * CaravanTicksPerMoveUtility.CellToTilesConversionRatio;
+                __result = Mathf.Max(1, Mathf.RoundToInt(baseTicks / (speedFactor * loadFactor * ridingFactor * bonusFactor)));
+
                 if (explanation != null)
                 {
-                    float tilesPerDay = 60000f / (float)ticksPerMove;
-                    explanation.Append("CaravanMovementSpeedFull".Translate() + ":");
-                    explanation.AppendLine();
-                    explanation.Append("  " + "FinalCaravanPawnsMovementSpeed".Translate() + ": "
-                                       + tilesPerDay.ToString("0.#") + " " + "TilesPerDay".Translate());
-                    explanation.AppendLine();
-                    explanation.Append("  " + "Base move speed combined (Max + Avg) / 2" + ": " + combinedSpeed.ToString("0.##"));
-                    explanation.AppendLine();
-                    explanation.Append("  " + "Riding Factor (Max + Avg) / 2" + ": " + ridingFactor.ToStringPercent());
-                    explanation.AppendLine();
-                    explanation.Append("  " + "Bonus Factor" + ": " + bonusFactor.ToStringPercent());
-                    explanation.AppendLine();
-                    explanation.Append("  " + "Total Mass Factor" + ": " + totalMassFactor.ToString("0.##"));
-                    explanation.AppendLine();
+                    AppendExplanation(explanation, baseTicks, combinedSpeed, referenceSpeed, loadFactor,
+                        ridingFactor, bonusFactor, rideableCount, humanlikeCount, __result);
                 }
                 return false;
+            }
+
+            private static float LoadSpeedFactor(float massUsage, float massCapacity)
+            {
+                if (massCapacity <= 0f)
+                    return 1f;
+                // 空载最快为 2 倍；下限防止极端超载时出现负系数（原版此时会算出 1 tick）。
+                float factor = Mathf.Lerp(MaxLoadSpeedBonus, 1f, massUsage / massCapacity);
+                return Mathf.Clamp(factor, 0.1f, MaxLoadSpeedBonus);
+            }
+
+            private static float RidingSpeedFactor(int humanlikeCount)
+            {
+                if (tmpRideableSpeedFactors.Count == 0 || humanlikeCount <= 0)
+                    return 1f;
+
+                tmpRideableSpeedFactors.Sort();
+                tmpRideableSpeedFactors.Reverse();
+                if (tmpRideableSpeedFactors.Count > humanlikeCount)
+                {
+                    tmpRideableSpeedFactors.RemoveRange(humanlikeCount, tmpRideableSpeedFactors.Count - humanlikeCount);
+                }
+
+                float sum = 0f;
+                for (int i = 0; i < humanlikeCount; i++)
+                {
+                    sum += i < tmpRideableSpeedFactors.Count ? tmpRideableSpeedFactors[i] : 1f;
+                }
+                return sum / humanlikeCount;
+            }
+
+            private static int BaseHumanlikeTicksPerCell()
+            {
+                float cellsPerSecond = ThingDefOf.Human.GetStatValueAbstract(StatDefOf.MoveSpeed) / 60f;
+                return Mathf.RoundToInt(1f / cellsPerSecond);
+            }
+
+            private static void AppendExplanation(StringBuilder sb, float baseTicks, float combinedSpeed, float referenceSpeed,
+                float loadFactor, float ridingFactor, float bonusFactor, int rideableCount, int humanlikeCount, int ticks)
+            {
+                sb.Append("CaravanMovementSpeedFull".Translate() + ":");
+                sb.AppendLine();
+                sb.Append("  " + "StatsReport_BaseValue".Translate() + ": " + (60000f / baseTicks).ToString("0.#") + " " + "TilesPerDay".Translate());
+                sb.AppendLine();
+                sb.Append("  Combined pawn speed (max + avg) / 2: " + combinedSpeed.ToString("0.##") + " / " + referenceSpeed.ToString("0.##"));
+                sb.AppendLine();
+                sb.Append("  " + "RideableAnimalsPerPeople".Translate() + $": {rideableCount} / {humanlikeCount}");
+                if (!Mathf.Approximately(ridingFactor, 1f))
+                {
+                    sb.AppendLine();
+                    sb.Append("  " + "MultiplierFromRiddenAnimals".Translate() + ": " + ridingFactor.ToStringPercent());
+                }
+                if (!Mathf.Approximately(bonusFactor, 1f))
+                {
+                    sb.AppendLine();
+                    sb.Append("  " + "MultiplierFromMoveSpeedBonus".Translate() + ": " + bonusFactor.ToStringPercent());
+                }
+                sb.AppendLine();
+                sb.Append("  " + "MultiplierForCarriedMass".Translate(loadFactor.ToStringPercent()));
+                sb.AppendLine();
+                sb.Append("  " + "FinalCaravanPawnsMovementSpeed".Translate() + ": " + (60000f / ticks).ToString("0.#") + " " + "TilesPerDay".Translate());
             }
         }
     }

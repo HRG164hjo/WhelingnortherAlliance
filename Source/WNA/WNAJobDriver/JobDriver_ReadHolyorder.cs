@@ -15,7 +15,6 @@ namespace WNA.WNAJobDriver
         private const TargetIndex ReadingSpotIndex = TargetIndex.B;
         private const int SpotSearchChecks = 40;
         private const int NearbySpotRadius = 5;
-        private const float GainPerTick = 0.001f;
         private static readonly List<IntVec3> tmpHomeCells = new List<IntVec3>();
         private Mote readMote;
         private Apparel Holyorder => job.GetTarget(HolyorderIndex).Thing as Apparel;
@@ -251,12 +250,12 @@ namespace WNA.WNAJobDriver
         {
             if (delta <= 0)
                 return;
-            float gain = GainPerTick * 50f * delta;
-            pawn.psychicEntropy?.OffsetPsyfocusDirectly(gain);
-            GainNeeds(gain);
-            GainGeneResources(gain);
+            pawn.psychicEntropy?.OffsetPsyfocusDirectly(delta);
+            GainNeeds(delta);
+            GainGeneResources(delta * 100f);
+            GainSkills(delta * 4000f);
         }
-        private void GainNeeds(float gain)
+        private void GainNeeds(float level)
         {
             List<Need> needs = pawn.needs?.AllNeeds;
             if (needs == null)
@@ -265,7 +264,7 @@ namespace WNA.WNAJobDriver
             {
                 Need need = needs[i];
                 if (IsUpgradableNeed(need))
-                    need.CurLevel += gain;
+                    need.CurLevel += level;
             }
         }
         private static bool IsUpgradableNeed(Need need)
@@ -276,7 +275,7 @@ namespace WNA.WNAJobDriver
                 return false;
             return need.CurLevel < need.MaxLevel;
         }
-        private void GainGeneResources(float gainPercent)
+        private void GainGeneResources(float res)
         {
             List<Gene> genes = pawn.genes?.GenesListForReading;
             if (genes == null)
@@ -287,8 +286,16 @@ namespace WNA.WNAJobDriver
                     continue;
                 float max = resource.Max;
                 if (max > 0f && resource.Value < max)
-                    resource.Value += max * gainPercent;
+                    resource.Value += max * res;
             }
+        }
+        private void GainSkills(float xp)
+        {
+            List<SkillRecord> skills = pawn.skills?.skills;
+            if (skills == null)
+                return;
+            for (int i = 0; i < skills.Count; i++)
+                skills[i].Learn(xp);
         }
         private static void ReadingConversion(Pawn pawn)
         {

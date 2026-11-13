@@ -23,8 +23,6 @@ namespace WNA.WNAMiscs.AdvancedTrader
         private const float StuffWidth = 64f;
         private const float PriceWidth = 68f;
         private const float OrderButtonWidth = 64f;
-        private const float QtyWidth = 84f;
-        private const float QtyButtonWidth = 22f;
         private static readonly Color SelectedTabColor = new Color(1f, 1f, 1f, 0.16f);
         private static readonly Color OrderedRowColor = new Color(0.35f, 0.9f, 0.4f, 0.09f);
 
@@ -160,11 +158,7 @@ namespace WNA.WNAMiscs.AdvancedTrader
             if (line != null)
                 Widgets.DrawBoxSolid(rect, OrderedRowColor);
             float xMax = rect.xMax - Gap;
-            Rect actionRect;
-            if (line != null)
-                actionRect = new Rect(xMax - QtyWidth, rect.y + (RowHeight - SmallButtonHeight) / 2f, QtyWidth, SmallButtonHeight);
-            else
-                actionRect = new Rect(xMax - OrderButtonWidth, rect.y + (RowHeight - SmallButtonHeight) / 2f, OrderButtonWidth, SmallButtonHeight);
+            Rect actionRect = new Rect(xMax - OrderButtonWidth, rect.y + (RowHeight - SmallButtonHeight) / 2f, OrderButtonWidth, SmallButtonHeight);
             xMax = actionRect.x - Gap;
             Rect priceRect = new Rect(xMax - PriceWidth, rect.y, PriceWidth, RowHeight);
             xMax = priceRect.x - Gap;
@@ -241,43 +235,21 @@ namespace WNA.WNAMiscs.AdvancedTrader
             }
             else
             {
-                int step = StepFor(def, context);
-                Rect minusRect = new Rect(actionRect.x, actionRect.y, QtyButtonWidth, SmallButtonHeight);
-                Rect numRect = new Rect(minusRect.xMax, actionRect.y, actionRect.width - QtyButtonWidth * 2f, SmallButtonHeight);
-                Rect plusRect = new Rect(numRect.xMax, actionRect.y, QtyButtonWidth, SmallButtonHeight);
-                if (Widgets.ButtonText(minusRect, "-"))
+                if (Widgets.ButtonText(actionRect, "ATUI_Unorder".Translate()))
                 {
-                    Notify(state, cart.SetCount(line, line.Count - step));
+                    cart.Remove(line);
+                    state.structureChanged?.Invoke();
                 }
-                Text.Anchor = TextAnchor.MiddleCenter;
-                Widgets.Label(numRect, line.Count.ToStringCached());
-                Text.Anchor = TextAnchor.MiddleLeft;
-                if (Widgets.ButtonText(plusRect, "+"))
+                TooltipHandler.TipRegion(actionRect, new TipSignal(delegate
                 {
-                    Notify(state, cart.SetCount(line, line.Count + step));
-                }
-                TooltipHandler.TipRegion(numRect, new TipSignal(delegate
-                {
-                    return "ATUI_QtyTip".Translate(line.Count.ToStringCached(),
-                        line.Capacity.ToStringCached(), line.Cap.ToStringCached());
-                }, def.shortHash * 301));
+                    return "ATUI_UnorderTip".Translate(def.LabelCap.RawText);
+                }, def.shortHash * 303));
             }
 
             Text.Anchor = TextAnchor.UpperLeft;
             Text.Font = GameFont.Small;
         }
 
-        private static void Notify(AdvancedTradeCatalogState state, bool structureChanged)
-        {
-            if (structureChanged)
-            {
-                state.structureChanged?.Invoke();
-            }
-            else
-            {
-                state.countsChanged?.Invoke();
-            }
-        }
         private static string SubLabelFor(ThingDef def, ThingDef stuff)
         {
             string sub = (stuff != null) ? stuff.LabelCap.RawText : "";
@@ -287,15 +259,6 @@ namespace WNA.WNAMiscs.AdvancedTrader
                 sub = sub.NullOrEmpty() ? tag : (sub + " · " + tag);
             }
             return sub.NullOrEmpty() ? def.defName : sub;
-        }
-        private static int StepFor(ThingDef def, AdvancedTradeContext context)
-        {
-            if (def.Minifiable || def.stackLimit <= 1)
-            {
-                return 1;
-            }
-            int configured = context.config?.defaultStackableCount ?? 25;
-            return Mathf.Clamp(configured, 1, 100);
         }
     }
     internal class AdvancedTradeCatalogState
@@ -307,7 +270,6 @@ namespace WNA.WNAMiscs.AdvancedTrader
         public bool dirty = true;
         public int matchedCount;
         public Action structureChanged;
-        public Action countsChanged;
         public void MarkDirty()
         {
             dirty = true;

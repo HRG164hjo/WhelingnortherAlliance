@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Stacks: {0} / {1} -->
+  <WNA_AE_Stacks>层数：{0} / {1}</WNA_AE_Stacks>
+  <!-- EN: unlimited -->
+  <WNA_AE_Unlimited>无上限</WNA_AE_Unlimited>
+  <!-- EN: Duration: permanent -->
+  <WNA_AE_Permanent>持续时间：永久</WNA_AE_Permanent>
+  <!-- EN: Time remaining: {0} -->
+  <WNA_AE_Remaining>剩余时间：{0}</WNA_AE_Remaining>
+  <!-- EN: Shield: {0} / {1} -->
+  <WNA_AE_Shield>护盾：{0} / {1}</WNA_AE_Shield>
+  <!-- EN: Shield rebuilding in {0} -->
+  <WNA_AE_ShieldRespawning>护盾将在 {0} 后重建</WNA_AE_ShieldRespawning>
+  <!-- EN: Shield broken -->
+  <WNA_AE_ShieldBroken>护盾已破碎</WNA_AE_ShieldBroken>
+  <!-- EN: Takes {0} damage every {1} -->
+  <WNA_AE_DoT>每 {1} 受到 {0} 点伤害</WNA_AE_DoT>
+  <!-- EN: Heals {0} every {1} -->
+  <WNA_AE_DoTHeal>每 {1} 恢复 {0} 点生命</WNA_AE_DoTHeal>
+  <!-- EN: Cannot attack -->
+  <WNA_AE_DisableAttack>无法攻击</WNA_AE_DisableAttack>
+  <!-- EN: Cannot use abilities -->
+  <WNA_AE_DisableAbility>无法使用能力</WNA_AE_DisableAbility>
+  <!-- EN: Suppressed: abilities cannot be used. -->
+  <WNA_AE_BlockedAbility>被压制：无法使用能力。</WNA_AE_BlockedAbility>
+  <!-- EN: Attach shield -->
+  <WNA_AE_ShieldGizmo>附着护盾</WNA_AE_ShieldGizmo>
+</LanguageData>

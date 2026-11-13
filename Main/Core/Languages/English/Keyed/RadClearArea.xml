@@ -13,4 +13,6 @@
 
   <WNA_RadLevelReadout>Rad Level</WNA_RadLevelReadout>
 
+  <WNA_RadFieldReadout>{0}: {1} ({2}/{3})</WNA_RadFieldReadout>
+
 </LanguageData>

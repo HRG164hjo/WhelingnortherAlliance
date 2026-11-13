@@ -50,7 +50,7 @@
   </Operation>
   
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>Defs/GeneDef[defName="WNA_Mastery"]</xpath>
+    <xpath>Defs/GeneDef[defName="WNA_PrefabExpert"]</xpath>
     <value>
       <li Class="VEF.Genes.GeneExtension">
         <skillDegradation>false</skillDegradation>

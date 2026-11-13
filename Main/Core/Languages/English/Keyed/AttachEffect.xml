@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <WNA_AE_Stacks>Stacks: {0} / {1}</WNA_AE_Stacks>
+
+  <WNA_AE_Unlimited>unlimited</WNA_AE_Unlimited>
+
+  <WNA_AE_Permanent>Duration: permanent</WNA_AE_Permanent>
+
+  <WNA_AE_Remaining>Time remaining: {0}</WNA_AE_Remaining>
+
+  <WNA_AE_Shield>Shield: {0} / {1}</WNA_AE_Shield>
+
+  <WNA_AE_ShieldRespawning>Shield rebuilding in {0}</WNA_AE_ShieldRespawning>
+
+  <WNA_AE_ShieldBroken>Shield broken</WNA_AE_ShieldBroken>
+
+  <WNA_AE_DoT>Takes {0} damage every {1}</WNA_AE_DoT>
+
+  <WNA_AE_DoTHeal>Heals {0} every {1}</WNA_AE_DoTHeal>
+
+  <WNA_AE_DisableAttack>Cannot attack</WNA_AE_DisableAttack>
+
+  <WNA_AE_DisableAbility>Cannot use abilities</WNA_AE_DisableAbility>
+
+  <WNA_AE_BlockedAbility>Suppressed: abilities cannot be used.</WNA_AE_BlockedAbility>
+
+  <WNA_AE_ShieldGizmo>Attach shield</WNA_AE_ShieldGizmo>
+
+</LanguageData>

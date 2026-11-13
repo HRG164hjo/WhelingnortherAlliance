@@ -11,7 +11,7 @@
     <genes>
       <li>WNA_Unshakable</li>
       <li>WNA_Apathy</li>
-      <li>WNA_Mastery</li>
+      <li>WNA_PrefabExpert</li>
       <li>PerfectImmunity</li>
       <li>DiseaseFree</li>
       <li>TotalHealing</li>
@@ -85,24 +85,24 @@
   </GeneDef>
 
   <GeneDef ParentName="WNA_GeneBase">
-    <defName>WNA_Mastery</defName>
-    <label>mastery</label>
-    <labelShortAdj>mastery</labelShortAdj>
+    <defName>WNA_PrefabExpert</defName>
+    <label>prefabricated expertise</label>
+    <labelShortAdj>expert</labelShortAdj>
     <description>Carriers of this gene has precoded knowledge and skills built into them.</description>
     <iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
     <aptitudes>
-      <Shooting>20</Shooting>
-      <Melee>20</Melee>
-      <Construction>20</Construction>
-      <Mining>20</Mining>
-      <Cooking>20</Cooking>
-      <Plants>20</Plants>
-      <Animals>20</Animals>
-      <Crafting>20</Crafting>
-      <Artistic>20</Artistic>
-      <Medicine>20</Medicine>
-      <Social>20</Social>
-      <Intellectual>20</Intellectual>
+      <Shooting>99</Shooting>
+      <Melee>99</Melee>
+      <Construction>99</Construction>
+      <Mining>99</Mining>
+      <Cooking>99</Cooking>
+      <Plants>99</Plants>
+      <Animals>99</Animals>
+      <Crafting>99</Crafting>
+      <Artistic>99</Artistic>
+      <Medicine>99</Medicine>
+      <Social>99</Social>
+      <Intellectual>99</Intellectual>
     </aptitudes>
   </GeneDef>
 

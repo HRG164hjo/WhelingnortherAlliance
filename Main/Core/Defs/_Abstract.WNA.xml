@@ -4,18 +4,6 @@
   <!-- ======== -->
   <!-- ======== -->
   <!-- AbilityDef -->
-  <AbilityDef Abstract="true" Name="WNA_AbilityBase">
-    <category>WNA_AbilityCategory</category>
-    <iconPath>karma</iconPath>
-    <cooldownTicksRange>60</cooldownTicksRange>
-    <stunTargetWhileCasting>true</stunTargetWhileCasting>
-    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-    <hostile>false</hostile>
-    <aiCanUse>false</aiCanUse>
-    <writeCombatLog>true</writeCombatLog>
-    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-  </AbilityDef>
 
 
   <!-- ======== -->

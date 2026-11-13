@@ -1,13 +1,11 @@
 ﻿using HarmonyLib;
 using System;
-using System.Linq;
 using System.Reflection;
 using UnityEngine;
 using Verse;
 using Verse.AI;
 using WNA.WNADefOf;
 using WNA.WNAMiscs;
-using WNA.WNAModExtension;
 using WNA.WNAUtility;
 
 namespace WNA.WNAHarmony
@@ -31,10 +29,7 @@ namespace WNA.WNAHarmony
                     return false;
                 if (General.IsWNARace(pawn))
                     return true;
-                if (pawn.def?.GetModExtension<TechnoConfig>()?.canFreePass == true)
-                    return true;
-                if (pawn.health?.hediffSet?.hediffs?.Any(h =>
-                    h.def?.GetModExtension<TechnoConfig>()?.canFreePass == true) == true)
+                if (TechnoConfigUtility.PawnHasFlag(pawn, TechnoFlag.CanFreePass))
                     return true;
                 if (General.PawnHasIdeo(pawn) && General.IsInternalFaction(pawn.Faction))
                     return true;

@@ -41,8 +41,8 @@ namespace WNA.WNAJobDriver
                 workDone += pawn.GetStatValue(StatDefOf.GeneralLaborSpeed) * (float)delta;
                 if (workDone >= WorkAmount)
                 {
-                    ClearRadAt(TargetLocA, Map);
-                    SpawnWastepack(TargetLocA, Map);
+                    WNA_RadFieldDef cleared = ClearRadAt(TargetLocA, Map);
+                    SpawnClearProduct(TargetLocA, Map, cleared);
                     ReadyForNextToil();
                 }
             };
@@ -53,12 +53,14 @@ namespace WNA.WNAJobDriver
             toil.WithEffect(EffecterDefOf.Clean, TargetIndex.A);
             yield return toil;
         }
-        private void ClearRadAt(IntVec3 root, Map map)
+        private WNA_RadFieldDef ClearRadAt(IntVec3 root, Map map)
         {
             MapComp_RadField rad = map.GetComponent<MapComp_RadField>();
             Area_RadClearArea area = WNARadFieldUtility.GetRadClearArea(map);
             if (rad == null || area == null)
-                return;
+                return null;
+            WNA_RadFieldDef dominant = null;
+            int dominantValue = 0;
             tmpCellsToClear.Clear();
             tmpCellsToClear.AddRange(area.ActiveCells.Where((IntVec3 c) => c.DistanceToSquared(root) < MaxDistanceToClearSquared));
             tmpCellsToClear.SortBy((IntVec3 c) => c.DistanceToSquared(root));
@@ -67,7 +69,7 @@ namespace WNA.WNAJobDriver
             {
                 if (CanClear(root, map, tmpCellsToClear[i], rad))
                 {
-                    rad.SetRad(tmpCellsToClear[i], 0);
+                    TrackCleared(rad, tmpCellsToClear[i], ref dominant, ref dominantValue);
                     num--;
                     if (num <= 0)
                         break;
@@ -76,19 +78,28 @@ namespace WNA.WNAJobDriver
             tmpCellsToClear.Clear();
             if (num > 0)
             {
-                num -= ClearRadially(root, map, rad, num);
+                num -= ClearRadially(root, map, rad, num, false, ref dominant, ref dominantValue);
                 if (num > 0)
-                    ClearRadially(root, map, rad, num, ignoreOtherPawnsClearingCell: true);
+                    ClearRadially(root, map, rad, num, true, ref dominant, ref dominantValue);
             }
+            return dominant;
         }
-        private int ClearRadially(IntVec3 root, Map map, MapComp_RadField rad, int maxToClear = 5, bool ignoreOtherPawnsClearingCell = false)
+        private static void TrackCleared(MapComp_RadField rad, IntVec3 c, ref WNA_RadFieldDef dominant, ref int dominantValue)
+        {
+            int value = rad.ClearAllRad(c, out WNA_RadFieldDef def);
+            if (def == null || value <= dominantValue)
+                return;
+            dominant = def;
+            dominantValue = value;
+        }
+        private int ClearRadially(IntVec3 root, Map map, MapComp_RadField rad, int maxToClear, bool ignoreOtherPawnsClearingCell, ref WNA_RadFieldDef dominant, ref int dominantValue)
         {
             int num = 0;
             foreach (IntVec3 item in GenRadial.RadialCellsAround(root, MaxDistanceToClear, useCenter: true))
             {
                 if (CanClear(root, map, item, rad, ignoreOtherPawnsClearingCell))
                 {
-                    rad.SetRad(item, 0);
+                    TrackCleared(rad, item, ref dominant, ref dominantValue);
                     num++;
                     if (num >= maxToClear)
                         break;
@@ -101,7 +112,7 @@ namespace WNA.WNAJobDriver
             Area_RadClearArea area = WNARadFieldUtility.GetRadClearArea(map);
             if (area == null || !area[c])
                 return false;
-            if (rad.GetRad(c) <= 0)
+            if (!rad.AnyRadAt(c))
                 return false;
             if (!ignoreOtherPawnsClearingCell && AnyOtherPawnClearing(pawn, c))
                 return false;
@@ -125,13 +136,13 @@ namespace WNA.WNAJobDriver
             }
             return false;
         }
-        private void SpawnWastepack(IntVec3 root, Map map)
+        private void SpawnClearProduct(IntVec3 root, Map map, WNA_RadFieldDef fieldDef)
         {
-            ThingDef wastepack = DefDatabase<ThingDef>.GetNamedSilentFail("WNA_ParticleVial");
-            if (wastepack == null)
+            ThingDef thingDef = fieldDef?.clearThing;
+            if (thingDef == null)
                 return;
-            IntVec3 intVec = CellFinder.FindNoWipeSpawnLocNear(root, map, wastepack, Rot4.North);
-            GenSpawn.Spawn(wastepack, intVec.IsValid ? intVec : root, map);
+            IntVec3 intVec = CellFinder.FindNoWipeSpawnLocNear(root, map, thingDef, Rot4.North);
+            GenSpawn.Spawn(thingDef, intVec.IsValid ? intVec : root, map);
         }
     }
 }

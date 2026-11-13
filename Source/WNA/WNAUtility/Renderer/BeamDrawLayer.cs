@@ -51,6 +51,7 @@ namespace WNA.WNAUtility.Renderer
             BeamDrawLayer layer = For(map);
             if (layer == null)
             {
+                Log.WarningOnce("WNA: BeamDrawLayer is not available on map " + (map?.uniqueID.ToString() ?? "null") + "; beam effect was skipped.", 771207);
                 effect.Release();
                 return;
             }

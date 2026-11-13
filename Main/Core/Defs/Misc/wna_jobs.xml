@@ -30,4 +30,12 @@
     <casualInterruptible>false</casualInterruptible>
     <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
   </JobDef>
+
+  <JobDef>
+    <defName>WNA_RepairBattleUnit</defName>
+    <driverClass>WNA.WNAJobDriver.JobDriver_RepairBattleUnit</driverClass>
+    <reportString>repairing TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+  </JobDef>
 </Defs>

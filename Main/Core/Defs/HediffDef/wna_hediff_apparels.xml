@@ -108,7 +108,8 @@
       <li Class="HediffCompProperties_RemoveIfApparelDropped"/>
       <li Class="WNA.WNAHediffComp.PropRadFieldSpreader">
         <config>
-          <radLevel>2000</radLevel>
+          <radField>WNA_RadField_Radiation</radField>
+          <radLevel>500</radLevel>
           <radius>9.9</radius>
           <edgeFactor>0.25</edgeFactor>
           <threshold>0</threshold>

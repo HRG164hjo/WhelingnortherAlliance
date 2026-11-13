@@ -53,6 +53,7 @@
             <li>Weapons</li>
             <li>Apparel</li>
             <li>MortarShells</li>
+            <li MayRequire="Aoba.Exosuit.Framework">MF_Module</li>
           </categories>
         </filter>
         <count>1</count>
@@ -63,6 +64,7 @@
         <li>Weapons</li>
         <li>Apparel</li>
         <li>MortarShells</li>
+        <li MayRequire="Aoba.Exosuit.Framework">MF_Module</li>
       </categories>
     </fixedIngredientFilter>
     <specialProducts>

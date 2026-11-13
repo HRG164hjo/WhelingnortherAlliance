@@ -2,8 +2,8 @@
 using UnityEngine;
 using Verse;
 using WNA.WNAArea;
+using WNA.WNADefOf;
 using WNA.WNAMapComp;
-using WNA.WNAModExtension;
 
 namespace WNA.WNAUtility
 {
@@ -28,51 +28,33 @@ namespace WNA.WNAUtility
 
         public static void RadSpread(IntVec3 c, Map map, RadSpreadConfig config, float finalRadius, int finalRadLevel)
         {
+            RadSpread(c, map, config, config.FieldDef, finalRadius, finalRadLevel);
+        }
+
+        public static void RadSpread(IntVec3 c, Map map, RadSpreadConfig config, WNA_RadFieldDef def, float finalRadius, int finalRadLevel)
+        {
             MapComp_RadField radMap = map.GetComponent<MapComp_RadField>();
-            if (radMap == null) return;
+            if (radMap == null || def == null) return;
             foreach (IntVec3 cell in GenRadial.RadialCellsAround(c, finalRadius, true))
             {
                 if (!cell.InBounds(map)) continue;
                 float distance = cell.DistanceTo(c);
                 int radToAdd = config.CalculateRadiation(distance, finalRadius, finalRadLevel);
                 if (radToAdd > 0)
-                    radMap.AddRad(cell, radToAdd);
+                    radMap.AddRad(cell, def, radToAdd);
             }
         }
 
         internal static bool ImmuneToRadiation(Pawn pawn)
         {
-            TechnoConfig pawnConfig = TechnoConfig.Get(pawn.def);
-            if (pawnConfig != null && pawnConfig.immuneToRadiation == true)
-                return true;
-            if (pawn.apparel != null)
-            {
-                foreach (Apparel apparel in pawn.apparel.WornApparel)
-                {
-                    TechnoConfig apparelConfig = TechnoConfig.Get(apparel.def);
-                    if (apparelConfig != null && apparelConfig.immuneToRadiation == true)
-                        return true;
-                }
-            }
-            if (pawn.health != null && pawn.health.hediffSet != null)
-            {
-                foreach (Hediff hediff in pawn.health.hediffSet.hediffs)
-                {
-                    if (hediff.def != null)
-                    {
-                        TechnoConfig hediffConfig = TechnoConfig.Get(hediff.def);
-                        if (hediffConfig != null && hediffConfig.immuneToRadiation == true)
-                            return true;
-                    }
-                }
-            }
-            return false;
+            return TechnoConfigUtility.PawnHasFlag(pawn, TechnoFlag.ImmuneToRadiation);
         }
     }
     internal class RadSpreadConfig
     {
         // --- 基础参数 ---
-        public int radLevel = 500;
+        public WNA_RadFieldDef radField = null;
+        public int radLevel = 0;
         public float radius = 5f;
         public float edgeFactor = 0.4f;
         public float threshold = 0.6f;
@@ -82,6 +64,15 @@ namespace WNA.WNAUtility
         public float radLevelFactor = 1f;
         public bool isSeverityRadRadius = false;
         public float radRadiusFactor = 1f;
+
+        public WNA_RadFieldDef FieldDef => radField ?? WNAMainDefOf.WNA_RadField_Radiation;
+
+        public int ResolveRadLevel()
+        {
+            if (radLevel > 0) return radLevel;
+            return FieldDef?.intensityMax ?? 0;
+        }
+
         public int CalculateRadiation(float distance, float finalRadius, int finalRadLevel)
         {
             if (distance >= finalRadius) return 0;

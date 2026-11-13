@@ -94,4 +94,24 @@
       <color>(123,80,167,255)</color>
     </graphicData>
   </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>WNA_Mote_AttachEffectShield</defName>
+    <label>attach effect shield</label>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.15</fadeInTime>
+      <solidTime>999999</solidTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <needsMaintenance>true</needsMaintenance>
+    </mote>
+    <graphicData>
+      <texPath>Other/ShieldBubble</texPath>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <color>(255,255,255,255)</color>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+  </ThingDef>
 </Defs>
