@@ -10,6 +10,7 @@
     <cooldownTicksRange>60</cooldownTicksRange>
     <stunTargetWhileCasting>true</stunTargetWhileCasting>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <hostile>false</hostile>
     <aiCanUse>false</aiCanUse>
     <writeCombatLog>true</writeCombatLog>

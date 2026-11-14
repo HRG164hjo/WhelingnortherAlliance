@@ -9,7 +9,7 @@ namespace WNA.WNAJobDriver
 {
     internal class JobDriver_RepairBattleUnit : JobDriver
     {
-        private const int DefaultTicksPerHeal = 120;
+        private const int DefaultTicksPerHeal = 20;
 
         private int ticksToNextRepair;
 
@@ -30,7 +30,7 @@ namespace WNA.WNAJobDriver
         {
             this.FailOnDestroyedOrNull(TargetIndex.A);
             this.FailOnForbidden(TargetIndex.A);
-            this.FailOn(() => Unit == null || Unit.Dead || Unit.IsAttacking());
+            this.FailOn(() => Unit == null || Unit.Dead);
             if (!RepairingSelf)
                 yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
             Toil toil;
@@ -98,7 +98,7 @@ namespace WNA.WNAJobDriver
             }
             if (target == null)
                 return;
-            float healAmount = 10f * Mathf.Max(1f, unit.HealthScale) * Mathf.Max(1f, unit.BodySize);
+            float healAmount = 1f * Mathf.Max(1f, unit.HealthScale) * Mathf.Max(1f, unit.BodySize);
             target.Heal(healAmount);
             if (target.Severity <= 0f)
                 unit.health.RemoveHediff(target);

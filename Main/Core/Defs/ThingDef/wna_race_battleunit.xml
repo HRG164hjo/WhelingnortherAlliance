@@ -350,7 +350,7 @@
     </race>
     <comps>
       <li Class="WNA.WNAThingComp.PropBattleUnitDetonator">
-        <triggerRadius>3.9</triggerRadius>
+        <triggerRadius>2.9</triggerRadius>
         <checkIntervalTicks>23</checkIntervalTicks>
         <useEnemyTarget>true</useEnemyTarget>
         <ignoreFactionAllies>true</ignoreFactionAllies>
@@ -360,7 +360,7 @@
         <explosiveDamageType>Thump</explosiveDamageType>
         <damageAmountBase>640</damageAmountBase>
         <armorPenetrationBase>2</armorPenetrationBase>
-        <wickTicks>3~7</wickTicks>
+        <wickTicks>13~17</wickTicks>
         <explodeOnKilled>true</explodeOnKilled>
         <destroyThingOnExplosionSize>0</destroyThingOnExplosionSize>
       </li>

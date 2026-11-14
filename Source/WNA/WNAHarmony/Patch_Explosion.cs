@@ -10,6 +10,7 @@ namespace WNA.WNAHarmony
         private static readonly HashSet<string> damageList = new HashSet<string>
         {
             "BombSuper",
+            "Thump",
             "WNA_ChimingBlaze",
             "WNA_RadBurn",
             "WNA_Hypothermal",
@@ -18,25 +19,15 @@ namespace WNA.WNAHarmony
         [HarmonyPatch(typeof(DamageWorker), nameof(DamageWorker.ExplosionAffectCell))]
         internal static class ExplosionAffectCell_Patch
         {
-            // Roofs are cleared one cell at a time as the blast reaches it, instead of one extra
-            // radial sweep before the explosion starts. This skips cells the blast never affects
-            // (out of bounds, excludeRadius, maps removed mid-expansion) and spreads the roof-grid
-            // notifications over the expansion ticks.
             static void Prefix(Explosion explosion, IntVec3 c)
             {
                 if (!damageList.Contains(explosion.damType.defName))
-                {
                     return;
-                }
                 Map map = explosion.Map;
                 if (map == null || map != Find.CurrentMap)
-                {
                     return;
-                }
                 if (map.roofGrid.RoofAt(c) != null)
-                {
                     map.roofGrid.SetRoof(c, null);
-                }
             }
         }
         [HarmonyPatch(typeof(DamageWorker), nameof(DamageWorker.ExplosionCellsToHit),

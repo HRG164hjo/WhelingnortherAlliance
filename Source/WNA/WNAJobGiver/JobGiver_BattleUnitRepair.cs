@@ -17,16 +17,13 @@ namespace WNA.WNAJobGiver
                 return null;
             if (pawn.Drafted || pawn.Faction == null)
                 return null;
-
             if (CanRepair(pawn, pawn))
                 return JobMaker.MakeJob(WNAMainDefOf.WNA_RepairBattleUnit, pawn);
-
             Pawn ally = FindAllyToRepair(pawn);
             if (ally != null)
                 return JobMaker.MakeJob(WNAMainDefOf.WNA_RepairBattleUnit, ally);
             return null;
         }
-
         private static bool CanRepair(Pawn worker, Pawn target)
         {
             if (target.Dead || target.Destroyed || target.Map != worker.Map)
@@ -34,13 +31,12 @@ namespace WNA.WNAJobGiver
             CompBattleUnitRepairable repairable = target.TryGetComp<CompBattleUnitRepairable>();
             if (repairable == null || !repairable.autoRepair)
                 return false;
-            if (target.IsBurning() || target.IsAttacking() || target.IsForbidden(worker))
+            if (target.IsBurning() || target.IsForbidden(worker))
                 return false;
             if (!WorkGiver_RepairBattleUnit.NeedsRepair(target))
                 return false;
             return target == worker || worker.CanReserveAndReach(target, PathEndMode.Touch, Danger.Deadly);
         }
-
         private static Pawn FindAllyToRepair(Pawn worker)
         {
             Pawn best = null;

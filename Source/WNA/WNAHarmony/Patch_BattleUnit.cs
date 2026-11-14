@@ -1,5 +1,6 @@
 using HarmonyLib;
 using RimWorld;
+using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -112,6 +113,17 @@ namespace WNA.WNAHarmony
                     return true;
                 __result = "CannotControlMechNeverControllable".Translate();
                 return false;
+            }
+        }
+
+        [HarmonyPatch(typeof(CaravanUIUtility), nameof(CaravanUIUtility.AddPawnsSections))]
+        internal static class Patch_CaravanAddPawnsSections
+        {
+            [HarmonyPostfix]
+            internal static void Postfix(TransferableOneWayWidget widget, List<TransferableOneWay> transferables)
+            {
+                widget.AddSection("WNA_BattleUnitsSection".Translate(),
+                    transferables.Where(x => x.ThingDef.category == ThingCategory.Pawn && x.AnyThing is ThingClass_BattleUnit));
             }
         }
     }

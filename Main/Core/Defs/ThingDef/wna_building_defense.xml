@@ -991,18 +991,6 @@
       <Steel>75</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>450</basePowerConsumption>
-        <powerUpgrades>
-          <li>
-            <researchProject>WNA_LogisticsFramework</researchProject>
-            <factor>0.1</factor>
-          </li>
-        </powerUpgrades>
-      </li>
-    </comps>
     <building>
       <turretGunDef>WNA_RisenMonolith_Gun</turretGunDef>
       <turretTopDrawSize>1.2</turretTopDrawSize>

@@ -40,4 +40,6 @@
 
   <WNAMod_autoDefenseGeneratedMapsDesc>&lt;color=#ff6666&gt;Warning: this may cause unexpected bugs.&lt;/color&gt;\n\nIf enabled, a defense missile can strike a hostile world object whose map has already been generated. The missile detonates at the map center and the map is then removed. Surviving player colonists, prisoners and slaves are force-marched into a caravan together with the corpses of fallen colonists. Disabled by default.</WNAMod_autoDefenseGeneratedMapsDesc>
 
+  <WNA_BattleUnitsSection>Battle units</WNA_BattleUnitsSection>
+
 </LanguageData>

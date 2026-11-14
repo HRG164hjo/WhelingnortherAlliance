@@ -12,6 +12,8 @@
         <li Class="ThinkNode_Subtree">
           <treeDef>Downed</treeDef>
         </li>
+        <!-- Board/leave gravship -->
+        <li Class="JobGiver_BoardOrLeaveGravship" />
         <li Class="ThinkNode_QueuedJob" />
         <li Class="ThinkNode_ConditionalOfPlayerFaction">
           <subNodes>
@@ -75,6 +77,8 @@
         <li Class="ThinkNode_Subtree">
           <treeDef>Downed</treeDef>
         </li>
+        <!-- Board/leave gravship -->
+        <li Class="JobGiver_BoardOrLeaveGravship" />
         <li Class="ThinkNode_QueuedJob" />
         <li Class="ThinkNode_ConditionalOfPlayerFaction">
           <subNodes>

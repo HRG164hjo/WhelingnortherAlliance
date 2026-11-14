@@ -44,4 +44,6 @@
   <WNAMod_autoDefenseGeneratedMaps>允许攻击已生成的地图\n\n（默认关闭）</WNAMod_autoDefenseGeneratedMaps>
   <!-- EN: <color=#ff6666>Warning: this may cause unexpected bugs.</color>\n\nIf enabled, a defense missile can strike a hostile world object whose map has already been generated. The missile detonates at the map center and the map is then removed. Surviving player colonists, prisoners and slaves are force-marched into a caravan together with the corpses of fallen colonists. Disabled by default. -->
   <WNAMod_autoDefenseGeneratedMapsDesc>&lt;color=#FF6666&gt;警告：开启该选项可能导致意料外的行为和错误。&lt;/color&gt;\n\n允许自动防御系统攻击已生成地图的世界目标，被打击的地图将被移除，幸存的殖民者、囚犯和奴隶将与殖民者尸体一同被强制转移至一枝远行队中。</WNAMod_autoDefenseGeneratedMapsDesc>
+  <!-- EN: Battle units -->
+  <WNA_BattleUnitsSection>战斗单位</WNA_BattleUnitsSection>
 </LanguageData>

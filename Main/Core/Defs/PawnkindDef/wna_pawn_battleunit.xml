@@ -3,6 +3,7 @@
   <PawnKindDef Abstract="true" Name="WNA_BattleUnitKindBase">
     <defaultFactionType>WNA_FactionWNA</defaultFactionType>
     <aiAvoidCover>true</aiAvoidCover>
+    <allowInMechClusters>false</allowInMechClusters>
     <destroyGearOnDrop>true</destroyGearOnDrop>
     <canStrip>false</canStrip>
     <canOpenAnyDoor>true</canOpenAnyDoor>
@@ -29,7 +30,7 @@
         <bodyGraphicData>
           <texPath>pawns/wna_unit/Shield</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.8</drawSize>
+          <drawSize>1.6</drawSize>
           <shadowData>
             <volume>(0.4, 0.8, 0.4)</volume>
           </shadowData>
@@ -49,7 +50,7 @@
         <bodyGraphicData>
           <texPath>pawns/wna_unit/CerebrexNodePack</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.8</drawSize>
+          <drawSize>1.6</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -65,7 +66,7 @@
         <bodyGraphicData>
           <texPath>pawns/wna_unit/CerebrexNodePack</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.8</drawSize>
+          <drawSize>1.6</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -81,7 +82,7 @@
         <bodyGraphicData>
           <texPath>pawns/wna_unit/CerebrexNodePack</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.8</drawSize>
+          <drawSize>1.6</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -97,7 +98,7 @@
         <bodyGraphicData>
           <texPath>pawns/wna_unit/CerebrexNodePack</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.8</drawSize>
+          <drawSize>1.6</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -118,7 +119,7 @@
         <bodyGraphicData>
           <texPath>pawns/wna_unit/HunterDronePack</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>2.7</drawSize>
+          <drawSize>2.4</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
@@ -133,7 +134,7 @@
         <bodyGraphicData>
           <texPath>pawns/wna_unit/DisruptorFlarePack</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>0.9</drawSize>
+          <drawSize>0.8</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
